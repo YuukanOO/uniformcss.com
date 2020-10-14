@@ -18,6 +18,15 @@
 	--font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier;
 }
 
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+	-o-transition: none !important;
+	transition: none !important;
+}
+
+
 .table-colors {
 	--table-radius: 0;
 }
@@ -201,7 +210,14 @@
 	animation: slideshow 60s linear infinite;
 }
 
-
+@keyframes slideshow {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
 
 
 .docs-sidebar {
