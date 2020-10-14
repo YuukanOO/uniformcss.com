@@ -17,32 +17,22 @@ CUSTOM PROPERTIES
     width: 100%;
     margin: auto;
     max-width: var(--wrapper-max-width, size(26));
-    padding-left: var(--wrapper-padding, size(8));
-    padding-right: var(--wrapper-padding, size(8));
+    padding-left: var(--wrapper-padding, size(5));
+    padding-right: var(--wrapper-padding, size(5));
     @media (min-width: screen(xs)) {
       max-width: var(--wrapper-xs-max-width, size(27));
-      padding-left: 0;
-      padding-right: 0;
     }
     @media (min-width: screen(sm)) {
       max-width: var(--wrapper-sm-max-width, screen(xs));
-      padding-left: 0;
-      padding-right: 0;
     }
     @media (min-width: screen(md)) {
       max-width: var(--wrapper-md-max-width, screen(sm));
-      padding-left: 0;
-      padding-right: 0;
     }
     @media (min-width: screen(lg)) {
       max-width: var(--wrapper-lg-max-width, screen(md));
-      padding-left: 0;
-      padding-right: 0;
     }
     @media (min-width: screen(xl)) {
       max-width: var(--wrapper-xl-max-width, screen(lg));
-      padding-left: 0;
-      padding-right: 0;
     }
   }
 }
