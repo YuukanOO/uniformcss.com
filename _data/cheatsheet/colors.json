@@ -1,0 +1,699 @@
+[
+  {
+    "color": "red",
+    "variants": [
+      {
+        "name": "red-100", 
+        "value": "#feefef"
+      },
+      {
+        "name": "red-200", 
+        "value": "#fee0e0"
+      },
+      {
+        "name": "red-300", 
+        "value": "#fdbfbf"
+      },
+      {
+        "name": "red-400", 
+        "value": "#fb7f7f"
+      },
+      {
+        "name": "red-500", 
+        "value": "#fc5f5f"
+      },
+      {
+        "name": "red-600", 
+        "value": "#ec4b4b"
+      },
+      {
+        "name": "red-700", 
+        "value": "#ca2929"
+      },
+      {
+        "name": "red-800", 
+        "value": "#901d1d"
+      },
+      {
+        "name": "red-900", 
+        "value": "#561111"
+      }
+    ]
+  },
+  {
+    "color": "orange",
+    "variants": [
+      {
+        "name": "orange-100", 
+        "value": "#fff2ea"
+      },
+      {
+        "name": "orange-200", 
+        "value": "#fee5d5"
+      },
+      {
+        "name": "orange-300", 
+        "value": "#fecaaa"
+      },
+      {
+        "name": "orange-400", 
+        "value": "#fd9557"
+      },
+      {
+        "name": "orange-500", 
+        "value": "#fd7b2c"
+      },
+      {
+        "name": "orange-600", 
+        "value": "#ee6c1d"
+      },
+      {
+        "name": "orange-700", 
+        "value": "#bd5313"
+      },
+      {
+        "name": "orange-800", 
+        "value": "#873c0e"
+      },
+      {
+        "name": "orange-900", 
+        "value": "#512408"
+      }
+    ]
+  },
+  {
+    "color": "brown",
+    "variants": [
+      {
+        "name": "brown-100", 
+        "value": "#f8efe7"
+      },
+      {
+        "name": "brown-200", 
+        "value": "#f1ddcf"
+      },
+      {
+        "name": "brown-300", 
+        "value": "#e2bca0"
+      },
+      {
+        "name": "brown-400", 
+        "value": "#c67940"
+      },
+      {
+        "name": "brown-500", 
+        "value": "#b15818"
+      },
+      {
+        "name": "brown-600", 
+        "value": "#9b5119"
+      },
+      {
+        "name": "brown-700", 
+        "value": "#783e14"
+      },
+      {
+        "name": "brown-800", 
+        "value": "#572c0e"
+      },
+      {
+        "name": "brown-900", 
+        "value": "#341b08"
+      }
+    ]
+  },
+  {
+    "color": "yellow",
+    "variants": [
+      {
+        "name": "yellow-100", 
+        "value": "#fffbf3"
+      },
+      {
+        "name": "yellow-200", 
+        "value": "#fff3dc"
+      },
+      {
+        "name": "yellow-300", 
+        "value": "#ffdfa2"
+      },
+      {
+        "name": "yellow-400", 
+        "value": "#ffbf45"
+      },
+      {
+        "name": "yellow-500", 
+        "value": "#ffaf16"
+      },
+      {
+        "name": "yellow-600", 
+        "value": "#e1970b"
+      },
+      {
+        "name": "yellow-700", 
+        "value": "#ac7408"
+      },
+      {
+        "name": "yellow-800", 
+        "value": "#845907"
+      },
+      {
+        "name": "yellow-900", 
+        "value": "#503604"
+      }
+    ]
+  },
+  {
+    "color": "lime",
+    "variants": [
+      {
+        "name": "lime-100", 
+        "value": "#f4fae4"
+      },
+      {
+        "name": "lime-200", 
+        "value": "#eaf5c8"
+      },
+      {
+        "name": "lime-300", 
+        "value": "#d4eb91"
+      },
+      {
+        "name": "lime-400", 
+        "value": "#a8d624"
+      },
+      {
+        "name": "lime-500", 
+        "value": "#8ab900"
+      },
+      {
+        "name": "lime-600", 
+        "value": "#7ca700"
+      },
+      {
+        "name": "lime-700", 
+        "value": "#618200"
+      },
+      {
+        "name": "lime-800", 
+        "value": "#455d00"
+      },
+      {
+        "name": "lime-900", 
+        "value": "#293800"
+      }
+    ]
+  },
+  {
+    "color": "green",
+    "variants": [
+      {
+        "name": "green-100", 
+        "value": "#e4faed"
+      },
+      {
+        "name": "green-200", 
+        "value": "#c8f5da"
+      },
+      {
+        "name": "green-300", 
+        "value": "#90ebb4"
+      },
+      {
+        "name": "green-400", 
+        "value": "#24d46a"
+      },
+      {
+        "name": "green-500", 
+        "value": "#00b649"
+      },
+      {
+        "name": "green-600", 
+        "value": "#00a442"
+      },
+      {
+        "name": "green-700", 
+        "value": "#007f33"
+      },
+      {
+        "name": "green-800", 
+        "value": "#005b25"
+      },
+      {
+        "name": "green-900", 
+        "value": "#003716"
+      }
+    ]
+  },
+  {
+    "color": "teal",
+    "variants": [
+      {
+        "name": "teal-100", 
+        "value": "#e4fbf6"
+      },
+      {
+        "name": "teal-200", 
+        "value": "#c9f7ec"
+      },
+      {
+        "name": "teal-300", 
+        "value": "#92f0d8"
+      },
+      {
+        "name": "teal-400", 
+        "value": "#26e0b3"
+      },
+      {
+        "name": "teal-500", 
+        "value": "#00c797"
+      },
+      {
+        "name": "teal-600", 
+        "value": "#00b388"
+      },
+      {
+        "name": "teal-700", 
+        "value": "#008b6a"
+      },
+      {
+        "name": "teal-800", 
+        "value": "#00644c"
+      },
+      {
+        "name": "teal-900", 
+        "value": "#003c2d"
+      }
+    ]
+  },
+  {
+    "color": "cyan",
+    "variants": [
+      {
+        "name": "cyan-100", 
+        "value": "#e5fbfd"
+      },
+      {
+        "name": "cyan-200", 
+        "value": "#caf8fa"
+      },
+      {
+        "name": "cyan-300", 
+        "value": "#95f0f6"
+      },
+      {
+        "name": "cyan-400", 
+        "value": "#2be1ed"
+      },
+      {
+        "name": "cyan-500", 
+        "value": "#00d1de"
+      },
+      {
+        "name": "cyan-600", 
+        "value": "#00bcc8"
+      },
+      {
+        "name": "cyan-700", 
+        "value": "#00929b"
+      },
+      {
+        "name": "cyan-800", 
+        "value": "#00696f"
+      },
+      {
+        "name": "cyan-900", 
+        "value": "#003f43"
+      }
+    ]
+  },
+  {
+    "color": "blue",
+    "variants": [
+      {
+        "name": "blue-100", 
+        "value": "#e6f4ff"
+      },
+      {
+        "name": "blue-200", 
+        "value": "#cce9ff"
+      },
+      {
+        "name": "blue-300", 
+        "value": "#99d3ff"
+      },
+      {
+        "name": "blue-400", 
+        "value": "#33a8ff"
+      },
+      {
+        "name": "blue-500", 
+        "value": "#0092ff"
+      },
+      {
+        "name": "blue-600", 
+        "value": "#0083e6"
+      },
+      {
+        "name": "blue-700", 
+        "value": "#0066b3"
+      },
+      {
+        "name": "blue-800", 
+        "value": "#004980"
+      },
+      {
+        "name": "blue-900", 
+        "value": "#002c4d"
+      }
+    ]
+  },
+  {
+    "color": "indigo",
+    "variants": [
+      {
+        "name": "indigo-100", 
+        "value": "#e6eeff"
+      },
+      {
+        "name": "indigo-200", 
+        "value": "#ccddff"
+      },
+      {
+        "name": "indigo-300", 
+        "value": "#99bcff"
+      },
+      {
+        "name": "indigo-400", 
+        "value": "#3379ff"
+      },
+      {
+        "name": "indigo-500", 
+        "value": "#0057ff"
+      },
+      {
+        "name": "indigo-600", 
+        "value": "#004ee6"
+      },
+      {
+        "name": "indigo-700", 
+        "value": "#003db3"
+      },
+      {
+        "name": "indigo-800", 
+        "value": "#002c80"
+      },
+      {
+        "name": "indigo-900", 
+        "value": "#001a4d"
+      }
+    ]
+  },
+  {
+    "color": "blueberry",
+    "variants": [
+      {
+        "name": "blueberry-100", 
+        "value": "#e8eaf6"
+      },
+      {
+        "name": "blueberry-200", 
+        "value": "#d1d6ed"
+      },
+      {
+        "name": "blueberry-300", 
+        "value": "#a2aedb"
+      },
+      {
+        "name": "blueberry-400", 
+        "value": "#475db5"
+      },
+      {
+        "name": "blueberry-500", 
+        "value": "#20389d"
+      },
+      {
+        "name": "blueberry-600", 
+        "value": "#223688"
+      },
+      {
+        "name": "blueberry-700", 
+        "value": "#1a2b6a"
+      },
+      {
+        "name": "blueberry-800", 
+        "value": "#131e4c"
+      },
+      {
+        "name": "blueberry-900", 
+        "value": "#0b132e"
+      }
+    ]
+  },
+  {
+    "color": "violet",
+    "variants": [
+      {
+        "name": "violet-100", 
+        "value": "#efe6ff"
+      },
+      {
+        "name": "violet-200", 
+        "value": "#dfccff"
+      },
+      {
+        "name": "violet-300", 
+        "value": "#c099ff"
+      },
+      {
+        "name": "violet-400", 
+        "value": "#8133ff"
+      },
+      {
+        "name": "violet-500", 
+        "value": "#6100ff"
+      },
+      {
+        "name": "violet-600", 
+        "value": "#5700e6"
+      },
+      {
+        "name": "violet-700", 
+        "value": "#4400b3"
+      },
+      {
+        "name": "violet-800", 
+        "value": "#310080"
+      },
+      {
+        "name": "violet-900", 
+        "value": "#1d004d"
+      }
+    ]
+  },
+  {
+    "color": "purple",
+    "variants": [
+      {
+        "name": "purple-100", 
+        "value": "#f8f1fd"
+      },
+      {
+        "name": "purple-200", 
+        "value": "#ead7f9"
+      },
+      {
+        "name": "purple-300", 
+        "value": "#c892f0"
+      },
+      {
+        "name": "purple-400", 
+        "value": "#9226e0"
+      },
+      {
+        "name": "purple-500", 
+        "value": "#7400c7"
+      },
+      {
+        "name": "purple-600", 
+        "value": "#6300a9"
+      },
+      {
+        "name": "purple-700", 
+        "value": "#4b0081"
+      },
+      {
+        "name": "purple-800", 
+        "value": "#3a0064"
+      },
+      {
+        "name": "purple-900", 
+        "value": "#23003c"
+      }
+    ]
+  },
+  {
+    "color": "magenta",
+    "variants": [
+      {
+        "name": "magenta-100", 
+        "value": "#ffe6ff"
+      },
+      {
+        "name": "magenta-200", 
+        "value": "#feccff"
+      },
+      {
+        "name": "magenta-300", 
+        "value": "#fd99ff"
+      },
+      {
+        "name": "magenta-400", 
+        "value": "#fb33ff"
+      },
+      {
+        "name": "magenta-500", 
+        "value": "#fa00ff"
+      },
+      {
+        "name": "magenta-600", 
+        "value": "#e100e6"
+      },
+      {
+        "name": "magenta-700", 
+        "value": "#af00b3"
+      },
+      {
+        "name": "magenta-800", 
+        "value": "#7d0080"
+      },
+      {
+        "name": "magenta-900", 
+        "value": "#4b004d"
+      }
+    ]
+  },
+  {
+    "color": "pink",
+    "variants": [
+      {
+        "name": "pink-100", 
+        "value": "#ffebf2"
+      },
+      {
+        "name": "pink-200", 
+        "value": "#ffd6e5"
+      },
+      {
+        "name": "pink-300", 
+        "value": "#ffadcb"
+      },
+      {
+        "name": "pink-400", 
+        "value": "#ff5c96"
+      },
+      {
+        "name": "pink-500", 
+        "value": "#ff337c"
+      },
+      {
+        "name": "pink-600", 
+        "value": "#f0246d"
+      },
+      {
+        "name": "pink-700", 
+        "value": "#c11653"
+      },
+      {
+        "name": "pink-800", 
+        "value": "#8a103b"
+      },
+      {
+        "name": "pink-900", 
+        "value": "#530923"
+      }
+    ]
+  },
+  {
+    "color": "silver",
+    "variants": [
+      {
+        "name": "silver-100", 
+        "value": "#f5f5f7"
+      },
+      {
+        "name": "silver-200", 
+        "value": "#eaebee"
+      },
+      {
+        "name": "silver-300", 
+        "value": "#e0e2e6"
+      },
+      {
+        "name": "silver-400", 
+        "value": "#d6d8de"
+      },
+      {
+        "name": "silver-500", 
+        "value": "#ccced6"
+      },
+      {
+        "name": "silver-600", 
+        "value": "#c1c4cd"
+      },
+      {
+        "name": "silver-700", 
+        "value": "#b7bac5"
+      },
+      {
+        "name": "silver-800", 
+        "value": "#adb1bd"
+      },
+      {
+        "name": "silver-900", 
+        "value": "#a2a7b4"
+      }
+    ]
+  },
+  {
+    "color": "gray",
+    "variants": [
+      {
+        "name": "gray-100", 
+        "value": "#c6c8d0"
+      },
+      {
+        "name": "gray-200", 
+        "value": "#b0b3be"
+      },
+      {
+        "name": "gray-300", 
+        "value": "#999dab"
+      },
+      {
+        "name": "gray-400", 
+        "value": "#838899"
+      },
+      {
+        "name": "gray-500", 
+        "value": "#6e7386"
+      },
+      {
+        "name": "gray-600", 
+        "value": "#5c606f"
+      },
+      {
+        "name": "gray-700", 
+        "value": "#494d59"
+      },
+      {
+        "name": "gray-800", 
+        "value": "#373943"
+      },
+      {
+        "name": "gray-900", 
+        "value": "#25262d"
+      }
+    ]
+  }
+]

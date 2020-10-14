@@ -1,0 +1,123 @@
+[
+  {
+    "title": "padding",
+    "family": "core",
+    "description": "The `padding` property is a shorthand property for padding.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.p-{scale-variant}`",
+        "properties": [
+          "`property: {scale-variant}`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-x",
+    "family": "extension",
+    "description": "The `padding-x` extension applies padding to the left and right of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.px-{scale-variant}`",
+        "properties": [
+          "`padding-left: {scale-variant}`",
+          "`padding-right: {scale-variant}`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-y",
+    "family": "extension",
+    "description": "The `padding-y` extension applies padding to the top and bottom of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.py-{scale-variant}`",
+        "properties": [
+          "`padding-top: {scale-variant}`",
+          "`padding-bottom: {scale-variant}`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-bottom",
+    "family": "core",
+    "description": "The `padding-bottom` property sets the bottom padding (space) of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.pb-{scale-variant}`",
+        "properties": [
+          "`padding-bottom: {scale-variant}`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-left",
+    "family": "core",
+    "description": "The `padding-left` property sets the left padding (space) of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.pl-{scale-variant}`",
+        "properties": [
+          "`padding-left: {scale-variant}`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-right",
+    "family": "core",
+    "description": "The `padding-right` property sets the right padding (space) of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.pr-{scale-variant}`",
+        "properties": [
+          "`padding-right: {scale-variant}`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "padding-top",
+    "family": "core",
+    "description": "The `padding-top` property sets the top padding (space) of an element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.pt-{scale-variant}`",
+        "properties": [
+          "`padding-top: {scale-variant}`"
+        ]
+      }
+    ]
+  }
+]

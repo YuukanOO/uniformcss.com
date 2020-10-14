@@ -1,0 +1,423 @@
+[
+  { 
+    "title": "top/right/bottom/left",
+    "family": "extension",
+    "description": "The `xy` extension affects the horizontal and vertical position of a positioned element.",
+    "responsive": true,
+    "pseudos": ["none"],
+    "classes": [
+      {
+        "class": "`.xy-0`",
+        "properties": [
+          "`top: 0;`",
+          "`right: 0;`",
+          "`bottom: 0;`",
+          "`left: 0;`"
+        ]
+      },
+      {
+        "class": "`.xy-auto`",
+        "properties": [
+          "`top: auto;`",
+          "`right: auto;`",
+          "`bottom: auto;`",
+          "`left: auto;`"
+        ]
+      }
+    ]
+  },
+  { 
+    "title": "left/right",
+    "family": "extension",
+    "description": "The `x` extension affects the horizontal position of a positioned element.",
+    "responsive": true,
+    "pseudos": ["none"],
+    "classes": [
+      {
+        "class": "`.x-0`",
+        "properties": [
+          "`left: 0;`",
+          "`right: 0;`"
+        ]
+      },
+      {
+        "class": "`.x-auto`",
+        "properties": [
+          "`left: auto;`",
+          "`right: auto;`"
+        ]
+      }
+    ]
+  },
+  { 
+    "title": "top/bottom",
+    "family": "extension",
+    "description": "The `y` extension affects the vertical position of a positioned element.",
+    "responsive": true,
+    "pseudos": ["none"],
+    "classes": [
+      {
+        "class": "`.y-0`",
+        "properties": [
+          "`top: 0;`",
+          "`bottom: 0;`"
+        ]
+      },
+      {
+        "class": "`.y-auto`",
+        "properties": [
+          "`top: auto;`",
+          "`bottom: auto;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "bottom",
+    "family": "core",
+    "description": "The `bottom` property affects the vertical position of a positioned element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.b-auto`",
+        "properties": [
+          "`bottom: auto;`"
+        ]
+      },
+      {
+        "class": "`.b-n100p`",
+        "properties": [
+          "`bottom: n100p;`"
+        ]
+      },
+      {
+        "class": "`.b-100p`",
+        "properties": [
+          "`bottom: 100p;`"
+        ]
+      },
+      {
+        "class": "`.b-n50p`",
+        "properties": [
+          "`bottom: n50p;`"
+        ]
+      },
+      {
+        "class": "`.b-50p`",
+        "properties": [
+          "`bottom: 50p;`"
+        ]
+      },
+      {
+        "class": "`.b-0`",
+        "properties": [
+          "`bottom: 0;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "left",
+    "family": "core",
+    "description": "The `left` property affects the horizontal position of a positioned element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.l-auto`",
+        "properties": [
+          "`left: auto;`"
+        ]
+      },
+      {
+        "class": "`.l-n100p`",
+        "properties": [
+          "`left: n100p;`"
+        ]
+      },
+      {
+        "class": "`.l-100p`",
+        "properties": [
+          "`left: 100p;`"
+        ]
+      },
+      {
+        "class": "`.l-n50p`",
+        "properties": [
+          "`left: n50p;`"
+        ]
+      },
+      {
+        "class": "`.l-50p`",
+        "properties": [
+          "`left: 50p;`"
+        ]
+      },
+      {
+        "class": "`.l-0`",
+        "properties": [
+          "`left: 0;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "right",
+    "family": "core",
+    "description": "The `right` property affects the horizontal position of a positioned element. This property has no effect on non-positioned elements.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.r-auto`",
+        "properties": [
+          "`right: auto;`"
+        ]
+      },
+      {
+        "class": "`.r-n100p`",
+        "properties": [
+          "`right: n100p;`"
+        ]
+      },
+      {
+        "class": "`.r-100p`",
+        "properties": [
+          "`right: 100p;`"
+        ]
+      },
+      {
+        "class": "`.r-n50p`",
+        "properties": [
+          "`right: n50p;`"
+        ]
+      },
+      {
+        "class": "`.r-50p`",
+        "properties": [
+          "`right: 50p;`"
+        ]
+      },
+      {
+        "class": "`.r-0`",
+        "properties": [
+          "`right: 0;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "top",
+    "family": "core",
+    "description": "The `top` property affects the vertical position of a positioned element.",
+    "responsive": true,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.t-auto`",
+        "properties": [
+          "`top: auto;`"
+        ]
+      },
+      {
+        "class": "`.t-n100p`",
+        "properties": [
+          "`top: n100p;`"
+        ]
+      },
+      {
+        "class": "`.t-100p`",
+        "properties": [
+          "`top: 100p;`"
+        ]
+      },
+      {
+        "class": "`.t-n50p`",
+        "properties": [
+          "`top: n50p;`"
+        ]
+      },
+      {
+        "class": "`.t-50p`",
+        "properties": [
+          "`top: 50p;`"
+        ]
+      },
+      {
+        "class": "`.t-0`",
+        "properties": [
+          "`top: 0;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "z-index",
+    "family": "core",
+    "description": "The `z-index` property specifies the stack order of an element.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.z-auto`",
+        "properties": [
+          "`z-index: auto;`"
+        ]
+      },
+      {
+        "class": "`.z-n1`",
+        "properties": [
+          "`z-index: -1;`"
+        ]
+      },
+      {
+        "class": "`.z-n2`",
+        "properties": [
+          "`z-index: -2;`"
+        ]
+      },
+      {
+        "class": "`.z-n3`",
+        "properties": [
+          "`z-index: -3;`"
+        ]
+      },
+      {
+        "class": "`.z-n4`",
+        "properties": [
+          "`z-index: -4;`"
+        ]
+      },
+      {
+        "class": "`.z-n5`",
+        "properties": [
+          "`z-index: -5;`"
+        ]
+      },
+      {
+        "class": "`.z-n6`",
+        "properties": [
+          "`z-index: -6;`"
+        ]
+      },
+      {
+        "class": "`.z-n7`",
+        "properties": [
+          "`z-index: -7;`"
+        ]
+      },
+      {
+        "class": "`.z-n8`",
+        "properties": [
+          "`z-index: -8;`"
+        ]
+      },
+      {
+        "class": "`.z-n9`",
+        "properties": [
+          "`z-index: -9;`"
+        ]
+      },
+      {
+        "class": "`.z-n10`",
+        "properties": [
+          "`z-index: -10;`"
+        ]
+      },
+      {
+        "class": "`.z-0`",
+        "properties": [
+          "`z-index: 0;`"
+        ]
+      },
+      {
+        "class": "`.z-1`",
+        "properties": [
+          "`z-index: 1;`"
+        ]
+      },
+      {
+        "class": "`.z-2`",
+        "properties": [
+          "`z-index: 2;`"
+        ]
+      },
+      {
+        "class": "`.z-3`",
+        "properties": [
+          "`z-index: 3;`"
+        ]
+      },
+      {
+        "class": "`.z-4`",
+        "properties": [
+          "`z-index: 4;`"
+        ]
+      },
+      {
+        "class": "`.z-5`",
+        "properties": [
+          "`z-index: 5;`"
+        ]
+      },
+      {
+        "class": "`.z-6`",
+        "properties": [
+          "`z-index: 6;`"
+        ]
+      },
+      {
+        "class": "`.z-7`",
+        "properties": [
+          "`z-index: 7;`"
+        ]
+      },
+      {
+        "class": "`.z-8`",
+        "properties": [
+          "`z-index: 8;`"
+        ]
+      },
+      {
+        "class": "`.z-9`",
+        "properties": [
+          "`z-index: 9;`"
+        ]
+      },
+      {
+        "class": "`.z-10`",
+        "properties": [
+          "`z-index: 10;`"
+        ]
+      }
+    ]
+  },
+  {
+    "title": "absolute-center",
+    "family": "core",
+    "description": "The `absolute-center` class combines absolute positioning with transform to center an object.",
+    "responsive": false,
+    "pseudos": [
+      "none"
+    ],
+    "classes": [
+      {
+        "class": "`.absolute-center`",
+        "properties": [
+          "`multiple properties`"
+        ]
+      }
+    ]
+  }
+]
