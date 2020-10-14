@@ -45,7 +45,7 @@
     <link href="{{ '/assets/vendors/fontawesome/css/solid.min.css' | url }}" rel="stylesheet" >
     <link href="{{ '/assets/vendors/fontawesome/css/brands.min.css' | url }}" rel="stylesheet" >
   </head>
-  <body class="pre2load">
+  <body class="preloadx">
     {{ content | safe }}
 
     {% include "partials/footer.njk" %}
@@ -58,7 +58,7 @@
 
 
       $(document).ready(function () {
-        $("body").removeClass("preload");
+        // $("body").removeClass("preload");
 
         // Change pages on mobile
         $('.js-select-url').on('change', function () {

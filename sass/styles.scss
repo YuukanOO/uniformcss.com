@@ -14,7 +14,8 @@
 
 
 :root {
-	--font-sans: 'Inter';
+	--font-sans: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 
+	Ubuntu, Arial, sans-serif;
 	--font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier;
 }
 
@@ -207,7 +208,7 @@
 
 .gallery__images {
 	display: flex;
-	animation: slideshow 60s linear infinite;
+	// animation: slideshow 60s linear infinite;
 }
 
 @keyframes slideshow {
