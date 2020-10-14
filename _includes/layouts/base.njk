@@ -42,7 +42,7 @@
     <link href="{{ '/assets/vendors/fontawesome/css/solid.min.css' | url }}" rel="stylesheet" >
     <link href="{{ '/assets/vendors/fontawesome/css/brands.min.css' | url }}" rel="stylesheet" >
   </head>
-  <body class="preloadx">
+  <body>
     <script> </script>
     {{ content | safe }}
 
@@ -56,7 +56,6 @@
 
 
       $(document).ready(function () {
-        // $("body").removeClass("preload");
 
         // Change pages on mobile
         $('.js-select-url').on('change', function () {

@@ -15,17 +15,6 @@
 @use "vendors/prism" as *;
 
 
-
-
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-	-o-transition: none !important;
-	transition: none !important;
-}
-
-
 .table-colors {
 	--table-radius: 0;
 }
