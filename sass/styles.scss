@@ -10,14 +10,12 @@
 	)
 );
 
+@use "_roots" as *;
+@use "_fonts" as *;
 @use "vendors/prism" as *;
 
 
-:root {
-	--font-sans: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 
-	Ubuntu, Arial, sans-serif;
-	--font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier;
-}
+
 
 .preload * {
   -webkit-transition: none !important;
