@@ -201,14 +201,7 @@
 	animation: slideshow 60s linear infinite;
 }
 
-@keyframes slideshow {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
-}
+
 
 
 .docs-sidebar {
