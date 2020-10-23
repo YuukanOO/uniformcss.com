@@ -37,7 +37,7 @@ CUSTOM PROPERTIES
   }
   tr {
     display: block;
-    margin-bottom: var(--table-stack-margin, size(6));
+    margin-bottom: var(--table-stack-margin, size(5));
     border-radius: var(--table-radius, radius(sm));
     background-color: var(--table-bg);
     box-shadow: var(--table-shadow, shadow(1));
@@ -51,7 +51,7 @@ CUSTOM PROPERTIES
   }
   td {
     display: block;
-    padding: var(--table-td-padding, size(4, 4));
+    padding: var(--table-td-padding, size(3, 4));
     background-color: var(--table-bg, white);
     &:first-child {
       border-top-right-radius: var(--table-radius, radius(sm));
@@ -121,7 +121,8 @@ CUSTOM PROPERTIES
   td {
     display: table-cell;
     height: var(--table-td-height, size(12));
-    padding: var(--table-td-padding, size(4, 4));
+    padding: var(--table-td-padding, size(3, 4));
+    background-color: transparent;
     box-shadow: var(--table-th-border, inset 0px -1px 0 0 var(--silver-200));
     &:first-child {
       border-radius: 0;
@@ -179,7 +180,7 @@ CUSTOM PROPERTIES
   
     td {
       height: var(--table-td-height, size(12));
-      padding: var(--table-td-padding, size(4, 4));
+      padding: var(--table-td-padding, size(3, 4));
       box-shadow: var(--table-td-border, inset 0px -1px 0 0 var(--silver-200));
     }
   }

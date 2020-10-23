@@ -191,9 +191,9 @@ CUSTOM PROPERTIES
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: var(--btn-height, size(11));
-    padding: var(--btn-padding, size(0, 5));
-    outline: none;
+    height: var(--btn-height, size(10));
+    padding: var(--btn-padding, size(0, 4));
+    outline: 0;
     background: var(--btn-bg, fill(indigo-500));
     border: var(--btn-border, 0);
     box-shadow: var(--btn-shadow, none);
@@ -251,7 +251,6 @@ CUSTOM PROPERTIES
       }
     }
   }
-
   
 
   /******************************
@@ -269,18 +268,18 @@ CUSTOM PROPERTIES
     --btn-font-size: var(--btn-sm-font-size, #{font-size(sm)});
   }
   .btn-md {
-    --btn-height: var(--btn-md-height, #{size(11)});
-    --btn-padding: var(--btn-md-padding, #{size(0, 5)});
+    --btn-height: var(--btn-md-height, #{size(10)});
+    --btn-padding: var(--btn-md-padding, #{size(0, 4)});
     --btn-font-size: var(--btn-md-font-size, #{font-size(md)});
   }
   .btn-lg {
-    --btn-height: var(--btn-lg-height, #{size(12)});
-    --btn-padding: var(--btn-lg-padding, #{size(0, 6)});
+    --btn-height: var(--btn-lg-height, #{size(11)});
+    --btn-padding: var(--btn-lg-padding, #{size(0, 4)});
     --btn-font-size: var(--btn-lg-font-size, #{font-size(md)});
   }
   .btn-xl {
-    --btn-height: var(--btn-xl-height, #{size(13)});
-    --btn-padding: var(--btn-xl-padding, #{size(0, 7)});
+    --btn-height: var(--btn-xl-height, #{size(12)});
+    --btn-padding: var(--btn-xl-padding, #{size(0, 5)});
     --btn-font-size: var(--btn-xl-font-size, #{font-size(lg)});
   }
 
@@ -297,18 +296,18 @@ CUSTOM PROPERTIES
         --btn-font-size: var(--btn-sm-font-size, #{font-size(sm)});
       }
       .#{$screen}#{$screen-delimiter}btn-md {
-        --btn-height: var(--btn-md-height, #{size(11)});
-        --btn-padding: var(--btn-md-padding, #{size(0, 5)});
+        --btn-height: var(--btn-md-height, #{size(10)});
+        --btn-padding: var(--btn-md-padding, #{size(0, 4)});
         --btn-font-size: var(--btn-md-font-size, #{font-size(md)});
       }
       .#{$screen}#{$screen-delimiter}btn-lg {
-        --btn-height: var(--btn-lg-height, #{size(12)});
-        --btn-padding: var(--btn-lg-padding, #{size(0, 6)});
+        --btn-height: var(--btn-lg-height, #{size(11)});
+        --btn-padding: var(--btn-lg-padding, #{size(0, 4)});
         --btn-font-size: var(--btn-lg-font-size, #{font-size(md)});
       }
       .#{$screen}#{$screen-delimiter}btn-xl {
-        --btn-height: var(--btn-xl-height, #{size(13)});
-        --btn-padding: var(--btn-xl-padding, #{size(0, 7)});
+        --btn-height: var(--btn-xl-height, #{size(12)});
+        --btn-padding: var(--btn-xl-padding, #{size(0, 5)});
         --btn-font-size: var(--btn-xl-font-size, #{font-size(lg)});
       }
     }
@@ -462,60 +461,60 @@ CUSTOM PROPERTIES
   }
 
   .btn-primary {
-    --btn-bg: var(--btn-primary-bg, #{fill(indigo-500)});
+    --btn-bg: var(--btn-primary-bg, #1A2242);
     --btn-color: var(--btn-primary-color, white);
     --btn-border: var(--btn-primary-border, initial);
     --btn-shadow: var(--btn-primary-shadow, none);
 
-    --btn-hover-bg: var(--btn-primary-hover-bg, #{fill(indigo-600)});
+    --btn-hover-bg: var(--btn-primary-hover-bg, #252D4B);
     --btn-hover-color: var(--btn-primary-hover-color, white);
     --btn-hover-border: var(--btn-primary-hover-border, initial);
     --btn-hover-shadow: var(--btn-primary-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-primary-focus-shadow, none);
 
-    --btn-active-bg: var(--btn-primary-active-bg, #{fill(indigo-700)});
+    --btn-active-bg: var(--btn-primary-active-bg, #1A2242);
     --btn-active-color: var(--btn-primary-active-color, white);
     --btn-active-border: var(--btn-primary-active-border, initial);
     --btn-active-shadow: var(--btn-primary-active-shadow, none);
   }
 
   .btn-secondary {
-    --btn-bg: var(--btn-secondary-bg, #{fill(blueberry-700)});
+    --btn-bg: var(--btn-secondary-bg, #24305C);
     --btn-color: var(--btn-secondary-color, white);
     --btn-border: var(--btn-secondary-border, initial);
     --btn-shadow: var(--btn-secondary-shadow, none);
 
-    --btn-hover-bg: var(--btn-secondary-hover-bg, #{fill(blueberry-800)});
+    --btn-hover-bg: var(--btn-secondary-hover-bg, #2F3A64);
     --btn-hover-color: var(--btn-secondary-hover-color, white);
     --btn-hover-border: var(--btn-secondary-hover-border, initial);
     --btn-hover-shadow: var(--btn-secondary-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-secondary-focus-shadow, none);
 
-    --btn-active-bg: var(--btn-secondary-active-bg, #{fill(blueberry-900)});
+    --btn-active-bg: var(--btn-secondary-active-bg,  #24305C);
     --btn-active-color: var(--btn-secondary-active-color, white);
     --btn-active-border: var(--btn-secondary-active-border, initial);
     --btn-active-shadow: var(--btn-secondary-active-shadow, none);
   }
 
   .btn-tertiary {
-    --btn-bg: var(--btn-tertiary-bg, #{fill(white)});
-    --btn-color: var(--btn-tertiary-color, black);
+    --btn-bg: var(--btn-tertiary-bg, #415394);
+    --btn-color: var(--btn-tertiary-color, white);
     --btn-border: var(--btn-tertiary-border, initial);
-    --btn-shadow: var(--btn-tertiary-shadow, #{shadow(1)});
+    --btn-shadow: var(--btn-tertiary-shadow, none);
 
-    --btn-hover-bg: var(--btn-tertiary-hover-bg, #{fill(white)});
-    --btn-hover-color: var(--btn-tertiary-hover-color,black);
+    --btn-hover-bg: var(--btn-tertiary-hover-bg, #4A5C99);
+    --btn-hover-color: var(--btn-tertiary-hover-color, white);
     --btn-hover-border: var(--btn-tertiary-hover-border, initial);
-    --btn-hover-shadow: var(--btn-tertiary-hover-shadow, #{shadow(1)});
+    --btn-hover-shadow: var(--btn-tertiary-hover-shadow, none);
 
-    --btn-focus-shadow: var(--btn-tertiary-focus-shadow, #{shadow(1)});
+    --btn-focus-shadow: var(--btn-tertiary-focus-shadow, none);
 
-    --btn-active-bg: var(--btn-tertiary-active-bg, #{fill(silver-100)});
-    --btn-active-color: var(--btn-tertiary-active-color,black);
+    --btn-active-bg: var(--btn-tertiary-active-bg,  #415394);
+    --btn-active-color: var(--btn-tertiary-active-color, white);
     --btn-active-border: var(--btn-tertiary-active-border, initial);
-    --btn-active-shadow: var(--btn-tertiary-active-shadow, #{shadow(1)});
+    --btn-active-shadow: var(--btn-tertiary-active-shadow, none);
   }
 
   // Used for button loading animations

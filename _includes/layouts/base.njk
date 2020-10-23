@@ -35,15 +35,14 @@
     <link rel="manifest" href="{{ '/assets/manifest.json' | url }}" />
 
     <!-- Styles -->
-    <link href="{{ '/assets/css/styles.css' | url }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
 
     <!-- Font Awesome -->
-    <link href="{{ '/assets/vendors/fontawesome/css/fontawesome.min.css' | url }}" rel="stylesheet" >
-    <link href="{{ '/assets/vendors/fontawesome/css/solid.min.css' | url }}" rel="stylesheet" >
-    <link href="{{ '/assets/vendors/fontawesome/css/brands.min.css' | url }}" rel="stylesheet" >
+    <link rel="stylesheet" href="{{ '/assets/vendors/fontawesome/css/fontawesome.min.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/vendors/fontawesome/css/solid.min.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/vendors/fontawesome/css/brands.min.css' | url }}">
   </head>
   <body>
-    <script> </script>
     {{ content | safe }}
 
     {% include "partials/footer.njk" %}
@@ -53,8 +52,6 @@
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script>
-
-
       $(document).ready(function () {
 
         // Change pages on mobile
@@ -129,9 +126,7 @@
           $('.js-sizes').fadeIn();
         });
 
-
       });
     </script>
-
   </body>
 </html>
