@@ -2,11 +2,6 @@
 
 @if $include-reset-styles == true and $headless == false {
 
-  /* Reset everything */
-  *,*::before,*::after {
-
-  }
-
   /* Prevent iOS font size change */
   html {
     -webkit-text-size-adjust: 100%;
