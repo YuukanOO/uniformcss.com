@@ -207,7 +207,7 @@ CUSTOM PROPERTIES
     letter-spacing: var(--btn-tracking, 0);
     color: var(--btn-color, white);
     white-space: nowrap;
-    transition: var(--btn-transition, 100ms);
+    transition: var(--btn-transition, background-color 200ms, border-color 200ms, color 200ms, fill 200ms, stroke 200ms, opacity 200ms, box-shadow 200ms, transform  200ms);
     cursor: pointer;
 
     &:hover {

@@ -202,7 +202,7 @@ CUSTOM PROPERTIES
     border: var(--input-border, 1px solid fill(silver-500));
     border-radius: var(--input-radius, radius(xs));
     box-shadow: var(--input-shadow, none);
-    transition: var(--input-transition, 100ms);
+    transition: var(--input-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform  100ms);
 
     // PSEUDOS
     &:hover {
@@ -342,7 +342,7 @@ CUSTOM PROPERTIES
     background: var(--checkbox-bg, white);
     border: var(--checkbox-border, 1px solid fill(silver-500));
     border-radius: var(--checkbox-radius, radius(xs));
-    transition: var(--checkbox-transition, 100ms);
+    transition: var(--checkbox-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform  100ms);
 
     &:after {
       content: '';
@@ -409,7 +409,7 @@ CUSTOM PROPERTIES
     border-radius: var(--radio-radius, 9999px);
     border: var(--radio-border, 1px solid fill(silver-500));
     background: var(--radio-bg, white);
-    transition: var(--radio-transition, 100ms);
+    transition: var(--radio-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform  100ms);
 
     &:after {
       content: '';
@@ -455,7 +455,7 @@ CUSTOM PROPERTIES
     width: var(--toggle-width, size(10));
     height: var(--toggle-height, size(5));
     background: var(--toggle-bg, fill(gray-100));
-    transition: var(--toggle-transition, 200ms);
+    transition: var(--toggle-transition, background-color 200ms, border-color 200ms, color 200ms, fill 200ms, stroke 200ms, opacity 200ms, box-shadow 200ms, transform  200ms);
     border-radius: var(--toggle-radius, 9999px);
 
     &:before {
@@ -468,7 +468,7 @@ CUSTOM PROPERTIES
       background: white;
       border-radius: 9999px;
       box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
-      transition: 200ms;
+      transition: background-color 200ms, border-color 200ms, color 200ms, fill 200ms, stroke 200ms, opacity 200ms, box-shadow 200ms, transform  200ms;
     }
   }
 
@@ -493,7 +493,7 @@ CUSTOM PROPERTIES
       appearance: none;
       font-size: var(--select-font-size, font-size(md));
       line-height: 1.5;
-      transition: var(--select-transition, 100ms);
+      transition: var(--select-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform  100ms);
       cursor: pointer;
 
       // PSEUDOS
@@ -689,7 +689,7 @@ CUSTOM PROPERTIES
     box-shadow: var(--textarea-shadow, none);
     outline: 0;
     appearance: none;
-    transition: var(--textarea-transition, 100ms);
+    transition: var(--textarea-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform  100ms);
 
     // PSEUDOS
     &:hover {
