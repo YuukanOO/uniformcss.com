@@ -25959,7 +25959,7 @@ CUSTOM PROPERTIES
 /*! UniformCSS v0.1.0 | MIT License | github.com/UniformCSS/uniformcss */
 
 :root {
-  --font-sans: "Inter", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+  --font-sans: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
   Ubuntu, Arial, sans-serif;
   --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier;
 }
