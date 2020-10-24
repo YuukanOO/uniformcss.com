@@ -2,6 +2,16 @@
 
 @if $include-reset-styles == true and $headless == false {
 
+  /* Reset everything */
+  *,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0 solid var(--default-border-color, fill(silver-200));
+    font: inherit;
+    color: inherit;
+  }
+
   /* Prevent iOS font size change */
   html {
     -webkit-text-size-adjust: 100%;
