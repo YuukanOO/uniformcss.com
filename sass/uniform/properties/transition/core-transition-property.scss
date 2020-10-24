@@ -11,7 +11,7 @@ $properties: (transition-property) !default;
 $core-variants: (
 	none: none,
 	all: all,
-	appearance: (
+	exempt: (
 		background-color,
 		border-color,
 		color,

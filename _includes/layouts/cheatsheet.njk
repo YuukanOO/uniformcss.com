@@ -34,7 +34,7 @@ layout: layouts/base.njk
         {% if loop.index0 < 4 %}
           <div class="grid grid-cols-3 lg.grid-cols-9 xl.grid-cols-9 gap-4">
             {%- for variant in color.variants -%}
-              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-2 hover.shadow-3 transition-appearance duration-200">
+              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-2 hover.shadow-3 transition duration-200">
                 <div class="ratio-square radius-xs bg-{{ variant.name }}">
                   
                 </div>
@@ -60,7 +60,7 @@ layout: layouts/base.njk
         {% if loop.index0 > 3 %}
           <div class="grid grid-cols-3 lg.grid-cols-9 xl.grid-cols-9 gap-4">
             {%- for variant in color.variants -%}
-              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-2 hover.shadow-3 transition-appearance duration-200">
+              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-2 hover.shadow-3 transition duration-200">
                 <div class="ratio-square radius-xs bg-{{ variant.name }}">
                   
                 </div>

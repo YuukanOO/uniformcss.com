@@ -194,6 +194,7 @@
 
 
 // CORE - TRANSITION (4)
+@forward "properties/transition/core-transition" as transition-*;
 @forward "properties/transition/core-transition-duration" as transition-duration-*;
 @forward "properties/transition/core-transition-delay" as transition-delay-*;
 @forward "properties/transition/core-transition-property" as transition-property-*;

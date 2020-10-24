@@ -10,7 +10,7 @@ date: 1000-01-04
 Applying classes based on pseudos such as hover and focus can be achieved by appending the pseudo variant to the beginning of your class name e.g. `<variant>.keyword-variant`.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-black hover.bg-red-500 active.bg-blue-500 transition-appearance transition-200 cursor-pointer color-white align-center py-8">
+  <div class="bg-black hover.bg-red-500 active.bg-blue-500 transition transition-200 cursor-pointer color-white align-center py-8">
     Hover on me
   </div>
 </section>
