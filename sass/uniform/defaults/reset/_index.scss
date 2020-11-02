@@ -11,8 +11,6 @@
     margin: 0;
     padding: 0;
     border: 0 solid var(--default-border-color, fill(silver-200));
-    font: inherit;
-    color: inherit;
   }
 
   /* Prevent iOS font size change */
@@ -22,6 +20,7 @@
 
   /* Reset body line-height */
   body {
+    min-height: 100vh;
     line-height: 1;
   }
 
@@ -43,6 +42,14 @@
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
   }
 
   /* Remove list style */

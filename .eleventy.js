@@ -86,6 +86,20 @@ module.exports = function(eleventyConfig) {
     return markdownify.render(content);
   });
 
+  eleventyConfig.addFilter('markdownInline', (content) => {
+    let markdownInline = markdownIt({
+      html: true,
+      breaks: true,
+      linkify: true
+    }).use(markdownItAnchor, {
+      permalink: true,
+      permalinkClass: "direct-link",
+      permalinkSymbol: "#"
+    });
+    return markdownInline.renderInline(content);
+  });
+
+
 
   eleventyConfig.addPairedLiquidShortcode("section", function(content, firstName, lastName) { 
     return `<h1>${content}</h1>`;

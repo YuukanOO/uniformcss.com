@@ -19,12 +19,13 @@ By default, Uniform applies minimal resetting styles to flatten browser inconsis
 ```css
 /* Reset everything */
 *,*::before,*::after {
+  box-sizing: border-box;
+}
+
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   border: 0 solid var(--default-border-color, fill(silver-200));
-  font: inherit;
-  color: inherit;
 }
 
 /* Prevent iOS font size change */
@@ -34,11 +35,19 @@ html {
 
 /* Reset body line-height */
 body {
+  min-height: 100vh;
   line-height: 1;
 }
 
 /* All media elements set to block */
-img,svg,video,canvas,audio,iframe,embed,object {
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
   display: block;
   width: 100%;
   vertical-align: middle;
@@ -48,6 +57,14 @@ img,svg,video,canvas,audio,iframe,embed,object {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 /* Remove list style */
@@ -94,8 +111,6 @@ p {
 }
 
 a {
-  cursor: pointer;
-  transition: var(--anchor-transition, 200ms);
   text-decoration: none;
 }
 
