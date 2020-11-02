@@ -378,6 +378,7 @@ p:last-child {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -1116,7 +1117,7 @@ INPUT
 }
 
 .input.is-success {
-  border: var(--input-success-border, 1px solid var(--green-600));
+  border: var(--input-success-border, 1px solid var(--green-500));
 }
 
 .input.is-success:focus {
@@ -1124,7 +1125,7 @@ INPUT
 }
 
 .input.is-warning {
-  border: var(--input-warning-border, 1px solid var(--yellow-600));
+  border: var(--input-warning-border, 1px solid var(--yellow-500));
 }
 
 .input.is-warning:focus {
@@ -1132,7 +1133,7 @@ INPUT
 }
 
 .input.is-danger {
-  border: var(--input-danger-border, 1px solid var(--red-600));
+  border: var(--input-danger-border, 1px solid var(--red-500));
 }
 
 .input.is-danger:focus {
@@ -1396,7 +1397,7 @@ SELECT
 }
 
 .select.is-success select {
-  border: var(--select-success-border, 1px solid var(--green-600));
+  border: var(--select-success-border, 1px solid var(--green-500));
 }
 
 .select.is-success select:focus {
@@ -1404,7 +1405,7 @@ SELECT
 }
 
 .select.is-warning select {
-  border: var(--select-warning-border, 1px solid var(--green-600));
+  border: var(--select-warning-border, 1px solid var(--yellow-500));
 }
 
 .select.is-warning select:focus {
@@ -1412,7 +1413,7 @@ SELECT
 }
 
 .select.is-danger select {
-  border: var(--select-danger-border, 1px solid var(--green-600));
+  border: var(--select-danger-border, 1px solid var(--red-500));
 }
 
 .select.is-danger select:focus {
@@ -1528,7 +1529,7 @@ TEXTAREA
 }
 
 .textarea.is-success {
-  border: var(--textarea-success-border, 1px solid var(--green-600));
+  border: var(--textarea-success-border, 1px solid var(--green-500));
 }
 
 .textarea.is-success:focus {
@@ -1536,7 +1537,7 @@ TEXTAREA
 }
 
 .textarea.is-warning {
-  border: var(--textarea-warning-border, 1px solid var(--yellow-600));
+  border: var(--textarea-warning-border, 1px solid var(--yellow-500));
 }
 
 .textarea.is-warning:focus {
@@ -1544,7 +1545,7 @@ TEXTAREA
 }
 
 .textarea.is-danger {
-  border: var(--textarea-danger-border, 1px solid var(--red-600));
+  border: var(--textarea-danger-border, 1px solid var(--red-500));
 }
 
 .textarea.is-danger:focus {

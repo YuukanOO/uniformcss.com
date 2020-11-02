@@ -186,7 +186,7 @@ Table rows can also feature alternating rows with the `table-alt` class.
 </section>
 
 ```html
-<table class="table">
+<table class="table table-alt">
   <thead>
     <tr>
       <th>Column A</th>
@@ -194,6 +194,18 @@ Table rows can also feature alternating rows with the `table-alt` class.
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+    </tr>
     <tr>
       <td>1</td>
       <td>2</td>

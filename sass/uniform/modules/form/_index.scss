@@ -221,19 +221,19 @@ CUSTOM PROPERTIES
 
     // STATES
     &.is-success {
-      border: var(--input-success-border, 1px solid fill(green-600));
+      border: var(--input-success-border, 1px solid fill(green-500));
       &:focus {
         box-shadow: var(--input-focus-success-shadow, none);
       }
     }
     &.is-warning {
-      border: var(--input-warning-border, 1px solid fill(yellow-600));
+      border: var(--input-warning-border, 1px solid fill(yellow-500));
       &:focus {
         box-shadow: var(--input-focus-warning-shadow, none);
       }
     }
     &.is-danger {
-      border: var(--input-danger-border, 1px solid fill(red-600));
+      border: var(--input-danger-border, 1px solid fill(red-500));
       &:focus {
         box-shadow: var(--input-focus-danger-shadow, none);
       }
@@ -525,19 +525,19 @@ CUSTOM PROPERTIES
 
     // STATES
     &.is-success select {
-      border: var(--select-success-border, 1px solid fill(green-600));
+      border: var(--select-success-border, 1px solid fill(green-500));
       &:focus {
         box-shadow: var(--select-focus-success-shadow, none);
       }
     }
     &.is-warning select {
-      border: var(--select-warning-border, 1px solid fill(green-600));
+      border: var(--select-warning-border, 1px solid fill(yellow-500));
       &:focus {
         box-shadow: var(--select-focus-warning-shadow, none);
       }
     }
     &.is-danger select {
-      border: var(--select-danger-border, 1px solid fill(green-600));
+      border: var(--select-danger-border, 1px solid fill(red-500));
       &:focus {
         box-shadow: var(--select-focus-danger-shadow, none);
       }
@@ -708,19 +708,19 @@ CUSTOM PROPERTIES
 
     // STATES
     &.is-success {
-      border: var(--textarea-success-border, 1px solid fill(green-600));
+      border: var(--textarea-success-border, 1px solid fill(green-500));
       &:focus {
         box-shadow: var(--textarea-focus-success-shadow, none);
       }
     }
     &.is-warning {
-      border: var(--textarea-warning-border, 1px solid fill(yellow-600));
+      border: var(--textarea-warning-border, 1px solid fill(yellow-500));
       &:focus {
         box-shadow: var(--textarea-focus-warning-shadow, none);
       }
     }
     &.is-danger {
-      border: var(--textarea-danger-border, 1px solid fill(red-600));
+      border: var(--textarea-danger-border, 1px solid fill(red-500));
       &:focus {
         box-shadow: var(--textarea-focus-danger-shadow, none);
       }

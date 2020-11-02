@@ -58,7 +58,7 @@
     "description": "The `padding-bottom` property sets the bottom padding (space) of an element.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "last"
     ],
     "classes": [
       {
@@ -92,7 +92,7 @@
     "description": "The `padding-right` property sets the right padding (space) of an element.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "last"
     ],
     "classes": [
       {

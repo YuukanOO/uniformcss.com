@@ -202,7 +202,7 @@
     "description": "An `outline` is a line that is drawn around elements, outside the borders, to make the element stand out.",
     "responsive": false,
     "pseudos": [
-      "none"
+      "focus"
     ],
     "classes": [
       {
