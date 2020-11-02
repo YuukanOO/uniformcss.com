@@ -387,6 +387,7 @@ p:last-child {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 b,
