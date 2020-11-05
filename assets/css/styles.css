@@ -684,7 +684,7 @@ SIZES
 
 .btn-sm {
   --btn-height: var(--btn-sm-height, var(--size-9));
-  --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-4));
+  --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-3));
   --btn-font-size: var(--btn-sm-font-size, var(--font-sm));
 }
 
@@ -697,13 +697,13 @@ SIZES
 .btn-lg {
   --btn-height: var(--btn-lg-height, var(--size-11));
   --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-4));
-  --btn-font-size: var(--btn-lg-font-size, var(--font-md));
+  --btn-font-size: var(--btn-lg-font-size, var(--font-lg));
 }
 
 .btn-xl {
   --btn-height: var(--btn-xl-height, var(--size-12));
-  --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-5));
-  --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
+  --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-4));
+  --btn-font-size: var(--btn-xl-font-size, var(--font-xl));
 }
 
 /******************************
@@ -1150,7 +1150,7 @@ INPUT
 
 .input-xs {
   height: var(--input-xs-height, var(--size-8));
-  padding: var(--input-xs-padding, var(--size-0) var(--size-2));
+  padding: var(--input-xs-padding, var(--size-0) var(--size-3));
   font-size: var(--input-xs-font-size, var(--font-xs));
 }
 
@@ -1162,20 +1162,20 @@ INPUT
 
 .input-md {
   height: var(--input-md-height, var(--size-10));
-  padding: var(--input-md-padding, var(--size-0) var(--size-3));
+  padding: var(--input-md-padding, var(--size-0) var(--size-4));
   font-size: var(--input-md-font-size, var(--font-md));
 }
 
 .input-lg {
   height: var(--input-lg-height, var(--size-11));
   padding: var(--input-lg-padding, var(--size-0) var(--size-4));
-  font-size: var(--input-lg-font-size, var(--font-md));
+  font-size: var(--input-lg-font-size, var(--font-lg));
 }
 
 .input-xl {
   height: var(--input-xl-height, var(--size-12));
-  padding: var(--input-xl-padding, var(--size-0) var(--size-5));
-  font-size: var(--input-xl-font-size, var(--font-lg));
+  padding: var(--input-xl-padding, var(--size-0) var(--size-4));
+  font-size: var(--input-xl-font-size, var(--font-xl));
 }
 
 /******************************
@@ -1453,7 +1453,7 @@ SELECT
 
 .select-xs select {
   height: var(--select-xs-height, var(--size-8));
-  padding: var(--select-xs-padding, var(--size-0) var(--size-2));
+  padding: var(--select-xs-padding, var(--size-0) var(--size-3));
   font-size: var(--select-xs-font-size, var(--font-xs));
 }
 
@@ -1473,7 +1473,7 @@ SELECT
 
 .select-md select {
   height: var(--select-md-height, var(--size-10));
-  padding: var(--select-md-padding, var(--size-0) var(--size-3));
+  padding: var(--select-md-padding, var(--size-0) var(--size-4));
   font-size: var(--select-md-font-size, var(--font-md));
 }
 
@@ -1484,7 +1484,7 @@ SELECT
 .select-lg select {
   height: var(--select-lg-height, var(--size-11));
   padding: var(--select-lg-padding, var(--size-0) var(--size-4));
-  font-size: var(--select-lg-font-size, var(--font-md));
+  font-size: var(--select-lg-font-size, var(--font-lg));
 }
 
 .select-lg .select__angle {
@@ -1493,8 +1493,8 @@ SELECT
 
 .select-xl select {
   height: var(--select-xl-height, var(--size-12));
-  padding: var(--select-xl-padding, var(--size-0) var(--size-5));
-  font-size: var(--select-xl-font-size, var(--font-lg));
+  padding: var(--select-xl-padding, var(--size-0) var(--size-4));
+  font-size: var(--select-xl-font-size, var(--font-xl));
 }
 
 .select-xl .select__angle {
@@ -26376,7 +26376,7 @@ pre[class*=language-] {
 
   .xs\.btn-sm {
     --btn-height: var(--btn-sm-height, var(--size-9));
-    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-4));
+    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-3));
     --btn-font-size: var(--btn-sm-font-size, var(--font-sm));
   }
 
@@ -26389,18 +26389,18 @@ pre[class*=language-] {
   .xs\.btn-lg {
     --btn-height: var(--btn-lg-height, var(--size-11));
     --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-lg-font-size, var(--font-md));
+    --btn-font-size: var(--btn-lg-font-size, var(--font-lg));
   }
 
   .xs\.btn-xl {
     --btn-height: var(--btn-xl-height, var(--size-12));
-    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-5));
-    --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
+    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-4));
+    --btn-font-size: var(--btn-xl-font-size, var(--font-xl));
   }
 
   .xs\.input-xs {
     height: var(--input-xs-height, var(--size-8));
-    padding: var(--input-xs-padding, var(--size-0) var(--size-2));
+    padding: var(--input-xs-padding, var(--size-0) var(--size-3));
     font-size: var(--input-xs-font-size, var(--font-xs));
   }
 
@@ -26412,25 +26412,25 @@ pre[class*=language-] {
 
   .xs\.input-md {
     height: var(--input-md-height, var(--size-10));
-    padding: var(--input-md-padding, var(--size-0) var(--size-3));
+    padding: var(--input-md-padding, var(--size-0) var(--size-4));
     font-size: var(--input-md-font-size, var(--font-md));
   }
 
   .xs\.input-lg {
     height: var(--input-lg-height, var(--size-11));
     padding: var(--input-lg-padding, var(--size-0) var(--size-4));
-    font-size: var(--input-lg-font-size, var(--font-md));
+    font-size: var(--input-lg-font-size, var(--font-lg));
   }
 
   .xs\.input-xl {
     height: var(--input-xl-height, var(--size-12));
-    padding: var(--input-xl-padding, var(--size-0) var(--size-5));
-    font-size: var(--input-xl-font-size, var(--font-lg));
+    padding: var(--input-xl-padding, var(--size-0) var(--size-4));
+    font-size: var(--input-xl-font-size, var(--font-xl));
   }
 
   .xs\.select-xs select {
     height: var(--select-xs-height, var(--size-8));
-    padding: var(--select-xs-padding, var(--size-0) var(--size-2));
+    padding: var(--select-xs-padding, var(--size-0) var(--size-3));
     font-size: var(--select-xs-font-size, var(--font-xs));
   }
 
@@ -26450,7 +26450,7 @@ pre[class*=language-] {
 
   .xs\.select-md select {
     height: var(--select-md-height, var(--size-10));
-    padding: var(--select-md-padding, var(--size-0) var(--size-3));
+    padding: var(--select-md-padding, var(--size-0) var(--size-4));
     font-size: var(--select-md-font-size, var(--font-md));
   }
 
@@ -26461,7 +26461,7 @@ pre[class*=language-] {
   .xs\.select-lg select {
     height: var(--select-lg-height, var(--size-11));
     padding: var(--select-lg-padding, var(--size-0) var(--size-4));
-    font-size: var(--select-lg-font-size, var(--font-md));
+    font-size: var(--select-lg-font-size, var(--font-lg));
   }
 
   .xs\.select-lg .select__angle {
@@ -26470,8 +26470,8 @@ pre[class*=language-] {
 
   .xs\.select-xl select {
     height: var(--select-xl-height, var(--size-12));
-    padding: var(--select-xl-padding, var(--size-0) var(--size-5));
-    font-size: var(--select-xl-font-size, var(--font-lg));
+    padding: var(--select-xl-padding, var(--size-0) var(--size-4));
+    font-size: var(--select-xl-font-size, var(--font-xl));
   }
 
   .xs\.select-xl .select__angle {
@@ -32236,7 +32236,7 @@ pre[class*=language-] {
 
   .sm\.btn-sm {
     --btn-height: var(--btn-sm-height, var(--size-9));
-    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-4));
+    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-3));
     --btn-font-size: var(--btn-sm-font-size, var(--font-sm));
   }
 
@@ -32249,18 +32249,18 @@ pre[class*=language-] {
   .sm\.btn-lg {
     --btn-height: var(--btn-lg-height, var(--size-11));
     --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-lg-font-size, var(--font-md));
+    --btn-font-size: var(--btn-lg-font-size, var(--font-lg));
   }
 
   .sm\.btn-xl {
     --btn-height: var(--btn-xl-height, var(--size-12));
-    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-5));
-    --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
+    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-4));
+    --btn-font-size: var(--btn-xl-font-size, var(--font-xl));
   }
 
   .sm\.input-xs {
     height: var(--input-xs-height, var(--size-8));
-    padding: var(--input-xs-padding, var(--size-0) var(--size-2));
+    padding: var(--input-xs-padding, var(--size-0) var(--size-3));
     font-size: var(--input-xs-font-size, var(--font-xs));
   }
 
@@ -32272,25 +32272,25 @@ pre[class*=language-] {
 
   .sm\.input-md {
     height: var(--input-md-height, var(--size-10));
-    padding: var(--input-md-padding, var(--size-0) var(--size-3));
+    padding: var(--input-md-padding, var(--size-0) var(--size-4));
     font-size: var(--input-md-font-size, var(--font-md));
   }
 
   .sm\.input-lg {
     height: var(--input-lg-height, var(--size-11));
     padding: var(--input-lg-padding, var(--size-0) var(--size-4));
-    font-size: var(--input-lg-font-size, var(--font-md));
+    font-size: var(--input-lg-font-size, var(--font-lg));
   }
 
   .sm\.input-xl {
     height: var(--input-xl-height, var(--size-12));
-    padding: var(--input-xl-padding, var(--size-0) var(--size-5));
-    font-size: var(--input-xl-font-size, var(--font-lg));
+    padding: var(--input-xl-padding, var(--size-0) var(--size-4));
+    font-size: var(--input-xl-font-size, var(--font-xl));
   }
 
   .sm\.select-xs select {
     height: var(--select-xs-height, var(--size-8));
-    padding: var(--select-xs-padding, var(--size-0) var(--size-2));
+    padding: var(--select-xs-padding, var(--size-0) var(--size-3));
     font-size: var(--select-xs-font-size, var(--font-xs));
   }
 
@@ -32310,7 +32310,7 @@ pre[class*=language-] {
 
   .sm\.select-md select {
     height: var(--select-md-height, var(--size-10));
-    padding: var(--select-md-padding, var(--size-0) var(--size-3));
+    padding: var(--select-md-padding, var(--size-0) var(--size-4));
     font-size: var(--select-md-font-size, var(--font-md));
   }
 
@@ -32321,7 +32321,7 @@ pre[class*=language-] {
   .sm\.select-lg select {
     height: var(--select-lg-height, var(--size-11));
     padding: var(--select-lg-padding, var(--size-0) var(--size-4));
-    font-size: var(--select-lg-font-size, var(--font-md));
+    font-size: var(--select-lg-font-size, var(--font-lg));
   }
 
   .sm\.select-lg .select__angle {
@@ -32330,8 +32330,8 @@ pre[class*=language-] {
 
   .sm\.select-xl select {
     height: var(--select-xl-height, var(--size-12));
-    padding: var(--select-xl-padding, var(--size-0) var(--size-5));
-    font-size: var(--select-xl-font-size, var(--font-lg));
+    padding: var(--select-xl-padding, var(--size-0) var(--size-4));
+    font-size: var(--select-xl-font-size, var(--font-xl));
   }
 
   .sm\.select-xl .select__angle {
@@ -38100,7 +38100,7 @@ pre[class*=language-] {
 
   .md\.btn-sm {
     --btn-height: var(--btn-sm-height, var(--size-9));
-    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-4));
+    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-3));
     --btn-font-size: var(--btn-sm-font-size, var(--font-sm));
   }
 
@@ -38113,18 +38113,18 @@ pre[class*=language-] {
   .md\.btn-lg {
     --btn-height: var(--btn-lg-height, var(--size-11));
     --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-lg-font-size, var(--font-md));
+    --btn-font-size: var(--btn-lg-font-size, var(--font-lg));
   }
 
   .md\.btn-xl {
     --btn-height: var(--btn-xl-height, var(--size-12));
-    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-5));
-    --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
+    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-4));
+    --btn-font-size: var(--btn-xl-font-size, var(--font-xl));
   }
 
   .md\.input-xs {
     height: var(--input-xs-height, var(--size-8));
-    padding: var(--input-xs-padding, var(--size-0) var(--size-2));
+    padding: var(--input-xs-padding, var(--size-0) var(--size-3));
     font-size: var(--input-xs-font-size, var(--font-xs));
   }
 
@@ -38136,25 +38136,25 @@ pre[class*=language-] {
 
   .md\.input-md {
     height: var(--input-md-height, var(--size-10));
-    padding: var(--input-md-padding, var(--size-0) var(--size-3));
+    padding: var(--input-md-padding, var(--size-0) var(--size-4));
     font-size: var(--input-md-font-size, var(--font-md));
   }
 
   .md\.input-lg {
     height: var(--input-lg-height, var(--size-11));
     padding: var(--input-lg-padding, var(--size-0) var(--size-4));
-    font-size: var(--input-lg-font-size, var(--font-md));
+    font-size: var(--input-lg-font-size, var(--font-lg));
   }
 
   .md\.input-xl {
     height: var(--input-xl-height, var(--size-12));
-    padding: var(--input-xl-padding, var(--size-0) var(--size-5));
-    font-size: var(--input-xl-font-size, var(--font-lg));
+    padding: var(--input-xl-padding, var(--size-0) var(--size-4));
+    font-size: var(--input-xl-font-size, var(--font-xl));
   }
 
   .md\.select-xs select {
     height: var(--select-xs-height, var(--size-8));
-    padding: var(--select-xs-padding, var(--size-0) var(--size-2));
+    padding: var(--select-xs-padding, var(--size-0) var(--size-3));
     font-size: var(--select-xs-font-size, var(--font-xs));
   }
 
@@ -38174,7 +38174,7 @@ pre[class*=language-] {
 
   .md\.select-md select {
     height: var(--select-md-height, var(--size-10));
-    padding: var(--select-md-padding, var(--size-0) var(--size-3));
+    padding: var(--select-md-padding, var(--size-0) var(--size-4));
     font-size: var(--select-md-font-size, var(--font-md));
   }
 
@@ -38185,7 +38185,7 @@ pre[class*=language-] {
   .md\.select-lg select {
     height: var(--select-lg-height, var(--size-11));
     padding: var(--select-lg-padding, var(--size-0) var(--size-4));
-    font-size: var(--select-lg-font-size, var(--font-md));
+    font-size: var(--select-lg-font-size, var(--font-lg));
   }
 
   .md\.select-lg .select__angle {
@@ -38194,8 +38194,8 @@ pre[class*=language-] {
 
   .md\.select-xl select {
     height: var(--select-xl-height, var(--size-12));
-    padding: var(--select-xl-padding, var(--size-0) var(--size-5));
-    font-size: var(--select-xl-font-size, var(--font-lg));
+    padding: var(--select-xl-padding, var(--size-0) var(--size-4));
+    font-size: var(--select-xl-font-size, var(--font-xl));
   }
 
   .md\.select-xl .select__angle {
@@ -43960,7 +43960,7 @@ pre[class*=language-] {
 
   .lg\.btn-sm {
     --btn-height: var(--btn-sm-height, var(--size-9));
-    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-4));
+    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-3));
     --btn-font-size: var(--btn-sm-font-size, var(--font-sm));
   }
 
@@ -43973,18 +43973,18 @@ pre[class*=language-] {
   .lg\.btn-lg {
     --btn-height: var(--btn-lg-height, var(--size-11));
     --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-lg-font-size, var(--font-md));
+    --btn-font-size: var(--btn-lg-font-size, var(--font-lg));
   }
 
   .lg\.btn-xl {
     --btn-height: var(--btn-xl-height, var(--size-12));
-    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-5));
-    --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
+    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-4));
+    --btn-font-size: var(--btn-xl-font-size, var(--font-xl));
   }
 
   .lg\.input-xs {
     height: var(--input-xs-height, var(--size-8));
-    padding: var(--input-xs-padding, var(--size-0) var(--size-2));
+    padding: var(--input-xs-padding, var(--size-0) var(--size-3));
     font-size: var(--input-xs-font-size, var(--font-xs));
   }
 
@@ -43996,25 +43996,25 @@ pre[class*=language-] {
 
   .lg\.input-md {
     height: var(--input-md-height, var(--size-10));
-    padding: var(--input-md-padding, var(--size-0) var(--size-3));
+    padding: var(--input-md-padding, var(--size-0) var(--size-4));
     font-size: var(--input-md-font-size, var(--font-md));
   }
 
   .lg\.input-lg {
     height: var(--input-lg-height, var(--size-11));
     padding: var(--input-lg-padding, var(--size-0) var(--size-4));
-    font-size: var(--input-lg-font-size, var(--font-md));
+    font-size: var(--input-lg-font-size, var(--font-lg));
   }
 
   .lg\.input-xl {
     height: var(--input-xl-height, var(--size-12));
-    padding: var(--input-xl-padding, var(--size-0) var(--size-5));
-    font-size: var(--input-xl-font-size, var(--font-lg));
+    padding: var(--input-xl-padding, var(--size-0) var(--size-4));
+    font-size: var(--input-xl-font-size, var(--font-xl));
   }
 
   .lg\.select-xs select {
     height: var(--select-xs-height, var(--size-8));
-    padding: var(--select-xs-padding, var(--size-0) var(--size-2));
+    padding: var(--select-xs-padding, var(--size-0) var(--size-3));
     font-size: var(--select-xs-font-size, var(--font-xs));
   }
 
@@ -44034,7 +44034,7 @@ pre[class*=language-] {
 
   .lg\.select-md select {
     height: var(--select-md-height, var(--size-10));
-    padding: var(--select-md-padding, var(--size-0) var(--size-3));
+    padding: var(--select-md-padding, var(--size-0) var(--size-4));
     font-size: var(--select-md-font-size, var(--font-md));
   }
 
@@ -44045,7 +44045,7 @@ pre[class*=language-] {
   .lg\.select-lg select {
     height: var(--select-lg-height, var(--size-11));
     padding: var(--select-lg-padding, var(--size-0) var(--size-4));
-    font-size: var(--select-lg-font-size, var(--font-md));
+    font-size: var(--select-lg-font-size, var(--font-lg));
   }
 
   .lg\.select-lg .select__angle {
@@ -44054,8 +44054,8 @@ pre[class*=language-] {
 
   .lg\.select-xl select {
     height: var(--select-xl-height, var(--size-12));
-    padding: var(--select-xl-padding, var(--size-0) var(--size-5));
-    font-size: var(--select-xl-font-size, var(--font-lg));
+    padding: var(--select-xl-padding, var(--size-0) var(--size-4));
+    font-size: var(--select-xl-font-size, var(--font-xl));
   }
 
   .lg\.select-xl .select__angle {
@@ -49820,7 +49820,7 @@ pre[class*=language-] {
 
   .xl\.btn-sm {
     --btn-height: var(--btn-sm-height, var(--size-9));
-    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-4));
+    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-3));
     --btn-font-size: var(--btn-sm-font-size, var(--font-sm));
   }
 
@@ -49833,18 +49833,18 @@ pre[class*=language-] {
   .xl\.btn-lg {
     --btn-height: var(--btn-lg-height, var(--size-11));
     --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-lg-font-size, var(--font-md));
+    --btn-font-size: var(--btn-lg-font-size, var(--font-lg));
   }
 
   .xl\.btn-xl {
     --btn-height: var(--btn-xl-height, var(--size-12));
-    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-5));
-    --btn-font-size: var(--btn-xl-font-size, var(--font-lg));
+    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-4));
+    --btn-font-size: var(--btn-xl-font-size, var(--font-xl));
   }
 
   .xl\.input-xs {
     height: var(--input-xs-height, var(--size-8));
-    padding: var(--input-xs-padding, var(--size-0) var(--size-2));
+    padding: var(--input-xs-padding, var(--size-0) var(--size-3));
     font-size: var(--input-xs-font-size, var(--font-xs));
   }
 
@@ -49856,25 +49856,25 @@ pre[class*=language-] {
 
   .xl\.input-md {
     height: var(--input-md-height, var(--size-10));
-    padding: var(--input-md-padding, var(--size-0) var(--size-3));
+    padding: var(--input-md-padding, var(--size-0) var(--size-4));
     font-size: var(--input-md-font-size, var(--font-md));
   }
 
   .xl\.input-lg {
     height: var(--input-lg-height, var(--size-11));
     padding: var(--input-lg-padding, var(--size-0) var(--size-4));
-    font-size: var(--input-lg-font-size, var(--font-md));
+    font-size: var(--input-lg-font-size, var(--font-lg));
   }
 
   .xl\.input-xl {
     height: var(--input-xl-height, var(--size-12));
-    padding: var(--input-xl-padding, var(--size-0) var(--size-5));
-    font-size: var(--input-xl-font-size, var(--font-lg));
+    padding: var(--input-xl-padding, var(--size-0) var(--size-4));
+    font-size: var(--input-xl-font-size, var(--font-xl));
   }
 
   .xl\.select-xs select {
     height: var(--select-xs-height, var(--size-8));
-    padding: var(--select-xs-padding, var(--size-0) var(--size-2));
+    padding: var(--select-xs-padding, var(--size-0) var(--size-3));
     font-size: var(--select-xs-font-size, var(--font-xs));
   }
 
@@ -49894,7 +49894,7 @@ pre[class*=language-] {
 
   .xl\.select-md select {
     height: var(--select-md-height, var(--size-10));
-    padding: var(--select-md-padding, var(--size-0) var(--size-3));
+    padding: var(--select-md-padding, var(--size-0) var(--size-4));
     font-size: var(--select-md-font-size, var(--font-md));
   }
 
@@ -49905,7 +49905,7 @@ pre[class*=language-] {
   .xl\.select-lg select {
     height: var(--select-lg-height, var(--size-11));
     padding: var(--select-lg-padding, var(--size-0) var(--size-4));
-    font-size: var(--select-lg-font-size, var(--font-md));
+    font-size: var(--select-lg-font-size, var(--font-lg));
   }
 
   .xl\.select-lg .select__angle {
@@ -49914,8 +49914,8 @@ pre[class*=language-] {
 
   .xl\.select-xl select {
     height: var(--select-xl-height, var(--size-12));
-    padding: var(--select-xl-padding, var(--size-0) var(--size-5));
-    font-size: var(--select-xl-font-size, var(--font-lg));
+    padding: var(--select-xl-padding, var(--size-0) var(--size-4));
+    font-size: var(--select-xl-font-size, var(--font-xl));
   }
 
   .xl\.select-xl .select__angle {
