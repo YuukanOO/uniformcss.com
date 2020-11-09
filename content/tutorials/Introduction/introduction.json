@@ -1,0 +1,8 @@
+{
+  "layout": "layouts/tutorials.njk",
+  "permalink": "tutorials/{{ title | slug }}/index.html",
+  "tags": [
+    "introduction",
+    "tutorial"
+  ]
+}

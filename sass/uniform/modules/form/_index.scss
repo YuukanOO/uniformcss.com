@@ -199,14 +199,14 @@ CUSTOM PROPERTIES
     height: var(--input-height, size(10));
     padding: var(--input-padding, size(0, 3));
     background: var(--input-bg, white);
-    border: var(--input-border, 1px solid fill(silver-500));
+    border: var(--input-border, 1px solid fill(silver-300));
     border-radius: var(--input-radius, radius(xs));
     box-shadow: var(--input-shadow, none);
     transition: var(--input-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform  100ms);
 
     // PSEUDOS
     &:hover {
-      border: var(--input-hover-border, 1px solid fill(silver-800));
+      border: var(--input-hover-border, 1px solid fill(silver-500));
       box-shadow: var(--input-hover-shadow, none);
     }
     &:focus {
