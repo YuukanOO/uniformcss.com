@@ -13,19 +13,19 @@ Uniform provides a range of tints and shades across a broad spectrum of colors. 
   <table class="table table-colors shadow-none radius-0 relative">
     <thead class="uppercase font-xs font-600 tracking-1 color-black">
       <tr>
-        <th class="sticky bg-white t-npx">
+        <th class="sticky bg-white t-0">
           Variant
         </th>
-        <th class="sticky bg-white t-npx">
+        <th class="sticky bg-white t-0">
           Hex Code
         </th>
-        <th class="sticky bg-white t-npx">
+        <th class="sticky bg-white t-0">
           Preview
         </th>
       </tr>
     </thead>
     <tbody class="font-sm">
-      <tr><td class="color-teal-700"><code>red-100</code></td><td><code class="color-gray-500">#feefef</code>code></td><td class="red-100"></td></tr>
+      <tr><td class="color-teal-700"><code>red-100</code></td><td><code class="color-gray-500">#feefef</code></td><td class="bg-red-100"></td></tr>
       <tr><td class="color-teal-700"><code>red-200</code></td><td><code class="color-gray-500">#fee0e0</code></td><td class="bg-red-200"></td></tr>
       <tr><td class="color-teal-700"><code>red-300</code></td><td><code class="color-gray-500">#fdbfbf</code></td><td class="bg-red-300"></td></tr>
       <tr><td class="color-teal-700"><code>red-400</code></td><td><code class="color-gray-500">#fb7f7f</code></td><td class="bg-red-400"></td></tr>
@@ -160,24 +160,28 @@ Uniform provides a range of tints and shades across a broad spectrum of colors. 
       <tr><td class="color-teal-700"><code>pink-700</code></td><td><code class="color-gray-500">#c11653</code></td><td class="bg-pink-700"></td></tr>
       <tr><td class="color-teal-700"><code>pink-800</code></td><td><code class="color-gray-500">#8a103b</code></td><td class="bg-pink-800"></td></tr>
       <tr><td class="color-teal-700"><code>pink-900</code></td><td><code class="color-gray-500">#530923</code></td><td class="bg-pink-900"></td></tr>
-      <tr><td class="color-teal-700"><code>silver-100</code></td><td><code class="color-gray-500">#f5f5f7</code></td><td class="bg-silver-100"></td></tr>
-      <tr><td class="color-teal-700"><code>silver-200</code></td><td><code class="color-gray-500">#eaebee</code></td><td class="bg-silver-200"></td></tr>
-      <tr><td class="color-teal-700"><code>silver-300</code></td><td><code class="color-gray-500">#e0e2e6</code></td><td class="bg-silver-300"></td></tr>
-      <tr><td class="color-teal-700"><code>silver-400</code></td><td><code class="color-gray-500">#d6d8de</code></td><td class="bg-silver-400"></td></tr>
-      <tr><td class="color-teal-700"><code>silver-500</code></td><td><code class="color-gray-500">#ccced6</code></td><td class="bg-silver-500"></td></tr>
-      <tr><td class="color-teal-700"><code>silver-600</code></td><td><code class="color-gray-500">#c1c4cd</code></td><td class="bg-silver-600"></td></tr>
-      <tr><td class="color-teal-700"><code>silver-700</code></td><td><code class="color-gray-500">#b7bac5</code></td><td class="bg-silver-700"></td></tr>
-      <tr><td class="color-teal-700"><code>silver-800</code></td><td><code class="color-gray-500">#adb1bd</code></td><td class="bg-silver-800"></td></tr>
-      <tr><td class="color-teal-700"><code>silver-900</code></td><td><code class="color-gray-500">#a2a7b4</code></td><td class="bg-silver-900"></td></tr>
-      <tr><td class="color-teal-700"><code>gray-100</code></td><td><code class="color-gray-500">#c6c8d0</code></td><td class="bg-gray-100"></td></tr>
-      <tr><td class="color-teal-700"><code>gray-200</code></td><td><code class="color-gray-500">#b0b3be</code></td><td class="bg-gray-200"></td></tr>
-      <tr><td class="color-teal-700"><code>gray-300</code></td><td><code class="color-gray-500">#999dab</code></td><td class="bg-gray-300"></td></tr>
-      <tr><td class="color-teal-700"><code>gray-400</code></td><td><code class="color-gray-500">#838899</code></td><td class="bg-gray-400"></td></tr>
-      <tr><td class="color-teal-700"><code>gray-500</code></td><td><code class="color-gray-500">#6e7386</code></td><td class="bg-gray-500"></td></tr>
-      <tr><td class="color-teal-700"><code>gray-600</code></td><td><code class="color-gray-500">#5c606f</code></td><td class="bg-gray-600"></td></tr>
-      <tr><td class="color-teal-700"><code>gray-700</code></td><td><code class="color-gray-500">#494d59</code></td><td class="bg-gray-700"></td></tr>
-      <tr><td class="color-teal-700"><code>gray-800</code></td><td><code class="color-gray-500">#373943</code></td><td class="bg-gray-800"></td></tr>
-      <tr><td class="color-teal-700"><code>gray-900</code></td><td><code class="color-gray-500">#25262d</code></td><td class="bg-gray-900"></td></tr>
+      <tr><td class="color-teal-700"><code>silver-100</code></td><td><code class="color-gray-500">#f6f7fa</code></td><td class="bg-silver-100"></td></tr>
+      <tr><td class="color-teal-700"><code>silver-200</code></td><td><code class="color-gray-500">#eeeff5</code></td><td class="bg-silver-200"></td></tr>
+      <tr><td class="color-teal-700"><code>silver-300</code></td><td><code class="color-gray-500">#e5e8f1</code></td><td class="bg-silver-300"></td></tr>
+      <tr><td class="color-teal-700"><code>silver-400</code></td><td><code class="color-gray-500">#dde0ec</code></td><td class="bg-silver-400"></td></tr>
+      <tr><td class="color-teal-700"><code>silver-500</code></td><td><code class="color-gray-500">#d4d8e7</code></td><td class="bg-silver-500"></td></tr>
+      <tr><td class="color-teal-700"><code>silver-600</code></td><td><code class="color-gray-500">#cbd0e2</code></td><td class="bg-silver-600"></td></tr>
+      <tr><td class="color-teal-700"><code>silver-700</code></td><td><code class="color-gray-500">#c3c8dd</code></td><td class="bg-silver-700"></td></tr>
+      <tr><td class="color-teal-700"><code>silver-800</code></td><td><code class="color-gray-500">#bac1d9</code></td><td class="bg-silver-800"></td></tr>
+      <tr><td class="color-teal-700"><code>silver-900</code></td><td><code class="color-gray-500">#b2b9d4</code></td><td class="bg-silver-900"></td></tr>
+      <tr><td class="color-teal-700"><code>gray-100</code></td><td><code class="color-gray-500">#b8bac3</code></td><td class="bg-gray-100"></td></tr>
+      <tr><td class="color-teal-700"><code>gray-200</code></td><td><code class="color-gray-500">#a3a6b2</code></td><td class="bg-gray-200"></td></tr>
+      <tr><td class="color-teal-700"><code>gray-300</code></td><td><code class="color-gray-500">#8f92a0</code></td><td class="bg-gray-300"></td></tr>
+      <tr><td class="color-teal-700"><code>gray-400</code></td><td><code class="color-gray-500">#7a7e8f</code></td><td class="bg-gray-400"></td></tr>
+      <tr><td class="color-teal-700"><code>gray-500</code></td><td><code class="color-gray-500">#686c7b</code></td><td class="bg-gray-500"></td></tr>
+      <tr><td class="color-teal-700"><code>gray-600</code></td><td><code class="color-gray-500">#575a67</code></td><td class="bg-gray-600"></td></tr>
+      <tr><td class="color-teal-700"><code>gray-700</code></td><td><code class="color-gray-500">#454852</code></td><td class="bg-gray-700"></td></tr>
+      <tr><td class="color-teal-700"><code>gray-800</code></td><td><code class="color-gray-500">#34363e</code></td><td class="bg-gray-800"></td></tr>
+      <tr><td class="color-teal-700"><code>gray-900</code></td><td><code class="color-gray-500">#232429</code></td><td class="bg-gray-900"></td></tr>
+      <tr><td class="color-teal-700">tint-02</code></td><td><code class="color-gray-500">rgba(255,255,255, .02)</code></td><td class="bg-tint-02"></td></tr>
+      <tr><td class="color-teal-700">tint-04</code></td><td><code class="color-gray-500">rgba(255,255,255, .04)</code></td><td class="bg-tint-04"></td></tr>
+      <tr><td class="color-teal-700">tint-06</code></td><td><code class="color-gray-500">rgba(255,255,255, .06)</code></td><td class="bg-tint-06"></td></tr>
+      <tr><td class="color-teal-700">tint-08</code></td><td><code class="color-gray-500">rgba(255,255,255, .08)</code></td><td class="bg-tint-08"></td></tr>
       <tr><td class="color-teal-700">tint-10</code></td><td><code class="color-gray-500">rgba(255,255,255, .1)</code></td><td class="bg-tint-10"></td></tr>
       <tr><td class="color-teal-700">tint-20</code></td><td><code class="color-gray-500">rgba(255,255,255, .2)</code></td><td class="bg-tint-20"></td></tr>
       <tr><td class="color-teal-700">tint-30</code></td><td><code class="color-gray-500">rgba(255,255,255, .3)</code></td><td class="bg-tint-30"></td></tr>
@@ -187,6 +191,10 @@ Uniform provides a range of tints and shades across a broad spectrum of colors. 
       <tr><td class="color-teal-700">tint-70</code></td><td><code class="color-gray-500">rgba(255,255,255, .7)</code></td><td class="bg-tint-70"></td></tr>
       <tr><td class="color-teal-700">tint-80</code></td><td><code class="color-gray-500">rgba(255,255,255, .8)</code></td><td class="bg-tint-80"></td></tr>
       <tr><td class="color-teal-700">tint-90</code></td><td><code class="color-gray-500">rgba(255,255,255, .9)</code></td><td class="bg-tint-90"></td></tr>
+      <tr><td class="color-teal-700">shade-02</code></td><td><code class="color-gray-500">rgba(0,0,0, .02)</code></td><td class="bg-shade-02"></td></tr>
+      <tr><td class="color-teal-700">shade-04</code></td><td><code class="color-gray-500">rgba(0,0,0, .04)</code></td><td class="bg-shade-04"></td></tr>
+      <tr><td class="color-teal-700">shade-06</code></td><td><code class="color-gray-500">rgba(0,0,0, .06)</code></td><td class="bg-shade-06"></td></tr>
+      <tr><td class="color-teal-700">shade-08</code></td><td><code class="color-gray-500">rgba(0,0,0, .08)</code></td><td class="bg-shade-08"></td></tr>
       <tr><td class="color-teal-700">shade-10</code></td><td><code class="color-gray-500">rgba(0,0,0, .1)</code></td><td class="bg-shade-10"></td></tr>
       <tr><td class="color-teal-700">shade-20</code></td><td><code class="color-gray-500">rgba(0,0,0, .2)</code></td><td class="bg-shade-20"></td></tr>
       <tr><td class="color-teal-700">shade-30</code></td><td><code class="color-gray-500">rgba(0,0,0, .3)</code></td><td class="bg-shade-30"></td></tr>

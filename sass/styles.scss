@@ -7,6 +7,10 @@
 	),
 	$color-pseudos: (
 		group-focus
+	),
+	$color-responsive: true,
+	$colors: (
+		primary: var(--red-500)
 	)
 );
 

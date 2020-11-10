@@ -58,7 +58,7 @@
     "description": "The `padding-bottom` property sets the bottom padding (space) of an element.",
     "responsive": true,
     "pseudos": [
-      "last"
+      "first, last"
     ],
     "classes": [
       {
@@ -75,7 +75,7 @@
     "description": "The `padding-left` property sets the left padding (space) of an element.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "first, last"
     ],
     "classes": [
       {
@@ -92,7 +92,7 @@
     "description": "The `padding-right` property sets the right padding (space) of an element.",
     "responsive": true,
     "pseudos": [
-      "last"
+      "first, last"
     ],
     "classes": [
       {
@@ -109,7 +109,7 @@
     "description": "The `padding-top` property sets the top padding (space) of an element.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "first, last"
     ],
     "classes": [
       {

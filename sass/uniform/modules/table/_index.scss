@@ -10,6 +10,7 @@ CUSTOM PROPERTIES
 
 --table-th-height
 --table-th-padding
+--table-th-bg
 
 --table-td-height
 --table-td-padding
@@ -168,6 +169,7 @@ CUSTOM PROPERTIES
       padding: var(--table-th-padding, size(4, 4));
       // Inset instead of border to allow for sticky headers to have border
       box-shadow: var(--table-th-border, inset 0px -1px 0 0 fill(silver-200));
+      background: var(--table-th-bg, fill(silver-100));
       white-space: nowrap;
       
       &:first-child {

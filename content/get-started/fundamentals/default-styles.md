@@ -25,7 +25,7 @@ By default, Uniform applies minimal resetting styles to flatten browser inconsis
 * {
   margin: 0;
   padding: 0;
-  border: 0 solid var(--default-border-color, fill(silver-200));
+  border: 0 solid var(--default-border-color, fill(silver-400));
 }
 
 /* Prevent iOS font size change */
@@ -92,6 +92,10 @@ If you prefer to rock your own reset or normalization, you can disable the inclu
 By default, Uniform applies very basic styling to common typographical elements such as `line-height` and `margin-bottom` properties for paragraph and heading elements.
 
 ```scss
+html {
+  background-color: var(--background-color, white);
+}
+
 h1,h2,h3,h4,h5,h6 {
   line-height: var(--heading-leading, leading(3));
   margin-bottom: var(--heading-margin, 0.5em);

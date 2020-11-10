@@ -145,6 +145,8 @@ $named-screens: name-screens($all-screens);
 // ============================================================
 
 $core-colors: (
+
+  // Primary Colors
   red-100: #feefef,
   red-200: #fee0e0,
   red-300: #fdbfbf,
@@ -154,6 +156,7 @@ $core-colors: (
   red-700: #ca2929,
   red-800: #901d1d,
   red-900: #561111,
+
   orange-100: #fff2ea,
   orange-200: #fee5d5,
   orange-300: #fecaaa,
@@ -163,6 +166,7 @@ $core-colors: (
   orange-700: #bd5313,
   orange-800: #873c0e,
   orange-900: #512408,
+
   brown-100: #f8efe7,
   brown-200: #f1ddcf,
   brown-300: #e2bca0,
@@ -172,6 +176,7 @@ $core-colors: (
   brown-700: #783e14,
   brown-800: #572c0e,
   brown-900: #341b08,
+
   yellow-100: #fffbf3,
   yellow-200: #fff3dc,
   yellow-300: #ffdfa2,
@@ -181,6 +186,7 @@ $core-colors: (
   yellow-700: #ac7408,
   yellow-800: #845907,
   yellow-900: #503604,
+
   lime-100: #f4fae4,
   lime-200: #eaf5c8,
   lime-300: #d4eb91,
@@ -190,6 +196,7 @@ $core-colors: (
   lime-700: #618200,
   lime-800: #455d00,
   lime-900: #293800,
+
   green-100: #e4faed,
   green-200: #c8f5da,
   green-300: #90ebb4,
@@ -199,6 +206,7 @@ $core-colors: (
   green-700: #007f33,
   green-800: #005b25,
   green-900: #003716,
+
   teal-100: #e4fbf6,
   teal-200: #c9f7ec,
   teal-300: #92f0d8,
@@ -208,6 +216,7 @@ $core-colors: (
   teal-700: #008b6a,
   teal-800: #00644c,
   teal-900: #003c2d,
+
   cyan-100: #e5fbfd,
   cyan-200: #caf8fa,
   cyan-300: #95f0f6,
@@ -217,6 +226,7 @@ $core-colors: (
   cyan-700: #00929b,
   cyan-800: #00696f,
   cyan-900: #003f43,
+
   blue-100: #e6f4ff,
   blue-200: #cce9ff,
   blue-300: #99d3ff,
@@ -226,6 +236,7 @@ $core-colors: (
   blue-700: #0066b3,
   blue-800: #004980,
   blue-900: #002c4d,
+
   indigo-100: #e6eeff,
   indigo-200: #ccddff,
   indigo-300: #99bcff,
@@ -235,6 +246,7 @@ $core-colors: (
   indigo-700: #003db3,
   indigo-800: #002c80,
   indigo-900: #001a4d,
+
   blueberry-100: #e8eaf6,
   blueberry-200: #d1d6ed,
   blueberry-300: #a2aedb,
@@ -244,6 +256,7 @@ $core-colors: (
   blueberry-700: #1a2b6a,
   blueberry-800: #131e4c,
   blueberry-900: #0b132e,
+
   violet-100: #efe6ff,
   violet-200: #dfccff,
   violet-300: #c099ff,
@@ -253,6 +266,7 @@ $core-colors: (
   violet-700: #4400b3,
   violet-800: #310080,
   violet-900: #1d004d,
+
   purple-100: #f8f1fd,
   purple-200: #ead7f9,
   purple-300: #c892f0,
@@ -262,6 +276,7 @@ $core-colors: (
   purple-700: #4b0081,
   purple-800: #3a0064,
   purple-900: #23003c,
+
   magenta-100: #ffe6ff,
   magenta-200: #feccff,
   magenta-300: #fd99ff,
@@ -271,6 +286,7 @@ $core-colors: (
   magenta-700: #af00b3,
   magenta-800: #7d0080,
   magenta-900: #4b004d,
+
   pink-100: #ffebf2,
   pink-200: #ffd6e5,
   pink-300: #ffadcb,
@@ -280,24 +296,27 @@ $core-colors: (
   pink-700: #c11653,
   pink-800: #8a103b,
   pink-900: #530923,
-  silver-100: #f5f5f7,
-  silver-200: #eaebee,
-  silver-300: #e0e2e6,
-  silver-400: #d6d8de,
-  silver-500: #ccced6,
-  silver-600: #c1c4cd,
-  silver-700: #b7bac5,
-  silver-800: #adb1bd,
-  silver-900: #a2a7b4,
-  gray-100: #c6c8d0,
-  gray-200: #b0b3be,
-  gray-300: #999dab,
-  gray-400: #838899,
-  gray-500: #6e7386,
-  gray-600: #5c606f,
-  gray-700: #494d59,
-  gray-800: #373943,
-  gray-900: #25262d,
+
+  silver-100: #f6f7fa,
+  silver-200: #eeeff5,
+  silver-300: #e5e8f1,
+  silver-400: #dde0ec,
+  silver-500: #d4d8e7,
+  silver-600: #cbd0e2,
+  silver-700: #c3c8dd,
+  silver-800: #bac1d9,
+  silver-900: #b2b9d4,
+
+  gray-100: #b8bac3,
+  gray-200: #a3a6b2,
+  gray-300: #8f92a0,
+  gray-400: #7a7e8f,
+  gray-500: #686c7b,
+  gray-600: #575a67,
+  gray-700: #454852,
+  gray-800: #34363e,
+  gray-900: #232429,
+
   tint-02: rgba(255,255,255, .02),
   tint-04: rgba(255,255,255, .04),
   tint-06: rgba(255,255,255, .06),
@@ -311,6 +330,7 @@ $core-colors: (
   tint-70: rgba(255,255,255, .7),
   tint-80: rgba(255,255,255, .8),
   tint-90: rgba(255,255,255, .9),
+
   shade-02: rgba(0,0,0, .02),
   shade-04: rgba(0,0,0, .04),
   shade-06: rgba(0,0,0, .06),
@@ -324,9 +344,62 @@ $core-colors: (
   shade-70: rgba(0,0,0, .7),
   shade-80: rgba(0,0,0, .8),
   shade-90: rgba(0,0,0, .9),
+
   black: black,
   white: white,
+  
   transparent: transparent,
+
+  // Extracted Colors
+  agray-100: #b8bac3,
+  agray-200: #a3a6b2,
+  agray-300: #8f92a0,
+  agray-400: #7a7e8f,
+  agray-500: #686c7b,
+  agray-600: #575a67,
+  agray-700: #454852,
+  agray-800: #34363e,
+  agray-900: #232429,
+  
+  bgray-100: #b8bac3,
+  bgray-200: #a3a6b2,
+  bgray-300: #8f92a0,
+  bgray-400: #7a7e8f,
+  bgray-500: #686c7b,
+  bgray-600: #575a67,
+  bgray-700: #454852,
+  bgray-800: #34363e,
+  bgray-900: #232429,
+
+  cgray-100: #b8bac3,
+  cgray-200: #a3a6b2,
+  cgray-300: #8f92a0,
+  cgray-400: #7a7e8f,
+  cgray-500: #686c7b,
+  cgray-600: #575a67,
+  cgray-700: #454852,
+  cgray-800: #34363e,
+  cgray-900: #232429,
+
+  dgray-100: #b8bac3,
+  dgray-200: #a3a6b2,
+  dgray-300: #8f92a0,
+  dgray-400: #7a7e8f,
+  dgray-500: #686c7b,
+  dgray-600: #575a67,
+  dgray-700: #454852,
+  dgray-800: #34363e,
+  dgray-900: #232429,
+
+  egray-100: #b8bac3,
+  egray-200: #a3a6b2,
+  egray-300: #8f92a0,
+  egray-400: #7a7e8f,
+  egray-500: #686c7b,
+  egray-600: #575a67,
+  egray-700: #454852,
+  egray-800: #34363e,
+  egray-900: #232429,
 ) !default;
 
 $colors: () !default;

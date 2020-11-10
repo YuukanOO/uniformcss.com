@@ -74,7 +74,7 @@
     "description": "The `margin-bottom` property sets the bottom margin of an element.",
     "responsive": true,
     "pseudos": [
-      "last"
+      "first, last"
     ],
     "classes": [
       {
@@ -133,7 +133,7 @@
     "description": "The `margin-left` property sets the left margin of an element.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "first, last"
     ],
     "classes": [
       {
@@ -192,7 +192,7 @@
     "description": "The `margin-right` property sets the right margin of an element.",
     "responsive": true,
     "pseudos": [
-      "last"
+      "first, last"
     ],
     "classes": [
       {
@@ -251,7 +251,7 @@
     "description": "The `margin-top` property sets the top margin of an element.",
     "responsive": true,
     "pseudos": [
-      "none"
+      "first, last"
     ],
     "classes": [
       {

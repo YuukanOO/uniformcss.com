@@ -619,39 +619,39 @@
     "variants": [
       {
         "name": "silver-100", 
-        "value": "#f5f5f7"
+        "value": "#f6f7fa"
       },
       {
         "name": "silver-200", 
-        "value": "#eaebee"
+        "value": "#eeeff5"
       },
       {
         "name": "silver-300", 
-        "value": "#e0e2e6"
+        "value": "#e5e8f1"
       },
       {
         "name": "silver-400", 
-        "value": "#d6d8de"
+        "value": "#dde0ec"
       },
       {
         "name": "silver-500", 
-        "value": "#ccced6"
+        "value": "#d4d8e7"
       },
       {
         "name": "silver-600", 
-        "value": "#c1c4cd"
+        "value": "#cbd0e2"
       },
       {
         "name": "silver-700", 
-        "value": "#b7bac5"
+        "value": " #c3c8dd"
       },
       {
         "name": "silver-800", 
-        "value": "#adb1bd"
+        "value": "#bac1d9"
       },
       {
         "name": "silver-900", 
-        "value": "#a2a7b4"
+        "value": "#b2b9d4"
       }
     ]
   },
@@ -660,39 +660,39 @@
     "variants": [
       {
         "name": "gray-100", 
-        "value": "#c6c8d0"
+        "value": "#b8bac3"
       },
       {
         "name": "gray-200", 
-        "value": "#b0b3be"
+        "value": "#a3a6b2"
       },
       {
         "name": "gray-300", 
-        "value": "#999dab"
+        "value": "#8f92a0"
       },
       {
         "name": "gray-400", 
-        "value": "#838899"
+        "value": "#7a7e8f"
       },
       {
         "name": "gray-500", 
-        "value": "#6e7386"
+        "value": "#686c7b"
       },
       {
         "name": "gray-600", 
-        "value": "#5c606f"
+        "value": "#575a67"
       },
       {
         "name": "gray-700", 
-        "value": "#494d59"
+        "value": "#454852"
       },
       {
         "name": "gray-800", 
-        "value": "#373943"
+        "value": "#34363e"
       },
       {
         "name": "gray-900", 
-        "value": "#25262d"
+        "value": "#232429"
       }
     ]
   }
