@@ -232,7 +232,6 @@
 $config: () !default;
 $config: map.deep-merge($default-config, $config);
 
-@debug $config;
 // CORE SETTINGS
 // ============================================================
 
@@ -269,7 +268,7 @@ $include-form-module: map.get($config, include-form-module);
     }
   }
 }
-
+@debug $config;
 
 @include constructor($config);
 // @debug $all-properties;
