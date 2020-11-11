@@ -1,4 +1,5 @@
 @use "uniform/core" as *;
+@use "uniform/core/properties" as *;
 @use "sass:map";
 @use "sass:list";
 
@@ -24,11 +25,24 @@ $core-pseudos: () !default;
 $pseudos: () !default;
 $final-pseudos: list.join($core-pseudos, $pseudos) !default;
 
-@include constructor(
-  $keyword,
-  $responsive,
-  $responsive-pseudos,
-  $properties,
-  $final-variants,
-  $final-pseudos
+// @include constructor(
+//   $keyword,
+//   $responsive,
+//   $responsive-pseudos,
+//   $properties,
+//   $final-variants,
+//   $final-pseudos
+// );
+
+$config: (
+  align-items: (
+    keyword: $keyword,
+    responsive: $responsive,
+    responsive-pseudos: $responsive-pseudos,
+    properties: $properties,
+    variants: $final-variants,
+    pseudos: $final-pseudos
+  )
 );
+
+$all-properties: map.deep-merge($all-properties, $config);
