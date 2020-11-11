@@ -26,18 +26,9 @@ $config: (
     responsive: $responsive,
     responsive-pseudos: $responsive-pseudos,
     properties: $properties,
-    variants: $variants,
-    pseudos: $pseudos
+    default-variants: $variants,
+    default-pseudos: $pseudos
   )
 );
 
-$default-config: map.merge($default-config, $config);
-
-// (
-//   "weights": (
-//     "lightest": 100,
-//     "light": 300,
-//     "medium": 500,
-//     "bold": 700
-//   )
-// )
+$default-config: map.deep-merge($default-config, $config);

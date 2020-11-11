@@ -11,13 +11,16 @@
 	// $color-responsive: true,
 	$config: (
 		align-content: (
-			keyword: helloworld,
-			variants: (
-				stretch: redredred
+			keyword: align-this,
+			custom-variants: (
+				hello: hello
 			)
 		)
 	)
 );
+
+
+
 
 // @use "_roots" as *;
 // @use "vendors/prism" as *;

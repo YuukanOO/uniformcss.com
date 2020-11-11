@@ -16,7 +16,7 @@
 
 
 // CORE - ALIGNMENT (6)
-@forward "properties/alignment/core-align-content" as align-content-*;
+@use "properties/alignment/core-align-content" as *;
 // @forward "properties/alignment/core-align-items" as align-items-*;
 // @forward "properties/alignment/core-align-self" as align-self-*;
 // @forward "properties/alignment/core-justify-content" as justify-content-*;
@@ -229,42 +229,47 @@
 
 ;
 
-$config: (
+$config: () !default;
+$config: map.deep-merge($default-config, $config);
 
-);
+@debug $config;
+// CORE SETTINGS
+// ============================================================
 
-@mixin constructor($all-properties) {
-  @each $property, $property-config in $all-properties {
-    $keyword: map.get($property-config, keyword);
-    $responsive: map.get($property-config, responsive);
-    $responsive-pseudos: map.get($property-config, responsive-pseudos);
-    $properties: map.get($property-config, properties);
-    $variants: map.get($property-config, variants);
-    $pseudos: map.get($property-config, pseudos);
+$important: map.get($config, important);
+$prefix: map.get($config, prefix);
+$delimiter: map.get($config, delimiter);
+$child-delimiter: map.get($config, child-delimiter);
+$pseudo-delimiter: map.get($config, pseudo-delimiter);
+$screen-delimiter: map.get($config, screen-delimiter);
+$variablize: map.get($config, variablize);
+$headless: map.get($config, headless);
+$root: true map.get($config, root);
+$debugger: map.get($config, debugger);
 
-    // @debug $keyword;
-    // @debug $responsive;
-    // @debug $responsive-pseudos;
-    // @debug $properties;
-    // @debug $variants;
-    // @debug $pseudos;
+// INCLUDE SETTINGS
+// ============================================================
 
-    // @each $config, $config-value in $property-config {
-    //   @debug $config;
-    // }
-    // .#{$property}
-    //   @each $property in $properties {
-    //     #{$property}: $variant-value if($important == true, !important, null);
-    //   }
-    // }
+$include-reset-styles: map.get($config, include-reset-styles);
+$include-starter-styles: map.get($config, include-starter-styles);
+$include-wrapper-module: map.get($config, include-wrapper-module);
+$include-table-module: map.get($config, include-table-module);
+$include-button-module: map.get($config, include-button-module);
+$include-form-module: map.get($config, include-form-module);
+
+// CONSTRUCTOR
+// ============================================================
+
+@mixin constructor($config) {
+  @if ($headless == false) {
+    @if ($debugger == true) {
+      
+    } @else {
+      
+    }
   }
 }
 
 
-$config: () !default;
-
-
-$final-config: map.deep-merge($default-config, $config);
-@debug $final-config;
-// @include constructor($all-properties);
+@include constructor($config);
 // @debug $all-properties;
