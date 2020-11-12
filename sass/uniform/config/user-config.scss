@@ -1,10 +1,5 @@
 @use "sass:map";
 
-// USER SETTINGS
-// ============================================================
+$user-config: (
 
-$config: (
-  
 ) !default;
-
-$user-config: $config;

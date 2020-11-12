@@ -1,0 +1,27 @@
+@use "sass:map";
+
+// CORE MAP
+// ============================================================
+
+$config: (
+  colors: (
+    pink-100: blue
+  )
+) !default;
+
+// PRIVATE FUNCTIONS
+// ============================================================
+
+// multiple map merge function
+@function merge($maps...) {
+  $collection: ();
+  @each $map in $maps {
+    $collection: map.merge($collection, $map);
+  }
+  @return $collection;
+}
+
+@function colors() {
+  $result: map.get($config, colors);
+  @return $result;
+}

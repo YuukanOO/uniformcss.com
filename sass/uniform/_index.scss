@@ -1,7 +1,7 @@
 /*! UniformCSS v1.0.0 | MIT License | github.com/UniformCSS/uniformcss */
 @use "sass:map";
 @use "sass:list";
-@forward "config/user-config";
+
 
 // CORE - ALIGNMENT (6)
 // @use "utilities/alignment/core-align-content";
@@ -220,5 +220,7 @@
 // CONSTRUCTOR
 // ============================================================
 
+@forward "config";
 @use "core";
+
 @include core.constructor(core.$config);

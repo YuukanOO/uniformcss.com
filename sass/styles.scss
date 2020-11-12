@@ -9,30 +9,28 @@
 	// 	group-focus
 	// ),
 	// $color-responsive: true,
-	$config: (
+	$user-config: (
+		colors: (
+			red-100: red
+		),
 		utilities: (
 			align-content: (
-				keyword: hello-align,
-				variants: (
-					hello: hello
-				),
-				pseudos: (
-					odd
-				)
+				keyword: hello-AC,
+				responsive: false
 			),
-			custom-property: (
-				keyword: custom,
-				responsive: true,
-				responsive-pseudos: true,
-				properties: custom-property,
-				variants: (
-					sm: 10px,
-					md: 20px
-				),
-				pseudos: (
-					last
-				)
-			)
+			// custom-property: (
+			// 	keyword: custom,
+			// 	responsive: true,
+			// 	responsive-pseudos: true,
+			// 	properties: custom-property,
+			// 	default-variants: (),
+			// 	default-pseudos: (),
+			// 	variants: (
+			// 		sm: 10px,
+			// 		md: 20px
+			// 	),
+			// 	pseudos: null
+			// )
 		)
 	)
 );

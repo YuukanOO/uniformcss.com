@@ -1,41 +1,6 @@
 @use "sass:map";
 @use "sass:list";
-@use "uniform/config";
-@use "uniform/config/user-config";
-
-
-// CONFIG COMPILER
-// ============================================================
-
-$config: map.deep-merge(config.$default-config, user-config.$user-config);
-
-$important: map.get($config, important);
-$prefix: map.get($config, prefix);
-$delimiter: map.get($config, delimiter);
-$child-delimiter: map.get($config, child-delimiter);
-$pseudo-delimiter: map.get($config, pseudo-delimiter);
-$screen-delimiter: map.get($config, screen-delimiter);
-$variablize: map.get($config, variablize);
-$headless: map.get($config, headless);
-$root: map.get($config, root);
-$debugger: map.get($config, debugger);
-
-$include-reset-styles: map.get($config, include-reset-styles);
-$include-starter-styles: map.get($config, include-starter-styles);
-$include-wrapper-module: map.get($config, include-wrapper-module);
-$include-table-module: map.get($config, include-table-module);
-$include-button-module: map.get($config, include-button-module);
-$include-form-module: map.get($config, include-form-module);
-
-$utilities: map.get($config, utilities);
-$excludes: map.get($config, excludes);
-
-$all-pseudos: map.get($config, pseudos);
-$all-screens: map.get($config, screens);
-
-$colors: map.get($config, colors);
-$gradients: map.get($config, gradients);
-
+@use "uniform/config/compiled";
 
 // PRIVATE FUNCTIONS
 // ============================================================
@@ -102,98 +67,98 @@ $gradients: map.get($config, gradients);
 // ============================================================
 
 
-$var-colors: variablize-map($colors, '');
-$var-gradients: variablize-map($gradients, '');
+// $var-colors: variablize-map($colors, '');
+// $var-gradients: variablize-map($gradients, '');
 
-$fills: merge($colors, $gradients) !default;
-$var-fills: variablize-map($fills, '');
+// $fills: merge($colors, $gradients) !default;
+// $var-fills: variablize-map($fills, '');
 
-@function color($color) {
-  @if (map.get($colors, $color)) {
-    $result: ();
-    @if ($variablize == true) {
-      $result: map.get($var-colors, $color);
-    } @else {
-      $result: map.get($colors, $color);
-    }
-    @return $result;
-  } @else {
-    @if ($headless == true) {
-      $result: var(--#{$color});
-      @return $result;
-    } @else {
-      @error "[#{$color}] does not exist";
-    }
-  }
-}
+// @function color($color) {
+//   @if (map.get($colors, $color)) {
+//     $result: ();
+//     @if ($variablize == true) {
+//       $result: map.get($var-colors, $color);
+//     } @else {
+//       $result: map.get($colors, $color);
+//     }
+//     @return $result;
+//   } @else {
+//     @if ($headless == true) {
+//       $result: var(--#{$color});
+//       @return $result;
+//     } @else {
+//       @error "[#{$color}] does not exist";
+//     }
+//   }
+// }
 
-@function colors() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-colors;
-  } @else {
-    $result: $colors;
-  }
-  @return $result;
-}
+// @function colors() {
+//   $result: ();
+//   @if ($variablize == true) {
+//     $result: $var-colors;
+//   } @else {
+//     $result: $colors;
+//   }
+//   @return $result;
+// }
 
-@function gradient($gradient) {
-  @if (map.get($gradients, $gradient)) {
-    $result: ();
-    @if ($variablize == true) {
-      $result: map.get($var-gradients, $gradient);
-    } @else {
-      $result: map.get($gradients, $gradient);
-    }
-    @return $result;
-  } @else {
-    @if ($headless == true) {
-      $result: var(--#{$gradient});
-      @return $result;
-    } @else {
-      @error "[#{$gradient}] does not exist";
-    }
-  }
-}
+// @function gradient($gradient) {
+//   @if (map.get($gradients, $gradient)) {
+//     $result: ();
+//     @if ($variablize == true) {
+//       $result: map.get($var-gradients, $gradient);
+//     } @else {
+//       $result: map.get($gradients, $gradient);
+//     }
+//     @return $result;
+//   } @else {
+//     @if ($headless == true) {
+//       $result: var(--#{$gradient});
+//       @return $result;
+//     } @else {
+//       @error "[#{$gradient}] does not exist";
+//     }
+//   }
+// }
 
-@function gradients() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-gradients;
-  } @else {
-    $result: $gradients;
-  }
-  @return $result;
-}
+// @function gradients() {
+//   $result: ();
+//   @if ($variablize == true) {
+//     $result: $var-gradients;
+//   } @else {
+//     $result: $gradients;
+//   }
+//   @return $result;
+// }
 
-@function fill($fill) {
-  @if (map.get($fills, $fill)) {
-    $result: ();
-    @if ($variablize == true) {
-      $result: map.get($var-fills, $fill);
-    } @else {
-      $result: map.get($fills, $fill);
-    }
-    @return $result;
-  } @else {
-    @if ($headless == true) {
-      $result: var(--#{$fill});
-      @return $result;
-    } @else {
-      @error "[#{$fill}] does not exist";
-    }
-  }
-}
+// @function fill($fill) {
+//   @if (map.get($fills, $fill)) {
+//     $result: ();
+//     @if ($variablize == true) {
+//       $result: map.get($var-fills, $fill);
+//     } @else {
+//       $result: map.get($fills, $fill);
+//     }
+//     @return $result;
+//   } @else {
+//     @if ($headless == true) {
+//       $result: var(--#{$fill});
+//       @return $result;
+//     } @else {
+//       @error "[#{$fill}] does not exist";
+//     }
+//   }
+// }
 
-@function fills() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-fills;
-  } @else {
-    $result: $fills;
-  }
-  @return $result;
-}
+// @function fills() {
+//   $result: ();
+//   @if ($variablize == true) {
+//     $result: $var-fills;
+//   } @else {
+//     $result: $fills;
+//   }
+//   @return $result;
+// }
 
 
 // CORE PSEUDOS
@@ -527,7 +492,42 @@ $var-fills: variablize-map($fills, '');
 //   @return $result;
 // }
 
+
+
+
+// CONFIG COMPILER
+// ============================================================
+
+$config: compiled.$config;
+
 @mixin constructor($config) {
+
+  $important: map.get($config, important);
+  $prefix: map.get($config, prefix);
+  $delimiter: map.get($config, delimiter);
+  $child-delimiter: map.get($config, child-delimiter);
+  $pseudo-delimiter: map.get($config, pseudo-delimiter);
+  $screen-delimiter: map.get($config, screen-delimiter);
+  $variablize: map.get($config, variablize);
+  $headless: map.get($config, headless);
+  $root: map.get($config, root);
+  $debugger: map.get($config, debugger);
+
+  $include-reset-styles: map.get($config, include-reset-styles);
+  $include-starter-styles: map.get($config, include-starter-styles);
+  $include-wrapper-module: map.get($config, include-wrapper-module);
+  $include-table-module: map.get($config, include-table-module);
+  $include-button-module: map.get($config, include-button-module);
+  $include-form-module: map.get($config, include-form-module);
+
+  $utilities: map.get($config, utilities);
+  $excludes: map.get($config, excludes);
+
+  $all-pseudos: map.get($config, pseudos);
+  $all-screens: map.get($config, screens);
+
+  $colors: map.get($config, colors);
+  $gradients: map.get($config, gradients);
 
   @if ($headless == false) {
     @if ($debugger == true) {

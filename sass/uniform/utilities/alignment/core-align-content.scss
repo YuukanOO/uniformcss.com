@@ -1,4 +1,4 @@
-@use "uniform/config" as *;
+@use "uniform/config/compiled";
 @use "sass:map";
 
 $name: align-content;
@@ -36,4 +36,5 @@ $config: (
   )
 );
 
-$default-config: map.deep-merge($default-config, $config);
+compiled.$config: map.deep-merge(compiled.$config, $config);
+
