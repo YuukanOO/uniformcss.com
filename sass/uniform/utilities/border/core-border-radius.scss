@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: radius;
 $responsive: true;
 $responsive-pseudos: false;
@@ -15,6 +16,8 @@ $variants: (
 		)
 	)
 );
+
+$pseudos();
 
 $config: (
   utilities: (

@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: delay;
 $responsive: false;
 $responsive-pseudos: false;
@@ -19,6 +20,8 @@ $variants: (
 	900: 900ms,
 	1000: 1000ms,
 );
+
+$pseudos();
 
 $config: (
   utilities: (

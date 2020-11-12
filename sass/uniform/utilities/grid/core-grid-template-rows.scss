@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: grid-rows;
 $responsive: true;
 $responsive-pseudos: false;
@@ -15,6 +16,8 @@ $variants: (
   4: repeat(4, minmax(0, 1fr)),
   5: repeat(5, minmax(0, 1fr)),
 );
+
+$pseudos();
 
 $config: (
   utilities: (

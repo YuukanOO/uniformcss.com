@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: grid-flow;
 $responsive: true;
 $responsive-pseudos: false;
@@ -13,6 +14,8 @@ $variants: (
   row-dense: row dense,
   col-dense: column dense
 );
+
+$pseudos();
 
 $config: (
   utilities: (

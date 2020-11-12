@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: flex-grow;
 $responsive: true;
 $responsive-pseudos: false;
@@ -11,6 +12,8 @@ $variants: (
   1: 1,
   0: 0
 );
+
+$pseudos();
 
 $config: (
   utilities: (

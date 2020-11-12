@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: tracking;
 $responsive: false;
 $responsive-pseudos: false;
@@ -8,6 +9,8 @@ $responsive-pseudos: false;
 $properties: (letter-spacing);
 
 $variants: (trackings());
+
+$pseudos();
 
 $config: (
   utilities: (

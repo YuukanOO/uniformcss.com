@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: background-attachment;
 $keyword: bg;
 $responsive: true;
 $responsive-pseudos: false;
@@ -12,6 +13,8 @@ $variants: (
   fixed: fixed,
   local: local
 );
+
+$pseudos: ();
 
 $config: (
   utilities: (

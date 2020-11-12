@@ -1,12 +1,11 @@
 {
 	"name": "uniformcss",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Fully configurable, drag-and-drop utility-first CSS framework built completly in Sass.",
 	"main": "styles.sass",
 	"scripts": {
 		"uniform:compile": "sass --load-path=./ --no-source-map styles.scss ../assets/css/styles.css",
-		"uniform:dev": "npm run uniform:compile",
-		"uniform:watch": "onchange --await-write-finish 100 --initial '**/*.scss' -- npm run uniform:dev",
+		"uniform:watch": "sass --load-path=./ --no-source-map --watch styles.scss ../assets/css/styles.css",
 		"uniform:autoprefix": "postcss --no-map --use autoprefixer --replace ../assets/css/styles.css",
 		"uniform:groupmedia": "group-css-media-queries ../assets/css/styles.css ../assets/css/styles.css",
 		"uniform:cleancss": "cleancss -O2 ../assets/css/styles.css --output ../assets/css/styles.css",
@@ -27,12 +26,11 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"autoprefixer": "^9.7.5",
+		"sass": "^1.29.0",
+		"postcss-cli": "^7.1.2",
+		"autoprefixer": "^9.8.6",
 		"clean-css-cli": "^4.3.0",
-		"onchange": "^6.1.0",
-		"postcss-cli": "^7.1.0",
-		"group-css-media-queries": "^1.4.1",
-		"sass": "^1.26.3"
+		
 	},
 	"browserslist": [
 		"last 2 version",

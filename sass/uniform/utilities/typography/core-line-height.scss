@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: leading;
 $responsive: true;
 $responsive-pseudos: false;
@@ -8,6 +9,8 @@ $responsive-pseudos: false;
 $properties: (line-height);
 
 $variants: (leadings());
+
+$pseudos();
 
 $config: (
   utilities: (

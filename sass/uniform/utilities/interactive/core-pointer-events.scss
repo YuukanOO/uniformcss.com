@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: pointer-events;
 $responsive: false;
 $responsive-pseudos: false;
@@ -11,6 +12,8 @@ $variants: (
   none: none,
   auto: auto
 );
+
+$pseudos();
 
 $config: (
   utilities: (

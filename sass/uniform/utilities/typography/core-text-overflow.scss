@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: exempt;
 $responsive: false;
 $responsive-pseudos: false;
@@ -10,6 +11,8 @@ $properties: (text-overflow);
 $variants: (
   ellipsis: ellipsis
 );
+
+$pseudos();
 
 $config: (
   utilities: (

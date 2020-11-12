@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: background-repeat;
 $keyword: bg;
 $responsive: false;
 $responsive-pseudos: false;
@@ -15,6 +16,8 @@ $variants: (
   space: space,
   round: round
 );
+
+$pseudos();
 
 $config: (
   utilities: (

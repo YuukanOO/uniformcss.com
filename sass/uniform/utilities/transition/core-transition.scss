@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: transition;
 $responsive: false;
 $responsive-pseudos: false;
@@ -99,6 +100,8 @@ $variants: (
 		transform 900ms
 	),
 );
+
+$pseudos();
 
 $config: (
   utilities: (

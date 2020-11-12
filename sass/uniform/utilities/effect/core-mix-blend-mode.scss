@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: blend;
 $responsive: false;
 $responsive-pseudos: false;
@@ -25,6 +26,8 @@ $variants: (
 	color: color,
 	luminosity: luminosity,
 );
+
+$pseudos();
 
 $config: (
   utilities: (

@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: px;
 $responsive: true;
 $responsive-pseudos: false;
@@ -12,6 +13,8 @@ $variants: (
 		positive-sizes()
 	)
 );
+
+$pseudos();
 
 $config: (
   utilities: (

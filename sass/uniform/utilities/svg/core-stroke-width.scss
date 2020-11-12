@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: stroke;
 $responsive: false;
 $responsive-pseudos: false;
@@ -20,6 +21,8 @@ $variants: (
   9: 9,
   10: 10,
 );
+
+$pseudos();
 
 $config: (
   utilities: (

@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: overflow;
 $responsive: true;
 $responsive-pseudos: false;
@@ -13,6 +14,8 @@ $variants: (
   visible: visible,
   scroll: scroll
 );
+
+$pseudos();
 
 $config: (
   utilities: (

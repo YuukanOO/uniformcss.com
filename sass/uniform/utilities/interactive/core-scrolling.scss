@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: scrolling;
 $responsive: false;
 $responsive-pseudos: false;
@@ -11,6 +12,8 @@ $variants: (
   auto: auto,
   touch: touch
 );
+
+$pseudos();
 
 $config: (
   utilities: (

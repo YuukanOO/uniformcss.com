@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: 
 $keyword: row-start;
 $responsive: true;
 $responsive-pseudos: false;
@@ -16,6 +17,8 @@ $variants: (
   5: 5,
   6: 6,
 );
+
+$pseudos();
 
 $config: (
   utilities: (
