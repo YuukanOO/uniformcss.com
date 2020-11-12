@@ -1,0 +1,39 @@
+@use "uniform/config" as *;
+@use "sass:map";
+@use "sass:list";
+
+$keyword: align-content;
+$responsive: true;
+$responsive-pseudos: false;
+
+$properties: (align-content);
+
+$variants: (
+  stretch: stretch,
+  center: center,
+  start: flex-start,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+);
+
+$pseudos: ();
+
+$map: (
+  utilities: (
+    align-content: (
+      keyword: $keyword,
+      responsive: $responsive,
+      responsive-pseudos: $responsive-pseudos,
+      properties: $properties,
+      default-variants: (
+        $variants
+      ),
+      default-pseudos: (
+        $pseudos
+      )
+    )
+  )
+);
+
+$default-settings: map.deep-merge($default-settings, $map);

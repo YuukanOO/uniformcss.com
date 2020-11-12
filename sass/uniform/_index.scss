@@ -1,274 +1,1031 @@
-/*! UniformCSS v0.1.0 | MIT License | github.com/UniformCSS/uniformcss */
+/*! UniformCSS v1.0.0 | MIT License | github.com/UniformCSS/uniformcss */
 @use "sass:map";
-@use "uniform/config" as *;
-@forward "core";
-
-// DEFAULTS (2)
-@use "defaults/reset" as *;
-@use "defaults/starter" as *;
-
-
-// MODULE (4)
-@use "modules/button" as *;
-@use "modules/form" as *;
-@use "modules/table" as *;
-@use "modules/wrapper" as *;
-
+@use "sass:list";
+@forward "config/user-settings";
 
 // CORE - ALIGNMENT (6)
-@use "properties/alignment/core-align-content" as *;
-// @forward "properties/alignment/core-align-items" as align-items-*;
-// @forward "properties/alignment/core-align-self" as align-self-*;
-// @forward "properties/alignment/core-justify-content" as justify-content-*;
-// @forward "properties/alignment/core-text-align" as text-align-*;
-// @forward "properties/alignment/core-vertical-align" as vertical-align-*;
+@use "utilities/alignment/core-align-content";
+@use "utilities/alignment/core-align-items";
+// @use "utilities/alignment/core-align-self";
+// @use "utilities/alignment/core-justify-content";
+// @use "utilities/alignment/core-text-align";
+// @use "utilities/alignment/core-vertical-align";
 
 
 // // CORE - APPEARANCE (6)
-// @forward "properties/appearance/core-display" as display-*;
-// @forward "properties/appearance/core-opacity" as opacity-*;
-// @forward "properties/appearance/core-outline" as outline-*;
-// @forward "properties/appearance/core-visibility" as visibility-*;
-// @forward "properties/appearance/extension-appearance" as apperance-*;
-// @forward "properties/appearance/extension-font-smooth" as font-smooth-*;
+// @use "utilities/appearance/core-display";
+// @use "utilities/appearance/core-opacity";
+// @use "utilities/appearance/core-outline";
+// @use "utilities/appearance/core-visibility";
+// @use "utilities/appearance/extension-appearance";
+// @use "utilities/appearance/extension-font-smooth";
 
 
 // // CORE - BACKGROUND (7)
-// @forward "properties/background/core-background" as background-*;
-// @forward "properties/background/core-background-attachment" as background-attachment-*;
-// @forward "properties/background/core-background-clip" as background-clip-*;
-// @forward "properties/background/core-background-color" as background-color-*;
-// @forward "properties/background/core-background-position" as background-position-*;
-// @forward "properties/background/core-background-repeat" as background-repeat-*;
-// @forward "properties/background/core-background-size" as background-size-*;
+// @use "utilities/background/core-background";
+// @use "utilities/background/core-background-attachment";
+// @use "utilities/background/core-background-clip";
+// @use "utilities/background/core-background-color";
+// @use "utilities/background/core-background-position";
+// @use "utilities/background/core-background-repeat";
+// @use "utilities/background/core-background-size";
 
 
 // // CORE - BORDER (17)
-// @forward "properties/border/core-border-collapse" as border-collapse-*;
-// @forward "properties/border/core-border-color" as border-color-*;
-// @forward "properties/border/core-border-style" as border-style-*;
-// @forward "properties/border/core-border-radius" as border-radius-*;
-// @forward "properties/border/extension-border-bottom-radius" as border-bottom-radius-*;
-// @forward "properties/border/extension-border-left-radius" as border-left-radius-*;
-// @forward "properties/border/extension-border-right-radius" as border-right-radius-*;
-// @forward "properties/border/extension-border-top-radius" as border-top-radius-*;
-// @forward "properties/border/core-border-bottom-left-radius" as border-bottom-left-radius-*;
-// @forward "properties/border/core-border-bottom-right-radius" as border-bottom-right-radius-*;
-// @forward "properties/border/core-border-top-left-radius" as border-top-left-radius-*;
-// @forward "properties/border/core-border-top-right-radius" as border-top-right-radius-*;
-// @forward "properties/border/core-border-width" as border-width-*;
-// @forward "properties/border/core-border-bottom-width" as border-bottom-width-*;
-// @forward "properties/border/core-border-left-width" as border-left-width-*;
-// @forward "properties/border/core-border-right-width" as border-right-width-*;
-// @forward "properties/border/core-border-top-width" as border-top-width-*;
+// @use "utilities/border/core-border-collapse";
+// @use "utilities/border/core-border-color";
+// @use "utilities/border/core-border-style";
+// @use "utilities/border/core-border-radius";
+// @use "utilities/border/extension-border-bottom-radius";
+// @use "utilities/border/extension-border-left-radius";
+// @use "utilities/border/extension-border-right-radius";
+// @use "utilities/border/extension-border-top-radius";
+// @use "utilities/border/core-border-bottom-left-radius";
+// @use "utilities/border/core-border-bottom-right-radius";
+// @use "utilities/border/core-border-top-left-radius";
+// @use "utilities/border/core-border-top-right-radius";
+// @use "utilities/border/core-border-width";
+// @use "utilities/border/core-border-bottom-width";
+// @use "utilities/border/core-border-left-width";
+// @use "utilities/border/core-border-right-width";
+// @use "utilities/border/core-border-top-width";
 
 
 // // CORE - COMPOSITION (9)
-// @forward "properties/composition/core-box-sizing" as box-sizing-*;
-// @forward "properties/composition/core-clear" as clear-*;
-// @forward "properties/composition/core-float" as float-*;
-// @forward "properties/composition/core-object-fit" as object-fit-*;
-// @forward "properties/composition/core-object-position" as object-position-*;
-// @forward "properties/composition/core-position" as position-*;
-// @forward "properties/composition/core-table-layout" as table-layout-*;
-// @forward "properties/composition/extension-clearfix" as clearfix-*;
-// @forward "properties/composition/extension-ratio" as rotate-*;
+// @use "utilities/composition/core-box-sizing";
+// @use "utilities/composition/core-clear";
+// @use "utilities/composition/core-float";
+// @use "utilities/composition/core-object-fit";
+// @use "utilities/composition/core-object-position";
+// @use "utilities/composition/core-position";
+// @use "utilities/composition/core-table-layout";
+// @use "utilities/composition/extension-clearfix";
+// @use "utilities/composition/extension-ratio";
 
 
 // // CORE - OVERFLOW (3)
-// @forward "properties/overflow/core-overflow" as overflow-*;
-// @forward "properties/overflow/core-overflow-x" as overflow-x-*;
-// @forward "properties/overflow/core-overflow-y" as overflow-y-*;
+// @use "utilities/overflow/core-overflow";
+// @use "utilities/overflow/core-overflow-x";
+// @use "utilities/overflow/core-overflow-y";
 
 
 // // CORE - EFFECT (3)
-// @forward "properties/effect/core-box-shadow" as box-shadow-*;
-// @forward "properties/effect/core-filter" as filter-*;
-// @forward "properties/effect/core-mix-blend-mode" as mix-blend-mode-*;
+// @use "utilities/effect/core-box-shadow";
+// @use "utilities/effect/core-filter";
+// @use "utilities/effect/core-mix-blend-mode";
 
 
 // // CORE - SIZING (6)
-// @forward "properties/sizing/core-height" as height-*;
-// @forward "properties/sizing/core-width" as width-*;
-// @forward "properties/sizing/core-min-height" as min-height-*;
-// @forward "properties/sizing/core-min-width" as min-width-*;
-// @forward "properties/sizing/core-max-height" as max-height-*;
-// @forward "properties/sizing/core-max-width" as max-width-*;
+// @use "utilities/sizing/core-height";
+// @use "utilities/sizing/core-width";
+// @use "utilities/sizing/core-min-height";
+// @use "utilities/sizing/core-min-width";
+// @use "utilities/sizing/core-max-height";
+// @use "utilities/sizing/core-max-width";
 
 
 // // CORE - POSITION (9)
-// @forward "properties/position/extension-xy" as xy-*;
-// @forward "properties/position/extension-x" as x-*;
-// @forward "properties/position/extension-y" as y-*;
-// @forward "properties/position/core-bottom" as bottom-*;
-// @forward "properties/position/core-left" as left-*;
-// @forward "properties/position/core-right" as right-*;
-// @forward "properties/position/core-top" as top-*;
-// @forward "properties/position/core-z-index" as z-index-*;
-// @forward "properties/position/extension-absolute-center" as rotate-*;
+// @use "utilities/position/extension-xy";
+// @use "utilities/position/extension-x";
+// @use "utilities/position/extension-y";
+// @use "utilities/position/core-bottom";
+// @use "utilities/position/core-left";
+// @use "utilities/position/core-right";
+// @use "utilities/position/core-top";
+// @use "utilities/position/core-z-index";
+// @use "utilities/position/extension-absolute-center";
 
 
 // // CORE - MARGIN (7)
-// @forward "properties/margin/core-margin" as margin-*;
-// @forward "properties/margin/extension-margin-x" as margin-x-*;
-// @forward "properties/margin/extension-margin-y" as margin-y-*;
-// @forward "properties/margin/core-margin-bottom" as margin-bottom-*;
-// @forward "properties/margin/core-margin-left" as margin-left-*;
-// @forward "properties/margin/core-margin-right" as margin-right-*;
-// @forward "properties/margin/core-margin-top" as margin-top-*;
+// @use "utilities/margin/core-margin";
+// @use "utilities/margin/extension-margin-x";
+// @use "utilities/margin/extension-margin-y";
+// @use "utilities/margin/core-margin-bottom";
+// @use "utilities/margin/core-margin-left";
+// @use "utilities/margin/core-margin-right";
+// @use "utilities/margin/core-margin-top";
 
 
 // // CORE - PADDING (7)
-// @forward "properties/padding/core-padding" as padding-*;
-// @forward "properties/padding/extension-padding-x" as padding-x-*;
-// @forward "properties/padding/extension-padding-y" as padding-y-*;
-// @forward "properties/padding/core-padding-bottom" as padding-bottom-*;
-// @forward "properties/padding/core-padding-left" as padding-left-*;
-// @forward "properties/padding/core-padding-right" as padding-right-*;
-// @forward "properties/padding/core-padding-top" as padding-top-*;
+// @use "utilities/padding/core-padding";
+// @use "utilities/padding/extension-padding-x";
+// @use "utilities/padding/extension-padding-y";
+// @use "utilities/padding/core-padding-bottom";
+// @use "utilities/padding/core-padding-left";
+// @use "utilities/padding/core-padding-right";
+// @use "utilities/padding/core-padding-top";
 
 
 // // CORE - TYPOGRAPHY (14)
-// @forward "properties/typography/core-color" as color-*;
-// @forward "properties/typography/core-font-family" as font-family-*;
-// @forward "properties/typography/core-font-size" as font-size-*;
-// @forward "properties/typography/core-font-style" as font-style-*;
-// @forward "properties/typography/core-font-weight" as font-weight-*;
-// @forward "properties/typography/core-letter-spacing" as letter-spacing-*;
-// @forward "properties/typography/core-line-height" as line-height-*;
-// @forward "properties/typography/core-list-style-position" as list-style-position-*;
-// @forward "properties/typography/core-list-style-type" as list-style-type-*;
-// @forward "properties/typography/core-text-decoration" as text-decoration-*;
-// @forward "properties/typography/core-text-overflow" as text-overflow-*;
-// @forward "properties/typography/core-text-transform" as text-transform-*;
-// @forward "properties/typography/core-white-space" as white-space-*;
-// @forward "properties/typography/core-word-break" as word-break-*;
+// @use "utilities/typography/core-color";
+// @use "utilities/typography/core-font-family";
+// @use "utilities/typography/core-font-size";
+// @use "utilities/typography/core-font-style";
+// @use "utilities/typography/core-font-weight";
+// @use "utilities/typography/core-letter-spacing";
+// @use "utilities/typography/core-line-height";
+// @use "utilities/typography/core-list-style-position";
+// @use "utilities/typography/core-list-style-type";
+// @use "utilities/typography/core-text-decoration";
+// @use "utilities/typography/core-text-overflow";
+// @use "utilities/typography/core-text-transform";
+// @use "utilities/typography/core-white-space";
+// @use "utilities/typography/core-word-break";
 
 
 // // CORE - GRID (9)
-// @forward "properties/grid/core-grid-auto-flow" as grid-auto-flow-*;
-// @forward "properties/grid/core-grid-column" as grid-column-*;
-// @forward "properties/grid/core-grid-column-end" as grid-column-end-*;
-// @forward "properties/grid/core-grid-column-start" as grid-column-start-*;
-// @forward "properties/grid/core-grid-row" as grid-row-*;
-// @forward "properties/grid/core-grid-row-end" as grid-row-end-*;
-// @forward "properties/grid/core-grid-row-start" as grid-row-start-*;
-// @forward "properties/grid/core-grid-template-columns" as grid-template-columns-*;
-// @forward "properties/grid/core-grid-template-rows" as grid-template-rows-*;
+// @use "utilities/grid/core-grid-auto-flow";
+// @use "utilities/grid/core-grid-column";
+// @use "utilities/grid/core-grid-column-end";
+// @use "utilities/grid/core-grid-column-start";
+// @use "utilities/grid/core-grid-row";
+// @use "utilities/grid/core-grid-row-end";
+// @use "utilities/grid/core-grid-row-start";
+// @use "utilities/grid/core-grid-template-columns";
+// @use "utilities/grid/core-grid-template-rows";
 
 
 // // CORE - FLEXBOX (6)
-// @forward "properties/flexbox/core-flex" as flex-*;
-// @forward "properties/flexbox/core-flex-direction" as flex-direction-*;
-// @forward "properties/flexbox/core-flex-grow" as flex-grow-*;
-// @forward "properties/flexbox/core-flex-shrink" as flex-shrink-*;
-// @forward "properties/flexbox/core-flex-wrap" as flex-wrap-*;
-// @forward "properties/flexbox/core-order" as order-*;
+// @use "utilities/flexbox/core-flex";
+// @use "utilities/flexbox/core-flex-direction";
+// @use "utilities/flexbox/core-flex-grow";
+// @use "utilities/flexbox/core-flex-shrink";
+// @use "utilities/flexbox/core-flex-wrap";
+// @use "utilities/flexbox/core-order";
 
 
 // // CORE - GAP (3)
-// @forward "properties/gap/core-gap" as gap-*;
-// @forward "properties/gap/core-column-gap" as column-gap-*;
-// @forward "properties/gap/core-row-gap" as row-gap-*;
+// @use "utilities/gap/core-gap";
+// @use "utilities/gap/core-column-gap";
+// @use "utilities/gap/core-row-gap";
 
 
 // // CORE - MULTI-COLUMN (6)
-// @forward "properties/multi-column/core-column-count" as column-count-*;
-// @forward "properties/multi-column/core-column-fill" as column-fill-*;
-// @forward "properties/multi-column/core-column-rule-color" as column-rule-color-*;
-// @forward "properties/multi-column/core-column-rule-style" as column-rule-style-*;
-// @forward "properties/multi-column/core-column-rule-width" as column-rule-width-*;
-// @forward "properties/multi-column/core-column-span" as column-span-*;
+// @use "utilities/multi-column/core-column-count";
+// @use "utilities/multi-column/core-column-fill";
+// @use "utilities/multi-column/core-column-rule-color";
+// @use "utilities/multi-column/core-column-rule-style";
+// @use "utilities/multi-column/core-column-rule-width";
+// @use "utilities/multi-column/core-column-span";
 
 
 // // CORE - TRANSFORM (9)
-// @forward "properties/transform/core-transform" as transform-*;
-// @forward "properties/transform/core-transform-origin" as transform-origin-*;
-// @forward "properties/transform/extension-translate-x" as translate-x-*;
-// @forward "properties/transform/extension-translate-y" as translate-y-*;
-// @forward "properties/transform/extension-scale-x" as scale-x-*;
-// @forward "properties/transform/extension-scale-y" as scale-y-*;
-// @forward "properties/transform/extension-skew-x" as skew-x-*;
-// @forward "properties/transform/extension-skew-y" as skew-y-*;
-// @forward "properties/transform/extension-rotate" as rotate-*;
+// @use "utilities/transform/core-transform";
+// @use "utilities/transform/core-transform-origin";
+// @use "utilities/transform/extension-translate-x";
+// @use "utilities/transform/extension-translate-y";
+// @use "utilities/transform/extension-scale-x";
+// @use "utilities/transform/extension-scale-y";
+// @use "utilities/transform/extension-skew-x";
+// @use "utilities/transform/extension-skew-y";
+// @use "utilities/transform/extension-rotate";
 
 
 // // CORE - TRANSITION (4)
-// @forward "properties/transition/core-transition" as transition-*;
-// @forward "properties/transition/core-transition-duration" as transition-duration-*;
-// @forward "properties/transition/core-transition-delay" as transition-delay-*;
-// @forward "properties/transition/core-transition-property" as transition-property-*;
-// @forward "properties/transition/core-transition-timing-function" as transition-timing-function-*;
+// @use "utilities/transition/core-transition";
+// @use "utilities/transition/core-transition-duration";
+// @use "utilities/transition/core-transition-delay";
+// @use "utilities/transition/core-transition-property";
+// @use "utilities/transition/core-transition-timing-function";
 
 
 // // CORE - INTERACTIVE (5)
-// @forward "properties/interactive/core-cursor" as cursor-*;
-// @forward "properties/interactive/core-pointer-events" as pointer-events-*;
-// @forward "properties/interactive/core-resize" as resize-*;
-// @forward "properties/interactive/core-scrolling" as scrolling-*;
-// @forward "properties/interactive/core-user-select" as user-select-*;
+// @use "utilities/interactive/core-cursor";
+// @use "utilities/interactive/core-pointer-events";
+// @use "utilities/interactive/core-resize";
+// @use "utilities/interactive/core-scrolling";
+// @use "utilities/interactive/core-user-select";
 
 
 // // CORE - SVG (3)
-// @forward "properties/svg/core-fill" as fill-*;
-// @forward "properties/svg/core-stroke" as stroke-*;
-// @forward "properties/svg/core-stroke-width" as stroke-width-*;
+// @use "utilities/svg/core-fill";
+// @use "utilities/svg/core-stroke";
+// @use "utilities/svg/core-stroke-width";
 
-// @mixin constructor($keyword, $responsive, $responsive-pseudos, $properties, $final-variants, $final-pseudos) {
-//   @if ($headless == false) {
-//     @if ($debugger == true) {
-//       // Create basic classes
-//       @if $keyword == 'exempt' {
-//         @each $variant, $variant-value in $final-variants {
-//           .#{$prefix}#{'' + $variant} {
-//             @each $property in $properties {
-//               #{$property}: $variant-value if($important == true, !important, null);
-//             }
-//           }
-//         }
 
-;
+// DEFAULTS (2)
+// @use "defaults/reset";
+// @use "defaults/starter";
 
-$config: () !default;
-$config: map.deep-merge($default-config, $config);
 
-// CORE SETTINGS
-// ============================================================
+// // MODULE (4)
+// @use "modules/button";
+// @use "modules/form";
+// @use "modules/table";
+// @use "modules/wrapper";
 
-$important: map.get($config, important);
-$prefix: map.get($config, prefix);
-$delimiter: map.get($config, delimiter);
-$child-delimiter: map.get($config, child-delimiter);
-$pseudo-delimiter: map.get($config, pseudo-delimiter);
-$screen-delimiter: map.get($config, screen-delimiter);
-$variablize: map.get($config, variablize);
-$headless: map.get($config, headless);
-$root: true map.get($config, root);
-$debugger: map.get($config, debugger);
 
-// INCLUDE SETTINGS
-// ============================================================
 
-$include-reset-styles: map.get($config, include-reset-styles);
-$include-starter-styles: map.get($config, include-starter-styles);
-$include-wrapper-module: map.get($config, include-wrapper-module);
-$include-table-module: map.get($config, include-table-module);
-$include-button-module: map.get($config, include-button-module);
-$include-form-module: map.get($config, include-form-module);
 
 // CONSTRUCTOR
 // ============================================================
 
+@use "core" as *;
+
 @mixin constructor($config) {
+  $important: map.get($config, important);
+  $prefix: map.get($config, prefix);
+  $delimiter: map.get($config, delimiter);
+  $child-delimiter: map.get($config, child-delimiter);
+  $pseudo-delimiter: map.get($config, pseudo-delimiter);
+  $screen-delimiter: map.get($config, screen-delimiter);
+  $variablize: map.get($config, variablize);
+  $headless: map.get($config, headless);
+  $root: map.get($config, root);
+  $debugger: map.get($config, debugger);
+
+  $include-reset-styles: map.get($config, include-reset-styles);
+  $include-starter-styles: map.get($config, include-starter-styles);
+  $include-wrapper-module: map.get($config, include-wrapper-module);
+  $include-table-module: map.get($config, include-table-module);
+  $include-button-module: map.get($config, include-button-module);
+  $include-form-module: map.get($config, include-form-module);
+
+  $utilities: map.get($config, utilities);
+  $excludes: map.get($config, excludes);
+  $all-pseudos: map.get($config, pseudos);
+  $all-screens: map.get($config, screens);
+
   @if ($headless == false) {
     @if ($debugger == true) {
+
+      // NON RESPONSIVE
+      // loop through utilities
+      @each $utility, $utility-value in $utilities {
+        $keyword: map.get($utility-value, keyword);
+        $responsive: map.get($utility-value, responsive);
+        $responsive-pseudos: map.get($utility-value, responsive-pseudos);
+        $properties: map.get($utility-value, properties);
+        $default-variants: map.get($utility-value, default-variants);
+        $variants: map.get($utility-value, variants);
+
+        // Construct standard classes
+        @each $default-variant, $default-variant-value in $default-variants {
+          @if $default-variant == null {
+            .#{$prefix}#{if($keyword == null, null, $keyword)} {
+              @each $property in $properties {
+                #{$property}: $default-variant-value if($important == true, !important, null);
+              }
+            }
+          } @else {
+            .#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+              @each $property in $properties {
+                #{$property}: $default-variant-value if($important == true, !important, null);
+              }
+            }
+          }
+        }
+        @each $variant, $variant-value in $variants {
+          @if $variant == null {
+            .#{$prefix}#{if($keyword == null, null, $keyword)} {
+              @each $property in $properties {
+                #{$property}: $variant-value if($important == true, !important, null);
+              }
+            }
+          } @else {
+            .#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+              @each $property in $properties {
+                #{$property}: $variant-value if($important == true, !important, null);
+              }
+            }
+          }
+        }
+
+        // Construct standard pseudo classes
+        @each $pseudo, $pseudo-value in $all-pseudos {
+          @each $default-variant, $default-variant-value in $default-variants {
+            @if $default-variant == null {
+              
+              @if $pseudo == group-hover {
+                .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }  
+              } @else if $pseudo == group-focus {
+                .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }  
+              } @else {
+                .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{$pseudo-value} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+
+            } @else {
+              @if $pseudo == group-hover {
+                .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }
+              } @else if $pseudo == group-focus {
+                .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                } 
+              } @else {
+                .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{$pseudo-value} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+            }
+          }
+          @each $variant, $variant-value in $variants {
+            @if $variant == null {
+              
+              @if $pseudo == group-hover {
+                .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }  
+              } @else if $pseudo == group-focus {
+                .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }  
+              } @else {
+                .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{$pseudo-value} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+
+            } @else {
+              @if $pseudo == group-hover {
+                .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }
+              } @else if $pseudo == group-focus {
+                .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                } 
+              } @else {
+                .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{$pseudo-value} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
       
+      // RESPONSIVE
+      // loop through screens
+      @each $screen, $screen-value in $all-screens {
+        @media (min-width: $screen-value) {  
+          // loop through utilities
+          @each $utility, $utility-value in $utilities {
+            $keyword: map.get($utility-value, keyword);
+            $responsive: map.get($utility-value, responsive);
+            $responsive-pseudos: map.get($utility-value, responsive-pseudos);
+            $properties: map.get($utility-value, properties);
+            $default-variants: map.get($utility-value, default-variants);
+            $variants: map.get($utility-value, variants);
+
+            // Construct responsive classes
+            @each $default-variant, $default-variant-value in $default-variants {
+              @if $default-variant == null {
+                .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }
+              } @else {
+                .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+            }
+            @each $variant, $variant-value in $variants {
+              @if $variant == null {
+                .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }
+              } @else {
+                .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+            }
+            
+
+            // Construct responsive pseudo classes
+            @each $pseudo, $pseudo-value in $all-pseudos {
+              @each $default-variant, $default-variant-value in $default-variants {
+                @if $default-variant == null {
+                  
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{$pseudo-value} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{$pseudo-value} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+              @each $variant, $variant-value in $variants {
+                @if $variant == null {
+                  
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{$pseudo-value} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{$pseudo-value} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
     } @else {
+
+      // NON RESPONSIVE
+      // loop through utilities
+      @each $utility, $utility-value in $utilities {
+        $keyword: map.get($utility-value, keyword);
+        $responsive: map.get($utility-value, responsive);
+        $responsive-pseudos: map.get($utility-value, responsive-pseudos);
+        $properties: map.get($utility-value, properties);
+        $default-variants: map.get($utility-value, default-variants);
+        $default-pseudos: map.get($utility-value, default-pseudos);
+        $variants: map.get($utility-value, variants);
+        $pseudos: map.get($utility-value, pseudos);
+        
+        // check if utility exists in the exclude list
+        @if (list.index($excludes, $utility) == null) {
+          // Construct standard classes
+          @each $default-variant, $default-variant-value in $default-variants {
+            @if $default-variant == null {
+              .#{$prefix}#{if($keyword == null, null, $keyword)} {
+                @each $property in $properties {
+                  #{$property}: $default-variant-value if($important == true, !important, null);
+                }
+              }
+            } @else {
+              .#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                @each $property in $properties {
+                  #{$property}: $default-variant-value if($important == true, !important, null);
+                }
+              }
+            }
+          }
+          @each $variant, $variant-value in $variants {
+            @if $variant == null {
+              .#{$prefix}#{if($keyword == null, null, $keyword)} {
+                @each $property in $properties {
+                  #{$property}: $variant-value if($important == true, !important, null);
+                }
+              }
+            } @else {
+              .#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                @each $property in $properties {
+                  #{$property}: $variant-value if($important == true, !important, null);
+                }
+              }
+            }
+          }
+
+          // Construct standard pseudo classes
+          @each $default-pseudo in $default-pseudos {
+            @if map.has-key($all-pseudos, $default-pseudo) {
+              @each $default-variant, $default-variant-value in $default-variants {
+                @if $default-variant == null {
+                  
+                  @if $default-pseudo == group-hover {
+                    .group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $default-pseudo == group-focus {
+                    .group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $default-pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $default-pseudo == group-hover {
+                    .group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $default-pseudo == group-focus {
+                    .group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{map.get($all-pseudos, $default-pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+              @each $variant, $variant-value in $variants {
+                @if $variant == null {
+                  
+                  @if $default-pseudo == group-hover {
+                    .group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $default-pseudo == group-focus {
+                    .group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $default-pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $default-pseudo == group-hover {
+                    .group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $default-pseudo == group-focus {
+                    .group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{map.get($all-pseudos, $default-pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @each $pseudo in $pseudos {
+            @if map.has-key($all-pseudos, $pseudo) {
+              @each $default-variant, $default-variant-value in $default-variants {
+                @if $default-variant == null {
+                  
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{map.get($all-pseudos, $pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+              @each $variant, $variant-value in $variants {
+                @if $variant == null {
+                  
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{map.get($all-pseudos, $pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        } @else {
+
+        }
+      }
       
+      // RESPONSIVE
+      // loop through screens
+      @each $screen, $screen-value in $all-screens {
+        @media (min-width: $screen-value) {  
+          // loop through utilities
+          @each $utility, $utility-value in $utilities {
+            $keyword: map.get($utility-value, keyword);
+            $responsive: map.get($utility-value, responsive);
+            $responsive-pseudos: map.get($utility-value, responsive-pseudos);
+            $properties: map.get($utility-value, properties);
+            $default-variants: map.get($utility-value, default-variants);
+            $default-pseudos: map.get($utility-value, default-pseudos);
+            $variants: map.get($utility-value, variants);
+            $pseudos: map.get($utility-value, pseudos);
+
+            // check if utility exists in the exclude list
+            @if (list.index($excludes, $utility) == null) {
+              @if $responsive == true {
+                
+                // Construct responsive classes
+                @each $default-variant, $default-variant-value in $default-variants {
+                  @if $default-variant == null {
+                    .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+                @each $variant, $variant-value in $variants {
+                  @if $variant == null {
+                    .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+                
+
+                @if $responsive-pseudos == true {
+                  // Construct responsive pseudo classes
+                  @each $default-pseudo in $default-pseudos {
+                    @if map.has-key($all-pseudos, $default-pseudo) {
+                      @each $default-variant, $default-variant-value in $default-variants {
+                        @if $default-variant == null {
+                          
+                          @if $default-pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else if $default-pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $default-pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+
+                        } @else {
+                          @if $default-pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          } @else if $default-pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            } 
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{map.get($all-pseudos, $default-pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+                        }
+                      }
+                      @each $variant, $variant-value in $variants {
+                        @if $variant == null {
+                          
+                          @if $default-pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else if $default-pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $default-pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+
+                        } @else {
+                          @if $default-pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          } @else if $default-pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            } 
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{map.get($all-pseudos, $default-pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  @each $pseudo in $pseudos {
+                    @if map.has-key($all-pseudos, $pseudo) {
+                      @each $default-variant, $default-variant-value in $default-variants {
+                        @if $default-variant == null {
+                          
+                          @if $pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else if $pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+
+                        } @else {
+                          @if $pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          } @else if $pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            } 
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{map.get($all-pseudos, $pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+                        }
+                      }
+                      @each $variant, $variant-value in $variants {
+                        @if $variant == null {
+                          
+                          @if $pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else if $pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+
+                        } @else {
+                          @if $pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          } @else if $pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            } 
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{map.get($all-pseudos, $pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                }
+              }
+            } @else {
+
+            }
+          }
+        }
+      }
+
+
     }
   }
 }
-@debug $config;
 
 @include constructor($config);
-// @debug $all-properties;

@@ -9,17 +9,33 @@
 	// 	group-focus
 	// ),
 	// $color-responsive: true,
-	$config: (
-		align-content: (
-			keyword: align-this,
-			custom-variants: (
-				hello: hello
+	$settings: (
+		utilities: (
+			align-content: (
+				variants: (
+					hello: hello
+				),
+				pseudos: (
+					odd
+				)
+			),
+			custom-property: (
+				keyword: custom,
+				responsive: true,
+				responsive-pseudos: true,
+				properties: custom-property,
+				variants: (
+					sm: 10px,
+					md: 20px
+				),
+				pseudos: (
+					last
+				)
 			)
 		)
 	)
 );
 
-// @debug $config;
 
 
 // @use "_roots" as *;
