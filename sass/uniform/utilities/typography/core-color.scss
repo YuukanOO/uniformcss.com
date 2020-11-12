@@ -1,6 +1,5 @@
-@use "uniform/core" as *;
+@use "uniform/config" as *;
 @use "sass:map";
-@use "sass:list";
 
 $keyword: color;
 $responsive: false;
@@ -8,11 +7,11 @@ $responsive-pseudos: false;
 
 $properties: (color);
 
-$core-variants: (colors());
+$variants: (colors());
 
 $variants: ();
 
-$final-variants: map.merge($core-variants, $variants);
+$final-variants: map.merge($variants, $variants);
 
 $core-pseudos: (hover, group-hover);
 $pseudos: ();

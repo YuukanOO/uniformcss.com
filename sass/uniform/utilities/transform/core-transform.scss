@@ -1,6 +1,5 @@
-@use "uniform/core" as *;
+@use "uniform/config" as *;
 @use "sass:map";
-@use "sass:list";
 
 $keyword: transform;
 $responsive: false;
@@ -8,7 +7,7 @@ $responsive-pseudos: false;
 
 $properties: (transform);
 
-$core-variants: (
+$variants: (
   exempt: (
     translateX(var(--translate-x, 0)) translateY(var(--translate-y, 0)) rotate(var(--rotate, 0))
       skewX(var(--skew-x, 0)) skewY(var(--skew-y, 0)) scaleX(var(--scale-x, 1))
@@ -18,7 +17,7 @@ $core-variants: (
 
 $variants: ();
 
-$final-variants: map.merge($core-variants, $variants);
+$final-variants: map.merge($variants, $variants);
 
 $core-pseudos: (hover, group-hover);
 $pseudos: ();

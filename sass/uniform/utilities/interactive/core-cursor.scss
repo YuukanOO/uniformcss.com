@@ -1,6 +1,5 @@
-@use "uniform/core" as *;
+@use "uniform/config" as *;
 @use "sass:map";
-@use "sass:list";
 
 $keyword: cursor;
 $responsive: false;
@@ -8,7 +7,7 @@ $responsive-pseudos: false;
 
 $properties: (cursor);
 
-$core-variants: (
+$variants: (
   auto: auto,
   default: default,
   pointer: pointer,
@@ -20,7 +19,7 @@ $core-variants: (
 
 $variants: ();
 
-$final-variants: map.merge($core-variants, $variants);
+$final-variants: map.merge($variants, $variants);
 
 $core-pseudos: (hover, active);
 $pseudos: ();

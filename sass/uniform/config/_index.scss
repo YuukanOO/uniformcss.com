@@ -12,10 +12,10 @@
   @return $collection;
 }
 
-// DEFAULT OPTIONS
+// DEFAULT SETTINGS
 // ============================================================
 
-$options: (
+$config: (
   important: false,
   prefix: '',
   delimiter: '-',
@@ -437,9 +437,9 @@ $radiuses: (
 // DEFAULT CONFIG
 // ============================================================
 
-$default-settings: (
+$default-config: (
   merge(
-    $options,
+    $config,
     $screens,
     $pseudos,
     

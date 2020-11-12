@@ -1,5 +1,5 @@
 @use "uniform/core" as *;
-
+@use "sass:map";
 
 @if $headless == false {
 	.#{$prefix}antialiased {

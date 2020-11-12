@@ -1,6 +1,5 @@
-@use "uniform/core" as *;
+@use "uniform/config" as *;
 @use "sass:map";
-@use "sass:list";
 
 $keyword: shadow;
 $responsive: false;
@@ -8,7 +7,7 @@ $responsive-pseudos: false;
 
 $properties: (box-shadow);
 
-$core-variants: (
+$variants: (
 	merge(
 		shadows(),
 		(
@@ -19,7 +18,7 @@ $core-variants: (
 
 $variants: ();
 
-$final-variants: map.merge($core-variants, $variants);
+$final-variants: map.merge($variants, $variants);
 
 $core-pseudos: (hover, active, focus);
 $pseudos: ();

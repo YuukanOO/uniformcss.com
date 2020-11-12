@@ -1,6 +1,7 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
+$name: align-content;
 $keyword: align-content;
 $responsive: true;
 $responsive-pseudos: false;
@@ -18,9 +19,9 @@ $variants: (
 
 $pseudos: ();
 
-$map: (
+$config: (
   utilities: (
-    align-content: (
+    $name: (
       keyword: $keyword,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
@@ -35,4 +36,4 @@ $map: (
   )
 );
 
-$default-settings: map.deep-merge($default-settings, $map);
+$default-config: map.deep-merge($default-config, $config);

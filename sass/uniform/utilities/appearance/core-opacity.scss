@@ -1,14 +1,14 @@
-@use "uniform/core" as *;
+@use "uniform/config" as *;
 @use "sass:map";
-@use "sass:list";
 
+$name: opacity;
 $keyword: opacity;
 $responsive: true;
 $responsive-pseudos: false;
 
 $properties: (opacity);
 
-$core-variants: (
+$variants: (
   0: 0,
   10: 0.1,
   20: 0.2,
@@ -22,19 +22,23 @@ $core-variants: (
   100: 1
 );
 
-$variants: ();
+$pseudos: (hover, active);
 
-$final-variants: map.merge($core-variants, $variants);
-
-$core-pseudos: (hover, active);
-$pseudos: ();
-$final-pseudos: list.join($core-pseudos, $pseudos);
-
-@include constructor(
-  $keyword,
-  $responsive,
-  $responsive-pseudos,
-  $properties,
-  $final-variants,
-  $final-pseudos
+$config: (
+  utilities: (
+    $name: (
+      keyword: $keyword,
+      responsive: $responsive,
+      responsive-pseudos: $responsive-pseudos,
+      properties: $properties,
+      default-variants: (
+        $variants
+      ),
+      default-pseudos: (
+        $pseudos
+      )
+    )
+  )
 );
+
+$default-config: map.deep-merge($default-config, $config);

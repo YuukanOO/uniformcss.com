@@ -1,33 +1,37 @@
-@use "uniform/core" as *;
+@use "uniform/config" as *;
 @use "sass:map";
-@use "sass:list";
 
+$name: text-align;
 $keyword: align;
 $responsive: true;
 $responsive-pseudos: false;
 
 $properties: (text-align);
 
-$core-variants: (
+$variants: (
   left: left,
   center: center,
   right: right,
   justify: justify
 );
 
-$variants: ();
-
-$final-variants: map.merge($core-variants, $variants);
-
-$core-pseudos: ();
 $pseudos: ();
-$final-pseudos: list.join($core-pseudos, $pseudos);
 
-@include constructor(
-  $keyword,
-  $responsive,
-  $responsive-pseudos,
-  $properties,
-  $final-variants,
-  $final-pseudos
+$config: (
+  utilities: (
+    $name: (
+      keyword: $keyword,
+      responsive: $responsive,
+      responsive-pseudos: $responsive-pseudos,
+      properties: $properties,
+      default-variants: (
+        $variants
+      ),
+      default-pseudos: (
+        $pseudos
+      )
+    )
+  )
 );
+
+$default-config: map.deep-merge($default-config, $config);

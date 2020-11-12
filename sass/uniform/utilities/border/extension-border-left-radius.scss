@@ -1,6 +1,5 @@
-@use "uniform/core" as *;
+@use "uniform/config" as *;
 @use "sass:map";
-@use "sass:list";
 
 $keyword: radius-l;
 $responsive: true;
@@ -8,7 +7,7 @@ $responsive-pseudos: false;
 
 $properties: (border-top-left-radius, border-bottom-left-radius);
 
-$core-variants: (
+$variants: (
 	merge(
 		radiuses(),
 		(
@@ -19,7 +18,7 @@ $core-variants: (
 
 $variants: ();
 
-$final-variants: map.merge($core-variants, $variants);
+$final-variants: map.merge($variants, $variants);
 
 $core-pseudos: (first);
 $pseudos: ();

@@ -1,6 +1,5 @@
-@use "uniform/core" as *;
+@use "uniform/config" as *;
 @use "sass:map";
-@use "sass:list";
 
 $keyword: ml;
 $responsive: true;
@@ -8,7 +7,7 @@ $responsive-pseudos: false;
 
 $properties: (margin-left);
 
-$core-variants: (
+$variants: (
 	merge(
 		sizes(),
 		(
@@ -26,7 +25,7 @@ $core-variants: (
 
 $variants: ();
 
-$final-variants: map.merge($core-variants, $variants);
+$final-variants: map.merge($variants, $variants);
 
 $core-pseudos: (first, last);
 $pseudos: ();

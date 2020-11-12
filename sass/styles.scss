@@ -9,9 +9,10 @@
 	// 	group-focus
 	// ),
 	// $color-responsive: true,
-	$settings: (
+	$config: (
 		utilities: (
 			align-content: (
+				keyword: hello-align,
 				variants: (
 					hello: hello
 				),

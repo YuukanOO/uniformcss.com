@@ -1,6 +1,5 @@
-@use "uniform/core" as *;
+@use "uniform/config" as *;
 @use "sass:map";
-@use "sass:list";
 
 $keyword: overflow;
 $responsive: true;
@@ -8,26 +7,28 @@ $responsive-pseudos: false;
 
 $properties: (overflow);
 
-$core-variants: (
+$variants: (
   auto: auto,
   hidden: hidden,
   visible: visible,
   scroll: scroll
 );
 
-$variants: ();
-
-$final-variants: map.merge($core-variants, $variants);
-
-$core-pseudos: ();
-$pseudos: ();
-$final-pseudos: list.join($core-pseudos, $pseudos);
-
-@include constructor(
-  $keyword,
-  $responsive,
-  $responsive-pseudos,
-  $properties,
-  $final-variants,
-  $final-pseudos
+$config: (
+  utilities: (
+    $name: (
+      keyword: $keyword,
+      responsive: $responsive,
+      responsive-pseudos: $responsive-pseudos,
+      properties: $properties,
+      default-variants: (
+        $variants
+      ),
+      default-pseudos: (
+        $pseudos
+      )
+    )
+  )
 );
+
+$default-config: map.deep-merge($default-config, $config);

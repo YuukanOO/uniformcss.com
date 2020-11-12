@@ -1,6 +1,5 @@
-@use "uniform/core" as *;
+@use "uniform/config" as *;
 @use "sass:map";
-@use "sass:list";
 
 $keyword: border;
 $responsive: true;
@@ -8,7 +7,7 @@ $responsive-pseudos: false;
 
 $properties: (border-width);
 
-$core-variants: (
+$variants: (
 	0: 0,
 	px: 1px,
 	2px: 2px,
@@ -23,7 +22,7 @@ $core-variants: (
 
 $variants: ();
 
-$final-variants: map.merge($core-variants, $variants);
+$final-variants: map.merge($variants, $variants);
 
 $core-pseudos: (none);
 $pseudos: ();
