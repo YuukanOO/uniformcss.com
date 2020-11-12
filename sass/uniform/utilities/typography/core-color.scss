@@ -2,21 +2,21 @@
 @use "sass:map";
 @use "sass:list";
 
-$keyword: color !default;
-$responsive: false !default;
-$responsive-pseudos: false !default;
+$keyword: color;
+$responsive: false;
+$responsive-pseudos: false;
 
-$properties: (color) !default;
+$properties: (color);
 
-$core-variants: (colors()) !default;
+$core-variants: (colors());
 
-$variants: () !default;
+$variants: ();
 
-$final-variants: map.merge($core-variants, $variants) !default;
+$final-variants: map.merge($core-variants, $variants);
 
-$core-pseudos: (hover, group-hover) !default;
-$pseudos: () !default;
-$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+$core-pseudos: (hover, group-hover);
+$pseudos: ();
+$final-pseudos: list.join($core-pseudos, $pseudos);
 
 @include constructor(
   $keyword,

@@ -1,11 +1,11 @@
 @use "uniform/config" as *;
 @use "sass:map";
 
-$keyword: align-items !default;
-$responsive: true !default;
-$responsive-pseudos: false !default;
+$keyword: align-items;
+$responsive: true;
+$responsive-pseudos: false;
 
-$properties: (align-items) !default;
+$properties: (align-items);
 
 $variants: (
   stretch: stretch,
@@ -13,9 +13,9 @@ $variants: (
   start: flex-start,
   end: flex-end,
   baseline: baseline
-) !default;
+);
 
-$pseudos: () !default;
+$pseudos: ();
 
 $map: (
   utilities: (

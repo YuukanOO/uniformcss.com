@@ -2,11 +2,11 @@
 @use "sass:map";
 @use "sass:list";
 
-$keyword: col !default;
-$responsive: true !default;
-$responsive-pseudos: false !default;
+$keyword: col;
+$responsive: true;
+$responsive-pseudos: false;
 
-$properties: (grid-column) !default;
+$properties: (grid-column);
 
 $core-variants: (
   auto: auto,
@@ -22,15 +22,15 @@ $core-variants: (
   10: span 10 / span 10,
   11: span 11 / span 11,
   12: span 12 / span 12
-) !default;
+);
 
-$variants: () !default;
+$variants: ();
 
-$final-variants: map.merge($core-variants, $variants) !default;
+$final-variants: map.merge($core-variants, $variants);
 
-$core-pseudos: () !default;
-$pseudos: () !default;
-$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+$core-pseudos: ();
+$pseudos: ();
+$final-pseudos: list.join($core-pseudos, $pseudos);
 
 @include constructor(
   $keyword,

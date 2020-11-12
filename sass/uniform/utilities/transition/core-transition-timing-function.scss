@@ -2,26 +2,26 @@
 @use "sass:map";
 @use "sass:list";
 
-$keyword: exempt !default;
-$responsive: false !default;
-$responsive-pseudos: false !default;
+$keyword: exempt;
+$responsive: false;
+$responsive-pseudos: false;
 
-$properties: (transition-timing-function) !default;
+$properties: (transition-timing-function);
 
 $core-variants: (
   linear: linear,
   ease: ease,
   ease-in: ease-in,
   ease-in-out: ease-in-out
-) !default;
+);
 
-$variants: () !default;
+$variants: ();
 
-$final-variants: map.merge($core-variants, $variants) !default;
+$final-variants: map.merge($core-variants, $variants);
 
-$core-pseudos: () !default;
-$pseudos: () !default;
-$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+$core-pseudos: ();
+$pseudos: ();
+$final-pseudos: list.join($core-pseudos, $pseudos);
 
 @include constructor(
   $keyword,

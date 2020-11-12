@@ -2,11 +2,11 @@
 @use "sass:map";
 @use "sass:list";
 
-$keyword: translate-y !default;
-$responsive: false !default;
-$responsive-pseudos: false !default;
+$keyword: translate-y;
+$responsive: false;
+$responsive-pseudos: false;
 
-$properties: (--translate-y) !default;
+$properties: (--translate-y);
 
 $core-variants: (
 	n100p: -100%,
@@ -25,15 +25,15 @@ $core-variants: (
 	n4: size(n4),
 	n8: size(n8),
 	n16: size(n16),
-) !default;
+);
 
-$variants: () !default;
+$variants: ();
 
-$final-variants: map.merge($core-variants, $variants) !default;
+$final-variants: map.merge($core-variants, $variants);
 
-$core-pseudos: (hover, group-hover) !default;
-$pseudos: () !default;
-$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+$core-pseudos: (hover, group-hover);
+$pseudos: ();
+$final-pseudos: list.join($core-pseudos, $pseudos);
 
 @include constructor(
   $keyword,

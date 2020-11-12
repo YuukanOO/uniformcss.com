@@ -2,24 +2,24 @@
 @use "sass:map";
 @use "sass:list";
 
-$keyword: scrolling !default;
-$responsive: false !default;
-$responsive-pseudos: false !default;
+$keyword: scrolling;
+$responsive: false;
+$responsive-pseudos: false;
 
-$properties: (-webkit-overflow-scrolling) !default;
+$properties: (-webkit-overflow-scrolling);
 
 $core-variants: (
   auto: auto,
   touch: touch
-) !default;
+);
 
-$variants: () !default;
+$variants: ();
 
-$final-variants: map.merge($core-variants, $variants) !default;
+$final-variants: map.merge($core-variants, $variants);
 
-$core-pseudos: () !default;
-$pseudos: () !default;
-$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+$core-pseudos: ();
+$pseudos: ();
+$final-pseudos: list.join($core-pseudos, $pseudos);
 
 @include constructor(
   $keyword,

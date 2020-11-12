@@ -2,11 +2,11 @@
 @use "sass:map";
 @use "sass:list";
 
-$keyword: mx !default;
-$responsive: true !default;
-$responsive-pseudos: false !default;
+$keyword: mx;
+$responsive: true;
+$responsive-pseudos: false;
 
-$properties: (margin-left, margin-right) !default;
+$properties: (margin-left, margin-right);
 
 $core-variants: (
 	merge(
@@ -15,15 +15,15 @@ $core-variants: (
 			auto: auto
 		)
 	)
-) !default;
+);
 
-$variants: () !default;
+$variants: ();
 
-$final-variants: map.merge($core-variants, $variants) !default;
+$final-variants: map.merge($core-variants, $variants);
 
-$core-pseudos: () !default;
-$pseudos: () !default;
-$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+$core-pseudos: ();
+$pseudos: ();
+$final-pseudos: list.join($core-pseudos, $pseudos);
 
 @include constructor(
   $keyword,

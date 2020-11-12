@@ -2,11 +2,11 @@
 @use "sass:map";
 @use "sass:list";
 
-$keyword: blend !default;
-$responsive: false !default;
-$responsive-pseudos: false !default;
+$keyword: blend;
+$responsive: false;
+$responsive-pseudos: false;
 
-$properties: (mix-blend-mode) !default;
+$properties: (mix-blend-mode);
 
 $core-variants: (
 	normal: normal,
@@ -25,15 +25,15 @@ $core-variants: (
 	saturation: saturation,
 	color: color,
 	luminosity: luminosity,
-) !default;
+);
 
-$variants: () !default;
+$variants: ();
 
-$final-variants: map.merge($core-variants, $variants) !default;
+$final-variants: map.merge($core-variants, $variants);
 
-$core-pseudos: () !default;
-$pseudos: () !default;
-$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+$core-pseudos: ();
+$pseudos: ();
+$final-pseudos: list.join($core-pseudos, $pseudos);
 
 @include constructor(
   $keyword,

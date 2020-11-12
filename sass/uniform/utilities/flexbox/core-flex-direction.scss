@@ -2,26 +2,26 @@
 @use "sass:map";
 @use "sass:list";
 
-$keyword: flex !default;
-$responsive: true !default;
-$responsive-pseudos: false !default;
+$keyword: flex;
+$responsive: true;
+$responsive-pseudos: false;
 
-$properties: (flex-direction) !default;
+$properties: (flex-direction);
 
 $core-variants: (
   row: row,
   row-reverse: row-reverse,
   col: column,
   col-reverse: column-reverse
-) !default;
+);
 
-$variants: () !default;
+$variants: ();
 
-$final-variants: map.merge($core-variants, $variants) !default;
+$final-variants: map.merge($core-variants, $variants);
 
-$core-pseudos: () !default;
-$pseudos: () !default;
-$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+$core-pseudos: ();
+$pseudos: ();
+$final-pseudos: list.join($core-pseudos, $pseudos);
 
 @include constructor(
   $keyword,

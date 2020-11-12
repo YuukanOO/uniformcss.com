@@ -2,23 +2,23 @@
 @use "sass:map";
 @use "sass:list";
 
-$keyword: outline !default;
-$responsive: false !default;
-$responsive-pseudos: false !default;
+$keyword: outline;
+$responsive: false;
+$responsive-pseudos: false;
 
-$properties: (outline) !default;
+$properties: (outline);
 
 $core-variants: (
   0: 0
-) !default;
+);
 
-$variants: () !default;
+$variants: ();
 
-$final-variants: map.merge($core-variants, $variants) !default;
+$final-variants: map.merge($core-variants, $variants);
 
-$core-pseudos: () !default;
-$pseudos: (focus) !default;
-$final-pseudos: list.join($core-pseudos, $pseudos) !default;
+$core-pseudos: ();
+$pseudos: (focus);
+$final-pseudos: list.join($core-pseudos, $pseudos);
 
 @include constructor(
   $keyword,
