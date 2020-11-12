@@ -1,19 +1,20 @@
-/* Error: Undefined variable.
- *     ,
- * 469 | $config: map.deep-merge($config, $user-config);
- *     |                                  ^^^^^^^^^^^^
- *     '
- *   uniform/_index.scss 469:34  @forward
- *   uniform/_index.scss 223:1   @use
- *   styles.scss 1:1             root stylesheet */
+/*! UniformCSS v1.0.0 | MIT License | github.com/UniformCSS/uniformcss */
+.bg-pink-100 {
+  background-color: blue;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a     \2577 \a 469 \2502  $config: map.deep-merge($config, $user-config);\a     \2502                                   ^^^^^^^^^^^^\a     \2575 \a   uniform/_index.scss 469:34  @forward\a   uniform/_index.scss 223:1   @use\a   styles.scss 1:1             root stylesheet";
+.hover\.bg-pink-100:hover {
+  background-color: blue;
+}
+
+.group:hover .group-hover\.bg-pink-100 {
+  background-color: blue;
+}
+
+.active\.bg-pink-100:active {
+  background-color: blue;
+}
+
+.focus\.bg-pink-100:focus {
+  background-color: blue;
 }
