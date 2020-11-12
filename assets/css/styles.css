@@ -1,20 +1,110 @@
-/* Error: $map2: colors() is not a map.
- *    ,
- * 10 |     $collection: map.merge($collection, $map);
- *    |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   uniform/_index.scss 10:18                                     merge()
- *   uniform/utilities/background/core-background-color.scss 12:2  @use
- *   uniform/_index.scss 28:1                                      @use
- *   styles.scss 1:1                                               root stylesheet */
+/*! UniformCSS v1.0.0 | MIT License | github.com/UniformCSS/uniformcss */
+.hello-align-hello {
+  : hello;
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: $map2: colors() is not a map.\a    \2577 \a 10 \2502      $collection: map.merge($collection, $map);\a    \2502                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   uniform/_index.scss 10:18                                     merge()\a   uniform/utilities/background/core-background-color.scss 12:2  @use\a   uniform/_index.scss 28:1                                      @use\a   styles.scss 1:1                                               root stylesheet";
+.odd\.hello-align-hello:nth-child(odd) {
+  : hello;
+}
+
+.custom-sm {
+  custom-property: 10px;
+}
+
+.custom-md {
+  custom-property: 20px;
+}
+
+.last\.custom-sm:last-child {
+  custom-property: 10px;
+}
+
+.last\.custom-md:last-child {
+  custom-property: 20px;
+}
+
+@media (min-width: 896px) {
+  .xs\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .xs\.custom-md {
+    custom-property: 20px;
+  }
+
+  .xs\.last\.custom-sm:last-child {
+    custom-property: 10px;
+  }
+
+  .xs\.last\.custom-md:last-child {
+    custom-property: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .sm\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .sm\.custom-md {
+    custom-property: 20px;
+  }
+
+  .sm\.last\.custom-sm:last-child {
+    custom-property: 10px;
+  }
+
+  .sm\.last\.custom-md:last-child {
+    custom-property: 20px;
+  }
+}
+@media (min-width: 1152px) {
+  .md\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .md\.custom-md {
+    custom-property: 20px;
+  }
+
+  .md\.last\.custom-sm:last-child {
+    custom-property: 10px;
+  }
+
+  .md\.last\.custom-md:last-child {
+    custom-property: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .lg\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .lg\.custom-md {
+    custom-property: 20px;
+  }
+
+  .lg\.last\.custom-sm:last-child {
+    custom-property: 10px;
+  }
+
+  .lg\.last\.custom-md:last-child {
+    custom-property: 20px;
+  }
+}
+@media (min-width: 1536px) {
+  .xl\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .xl\.custom-md {
+    custom-property: 20px;
+  }
+
+  .xl\.last\.custom-sm:last-child {
+    custom-property: 10px;
+  }
+
+  .xl\.last\.custom-md:last-child {
+    custom-property: 20px;
+  }
 }

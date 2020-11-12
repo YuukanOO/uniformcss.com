@@ -29,8 +29,7 @@
 		"sass": "^1.29.0",
 		"postcss-cli": "^7.1.2",
 		"autoprefixer": "^9.8.6",
-		"clean-css-cli": "^4.3.0",
-		
+		"clean-css-cli": "^4.3.0"		
 	},
 	"browserslist": [
 		"last 2 version",

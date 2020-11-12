@@ -1,4 +1,5 @@
-@use "uniform/config" as *;
+@use "uniform/config";
+@use "uniform/core";
 @use "sass:map";
 
 $name: background-color;
@@ -9,8 +10,8 @@ $responsive-pseudos: false;
 $properties: (background-color);
 
 $variants: (
-	merge(
-		colors()
+	core.merge(
+		core.colors()
 	)
 );
 
@@ -33,4 +34,4 @@ $config: (
   )
 );
 
-$default-config: map.deep-merge($default-config, $config);
+config.$default-config: map.deep-merge(config.$default-config, $config);

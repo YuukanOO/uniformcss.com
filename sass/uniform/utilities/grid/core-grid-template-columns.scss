@@ -24,7 +24,7 @@ $variants: (
   12: repeat(12, minmax(0, 1fr))
 );
 
-$pseudos();
+$pseudos: ();
 
 $config: (
   utilities: (
