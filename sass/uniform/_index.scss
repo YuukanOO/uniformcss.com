@@ -1,10 +1,11 @@
 /*! UniformCSS v1.0.0 | MIT License | github.com/UniformCSS/uniformcss */
 @use "sass:map";
 @use "sass:list";
-
+@forward "config/user";
+@use "uniform/config/staging";
 
 // CORE - ALIGNMENT (6)
-// @use "utilities/alignment/core-align-content";
+@use "utilities/alignment/core-align-content";
 // @use "utilities/alignment/core-align-items";
 // @use "utilities/alignment/core-align-self";
 // @use "utilities/alignment/core-justify-content";
@@ -220,7 +221,821 @@
 // CONSTRUCTOR
 // ============================================================
 
-@forward "config";
-@use "core";
+// @use "core";
 
-@include core.constructor(core.$config);
+$config: staging.$config;
+
+// @debug $config;
+@mixin constructor($config) {
+
+  $important: map.get($config, important);
+  $prefix: map.get($config, prefix);
+  $delimiter: map.get($config, delimiter);
+  $child-delimiter: map.get($config, child-delimiter);
+  $pseudo-delimiter: map.get($config, pseudo-delimiter);
+  $screen-delimiter: map.get($config, screen-delimiter);
+  $variablize: map.get($config, variablize);
+  $headless: map.get($config, headless);
+  $root: map.get($config, root);
+  $debugger: map.get($config, debugger);
+
+  $include-reset-styles: map.get($config, include-reset-styles);
+  $include-starter-styles: map.get($config, include-starter-styles);
+  $include-wrapper-module: map.get($config, include-wrapper-module);
+  $include-table-module: map.get($config, include-table-module);
+  $include-button-module: map.get($config, include-button-module);
+  $include-form-module: map.get($config, include-form-module);
+
+  $utilities: map.get($config, utilities);
+  $excludes: map.get($config, excludes);
+
+  $all-pseudos: map.get($config, pseudos);
+  $all-screens: map.get($config, screens);
+
+  $colors: map.get($config, colors);
+  $gradients: map.get($config, gradients);
+
+  @if ($headless == false) {
+    @if ($debugger == true) {
+
+      // NON RESPONSIVE
+      // loop through utilities
+      @each $utility, $utility-value in $utilities {
+        $keyword: map.get($utility-value, keyword);
+        $responsive: map.get($utility-value, responsive);
+        $responsive-pseudos: map.get($utility-value, responsive-pseudos);
+        $properties: map.get($utility-value, properties);
+        $default-variants: map.get($utility-value, default-variants);
+        $variants: map.get($utility-value, variants);
+
+        // Construct standard classes
+        @each $default-variant, $default-variant-value in $default-variants {
+          @if $default-variant == null {
+            .#{$prefix}#{if($keyword == null, null, $keyword)} {
+              @each $property in $properties {
+                #{$property}: $default-variant-value if($important == true, !important, null);
+              }
+            }
+          } @else {
+            .#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+              @each $property in $properties {
+                #{$property}: $default-variant-value if($important == true, !important, null);
+              }
+            }
+          }
+        }
+        @each $variant, $variant-value in $variants {
+          @if $variant == null {
+            .#{$prefix}#{if($keyword == null, null, $keyword)} {
+              @each $property in $properties {
+                #{$property}: $variant-value if($important == true, !important, null);
+              }
+            }
+          } @else {
+            .#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+              @each $property in $properties {
+                #{$property}: $variant-value if($important == true, !important, null);
+              }
+            }
+          }
+        }
+
+        // Construct standard pseudo classes
+        @each $pseudo, $pseudo-value in $all-pseudos {
+          @each $default-variant, $default-variant-value in $default-variants {
+            @if $default-variant == null {
+              
+              @if $pseudo == group-hover {
+                .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }  
+              } @else if $pseudo == group-focus {
+                .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }  
+              } @else {
+                .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{$pseudo-value} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+
+            } @else {
+              @if $pseudo == group-hover {
+                .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }
+              } @else if $pseudo == group-focus {
+                .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                } 
+              } @else {
+                .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{$pseudo-value} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+            }
+          }
+          @each $variant, $variant-value in $variants {
+            @if $variant == null {
+              
+              @if $pseudo == group-hover {
+                .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }  
+              } @else if $pseudo == group-focus {
+                .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }  
+              } @else {
+                .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{$pseudo-value} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+
+            } @else {
+              @if $pseudo == group-hover {
+                .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }
+              } @else if $pseudo == group-focus {
+                .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                } 
+              } @else {
+                .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{$pseudo-value} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      // RESPONSIVE
+      // loop through screens
+      @each $screen, $screen-value in $all-screens {
+        @media (min-width: $screen-value) {  
+          // loop through utilities
+          @each $utility, $utility-value in $utilities {
+            $keyword: map.get($utility-value, keyword);
+            $responsive: map.get($utility-value, responsive);
+            $responsive-pseudos: map.get($utility-value, responsive-pseudos);
+            $properties: map.get($utility-value, properties);
+            $default-variants: map.get($utility-value, default-variants);
+            $variants: map.get($utility-value, variants);
+
+            // Construct responsive classes
+            @each $default-variant, $default-variant-value in $default-variants {
+              @if $default-variant == null {
+                .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }
+              } @else {
+                .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                  @each $property in $properties {
+                    #{$property}: $default-variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+            }
+            @each $variant, $variant-value in $variants {
+              @if $variant == null {
+                .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }
+              } @else {
+                .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                  @each $property in $properties {
+                    #{$property}: $variant-value if($important == true, !important, null);
+                  }
+                }
+              }
+            }
+            
+
+            // Construct responsive pseudo classes
+            @each $pseudo, $pseudo-value in $all-pseudos {
+              @each $default-variant, $default-variant-value in $default-variants {
+                @if $default-variant == null {
+                  
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{$pseudo-value} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{$pseudo-value} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+              @each $variant, $variant-value in $variants {
+                @if $variant == null {
+                  
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{$pseudo-value} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{$pseudo-value} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+    } @else {
+
+      // NON RESPONSIVE
+      // loop through utilities
+      @each $utility, $utility-value in $utilities {
+        $keyword: map.get($utility-value, keyword);
+        $responsive: map.get($utility-value, responsive);
+        $responsive-pseudos: map.get($utility-value, responsive-pseudos);
+        $properties: map.get($utility-value, properties);
+        $default-variants: map.get($utility-value, default-variants);
+        $default-pseudos: map.get($utility-value, default-pseudos);
+        $variants: map.get($utility-value, variants);
+        $pseudos: map.get($utility-value, pseudos);
+        
+        // check if utility exists in the exclude list
+        @if (list.index($excludes, $utility) == null) {
+          // Construct standard classes
+          @each $default-variant, $default-variant-value in $default-variants {
+            @if $default-variant == null {
+              .#{$prefix}#{if($keyword == null, null, $keyword)} {
+                @each $property in $properties {
+                  #{$property}: $default-variant-value if($important == true, !important, null);
+                }
+              }
+            } @else {
+              .#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                @each $property in $properties {
+                  #{$property}: $default-variant-value if($important == true, !important, null);
+                }
+              }
+            }
+          }
+          @each $variant, $variant-value in $variants {
+            @if $variant == null {
+              .#{$prefix}#{if($keyword == null, null, $keyword)} {
+                @each $property in $properties {
+                  #{$property}: $variant-value if($important == true, !important, null);
+                }
+              }
+            } @else {
+              .#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                @each $property in $properties {
+                  #{$property}: $variant-value if($important == true, !important, null);
+                }
+              }
+            }
+          }
+
+          // Construct standard pseudo classes
+          @each $default-pseudo in $default-pseudos {
+            @if map.has-key($all-pseudos, $default-pseudo) {
+              @each $default-variant, $default-variant-value in $default-variants {
+                @if $default-variant == null {
+                  
+                  @if $default-pseudo == group-hover {
+                    .group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $default-pseudo == group-focus {
+                    .group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $default-pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $default-pseudo == group-hover {
+                    .group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $default-pseudo == group-focus {
+                    .group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{map.get($all-pseudos, $default-pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+              @each $variant, $variant-value in $variants {
+                @if $variant == null {
+                  
+                  @if $default-pseudo == group-hover {
+                    .group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $default-pseudo == group-focus {
+                    .group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $default-pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $default-pseudo == group-hover {
+                    .group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $default-pseudo == group-focus {
+                    .group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{map.get($all-pseudos, $default-pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          @each $pseudo in $pseudos {
+            @if map.has-key($all-pseudos, $pseudo) {
+              @each $default-variant, $default-variant-value in $default-variants {
+                @if $default-variant == null {
+                  
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{map.get($all-pseudos, $pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+              @each $variant, $variant-value in $variants {
+                @if $variant == null {
+                  
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }  
+                  } @else {
+                    .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+
+                } @else {
+                  @if $pseudo == group-hover {
+                    .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else if $pseudo == group-focus {
+                    .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    } 
+                  } @else {
+                    .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{map.get($all-pseudos, $pseudo)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        } @else {
+
+        }
+      }
+      
+      // RESPONSIVE
+      // loop through screens
+      @each $screen, $screen-value in $all-screens {
+        @media (min-width: $screen-value) {  
+          // loop through utilities
+          @each $utility, $utility-value in $utilities {
+            $keyword: map.get($utility-value, keyword);
+            $responsive: map.get($utility-value, responsive);
+            $responsive-pseudos: map.get($utility-value, responsive-pseudos);
+            $properties: map.get($utility-value, properties);
+            $default-variants: map.get($utility-value, default-variants);
+            $default-pseudos: map.get($utility-value, default-pseudos);
+            $variants: map.get($utility-value, variants);
+            $pseudos: map.get($utility-value, pseudos);
+
+            // check if utility exists in the exclude list
+            @if (list.index($excludes, $utility) == null) {
+              @if $responsive == true {
+                
+                // Construct responsive classes
+                @each $default-variant, $default-variant-value in $default-variants {
+                  @if $default-variant == null {
+                    .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                      @each $property in $properties {
+                        #{$property}: $default-variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+                @each $variant, $variant-value in $variants {
+                  @if $variant == null {
+                    .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  } @else {
+                    .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                      @each $property in $properties {
+                        #{$property}: $variant-value if($important == true, !important, null);
+                      }
+                    }
+                  }
+                }
+                
+
+                @if $responsive-pseudos == true {
+                  // Construct responsive pseudo classes
+                  @each $default-pseudo in $default-pseudos {
+                    @if map.has-key($all-pseudos, $default-pseudo) {
+                      @each $default-variant, $default-variant-value in $default-variants {
+                        @if $default-variant == null {
+                          
+                          @if $default-pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else if $default-pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $default-pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+
+                        } @else {
+                          @if $default-pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          } @else if $default-pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            } 
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{map.get($all-pseudos, $default-pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+                        }
+                      }
+                      @each $variant, $variant-value in $variants {
+                        @if $variant == null {
+                          
+                          @if $default-pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else if $default-pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $default-pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+
+                        } @else {
+                          @if $default-pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          } @else if $default-pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            } 
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{map.get($all-pseudos, $default-pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  @each $pseudo in $pseudos {
+                    @if map.has-key($all-pseudos, $pseudo) {
+                      @each $default-variant, $default-variant-value in $default-variants {
+                        @if $default-variant == null {
+                          
+                          @if $pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else if $pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+
+                        } @else {
+                          @if $pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          } @else if $pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            } 
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $default-variant}:#{map.get($all-pseudos, $pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $default-variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+                        }
+                      }
+                      @each $variant, $variant-value in $variants {
+                        @if $variant == null {
+                          
+                          @if $pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else if $pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }  
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword)}:#{map.get($all-pseudos, $pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+
+                        } @else {
+                          @if $pseudo == group-hover {
+                            .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          } @else if $pseudo == group-focus {
+                            .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            } 
+                          } @else {
+                            .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, null, $keyword + $delimiter)}#{'' + $variant}:#{map.get($all-pseudos, $pseudo)} {
+                              @each $property in $properties {
+                                #{$property}: $variant-value if($important == true, !important, null);
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                }
+              }
+            } @else {
+
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+@include constructor($config);
+

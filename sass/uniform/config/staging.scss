@@ -1,0 +1,38 @@
+@use "uniform/config/default";
+@use "uniform/config/user";
+@use "sass:map";
+
+// PRIVATE FUNCTIONS
+// ============================================================
+
+$config: map.deep-merge(default.$config, user.$config);
+
+// FETCH FUNCTIONS
+// ============================================================
+
+// multiple map merge function
+@function merge($maps...) {
+  $collection: ();
+  @each $map in $maps {
+    $collection: map.merge($collection, $map);
+  }
+  @return $collection;
+}
+
+
+@function default-colors() {
+  $result: ();
+  @if (map.get($config, default-colors)) {
+    $result: map.get($config, default-colors);
+  }
+  @return $result;
+}
+
+
+@function colors() {
+  $result: ();
+  @if (map.get($config, colors)) {
+    $result: map.get($config, colors);
+  }
+  @return $result;
+}

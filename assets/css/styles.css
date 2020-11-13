@@ -1,20 +1,3462 @@
 /*! UniformCSS v1.0.0 | MIT License | github.com/UniformCSS/uniformcss */
-.bg-pink-100 {
-  background-color: blue;
+.custom-sm {
+  custom-property: 10px;
 }
 
-.hover\.bg-pink-100:hover {
-  background-color: blue;
+.custom-md {
+  custom-property: 20px;
 }
 
-.group:hover .group-hover\.bg-pink-100 {
-  background-color: blue;
+.first\.custom-sm:first-child {
+  custom-property: 10px;
 }
 
-.active\.bg-pink-100:active {
-  background-color: blue;
+.first\.custom-md:first-child {
+  custom-property: 20px;
 }
 
-.focus\.bg-pink-100:focus {
-  background-color: blue;
+.last\.custom-sm:last-child {
+  custom-property: 10px;
+}
+
+.last\.custom-md:last-child {
+  custom-property: 20px;
+}
+
+.first-type\.custom-sm:first-of-type {
+  custom-property: 10px;
+}
+
+.first-type\.custom-md:first-of-type {
+  custom-property: 20px;
+}
+
+.last-type\.custom-sm:last-of-type {
+  custom-property: 10px;
+}
+
+.last-type\.custom-md:last-of-type {
+  custom-property: 20px;
+}
+
+.odd\.custom-sm:nth-child(odd) {
+  custom-property: 10px;
+}
+
+.odd\.custom-md:nth-child(odd) {
+  custom-property: 20px;
+}
+
+.even\.custom-sm:nth-child(even) {
+  custom-property: 10px;
+}
+
+.even\.custom-md:nth-child(even) {
+  custom-property: 20px;
+}
+
+.hover\.custom-sm:hover {
+  custom-property: 10px;
+}
+
+.hover\.custom-md:hover {
+  custom-property: 20px;
+}
+
+.active\.custom-sm:active {
+  custom-property: 10px;
+}
+
+.active\.custom-md:active {
+  custom-property: 20px;
+}
+
+.visited\.custom-sm:visited {
+  custom-property: 10px;
+}
+
+.visited\.custom-md:visited {
+  custom-property: 20px;
+}
+
+.focus\.custom-sm:focus {
+  custom-property: 10px;
+}
+
+.focus\.custom-md:focus {
+  custom-property: 20px;
+}
+
+.disabled\.custom-sm:disabled {
+  custom-property: 10px;
+}
+
+.disabled\.custom-md:disabled {
+  custom-property: 20px;
+}
+
+.empty\.custom-sm:empty {
+  custom-property: 10px;
+}
+
+.empty\.custom-md:empty {
+  custom-property: 20px;
+}
+
+.focus-within\.custom-sm:focus-within {
+  custom-property: 10px;
+}
+
+.focus-within\.custom-md:focus-within {
+  custom-property: 20px;
+}
+
+.group:hover .group-hover\.custom-sm {
+  custom-property: 10px;
+}
+
+.group:hover .group-hover\.custom-md {
+  custom-property: 20px;
+}
+
+.group:focus .group-focus\.custom-sm {
+  custom-property: 10px;
+}
+
+.group:focus .group-focus\.custom-md {
+  custom-property: 20px;
+}
+
+.bg-red-100 {
+  background-color: pink;
+}
+
+.first\.bg-red-100:first-child {
+  background-color: pink;
+}
+
+.last\.bg-red-100:last-child {
+  background-color: pink;
+}
+
+.first-type\.bg-red-100:first-of-type {
+  background-color: pink;
+}
+
+.last-type\.bg-red-100:last-of-type {
+  background-color: pink;
+}
+
+.odd\.bg-red-100:nth-child(odd) {
+  background-color: pink;
+}
+
+.even\.bg-red-100:nth-child(even) {
+  background-color: pink;
+}
+
+.hover\.bg-red-100:hover {
+  background-color: pink;
+}
+
+.active\.bg-red-100:active {
+  background-color: pink;
+}
+
+.visited\.bg-red-100:visited {
+  background-color: pink;
+}
+
+.focus\.bg-red-100:focus {
+  background-color: pink;
+}
+
+.disabled\.bg-red-100:disabled {
+  background-color: pink;
+}
+
+.empty\.bg-red-100:empty {
+  background-color: pink;
+}
+
+.focus-within\.bg-red-100:focus-within {
+  background-color: pink;
+}
+
+.group:hover .group-hover\.bg-red-100 {
+  background-color: pink;
+}
+
+.group:focus .group-focus\.bg-red-100 {
+  background-color: pink;
+}
+
+.align-content-stretch {
+  align-content: stretch;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.align-content-start {
+  align-content: flex-start;
+}
+
+.align-content-end {
+  align-content: flex-end;
+}
+
+.align-content-between {
+  align-content: space-between;
+}
+
+.align-content-around {
+  align-content: space-around;
+}
+
+.first\.align-content-stretch:first-child {
+  align-content: stretch;
+}
+
+.first\.align-content-center:first-child {
+  align-content: center;
+}
+
+.first\.align-content-start:first-child {
+  align-content: flex-start;
+}
+
+.first\.align-content-end:first-child {
+  align-content: flex-end;
+}
+
+.first\.align-content-between:first-child {
+  align-content: space-between;
+}
+
+.first\.align-content-around:first-child {
+  align-content: space-around;
+}
+
+.last\.align-content-stretch:last-child {
+  align-content: stretch;
+}
+
+.last\.align-content-center:last-child {
+  align-content: center;
+}
+
+.last\.align-content-start:last-child {
+  align-content: flex-start;
+}
+
+.last\.align-content-end:last-child {
+  align-content: flex-end;
+}
+
+.last\.align-content-between:last-child {
+  align-content: space-between;
+}
+
+.last\.align-content-around:last-child {
+  align-content: space-around;
+}
+
+.first-type\.align-content-stretch:first-of-type {
+  align-content: stretch;
+}
+
+.first-type\.align-content-center:first-of-type {
+  align-content: center;
+}
+
+.first-type\.align-content-start:first-of-type {
+  align-content: flex-start;
+}
+
+.first-type\.align-content-end:first-of-type {
+  align-content: flex-end;
+}
+
+.first-type\.align-content-between:first-of-type {
+  align-content: space-between;
+}
+
+.first-type\.align-content-around:first-of-type {
+  align-content: space-around;
+}
+
+.last-type\.align-content-stretch:last-of-type {
+  align-content: stretch;
+}
+
+.last-type\.align-content-center:last-of-type {
+  align-content: center;
+}
+
+.last-type\.align-content-start:last-of-type {
+  align-content: flex-start;
+}
+
+.last-type\.align-content-end:last-of-type {
+  align-content: flex-end;
+}
+
+.last-type\.align-content-between:last-of-type {
+  align-content: space-between;
+}
+
+.last-type\.align-content-around:last-of-type {
+  align-content: space-around;
+}
+
+.odd\.align-content-stretch:nth-child(odd) {
+  align-content: stretch;
+}
+
+.odd\.align-content-center:nth-child(odd) {
+  align-content: center;
+}
+
+.odd\.align-content-start:nth-child(odd) {
+  align-content: flex-start;
+}
+
+.odd\.align-content-end:nth-child(odd) {
+  align-content: flex-end;
+}
+
+.odd\.align-content-between:nth-child(odd) {
+  align-content: space-between;
+}
+
+.odd\.align-content-around:nth-child(odd) {
+  align-content: space-around;
+}
+
+.even\.align-content-stretch:nth-child(even) {
+  align-content: stretch;
+}
+
+.even\.align-content-center:nth-child(even) {
+  align-content: center;
+}
+
+.even\.align-content-start:nth-child(even) {
+  align-content: flex-start;
+}
+
+.even\.align-content-end:nth-child(even) {
+  align-content: flex-end;
+}
+
+.even\.align-content-between:nth-child(even) {
+  align-content: space-between;
+}
+
+.even\.align-content-around:nth-child(even) {
+  align-content: space-around;
+}
+
+.hover\.align-content-stretch:hover {
+  align-content: stretch;
+}
+
+.hover\.align-content-center:hover {
+  align-content: center;
+}
+
+.hover\.align-content-start:hover {
+  align-content: flex-start;
+}
+
+.hover\.align-content-end:hover {
+  align-content: flex-end;
+}
+
+.hover\.align-content-between:hover {
+  align-content: space-between;
+}
+
+.hover\.align-content-around:hover {
+  align-content: space-around;
+}
+
+.active\.align-content-stretch:active {
+  align-content: stretch;
+}
+
+.active\.align-content-center:active {
+  align-content: center;
+}
+
+.active\.align-content-start:active {
+  align-content: flex-start;
+}
+
+.active\.align-content-end:active {
+  align-content: flex-end;
+}
+
+.active\.align-content-between:active {
+  align-content: space-between;
+}
+
+.active\.align-content-around:active {
+  align-content: space-around;
+}
+
+.visited\.align-content-stretch:visited {
+  align-content: stretch;
+}
+
+.visited\.align-content-center:visited {
+  align-content: center;
+}
+
+.visited\.align-content-start:visited {
+  align-content: flex-start;
+}
+
+.visited\.align-content-end:visited {
+  align-content: flex-end;
+}
+
+.visited\.align-content-between:visited {
+  align-content: space-between;
+}
+
+.visited\.align-content-around:visited {
+  align-content: space-around;
+}
+
+.focus\.align-content-stretch:focus {
+  align-content: stretch;
+}
+
+.focus\.align-content-center:focus {
+  align-content: center;
+}
+
+.focus\.align-content-start:focus {
+  align-content: flex-start;
+}
+
+.focus\.align-content-end:focus {
+  align-content: flex-end;
+}
+
+.focus\.align-content-between:focus {
+  align-content: space-between;
+}
+
+.focus\.align-content-around:focus {
+  align-content: space-around;
+}
+
+.disabled\.align-content-stretch:disabled {
+  align-content: stretch;
+}
+
+.disabled\.align-content-center:disabled {
+  align-content: center;
+}
+
+.disabled\.align-content-start:disabled {
+  align-content: flex-start;
+}
+
+.disabled\.align-content-end:disabled {
+  align-content: flex-end;
+}
+
+.disabled\.align-content-between:disabled {
+  align-content: space-between;
+}
+
+.disabled\.align-content-around:disabled {
+  align-content: space-around;
+}
+
+.empty\.align-content-stretch:empty {
+  align-content: stretch;
+}
+
+.empty\.align-content-center:empty {
+  align-content: center;
+}
+
+.empty\.align-content-start:empty {
+  align-content: flex-start;
+}
+
+.empty\.align-content-end:empty {
+  align-content: flex-end;
+}
+
+.empty\.align-content-between:empty {
+  align-content: space-between;
+}
+
+.empty\.align-content-around:empty {
+  align-content: space-around;
+}
+
+.focus-within\.align-content-stretch:focus-within {
+  align-content: stretch;
+}
+
+.focus-within\.align-content-center:focus-within {
+  align-content: center;
+}
+
+.focus-within\.align-content-start:focus-within {
+  align-content: flex-start;
+}
+
+.focus-within\.align-content-end:focus-within {
+  align-content: flex-end;
+}
+
+.focus-within\.align-content-between:focus-within {
+  align-content: space-between;
+}
+
+.focus-within\.align-content-around:focus-within {
+  align-content: space-around;
+}
+
+.group:hover .group-hover\.align-content-stretch {
+  align-content: stretch;
+}
+
+.group:hover .group-hover\.align-content-center {
+  align-content: center;
+}
+
+.group:hover .group-hover\.align-content-start {
+  align-content: flex-start;
+}
+
+.group:hover .group-hover\.align-content-end {
+  align-content: flex-end;
+}
+
+.group:hover .group-hover\.align-content-between {
+  align-content: space-between;
+}
+
+.group:hover .group-hover\.align-content-around {
+  align-content: space-around;
+}
+
+.group:focus .group-focus\.align-content-stretch {
+  align-content: stretch;
+}
+
+.group:focus .group-focus\.align-content-center {
+  align-content: center;
+}
+
+.group:focus .group-focus\.align-content-start {
+  align-content: flex-start;
+}
+
+.group:focus .group-focus\.align-content-end {
+  align-content: flex-end;
+}
+
+.group:focus .group-focus\.align-content-between {
+  align-content: space-between;
+}
+
+.group:focus .group-focus\.align-content-around {
+  align-content: space-around;
+}
+
+@media (min-width: 896px) {
+  .xs\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .xs\.custom-md {
+    custom-property: 20px;
+  }
+
+  .xs\.first\.custom-sm:first-child {
+    custom-property: 10px;
+  }
+
+  .xs\.first\.custom-md:first-child {
+    custom-property: 20px;
+  }
+
+  .xs\.last\.custom-sm:last-child {
+    custom-property: 10px;
+  }
+
+  .xs\.last\.custom-md:last-child {
+    custom-property: 20px;
+  }
+
+  .xs\.first-type\.custom-sm:first-of-type {
+    custom-property: 10px;
+  }
+
+  .xs\.first-type\.custom-md:first-of-type {
+    custom-property: 20px;
+  }
+
+  .xs\.last-type\.custom-sm:last-of-type {
+    custom-property: 10px;
+  }
+
+  .xs\.last-type\.custom-md:last-of-type {
+    custom-property: 20px;
+  }
+
+  .xs\.odd\.custom-sm:nth-child(odd) {
+    custom-property: 10px;
+  }
+
+  .xs\.odd\.custom-md:nth-child(odd) {
+    custom-property: 20px;
+  }
+
+  .xs\.even\.custom-sm:nth-child(even) {
+    custom-property: 10px;
+  }
+
+  .xs\.even\.custom-md:nth-child(even) {
+    custom-property: 20px;
+  }
+
+  .xs\.hover\.custom-sm:hover {
+    custom-property: 10px;
+  }
+
+  .xs\.hover\.custom-md:hover {
+    custom-property: 20px;
+  }
+
+  .xs\.active\.custom-sm:active {
+    custom-property: 10px;
+  }
+
+  .xs\.active\.custom-md:active {
+    custom-property: 20px;
+  }
+
+  .xs\.visited\.custom-sm:visited {
+    custom-property: 10px;
+  }
+
+  .xs\.visited\.custom-md:visited {
+    custom-property: 20px;
+  }
+
+  .xs\.focus\.custom-sm:focus {
+    custom-property: 10px;
+  }
+
+  .xs\.focus\.custom-md:focus {
+    custom-property: 20px;
+  }
+
+  .xs\.disabled\.custom-sm:disabled {
+    custom-property: 10px;
+  }
+
+  .xs\.disabled\.custom-md:disabled {
+    custom-property: 20px;
+  }
+
+  .xs\.empty\.custom-sm:empty {
+    custom-property: 10px;
+  }
+
+  .xs\.empty\.custom-md:empty {
+    custom-property: 20px;
+  }
+
+  .xs\.focus-within\.custom-sm:focus-within {
+    custom-property: 10px;
+  }
+
+  .xs\.focus-within\.custom-md:focus-within {
+    custom-property: 20px;
+  }
+
+  .group:hover .xs\.group-hover\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .group:hover .xs\.group-hover\.custom-md {
+    custom-property: 20px;
+  }
+
+  .group:focus .xs\.group-focus\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .group:focus .xs\.group-focus\.custom-md {
+    custom-property: 20px;
+  }
+
+  .xs\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .xs\.first\.bg-red-100:first-child {
+    background-color: pink;
+  }
+
+  .xs\.last\.bg-red-100:last-child {
+    background-color: pink;
+  }
+
+  .xs\.first-type\.bg-red-100:first-of-type {
+    background-color: pink;
+  }
+
+  .xs\.last-type\.bg-red-100:last-of-type {
+    background-color: pink;
+  }
+
+  .xs\.odd\.bg-red-100:nth-child(odd) {
+    background-color: pink;
+  }
+
+  .xs\.even\.bg-red-100:nth-child(even) {
+    background-color: pink;
+  }
+
+  .xs\.hover\.bg-red-100:hover {
+    background-color: pink;
+  }
+
+  .xs\.active\.bg-red-100:active {
+    background-color: pink;
+  }
+
+  .xs\.visited\.bg-red-100:visited {
+    background-color: pink;
+  }
+
+  .xs\.focus\.bg-red-100:focus {
+    background-color: pink;
+  }
+
+  .xs\.disabled\.bg-red-100:disabled {
+    background-color: pink;
+  }
+
+  .xs\.empty\.bg-red-100:empty {
+    background-color: pink;
+  }
+
+  .xs\.focus-within\.bg-red-100:focus-within {
+    background-color: pink;
+  }
+
+  .group:hover .xs\.group-hover\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .group:focus .xs\.group-focus\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .xs\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .xs\.align-content-center {
+    align-content: center;
+  }
+
+  .xs\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .xs\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .xs\.align-content-between {
+    align-content: space-between;
+  }
+
+  .xs\.align-content-around {
+    align-content: space-around;
+  }
+
+  .xs\.first\.align-content-stretch:first-child {
+    align-content: stretch;
+  }
+
+  .xs\.first\.align-content-center:first-child {
+    align-content: center;
+  }
+
+  .xs\.first\.align-content-start:first-child {
+    align-content: flex-start;
+  }
+
+  .xs\.first\.align-content-end:first-child {
+    align-content: flex-end;
+  }
+
+  .xs\.first\.align-content-between:first-child {
+    align-content: space-between;
+  }
+
+  .xs\.first\.align-content-around:first-child {
+    align-content: space-around;
+  }
+
+  .xs\.last\.align-content-stretch:last-child {
+    align-content: stretch;
+  }
+
+  .xs\.last\.align-content-center:last-child {
+    align-content: center;
+  }
+
+  .xs\.last\.align-content-start:last-child {
+    align-content: flex-start;
+  }
+
+  .xs\.last\.align-content-end:last-child {
+    align-content: flex-end;
+  }
+
+  .xs\.last\.align-content-between:last-child {
+    align-content: space-between;
+  }
+
+  .xs\.last\.align-content-around:last-child {
+    align-content: space-around;
+  }
+
+  .xs\.first-type\.align-content-stretch:first-of-type {
+    align-content: stretch;
+  }
+
+  .xs\.first-type\.align-content-center:first-of-type {
+    align-content: center;
+  }
+
+  .xs\.first-type\.align-content-start:first-of-type {
+    align-content: flex-start;
+  }
+
+  .xs\.first-type\.align-content-end:first-of-type {
+    align-content: flex-end;
+  }
+
+  .xs\.first-type\.align-content-between:first-of-type {
+    align-content: space-between;
+  }
+
+  .xs\.first-type\.align-content-around:first-of-type {
+    align-content: space-around;
+  }
+
+  .xs\.last-type\.align-content-stretch:last-of-type {
+    align-content: stretch;
+  }
+
+  .xs\.last-type\.align-content-center:last-of-type {
+    align-content: center;
+  }
+
+  .xs\.last-type\.align-content-start:last-of-type {
+    align-content: flex-start;
+  }
+
+  .xs\.last-type\.align-content-end:last-of-type {
+    align-content: flex-end;
+  }
+
+  .xs\.last-type\.align-content-between:last-of-type {
+    align-content: space-between;
+  }
+
+  .xs\.last-type\.align-content-around:last-of-type {
+    align-content: space-around;
+  }
+
+  .xs\.odd\.align-content-stretch:nth-child(odd) {
+    align-content: stretch;
+  }
+
+  .xs\.odd\.align-content-center:nth-child(odd) {
+    align-content: center;
+  }
+
+  .xs\.odd\.align-content-start:nth-child(odd) {
+    align-content: flex-start;
+  }
+
+  .xs\.odd\.align-content-end:nth-child(odd) {
+    align-content: flex-end;
+  }
+
+  .xs\.odd\.align-content-between:nth-child(odd) {
+    align-content: space-between;
+  }
+
+  .xs\.odd\.align-content-around:nth-child(odd) {
+    align-content: space-around;
+  }
+
+  .xs\.even\.align-content-stretch:nth-child(even) {
+    align-content: stretch;
+  }
+
+  .xs\.even\.align-content-center:nth-child(even) {
+    align-content: center;
+  }
+
+  .xs\.even\.align-content-start:nth-child(even) {
+    align-content: flex-start;
+  }
+
+  .xs\.even\.align-content-end:nth-child(even) {
+    align-content: flex-end;
+  }
+
+  .xs\.even\.align-content-between:nth-child(even) {
+    align-content: space-between;
+  }
+
+  .xs\.even\.align-content-around:nth-child(even) {
+    align-content: space-around;
+  }
+
+  .xs\.hover\.align-content-stretch:hover {
+    align-content: stretch;
+  }
+
+  .xs\.hover\.align-content-center:hover {
+    align-content: center;
+  }
+
+  .xs\.hover\.align-content-start:hover {
+    align-content: flex-start;
+  }
+
+  .xs\.hover\.align-content-end:hover {
+    align-content: flex-end;
+  }
+
+  .xs\.hover\.align-content-between:hover {
+    align-content: space-between;
+  }
+
+  .xs\.hover\.align-content-around:hover {
+    align-content: space-around;
+  }
+
+  .xs\.active\.align-content-stretch:active {
+    align-content: stretch;
+  }
+
+  .xs\.active\.align-content-center:active {
+    align-content: center;
+  }
+
+  .xs\.active\.align-content-start:active {
+    align-content: flex-start;
+  }
+
+  .xs\.active\.align-content-end:active {
+    align-content: flex-end;
+  }
+
+  .xs\.active\.align-content-between:active {
+    align-content: space-between;
+  }
+
+  .xs\.active\.align-content-around:active {
+    align-content: space-around;
+  }
+
+  .xs\.visited\.align-content-stretch:visited {
+    align-content: stretch;
+  }
+
+  .xs\.visited\.align-content-center:visited {
+    align-content: center;
+  }
+
+  .xs\.visited\.align-content-start:visited {
+    align-content: flex-start;
+  }
+
+  .xs\.visited\.align-content-end:visited {
+    align-content: flex-end;
+  }
+
+  .xs\.visited\.align-content-between:visited {
+    align-content: space-between;
+  }
+
+  .xs\.visited\.align-content-around:visited {
+    align-content: space-around;
+  }
+
+  .xs\.focus\.align-content-stretch:focus {
+    align-content: stretch;
+  }
+
+  .xs\.focus\.align-content-center:focus {
+    align-content: center;
+  }
+
+  .xs\.focus\.align-content-start:focus {
+    align-content: flex-start;
+  }
+
+  .xs\.focus\.align-content-end:focus {
+    align-content: flex-end;
+  }
+
+  .xs\.focus\.align-content-between:focus {
+    align-content: space-between;
+  }
+
+  .xs\.focus\.align-content-around:focus {
+    align-content: space-around;
+  }
+
+  .xs\.disabled\.align-content-stretch:disabled {
+    align-content: stretch;
+  }
+
+  .xs\.disabled\.align-content-center:disabled {
+    align-content: center;
+  }
+
+  .xs\.disabled\.align-content-start:disabled {
+    align-content: flex-start;
+  }
+
+  .xs\.disabled\.align-content-end:disabled {
+    align-content: flex-end;
+  }
+
+  .xs\.disabled\.align-content-between:disabled {
+    align-content: space-between;
+  }
+
+  .xs\.disabled\.align-content-around:disabled {
+    align-content: space-around;
+  }
+
+  .xs\.empty\.align-content-stretch:empty {
+    align-content: stretch;
+  }
+
+  .xs\.empty\.align-content-center:empty {
+    align-content: center;
+  }
+
+  .xs\.empty\.align-content-start:empty {
+    align-content: flex-start;
+  }
+
+  .xs\.empty\.align-content-end:empty {
+    align-content: flex-end;
+  }
+
+  .xs\.empty\.align-content-between:empty {
+    align-content: space-between;
+  }
+
+  .xs\.empty\.align-content-around:empty {
+    align-content: space-around;
+  }
+
+  .xs\.focus-within\.align-content-stretch:focus-within {
+    align-content: stretch;
+  }
+
+  .xs\.focus-within\.align-content-center:focus-within {
+    align-content: center;
+  }
+
+  .xs\.focus-within\.align-content-start:focus-within {
+    align-content: flex-start;
+  }
+
+  .xs\.focus-within\.align-content-end:focus-within {
+    align-content: flex-end;
+  }
+
+  .xs\.focus-within\.align-content-between:focus-within {
+    align-content: space-between;
+  }
+
+  .xs\.focus-within\.align-content-around:focus-within {
+    align-content: space-around;
+  }
+
+  .group:hover .xs\.group-hover\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .group:hover .xs\.group-hover\.align-content-center {
+    align-content: center;
+  }
+
+  .group:hover .xs\.group-hover\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .group:hover .xs\.group-hover\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .group:hover .xs\.group-hover\.align-content-between {
+    align-content: space-between;
+  }
+
+  .group:hover .xs\.group-hover\.align-content-around {
+    align-content: space-around;
+  }
+
+  .group:focus .xs\.group-focus\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .group:focus .xs\.group-focus\.align-content-center {
+    align-content: center;
+  }
+
+  .group:focus .xs\.group-focus\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .group:focus .xs\.group-focus\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .group:focus .xs\.group-focus\.align-content-between {
+    align-content: space-between;
+  }
+
+  .group:focus .xs\.group-focus\.align-content-around {
+    align-content: space-around;
+  }
+}
+@media (min-width: 1024px) {
+  .sm\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .sm\.custom-md {
+    custom-property: 20px;
+  }
+
+  .sm\.first\.custom-sm:first-child {
+    custom-property: 10px;
+  }
+
+  .sm\.first\.custom-md:first-child {
+    custom-property: 20px;
+  }
+
+  .sm\.last\.custom-sm:last-child {
+    custom-property: 10px;
+  }
+
+  .sm\.last\.custom-md:last-child {
+    custom-property: 20px;
+  }
+
+  .sm\.first-type\.custom-sm:first-of-type {
+    custom-property: 10px;
+  }
+
+  .sm\.first-type\.custom-md:first-of-type {
+    custom-property: 20px;
+  }
+
+  .sm\.last-type\.custom-sm:last-of-type {
+    custom-property: 10px;
+  }
+
+  .sm\.last-type\.custom-md:last-of-type {
+    custom-property: 20px;
+  }
+
+  .sm\.odd\.custom-sm:nth-child(odd) {
+    custom-property: 10px;
+  }
+
+  .sm\.odd\.custom-md:nth-child(odd) {
+    custom-property: 20px;
+  }
+
+  .sm\.even\.custom-sm:nth-child(even) {
+    custom-property: 10px;
+  }
+
+  .sm\.even\.custom-md:nth-child(even) {
+    custom-property: 20px;
+  }
+
+  .sm\.hover\.custom-sm:hover {
+    custom-property: 10px;
+  }
+
+  .sm\.hover\.custom-md:hover {
+    custom-property: 20px;
+  }
+
+  .sm\.active\.custom-sm:active {
+    custom-property: 10px;
+  }
+
+  .sm\.active\.custom-md:active {
+    custom-property: 20px;
+  }
+
+  .sm\.visited\.custom-sm:visited {
+    custom-property: 10px;
+  }
+
+  .sm\.visited\.custom-md:visited {
+    custom-property: 20px;
+  }
+
+  .sm\.focus\.custom-sm:focus {
+    custom-property: 10px;
+  }
+
+  .sm\.focus\.custom-md:focus {
+    custom-property: 20px;
+  }
+
+  .sm\.disabled\.custom-sm:disabled {
+    custom-property: 10px;
+  }
+
+  .sm\.disabled\.custom-md:disabled {
+    custom-property: 20px;
+  }
+
+  .sm\.empty\.custom-sm:empty {
+    custom-property: 10px;
+  }
+
+  .sm\.empty\.custom-md:empty {
+    custom-property: 20px;
+  }
+
+  .sm\.focus-within\.custom-sm:focus-within {
+    custom-property: 10px;
+  }
+
+  .sm\.focus-within\.custom-md:focus-within {
+    custom-property: 20px;
+  }
+
+  .group:hover .sm\.group-hover\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .group:hover .sm\.group-hover\.custom-md {
+    custom-property: 20px;
+  }
+
+  .group:focus .sm\.group-focus\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .group:focus .sm\.group-focus\.custom-md {
+    custom-property: 20px;
+  }
+
+  .sm\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .sm\.first\.bg-red-100:first-child {
+    background-color: pink;
+  }
+
+  .sm\.last\.bg-red-100:last-child {
+    background-color: pink;
+  }
+
+  .sm\.first-type\.bg-red-100:first-of-type {
+    background-color: pink;
+  }
+
+  .sm\.last-type\.bg-red-100:last-of-type {
+    background-color: pink;
+  }
+
+  .sm\.odd\.bg-red-100:nth-child(odd) {
+    background-color: pink;
+  }
+
+  .sm\.even\.bg-red-100:nth-child(even) {
+    background-color: pink;
+  }
+
+  .sm\.hover\.bg-red-100:hover {
+    background-color: pink;
+  }
+
+  .sm\.active\.bg-red-100:active {
+    background-color: pink;
+  }
+
+  .sm\.visited\.bg-red-100:visited {
+    background-color: pink;
+  }
+
+  .sm\.focus\.bg-red-100:focus {
+    background-color: pink;
+  }
+
+  .sm\.disabled\.bg-red-100:disabled {
+    background-color: pink;
+  }
+
+  .sm\.empty\.bg-red-100:empty {
+    background-color: pink;
+  }
+
+  .sm\.focus-within\.bg-red-100:focus-within {
+    background-color: pink;
+  }
+
+  .group:hover .sm\.group-hover\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .group:focus .sm\.group-focus\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .sm\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .sm\.align-content-center {
+    align-content: center;
+  }
+
+  .sm\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .sm\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .sm\.align-content-between {
+    align-content: space-between;
+  }
+
+  .sm\.align-content-around {
+    align-content: space-around;
+  }
+
+  .sm\.first\.align-content-stretch:first-child {
+    align-content: stretch;
+  }
+
+  .sm\.first\.align-content-center:first-child {
+    align-content: center;
+  }
+
+  .sm\.first\.align-content-start:first-child {
+    align-content: flex-start;
+  }
+
+  .sm\.first\.align-content-end:first-child {
+    align-content: flex-end;
+  }
+
+  .sm\.first\.align-content-between:first-child {
+    align-content: space-between;
+  }
+
+  .sm\.first\.align-content-around:first-child {
+    align-content: space-around;
+  }
+
+  .sm\.last\.align-content-stretch:last-child {
+    align-content: stretch;
+  }
+
+  .sm\.last\.align-content-center:last-child {
+    align-content: center;
+  }
+
+  .sm\.last\.align-content-start:last-child {
+    align-content: flex-start;
+  }
+
+  .sm\.last\.align-content-end:last-child {
+    align-content: flex-end;
+  }
+
+  .sm\.last\.align-content-between:last-child {
+    align-content: space-between;
+  }
+
+  .sm\.last\.align-content-around:last-child {
+    align-content: space-around;
+  }
+
+  .sm\.first-type\.align-content-stretch:first-of-type {
+    align-content: stretch;
+  }
+
+  .sm\.first-type\.align-content-center:first-of-type {
+    align-content: center;
+  }
+
+  .sm\.first-type\.align-content-start:first-of-type {
+    align-content: flex-start;
+  }
+
+  .sm\.first-type\.align-content-end:first-of-type {
+    align-content: flex-end;
+  }
+
+  .sm\.first-type\.align-content-between:first-of-type {
+    align-content: space-between;
+  }
+
+  .sm\.first-type\.align-content-around:first-of-type {
+    align-content: space-around;
+  }
+
+  .sm\.last-type\.align-content-stretch:last-of-type {
+    align-content: stretch;
+  }
+
+  .sm\.last-type\.align-content-center:last-of-type {
+    align-content: center;
+  }
+
+  .sm\.last-type\.align-content-start:last-of-type {
+    align-content: flex-start;
+  }
+
+  .sm\.last-type\.align-content-end:last-of-type {
+    align-content: flex-end;
+  }
+
+  .sm\.last-type\.align-content-between:last-of-type {
+    align-content: space-between;
+  }
+
+  .sm\.last-type\.align-content-around:last-of-type {
+    align-content: space-around;
+  }
+
+  .sm\.odd\.align-content-stretch:nth-child(odd) {
+    align-content: stretch;
+  }
+
+  .sm\.odd\.align-content-center:nth-child(odd) {
+    align-content: center;
+  }
+
+  .sm\.odd\.align-content-start:nth-child(odd) {
+    align-content: flex-start;
+  }
+
+  .sm\.odd\.align-content-end:nth-child(odd) {
+    align-content: flex-end;
+  }
+
+  .sm\.odd\.align-content-between:nth-child(odd) {
+    align-content: space-between;
+  }
+
+  .sm\.odd\.align-content-around:nth-child(odd) {
+    align-content: space-around;
+  }
+
+  .sm\.even\.align-content-stretch:nth-child(even) {
+    align-content: stretch;
+  }
+
+  .sm\.even\.align-content-center:nth-child(even) {
+    align-content: center;
+  }
+
+  .sm\.even\.align-content-start:nth-child(even) {
+    align-content: flex-start;
+  }
+
+  .sm\.even\.align-content-end:nth-child(even) {
+    align-content: flex-end;
+  }
+
+  .sm\.even\.align-content-between:nth-child(even) {
+    align-content: space-between;
+  }
+
+  .sm\.even\.align-content-around:nth-child(even) {
+    align-content: space-around;
+  }
+
+  .sm\.hover\.align-content-stretch:hover {
+    align-content: stretch;
+  }
+
+  .sm\.hover\.align-content-center:hover {
+    align-content: center;
+  }
+
+  .sm\.hover\.align-content-start:hover {
+    align-content: flex-start;
+  }
+
+  .sm\.hover\.align-content-end:hover {
+    align-content: flex-end;
+  }
+
+  .sm\.hover\.align-content-between:hover {
+    align-content: space-between;
+  }
+
+  .sm\.hover\.align-content-around:hover {
+    align-content: space-around;
+  }
+
+  .sm\.active\.align-content-stretch:active {
+    align-content: stretch;
+  }
+
+  .sm\.active\.align-content-center:active {
+    align-content: center;
+  }
+
+  .sm\.active\.align-content-start:active {
+    align-content: flex-start;
+  }
+
+  .sm\.active\.align-content-end:active {
+    align-content: flex-end;
+  }
+
+  .sm\.active\.align-content-between:active {
+    align-content: space-between;
+  }
+
+  .sm\.active\.align-content-around:active {
+    align-content: space-around;
+  }
+
+  .sm\.visited\.align-content-stretch:visited {
+    align-content: stretch;
+  }
+
+  .sm\.visited\.align-content-center:visited {
+    align-content: center;
+  }
+
+  .sm\.visited\.align-content-start:visited {
+    align-content: flex-start;
+  }
+
+  .sm\.visited\.align-content-end:visited {
+    align-content: flex-end;
+  }
+
+  .sm\.visited\.align-content-between:visited {
+    align-content: space-between;
+  }
+
+  .sm\.visited\.align-content-around:visited {
+    align-content: space-around;
+  }
+
+  .sm\.focus\.align-content-stretch:focus {
+    align-content: stretch;
+  }
+
+  .sm\.focus\.align-content-center:focus {
+    align-content: center;
+  }
+
+  .sm\.focus\.align-content-start:focus {
+    align-content: flex-start;
+  }
+
+  .sm\.focus\.align-content-end:focus {
+    align-content: flex-end;
+  }
+
+  .sm\.focus\.align-content-between:focus {
+    align-content: space-between;
+  }
+
+  .sm\.focus\.align-content-around:focus {
+    align-content: space-around;
+  }
+
+  .sm\.disabled\.align-content-stretch:disabled {
+    align-content: stretch;
+  }
+
+  .sm\.disabled\.align-content-center:disabled {
+    align-content: center;
+  }
+
+  .sm\.disabled\.align-content-start:disabled {
+    align-content: flex-start;
+  }
+
+  .sm\.disabled\.align-content-end:disabled {
+    align-content: flex-end;
+  }
+
+  .sm\.disabled\.align-content-between:disabled {
+    align-content: space-between;
+  }
+
+  .sm\.disabled\.align-content-around:disabled {
+    align-content: space-around;
+  }
+
+  .sm\.empty\.align-content-stretch:empty {
+    align-content: stretch;
+  }
+
+  .sm\.empty\.align-content-center:empty {
+    align-content: center;
+  }
+
+  .sm\.empty\.align-content-start:empty {
+    align-content: flex-start;
+  }
+
+  .sm\.empty\.align-content-end:empty {
+    align-content: flex-end;
+  }
+
+  .sm\.empty\.align-content-between:empty {
+    align-content: space-between;
+  }
+
+  .sm\.empty\.align-content-around:empty {
+    align-content: space-around;
+  }
+
+  .sm\.focus-within\.align-content-stretch:focus-within {
+    align-content: stretch;
+  }
+
+  .sm\.focus-within\.align-content-center:focus-within {
+    align-content: center;
+  }
+
+  .sm\.focus-within\.align-content-start:focus-within {
+    align-content: flex-start;
+  }
+
+  .sm\.focus-within\.align-content-end:focus-within {
+    align-content: flex-end;
+  }
+
+  .sm\.focus-within\.align-content-between:focus-within {
+    align-content: space-between;
+  }
+
+  .sm\.focus-within\.align-content-around:focus-within {
+    align-content: space-around;
+  }
+
+  .group:hover .sm\.group-hover\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .group:hover .sm\.group-hover\.align-content-center {
+    align-content: center;
+  }
+
+  .group:hover .sm\.group-hover\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .group:hover .sm\.group-hover\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .group:hover .sm\.group-hover\.align-content-between {
+    align-content: space-between;
+  }
+
+  .group:hover .sm\.group-hover\.align-content-around {
+    align-content: space-around;
+  }
+
+  .group:focus .sm\.group-focus\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .group:focus .sm\.group-focus\.align-content-center {
+    align-content: center;
+  }
+
+  .group:focus .sm\.group-focus\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .group:focus .sm\.group-focus\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .group:focus .sm\.group-focus\.align-content-between {
+    align-content: space-between;
+  }
+
+  .group:focus .sm\.group-focus\.align-content-around {
+    align-content: space-around;
+  }
+}
+@media (min-width: 1152px) {
+  .md\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .md\.custom-md {
+    custom-property: 20px;
+  }
+
+  .md\.first\.custom-sm:first-child {
+    custom-property: 10px;
+  }
+
+  .md\.first\.custom-md:first-child {
+    custom-property: 20px;
+  }
+
+  .md\.last\.custom-sm:last-child {
+    custom-property: 10px;
+  }
+
+  .md\.last\.custom-md:last-child {
+    custom-property: 20px;
+  }
+
+  .md\.first-type\.custom-sm:first-of-type {
+    custom-property: 10px;
+  }
+
+  .md\.first-type\.custom-md:first-of-type {
+    custom-property: 20px;
+  }
+
+  .md\.last-type\.custom-sm:last-of-type {
+    custom-property: 10px;
+  }
+
+  .md\.last-type\.custom-md:last-of-type {
+    custom-property: 20px;
+  }
+
+  .md\.odd\.custom-sm:nth-child(odd) {
+    custom-property: 10px;
+  }
+
+  .md\.odd\.custom-md:nth-child(odd) {
+    custom-property: 20px;
+  }
+
+  .md\.even\.custom-sm:nth-child(even) {
+    custom-property: 10px;
+  }
+
+  .md\.even\.custom-md:nth-child(even) {
+    custom-property: 20px;
+  }
+
+  .md\.hover\.custom-sm:hover {
+    custom-property: 10px;
+  }
+
+  .md\.hover\.custom-md:hover {
+    custom-property: 20px;
+  }
+
+  .md\.active\.custom-sm:active {
+    custom-property: 10px;
+  }
+
+  .md\.active\.custom-md:active {
+    custom-property: 20px;
+  }
+
+  .md\.visited\.custom-sm:visited {
+    custom-property: 10px;
+  }
+
+  .md\.visited\.custom-md:visited {
+    custom-property: 20px;
+  }
+
+  .md\.focus\.custom-sm:focus {
+    custom-property: 10px;
+  }
+
+  .md\.focus\.custom-md:focus {
+    custom-property: 20px;
+  }
+
+  .md\.disabled\.custom-sm:disabled {
+    custom-property: 10px;
+  }
+
+  .md\.disabled\.custom-md:disabled {
+    custom-property: 20px;
+  }
+
+  .md\.empty\.custom-sm:empty {
+    custom-property: 10px;
+  }
+
+  .md\.empty\.custom-md:empty {
+    custom-property: 20px;
+  }
+
+  .md\.focus-within\.custom-sm:focus-within {
+    custom-property: 10px;
+  }
+
+  .md\.focus-within\.custom-md:focus-within {
+    custom-property: 20px;
+  }
+
+  .group:hover .md\.group-hover\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .group:hover .md\.group-hover\.custom-md {
+    custom-property: 20px;
+  }
+
+  .group:focus .md\.group-focus\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .group:focus .md\.group-focus\.custom-md {
+    custom-property: 20px;
+  }
+
+  .md\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .md\.first\.bg-red-100:first-child {
+    background-color: pink;
+  }
+
+  .md\.last\.bg-red-100:last-child {
+    background-color: pink;
+  }
+
+  .md\.first-type\.bg-red-100:first-of-type {
+    background-color: pink;
+  }
+
+  .md\.last-type\.bg-red-100:last-of-type {
+    background-color: pink;
+  }
+
+  .md\.odd\.bg-red-100:nth-child(odd) {
+    background-color: pink;
+  }
+
+  .md\.even\.bg-red-100:nth-child(even) {
+    background-color: pink;
+  }
+
+  .md\.hover\.bg-red-100:hover {
+    background-color: pink;
+  }
+
+  .md\.active\.bg-red-100:active {
+    background-color: pink;
+  }
+
+  .md\.visited\.bg-red-100:visited {
+    background-color: pink;
+  }
+
+  .md\.focus\.bg-red-100:focus {
+    background-color: pink;
+  }
+
+  .md\.disabled\.bg-red-100:disabled {
+    background-color: pink;
+  }
+
+  .md\.empty\.bg-red-100:empty {
+    background-color: pink;
+  }
+
+  .md\.focus-within\.bg-red-100:focus-within {
+    background-color: pink;
+  }
+
+  .group:hover .md\.group-hover\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .group:focus .md\.group-focus\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .md\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .md\.align-content-center {
+    align-content: center;
+  }
+
+  .md\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .md\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .md\.align-content-between {
+    align-content: space-between;
+  }
+
+  .md\.align-content-around {
+    align-content: space-around;
+  }
+
+  .md\.first\.align-content-stretch:first-child {
+    align-content: stretch;
+  }
+
+  .md\.first\.align-content-center:first-child {
+    align-content: center;
+  }
+
+  .md\.first\.align-content-start:first-child {
+    align-content: flex-start;
+  }
+
+  .md\.first\.align-content-end:first-child {
+    align-content: flex-end;
+  }
+
+  .md\.first\.align-content-between:first-child {
+    align-content: space-between;
+  }
+
+  .md\.first\.align-content-around:first-child {
+    align-content: space-around;
+  }
+
+  .md\.last\.align-content-stretch:last-child {
+    align-content: stretch;
+  }
+
+  .md\.last\.align-content-center:last-child {
+    align-content: center;
+  }
+
+  .md\.last\.align-content-start:last-child {
+    align-content: flex-start;
+  }
+
+  .md\.last\.align-content-end:last-child {
+    align-content: flex-end;
+  }
+
+  .md\.last\.align-content-between:last-child {
+    align-content: space-between;
+  }
+
+  .md\.last\.align-content-around:last-child {
+    align-content: space-around;
+  }
+
+  .md\.first-type\.align-content-stretch:first-of-type {
+    align-content: stretch;
+  }
+
+  .md\.first-type\.align-content-center:first-of-type {
+    align-content: center;
+  }
+
+  .md\.first-type\.align-content-start:first-of-type {
+    align-content: flex-start;
+  }
+
+  .md\.first-type\.align-content-end:first-of-type {
+    align-content: flex-end;
+  }
+
+  .md\.first-type\.align-content-between:first-of-type {
+    align-content: space-between;
+  }
+
+  .md\.first-type\.align-content-around:first-of-type {
+    align-content: space-around;
+  }
+
+  .md\.last-type\.align-content-stretch:last-of-type {
+    align-content: stretch;
+  }
+
+  .md\.last-type\.align-content-center:last-of-type {
+    align-content: center;
+  }
+
+  .md\.last-type\.align-content-start:last-of-type {
+    align-content: flex-start;
+  }
+
+  .md\.last-type\.align-content-end:last-of-type {
+    align-content: flex-end;
+  }
+
+  .md\.last-type\.align-content-between:last-of-type {
+    align-content: space-between;
+  }
+
+  .md\.last-type\.align-content-around:last-of-type {
+    align-content: space-around;
+  }
+
+  .md\.odd\.align-content-stretch:nth-child(odd) {
+    align-content: stretch;
+  }
+
+  .md\.odd\.align-content-center:nth-child(odd) {
+    align-content: center;
+  }
+
+  .md\.odd\.align-content-start:nth-child(odd) {
+    align-content: flex-start;
+  }
+
+  .md\.odd\.align-content-end:nth-child(odd) {
+    align-content: flex-end;
+  }
+
+  .md\.odd\.align-content-between:nth-child(odd) {
+    align-content: space-between;
+  }
+
+  .md\.odd\.align-content-around:nth-child(odd) {
+    align-content: space-around;
+  }
+
+  .md\.even\.align-content-stretch:nth-child(even) {
+    align-content: stretch;
+  }
+
+  .md\.even\.align-content-center:nth-child(even) {
+    align-content: center;
+  }
+
+  .md\.even\.align-content-start:nth-child(even) {
+    align-content: flex-start;
+  }
+
+  .md\.even\.align-content-end:nth-child(even) {
+    align-content: flex-end;
+  }
+
+  .md\.even\.align-content-between:nth-child(even) {
+    align-content: space-between;
+  }
+
+  .md\.even\.align-content-around:nth-child(even) {
+    align-content: space-around;
+  }
+
+  .md\.hover\.align-content-stretch:hover {
+    align-content: stretch;
+  }
+
+  .md\.hover\.align-content-center:hover {
+    align-content: center;
+  }
+
+  .md\.hover\.align-content-start:hover {
+    align-content: flex-start;
+  }
+
+  .md\.hover\.align-content-end:hover {
+    align-content: flex-end;
+  }
+
+  .md\.hover\.align-content-between:hover {
+    align-content: space-between;
+  }
+
+  .md\.hover\.align-content-around:hover {
+    align-content: space-around;
+  }
+
+  .md\.active\.align-content-stretch:active {
+    align-content: stretch;
+  }
+
+  .md\.active\.align-content-center:active {
+    align-content: center;
+  }
+
+  .md\.active\.align-content-start:active {
+    align-content: flex-start;
+  }
+
+  .md\.active\.align-content-end:active {
+    align-content: flex-end;
+  }
+
+  .md\.active\.align-content-between:active {
+    align-content: space-between;
+  }
+
+  .md\.active\.align-content-around:active {
+    align-content: space-around;
+  }
+
+  .md\.visited\.align-content-stretch:visited {
+    align-content: stretch;
+  }
+
+  .md\.visited\.align-content-center:visited {
+    align-content: center;
+  }
+
+  .md\.visited\.align-content-start:visited {
+    align-content: flex-start;
+  }
+
+  .md\.visited\.align-content-end:visited {
+    align-content: flex-end;
+  }
+
+  .md\.visited\.align-content-between:visited {
+    align-content: space-between;
+  }
+
+  .md\.visited\.align-content-around:visited {
+    align-content: space-around;
+  }
+
+  .md\.focus\.align-content-stretch:focus {
+    align-content: stretch;
+  }
+
+  .md\.focus\.align-content-center:focus {
+    align-content: center;
+  }
+
+  .md\.focus\.align-content-start:focus {
+    align-content: flex-start;
+  }
+
+  .md\.focus\.align-content-end:focus {
+    align-content: flex-end;
+  }
+
+  .md\.focus\.align-content-between:focus {
+    align-content: space-between;
+  }
+
+  .md\.focus\.align-content-around:focus {
+    align-content: space-around;
+  }
+
+  .md\.disabled\.align-content-stretch:disabled {
+    align-content: stretch;
+  }
+
+  .md\.disabled\.align-content-center:disabled {
+    align-content: center;
+  }
+
+  .md\.disabled\.align-content-start:disabled {
+    align-content: flex-start;
+  }
+
+  .md\.disabled\.align-content-end:disabled {
+    align-content: flex-end;
+  }
+
+  .md\.disabled\.align-content-between:disabled {
+    align-content: space-between;
+  }
+
+  .md\.disabled\.align-content-around:disabled {
+    align-content: space-around;
+  }
+
+  .md\.empty\.align-content-stretch:empty {
+    align-content: stretch;
+  }
+
+  .md\.empty\.align-content-center:empty {
+    align-content: center;
+  }
+
+  .md\.empty\.align-content-start:empty {
+    align-content: flex-start;
+  }
+
+  .md\.empty\.align-content-end:empty {
+    align-content: flex-end;
+  }
+
+  .md\.empty\.align-content-between:empty {
+    align-content: space-between;
+  }
+
+  .md\.empty\.align-content-around:empty {
+    align-content: space-around;
+  }
+
+  .md\.focus-within\.align-content-stretch:focus-within {
+    align-content: stretch;
+  }
+
+  .md\.focus-within\.align-content-center:focus-within {
+    align-content: center;
+  }
+
+  .md\.focus-within\.align-content-start:focus-within {
+    align-content: flex-start;
+  }
+
+  .md\.focus-within\.align-content-end:focus-within {
+    align-content: flex-end;
+  }
+
+  .md\.focus-within\.align-content-between:focus-within {
+    align-content: space-between;
+  }
+
+  .md\.focus-within\.align-content-around:focus-within {
+    align-content: space-around;
+  }
+
+  .group:hover .md\.group-hover\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .group:hover .md\.group-hover\.align-content-center {
+    align-content: center;
+  }
+
+  .group:hover .md\.group-hover\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .group:hover .md\.group-hover\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .group:hover .md\.group-hover\.align-content-between {
+    align-content: space-between;
+  }
+
+  .group:hover .md\.group-hover\.align-content-around {
+    align-content: space-around;
+  }
+
+  .group:focus .md\.group-focus\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .group:focus .md\.group-focus\.align-content-center {
+    align-content: center;
+  }
+
+  .group:focus .md\.group-focus\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .group:focus .md\.group-focus\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .group:focus .md\.group-focus\.align-content-between {
+    align-content: space-between;
+  }
+
+  .group:focus .md\.group-focus\.align-content-around {
+    align-content: space-around;
+  }
+}
+@media (min-width: 1280px) {
+  .lg\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .lg\.custom-md {
+    custom-property: 20px;
+  }
+
+  .lg\.first\.custom-sm:first-child {
+    custom-property: 10px;
+  }
+
+  .lg\.first\.custom-md:first-child {
+    custom-property: 20px;
+  }
+
+  .lg\.last\.custom-sm:last-child {
+    custom-property: 10px;
+  }
+
+  .lg\.last\.custom-md:last-child {
+    custom-property: 20px;
+  }
+
+  .lg\.first-type\.custom-sm:first-of-type {
+    custom-property: 10px;
+  }
+
+  .lg\.first-type\.custom-md:first-of-type {
+    custom-property: 20px;
+  }
+
+  .lg\.last-type\.custom-sm:last-of-type {
+    custom-property: 10px;
+  }
+
+  .lg\.last-type\.custom-md:last-of-type {
+    custom-property: 20px;
+  }
+
+  .lg\.odd\.custom-sm:nth-child(odd) {
+    custom-property: 10px;
+  }
+
+  .lg\.odd\.custom-md:nth-child(odd) {
+    custom-property: 20px;
+  }
+
+  .lg\.even\.custom-sm:nth-child(even) {
+    custom-property: 10px;
+  }
+
+  .lg\.even\.custom-md:nth-child(even) {
+    custom-property: 20px;
+  }
+
+  .lg\.hover\.custom-sm:hover {
+    custom-property: 10px;
+  }
+
+  .lg\.hover\.custom-md:hover {
+    custom-property: 20px;
+  }
+
+  .lg\.active\.custom-sm:active {
+    custom-property: 10px;
+  }
+
+  .lg\.active\.custom-md:active {
+    custom-property: 20px;
+  }
+
+  .lg\.visited\.custom-sm:visited {
+    custom-property: 10px;
+  }
+
+  .lg\.visited\.custom-md:visited {
+    custom-property: 20px;
+  }
+
+  .lg\.focus\.custom-sm:focus {
+    custom-property: 10px;
+  }
+
+  .lg\.focus\.custom-md:focus {
+    custom-property: 20px;
+  }
+
+  .lg\.disabled\.custom-sm:disabled {
+    custom-property: 10px;
+  }
+
+  .lg\.disabled\.custom-md:disabled {
+    custom-property: 20px;
+  }
+
+  .lg\.empty\.custom-sm:empty {
+    custom-property: 10px;
+  }
+
+  .lg\.empty\.custom-md:empty {
+    custom-property: 20px;
+  }
+
+  .lg\.focus-within\.custom-sm:focus-within {
+    custom-property: 10px;
+  }
+
+  .lg\.focus-within\.custom-md:focus-within {
+    custom-property: 20px;
+  }
+
+  .group:hover .lg\.group-hover\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .group:hover .lg\.group-hover\.custom-md {
+    custom-property: 20px;
+  }
+
+  .group:focus .lg\.group-focus\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .group:focus .lg\.group-focus\.custom-md {
+    custom-property: 20px;
+  }
+
+  .lg\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .lg\.first\.bg-red-100:first-child {
+    background-color: pink;
+  }
+
+  .lg\.last\.bg-red-100:last-child {
+    background-color: pink;
+  }
+
+  .lg\.first-type\.bg-red-100:first-of-type {
+    background-color: pink;
+  }
+
+  .lg\.last-type\.bg-red-100:last-of-type {
+    background-color: pink;
+  }
+
+  .lg\.odd\.bg-red-100:nth-child(odd) {
+    background-color: pink;
+  }
+
+  .lg\.even\.bg-red-100:nth-child(even) {
+    background-color: pink;
+  }
+
+  .lg\.hover\.bg-red-100:hover {
+    background-color: pink;
+  }
+
+  .lg\.active\.bg-red-100:active {
+    background-color: pink;
+  }
+
+  .lg\.visited\.bg-red-100:visited {
+    background-color: pink;
+  }
+
+  .lg\.focus\.bg-red-100:focus {
+    background-color: pink;
+  }
+
+  .lg\.disabled\.bg-red-100:disabled {
+    background-color: pink;
+  }
+
+  .lg\.empty\.bg-red-100:empty {
+    background-color: pink;
+  }
+
+  .lg\.focus-within\.bg-red-100:focus-within {
+    background-color: pink;
+  }
+
+  .group:hover .lg\.group-hover\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .group:focus .lg\.group-focus\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .lg\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .lg\.align-content-center {
+    align-content: center;
+  }
+
+  .lg\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .lg\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .lg\.align-content-between {
+    align-content: space-between;
+  }
+
+  .lg\.align-content-around {
+    align-content: space-around;
+  }
+
+  .lg\.first\.align-content-stretch:first-child {
+    align-content: stretch;
+  }
+
+  .lg\.first\.align-content-center:first-child {
+    align-content: center;
+  }
+
+  .lg\.first\.align-content-start:first-child {
+    align-content: flex-start;
+  }
+
+  .lg\.first\.align-content-end:first-child {
+    align-content: flex-end;
+  }
+
+  .lg\.first\.align-content-between:first-child {
+    align-content: space-between;
+  }
+
+  .lg\.first\.align-content-around:first-child {
+    align-content: space-around;
+  }
+
+  .lg\.last\.align-content-stretch:last-child {
+    align-content: stretch;
+  }
+
+  .lg\.last\.align-content-center:last-child {
+    align-content: center;
+  }
+
+  .lg\.last\.align-content-start:last-child {
+    align-content: flex-start;
+  }
+
+  .lg\.last\.align-content-end:last-child {
+    align-content: flex-end;
+  }
+
+  .lg\.last\.align-content-between:last-child {
+    align-content: space-between;
+  }
+
+  .lg\.last\.align-content-around:last-child {
+    align-content: space-around;
+  }
+
+  .lg\.first-type\.align-content-stretch:first-of-type {
+    align-content: stretch;
+  }
+
+  .lg\.first-type\.align-content-center:first-of-type {
+    align-content: center;
+  }
+
+  .lg\.first-type\.align-content-start:first-of-type {
+    align-content: flex-start;
+  }
+
+  .lg\.first-type\.align-content-end:first-of-type {
+    align-content: flex-end;
+  }
+
+  .lg\.first-type\.align-content-between:first-of-type {
+    align-content: space-between;
+  }
+
+  .lg\.first-type\.align-content-around:first-of-type {
+    align-content: space-around;
+  }
+
+  .lg\.last-type\.align-content-stretch:last-of-type {
+    align-content: stretch;
+  }
+
+  .lg\.last-type\.align-content-center:last-of-type {
+    align-content: center;
+  }
+
+  .lg\.last-type\.align-content-start:last-of-type {
+    align-content: flex-start;
+  }
+
+  .lg\.last-type\.align-content-end:last-of-type {
+    align-content: flex-end;
+  }
+
+  .lg\.last-type\.align-content-between:last-of-type {
+    align-content: space-between;
+  }
+
+  .lg\.last-type\.align-content-around:last-of-type {
+    align-content: space-around;
+  }
+
+  .lg\.odd\.align-content-stretch:nth-child(odd) {
+    align-content: stretch;
+  }
+
+  .lg\.odd\.align-content-center:nth-child(odd) {
+    align-content: center;
+  }
+
+  .lg\.odd\.align-content-start:nth-child(odd) {
+    align-content: flex-start;
+  }
+
+  .lg\.odd\.align-content-end:nth-child(odd) {
+    align-content: flex-end;
+  }
+
+  .lg\.odd\.align-content-between:nth-child(odd) {
+    align-content: space-between;
+  }
+
+  .lg\.odd\.align-content-around:nth-child(odd) {
+    align-content: space-around;
+  }
+
+  .lg\.even\.align-content-stretch:nth-child(even) {
+    align-content: stretch;
+  }
+
+  .lg\.even\.align-content-center:nth-child(even) {
+    align-content: center;
+  }
+
+  .lg\.even\.align-content-start:nth-child(even) {
+    align-content: flex-start;
+  }
+
+  .lg\.even\.align-content-end:nth-child(even) {
+    align-content: flex-end;
+  }
+
+  .lg\.even\.align-content-between:nth-child(even) {
+    align-content: space-between;
+  }
+
+  .lg\.even\.align-content-around:nth-child(even) {
+    align-content: space-around;
+  }
+
+  .lg\.hover\.align-content-stretch:hover {
+    align-content: stretch;
+  }
+
+  .lg\.hover\.align-content-center:hover {
+    align-content: center;
+  }
+
+  .lg\.hover\.align-content-start:hover {
+    align-content: flex-start;
+  }
+
+  .lg\.hover\.align-content-end:hover {
+    align-content: flex-end;
+  }
+
+  .lg\.hover\.align-content-between:hover {
+    align-content: space-between;
+  }
+
+  .lg\.hover\.align-content-around:hover {
+    align-content: space-around;
+  }
+
+  .lg\.active\.align-content-stretch:active {
+    align-content: stretch;
+  }
+
+  .lg\.active\.align-content-center:active {
+    align-content: center;
+  }
+
+  .lg\.active\.align-content-start:active {
+    align-content: flex-start;
+  }
+
+  .lg\.active\.align-content-end:active {
+    align-content: flex-end;
+  }
+
+  .lg\.active\.align-content-between:active {
+    align-content: space-between;
+  }
+
+  .lg\.active\.align-content-around:active {
+    align-content: space-around;
+  }
+
+  .lg\.visited\.align-content-stretch:visited {
+    align-content: stretch;
+  }
+
+  .lg\.visited\.align-content-center:visited {
+    align-content: center;
+  }
+
+  .lg\.visited\.align-content-start:visited {
+    align-content: flex-start;
+  }
+
+  .lg\.visited\.align-content-end:visited {
+    align-content: flex-end;
+  }
+
+  .lg\.visited\.align-content-between:visited {
+    align-content: space-between;
+  }
+
+  .lg\.visited\.align-content-around:visited {
+    align-content: space-around;
+  }
+
+  .lg\.focus\.align-content-stretch:focus {
+    align-content: stretch;
+  }
+
+  .lg\.focus\.align-content-center:focus {
+    align-content: center;
+  }
+
+  .lg\.focus\.align-content-start:focus {
+    align-content: flex-start;
+  }
+
+  .lg\.focus\.align-content-end:focus {
+    align-content: flex-end;
+  }
+
+  .lg\.focus\.align-content-between:focus {
+    align-content: space-between;
+  }
+
+  .lg\.focus\.align-content-around:focus {
+    align-content: space-around;
+  }
+
+  .lg\.disabled\.align-content-stretch:disabled {
+    align-content: stretch;
+  }
+
+  .lg\.disabled\.align-content-center:disabled {
+    align-content: center;
+  }
+
+  .lg\.disabled\.align-content-start:disabled {
+    align-content: flex-start;
+  }
+
+  .lg\.disabled\.align-content-end:disabled {
+    align-content: flex-end;
+  }
+
+  .lg\.disabled\.align-content-between:disabled {
+    align-content: space-between;
+  }
+
+  .lg\.disabled\.align-content-around:disabled {
+    align-content: space-around;
+  }
+
+  .lg\.empty\.align-content-stretch:empty {
+    align-content: stretch;
+  }
+
+  .lg\.empty\.align-content-center:empty {
+    align-content: center;
+  }
+
+  .lg\.empty\.align-content-start:empty {
+    align-content: flex-start;
+  }
+
+  .lg\.empty\.align-content-end:empty {
+    align-content: flex-end;
+  }
+
+  .lg\.empty\.align-content-between:empty {
+    align-content: space-between;
+  }
+
+  .lg\.empty\.align-content-around:empty {
+    align-content: space-around;
+  }
+
+  .lg\.focus-within\.align-content-stretch:focus-within {
+    align-content: stretch;
+  }
+
+  .lg\.focus-within\.align-content-center:focus-within {
+    align-content: center;
+  }
+
+  .lg\.focus-within\.align-content-start:focus-within {
+    align-content: flex-start;
+  }
+
+  .lg\.focus-within\.align-content-end:focus-within {
+    align-content: flex-end;
+  }
+
+  .lg\.focus-within\.align-content-between:focus-within {
+    align-content: space-between;
+  }
+
+  .lg\.focus-within\.align-content-around:focus-within {
+    align-content: space-around;
+  }
+
+  .group:hover .lg\.group-hover\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .group:hover .lg\.group-hover\.align-content-center {
+    align-content: center;
+  }
+
+  .group:hover .lg\.group-hover\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .group:hover .lg\.group-hover\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .group:hover .lg\.group-hover\.align-content-between {
+    align-content: space-between;
+  }
+
+  .group:hover .lg\.group-hover\.align-content-around {
+    align-content: space-around;
+  }
+
+  .group:focus .lg\.group-focus\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .group:focus .lg\.group-focus\.align-content-center {
+    align-content: center;
+  }
+
+  .group:focus .lg\.group-focus\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .group:focus .lg\.group-focus\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .group:focus .lg\.group-focus\.align-content-between {
+    align-content: space-between;
+  }
+
+  .group:focus .lg\.group-focus\.align-content-around {
+    align-content: space-around;
+  }
+}
+@media (min-width: 1536px) {
+  .xl\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .xl\.custom-md {
+    custom-property: 20px;
+  }
+
+  .xl\.first\.custom-sm:first-child {
+    custom-property: 10px;
+  }
+
+  .xl\.first\.custom-md:first-child {
+    custom-property: 20px;
+  }
+
+  .xl\.last\.custom-sm:last-child {
+    custom-property: 10px;
+  }
+
+  .xl\.last\.custom-md:last-child {
+    custom-property: 20px;
+  }
+
+  .xl\.first-type\.custom-sm:first-of-type {
+    custom-property: 10px;
+  }
+
+  .xl\.first-type\.custom-md:first-of-type {
+    custom-property: 20px;
+  }
+
+  .xl\.last-type\.custom-sm:last-of-type {
+    custom-property: 10px;
+  }
+
+  .xl\.last-type\.custom-md:last-of-type {
+    custom-property: 20px;
+  }
+
+  .xl\.odd\.custom-sm:nth-child(odd) {
+    custom-property: 10px;
+  }
+
+  .xl\.odd\.custom-md:nth-child(odd) {
+    custom-property: 20px;
+  }
+
+  .xl\.even\.custom-sm:nth-child(even) {
+    custom-property: 10px;
+  }
+
+  .xl\.even\.custom-md:nth-child(even) {
+    custom-property: 20px;
+  }
+
+  .xl\.hover\.custom-sm:hover {
+    custom-property: 10px;
+  }
+
+  .xl\.hover\.custom-md:hover {
+    custom-property: 20px;
+  }
+
+  .xl\.active\.custom-sm:active {
+    custom-property: 10px;
+  }
+
+  .xl\.active\.custom-md:active {
+    custom-property: 20px;
+  }
+
+  .xl\.visited\.custom-sm:visited {
+    custom-property: 10px;
+  }
+
+  .xl\.visited\.custom-md:visited {
+    custom-property: 20px;
+  }
+
+  .xl\.focus\.custom-sm:focus {
+    custom-property: 10px;
+  }
+
+  .xl\.focus\.custom-md:focus {
+    custom-property: 20px;
+  }
+
+  .xl\.disabled\.custom-sm:disabled {
+    custom-property: 10px;
+  }
+
+  .xl\.disabled\.custom-md:disabled {
+    custom-property: 20px;
+  }
+
+  .xl\.empty\.custom-sm:empty {
+    custom-property: 10px;
+  }
+
+  .xl\.empty\.custom-md:empty {
+    custom-property: 20px;
+  }
+
+  .xl\.focus-within\.custom-sm:focus-within {
+    custom-property: 10px;
+  }
+
+  .xl\.focus-within\.custom-md:focus-within {
+    custom-property: 20px;
+  }
+
+  .group:hover .xl\.group-hover\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .group:hover .xl\.group-hover\.custom-md {
+    custom-property: 20px;
+  }
+
+  .group:focus .xl\.group-focus\.custom-sm {
+    custom-property: 10px;
+  }
+
+  .group:focus .xl\.group-focus\.custom-md {
+    custom-property: 20px;
+  }
+
+  .xl\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .xl\.first\.bg-red-100:first-child {
+    background-color: pink;
+  }
+
+  .xl\.last\.bg-red-100:last-child {
+    background-color: pink;
+  }
+
+  .xl\.first-type\.bg-red-100:first-of-type {
+    background-color: pink;
+  }
+
+  .xl\.last-type\.bg-red-100:last-of-type {
+    background-color: pink;
+  }
+
+  .xl\.odd\.bg-red-100:nth-child(odd) {
+    background-color: pink;
+  }
+
+  .xl\.even\.bg-red-100:nth-child(even) {
+    background-color: pink;
+  }
+
+  .xl\.hover\.bg-red-100:hover {
+    background-color: pink;
+  }
+
+  .xl\.active\.bg-red-100:active {
+    background-color: pink;
+  }
+
+  .xl\.visited\.bg-red-100:visited {
+    background-color: pink;
+  }
+
+  .xl\.focus\.bg-red-100:focus {
+    background-color: pink;
+  }
+
+  .xl\.disabled\.bg-red-100:disabled {
+    background-color: pink;
+  }
+
+  .xl\.empty\.bg-red-100:empty {
+    background-color: pink;
+  }
+
+  .xl\.focus-within\.bg-red-100:focus-within {
+    background-color: pink;
+  }
+
+  .group:hover .xl\.group-hover\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .group:focus .xl\.group-focus\.bg-red-100 {
+    background-color: pink;
+  }
+
+  .xl\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .xl\.align-content-center {
+    align-content: center;
+  }
+
+  .xl\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .xl\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .xl\.align-content-between {
+    align-content: space-between;
+  }
+
+  .xl\.align-content-around {
+    align-content: space-around;
+  }
+
+  .xl\.first\.align-content-stretch:first-child {
+    align-content: stretch;
+  }
+
+  .xl\.first\.align-content-center:first-child {
+    align-content: center;
+  }
+
+  .xl\.first\.align-content-start:first-child {
+    align-content: flex-start;
+  }
+
+  .xl\.first\.align-content-end:first-child {
+    align-content: flex-end;
+  }
+
+  .xl\.first\.align-content-between:first-child {
+    align-content: space-between;
+  }
+
+  .xl\.first\.align-content-around:first-child {
+    align-content: space-around;
+  }
+
+  .xl\.last\.align-content-stretch:last-child {
+    align-content: stretch;
+  }
+
+  .xl\.last\.align-content-center:last-child {
+    align-content: center;
+  }
+
+  .xl\.last\.align-content-start:last-child {
+    align-content: flex-start;
+  }
+
+  .xl\.last\.align-content-end:last-child {
+    align-content: flex-end;
+  }
+
+  .xl\.last\.align-content-between:last-child {
+    align-content: space-between;
+  }
+
+  .xl\.last\.align-content-around:last-child {
+    align-content: space-around;
+  }
+
+  .xl\.first-type\.align-content-stretch:first-of-type {
+    align-content: stretch;
+  }
+
+  .xl\.first-type\.align-content-center:first-of-type {
+    align-content: center;
+  }
+
+  .xl\.first-type\.align-content-start:first-of-type {
+    align-content: flex-start;
+  }
+
+  .xl\.first-type\.align-content-end:first-of-type {
+    align-content: flex-end;
+  }
+
+  .xl\.first-type\.align-content-between:first-of-type {
+    align-content: space-between;
+  }
+
+  .xl\.first-type\.align-content-around:first-of-type {
+    align-content: space-around;
+  }
+
+  .xl\.last-type\.align-content-stretch:last-of-type {
+    align-content: stretch;
+  }
+
+  .xl\.last-type\.align-content-center:last-of-type {
+    align-content: center;
+  }
+
+  .xl\.last-type\.align-content-start:last-of-type {
+    align-content: flex-start;
+  }
+
+  .xl\.last-type\.align-content-end:last-of-type {
+    align-content: flex-end;
+  }
+
+  .xl\.last-type\.align-content-between:last-of-type {
+    align-content: space-between;
+  }
+
+  .xl\.last-type\.align-content-around:last-of-type {
+    align-content: space-around;
+  }
+
+  .xl\.odd\.align-content-stretch:nth-child(odd) {
+    align-content: stretch;
+  }
+
+  .xl\.odd\.align-content-center:nth-child(odd) {
+    align-content: center;
+  }
+
+  .xl\.odd\.align-content-start:nth-child(odd) {
+    align-content: flex-start;
+  }
+
+  .xl\.odd\.align-content-end:nth-child(odd) {
+    align-content: flex-end;
+  }
+
+  .xl\.odd\.align-content-between:nth-child(odd) {
+    align-content: space-between;
+  }
+
+  .xl\.odd\.align-content-around:nth-child(odd) {
+    align-content: space-around;
+  }
+
+  .xl\.even\.align-content-stretch:nth-child(even) {
+    align-content: stretch;
+  }
+
+  .xl\.even\.align-content-center:nth-child(even) {
+    align-content: center;
+  }
+
+  .xl\.even\.align-content-start:nth-child(even) {
+    align-content: flex-start;
+  }
+
+  .xl\.even\.align-content-end:nth-child(even) {
+    align-content: flex-end;
+  }
+
+  .xl\.even\.align-content-between:nth-child(even) {
+    align-content: space-between;
+  }
+
+  .xl\.even\.align-content-around:nth-child(even) {
+    align-content: space-around;
+  }
+
+  .xl\.hover\.align-content-stretch:hover {
+    align-content: stretch;
+  }
+
+  .xl\.hover\.align-content-center:hover {
+    align-content: center;
+  }
+
+  .xl\.hover\.align-content-start:hover {
+    align-content: flex-start;
+  }
+
+  .xl\.hover\.align-content-end:hover {
+    align-content: flex-end;
+  }
+
+  .xl\.hover\.align-content-between:hover {
+    align-content: space-between;
+  }
+
+  .xl\.hover\.align-content-around:hover {
+    align-content: space-around;
+  }
+
+  .xl\.active\.align-content-stretch:active {
+    align-content: stretch;
+  }
+
+  .xl\.active\.align-content-center:active {
+    align-content: center;
+  }
+
+  .xl\.active\.align-content-start:active {
+    align-content: flex-start;
+  }
+
+  .xl\.active\.align-content-end:active {
+    align-content: flex-end;
+  }
+
+  .xl\.active\.align-content-between:active {
+    align-content: space-between;
+  }
+
+  .xl\.active\.align-content-around:active {
+    align-content: space-around;
+  }
+
+  .xl\.visited\.align-content-stretch:visited {
+    align-content: stretch;
+  }
+
+  .xl\.visited\.align-content-center:visited {
+    align-content: center;
+  }
+
+  .xl\.visited\.align-content-start:visited {
+    align-content: flex-start;
+  }
+
+  .xl\.visited\.align-content-end:visited {
+    align-content: flex-end;
+  }
+
+  .xl\.visited\.align-content-between:visited {
+    align-content: space-between;
+  }
+
+  .xl\.visited\.align-content-around:visited {
+    align-content: space-around;
+  }
+
+  .xl\.focus\.align-content-stretch:focus {
+    align-content: stretch;
+  }
+
+  .xl\.focus\.align-content-center:focus {
+    align-content: center;
+  }
+
+  .xl\.focus\.align-content-start:focus {
+    align-content: flex-start;
+  }
+
+  .xl\.focus\.align-content-end:focus {
+    align-content: flex-end;
+  }
+
+  .xl\.focus\.align-content-between:focus {
+    align-content: space-between;
+  }
+
+  .xl\.focus\.align-content-around:focus {
+    align-content: space-around;
+  }
+
+  .xl\.disabled\.align-content-stretch:disabled {
+    align-content: stretch;
+  }
+
+  .xl\.disabled\.align-content-center:disabled {
+    align-content: center;
+  }
+
+  .xl\.disabled\.align-content-start:disabled {
+    align-content: flex-start;
+  }
+
+  .xl\.disabled\.align-content-end:disabled {
+    align-content: flex-end;
+  }
+
+  .xl\.disabled\.align-content-between:disabled {
+    align-content: space-between;
+  }
+
+  .xl\.disabled\.align-content-around:disabled {
+    align-content: space-around;
+  }
+
+  .xl\.empty\.align-content-stretch:empty {
+    align-content: stretch;
+  }
+
+  .xl\.empty\.align-content-center:empty {
+    align-content: center;
+  }
+
+  .xl\.empty\.align-content-start:empty {
+    align-content: flex-start;
+  }
+
+  .xl\.empty\.align-content-end:empty {
+    align-content: flex-end;
+  }
+
+  .xl\.empty\.align-content-between:empty {
+    align-content: space-between;
+  }
+
+  .xl\.empty\.align-content-around:empty {
+    align-content: space-around;
+  }
+
+  .xl\.focus-within\.align-content-stretch:focus-within {
+    align-content: stretch;
+  }
+
+  .xl\.focus-within\.align-content-center:focus-within {
+    align-content: center;
+  }
+
+  .xl\.focus-within\.align-content-start:focus-within {
+    align-content: flex-start;
+  }
+
+  .xl\.focus-within\.align-content-end:focus-within {
+    align-content: flex-end;
+  }
+
+  .xl\.focus-within\.align-content-between:focus-within {
+    align-content: space-between;
+  }
+
+  .xl\.focus-within\.align-content-around:focus-within {
+    align-content: space-around;
+  }
+
+  .group:hover .xl\.group-hover\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .group:hover .xl\.group-hover\.align-content-center {
+    align-content: center;
+  }
+
+  .group:hover .xl\.group-hover\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .group:hover .xl\.group-hover\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .group:hover .xl\.group-hover\.align-content-between {
+    align-content: space-between;
+  }
+
+  .group:hover .xl\.group-hover\.align-content-around {
+    align-content: space-around;
+  }
+
+  .group:focus .xl\.group-focus\.align-content-stretch {
+    align-content: stretch;
+  }
+
+  .group:focus .xl\.group-focus\.align-content-center {
+    align-content: center;
+  }
+
+  .group:focus .xl\.group-focus\.align-content-start {
+    align-content: flex-start;
+  }
+
+  .group:focus .xl\.group-focus\.align-content-end {
+    align-content: flex-end;
+  }
+
+  .group:focus .xl\.group-focus\.align-content-between {
+    align-content: space-between;
+  }
+
+  .group:focus .xl\.group-focus\.align-content-around {
+    align-content: space-around;
+  }
 }
