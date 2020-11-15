@@ -1,7 +1,8 @@
-@use "uniform/config" as *;
+@use "uniform/config/staging";
+@use "uniform/config/user";
 @use "sass:map";
 
-$name: 
+$name: scale-y;
 $keyword: scale-y;
 $responsive: false;
 $responsive-pseudos: false;
@@ -16,19 +17,24 @@ $variants: (
 	xl: 1.2,
 );
 
-$variants: ();
+$pseudos: (hover, group-hover);
 
-$final-variants: map.merge($variants, $variants);
-
-$core-pseudos: (hover, group-hover);
-$pseudos: ();
-$final-pseudos: list.join($core-pseudos, $pseudos);
-
-@include constructor(
-  $keyword,
-  $responsive,
-  $responsive-pseudos,
-  $properties,
-  $final-variants,
-  $final-pseudos
+$config: (
+  utilities: (
+    $name: (
+      keyword: $keyword,
+      responsive: $responsive,
+      responsive-pseudos: $responsive-pseudos,
+      properties: $properties,
+      default-variants: (
+        $variants
+      ),
+      default-pseudos: (
+        $pseudos
+      )
+    )
+  )
 );
+
+staging.$config: map.deep-merge(staging.$config, $config);
+staging.$config: map.deep-merge(staging.$config, user.$config);

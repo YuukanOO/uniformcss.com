@@ -1,14 +1,17 @@
-@use "uniform/config" as *;
+@use "uniform/config/staging";
+@use "uniform/config/user";
 @use "sass:map";
 
-$name: 
+$name: font-size;
 $keyword: font;
 $responsive: true;
 $responsive-pseudos: false;
 
 $properties: (font-size);
 
-$variants: (font-sizes());
+$variants: (
+  staging.font-sizes()
+);
 
 $pseudos: ();
 
@@ -29,4 +32,5 @@ $config: (
   )
 );
 
-$default-config: map.deep-merge($default-config, $config);
+staging.$config: map.deep-merge(staging.$config, $config);
+staging.$config: map.deep-merge(staging.$config, user.$config);

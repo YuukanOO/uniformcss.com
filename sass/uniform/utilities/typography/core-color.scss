@@ -1,28 +1,39 @@
-@use "uniform/config" as *;
+@use "uniform/config/staging";
+@use "uniform/config/user";
 @use "sass:map";
 
-$name: 
+$name: color;
 $keyword: color;
 $responsive: false;
 $responsive-pseudos: false;
 
 $properties: (color);
 
-$variants: (colors());
-
-$variants: ();
-
-$final-variants: map.merge($variants, $variants);
-
-$core-pseudos: (hover, group-hover);
-$pseudos: ();
-$final-pseudos: list.join($core-pseudos, $pseudos);
-
-@include constructor(
-  $keyword,
-  $responsive,
-  $responsive-pseudos,
-  $properties,
-  $final-variants,
-  $final-pseudos
+$variants: (
+  staging.merge(
+    staging.default-colors(),
+    staging.colors()
+	)
 );
+
+$pseudos: (hover, group-hover);
+
+$config: (
+  utilities: (
+    $name: (
+      keyword: $keyword,
+      responsive: $responsive,
+      responsive-pseudos: $responsive-pseudos,
+      properties: $properties,
+      default-variants: (
+        $variants
+      ),
+      default-pseudos: (
+        $pseudos
+      )
+    )
+  )
+);
+
+staging.$config: map.deep-merge(staging.$config, $config);
+staging.$config: map.deep-merge(staging.$config, user.$config);

@@ -3,13 +3,53 @@
 // PRIVATE FUNCTIONS
 // ============================================================
 
-// multiple map merge function
+// PX TO REM FUNCTION
+@function rem($size-in-pixel) {
+  $remSize: $size-in-pixel / 16;
+  @return #{$remSize}rem;
+}
+
+// MULTIPLE MAP MERGE FUNCTION
 @function merge($maps...) {
-  $collection: ();
+  $collection: () !default;
   @each $map in $maps {
-    $collection: map.merge($collection, $map);
+    $collection: map-merge($collection, $map);
   }
   @return $collection;
+}
+
+// DEEP MAP GET FUNCTION
+@function get($map, $keys...) {
+  @each $key in $keys {
+    $map: map.get($map, $key);
+  }
+  @return $map;
+}
+
+// VARIABLIZE MAP FUNCTION (CSS CUSTOM PROPERTIES)
+@function variablize-map($map, $keyword) {
+  $variablized-map: ();
+  @each $key, $value in $map {
+    $delimiter: if($keyword == '', '', '-');
+    $map: (
+      $key: var(--#{$keyword}#{$delimiter}#{$key}),
+    );
+    $variablized-map: merge($variablized-map, $map);
+  }
+
+  @return $variablized-map;
+}
+
+// VARIABLIZE SCREENS
+@function name-screens($screens) {
+  $named-screens: ();
+  @each $key, $value in $screens {
+    $screens: (
+      screen-#{$key}: $value,
+    );
+    $named-screens: merge($named-screens, $screens);
+  }
+  @return $named-screens;
 }
 
 // DEFAULT SETTINGS
@@ -269,199 +309,150 @@ $config: (
     transparent: transparent,
   ),
 
-  // gradients: (
-  // ),
+  colors: (),
 
-  // positive-sizes: (
-  //   0: 0,
+  default-gradients: (
+  ),
+  
+  gradients: (),
 
-  //   1: rem(4),
-  //   2: rem(8),
-  //   3: rem(12),
-  //   4: rem(16),
-  //   5: rem(20),
-  //   6: rem(24),
-  //   7: rem(28),
-  //   8: rem(32),
-  //   9: rem(36),
-  //   10: rem(40),
-  //   11: rem(44),
-  //   12: rem(48),
+  positive-sizes: (
+    0: 0,
 
-  //   13: rem(56),
-  //   14: rem(64),
-  //   15: rem(72),
-  //   16: rem(80),
-  //   17: rem(88),
-  //   18: rem(96),
+    1: rem(4),
+    2: rem(8),
+    3: rem(12),
+    4: rem(16),
+    5: rem(20),
+    6: rem(24),
+    7: rem(28),
+    8: rem(32),
+    9: rem(36),
+    10: rem(40),
+    11: rem(44),
+    12: rem(48),
 
-  //   19: rem(128),
-  //   20: rem(160),
-  //   21: rem(192),
+    13: rem(56),
+    14: rem(64),
+    15: rem(72),
+    16: rem(80),
+    17: rem(88),
+    18: rem(96),
 
-  //   22: rem(256),
-  //   23: rem(320),
-  //   24: rem(384),
+    19: rem(128),
+    20: rem(160),
+    21: rem(192),
 
-  //   25: rem(512),
-  //   26: rem(640),
-  //   27: rem(768),
-  // ),
+    22: rem(256),
+    23: rem(320),
+    24: rem(384),
 
-  // negative-sizes: (
-  //   n1: rem(-4),
-  //   n2: rem(-8),
-  //   n3: rem(-12),
-  //   n4: rem(-16),
-  //   n5: rem(-20),
-  //   n6: rem(-24),
-  //   n7: rem(-28),
-  //   n8: rem(-32),
-  //   n9: rem(-36),
-  //   n10: rem(-40),
-  //   n11: rem(-44),
-  //   n12: rem(-48),
+    25: rem(512),
+    26: rem(640),
+    27: rem(768),
+  ),
 
-  //   n13: rem(-56),
-  //   n14: rem(-64),
-  //   n15: rem(-72),
-  //   n16: rem(-80),
-  //   n17: rem(-88),
-  //   n18: rem(-96),
+  negative-sizes: (
+    n1: rem(-4),
+    n2: rem(-8),
+    n3: rem(-12),
+    n4: rem(-16),
+    n5: rem(-20),
+    n6: rem(-24),
+    n7: rem(-28),
+    n8: rem(-32),
+    n9: rem(-36),
+    n10: rem(-40),
+    n11: rem(-44),
+    n12: rem(-48),
 
-  //   n19: rem(-128),
-  //   n20: rem(-160),
-  //   n21: rem(-192),
+    n13: rem(-56),
+    n14: rem(-64),
+    n15: rem(-72),
+    n16: rem(-80),
+    n17: rem(-88),
+    n18: rem(-96),
 
-  //   n22: rem(-256),
-  //   n23: rem(-320),
-  //   n24: rem(-384),
+    n19: rem(-128),
+    n20: rem(-160),
+    n21: rem(-192),
 
-  //   n25: rem(-512),
-  //   n26: rem(-640),
-  //   n27: rem(-768),
-  // ),
+    n22: rem(-256),
+    n23: rem(-320),
+    n24: rem(-384),
 
-  // font-families: (
-  //   sans: (
-  //     sans-serif,
-  //   ),
-  //   serif: (
-  //     serif,
-  //   ),
-  //   mono: (
-  //     monospace,
-  //   ),
-  // ),
+    n25: rem(-512),
+    n26: rem(-640),
+    n27: rem(-768),
+  ),
 
-  // font-sizes: (
-  //   10xl: rem(72),
-  //   9xl: rem(64),
-  //   8xl: rem(56),
-  //   7xl: rem(48),
+  font-families: (
+    sans: (
+      sans-serif,
+    ),
+    serif: (
+      serif,
+    ),
+    mono: (
+      monospace,
+    ),
+  ),
 
-  //   6xl: rem(40),
-  //   5xl: rem(36),
-  //   4xl: rem(32),
-  //   3xl: rem(28),
-  //   2xl: rem(24),
+  font-sizes: (
+    10xl: rem(72),
+    9xl: rem(64),
+    8xl: rem(56),
+    7xl: rem(48),
 
-  //   xl: rem(20),
-  //   lg: rem(18),
-  //   md: rem(16),
-  //   sm: rem(14),
-  //   xs: rem(12),
-  //   2xs: rem(10),
-  // ),
+    6xl: rem(40),
+    5xl: rem(36),
+    4xl: rem(32),
+    3xl: rem(28),
+    2xl: rem(24),
 
-  // leadings: (
-  //   1: 1,
-  //   2: 1.125,
-  //   3: 1.25,
-  //   4: 1.375,
-  //   5: 1.5,
-  //   6: 1.625,
-  //   7: 1.75,
-  //   8: 1.875,
-  //   9: 2,
-  //   10: 2.125,
-  //   11: 2.25,
-  //   12: 2.375,
-  //   13: 2.5,
-  // ),
+    xl: rem(20),
+    lg: rem(18),
+    md: rem(16),
+    sm: rem(14),
+    xs: rem(12),
+    2xs: rem(10),
+  ),
 
-  // trackings: (
-  //   n5: -0.1em,
-  //   n4: -0.08em,
-  //   n3: -0.06em,
-  //   n2: -0.04em,
-  //   n1: -0.02em,
-  //   1: 0.02em,
-  //   2: 0.04em,
-  //   3: 0.06em,
-  //   4: 0.08em,
-  //   5: 0.1em,
-  // ),
+  leadings: (
+    1: 1,
+    2: 1.125,
+    3: 1.25,
+    4: 1.375,
+    5: 1.5,
+    6: 1.625,
+    7: 1.75,
+    8: 1.875,
+    9: 2,
+    10: 2.125,
+    11: 2.25,
+    12: 2.375,
+    13: 2.5,
+  ),
 
-  // radiuses: (
-  //   xs: rem(4),
-  //   sm: rem(8),
-  //   md: rem(12),
-  //   lg: rem(16),
-  //   xl: rem(20),
-  //   round: 9999px,
-  // )
+  trackings: (
+    n5: -0.1em,
+    n4: -0.08em,
+    n3: -0.06em,
+    n2: -0.04em,
+    n1: -0.02em,
+    1: 0.02em,
+    2: 0.04em,
+    3: 0.06em,
+    4: 0.08em,
+    5: 0.1em,
+  ),
+
+  radiuses: (
+    xs: rem(4),
+    sm: rem(8),
+    md: rem(12),
+    lg: rem(16),
+    xl: rem(20),
+    round: 9999px,
+  )
 ) !default;
-
-// FETCH FUNCTIONS
-// ============================================================
-
-// multiple map merge function
-@function merge($maps...) {
-  $collection: ();
-  @each $map in $maps {
-    $collection: map.merge($collection, $map);
-  }
-  @return $collection;
-}
-
-
-@function colors() {
-  $result: map.get($default-config, colors);
-  @return $result;
-}
-
-
-
-// @function color($color) {
-//   $variablize: map.get($build-settings, build-settings, variablize);
-//   $headless: map.get($build-settings, build-settings, headless);
-//   @if (map.get($colors, $color)) {
-//     $result: ();
-    
-//     @if ($variablize == true) {
-//       $result: map.get($var-colors, $color);
-//     } @else {
-//       $result: map.get($colors, $color);
-//     }
-//     @return $result;
-//   } @else {
-//     @if ($headless == true) {
-//       $result: var(--#{$color});
-//       @return $result;
-//     } @else {
-//       @error "[#{$color}] does not exist";
-//     }
-//   }
-// }
-
-// @function colors() {
-//   $result: ();
-//   @if ($variablize == true) {
-//     $result: $var-colors;
-//   } @else {
-//     $result: $all-colors;
-//   }
-//   @return $result;
-// }
-

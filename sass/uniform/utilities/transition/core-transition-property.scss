@@ -1,7 +1,8 @@
-@use "uniform/config" as *;
+@use "uniform/config/staging";
+@use "uniform/config/user";
 @use "sass:map";
 
-$name: 
+$name: transition-property;
 $keyword: transition;
 $responsive: false;
 $responsive-pseudos: false;
@@ -11,7 +12,7 @@ $properties: (transition-property);
 $variants: (
 	none: none,
 	all: all,
-	exempt: (
+	null: (
 		background-color,
 		border-color,
 		color,
@@ -52,4 +53,5 @@ $config: (
   )
 );
 
-$default-config: map.deep-merge($default-config, $config);
+staging.$config: map.deep-merge(staging.$config, $config);
+staging.$config: map.deep-merge(staging.$config, user.$config);

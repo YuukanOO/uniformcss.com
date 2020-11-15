@@ -1,7 +1,8 @@
-@use "uniform/config" as *;
+@use "uniform/config/staging";
+@use "uniform/config/user";
 @use "sass:map";
 
-$name: 
+$name: box-shadow;
 $keyword: shadow;
 $responsive: false;
 $responsive-pseudos: false;
@@ -9,27 +10,32 @@ $responsive-pseudos: false;
 $properties: (box-shadow);
 
 $variants: (
-	merge(
-		shadows(),
+	staging.merge(
+		staging.shadows(),
 		(
 			none: none,
 		)
 	)
 );
 
-$variants: ();
+$pseudos: (hover, active, focus);
 
-$final-variants: map.merge($variants, $variants);
-
-$core-pseudos: (hover, active, focus);
-$pseudos: ();
-$final-pseudos: list.join($core-pseudos, $pseudos);
-
-@include constructor(
-  $keyword,
-  $responsive,
-  $responsive-pseudos,
-  $properties,
-  $final-variants,
-  $final-pseudos
+$config: (
+  utilities: (
+    $name: (
+      keyword: $keyword,
+      responsive: $responsive,
+      responsive-pseudos: $responsive-pseudos,
+      properties: $properties,
+      default-variants: (
+        $variants
+      ),
+      default-pseudos: (
+        $pseudos
+      )
+    )
+  )
 );
+
+staging.$config: map.deep-merge(staging.$config, $config);
+staging.$config: map.deep-merge(staging.$config, user.$config);

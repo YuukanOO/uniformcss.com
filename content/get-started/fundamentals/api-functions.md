@@ -197,13 +197,13 @@ trackings()
 
 ### Radius API
 
-The `radius()` function returns values from the radius map provided a variant is passed in as a parameter. `radiuses()` function returns the entire map.
+The `radius()` function returns values from the radius map provided a variant is passed in as a parameter. `staging.radiuses()` function returns the entire map.
 
 For more information on which variants are available, visit <a class="hover.underline" href="/get-started/radius">radius</a>.
 
 ```scss
 radius()
-radiuses()
+staging.radiuses()
 ```
 
 ```scss
@@ -211,7 +211,7 @@ radiuses()
   border-radius: radius(md);
 }
 
-@each $radius, $radius-value in radiuses() {
+@each $radius, $radius-value in staging.radiuses() {
   // for each radius, do the following
 }
 ```

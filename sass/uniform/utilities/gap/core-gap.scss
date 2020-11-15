@@ -1,7 +1,8 @@
-@use "uniform/config" as *;
+@use "uniform/config/staging";
+@use "uniform/config/user";
 @use "sass:map";
 
-$name: 
+$name: gap;
 $keyword: gap;
 $responsive: true;
 $responsive-pseudos: false;
@@ -9,8 +10,8 @@ $responsive-pseudos: false;
 $properties: (gap);
 
 $variants: (
-	merge(
-		positive-sizes(),
+	staging.merge(
+		staging.positive-sizes(),
 		(
 			px: 1px,
 			2px: 2px,
@@ -44,4 +45,5 @@ $config: (
   )
 );
 
-$default-config: map.deep-merge($default-config, $config);
+staging.$config: map.deep-merge(staging.$config, $config);
+staging.$config: map.deep-merge(staging.$config, user.$config);

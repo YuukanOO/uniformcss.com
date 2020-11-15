@@ -1,11 +1,116 @@
 @use "uniform/config/default";
 @use "uniform/config/user";
 @use "sass:map";
+@use "sass:list";
+
+// CONFIG COMPILER
+// ============================================================
+
+$config: map.deep-merge(default.$config, user.$config);
+
+
+// FETCHED VARIABLES
+// ============================================================
+
+$important: map.get($config, important);
+$prefix: map.get($config, prefix);
+$delimiter: map.get($config, delimiter);
+$child-delimiter: map.get($config, child-delimiter);
+$pseudo-delimiter: map.get($config, pseudo-delimiter);
+$screen-delimiter: map.get($config, screen-delimiter);
+$variablize: map.get($config, variablize);
+$headless: map.get($config, headless);
+$root: map.get($config, root);
+$debugger: map.get($config, debugger);
+
+$include-reset-styles: map.get($config, include-reset-styles);
+$include-starter-styles: map.get($config, include-starter-styles);
+$include-wrapper-module: map.get($config, include-wrapper-module);
+$include-table-module: map.get($config, include-table-module);
+$include-button-module: map.get($config, include-button-module);
+$include-form-module: map.get($config, include-form-module);
+
+$screens: map.get($config, screens);
+$positive-sizes: map.get($config, positive-sizes);
+$negative-sizes: map.get($config, negative-sizes);
+
+$default-colors: map.get($config, default-colors);
+$user-colors: map.get($config, colors);
+
+$default-gradients: map.get($config, default-gradients);
+$user-gradients: map.get($config, gradients);
+
+$shadows: map.get($config, shadows);
+
+$font-families: map.get($config, font-families);
+$font-sizes: map.get($config, font-sizes);
+$leadings: map.get($config, leadings);
+$trackings: map.get($config, trackings);
+$radiuses: map.get($config, radiuses);
+
+
+// MERGED VARIABLES
+// ============================================================
+
+$sizes: map.deep-merge($positive-sizes, $negative-sizes);
+$colors: map.deep-merge($default-colors, $user-colors);
+$gradients: map.deep-merge($default-gradients, $user-gradients);
+$fills: map.deep-merge($colors, $gradients,) !default;
+
 
 // PRIVATE FUNCTIONS
 // ============================================================
 
-$config: map.deep-merge(default.$config, user.$config);
+// PX TO REM FUNCTION
+@function rem($size-in-pixel) {
+  $remSize: $size-in-pixel / 16;
+  @return #{$remSize}rem;
+}
+
+// MULTIPLE MAP MERGE FUNCTION
+@function merge($maps...) {
+  $collection: () !default;
+  @each $map in $maps {
+    $collection: map-merge($collection, $map);
+  }
+  @return $collection;
+}
+
+// DEEP MAP GET FUNCTION
+@function get($map, $keys...) {
+  @each $key in $keys {
+    $map: map.get($map, $key);
+  }
+  @return $map;
+}
+
+// VARIABLIZE MAP FUNCTION (CSS CUSTOM PROPERTIES)
+@function variablize-map($map, $keyword) {
+  $variablized-map: ();
+  @each $key, $value in $map {
+    $delimiter: if($keyword == '', '', '-');
+    $map: (
+      $key: var(--#{$keyword}#{$delimiter}#{$key}),
+    );
+    $variablized-map: merge($variablized-map, $map);
+  }
+
+  @return $variablized-map;
+}
+
+// VARIABLIZE SCREENS
+@function name-screens() {
+  $named-screens: ();
+  @each $key, $value in $screens {
+    $screens: (
+      screen-#{$key}: $value,
+    );
+    $named-screens: merge($named-screens, $screens);
+  }
+  @return $named-screens;
+}
+
+$var-sizes: variablize-map($sizes, 'size');
 
 // FETCH FUNCTIONS
 // ============================================================
@@ -17,6 +122,24 @@ $config: map.deep-merge(default.$config, user.$config);
     $collection: map.merge($collection, $map);
   }
   @return $collection;
+}
+
+
+@function screen($screen) {
+  $result: ();
+  @if (map.get($config, screens, $screen)) {
+    $result: map.get($config, screens, $screen);
+  }
+  @return $result;
+}
+
+
+@function screens() {
+  $result: ();
+  @if (map.get($config, screens)) {
+    $result: map.get($config, screens);
+  }
+  @return $result;
 }
 
 
@@ -35,4 +158,157 @@ $config: map.deep-merge(default.$config, user.$config);
     $result: map.get($config, colors);
   }
   @return $result;
+}
+
+@function gradients() {
+  $result: ();
+  @if (map.get($config, gradients)) {
+    $result: map.get($config, gradients);
+  }
+  @return $result;
+}
+
+@function default-gradients() {
+  $result: ();
+  @if (map.get($config, default-gradients)) {
+    $result: map.get($config, default-gradients);
+  }
+  @return $result;
+}
+
+@function radiuses() {
+  $result: ();
+  @if (map.get($config, radiuses)) {
+    $result: map.get($config, radiuses);
+  }
+  @return $result;
+}
+
+@function shadows() {
+  $result: ();
+  @if (map.get($config, shadows)) {
+    $result: map.get($config, shadows);
+  }
+  @return $result;
+}
+
+@function positive-sizes() {
+  $result: ();
+  @if (map.get($config, positive-sizes)) {
+    $result: map.get($config, positive-sizes);
+  }
+  @return $result;
+}
+
+@function negative-sizes() {
+  $result: ();
+  @if (map.get($config, negative-sizes)) {
+    $result: map.get($config, negative-sizes);
+  }
+  @return $result;
+}
+
+@function size($size, $size-cont...) {
+  $result: ();
+  @if (map.has-key($sizes, $size)) {
+    @if ($variablize == true) {
+      $result: map.get($var-sizes, $size);
+    } @else {
+      $result: map.get($sizes, $size);
+    }
+  } @else {
+    $result: list.append($result, $size);
+  }
+  @each $size in $size-cont {
+    $value: '';
+    @if (map.has-key($sizes, $size)) {
+      @if ($variablize == true) {
+        $value: map.get($var-sizes, $size);
+      } @else {
+        $value: map.get($sizes, $size);
+      }
+      $result: list.append($result, $value);
+    } @else {
+      $result: list.append($result, $size);
+    }
+  }
+  @return $result;
+}
+
+@function sizes() {
+  $result: ();
+  @if ($variablize == true) {
+    $result: $var-sizes;
+  } @else {
+    $result: $sizes;
+  }
+  @return $result;
+}
+
+@function font-families() {
+  $result: ();
+  @if (map.get($config, font-families)) {
+    $result: map.get($config, font-families);
+  }
+  @return $result;
+}
+
+@function font-sizes() {
+  $result: ();
+  @if (map.get($config, font-sizes)) {
+    $result: map.get($config, font-sizes);
+  }
+  @return $result;
+}
+
+@function trackings() {
+  $result: ();
+  @if (map.get($config, trackings)) {
+    $result: map.get($config, trackings);
+  }
+  @return $result;
+}
+
+@function leadings() {
+  $result: ();
+  @if (map.get($config, leadings)) {
+    $result: map.get($config, leadings);
+  }
+  @return $result;
+}
+
+// ROOT VARIABLES
+// ============================================================
+
+// Create root variables if CSS custom property setting is enabled
+@if ($variablize == true) {
+  @if ($root == true) {
+
+    :root {
+      @each $key, $value in $fills {
+        --#{'' + $key}: #{$value};
+      }
+      @each $key, $value in $sizes {
+        --size-#{'' + $key}: #{$value};
+      }
+      @each $key, $value in $shadows {
+        --shadow-#{'' + $key}: #{$value};
+      }
+      @each $key, $value in $font-families {
+        --font-#{'' + $key}: #{$value};
+      }
+      @each $key, $value in $font-sizes {
+        --font-#{'' + $key}: #{$value};
+      }
+      @each $key, $value in $leadings {
+        --leading-#{'' + $key}: #{$value};
+      }
+      @each $key, $value in $trackings {
+        --tracking-#{'' + $key}: #{$value};
+      }
+      @each $key, $value in $radiuses {
+        --radius-#{'' + $key}: #{$value};
+      }
+    }
+  }
 }

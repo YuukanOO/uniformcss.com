@@ -1,14 +1,20 @@
-@use "uniform/config" as *;
+@use "uniform/config/staging";
+@use "uniform/config/user";
 @use "sass:map";
 
-$name: 
+$name: column-rule-color;
 $keyword: col-rule;
 $responsive: false;
 $responsive-pseudos: false;
 
 $properties: (column-rule-color);
 
-$variants: (colors());
+$variants: (
+  staging.merge(
+    staging.default-colors(),
+    staging.colors()
+	)
+);
 
 $pseudos: ();
 
@@ -29,4 +35,5 @@ $config: (
   )
 );
 
-$default-config: map.deep-merge($default-config, $config);
+staging.$config: map.deep-merge(staging.$config, $config);
+staging.$config: map.deep-merge(staging.$config, user.$config);
