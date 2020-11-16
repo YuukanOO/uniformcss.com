@@ -14,16 +14,6 @@
 				responsive: true,
 				pseuds: (group-focus)
 			),
-			margin: (
-				variants: (
-					empty: empty
-				)
-			),
-			margin-bottom: (
-				variants: (
-					6: var(--size-10)
-				)
-			)
 		),
 		excludes: (
 			
