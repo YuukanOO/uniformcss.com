@@ -16,16 +16,16 @@ $variants: (
 	50p: 50%,
 
 	0: 0,
-	1: size(1),
-	2: size(2),
-	4: size(4),
-	8: size(8),
-	16: size(16),
-	n1: size(n1),
-	n2: size(n2),
-	n4: size(n4),
-	n8: size(n8),
-	n16: size(n16),
+	1: staging.size(1),
+	2: staging.size(2),
+	4: staging.size(4),
+	8: staging.size(8),
+	16: staging.size(16),
+	n1: staging.size(n1),
+	n2: staging.size(n2),
+	n4: staging.size(n4),
+	n8: staging.size(n8),
+	n16: staging.size(n16),
 );
 
 $pseudos: (hover, group-hover);

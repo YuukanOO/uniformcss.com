@@ -11,7 +11,10 @@ $properties: (column-rule-color);
 
 $variants: (
   staging.merge(
-    staging.default-colors(),
+    staging.primary-colors(),
+    staging.opaque-colors(),
+    staging.grayscale-colors(),
+    staging.monotone-colors(),
     staging.colors()
 	)
 );

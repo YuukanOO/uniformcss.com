@@ -11,7 +11,6 @@ $properties: (background);
 
 $variants: (
   staging.merge(
-    staging.default-gradients(),
     staging.gradients()
 	)
 );

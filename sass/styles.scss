@@ -1,18 +1,12 @@
 @use "uniform" as * with (
-	// $background-color-pseudos: (
-	// 	first, last, first-type, last-type, odd, even, empty
-	// ),
-	// $border-color-pseudos: (
-	// 	focus-within
-	// ),
-	// $color-pseudos: (
-	// 	group-focus
-	// ),
-	// $color-responsive: true,
 	$config: (
+		colors: (
+			custom-color: red
+		),
+		// variablize: false,
 		utilities: (
 			custom-property: (
-				keyword: null,
+				keyword: custom,
 				responsive: false,
 				responsive-pseudos: true,
 				properties: custom-property,
@@ -22,18 +16,91 @@
 				pseudos: (
 					last
 				)
+			),
+			background-color: (
+				pseudos: (first, last, first-type, last-type, odd, even, empty)
+			),
+			border-color: (
+				pseudos: (focus-within)
+			),
+			color: (
+				responsive: true,
+				pseuds: (group-focus)
 			)
 		),
 		excludes: (
-
+			
 		)
 	)
 );
 
-
-
 @use "_roots" as *;
 @use "vendors/prism" as *;
+
+
+
+
+
+
+.bg-hero {
+  background: linear-gradient(to bottom, #101D36 0%, #023b7e 20%, #3988d7 50%, #e1f0ff 80%, #FFFFFF 100%);
+}
+
+.gallery {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery__images {
+  display: flex;
+  animation: slideshow 60s linear infinite;
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.docs-sidebar:before {
+  position: absolute;
+  right: 0;
+  content: "";
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(0deg, #65ace0 10%, #3880b5 30%, #0a496c 75%, #101d36 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .table-colors {
 	--table-radius: 0;
