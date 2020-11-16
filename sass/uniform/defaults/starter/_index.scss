@@ -1,4 +1,4 @@
-@use "uniform/config/staging" as *;
+@use "uniform/core" as *;
 
 @if $include-starter-styles == true and $headless == false {
   html {

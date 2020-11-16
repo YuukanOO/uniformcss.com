@@ -1,4 +1,4 @@
-@use "uniform/config/staging" as *;
+@use "uniform/core" as *;
 
 @if $headless == false {
 	.#{$prefix}clearfix {

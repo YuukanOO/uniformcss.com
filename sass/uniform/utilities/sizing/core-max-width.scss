@@ -1,5 +1,4 @@
-@use "uniform/config/staging";
-@use "uniform/config/user";
+@use "uniform/core";
 @use "sass:map";
 
 $name: max-width; 
@@ -10,9 +9,9 @@ $responsive-pseudos: false;
 $properties: (max-width);
 
 $variants: (
-	staging.merge(
-		staging.positive-sizes(),
-		staging.name-screens(),
+	core.merge(
+		core.positive-sizes(),
+		core.name-screens(),
 		(
 			none: none,
 
@@ -74,5 +73,5 @@ $config: (
   )
 );
 
-staging.$config: map.deep-merge(staging.$config, $config);
-staging.$config: map.deep-merge(staging.$config, user.$config);
+core.$all-config: map.deep-merge(core.$all-config, $config);
+core.$all-config: map.deep-merge(core.$all-config, core.$config);

@@ -2,8 +2,9 @@
 
 @use "sass:map";
 @use "sass:list";
-@forward "config/user";
-@use "uniform/config/staging";
+@forward "uniform/core";
+@use "uniform/core";
+
 
 // DEFAULTS (2)
 @use "defaults/reset";
@@ -17,7 +18,7 @@
 @use "modules/wrapper";
 
 
-// CORE - ALIGNMENT (6)
+// UTILITIES - ALIGNMENT (6)
 @use "utilities/alignment/core-align-content";
 @use "utilities/alignment/core-align-items";
 @use "utilities/alignment/core-align-self";
@@ -26,7 +27,7 @@
 @use "utilities/alignment/core-vertical-align";
 
 
-// CORE - APPEARANCE (6)
+// UTILITIES - APPEARANCE (6)
 @use "utilities/appearance/core-display";
 @use "utilities/appearance/core-opacity";
 @use "utilities/appearance/core-outline";
@@ -35,7 +36,7 @@
 @use "utilities/appearance/extension-font-smooth";
 
 
-// CORE - BACKGROUND (7)
+// UTILITIES - BACKGROUND (7)
 @use "utilities/background/core-background-attachment";
 @use "utilities/background/core-background-clip";
 @use "utilities/background/core-background-color";
@@ -45,7 +46,7 @@
 @use "utilities/background/core-background";
 
 
-// CORE - BORDER (17)
+// UTILITIES - BORDER (17)
 @use "utilities/border/extension-border-bottom-radius";
 @use "utilities/border/extension-border-left-radius";
 @use "utilities/border/extension-border-right-radius";
@@ -65,8 +66,7 @@
 @use "utilities/border/core-border-style";
 
 
-
-// CORE - COMPOSITION (9)
+// UTILITIES - COMPOSITION (9)
 @use "utilities/composition/core-box-sizing";
 @use "utilities/composition/core-clear";
 @use "utilities/composition/core-float";
@@ -78,19 +78,19 @@
 @use "utilities/composition/extension-ratio";
 
 
-// CORE - OVERFLOW (3)
+// UTILITIES - OVERFLOW (3)
 @use "utilities/overflow/core-overflow-x";
 @use "utilities/overflow/core-overflow-y";
 @use "utilities/overflow/core-overflow";
 
 
-// CORE - EFFECT (3)
+// UTILITIES - EFFECT (3)
 @use "utilities/effect/core-box-shadow";
 @use "utilities/effect/core-filter";
 @use "utilities/effect/core-mix-blend-mode";
 
 
-// CORE - SIZING (6)
+// UTILITIES - SIZING (6)
 @use "utilities/sizing/core-height";
 @use "utilities/sizing/core-width";
 @use "utilities/sizing/core-min-height";
@@ -99,7 +99,7 @@
 @use "utilities/sizing/core-max-width";
 
 
-// CORE - POSITION (9)
+// UTILITIES - POSITION (9)
 @use "utilities/position/core-bottom";
 @use "utilities/position/core-left";
 @use "utilities/position/core-right";
@@ -112,7 +112,7 @@
 
 
 
-// CORE - MARGIN (7)
+// UTILITIES - MARGIN (7)
 @use "utilities/margin/core-margin-bottom";
 @use "utilities/margin/core-margin-left";
 @use "utilities/margin/core-margin-right";
@@ -122,7 +122,7 @@
 @use "utilities/margin/core-margin";
 
 
-// CORE - PADDING (7)
+// UTILITIES - PADDING (7)
 @use "utilities/padding/core-padding-bottom";
 @use "utilities/padding/core-padding-left";
 @use "utilities/padding/core-padding-right";
@@ -132,7 +132,7 @@
 @use "utilities/padding/core-padding";
 
 
-// CORE - TYPOGRAPHY (14)
+// UTILITIES - TYPOGRAPHY (14)
 @use "utilities/typography/core-color";
 @use "utilities/typography/core-font-family";
 @use "utilities/typography/core-font-size";
@@ -149,7 +149,7 @@
 @use "utilities/typography/core-word-break";
 
 
-// CORE - GRID (9)
+// UTILITIES - GRID (9)
 @use "utilities/grid/core-grid-auto-flow";
 @use "utilities/grid/core-grid-column";
 @use "utilities/grid/core-grid-column-end";
@@ -161,7 +161,7 @@
 @use "utilities/grid/core-grid-template-rows";
 
 
-// CORE - FLEXBOX (6)
+// UTILITIES - FLEXBOX (6)
 @use "utilities/flexbox/core-flex";
 @use "utilities/flexbox/core-flex-direction";
 @use "utilities/flexbox/core-flex-grow";
@@ -170,13 +170,13 @@
 @use "utilities/flexbox/core-order";
 
 
-// CORE - GAP (3)
+// UTILITIES - GAP (3)
 @use "utilities/gap/core-gap";
 @use "utilities/gap/core-column-gap";
 @use "utilities/gap/core-row-gap";
 
 
-// CORE - MULTI-COLUMN (6)
+// UTILITIES - MULTI-COLUMN (6)
 @use "utilities/multi-column/core-column-count";
 @use "utilities/multi-column/core-column-fill";
 @use "utilities/multi-column/core-column-rule-color";
@@ -185,7 +185,7 @@
 @use "utilities/multi-column/core-column-span";
 
 
-// CORE - TRANSFORM (9)
+// UTILITIES - TRANSFORM (9)
 @use "utilities/transform/extension-translate-x";
 @use "utilities/transform/extension-translate-y";
 @use "utilities/transform/extension-scale-x";
@@ -197,7 +197,7 @@
 @use "utilities/transform/core-transform";
 
 
-// CORE - TRANSITION (4)
+// UTILITIES - TRANSITION (4)
 @use "utilities/transition/core-transition-duration";
 @use "utilities/transition/core-transition-delay";
 @use "utilities/transition/core-transition-property";
@@ -205,7 +205,7 @@
 @use "utilities/transition/core-transition";
 
 
-// CORE - INTERACTIVE (5)
+// UTILITIES - INTERACTIVE (5)
 @use "utilities/interactive/core-cursor";
 @use "utilities/interactive/core-pointer-events";
 @use "utilities/interactive/core-resize";
@@ -213,7 +213,7 @@
 @use "utilities/interactive/core-user-select";
 
 
-// CORE - SVG (3)
+// UTILITIES - SVG (3)
 @use "utilities/svg/core-fill";
 @use "utilities/svg/core-stroke";
 @use "utilities/svg/core-stroke-width";
@@ -222,7 +222,7 @@
 // CONSTRUCTOR
 // ============================================================
 
-$config: staging.$config;
+$config: core.$all-config;
 
 // @debug $config;
 @mixin constructor($config) {

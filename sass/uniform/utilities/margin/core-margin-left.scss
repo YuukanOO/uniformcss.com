@@ -1,5 +1,4 @@
-@use "uniform/config/staging";
-@use "uniform/config/user";
+@use "uniform/core";
 @use "sass:map";
 
 $name: margin-left;
@@ -10,8 +9,8 @@ $responsive-pseudos: false;
 $properties: (margin-left);
 
 $variants: (
-	staging.merge(
-		staging.sizes(),
+	core.merge(
+		core.sizes(),
 		(
       auto: auto,
       px: 1px,
@@ -44,5 +43,5 @@ $config: (
   )
 );
 
-staging.$config: map.deep-merge(staging.$config, $config);
-staging.$config: map.deep-merge(staging.$config, user.$config);
+core.$all-config: map.deep-merge(core.$all-config, $config);
+core.$all-config: map.deep-merge(core.$all-config, core.$config);

@@ -130,7 +130,7 @@ The radius API function allows you to query and pull values from the radius map.
 
 ```bash
 radius()
-staging.radiuses()
+core.radiuses()
 ```
 
 ```scss
@@ -138,7 +138,7 @@ staging.radiuses()
   border-radius: radius(md);
 }
 
-@each $radius, $radius-value in staging.radiuses() {
+@each $radius, $radius-value in core.radiuses() {
   // for each radius, do the following
 }
 ```

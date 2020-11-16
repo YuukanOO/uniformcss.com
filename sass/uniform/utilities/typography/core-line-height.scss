@@ -1,5 +1,4 @@
-@use "uniform/config/staging";
-@use "uniform/config/user";
+@use "uniform/core";
 @use "sass:map";
 
 $name: line-height;
@@ -10,7 +9,7 @@ $responsive-pseudos: false;
 $properties: (line-height);
 
 $variants: (
-  staging.leadings()
+  core.leadings()
 );
 
 $pseudos: ();
@@ -32,5 +31,5 @@ $config: (
   )
 );
 
-staging.$config: map.deep-merge(staging.$config, $config);
-staging.$config: map.deep-merge(staging.$config, user.$config);
+core.$all-config: map.deep-merge(core.$all-config, $config);
+core.$all-config: map.deep-merge(core.$all-config, core.$config);

@@ -1,5 +1,4 @@
-@use "uniform/config/staging";
-@use "uniform/config/user";
+@use "uniform/core";
 @use "sass:map";
 
 $name: translate-x;
@@ -16,16 +15,16 @@ $variants: (
 	50p: 50%,
 
 	0: 0,
-	1: staging.size(1),
-	2: staging.size(2),
-	4: staging.size(4),
-	8: staging.size(8),
-	16: staging.size(16),
-	n1: staging.size(n1),
-	n2: staging.size(n2),
-	n4: staging.size(n4),
-	n8: staging.size(n8),
-	n16: staging.size(n16),
+	1: core.size(1),
+	2: core.size(2),
+	4: core.size(4),
+	8: core.size(8),
+	16: core.size(16),
+	n1: core.size(n1),
+	n2: core.size(n2),
+	n4: core.size(n4),
+	n8: core.size(n8),
+	n16: core.size(n16),
 );
 
 $pseudos: (hover, group-hover);
@@ -47,5 +46,5 @@ $config: (
   )
 );
 
-staging.$config: map.deep-merge(staging.$config, $config);
-staging.$config: map.deep-merge(staging.$config, user.$config);
+core.$all-config: map.deep-merge(core.$all-config, $config);
+core.$all-config: map.deep-merge(core.$all-config, core.$config);
