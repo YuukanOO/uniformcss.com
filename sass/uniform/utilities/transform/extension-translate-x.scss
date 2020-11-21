@@ -15,16 +15,16 @@ $variants: (
 	50p: 50%,
 
 	0: 0,
-	1: core.size(1),
-	2: core.size(2),
-	4: core.size(4),
-	8: core.size(8),
-	16: core.size(16),
-	n1: core.size(n1),
-	n2: core.size(n2),
-	n4: core.size(n4),
-	n8: core.size(n8),
-	n16: core.size(n16),
+	1: var(--size-1),
+	2: var(--size-2),
+	4: var(--size-4),
+	8: var(--size-8),
+	16: var(--size-16),
+	n1: var(--size-n1),
+	n2: var(--size-n2),
+	n4: var(--size-n4),
+	n8: var(--size-n8),
+	n16: var(--size-n16),
 );
 
 $pseudos: (hover, group-hover);

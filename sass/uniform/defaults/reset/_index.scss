@@ -10,7 +10,7 @@
   * {
     margin: 0;
     padding: 0;
-    border: 0 solid var(--default-border-color, fill(silver-400));
+    border: 0 solid var(--default-border-color, var(--silver-400));
   }
 
   /* Prevent iOS font size change */

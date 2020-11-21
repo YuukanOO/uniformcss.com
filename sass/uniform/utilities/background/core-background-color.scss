@@ -11,6 +11,7 @@ $properties: (background-color);
 $variants: (
 	core.merge(
     core.primary-colors(),
+    core.primary-colors(),
     core.opaque-colors(),
     core.grayscale-colors(),
     core.monotone-colors(),

@@ -6,7 +6,7 @@
   }
 
   h1,h2,h3,h4,h5,h6 {
-    line-height: var(--heading-leading, leading(3));
+    line-height: var(--heading-leading, var(--leading-3));
     margin-bottom: var(--heading-margin, 0.5em);
     color: var(--heading-color, black);
     &:last-child {
@@ -15,7 +15,7 @@
   }
 
   p {
-    line-height: var(--paragraph-leading, leading(8));
+    line-height: var(--paragraph-leading, var(--leading-8));
     margin-bottom: var(--paragraph-margin, 1.5em);
     color: var(--paragraph-color, black);
     &:last-child {
@@ -49,6 +49,6 @@
   }
 
   pre,code {
-		font-family: font-family(mono);
+		font-family: var(--font-mono);
 	}
 }

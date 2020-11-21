@@ -191,15 +191,15 @@ CUSTOM PROPERTIES
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: var(--btn-height, size(10));
-    padding: var(--btn-padding, size(0, 4));
+    height: var(--btn-height, var(--size-10));
+    padding: var(--btn-padding, var(--size-0) var(--size-4));
     outline: 0;
-    background: var(--btn-bg, fill(indigo-500));
+    background: var(--btn-bg, var(--indigo-500));
     border: var(--btn-border, 0);
     box-shadow: var(--btn-shadow, none);
-    border-radius: var(--btn-radius, radius(xs));
-    font-family: var(--btn-font-family, font-family(sans));
-    font-size: var(--btn-font-size, font-size(md));
+    border-radius: var(--btn-radius, var(--radius-xs));
+    font-family: var(--btn-font-family, var(--font-sans));
+    font-size: var(--btn-font-size, var(--font-md));
     font-weight: var(--btn-font-weight, 500);
     line-height: 1;
     text-decoration: none;
@@ -211,8 +211,8 @@ CUSTOM PROPERTIES
     cursor: pointer;
 
     &:hover {
-      background: var(--btn-hover-bg, fill(indigo-600));
-      color: var(--btn-hover-color, fill(white));
+      background: var(--btn-hover-bg, var(--indigo-600));
+      color: var(--btn-hover-color, var(--white));
       border: var(--btn-hover-border, initial);
       box-shadow: var(--btn-hover-shadow, none);
     }
@@ -220,14 +220,14 @@ CUSTOM PROPERTIES
       box-shadow: var(--btn-focus-shadow, none);
     }
     &:active {
-      background: var(--btn-active-bg, fill(indigo-700));
-      color: var(--btn-active-color, fill(white));
+      background: var(--btn-active-bg, var(--indigo-700));
+      color: var(--btn-active-color, var(--white));
       border: var(--btn-active-border, initial);
       box-shadow: var(--btn-active-shadow, none);
     }
     &.is-active {
-      background: var(--btn-active-bg, fill(indigo-700));
-      color: var(--btn-active-color, fill(white));
+      background: var(--btn-active-bg, var(--indigo-700));
+      color: var(--btn-active-color, var(--white));
       border: var(--btn-active-border, initial);
       box-shadow: var(--btn-active-shadow, none);
       pointer-events: none;
@@ -258,57 +258,57 @@ CUSTOM PROPERTIES
   ******************************/
 
   .btn-xs {
-    --btn-height: var(--btn-xs-height, #{size(8)});
-    --btn-padding: var(--btn-xs-padding, #{size(0, 3)});
-    --btn-font-size: var(--btn-xs-font-size, #{font-size(xs)});
+    --btn-height: var(--btn-xs-height, #{var(--size-8)});
+    --btn-padding: var(--btn-xs-padding, #{var(--size-0) var(--size-3)});
+    --btn-font-size: var(--btn-xs-font-size, #{var(--font-xs)});
   }
   .btn-sm {
-    --btn-height: var(--btn-sm-height, #{size(9)});
-    --btn-padding: var(--btn-sm-padding, #{size(0, 3)});
-    --btn-font-size: var(--btn-sm-font-size, #{font-size(sm)});
+    --btn-height: var(--btn-sm-height, #{var(--size-9)});
+    --btn-padding: var(--btn-sm-padding, #{var(--size-0) var(--size-3)});
+    --btn-font-size: var(--btn-sm-font-size, #{var(--font-sm)});
   }
   .btn-md {
-    --btn-height: var(--btn-md-height, #{size(10)});
-    --btn-padding: var(--btn-md-padding, #{size(0, 4)});
-    --btn-font-size: var(--btn-md-font-size, #{font-size(md)});
+    --btn-height: var(--btn-md-height, #{var(--size-10)});
+    --btn-padding: var(--btn-md-padding, #{var(--size-0) var(--size-4)});
+    --btn-font-size: var(--btn-md-font-size, #{var(--font-md)});
   }
   .btn-lg {
-    --btn-height: var(--btn-lg-height, #{size(11)});
-    --btn-padding: var(--btn-lg-padding, #{size(0, 4)});
-    --btn-font-size: var(--btn-lg-font-size, #{font-size(md)});
+    --btn-height: var(--btn-lg-height, #{var(--size-11)});
+    --btn-padding: var(--btn-lg-padding, #{var(--size-0) var(--size-4)});
+    --btn-font-size: var(--btn-lg-font-size, #{var(--font-md)});
   }
   .btn-xl {
-    --btn-height: var(--btn-xl-height, #{size(12)});
-    --btn-padding: var(--btn-xl-padding, #{size(0, 4)});
-    --btn-font-size: var(--btn-xl-font-size, #{font-size(md)});
+    --btn-height: var(--btn-xl-height, #{var(--size-12)});
+    --btn-padding: var(--btn-xl-padding, #{var(--size-0) var(--size-4)});
+    --btn-font-size: var(--btn-xl-font-size, #{var(--font-md)});
   }
 
   @each $screen, $screen-value in screens() {
     @media (min-width: $screen-value) {
       .#{$screen}#{$screen-delimiter}btn-xs {
-        --btn-height: var(--btn-xs-height, #{size(8)});
-        --btn-padding: var(--btn-xs-padding, #{size(0, 3)});
-        --btn-font-size: var(--btn-xs-font-size, #{font-size(xs)});
+        --btn-height: var(--btn-xs-height, #{var(--size-8)});
+        --btn-padding: var(--btn-xs-padding, #{var(--size-0) var(--size-3)});
+        --btn-font-size: var(--btn-xs-font-size, #{var(--font-xs)});
       }
       .#{$screen}#{$screen-delimiter}btn-sm {
-        --btn-height: var(--btn-sm-height, #{size(9)});
-        --btn-padding: var(--btn-sm-padding, #{size(0, 3)});
-        --btn-font-size: var(--btn-sm-font-size, #{font-size(sm)});
+        --btn-height: var(--btn-sm-height, #{var(--size-9)});
+        --btn-padding: var(--btn-sm-padding, #{var(--size-0) var(--size-3)});
+        --btn-font-size: var(--btn-sm-font-size, #{var(--font-sm)});
       }
       .#{$screen}#{$screen-delimiter}btn-md {
-        --btn-height: var(--btn-md-height, #{size(10)});
-        --btn-padding: var(--btn-md-padding, #{size(0, 4)});
-        --btn-font-size: var(--btn-md-font-size, #{font-size(md)});
+        --btn-height: var(--btn-md-height, #{var(--size-10)});
+        --btn-padding: var(--btn-md-padding, #{var(--size-0) var(--size-4)});
+        --btn-font-size: var(--btn-md-font-size, #{var(--font-md)});
       }
       .#{$screen}#{$screen-delimiter}btn-lg {
-        --btn-height: var(--btn-lg-height, #{size(11)});
-        --btn-padding: var(--btn-lg-padding, #{size(0, 4)});
-        --btn-font-size: var(--btn-lg-font-size, #{font-size(md)});
+        --btn-height: var(--btn-lg-height, #{var(--size-11)});
+        --btn-padding: var(--btn-lg-padding, #{var(--size-0) var(--size-4)});
+        --btn-font-size: var(--btn-lg-font-size, #{var(--font-md)});
       }
       .#{$screen}#{$screen-delimiter}btn-xl {
-        --btn-height: var(--btn-xl-height, #{size(12)});
-        --btn-padding: var(--btn-xl-padding, #{size(0, 4)});
-        --btn-font-size: var(--btn-xl-font-size, #{font-size(md)});
+        --btn-height: var(--btn-xl-height, #{var(--size-12)});
+        --btn-padding: var(--btn-xl-padding, #{var(--size-0) var(--size-4)});
+        --btn-font-size: var(--btn-xl-font-size, #{var(--font-md)});
       }
     }
   }
@@ -327,13 +327,13 @@ CUSTOM PROPERTIES
       margin-right: calc(1px * -1);
       border-radius: 0;
       &:first-child {
-        border-top-left-radius: var(--btn-radius, radius(xs));
-        border-bottom-left-radius: var(--btn-radius, radius(xs));
+        border-top-left-radius: var(--btn-radius, var(--radius-xs));
+        border-bottom-left-radius: var(--btn-radius, var(--radius-xs));
       }
       &:last-child {
         margin-right: 0;
-        border-top-right-radius: var(--btn-radius, radius(xs));
-        border-bottom-right-radius: var(--btn-radius, radius(xs));
+        border-top-right-radius: var(--btn-radius, var(--radius-xs));
+        border-bottom-right-radius: var(--btn-radius, var(--radius-xs));
       }
     }
   }
@@ -344,38 +344,38 @@ CUSTOM PROPERTIES
   ******************************/
 
   .btn-light {
-    --btn-bg: var(--btn-light-bg, #{fill(silver-100)});
-    --btn-color: var(--btn-light-color, #{fill(gray-900)});
+    --btn-bg: var(--btn-light-bg, #{var(--silver-100)});
+    --btn-color: var(--btn-light-color, #{var(--gray-900)});
     --btn-border: var(--btn-light-border, initial);
     --btn-shadow: var(--btn-light-shadow, none);
 
-    --btn-hover-bg: var(--btn-light-hover-bg, #{fill(silver-200)});
-    --btn-hover-color: var(--btn-light-hover-color, #{fill(gray-900)});
+    --btn-hover-bg: var(--btn-light-hover-bg, #{var(--silver-200)});
+    --btn-hover-color: var(--btn-light-hover-color, #{var(--gray-900)});
     --btn-hover-border: var(--btn-light-hover-border, initial);
     --btn-hover-shadow: var(--btn-light-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-light-focus-shadow, none);
 
-    --btn-active-bg: var(--btn-light-active-bg, #{fill(silver-300)});
-    --btn-active-color: var(--btn-light-active-color, #{fill(gray-900)});
+    --btn-active-bg: var(--btn-light-active-bg, #{var(--silver-300)});
+    --btn-active-color: var(--btn-light-active-color, #{var(--gray-900)});
     --btn-active-border: var(--btn-light-active-border, initial);
     --btn-active-shadow: var(--btn-light-active-shadow, none);
   }
 
   .btn-dark {
-    --btn-bg: var(--btn-dark-bg, #{fill(black)});
+    --btn-bg: var(--btn-dark-bg, #{var(--black)});
     --btn-color: var(--btn-dark-color, white);
     --btn-border: var(--btn-dark-border, initial);
     --btn-shadow: var(--btn-dark-shadow, none);
 
-    --btn-hover-bg: var(--btn-dark-hover-bg, #{fill(gray-900)});
+    --btn-hover-bg: var(--btn-dark-hover-bg, #{var(--gray-900)});
     --btn-hover-color: var(--btn-dark-hover-color, white);
     --btn-hover-border: var(--btn-dark-hover-border, initial);
     --btn-hover-shadow: var(--btn-dark-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-dark-focus-shadow, none);
 
-    --btn-active-bg: var(--btn-dark-active-bg, #{fill(black)});
+    --btn-active-bg: var(--btn-dark-active-bg, #{var(--black)});
     --btn-active-color: var(--btn-dark-active-color, white);
     --btn-active-border: var(--btn-dark-active-border, initial);
     --btn-active-shadow: var(--btn-dark-active-shadow, none);
@@ -383,20 +383,20 @@ CUSTOM PROPERTIES
 
   .btn-outline {
     --btn-bg: var(--btn-outline-bg, transparent);
-    --btn-color: var(--btn-outline-color, #{fill(gray-700)});
-    --btn-border: var(--btn-outline-border, 1px solid #{fill(silver-500)});
+    --btn-color: var(--btn-outline-color, #{var(--gray-700)});
+    --btn-border: var(--btn-outline-border, 1px solid #{var(--silver-500)});
     --btn-shadow: var(--btn-outline-shadow, none);
 
-    --btn-hover-bg: var(--btn-outline-hover-bg, #{fill(silver-100)});
-    --btn-hover-color: var(--btn-outline-hover-color, #{fill(gray-700)});
-    --btn-hover-border: var(--btn-outline-hover-border, 1px solid #{fill(silver-700)});
+    --btn-hover-bg: var(--btn-outline-hover-bg, #{var(--silver-100)});
+    --btn-hover-color: var(--btn-outline-hover-color, #{var(--gray-700)});
+    --btn-hover-border: var(--btn-outline-hover-border, 1px solid #{var(--silver-700)});
     --btn-hover-shadow: var(--btn-outline-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-outline-focus-shadow, none);
 
-    --btn-active-bg: var(--btn-outline-active-bg, #{fill(silver-200)});
-    --btn-active-color: var(--btn-outline-active-color, #{fill(gray-700)});
-    --btn-active-border: var(--btn-outline-active-border, 1px solid #{fill(silver-700)});
+    --btn-active-bg: var(--btn-outline-active-bg, #{var(--silver-200)});
+    --btn-active-color: var(--btn-outline-active-color, #{var(--gray-700)});
+    --btn-active-border: var(--btn-outline-active-border, 1px solid #{var(--silver-700)});
     --btn-active-shadow: var(--btn-outline-active-shadow, none);
     &:hover {
       z-index: 2;
@@ -404,59 +404,59 @@ CUSTOM PROPERTIES
   }
 
   .btn-success {
-    --btn-bg: var(--btn-success-bg, #{fill(green-500)});
+    --btn-bg: var(--btn-success-bg, #{var(--green-500)});
     --btn-color: var(--btn-success-color, white);
-    --btn-border: var(--btn-success-border, 1px solid #{fill(green-500)});
+    --btn-border: var(--btn-success-border, 1px solid #{var(--green-500)});
     --btn-shadow: var(--btn-success-shadow, none);
 
-    --btn-hover-bg: var(--btn-success-hover-bg, #{fill(green-600)});
+    --btn-hover-bg: var(--btn-success-hover-bg, #{var(--green-600)});
     --btn-hover-color: var(--btn-success-hover-color, white);
-    --btn-hover-border: var(--btn-success-hover-border, 1px solid #{fill(green-600)});
+    --btn-hover-border: var(--btn-success-hover-border, 1px solid #{var(--green-600)});
     --btn-hover-shadow: var(--btn-success-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-success-focus-shadow, none);
 
-    --btn-active-bg: var(--btn-success-active-bg, #{fill(green-700)});
+    --btn-active-bg: var(--btn-success-active-bg, #{var(--green-700)});
     --btn-active-color: var(--btn-success-active-color, white);
-    --btn-active-border: var(--btn-success-active-border, 1px solid #{fill(green-700)});
+    --btn-active-border: var(--btn-success-active-border, 1px solid #{var(--green-700)});
     --btn-active-shadow: var(--btn-success-active-shadow, none);
   }
 
   .btn-warning {
-    --btn-bg: var(--btn-warning-bg, #{fill(yellow-500)});
+    --btn-bg: var(--btn-warning-bg, #{var(--yellow-500)});
     --btn-color: var(--btn-warning-color, white);
-    --btn-border: var(--btn-warning-border, 1px solid #{fill(yellow-500)});
+    --btn-border: var(--btn-warning-border, 1px solid #{var(--yellow-500)});
     --btn-shadow: var(--btn-warning-shadow, none);
 
-    --btn-hover-bg: var(--btn-warning-hover-bg, #{fill(yellow-600)});
+    --btn-hover-bg: var(--btn-warning-hover-bg, #{var(--yellow-600)});
     --btn-hover-color: var(--btn-warning-hover-color, white);
-    --btn-hover-border: var(--btn-warning-hover-border, 1px solid #{fill(yellow-600)});
+    --btn-hover-border: var(--btn-warning-hover-border, 1px solid #{var(--yellow-600)});
     --btn-hover-shadow: var(--btn-warning-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-warning-focus-shadow, none);
 
-    --btn-active-bg: var(--btn-warning-active-bg, #{fill(yellow-700)});
+    --btn-active-bg: var(--btn-warning-active-bg, #{var(--yellow-700)});
     --btn-active-color: var(--btn-warning-active-color, white);
-    --btn-active-border: var(--btn-warning-active-border, 1px solid #{fill(yellow-700)});
+    --btn-active-border: var(--btn-warning-active-border, 1px solid #{var(--yellow-700)});
     --btn-active-shadow: var(--btn-warning-active-shadow, none);
   }
   
   .btn-danger {
-    --btn-bg: var(--btn-danger-bg, #{fill(red-500)});
+    --btn-bg: var(--btn-danger-bg, #{var(--red-500)});
     --btn-color: var(--btn-danger-color, white);
-    --btn-border: var(--btn-danger-border, 1px solid #{fill(red-500)});
+    --btn-border: var(--btn-danger-border, 1px solid #{var(--red-500)});
     --btn-shadow: var(--btn-danger-shadow, none);
 
-    --btn-hover-bg: var(--btn-danger-hover-bg, #{fill(red-600)});
+    --btn-hover-bg: var(--btn-danger-hover-bg, #{var(--red-600)});
     --btn-hover-color: var(--btn-danger-hover-color, white);
-    --btn-hover-border: var(--btn-danger-hover-border, 1px solid #{fill(red-600)});
+    --btn-hover-border: var(--btn-danger-hover-border, 1px solid #{var(--red-600)});
     --btn-hover-shadow: var(--btn-danger-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-danger-focus-shadow, none);
 
-    --btn-active-bg: var(--btn-danger-active-bg, #{fill(red-700)});
+    --btn-active-bg: var(--btn-danger-active-bg, #{var(--red-700)});
     --btn-active-color: var(--btn-danger-active-color, white);
-    --btn-active-border: var(--btn-danger-active-border, 1px solid #{fill(red-700)});
+    --btn-active-border: var(--btn-danger-active-border, 1px solid #{var(--red-700)});
     --btn-active-shadow: var(--btn-danger-active-shadow, none);
   }
 

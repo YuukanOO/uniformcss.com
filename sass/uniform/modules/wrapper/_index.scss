@@ -16,22 +16,22 @@ CUSTOM PROPERTIES
   .wrapper {
     width: 100%;
     margin: auto;
-    max-width: var(--wrapper-max-width, size(26));
-    padding-left: var(--wrapper-padding, size(5));
-    padding-right: var(--wrapper-padding, size(5));
-    @media (min-width: screen(xs)) {
-      max-width: var(--wrapper-xs-max-width, size(27));
+    max-width: var(--wrapper-max-width, var(--size-26));
+    padding-left: var(--wrapper-padding, var(--size-5));
+    padding-right: var(--wrapper-padding, var(--size-5));
+    @include screen(xs) {
+      max-width: var(--wrapper-xs-max-width, var(--size-27));
     }
-    @media (min-width: screen(sm)) {
+    @include screen(sm) {
       max-width: var(--wrapper-sm-max-width, screen(xs));
     }
-    @media (min-width: screen(md)) {
+    @include screen(md) {
       max-width: var(--wrapper-md-max-width, screen(sm));
     }
-    @media (min-width: screen(lg)) {
+    @include screen(lg) {
       max-width: var(--wrapper-lg-max-width, screen(md));
     }
-    @media (min-width: screen(xl)) {
+    @include screen(xl) {
       max-width: var(--wrapper-xl-max-width, screen(lg));
     }
   }

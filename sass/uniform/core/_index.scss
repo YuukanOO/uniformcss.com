@@ -24,7 +24,6 @@ $default-config: (
   child-delimiter: '__',
   pseudo-delimiter: '\\.',
   screen-delimiter: '\\.',
-  variablize: true,
   headless: false,
   root: true,
   debugger: false,
@@ -62,166 +61,167 @@ $default-config: (
     group-focus: 'group-focus',
   ),
 
+  hues: (
+    primary-hue: 230,
+    secondary-hue: 230,
+    tertiary-hue: 214,
+    accent-hue: 50,
+    secondary-accent-hue: 60,
+    tertiary-acccent-hue: 70,
+  ),
+
+  saturations: (
+    primary-saturation: 50%,
+    secondary-saturation: 50%,
+    tertiary-saturation: 50%,
+    accent-saturation: 50%,
+    secondary-accent-saturation: 60%,
+    tertiary-acccent-saturation: 70%,
+  ),
+
+  lightness: (
+    primary-lightness-50: 95%,
+    primary-lightness-100: 85%,
+    primary-lightness-200: 75%,
+    primary-lightness-300: 60%,
+    primary-lightness-400: 55%,
+    primary-lightness-500: 50%,
+    primary-lightness-600: 45%,
+    primary-lightness-700: 40%,
+    primary-lightness-800: 30%,
+    primary-lightness-900: 20%,
+
+    secondary-lightness-50: 95%,
+    secondary-lightness-100: 85%,
+    secondary-lightness-200: 75%,
+    secondary-lightness-300: 60%,
+    secondary-lightness-400: 55%,
+    secondary-lightness-500: 50%,
+    secondary-lightness-600: 45%,
+    secondary-lightness-700: 40%,
+    secondary-lightness-800: 30%,
+    secondary-lightness-900: 20%,
+
+    tertiary-lightness-50: 95%,
+    tertiary-lightness-100: 85%,
+    tertiary-lightness-200: 75%,
+    tertiary-lightness-300: 60%,
+    tertiary-lightness-400: 55%,
+    tertiary-lightness-500: 50%,
+    tertiary-lightness-600: 45%,
+    tertiary-lightness-700: 40%,
+    tertiary-lightness-800: 30%,
+    tertiary-lightness-900: 20%,
+
+    accent-lightness-50: 95%,
+    accent-lightness-100: 85%,
+    accent-lightness-200: 75%,
+    accent-lightness-300: 60%,
+    accent-lightness-400: 55%,
+    accent-lightness-500: 50%,
+    accent-lightness-600: 45%,
+    accent-lightness-700: 40%,
+    accent-lightness-800: 30%,
+    accent-lightness-900: 20%,
+
+    secondary-accent-lightness-50: 95%,
+    secondary-accent-lightness-100: 85%,
+    secondary-accent-lightness-200: 75%,
+    secondary-accent-lightness-300: 60%,
+    secondary-accent-lightness-400: 55%,
+    secondary-accent-lightness-500: 50%,
+    secondary-accent-lightness-600: 45%,
+    secondary-accent-lightness-700: 40%,
+    secondary-accent-lightness-800: 30%,
+    secondary-accent-lightness-900: 20%,
+
+    tertiary-accent-lightness-50: 95%,
+    tertiary-accent-lightness-100: 85%,
+    tertiary-accent-lightness-200: 75%,
+    tertiary-accent-lightness-300: 60%,
+    tertiary-accent-lightness-400: 55%,
+    tertiary-accent-lightness-500: 50%,
+    tertiary-accent-lightness-600: 45%,
+    tertiary-accent-lightness-700: 40%,
+    tertiary-accent-lightness-800: 30%,
+    tertiary-accent-lightness-900: 20%,
+  ),
+
   primary-colors: (
-    red-100: #feefef,
-    red-200: #fee0e0,
-    red-300: #fdbfbf,
-    red-400: #fb7f7f,
-    red-500: #fc5f5f,
-    red-600: #ec4b4b,
-    red-700: #ca2929,
-    red-800: #901d1d,
-    red-900: #561111,
 
-    orange-100: #fff2ea,
-    orange-200: #fee5d5,
-    orange-300: #fecaaa,
-    orange-400: #fd9557,
-    orange-500: #fd7b2c,
-    orange-600: #ee6c1d,
-    orange-700: #bd5313,
-    orange-800: #873c0e,
-    orange-900: #512408,
+    primary-50: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-50), var(--bg-opacity)  ),
+    primary-100: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-100), var(--bg-opacity)  ),
+    primary-200: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-200), var(--bg-opacity)  ),
+    primary-300: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-300), var(--bg-opacity)  ),
+    primary-400: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-400), var(--bg-opacity)  ),
+    primary-500: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-500), var(--bg-opacity)  ),
+    primary-600: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-600), var(--bg-opacity)  ),
+    primary-700: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-700), var(--bg-opacity)  ),
+    primary-800: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-800), var(--bg-opacity)  ),
+    primary-900: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-900), var(--bg-opacity)  ),
+    primary: var(--primary-500),
 
-    brown-100: #f8efe7,
-    brown-200: #f1ddcf,
-    brown-300: #e2bca0,
-    brown-400: #c67940,
-    brown-500: #b15818,
-    brown-600: #9b5119,
-    brown-700: #783e14,
-    brown-800: #572c0e,
-    brown-900: #341b08,
+    secondary-50: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-50), var(--bg-opacity)  ),
+    secondary-100: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-100), var(--bg-opacity)  ),
+    secondary-200: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-200), var(--bg-opacity)  ),
+    secondary-300: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-300), var(--bg-opacity)  ),
+    secondary-400: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-400), var(--bg-opacity)  ),
+    secondary-500: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-500), var(--bg-opacity)  ),
+    secondary-600: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-600), var(--bg-opacity)  ),
+    secondary-700: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-700), var(--bg-opacity)  ),
+    secondary-800: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-800), var(--bg-opacity)  ),
+    secondary-900: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-900), var(--bg-opacity)  ),
+    secondary: var(--secondary-500),
 
-    yellow-100: #fffbf3,
-    yellow-200: #fff3dc,
-    yellow-300: #ffdfa2,
-    yellow-400: #ffbf45,
-    yellow-500: #ffaf16,
-    yellow-600: #e1970b,
-    yellow-700: #ac7408,
-    yellow-800: #845907,
-    yellow-900: #503604,
+    tertiary-50: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-50), var(--bg-opacity)  ),
+    tertiary-100: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-100), var(--bg-opacity)  ),
+    tertiary-200: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-200), var(--bg-opacity)  ),
+    tertiary-300: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-300), var(--bg-opacity)  ),
+    tertiary-400: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-400), var(--bg-opacity)  ),
+    tertiary-500: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-500), var(--bg-opacity)  ),
+    tertiary-600: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-600), var(--bg-opacity)  ),
+    tertiary-700: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-700), var(--bg-opacity)  ),
+    tertiary-800: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-800), var(--bg-opacity)  ),
+    tertiary-900: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-900), var(--bg-opacity)  ),
+    tertiary: var(--tertiary-500),
+  ),
 
-    lime-100: #f4fae4,
-    lime-200: #eaf5c8,
-    lime-300: #d4eb91,
-    lime-400: #a8d624,
-    lime-500: #8ab900,
-    lime-600: #7ca700,
-    lime-700: #618200,
-    lime-800: #455d00,
-    lime-900: #293800,
+  acccent-colors: (
+    accent-50: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-50), var(--bg-opacity)  ),
+    accent-100: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-100), var(--bg-opacity)  ),
+    accent-200: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-200), var(--bg-opacity)  ),
+    accent-300: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-300), var(--bg-opacity)  ),
+    accent-400: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-400), var(--bg-opacity)  ),
+    accent-500: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-500), var(--bg-opacity)  ),
+    accent-600: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-600), var(--bg-opacity)  ),
+    accent-700: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-700), var(--bg-opacity)  ),
+    accent-800: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-800), var(--bg-opacity)  ),
+    accent-900: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-900), var(--bg-opacity)  ),
+    accent: var(--accent-500),
 
-    mint-100: #eafff3,
-    mint-200: #d6ffe7,
-    mint-300: #adffcf,
-    mint-400: #5affa0,
-    mint-500: #31ff88,
-    mint-600: #22f078,
-    mint-700: #14c15d,
-    mint-800: #0f8a42,
-    mint-900: #095328,
+    secondary-accent-50: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-50), var(--bg-opacity)  ),
+    secondary-accent-100: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-100), var(--bg-opacity)  ),
+    secondary-accent-200: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-200), var(--bg-opacity)  ),
+    secondary-accent-300: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-300), var(--bg-opacity)  ),
+    secondary-accent-400: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-400), var(--bg-opacity)  ),
+    secondary-accent-500: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-500), var(--bg-opacity)  ),
+    secondary-accent-600: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-600), var(--bg-opacity)  ),
+    secondary-accent-700: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-700), var(--bg-opacity)  ),
+    secondary-accent-800: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-800), var(--bg-opacity)  ),
+    secondary-accent-900: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-900), var(--bg-opacity)  ),
+    secondary-accent: var(--secondary-accent-500),
 
-    green-100: #e4faed,
-    green-200: #c8f5da,
-    green-300: #90ebb4,
-    green-400: #24d46a,
-    green-500: #00b649,
-    green-600: #00a442,
-    green-700: #007f33,
-    green-800: #005b25,
-    green-900: #003716,
-
-    teal-100: #e4fbf6,
-    teal-200: #c9f7ec,
-    teal-300: #92f0d8,
-    teal-400: #26e0b3,
-    teal-500: #00c797,
-    teal-600: #00b388,
-    teal-700: #008b6a,
-    teal-800: #00644c,
-    teal-900: #003c2d,
-
-    cyan-100: #e5fbfd,
-    cyan-200: #caf8fa,
-    cyan-300: #95f0f6,
-    cyan-400: #2be1ed,
-    cyan-500: #00d1de,
-    cyan-600: #00bcc8,
-    cyan-700: #00929b,
-    cyan-800: #00696f,
-    cyan-900: #003f43,
-
-    blue-100: #e6f4ff,
-    blue-200: #cce9ff,
-    blue-300: #99d3ff,
-    blue-400: #33a8ff,
-    blue-500: #0092ff,
-    blue-600: #0083e6,
-    blue-700: #0066b3,
-    blue-800: #004980,
-    blue-900: #002c4d,
-
-    indigo-100: #e6eeff,
-    indigo-200: #ccddff,
-    indigo-300: #99bcff,
-    indigo-400: #3379ff,
-    indigo-500: #0057ff,
-    indigo-600: #004ee6,
-    indigo-700: #003db3,
-    indigo-800: #002c80,
-    indigo-900: #001a4d,
-
-    blueberry-100: #e8eaf6,
-    blueberry-200: #d1d6ed,
-    blueberry-300: #a2aedb,
-    blueberry-400: #475db5,
-    blueberry-500: #20389d,
-    blueberry-600: #223688,
-    blueberry-700: #1a2b6a,
-    blueberry-800: #131e4c,
-    blueberry-900: #0b132e,
-
-    violet-100: #efe6ff,
-    violet-200: #dfccff,
-    violet-300: #c099ff,
-    violet-400: #8133ff,
-    violet-500: #6100ff,
-    violet-600: #5700e6,
-    violet-700: #4400b3,
-    violet-800: #310080,
-    violet-900: #1d004d,
-
-    purple-100: #f8f1fd,
-    purple-200: #ead7f9,
-    purple-300: #c892f0,
-    purple-400: #9226e0,
-    purple-500: #7400c7,
-    purple-600: #6300a9,
-    purple-700: #4b0081,
-    purple-800: #3a0064,
-    purple-900: #23003c,
-
-    magenta-100: #ffe6ff,
-    magenta-200: #feccff,
-    magenta-300: #fd99ff,
-    magenta-400: #fb33ff,
-    magenta-500: #fa00ff,
-    magenta-600: #e100e6,
-    magenta-700: #af00b3,
-    magenta-800: #7d0080,
-    magenta-900: #4b004d,
-
-    pink-100: #ffebf2,
-    pink-200: #ffd6e5,
-    pink-300: #ffadcb,
-    pink-400: #ff5c96,
-    pink-500: #ff337c,
-    pink-600: #f0246d,
-    pink-700: #c11653,
-    pink-800: #8a103b,
-    pink-900: #530923,
+    tertiary-accent-50: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-50), var(--bg-opacity)  ),
+    tertiary-accent-100: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-100), var(--bg-opacity)  ),
+    tertiary-accent-200: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-200), var(--bg-opacity)  ),
+    tertiary-accent-300: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-300), var(--bg-opacity)  ),
+    tertiary-accent-400: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-400), var(--bg-opacity)  ),
+    tertiary-accent-500: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-500), var(--bg-opacity)  ),
+    tertiary-accent-600: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-600), var(--bg-opacity)  ),
+    tertiary-accent-700: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-700), var(--bg-opacity)  ),
+    tertiary-accent-800: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-800), var(--bg-opacity)  ),
+    tertiary-accent-900: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-900), var(--bg-opacity)  ),
+    tertiary-accent: var(--tertiary-500),
   ),
 
   grayscale-colors: (
@@ -478,7 +478,6 @@ $delimiter: map.get($all-config, delimiter);
 $child-delimiter: map.get($all-config, child-delimiter);
 $pseudo-delimiter: map.get($all-config, pseudo-delimiter);
 $screen-delimiter: map.get($all-config, screen-delimiter);
-$variablize: map.get($all-config, variablize);
 $headless: map.get($all-config, headless);
 $root: map.get($all-config, root);
 $debugger: map.get($all-config, debugger);
@@ -502,7 +501,10 @@ $leadings: map.get($all-config, leadings);
 $trackings: map.get($all-config, trackings);
 $radiuses: map.get($all-config, radiuses);
 
-$brand-colors: map.get($all-config, brand-colors);
+$hues: map.get($all-config, hues);
+$saturations: map.get($all-config, saturations);
+$lightness: map.get($all-config, lightness);
+
 $primary-colors: map.get($all-config, primary-colors);
 $opaque-colors: map.get($all-config, opaque-colors);
 $grayscale-colors: map.get($all-config, grayscale-colors);
@@ -537,7 +539,7 @@ $gradients: map.get($all-config, gradients);
   @return $variablized-map;
 }
 
-// VARIABLIZE SCREENS
+// GENERATE SCREENS MAP
 @function name-screens() {
   $named-screens: ();
   @each $key, $value in $screens {
@@ -556,8 +558,8 @@ $gradients: map.get($all-config, gradients);
 $sizes: map.deep-merge($positive-sizes, $negative-sizes);
 
 $fills: ();
-@if ($brand-colors != null) {
-  $fills: map.deep-merge($fills, $brand-colors);
+@if ($primary-colors != null) {
+  $fills: map.deep-merge($fills, $primary-colors);
 }
 @if ($primary-colors != null) {
   $fills: map.deep-merge($fills, $primary-colors);
@@ -582,7 +584,10 @@ $fills: ();
 // VARIABLIZED VARIABLES
 // ============================================================
 
-$var-brand-colors: variablize-map($brand-colors, null);
+$var-hues: variablize-map($hues, hue);
+$var-saturations: variablize-map($saturations, saturation);
+$var-lightness: variablize-map($lightness, lightness);
+
 $var-primary-colors: variablize-map($primary-colors, null);
 $var-opaque-colors: variablize-map($opaque-colors, null);
 $var-monotone-colors: variablize-map($monotone-colors, null);
@@ -602,6 +607,8 @@ $var-font-families: variablize-map($font-families, font);
 $var-font-sizes: variablize-map($font-sizes, font);
 $var-leadings: variablize-map($leadings, leading);
 $var-trackings: variablize-map($trackings, tracking);
+
+
 
 // FETCH FUNCTIONS
 // ============================================================
@@ -623,392 +630,127 @@ $var-trackings: variablize-map($trackings, tracking);
 
 // COLOR FUNCTIONS
 @function primary-colors() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-primary-colors;
-  } @else {
-    $result: $primary-colors;
-  }
+  $result: $primary-colors;
   @return $result;
+}
+
+@function primary-colors() {
+  @return $var-primary-colors;
 }
 
 @function opaque-colors() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-opaque-colors;
-  } @else {
-    $result: $opaque-colors;
-  }
-  @return $result;
+  @return $var-opaque-colors;
 }
 
 @function grayscale-colors() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-grayscale-colors;
-  } @else {
-    $result: $grayscale-colors;
-  }
-  @return $result;
+  @return $var-grayscale-colors;
 }
 
 @function monotone-colors() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-monotone-colors;
-  } @else {
-    $result: $monotone-colors;
-  }
-  @return $result;
+  @return $var-monotone-colors;
 }
 
 @function colors() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-colors;
-  } @else {
-    $result: $colors;
-  }
-  @return $result;
+  @return $var-colors;
 }
 
 @function gradients() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-gradients;
-  } @else {
-    $result: $gradients;
-  }
-  @return $result;
+  @return $var-gradients;
 }
 
 @function fills() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-fills;
-  } @else {
-    $result: $fills;
-  }
-  @return $result;
+  @return $var-fills;
 }
-
-@function fill($fill) {
-  @if (map.get($fills, $fill)) {
-    $result: ();
-    @if ($variablize == true) {
-      $result: map.get($var-fills, $fill);
-    } @else {
-      $result: map.get($fills, $fill);
-    }
-    @return $result;
-  } @else {
-    @if ($headless == true) {
-      $result: var(--#{$fill});
-      @return $result;
-    } @else {
-      @error "[#{$fill}] does not exist";
-    }
-  }
-}
-
 
 // RADIUS FUNCTIONS
 @function radiuses() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-radiuses;
-  } @else {
-    $result: $radiuses;
-  }
-  @return $result;
+  @return $var-radiuses;
 }
-
-@function radius($radius) {
-  @if (map.get($radiuses, $radius)) {
-    $result: ();
-    @if ($variablize == true) {
-      $result: map.get($var-radiuses, $radius);
-    } @else {
-      $result: map.get($radiuses, $radius);
-    }
-    @return $result;
-  } @else {
-    @if ($headless == true) {
-      $result: var(--radius-#{$radius});
-      @return $result;
-    } @else {
-      @error "[#{$radius}] does not exist";
-    }
-  }
-}
-
 
 // SHADOW FUNCTIONS
-@function shadow($shadow) {
-  @if (map.get($shadows, $shadow)) {
-    $result: ();
-    @if ($variablize == true) {
-      $result: map.get($var-shadows, $shadow);
-    } @else {
-      $result: map.get($shadows, $shadow);
-    }
-    @return $result;
-  } @else {
-    @if ($headless == true) {
-      $result: var(--shadow-#{$shadow});
-      @return $result;
-    } @else {
-      @error "[#{$shadow}] does not exist";
-    }
-  }
-}
-
 @function shadows() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-shadows;
-  } @else {
-    $result: $shadows;
-  }
-  @return $result;
+  @return $var-shadows;
 }
-
 
 // SIZE FUNCTIONS
 @function positive-sizes() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-positive-sizes;
-  } @else {
-    $result: $positive-sizes;
-  }
-  @return $result;
+  @return $var-positive-sizes;
 }
 
 @function negative-sizes() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-negative-sizes;
-  } @else {
-    $result: $negative-sizes;
-  }
-  @return $result;
-}
-
-@function size($size, $size-cont...) {
-  $result: ();
-  @if (map.has-key($sizes, $size)) {
-    @if ($variablize == true) {
-      $result: map.get($var-sizes, $size);
-    } @else {
-      $result: map.get($sizes, $size);
-    }
-  } @else {
-    $result: list.append($result, $size);
-  }
-  @each $size in $size-cont {
-    $value: '';
-    @if (map.has-key($sizes, $size)) {
-      @if ($variablize == true) {
-        $value: map.get($var-sizes, $size);
-      } @else {
-        $value: map.get($sizes, $size);
-      }
-      $result: list.append($result, $value);
-    } @else {
-      $result: list.append($result, $size);
-    }
-  }
-  @return $result;
+  @return $var-negative-sizes;
 }
 
 @function sizes() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-sizes;
-  } @else {
-    $result: $sizes;
-  }
-  @return $result;
+  @return $var-sizes;
 }
-
-@function size($size, $more-sizes...) {
-  $result: ();
-  @if (map.has-key($sizes, $size)) {
-    @if ($variablize == true) {
-      $result: map.get($var-sizes, $size);
-    } @else {
-      $result: map.get($sizes, $size);
-    }
-  } @else {
-    $result: list.append($result, $size);
-  }
-  @each $size in $more-sizes {
-    $value: '';
-    @if (map.has-key($sizes, $size)) {
-      @if ($variablize == true) {
-        $value: map.get($var-sizes, $size);
-      } @else {
-        $value: map.get($sizes, $size);
-      }
-      $result: list.append($result, $value);
-    } @else {
-      $result: list.append($result, $size);
-    }
-  }
-  @return $result;
-}
-
 
 // TYPOGRAPHY FUNCTIONS
 @function font-families() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-font-families;
-  } @else {
-    $result: $font-families;
-  }
-  @return $result;
-}
-
-@function font-family($font-family) {
-  @if (map.get($font-families, $font-family)) {
-    $result: ();
-    @if ($variablize == true) {
-      $result: map.get($var-font-families, $font-family);
-    } @else {
-      $result: map.get($font-families, $font-family);
-    }
-    @return $result;
-  } @else {
-    @if ($headless == true) {
-      $result: var(--font-family-#{$font-family});
-      @return $result;
-    } @else {
-      @error "[#{$font-family}] does not exist";
-    }
-  }
+  @return $var-font-families;
 }
 
 @function font-sizes() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-font-sizes;
-  } @else {
-    $result: $font-sizes;
-  }
-  @return $result;
-}
-
-@function font-size($font-size) {
-  @if (map.get($font-sizes, $font-size)) {
-    $result: ();
-    @if ($variablize == true) {
-      $result: map.get($var-font-sizes, $font-size);
-    } @else {
-      $result: map.get($font-sizes, $font-size);
-    }
-    @return $result;
-  } @else {
-    @if ($headless == true) {
-      $result: var(--font-size-#{$font-size});
-      @return $result;
-    } @else {
-      @error "[#{$font-size}] does not exist";
-    }
-  }
+  @return $var-font-sizes;
 }
 
 @function leadings() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-leadings;
-  } @else {
-    $result: $leadings;
-  }
-  @return $result;
-}
-
-@function leading($leading) {
-  @if (map.get($leadings, $leading)) {
-    $result: ();
-    @if ($variablize == true) {
-      $result: map.get($var-leadings, $leading);
-    } @else {
-      $result: map.get($leadings, $leading);
-    }
-    @return $result;
-  } @else {
-    @if ($headless == true) {
-      $result: var(--leading-#{$leading});
-      @return $result;
-    } @else {
-      @error "[#{$leading}] does not exist";
-    }
-  }
+  @return $var-leadings;
 }
 
 @function trackings() {
-  $result: ();
-  @if ($variablize == true) {
-    $result: $var-trackings;
-  } @else {
-    $result: $trackings;
-  }
-  @return $result;
+  @return $var-trackings;
 }
 
-@function tracking($tracking) {
-  @if (map.get($trackings, $tracking)) {
-    $result: ();
-    @if ($variablize == true) {
-      $result: map.get($var-trackings, $tracking);
-    } @else {
-      $result: map.get($trackings, $tracking);
-    }
-    @return $result;
-  } @else {
-    @if ($headless == true) {
-      $result: var(--tracking-#{$tracking});
-      @return $result;
-    } @else {
-      @error "[#{$tracking}] does not exist";
-    }
+
+// HELPER MIXINS
+// ============================================================
+
+@mixin screen($screen) {
+  @media (min-width: screen($screen)) {
+    @content; 
   }
 }
+
 
 // ROOT VARIABLES
 // ============================================================
 
 // Create root variables if CSS custom property setting is enabled
-@if ($variablize == true) {
-  @if ($root == true) {
+:root {
+  --bg-opacity: 1;
 
-    :root {
-      @each $key, $value in $fills {
-        --#{'' + $key}: #{$value};
-      }
-      @each $key, $value in $sizes {
-        --size-#{'' + $key}: #{$value};
-      }
-      @each $key, $value in $shadows {
-        --shadow-#{'' + $key}: #{$value};
-      }
-      @each $key, $value in $font-families {
-        --font-#{'' + $key}: #{$value};
-      }
-      @each $key, $value in $font-sizes {
-        --font-#{'' + $key}: #{$value};
-      }
-      @each $key, $value in $leadings {
-        --leading-#{'' + $key}: #{$value};
-      }
-      @each $key, $value in $trackings {
-        --tracking-#{'' + $key}: #{$value};
-      }
-      @each $key, $value in $radiuses {
-        --radius-#{'' + $key}: #{$value};
-      }
-    }
+  @each $key, $value in $hues {
+    --#{'' + $key}: #{$value};
+  }
+  @each $key, $value in $saturations {
+    --#{'' + $key}: #{$value};
+  }
+  @each $key, $value in $lightness {
+    --#{'' + $key}: #{$value};
+  }
+  @each $key, $value in $fills {
+    --#{'' + $key}: #{$value};
+  }
+  @each $key, $value in $sizes {
+    --size-#{'' + $key}: #{$value};
+  }
+  @each $key, $value in $shadows {
+    --shadow-#{'' + $key}: #{$value};
+  }
+  @each $key, $value in $font-families {
+    --font-#{'' + $key}: #{$value};
+  }
+  @each $key, $value in $font-sizes {
+    --font-#{'' + $key}: #{$value};
+  }
+  @each $key, $value in $leadings {
+    --leading-#{'' + $key}: #{$value};
+  }
+  @each $key, $value in $trackings {
+    --tracking-#{'' + $key}: #{$value};
+  }
+  @each $key, $value in $radiuses {
+    --radius-#{'' + $key}: #{$value};
   }
 }
