@@ -275,12 +275,12 @@ CUSTOM PROPERTIES
   .btn-lg {
     --btn-height: var(--btn-lg-height, #{size(11)});
     --btn-padding: var(--btn-lg-padding, #{size(0, 4)});
-    --btn-font-size: var(--btn-lg-font-size, #{font-size(lg)});
+    --btn-font-size: var(--btn-lg-font-size, #{font-size(md)});
   }
   .btn-xl {
     --btn-height: var(--btn-xl-height, #{size(12)});
     --btn-padding: var(--btn-xl-padding, #{size(0, 4)});
-    --btn-font-size: var(--btn-xl-font-size, #{font-size(xl)});
+    --btn-font-size: var(--btn-xl-font-size, #{font-size(md)});
   }
 
   @each $screen, $screen-value in screens() {
@@ -303,12 +303,12 @@ CUSTOM PROPERTIES
       .#{$screen}#{$screen-delimiter}btn-lg {
         --btn-height: var(--btn-lg-height, #{size(11)});
         --btn-padding: var(--btn-lg-padding, #{size(0, 4)});
-        --btn-font-size: var(--btn-lg-font-size, #{font-size(lg)});
+        --btn-font-size: var(--btn-lg-font-size, #{font-size(md)});
       }
       .#{$screen}#{$screen-delimiter}btn-xl {
         --btn-height: var(--btn-xl-height, #{size(12)});
         --btn-padding: var(--btn-xl-padding, #{size(0, 4)});
-        --btn-font-size: var(--btn-xl-font-size, #{font-size(xl)});
+        --btn-font-size: var(--btn-xl-font-size, #{font-size(md)});
       }
     }
   }

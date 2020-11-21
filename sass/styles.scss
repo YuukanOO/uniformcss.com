@@ -22,13 +22,14 @@
 );
 
 @use "_roots" as *;
+@use "_comparison-slider" as *;
 @use "vendors/prism" as *;
 
 
 .gallery {
   display: flex;
   position: relative;
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .gallery__images {
@@ -54,7 +55,11 @@
   background: linear-gradient(0deg, #65ace0 10%, #3880b5 30%, #0a496c 75%, #101d36 100%);
 }
 
-
+.home-highlight {
+	pre[class*=language-] {
+		background: transparent;
+	}
+}
 
 
 
@@ -215,23 +220,23 @@
 	}
 }
 
-.home-highlight {
-	.highlight {
-		& > div {
-			background: transparent !important;
-		}
-	}
-	td:first-child {
-		pre {
-			padding: size(6, 3);
-			background: fill(gray-900) !important;
-		}
-	}
-	pre {
-		padding: size(6, 7);
-		background: transparent !important;
-	}
-}
+// .home-highlight {
+// 	.highlight {
+// 		& > div {
+// 			background: transparent !important;
+// 		}
+// 	}
+// 	td:first-child {
+// 		pre {
+// 			padding: size(6, 3);
+// 			background: fill(gray-900) !important;
+// 		}
+// 	}
+// 	pre {
+// 		padding: size(6, 7);
+// 		background: transparent !important;
+// 	}
+// }
 
 .toc {
 	ul {

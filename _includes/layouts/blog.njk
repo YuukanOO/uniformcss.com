@@ -43,7 +43,7 @@ layout: layouts/base.njk
         
 
         <div class="flex align-items-center mb-8">
-          <img src="/assets/img/{{ post.data.authorImage }}" class="w-8 h-8 radius-round shadow-2 border-2px border-white mr-3">
+          <img src="/assets/img/{{ post.data.authorImage }}" class="w-8 h-8 radius-round shadow-sm border-2px border-white mr-3">
           <div class="font-sm">
             {{ post.data.author }} on <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
           </div>

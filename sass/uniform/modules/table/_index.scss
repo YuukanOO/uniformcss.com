@@ -41,7 +41,7 @@ CUSTOM PROPERTIES
     margin-bottom: var(--table-stack-margin, size(5));
     border-radius: var(--table-radius, radius(sm));
     background-color: var(--table-bg);
-    box-shadow: var(--table-shadow, shadow(1));
+    box-shadow: var(--table-shadow, shadow(xs));
     
     &:last-child {
       margin-bottom: 0;
@@ -85,7 +85,7 @@ CUSTOM PROPERTIES
 }
 
 @mixin table-unstack {
-  box-shadow: var(--table-shadow, shadow(1));
+  box-shadow: var(--table-shadow, shadow(xs));
   background-color: var(--table-bg, white);
   thead {
     display: table-header-group;
@@ -148,7 +148,7 @@ CUSTOM PROPERTIES
     line-height: leading(6);
     border-radius: var(--table-radius, radius(sm));
     background-color: var(--table-bg, white);
-    box-shadow: var(--table-shadow, shadow(1));
+    box-shadow: var(--table-shadow, shadow(xs));
     
     tr {
       &:last-child {

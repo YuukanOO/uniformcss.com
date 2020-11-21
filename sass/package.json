@@ -7,6 +7,7 @@
 		"uniform:compile": "sass --load-path=./ --no-source-map styles.scss ../assets/css/styles.css",
 		"uniform:watch": "sass --load-path=./ --no-source-map --watch styles.scss ../assets/css/styles.css",
 		"uniform:autoprefix": "postcss --no-map --use autoprefixer --replace ../assets/css/styles.css",
+		"uniform:copy-class": "postcss --no-map --use postcss-copy-class --replace ../assets/css/styles.css",
 		"uniform:groupmedia": "group-css-media-queries ../assets/css/styles.css ../assets/css/styles.css",
 		"uniform:cleancss": "cleancss -O2 ../assets/css/styles.css --output ../assets/css/styles.css",
 		"uniform": "npm run uniform:compile && npm run uniform:autoprefix && npm run uniform:groupmedia && npm run uniform:cleancss"
@@ -26,10 +27,11 @@
 	},
 	"license": "MIT",
 	"devDependencies": {
-		"sass": "^1.29.0",
-		"postcss-cli": "^7.1.2",
 		"autoprefixer": "^9.8.6",
-		"clean-css-cli": "^4.3.0"		
+		"clean-css-cli": "^4.3.0",
+		"postcss-cli": "^7.1.2",
+		"postcss-copy-class": "0.0.1",
+		"sass": "^1.29.0"
 	},
 	"browserslist": [
 		"last 2 version",

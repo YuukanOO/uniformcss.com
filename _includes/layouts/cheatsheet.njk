@@ -2,30 +2,134 @@
 layout: layouts/base.njk
 ---
 
-<div class="absolute t-0 l-0 w-100p z-n1 bg-hero">
-  <div class="min-h-27 h-100vh">
+{% include "partials/nav.njk" %}
 
-  </div>
-  <div class="h-20">
-
-  </div>
-</div>
-
-
-<section>
-  {% include "partials/nav.njk" %}
-  <div class="wrapper align-center">
-    <div class="pt-15 pb-18">
-      <h1 class="font-6xl font-300 mb-6 tracking-n1 color-white">
-        Colors
+<section class="bg-silver-100 mb-18">
+  <div class="wrapper">
+    <div class="py-12">
+      <div class="mb-4 font-600 font-sm leading-8 color-gray-300">
+        Last Updated <time class="postlist-date" datetime="{{ lastUpdated | htmlDateString }}">{{ lastUpdated | readableDate }}</time>
+      </div>
+      <h1 class="flex align-items-start relative font-6xl font-600 mb-6 tracking-n1">
+        {{ title }} <span class="inline-flex align-items-center h-5 ml-2 bg-orange-500 color-white uppercase tracking-2 font-2xs font-700 radius-xs px-1">New</span>
       </h1>
-
-      <p class="font-lg font-400 color-white">
-        A simple and useful list of all available CSS properties and variants.
-      </p>
     </div>
   </div>
 </section>
+
+<section>
+  <div class="wrapper">
+    <div class="grid grid-cols-1 sm.grid-cols-6 lg.grid-cols-12 gap-12">
+      <div class="col-9">
+        <div class="max-w-700px mb-12">
+          <h3 class="font-xl font-700 mb-6">Colors</h3>
+          <p>Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
+        </div>
+
+        <div class="grid grid-cols-3 gap-10">
+          <div class="radius-md overflow-hidden">
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-50
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-100
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-200
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-300
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-400
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-500
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-600
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-700
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-800
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-900
+            </div>
+          </div>
+
+          <div class="radius-md overflow-hidden">
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-50
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-100
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-200
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-300
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-400
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-500
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-600
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-700
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-800
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-900
+            </div>
+          </div>
+
+          <div class="radius-md overflow-hidden">
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-50
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-100
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-200
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-300
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-400
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-500
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-600
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-700
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-800
+            </div>
+            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-red-500">
+              primary-900
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="mb-18">
   <div class="wrapper">
@@ -34,7 +138,7 @@ layout: layouts/base.njk
         {% if loop.index0 < 4 %}
           <div class="grid grid-cols-3 lg.grid-cols-9 xl.grid-cols-9 gap-4">
             {%- for variant in color.variants -%}
-              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-2 hover.shadow-3 transition duration-200">
+              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-sm hover.shadow-3 transition duration-200">
                 <div class="ratio-square radius-xs bg-{{ variant.name }}">
                   
                 </div>
@@ -52,7 +156,7 @@ layout: layouts/base.njk
     </div>
 
     <div class="align-center mt-12">
-      <button class="btn btn-dark radius-round shadow-2 hover.shadow-3 js-btn-reveal-colors"><i class="fas fa-swatchbook mr-2"></i> Show All Colors</button>
+      <button class="btn btn-dark radius-round shadow-sm hover.shadow-3 js-btn-reveal-colors"><i class="fas fa-swatchbook mr-2"></i> Show All Colors</button>
     </div>
 
     <div class="grid grid-cols-1 md.grid-cols-2 lg.grid-cols-1 xl.grid-cols-1 gap-8 mt-8 js-colors" style="display: none;">
@@ -60,7 +164,7 @@ layout: layouts/base.njk
         {% if loop.index0 > 3 %}
           <div class="grid grid-cols-3 lg.grid-cols-9 xl.grid-cols-9 gap-4">
             {%- for variant in color.variants -%}
-              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-2 hover.shadow-3 transition duration-200">
+              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-sm hover.shadow-3 transition duration-200">
                 <div class="ratio-square radius-xs bg-{{ variant.name }}">
                   
                 </div>
@@ -110,7 +214,7 @@ layout: layouts/base.njk
       {%- endfor -%}
 
       <div class="col-1 md.col-2 xl.col-1 align-center mt-12">
-        <button class="btn btn-dark radius-round shadow-2 hover.shadow-3 js-btn-reveal-sizes"><i class="fas fa-eye mr-2"></i> Show All Sizes</button>
+        <button class="btn btn-dark radius-round shadow-sm hover.shadow-3 js-btn-reveal-sizes"><i class="fas fa-eye mr-2"></i> Show All Sizes</button>
       </div>
 
       {%- for size in cheatsheet.sizes -%}

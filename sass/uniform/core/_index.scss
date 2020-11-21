@@ -113,6 +113,16 @@ $default-config: (
     lime-800: #455d00,
     lime-900: #293800,
 
+    mint-100: #eafff3,
+    mint-200: #d6ffe7,
+    mint-300: #adffcf,
+    mint-400: #5affa0,
+    mint-500: #31ff88,
+    mint-600: #22f078,
+    mint-700: #14c15d,
+    mint-800: #0f8a42,
+    mint-900: #095328,
+
     green-100: #e4faed,
     green-200: #c8f5da,
     green-300: #90ebb4,
@@ -417,26 +427,38 @@ $default-config: (
   ),
 
   shadows: (
-    1: (
+    xs: (
       0 1px 3px rgba(0, 0, 0, 0.12),
       0 1px 2px rgba(0, 0, 0, 0.24),
     ),
-    2: (
+    sm: (
       0 3px 6px rgba(0, 0, 0, 0.16),
       0 3px 6px rgba(0, 0, 0, 0.23),
     ),
-    3: (
+    md: (
       0 10px 20px rgba(0, 0, 0, 0.19),
       0 6px 6px rgba(0, 0, 0, 0.23),
     ),
-    4: (
+    lg: (
       0 14px 28px rgba(0, 0, 0, 0.25),
       0 10px 10px rgba(0, 0, 0, 0.22),
     ),
-    5: (
+    xl: (
       0 19px 38px rgba(0, 0, 0, 0.3),
       0 15px 12px rgba(0, 0, 0, 0.22),
     ),
+    focus: (
+      0 0 0 3px rgb(0, 145, 255, 0.2)
+    ),
+    success: (
+      0 0 0 3px rgb(0, 182, 73, 0.2)
+    ),
+    warning: (
+      0 0 0 3px rgb(255, 175, 22, 0.2)
+    ),
+    danger: (
+      0 0 0 3px rgb(252, 95, 95, 0.2)
+    )
   ) 
 ) !default;
 
@@ -480,6 +502,7 @@ $leadings: map.get($all-config, leadings);
 $trackings: map.get($all-config, trackings);
 $radiuses: map.get($all-config, radiuses);
 
+$brand-colors: map.get($all-config, brand-colors);
 $primary-colors: map.get($all-config, primary-colors);
 $opaque-colors: map.get($all-config, opaque-colors);
 $grayscale-colors: map.get($all-config, grayscale-colors);
@@ -533,6 +556,9 @@ $gradients: map.get($all-config, gradients);
 $sizes: map.deep-merge($positive-sizes, $negative-sizes);
 
 $fills: ();
+@if ($brand-colors != null) {
+  $fills: map.deep-merge($fills, $brand-colors);
+}
 @if ($primary-colors != null) {
   $fills: map.deep-merge($fills, $primary-colors);
 }
@@ -556,6 +582,7 @@ $fills: ();
 // VARIABLIZED VARIABLES
 // ============================================================
 
+$var-brand-colors: variablize-map($brand-colors, null);
 $var-primary-colors: variablize-map($primary-colors, null);
 $var-opaque-colors: variablize-map($opaque-colors, null);
 $var-monotone-colors: variablize-map($monotone-colors, null);

@@ -28,9 +28,9 @@ By default, Uniform provides 5 levels of shadows. Use the following chart as the
       </td>
     </tr>
     <tr>
-      <td><code class="color-teal-500">shadow-2</code></td>
+      <td><code class="color-teal-500">shadow-sm</code></td>
       <td>
-        <div class="shadow-2 w-8 h-8"></div>
+        <div class="shadow-sm w-8 h-8"></div>
       </td>
     </tr>
     <tr>
@@ -61,13 +61,13 @@ By default, Uniform provides 5 levels of shadows. Use the following chart as the
 The following example showcases how the variants can be applied.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="w-100p p-5 bg-white align-center shadow-2">
+  <div class="w-100p p-5 bg-white align-center shadow-sm">
     This container has a large shadow
   </div>
 </section>
 
 ```html
-<div class="w-100p p-5 bg-white align-center shadow-2">
+<div class="w-100p p-5 bg-white align-center shadow-sm">
 	This container has a large shadow
 </div>
 ```
@@ -131,7 +131,7 @@ If you are using the basic configuration setup of Uniform, use the following set
 {% highlight css %}
 :root {
   --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --shadow-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  --shadow-sm: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   --shadow-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   --shadow-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   --shadow-5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);

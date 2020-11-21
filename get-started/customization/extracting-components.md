@@ -43,7 +43,7 @@ Similarly to **option 1**, if you are using the native configuration setup of Un
   display: block;
   padding: size(6);
   background: fill(white);
-  box-shadow: shadow(1);
+  box-shadow: shadow(xs);
   border-radius: radius(md);
 
   &:hover {

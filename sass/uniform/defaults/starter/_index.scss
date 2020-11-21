@@ -17,7 +17,7 @@
   p {
     line-height: var(--paragraph-leading, leading(8));
     margin-bottom: var(--paragraph-margin, 1.5em);
-    color: var(--paragraph-color, fill(gray-500));
+    color: var(--paragraph-color, black);
     &:last-child {
       margin-bottom: 0;
     }
@@ -26,6 +26,7 @@
   a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
   }
 
   b,strong {

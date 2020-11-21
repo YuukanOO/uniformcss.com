@@ -47,7 +47,6 @@ The Form module is an optional pre-built component that provides customizable st
           <option>Option</option>
           <option>Option</option>
         </select>
-        <div class="select__angle"></div>
       </div>
     </div>
   </form>
@@ -225,7 +224,6 @@ To customize your text and select input field sizes, override the following root
       <option>Option</option>
       <option>Option</option>
     </select>
-    <div class="select__angle"></div>
   </div>
 </section>
 
@@ -236,7 +234,6 @@ To customize your text and select input field sizes, override the following root
     <option>Option</option>
     <option>Option</option>
   </select>
-  <div class="select__angle"></div>
 </div>
 ```
 
@@ -265,6 +262,7 @@ To customize your select input field sizes, override the following root variable
   --select-focus-shadow: ...;
   --select-disabled-bg: ...;
   --select-disabled-color: ...;
+  --select-angle-color: ...;
   --select-hover-angle-color: ...;
   --select-hover-focus-color: ...;
   --select-success-border: ...;
@@ -290,7 +288,6 @@ Select fields come in **5 sizes**.
       <option>Option</option>
       <option>Option</option>
     </select>
-    <div class="select__angle"></div>
   </div>
 
   <div class="select select-sm mb-4 last.mb-0">
@@ -299,7 +296,6 @@ Select fields come in **5 sizes**.
       <option>Option</option>
       <option>Option</option>
     </select>
-    <div class="select__angle"></div>
   </div>
 
   <div class="select select-md mb-4 last.mb-0">
@@ -308,7 +304,6 @@ Select fields come in **5 sizes**.
       <option>Option</option>
       <option>Option</option>
     </select>
-    <div class="select__angle"></div>
   </div>
 
   <div class="select select-lg mb-4 last.mb-0">
@@ -317,7 +312,6 @@ Select fields come in **5 sizes**.
       <option>Option</option>
       <option>Option</option>
     </select>
-    <div class="select__angle"></div>
   </div>
 
   <div class="select select-xl mb-4 last.mb-0">
@@ -326,7 +320,6 @@ Select fields come in **5 sizes**.
       <option>Option</option>
       <option>Option</option>
     </select>
-    <div class="select__angle"></div>
   </div>
 </section>
 
