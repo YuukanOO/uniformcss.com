@@ -29,6 +29,7 @@
 	"devDependencies": {
 		"autoprefixer": "^9.8.6",
 		"clean-css-cli": "^4.3.0",
+		"group-css-media-queries": "^1.4.1",
 		"postcss-cli": "^7.1.2",
 		"postcss-copy-class": "0.0.1",
 		"sass": "^1.29.0"

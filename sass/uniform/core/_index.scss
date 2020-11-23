@@ -62,188 +62,241 @@ $default-config: (
   ),
 
   hues: (
-    primary-hue: 230,
-    secondary-hue: 230,
-    tertiary-hue: 214,
-    accent-hue: 50,
-    secondary-accent-hue: 60,
-    tertiary-acccent-hue: 70,
+    primary-hue: 225,
+    primary-hue-a: 145,
+
+    secondary-hue: 211,
+    secondary-hue-a: 185,
+
+    tertiary-hue: 150,
+    tertiary-hue-a: 18,
+
+    silver-hue: 218,
+    gray-hue: 218,
   ),
 
   saturations: (
-    primary-saturation: 50%,
-    secondary-saturation: 50%,
-    tertiary-saturation: 50%,
-    accent-saturation: 50%,
-    secondary-accent-saturation: 60%,
-    tertiary-acccent-saturation: 70%,
+    primary-saturation: 60%,
+    primary-saturation-a: 60%,
+
+    secondary-saturation: 60%,
+    secondary-saturation-a: 60%,
+
+    tertiary-saturation: 100%,
+    tertiary-saturation-a: 100%,
+
+    silver-saturation: 16%,
+    gray-saturation: 16%,
   ),
 
   lightness: (
-    primary-lightness-50: 95%,
-    primary-lightness-100: 85%,
-    primary-lightness-200: 75%,
-    primary-lightness-300: 60%,
-    primary-lightness-400: 55%,
+    primary-lightness-50: 98%,
+    primary-lightness-100: 94%,
+    primary-lightness-200: 86%,
+    primary-lightness-300: 72%,
+    primary-lightness-400: 60%,
     primary-lightness-500: 50%,
-    primary-lightness-600: 45%,
-    primary-lightness-700: 40%,
-    primary-lightness-800: 30%,
-    primary-lightness-900: 20%,
+    primary-lightness-600: 40%,
+    primary-lightness-700: 30%,
+    primary-lightness-800: 20%,
+    primary-lightness-900: 10%,
 
-    secondary-lightness-50: 95%,
-    secondary-lightness-100: 85%,
-    secondary-lightness-200: 75%,
-    secondary-lightness-300: 60%,
-    secondary-lightness-400: 55%,
+    primary-lightness-a50: 95%,
+    primary-lightness-a100: 90%,
+    primary-lightness-a200: 80%,
+    primary-lightness-a300: 65%,
+    primary-lightness-a400: 48%,
+    primary-lightness-a500: 44%,
+    primary-lightness-a600: 39%,
+    primary-lightness-a700: 30%,
+    primary-lightness-a800: 22%,
+    primary-lightness-a900: 15%,
+
+    secondary-lightness-50: 98%,
+    secondary-lightness-100: 94%,
+    secondary-lightness-200: 86%,
+    secondary-lightness-300: 72%,
+    secondary-lightness-400: 60%,
     secondary-lightness-500: 50%,
-    secondary-lightness-600: 45%,
-    secondary-lightness-700: 40%,
-    secondary-lightness-800: 30%,
-    secondary-lightness-900: 20%,
+    secondary-lightness-600: 40%,
+    secondary-lightness-700: 30%,
+    secondary-lightness-800: 20%,
+    secondary-lightness-900: 10%,
+
+    secondary-lightness-a50: 95%,
+    secondary-lightness-a100: 90%,
+    secondary-lightness-a200: 80%,
+    secondary-lightness-a300: 65%,
+    secondary-lightness-a400: 48%,
+    secondary-lightness-a500: 44%,
+    secondary-lightness-a600: 39%,
+    secondary-lightness-a700: 30%,
+    secondary-lightness-a800: 22%,
+    secondary-lightness-a900: 15%,
 
     tertiary-lightness-50: 95%,
-    tertiary-lightness-100: 85%,
-    tertiary-lightness-200: 75%,
-    tertiary-lightness-300: 60%,
-    tertiary-lightness-400: 55%,
+    tertiary-lightness-100: 90%,
+    tertiary-lightness-200: 86%,
+    tertiary-lightness-300: 80%,
+    tertiary-lightness-400: 72%,
     tertiary-lightness-500: 50%,
     tertiary-lightness-600: 45%,
-    tertiary-lightness-700: 40%,
-    tertiary-lightness-800: 30%,
+    tertiary-lightness-700: 36%,
+    tertiary-lightness-800: 28%,
     tertiary-lightness-900: 20%,
 
-    accent-lightness-50: 95%,
-    accent-lightness-100: 85%,
-    accent-lightness-200: 75%,
-    accent-lightness-300: 60%,
-    accent-lightness-400: 55%,
-    accent-lightness-500: 50%,
-    accent-lightness-600: 45%,
-    accent-lightness-700: 40%,
-    accent-lightness-800: 30%,
-    accent-lightness-900: 20%,
+    tertiary-lightness-a50: 95%,
+    tertiary-lightness-a100: 90%,
+    tertiary-lightness-a200: 86%,
+    tertiary-lightness-a300: 80%,
+    tertiary-lightness-a400: 72%,
+    tertiary-lightness-a500: 50%,
+    tertiary-lightness-a600: 45%,
+    tertiary-lightness-a700: 36%,
+    tertiary-lightness-a800: 28%,
+    tertiary-lightness-a900: 20%,
 
-    secondary-accent-lightness-50: 95%,
-    secondary-accent-lightness-100: 85%,
-    secondary-accent-lightness-200: 75%,
-    secondary-accent-lightness-300: 60%,
-    secondary-accent-lightness-400: 55%,
-    secondary-accent-lightness-500: 50%,
-    secondary-accent-lightness-600: 45%,
-    secondary-accent-lightness-700: 40%,
-    secondary-accent-lightness-800: 30%,
-    secondary-accent-lightness-900: 20%,
+    silver-lightness-50: 97.4%,
+    silver-lightness-100: 92.8%,
+    silver-lightness-200: 88.2%,
+    silver-lightness-300: 83.6%,
+    silver-lightness-400: 79%,
+    silver-lightness-500: 74.4%,
+    silver-lightness-600: 69.8%,
+    silver-lightness-700: 65.2%,
+    silver-lightness-800: 60.6%,
+    silver-lightness-900: 56%,
 
-    tertiary-accent-lightness-50: 95%,
-    tertiary-accent-lightness-100: 85%,
-    tertiary-accent-lightness-200: 75%,
-    tertiary-accent-lightness-300: 60%,
-    tertiary-accent-lightness-400: 55%,
-    tertiary-accent-lightness-500: 50%,
-    tertiary-accent-lightness-600: 45%,
-    tertiary-accent-lightness-700: 40%,
-    tertiary-accent-lightness-800: 30%,
-    tertiary-accent-lightness-900: 20%,
+    gray-lightness-50: 51.4%,
+    gray-lightness-100: 46.8%,
+    gray-lightness-200: 42.2%,
+    gray-lightness-300: 37.6%,
+    gray-lightness-400: 33%,
+    gray-lightness-500: 28.4%,
+    gray-lightness-600: 23.8%,
+    gray-lightness-700: 19.2%,
+    gray-lightness-800: 14.6%,
+    gray-lightness-900: 10%,
   ),
 
   primary-colors: (
-
-    primary-50: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-50), var(--bg-opacity)  ),
-    primary-100: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-100), var(--bg-opacity)  ),
-    primary-200: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-200), var(--bg-opacity)  ),
-    primary-300: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-300), var(--bg-opacity)  ),
-    primary-400: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-400), var(--bg-opacity)  ),
-    primary-500: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-500), var(--bg-opacity)  ),
-    primary-600: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-600), var(--bg-opacity)  ),
-    primary-700: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-700), var(--bg-opacity)  ),
-    primary-800: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-800), var(--bg-opacity)  ),
-    primary-900: hsla( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-900), var(--bg-opacity)  ),
+    primary-50: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-50)),
+    primary-100: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-100)),
+    primary-200: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-200)),
+    primary-300: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-300)),
+    primary-400: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-400)),
+    primary-500: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-500)),
+    primary-600: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-600)),
+    primary-700: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-700)),
+    primary-800: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-800)),
+    primary-900: hsl( var(--primary-hue), var(--primary-saturation), var(--primary-lightness-900)),
     primary: var(--primary-500),
 
-    secondary-50: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-50), var(--bg-opacity)  ),
-    secondary-100: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-100), var(--bg-opacity)  ),
-    secondary-200: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-200), var(--bg-opacity)  ),
-    secondary-300: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-300), var(--bg-opacity)  ),
-    secondary-400: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-400), var(--bg-opacity)  ),
-    secondary-500: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-500), var(--bg-opacity)  ),
-    secondary-600: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-600), var(--bg-opacity)  ),
-    secondary-700: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-700), var(--bg-opacity)  ),
-    secondary-800: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-800), var(--bg-opacity)  ),
-    secondary-900: hsla( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-900), var(--bg-opacity)  ),
-    secondary: var(--secondary-500),
-
-    tertiary-50: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-50), var(--bg-opacity)  ),
-    tertiary-100: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-100), var(--bg-opacity)  ),
-    tertiary-200: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-200), var(--bg-opacity)  ),
-    tertiary-300: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-300), var(--bg-opacity)  ),
-    tertiary-400: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-400), var(--bg-opacity)  ),
-    tertiary-500: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-500), var(--bg-opacity)  ),
-    tertiary-600: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-600), var(--bg-opacity)  ),
-    tertiary-700: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-700), var(--bg-opacity)  ),
-    tertiary-800: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-800), var(--bg-opacity)  ),
-    tertiary-900: hsla( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-900), var(--bg-opacity)  ),
-    tertiary: var(--tertiary-500),
+    primary-a50: hsl( var(--primary-hue-a), var(--primary-saturation-a), var(--primary-lightness-a50)),
+    primary-a100: hsl( var(--primary-hue-a), var(--primary-saturation-a), var(--primary-lightness-a100)),
+    primary-a200: hsl( var(--primary-hue-a), var(--primary-saturation-a), var(--primary-lightness-a200)),
+    primary-a300: hsl( var(--primary-hue-a), var(--primary-saturation-a), var(--primary-lightness-a300)),
+    primary-a400: hsl( var(--primary-hue-a), var(--primary-saturation-a), var(--primary-lightness-a400)),
+    primary-a500: hsl( var(--primary-hue-a), var(--primary-saturation-a), var(--primary-lightness-a500)),
+    primary-a600: hsl( var(--primary-hue-a), var(--primary-saturation-a), var(--primary-lightness-a600)),
+    primary-a700: hsl( var(--primary-hue-a), var(--primary-saturation-a), var(--primary-lightness-a700)),
+    primary-a800: hsl( var(--primary-hue-a), var(--primary-saturation-a), var(--primary-lightness-a800)),
+    primary-a900: hsl( var(--primary-hue-a), var(--primary-saturation-a), var(--primary-lightness-a900)),
+    primary-a: var(--primary-a500),
   ),
 
-  acccent-colors: (
-    accent-50: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-50), var(--bg-opacity)  ),
-    accent-100: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-100), var(--bg-opacity)  ),
-    accent-200: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-200), var(--bg-opacity)  ),
-    accent-300: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-300), var(--bg-opacity)  ),
-    accent-400: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-400), var(--bg-opacity)  ),
-    accent-500: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-500), var(--bg-opacity)  ),
-    accent-600: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-600), var(--bg-opacity)  ),
-    accent-700: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-700), var(--bg-opacity)  ),
-    accent-800: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-800), var(--bg-opacity)  ),
-    accent-900: hsla( var(--accent-hue), var(--accent-saturation), var(--accent-lightness-900), var(--bg-opacity)  ),
-    accent: var(--accent-500),
+  secondary-colors: (
+    secondary-50: hsl( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-50)),
+    secondary-100: hsl( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-100)),
+    secondary-200: hsl( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-200)),
+    secondary-300: hsl( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-300)),
+    secondary-400: hsl( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-400)),
+    secondary-500: hsl( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-500)),
+    secondary-600: hsl( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-600)),
+    secondary-700: hsl( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-700)),
+    secondary-800: hsl( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-800)),
+    secondary-900: hsl( var(--secondary-hue), var(--secondary-saturation), var(--secondary-lightness-900)),
+    secondary: var(--secondary-500),
 
-    secondary-accent-50: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-50), var(--bg-opacity)  ),
-    secondary-accent-100: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-100), var(--bg-opacity)  ),
-    secondary-accent-200: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-200), var(--bg-opacity)  ),
-    secondary-accent-300: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-300), var(--bg-opacity)  ),
-    secondary-accent-400: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-400), var(--bg-opacity)  ),
-    secondary-accent-500: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-500), var(--bg-opacity)  ),
-    secondary-accent-600: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-600), var(--bg-opacity)  ),
-    secondary-accent-700: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-700), var(--bg-opacity)  ),
-    secondary-accent-800: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-800), var(--bg-opacity)  ),
-    secondary-accent-900: hsla( var(--secondary-accent-hue), var(--secondary-accent-saturation), var(--secondary-accent-shade-900), var(--bg-opacity)  ),
-    secondary-accent: var(--secondary-accent-500),
+    secondary-a50: hsl( var(--secondary-hue-a), var(--secondary-saturation-a), var(--secondary-lightness-a50)),
+    secondary-a100: hsl( var(--secondary-hue-a), var(--secondary-saturation-a), var(--secondary-lightness-a100)),
+    secondary-a200: hsl( var(--secondary-hue-a), var(--secondary-saturation-a), var(--secondary-lightness-a200)),
+    secondary-a300: hsl( var(--secondary-hue-a), var(--secondary-saturation-a), var(--secondary-lightness-a300)),
+    secondary-a400: hsl( var(--secondary-hue-a), var(--secondary-saturation-a), var(--secondary-lightness-a400)),
+    secondary-a500: hsl( var(--secondary-hue-a), var(--secondary-saturation-a), var(--secondary-lightness-a500)),
+    secondary-a600: hsl( var(--secondary-hue-a), var(--secondary-saturation-a), var(--secondary-lightness-a600)),
+    secondary-a700: hsl( var(--secondary-hue-a), var(--secondary-saturation-a), var(--secondary-lightness-a700)),
+    secondary-a800: hsl( var(--secondary-hue-a), var(--secondary-saturation-a), var(--secondary-lightness-a800)),
+    secondary-a900: hsl( var(--secondary-hue-a), var(--secondary-saturation-a), var(--secondary-lightness-a900)),
+    secondary-a: var(--secondary-a500),
+  ),
 
-    tertiary-accent-50: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-50), var(--bg-opacity)  ),
-    tertiary-accent-100: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-100), var(--bg-opacity)  ),
-    tertiary-accent-200: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-200), var(--bg-opacity)  ),
-    tertiary-accent-300: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-300), var(--bg-opacity)  ),
-    tertiary-accent-400: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-400), var(--bg-opacity)  ),
-    tertiary-accent-500: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-500), var(--bg-opacity)  ),
-    tertiary-accent-600: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-600), var(--bg-opacity)  ),
-    tertiary-accent-700: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-700), var(--bg-opacity)  ),
-    tertiary-accent-800: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-800), var(--bg-opacity)  ),
-    tertiary-accent-900: hsla( var(--tertiary-accent-hue), var(--tertiary-accent-saturation), var(--tertiary-accent-shade-900), var(--bg-opacity)  ),
-    tertiary-accent: var(--tertiary-500),
+  tertiary-colors: (
+    tertiary-50: hsl( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-50)),
+    tertiary-100: hsl( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-100)),
+    tertiary-200: hsl( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-200)),
+    tertiary-300: hsl( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-300)),
+    tertiary-400: hsl( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-400)),
+    tertiary-500: hsl( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-500)),
+    tertiary-600: hsl( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-600)),
+    tertiary-700: hsl( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-700)),
+    tertiary-800: hsl( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-800)),
+    tertiary-900: hsl( var(--tertiary-hue), var(--tertiary-saturation), var(--tertiary-lightness-900)),
+    tertiary: var(--tertiary-500),
+
+    tertiary-a50: hsl( var(--tertiary-hue-a), var(--tertiary-saturation-a), var(--tertiary-lightness-a50)),
+    tertiary-a100: hsl( var(--tertiary-hue-a), var(--tertiary-saturation-a), var(--tertiary-lightness-a100)),
+    tertiary-a200: hsl( var(--tertiary-hue-a), var(--tertiary-saturation-a), var(--tertiary-lightness-a200)),
+    tertiary-a300: hsl( var(--tertiary-hue-a), var(--tertiary-saturation-a), var(--tertiary-lightness-a300)),
+    tertiary-a400: hsl( var(--tertiary-hue-a), var(--tertiary-saturation-a), var(--tertiary-lightness-a400)),
+    tertiary-a500: hsl( var(--tertiary-hue-a), var(--tertiary-saturation-a), var(--tertiary-lightness-a500)),
+    tertiary-a600: hsl( var(--tertiary-hue-a), var(--tertiary-saturation-a), var(--tertiary-lightness-a600)),
+    tertiary-a700: hsl( var(--tertiary-hue-a), var(--tertiary-saturation-a), var(--tertiary-lightness-a700)),
+    tertiary-a800: hsl( var(--tertiary-hue-a), var(--tertiary-saturation-a), var(--tertiary-lightness-a800)),
+    tertiary-a900: hsl( var(--tertiary-hue-a), var(--tertiary-saturation-a), var(--tertiary-lightness-a900)),
+    tertiary-a: var(--tertiary-a500),
   ),
 
   grayscale-colors: (
-    silver-100: #f6f7fa,
-    silver-200: #eeeff5,
-    silver-300: #e5e8f1,
-    silver-400: #dde0ec,
-    silver-500: #d4d8e7,
-    silver-600: #cbd0e2,
-    silver-700: #c3c8dd,
-    silver-800: #bac1d9,
-    silver-900: #b2b9d4,
+    silver-50: hsl( var(--silver-hue), var(--silver-saturation), var(--silver-lightness-50)),
+    silver-100: hsl( var(--silver-hue), var(--silver-saturation), var(--silver-lightness-100)),
+    silver-200: hsl( var(--silver-hue), var(--silver-saturation), var(--silver-lightness-200)),
+    silver-300: hsl( var(--silver-hue), var(--silver-saturation), var(--silver-lightness-300)),
+    silver-400: hsl( var(--silver-hue), var(--silver-saturation), var(--silver-lightness-400)),
+    silver-500: hsl( var(--silver-hue), var(--silver-saturation), var(--silver-lightness-500)),
+    silver-600: hsl( var(--silver-hue), var(--silver-saturation), var(--silver-lightness-600)),
+    silver-700: hsl( var(--silver-hue), var(--silver-saturation), var(--silver-lightness-700)),
+    silver-800: hsl( var(--silver-hue), var(--silver-saturation), var(--silver-lightness-800)),
+    silver-900: hsl( var(--silver-hue), var(--silver-saturation), var(--silver-lightness-900)),
 
-    gray-100: #b8bac3,
-    gray-200: #a3a6b2,
-    gray-300: #8f92a0,
-    gray-400: #7a7e8f,
-    gray-500: #686c7b,
-    gray-600: #575a67,
-    gray-700: #454852,
-    gray-800: #34363e,
-    gray-900: #232429,
+    gray-50: hsl( var(--gray-hue), var(--gray-saturation), var(--gray-lightness-50)),
+    gray-100: hsl( var(--gray-hue), var(--gray-saturation), var(--gray-lightness-100)),
+    gray-200: hsl( var(--gray-hue), var(--gray-saturation), var(--gray-lightness-200)),
+    gray-300: hsl( var(--gray-hue), var(--gray-saturation), var(--gray-lightness-300)),
+    gray-400: hsl( var(--gray-hue), var(--gray-saturation), var(--gray-lightness-400)),
+    gray-500: hsl( var(--gray-hue), var(--gray-saturation), var(--gray-lightness-500)),
+    gray-600: hsl( var(--gray-hue), var(--gray-saturation), var(--gray-lightness-600)),
+    gray-700: hsl( var(--gray-hue), var(--gray-saturation), var(--gray-lightness-700)),
+    gray-800: hsl( var(--gray-hue), var(--gray-saturation), var(--gray-lightness-800)),
+    gray-900: hsl( var(--gray-hue), var(--gray-saturation), var(--gray-lightness-900)),
+  ),
+
+  temperature-colors: (
+    cold-light:#ccedff,
+    cold:#00a3ff,
+    cold-dark:#005280,
+
+    room-light:#c9f9dc,
+    room:#00d254,
+    room-dark:#00692a,
+
+    warm-light:#fff3dc,
+    warm:#ffaf16,
+    warm-dark:#845907,
+
+    hot-light:#fee0e0,
+    hot:#fc5f5f,
+    hot-dark:#901d1d,
   ),
 
   opaque-colors: (
@@ -506,9 +559,12 @@ $saturations: map.get($all-config, saturations);
 $lightness: map.get($all-config, lightness);
 
 $primary-colors: map.get($all-config, primary-colors);
-$opaque-colors: map.get($all-config, opaque-colors);
+$secondary-colors: map.get($all-config, secondary-colors);
+$tertiary-colors: map.get($all-config, tertiary-colors);
 $grayscale-colors: map.get($all-config, grayscale-colors);
+$opaque-colors: map.get($all-config, opaque-colors);
 $monotone-colors: map.get($all-config, monotone-colors);
+$temperature-colors: map.get($all-config, temperature-colors);
 $colors: map.get($all-config, colors);
 $gradients: map.get($all-config, gradients);
 
@@ -561,17 +617,23 @@ $fills: ();
 @if ($primary-colors != null) {
   $fills: map.deep-merge($fills, $primary-colors);
 }
-@if ($primary-colors != null) {
-  $fills: map.deep-merge($fills, $primary-colors);
+@if ($secondary-colors != null) {
+  $fills: map.deep-merge($fills, $secondary-colors);
 }
-@if ($opaque-colors != null) {
-  $fills: map.deep-merge($fills, $opaque-colors);
+@if ($tertiary-colors != null) {
+  $fills: map.deep-merge($fills, $tertiary-colors);
+}
+@if ($grayscale-colors != null) {
+  $fills: map.deep-merge($fills, $grayscale-colors);
 }
 @if ($monotone-colors != null) {
   $fills: map.deep-merge($fills, $monotone-colors);
 }
-@if ($grayscale-colors != null) {
-  $fills: map.deep-merge($fills, $grayscale-colors);
+@if ($opaque-colors != null) {
+  $fills: map.deep-merge($fills, $opaque-colors);
+}
+@if ($temperature-colors != null) {
+  $fills: map.deep-merge($fills, $temperature-colors);
 }
 @if ($colors != null) {
   $fills: map.deep-merge($fills, $colors);
@@ -589,9 +651,12 @@ $var-saturations: variablize-map($saturations, saturation);
 $var-lightness: variablize-map($lightness, lightness);
 
 $var-primary-colors: variablize-map($primary-colors, null);
+$var-secondary-colors: variablize-map($secondary-colors, null);
+$var-tertiary-colors: variablize-map($tertiary-colors, null);
+$var-grayscale-colors: variablize-map($grayscale-colors, null);
 $var-opaque-colors: variablize-map($opaque-colors, null);
 $var-monotone-colors: variablize-map($monotone-colors, null);
-$var-grayscale-colors: variablize-map($grayscale-colors, null);
+$var-temperature-colors: variablize-map($temperature-colors, null);
 $var-colors: variablize-map($colors, null);
 $var-gradients: variablize-map($gradients, null);
 $var-fills: variablize-map($fills, null);
@@ -630,12 +695,15 @@ $var-trackings: variablize-map($trackings, tracking);
 
 // COLOR FUNCTIONS
 @function primary-colors() {
-  $result: $primary-colors;
-  @return $result;
+  @return $var-primary-colors;
 }
 
-@function primary-colors() {
-  @return $var-primary-colors;
+@function secondary-colors() {
+  @return $var-secondary-colors;
+}
+
+@function tertiary-colors() {
+  @return $var-tertiary-colors;
 }
 
 @function opaque-colors() {
@@ -648,6 +716,10 @@ $var-trackings: variablize-map($trackings, tracking);
 
 @function monotone-colors() {
   @return $var-monotone-colors;
+}
+
+@function temperature-colors() {
+  @return $var-temperature-colors;
 }
 
 @function colors() {

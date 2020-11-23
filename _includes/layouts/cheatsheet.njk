@@ -1,365 +1,985 @@
 ---
 layout: layouts/base.njk
+lastUpdated: 2020-10-20
 ---
 
 {% include "partials/nav.njk" %}
 
-<section class="bg-silver-100 mb-18">
+<section class="bg-primary-50">
   <div class="wrapper">
-    <div class="py-12">
-      <div class="mb-4 font-600 font-sm leading-8 color-gray-300">
+    <div class="py-10">
+      <div class="mb-4 font-600 font-xs leading-8">
         Last Updated <time class="postlist-date" datetime="{{ lastUpdated | htmlDateString }}">{{ lastUpdated | readableDate }}</time>
       </div>
-      <h1 class="flex align-items-start relative font-6xl font-600 mb-6 tracking-n1">
-        {{ title }} <span class="inline-flex align-items-center h-5 ml-2 bg-orange-500 color-white uppercase tracking-2 font-2xs font-700 radius-xs px-1">New</span>
+      <h1 class="flex align-items-start relative font-6xl font-700 mb-6 tracking-n1">
+        {{ title }} <span class="inline-flex align-items-center ml-2 bg-tertiary-a500 color-white uppercase leading-1 tracking-2 font-2xs font-700 radius-xs px-1 py-1 "><span class="px-2px">New</span></span>
       </h1>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrapper">
-    <div class="grid grid-cols-1 sm.grid-cols-6 lg.grid-cols-12 gap-12">
-      <div class="col-9">
-        <div class="max-w-700px mb-12">
-          <h3 class="font-xl font-700 mb-6">Colors</h3>
-          <p>Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
+<section class="relative mb-13">
+  <div class="wrapper relative z-2">
+    <div class="bg-white radius-md md.radius-xl shadow-md overflow-hidden">
+      <div class="p-10">
+        <h3 class="font-lg font-700 mb-4">Primary Colors</h3>
+        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm.grid-cols-5 lg.grid-cols-10">
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-50">
+
+          </div>
+          primary-50<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-100">
 
-        <div class="grid grid-cols-3 gap-10">
-
-          <div class="radius-md overflow-hidden">
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-primary-50">
-              primary-50
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-primary-100">
-              primary-100
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-primary-200">
-              primary-200
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-primary-300">
-              primary-300
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-primary-400">
-              primary-400
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-primary-500">
-              primary-500
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-primary-600">
-              primary-600
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-primary-700">
-              primary-700
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-primary-800">
-              primary-800
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-primary-900">
-              primary-900
-            </div>
           </div>
+          primary-100<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-200">
 
-          <div class="radius-md overflow-hidden">
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-secondary-50">
-              secondary-50
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-secondary-100">
-              secondary-100
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-secondary-200">
-              secondary-200
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-secondary-300">
-              secondary-300
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-secondary-400">
-              secondary-400
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-secondary-500">
-              secondary-500
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-secondary-600">
-              secondary-600
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-secondary-700">
-              secondary-700
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-secondary-800">
-              secondary-800
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-secondary-900">
-              secondary-900
-            </div>
           </div>
+          primary-200<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-300">
 
-          <div class="radius-md overflow-hidden">
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-tertiary-50">
-              tertiary-50
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-tertiary-100">
-              tertiary-100
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-tertiary-200">
-              tertiary-200
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-tertiary-300">
-              tertiary-300
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-tertiary-400">
-              tertiary-400
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-tertiary-500">
-              tertiary-500
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-tertiary-600">
-              tertiary-600
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-tertiary-700">
-              tertiary-700
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-tertiary-800">
-              tertiary-800
-            </div>
-            <div class="flex align-items-center h-12 px-5 font-xs font-700 tracking-2 uppercase color-white bg-tertiary-900">
-              tertiary-900
-            </div>
           </div>
+          primary-300<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-400">
 
+          </div>
+          primary-400<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-500">
+
+          </div>
+          primary-500<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-600">
+
+          </div>
+          primary-600<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-700">
+
+          </div>
+          primary-700<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-800">
+
+          </div>
+          primary-800<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-900">
+
+          </div>
+          primary-900<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm.grid-cols-5 lg.grid-cols-10">
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-a50">
+
+          </div>
+          primary-a50<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-a100">
+
+          </div>
+          primary-a100<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-a200">
+
+          </div>
+          primary-a200<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-a300">
+
+          </div>
+          primary-a300<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-a400">
+
+          </div>
+          primary-a400<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-a500">
+
+          </div>
+          primary-a500<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-a600">
+
+          </div>
+          primary-a600<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-a700">
+
+          </div>
+          primary-a700<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-a800">
+
+          </div>
+          primary-a800<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-primary-a900">
+
+          </div>
+          primary-a900<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
       </div>
     </div>
+    
+
   </div>
+  <div class="absolute t-0 z-1 bg-primary-50 w-100p h-19"></div>
+</section>
+
+
+<div class="wrapper mb-13">
+  <div class="h-3px bg-primary-50"></div>
 </div>
 
-<section class="mb-18">
-  <div class="wrapper">
-    <div class="grid grid-cols-1 md.grid-cols-2 lg.grid-cols-1 xl.grid-cols-1 gap-8">
-      {%- for color in cheatsheet.colors -%}
-        {% if loop.index0 < 4 %}
-          <div class="grid grid-cols-3 lg.grid-cols-9 xl.grid-cols-9 gap-4">
-            {%- for variant in color.variants -%}
-              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-sm hover.shadow-3 transition duration-200">
-                <div class="ratio-square radius-xs bg-{{ variant.name }}">
-                  
-                </div>
-                <div class="mt-4 pb-4 font-xs font-600 align-center">
-                  <span class="select-all">{{ variant.name }}</span>
-                  <div class="mt-3 font-500 color-silver-900 select-all">
-                    {{ variant.value }}
-                  </div>
-                </div>
-              </div>
-            {%- endfor -%}   
-          </div>
-        {% endif %}
-      {%- endfor -%}
-    </div>
-
-    <div class="align-center mt-12">
-      <button class="btn btn-dark radius-round shadow-sm hover.shadow-3 js-btn-reveal-colors"><i class="fas fa-swatchbook mr-2"></i> Show All Colors</button>
-    </div>
-
-    <div class="grid grid-cols-1 md.grid-cols-2 lg.grid-cols-1 xl.grid-cols-1 gap-8 mt-8 js-colors" style="display: none;">
-      {%- for color in cheatsheet.colors -%}
-        {% if loop.index0 > 3 %}
-          <div class="grid grid-cols-3 lg.grid-cols-9 xl.grid-cols-9 gap-4">
-            {%- for variant in color.variants -%}
-              <div class="p-2 xl.p-3 pb-0 xl.pb-0 bg-white radius-sm shadow-sm hover.shadow-3 transition duration-200">
-                <div class="ratio-square radius-xs bg-{{ variant.name }}">
-                  
-                </div>
-                <div class="mt-4 pb-4 font-xs font-600 align-center">
-                  <span class="select-all">{{ variant.name }}</span>
-                  <div class="mt-3 font-500 color-silver-900 select-all">
-                    {{ variant.value }}
-                  </div>
-                </div>
-              </div>
-            {%- endfor -%}   
-          </div>
-        {% endif %}
-      {%- endfor -%}
-    </div>
-  </div>
-</section>
-
-<section class="mb-18">
-  <div class="wrapper">
-    <div class="align-center mb-17">
-      <h2 class="font-7xl font-300 align-center mb-6 tracking-n1">Sizing Chart</h2>
-
-      <p class="max-w-26 mx-auto mb-10 font-lg font-400 align-center">
-        Uniform is a super customizable and infinitely scalable CSS Framework that is designed to help teams bring pixel-crisp designs to life.
-      </p>
-    </div>
-
-    <div class="max-w-screen-xs m-auto">
-      {%- for size in cheatsheet.sizes -%}
-        {% if loop.index0 < 12 %}
-          <div class="mb-4 flex align-items-center">
-            <div class="flex align-items-center flex-none mr-6 font-600 font-xs">
-              <div class="flex align-items-center justify-content-center w-13 h-5 mr-4 font-2xs tracking-1 select-all bg-black color-white radius-xs">
-                SIZE {{ size.size }}
-              </div>
-              <div class="w-10 align-right select-all">
-                {{ size.pixel }}
-              </div>
-              <div class="w-12 ml-4 align-right select-all color-silver-900">
-                {{ size.rem }}
-              </div>
-            </div>
-            <div class="h-{{ size.size }} w-100p bg-silver-600 hover.bg-silver-900 duration-200"></div>
-          </div>
-        {% endif %}
-      {%- endfor -%}
-
-      <div class="col-1 md.col-2 xl.col-1 align-center mt-12">
-        <button class="btn btn-dark radius-round shadow-sm hover.shadow-3 js-btn-reveal-sizes"><i class="fas fa-eye mr-2"></i> Show All Sizes</button>
+<section class="relative mb-13">
+  <div class="wrapper relative z-2">
+    <div class="bg-white radius-md md.radius-xl shadow-md overflow-hidden">
+      <div class="p-10">
+        <h3 class="font-lg font-700 mb-4">Secondary Colors</h3>
+        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
       </div>
 
-      {%- for size in cheatsheet.sizes -%}
-        {% if loop.index0 > 11 %}
-          <div class="mb-4 flex align-items-center js-sizes" style="display: none;">
-            <div class="flex align-items-center flex-none mr-6 font-600 font-xs">
-              <div class="flex align-items-center justify-content-center w-13 h-5 mr-4 font-2xs tracking-1 select-all bg-black color-white radius-xs">
-                SIZE {{ size.size }}
-              </div>
-              <div class="w-10 align-right select-all">
-                {{ size.pixel }}
-              </div>
-              <div class="w-12 ml-4 align-right select-all color-silver-900">
-                {{ size.rem }}
-              </div>
-            </div>
-            <div class="h-{{ size.size }} w-100p bg-silver-600 hover.bg-silver-900 duration-200">
-            </div>
-          </div>
-        {% endif %}
-      {%- endfor -%}
-    </div>
+      <div class="grid grid-cols-2 sm.grid-cols-5 lg.grid-cols-10">
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-50">
 
+          </div>
+          secondary-50<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-100">
+
+          </div>
+          secondary-100<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-200">
+
+          </div>
+          secondary-200<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-300">
+
+          </div>
+          secondary-300<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-400">
+
+          </div>
+          secondary-400<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-500">
+
+          </div>
+          secondary-500<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-600">
+
+          </div>
+          secondary-600<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-700">
+
+          </div>
+          secondary-700<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-800">
+
+          </div>
+          secondary-800<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-900">
+
+          </div>
+          secondary-900<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm.grid-cols-5 lg.grid-cols-10">
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-a50">
+
+          </div>
+          secondary-a50<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-a100">
+
+          </div>
+          secondary-a100<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-a200">
+
+          </div>
+          secondary-a200<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-a300">
+
+          </div>
+          secondary-a300<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-a400">
+
+          </div>
+          secondary-a400<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-a500">
+
+          </div>
+          secondary-a500<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-a600">
+
+          </div>
+          secondary-a600<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-a700">
+
+          </div>
+          secondary-a700<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-a800">
+
+          </div>
+          secondary-a800<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-secondary-a900">
+
+          </div>
+          secondary-a900<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+      </div>
+    </div>
     
+
   </div>
 </section>
 
-<section>
-  <div class="wrapper">
-    <div class="align-center mb-17">
-      <h2 class="font-7xl font-300 align-center mb-6 tracking-n1">Typography</h2>
 
-      <p class="max-w-26 mx-auto mb-10 font-lg font-400 align-center">
-        Uniform is a super customizable and infinitely scalable CSS Framework that is designed to help teams bring pixel-crisp designs to life.
-      </p>
+<div class="wrapper mb-13">
+  <div class="h-3px bg-primary-50"></div>
+</div>
+
+<section class="relative mb-13">
+  <div class="wrapper relative z-2">
+    <div class="bg-white radius-md md.radius-xl shadow-md overflow-hidden">
+      <div class="p-10">
+        <h3 class="font-lg font-700 mb-4">Tertiary Colors</h3>
+        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
+      </div>
+
+      <div class="grid grid-cols-2 sm.grid-cols-5 lg.grid-cols-10">
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-50">
+
+          </div>
+          tertiary-50<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-100">
+
+          </div>
+          tertiary-100<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-200">
+
+          </div>
+          tertiary-200<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-300">
+
+          </div>
+          tertiary-300<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-400">
+
+          </div>
+          tertiary-400<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-500">
+
+          </div>
+          tertiary-500<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-600">
+
+          </div>
+          tertiary-600<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-700">
+
+          </div>
+          tertiary-700<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-800">
+
+          </div>
+          tertiary-800<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-900">
+
+          </div>
+          tertiary-900<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 sm.grid-cols-5 lg.grid-cols-10">
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-a50">
+
+          </div>
+          tertiary-a50<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-a100">
+
+          </div>
+          tertiary-a100<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-a200">
+
+          </div>
+          tertiary-a200<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-a300">
+
+          </div>
+          tertiary-a300<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-a400">
+
+          </div>
+          tertiary-a400<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-a500">
+
+          </div>
+          tertiary-a500<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-a600">
+
+          </div>
+          tertiary-a600<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-a700">
+
+          </div>
+          tertiary-a700<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-a800">
+
+          </div>
+          tertiary-a800<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-tertiary-a900">
+
+          </div>
+          tertiary-a900<br>
+          <span class="color-silver-700">#f052b2</span>
+        </div>
+      </div>
     </div>
+    
 
-    <div class="max-w-26 m-auto bg-black color-white radius-md overflow-hidden">
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-2xs">
-        2xs text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">10px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">0.625rem</div>
-        </div>
+  </div>
+</section>
+
+
+
+<div class="wrapper mb-13">
+  <div class="h-3px bg-primary-50"></div>
+</div>
+
+<section class="relative mb-13">
+  <div class="wrapper relative z-2">
+    <div class="bg-white radius-md md.radius-xl shadow-md overflow-hidden">
+      <div class="p-10">
+        <h3 class="font-lg font-700 mb-4">Temperature Colors</h3>
+        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
       </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-xs">
-        xs text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">12px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">0.75rem</div>
+
+      <div class="grid grid-cols-2 sm.grid-cols-6">
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-cold-light">
+
+          </div>
+          cold-light<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-sm">
-        sm text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">14px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">0.875rem</div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-cold">
+
+          </div>
+          cold<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-md">
-        md text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">16px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">1rem</div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-cold-dark">
+
+          </div>
+          cold-dark<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-lg">
-        lg text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">18px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">1.125rem</div>
+
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-room-light">
+
+          </div>
+          room-light<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-xl">
-        xl text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">20px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">1.25rem</div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-room">
+
+          </div>
+          room<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-2xl">
-        2xl text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">24px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">1.5rem</div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-room-dark">
+
+          </div>
+          room-dark<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-3xl">
-        3xl text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">28px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">1.75rem</div>
+
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-warm-light">
+
+          </div>
+          warm-light<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-4xl">
-        4xl text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">32px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">2rem</div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-warm">
+
+          </div>
+          warm<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-5xl">
-        5xl text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">36px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">2.25rem</div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-warm-dark">
+
+          </div>
+          warm-dark<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-6xl">
-        6xl text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">40px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">2.5rem</div>
+
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-hot-light">
+
+          </div>
+          hot-light<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-7xl">
-        7xl text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">48px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">3rem</div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-hot">
+
+          </div>
+          hot<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-8xl">
-        8xl text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">56px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">3.5rem</div>
+        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
+          <div class="h-12 mb-4 bg-hot-dark">
+
+          </div>
+          hot-dark<br>
+          <span class="color-silver-700">#f052b2</span>
         </div>
+
+    </div>
+    
+
+  </div>
+</section>
+
+
+<div class="wrapper mb-13">
+  <div class="h-3px bg-primary-50"></div>
+</div>
+
+
+<section class="relative mb-13">
+  <div class="wrapper relative z-2">
+    <div class="bg-white radius-md md.radius-xl shadow-md overflow-hidden">
+      <div class="p-10">
+        <h3 class="font-lg font-700 mb-4">Typography</h3>
+        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
       </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-9xl">
-        9xl text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">64px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">4rem</div>
+
+      <div class="bg-black color-white">
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-2xs">
+          2xs text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">10px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">0.625rem</div>
+          </div>
         </div>
-      </div>
-      <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-10xl">
-        10xl text
-        <div class="flex align-items-center font-xs">
-          <div class="w-10 align-right select-all">72px</div>
-          <div class="w-13 align-right opacity-60 ml-4 select-all">4.5rem</div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-xs">
+          xs text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">12px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">0.75rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-sm">
+          sm text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">14px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">0.875rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-md">
+          md text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">16px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">1rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-lg">
+          lg text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">18px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">1.125rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-xl">
+          xl text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">20px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">1.25rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-2xl">
+          2xl text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">24px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">1.5rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-3xl">
+          3xl text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">28px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">1.75rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-4xl">
+          4xl text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">32px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">2rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-5xl">
+          5xl text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">36px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">2.25rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-6xl">
+          6xl text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">40px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">2.5rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-7xl">
+          7xl text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">48px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">3rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-8xl">
+          8xl text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">56px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">3.5rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-9xl">
+          9xl text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">64px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">4rem</div>
+          </div>
+        </div>
+        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-10xl">
+          10xl text
+          <div class="flex align-items-center font-xs">
+            <div class="w-10 align-right select-all">72px</div>
+            <div class="w-13 align-right opacity-60 ml-4 select-all">4.5rem</div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<div class="wrapper mb-13">
+  <div class="h-3px bg-primary-50"></div>
+</div>
+
+
+
+<section class="relative mb-13">
+  <div class="wrapper relative z-2">
+    <div class="bg-white radius-md md.radius-xl shadow-md overflow-hidden">
+      <div class="p-10">
+        <h3 class="font-lg font-700 mb-4">Sizing Chart</h3>
+        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-6">
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 1<br>
+            <span class="color-silver-700">4px • 0.25rem</span>
+          </div>
+          <div class="h-1 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 2<br>
+            <span class="color-silver-700">8px • 0.5rem</span>
+          </div>
+          <div class="h-2 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 3<br>
+            <span class="color-silver-700">8px • 0.5rem</span>
+          </div>
+          <div class="h-3 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 4<br>
+            <span class="color-silver-700">16px • 1rem</span>
+          </div>
+          <div class="h-4 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 5<br>
+            <span class="color-silver-700">20px • 1.25rem</span>
+          </div>
+          <div class="h-5 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 6<br>
+            <span class="color-silver-700">24px • 1.5rem</span>
+          </div>
+          <div class="h-6 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 7<br>
+            <span class="color-silver-700">28px • 2rem</span>
+          </div>
+          <div class="h-7 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 8<br>
+            <span class="color-silver-700">32px • 2rem</span>
+          </div>
+          <div class="h-8 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 9<br>
+            <span class="color-silver-700">36px • 2.25rem</span>
+          </div>
+          <div class="h-9 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 10<br>
+            <span class="color-silver-700">40px • 2.5rem</span>
+          </div>
+          <div class="h-10 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 11<br>
+            <span class="color-silver-700">44px • 2.75rem</span>
+          </div>
+          <div class="h-11 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 12<br>
+            <span class="color-silver-700">48px • 3rem</span>
+          </div>
+          <div class="h-12 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 13<br>
+            <span class="color-silver-700">56px • 3.5rem</span>
+          </div>
+          <div class="h-13 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 14<br>
+            <span class="color-silver-700">64px • 4rem</span>
+          </div>
+          <div class="h-14 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 15<br>
+            <span class="color-silver-700">72px • 4.5rem</span>
+          </div>
+          <div class="h-15 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 16<br>
+            <span class="color-silver-700">80px • 5rem</span>
+          </div>
+          <div class="h-16 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 17<br>
+            <span class="color-silver-700">88px • 5.5rem</span>
+          </div>
+          <div class="h-17 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 18<br>
+            <span class="color-silver-700">96px • 6rem</span>
+          </div>
+          <div class="h-18 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 19<br>
+            <span class="color-silver-700">128px • 8rem</span>
+          </div>
+          <div class="h-19 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 20<br>
+            <span class="color-silver-700">160px • 10rem</span>
+          </div>
+          <div class="h-20 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 21<br>
+            <span class="color-silver-700">192px • 12rem</span>
+          </div>
+          <div class="h-21 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 22<br>
+            <span class="color-silver-700">256px • 16rem</span>
+          </div>
+          <div class="h-22 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 23<br>
+            <span class="color-silver-700">320px • 20rem</span>
+          </div>
+          <div class="h-23 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 24<br>
+            <span class="color-silver-700">384px • 24rem</span>
+          </div>
+          <div class="h-23 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 25<br>
+            <span class="color-silver-700">512px • 32rem</span>
+          </div>
+          <div class="h-23 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 26<br>
+            <span class="color-silver-700">640px • 40em</span>
+          </div>
+          <div class="h-23 bg-gray-200"></div>
+        </div>
+
+        <div>
+          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+            Size 27<br>
+            <span class="color-silver-700">768px • 48em</span>
+          </div>
+          <div class="h-23 bg-gray-200"></div>
+        </div>
+
+      </div>
+
+    </div>
+    
+
+  </div>
+</section>
+
+
+
+

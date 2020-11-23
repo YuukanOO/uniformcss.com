@@ -4,9 +4,7 @@ date: 1000-01-01
 lastUpdated: 2020-10-20
 ---
 
-{% include shortcodes/chapter, text: 'Introduction', color: 'blue' %}
-
-### The Sassy Utility-First Framework  🎉
+### The Sassy Utility-First Framework &nbsp;&nbsp; 🎉
 
 First of all, thank you for taking the time to check out this project. Uniform CSS is the worlds first fully customizable utility-first CSS framework built entirely with Sass. One of its biggest strength is that it is super easy to learn and can be implemented in both pre-packaged or native way making it super adaptable to a wide range of workflows.
 

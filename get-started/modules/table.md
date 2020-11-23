@@ -9,7 +9,7 @@ date: 1000-01-03
 
 The Table module is an optional pre-built component that provides customizable styling for tables. This module also provides tables with the ability to become responsive.
 
-<section class="radius-sm bg-silver-100 p-6">
+<section class="radius-sm bg-silver-50 p-6">
   <table class="table">
     <thead>
       <tr>
@@ -81,7 +81,7 @@ To customize the look of your table, override the following root variables.
 
 Tables can become responsive at various breakpoints by adding the `table-stack` and `table-unstack` classes. You can also add the `data-table-label` attribute to allow for labels when table columns are stacked.
 
-<section class="radius-sm bg-silver-100 p-6">
+<section class="radius-sm bg-silver-50 p-6">
   <table class="table table-stack md.table-unstack">
     <thead>
       <tr>
@@ -152,7 +152,7 @@ To customize the look of your table, override the following root variables.
 
 Table rows can also feature alternating rows with the `table-alt` class.
 
-<section class="radius-sm bg-silver-100 p-6">
+<section class="radius-sm bg-silver-50 p-6">
   <table class="table table-alt">
     <thead>
       <tr>

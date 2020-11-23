@@ -20,7 +20,9 @@ $variants: (
 	900: 900,
 );
 
-$pseudos: ();
+$pseudos: (
+  hover
+);
 
 $config: (
   utilities: (

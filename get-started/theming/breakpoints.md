@@ -54,7 +54,7 @@ By default, Uniform provides **4 breakpoints** for any responsive properties. Us
 
 The following example showcases how the variants can be applied.
 
-<section class="radius-sm bg-silver-100 p-6">
+<section class="radius-sm bg-silver-50 p-6">
   <div class="bg-black sm.bg-teal-500 md.bg-red-500 lg.bg-blue-500 color-white align-center py-8">
     Adjust your browser to see change
   </div>

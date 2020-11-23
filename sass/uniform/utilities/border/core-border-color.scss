@@ -11,14 +11,17 @@ $properties: (border-color);
 $variants: (
 	core.merge(
     core.primary-colors(),
+    core.secondary-colors(),
+    core.tertiary-colors(),
     core.opaque-colors(),
     core.grayscale-colors(),
     core.monotone-colors(),
+    core.temperature-colors(),
     core.colors()
 	)
 );
 
-$pseudos: (hover, focus);
+$pseudos: (hover);
 
 $config: (
   utilities: (

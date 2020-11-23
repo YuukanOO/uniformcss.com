@@ -255,7 +255,7 @@ All default Uniform `line-height` values are unitless by default. Use the follow
 
 The following example showcases how typography variants can be applied.
 
-<section class="radius-sm bg-silver-100 p-6">
+<section class="radius-sm bg-silver-50 p-6">
   <div class="bg-white shadow-3 p-4 py-8 font-h5 md.font-2xl font-600 leading-8 align-center radius-xs">
     Hello World
   </div>

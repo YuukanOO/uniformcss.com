@@ -4,14 +4,14 @@ layout: layouts/base.njk
 
 {% include "partials/nav.njk" %}
 
-<section class="bg-silver-100 mb-18">
+<section class="bg-primary-50">
   <div class="wrapper">
-    <div class="py-12">
-      <div class="mb-4 font-600 font-sm leading-8 color-gray-300">
+    <div class="py-10">
+      <div class="mb-4 font-600 font-xs leading-8">
         Last Updated <time class="postlist-date" datetime="{{ lastUpdated | htmlDateString }}">{{ lastUpdated | readableDate }}</time>
       </div>
-      <h1 class="flex align-items-start relative font-6xl font-600 mb-6 tracking-n1">
-        {{ title }} <span class="inline-flex align-items-center h-5 ml-2 bg-orange-500 color-white uppercase tracking-2 font-2xs font-700 radius-xs px-1">New</span>
+      <h1 class="flex align-items-start relative font-6xl font-700 mb-6 tracking-n1">
+        {{ title }} <span class="inline-flex align-items-center ml-2 bg-tertiary-600 color-white uppercase leading-1 tracking-2 font-2xs font-700 radius-xs px-1 py-1 "><span class="px-2px">New</span></span>
       </h1>
     </div>
   </div>
@@ -21,15 +21,15 @@ layout: layouts/base.njk
   <div class="wrapper">
     <div class="grid grid-cols-1 sm.grid-cols-6 lg.grid-cols-12 gap-12">
       <aside class="hidden sm.block col-1 sm.col-2 lg.col-3">
-        <div class="t-0 sticky h-100vh overflow-auto">
+        <div class="t-0 sticky h-100vh overflow-auto pt-16">
 
           <div class="mb-12 last.mb-0 pb-12 border-b-px border-shade-10">
             <div class="font-sm font-800 mb-4">
               Introduction
             </div>
-            <nav class="flex flex-col">
+            <nav class="flex flex-col align-items-start">
               {%- for post in collections.introduction -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-white">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -38,9 +38,9 @@ layout: layouts/base.njk
             <div class="font-sm font-800 mb-4">
              Fundamentals
             </div>
-            <nav class="flex flex-col">
+            <nav class="flex flex-col align-items-start">
               {%- for post in collections.fundamentals -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-white">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -49,9 +49,9 @@ layout: layouts/base.njk
             <div class="font-sm font-800 mb-4">
               Customization
             </div>
-            <nav class="flex flex-col">
+            <nav class="flex flex-col align-items-start">
               {%- for post in collections.customization -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-white">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -60,9 +60,9 @@ layout: layouts/base.njk
             <div class="font-sm font-800 mb-4">
               Theming
             </div>
-            <nav class="flex flex-col">
+            <nav class="flex flex-col align-items-start">
               {%- for post in collections.theming -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-white">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -71,9 +71,9 @@ layout: layouts/base.njk
             <div class="font-sm font-800 mb-4">
               Module
             </div>
-            <nav class="flex flex-col">
+            <nav class="flex flex-col align-items-start">
               {%- for post in collections.modules -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-200 hover.translate-x-1{% endif %} leading-9 hover.color-white">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -82,11 +82,7 @@ layout: layouts/base.njk
       </aside>
 
 
-      <div class="
-        col-1 
-        sm.col-4 
-        lg.col-6 
-      ">
+      <div class="col-1 sm.col-4 lg.col-6 pt-16">
         <div class="block sm.hidden p-6">
           <div class="select">
             <select class="js-select-url">

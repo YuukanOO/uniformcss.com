@@ -1,8 +1,5 @@
 @use "uniform" as * with (
 	$config: (
-		gradients: (
-			hero: linear-gradient(to bottom, #101D36 0%, #023b7e 20%, #3988d7 50%, #e1f0ff 80%, #FFFFFF 100%)
-		),
 		utilities: (
 			// background-color: (
 			// 	pseudos: (first, last, first-type, last-type, odd, even, empty)
@@ -24,7 +21,6 @@
 @use "_roots" as *;
 @use "_comparison-slider" as *;
 @use "vendors/prism" as *;
-
 
 .gallery {
   display: flex;
@@ -64,42 +60,15 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.table-colors {
-	--table-radius: 0;
-}
-
 .markdown {
-	color: fill(gray-500);
-	font-size: font-size(md);
+	font-size: var(--font-md);
 
 	& > h1,h2,h3,h4,h5,h6 {
-		color: fill(black);
+		color: var(--black);
 	}
 	
 	& > p a {
-		color: fill(blue-500);
+		color: var(--secondary-a500);
 	}
 
 	& > pre {
@@ -115,17 +84,17 @@
 	}
 
 	& > h3 {
-		margin-bottom: size(6);
-		font-size: font-size(xl);
-		font-weight: 600;
-		letter-spacing: tracking(n1);
+		margin-bottom: var(--size-6);
+		font-size: var(--font-xl);
+		font-weight: 700;
+		letter-spacing: var(--tracking-n2);
 		@media (min-width: screen(sm)) {
-			font-size: font-size(2xl);
+			font-size: var(--font-2xl);
 		}
 		a {
 			display: none;
 			font-weight: 500;
-			color: fill(blue-500);
+			color: var(--secondary-a500);
 		}
 		&:hover {
 			a {
@@ -134,14 +103,14 @@
 		}
 	}
 	& > h4 {
-		margin-bottom: size(4);
-		font-size: font-size(lg);
+		margin-bottom: var(--size-4);
+		font-size: var(--font-lg);
 		font-weight: 600;
-		letter-spacing: tracking(n1);
+		letter-spacing: var(--tracking-n1);
 		a {
 			display: none;
 			font-weight: 500;
-			color: fill(blue-500);
+			color: var(--secondary-a500);
 		}
 		&:hover {
 			a {
@@ -157,31 +126,31 @@
 	}
 	& > p code, & > ul li code {
 		padding: 4px 5px;
-		font-size: font-size(sm);
+		font-size: var(--font-sm);
 		border-radius: radius(sm);
-		color: fill(blue-500);
+		color: var(--secondary-a500);
 	}
 	& > blockquote {
 		margin-bottom: 1.5em;
-		padding: size(4, 6);
-		background: fill(silver-100);
-		box-shadow: inset 4px 0px 0px 0px fill(silver-400);
+		padding: var(--size-4, 6);
+		background: var(--silver-100);
+		box-shadow: inset 4px 0px 0px 0px var(--silver-400);
 		p {
 			margin: 0;
-			font-size: font-size(md);
+			font-size: var(--font-md);
 		}
 		cite {
-			padding-top: size(2);
+			padding-top: var(--size-2);
 			display: block;
 		}
 	}
 	& > blockquote code {
 		padding: 4px 5px;
-		font-size: font-size(sm);
-		color: fill(blue-500);
+		font-size: var(--font-sm);
+		color: var(--secondary-a500);
 	}
 	& > table {
-		margin-bottom: size(6);
+		margin-bottom: var(--size-6);
 	}
 	& > ul {
 		list-style-type: disc;
@@ -193,50 +162,6 @@
 	}
 }
 
-.reference {
-	& > code {
-		padding: 4px 5px;
-		font-size: font-size(sm);
-		border-radius: radius(sm);
-		color: fill(blue-500);
-	}
-	& > h5 {
-		&:hover {
-			a {
-				display: inline-block;
-			}
-		}
-	}
-}
-
-.highlight {
-	font-size: font-size(sm);
-	line-height: leading(6);
-	border-radius: radius(md);
-	overflow: hidden;
-	pre {
-		padding: size(6, 7);
-		background: black !important;
-	}
-}
-
-// .home-highlight {
-// 	.highlight {
-// 		& > div {
-// 			background: transparent !important;
-// 		}
-// 	}
-// 	td:first-child {
-// 		pre {
-// 			padding: size(6, 3);
-// 			background: fill(gray-900) !important;
-// 		}
-// 	}
-// 	pre {
-// 		padding: size(6, 7);
-// 		background: transparent !important;
-// 	}
-// }
 
 .toc {
 	ul {
@@ -245,48 +170,12 @@
 		}
 	}
 	a {
-		font-size: font-size(xs);
-		color: fill(gray-400);
+		font-size: var(--font-xs);
+		color: var(--gray-400);
 		line-height: leading(9);
 		&:hover {
-			color: fill(gray-900);
+			color: var(--gray-900);
 		}
 	}
 }
 
-
-.bg-hero {
-	background: linear-gradient(to bottom, #101D36 0%, #023b7e 20%, #3988d7 50%, #e1f0ff 80%, #FFFFFF 100%);
-}
-.gallery {
-	display: flex;
-	position: relative;
-	overflow: hidden;
-}
-
-.gallery__images {
-	display: flex;
-	animation: slideshow 60s linear infinite;
-}
-
-@keyframes slideshow {
-	0% {
-		transform: translateX(0);
-	}
-	100% {
-		transform: translateX(-100%);
-	}
-}
-
-
-.docs-sidebar {
-	&:before {
-		position: absolute;
-    right: 0;
-    content: "";
-    display: block;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(0deg, #65ace0 10%, #3880b5 30%, #0a496c 75%, #101d36 100%);
-	}
-}

@@ -12,7 +12,7 @@ Uniform provides 27 sizing units for size and spacing related properties such as
 Each size also has an negative equivalent. You can access the negative variants by appending `n` to the beginning of each variant e.g. `n10`.
 
 <div class="shadow-1 h-25 radius-sm overflow-hidden overflow-y-auto">
-<table class="table table-colors shadow-none radius-0 relative">
+<table class="table shadow-none radius-0 relative">
   <thead class="uppercase font-xs font-600 tracking-1 color-black">
     <tr>
       <th class="sticky bg-white t-npx">
@@ -69,7 +69,7 @@ Each size also has an negative equivalent. You can access the negative variants 
 
 The following example showcases how the variants can be applied. You can also apply negative sizes by appending `n` to the beginning of your variant e.g. `w-n10 h-n10` etc.
 
-<section class="radius-sm bg-silver-100 p-6 flex">
+<section class="radius-sm bg-silver-50 p-6 flex">
   <div class="flex align-items-center justify-content-center bg-black color-white font-600 w-8 h-8 radius-round mr-6">
     8
   </div>

@@ -39,7 +39,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-	 background: var(--blueberry-900);
+	 background: var(--primary-900);
  }
  
  /* Inline code */
@@ -130,37 +130,37 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  // OVERRIDES
 
 .token.tag {
-	color: var(--cyan-600);
+	color: #00d2df;
 }
   
 .token.punctuation {
-	color: var(--teal-300);
+	color: #95f5dd;
 }
 
 .token.attr-name {
-	color: var(--pink-400);
+	color: #ff5c96;
 }
 
 .token.attr-value {
-	color: var(--blue-400);
+	color: #33b5ff;
 }
 
 .token.string {
-	color: var(--mint-500);
+	color: #31ff88;
 }
 
 .token.variable {
-	color: var(--violet-300);
+	color: #c099ff;
 }
 
 .token.property {
-	color: var(--yellow-500);
+	color: #ffaf16;
 }
 
 .token.function {
-  color: var(--orange-500);
+  color: #fd7b2c;
 }
 
 .token.operator {
-	color: var(--cyan-300);
+	color: #98f7fd;
 }
