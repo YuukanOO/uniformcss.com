@@ -4,11 +4,9 @@ date: 1000-01-01
 lastUpdated: 2020-10-20
 ---
 
-### The Sassy Utility-First Framework &nbsp;&nbsp; 🎉
+### Introducing Uniform &nbsp;&nbsp;🦄
 
 First of all, thank you for taking the time to check out this project. Uniform CSS is the worlds first fully customizable utility-first CSS framework built entirely with Sass. One of its biggest strength is that it is super easy to learn and can be implemented in both pre-packaged or native way making it super adaptable to a wide range of workflows.
-
----
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -18,9 +16,7 @@ First of all, thank you for taking the time to check out this project. Uniform C
 
 Here are the **top reasons** why Uniform could be a great fit for your next project! 🚀
 
-<div class="mb-10"></div>
-
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-700 leading-none bg-blue-500 color-white radius-round">1</span> It's built entirely in Sass</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-700 leading-none bg-silver-200 leading-1 color-black radius-round">1</span> It's built entirely in Sass</h4>
 
 Built entirely in Sass (the most well known CSS preprocessor currently out there). Adding Uniform into your existing project is **literally a single line of code**.
 
@@ -28,9 +24,7 @@ Built entirely in Sass (the most well known CSS preprocessor currently out there
 @use "uniform" as *;
 ```
 
-<div class="mb-10"></div>
-
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">2</span> It's super-duper easy to configure</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">2</span> It's super-duper easy to configure</h4>
 
 Extend colors, replace breakpoints, change property names, add prefixes, modify syntax, and more! **You can optionally configure almost every tiny detail**.
 
@@ -46,9 +40,7 @@ Extend colors, replace breakpoints, change property names, add prefixes, modify 
 );
 ```
 
-<div class="mb-10"></div>
-
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">3</span> It's easy to add new properties</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">3</span> It's easy to add new properties</h4>
 
 As new CSS properties become more widely supported by browsers, you don't have to wait for Uniform to support it, customize, remove or simply add your own!
 
@@ -59,9 +51,7 @@ As new CSS properties become more widely supported by browsers, you don't have t
 @forward "extension/that-shiny-new-property";
 ```
 
-<div class="mb-10"></div>
-
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">4</span> Comes with built-in theme APIs</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">4</span> Comes with built-in theme APIs</h4>
 
 Need a theme value for that one-off component you need to build? Uniform provides internal API functions to help you access your theme values directly.
 
@@ -72,9 +62,7 @@ Need a theme value for that one-off component you need to build? Uniform provide
 }
 ```
 
-<div class="mb-10"></div>
-
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">5</span> Built with CSS Variables in mind</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">5</span> Built with CSS Variables in mind</h4>
 
 Prefer to not worry about preprocessors and just start building pages? Just add the pre-packaged CSS version of Uniform and customize fonts, colors, sizes, and more by simply overriding each native CSS variable. It's that easy.
 
@@ -85,9 +73,7 @@ Prefer to not worry about preprocessors and just start building pages? Just add 
 }
 ```
 
-<div class="mb-10"></div>
-
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">6</span> Comes with pre-built common components</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">6</span> Comes with pre-built common components</h4>
 
 To help you save time, Uniform CSS comes with **optional** pre-built components for common UI elements such as buttons and form elements. These can all be enabled, disabled, and even customized down to the last pixel.
 
@@ -105,9 +91,7 @@ To help you save time, Uniform CSS comes with **optional** pre-built components 
 }
 ```
 
-<div class="mb-10"></div>
-
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">7</span> Each property follow a strict naming convention</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">7</span> Each property follow a strict naming convention</h4>
 
 Every property name and its variants follow a strict and scalable convention to ensure they are as future-proof as they can be.
 
@@ -123,8 +107,6 @@ $core-variants: (
 );
 ```
 
-<div class="mb-10"></div>
-
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">8</span> Lightweight in Size</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">8</span> Lightweight in Size</h4>
 
 Uniform only activates responsiveness and pseudo variants to certain properties to ensure file-size is kept to a minimal. Optionally, you can choose to activate these variants directly through your main sass file.

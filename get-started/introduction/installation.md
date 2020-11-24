@@ -3,8 +3,6 @@ title: Installation
 date: 1000-01-02
 ---
 
-{% include shortcodes/chapter, text: 'Introduction', color: 'orange' %}
-
 ### Getting up and running
 
 Uniform is super easy to get started and setup, you can either:
@@ -23,7 +21,7 @@ Uniform is super easy to get started and setup, you can either:
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">1</span> Clone and install dependencies</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">1</span> Clone and install dependencies</h4>
 
 Make sure you have <a class="hover.underline" href="https://nodejs.org/en/"  target="_black">Node.js</a> installed. Clone the latest version of Uniform and install its dependencies.
 
@@ -37,7 +35,7 @@ npm install
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">3</span> Compile and watch for changes</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">3</span> Compile and watch for changes</h4>
 
 Run the following command to build your first `uniform.css`. Optionally you can find pre-packaged versions in the dist directory. 
 
@@ -49,7 +47,7 @@ npm run uniform:watch
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">4</span> Add compiled stylesheet</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">4</span> Add compiled stylesheet</h4>
 
 Import the compiled stylesheet and you will now have access to all the Uniform goodness, it's that simple!
 
@@ -59,7 +57,7 @@ Import the compiled stylesheet and you will now have access to all the Uniform g
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 color-white radius-round">3</span> Configure Uniform (optional)</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">3</span> Configure Uniform (optional)</h4>
 
 You can customize Uniform directly in your stylesheet. For more information on what can be customized, visit the page on <a class="hover.underline" href="/get-started/configuration/">configuration</a>.
 

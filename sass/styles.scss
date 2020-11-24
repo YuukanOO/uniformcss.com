@@ -18,9 +18,11 @@
 	)
 );
 
+
 @use "_roots" as *;
 @use "_comparison-slider" as *;
 @use "vendors/prism" as *;
+
 
 .gallery {
   display: flex;
@@ -58,13 +60,11 @@
 }
 
 
-
-
 .markdown {
-	font-size: var(--font-md);
+	font-size: var(--font-sm);
 
-	& > h1,h2,h3,h4,h5,h6 {
-		color: var(--black);
+	& > pre {
+		border-radius: var(--radius-md);
 	}
 	
 	& > p a {
@@ -80,14 +80,14 @@
 	}
 
 	& > ol, ul {
-		line-height: leading(8);
+		line-height: var(--leading-8);
 	}
 
 	& > h3 {
 		margin-bottom: var(--size-6);
 		font-size: var(--font-xl);
 		font-weight: 700;
-		letter-spacing: var(--tracking-n2);
+		letter-spacing: var(--tracking-n1);
 		@media (min-width: screen(sm)) {
 			font-size: var(--font-2xl);
 		}
@@ -159,23 +159,6 @@
 	& > ol {
 		list-style-type: decimal;
 		list-style-position: inside;
-	}
-}
-
-
-.toc {
-	ul {
-		ul ul {
-			display: none;
-		}
-	}
-	a {
-		font-size: var(--font-xs);
-		color: var(--gray-400);
-		line-height: leading(9);
-		&:hover {
-			color: var(--gray-900);
-		}
 	}
 }
 

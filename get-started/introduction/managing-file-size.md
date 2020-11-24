@@ -3,8 +3,6 @@ title: Managing File Size
 date: 1000-01-03
 ---
 
-{% include shortcodes/chapter, text: 'Introduction', color: 'teal' %}
-
 ### Managing File Size
 
 Utility-first frameworks are generally known for their large file-size but Uniform comes in at only **29kb gzipped** and **256kb minified**. Below is a comparison of how Uniform ranks compared to other popular frameworks.
@@ -40,7 +38,7 @@ Utility-first frameworks are generally known for their large file-size but Unifo
       <td>78.0kb</td>
     </tr>
     <tr>
-      <td class="color-blue-500 font-600">Uniform</td>
+      <td class="color-blue-500 font-700">Uniform</td>
       <td class="color-blue-500">446kb</td>
       <td class="color-blue-500">302kb</td>
       <td class="color-blue-500">49.3kb</td>
