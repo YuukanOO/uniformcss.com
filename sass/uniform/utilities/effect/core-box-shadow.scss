@@ -10,10 +10,7 @@ $properties: (box-shadow);
 
 $variants: (
 	core.merge(
-		core.shadows(),
-		(
-			none: none,
-		)
+		core.shadows()
 	)
 );
 

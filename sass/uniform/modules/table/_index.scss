@@ -169,7 +169,7 @@ CUSTOM PROPERTIES
       padding: var(--table-th-padding, var(--size-4) var(--size-4));
       // Inset instead of border to allow for sticky headers to have border
       box-shadow: var(--table-th-border, inset 0px -1px 0 0 var(--silver-200));
-      background: var(--table-th-bg, var(--silver-100));
+      background: var(--table-th-bg, white);
       white-space: nowrap;
       
       &:first-child {
@@ -194,7 +194,7 @@ CUSTOM PROPERTIES
   .table-alt {
     --table-border: 0;
     tbody tr:nth-child(even) {
-      background-color: var(--table-alt-bg, var(--silver-100));
+      background-color: var(--table-alt-bg, white);
     }
   }
 
