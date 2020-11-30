@@ -44,6 +44,11 @@
 @use "utilities/background/core-background-repeat";
 @use "utilities/background/core-background-size";
 @use "utilities/background/core-background";
+@use "utilities/background/extension-background-brighten";
+@use "utilities/background/extension-background-deepen";
+@use "utilities/background/extension-background-lighten";
+@use "utilities/background/extension-background-darken";
+@use "utilities/background/extension-background-opacity";
 
 
 // UTILITIES - BORDER (17)
@@ -64,6 +69,11 @@
 @use "utilities/border/core-border-collapse";
 @use "utilities/border/core-border-color";
 @use "utilities/border/core-border-style";
+@use "utilities/border/extension-border-brighten";
+@use "utilities/border/extension-border-deepen";
+@use "utilities/border/extension-border-lighten";
+@use "utilities/border/extension-border-darken";
+@use "utilities/border/extension-border-opacity";
 
 
 // UTILITIES - COMPOSITION (9)
@@ -147,6 +157,11 @@
 @use "utilities/typography/core-text-transform";
 @use "utilities/typography/core-white-space";
 @use "utilities/typography/core-word-break";
+@use "utilities/typography/extension-text-brighten";
+@use "utilities/typography/extension-text-deepen";
+@use "utilities/typography/extension-text-lighten";
+@use "utilities/typography/extension-text-darken";
+@use "utilities/typography/extension-text-opacity";
 
 
 // UTILITIES - GRID (9)

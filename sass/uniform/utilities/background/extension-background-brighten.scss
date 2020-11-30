@@ -1,17 +1,16 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: background-color;
+$name: background-brighten;
 $keyword: bg;
 $responsive: false;
 $responsive-pseudos: false;
 
-$properties: (background-color);
+$properties: (#{--bg-saturation});
 
 $variants: (
 	core.merge(
-    core.bg-colors(),
-    core.colors()
+    core.brighten-levels(),
 	)
 );
 

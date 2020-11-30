@@ -1,22 +1,4 @@
-@use "uniform" as * with (
-	$config: (
-		utilities: (
-			// background-color: (
-			// 	pseudos: (first, last, first-type, last-type, odd, even, empty)
-			// ),
-			// border-color: (
-			// 	pseudos: (focus-within)
-			// ),
-			// color: (
-			// 	responsive: true,
-			// 	pseuds: (group-focus)
-			// ),
-		),
-		excludes: (
-			
-		)
-	)
-);
+@use "uniform-configured" as *;
 
 
 @use "_roots" as *;

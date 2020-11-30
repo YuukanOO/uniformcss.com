@@ -1,17 +1,16 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: background-color;
-$keyword: bg;
+$name: text-lightness;
+$keyword: text;
 $responsive: false;
 $responsive-pseudos: false;
 
-$properties: (background-color);
+$properties: (#{--text-lightness});
 
 $variants: (
 	core.merge(
-    core.bg-colors(),
-    core.colors()
+    core.lighten-levels(),
 	)
 );
 

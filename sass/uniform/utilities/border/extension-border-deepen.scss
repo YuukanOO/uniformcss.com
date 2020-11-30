@@ -1,17 +1,16 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: background-color;
-$keyword: bg;
+$name: border-deepen;
+$keyword: border;
 $responsive: false;
 $responsive-pseudos: false;
 
-$properties: (background-color);
+$properties: (#{--border-saturation});
 
 $variants: (
 	core.merge(
-    core.bg-colors(),
-    core.colors()
+    core.deepen-levels(),
 	)
 );
 
