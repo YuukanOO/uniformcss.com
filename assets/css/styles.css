@@ -16634,6 +16634,10 @@ CUSTOM PROPERTIES
   --bg-opacity: 40%;
 }
 
+body:hover {
+  --bg-opacity: 50%;
+}
+
 .hover\.bg-opacity-50:hover {
   --bg-opacity: 50%;
 }
@@ -17229,6 +17233,13 @@ CUSTOM PROPERTIES
   --bg-ltn: 0%;
   --bg-opacity: 1;
   background-color: hsla(var(--primary-600-hue, var(--primary-hue, 225)), calc(var(--primary-600-sat, var(--primary-sat, 50%)) + var(--bg-sat)), calc(var(--primary-600-ltn, 40%) + var(--bg-ltn)), var(--bg-opacity));
+}
+
+body {
+  --bg-sat: 0%;
+  --bg-ltn: 0%;
+  --bg-opacity: 1;
+  background-color: hsla(var(--primary-500-hue, var(--primary-hue, 225)), calc(var(--primary-500-sat, var(--primary-sat, 50%)) + var(--bg-sat)), calc(var(--primary-500-ltn, 50%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-primary-500 {
@@ -18692,6 +18703,10 @@ CUSTOM PROPERTIES
 
 .bg-lighten-300 {
   --bg-ltn: 15%;
+}
+
+body {
+  --bg-ltn: 20%;
 }
 
 .bg-lighten-400 {

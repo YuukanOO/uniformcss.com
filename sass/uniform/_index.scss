@@ -287,6 +287,9 @@ $config: core.$all-config;
           // Construct standard classes
           @if ($default-variants != null) {
             @each $default-variant, $default-variant-value in $default-variants {
+              %#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+              }
               .#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                 @include utility-content($custom-properties, $properties, $default-variant-value, $important);
               }
@@ -294,6 +297,9 @@ $config: core.$all-config;
           }
           @if ($variants != null) {
             @each $variant, $variant-value in $variants {
+              %#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                @include utility-content($custom-properties, $properties, $variant-value, $important);
+              }
               .#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                 @include utility-content($custom-properties, $properties, $variant-value, $important);
               }
@@ -305,14 +311,23 @@ $config: core.$all-config;
             @if ($default-variants != null) {
               @each $default-variant, $default-variant-value in $default-variants {
                 @if $pseudo == group-hover {
+                  %group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                    @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                  }
                   .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                     @include utility-content($custom-properties, $properties, $default-variant-value, $important);
-                  }  
+                  } 
                 } @else if $pseudo == group-focus {
+                  %group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                    @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                  } 
                   .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                     @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                   }  
                 } @else {
+                  %#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $pseudo)} {
+                    @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                  }
                   .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $pseudo)} {
                     @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                   }
@@ -322,14 +337,23 @@ $config: core.$all-config;
             @if ($variants != null) {
               @each $variant, $variant-value in $variants {
                 @if $pseudo == group-hover {
+                  %group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                    @include utility-content($custom-properties, $properties, $variant-value, $important);
+                  } 
                   .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                     @include utility-content($custom-properties, $properties, $variant-value, $important);
                   }  
                 } @else if $pseudo == group-focus {
+                  %group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                    @include utility-content($custom-properties, $properties, $variant-value, $important);
+                  } 
                   .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                     @include utility-content($custom-properties, $properties, $variant-value, $important);
                   }  
                 } @else {
+                  %#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $pseudo)} {
+                    @include utility-content($custom-properties, $properties, $variant-value, $important);
+                  }
                   .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $pseudo)} {
                     @include utility-content($custom-properties, $properties, $variant-value, $important);
                   }
@@ -363,6 +387,9 @@ $config: core.$all-config;
                 // Construct responsive classes
                 @if ($default-variants != null) {
                   @each $default-variant, $default-variant-value in $default-variants {
+                    %#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                      @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                    }
                     .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                       @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                     }
@@ -370,6 +397,9 @@ $config: core.$all-config;
                 }
                 @if ($variants != null) {
                   @each $variant, $variant-value in $variants {
+                    %#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                      @include utility-content($custom-properties, $properties, $variant-value, $important);
+                    }
                     .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                       @include utility-content($custom-properties, $properties, $variant-value, $important);
                     }
@@ -382,14 +412,23 @@ $config: core.$all-config;
                     @if ($default-variants != null) {
                       @each $default-variant, $default-variant-value in $default-variants {
                         @if $pseudo == group-hover {
+                          %group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                            @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                          } 
                           .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                             @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                           }  
                         } @else if $pseudo == group-focus {
+                          %group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                            @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                          } 
                           .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                             @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                           }  
                         } @else {
+                          %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $pseudo)} {
+                            @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                          }
                           .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $pseudo)} {
                             @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                           }
@@ -399,14 +438,23 @@ $config: core.$all-config;
                     @if ($variants != null) {
                       @each $variant, $variant-value in $variants {
                         @if $pseudo == group-hover {
+                          %group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                            @include utility-content($custom-properties, $properties, $variant-value, $important);
+                          } 
                           .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                             @include utility-content($custom-properties, $properties, $variant-value, $important);
                           }  
                         } @else if $pseudo == group-focus {
+                          %group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                            @include utility-content($custom-properties, $properties, $variant-value, $important);
+                          } 
                           .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                             @include utility-content($custom-properties, $properties, $variant-value, $important);
                           }  
                         } @else {
+                          %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $pseudo)} {
+                            @include utility-content($custom-properties, $properties, $variant-value, $important);
+                          }
                           .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $pseudo)} {
                             @include utility-content($custom-properties, $properties, $variant-value, $important);
                           }
@@ -441,6 +489,9 @@ $config: core.$all-config;
           // Construct standard classes
           @if ($default-variants != null) {
             @each $default-variant, $default-variant-value in $default-variants {
+              %#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+              }
               .#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                 @include utility-content($custom-properties, $properties, $default-variant-value, $important);
               }
@@ -448,6 +499,9 @@ $config: core.$all-config;
           }
           @if ($variants != null) {
             @each $variant, $variant-value in $variants {
+              %#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                @include utility-content($custom-properties, $properties, $variant-value, $important);
+              }
               .#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                 @include utility-content($custom-properties, $properties, $variant-value, $important);
               }
@@ -460,14 +514,23 @@ $config: core.$all-config;
               @if ($default-variants != null) {
                 @each $default-variant, $default-variant-value in $default-variants {
                   @if $default-pseudo == group-hover {
+                    %group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                      @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                    }  
                     .group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                       @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                     }  
                   } @else if $default-pseudo == group-focus {
+                    %group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                      @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                    } 
                     .group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                       @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                     }  
                   } @else {
+                    %#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $default-pseudo)} {
+                      @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                    }
                     .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $default-pseudo)} {
                       @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                     }
@@ -477,14 +540,23 @@ $config: core.$all-config;
               @if ($variants != null) {
                 @each $variant, $variant-value in $variants {
                   @if $default-pseudo == group-hover {
+                    %group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                      @include utility-content($custom-properties, $properties, $variant-value, $important);
+                    } 
                     .group:hover .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                       @include utility-content($custom-properties, $properties, $variant-value, $important);
                     }  
                   } @else if $default-pseudo == group-focus {
+                    %group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                      @include utility-content($custom-properties, $properties, $variant-value, $important);
+                    } 
                     .group:focus .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                       @include utility-content($custom-properties, $properties, $variant-value, $important);
                     }  
                   } @else {
+                    %#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $default-pseudo)} {
+                      @include utility-content($custom-properties, $properties, $variant-value, $important);
+                    }
                     .#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $default-pseudo)} {
                       @include utility-content($custom-properties, $properties, $variant-value, $important);
                     }
@@ -499,14 +571,23 @@ $config: core.$all-config;
                 @each $default-variant, $default-variant-value in $default-variants {
                     
                   @if $pseudo == group-hover {
+                    %group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                      @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                    } 
                     .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                       @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                     }  
                   } @else if $pseudo == group-focus {
+                    %group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                      @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                    }  
                     .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                       @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                     }  
                   } @else {
+                    %#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $pseudo)} {
+                      @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                    }
                     .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $pseudo)} {
                       @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                     }
@@ -517,14 +598,23 @@ $config: core.$all-config;
               @if ($variants != null) {
                 @each $variant, $variant-value in $variants {
                   @if $pseudo == group-hover {
+                    %group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                      @include utility-content($custom-properties, $properties, $variant-value, $important);
+                    } 
                     .group:hover .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                       @include utility-content($custom-properties, $properties, $variant-value, $important);
                     }  
                   } @else if $pseudo == group-focus {
+                    %group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                      @include utility-content($custom-properties, $properties, $variant-value, $important);
+                    } 
                     .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                       @include utility-content($custom-properties, $properties, $variant-value, $important);
                     }  
                   } @else {
+                    %#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $pseudo)} {
+                      @include utility-content($custom-properties, $properties, $variant-value, $important);
+                    }
                     .#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $pseudo)} {
                       @include utility-content($custom-properties, $properties, $variant-value, $important);
                     }
@@ -560,6 +650,9 @@ $config: core.$all-config;
                 // Construct responsive classes
                 @if ($default-variants != null) {
                   @each $default-variant, $default-variant-value in $default-variants {
+                    %#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                      @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                    }
                     .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
                       @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                     }
@@ -567,6 +660,9 @@ $config: core.$all-config;
                 }
                 @if ($variants != null) {
                   @each $variant, $variant-value in $variants {
+                    %#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                      @include utility-content($custom-properties, $properties, $variant-value, $important);
+                    }
                     .#{$screen}#{$screen-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
                       @include utility-content($custom-properties, $properties, $variant-value, $important);
                     }
@@ -580,31 +676,25 @@ $config: core.$all-config;
                       @if ($default-variants != null) {
                         @each $default-variant, $default-variant-value in $default-variants {
                           @if $default-pseudo == group-hover {
+                            %group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                            } 
                             .group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $default-variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                             }  
                           } @else if $default-pseudo == group-focus {
+                            %group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                            } 
                             .group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $default-variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                             }  
                           } @else {
+                            %#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $default-pseudo)} {
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                            }
                             .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $default-pseudo)} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $default-variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                             }
                           }
                         }
@@ -612,31 +702,25 @@ $config: core.$all-config;
                       @if ($variants != null) {
                         @each $variant, $variant-value in $variants {
                           @if $default-pseudo == group-hover {
+                            %group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
+                            } 
                             .group:hover .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
                             }  
                           } @else if $default-pseudo == group-focus {
+                            %group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
+                            } 
                             .group:focus .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
                             }  
                           } @else {
+                            %#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $default-pseudo)} {
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
+                            }
                             .#{$screen}#{$screen-delimiter}#{$default-pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $default-pseudo)} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
                             }
                           }
                         }
@@ -648,31 +732,25 @@ $config: core.$all-config;
                       @if ($default-variants != null) {
                         @each $default-variant, $default-variant-value in $default-variants {
                           @if $pseudo == group-hover {
+                            %group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                            } 
                             .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $default-variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                             }  
                           } @else if $pseudo == group-focus {
+                            %group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                            } 
                             .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $default-variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                             }  
                           } @else {
+                            %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $pseudo)} {
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
+                            }
                             .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($default-variant == null, null, $default-variant), if($default-variant == null, $keyword, $keyword + $delimiter + '' + $default-variant ) )}:#{map.get($all-pseudos, $pseudo)} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $default-variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $default-variant-value, $important);
                             }
                           }
                         }
@@ -680,31 +758,25 @@ $config: core.$all-config;
                       @if ($variants != null) {
                         @each $variant, $variant-value in $variants {
                           @if $pseudo == group-hover {
+                            %group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
+                            }  
                             .group:hover .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
                             }  
                           } @else if $pseudo == group-focus {
+                            %group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
+                            } 
                             .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
                             }  
                           } @else {
+                            %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $pseudo)} {
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
+                            }
                             .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$prefix}#{if($keyword == null, if($variant == null, null, $variant), if($variant == null, $keyword, $keyword + $delimiter + '' + $variant ) )}:#{map.get($all-pseudos, $pseudo)} {
-                              @each $custom-property, $custom-property-value in $custom-properties {
-                                #{$custom-property}: $custom-property-value;
-                              }
-                              @each $property in $properties {
-                                #{$property}: $variant-value if($important == true, !important, null);
-                              }
+                              @include utility-content($custom-properties, $properties, $variant-value, $important);
                             }
                           }
                         }

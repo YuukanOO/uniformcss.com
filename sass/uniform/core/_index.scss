@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "sass:list";
+@use "sass:string";
 @use "sass:meta";
 
 // USER CONFIG
@@ -640,6 +641,9 @@ $var-trackings: variablize-map($trackings, tracking);
 }
 
 
+@function bg() {
+
+}
 
 @function bg-colors() {
   $result: ();
@@ -807,6 +811,98 @@ $var-trackings: variablize-map($trackings, tracking);
 @mixin screen($screen) {
   @media (min-width: screen($screen)) {
     @content; 
+  }
+}
+
+@function escape($any) {
+  $escape-chars: (
+    "\!",
+    "\"",
+    "\#",
+    "\$",
+    "\%",
+    "\&",
+    "\'",
+    "\(",
+    "\)",
+    "\*",
+    "\+",
+    "\,",
+    "\-",
+    "\.",
+    "\/",
+    "\:",
+    "\;",
+    "\<",
+    "\=",
+    "\>",
+    "\?",
+    "\@",
+    "\[",
+    "\\",
+    "\]",
+    "\^",
+    "\`",
+    "\{",
+    "\|",
+    "\}",
+    "\~",
+  );
+
+	$str: "" + $any;
+	$esc-str: "";
+	@for $x from 1 through string.length($str) {
+		$ch: string.slice($str, $x, $x);
+		@if list.index($escape-chars, $ch) {
+			// NOTE: `"\\..."` must be quoted.
+			$esc-str: $esc-str + "\\"+ $ch;
+		} @else {
+			$esc-str: $esc-str + $ch;
+		}
+	}
+	@return $esc-str;
+}
+
+@function str-split($string, $separator) {
+  // empty array/list
+  $split-arr: ();
+  // first index of separator in string
+  $index : str-index($string, $separator);
+  // loop through string
+  @while $index != null {
+      // get the substring from the first character to the separator
+      $item: str-slice($string, 1, $index - 1);
+      // push item to array
+      $split-arr: append($split-arr, $item);
+      // remove item and separator from string
+      $string: str-slice($string, $index + 1);
+      // find new index of separator
+      $index : str-index($string, $separator);
+  }
+  // add the remaining string to list (the last item)
+  $split-arr: append($split-arr, $string);
+
+  @return $split-arr;
+}
+
+// $values: "10px 20px 30px, 20px 30px 40px";
+// $list: ();
+
+// $split-values: str-split($values, ", ");
+// @each $value in $split-values {
+//   $list: append($list, str-split($value, " "));
+// }
+
+@mixin this($utilities) {
+  $split-values: str-split($utilities, ' ');
+  $class-list: ();
+  @each $value in $split-values {
+    $class-list: list.append($class-list, str-split($value, ' '));
+  }
+
+  @each $class in $class-list {
+    $escaped-class: escape("#{$class}");
+    @extend %#{$escaped-class};
   }
 }
 

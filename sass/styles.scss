@@ -5,6 +5,9 @@
 @use "_comparison-slider" as *;
 @use "vendors/prism" as *;
 
+body {
+	@include this('bg-primary-500 bg-lighten-400 hover.bg-opacity-50')
+}
 
 .gallery {
   display: flex;
