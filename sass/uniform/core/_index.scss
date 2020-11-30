@@ -1,5 +1,6 @@
 @use "sass:map";
 @use "sass:list";
+@use "sass:meta";
 
 // USER CONFIG
 // ============================================================
@@ -74,15 +75,15 @@ $default-config: (
   ),
 
   deepen-levels: (
-    deepen-100: 5%,
-    deepen-200: 10%,
-    deepen-300: 15%,
-    deepen-400: 20%,
-    deepen-500: 25%,
-    deepen-600: 30%,
-    deepen-700: 35%,
-    deepen-800: 40%,
-    deepen-900: 45%,
+    deepen-100: -5%,
+    deepen-200: -10%,
+    deepen-300: -15%,
+    deepen-400: -20%,
+    deepen-500: -25%,
+    deepen-600: -30%,
+    deepen-700: -35%,
+    deepen-800: -40%,
+    deepen-900: -45%,
   ),
 
   lighten-levels: (
@@ -126,115 +127,137 @@ $default-config: (
   ),
 
   primary-colors: (
-    primary-100: ( hue: var(--primary-100-hue, --primary-hue, 225), saturation: var(--primary-100-saturation, --primary-saturation, 50%), lightness: var(--primary-100-lightness, 50%) ),
-    primary-200: ( hue: var(--primary-200-hue, --primary-hue, 225), saturation: var(--primary-200-saturation, --primary-saturation, 50%), lightness: var(--primary-200-lightness, 50%) ),
-    primary-300: ( hue: var(--primary-300-hue, --primary-hue, 225), saturation: var(--primary-300-saturation, --primary-saturation, 50%), lightness: var(--primary-300-lightness, 50%) ),
-    primary-400: ( hue: var(--primary-400-hue, --primary-hue, 225), saturation: var(--primary-400-saturation, --primary-saturation, 50%), lightness: var(--primary-400-lightness, 50%) ),
-    primary-500: ( hue: var(--primary-500-hue, --primary-hue, 225), saturation: var(--primary-500-saturation, --primary-saturation, 50%), lightness: var(--primary-500-lightness, 50%) ),
-    primary-600: ( hue: var(--primary-600-hue, --primary-hue, 225), saturation: var(--primary-600-saturation, --primary-saturation, 50%), lightness: var(--primary-600-lightness, 50%) ),
-    primary-700: ( hue: var(--primary-700-hue, --primary-hue, 225), saturation: var(--primary-700-saturation, --primary-saturation, 50%), lightness: var(--primary-700-lightness, 50%) ),
-    primary-800: ( hue: var(--primary-800-hue, --primary-hue, 225), saturation: var(--primary-800-saturation, --primary-saturation, 50%), lightness: var(--primary-800-lightness, 50%) ),
-    primary-900: ( hue: var(--primary-900-hue, --primary-hue, 225), saturation: var(--primary-900-saturation, --primary-saturation, 50%), lightness: var(--primary-900-lightness, 50%) ),
+    primary-100: ( hue: var(--primary-100-hue, var(--primary-hue, 225) ), saturation: var(--primary-100-sat, var(--primary-sat, 50%) ), lightness: var(--primary-100-ltn, 90%) ),
+    primary-200: ( hue: var(--primary-200-hue, var(--primary-hue, 225) ), saturation: var(--primary-200-sat, var(--primary-sat, 50%) ), lightness: var(--primary-200-ltn, 80%) ),
+    primary-300: ( hue: var(--primary-300-hue, var(--primary-hue, 225) ), saturation: var(--primary-300-sat, var(--primary-sat, 50%) ), lightness: var(--primary-300-ltn, 70%) ),
+    primary-400: ( hue: var(--primary-400-hue, var(--primary-hue, 225) ), saturation: var(--primary-400-sat, var(--primary-sat, 50%) ), lightness: var(--primary-400-ltn, 60%) ),
+    primary-500: ( hue: var(--primary-500-hue, var(--primary-hue, 225) ), saturation: var(--primary-500-sat, var(--primary-sat, 50%) ), lightness: var(--primary-500-ltn, 50%) ),
+    primary-600: ( hue: var(--primary-600-hue, var(--primary-hue, 225) ), saturation: var(--primary-600-sat, var(--primary-sat, 50%) ), lightness: var(--primary-600-ltn, 40%) ),
+    primary-700: ( hue: var(--primary-700-hue, var(--primary-hue, 225) ), saturation: var(--primary-700-sat, var(--primary-sat, 50%) ), lightness: var(--primary-700-ltn, 30%) ),
+    primary-800: ( hue: var(--primary-800-hue, var(--primary-hue, 225) ), saturation: var(--primary-800-sat, var(--primary-sat, 50%) ), lightness: var(--primary-800-ltn, 20%) ),
+    primary-900: ( hue: var(--primary-900-hue, var(--primary-hue, 225) ), saturation: var(--primary-900-sat, var(--primary-sat, 50%) ), lightness: var(--primary-900-ltn, 10%) ),
 
-    primary-a100: ( hue: var(--primary-a100-hue, --primary-a-hue, 225), saturation: var(--primary-a100-saturation, --primary-a-saturation, 50%), lightness: var(--primary-a100-lightness, 50%) ),
-    primary-a200: ( hue: var(--primary-a200-hue, --primary-a-hue, 225), saturation: var(--primary-a200-saturation, --primary-a-saturation, 50%), lightness: var(--primary-a200-lightness, 50%) ),
-    primary-a300: ( hue: var(--primary-a300-hue, --primary-a-hue, 225), saturation: var(--primary-a300-saturation, --primary-a-saturation, 50%), lightness: var(--primary-a300-lightness, 50%) ),
-    primary-a400: ( hue: var(--primary-a400-hue, --primary-a-hue, 225), saturation: var(--primary-a400-saturation, --primary-a-saturation, 50%), lightness: var(--primary-a400-lightness, 50%) ),
-    primary-a500: ( hue: var(--primary-a500-hue, --primary-a-hue, 225), saturation: var(--primary-a500-saturation, --primary-a-saturation, 50%), lightness: var(--primary-a500-lightness, 50%) ),
-    primary-a600: ( hue: var(--primary-a600-hue, --primary-a-hue, 225), saturation: var(--primary-a600-saturation, --primary-a-saturation, 50%), lightness: var(--primary-a600-lightness, 50%) ),
-    primary-a700: ( hue: var(--primary-a700-hue, --primary-a-hue, 225), saturation: var(--primary-a700-saturation, --primary-a-saturation, 50%), lightness: var(--primary-a700-lightness, 50%) ),
-    primary-a800: ( hue: var(--primary-a800-hue, --primary-a-hue, 225), saturation: var(--primary-a800-saturation, --primary-a-saturation, 50%), lightness: var(--primary-a800-lightness, 50%) ),
-    primary-a900: ( hue: var(--primary-a900-hue, --primary-a-hue, 225), saturation: var(--primary-a900-saturation, --primary-a-saturation, 50%), lightness: var(--primary-a900-lightness, 50%) ),
+    primary-a100: ( hue: var(--primary-a100-hue, var(--primary-a-hue, 225) ), saturation: var(--primary-a100-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a100-ltn, 50%) ),
+    primary-a200: ( hue: var(--primary-a200-hue, var(--primary-a-hue, 225) ), saturation: var(--primary-a200-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a200-ltn, 50%) ),
+    primary-a300: ( hue: var(--primary-a300-hue, var(--primary-a-hue, 225) ), saturation: var(--primary-a300-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a300-ltn, 50%) ),
+    primary-a400: ( hue: var(--primary-a400-hue, var(--primary-a-hue, 225) ), saturation: var(--primary-a400-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a400-ltn, 50%) ),
+    primary-a500: ( hue: var(--primary-a500-hue, var(--primary-a-hue, 225) ), saturation: var(--primary-a500-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a500-ltn, 50%) ),
+    primary-a600: ( hue: var(--primary-a600-hue, var(--primary-a-hue, 225) ), saturation: var(--primary-a600-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a600-ltn, 50%) ),
+    primary-a700: ( hue: var(--primary-a700-hue, var(--primary-a-hue, 225) ), saturation: var(--primary-a700-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a700-ltn, 50%) ),
+    primary-a800: ( hue: var(--primary-a800-hue, var(--primary-a-hue, 225) ), saturation: var(--primary-a800-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a800-ltn, 50%) ),
+    primary-a900: ( hue: var(--primary-a900-hue, var(--primary-a-hue, 225) ), saturation: var(--primary-a900-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a900-ltn, 50%) ),
 
-    primary-b100: ( hue: var(--primary-b100-hue, --primary-b-hue, 225), saturation: var(--primary-b100-saturation, --primary-b-saturation, 50%), lightness: var(--primary-b100-lightness, 50%) ),
-    primary-b200: ( hue: var(--primary-b200-hue, --primary-b-hue, 225), saturation: var(--primary-b200-saturation, --primary-b-saturation, 50%), lightness: var(--primary-b200-lightness, 50%) ),
-    primary-b300: ( hue: var(--primary-b300-hue, --primary-b-hue, 225), saturation: var(--primary-b300-saturation, --primary-b-saturation, 50%), lightness: var(--primary-b300-lightness, 50%) ),
-    primary-b400: ( hue: var(--primary-b400-hue, --primary-b-hue, 225), saturation: var(--primary-b400-saturation, --primary-b-saturation, 50%), lightness: var(--primary-b400-lightness, 50%) ),
-    primary-b500: ( hue: var(--primary-b500-hue, --primary-b-hue, 225), saturation: var(--primary-b500-saturation, --primary-b-saturation, 50%), lightness: var(--primary-b500-lightness, 50%) ),
-    primary-b600: ( hue: var(--primary-b600-hue, --primary-b-hue, 225), saturation: var(--primary-b600-saturation, --primary-b-saturation, 50%), lightness: var(--primary-b600-lightness, 50%) ),
-    primary-b700: ( hue: var(--primary-b700-hue, --primary-b-hue, 225), saturation: var(--primary-b700-saturation, --primary-b-saturation, 50%), lightness: var(--primary-b700-lightness, 50%) ),
-    primary-b800: ( hue: var(--primary-b800-hue, --primary-b-hue, 225), saturation: var(--primary-b800-saturation, --primary-b-saturation, 50%), lightness: var(--primary-b800-lightness, 50%) ),
-    primary-b900: ( hue: var(--primary-b900-hue, --primary-b-hue, 225), saturation: var(--primary-b900-saturation, --primary-b-saturation, 50%), lightness: var(--primary-b900-lightness, 50%) ),
+    primary-b100: ( hue: var(--primary-b100-hue, var(--primary-b-hue, 225) ), saturation: var(--primary-b100-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b100-ltn, 50%) ),
+    primary-b200: ( hue: var(--primary-b200-hue, var(--primary-b-hue, 225) ), saturation: var(--primary-b200-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b200-ltn, 50%) ),
+    primary-b300: ( hue: var(--primary-b300-hue, var(--primary-b-hue, 225) ), saturation: var(--primary-b300-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b300-ltn, 50%) ),
+    primary-b400: ( hue: var(--primary-b400-hue, var(--primary-b-hue, 225) ), saturation: var(--primary-b400-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b400-ltn, 50%) ),
+    primary-b500: ( hue: var(--primary-b500-hue, var(--primary-b-hue, 225) ), saturation: var(--primary-b500-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b500-ltn, 50%) ),
+    primary-b600: ( hue: var(--primary-b600-hue, var(--primary-b-hue, 225) ), saturation: var(--primary-b600-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b600-ltn, 50%) ),
+    primary-b700: ( hue: var(--primary-b700-hue, var(--primary-b-hue, 225) ), saturation: var(--primary-b700-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b700-ltn, 50%) ),
+    primary-b800: ( hue: var(--primary-b800-hue, var(--primary-b-hue, 225) ), saturation: var(--primary-b800-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b800-ltn, 50%) ),
+    primary-b900: ( hue: var(--primary-b900-hue, var(--primary-b-hue, 225) ), saturation: var(--primary-b900-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b900-ltn, 50%) ),
 
-    primary-c100: ( hue: var(--primary-c100-hue, --primary-c-hue, 225), saturation: var(--primary-c100-saturation, --primary-c-saturation, 50%), lightness: var(--primary-c100-lightness, 50%) ),
-    primary-c200: ( hue: var(--primary-c200-hue, --primary-c-hue, 225), saturation: var(--primary-c200-saturation, --primary-c-saturation, 50%), lightness: var(--primary-c200-lightness, 50%) ),
-    primary-c300: ( hue: var(--primary-c300-hue, --primary-c-hue, 225), saturation: var(--primary-c300-saturation, --primary-c-saturation, 50%), lightness: var(--primary-c300-lightness, 50%) ),
-    primary-c400: ( hue: var(--primary-c400-hue, --primary-c-hue, 225), saturation: var(--primary-c400-saturation, --primary-c-saturation, 50%), lightness: var(--primary-c400-lightness, 50%) ),
-    primary-c500: ( hue: var(--primary-c500-hue, --primary-c-hue, 225), saturation: var(--primary-c500-saturation, --primary-c-saturation, 50%), lightness: var(--primary-c500-lightness, 50%) ),
-    primary-c600: ( hue: var(--primary-c600-hue, --primary-c-hue, 225), saturation: var(--primary-c600-saturation, --primary-c-saturation, 50%), lightness: var(--primary-c600-lightness, 50%) ),
-    primary-c700: ( hue: var(--primary-c700-hue, --primary-c-hue, 225), saturation: var(--primary-c700-saturation, --primary-c-saturation, 50%), lightness: var(--primary-c700-lightness, 50%) ),
-    primary-c800: ( hue: var(--primary-c800-hue, --primary-c-hue, 225), saturation: var(--primary-c800-saturation, --primary-c-saturation, 50%), lightness: var(--primary-c800-lightness, 50%) ),
-    primary-c900: ( hue: var(--primary-c900-hue, --primary-c-hue, 225), saturation: var(--primary-c900-saturation, --primary-c-saturation, 50%), lightness: var(--primary-c900-lightness, 50%) ),
+    primary-c100: ( hue: var(--primary-c100-hue, var(--primary-c-hue, 225) ), saturation: var(--primary-c100-sat, var(--primary-c-sat, 50%) ), lightness: var(--primary-c100-ltn, 50%) ),
+    primary-c200: ( hue: var(--primary-c200-hue, var(--primary-c-hue, 225) ), saturation: var(--primary-c200-sat, var(--primary-c-sat, 50%) ), lightness: var(--primary-c200-ltn, 50%) ),
+    primary-c300: ( hue: var(--primary-c300-hue, var(--primary-c-hue, 225) ), saturation: var(--primary-c300-sat, var(--primary-c-sat, 50%) ), lightness: var(--primary-c300-ltn, 50%) ),
+    primary-c400: ( hue: var(--primary-c400-hue, var(--primary-c-hue, 225) ), saturation: var(--primary-c400-sat, var(--primary-c-sat, 50%) ), lightness: var(--primary-c400-ltn, 50%) ),
+    primary-c500: ( hue: var(--primary-c500-hue, var(--primary-c-hue, 225) ), saturation: var(--primary-c500-sat, var(--primary-c-sat, 50%) ), lightness: var(--primary-c500-ltn, 50%) ),
+    primary-c600: ( hue: var(--primary-c600-hue, var(--primary-c-hue, 225) ), saturation: var(--primary-c600-sat, var(--primary-c-sat, 50%) ), lightness: var(--primary-c600-ltn, 50%) ),
+    primary-c700: ( hue: var(--primary-c700-hue, var(--primary-c-hue, 225) ), saturation: var(--primary-c700-sat, var(--primary-c-sat, 50%) ), lightness: var(--primary-c700-ltn, 50%) ),
+    primary-c800: ( hue: var(--primary-c800-hue, var(--primary-c-hue, 225) ), saturation: var(--primary-c800-sat, var(--primary-c-sat, 50%) ), lightness: var(--primary-c800-ltn, 50%) ),
+    primary-c900: ( hue: var(--primary-c900-hue, var(--primary-c-hue, 225) ), saturation: var(--primary-c900-sat, var(--primary-c-sat, 50%) ), lightness: var(--primary-c900-ltn, 50%) ),
   ),
 
   secondary-colors: (
-    secondary-100: ( hue: var(--secondary-100-hue, --secondary-hue, 225), saturation: var(--secondary-100-saturation, --secondary-saturation, 50%), lightness: var(--secondary-100-lightness, 50%) ),
-    secondary-200: ( hue: var(--secondary-200-hue, --secondary-hue, 225), saturation: var(--secondary-200-saturation, --secondary-saturation, 50%), lightness: var(--secondary-200-lightness, 50%) ),
-    secondary-300: ( hue: var(--secondary-300-hue, --secondary-hue, 225), saturation: var(--secondary-300-saturation, --secondary-saturation, 50%), lightness: var(--secondary-300-lightness, 50%) ),
-    secondary-400: ( hue: var(--secondary-400-hue, --secondary-hue, 225), saturation: var(--secondary-400-saturation, --secondary-saturation, 50%), lightness: var(--secondary-400-lightness, 50%) ),
-    secondary-500: ( hue: var(--secondary-500-hue, --secondary-hue, 225), saturation: var(--secondary-500-saturation, --secondary-saturation, 50%), lightness: var(--secondary-500-lightness, 50%) ),
-    secondary-600: ( hue: var(--secondary-600-hue, --secondary-hue, 225), saturation: var(--secondary-600-saturation, --secondary-saturation, 50%), lightness: var(--secondary-600-lightness, 50%) ),
-    secondary-700: ( hue: var(--secondary-700-hue, --secondary-hue, 225), saturation: var(--secondary-700-saturation, --secondary-saturation, 50%), lightness: var(--secondary-700-lightness, 50%) ),
-    secondary-800: ( hue: var(--secondary-800-hue, --secondary-hue, 225), saturation: var(--secondary-800-saturation, --secondary-saturation, 50%), lightness: var(--secondary-800-lightness, 50%) ),
-    secondary-900: ( hue: var(--secondary-900-hue, --secondary-hue, 225), saturation: var(--secondary-900-saturation, --secondary-saturation, 50%), lightness: var(--secondary-900-lightness, 50%) ),
+    secondary-100: ( hue: var(--secondary-100-hue, var(--secondary-hue, 225) ), saturation: var(--secondary-100-sat, var(--secondary-sat, 50%) ), lightness: var(--secondary-100-ltn, 50%) ),
+    secondary-200: ( hue: var(--secondary-200-hue, var(--secondary-hue, 225) ), saturation: var(--secondary-200-sat, var(--secondary-sat, 50%) ), lightness: var(--secondary-200-ltn, 50%) ),
+    secondary-300: ( hue: var(--secondary-300-hue, var(--secondary-hue, 225) ), saturation: var(--secondary-300-sat, var(--secondary-sat, 50%) ), lightness: var(--secondary-300-ltn, 50%) ),
+    secondary-400: ( hue: var(--secondary-400-hue, var(--secondary-hue, 225) ), saturation: var(--secondary-400-sat, var(--secondary-sat, 50%) ), lightness: var(--secondary-400-ltn, 50%) ),
+    secondary-500: ( hue: var(--secondary-500-hue, var(--secondary-hue, 225) ), saturation: var(--secondary-500-sat, var(--secondary-sat, 50%) ), lightness: var(--secondary-500-ltn, 50%) ),
+    secondary-600: ( hue: var(--secondary-600-hue, var(--secondary-hue, 225) ), saturation: var(--secondary-600-sat, var(--secondary-sat, 50%) ), lightness: var(--secondary-600-ltn, 50%) ),
+    secondary-700: ( hue: var(--secondary-700-hue, var(--secondary-hue, 225) ), saturation: var(--secondary-700-sat, var(--secondary-sat, 50%) ), lightness: var(--secondary-700-ltn, 50%) ),
+    secondary-800: ( hue: var(--secondary-800-hue, var(--secondary-hue, 225) ), saturation: var(--secondary-800-sat, var(--secondary-sat, 50%) ), lightness: var(--secondary-800-ltn, 50%) ),
+    secondary-900: ( hue: var(--secondary-900-hue, var(--secondary-hue, 225) ), saturation: var(--secondary-900-sat, var(--secondary-sat, 50%) ), lightness: var(--secondary-900-ltn, 50%) ),
 
-    secondary-a100: ( hue: var(--secondary-a100-hue, --secondary-a-hue, 225), saturation: var(--secondary-a100-saturation, --secondary-a-saturation, 50%), lightness: var(--secondary-a100-lightness, 50%) ),
-    secondary-a200: ( hue: var(--secondary-a200-hue, --secondary-a-hue, 225), saturation: var(--secondary-a200-saturation, --secondary-a-saturation, 50%), lightness: var(--secondary-a200-lightness, 50%) ),
-    secondary-a300: ( hue: var(--secondary-a300-hue, --secondary-a-hue, 225), saturation: var(--secondary-a300-saturation, --secondary-a-saturation, 50%), lightness: var(--secondary-a300-lightness, 50%) ),
-    secondary-a400: ( hue: var(--secondary-a400-hue, --secondary-a-hue, 225), saturation: var(--secondary-a400-saturation, --secondary-a-saturation, 50%), lightness: var(--secondary-a400-lightness, 50%) ),
-    secondary-a500: ( hue: var(--secondary-a500-hue, --secondary-a-hue, 225), saturation: var(--secondary-a500-saturation, --secondary-a-saturation, 50%), lightness: var(--secondary-a500-lightness, 50%) ),
-    secondary-a600: ( hue: var(--secondary-a600-hue, --secondary-a-hue, 225), saturation: var(--secondary-a600-saturation, --secondary-a-saturation, 50%), lightness: var(--secondary-a600-lightness, 50%) ),
-    secondary-a700: ( hue: var(--secondary-a700-hue, --secondary-a-hue, 225), saturation: var(--secondary-a700-saturation, --secondary-a-saturation, 50%), lightness: var(--secondary-a700-lightness, 50%) ),
-    secondary-a800: ( hue: var(--secondary-a800-hue, --secondary-a-hue, 225), saturation: var(--secondary-a800-saturation, --secondary-a-saturation, 50%), lightness: var(--secondary-a800-lightness, 50%) ),
-    secondary-a900: ( hue: var(--secondary-a900-hue, --secondary-a-hue, 225), saturation: var(--secondary-a900-saturation, --secondary-a-saturation, 50%), lightness: var(--secondary-a900-lightness, 50%) ),
+    secondary-a100: ( hue: var(--secondary-a100-hue, var(--secondary-a-hue, 225) ), saturation: var(--secondary-a100-sat, var(--secondary-a-sat, 50%) ), lightness: var(--secondary-a100-ltn, 50%) ),
+    secondary-a200: ( hue: var(--secondary-a200-hue, var(--secondary-a-hue, 225) ), saturation: var(--secondary-a200-sat, var(--secondary-a-sat, 50%) ), lightness: var(--secondary-a200-ltn, 50%) ),
+    secondary-a300: ( hue: var(--secondary-a300-hue, var(--secondary-a-hue, 225) ), saturation: var(--secondary-a300-sat, var(--secondary-a-sat, 50%) ), lightness: var(--secondary-a300-ltn, 50%) ),
+    secondary-a400: ( hue: var(--secondary-a400-hue, var(--secondary-a-hue, 225) ), saturation: var(--secondary-a400-sat, var(--secondary-a-sat, 50%) ), lightness: var(--secondary-a400-ltn, 50%) ),
+    secondary-a500: ( hue: var(--secondary-a500-hue, var(--secondary-a-hue, 225) ), saturation: var(--secondary-a500-sat, var(--secondary-a-sat, 50%) ), lightness: var(--secondary-a500-ltn, 50%) ),
+    secondary-a600: ( hue: var(--secondary-a600-hue, var(--secondary-a-hue, 225) ), saturation: var(--secondary-a600-sat, var(--secondary-a-sat, 50%) ), lightness: var(--secondary-a600-ltn, 50%) ),
+    secondary-a700: ( hue: var(--secondary-a700-hue, var(--secondary-a-hue, 225) ), saturation: var(--secondary-a700-sat, var(--secondary-a-sat, 50%) ), lightness: var(--secondary-a700-ltn, 50%) ),
+    secondary-a800: ( hue: var(--secondary-a800-hue, var(--secondary-a-hue, 225) ), saturation: var(--secondary-a800-sat, var(--secondary-a-sat, 50%) ), lightness: var(--secondary-a800-ltn, 50%) ),
+    secondary-a900: ( hue: var(--secondary-a900-hue, var(--secondary-a-hue, 225) ), saturation: var(--secondary-a900-sat, var(--secondary-a-sat, 50%) ), lightness: var(--secondary-a900-ltn, 50%) ),
 
-    secondary-b100: ( hue: var(--secondary-b100-hue, --secondary-b-hue, 225), saturation: var(--secondary-b100-saturation, --secondary-b-saturation, 50%), lightness: var(--secondary-b100-lightness, 50%) ),
-    secondary-b200: ( hue: var(--secondary-b200-hue, --secondary-b-hue, 225), saturation: var(--secondary-b200-saturation, --secondary-b-saturation, 50%), lightness: var(--secondary-b200-lightness, 50%) ),
-    secondary-b300: ( hue: var(--secondary-b300-hue, --secondary-b-hue, 225), saturation: var(--secondary-b300-saturation, --secondary-b-saturation, 50%), lightness: var(--secondary-b300-lightness, 50%) ),
-    secondary-b400: ( hue: var(--secondary-b400-hue, --secondary-b-hue, 225), saturation: var(--secondary-b400-saturation, --secondary-b-saturation, 50%), lightness: var(--secondary-b400-lightness, 50%) ),
-    secondary-b500: ( hue: var(--secondary-b500-hue, --secondary-b-hue, 225), saturation: var(--secondary-b500-saturation, --secondary-b-saturation, 50%), lightness: var(--secondary-b500-lightness, 50%) ),
-    secondary-b600: ( hue: var(--secondary-b600-hue, --secondary-b-hue, 225), saturation: var(--secondary-b600-saturation, --secondary-b-saturation, 50%), lightness: var(--secondary-b600-lightness, 50%) ),
-    secondary-b700: ( hue: var(--secondary-b700-hue, --secondary-b-hue, 225), saturation: var(--secondary-b700-saturation, --secondary-b-saturation, 50%), lightness: var(--secondary-b700-lightness, 50%) ),
-    secondary-b800: ( hue: var(--secondary-b800-hue, --secondary-b-hue, 225), saturation: var(--secondary-b800-saturation, --secondary-b-saturation, 50%), lightness: var(--secondary-b800-lightness, 50%) ),
-    secondary-b900: ( hue: var(--secondary-b900-hue, --secondary-b-hue, 225), saturation: var(--secondary-b900-saturation, --secondary-b-saturation, 50%), lightness: var(--secondary-b900-lightness, 50%) ),
+    secondary-b100: ( hue: var(--secondary-b100-hue, var(--secondary-b-hue, 225) ), saturation: var(--secondary-b100-sat, var(--secondary-b-sat, 50%) ), lightness: var(--secondary-b100-ltn, 50%) ),
+    secondary-b200: ( hue: var(--secondary-b200-hue, var(--secondary-b-hue, 225) ), saturation: var(--secondary-b200-sat, var(--secondary-b-sat, 50%) ), lightness: var(--secondary-b200-ltn, 50%) ),
+    secondary-b300: ( hue: var(--secondary-b300-hue, var(--secondary-b-hue, 225) ), saturation: var(--secondary-b300-sat, var(--secondary-b-sat, 50%) ), lightness: var(--secondary-b300-ltn, 50%) ),
+    secondary-b400: ( hue: var(--secondary-b400-hue, var(--secondary-b-hue, 225) ), saturation: var(--secondary-b400-sat, var(--secondary-b-sat, 50%) ), lightness: var(--secondary-b400-ltn, 50%) ),
+    secondary-b500: ( hue: var(--secondary-b500-hue, var(--secondary-b-hue, 225) ), saturation: var(--secondary-b500-sat, var(--secondary-b-sat, 50%) ), lightness: var(--secondary-b500-ltn, 50%) ),
+    secondary-b600: ( hue: var(--secondary-b600-hue, var(--secondary-b-hue, 225) ), saturation: var(--secondary-b600-sat, var(--secondary-b-sat, 50%) ), lightness: var(--secondary-b600-ltn, 50%) ),
+    secondary-b700: ( hue: var(--secondary-b700-hue, var(--secondary-b-hue, 225) ), saturation: var(--secondary-b700-sat, var(--secondary-b-sat, 50%) ), lightness: var(--secondary-b700-ltn, 50%) ),
+    secondary-b800: ( hue: var(--secondary-b800-hue, var(--secondary-b-hue, 225) ), saturation: var(--secondary-b800-sat, var(--secondary-b-sat, 50%) ), lightness: var(--secondary-b800-ltn, 50%) ),
+    secondary-b900: ( hue: var(--secondary-b900-hue, var(--secondary-b-hue, 225) ), saturation: var(--secondary-b900-sat, var(--secondary-b-sat, 50%) ), lightness: var(--secondary-b900-ltn, 50%) ),
 
-    secondary-c100: ( hue: var(--secondary-c100-hue, --secondary-c-hue, 225), saturation: var(--secondary-c100-saturation, --secondary-c-saturation, 50%), lightness: var(--secondary-c100-lightness, 50%) ),
-    secondary-c200: ( hue: var(--secondary-c200-hue, --secondary-c-hue, 225), saturation: var(--secondary-c200-saturation, --secondary-c-saturation, 50%), lightness: var(--secondary-c200-lightness, 50%) ),
-    secondary-c300: ( hue: var(--secondary-c300-hue, --secondary-c-hue, 225), saturation: var(--secondary-c300-saturation, --secondary-c-saturation, 50%), lightness: var(--secondary-c300-lightness, 50%) ),
-    secondary-c400: ( hue: var(--secondary-c400-hue, --secondary-c-hue, 225), saturation: var(--secondary-c400-saturation, --secondary-c-saturation, 50%), lightness: var(--secondary-c400-lightness, 50%) ),
-    secondary-c500: ( hue: var(--secondary-c500-hue, --secondary-c-hue, 225), saturation: var(--secondary-c500-saturation, --secondary-c-saturation, 50%), lightness: var(--secondary-c500-lightness, 50%) ),
-    secondary-c600: ( hue: var(--secondary-c600-hue, --secondary-c-hue, 225), saturation: var(--secondary-c600-saturation, --secondary-c-saturation, 50%), lightness: var(--secondary-c600-lightness, 50%) ),
-    secondary-c700: ( hue: var(--secondary-c700-hue, --secondary-c-hue, 225), saturation: var(--secondary-c700-saturation, --secondary-c-saturation, 50%), lightness: var(--secondary-c700-lightness, 50%) ),
-    secondary-c800: ( hue: var(--secondary-c800-hue, --secondary-c-hue, 225), saturation: var(--secondary-c800-saturation, --secondary-c-saturation, 50%), lightness: var(--secondary-c800-lightness, 50%) ),
-    secondary-c900: ( hue: var(--secondary-c900-hue, --secondary-c-hue, 225), saturation: var(--secondary-c900-saturation, --secondary-c-saturation, 50%), lightness: var(--secondary-c900-lightness, 50%) ),
+    secondary-c100: ( hue: var(--secondary-c100-hue, var(--secondary-c-hue, 225) ), saturation: var(--secondary-c100-sat, var(--secondary-c-sat, 50%) ), lightness: var(--secondary-c100-ltn, 50%) ),
+    secondary-c200: ( hue: var(--secondary-c200-hue, var(--secondary-c-hue, 225) ), saturation: var(--secondary-c200-sat, var(--secondary-c-sat, 50%) ), lightness: var(--secondary-c200-ltn, 50%) ),
+    secondary-c300: ( hue: var(--secondary-c300-hue, var(--secondary-c-hue, 225) ), saturation: var(--secondary-c300-sat, var(--secondary-c-sat, 50%) ), lightness: var(--secondary-c300-ltn, 50%) ),
+    secondary-c400: ( hue: var(--secondary-c400-hue, var(--secondary-c-hue, 225) ), saturation: var(--secondary-c400-sat, var(--secondary-c-sat, 50%) ), lightness: var(--secondary-c400-ltn, 50%) ),
+    secondary-c500: ( hue: var(--secondary-c500-hue, var(--secondary-c-hue, 225) ), saturation: var(--secondary-c500-sat, var(--secondary-c-sat, 50%) ), lightness: var(--secondary-c500-ltn, 50%) ),
+    secondary-c600: ( hue: var(--secondary-c600-hue, var(--secondary-c-hue, 225) ), saturation: var(--secondary-c600-sat, var(--secondary-c-sat, 50%) ), lightness: var(--secondary-c600-ltn, 50%) ),
+    secondary-c700: ( hue: var(--secondary-c700-hue, var(--secondary-c-hue, 225) ), saturation: var(--secondary-c700-sat, var(--secondary-c-sat, 50%) ), lightness: var(--secondary-c700-ltn, 50%) ),
+    secondary-c800: ( hue: var(--secondary-c800-hue, var(--secondary-c-hue, 225) ), saturation: var(--secondary-c800-sat, var(--secondary-c-sat, 50%) ), lightness: var(--secondary-c800-ltn, 50%) ),
+    secondary-c900: ( hue: var(--secondary-c900-hue, var(--secondary-c-hue, 225) ), saturation: var(--secondary-c900-sat, var(--secondary-c-sat, 50%) ), lightness: var(--secondary-c900-ltn, 50%) ),
+  ),
+
+  grayscale-colors: (
+    silver-100: ( hue: var(--silver-100-hue, var(--silver-hue, 230) ), saturation: var(--silver-100-sat, var(--silver-sat, 20%) ), lightness: var(--silver-100-ltn, 98%) ),
+    silver-200: ( hue: var(--silver-200-hue, var(--silver-hue, 230) ), saturation: var(--silver-200-sat, var(--silver-sat, 20%) ), lightness: var(--silver-200-ltn, 93%) ),
+    silver-300: ( hue: var(--silver-300-hue, var(--silver-hue, 230) ), saturation: var(--silver-300-sat, var(--silver-sat, 20%) ), lightness: var(--silver-300-ltn, 88%) ),
+    silver-400: ( hue: var(--silver-400-hue, var(--silver-hue, 230) ), saturation: var(--silver-400-sat, var(--silver-sat, 20%) ), lightness: var(--silver-400-ltn, 83%) ),
+    silver-500: ( hue: var(--silver-500-hue, var(--silver-hue, 230) ), saturation: var(--silver-500-sat, var(--silver-sat, 20%) ), lightness: var(--silver-500-ltn, 78%) ),
+    silver-600: ( hue: var(--silver-600-hue, var(--silver-hue, 230) ), saturation: var(--silver-600-sat, var(--silver-sat, 20%) ), lightness: var(--silver-600-ltn, 73%) ),
+    silver-700: ( hue: var(--silver-700-hue, var(--silver-hue, 230) ), saturation: var(--silver-700-sat, var(--silver-sat, 20%) ), lightness: var(--silver-700-ltn, 68%) ),
+    silver-800: ( hue: var(--silver-800-hue, var(--silver-hue, 230) ), saturation: var(--silver-800-sat, var(--silver-sat, 20%) ), lightness: var(--silver-800-ltn, 63%) ),
+    silver-900: ( hue: var(--silver-900-hue, var(--silver-hue, 230) ), saturation: var(--silver-900-sat, var(--silver-sat, 20%) ), lightness: var(--silver-900-ltn, 58%) ),
+
+    gray-100: ( hue: var(--gray-100-hue, var(--gray-hue, 230) ), saturation: var(--gray-100-sat, var(--gray-sat, 20%) ), lightness: var(--gray-100-ltn, 53%) ),
+    gray-200: ( hue: var(--gray-200-hue, var(--gray-hue, 230) ), saturation: var(--gray-200-sat, var(--gray-sat, 20%) ), lightness: var(--gray-200-ltn, 48%) ),
+    gray-300: ( hue: var(--gray-300-hue, var(--gray-hue, 230) ), saturation: var(--gray-300-sat, var(--gray-sat, 20%) ), lightness: var(--gray-300-ltn, 43%) ),
+    gray-400: ( hue: var(--gray-400-hue, var(--gray-hue, 230) ), saturation: var(--gray-400-sat, var(--gray-sat, 20%) ), lightness: var(--gray-400-ltn, 38%) ),
+    gray-500: ( hue: var(--gray-500-hue, var(--gray-hue, 230) ), saturation: var(--gray-500-sat, var(--gray-sat, 20%) ), lightness: var(--gray-500-ltn, 33%) ),
+    gray-600: ( hue: var(--gray-600-hue, var(--gray-hue, 230) ), saturation: var(--gray-600-sat, var(--gray-sat, 20%) ), lightness: var(--gray-600-ltn, 28%) ),
+    gray-700: ( hue: var(--gray-700-hue, var(--gray-hue, 230) ), saturation: var(--gray-700-sat, var(--gray-sat, 20%) ), lightness: var(--gray-700-ltn, 23%) ),
+    gray-800: ( hue: var(--gray-800-hue, var(--gray-hue, 230) ), saturation: var(--gray-800-sat, var(--gray-sat, 20%) ), lightness: var(--gray-800-ltn, 18%) ),
+    gray-900: ( hue: var(--gray-900-hue, var(--gray-hue, 230) ), saturation: var(--gray-900-sat, var(--gray-sat, 20%) ), lightness: var(--gray-900-ltn, 13%) ),
   ),
 
   system-colors: (
-    red: ( hue: var(--red-hue, 0), saturation: var(--red-saturation, 50%), lightness: var(--red-lightness, 50%) ),
-    orange: ( hue: var(--orange-hue, 20), saturation: var(--orange-saturation, 50%), lightness: var(--orange-lightness, 50%) ),
-    yellow: ( hue: var(--yellow-hue, 40), saturation: var(--yellow-saturation, 50%), lightness: var(--yellow-lightness, 50%) ),
-    lemon: ( hue: var(--lemon-hue, 60), saturation: var(--lemon-saturation, 50%), lightness: var(--lemon-lightness, 50%) ),
-    olive: ( hue: var(--olive-hue, 80), saturation: var(--olive-saturation, 50%), lightness: var(--olive-lightness, 50%) ),
-    lime: ( hue: var(--lime-hue, 100), saturation: var(--lime-saturation, 50%), lightness: var(--lime-lightness, 50%) ),
-    green: ( hue: var(--green-hue, 120), saturation: var(--green-saturation, 50%), lightness: var(--green-lightness, 50%) ),
-    mint: ( hue: var(--mint-hue, 140), saturation: var(--mint-saturation, 50%), lightness: var(--mint-lightness, 50%) ),
-    teal: ( hue: var(--teal-hue, 160), saturation: var(--teal-saturation, 50%), lightness: var(--teal-lightness, 50%) ),
-    cyan: ( hue: var(--cyan-hue, 180), saturation: var(--cyan-saturation, 50%), lightness: var(--cyan-lightness, 50%) ),
-    sky: ( hue: var(--sky-hue, 200), saturation: var(--sky-saturation, 50%), lightness: var(--sky-lightness, 50%) ),
-    blue: ( hue: var(--blue-hue, 220), saturation: var(--blue-saturation, 50%), lightness: var(--blue-lightness, 50%) ),
-    indigo: ( hue: var(--indigo-hue, 240), saturation: var(--indigo-saturation, 50%), lightness: var(--indigo-lightness, 50%) ),
-    purple: ( hue: var(--purple-hue, 260), saturation: var(--purple-saturation, 50%), lightness: var(--purple-lightness, 50%) ),
-    orchid: ( hue: var(--orchid-hue, 280), saturation: var(--orchid-saturation, 50%), lightness: var(--orchid-lightness, 50%) ),
-    magenta: ( hue: var(--magenta-hue, 300), saturation: var(--magenta-saturation, 50%), lightness: var(--magenta-lightness, 50%) ),
-    pink: ( hue: var(--pink-hue, 320), saturation: var(--pink-saturation, 50%), lightness: var(--pink-lightness, 50%) ),
-    crimson: ( hue: var(--crimson-hue, 340), saturation: var(--crimson-saturation, 50%), lightness: var(--crimson-lightness, 50%) ),
+    red: ( hue: var(--red-hue, 0), saturation: var(--red-sat, 50%), lightness: var(--red-ltn, 50%) ),
+    orange: ( hue: var(--orange-hue, 20), saturation: var(--orange-sat, 50%), lightness: var(--orange-ltn, 50%) ),
+    yellow: ( hue: var(--yellow-hue, 40), saturation: var(--yellow-sat, 50%), lightness: var(--yellow-ltn, 50%) ),
+    lemon: ( hue: var(--lemon-hue, 60), saturation: var(--lemon-sat, 50%), lightness: var(--lemon-ltn, 50%) ),
+    olive: ( hue: var(--olive-hue, 80), saturation: var(--olive-sat, 50%), lightness: var(--olive-ltn, 50%) ),
+    lime: ( hue: var(--lime-hue, 100), saturation: var(--lime-sat, 50%), lightness: var(--lime-ltn, 50%) ),
+    green: ( hue: var(--green-hue, 120), saturation: var(--green-sat, 50%), lightness: var(--green-ltn, 50%) ),
+    mint: ( hue: var(--mint-hue, 140), saturation: var(--mint-sat, 50%), lightness: var(--mint-ltn, 50%) ),
+    teal: ( hue: var(--teal-hue, 160), saturation: var(--teal-sat, 50%), lightness: var(--teal-ltn, 50%) ),
+    cyan: ( hue: var(--cyan-hue, 180), saturation: var(--cyan-sat, 50%), lightness: var(--cyan-ltn, 50%) ),
+    sky: ( hue: var(--sky-hue, 200), saturation: var(--sky-sat, 50%), lightness: var(--sky-ltn, 50%) ),
+    blue: ( hue: var(--blue-hue, 220), saturation: var(--blue-sat, 50%), lightness: var(--blue-ltn, 50%) ),
+    indigo: ( hue: var(--indigo-hue, 240), saturation: var(--indigo-sat, 50%), lightness: var(--indigo-ltn, 50%) ),
+    purple: ( hue: var(--purple-hue, 260), saturation: var(--purple-sat, 50%), lightness: var(--purple-ltn, 50%) ),
+    orchid: ( hue: var(--orchid-hue, 280), saturation: var(--orchid-sat, 50%), lightness: var(--orchid-ltn, 50%) ),
+    magenta: ( hue: var(--magenta-hue, 300), saturation: var(--magenta-sat, 50%), lightness: var(--magenta-ltn, 50%) ),
+    pink: ( hue: var(--pink-hue, 320), saturation: var(--pink-sat, 50%), lightness: var(--pink-ltn, 50%) ),
+    crimson: ( hue: var(--crimson-hue, 340), saturation: var(--crimson-sat, 50%), lightness: var(--crimson-ltn, 50%) ),
   ),
 
   temperature-colors: (
-    cold: ( hue: var(--cold-hue, 202), saturation: var(--cold-saturation, 100%), lightness: var(--cold-lightness, 50%) ),
-    room: ( hue: var(--room-hue, 144), saturation: var(--room-saturation, 100%), lightness: var(--room-lightness, 40%) ),
-    warm: ( hue: var(--warm-hue, 40), saturation: var(--warm-saturation, 100%), lightness: var(--warm-lightness, 50%) ),
-    hot: ( hue: var(--hot-hue, 0), saturation: var(--hot-saturation, 95%), lightness: var(--hot-lightness, 50%) ),
+    cold: ( hue: var(--cold-hue, 202), saturation: var(--cold-sat, 100%), lightness: var(--cold-ltn, 50%) ),
+    room: ( hue: var(--room-hue, 144), saturation: var(--room-sat, 100%), lightness: var(--room-ltn, 40%) ),
+    warm: ( hue: var(--warm-hue, 40), saturation: var(--warm-sat, 100%), lightness: var(--warm-ltn, 50%) ),
+    hot: ( hue: var(--hot-hue, 0), saturation: var(--hot-sat, 95%), lightness: var(--hot-ltn, 50%) ),
   ),
 
   monotone-colors: (
@@ -473,6 +496,7 @@ $primary-colors: map.get($all-config, primary-colors);
 $secondary-colors: map.get($all-config, secondary-colors);
 $temperature-colors: map.get($all-config, temperature-colors);
 $system-colors: map.get($all-config, system-colors);
+$grayscale-colors: map.get($all-config, grayscale-colors);
 
 $colors: map.get($all-config, colors);
 $gradients: map.get($all-config, gradients);
@@ -520,6 +544,25 @@ $gradients: map.get($all-config, gradients);
 // MERGED VARIABLES
 // ============================================================
 
+
+$merged-colors: ();
+@if ($primary-colors != null) {
+  $merged-colors: map.deep-merge($merged-colors, $primary-colors);
+}
+@if ($secondary-colors != null) {
+  $merged-colors: map.deep-merge($merged-colors, $secondary-colors);
+}
+@if ($temperature-colors != null) {
+  $merged-colors: map.deep-merge($merged-colors, $temperature-colors);
+}
+@if ($system-colors != null) {
+  $merged-colors: map.deep-merge($merged-colors, $system-colors);
+}
+@if ($grayscale-colors != null) {
+  $merged-colors: map.deep-merge($merged-colors, $grayscale-colors);
+}
+
+
 $sizes: map.deep-merge($positive-sizes, $negative-sizes);
 
 $fills: ();
@@ -536,8 +579,8 @@ $fills: ();
 // ============================================================
 
 // $var-hues: variablize-map($hues, hue);
-// $var-saturations: variablize-map($saturations, saturation);
-// $var-lightness: variablize-map($lightness, lightness);
+// $var-sats: variablize-map($saturations, saturation);
+// $var-ltn: variablize-map($lightness, lightness);
 
 $var-colors: variablize-map($colors, null);
 $var-gradients: variablize-map($gradients, null);
@@ -600,141 +643,105 @@ $var-trackings: variablize-map($trackings, tracking);
 
 @function bg-colors() {
   $result: ();
-  @each $key, $value in $primary-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
+  @each $key, $value in $merged-colors {
+    @if (meta.type-of($value) == map) {
+      
+      $hue: map.get($value, hue);
+      $saturation: map.get($value, saturation);
+      $lightness: map.get($value, lightness);
 
-    $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--bg-saturation)), calc(#{$lightness} + var(--bg-lightness)), var(--bg-opacity) )
-    );
-    $result: merge($result, $map);
+      $map: (
+        $key: hsla( #{$hue}, calc(#{$saturation} + var(--bg-sat)), calc(#{$lightness} + var(--bg-ltn)), var(--bg-opacity) )
+      );
+      $result: map.deep-merge($result, $map);
+    } @else {
+
+      $map: (
+        $key: $value
+      );
+      $result: map.deep-merge($result, $map);
+    }
   }
-  @each $key, $value in $secondary-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
+  @return $result;
+}
 
-    $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--bg-saturation)), calc(#{$lightness} + var(--bg-lightness)), var(--bg-opacity) )
-    );
-    $result: merge($result, $map);
-  }
-  @each $key, $value in $temperature-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
 
+@function var-bg-colors() {
+  $result: ();
+  @each $key, $value in $merged-colors {
     $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--bg-saturation)), calc(#{$lightness} + var(--bg-lightness)), var(--bg-opacity) )
+      $key: var(--bg-#{$key})
     );
-    $result: merge($result, $map);
-  }
-  @each $key, $value in $system-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
-
-    $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--bg-saturation)), calc(#{$lightness} + var(--bg-lightness)), var(--bg-opacity) )
-    );
-    $result: merge($result, $map);
+    $result: map.merge($result, $map);
   }
   @return $result;
 }
 
 @function text-colors() {
   $result: ();
-  @each $key, $value in $primary-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
+  @each $key, $value in $merged-colors {
+    @if (meta.type-of($value) == map) {
+      $hue: map.get($value, hue);
+      $saturation: map.get($value, saturation);
+      $lightness: map.get($value, lightness);
 
-    $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--text-saturation)), calc(#{$lightness} + var(--text-lightness)), var(--text-opacity) )
-    );
-    $result: merge($result, $map);
+      $map: (
+        $key: hsla( #{$hue}, calc(#{$saturation} + var(--text-sat)), calc(#{$lightness} + var(--text-ltn)), var(--text-opacity) )
+      );
+      $result: map.deep-merge($result, $map);
+    } @else {
+      $map: (
+        $key: $value
+      );
+      $result: map.deep-merge($result, $map);
+    }
   }
-  @each $key, $value in $secondary-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
+  @return $result;
+}
 
+@function var-text-colors() {
+  $result: ();
+  @each $key, $value in $merged-colors {
     $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--text-saturation)), calc(#{$lightness} + var(--text-lightness)), var(--text-opacity) )
+      $key: var(--text-#{$key})
     );
-    $result: merge($result, $map);
-  }
-  @each $key, $value in $temperature-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
-
-    $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--text-saturation)), calc(#{$lightness} + var(--text-lightness)), var(--text-opacity) )
-    );
-    $result: merge($result, $map);
-  }
-  @each $key, $value in $system-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
-
-    $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--text-saturation)), calc(#{$lightness} + var(--text-lightness)), var(--text-opacity) )
-    );
-    $result: merge($result, $map);
+    $result: map.merge($result, $map);
   }
   @return $result;
 }
 
 @function border-colors() {
   $result: ();
-  @each $key, $value in $primary-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
+  @each $key, $value in $merged-colors {
+    @if (meta.type-of($value) == map) {
+      $hue: map.get($value, hue);
+      $saturation: map.get($value, saturation);
+      $lightness: map.get($value, lightness);
 
-    $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--border-saturation)), calc(#{$lightness} + var(--border-lightness)), var(--border-opacity) )
-    );
-    $result: merge($result, $map);
-  }
-  @each $key, $value in $secondary-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
-
-    $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--border-saturation)), calc(#{$lightness} + var(--border-lightness)), var(--border-opacity) )
-    );
-    $result: merge($result, $map);
-  }
-  @each $key, $value in $temperature-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
-
-    $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--border-saturation)), calc(#{$lightness} + var(--border-lightness)), var(--border-opacity) )
-    );
-    $result: merge($result, $map);
-  }
-  @each $key, $value in $system-colors {
-    $hue: map.get($value, hue);
-    $saturation: map.get($value, saturation);
-    $lightness: map.get($value, lightness);
-
-    $map: (
-      $key: hsla( #{$hue}, calc(#{$saturation} + var(--border-saturation)), calc(#{$lightness} + var(--border-lightness)), var(--border-opacity) )
-    );
-    $result: merge($result, $map);
+      $map: (
+        $key: hsla( #{$hue}, calc(#{$saturation} + var(--border-sat)), calc(#{$lightness} + var(--border-ltn)), var(--border-opacity) )
+      );
+      $result: map.deep-merge($result, $map);
+    } @else {
+      $map: (
+        $key: $value
+      );
+      $result: map.deep-merge($result, $map);
+    }
   }
   @return $result;
 }
 
-
-
+@function var-border-colors() {
+  $result: ();
+  @each $key, $value in $merged-colors {
+    $map: (
+      $key: var(--border-#{$key})
+    );
+    $result: map.merge($result, $map);
+  }
+  @return $result;
+}
 
 
 
@@ -830,17 +837,4 @@ $var-trackings: variablize-map($trackings, tracking);
   @each $key, $value in $radiuses {
     --radius-#{'' + $key}: #{$value};
   }
-}
-* {
-  --bg-saturation: 0%;
-  --bg-lightness: 0%;
-  --bg-opacity: 1;
-
-  --border-saturation: 0%;
-  --border-lightness: 0%;
-  --border-opacity: 1;
-
-  --text-saturation: 0%;
-  --text-lightness: 0%;
-  --text-opacity: 1;
 }

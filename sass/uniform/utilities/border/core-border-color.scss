@@ -7,6 +7,11 @@ $responsive: false;
 $responsive-pseudos: false;
 
 $properties: (border-color);
+$custom-properties: (
+  --border-sat: 0%,
+  --border-ltn: 0%,
+  --border-opacity: 1,
+);
 
 $variants: (
 	core.merge(
@@ -24,6 +29,7 @@ $config: (
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
+      custom-properties: $custom-properties,
       default-variants: (
         $variants
       ),

@@ -7,6 +7,7 @@ $responsive: false;
 $responsive-pseudos: false;
 
 $properties: (white-space);
+$custom-properties: ();
 
 $variants: (
   nowrap: nowrap,
@@ -24,6 +25,7 @@ $config: (
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
+      custom-properties: $custom-properties,
       default-variants: (
         $variants
       ),

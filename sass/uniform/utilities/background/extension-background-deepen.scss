@@ -6,7 +6,8 @@ $keyword: bg;
 $responsive: false;
 $responsive-pseudos: false;
 
-$properties: (#{--bg-saturation});
+$properties: (#{--bg-sat});
+$custom-properties: ();
 
 $variants: (
 	core.merge(
@@ -23,6 +24,7 @@ $config: (
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
+      custom-properties: $custom-properties,
       default-variants: (
         $variants
       ),

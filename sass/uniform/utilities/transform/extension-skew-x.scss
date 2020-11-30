@@ -7,6 +7,7 @@ $responsive: false;
 $responsive-pseudos: false;
 
 $properties: (--skew-x);
+$custom-properties: ();
 
 $variants: (
 	n12: -12deg,
@@ -27,6 +28,7 @@ $config: (
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
+      custom-properties: $custom-properties,
       default-variants: (
         $variants
       ),

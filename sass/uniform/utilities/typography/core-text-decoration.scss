@@ -7,6 +7,7 @@ $responsive: false;
 $responsive-pseudos: false;
 
 $properties: (text-decoration);
+$custom-properties: ();
 
 $variants: (
   underline: underline,
@@ -22,6 +23,7 @@ $config: (
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
+      custom-properties: $custom-properties,
       default-variants: (
         $variants
       ),

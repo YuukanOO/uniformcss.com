@@ -7,6 +7,7 @@ $responsive: false;
 $responsive-pseudos: false;
 
 $properties: (font-weight);
+$custom-properties: ();
 
 $variants: (
 	100: 100,
@@ -31,6 +32,7 @@ $config: (
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
+      custom-properties: $custom-properties,
       default-variants: (
         $variants
       ),

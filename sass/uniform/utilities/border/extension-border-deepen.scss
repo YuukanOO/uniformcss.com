@@ -6,7 +6,8 @@ $keyword: border;
 $responsive: false;
 $responsive-pseudos: false;
 
-$properties: (#{--border-saturation});
+$properties: (#{--border-sat});
+$custom-properties: ();
 
 $variants: (
 	core.merge(
@@ -23,6 +24,7 @@ $config: (
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
+      custom-properties: $custom-properties,
       default-variants: (
         $variants
       ),

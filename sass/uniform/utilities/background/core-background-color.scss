@@ -7,6 +7,11 @@ $responsive: false;
 $responsive-pseudos: false;
 
 $properties: (background-color);
+$custom-properties: (
+  --bg-sat: 0%,
+  --bg-ltn: 0%,
+  --bg-opacity: 1,
+);
 
 $variants: (
 	core.merge(
@@ -24,6 +29,7 @@ $config: (
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
+      custom-properties: $custom-properties,
       default-variants: (
         $variants
       ),

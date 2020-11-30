@@ -7,6 +7,7 @@ $responsive: true;
 $responsive-pseudos: false;
 
 $properties: (display);
+$custom-properties: ();
 
 $variants: (
   inline: inline,
@@ -38,6 +39,7 @@ $config: (
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
+      custom-properties: $custom-properties,
       default-variants: (
         $variants
       ),

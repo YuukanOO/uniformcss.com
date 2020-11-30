@@ -7,6 +7,7 @@ $responsive: true;
 $responsive-pseudos: false;
 
 $properties: (max-width);
+$custom-properties: ();
 
 $variants: (
 	core.merge(
@@ -63,6 +64,7 @@ $config: (
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
+      custom-properties: $custom-properties,
       default-variants: (
         $variants
       ),

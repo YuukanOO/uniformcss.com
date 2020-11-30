@@ -7,6 +7,7 @@ $responsive: true;
 $responsive-pseudos: false;
 
 $properties: (border-left-width);
+$custom-properties: ();
 
 $variants: (
 	0: 0,
@@ -30,6 +31,7 @@ $config: (
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
+      custom-properties: $custom-properties,
       default-variants: (
         $variants
       ),

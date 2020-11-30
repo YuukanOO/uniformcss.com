@@ -15698,7 +15698,7 @@ CUSTOM PROPERTIES
   background-color: hsla(var(--primary-hue, 225), calc(var(--primary-saturation, 50%) + var(--bg-saturation)), calc(var(--primary-400-lightness, 50%) + var(--bg-lightness)), var(--bg-opacity));
 }
 
-.bg-primary-500 {
+.bg-silver-1000 {
   background-color: hsla(var(--primary-hue, 225), calc(var(--primary-saturation, 50%) + var(--bg-saturation)), calc(var(--primary-500-lightness, 50%) + var(--bg-lightness)), var(--bg-opacity));
 }
 
@@ -16074,7 +16074,7 @@ CUSTOM PROPERTIES
   background-color: hsla(var(--primary-hue, 225), calc(var(--primary-saturation, 50%) + var(--bg-saturation)), calc(var(--primary-400-lightness, 50%) + var(--bg-lightness)), var(--bg-opacity));
 }
 
-.hover\.bg-primary-500:hover {
+.hover\.bg-silver-1000:hover {
   background-color: hsla(var(--primary-hue, 225), calc(var(--primary-saturation, 50%) + var(--bg-saturation)), calc(var(--primary-500-lightness, 50%) + var(--bg-lightness)), var(--bg-opacity));
 }
 
