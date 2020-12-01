@@ -1,21 +1,27 @@
 @use "uniform" as * with (
-	$config: (
-		utilities: (
-			// background-color: (
-			// 	pseudos: (first, last, first-type, last-type, odd, even, empty)
-			// ),
-			// border-color: (
-			// 	pseudos: (focus-within)
-			// ),
-			// color: (
-			// 	responsive: true,
-			// 	pseuds: (group-focus)
-			// ),
-		),
-		excludes: (
-			
-		)
-	)
+  $config: (
+    colors: (
+      custom: red,
+      custom-hsl: (
+        hue: 225, saturation: 100%, lightness: 40%
+      )
+    ),
+    utilities: (
+      // background-color: (
+      // 	pseudos: (first, last, first-type, last-type, odd, even, empty)
+      // ),
+      // border-color: (
+      // 	pseudos: (focus-within)
+      // ),
+      // color: (
+      //   responsive: true,
+      //   pseuds: (group-focus)
+      // ),
+    ),
+    excludes: (
+      
+    )
+  )
 );
 
 @forward "uniform";

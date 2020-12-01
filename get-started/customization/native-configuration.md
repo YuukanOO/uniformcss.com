@@ -24,7 +24,7 @@ There are two types of variables in Uniform, **Global** and **Local**. Global va
 
 ---
 
-#### Build Setting Variables <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle color-white uppercase tracking-1">Global</div>
+#### Build Setting Variables <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Global</div>
 
 Build setting variables deal with controlling how the Uniform build should be handled.
 
@@ -47,7 +47,7 @@ Build setting variables deal with controlling how the Uniform build should be ha
 
 ---
 
-#### Include Variables <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle color-white uppercase tracking-1">Global</div>
+#### Include Variables <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Global</div>
 
 Include variables deal with controlling which reset, starter or modules should be included in the build process.
 
@@ -64,7 +64,7 @@ Include variables deal with controlling which reset, starter or modules should b
 
 ---
 
-#### Theme Variables <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle color-white uppercase tracking-1">Global</div>
+#### Theme Variables <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Global</div>
 
 Theme variables are theme specific maps such as breakpoints, colors, and spacing that is used across multiple CSS properties. For more about theme variables, visit the **theme section**.
 
@@ -87,7 +87,7 @@ Theme variables are theme specific maps such as breakpoints, colors, and spacing
 
 ---
 
-### Local Variables <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle color-white uppercase tracking-1">Local</div>
+### Local Variables <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Local</div>
 
 Unlike Global variables, each CSS property has Locally scoped variables that control how that particular property is handled. For more information on configuring CSS properties, check out <a class="hover.underline" href="/get-started/customizing-properties">customizing-properties</a>.
 

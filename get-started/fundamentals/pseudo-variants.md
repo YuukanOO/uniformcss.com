@@ -10,7 +10,7 @@ date: 1000-01-04
 Applying classes based on pseudos such as hover and focus can be achieved by appending the pseudo variant to the beginning of your class name e.g. `<variant>.keyword-variant`.
 
 <section class="radius-sm bg-silver-50 p-6">
-  <div class="bg-black hover.bg-red-500 active.bg-blue-500 transition transition-200 cursor-pointer color-white align-center py-8">
+  <div class="bg-black hover.bg-red-500 active.bg-blue-500 transition transition-200 cursor-pointer text-white align-center py-8">
     Hover on me
   </div>
 </section>
@@ -109,13 +109,13 @@ The following pseudo interactions are available to be activated for each propert
 The `first.<property>` allows you to apply a utility to the first child.
 
 <section class="radius-sm bg-silver-50 p-6">
-  <div class="bg-silver-400 first.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 first.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 first.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 first.bg-blue-500 text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 first.bg-blue-500 color-white p-2 align-center">
+  <div class="bg-silver-400 first.bg-blue-500 text-white p-2 align-center">
     Item C
   </div>
 </section>
@@ -139,13 +139,13 @@ The `first.<property>` allows you to apply a utility to the first child.
 The `last.<property>` allows you to apply a utility to the last child.
 
 <section class="radius-sm bg-silver-50 p-6">
-  <div class="bg-silver-400 last.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 last.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 last.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 last.bg-blue-500 text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 last.bg-blue-500 color-white p-2 align-center">
+  <div class="bg-silver-400 last.bg-blue-500 text-white p-2 align-center">
     Item C
   </div>
 </section>
@@ -169,13 +169,13 @@ The `last.<property>` allows you to apply a utility to the last child.
 The `first-type.<property>` allows you to apply a utility to the first of type.
 
 <section class="radius-sm bg-silver-50 p-6">
-  <div class="bg-silver-400 first-type.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 first-type.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 first-type.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 first-type.bg-blue-500 text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 first-type.bg-blue-500 color-white p-2 align-center">
+  <div class="bg-silver-400 first-type.bg-blue-500 text-white p-2 align-center">
     Item C
   </div>
 </section>
@@ -199,13 +199,13 @@ The `first-type.<property>` allows you to apply a utility to the first of type.
 The `last-type.<property>` allows you to apply a utility to the last of type.
 
 <section class="radius-sm bg-silver-50 p-6">
-  <div class="bg-silver-400 last-type.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 last-type.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 last-type.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 last-type.bg-blue-500 text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 last-type.bg-blue-500 color-white p-2 align-center">
+  <div class="bg-silver-400 last-type.bg-blue-500 text-white p-2 align-center">
     Item C
   </div>
 </section>
@@ -229,13 +229,13 @@ The `last-type.<property>` allows you to apply a utility to the last of type.
 The `odd.<property>` allows you to apply a utility to the odd child.
 
 <section class="radius-sm bg-silver-50 p-6">
-  <div class="bg-silver-400 odd.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 odd.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 odd.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 odd.bg-blue-500 text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 odd.bg-blue-500 color-white p-2 align-center">
+  <div class="bg-silver-400 odd.bg-blue-500 text-white p-2 align-center">
     Item C
   </div>
 </section>
@@ -259,13 +259,13 @@ The `odd.<property>` allows you to apply a utility to the odd child.
 The `even.<property>` allows you to apply a utility to the even child.
 
 <section class="radius-sm bg-silver-50 p-6">
-  <div class="bg-silver-400 even.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 even.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 even.bg-blue-500 color-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 even.bg-blue-500 text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 even.bg-blue-500 color-white p-2 align-center">
+  <div class="bg-silver-400 even.bg-blue-500 text-white p-2 align-center">
     Item C
   </div>
 </section>
@@ -289,7 +289,7 @@ The `even.<property>` allows you to apply a utility to the even child.
 The `hover.<property>` allows you to apply a utility on hover.
 
 <section class="radius-sm bg-silver-50 p-6">
-  <div class="bg-silver-400 hover.bg-blue-500 color-white p-2 align-center">
+  <div class="bg-silver-400 hover.bg-blue-500 text-white p-2 align-center">
     Hover
   </div>
 </section>
@@ -307,7 +307,7 @@ The `hover.<property>` allows you to apply a utility on hover.
 The `active.<property>` allows you to apply a utility on active.
 
 <section class="radius-sm bg-silver-50 p-6">
-  <div class="bg-silver-400 active.bg-blue-500 color-white p-2 align-center">
+  <div class="bg-silver-400 active.bg-blue-500 text-white p-2 align-center">
     Press
   </div>
 </section>
@@ -341,7 +341,7 @@ The `visited.<property>` allows you to apply a utility on visited.
 The `focus.<property>` allows you to apply a utility on focus.
 
 <section class="radius-sm bg-silver-50 p-6">
-  <input placeholder="Focus" class="w-100p p-4 focus.bg-blue-100 color-white">
+  <input placeholder="Focus" class="w-100p p-4 focus.bg-blue-100 text-white">
 </section>
 
 ```html

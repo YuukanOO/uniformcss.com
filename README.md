@@ -27,7 +27,7 @@ npm install @uniformcss/uniformcss
 **Step 3. Build everything** - Compile your sass and just like that, you now have access to all the utility classes. It's that simple.
 
 ```html
-<div class="flex w-6 h-6 mx-auto radius-md bg-black color-white">
+<div class="flex w-6 h-6 mx-auto radius-md bg-black text-white">
   ...
 </div>
 ```

@@ -11,7 +11,7 @@ $custom-properties: ();
 
 $variants: (
 	core.merge(
-    core.brighten-levels(),
+    core.var-brighten-levels(),
 	)
 );
 

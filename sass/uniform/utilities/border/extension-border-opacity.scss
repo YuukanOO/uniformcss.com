@@ -1,12 +1,12 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: background-opacity;
-$keyword: bg;
+$name: border-opacity;
+$keyword: border;
 $responsive: false;
 $responsive-pseudos: false;
 
-$properties: (#{--bg-opacity});
+$properties: (#{--border-opacity});
 $custom-properties: ();
 
 $variants: (

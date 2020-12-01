@@ -70,13 +70,13 @@ Each size also has an negative equivalent. You can access the negative variants 
 The following example showcases how the variants can be applied. You can also apply negative sizes by appending `n` to the beginning of your variant e.g. `w-n10 h-n10` etc.
 
 <section class="radius-sm bg-silver-50 p-6 flex">
-  <div class="flex align-items-center justify-content-center bg-black color-white font-600 w-8 h-8 radius-round mr-6">
+  <div class="flex align-items-center justify-content-center bg-black text-white font-600 w-8 h-8 radius-round mr-6">
     8
   </div>
-  <div class="flex align-items-center justify-content-center bg-black color-white font-600 w-10 h-10 radius-round mr-6">
+  <div class="flex align-items-center justify-content-center bg-black text-white font-600 w-10 h-10 radius-round mr-6">
     10
   </div>
-  <div class="flex align-items-center justify-content-center bg-black color-white font-600 w-12 h-12 radius-round">
+  <div class="flex align-items-center justify-content-center bg-black text-white font-600 w-12 h-12 radius-round">
     12
   </div>
 </section>

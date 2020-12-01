@@ -5,14 +5,14 @@ lastUpdated: 2020-10-20
 
 {% include "partials/nav.njk" %}
 
-<section class="bg-silver-100">
+<section class="bg-silver-100 bg-brighten-900">
   <div class="wrapper">
     <div class="py-10">
       <h1 class="flex align-items-start relative font-5xl font-700 mb-4 tracking-n1">
-        {{ title }} <span class="inline-flex align-items-center ml-2 bg-tertiary-a500 color-white uppercase leading-1 tracking-2 font-2xs font-700 radius-xs px-1 py-1 "><span class="px-2px">New</span></span>
+        {{ title }} <span class="inline-flex align-items-center ml-2 bg-secondary-a text-white uppercase leading-1 tracking-2 font-2xs font-700 radius-xs px-1 py-1 "><span class="px-2px">New</span></span>
       </h1>
       <p class="font-md color-black">
-        The Castle mobile SDKs automatically capture device information.
+        A quick reference sheet of supported colors and sizes.
       </p>
       
     </div>
@@ -25,29 +25,883 @@ lastUpdated: 2020-10-20
       <aside class="hidden sm.block col-1 sm.col-2 lg.col-3">
         <div class="t-0 sticky h-100vh py-16 overflow-auto">
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-px last.border-b-0 border-shade-10">
+          <div class="mb-12 last.mb-0 pb-12 border-b-px last.border-b-0 border-silver-300">
             <div class="font-sm font-700 mb-4">
               Colors
             </div>
             <nav class="flex flex-col">
-              <a href="#primary-colors" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">System Colors</a>
+              <a href="#primary-colors" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">Primary Colors</a>
+              <a href="#secondary-colors" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">Secondary Colors</a>
+              <a href="#grayscale-colors" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">Grayscale Colors</a>
+              <a href="#temperature-colors" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">Temperature Colors</a>
+              <a href="#system-colors" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">System Colors</a>
+              <a href="#gradient-colors" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">Gradients</a>
+            </nav>
+          </div>
+
+          <div class="mb-12 last.mb-0 pb-12 border-b-px last.border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-4">
+              Typography
+            </div>
+            <nav class="flex flex-col">
+              <a href="#font-sizes" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">Font Sizes</a>
+              <a href="#font-weights" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">Font Weights</a>
+            </nav>
+          </div>
+
+          <div class="mb-12 last.mb-0 pb-12 border-b-px last.border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-4">
+              Shapes
+            </div>
+            <nav class="flex flex-col">
+              <a href="#box-shadows" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">Box Shadows</a>
+              <a href="#border-radiuses" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">Border Radiuses</a>
+              <a href="#sizing-chart" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">Sizing Chart</a>
             </nav>
           </div>
       </aside>
-      <div class="col-1 sm.col-4 lg.col-9">
-        <h3 class="font-lg font-700 mb-4">System Colors</h3>
-        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
+
+
+      <div class="col-1 sm.col-4 lg.col-9 py-16">
+        <article class="mb-14 last.mb-0">
+          <h3 id="primary-colors" class="font-lg font-700 mb-4">Primary Colors</h3>
+          <p class="font-sm mb-10">Primary colors are coupled closely to your brand. By default, there are three variations available.</p>
+          
+          <div class="grid grid-cols-3 gap-6 leading-6">
+            <div class="radius-md overflow-hidden">
+              <div class="h-18 p-4 bg-primary-500 text-white font-xs font-700">
+                primary-500 <span class="text-white text-opacity-50">• #f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-100">
+                primary-100 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-200">
+                primary-200 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-300">
+                primary-300 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-400">
+                primary-400 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-500">
+                primary-500 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-600">
+                primary-600 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-700">
+                primary-700 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-800">
+                primary-800 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-900">
+                primary-900 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+            </div>
+
+            <div class="radius-md overflow-hidden">
+              <div class="h-18 p-4 bg-primary-a500 text-white font-xs font-700">
+                primary-a500 <span class="text-white text-opacity-50">• #f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-a100">
+                primary-a100 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-a200">
+                primary-a200 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-a300">
+                primary-a300 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-a400">
+                primary-a400 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-a500">
+                primary-a500 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-a600">
+                primary-a600 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-a700">
+                primary-a700 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-a800">
+                primary-a800 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-a900">
+                primary-a900 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+            </div>
+
+            <div class="radius-md overflow-hidden">
+              <div class="h-18 p-4 bg-primary-b500 text-white font-xs font-700">
+                primary-b500 <span class="text-white text-opacity-50">• #f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-b100">
+                primary-b100 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-b200">
+                primary-b200 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-b300">
+                primary-b300 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-b400">
+                primary-b400 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-b500">
+                primary-b500 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-b600">
+                primary-b600 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-b700">
+                primary-b700 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-b800">
+                primary-b800 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-primary-b900">
+                primary-b900 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="my-16 h-px bg-silver-200"></div>
+
+        <article class="mb-14 last.mb-0">
+          <h3 id="secondary-colors" class="font-lg font-700 mb-4">Secondary Colors</h3>
+          <p class="font-sm mb-10">Secondary colors are complimentary accent colors that support primary brand colors.</p>
+          
+          <div class="grid grid-cols-3 gap-6 leading-6">
+            <div class="h-18 p-4 radius-sm bg-secondary text-white font-xs font-700">
+              secondary <span class="text-white text-opacity-50">• #f052b2</span>
+            </div>
+            <div class="h-18 p-4 radius-sm bg-secondary-a text-white font-xs font-700">
+              secondary-a <span class="text-white text-opacity-50">• #f052b2</span>
+            </div>
+            <div class="h-18 p-4 radius-sm bg-secondary-b text-white font-xs font-700">
+              secondary-b <span class="text-white text-opacity-50">• #f052b2</span>
+            </div>
+            <div class="h-18 p-4 radius-sm bg-secondary-c text-white font-xs font-700">
+              secondary-c <span class="text-white text-opacity-50">• #f052b2</span>
+            </div>
+            <div class="h-18 p-4 radius-sm bg-secondary-d text-white font-xs font-700">
+              secondary-d <span class="text-white text-opacity-50">• #f052b2</span>
+            </div>
+            <div class="h-18 p-4 radius-sm bg-secondary-e text-white font-xs font-700">
+              secondary-e <span class="text-white text-opacity-50">• #f052b2</span>
+            </div>
+            <div class="h-18 p-4 radius-sm bg-secondary-f text-white font-xs font-700">
+              secondary-f <span class="text-white text-opacity-50">• #f052b2</span>
+            </div>
+            <div class="h-18 p-4 radius-sm bg-secondary-g text-white font-xs font-700">
+              secondary-g <span class="text-white text-opacity-50">• #f052b2</span>
+            </div>
+            <div class="h-18 p-4 radius-sm bg-secondary-h text-white font-xs font-700">
+              secondary-h <span class="text-white text-opacity-50">• #f052b2</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="my-16 h-px bg-silver-200"></div>
+
+        <article class="mb-14 last.mb-0">
+          <h3 id="grayscale-colors" class="font-lg font-700 mb-4">Grayscale Colors</h3>
+          <p class="font-sm mb-10">There are two shades of grays available. Silver is light and gray is the dark variant.</p>
+          
+          <div class="grid grid-cols-2 gap-6 leading-6">
+            <div class="radius-md overflow-hidden">
+              <div class="h-18 p-4 bg-silver-500 text-white font-xs font-700">
+                silver-500 <span class="text-white text-opacity-50">• #f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-silver-100">
+                silver-100 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-silver-200">
+                silver-200 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-silver-300">
+                silver-300 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-silver-400">
+                silver-400 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-silver-500">
+                silver-500 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-silver-600">
+                silver-600 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-silver-700">
+                silver-700 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-silver-800">
+                silver-800 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-silver-900">
+                silver-900 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+            </div>
+
+            <div class="radius-md overflow-hidden">
+              <div class="h-18 p-4 bg-gray-500 text-white font-xs font-700">
+                gray-500 <span class="text-white text-opacity-50">• #f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-gray-100">
+                gray-100 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-gray-200">
+                gray-200 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-gray-300">
+                gray-300 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-gray-400">
+                gray-400 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-gray-500">
+                gray-500 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-gray-600">
+                gray-600 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-gray-700">
+                gray-700 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-gray-800">
+                gray-800 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 text-white font-xs font-700 bg-gray-900">
+                gray-900 <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="my-16 h-px bg-silver-200"></div>
+
+        <article class="mb-14 last.mb-0">
+          <h3 id="temperature-colors" class="font-lg font-700 mb-4">Temperature Colors</h3>
+          <p class="font-sm mb-10">Temperature colors are colors that are reserved for highlighting error or success states.</p>
+          
+          <div class="grid grid-cols-4 leading-6 gap-4">
+            <div class="p-3 radius-sm text-white font-xs font-700 bg-cold">
+              cold <span class="text-white text-opacity-50">#f052b2</span>
+            </div>
+            <div class="p-3 radius-sm text-white font-xs font-700 bg-room">
+              room <span class="text-white text-opacity-50">#f052b2</span>
+            </div>
+            <div class="p-3 radius-sm text-white font-xs font-700 bg-warm">
+              warm <span class="text-white text-opacity-50">#f052b2</span>
+            </div>
+            <div class="p-3 radius-sm text-white font-xs font-700 bg-hot">
+              hot <span class="text-white text-opacity-50">#f052b2</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="my-16 h-px bg-silver-200"></div>
+
+        <article class="mb-14 last.mb-0">
+          <h3 id="system-colors" class="font-lg font-700 mb-4">System Colors</h3>
+          <p class="font-sm mb-10">System colors are colors that are reserved for one-off color situations.</p>
+          
+          <div class="mb-12 last.mb-0">
+            <div class="grid grid-cols-3 leading-6 gap-4">
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-red">
+                red <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-orange">
+                orange <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-yellow">
+                yellow <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-lemon">
+                lemon <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-olive">
+                olive <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-lime">
+                lime <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-green">
+                green <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-mint">
+                mint <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-teal">
+                teal <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-cyan">
+                cyan <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-sky">
+                sky <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-blue">
+                blue <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-indigo">
+                indigo <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-purple">
+                purple <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-orchid">
+                orchid <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-magenta">
+                magenta <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-pink">
+                pink <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+              <div class="p-3 radius-sm text-white font-xs font-700 bg-crimson">
+                crimson <span class="text-white text-opacity-50">#f052b2</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="my-16 h-px bg-silver-200"></div>
+
+        <article class="mb-14 last.mb-0">
+          <h3 id="gradients" class="font-lg font-700 mb-4">Gradients</h3>
+          <p class="font-sm mb-10">Basic white or black fade out gradients are available in vertical and horizontal direction.</p>
+          
+          <div class="grid grid-cols-2 leading-6 gap-4">
+            <div class="bg-gray-500 radius-sm overflow-hidden">
+              <div class="p-4 h-18 text-white font-xs font-700 bg-gradient-x-to-white">
+                gradient-x-to-white
+              </div>
+            </div>
+            <div class="bg-gray-500 radius-sm overflow-hidden">
+              <div class="p-4 h-18 text-white font-xs font-700 bg-gradient-x-from-white align-right">
+                gradient-x-from-white
+              </div>
+            </div>
+            <div class="bg-gray-500 radius-sm overflow-hidden">
+              <div class="p-4 h-18 text-white font-xs font-700 bg-gradient-y-to-white">
+                gradient-y-to-white
+              </div>
+            </div>
+            <div class="bg-gray-500 radius-sm overflow-hidden">
+              <div class="p-4 h-18 text-white font-xs font-700 bg-gradient-y-from-white align-right">
+                gradient-y-from-white
+              </div>
+            </div>
+              <div class="bg-gray-500 radius-sm overflow-hidden">
+              <div class="p-4 h-18 text-white font-xs font-700 bg-gradient-x-to-black">
+                gradient-x-to-black
+              </div>
+            </div>
+            <div class="bg-gray-500 radius-sm overflow-hidden">
+              <div class="p-4 h-18 text-white font-xs font-700 bg-gradient-x-from-black align-right">
+                gradient-x-from-black
+              </div>
+            </div>
+            <div class="bg-gray-500 radius-sm overflow-hidden">
+              <div class="p-4 h-18 text-white font-xs font-700 bg-gradient-y-to-black">
+                gradient-y-to-black
+              </div>
+            </div>
+            <div class="bg-gray-500 radius-sm overflow-hidden">
+              <div class="p-4 h-18 text-white font-xs font-700 bg-gradient-y-from-black align-right">
+                gradient-y-from-black
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="my-16 h-px bg-silver-200"></div>
+
+        <article class="mb-14 last.mb-0">
+          <h3 id="font-sizes" class="font-lg font-700 mb-4">Font Sizes</h3>
+          <p class="font-sm mb-10">By default, there are a total of 15 font sizes to choose from.</p>
+          
+          <div class="mb-12 last.mb-0">
+            <div class="radius-md overflow-hidden bg-black text-white">
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-2xs">
+                2xs text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">10px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">0.625rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-xs">
+                xs text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">12px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">0.75rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-sm">
+                sm text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">14px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">0.875rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-md">
+                md text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">16px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">1rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-lg">
+                lg text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">18px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">1.125rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-xl">
+                xl text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">20px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">1.25rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-2xl">
+                2xl text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">24px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">1.5rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-3xl">
+                3xl text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">28px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">1.75rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-4xl">
+                4xl text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">32px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">2rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-5xl">
+                5xl text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">36px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">2.25rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-6xl">
+                6xl text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">40px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">2.5rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-7xl">
+                7xl text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">48px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">3rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-8xl">
+                8xl text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">56px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">3.5rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-9xl">
+                9xl text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">64px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">4rem</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-10xl">
+                10xl text
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all">72px</div>
+                  <div class="w-13 align-right opacity-60 ml-4 select-all">4.5rem</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="my-16 h-px bg-silver-200"></div>
+
+        <article class="mb-14 last.mb-0">
+          <h3 id="font-sizes" class="font-lg font-700 mb-4">Font Weights</h3>
+          <p class="font-sm mb-10">All possible font weights are supported. Font weights can support both numerical and semantic class naming.</p>
+          
+          <div class="mb-12 last.mb-0">
+            <div class="radius-md overflow-hidden bg-black text-white">
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-100 font-2xl">
+                Ultralight
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all font-500">100</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-200 font-2xl">
+                Extralight
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all font-500">200</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-300 font-2xl">
+                Light
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all font-500">300</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-400 font-2xl">
+                Regular
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all font-500">400</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-2xl">
+                Medium
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all font-500">500</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-600 font-2xl">
+                semibold
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all font-500">600</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-700 font-2xl">
+                Bold
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all font-500">700</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-800 font-2xl">
+                Extrabold
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all font-500">800</div>
+                </div>
+              </div>
+              <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-900 font-2xl">
+                Ultrabold
+                <div class="flex align-items-center font-xs">
+                  <div class="w-10 align-right select-all font-500">900</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="my-16 h-px bg-silver-200"></div>
+
+        <article class="mb-14 last.mb-0">
+          <h3 id="font-sizes" class="font-lg font-700 mb-4">Box Shadows</h3>
+          <p class="font-sm mb-10">All possible font weights are supported. Font weights can support both numerical and semantic class naming.</p>
+          
+          <div class="grid grid-cols-5 gap-4">
+            <div class="p-4 h-18 bg-white radius-md shadow-xs text-black font-xs font-700 radius-sm overflow-hidden">
+              shadow-xs
+            </div>
+            <div class="p-4 h-18 bg-white radius-md shadow-sm text-black font-xs font-700 radius-sm overflow-hidden">
+              shadow-sm
+            </div>
+            <div class="p-4 h-18 bg-white radius-md shadow-md text-black font-xs font-700 radius-sm overflow-hidden">
+              shadow-md
+            </div>
+            <div class="p-4 h-18 bg-white radius-md shadow-lg text-black font-xs font-700 radius-sm overflow-hidden">
+              shadow-lg
+            </div>
+            <div class="p-4 h-18 bg-white radius-md shadow-xl text-black font-xs font-700 radius-sm overflow-hidden">
+              shadow-xl
+            </div>
+          </div>
+        </article>
+
+        <div class="my-16 h-px bg-silver-200"></div>
+
+        <article class="mb-14 last.mb-0">
+          <h3 id="border-radiuses" class="font-lg font-700 mb-4">Border Radiuses</h3>
+          <p class="font-sm mb-10">All possible font weights are supported. Font weights can support both numerical and semantic class naming.</p>
+          
+          <div class="grid grid-cols-3 gap-4">
+            <div class="p-4 h-18 bg-black radius-xs text-white font-xs font-700 radius-sm overflow-hidden">
+              radius-xs<br>
+              <span class="leading-9 text-silver-700">4px • 0.25rem</span>
+            </div>
+            <div class="p-4 h-18 bg-black radius-sm text-white font-xs font-700 radius-sm overflow-hidden">
+              radius-sm<br>
+              <span class="leading-9 text-silver-700">8px • 0.5rem</span>
+            </div>
+            <div class="p-4 h-18 bg-black radius-md text-white font-xs font-700 radius-sm overflow-hidden">
+              radius-md<br>
+              <span class="leading-9 text-silver-700">12px • 0.75rem</span>
+            </div>
+            <div class="p-4 h-18 bg-black radius-lg text-white font-xs font-700 radius-sm overflow-hidden">
+              radius-lg<br>
+              <span class="leading-9 text-silver-700">16px • 1rem</span>
+            </div>
+            <div class="p-4 h-18 bg-black radius-xl text-white font-xs font-700 radius-sm overflow-hidden">
+              radius-xl<br>
+              <span class="leading-9 text-silver-700">20px • 1.25rem</span>
+            </div>
+            <div class="flex align-items-center justify-content-center align-center p-4 h-18 bg-black radius-round text-white font-xs font-700 radius-sm overflow-hidden">
+              <div>
+                radius-round<br>
+                <span class="leading-9 text-silver-700">9999px</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="my-16 h-px bg-silver-200"></div>
+
+        <article class="mb-14 last.mb-0">
+          <h3 id="sizing-chart" class="font-lg font-700 mb-4">Sizing Chart</h3>
+          <p class="font-sm mb-10">There are a total of 28 sizes available across common sizing and spacing properties.</p>
+          
+          <div class="mb-12 last.mb-0">
+            
+            <div class="grid grid-cols-1 gap-6">
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 1<br>
+                  <span class="text-silver-700">4px • 0.25rem</span>
+                </div>
+                <div class="h-1 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 2<br>
+                  <span class="text-silver-700">8px • 0.5rem</span>
+                </div>
+                <div class="h-2 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 3<br>
+                  <span class="text-silver-700">8px • 0.5rem</span>
+                </div>
+                <div class="h-3 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 4<br>
+                  <span class="text-silver-700">16px • 1rem</span>
+                </div>
+                <div class="h-4 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 5<br>
+                  <span class="text-silver-700">20px • 1.25rem</span>
+                </div>
+                <div class="h-5 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 6<br>
+                  <span class="text-silver-700">24px • 1.5rem</span>
+                </div>
+                <div class="h-6 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 7<br>
+                  <span class="text-silver-700">28px • 2rem</span>
+                </div>
+                <div class="h-7 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 8<br>
+                  <span class="text-silver-700">32px • 2rem</span>
+                </div>
+                <div class="h-8 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 9<br>
+                  <span class="text-silver-700">36px • 2.25rem</span>
+                </div>
+                <div class="h-9 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 10<br>
+                  <span class="text-silver-700">40px • 2.5rem</span>
+                </div>
+                <div class="h-10 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 11<br>
+                  <span class="text-silver-700">44px • 2.75rem</span>
+                </div>
+                <div class="h-11 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 12<br>
+                  <span class="text-silver-700">48px • 3rem</span>
+                </div>
+                <div class="h-12 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 13<br>
+                  <span class="text-silver-700">56px • 3.5rem</span>
+                </div>
+                <div class="h-13 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 14<br>
+                  <span class="text-silver-700">64px • 4rem</span>
+                </div>
+                <div class="h-14 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 15<br>
+                  <span class="text-silver-700">72px • 4.5rem</span>
+                </div>
+                <div class="h-15 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 16<br>
+                  <span class="text-silver-700">80px • 5rem</span>
+                </div>
+                <div class="h-16 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 17<br>
+                  <span class="text-silver-700">88px • 5.5rem</span>
+                </div>
+                <div class="h-17 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 18<br>
+                  <span class="text-silver-700">96px • 6rem</span>
+                </div>
+                <div class="h-16 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 19<br>
+                  <span class="text-silver-700">128px • 8rem</span>
+                </div>
+                <div class="h-19 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 20<br>
+                  <span class="text-silver-700">160px • 10rem</span>
+                </div>
+                <div class="h-20 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 21<br>
+                  <span class="text-silver-700">192px • 12rem</span>
+                </div>
+                <div class="h-21 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 22<br>
+                  <span class="text-silver-700">256px • 16rem</span>
+                </div>
+                <div class="h-22 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 23<br>
+                  <span class="text-silver-700">320px • 20rem</span>
+                </div>
+                <div class="h-23 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 24<br>
+                  <span class="text-silver-700">384px • 24rem</span>
+                </div>
+                <div class="h-23 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 25<br>
+                  <span class="text-silver-700">512px • 32rem</span>
+                </div>
+                <div class="h-23 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 26<br>
+                  <span class="text-silver-700">640px • 40rem</span>
+                </div>
+                <div class="h-23 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 27<br>
+                  <span class="text-silver-700">768px • 48rem</span>
+                </div>
+                <div class="h-23 bg-gray-200"></div>
+              </div>
+
+              <div>
+                <div class="leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
+                  Size 28<br>
+                  <span class="text-silver-700">896px • 56rem</span>
+                </div>
+                <div class="h-23 bg-gray-200"></div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+
         
-        <div class="radius-md">
-          <div class="p-4 bg-silver-1000">
-            silver-50 •<span class="color-silver-700">#f052b2</span>
-          </div>
-        </div>
-        <div class="radius-md">
-          <div class="p-4 bg-red">
-            silver-50 •<span class="color-silver-700">#f052b2</span>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
@@ -56,808 +910,6 @@ lastUpdated: 2020-10-20
 
 
 
-
-
-
-<section class="relative mb-13">
-  <div class="wrapper relative z-2">
-    <div class="bg-white radius-md md.radius-xl shadow-md overflow-hidden">
-      <div class="p-10">
-        <h3 class="font-lg font-700 mb-4">Primary Colors</h3>
-        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
-      </div>
-
-      <div class="grid grid-cols-2 sm.grid-cols-5 lg.grid-cols-10">
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-100">
-
-          </div>
-          primary-50<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-100">
-
-          </div>
-          primary-100<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-200">
-
-          </div>
-          primary-200<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-300">
-
-          </div>
-          primary-300<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-400">
-
-          </div>
-          primary-400<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-1000">
-
-          </div>
-          primary-500<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-600">
-
-          </div>
-          primary-600<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-700">
-
-          </div>
-          primary-700<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-800">
-
-          </div>
-          primary-800<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-900">
-
-          </div>
-          primary-900<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        
-      </div>
-
-      <div class="grid grid-cols-2 sm.grid-cols-5 lg.grid-cols-10">
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-a50">
-
-          </div>
-          primary-a50<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-a100">
-
-          </div>
-          primary-a100<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-a200">
-
-          </div>
-          primary-a200<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-a300">
-
-          </div>
-          primary-a300<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-a400">
-
-          </div>
-          primary-a400<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-a500">
-
-          </div>
-          primary-a500<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-a600">
-
-          </div>
-          primary-a600<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-a700">
-
-          </div>
-          primary-a700<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-a800">
-
-          </div>
-          primary-a800<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-primary-a900">
-
-          </div>
-          primary-a900<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-      </div>
-    </div>
-    
-
-  </div>
-  <div class="absolute t-0 z-1 bg-silver-100 w-100p h-19"></div>
-</section>
-
-
-<div class="wrapper mb-13">
-  <div class="h-3px bg-silver-100"></div>
-</div>
-
-
-
-<section class="relative mb-13">
-  <div class="wrapper relative z-2">
-    <div class="bg-white radius-md md.radius-xl shadow-md overflow-hidden">
-      <div class="p-10">
-        <h3 class="font-lg font-700 mb-4">Temperature Colors</h3>
-        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
-      </div>
-
-      <div class="grid grid-cols-2 sm.grid-cols-6">
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-cold-light">
-
-          </div>
-          cold-light<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-cold">
-
-          </div>
-          cold<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-cold-dark">
-
-          </div>
-          cold-dark<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-room-light">
-
-          </div>
-          room-light<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-room">
-
-          </div>
-          room<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-room-dark">
-
-          </div>
-          room-dark<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-warm-light">
-
-          </div>
-          warm-light<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-warm">
-
-          </div>
-          warm<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-warm-dark">
-
-          </div>
-          warm-dark<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-hot-light">
-
-          </div>
-          hot-light<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-hot">
-
-          </div>
-          hot<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-hot-dark">
-
-          </div>
-          hot-dark<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-
-    </div>
-    
-
-  </div>
-</section>
-
-
-<div class="wrapper mb-13">
-  <div class="h-3px bg-silver-100"></div>
-</div>
-
-<section class="relative mb-13">
-  <div class="wrapper relative z-2">
-    <div class="bg-white radius-md md.radius-xl shadow-md overflow-hidden">
-      <div class="p-10">
-        <h3 class="font-lg font-700 mb-4">Grayscale Colors</h3>
-        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
-      </div>
-
-      <div class="grid grid-cols-2 sm.grid-cols-5 lg.grid-cols-10">
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-50">
-
-          </div>
-          silver-50<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-100">
-
-          </div>
-          silver-100<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-200">
-
-          </div>
-          silver-200<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-300">
-
-          </div>
-          silver-300<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-400">
-
-          </div>
-          silver-400<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-500">
-
-          </div>
-          silver-500<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-600">
-
-          </div>
-          silver-600<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-700">
-
-          </div>
-          silver-700<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-800">
-
-          </div>
-          silver-800<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-silver-900">
-
-          </div>
-          silver-900<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-2 sm.grid-cols-5 lg.grid-cols-10">
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-gray-50">
-
-          </div>
-          gray-50<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-gray-100">
-
-          </div>
-          gray-100<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-gray-200">
-
-          </div>
-          gray-200<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-gray-300">
-
-          </div>
-          gray-300<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-gray-400">
-
-          </div>
-          gray-400<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-gray-500">
-
-          </div>
-          gray-500<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-gray-600">
-
-          </div>
-          gray-600<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-gray-700">
-
-          </div>
-          gray-700<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-gray-800">
-
-          </div>
-          gray-800<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-        <div class="align-center font-2xs font-700 uppercase tracking-2 mb-4 last.mb-0 leading-8">
-          <div class="h-12 mb-4 bg-gray-900">
-
-          </div>
-          gray-900<br>
-          <span class="color-silver-700">#f052b2</span>
-        </div>
-      </div>
-    </div>
-    
-
-  </div>
-</section>
-
-
-<div class="wrapper mb-13">
-  <div class="h-3px bg-silver-100"></div>
-</div>
-
-
-<section class="relative mb-13">
-  <div class="wrapper relative z-2">
-    <div class="bg-white radius-md md.radius-xl shadow-md overflow-hidden">
-      <div class="p-10">
-        <h3 class="font-lg font-700 mb-4">Typography</h3>
-        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
-      </div>
-
-      <div class="bg-black color-white">
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-2xs">
-          2xs text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">10px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">0.625rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-xs">
-          xs text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">12px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">0.75rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-sm">
-          sm text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">14px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">0.875rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-md">
-          md text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">16px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">1rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-lg">
-          lg text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">18px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">1.125rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-xl">
-          xl text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">20px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">1.25rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-2xl">
-          2xl text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">24px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">1.5rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-3xl">
-          3xl text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">28px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">1.75rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-4xl">
-          4xl text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">32px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">2rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-5xl">
-          5xl text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">36px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">2.25rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-6xl">
-          6xl text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">40px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">2.5rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-7xl">
-          7xl text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">48px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">3rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-8xl">
-          8xl text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">56px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">3.5rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-9xl">
-          9xl text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">64px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">4rem</div>
-          </div>
-        </div>
-        <div class="flex align-items-center justify-content-between px-5 py-6 border-b-px border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-10xl">
-          10xl text
-          <div class="flex align-items-center font-xs">
-            <div class="w-10 align-right select-all">72px</div>
-            <div class="w-13 align-right opacity-60 ml-4 select-all">4.5rem</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<div class="wrapper mb-13">
-  <div class="h-3px bg-silver-100"></div>
-</div>
-
-
-
-<section class="relative mb-13">
-  <div class="wrapper relative z-2">
-    <div class="bg-white radius-md md.radius-xl shadow-md overflow-hidden">
-      <div class="p-10">
-        <h3 class="font-lg font-700 mb-4">Sizing Chart</h3>
-        <p class="font-sm">Because Tailwind is so low-level, it never encourages you to design the same site twice.</p>
-      </div>
-
-      <div class="grid grid-cols-1 gap-6">
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 1<br>
-            <span class="color-silver-700">4px • 0.25rem</span>
-          </div>
-          <div class="h-1 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 2<br>
-            <span class="color-silver-700">8px • 0.5rem</span>
-          </div>
-          <div class="h-2 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 3<br>
-            <span class="color-silver-700">8px • 0.5rem</span>
-          </div>
-          <div class="h-3 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 4<br>
-            <span class="color-silver-700">16px • 1rem</span>
-          </div>
-          <div class="h-4 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 5<br>
-            <span class="color-silver-700">20px • 1.25rem</span>
-          </div>
-          <div class="h-5 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 6<br>
-            <span class="color-silver-700">24px • 1.5rem</span>
-          </div>
-          <div class="h-6 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 7<br>
-            <span class="color-silver-700">28px • 2rem</span>
-          </div>
-          <div class="h-7 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 8<br>
-            <span class="color-silver-700">32px • 2rem</span>
-          </div>
-          <div class="h-8 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 9<br>
-            <span class="color-silver-700">36px • 2.25rem</span>
-          </div>
-          <div class="h-9 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 10<br>
-            <span class="color-silver-700">40px • 2.5rem</span>
-          </div>
-          <div class="h-10 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 11<br>
-            <span class="color-silver-700">44px • 2.75rem</span>
-          </div>
-          <div class="h-11 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 12<br>
-            <span class="color-silver-700">48px • 3rem</span>
-          </div>
-          <div class="h-12 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 13<br>
-            <span class="color-silver-700">56px • 3.5rem</span>
-          </div>
-          <div class="h-13 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 14<br>
-            <span class="color-silver-700">64px • 4rem</span>
-          </div>
-          <div class="h-14 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 15<br>
-            <span class="color-silver-700">72px • 4.5rem</span>
-          </div>
-          <div class="h-15 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 16<br>
-            <span class="color-silver-700">80px • 5rem</span>
-          </div>
-          <div class="h-16 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 17<br>
-            <span class="color-silver-700">88px • 5.5rem</span>
-          </div>
-          <div class="h-17 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 18<br>
-            <span class="color-silver-700">96px • 6rem</span>
-          </div>
-          <div class="h-18 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 19<br>
-            <span class="color-silver-700">128px • 8rem</span>
-          </div>
-          <div class="h-19 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 20<br>
-            <span class="color-silver-700">160px • 10rem</span>
-          </div>
-          <div class="h-20 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 21<br>
-            <span class="color-silver-700">192px • 12rem</span>
-          </div>
-          <div class="h-21 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 22<br>
-            <span class="color-silver-700">256px • 16rem</span>
-          </div>
-          <div class="h-22 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 23<br>
-            <span class="color-silver-700">320px • 20rem</span>
-          </div>
-          <div class="h-23 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 24<br>
-            <span class="color-silver-700">384px • 24rem</span>
-          </div>
-          <div class="h-23 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 25<br>
-            <span class="color-silver-700">512px • 32rem</span>
-          </div>
-          <div class="h-23 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 26<br>
-            <span class="color-silver-700">640px • 40em</span>
-          </div>
-          <div class="h-23 bg-gray-200"></div>
-        </div>
-
-        <div>
-          <div class="px-10 leading-8 font-2xs font-700 uppercase tracking-2 mb-2">
-            Size 27<br>
-            <span class="color-silver-700">768px • 48em</span>
-          </div>
-          <div class="h-23 bg-gray-200"></div>
-        </div>
-
-      </div>
-
-    </div>
-    
-
-  </div>
-</section>
 
 
 

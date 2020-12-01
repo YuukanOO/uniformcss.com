@@ -15,8 +15,7 @@ $custom-properties: (
 
 $variants: (
   core.merge(
-    core.text-colors(),
-    core.colors()
+    core.text-colors()
 	)
 );
 

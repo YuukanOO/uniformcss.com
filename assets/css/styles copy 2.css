@@ -15878,7 +15878,7 @@ CUSTOM PROPERTIES
   background-color: hsla(var(--secondary-a-hue, 225), calc(var(--secondary-saturation, 50%) + var(--bg-saturation)), calc(var(--secondary-a400-lightness, 50%) + var(--bg-lightness)), var(--bg-opacity));
 }
 
-.bg-secondary-a500 {
+.bg-secondary-a{
   background-color: hsla(var(--secondary-a-hue, 225), calc(var(--secondary-saturation, 50%) + var(--bg-saturation)), calc(var(--secondary-a500-lightness, 50%) + var(--bg-lightness)), var(--bg-opacity));
 }
 

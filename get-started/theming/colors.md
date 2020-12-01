@@ -218,7 +218,7 @@ Uniform provides a range of tints and shades across a broad spectrum of colors. 
 The following example showcases how the variants can be applied.
 
 <section class="radius-sm bg-silver-50 p-6">
-  <div class="color-black sm.color-teal-500 md.color-red-500 lg.color-blue-500 color-white align-center py-8">
+  <div class="color-black sm.color-teal-500 md.color-red-500 lg.color-blue-500 text-white align-center py-8">
     Adjust your browser to see change
   </div>
 </section>

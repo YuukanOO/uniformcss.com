@@ -11,7 +11,7 @@ $custom-properties: ();
 
 $variants: (
 	core.merge(
-    core.deepen-levels(),
+    core.var-deepen-levels(),
 	)
 );
 
