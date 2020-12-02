@@ -3,7 +3,6 @@ title: Default Styles
 date: 1000-01-05
 ---
 
-{% include shortcodes/chapter, text: 'Fundamentals', color: 'red' %}
 
 ### Reset Styles
 
@@ -25,7 +24,7 @@ By default, Uniform applies minimal resetting styles to flatten browser inconsis
 * {
   margin: 0;
   padding: 0;
-  border: 0 solid var(--default-border-color, fill(silver-400));
+  border: 0 solid #000;
 }
 
 /* Prevent iOS font size change */
@@ -116,10 +115,12 @@ p {
 
 a {
   text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 b,strong {
-  font-weight: var(--bold-font-weight, 700);
+  font-weight: var(--bold-font-weight, font-weight(bold));
 }
 
 sub,sup {

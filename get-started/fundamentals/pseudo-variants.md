@@ -3,20 +3,19 @@ title: Pseudo Variants
 date: 1000-01-04
 ---
 
-{% include shortcodes/chapter, text: 'Fundamentals', color: 'blue' %}
 
 ### Pseudo Interactions
 
-Applying classes based on pseudos such as hover and focus can be achieved by appending the pseudo variant to the beginning of your class name e.g. `<variant>.keyword-variant`.
+Pseudo interactions such as hover and focus can be achieved by appending the pseudo variant to the beginning of your class name e.g. `<pseudo>.keyword-variant`.
 
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-black hover.bg-red-500 active.bg-blue-500 transition transition-200 cursor-pointer text-white align-center py-8">
+<section class="radius-sm bg-silver-200 p-6">
+  <div class="bg-black hover.bg-red transition transition-200 cursor-pointer text-white align-center py-8">
     Hover on me
   </div>
 </section>
 
 ```html
-<div class="bg-black hover.bg-red-500 active.bg-blue-500">
+<div class="bg-black hover.bg-red">
 	Hover on me
 </div>
 ```
@@ -93,11 +92,15 @@ The following pseudo interactions are available to be activated for each propert
     </tr>
     <tr>
       <td><code class="color-teal-500">group-hover</code></td>
-      <td><code class="text-gray-600">:group-hover</code></td>
+      <td><code class="text-gray-600">.group:hover </code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">group-focus</code></td>
-      <td><code class="text-gray-600">:group-focus</code></td>
+      <td><code class="text-gray-600">.group:focus</code></td>
+    </tr>
+    <tr>
+      <td><code class="color-teal-500">dark</code></td>
+      <td><code class="text-gray-600">.dark</code></td>
     </tr>
   </tbody>
 </table>
@@ -109,25 +112,25 @@ The following pseudo interactions are available to be activated for each propert
 The `first.<property>` allows you to apply a utility to the first child.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-400 first.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-blue text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 first.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 first.bg-blue-500 text-white p-2 align-center">
+  <div class="bg-silver-400 text-white p-2 align-center">
     Item C
   </div>
 </section>
 
 ```html
-<div class="bg-silver-400 first.bg-blue-500">
+<div class="bg-silver-400 first.bg-blue">
 	Item A
 </div>
-<div class="bg-silver-400 first.bg-blue-500">
+<div class="bg-silver-400 first.bg-blue">
 	Item B
 </div>
-<div class="bg-silver-400 first.bg-blue-500">
+<div class="bg-silver-400 first.bg-blue">
 	Item C
 </div>
 ```
@@ -139,25 +142,25 @@ The `first.<property>` allows you to apply a utility to the first child.
 The `last.<property>` allows you to apply a utility to the last child.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-400 last.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 last.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 last.bg-blue-500 text-white p-2 align-center">
+  <div class="bg-blue text-white p-2 align-center">
     Item C
   </div>
 </section>
 
 ```html
-<div class="bg-silver-400 last.bg-blue-500">
+<div class="bg-silver-400 last.bg-blue">
 	Item A
 </div>
-<div class="bg-silver-400 last.bg-blue-500">
+<div class="bg-silver-400 last.bg-blue">
 	Item B
 </div>
-<div class="bg-silver-400 last.bg-blue-500">
+<div class="bg-silver-400 last.bg-blue">
 	Item C
 </div>
 ```
@@ -169,25 +172,25 @@ The `last.<property>` allows you to apply a utility to the last child.
 The `first-type.<property>` allows you to apply a utility to the first of type.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-400 first-type.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-blue text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 first-type.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 first-type.bg-blue-500 text-white p-2 align-center">
+  <div class="bg-silver-400 text-white p-2 align-center">
     Item C
   </div>
 </section>
 
 ```html
-<div class="bg-silver-400 first-type.bg-blue-500">
+<div class="bg-silver-400 first-type.bg-blue">
 	Item A
 </div>
-<div class="bg-silver-400 first-type.bg-blue-500">
+<div class="bg-silver-400 first-type.bg-blue">
 	Item B
 </div>
-<div class="bg-silver-400 first-type.bg-blue-500">
+<div class="bg-silver-400 first-type.bg-blue">
 	Item C
 </div>
 ```
@@ -199,25 +202,25 @@ The `first-type.<property>` allows you to apply a utility to the first of type.
 The `last-type.<property>` allows you to apply a utility to the last of type.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-400 last-type.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 last-type.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 last-type.bg-blue-500 text-white p-2 align-center">
+  <div class="bg-blue text-white p-2 align-center">
     Item C
   </div>
 </section>
 
 ```html
-<div class="bg-silver-400 last-type.bg-blue-500">
+<div class="bg-silver-400 last-type.bg-blue">
 	Item A
 </div>
-<div class="bg-silver-400 last-type.bg-blue-500">
+<div class="bg-silver-400 last-type.bg-blue">
 	Item B
 </div>
-<div class="bg-silver-400 last-type.bg-blue-500">
+<div class="bg-silver-400 last-type.bg-blue">
 	Item C
 </div>
 ```
@@ -229,25 +232,25 @@ The `last-type.<property>` allows you to apply a utility to the last of type.
 The `odd.<property>` allows you to apply a utility to the odd child.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-400 odd.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-blue text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 odd.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 odd.bg-blue-500 text-white p-2 align-center">
+  <div class="bg-blue text-white p-2 align-center">
     Item C
   </div>
 </section>
 
 ```html
-<div class="bg-silver-400 odd.bg-blue-500">
+<div class="bg-silver-400 odd.bg-blue">
 	Item A
 </div>
-<div class="bg-silver-400 odd.bg-blue-500">
+<div class="bg-silver-400 odd.bg-blue">
 	Item B
 </div>
-<div class="bg-silver-400 odd.bg-blue-500">
+<div class="bg-silver-400 odd.bg-blue">
 	Item C
 </div>
 ```
@@ -259,25 +262,25 @@ The `odd.<property>` allows you to apply a utility to the odd child.
 The `even.<property>` allows you to apply a utility to the even child.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-400 even.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-silver-400 text-white p-2 mb-4 align-center">
     Item A
   </div>
-  <div class="bg-silver-400 even.bg-blue-500 text-white p-2 mb-4 align-center">
+  <div class="bg-blue text-white p-2 mb-4 align-center">
     Item B
   </div>
-  <div class="bg-silver-400 even.bg-blue-500 text-white p-2 align-center">
+  <div class="bg-silver-400 text-white p-2 align-center">
     Item C
   </div>
 </section>
 
 ```html
-<div class="bg-silver-400 even.bg-blue-500">
+<div class="bg-silver-400 even.bg-blue">
 	Item A
 </div>
-<div class="bg-silver-400 even.bg-blue-500">
+<div class="bg-silver-400 even.bg-blue">
 	Item B
 </div>
-<div class="bg-silver-400 even.bg-blue-500">
+<div class="bg-silver-400 even.bg-blue">
 	Item C
 </div>
 ```
@@ -289,13 +292,13 @@ The `even.<property>` allows you to apply a utility to the even child.
 The `hover.<property>` allows you to apply a utility on hover.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-400 hover.bg-blue-500 text-white p-2 align-center">
+  <div class="bg-silver-400 hover.bg-blue text-white p-2 align-center">
     Hover
   </div>
 </section>
 
 ```html
-<div class="bg-silver-400 hover.bg-blue-500">
+<div class="bg-silver-400 hover.bg-blue">
 	Hover
 </div>
 ```
@@ -307,13 +310,13 @@ The `hover.<property>` allows you to apply a utility on hover.
 The `active.<property>` allows you to apply a utility on active.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-400 active.bg-blue-500 text-white p-2 align-center">
+  <div class="bg-silver-400 active.bg-blue text-white p-2 align-center">
     Press
   </div>
 </section>
 
 ```html
-<div class="bg-silver-400 active.bg-blue-500">
+<div class="bg-silver-400 active.bg-blue">
 	Press
 </div>
 ```
@@ -325,13 +328,13 @@ The `active.<property>` allows you to apply a utility on active.
 The `visited.<property>` allows you to apply a utility on visited.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <a href="#" class="color-blue-600 underline mr-4">Normal Link</a>
-  <a href="#" class="color-purple-600 underline">Visited Link</a>
+  <a href="#" class="text-blue underline mr-4">Normal Link</a>
+  <a href="#" class="text-purple underline">Visited Link</a>
 </section>
 
 ```html
-<a href="#" class="color-blue-600 visited.color-purple-600">Normal Link</a>
-<a href="#" class="color-blue-600 visited.color-purple-600">Visited Link</a>
+<a href="#" class="text-blue visited.text-purple-600">Normal Link</a>
+<a href="#" class="text-blue visited.text-purple-600">Visited Link</a>
 ```
 
 ---
@@ -341,11 +344,11 @@ The `visited.<property>` allows you to apply a utility on visited.
 The `focus.<property>` allows you to apply a utility on focus.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <input placeholder="Focus" class="w-100p p-4 focus.bg-blue-100 text-white">
+  <input value="Focus" class="w-100p p-4 focus.bg-blue focus.text-white">
 </section>
 
 ```html
-<input placeholder="Focus" class="focus.bg-blue-500" />
+<input value="Focus" class="focus.bg-blue" />
 ```
 
 ---
@@ -355,11 +358,11 @@ The `focus.<property>` allows you to apply a utility on focus.
 The `focus.<property>` allows you to apply a utility on focus.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <input placeholder="Focus" class="w-100p p-4 disabled.bg-silver-400" disabled>
+  <input value="Focus" class="w-100p p-4" disabled>
 </section>
 
 ```html
-<input placeholder="Focus" class="disabled.bg-silver-400" disabled />
+<input value="Focus" class="disabled.bg-silver-400" disabled />
 ```
 
 ---
@@ -369,11 +372,11 @@ The `focus.<property>` allows you to apply a utility on focus.
 The `empty.<property>` allows you to apply a utility on empty.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="h-10 bg-silver-400 empty.bg-blue-500"></div>
+  <div class="h-10 bg-blue"></div>
 </section>
 
 ```html
-<div class="bg-silver-400 empty.bg-blue-500"></div>
+<div class="bg-silver-400 empty.bg-blue"></div>
 ```
 
 ---
@@ -383,13 +386,13 @@ The `empty.<property>` allows you to apply a utility on empty.
 The `focus-within.<property>` allows you to apply a utility on focus-within.
 
 <section class="radius-sm bg-silver-100 p-6">
-  <form class="bg-white border-b-2px focus-within.border-blue-500">
-    <input placeholder="Focus" class="w-100p outline-none p-4">
+  <form class="bg-white border-b-2px focus-within.border-blue">
+    <input placeholder="Focus" class="w-100p outline-0 p-4">
   </form>
 </section>
 
 ```html
-<form class="bg-white border-b-2px focus-within.border-blue-500">
+<form class="bg-white border-b-2px focus-within.border-blue">
   <input placeholder="Focus" />
 </form>
 ```
@@ -405,7 +408,7 @@ The `group-hover.<property>` allows you to apply properties when the parent cont
     <div class="flex-grow align-center py-4">
       Hover
     </div>
-    <div class="flex-grow align-center py-4 group-hover.bg-blue-500">
+    <div class="flex-grow align-center py-4 group-hover.bg-blue">
       Group Hover
     </div>
     <div class="flex-grow align-center py-4">
@@ -440,13 +443,24 @@ The `group-focus.<property>` operates in the same way as `group-hover` but allow
 
 In order to maintain a reasonable file-size, Uniform by default only enables pseudo variants for a subset of CSS properties.
 
-You can enable a pseudo variants with the `$<property>-pseudos` variable.
+You can enable a pseudo variants by passing in preferred pseudos to the  `pseudos` key to each property of your configuration.
 
 ```scss
 @use "uniform" as * with (
-  $text-decoration-pseudos: (hover, group-hover, ...),
-  $background-color-pseudos: (first, last, odd ...),
-  $text-decoration-pseudos: (hover)
+  $config: (
+    utilities: (
+      background-color: (
+      	pseudos: (active, focus, group-hover)
+      ),
+      border-color: (
+      	pseudos: (focus-within)
+      ),
+      color: (
+        responsive: true,
+        pseudos: (focus)
+      ),
+    )
+  )
 );
 ```
 
@@ -454,41 +468,44 @@ You can enable a pseudo variants with the `$<property>-pseudos` variable.
 
 ### Pseudo Delimiter
 
-By default, Uniform uses the `.` character to separate the breakpoints and pseudos from the property. You can override the default pseudo delimiter by defining `$pseudo-delimiter` in your configuration.
+By default, Uniform uses the `.` character to separate the breakpoints and pseudos from the property. You can override the default breakpoint delimiter by defining `pseudo-delimiter` in your configuration.
 
 ```scss
+// styles.scss
 @use "uniform" as * with (
-  $pseudo-delimiter: '\\.'
+  $config: (
+    pseudo-delimiter: '\\:',
+  )
 );
 ```
 
+```css
+/* styles.css */
+.hover\:bg-red:hover { ... }
+.hover\:bg-blue:hover { ... }
+...
+```
 
 ---
 
 ### Extending Pseudos
 
-You can add custom pseudos by passing in key value pairs to the `$pseudo-map` variable.
+You can extend pseudos by passing in key value pairs to the `pseudos` key in your configuration variable.
 
 ```scss
 @use "uniform" as * with (
-  $pseudo-map: (
-    nth4: 'nth-child(4)',
-    nth5n: 'nth-child(5n)',
+  $config: (
+    pseudos: (
+      nth4: 'nth-child(4)',
+      nth5n: 'nth-child(5n)',
+    )
   )
 );
 ```
 
----
-
-### Replacing Core Pseudos
-
-You can replace the pseudo map entirely by adding key value pairs to the `$core-pseudo-map` variable.
-
-```scss
-@use "uniform" as * with (
-  $core-pseudo-map: (
-    ... // this will replace all default pseudo map values
-  )
-);
+```css
+/* styles.css */
+.nth4\:bg-red:nth-child(4) { ... }
+.nth5n\:bg-red:nth-child(5n) { ... }
+...
 ```
-

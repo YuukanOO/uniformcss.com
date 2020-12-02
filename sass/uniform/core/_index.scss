@@ -24,7 +24,6 @@ $default-config: (
   important: false,
   prefix: '',
   delimiter: '-',
-  child-delimiter: '__',
   pseudo-delimiter: '\\.',
   screen-delimiter: '\\.',
   headless: false,
@@ -61,7 +60,6 @@ $default-config: (
     focus-within: 'focus-within',
     group-hover: 'group-hover',
     group-focus: 'group-focus',
-    dark: 'dark',
   ),
 
   brighten-levels: (
