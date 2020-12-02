@@ -16,7 +16,7 @@ layout: layouts/base.njk
       <h1 class="flex align-items-start relative font-5xl font-700 mb-4 tracking-n1">
         {{ title }} <span class="inline-flex align-items-center ml-2 bg-secondary-a text-white uppercase leading-1 tracking-2 font-2xs font-700 radius-xs px-1 py-1 "><span class="px-2px">New</span></span>
       </h1>
-      <p class="font-md color-black">
+      <p class="font-md text-black">
         The Castle mobile SDKs automatically capture device information.
       </p>
       
@@ -37,7 +37,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.alignment -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -50,7 +50,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.appearance -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -63,7 +63,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.background -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -76,7 +76,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.border -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -89,7 +89,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.composition -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -103,7 +103,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.overflow -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -116,7 +116,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.effect -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -129,7 +129,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.sizing -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -142,7 +142,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.position -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -155,7 +155,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.margin -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -168,7 +168,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.padding -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -181,7 +181,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.typography -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -194,7 +194,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.grid -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -207,7 +207,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.flexbox -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -220,7 +220,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.gap -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -233,7 +233,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.multiColumn -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -246,7 +246,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.transform -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -259,7 +259,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.transition -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -272,7 +272,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.interactive -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -285,7 +285,7 @@ layout: layouts/base.njk
             <nav class="flex flex-col">
 
               {%- for property in properties.svg -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ property.title }}</a>
+                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ property.title }}</a>
               {%- endfor -%}
 
             </nav>
@@ -479,7 +479,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -551,7 +551,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -623,7 +623,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -695,7 +695,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -767,7 +767,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -839,7 +839,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -911,7 +911,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -983,7 +983,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1055,7 +1055,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1127,7 +1127,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1199,7 +1199,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1271,7 +1271,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1343,7 +1343,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1415,7 +1415,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1487,7 +1487,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1559,7 +1559,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1631,7 +1631,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1703,7 +1703,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1775,7 +1775,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}
@@ -1847,7 +1847,7 @@ layout: layouts/base.njk
                   </div>
                   {%- for pseudo in property.pseudos -%}
                     {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 color-gray-400 mr-1 font-600 font-xs">
+                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
                         {{ pseudo }}
                       </div>
                     {% else %}

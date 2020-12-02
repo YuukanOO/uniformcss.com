@@ -17,15 +17,17 @@ Uniform is super easy to get started and setup, you can either:
 
 ### Native installation
 
+The native installation is the recommended way to get setup. Native setups provide the full functionality of Uniform CSS giving you access to customization, extendability, and useful helper functions.
+
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">1</span> Clone and install dependencies</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">1</span> Clone and install dependencies</h4>
 
 Make sure you have <a class="hover.underline" href="https://nodejs.org/en/"  target="_black">Node.js</a> installed. Clone the latest version of Uniform and install its dependencies.
 
 ```bash
 # Clone project
-git clone https://github.com/UniformCSS/uniformcss
+git clone https://github.com/ThinkUniform/UniformCSS
 
 # Install dependencies
 npm install
@@ -33,19 +35,29 @@ npm install
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">3</span> Compile and watch for changes</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">2</span> Include Uniform in sass project</h4>
 
-Run the following command to build your first `uniform.css`. Optionally you can find pre-packaged versions in the dist directory. 
+Ensure the Uniform folder is in the same directory as your `styles.scss` file. Add the following line to your main sass stylesheet.
 
 ```bash
-npm run uniform:watch
+@use "uniform" as *;
+```
+
+<div class="mb-10"></div>
+
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">3</span> Compile and watch for changes</h4>
+
+Compile your sass file using your own build setup or optionally, you can run the following command to build your first `uniform.css`. The Uniform package also comes with default build scripts to help you compile, minify, and watch for changes, refer to the build scripts section for more information.
+
+```bash
+npm run uniform
 ```
 
 > By default Uniform **npm build scripts** will output to the root directory. To change the output destination, specify the location in `package.json`. For more info on other build commands refer to the page on <a class="hover.underline" href="/get-started/build-scripts/">build scripts</a>.
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">4</span> Add compiled stylesheet</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">4</span> Add compiled stylesheet</h4>
 
 Import the compiled stylesheet and you will now have access to all the Uniform goodness, it's that simple!
 
@@ -55,17 +67,21 @@ Import the compiled stylesheet and you will now have access to all the Uniform g
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">3</span> Configure Uniform (optional)</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">3</span> Configure Uniform (optional)</h4>
 
-You can customize Uniform directly in your stylesheet. For more information on what can be customized, visit the page on <a class="hover.underline" href="/get-started/configuration/">configuration</a>.
+You can customize Uniform directly in your sass stylesheet. For more information on what can be customized, visit the page on <a class="hover.underline" href="/get-started/configuration/">configuration</a>.
 
 ```scss
+// styles.scss
 @use "uniform" as * with (
-  $important: true,
-  $prefix: myProject,
-  $colors: (
-    custom-color-1: red,
-    custom-color-2: blue
+  $config: (
+    important: true,
+    prefix: myProject,
+    colors: (
+      custom-color-1: red,
+      custom-color-2: blue
+    ),
+    ...
   )
 );
 ```
@@ -88,11 +104,28 @@ For a even quicker way to get started, simply add Uniform through **jsDelivr CDN
 
 ### Install with NPM
 
+
+
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">1</span> Install the UniformCSS node package</h4>
+
 Run the following command to install Uniform as a package.
 
 ```bash
 npm i uniformcss
 ```
+
+<div class="mb-10"></div>
+
+
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">2</span> Include Uniform in sass project</h4>
+
+Ensure the Uniform folder is in the same directory as your `styles.scss` file. Add the following line to your main sass stylesheet.
+
+```bash
+@use "node_modules/uniformcss/uniform" as *;
+```
+
+<div class="mb-10"></div>
 
 ---
 

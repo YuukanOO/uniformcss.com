@@ -28,7 +28,7 @@ Applying classes based on pseudos such as hover and focus can be achieved by app
 The following pseudo interactions are available to be activated for each property.
 
 <table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 color-black">
+  <thead class="uppercase font-xs font-600 tracking-1 text-black">
     <tr>
       <th>
         Variant
@@ -41,63 +41,63 @@ The following pseudo interactions are available to be activated for each propert
   <tbody class="font-sm">
     <tr>
       <td><code class="color-teal-500">first</code></td>
-      <td><code class="color-gray-600">:first-child</code></td>
+      <td><code class="text-gray-600">:first-child</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">last</code></td>
-      <td><code class="color-gray-600">:last-child</code></td>
+      <td><code class="text-gray-600">:last-child</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">last-type</code></td>
-      <td><code class="color-gray-600">:last-of-type</code></td>
+      <td><code class="text-gray-600">:last-of-type</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">odd</code></td>
-      <td><code class="color-gray-600">:nth-child(odd)</code></td>
+      <td><code class="text-gray-600">:nth-child(odd)</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">even</code></td>
-      <td><code class="color-gray-600">:nth-child(even)</code></td>
+      <td><code class="text-gray-600">:nth-child(even)</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">hover</code></td>
-      <td><code class="color-gray-600">:hover</code></td>
+      <td><code class="text-gray-600">:hover</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">focus</code></td>
-      <td><code class="color-gray-600">:focus</code></td>
+      <td><code class="text-gray-600">:focus</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">active</code></td>
-      <td><code class="color-gray-600">:active</code></td>
+      <td><code class="text-gray-600">:active</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">visited</code></td>
-      <td><code class="color-gray-600">:visited</code></td>
+      <td><code class="text-gray-600">:visited</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">disabled</code></td>
-      <td><code class="color-gray-600">:disabled</code></td>
+      <td><code class="text-gray-600">:disabled</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">checked</code></td>
-      <td><code class="color-gray-600">:checked</code></td>
+      <td><code class="text-gray-600">:checked</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">empty</code></td>
-      <td><code class="color-gray-600">:empty</code></td>
+      <td><code class="text-gray-600">:empty</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">focus-within</code></td>
-      <td><code class="color-gray-600">:focus-within</code></td>
+      <td><code class="text-gray-600">:focus-within</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">group-hover</code></td>
-      <td><code class="color-gray-600">:group-hover</code></td>
+      <td><code class="text-gray-600">:group-hover</code></td>
     </tr>
     <tr>
       <td><code class="color-teal-500">group-focus</code></td>
-      <td><code class="color-gray-600">:group-focus</code></td>
+      <td><code class="text-gray-600">:group-focus</code></td>
     </tr>
   </tbody>
 </table>

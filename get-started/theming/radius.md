@@ -10,7 +10,7 @@ date: 1000-01-03
 By default, Uniform provides **5 border radiuses** . Use the following chart as the reference for any `border-radius` related property.
 
 <table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 color-black">
+  <thead class="uppercase font-xs font-600 tracking-1 text-black">
     <tr>
       <th>
         Variant
@@ -26,42 +26,42 @@ By default, Uniform provides **5 border radiuses** . Use the following chart as 
   <tbody class="font-sm">
     <tr>
       <td><code class="color-teal-500">xs</code></td>
-      <td><code class="color-gray-600">4px</code></td>
+      <td><code class="text-gray-600">4px</code></td>
       <td>
         <div class="radius-sm bg-black w-12 h-12"></div>
       </td>
     </tr>
     <tr>
       <td><code class="color-teal-500">sm</code></td>
-      <td><code class="color-gray-600">8px</code></td>
+      <td><code class="text-gray-600">8px</code></td>
       <td>
         <div class="radius-sm bg-black w-12 h-12"></div>
       </td>
     </tr>
     <tr>
       <td><code class="color-teal-500">md</code></td>
-      <td><code class="color-gray-600">12px</code></td>
+      <td><code class="text-gray-600">12px</code></td>
       <td>
         <div class="radius-md bg-black w-12 h-12"></div>
       </td>
     </tr>
     <tr>
       <td><code class="color-teal-500">lg</code></td>
-      <td><code class="color-gray-600">16px</code></td>
+      <td><code class="text-gray-600">16px</code></td>
       <td>
         <div class="radius-lg bg-black w-12 h-12"></div>
       </td>
     </tr>
     <tr>
       <td><code class="color-teal-500">xl</code></td>
-      <td><code class="color-gray-600">20px</code></td>
+      <td><code class="text-gray-600">20px</code></td>
       <td>
         <div class="radius-lg bg-black w-12 h-12"></div>
       </td>
     </tr>
     <tr>
       <td><code class="color-teal-500">round</code></td>
-      <td><code class="color-gray-600">9999px</code></td>
+      <td><code class="text-gray-600">9999px</code></td>
       <td>
         <div class="radius-round bg-black w-12 h-12"></div>
       </td>

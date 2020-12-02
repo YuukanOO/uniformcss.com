@@ -10,7 +10,7 @@ date: 1000-01-01
 By default, Uniform provides **4 breakpoints** for any responsive properties. Use the following chart as the reference for any breakpoint related property.
 
 <table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 color-black">
+  <thead class="uppercase font-xs font-600 tracking-1 text-black">
     <tr>
       <th>
         Variant
@@ -24,25 +24,25 @@ By default, Uniform provides **4 breakpoints** for any responsive properties. Us
     <tr>
       <td><code class="color-teal-500">sm</code></td>
       <td>
-        <code class="color-gray-600">768px</code>
+        <code class="text-gray-600">768px</code>
       </td>
     </tr>
     <tr>
       <td><code class="color-teal-500">md</code></td>
       <td>
-        <code class="color-gray-600">1024px</code>
+        <code class="text-gray-600">1024px</code>
       </td>
     </tr>
     <tr>
       <td><code class="color-teal-500">lg</code></td>
       <td>
-        <code class="color-gray-600">1280px</code>
+        <code class="text-gray-600">1280px</code>
       </td>
     </tr>
     <tr>
       <td><code class="color-teal-500">xl</code></td>
       <td>
-        <code class="color-gray-600">1536px</code>
+        <code class="text-gray-600">1536px</code>
       </td>
     </tr>
   </tbody>

@@ -3,7 +3,6 @@ title: Configuration
 date: 1000-01-01
 ---
 
-{% include shortcodes/chapter, text: 'Fundamentals', color: 'pink' %}
 
 ### Customizing Uniform
 

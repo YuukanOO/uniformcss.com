@@ -10,7 +10,7 @@ date: 1000-01-04
 By default, Uniform provides 5 levels of shadows. Use the following chart as the reference for the `box-shadow` property.
 
 <table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 color-black">
+  <thead class="uppercase font-xs font-600 tracking-1 text-black">
     <tr>
       <th>
         Variant

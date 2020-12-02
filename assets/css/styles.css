@@ -5068,7 +5068,7 @@ CUSTOM PROPERTIES
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--secondary-c-hue, var(--secondary-hue, 50)), calc(var(--secondary-c-sat, var(--secondary-sat, 50%)) + var(--text-sat)), calc(var(--secondary-300-ltn, 70%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--secondary-c-hue, var(--secondary-hue, 150)), calc(var(--secondary-c-sat, var(--secondary-sat, 80%)) + var(--text-sat)), calc(var(--secondary-300-ltn, 40%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-secondary-b {
@@ -5635,7 +5635,7 @@ CUSTOM PROPERTIES
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--secondary-c-hue, var(--secondary-hue, 50)), calc(var(--secondary-c-sat, var(--secondary-sat, 50%)) + var(--text-sat)), calc(var(--secondary-300-ltn, 70%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--secondary-c-hue, var(--secondary-hue, 150)), calc(var(--secondary-c-sat, var(--secondary-sat, 80%)) + var(--text-sat)), calc(var(--secondary-300-ltn, 40%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .hover\.text-secondary-b:hover {
@@ -14052,7 +14052,7 @@ CUSTOM PROPERTIES
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--secondary-c-hue, var(--secondary-hue, 50)), calc(var(--secondary-c-sat, var(--secondary-sat, 50%)) + var(--border-sat)), calc(var(--secondary-300-ltn, 70%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--secondary-c-hue, var(--secondary-hue, 150)), calc(var(--secondary-c-sat, var(--secondary-sat, 80%)) + var(--border-sat)), calc(var(--secondary-300-ltn, 40%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-secondary-b {
@@ -14619,7 +14619,7 @@ CUSTOM PROPERTIES
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--secondary-c-hue, var(--secondary-hue, 50)), calc(var(--secondary-c-sat, var(--secondary-sat, 50%)) + var(--border-sat)), calc(var(--secondary-300-ltn, 70%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--secondary-c-hue, var(--secondary-hue, 150)), calc(var(--secondary-c-sat, var(--secondary-sat, 80%)) + var(--border-sat)), calc(var(--secondary-300-ltn, 40%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .hover\.border-secondary-b:hover {
@@ -16510,7 +16510,7 @@ CUSTOM PROPERTIES
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--secondary-c-hue, var(--secondary-hue, 50)), calc(var(--secondary-c-sat, var(--secondary-sat, 50%)) + var(--bg-sat)), calc(var(--secondary-300-ltn, 70%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--secondary-c-hue, var(--secondary-hue, 150)), calc(var(--secondary-c-sat, var(--secondary-sat, 80%)) + var(--bg-sat)), calc(var(--secondary-300-ltn, 40%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-secondary-b {
@@ -17077,7 +17077,7 @@ CUSTOM PROPERTIES
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--secondary-c-hue, var(--secondary-hue, 50)), calc(var(--secondary-c-sat, var(--secondary-sat, 50%)) + var(--bg-sat)), calc(var(--secondary-300-ltn, 70%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--secondary-c-hue, var(--secondary-hue, 150)), calc(var(--secondary-c-sat, var(--secondary-sat, 80%)) + var(--bg-sat)), calc(var(--secondary-300-ltn, 40%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .hover\.bg-secondary-b:hover {
@@ -41269,7 +41269,7 @@ pre[class*=language-] {
   border-radius: var(--radius-md);
 }
 .markdown > p a {
-  color: var(--secondary-a500);
+  color: hsl(var(--secondary-a-hue, var(--secondary-hue, 10)), calc(0% + var(--secondary-a-sat, var(--secondary-sat, 90%))), calc(0% + var(--secondary-200-ltn, 60%)));
 }
 .markdown > pre {
   margin-top: 1.5em;
@@ -41324,17 +41324,17 @@ pre[class*=language-] {
   padding: 4px 5px;
   font-size: var(--font-sm);
   border-radius: var(--radius-sm);
-  color: var(--secondary-a500);
+  color: hsl(var(--secondary-c-hue, var(--secondary-hue, 150)), calc(0% + var(--secondary-c-sat, var(--secondary-sat, 80%))), calc(0% + var(--secondary-300-ltn, 40%)));
 }
 .markdown > blockquote {
   margin-bottom: 1.5em;
-  padding: var(--size-4, 6);
-  background: var(--silver-100);
-  box-shadow: inset 4px 0px 0px 0px var(--silver-400);
+  padding: var(--size-4) var(--size-6);
+  background: hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%)));
+  box-shadow: inset 4px 0px 0px 0px hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-400-ltn, 83%)));
 }
 .markdown > blockquote p {
   margin: 0;
-  font-size: var(--font-md);
+  font-size: var(--font-sm);
 }
 .markdown > blockquote cite {
   padding-top: var(--size-2);

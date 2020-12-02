@@ -16,7 +16,7 @@ First of all, thank you for taking the time to check out this project. Uniform C
 
 Here are the **top reasons** why Uniform CSS could be a great fit for your next project! 🚀
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-700 leading-none bg-silver-200 leading-1 color-black radius-round">1</span> It's built entirely in Sass</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-700 leading-none bg-silver-200 leading-1 text-black radius-round">1</span> It's built entirely in Sass</h4>
 
 Built entirely in Sass (the most well known CSS preprocessor currently out there). Adding Uniform into your existing project is **literally a single line of code**.
 
@@ -25,7 +25,7 @@ Built entirely in Sass (the most well known CSS preprocessor currently out there
 @use "uniform" as *;
 ```
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">2</span> It's super-duper easy to configure</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">2</span> It's super-duper easy to configure</h4>
 
 Uniform CSS is a top-grade utility class generator. Remove and extend colors, replace breakpoints, change property names, add prefixes, modify syntax, and more! **You can optionally configure almost every tiny detail imagineable**.
 
@@ -51,7 +51,7 @@ Uniform CSS is a top-grade utility class generator. Remove and extend colors, re
 ...
 ```
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">3</span> You can add your own new properties</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">3</span> You can add your own new properties</h4>
 
 As shiny new CSS specs get finalized and introduced, you don't have to wait for Uniform to support it! Easily add your own properties in directly.
 
@@ -86,7 +86,7 @@ As shiny new CSS specs get finalized and introduced, you don't have to wait for 
 ...
 ```
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">4</span> Comes with built-in helper functions</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">4</span> Comes with built-in helper functions</h4>
 
 Need a theme value for that one-off component you need to build? Uniform provides internal helper functions to help you access your theme values directly.
 
@@ -106,7 +106,7 @@ Need a theme value for that one-off component you need to build? Uniform provide
 }
 ```
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">5</span> Built with CSS Variables in mind</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">5</span> Built with CSS Variables in mind</h4>
 
 Prefer not to worry about preprocessors and just start building your site? Just add the pre-packaged CDN version of Uniform and customize fonts, colors, sizes, and more by directly overriding each CSS variable. It's that easy.
 
@@ -123,7 +123,7 @@ Prefer not to worry about preprocessors and just start building your site? Just 
 }
 ```
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">6</span> Comes with pre-built common components</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">6</span> Comes with pre-built common components</h4>
 
 To help save you time, Uniform CSS comes with **optional** pre-built components for common UI elements such as buttons and form elements. These can all be enabled, disabled, and customized down to the last pixel.
 
@@ -139,7 +139,7 @@ To help save you time, Uniform CSS comes with **optional** pre-built components 
 <button class="btn btn-tertiary">Button</button>
 ```
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">7</span> Each property follow a strict naming convention</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">7</span> Each property follow a strict naming convention</h4>
 
 Every property and its variant names follow a strict and infinitely scalable convention to ensure they are future-proof well considered to avoid conflicts.
 
@@ -158,6 +158,6 @@ xl: 56px;
 ...
 ```
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">8</span> Lightweight in Size</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 text-black radius-round">8</span> Lightweight in Size</h4>
 
 Uniform only activates responsiveness and pseudo variants to certain properties to ensure file-size is kept to a minimal. Optionally, you can choose to activate these variants directly through your main sass file.

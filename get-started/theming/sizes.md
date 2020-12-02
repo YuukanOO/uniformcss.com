@@ -13,7 +13,7 @@ Each size also has an negative equivalent. You can access the negative variants 
 
 <div class="shadow-1 h-25 radius-sm overflow-hidden overflow-y-auto">
 <table class="table shadow-none radius-0 relative">
-  <thead class="uppercase font-xs font-600 tracking-1 color-black">
+  <thead class="uppercase font-xs font-600 tracking-1 text-black">
     <tr>
       <th class="sticky bg-white t-npx">
         Scale
@@ -27,38 +27,38 @@ Each size also has an negative equivalent. You can access the negative variants 
     </tr>
   </thead>
   <tbody class="font-sm">
-    <tr><td>1</td><td class="color-teal-700 align-right">4px</td><td class="color-gray-200 align-right">0.25rem</td>
-    <tr><td>2</td><td class="color-teal-700 align-right">8px</td><td class="color-gray-200 align-right">0.5rem</td>
-    <tr><td>3</td><td class="color-teal-700 align-right">12px</td><td class="color-gray-200 align-right">0.75rem</td>
-    <tr><td>4</td><td class="color-teal-700 align-right">16px</td><td class="color-gray-200 align-right">1rem</td>
-    <tr><td>5</td><td class="color-teal-700 align-right">20px</td><td class="color-gray-200 align-right">1.25rem</td>
-    <tr><td>6</td><td class="color-teal-700 align-right">24px</td><td class="color-gray-200 align-right">1.5rem</td>
-    <tr><td>7</td><td class="color-teal-700 align-right">28px</td><td class="color-gray-200 align-right">1.75rem</td>
-    <tr><td>8</td><td class="color-teal-700 align-right">32px</td><td class="color-gray-200 align-right">2rem</td>
-    <tr><td>9</td><td class="color-teal-700 align-right">36px</td><td class="color-gray-200 align-right">2.25rem</td>
-    <tr><td>10</td><td class="color-teal-700 align-right">40px</td><td class="color-gray-200 align-right">2.5rem</td>
-    <tr><td>11</td><td class="color-teal-700 align-right">44px</td><td class="color-gray-200 align-right">2.75rem</td>
-    <tr><td>12</td><td class="color-teal-700 align-right">48px</td><td class="color-gray-200 align-right">3rem</td>
-    <tr><td>13</td><td class="color-teal-700 align-right">56px</td><td class="color-gray-200 align-right">3.5rem</td>
-    <tr><td>14</td><td class="color-teal-700 align-right">64px</td><td class="color-gray-200 align-right">4rem</td>
-    <tr><td>15</td><td class="color-teal-700 align-right">72px</td><td class="color-gray-200 align-right">4.5rem</td>
-    <tr><td>16</td><td class="color-teal-700 align-right">80px</td><td class="color-gray-200 align-right">5rem</td>
-    <tr><td>17</td><td class="color-teal-700 align-right">88px</td><td class="color-gray-200 align-right">5.5rem</td>
-    <tr><td>18</td><td class="color-teal-700 align-right">96px</td><td class="color-gray-200 align-right">6rem</td>
-    <tr><td>19</td><td class="color-teal-700 align-right">128px</td><td class="color-gray-200 align-right">8rem</td>
-    <tr><td>20</td><td class="color-teal-700 align-right">160px</td><td class="color-gray-200 align-right">10rem</td>
-    <tr><td>21</td><td class="color-teal-700 align-right">192px</td><td class="color-gray-200 align-right">12rem</td>
-    <tr><td>22</td><td class="color-teal-700 align-right">256px</td><td class="color-gray-200 align-right">16rem</td>
-    <tr><td>23</td><td class="color-teal-700 align-right">320px</td><td class="color-gray-200 align-right">20rem</td>
-    <tr><td>24</td><td class="color-teal-700 align-right">384px</td><td class="color-gray-200 align-right">24rem</td>
-    <tr><td>25</td><td class="color-teal-700 align-right">512px</td><td class="color-gray-200 align-right">32rem</td>
-    <tr><td>26</td><td class="color-teal-700 align-right">640px</td><td class="color-gray-200 align-right">40rem</td>
-    <tr><td>27</td><td class="color-teal-700 align-right">768px</td><td class="color-gray-200 align-right">48rem</td>
-    <tr><td>screen-xs</td><td class="color-teal-700 align-right">896px</td><td class="color-gray-200 align-right">56rem</td>
-    <tr><td>screen-sm</td><td class="color-teal-700 align-right">1024px</td><td class="color-gray-200 align-right">64rem</td>
-    <tr><td>screen-md</td><td class="color-teal-700 align-right">1152px</td><td class="color-gray-200 align-right">72rem</td>
-    <tr><td>screen-lg</td><td class="color-teal-700 align-right">1280px</td><td class="color-gray-200 align-right">80rem</td>
-    <tr><td>screen-xl</td><td class="color-teal-700 align-right">1536px</td><td class="color-gray-200 align-right">96rem</td>
+    <tr><td>1</td><td class="color-teal-700 align-right">4px</td><td class="text-gray-200 align-right">0.25rem</td>
+    <tr><td>2</td><td class="color-teal-700 align-right">8px</td><td class="text-gray-200 align-right">0.5rem</td>
+    <tr><td>3</td><td class="color-teal-700 align-right">12px</td><td class="text-gray-200 align-right">0.75rem</td>
+    <tr><td>4</td><td class="color-teal-700 align-right">16px</td><td class="text-gray-200 align-right">1rem</td>
+    <tr><td>5</td><td class="color-teal-700 align-right">20px</td><td class="text-gray-200 align-right">1.25rem</td>
+    <tr><td>6</td><td class="color-teal-700 align-right">24px</td><td class="text-gray-200 align-right">1.5rem</td>
+    <tr><td>7</td><td class="color-teal-700 align-right">28px</td><td class="text-gray-200 align-right">1.75rem</td>
+    <tr><td>8</td><td class="color-teal-700 align-right">32px</td><td class="text-gray-200 align-right">2rem</td>
+    <tr><td>9</td><td class="color-teal-700 align-right">36px</td><td class="text-gray-200 align-right">2.25rem</td>
+    <tr><td>10</td><td class="color-teal-700 align-right">40px</td><td class="text-gray-200 align-right">2.5rem</td>
+    <tr><td>11</td><td class="color-teal-700 align-right">44px</td><td class="text-gray-200 align-right">2.75rem</td>
+    <tr><td>12</td><td class="color-teal-700 align-right">48px</td><td class="text-gray-200 align-right">3rem</td>
+    <tr><td>13</td><td class="color-teal-700 align-right">56px</td><td class="text-gray-200 align-right">3.5rem</td>
+    <tr><td>14</td><td class="color-teal-700 align-right">64px</td><td class="text-gray-200 align-right">4rem</td>
+    <tr><td>15</td><td class="color-teal-700 align-right">72px</td><td class="text-gray-200 align-right">4.5rem</td>
+    <tr><td>16</td><td class="color-teal-700 align-right">80px</td><td class="text-gray-200 align-right">5rem</td>
+    <tr><td>17</td><td class="color-teal-700 align-right">88px</td><td class="text-gray-200 align-right">5.5rem</td>
+    <tr><td>18</td><td class="color-teal-700 align-right">96px</td><td class="text-gray-200 align-right">6rem</td>
+    <tr><td>19</td><td class="color-teal-700 align-right">128px</td><td class="text-gray-200 align-right">8rem</td>
+    <tr><td>20</td><td class="color-teal-700 align-right">160px</td><td class="text-gray-200 align-right">10rem</td>
+    <tr><td>21</td><td class="color-teal-700 align-right">192px</td><td class="text-gray-200 align-right">12rem</td>
+    <tr><td>22</td><td class="color-teal-700 align-right">256px</td><td class="text-gray-200 align-right">16rem</td>
+    <tr><td>23</td><td class="color-teal-700 align-right">320px</td><td class="text-gray-200 align-right">20rem</td>
+    <tr><td>24</td><td class="color-teal-700 align-right">384px</td><td class="text-gray-200 align-right">24rem</td>
+    <tr><td>25</td><td class="color-teal-700 align-right">512px</td><td class="text-gray-200 align-right">32rem</td>
+    <tr><td>26</td><td class="color-teal-700 align-right">640px</td><td class="text-gray-200 align-right">40rem</td>
+    <tr><td>27</td><td class="color-teal-700 align-right">768px</td><td class="text-gray-200 align-right">48rem</td>
+    <tr><td>screen-xs</td><td class="color-teal-700 align-right">896px</td><td class="text-gray-200 align-right">56rem</td>
+    <tr><td>screen-sm</td><td class="color-teal-700 align-right">1024px</td><td class="text-gray-200 align-right">64rem</td>
+    <tr><td>screen-md</td><td class="color-teal-700 align-right">1152px</td><td class="text-gray-200 align-right">72rem</td>
+    <tr><td>screen-lg</td><td class="color-teal-700 align-right">1280px</td><td class="text-gray-200 align-right">80rem</td>
+    <tr><td>screen-xl</td><td class="color-teal-700 align-right">1536px</td><td class="text-gray-200 align-right">96rem</td>
   </tbody>
 </table>
 </div>

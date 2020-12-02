@@ -10,7 +10,7 @@ date: 1000-01-06
 Use the following chart as the reference for the `font-family` property. Each font family also has fall-back options set.
 
 <table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 color-black">
+  <thead class="uppercase font-xs font-600 tracking-1 text-black">
     <tr>
       <th>
         Variant
@@ -55,7 +55,7 @@ Use the following chart as the reference for the `font-family` property. Each fo
 Use the following chart as the reference for the `font-size` property.
 
 <table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 color-black">
+  <thead class="uppercase font-xs font-600 tracking-1 text-black">
     <tr>
       <th>
         Variant
@@ -184,7 +184,7 @@ Use the following chart as the reference for the `font-size` property.
 All default Uniform `line-height` values are unitless by default. Use the following chart as the reference for the `leading` property.
 
 <table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 color-black">
+  <thead class="uppercase font-xs font-600 tracking-1 text-black">
     <tr>
       <th>
         Variant

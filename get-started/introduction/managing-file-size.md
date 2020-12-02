@@ -8,7 +8,7 @@ date: 1000-01-03
 Utility-first frameworks are generally known for their large file-size but Uniform comes in at only **29kb gzipped** and **256kb minified**. Below is a comparison of how Uniform ranks compared to other popular frameworks.
 
 <table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 color-black">
+  <thead class="uppercase font-xs font-600 tracking-1 text-black">
     <tr>
       <th>
         Framework
@@ -68,7 +68,7 @@ Utility-first frameworks are generally known for their large file-size but Unifo
 
 ### Tailored Configuration
 
-**Uniform takes a more considered approach** in determining the responsiveness and activation of pseudo variants for each CSS property. 
+**Uniform takes a more considered approach** in determining the responsiveness and activation of pseudo variants for each CSS property to ensure reasonable file size. 
 
 For example, it makes sense for color properties such as `background-color` to change on hover, however properties such as `flex-wrap` would rarely need to. Also, properties such as `letter-spacing` will not need to be responsive as it would not normally change based on breakpoint.
 
@@ -76,13 +76,17 @@ You can of course, override the default settings and enable responsiveness, and 
 
 ```scss
 @use "uniform" as * with (
-  $overflow-responsive: false,
-  $overflow-pseudos: (
-    hover, focus
-  ),
-  $padding-responsive: true,
-  $padding-pseudos: (
-    hover, focus, active
+  $config: (
+    utilities: (
+      background-color: (
+        responsive: false,
+        pseudos: ( hover, focus )
+      ),
+      letter-spacing: (
+        responsive: false,
+        pseudos: ( hover, focus )
+      )
+    )
   )
 )
 ```
@@ -94,25 +98,15 @@ You can of course, override the default settings and enable responsiveness, and 
 To reduce the file-size of your build even further, you can easily limit the number of variants or even disable unused CSS properties entirely. For more information on customizing your setup, visit the page on <a class="hover.underline" href="/get-started/configuration">configuration</a>.
 
 ```scss
-// replace core colors
-
+// Remove default properties
 @use "uniform" as * with (
-  $core-colors: (
-    /* overriding this map will remove and replace core colors
-       used across all color related CSS properties */
+  $config: (
+    primary-colors: null,
+    excludes: (
+      background,
+      background-attachment,
+      opacity
+    )
   )
 );
-```
-
-```sass
-// disable unused css properties in `uniform/_index.scss`
-
-@forward "core/align-content" as align-content-*;
-@forward "core/align-items" as align-items-*;
-@forward "core/align-self" as align-self-*;
-// @forward "core/background-attachment" as background-attachment-*;
-@forward "core/background-color" as background-color-*;
-// @forward "core/background-position" as background-position-*;
-// @forward "core/background-repeat" as background-repeat-*;
-// @forward "core/background-size" as background-size-*;
 ```

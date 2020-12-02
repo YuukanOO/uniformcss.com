@@ -53,7 +53,7 @@ Uniform provides build settings to provide extra control over your properties.
 <div class="mb-10"></div>
 
 <table class="table leading-7">
-  <thead class="uppercase font-xs font-600 tracking-1 color-black">
+  <thead class="uppercase font-xs font-600 tracking-1 text-black">
     <tr>
       <th>
         Setting

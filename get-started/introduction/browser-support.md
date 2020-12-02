@@ -3,7 +3,6 @@ title: Browser Support
 date: 1000-01-04
 ---
 
-{% include shortcodes/chapter, text: 'Introduction', color: 'purple' %}
 
 ### Browser Support
 
@@ -19,16 +18,4 @@ To learn more about browserlist queries <a class="hover.underline" href="https:/
 
 ```bash
 > 0.5%, last 2 versions, Firefox ESR, not dead
-```
-
----
-
-### IE Support
-
-It is important to note that Uniform relies quite heavily on CSS custom properties (CSS variables). This means Uniform styles will not display correctly on all versions of **Internet Explorer**. To get around this by passing the value `false` to `$variablize` in your configuration. Doing this will compile all variables as static values.
-
-```scss
-@use "uniform" as * with (
-	$variablize: false
-);
 ```

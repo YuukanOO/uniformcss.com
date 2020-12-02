@@ -43,14 +43,14 @@
 
 
 .markdown {
-	font-size: var(--font-sm);
+	font-size: font-size(sm);
 
 	& > pre {
 		border-radius: var(--radius-md);
 	}
 	
 	& > p a {
-		color: var(--secondary-a500);
+		color: fill(secondary-a);
 	}
 
 	& > pre {
@@ -108,18 +108,18 @@
 	}
 	& > p code, & > ul li code {
 		padding: 4px 5px;
-		font-size: var(--font-sm);
+		font-size: font-size(sm);
 		border-radius: radius(sm);
-		color: var(--secondary-a500);
+		color: fill(secondary-c);
 	}
 	& > blockquote {
 		margin-bottom: 1.5em;
-		padding: var(--size-4, 6);
-		background: var(--silver-100);
-		box-shadow: inset 4px 0px 0px 0px var(--silver-400);
+		padding: size(4, 6);
+		background: fill(silver-200);
+		box-shadow: inset 4px 0px 0px 0px fill(silver-400);
 		p {
 			margin: 0;
-			font-size: var(--font-md);
+			font-size: font-size(sm);
 		}
 		cite {
 			padding-top: var(--size-2);
@@ -128,7 +128,7 @@
 	}
 	& > blockquote code {
 		padding: 4px 5px;
-		font-size: var(--font-sm);
+		font-size: font-size(sm);
 		color: var(--secondary-a500);
 	}
 	& > table {

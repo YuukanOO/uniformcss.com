@@ -10,7 +10,7 @@ layout: layouts/base.njk
       <h1 class="flex align-items-start relative font-5xl font-700 mb-4 tracking-n1">
         {{ title }}
       </h1>
-      <p class="font-md color-black">
+      <p class="font-md text-black">
         Learn all about Uniform CSS and how to implement it effectively
       </p>
       
@@ -30,7 +30,7 @@ layout: layouts/base.njk
             </div>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.introduction -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -41,7 +41,7 @@ layout: layouts/base.njk
             </div>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.fundamentals -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -52,7 +52,7 @@ layout: layouts/base.njk
             </div>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.customization -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -63,7 +63,7 @@ layout: layouts/base.njk
             </div>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.theming -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -74,7 +74,7 @@ layout: layouts/base.njk
             </div>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.modules -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}color-black{% else %}color-gray-100 hover.translate-x-1{% endif %} leading-9 hover.color-black">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -139,16 +139,16 @@ layout: layouts/base.njk
               On this page
             </div>
             <nav class="flex flex-col align-items-start">
-              <a href="#" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">
+              <a href="#" class="font-sm transition-100 transform translate-x-0 text-gray-100 hover.translate-x-1 leading-9 hover.text-black">
                 Overview
               </a>
-              <a href="#" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">
+              <a href="#" class="font-sm transition-100 transform translate-x-0 text-gray-100 hover.translate-x-1 leading-9 hover.text-black">
                 Installation
               </a>
-              <a href="#" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">
+              <a href="#" class="font-sm transition-100 transform translate-x-0 text-gray-100 hover.translate-x-1 leading-9 hover.text-black">
                 Managing File Size
               </a>
-              <a href="#" class="font-sm transition-100 transform translate-x-0 color-gray-100 hover.translate-x-1 leading-9 hover.color-black">
+              <a href="#" class="font-sm transition-100 transform translate-x-0 text-gray-100 hover.translate-x-1 leading-9 hover.text-black">
                 Browser Support
               </a>
             </nav>
