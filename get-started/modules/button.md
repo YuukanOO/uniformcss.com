@@ -9,7 +9,7 @@ date: 1000-01-01
 
 The Button module is an optional pre-built component that can be useful for handling call-to-actions.
 
-<section class="radius-sm bg-silver-50 p-6 flex flex-wrap justify-content-center">
+<section class="radius-sm bg-silver-100 p-6 flex flex-wrap justify-content-center">
   <button class="btn">Button</button>
 </section>
 
@@ -62,7 +62,7 @@ To customize the look of your button, override the following root variables.
 
 There are three types of branded button variants available, `primary`, `secondary`, and `tertiary`. These can be further customized to match your brand.
 
-<section class="radius-sm bg-silver-50 p-6 flex flex-wrap justify-content-center">
+<section class="radius-sm bg-silver-100 p-6 flex flex-wrap justify-content-center">
   <button class="btn btn-primary mr-4">Button</button>
   <button class="btn btn-secondary mr-4">Button</button>
   <button class="btn btn-tertiary">Button</button>
@@ -135,7 +135,7 @@ To customize the look of your branded buttons, override the following root varia
 
 There are two types of `light` and `dark` button variants available.
 
-<section class="radius-sm bg-silver-50 p-6 flex flex-wrap justify-content-center">
+<section class="radius-sm bg-silver-100 p-6 flex flex-wrap justify-content-center">
   <button class="btn btn-light mr-4">Button</button>
   <button class="btn btn-dark">Button</button>
 </section>
@@ -192,7 +192,7 @@ To customize the look of your light and dark buttons, override the following roo
 
 There are three types of state buttons to handle `success`, `warning`, and `danger`.
 
-<section class="radius-sm bg-silver-50 p-6 flex flex-wrap justify-content-center">
+<section class="radius-sm bg-silver-100 p-6 flex flex-wrap justify-content-center">
   <button class="btn btn-success mr-4">Button</button>
   <button class="btn btn-warning mr-4">Button</button>
   <button class="btn btn-danger">Button</button>
@@ -266,7 +266,7 @@ To customize the look of your state buttons, override the following root variabl
 
 You can create outline buttons by appending `btn-outline`.
 
-<section class="radius-sm bg-silver-50 p-6 flex flex-wrap justify-content-center">
+<section class="radius-sm bg-silver-100 p-6 flex flex-wrap justify-content-center">
   <button class="btn btn-outline">Button</button>
 </section>
 
@@ -307,7 +307,7 @@ To customize the look of your outline buttons, override the following root varia
 
 Three are **5** button sizes to choose from.
 
-<section class="radius-sm bg-silver-50 p-6 flex flex-wrap align-items-center justify-content-center">
+<section class="radius-sm bg-silver-100 p-6 flex flex-wrap align-items-center justify-content-center">
   <button class="btn btn-xs mr-4">Button</button>
   <button class="btn btn-sm mr-4">Button</button>
   <button class="btn btn-md mr-4">Button</button>
@@ -362,7 +362,7 @@ To customize the sizes of your buttons, override the following root variables.
 
 Button sizes can change based on breakpoint
 
-<section class="radius-sm bg-silver-50 p-6 flex flex-wrap align-items-center justify-content-center">
+<section class="radius-sm bg-silver-100 p-6 flex flex-wrap align-items-center justify-content-center">
   <button class="btn btn-sm md.btn-lg lg.btn-xl">Button</button>
 </section>
 
@@ -376,7 +376,7 @@ Button sizes can change based on breakpoint
 
 Buttons can be combined by wrapping them with a `btns` class assigned container. Buttons can also have an `is-active` state.
 
-<section class="radius-sm bg-silver-50 p-6 flex flex-wrap align-items-center justify-content-center">
+<section class="radius-sm bg-silver-100 p-6 flex flex-wrap align-items-center justify-content-center">
   <div class="btns">
     <button class="btn">1</button>
     <button class="btn is-active">2</button>
@@ -398,7 +398,7 @@ Buttons can be combined by wrapping them with a `btns` class assigned container.
 
 Buttons can have loading animation by appending `is-loading`.
 
-<section class="radius-sm bg-silver-50 p-6 flex flex-wrap align-items-center justify-content-center">
+<section class="radius-sm bg-silver-100 p-6 flex flex-wrap align-items-center justify-content-center">
   <button class="btn is-loading">Loading</button>
 </section>
 

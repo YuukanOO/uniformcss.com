@@ -9,7 +9,7 @@ date: 1000-01-04
 
 Applying classes based on pseudos such as hover and focus can be achieved by appending the pseudo variant to the beginning of your class name e.g. `<variant>.keyword-variant`.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="bg-black hover.bg-red-500 active.bg-blue-500 transition transition-200 cursor-pointer text-white align-center py-8">
     Hover on me
   </div>
@@ -108,7 +108,7 @@ The following pseudo interactions are available to be activated for each propert
 
 The `first.<property>` allows you to apply a utility to the first child.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="bg-silver-400 first.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
@@ -138,7 +138,7 @@ The `first.<property>` allows you to apply a utility to the first child.
 
 The `last.<property>` allows you to apply a utility to the last child.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="bg-silver-400 last.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
@@ -168,7 +168,7 @@ The `last.<property>` allows you to apply a utility to the last child.
 
 The `first-type.<property>` allows you to apply a utility to the first of type.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="bg-silver-400 first-type.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
@@ -198,7 +198,7 @@ The `first-type.<property>` allows you to apply a utility to the first of type.
 
 The `last-type.<property>` allows you to apply a utility to the last of type.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="bg-silver-400 last-type.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
@@ -228,7 +228,7 @@ The `last-type.<property>` allows you to apply a utility to the last of type.
 
 The `odd.<property>` allows you to apply a utility to the odd child.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="bg-silver-400 odd.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
@@ -258,7 +258,7 @@ The `odd.<property>` allows you to apply a utility to the odd child.
 
 The `even.<property>` allows you to apply a utility to the even child.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="bg-silver-400 even.bg-blue-500 text-white p-2 mb-4 align-center">
     Item A
   </div>
@@ -288,7 +288,7 @@ The `even.<property>` allows you to apply a utility to the even child.
 
 The `hover.<property>` allows you to apply a utility on hover.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="bg-silver-400 hover.bg-blue-500 text-white p-2 align-center">
     Hover
   </div>
@@ -306,7 +306,7 @@ The `hover.<property>` allows you to apply a utility on hover.
 
 The `active.<property>` allows you to apply a utility on active.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="bg-silver-400 active.bg-blue-500 text-white p-2 align-center">
     Press
   </div>
@@ -324,7 +324,7 @@ The `active.<property>` allows you to apply a utility on active.
 
 The `visited.<property>` allows you to apply a utility on visited.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <a href="#" class="color-blue-600 underline mr-4">Normal Link</a>
   <a href="#" class="color-purple-600 underline">Visited Link</a>
 </section>
@@ -340,7 +340,7 @@ The `visited.<property>` allows you to apply a utility on visited.
 
 The `focus.<property>` allows you to apply a utility on focus.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <input placeholder="Focus" class="w-100p p-4 focus.bg-blue-100 text-white">
 </section>
 
@@ -354,7 +354,7 @@ The `focus.<property>` allows you to apply a utility on focus.
 
 The `focus.<property>` allows you to apply a utility on focus.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <input placeholder="Focus" class="w-100p p-4 disabled.bg-silver-400" disabled>
 </section>
 
@@ -368,7 +368,7 @@ The `focus.<property>` allows you to apply a utility on focus.
 
 The `empty.<property>` allows you to apply a utility on empty.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="h-10 bg-silver-400 empty.bg-blue-500"></div>
 </section>
 
@@ -382,7 +382,7 @@ The `empty.<property>` allows you to apply a utility on empty.
 
 The `focus-within.<property>` allows you to apply a utility on focus-within.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <form class="bg-white border-b-2px focus-within.border-blue-500">
     <input placeholder="Focus" class="w-100p outline-none p-4">
   </form>
@@ -400,7 +400,7 @@ The `focus-within.<property>` allows you to apply a utility on focus-within.
 
 The `group-hover.<property>` allows you to apply properties when the parent container is hovered. You must assign the parent container with a `group` class.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="group bg-white align-center">
     <div class="flex-grow align-center py-4">
       Hover
@@ -419,7 +419,7 @@ The `group-hover.<property>` allows you to apply properties when the parent cont
   <div>
     Hover
   </div>
-  <div class="group-hover.bg-silver-50">
+  <div class="group-hover.bg-silver-100">
     Group Hover
   </div>
   <div>

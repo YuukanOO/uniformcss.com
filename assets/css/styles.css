@@ -2416,6 +2416,10 @@ CUSTOM PROPERTIES
   transform: translateX(-50%) translateY(-50%);
 }
 
+.leading-trimmer {
+  leading-trim: trim;
+}
+
 .stroke-0 {
   stroke-width: 0;
 }
@@ -18181,6 +18185,10 @@ CUSTOM PROPERTIES
 }
 
 @media (min-width: 1024px) {
+  .sm\.leading-trimmer {
+    leading-trim: trim;
+  }
+
   .sm\.resize-none {
     resize: none;
   }
@@ -23876,6 +23884,10 @@ CUSTOM PROPERTIES
   }
 }
 @media (min-width: 1152px) {
+  .md\.leading-trimmer {
+    leading-trim: trim;
+  }
+
   .md\.resize-none {
     resize: none;
   }
@@ -29571,6 +29583,10 @@ CUSTOM PROPERTIES
   }
 }
 @media (min-width: 1280px) {
+  .lg\.leading-trimmer {
+    leading-trim: trim;
+  }
+
   .lg\.resize-none {
     resize: none;
   }
@@ -35266,6 +35282,10 @@ CUSTOM PROPERTIES
   }
 }
 @media (min-width: 1536px) {
+  .xl\.leading-trimmer {
+    leading-trim: trim;
+  }
+
   .xl\.resize-none {
     resize: none;
   }
@@ -41124,7 +41144,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  */
 code[class*=language-],
 pre[class*=language-] {
-  color: #ccc;
+  color: #fff;
   background: none;
   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
   font-size: var(--font-sm);
@@ -41151,7 +41171,7 @@ pre[class*=language-] {
 
 :not(pre) > code[class*=language-],
 pre[class*=language-] {
-  background: var(--primary-900);
+  background: hsl(var(--primary-900-hue, var(--primary-hue, 225)), calc(0% + var(--primary-900-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-900-ltn, 10%)));
 }
 
 /* Inline code */
@@ -41159,6 +41179,18 @@ pre[class*=language-] {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
+}
+
+.token.comment {
+  color: hsl(var(--silver-800-hue, var(--silver-hue, 230)), calc(0% + var(--silver-800-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-800-ltn, 63%)));
+}
+
+.token.selector {
+  color: hsl(var(--cyan-hue, 180), calc(var(--cyan-sat, 50%) + 15%), calc(var(--cyan-ltn, 50%) + 15%));
+}
+
+.token.important {
+  color: hsl(var(--red-hue, 0), calc(var(--red-sat, 50%) + 15%), calc(0% + var(--red-ltn, 50%)));
 }
 
 .token.tag {

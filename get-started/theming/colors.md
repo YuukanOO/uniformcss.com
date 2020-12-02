@@ -160,11 +160,11 @@ Uniform provides a range of tints and shades across a broad spectrum of colors. 
       <tr><td class="color-teal-700"><code>pink-700</code></td><td><code class="color-gray-500">#c11653</code></td><td class="bg-pink-700"></td></tr>
       <tr><td class="color-teal-700"><code>pink-800</code></td><td><code class="color-gray-500">#8a103b</code></td><td class="bg-pink-800"></td></tr>
       <tr><td class="color-teal-700"><code>pink-900</code></td><td><code class="color-gray-500">#530923</code></td><td class="bg-pink-900"></td></tr>
-      <tr><td class="color-teal-700"><code>silver-100</code></td><td><code class="color-gray-500">#f6f7fa</code></td><td class="bg-silver-50"></td></tr>
+      <tr><td class="color-teal-700"><code>silver-100</code></td><td><code class="color-gray-500">#f6f7fa</code></td><td class="bg-silver-100"></td></tr>
       <tr><td class="color-teal-700"><code>silver-200</code></td><td><code class="color-gray-500">#eeeff5</code></td><td class="bg-silver-200"></td></tr>
       <tr><td class="color-teal-700"><code>silver-300</code></td><td><code class="color-gray-500">#e5e8f1</code></td><td class="bg-silver-300"></td></tr>
       <tr><td class="color-teal-700"><code>silver-400</code></td><td><code class="color-gray-500">#dde0ec</code></td><td class="bg-silver-400"></td></tr>
-      <tr><td class="color-teal-700"><code>silver-500</code></td><td><code class="color-gray-500">#d4d8e7</code></td><td class="bg-silver-500"></td></tr>
+      <tr><td class="color-teal-700"><code>silver-500</code></td><td><code class="color-gray-500">#d4d8e7</code></td><td class="bg-silver-1000"></td></tr>
       <tr><td class="color-teal-700"><code>silver-600</code></td><td><code class="color-gray-500">#cbd0e2</code></td><td class="bg-silver-600"></td></tr>
       <tr><td class="color-teal-700"><code>silver-700</code></td><td><code class="color-gray-500">#c3c8dd</code></td><td class="bg-silver-700"></td></tr>
       <tr><td class="color-teal-700"><code>silver-800</code></td><td><code class="color-gray-500">#bac1d9</code></td><td class="bg-silver-800"></td></tr>
@@ -217,7 +217,7 @@ Uniform provides a range of tints and shades across a broad spectrum of colors. 
 
 The following example showcases how the variants can be applied.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="color-black sm.color-teal-500 md.color-red-500 lg.color-blue-500 text-white align-center py-8">
     Adjust your browser to see change
   </div>

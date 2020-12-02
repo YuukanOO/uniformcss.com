@@ -1,3 +1,5 @@
+@use "uniform-configured" as *;
+
 /* PrismJS 1.22.0
 https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript */
 /**
@@ -8,7 +10,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 
  code[class*="language-"],
  pre[class*="language-"] {
-	 color: #ccc;
+	 color: #fff;
 	 background: none;
 	 font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	 font-size: var(--font-sm);
@@ -32,14 +34,14 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  /* Code blocks */
  pre[class*="language-"] {
-	 padding: var(--size-4);
+	 padding: size(4);
 	//  margin: .5em 0;
 	 overflow: auto;
  }
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-	 background: var(--primary-900);
+	 background: fill(primary-900);
  }
  
  /* Inline code */
@@ -128,6 +130,18 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  
  // OVERRIDES
+
+.token.comment {
+	color: fill(silver-800);
+}
+
+.token.selector {
+	color: fill(cyan, brighten-300, lighten-300);
+}
+
+.token.important {
+	color: fill(red, brighten-300);
+}
 
 .token.tag {
 	color: #00d2df;

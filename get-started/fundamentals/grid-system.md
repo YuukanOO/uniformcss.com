@@ -9,7 +9,7 @@ date: 1000-01-06
 
 Unlike more traditional grid systems, Uniform grid systems are built using the `grid` display type and designed to support between `1` to `12` columns.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="grid grid-cols-2 mb-4">
     <div class="h-8 bg-gray-300">
     </div>
@@ -64,7 +64,7 @@ Unlike more traditional grid systems, Uniform grid systems are built using the `
 
 You can create gutters by combining your grid layout with the `gap-<size>` property.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="grid grid-cols-3 gap-4 mb-4">
     <div class="h-8 bg-gray-300">
     </div>
@@ -139,7 +139,7 @@ You can create gutters by combining your grid layout with the `gap-<size>` prope
 
 Gutters can be responsive by prefixing the `gap-<size>` property with the breakpoint variant. For more information on media queries, <a class="hover.underline" href="/get-started/media-queries">click here</a>. 
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="grid grid-cols-3 gap-4 sm.gap-6 md.gap-8 lg.gap-12">
     <div class="h-8 bg-gray-300">
     </div>
@@ -162,7 +162,7 @@ Gutters can be responsive by prefixing the `gap-<size>` property with the breakp
 
 You can control the size of each column by specifying its column span count.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="grid grid-cols-5">
     <div class="h-8 bg-gray-100 col-1">
     </div>
@@ -187,7 +187,7 @@ You can control the size of each column by specifying its column span count.
 
 Both the grid column count and column span count can be responsive by prefixing each with the breakpoint variant. Adjust your browser width to see this in action.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="grid grid-cols-1 md.grid-cols-5">
     <div class="h-8 bg-gray-100 col-1 md.col-1">
     </div>

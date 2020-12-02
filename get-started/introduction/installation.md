@@ -11,8 +11,6 @@ Uniform is super easy to get started and setup, you can either:
 3. Use the **jsDelivr CDN** to link directly to the Uniform stylesheet.
 4. Clone or download the project **directly** from the GitHub repository.
 
----
-
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
 ---

@@ -14,97 +14,148 @@ First of all, thank you for taking the time to check out this project. Uniform C
 
 ### How Uniform CSS is different
 
-Here are the **top reasons** why Uniform could be a great fit for your next project! 🚀
+Here are the **top reasons** why Uniform CSS could be a great fit for your next project! 🚀
 
 <h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-700 leading-none bg-silver-200 leading-1 color-black radius-round">1</span> It's built entirely in Sass</h4>
 
 Built entirely in Sass (the most well known CSS preprocessor currently out there). Adding Uniform into your existing project is **literally a single line of code**.
 
 ```scss
+// add this to your main styles.scss
 @use "uniform" as *;
 ```
 
 <h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">2</span> It's super-duper easy to configure</h4>
 
-Extend colors, replace breakpoints, change property names, add prefixes, modify syntax, and more! **You can optionally configure almost every tiny detail**.
+Uniform CSS is a top-grade utility class generator. Remove and extend colors, replace breakpoints, change property names, add prefixes, modify syntax, and more! **You can optionally configure almost every tiny detail imagineable**.
 
 ```scss
+// styles.scss
 @use "uniform" as * with (
-  $important: true,
-  $prefix: myProject,
-  $colors: (
-    custom-color-1: red,
-    custom-color-2: blue
-  ),
-  ...
+  $config: (
+    important: true,
+    prefix: myProject,
+    colors: (
+      custom-color-1: red,
+      custom-color-2: blue
+    ),
+    ...
+  )
 );
 ```
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">3</span> It's easy to add new properties</h4>
-
-As new CSS properties become more widely supported by browsers, you don't have to wait for Uniform to support it, customize, remove or simply add your own!
-
-```scss
-// uniform/_index.scss
-@forward "extension/custom-property-1";
-@forward "extension/custom-property-2";
-@forward "extension/that-shiny-new-property";
+```css
+/* styles.css */
+.myProject-bg-custom-color-1 { background-color: red !important; }
+.myProject-bg-custom-color-2 { background-color: blue !important; }
+...
 ```
 
-<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">4</span> Comes with built-in theme APIs</h4>
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">3</span> You can add your own new properties</h4>
 
-Need a theme value for that one-off component you need to build? Uniform provides internal API functions to help you access your theme values directly.
+As shiny new CSS specs get finalized and introduced, you don't have to wait for Uniform to support it! Easily add your own properties in directly.
 
 ```scss
-.element {
-  padding: size(4);
-  background-color: fill(gray-200);
+// styles.scss
+@use "uniform" as * with (
+  $config: (
+    utilities: (
+      leading-trim: (
+        keyword: leading,
+        properties: (leading-trim),
+        variants: (
+          trimmer: both
+        )
+      ),
+      text-edge: (
+        keyword: text,
+        properties: (text-edge),
+        variants: (
+          cap: cap alphabetic
+        )
+      )
+    )
+  )
+);
+```
+
+```css
+/* styles.css */
+.leading-trimmer { leading-trim: both; }
+.text-edge { text-edge: cap alphabetic; }
+...
+```
+
+<h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">4</span> Comes with built-in helper functions</h4>
+
+Need a theme value for that one-off component you need to build? Uniform provides internal helper functions to help you access your theme values directly.
+
+```scss
+// styles.scss
+.custom-element {
+  padding: size(4, 5);
+  background-color: fill(mint);
+}
+```
+
+```css
+/* styles.css */
+.custom-element {
+  padding: 1rem 1.25rem ;
+  background-color: hsl(140, 50%, 50%);
 }
 ```
 
 <h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">5</span> Built with CSS Variables in mind</h4>
 
-Prefer to not worry about preprocessors and just start building pages? Just add the pre-packaged CSS version of Uniform and customize fonts, colors, sizes, and more by simply overriding each native CSS variable. It's that easy.
+Prefer not to worry about preprocessors and just start building your site? Just add the pre-packaged CDN version of Uniform and customize fonts, colors, sizes, and more by directly overriding each CSS variable. It's that easy.
+
+```html
+<!-- index.html -->
+<link rel="stylesheet" href="https://unpkg.com/@zaydek/duomo@0.7.0-rc.24/dist/stack.css">
+```
 
 ```css
+/* styles.css */
 :root {
-  --font-family-sans: 'custom-font', sans-serif;
+  --font-sans: 'custom-font', sans-serif;
   --btn-radius: 6px;
 }
 ```
 
 <h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">6</span> Comes with pre-built common components</h4>
 
-To help you save time, Uniform CSS comes with **optional** pre-built components for common UI elements such as buttons and form elements. These can all be enabled, disabled, and even customized down to the last pixel.
+To help save you time, Uniform CSS comes with **optional** pre-built components for common UI elements such as buttons and form elements. These can all be enabled, disabled, and customized down to the last pixel.
 
-```scss
-@use "uniform/core" as * with (
-  $include-button-module: true,
-  $include-form-module: true,
-  $include-table-module: false,
-  $include-wrapper-module: true
-);
+<section class="radius-sm bg-silver-100 p-6 flex flex-wrap justify-content-center">
+  <button class="btn btn-primary mr-4">Button</button>
+  <button class="btn btn-secondary mr-4">Button</button>
+  <button class="btn btn-tertiary">Button</button>
+</section>
 
-:root {
-  --btn-radius: 0;
-  --input-radius: 0;
-}
+```html
+<button class="btn btn-primary">Button</button>
+<button class="btn btn-secondary">Button</button>
+<button class="btn btn-tertiary">Button</button>
 ```
 
 <h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">7</span> Each property follow a strict naming convention</h4>
 
-Every property name and its variants follow a strict and scalable convention to ensure they are as future-proof as they can be.
+Every property and its variant names follow a strict and infinitely scalable convention to ensure they are future-proof well considered to avoid conflicts.
 
 ```scss
-$core-variants: (
-  auto: auto,
-  100p: 100%,
-  100vw: 100vw,
-  px: 1px,
-  2px: 2px,
-  3px: 3px,
-  ...
-);
+auto: auto,
+100p: 100%,
+100vw: 100vw,
+
+px: 1px,
+2px: 2px,
+3px: 3px,
+
+lg: 48px,
+xl: 56px;
+2xl: 64px,
+...
 ```
 
 <h4><span class="w-6 h-6 mt-8 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-silver-200 leading-1 color-black radius-round">8</span> Lightweight in Size</h4>

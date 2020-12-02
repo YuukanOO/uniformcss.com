@@ -9,7 +9,7 @@ date: 1000-01-02
 
 The Form module is an optional pre-built component that provides customizable styling of input text fieds, checkboxes, select dropdown etc.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <form>
     <div class="mb-6 last.mb-0">
       <label class="label mb-2">Email</label>
@@ -110,7 +110,7 @@ The Form module is an optional pre-built component that provides customizable st
 
 To add a required asterisk append the class `is-required` to your label.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <label class="label is-required mb-2">Email</label>
   <input class="input" placeholder="Email" value="Placeholder Text" required>
 </section>
@@ -162,7 +162,7 @@ To customize the look of your label and textfields, override the following root 
 
 Text fields come in **5 sizes**.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <input class="input input-xs mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
   <input class="input input-sm mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
   <input class="input input-md mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
@@ -217,7 +217,7 @@ To customize your text and select input field sizes, override the following root
 ### Select Fields
 
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="select">
     <select>
       <option selected>Selected</option>
@@ -281,7 +281,7 @@ To customize your select input field sizes, override the following root variable
 
 Select fields come in **5 sizes**.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="select select-xs mb-4 last.mb-0">
     <select>
       <option selected>Selected</option>
@@ -372,7 +372,7 @@ To customize your select input field sizes, override the following root variable
 
 Both text and select field sizes can vary depending on breakpoint.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <input class="input input-xs lg.input-xl" placeholder="Resize browser to see change">
 </section>
 
@@ -386,7 +386,7 @@ Both text and select field sizes can vary depending on breakpoint.
 
 Text, select, and textarea fields come in *4* different states.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <input class="input mb-4 last.mb-0" placeholder="Disabled" disabled>
   <input class="input is-success mb-4 last.mb-0" placeholder="Success">
   <input class="input is-warning mb-4 last.mb-0" placeholder="Warning">
@@ -434,7 +434,7 @@ To customize your state fields, override the following root variables.
 
 Text and select input fields come in **5 sizes**.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="mb-6">
     <label class="radio mr-4">
       <input type="radio" name="radio" checked />
@@ -521,7 +521,7 @@ To customize your radio or checkbox input fields, override the following root va
 
 Checkboxes can also be transformed into a toggle switch.
 
-<section class="radius-sm bg-silver-50 p-6 flex justify-content-center">
+<section class="radius-sm bg-silver-100 p-6 flex justify-content-center">
   <label class="toggle">
     <input type="checkbox" checked />
     <div class="toggle__switch"></div>
@@ -564,7 +564,7 @@ To customize your toggle switch, override the following root variables.
 
 Checkboxes can also be transformed into a toggle switch. Note, to set a default line-height apply the leading property.
 
-<section class="radius-sm bg-silver-50 p-6 flex justify-content-center">
+<section class="radius-sm bg-silver-100 p-6 flex justify-content-center">
   <textarea class="textarea leading-8" rows="4">Ask your question here</textarea>
 </section>
 
@@ -603,7 +603,7 @@ To customize your textarea, override the following root variables.
 
 All form field elements can be disabled with assigning the `disabled` attribute.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <form>
     <div class="mb-6 last.mb-0">
       <label class="label mb-2">Email</label>

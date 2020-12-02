@@ -60,7 +60,7 @@ By default, Uniform provides 5 levels of shadows. Use the following chart as the
 
 The following example showcases how the variants can be applied.
 
-<section class="radius-sm bg-silver-50 p-6">
+<section class="radius-sm bg-silver-100 p-6">
   <div class="w-100p p-5 bg-white align-center shadow-sm">
     This container has a large shadow
   </div>
