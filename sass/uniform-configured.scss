@@ -7,27 +7,27 @@
       )
     ),
     utilities: (
-      leading-trim: (
-        keyword: leading,
-        responsive: true,
-        properties: (leading-trim),
-        variants: (
-          trimmer: trim
-        )
-      ),
-      background-color: (
-      	pseudos: (active, focus, group-hover)
-      ),
-      border-color: (
-      	pseudos: (focus-within)
-      ),
-      color: (
-        responsive: true,
-        pseudos: (focus)
-      ),
+      // leading-trim: (
+      //   keyword: leading,
+      //   responsive: true,
+      //   properties: (leading-trim),
+      //   variants: (
+      //     trimmer: trim
+      //   )
+      // ),
+      // background-color: (
+      // 	pseudos: (active, focus, group-hover)
+      // ),
+      // border-color: (
+      // 	pseudos: (focus-within)
+      // ),
+      // color: (
+      //   responsive: true,
+      //   pseudos: (focus)
+      // ),
     ),
     excludes: (
-      all
+
     )
   )
 );
