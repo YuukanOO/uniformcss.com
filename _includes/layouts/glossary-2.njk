@@ -20,7 +20,7 @@ layout: layouts/base.njk
 
 <section>
   <div class="wrapper">
-    <div class="grid grid-cols-1 sm.grid-cols-6 lg.grid-cols-12 gap-14">
+    <div class="grid grid-cols-1 sm.grid-cols-6 lg.grid-cols-12 gap-15">
       <aside class="hidden sm.block col-1 sm.col-2 lg.col-3">
         <div class="t-0 sticky h-100vh overflow-auto py-16">
 
@@ -67,13 +67,13 @@ layout: layouts/base.njk
           </div>
         </div>
         
-        <div class="grid grid-cols-12 gap-15">
-          <div class="col-8 markdown markdown-glossary pt-16">
+        <div class="grid grid-cols-1 lg.grid-cols-7 lg.gap-15">
+          <div class="col-1 lg.col-5 markdown markdown-glossary py-16">
             {{ content | safe }}
           </div>
-          <div class="relative col-4">
-            <div class="sticky pt-16 t-0">
-              <div class="radius-md p-6 bg-silver-100">
+          <div class="relative hidden lg.block lg.col-2">
+            <div class="sticky flex justify-content-end pt-16 t-0">
+              <div class="radius-md w-100p p-6 bg-silver-100">
                 <div class="font-sm font-700 mb-4">
                   On this page
                 </div>
