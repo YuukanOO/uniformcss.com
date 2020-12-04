@@ -24,6 +24,7 @@
     transform: translateX(-100%);
   }
 }
+
 .docs-sidebar:before {
   position: absolute;
   right: 0;
@@ -34,15 +35,35 @@
   background: linear-gradient(0deg, #65ace0 10%, #3880b5 30%, #0a496c 75%, #101d36 100%);
 }
 
+
+.toc {
+	font-size: font-size(sm);
+	line-height: leading(10);
+}
+
 .home-highlight {
 	pre[class*=language-] {
 		background: transparent;
 	}
 }
 
+.markdown-glossary {
+	& > table td {
+		&:first-child {
+			color: fill(cyan, brighten-300, darken-200);
+		}
+		&:last-child {
+			color: fill(silver-900);
+		}
+	}
+}
 
 .markdown {
 	font-size: font-size(sm);
+
+	& > table {
+		@extend .table;
+	}
 
 	& > pre {
 		border-radius: var(--radius-md);
@@ -109,7 +130,7 @@
 		padding: 4px 5px;
 		font-size: font-size(sm);
 		border-radius: radius(sm);
-		color: fill(secondary-c);
+		color: fill(blue, brighten-600, lighten-100);
 	}
 	& > blockquote {
 		margin-bottom: 1.5em;

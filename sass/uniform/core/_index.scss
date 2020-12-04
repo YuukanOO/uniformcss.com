@@ -29,6 +29,7 @@ $default-config: (
   headless: false,
   root: true,
   debugger: false,
+  placeholders: false,
 
   include-reset-styles: true,
   include-starter-styles: true,
@@ -917,6 +918,16 @@ $var-trackings: variablize-map($trackings, tracking);
   }
 }
 
+@function shadow($shadow) {
+  @if (map.get($shadows, $shadow)) {
+    $result: ();
+    $result: map.get($var-shadows, $shadow);
+    @return $result;
+  } @else {
+    @error "[#{$shadow}] does not exist";
+  }
+}
+
 @function radius($radius) {
   @if (map.get($radiuses, $radius)) {
     $result: ();
@@ -1039,6 +1050,10 @@ $var-trackings: variablize-map($trackings, tracking);
   }
   --FONT-SIZES--------------------:02;
   @each $key, $value in $font-sizes {
+    --font-#{'' + $key}: #{$value};
+  }
+  --FONT-WEIGHTS------------------:02;
+  @each $key, $value in $font-weights {
     --font-#{'' + $key}: #{$value};
   }
   --LEADING-----------------------:03;

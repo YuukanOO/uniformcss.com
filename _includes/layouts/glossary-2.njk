@@ -1,0 +1,88 @@
+---
+layout: layouts/base.njk
+---
+
+{% include "partials/nav.njk" %}
+
+<section class="bg-silver-100 bg-brighten-900">
+  <div class="wrapper">
+    <div class="py-12">
+      <h1 class="flex align-items-start relative font-5xl font-700 mb-5 tracking-n1">
+        {{ title }}
+      </h1>
+      <p class="font-lg text-black">
+        {{ description }}
+      </p>
+      
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrapper">
+    <div class="grid grid-cols-1 sm.grid-cols-6 lg.grid-cols-12 gap-14">
+      <aside class="hidden sm.block col-1 sm.col-2 lg.col-3">
+        <div class="t-0 sticky h-100vh overflow-auto py-16">
+
+          <div class="mb-12 last.mb-0 pb-12 border-b-px last.border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-4">
+              Alignment
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.alignment -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-12 last.mb-0 pb-12 border-b-px last.border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-4">
+              Appearance
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.appearance -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-9 hover.text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+        </div>
+      </aside>
+
+      <div class="col-1 sm.col-4 lg.col-9">
+        <div class="block sm.hidden p-6">
+          <div class="select">
+            <select class="js-select-url">
+              <optgroup label="Introduction">
+                {%- for post in collections.introduction -%}
+                  <option value="{{ post.data.title | slug }}"
+                    {% if post.url == page.url %}selected{% endif %}
+                  >{{ post.data.title }}</option>
+                {%- endfor -%}
+              </optgroup>
+            </select>
+            <div class="select__angle">
+
+            </div>
+          </div>
+        </div>
+        
+        <div class="grid grid-cols-12 gap-15">
+          <div class="col-8 markdown markdown-glossary pt-16">
+            {{ content | safe }}
+          </div>
+          <div class="relative col-4">
+            <div class="sticky pt-16 t-0">
+              <div class="radius-md p-6 bg-silver-100">
+                <div class="font-sm font-700 mb-4">
+                  On this page
+                </div>
+                {{ content | toc | safe }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -20,6 +20,16 @@
   --font-sm: 0.875rem;
   --font-xs: 0.75rem;
   --font-2xs: 0.625rem;
+  --FONT-WEIGHTS------------------:02;
+  --font-ultralight: 100;
+  --font-extralight: 200;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  --font-ultrabold: 900;
   --LEADING-----------------------:03;
   --leading-1: 1;
   --leading-2: 1.125;
@@ -1768,7 +1778,7 @@ CUSTOM PROPERTIES
 --table-label-tracking
 --table-label-color
 */
-.table {
+.table, .markdown > table {
   width: 100%;
   text-align: left;
   line-height: var(--leading-6);
@@ -1776,32 +1786,32 @@ CUSTOM PROPERTIES
   background-color: var(--table-bg, white);
   box-shadow: var(--table-shadow, var(--shadow-xs));
 }
-.table tr:last-child td {
+.table tr:last-child td, .markdown > table tr:last-child td {
   border-bottom: 0;
 }
-.table tr:last-child td:first-child {
+.table tr:last-child td:first-child, .markdown > table tr:last-child td:first-child {
   border-bottom-left-radius: var(--table-radius, var(--radius-sm));
 }
-.table tr:last-child td:last-child {
+.table tr:last-child td:last-child, .markdown > table tr:last-child td:last-child {
   border-bottom-right-radius: var(--table-radius, var(--radius-sm));
 }
-.table th {
+.table th, .markdown > table th {
   height: var(--table-th-height, var(--size-12));
   padding: var(--table-th-padding, var(--size-4) var(--size-4));
-  box-shadow: var(--table-th-border, inset 0px -1px 0 0 var(--silver-200));
+  box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
   background: var(--table-th-bg, white);
   white-space: nowrap;
 }
-.table th:first-child {
+.table th:first-child, .markdown > table th:first-child {
   border-top-left-radius: var(--table-radius, var(--radius-sm));
 }
-.table th:last-child {
+.table th:last-child, .markdown > table th:last-child {
   border-top-right-radius: var(--table-radius, var(--radius-sm));
 }
-.table td {
+.table td, .markdown > table td {
   height: var(--table-td-height, var(--size-12));
   padding: var(--table-td-padding, var(--size-3) var(--size-4));
-  box-shadow: var(--table-td-border, inset 0px -1px 0 0 var(--silver-200));
+  box-shadow: var(--table-td-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
 }
 
 /******************************
@@ -1829,7 +1839,7 @@ RESPONSIVE
 }
 .table-stack tr {
   display: block;
-  margin-bottom: var(--table-stack-margin, var(--size-5));
+  margin-bottom: var(--table-stack-margin, var(--size-4));
   border-radius: var(--table-radius, var(--radius-sm));
   background-color: var(--table-bg);
   box-shadow: var(--table-shadow, var(--shadow-xs));
@@ -1858,7 +1868,7 @@ RESPONSIVE
   display: block;
   content: attr(data-table-label);
   margin-bottom: var(--table-label-margin, var(--size-4));
-  font-size: var(--table-label-font-size, font-var(--size-xs));
+  font-size: var(--table-label-font-size, var(--font-2xs));
   font-weight: var(--table-label-font-weight, 600);
   text-transform: var(--table-label-text-transform, uppercase);
   letter-spacing: var(--table-label-tracking, var(--tracking-1));
@@ -1907,7 +1917,7 @@ RESPONSIVE
   height: var(--table-td-height, var(--size-12));
   padding: var(--table-td-padding, var(--size-3) var(--size-4));
   background-color: transparent;
-  box-shadow: var(--table-th-border, inset 0px -1px 0 0 var(--silver-200));
+  box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
 }
 .table-unstack td:first-child {
   border-radius: 0;
@@ -1932,7 +1942,7 @@ RESPONSIVE
   }
   .sm\.table-stack tr {
     display: block;
-    margin-bottom: var(--table-stack-margin, var(--size-5));
+    margin-bottom: var(--table-stack-margin, var(--size-4));
     border-radius: var(--table-radius, var(--radius-sm));
     background-color: var(--table-bg);
     box-shadow: var(--table-shadow, var(--shadow-xs));
@@ -1961,7 +1971,7 @@ RESPONSIVE
     display: block;
     content: attr(data-table-label);
     margin-bottom: var(--table-label-margin, var(--size-4));
-    font-size: var(--table-label-font-size, font-var(--size-xs));
+    font-size: var(--table-label-font-size, var(--font-2xs));
     font-weight: var(--table-label-font-weight, 600);
     text-transform: var(--table-label-text-transform, uppercase);
     letter-spacing: var(--table-label-tracking, var(--tracking-1));
@@ -1986,7 +1996,7 @@ RESPONSIVE
   }
   .md\.table-stack tr {
     display: block;
-    margin-bottom: var(--table-stack-margin, var(--size-5));
+    margin-bottom: var(--table-stack-margin, var(--size-4));
     border-radius: var(--table-radius, var(--radius-sm));
     background-color: var(--table-bg);
     box-shadow: var(--table-shadow, var(--shadow-xs));
@@ -2015,7 +2025,7 @@ RESPONSIVE
     display: block;
     content: attr(data-table-label);
     margin-bottom: var(--table-label-margin, var(--size-4));
-    font-size: var(--table-label-font-size, font-var(--size-xs));
+    font-size: var(--table-label-font-size, var(--font-2xs));
     font-weight: var(--table-label-font-weight, 600);
     text-transform: var(--table-label-text-transform, uppercase);
     letter-spacing: var(--table-label-tracking, var(--tracking-1));
@@ -2040,7 +2050,7 @@ RESPONSIVE
   }
   .lg\.table-stack tr {
     display: block;
-    margin-bottom: var(--table-stack-margin, var(--size-5));
+    margin-bottom: var(--table-stack-margin, var(--size-4));
     border-radius: var(--table-radius, var(--radius-sm));
     background-color: var(--table-bg);
     box-shadow: var(--table-shadow, var(--shadow-xs));
@@ -2069,7 +2079,7 @@ RESPONSIVE
     display: block;
     content: attr(data-table-label);
     margin-bottom: var(--table-label-margin, var(--size-4));
-    font-size: var(--table-label-font-size, font-var(--size-xs));
+    font-size: var(--table-label-font-size, var(--font-2xs));
     font-weight: var(--table-label-font-weight, 600);
     text-transform: var(--table-label-text-transform, uppercase);
     letter-spacing: var(--table-label-tracking, var(--tracking-1));
@@ -2094,7 +2104,7 @@ RESPONSIVE
   }
   .xl\.table-stack tr {
     display: block;
-    margin-bottom: var(--table-stack-margin, var(--size-5));
+    margin-bottom: var(--table-stack-margin, var(--size-4));
     border-radius: var(--table-radius, var(--radius-sm));
     background-color: var(--table-bg);
     box-shadow: var(--table-shadow, var(--shadow-xs));
@@ -2123,7 +2133,7 @@ RESPONSIVE
     display: block;
     content: attr(data-table-label);
     margin-bottom: var(--table-label-margin, var(--size-4));
-    font-size: var(--table-label-font-size, font-var(--size-xs));
+    font-size: var(--table-label-font-size, var(--font-2xs));
     font-weight: var(--table-label-font-weight, 600);
     text-transform: var(--table-label-text-transform, uppercase);
     letter-spacing: var(--table-label-tracking, var(--tracking-1));
@@ -2173,7 +2183,7 @@ RESPONSIVE
     height: var(--table-td-height, var(--size-12));
     padding: var(--table-td-padding, var(--size-3) var(--size-4));
     background-color: transparent;
-    box-shadow: var(--table-th-border, inset 0px -1px 0 0 var(--silver-200));
+    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
   }
   .sm\.table-unstack td:first-child {
     border-radius: 0;
@@ -2223,7 +2233,7 @@ RESPONSIVE
     height: var(--table-td-height, var(--size-12));
     padding: var(--table-td-padding, var(--size-3) var(--size-4));
     background-color: transparent;
-    box-shadow: var(--table-th-border, inset 0px -1px 0 0 var(--silver-200));
+    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
   }
   .md\.table-unstack td:first-child {
     border-radius: 0;
@@ -2273,7 +2283,7 @@ RESPONSIVE
     height: var(--table-td-height, var(--size-12));
     padding: var(--table-td-padding, var(--size-3) var(--size-4));
     background-color: transparent;
-    box-shadow: var(--table-th-border, inset 0px -1px 0 0 var(--silver-200));
+    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
   }
   .lg\.table-unstack td:first-child {
     border-radius: 0;
@@ -2323,7 +2333,7 @@ RESPONSIVE
     height: var(--table-td-height, var(--size-12));
     padding: var(--table-td-padding, var(--size-3) var(--size-4));
     background-color: transparent;
-    box-shadow: var(--table-th-border, inset 0px -1px 0 0 var(--silver-200));
+    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
   }
   .xl\.table-unstack td:first-child {
     border-radius: 0;
@@ -11399,7 +11409,7 @@ CUSTOM PROPERTIES
   display: inline-table;
 }
 
-.table {
+.table, .markdown > table {
   display: table;
 }
 
@@ -11479,6 +11489,26 @@ CUSTOM PROPERTIES
   text-align: justify;
 }
 
+.justify-items-auto {
+  justify-items: auto;
+}
+
+.justify-items-start {
+  justify-items: start;
+}
+
+.justify-items-end {
+  justify-items: end;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
+.justify-items-stretch {
+  justify-items: stretch;
+}
+
 .justify-content-start {
   justify-content: flex-start;
 }
@@ -11497,6 +11527,10 @@ CUSTOM PROPERTIES
 
 .justify-content-around {
   justify-content: space-around;
+}
+
+.justify-content-evenly {
+  justify-content: space-evenly;
 }
 
 .align-self-auto {
@@ -11519,10 +11553,6 @@ CUSTOM PROPERTIES
   align-self: flex-end;
 }
 
-.align-items-stretch {
-  align-items: stretch;
-}
-
 .align-items-center {
   align-items: center;
 }
@@ -11537,10 +11567,6 @@ CUSTOM PROPERTIES
 
 .align-items-baseline {
   align-items: baseline;
-}
-
-.align-content-stretch {
-  align-content: stretch;
 }
 
 .align-content-center {
@@ -11561,6 +11587,10 @@ CUSTOM PROPERTIES
 
 .align-content-around {
   align-content: space-around;
+}
+
+.align-content-evenly {
+  align-content: space-evenly;
 }
 
 @media (min-width: 1024px) {
@@ -17174,6 +17204,26 @@ CUSTOM PROPERTIES
     text-align: justify;
   }
 
+  .sm\.justify-items-auto {
+    justify-items: auto;
+  }
+
+  .sm\.justify-items-start {
+    justify-items: start;
+  }
+
+  .sm\.justify-items-end {
+    justify-items: end;
+  }
+
+  .sm\.justify-items-center {
+    justify-items: center;
+  }
+
+  .sm\.justify-items-stretch {
+    justify-items: stretch;
+  }
+
   .sm\.justify-content-start {
     justify-content: flex-start;
   }
@@ -17192,6 +17242,10 @@ CUSTOM PROPERTIES
 
   .sm\.justify-content-around {
     justify-content: space-around;
+  }
+
+  .sm\.justify-content-evenly {
+    justify-content: space-evenly;
   }
 
   .sm\.align-self-auto {
@@ -17214,10 +17268,6 @@ CUSTOM PROPERTIES
     align-self: flex-end;
   }
 
-  .sm\.align-items-stretch {
-    align-items: stretch;
-  }
-
   .sm\.align-items-center {
     align-items: center;
   }
@@ -17232,10 +17282,6 @@ CUSTOM PROPERTIES
 
   .sm\.align-items-baseline {
     align-items: baseline;
-  }
-
-  .sm\.align-content-stretch {
-    align-content: stretch;
   }
 
   .sm\.align-content-center {
@@ -17256,6 +17302,10 @@ CUSTOM PROPERTIES
 
   .sm\.align-content-around {
     align-content: space-around;
+  }
+
+  .sm\.align-content-evenly {
+    align-content: space-evenly;
   }
 }
 @media (min-width: 1152px) {
@@ -22869,6 +22919,26 @@ CUSTOM PROPERTIES
     text-align: justify;
   }
 
+  .md\.justify-items-auto {
+    justify-items: auto;
+  }
+
+  .md\.justify-items-start {
+    justify-items: start;
+  }
+
+  .md\.justify-items-end {
+    justify-items: end;
+  }
+
+  .md\.justify-items-center {
+    justify-items: center;
+  }
+
+  .md\.justify-items-stretch {
+    justify-items: stretch;
+  }
+
   .md\.justify-content-start {
     justify-content: flex-start;
   }
@@ -22887,6 +22957,10 @@ CUSTOM PROPERTIES
 
   .md\.justify-content-around {
     justify-content: space-around;
+  }
+
+  .md\.justify-content-evenly {
+    justify-content: space-evenly;
   }
 
   .md\.align-self-auto {
@@ -22909,10 +22983,6 @@ CUSTOM PROPERTIES
     align-self: flex-end;
   }
 
-  .md\.align-items-stretch {
-    align-items: stretch;
-  }
-
   .md\.align-items-center {
     align-items: center;
   }
@@ -22927,10 +22997,6 @@ CUSTOM PROPERTIES
 
   .md\.align-items-baseline {
     align-items: baseline;
-  }
-
-  .md\.align-content-stretch {
-    align-content: stretch;
   }
 
   .md\.align-content-center {
@@ -22951,6 +23017,10 @@ CUSTOM PROPERTIES
 
   .md\.align-content-around {
     align-content: space-around;
+  }
+
+  .md\.align-content-evenly {
+    align-content: space-evenly;
   }
 }
 @media (min-width: 1280px) {
@@ -28564,6 +28634,26 @@ CUSTOM PROPERTIES
     text-align: justify;
   }
 
+  .lg\.justify-items-auto {
+    justify-items: auto;
+  }
+
+  .lg\.justify-items-start {
+    justify-items: start;
+  }
+
+  .lg\.justify-items-end {
+    justify-items: end;
+  }
+
+  .lg\.justify-items-center {
+    justify-items: center;
+  }
+
+  .lg\.justify-items-stretch {
+    justify-items: stretch;
+  }
+
   .lg\.justify-content-start {
     justify-content: flex-start;
   }
@@ -28582,6 +28672,10 @@ CUSTOM PROPERTIES
 
   .lg\.justify-content-around {
     justify-content: space-around;
+  }
+
+  .lg\.justify-content-evenly {
+    justify-content: space-evenly;
   }
 
   .lg\.align-self-auto {
@@ -28604,10 +28698,6 @@ CUSTOM PROPERTIES
     align-self: flex-end;
   }
 
-  .lg\.align-items-stretch {
-    align-items: stretch;
-  }
-
   .lg\.align-items-center {
     align-items: center;
   }
@@ -28622,10 +28712,6 @@ CUSTOM PROPERTIES
 
   .lg\.align-items-baseline {
     align-items: baseline;
-  }
-
-  .lg\.align-content-stretch {
-    align-content: stretch;
   }
 
   .lg\.align-content-center {
@@ -28646,6 +28732,10 @@ CUSTOM PROPERTIES
 
   .lg\.align-content-around {
     align-content: space-around;
+  }
+
+  .lg\.align-content-evenly {
+    align-content: space-evenly;
   }
 }
 @media (min-width: 1536px) {
@@ -34259,6 +34349,26 @@ CUSTOM PROPERTIES
     text-align: justify;
   }
 
+  .xl\.justify-items-auto {
+    justify-items: auto;
+  }
+
+  .xl\.justify-items-start {
+    justify-items: start;
+  }
+
+  .xl\.justify-items-end {
+    justify-items: end;
+  }
+
+  .xl\.justify-items-center {
+    justify-items: center;
+  }
+
+  .xl\.justify-items-stretch {
+    justify-items: stretch;
+  }
+
   .xl\.justify-content-start {
     justify-content: flex-start;
   }
@@ -34277,6 +34387,10 @@ CUSTOM PROPERTIES
 
   .xl\.justify-content-around {
     justify-content: space-around;
+  }
+
+  .xl\.justify-content-evenly {
+    justify-content: space-evenly;
   }
 
   .xl\.align-self-auto {
@@ -34299,10 +34413,6 @@ CUSTOM PROPERTIES
     align-self: flex-end;
   }
 
-  .xl\.align-items-stretch {
-    align-items: stretch;
-  }
-
   .xl\.align-items-center {
     align-items: center;
   }
@@ -34317,10 +34427,6 @@ CUSTOM PROPERTIES
 
   .xl\.align-items-baseline {
     align-items: baseline;
-  }
-
-  .xl\.align-content-stretch {
-    align-content: stretch;
   }
 
   .xl\.align-content-center {
@@ -34341,6 +34447,10 @@ CUSTOM PROPERTIES
 
   .xl\.align-content-around {
     align-content: space-around;
+  }
+
+  .xl\.align-content-evenly {
+    align-content: space-evenly;
   }
 }
 :root {
@@ -34621,8 +34731,20 @@ pre[class*=language-] {
   background: linear-gradient(0deg, #65ace0 10%, #3880b5 30%, #0a496c 75%, #101d36 100%);
 }
 
+.toc {
+  font-size: var(--font-sm);
+  line-height: var(--leading-10);
+}
+
 .home-highlight pre[class*=language-] {
   background: transparent;
+}
+
+.markdown-glossary > table td:first-child {
+  color: hsl(var(--cyan-hue, 180), calc(var(--cyan-sat, 50%) + 15%), calc(var(--cyan-ltn, 50%) + -10%));
+}
+.markdown-glossary > table td:last-child {
+  color: hsl(var(--silver-900-hue, var(--silver-hue, 230)), calc(0% + var(--silver-900-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-900-ltn, 58%)));
 }
 
 .markdown {
@@ -34687,7 +34809,7 @@ pre[class*=language-] {
   padding: 4px 5px;
   font-size: var(--font-sm);
   border-radius: var(--radius-sm);
-  color: hsl(var(--secondary-c-hue, var(--secondary-hue, 150)), calc(0% + var(--secondary-c-sat, var(--secondary-sat, 80%))), calc(0% + var(--secondary-300-ltn, 40%)));
+  color: hsl(var(--blue-hue, 220), calc(var(--blue-sat, 50%) + 30%), calc(var(--blue-ltn, 50%) + 5%));
 }
 .markdown > blockquote {
   margin-bottom: 1.5em;
