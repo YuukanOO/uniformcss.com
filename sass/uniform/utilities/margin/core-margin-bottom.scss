@@ -11,16 +11,10 @@ $custom-properties: ();
 
 $variants: (
   core.merge(
-    core.sizes(),
+    core.sizes(23),
     (
       auto: auto,
-      px: 1px,
-      2px: 2px,
-      3px: 3px,
-      
-      npx: -1px,
-      n2px: -2px,
-      n3px: -3px,
+      0: 0,
     )
   )
 );

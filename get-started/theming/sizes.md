@@ -139,7 +139,7 @@ The color API functions allow you to query and pull values from maps. You can al
 
 ```bash
 positive-size()
-positive-sizes()
+positive-sizes(24)
 negative-size()
 negative-sizes()
 size()

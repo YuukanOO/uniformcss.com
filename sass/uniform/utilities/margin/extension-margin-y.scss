@@ -11,10 +11,11 @@ $custom-properties: ();
 
 $variants: (
 	core.merge(
-		core.positive-sizes(),
+		core.positive-sizes(24),
 		(
-			auto: auto
-		)
+      auto: auto,
+      0: 0,
+    )
 	)
 );
 

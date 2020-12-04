@@ -241,11 +241,15 @@ $default-config: (
   ),
 
   positive-sizes: (
-    0: 0,
-
+    px: 1px,
+    0\.5: rem(2),
+    0\.25: rem(3),
     1: rem(4),
+    1\.5: rem(6),
     2: rem(8),
+    2\.5: rem(10),
     3: rem(12),
+    3\.5: rem(14),
     4: rem(16),
     5: rem(20),
     6: rem(24),
@@ -256,32 +260,47 @@ $default-config: (
     11: rem(44),
     12: rem(48),
 
-    13: rem(56),
-    14: rem(64),
-    15: rem(72),
-    16: rem(80),
-    17: rem(88),
-    18: rem(96),
+    14: rem(56),
+    16: rem(64),
+    18: rem(72),
+    20: rem(80),
 
-    19: rem(128),
-    20: rem(160),
-    21: rem(192),
+    24: rem(96),
+    28: rem(112),
+    32: rem(128),
+    36: rem(144),
+    40: rem(160),
+    44: rem(176),
+    48: rem(192),
+    52: rem(208),
+    56: rem(224),
+    60: rem(240),
+    64: rem(256),
 
-    22: rem(256),
-    23: rem(320),
-    24: rem(384),
+    72: rem(288),
+    80: rem(320),
+    88: rem(352),
+    96: rem(384),
 
-    25: rem(512),
-    26: rem(640),
-    27: rem(768),
+    128: rem(512),
+    160: rem(640),
+    192: rem(768),
 
-    28: rem(896),
+    256: rem(1024),
+    320: rem(1280),
+    384: rem(1536),
   ),
 
   negative-sizes: (
+    npx: -1px,
+    n0\.5: rem(-2),
+    n0\.25: rem(-3),
     n1: rem(-4),
+    n1\.5: rem(-6),
     n2: rem(-8),
+    n2\.5: rem(-10),
     n3: rem(-12),
+    n3\.5: rem(-14),
     n4: rem(-16),
     n5: rem(-20),
     n6: rem(-24),
@@ -292,26 +311,35 @@ $default-config: (
     n11: rem(-44),
     n12: rem(-48),
 
-    n13: rem(-56),
-    n14: rem(-64),
-    n15: rem(-72),
-    n16: rem(-80),
-    n17: rem(-88),
-    n18: rem(-96),
+    n14: rem(-56),
+    n16: rem(-64),
+    n18: rem(-72),
+    n20: rem(-80),
 
-    n19: rem(-128),
-    n20: rem(-160),
-    n21: rem(-192),
+    n24: rem(-96),
+    n28: rem(-112),
+    n32: rem(-128),
+    n36: rem(-144),
+    n40: rem(-160),
+    n44: rem(-176),
+    n48: rem(-192),
+    n52: rem(-208),
+    n56: rem(-224),
+    n60: rem(-240),
+    n64: rem(-256),
 
-    n22: rem(-256),
-    n23: rem(-320),
-    n24: rem(-384),
+    n72: rem(-288),
+    n80: rem(-320),
+    n88: rem(-352),
+    n96: rem(-384),
 
-    n25: rem(-512),
-    n26: rem(-640),
-    n27: rem(-768),
+    n128: rem(-512),
+    n160: rem(-640),
+    n192: rem(-768),
 
-    n28: rem(-896),
+    n256: rem(-1024),
+    n320: rem(-1280),
+    n384: rem(-1536),
   ),
 
   font-families: (
@@ -341,6 +369,9 @@ $default-config: (
     xl: rem(20),
     lg: rem(18),
     md: rem(16),
+
+    base: rem(15),
+
     sm: rem(14),
     xs: rem(12),
     2xs: rem(10),
@@ -375,19 +406,31 @@ $default-config: (
   ),
 
   trackings: (
+    n10: -1.1em,
+    n9: -1.08em,
+    n8: -1.06em,
+    n7: -1.04em,
+    n6: -1.02em,
     n5: -0.1em,
     n4: -0.08em,
     n3: -0.06em,
     n2: -0.04em,
     n1: -0.02em,
+    0: 0,
     1: 0.02em,
     2: 0.04em,
     3: 0.06em,
     4: 0.08em,
-    5: 0.1em,
+    5: 1em,
+    6: 1.02em,
+    7: 1.04em,
+    8: 1.06em,
+    9: 1.08em,
+    10: 1.1em,
   ),
 
   radiuses: (
+    2xs: rem(2),
     xs: rem(4),
     sm: rem(8),
     md: rem(12),
@@ -510,7 +553,7 @@ $gradients: map.get($all-config, gradients);
     $map: (
       $key: var(--#{$keyword}#{$delimiter}#{$key}),
     );
-    $variablized-map: merge($variablized-map, $map);
+    $variablized-map: map.merge($variablized-map, $map);
   }
 
   @return $variablized-map;
@@ -523,7 +566,7 @@ $gradients: map.get($all-config, gradients);
     $screens: (
       screen-#{$key}: $value,
     );
-    $named-screens: merge($named-screens, $screens);
+    $named-screens: map.merge($named-screens, $screens);
   }
   @return $named-screens;
 }
@@ -772,17 +815,57 @@ $var-trackings: variablize-map($trackings, tracking);
 }
 
 // SIZE FUNCTIONS
-@function positive-sizes() {
-  @return $var-positive-sizes;
+@function positive-sizes($limit: null) {
+  @if ($limit != null) {
+    $positive-sizes: ();
+
+    @for $i from 1 through $limit {
+      $map: list.nth($var-positive-sizes, $i);
+      $key: list.nth($map, 1);
+      $value: list.nth($map, 2);
+      $sizes-map: (
+        $key: $value
+      );
+      $positive-sizes: map.merge($positive-sizes, $sizes-map);
+    }
+
+    @return $positive-sizes;
+  } @else {
+    @return $var-positive-sizes;
+  }
 }
 
-@function negative-sizes() {
-  @return $var-negative-sizes;
+@function negative-sizes($limit: null) {
+  @if ($limit != null) {
+    $negative-sizes: ();
+
+    @for $i from 1 through $limit {
+      $map: list.nth($var-negative-sizes, $i);
+      $key: list.nth($map, 1);
+      $value: list.nth($map, 2);
+      $sizes-map: (
+        $key: $value
+      );
+      $negative-sizes: map.merge($negative-sizes, $sizes-map);
+    }
+
+    @return $negative-sizes;
+  } @else {
+    @return $var-negative-sizes;
+  }
 }
 
-@function sizes() {
-  @return $var-sizes;
+@function sizes($limit: null) {
+  @if ($limit != null) {
+    $positive-sizes: positive-sizes($limit);
+    $negative-sizes: negative-sizes($limit);
+    $sizes: map.merge($positive-sizes, $negative-sizes);
+    @return $sizes;
+  } @else {
+    @return $var-sizes;
+  }
 }
+@debug positive-sizes(23);
 
 // TYPOGRAPHY FUNCTIONS
 @function font-families() {

@@ -107,7 +107,7 @@ For more information on which variants are available, visit <a class="hover.unde
 size()
 sizes()
 positive-size()
-positive-sizes()
+positive-sizes(24)
 negative-size()
 negative-sizes()
 ```
