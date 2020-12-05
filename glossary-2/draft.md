@@ -1,8 +1,8 @@
 ## `justify-content`
 
-`justify-content`, along with [`align-items`], are two of the most essential classes for working with [Flexbox]. In the context of a Flexbox row, `flex row`, `justify-content` justifies children elements across the x-axis (left-to-right). In the context of a Flexbox column, `flex col`, `justify-content` justifies children elements across the y-axis (top-to-bottom).
+`justify-content`, along with [`align-items`](TODO), are two of the most essential classes for working with [Flexbox](TODO). In the context of a Flexbox row, `flex row`, `justify-content` justifies children elements across the x-axis (left-to-right). In the context of a Flexbox column, `flex col`, `justify-content` justifies children elements across the y-axis (top-to-bottom).
 
-[`align-items`] is converse to `justify-content`.
+[`align-items`](TODO) is converse to `justify-content`.
 
 [You can learn more about `justify-content` at the MDN documentation here.](TODO)
 
@@ -20,9 +20,9 @@
 
 ## `align-items`
 
-`align-items`, along with [`justify-content`], are two of the most essential classes for working with [Flexbox]. In the context of a Flexbox column, `flex col`, `align-items` aligns children elements across the y-axis (top-to-bottom). In the context of a Flexbox column, `flex col`, `align-items` aligns children elements across the x-axis (left-to-right).
+`align-items`, along with [`justify-content`](TODO), are two of the most essential classes for working with [Flexbox](TODO). In the context of a Flexbox column, `flex col`, `align-items` aligns children elements across the y-axis (top-to-bottom). In the context of a Flexbox column, `flex col`, `align-items` aligns children elements across the x-axis (left-to-right).
 
-[`justify-content`] is converse to `align-items`.
+[`justify-content`](TODO) is converse to `align-items`.
 
 [You can learn more about `align-items` at the MDN documentation here.](TODO)
 
@@ -44,7 +44,7 @@
 
 Note that `text-opacity` does not apply to nested element text; `text-opacity` _only_ applies to the current element’s text.
 
-Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`border-opacity`]. Other utilities to consider are [`display-none`] and [`invisible`].
+Other opacity utilities include [`text-opacity`](TODO), [`background-opacity`](TODO), and [`border-opacity`](TODO). Other utilities to consider are [`display-none`](TODO) and [`invisible`](TODO).
 
 <!-- [You can learn more about `opacity` at the MDN documentation here.](TODO) -->
 
@@ -65,9 +65,9 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 
 Note that `background-opacity` does not apply to nested children elements; `background-opacity` _only_ applies to the current element.
 
-`background-opacity` is also useful in combination with [`background-blur`].
+`background-opacity` is also useful in combination with [`background-blur`](TODO).
 
-Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`border-opacity`]. Other utilities to consider are [`display-none`] and [`invisible`].
+Other opacity utilities include [`text-opacity`](TODO), [`background-opacity`](TODO), and [`border-opacity`](TODO). Other utilities to consider are [`display-none`](TODO) and [`invisible`](TODO).
 
 <!-- [You can learn more about `opacity` at the MDN documentation here.](TODO) -->
 
@@ -88,7 +88,7 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 
 Note that `border-opacity` does not apply to nested children elements; `border-opacity` _only_ applies to the current element.
 
-Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`border-opacity`]. Other utilities to consider are [`display-none`] and [`invisible`].
+Other opacity utilities include [`text-opacity̵`](TODO), [`background-opacity`](TODO), and [`border-opacity`](TODO). Other utilities to consider are [`display-none`](TODO) and [`invisible`](TODO).
 
 <!-- [You can learn more about `border-opacity` at the MDN documentation here.](TODO) -->
 
@@ -107,7 +107,7 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 
 `opacity` controls the transparency of an element. `opacity-0` makes an element completely transparent and `opacity-100` makes an element completely opaque.
 
-Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`border-opacity`]. Other utilities to consider are [`display-none`] and [`invisible`].
+Other opacity utilities include [`text-opacity`](TODO), [`background-opacity`](TODO), and [`border-opacity`](TODO). Other utilities to consider are [`display-none`](TODO) and [`invisible`](TODO).
 
 [You can learn more about `opacity` at the MDN documentation here.](TODO)
 
@@ -148,7 +148,7 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 
 ## `invisible` and `visible`
 
-`invisible` and `visible` control an element’s visibility. `invisible` is most similar to [`opacity-0`] and `visible` to [`opacity-100`]. If you’re unsure about whether to use `invisible` or `opacity-0`, we recommend `opacity-0` because `opacity` is a transitionable / animatable property in CSS.
+`invisible` and `visible` control an element’s visibility. `invisible` is most similar to [`opacity-0`](TODO) and `visible` to [`opacity-100`](TODO). If you’re unsure about whether to use `invisible` or `opacity-0`, we recommend `opacity-0` because `opacity` is a transitionable / animatable property in CSS.
 
 <!-- TODO: Document a11y concerns. -->
 
