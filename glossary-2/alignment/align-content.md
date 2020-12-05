@@ -27,7 +27,7 @@ The following default responsive and pseudo settings.
 Setting | Default Setting
 - | -
 `responsive` | `true`
-`pseudos` | `none`, `none`
+`pseudos` | `none`
 
 
 ---
