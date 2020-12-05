@@ -8,14 +8,13 @@
 
 `justify-content` supports the following values:
 
-<!-- prettier-ignore -->
-+---------------------------+
-| `stretch`  | `stretch`\*  |
-| `start`    | `flex-start` |
-| `center`   | `center`     |
-| `end`      | `flex-end`   |
-| `baseline` | `baseline`   | \*\*TODO: Check if this is true.
-+---------------------------+
+| Class      | CSS                           |
+| ---------- | ----------------------------- |
+| `stretch`  | `justify-content: stretch`\*  |
+| `start`    | `justify-content: flex-start` |
+| `center`   | `justify-content: center`     |
+| `end`      | `justify-content: flex-end`   |
+| `baseline` | `justify-content: baseline`   |
 
 \*`justify-content` defaults to `stretch` when unspecified.
 
@@ -29,14 +28,13 @@
 
 `align-items` supports the following values:
 
-<!-- prettier-ignore -->
-+---------------------------+
-| `stretch`  | `stretch`\*  |
-| `start`    | `flex-start` |
-| `center`   | `center`     |
-| `end`      | `flex-end`   |
-| `baseline` | `baseline`   | \*\*TODO: Check if this is true.
-+---------------------------+
+| Class      | CSS                       |
+| ---------- | ------------------------- |
+| `stretch`  | `align-items: stretch`\*  |
+| `start`    | `align-items: flex-start` |
+| `center`   | `align-items: center`     |
+| `end`      | `align-items: flex-end`   |
+| `baseline` | `align-items: baseline`   |
 
 \*`align-items` defaults to `stretch` when unspecified.
 
@@ -50,15 +48,14 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 
 <!-- [You can learn more about `opacity` at the MDN documentation here.](TODO) -->
 
-<!-- prettier-ignore -->
-+---------------------------+
-| text-opacity-0   | 0%     |
-| text-opacity-20  | 20%    |
-| text-opacity-40  | 40%    |
-| text-opacity-60  | 60%    |
-| text-opacity-80  | 80%    |
-| text-opacity-100 | 100%\* |
-+---------------------------+
+| Class              | CSS                      |
+| ------------------ | ------------------------ |
+| `text-opacity-0`   | `--text-opacity: 0%`     |
+| `text-opacity-20`  | `--text-opacity: 20%`    |
+| `text-opacity-40`  | `--text-opacity: 40%`    |
+| `text-opacity-60`  | `--text-opacity: 60%`    |
+| `text-opacity-80`  | `--text-opacity: 80%`    |
+| `text-opacity-100` | `--text-opacity: 100%`\* |
 
 \*`text-opacity` defaults to `100%` when unspecified.
 
@@ -74,15 +71,14 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 
 <!-- [You can learn more about `opacity` at the MDN documentation here.](TODO) -->
 
-<!-- prettier-ignore -->
-+-------------------------+
-| bg-opacity-0   | 0%     |
-| bg-opacity-20  | 20%    |
-| bg-opacity-40  | 40%    |
-| bg-opacity-60  | 60%    |
-| bg-opacity-80  | 80%    |
-| bg-opacity-100 | 100%\* |
-+-------------------------+
+| Class            | CSS                    |
+| ---------------- | ---------------------- |
+| `bg-opacity-0`   | `--bg-opacity: 0%`     |
+| `bg-opacity-20`  | `--bg-opacity: 20%`    |
+| `bg-opacity-40`  | `--bg-opacity: 40%`    |
+| `bg-opacity-60`  | `--bg-opacity: 60%`    |
+| `bg-opacity-80`  | `--bg-opacity: 80%`    |
+| `bg-opacity-100` | `--bg-opacity: 100%`\* |
 
 \*`bg-opacity` defaults to `100%` when unspecified.
 
@@ -96,15 +92,14 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 
 <!-- [You can learn more about `border-opacity` at the MDN documentation here.](TODO) -->
 
-<!-- prettier-ignore -->
-+-----------------------------+
-| border-opacity-0   | 0%     |
-| border-opacity-20  | 20%    |
-| border-opacity-40  | 40%    |
-| border-opacity-60  | 60%    |
-| border-opacity-80  | 80%    |
-| border-opacity-100 | 100%\* |
-+-----------------------------+
+| Class                | CSS                        |
+| -------------------- | -------------------------- |
+| `border-opacity-0`   | `--border-opacity: 0%`     |
+| `border-opacity-20`  | `--border-opacity: 20%`    |
+| `border-opacity-40`  | `--border-opacity: 40%`    |
+| `border-opacity-60`  | `--border-opacity: 60%`    |
+| `border-opacity-80`  | `--border-opacity: 80%`    |
+| `border-opacity-100` | `--border-opacity: 100%`\* |
 
 \*`border-opacity` defaults to `100%` when unspecified.
 
@@ -116,15 +111,14 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 
 [You can learn more about `opacity` at the MDN documentation here.](TODO)
 
-<!-- prettier-ignore -->
-+----------------------+
-| opacity-0   | 0%     |
-| opacity-20  | 20%    |
-| opacity-40  | 40%    |
-| opacity-60  | 60%    |
-| opacity-80  | 80%    |
-| opacity-100 | 100%\* |
-+----------------------+
+| Class         | CSS               |
+| ------------- | ----------------- |
+| `opacity-0`   | `opacity: 0%`     |
+| `opacity-20`  | `opacity: 20%`    |
+| `opacity-40`  | `opacity: 40%`    |
+| `opacity-60`  | `opacity: 60%`    |
+| `opacity-80`  | `opacity: 80%`    |
+| `opacity-100` | `opacity: 100%`\* |
 
 \*`opacity` defaults to `100%` when unspecified.
 
@@ -135,19 +129,18 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 - [You can learn more about `text-align` at the MDN documentation here.](TODO)
 - [You can learn more about `vertical-align` at the MDN documentation here.](TODO)
 
-<!-- prettier-ignore -->
-+------------------------------------------+
-| align-left* (x-axis)       | left        |
-| align-center (x-axis)      | center      |
-| align-right (x-axis)       | right       |
-| align-justify (x-axis)     | justify     |
-| align-baseline* (y-axis)   | baseline    |
-| align-top (y-axis)         | top         |
-| align-middle (y-axis)      | middle      |
-| align-bottom (y-axis)      | bottom      |
-| align-text-top (y-axis)    | text-top    |
-| align-text-bottom (y-axis) | text-bottom |
-+------------------------------------------+
+| Class                      | CSS                           |
+| -------------------------- | ----------------------------- |
+| align-left\* (x-axis)      | `text-align: left`            |
+| align-center (x-axis)      | `text-align: center`          |
+| align-right (x-axis)       | `text-align: right`           |
+| align-justify (x-axis)     | `text-align: justify`         |
+| align-baseline\* (y-axis)  | `vertical-align: baseline`    |
+| align-top (y-axis)         | `vertical-align: top`         |
+| align-middle (y-axis)      | `vertical-align: middle`      |
+| align-bottom (y-axis)      | `vertical-align: bottom`      |
+| align-text-top (y-axis)    | `vertical-align: text-top`    |
+| align-text-bottom (y-axis) | `vertical-align: text-bottom` |
 
 <!-- HINT: Do you want to support start and end? -->
 
@@ -163,10 +156,10 @@ Note that `invisible` is not the same as `display-none`; `invisible` creates a b
 
 - [You can learn more about `visibility` at the MDN documentation here.](TODO)
 
-+---------------------+
-| invisible | hidden |
+| Class     | CSS     |
+| --------- | ------- |
+| invisible | hidden  |
 | visible\* | visible |
-+---------------------+
 
 <!-- TODO: Check this. -->
 
