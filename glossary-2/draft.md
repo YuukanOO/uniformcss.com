@@ -4,7 +4,7 @@
 
 [`align-items`](TODO) is converse to `justify-content`.
 
-[You can learn more about `justify-content` at the MDN documentation here.](TODO)
+[You can learn more about `justify-content` at the MDN documentation.](TODO)
 
 `justify-content` supports the following values:
 
@@ -24,7 +24,7 @@
 
 [`justify-content`](TODO) is converse to `align-items`.
 
-[You can learn more about `align-items` at the MDN documentation here.](TODO)
+[You can learn more about `align-items` at the MDN documentation.](TODO)
 
 `align-items` supports the following values:
 
@@ -46,7 +46,7 @@ Note that `text-opacity` does not apply to nested element text; `text-opacity` _
 
 Other opacity utilities include [`text-opacity`](TODO), [`background-opacity`](TODO), and [`border-opacity`](TODO). Other utilities to consider are [`display-none`](TODO) and [`invisible`](TODO).
 
-<!-- [You can learn more about `opacity` at the MDN documentation here.](TODO) -->
+<!-- [You can learn more about `opacity` at the MDN documentation.](TODO) -->
 
 | Class              | CSS                      |
 | ------------------ | ------------------------ |
@@ -69,7 +69,7 @@ Note that `background-opacity` does not apply to nested children elements; `back
 
 Other opacity utilities include [`text-opacity`](TODO), [`background-opacity`](TODO), and [`border-opacity`](TODO). Other utilities to consider are [`display-none`](TODO) and [`invisible`](TODO).
 
-<!-- [You can learn more about `opacity` at the MDN documentation here.](TODO) -->
+<!-- [You can learn more about `opacity` at the MDN documentation.](TODO) -->
 
 | Class            | CSS                    |
 | ---------------- | ---------------------- |
@@ -90,7 +90,7 @@ Note that `border-opacity` does not apply to nested children elements; `border-o
 
 Other opacity utilities include [`text-opacity̵`](TODO), [`background-opacity`](TODO), and [`border-opacity`](TODO). Other utilities to consider are [`display-none`](TODO) and [`invisible`](TODO).
 
-<!-- [You can learn more about `border-opacity` at the MDN documentation here.](TODO) -->
+<!-- [You can learn more about `border-opacity` at the MDN documentation.](TODO) -->
 
 | Class                | CSS                        |
 | -------------------- | -------------------------- |
@@ -109,7 +109,7 @@ Other opacity utilities include [`text-opacity̵`](TODO), [`background-opacity`]
 
 Other opacity utilities include [`text-opacity`](TODO), [`background-opacity`](TODO), and [`border-opacity`](TODO). Other utilities to consider are [`display-none`](TODO) and [`invisible`](TODO).
 
-[You can learn more about `opacity` at the MDN documentation here.](TODO)
+[You can learn more about `opacity` at the MDN documentation.](TODO)
 
 | Class         | CSS               |
 | ------------- | ----------------- |
@@ -126,16 +126,16 @@ Other opacity utilities include [`text-opacity`](TODO), [`background-opacity`](T
 
 `align` can be used to justify text along the x-axis (left-to-right) and align text along the y-axis (top-to-bottom). `align` combines `text-align` and `vertical-align` into one shorthand for ease of use.
 
-- [You can learn more about `text-align` at the MDN documentation here.](TODO)
-- [You can learn more about `vertical-align` at the MDN documentation here.](TODO)
+- [You can learn more about `text-align` at the MDN documentation.](TODO)
+- [You can learn more about `vertical-align` at the MDN documentation.](TODO)
 
 | Class                      | CSS                           |
 | -------------------------- | ----------------------------- |
-| align-left\* (x-axis)      | `text-align: left`            |
+| align-left (x-axis)        | `text-align: left`\*          |
 | align-center (x-axis)      | `text-align: center`          |
 | align-right (x-axis)       | `text-align: right`           |
 | align-justify (x-axis)     | `text-align: justify`         |
-| align-baseline\* (y-axis)  | `vertical-align: baseline`    |
+| align-baseline (y-axis)    | `vertical-align: baseline`\*  |
 | align-top (y-axis)         | `vertical-align: top`         |
 | align-middle (y-axis)      | `vertical-align: middle`      |
 | align-bottom (y-axis)      | `vertical-align: bottom`      |
@@ -154,16 +154,39 @@ Other opacity utilities include [`text-opacity`](TODO), [`background-opacity`](T
 
 Note that `invisible` is not the same as `display-none`; `invisible` creates a bounding box and `display-none` does not.
 
-- [You can learn more about `visibility` at the MDN documentation here.](TODO)
+- [You can learn more about `visibility` at the MDN documentation.](TODO)
 
-| Class     | CSS     |
-| --------- | ------- |
-| invisible | hidden  |
-| visible\* | visible |
+| Class     | CSS                     |
+| --------- | ----------------------- |
+| invisible | `visibility: hidden`    |
+| visible   | `visibility: visible`\* |
 
-<!-- TODO: Check this. -->
+\*`visibility` defaults to `visible` when unspecified.
 
-\*CSS defaults to `visible` when unspecified.
+## `overflow`
+
+`overflow` controls whether children elements that overflow the parent element’s bounding box should be visible, clipped (`hidden`) or scrolled (`scroll`) along the x-, y-, or both axes.
+
+Note that you should not use an `overflow` utility on an element that also uses `padding`. Because these CSS properties interfere with each other, we recommend wrapping the `padding` element with an `overflow` element.
+
+- [You can learn more about `overflow` at the MDN documentation.](TODO)
+
+| Class                | CSS                   |
+| -------------------- | --------------------- |
+| `overflow-auto`      | `overflow: auto`\*    |
+| `overflow-hidden`    | `overflow: hidden`    |
+| `overflow-visible`   | `overflow: visible`   |
+| `overflow-scroll`    | `overflow: scroll`    |
+| `overflow-x-auto`    | `overflow-x: auto`\*  |
+| `overflow-x-hidden`  | `overflow-x: hidden`  |
+| `overflow-x-visible` | `overflow-x: visible` |
+| `overflow-x-scroll`  | `overflow-x: scroll`  |
+| `overflow-y-auto`    | `overflow-y: auto`\*  |
+| `overflow-y-hidden`  | `overflow-y: hidden`  |
+| `overflow-y-visible` | `overflow-y: visible` |
+| `overflow-y-scroll`  | `overflow-y: scroll`  |
+
+\*`overflow` defaults to `auto` when unspecified.
 
 ---
 
@@ -222,9 +245,9 @@ Note that `invisible` is not the same as `display-none`; `invisible` creates a b
 - [ ] @use "utilities/composition/core-object-position";
 - [ ] @use "utilities/composition/core-position";
 - [ ] @use "utilities/composition/core-table-layout";
-- [ ] @use "utilities/overflow/core-overflow-x";
-- [ ] @use "utilities/overflow/core-overflow-y";
-- [ ] @use "utilities/overflow/core-overflow";
+- [x] @use "utilities/overflow/core-overflow-x";
+- [x] @use "utilities/overflow/core-overflow-y";
+- [x] @use "utilities/overflow/core-overflow";
 - [ ] @use "utilities/effect/core-box-shadow";
 - [ ] @use "utilities/effect/core-filter";
 - [ ] @use "utilities/effect/core-mix-blend-mode";
