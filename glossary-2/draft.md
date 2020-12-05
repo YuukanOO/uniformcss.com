@@ -230,9 +230,22 @@ Note that if you are using `margin-top` or `margin-left` utilities to space elem
 | `order-11` | `order: 11` |
 | `order-12` | `order: 12` |
 
-<!-- TODO: What’s the default value for order? 0? -->
+<!-- TODO: What’s the default value for order? 0? auto? -->
 
 <!-- \*`overflow` defaults to `auto` when unspecified. -->
+
+# `antialiased` and `subpixel-antialiased`
+
+`antialiased` and `subpixel-antialiased` control whether an element and its children elements’ text should be antialiased, that is, rendered more sharply. While Uniform CSS does not provide antialiasing by default, we recommend opting-in for most use-cases: `<html class="antialiased">`.
+
+Conversely, sometimes code snippets appear more readable by opting-out of antialiasing: `<pre class="subpixel-antialiased">`.
+
+Note that `antialiased` is a platform-dependent feature.
+
+| Class                  | CSS                                                                             |
+| ---------------------- | ------------------------------------------------------------------------------- |
+| `antialiased`          | `-webkit-font-smoothing: antialiased;`<br>`-moz-osx-font-smoothing: grayscale;` |
+| `subpixel-antialiased` | `-webkit-font-smoothing: auto;`<br>`-moz-osx-font-smoothing: auto;`\*           |
 
 ---
 
@@ -247,7 +260,7 @@ Note that if you are using `margin-top` or `margin-left` utilities to space elem
 - [ ] @use "utilities/appearance/core-outline";
 - [x] @use "utilities/appearance/core-visibility";
 - [ ] @use "utilities/appearance/extension-appearance";
-- [ ] @use "utilities/appearance/extension-font-smooth";
+- [x] @use "utilities/appearance/extension-font-smooth";
 - [ ] @use "utilities/background/extension-background-brighten";
 - [ ] @use "utilities/background/extension-background-deepen";
 - [ ] @use "utilities/background/extension-background-lighten";
