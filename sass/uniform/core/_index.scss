@@ -24,8 +24,8 @@ $default-config: (
   important: false,
   prefix: '',
   delimiter: '-',
-  pseudo-delimiter: '\\.',
-  screen-delimiter: '\\.',
+  pseudo-delimiter: '\\:',
+  screen-delimiter: '\\:',
   headless: false,
   root: true,
   debugger: false,
@@ -865,7 +865,6 @@ $var-trackings: variablize-map($trackings, tracking);
     @return $var-sizes;
   }
 }
-@debug positive-sizes(23);
 
 // TYPOGRAPHY FUNCTIONS
 @function font-families() {

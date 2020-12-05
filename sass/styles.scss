@@ -49,8 +49,9 @@
 
 .markdown-glossary {
 	& > table td {
+		font-size: font-size(sm);
 		&:first-child {
-			color: fill(cyan, brighten-300, darken-200);
+			color: fill(cyan, brighten-400, darken-200);
 		}
 		&:last-child {
 			color: fill(silver-900);
@@ -59,7 +60,7 @@
 }
 
 .markdown {
-	font-size: font-size(sm);
+	font-size: font-size(base);
 
 	& > table {
 		@extend .table;
