@@ -17,7 +17,6 @@ Class Name | Property
 `align-content-around` | `align-content: space-around`
 `align-content-evenly` | `align-content: space-evenly`
 
-
 ---
 
 ### Default Settings

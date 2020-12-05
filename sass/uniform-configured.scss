@@ -1,11 +1,5 @@
 @use "uniform" as * with (
   $config: (
-    colors: (
-      custom: red,
-      custom-hsl: (
-        hue: 225, saturation: 100%, lightness: 40%
-      )
-    ),
     utilities: (
       // leading-trim: (
       //   keyword: leading,
@@ -25,9 +19,6 @@
       //   responsive: true,
       //   pseudos: (focus)
       // ),
-    ),
-    excludes: (
-      
     )
   )
 );

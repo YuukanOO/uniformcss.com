@@ -4711,20 +4711,6 @@ CUSTOM PROPERTIES
   color: hsla(0, calc(0% + var(--text-sat)), calc(0% + var(--text-ltn)), var(--text-opacity));
 }
 
-.text-custom-hsl, .hover\:text-custom-hsl:hover {
-  --text-sat: 0%;
-  --text-ltn: 0%;
-  --text-opacity: 1;
-  color: hsla(225, calc(100% + var(--text-sat)), calc(40% + var(--text-ltn)), var(--text-opacity));
-}
-
-.text-custom, .hover\:text-custom:hover {
-  --text-sat: 0%;
-  --text-ltn: 0%;
-  --text-opacity: 1;
-  color: red;
-}
-
 .text-opacity-02, .hover\:text-opacity-02:hover {
   --text-opacity: 0.02;
 }
@@ -9458,20 +9444,6 @@ CUSTOM PROPERTIES
   border-color: hsla(0, calc(0% + var(--border-sat)), calc(0% + var(--border-ltn)), var(--border-opacity));
 }
 
-.border-custom-hsl, .hover\:border-custom-hsl:hover {
-  --border-sat: 0%;
-  --border-ltn: 0%;
-  --border-opacity: 1;
-  border-color: hsla(225, calc(100% + var(--border-sat)), calc(40% + var(--border-ltn)), var(--border-opacity));
-}
-
-.border-custom, .hover\:border-custom:hover {
-  --border-sat: 0%;
-  --border-ltn: 0%;
-  --border-opacity: 1;
-  border-color: red;
-}
-
 .border-separate {
   border-collapse: separate;
 }
@@ -10811,20 +10783,6 @@ CUSTOM PROPERTIES
   --bg-ltn: 0%;
   --bg-opacity: 1;
   background-color: hsla(0, calc(0% + var(--bg-sat)), calc(0% + var(--bg-ltn)), var(--bg-opacity));
-}
-
-.bg-custom-hsl, .group:hover .group-hover\:bg-custom-hsl, .hover\:bg-custom-hsl:hover {
-  --bg-sat: 0%;
-  --bg-ltn: 0%;
-  --bg-opacity: 1;
-  background-color: hsla(225, calc(100% + var(--bg-sat)), calc(40% + var(--bg-ltn)), var(--bg-opacity));
-}
-
-.bg-custom, .group:hover .group-hover\:bg-custom, .hover\:bg-custom:hover {
-  --bg-sat: 0%;
-  --bg-ltn: 0%;
-  --bg-opacity: 1;
-  background-color: red;
 }
 
 .bg-border {
