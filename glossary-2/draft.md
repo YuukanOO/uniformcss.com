@@ -188,6 +188,23 @@ Note that you should not use an `overflow` utility on an element that also uses 
 
 \*`overflow` defaults to `auto` when unspecified.
 
+## `border-box` and `content-box`
+
+<!-- TODO: Check is it just padding or padding and border, etc. -->
+
+`border-box` and `content-box` control whether an element’s box-sizing, that is, whether `padding` and `border-width` should be inset or outset. By default Uniform CSS uses `box-sizing: border-box` as a global CSS reset, as does most of the web. We recommend you only use `content-box` if you know what you are doing.
+
+Note that `content-box` only changes the bounding box of the current element; it does not change the bounding box for nested children elements.
+
+| Class       | CSS                        |
+| ----------- | -------------------------- |
+| border-box  | `box-sizing: border-box`\* |
+| content-box | `box-sizing: content-box`  |
+
+\*`box-sizing` defaults to `border-box` when unspecified.
+
+- [You can learn more about `box-sizing` at the MDN documentation.](TODO)
+
 ---
 
 - [ ] @use "utilities/alignment/core-align-content";
@@ -238,7 +255,7 @@ Note that you should not use an `overflow` utility on an element that also uses 
 - [ ] @use "utilities/border/core-border-style";
 - [ ] @use "utilities/composition/extension-clearfix";
 - [ ] @use "utilities/composition/extension-ratio";
-- [ ] @use "utilities/composition/core-box-sizing";
+- [x] @use "utilities/composition/core-box-sizing";
 - [ ] @use "utilities/composition/core-clear";
 - [ ] @use "utilities/composition/core-float";
 - [ ] @use "utilities/composition/core-object-fit";
