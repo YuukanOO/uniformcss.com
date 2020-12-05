@@ -153,6 +153,25 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 
 \*`align` defaults to `left` (x-axis) and `baseline` (y-axis) when unspecified.
 
+## `invisible` and `visible`
+
+`invisible` and `visible` control an element’s visibility. `invisible` is most similar to [`opacity-0`] and `visible` to [`opacity-100`]. If you’re unsure about whether to use `invisible` or `opacity-0`, we recommend `opacity-0` because `opacity` is a transitionable / animatable property in CSS.
+
+<!-- TODO: Document a11y concerns. -->
+
+Note that `invisible` is not the same as `display-none`; `invisible` creates a bounding box and `display-none` does not.
+
+- [You can learn more about `visibility` at the MDN documentation here.](TODO)
+
++---------------------+
+| invisible | hidden |
+| visible\* | visible |
++---------------------+
+
+<!-- TODO: Check this. -->
+
+\*CSS defaults to `visible` when unspecified.
+
 ---
 
 - [ ] @use "utilities/alignment/core-align-content";
@@ -164,7 +183,7 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 - [ ] @use "utilities/appearance/core-display";
 - [x] @use "utilities/appearance/core-opacity";
 - [ ] @use "utilities/appearance/core-outline";
-- [ ] @use "utilities/appearance/core-visibility";
+- [x] @use "utilities/appearance/core-visibility";
 - [ ] @use "utilities/appearance/extension-appearance";
 - [ ] @use "utilities/appearance/extension-font-smooth";
 - [ ] @use "utilities/background/extension-background-brighten";
