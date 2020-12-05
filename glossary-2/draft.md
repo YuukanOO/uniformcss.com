@@ -205,6 +205,35 @@ Note that `content-box` only changes the bounding box of the current element; it
 
 - [You can learn more about `box-sizing` at the MDN documentation.](TODO)
 
+## `order`
+
+<!-- TODO: Check only affects Flexbox and CSS Grid -->
+
+`order` controls an element’s order with respect to the document flow of a Flexbox or CSS Grid context. By default, the web renders elements in the same order as they appear in HTML. But by using `order` in a Flexbox or CSS Grid context, you can change an element’s rendered order, so that last elements may appear first or vice-versa. `order` is particularly useful for responsive design.
+
+Note that if you are using `margin-top` or `margin-left` utilities to space elements, `order` does not work as expected. Instead, we recommend using [`gap`](TODO). However, `gap` is not yet supported for Flexbox in Safari. If you are only targeting Chrome or Firefox, you can safely use `order` with `gap` today.
+
+- [You can learn more about `order` at the MDN documentation.](TODO)
+
+| Class      | CSS         |
+| ---------- | ----------- |
+| `order-1`  | `order: 1`  |
+| `order-2`  | `order: 2`  |
+| `order-3`  | `order: 3`  |
+| `order-4`  | `order: 4`  |
+| `order-5`  | `order: 5`  |
+| `order-6`  | `order: 6`  |
+| `order-7`  | `order: 7`  |
+| `order-8`  | `order: 8`  |
+| `order-9`  | `order: 9`  |
+| `order-10` | `order: 10` |
+| `order-11` | `order: 11` |
+| `order-12` | `order: 12` |
+
+<!-- TODO: What’s the default value for order? 0? -->
+
+<!-- \*`overflow` defaults to `auto` when unspecified. -->
+
 ---
 
 - [ ] @use "utilities/alignment/core-align-content";
@@ -330,7 +359,7 @@ Note that `content-box` only changes the bounding box of the current element; it
 - [ ] @use "utilities/flexbox/core-flex-grow";
 - [ ] @use "utilities/flexbox/core-flex-shrink";
 - [ ] @use "utilities/flexbox/core-flex-wrap";
-- [ ] @use "utilities/flexbox/core-order";
+- [x] @use "utilities/flexbox/core-order";
 - [ ] @use "utilities/gap/core-gap";
 - [ ] @use "utilities/gap/core-column-gap";
 - [ ] @use "utilities/gap/core-row-gap";
