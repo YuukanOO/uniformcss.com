@@ -234,7 +234,7 @@ Note that if you are using `margin-top` or `margin-left` utilities to space elem
 
 <!-- \*`overflow` defaults to `auto` when unspecified. -->
 
-# `antialiased` and `subpixel-antialiased`
+## `antialiased` and `subpixel-antialiased`
 
 `antialiased` and `subpixel-antialiased` control whether an element and its children elements’ text should be antialiased, that is, rendered more sharply. While Uniform CSS does not provide antialiasing by default, we recommend opting-in for most use-cases: `<html class="antialiased">`.
 
