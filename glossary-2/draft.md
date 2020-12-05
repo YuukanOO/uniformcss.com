@@ -8,12 +8,13 @@
 
 `justify-content` supports the following values:
 
+<!-- prettier-ignore -->
 +---------------------------+
-| `stretch` | `stretch`\* |
-| `start` | `flex-start` |
-| `center` | `center` |
-| `end` | `flex-end` |
-| `baseline` | `baseline` | \*\*TODO: Check if this is true.
+| `stretch`  | `stretch`\*  |
+| `start`    | `flex-start` |
+| `center`   | `center`     |
+| `end`      | `flex-end`   |
+| `baseline` | `baseline`   | \*\*TODO: Check if this is true.
 +---------------------------+
 
 \*`justify-content` defaults to `stretch` when unspecified.
@@ -28,12 +29,13 @@
 
 `align-items` supports the following values:
 
+<!-- prettier-ignore -->
 +---------------------------+
-| `stretch` | `stretch`\* |
-| `start` | `flex-start` |
-| `center` | `center` |
-| `end` | `flex-end` |
-| `baseline` | `baseline` | \*\*TODO: Check if this is true.
+| `stretch`  | `stretch`\*  |
+| `start`    | `flex-start` |
+| `center`   | `center`     |
+| `end`      | `flex-end`   |
+| `baseline` | `baseline`   | \*\*TODO: Check if this is true.
 +---------------------------+
 
 \*`align-items` defaults to `stretch` when unspecified.
@@ -46,26 +48,17 @@ Note that `text-opacity` does not apply to nested element text; `text-opacity` _
 
 Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`border-opacity`]. Other utilities to consider are [`display-none`] and [`invisible`].
 
-[You can learn more about `opacity` at the MDN documentation here.](TODO)
+<!-- [You can learn more about `opacity` at the MDN documentation here.](TODO) -->
 
-## `text-opacity`
-
-`text-opacity` controls the transparency of an element’s text. `text-opacity-0` makes an element’s text completely transparent and `text-opacity-100` makes an element’s text completely opaque.
-
-Note that `text-opacity` does not apply to nested children elements; `text-opacity` _only_ applies to the current element.
-
-Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`border-opacity`]. Other utilities to consider are [`display-none`] and [`invisible`].
-
-[You can learn more about `opacity` at the MDN documentation here.](TODO)
-
-+--------------------------+
-| text-opacity-0 | 0% |
-| text-opacity-20 | 20% |
-| text-opacity-40 | 40% |
-| text-opacity-60 | 60% |
-| text-opacity-80 | 80% |
+<!-- prettier-ignore -->
++---------------------------+
+| text-opacity-0   | 0%     |
+| text-opacity-20  | 20%    |
+| text-opacity-40  | 40%    |
+| text-opacity-60  | 60%    |
+| text-opacity-80  | 80%    |
 | text-opacity-100 | 100%\* |
-+--------------------------+
++---------------------------+
 
 \*`text-opacity` defaults to `100%` when unspecified.
 
@@ -79,16 +72,17 @@ Note that `background-opacity` does not apply to nested children elements; `back
 
 Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`border-opacity`]. Other utilities to consider are [`display-none`] and [`invisible`].
 
-[You can learn more about `opacity` at the MDN documentation here.](TODO)
+<!-- [You can learn more about `opacity` at the MDN documentation here.](TODO) -->
 
-+------------------------+
-| bg-opacity-0 | 0% |
-| bg-opacity-20 | 20% |
-| bg-opacity-40 | 40% |
-| bg-opacity-60 | 60% |
-| bg-opacity-80 | 80% |
+<!-- prettier-ignore -->
++-------------------------+
+| bg-opacity-0   | 0%     |
+| bg-opacity-20  | 20%    |
+| bg-opacity-40  | 40%    |
+| bg-opacity-60  | 60%    |
+| bg-opacity-80  | 80%    |
 | bg-opacity-100 | 100%\* |
-+------------------------+
++-------------------------+
 
 \*`bg-opacity` defaults to `100%` when unspecified.
 
@@ -100,16 +94,17 @@ Note that `border-opacity` does not apply to nested children elements; `border-o
 
 Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`border-opacity`]. Other utilities to consider are [`display-none`] and [`invisible`].
 
-[You can learn more about `border-opacity` at the MDN documentation here.](TODO)
+<!-- [You can learn more about `border-opacity` at the MDN documentation here.](TODO) -->
 
-+--------------------------+
-| border-opacity-0 | 0% |
-| border-opacity-20 | 20% |
-| border-opacity-40 | 40% |
-| border-opacity-60 | 60% |
-| border-opacity-80 | 80% |
+<!-- prettier-ignore -->
++-----------------------------+
+| border-opacity-0   | 0%     |
+| border-opacity-20  | 20%    |
+| border-opacity-40  | 40%    |
+| border-opacity-60  | 60%    |
+| border-opacity-80  | 80%    |
 | border-opacity-100 | 100%\* |
-+--------------------------+
++-----------------------------+
 
 \*`border-opacity` defaults to `100%` when unspecified.
 
@@ -121,23 +116,51 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 
 [You can learn more about `opacity` at the MDN documentation here.](TODO)
 
-+---------------------+
-| opacity-0 | 0% |
-| opacity-20 | 20% |
-| opacity-40 | 40% |
-| opacity-60 | 60% |
-| opacity-80 | 80% |
+<!-- prettier-ignore -->
++----------------------+
+| opacity-0   | 0%     |
+| opacity-20  | 20%    |
+| opacity-40  | 40%    |
+| opacity-60  | 60%    |
+| opacity-80  | 80%    |
 | opacity-100 | 100%\* |
-+---------------------+
++----------------------+
 
 \*`opacity` defaults to `100%` when unspecified.
+
+## `align`
+
+`align` can be used to justify text along the x-axis (left-to-right) and align text along the y-axis (top-to-bottom). `align` combines `text-align` and `vertical-align` into one shorthand for ease of use.
+
+- [You can learn more about `text-align` at the MDN documentation here.](TODO)
+- [You can learn more about `vertical-align` at the MDN documentation here.](TODO)
+
+<!-- prettier-ignore -->
++------------------------------------------+
+| align-left* (x-axis)       | left        |
+| align-center (x-axis)      | center      |
+| align-right (x-axis)       | right       |
+| align-justify (x-axis)     | justify     |
+| align-baseline* (y-axis)   | baseline    |
+| align-top (y-axis)         | top         |
+| align-middle (y-axis)      | middle      |
+| align-bottom (y-axis)      | bottom      |
+| align-text-top (y-axis)    | text-top    |
+| align-text-bottom (y-axis) | text-bottom |
++------------------------------------------+
+
+<!-- HINT: Do you want to support start and end? -->
+
+\*`align` defaults to `left` (x-axis) and `baseline` (y-axis) when unspecified.
+
+---
 
 - [ ] @use "utilities/alignment/core-align-content";
 - [x] @use "utilities/alignment/core-align-items";
 - [ ] @use "utilities/alignment/core-align-self";
 - [x] @use "utilities/alignment/core-justify-content";
-- [ ] @use "utilities/alignment/core-text-align";
-- [ ] @use "utilities/alignment/core-vertical-align";
+- [x] @use "utilities/alignment/core-text-align";
+- [x] @use "utilities/alignment/core-vertical-align";
 - [ ] @use "utilities/appearance/core-display";
 - [x] @use "utilities/appearance/core-opacity";
 - [ ] @use "utilities/appearance/core-outline";
@@ -148,7 +171,7 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 - [ ] @use "utilities/background/extension-background-deepen";
 - [ ] @use "utilities/background/extension-background-lighten";
 - [ ] @use "utilities/background/extension-background-darken";
-- [ ] @use "utilities/background/extension-background-opacity";
+- [x] @use "utilities/background/extension-background-opacity";
 - [ ] @use "utilities/background/core-background-attachment";
 - [ ] @use "utilities/background/core-background-clip";
 - [ ] @use "utilities/background/core-background-color";
@@ -226,7 +249,7 @@ Other opacity utilities include [`text-opacity`], [`background-opacity`], and [`
 - [ ] @use "utilities/typography/extension-text-deepen";
 - [ ] @use "utilities/typography/extension-text-lighten";
 - [ ] @use "utilities/typography/extension-text-darken";
-- [ ] @use "utilities/typography/extension-text-opacity";
+- [x] @use "utilities/typography/extension-text-opacity";
 - [ ] @use "utilities/typography/core-color";
 - [ ] @use "utilities/typography/core-font-family";
 - [ ] @use "utilities/typography/core-font-size";
