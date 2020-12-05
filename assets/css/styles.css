@@ -16,8 +16,8 @@
   --font-2xl: 1.5rem;
   --font-xl: 1.25rem;
   --font-lg: 1.125rem;
-  --font-md: 1rem;
-  --font-base: 0.9375rem;
+  --font-base: 1rem;
+  --font-md: 0.9375rem;
   --font-sm: 0.875rem;
   --font-xs: 0.75rem;
   --font-2xs: 0.625rem;
@@ -272,6 +272,12 @@ ol, ul {
 
 html {
   background-color: var(--background-color, white);
+}
+
+body {
+  font-weight: var(--body-font-weight, 400);
+  font-size: var(--body-font-size, var(--font-base));
+  line-height: var(--body-leading);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2401,13 +2407,13 @@ CUSTOM PROPERTIES
 .wrapper {
   width: 100%;
   margin: auto;
-  max-width: var(--wrapper-max-width, var(--size-27));
+  max-width: var(--wrapper-max-width, 768px);
   padding-left: var(--wrapper-padding, var(--size-5));
   padding-right: var(--wrapper-padding, var(--size-5));
 }
 @media (min-width: 1024px) {
   .wrapper {
-    max-width: var(--wrapper-sm-max-width, var(--size-28));
+    max-width: var(--wrapper-sm-max-width, 896px);
   }
 }
 @media (min-width: 1152px) {
@@ -2417,12 +2423,12 @@ CUSTOM PROPERTIES
 }
 @media (min-width: 1280px) {
   .wrapper {
-    max-width: var(--wrapper-lg-max-width, 1152px);
+    max-width: var(--wrapper-lg-max-width, 1280px);
   }
 }
 @media (min-width: 1536px) {
   .wrapper {
-    max-width: var(--wrapper-xl-max-width, 1280px);
+    max-width: var(--wrapper-xl-max-width, 1440px);
   }
 }
 
@@ -4120,12 +4126,12 @@ CUSTOM PROPERTIES
   font-size: var(--font-lg);
 }
 
-.font-md {
-  font-size: var(--font-md);
-}
-
 .font-base {
   font-size: var(--font-base);
+}
+
+.font-md {
+  font-size: var(--font-md);
 }
 
 .font-sm {
@@ -12174,12 +12180,12 @@ CUSTOM PROPERTIES
     font-size: var(--font-lg);
   }
 
-  .sm\:font-md {
-    font-size: var(--font-md);
-  }
-
   .sm\:font-base {
     font-size: var(--font-base);
+  }
+
+  .sm\:font-md {
+    font-size: var(--font-md);
   }
 
   .sm\:font-sm {
@@ -17531,12 +17537,12 @@ CUSTOM PROPERTIES
     font-size: var(--font-lg);
   }
 
-  .md\:font-md {
-    font-size: var(--font-md);
-  }
-
   .md\:font-base {
     font-size: var(--font-base);
+  }
+
+  .md\:font-md {
+    font-size: var(--font-md);
   }
 
   .md\:font-sm {
@@ -22888,12 +22894,12 @@ CUSTOM PROPERTIES
     font-size: var(--font-lg);
   }
 
-  .lg\:font-md {
-    font-size: var(--font-md);
-  }
-
   .lg\:font-base {
     font-size: var(--font-base);
+  }
+
+  .lg\:font-md {
+    font-size: var(--font-md);
   }
 
   .lg\:font-sm {
@@ -28245,12 +28251,12 @@ CUSTOM PROPERTIES
     font-size: var(--font-lg);
   }
 
-  .xl\:font-md {
-    font-size: var(--font-md);
-  }
-
   .xl\:font-base {
     font-size: var(--font-base);
+  }
+
+  .xl\:font-md {
+    font-size: var(--font-md);
   }
 
   .xl\:font-sm {
@@ -32753,6 +32759,9 @@ CUSTOM PROPERTIES
   --paragraph-color: #576179;
   --font-sans: "Manrope", sans-serif;
   --font-mono: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  --body-font-weight: 450;
+  --font-semibold: 560;
+  --font-bold: 660;
 }
 
 .cd-image-container {
