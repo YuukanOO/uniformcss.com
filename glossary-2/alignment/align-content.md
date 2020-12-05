@@ -20,6 +20,18 @@ Class Name | Property
 
 ---
 
+### Default Settings
+
+The following default responsive and pseudo settings.
+
+Setting | Default Setting
+- | -
+`responsive` | `true`
+`pseudos` | `none`, `none`
+
+
+---
+
 
 ### Center
 
