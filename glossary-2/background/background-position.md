@@ -6,7 +6,7 @@ date: 1000-01-01
 
 ### Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `background-position` property controls the position of a background image
 
 | Class Name              | Property                       |
 | ----------------------- | ------------------------------ |

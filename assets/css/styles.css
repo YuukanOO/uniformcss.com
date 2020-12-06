@@ -1849,7 +1849,7 @@ CUSTOM PROPERTIES
 .table th, .markdown > table th {
   height: var(--table-th-height, var(--size-12));
   padding: var(--table-th-padding, var(--size-12) var(--size-16));
-  box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
+  box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-200-ltn, 93%))));
   background: var(--table-th-bg, white);
   white-space: nowrap;
 }
@@ -1862,7 +1862,7 @@ CUSTOM PROPERTIES
 .table td, .markdown > table td {
   height: var(--table-td-height, var(--size-12));
   padding: var(--table-td-padding, var(--size-12) var(--size-16));
-  box-shadow: var(--table-td-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
+  box-shadow: var(--table-td-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-200-ltn, 93%))));
 }
 
 /******************************
@@ -1968,7 +1968,7 @@ RESPONSIVE
   height: var(--table-td-height, var(--size-12));
   padding: var(--table-td-padding, var(--size-12) var(--size-16));
   background-color: transparent;
-  box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
+  box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-200-ltn, 93%))));
 }
 .table-unstack td:first-child {
   border-radius: 0;
@@ -2234,7 +2234,7 @@ RESPONSIVE
     height: var(--table-td-height, var(--size-12));
     padding: var(--table-td-padding, var(--size-12) var(--size-16));
     background-color: transparent;
-    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
+    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-200-ltn, 93%))));
   }
   .sm\:table-unstack td:first-child {
     border-radius: 0;
@@ -2284,7 +2284,7 @@ RESPONSIVE
     height: var(--table-td-height, var(--size-12));
     padding: var(--table-td-padding, var(--size-12) var(--size-16));
     background-color: transparent;
-    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
+    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-200-ltn, 93%))));
   }
   .md\:table-unstack td:first-child {
     border-radius: 0;
@@ -2334,7 +2334,7 @@ RESPONSIVE
     height: var(--table-td-height, var(--size-12));
     padding: var(--table-td-padding, var(--size-12) var(--size-16));
     background-color: transparent;
-    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
+    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-200-ltn, 93%))));
   }
   .lg\:table-unstack td:first-child {
     border-radius: 0;
@@ -2384,7 +2384,7 @@ RESPONSIVE
     height: var(--table-td-height, var(--size-12));
     padding: var(--table-td-padding, var(--size-12) var(--size-16));
     background-color: transparent;
-    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%))));
+    box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-200-ltn, 93%))));
   }
   .xl\:table-unstack td:first-child {
     border-radius: 0;
@@ -4943,126 +4943,126 @@ CUSTOM PROPERTIES
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--gray-900-hue, var(--gray-hue, 230)), calc(var(--gray-900-sat, var(--gray-sat, 20%)) + var(--text-sat)), calc(var(--gray-900-ltn, 13%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--gray-900-hue, var(--gray-hue, 230)), calc(var(--gray-900-sat, var(--gray-sat, 10%)) + var(--text-sat)), calc(var(--gray-900-ltn, 13%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-gray-800, .hover\:text-gray-800:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--gray-800-hue, var(--gray-hue, 230)), calc(var(--gray-800-sat, var(--gray-sat, 20%)) + var(--text-sat)), calc(var(--gray-800-ltn, 18%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--gray-800-hue, var(--gray-hue, 230)), calc(var(--gray-800-sat, var(--gray-sat, 10%)) + var(--text-sat)), calc(var(--gray-800-ltn, 18%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-gray-700, .hover\:text-gray-700:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--gray-700-hue, var(--gray-hue, 230)), calc(var(--gray-700-sat, var(--gray-sat, 20%)) + var(--text-sat)), calc(var(--gray-700-ltn, 23%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--gray-700-hue, var(--gray-hue, 230)), calc(var(--gray-700-sat, var(--gray-sat, 10%)) + var(--text-sat)), calc(var(--gray-700-ltn, 23%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-gray-600, .hover\:text-gray-600:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--gray-600-hue, var(--gray-hue, 230)), calc(var(--gray-600-sat, var(--gray-sat, 20%)) + var(--text-sat)), calc(var(--gray-600-ltn, 28%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--gray-600-hue, var(--gray-hue, 230)), calc(var(--gray-600-sat, var(--gray-sat, 10%)) + var(--text-sat)), calc(var(--gray-600-ltn, 28%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-gray-500, .hover\:text-gray-500:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--gray-500-hue, var(--gray-hue, 230)), calc(var(--gray-500-sat, var(--gray-sat, 20%)) + var(--text-sat)), calc(var(--gray-500-ltn, 33%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--gray-500-hue, var(--gray-hue, 230)), calc(var(--gray-500-sat, var(--gray-sat, 10%)) + var(--text-sat)), calc(var(--gray-500-ltn, 33%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-gray-400, .hover\:text-gray-400:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--gray-400-hue, var(--gray-hue, 230)), calc(var(--gray-400-sat, var(--gray-sat, 20%)) + var(--text-sat)), calc(var(--gray-400-ltn, 38%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--gray-400-hue, var(--gray-hue, 230)), calc(var(--gray-400-sat, var(--gray-sat, 10%)) + var(--text-sat)), calc(var(--gray-400-ltn, 38%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-gray-300, .hover\:text-gray-300:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--gray-300-hue, var(--gray-hue, 230)), calc(var(--gray-300-sat, var(--gray-sat, 20%)) + var(--text-sat)), calc(var(--gray-300-ltn, 43%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--gray-300-hue, var(--gray-hue, 230)), calc(var(--gray-300-sat, var(--gray-sat, 10%)) + var(--text-sat)), calc(var(--gray-300-ltn, 43%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-gray-200, .hover\:text-gray-200:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--gray-200-hue, var(--gray-hue, 230)), calc(var(--gray-200-sat, var(--gray-sat, 20%)) + var(--text-sat)), calc(var(--gray-200-ltn, 48%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--gray-200-hue, var(--gray-hue, 230)), calc(var(--gray-200-sat, var(--gray-sat, 10%)) + var(--text-sat)), calc(var(--gray-200-ltn, 48%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-gray-100, .hover\:text-gray-100:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--gray-100-hue, var(--gray-hue, 230)), calc(var(--gray-100-sat, var(--gray-sat, 20%)) + var(--text-sat)), calc(var(--gray-100-ltn, 53%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--gray-100-hue, var(--gray-hue, 230)), calc(var(--gray-100-sat, var(--gray-sat, 10%)) + var(--text-sat)), calc(var(--gray-100-ltn, 53%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-silver-900, .hover\:text-silver-900:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--silver-900-hue, var(--silver-hue, 230)), calc(var(--silver-900-sat, var(--silver-sat, 20%)) + var(--text-sat)), calc(var(--silver-900-ltn, 58%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--silver-900-hue, var(--silver-hue, 230)), calc(var(--silver-900-sat, var(--silver-sat, 10%)) + var(--text-sat)), calc(var(--silver-900-ltn, 58%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-silver-800, .hover\:text-silver-800:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--silver-800-hue, var(--silver-hue, 230)), calc(var(--silver-800-sat, var(--silver-sat, 20%)) + var(--text-sat)), calc(var(--silver-800-ltn, 63%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--silver-800-hue, var(--silver-hue, 230)), calc(var(--silver-800-sat, var(--silver-sat, 10%)) + var(--text-sat)), calc(var(--silver-800-ltn, 63%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-silver-700, .hover\:text-silver-700:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--silver-700-hue, var(--silver-hue, 230)), calc(var(--silver-700-sat, var(--silver-sat, 20%)) + var(--text-sat)), calc(var(--silver-700-ltn, 68%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--silver-700-hue, var(--silver-hue, 230)), calc(var(--silver-700-sat, var(--silver-sat, 10%)) + var(--text-sat)), calc(var(--silver-700-ltn, 68%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-silver-600, .hover\:text-silver-600:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--silver-600-hue, var(--silver-hue, 230)), calc(var(--silver-600-sat, var(--silver-sat, 20%)) + var(--text-sat)), calc(var(--silver-600-ltn, 73%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--silver-600-hue, var(--silver-hue, 230)), calc(var(--silver-600-sat, var(--silver-sat, 10%)) + var(--text-sat)), calc(var(--silver-600-ltn, 73%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-silver-500, .hover\:text-silver-500:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--silver-500-hue, var(--silver-hue, 230)), calc(var(--silver-500-sat, var(--silver-sat, 20%)) + var(--text-sat)), calc(var(--silver-500-ltn, 78%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--silver-500-hue, var(--silver-hue, 230)), calc(var(--silver-500-sat, var(--silver-sat, 10%)) + var(--text-sat)), calc(var(--silver-500-ltn, 78%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-silver-400, .hover\:text-silver-400:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--silver-400-hue, var(--silver-hue, 230)), calc(var(--silver-400-sat, var(--silver-sat, 20%)) + var(--text-sat)), calc(var(--silver-400-ltn, 83%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--silver-400-hue, var(--silver-hue, 230)), calc(var(--silver-400-sat, var(--silver-sat, 10%)) + var(--text-sat)), calc(var(--silver-400-ltn, 83%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-silver-300, .hover\:text-silver-300:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--silver-300-hue, var(--silver-hue, 230)), calc(var(--silver-300-sat, var(--silver-sat, 20%)) + var(--text-sat)), calc(var(--silver-300-ltn, 88%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--silver-300-hue, var(--silver-hue, 230)), calc(var(--silver-300-sat, var(--silver-sat, 10%)) + var(--text-sat)), calc(var(--silver-300-ltn, 88%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-silver-200, .hover\:text-silver-200:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--silver-200-hue, var(--silver-hue, 230)), calc(var(--silver-200-sat, var(--silver-sat, 20%)) + var(--text-sat)), calc(var(--silver-200-ltn, 93%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--silver-200-hue, var(--silver-hue, 230)), calc(var(--silver-200-sat, var(--silver-sat, 10%)) + var(--text-sat)), calc(var(--silver-200-ltn, 93%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-silver-100, .hover\:text-silver-100:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
   --text-opacity: 1;
-  color: hsla(var(--silver-100-hue, var(--silver-hue, 230)), calc(var(--silver-100-sat, var(--silver-sat, 20%)) + var(--text-sat)), calc(var(--silver-100-ltn, 98%) + var(--text-ltn)), var(--text-opacity));
+  color: hsla(var(--silver-100-hue, var(--silver-hue, 230)), calc(var(--silver-100-sat, var(--silver-sat, 10%)) + var(--text-sat)), calc(var(--silver-100-ltn, 98%) + var(--text-ltn)), var(--text-opacity));
 }
 
 .text-transparent, .hover\:text-transparent:hover {
@@ -10636,126 +10636,126 @@ CUSTOM PROPERTIES
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--gray-900-hue, var(--gray-hue, 230)), calc(var(--gray-900-sat, var(--gray-sat, 20%)) + var(--border-sat)), calc(var(--gray-900-ltn, 13%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--gray-900-hue, var(--gray-hue, 230)), calc(var(--gray-900-sat, var(--gray-sat, 10%)) + var(--border-sat)), calc(var(--gray-900-ltn, 13%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-gray-800, .hover\:border-gray-800:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--gray-800-hue, var(--gray-hue, 230)), calc(var(--gray-800-sat, var(--gray-sat, 20%)) + var(--border-sat)), calc(var(--gray-800-ltn, 18%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--gray-800-hue, var(--gray-hue, 230)), calc(var(--gray-800-sat, var(--gray-sat, 10%)) + var(--border-sat)), calc(var(--gray-800-ltn, 18%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-gray-700, .hover\:border-gray-700:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--gray-700-hue, var(--gray-hue, 230)), calc(var(--gray-700-sat, var(--gray-sat, 20%)) + var(--border-sat)), calc(var(--gray-700-ltn, 23%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--gray-700-hue, var(--gray-hue, 230)), calc(var(--gray-700-sat, var(--gray-sat, 10%)) + var(--border-sat)), calc(var(--gray-700-ltn, 23%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-gray-600, .hover\:border-gray-600:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--gray-600-hue, var(--gray-hue, 230)), calc(var(--gray-600-sat, var(--gray-sat, 20%)) + var(--border-sat)), calc(var(--gray-600-ltn, 28%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--gray-600-hue, var(--gray-hue, 230)), calc(var(--gray-600-sat, var(--gray-sat, 10%)) + var(--border-sat)), calc(var(--gray-600-ltn, 28%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-gray-500, .hover\:border-gray-500:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--gray-500-hue, var(--gray-hue, 230)), calc(var(--gray-500-sat, var(--gray-sat, 20%)) + var(--border-sat)), calc(var(--gray-500-ltn, 33%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--gray-500-hue, var(--gray-hue, 230)), calc(var(--gray-500-sat, var(--gray-sat, 10%)) + var(--border-sat)), calc(var(--gray-500-ltn, 33%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-gray-400, .hover\:border-gray-400:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--gray-400-hue, var(--gray-hue, 230)), calc(var(--gray-400-sat, var(--gray-sat, 20%)) + var(--border-sat)), calc(var(--gray-400-ltn, 38%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--gray-400-hue, var(--gray-hue, 230)), calc(var(--gray-400-sat, var(--gray-sat, 10%)) + var(--border-sat)), calc(var(--gray-400-ltn, 38%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-gray-300, .hover\:border-gray-300:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--gray-300-hue, var(--gray-hue, 230)), calc(var(--gray-300-sat, var(--gray-sat, 20%)) + var(--border-sat)), calc(var(--gray-300-ltn, 43%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--gray-300-hue, var(--gray-hue, 230)), calc(var(--gray-300-sat, var(--gray-sat, 10%)) + var(--border-sat)), calc(var(--gray-300-ltn, 43%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-gray-200, .hover\:border-gray-200:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--gray-200-hue, var(--gray-hue, 230)), calc(var(--gray-200-sat, var(--gray-sat, 20%)) + var(--border-sat)), calc(var(--gray-200-ltn, 48%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--gray-200-hue, var(--gray-hue, 230)), calc(var(--gray-200-sat, var(--gray-sat, 10%)) + var(--border-sat)), calc(var(--gray-200-ltn, 48%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-gray-100, .hover\:border-gray-100:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--gray-100-hue, var(--gray-hue, 230)), calc(var(--gray-100-sat, var(--gray-sat, 20%)) + var(--border-sat)), calc(var(--gray-100-ltn, 53%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--gray-100-hue, var(--gray-hue, 230)), calc(var(--gray-100-sat, var(--gray-sat, 10%)) + var(--border-sat)), calc(var(--gray-100-ltn, 53%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-silver-900, .hover\:border-silver-900:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--silver-900-hue, var(--silver-hue, 230)), calc(var(--silver-900-sat, var(--silver-sat, 20%)) + var(--border-sat)), calc(var(--silver-900-ltn, 58%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--silver-900-hue, var(--silver-hue, 230)), calc(var(--silver-900-sat, var(--silver-sat, 10%)) + var(--border-sat)), calc(var(--silver-900-ltn, 58%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-silver-800, .hover\:border-silver-800:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--silver-800-hue, var(--silver-hue, 230)), calc(var(--silver-800-sat, var(--silver-sat, 20%)) + var(--border-sat)), calc(var(--silver-800-ltn, 63%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--silver-800-hue, var(--silver-hue, 230)), calc(var(--silver-800-sat, var(--silver-sat, 10%)) + var(--border-sat)), calc(var(--silver-800-ltn, 63%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-silver-700, .hover\:border-silver-700:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--silver-700-hue, var(--silver-hue, 230)), calc(var(--silver-700-sat, var(--silver-sat, 20%)) + var(--border-sat)), calc(var(--silver-700-ltn, 68%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--silver-700-hue, var(--silver-hue, 230)), calc(var(--silver-700-sat, var(--silver-sat, 10%)) + var(--border-sat)), calc(var(--silver-700-ltn, 68%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-silver-600, .hover\:border-silver-600:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--silver-600-hue, var(--silver-hue, 230)), calc(var(--silver-600-sat, var(--silver-sat, 20%)) + var(--border-sat)), calc(var(--silver-600-ltn, 73%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--silver-600-hue, var(--silver-hue, 230)), calc(var(--silver-600-sat, var(--silver-sat, 10%)) + var(--border-sat)), calc(var(--silver-600-ltn, 73%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-silver-500, .hover\:border-silver-500:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--silver-500-hue, var(--silver-hue, 230)), calc(var(--silver-500-sat, var(--silver-sat, 20%)) + var(--border-sat)), calc(var(--silver-500-ltn, 78%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--silver-500-hue, var(--silver-hue, 230)), calc(var(--silver-500-sat, var(--silver-sat, 10%)) + var(--border-sat)), calc(var(--silver-500-ltn, 78%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-silver-400, .hover\:border-silver-400:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--silver-400-hue, var(--silver-hue, 230)), calc(var(--silver-400-sat, var(--silver-sat, 20%)) + var(--border-sat)), calc(var(--silver-400-ltn, 83%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--silver-400-hue, var(--silver-hue, 230)), calc(var(--silver-400-sat, var(--silver-sat, 10%)) + var(--border-sat)), calc(var(--silver-400-ltn, 83%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-silver-300, .hover\:border-silver-300:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--silver-300-hue, var(--silver-hue, 230)), calc(var(--silver-300-sat, var(--silver-sat, 20%)) + var(--border-sat)), calc(var(--silver-300-ltn, 88%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--silver-300-hue, var(--silver-hue, 230)), calc(var(--silver-300-sat, var(--silver-sat, 10%)) + var(--border-sat)), calc(var(--silver-300-ltn, 88%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-silver-200, .hover\:border-silver-200:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--silver-200-hue, var(--silver-hue, 230)), calc(var(--silver-200-sat, var(--silver-sat, 20%)) + var(--border-sat)), calc(var(--silver-200-ltn, 93%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--silver-200-hue, var(--silver-hue, 230)), calc(var(--silver-200-sat, var(--silver-sat, 10%)) + var(--border-sat)), calc(var(--silver-200-ltn, 93%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-silver-100, .hover\:border-silver-100:hover {
   --border-sat: 0%;
   --border-ltn: 0%;
   --border-opacity: 1;
-  border-color: hsla(var(--silver-100-hue, var(--silver-hue, 230)), calc(var(--silver-100-sat, var(--silver-sat, 20%)) + var(--border-sat)), calc(var(--silver-100-ltn, 98%) + var(--border-ltn)), var(--border-opacity));
+  border-color: hsla(var(--silver-100-hue, var(--silver-hue, 230)), calc(var(--silver-100-sat, var(--silver-sat, 10%)) + var(--border-sat)), calc(var(--silver-100-ltn, 98%) + var(--border-ltn)), var(--border-opacity));
 }
 
 .border-transparent, .hover\:border-transparent:hover {
@@ -12097,126 +12097,126 @@ CUSTOM PROPERTIES
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--gray-900-hue, var(--gray-hue, 230)), calc(var(--gray-900-sat, var(--gray-sat, 20%)) + var(--bg-sat)), calc(var(--gray-900-ltn, 13%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--gray-900-hue, var(--gray-hue, 230)), calc(var(--gray-900-sat, var(--gray-sat, 10%)) + var(--bg-sat)), calc(var(--gray-900-ltn, 13%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-gray-800, .group:hover .group-hover\:bg-gray-800, .hover\:bg-gray-800:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--gray-800-hue, var(--gray-hue, 230)), calc(var(--gray-800-sat, var(--gray-sat, 20%)) + var(--bg-sat)), calc(var(--gray-800-ltn, 18%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--gray-800-hue, var(--gray-hue, 230)), calc(var(--gray-800-sat, var(--gray-sat, 10%)) + var(--bg-sat)), calc(var(--gray-800-ltn, 18%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-gray-700, .group:hover .group-hover\:bg-gray-700, .hover\:bg-gray-700:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--gray-700-hue, var(--gray-hue, 230)), calc(var(--gray-700-sat, var(--gray-sat, 20%)) + var(--bg-sat)), calc(var(--gray-700-ltn, 23%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--gray-700-hue, var(--gray-hue, 230)), calc(var(--gray-700-sat, var(--gray-sat, 10%)) + var(--bg-sat)), calc(var(--gray-700-ltn, 23%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-gray-600, .group:hover .group-hover\:bg-gray-600, .hover\:bg-gray-600:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--gray-600-hue, var(--gray-hue, 230)), calc(var(--gray-600-sat, var(--gray-sat, 20%)) + var(--bg-sat)), calc(var(--gray-600-ltn, 28%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--gray-600-hue, var(--gray-hue, 230)), calc(var(--gray-600-sat, var(--gray-sat, 10%)) + var(--bg-sat)), calc(var(--gray-600-ltn, 28%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-gray-500, .group:hover .group-hover\:bg-gray-500, .hover\:bg-gray-500:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--gray-500-hue, var(--gray-hue, 230)), calc(var(--gray-500-sat, var(--gray-sat, 20%)) + var(--bg-sat)), calc(var(--gray-500-ltn, 33%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--gray-500-hue, var(--gray-hue, 230)), calc(var(--gray-500-sat, var(--gray-sat, 10%)) + var(--bg-sat)), calc(var(--gray-500-ltn, 33%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-gray-400, .group:hover .group-hover\:bg-gray-400, .hover\:bg-gray-400:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--gray-400-hue, var(--gray-hue, 230)), calc(var(--gray-400-sat, var(--gray-sat, 20%)) + var(--bg-sat)), calc(var(--gray-400-ltn, 38%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--gray-400-hue, var(--gray-hue, 230)), calc(var(--gray-400-sat, var(--gray-sat, 10%)) + var(--bg-sat)), calc(var(--gray-400-ltn, 38%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-gray-300, .group:hover .group-hover\:bg-gray-300, .hover\:bg-gray-300:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--gray-300-hue, var(--gray-hue, 230)), calc(var(--gray-300-sat, var(--gray-sat, 20%)) + var(--bg-sat)), calc(var(--gray-300-ltn, 43%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--gray-300-hue, var(--gray-hue, 230)), calc(var(--gray-300-sat, var(--gray-sat, 10%)) + var(--bg-sat)), calc(var(--gray-300-ltn, 43%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-gray-200, .group:hover .group-hover\:bg-gray-200, .hover\:bg-gray-200:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--gray-200-hue, var(--gray-hue, 230)), calc(var(--gray-200-sat, var(--gray-sat, 20%)) + var(--bg-sat)), calc(var(--gray-200-ltn, 48%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--gray-200-hue, var(--gray-hue, 230)), calc(var(--gray-200-sat, var(--gray-sat, 10%)) + var(--bg-sat)), calc(var(--gray-200-ltn, 48%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-gray-100, .group:hover .group-hover\:bg-gray-100, .hover\:bg-gray-100:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--gray-100-hue, var(--gray-hue, 230)), calc(var(--gray-100-sat, var(--gray-sat, 20%)) + var(--bg-sat)), calc(var(--gray-100-ltn, 53%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--gray-100-hue, var(--gray-hue, 230)), calc(var(--gray-100-sat, var(--gray-sat, 10%)) + var(--bg-sat)), calc(var(--gray-100-ltn, 53%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-silver-900, .group:hover .group-hover\:bg-silver-900, .hover\:bg-silver-900:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--silver-900-hue, var(--silver-hue, 230)), calc(var(--silver-900-sat, var(--silver-sat, 20%)) + var(--bg-sat)), calc(var(--silver-900-ltn, 58%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--silver-900-hue, var(--silver-hue, 230)), calc(var(--silver-900-sat, var(--silver-sat, 10%)) + var(--bg-sat)), calc(var(--silver-900-ltn, 58%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-silver-800, .group:hover .group-hover\:bg-silver-800, .hover\:bg-silver-800:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--silver-800-hue, var(--silver-hue, 230)), calc(var(--silver-800-sat, var(--silver-sat, 20%)) + var(--bg-sat)), calc(var(--silver-800-ltn, 63%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--silver-800-hue, var(--silver-hue, 230)), calc(var(--silver-800-sat, var(--silver-sat, 10%)) + var(--bg-sat)), calc(var(--silver-800-ltn, 63%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-silver-700, .group:hover .group-hover\:bg-silver-700, .hover\:bg-silver-700:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--silver-700-hue, var(--silver-hue, 230)), calc(var(--silver-700-sat, var(--silver-sat, 20%)) + var(--bg-sat)), calc(var(--silver-700-ltn, 68%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--silver-700-hue, var(--silver-hue, 230)), calc(var(--silver-700-sat, var(--silver-sat, 10%)) + var(--bg-sat)), calc(var(--silver-700-ltn, 68%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-silver-600, .group:hover .group-hover\:bg-silver-600, .hover\:bg-silver-600:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--silver-600-hue, var(--silver-hue, 230)), calc(var(--silver-600-sat, var(--silver-sat, 20%)) + var(--bg-sat)), calc(var(--silver-600-ltn, 73%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--silver-600-hue, var(--silver-hue, 230)), calc(var(--silver-600-sat, var(--silver-sat, 10%)) + var(--bg-sat)), calc(var(--silver-600-ltn, 73%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-silver-500, .group:hover .group-hover\:bg-silver-500, .hover\:bg-silver-500:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--silver-500-hue, var(--silver-hue, 230)), calc(var(--silver-500-sat, var(--silver-sat, 20%)) + var(--bg-sat)), calc(var(--silver-500-ltn, 78%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--silver-500-hue, var(--silver-hue, 230)), calc(var(--silver-500-sat, var(--silver-sat, 10%)) + var(--bg-sat)), calc(var(--silver-500-ltn, 78%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-silver-400, .group:hover .group-hover\:bg-silver-400, .hover\:bg-silver-400:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--silver-400-hue, var(--silver-hue, 230)), calc(var(--silver-400-sat, var(--silver-sat, 20%)) + var(--bg-sat)), calc(var(--silver-400-ltn, 83%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--silver-400-hue, var(--silver-hue, 230)), calc(var(--silver-400-sat, var(--silver-sat, 10%)) + var(--bg-sat)), calc(var(--silver-400-ltn, 83%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-silver-300, .group:hover .group-hover\:bg-silver-300, .hover\:bg-silver-300:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--silver-300-hue, var(--silver-hue, 230)), calc(var(--silver-300-sat, var(--silver-sat, 20%)) + var(--bg-sat)), calc(var(--silver-300-ltn, 88%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--silver-300-hue, var(--silver-hue, 230)), calc(var(--silver-300-sat, var(--silver-sat, 10%)) + var(--bg-sat)), calc(var(--silver-300-ltn, 88%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-silver-200, .group:hover .group-hover\:bg-silver-200, .hover\:bg-silver-200:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--silver-200-hue, var(--silver-hue, 230)), calc(var(--silver-200-sat, var(--silver-sat, 20%)) + var(--bg-sat)), calc(var(--silver-200-ltn, 93%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--silver-200-hue, var(--silver-hue, 230)), calc(var(--silver-200-sat, var(--silver-sat, 10%)) + var(--bg-sat)), calc(var(--silver-200-ltn, 93%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-silver-100, .group:hover .group-hover\:bg-silver-100, .hover\:bg-silver-100:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
   --bg-opacity: 1;
-  background-color: hsla(var(--silver-100-hue, var(--silver-hue, 230)), calc(var(--silver-100-sat, var(--silver-sat, 20%)) + var(--bg-sat)), calc(var(--silver-100-ltn, 98%) + var(--bg-ltn)), var(--bg-opacity));
+  background-color: hsla(var(--silver-100-hue, var(--silver-hue, 230)), calc(var(--silver-100-sat, var(--silver-sat, 10%)) + var(--bg-sat)), calc(var(--silver-100-ltn, 98%) + var(--bg-ltn)), var(--bg-opacity));
 }
 
 .bg-transparent, .group:hover .group-hover\:bg-transparent, .hover\:bg-transparent:hover {
@@ -39095,7 +39095,7 @@ pre[class*=language-] {
 }
 
 .token.comment {
-  color: hsl(var(--silver-800-hue, var(--silver-hue, 230)), calc(0% + var(--silver-800-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-800-ltn, 63%)));
+  color: hsl(var(--silver-800-hue, var(--silver-hue, 230)), calc(0% + var(--silver-800-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-800-ltn, 63%)));
 }
 
 .token.selector {
@@ -39187,7 +39187,7 @@ pre[class*=language-] {
   color: hsl(var(--cyan-hue, 180), calc(var(--cyan-sat, 50%) + 20%), calc(var(--cyan-ltn, 50%) + -10%));
 }
 .markdown-glossary > table td:last-child {
-  color: hsl(var(--silver-900-hue, var(--silver-hue, 230)), calc(0% + var(--silver-900-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-900-ltn, 58%)));
+  color: hsl(var(--silver-900-hue, var(--silver-hue, 230)), calc(0% + var(--silver-900-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-900-ltn, 58%)));
 }
 
 .markdown {
@@ -39229,7 +39229,7 @@ pre[class*=language-] {
   display: inline;
 }
 .markdown > h4 {
-  margin-top: var(--size-36);
+  margin-top: var(--size-48);
   margin-bottom: var(--size-20);
   font-size: var(--font-lg);
   font-weight: 600;
@@ -39258,8 +39258,8 @@ pre[class*=language-] {
 .markdown > blockquote {
   margin-bottom: 1.5em;
   padding: var(--size-4) var(--size-6);
-  background: hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-200-ltn, 93%)));
-  box-shadow: inset 4px 0px 0px 0px hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 20%))), calc(0% + var(--silver-400-ltn, 83%)));
+  background: hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-200-ltn, 93%)));
+  box-shadow: inset 4px 0px 0px 0px hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-400-ltn, 83%)));
 }
 .markdown > blockquote p {
   margin: 0;
