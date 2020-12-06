@@ -4,13 +4,13 @@ layout: layouts/base.njk
 
 {% include "partials/nav.njk" %}
 
-<section class="bg-silver-100 bg-brighten-900">
+<section class="bg-silver-100">
   <div class="wrapper">
-    <div class="py-12">
-      <h1 class="flex align-items-start relative font-5xl font-bold mb-5 tracking-n1">
+    <div class="py-64">
+      <h1 class="flex align-items-start relative font-5xl font-bold mb-20 tracking-n1">
         {{ title }}
       </h1>
-      <p class="font-lg text-black">
+      <p class="font-xl text-black">
         {{ description }}
       </p>
       
@@ -21,27 +21,27 @@ layout: layouts/base.njk
 <section>
   <div class="wrapper">
     <div class="flex">
-      <aside class="hidden sm:block w-56 flex-none">
-        <div class="t-0 sticky h-100vh overflow-auto py-16">
+      <aside class="hidden sm:block w-224 flex-none">
+        <div class="t-0 sticky h-100vh overflow-auto py-64">
 
-          <div class="mb-12 last:mb-0 pb-12 border-b-px last:border-b-0 border-silver-300">
-            <div class="font-sm font-700 mb-4">
+          <div class="mb-40 last:mb-0 pb-40 border-b-px last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
               Alignment
             </div>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.alignment -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-9 hover:text-black">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-900 hover:text-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-12 last:mb-0 pb-12 border-b-px last:border-b-0 border-silver-300">
-            <div class="font-sm font-700 mb-4">
+          <div class="mb-40 last:mb-0 pb-40 border-b-px last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
               Appearance
             </div>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.appearance -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-9 hover:text-black">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-900 hover:text-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -50,7 +50,7 @@ layout: layouts/base.njk
       </aside>
 
       <div class="flex-auto">
-        <div class="block sm:hidden p-6">
+        <div class="block sm:hidden p-24">
           <div class="select">
             <select class="js-select-url">
               <optgroup label="Introduction">
@@ -68,13 +68,13 @@ layout: layouts/base.njk
         </div>
         
         <div class="grid grid-cols-1 sm:grid-cols-12 lg:gap-0">
-          <div class="col-9 markdown markdown-glossary px-14 py-14">
+          <div class="col-9 markdown markdown-glossary px-48 py-64">
             {{ content | safe }}
           </div>
           <div class="relative hidden lg:block lg:col-3">
-            <div class="sticky flex justify-content-end pt-16 t-0">
-              <div class="radius-md w-100p p-6 bg-silver-100 bg-brighten-900">
-                <div class="font-sm font-700 mb-4">
+            <div class="sticky flex justify-content-end pt-48 t-0">
+              <div class="radius-md w-100p p-24 bg-silver-100">
+                <div class="font-sm font-700 mb-16">
                   On this page
                 </div>
                 {{ content | toc | safe }}

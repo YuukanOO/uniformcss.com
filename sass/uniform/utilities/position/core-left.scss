@@ -10,12 +10,17 @@ $properties: (left);
 $custom-properties: ();
 
 $variants: (
-  auto: auto,
-  n100p: -100%,
-	100p: 100%,
-	n50p: -50%,
-  50p: 50%,
-  0: 0,
+  core.merge(
+    core.positive-sizes(),
+    (
+      auto: auto,
+      n100p: -100%,
+      100p: 100%,
+      n50p: -50%,
+      50p: 50%,
+      0: 0,
+    )
+  )
 );
 
 $pseudos: ();

@@ -10,7 +10,9 @@ $properties: (letter-spacing);
 $custom-properties: ();
 
 $variants: (
-  core.trackings()
+  core.merge(
+    core.trackings()
+  )
 );
 
 $pseudos: ();

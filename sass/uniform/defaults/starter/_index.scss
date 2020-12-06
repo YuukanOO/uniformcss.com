@@ -7,12 +7,12 @@
 
   body {
     font-weight: var(--body-font-weight, 400);
-    font-size: var(--body-font-size, var(--font-base));
+    font-size: var(--body-font-size, 1rem);
     line-height: var(--body-leading);
   }
 
   h1,h2,h3,h4,h5,h6 {
-    line-height: var(--heading-leading, leading(3));
+    line-height: var(--heading-leading, leading(tighter));
     margin-bottom: var(--heading-margin, 0.5em);
     color: var(--heading-color, black);
     &:last-child {
@@ -21,8 +21,8 @@
   }
 
   p {
-    line-height: var(--paragraph-leading, leading(8));
-    margin-bottom: var(--paragraph-margin, 1.5em);
+    line-height: var(--paragraph-leading, leading(base));
+    margin-bottom: var(--paragraph-margin, 1.5rem);
     color: var(--paragraph-color, black);
     &:last-child {
       margin-bottom: 0;

@@ -17,19 +17,23 @@ CUSTOM PROPERTIES
     width: 100%;
     margin: auto;
     max-width: var(--wrapper-max-width, 768px);
-    padding-left: var(--wrapper-padding, var(--size-5));
-    padding-right: var(--wrapper-padding, var(--size-5));
+    padding-left: var(--wrapper-padding, size(20));
+    padding-right: var(--wrapper-padding, size(20));
     @include screen(sm) {
-      max-width: var(--wrapper-sm-max-width, 896px);
+      max-width: var(--wrapper-sm-max-width, 768px);
+      padding: 0;
     }
     @include screen(md) {
       max-width: var(--wrapper-md-max-width, 1024px);
+      padding: 0;
     }
     @include screen(lg) {
-      max-width: var(--wrapper-lg-max-width, 1280px);
+      max-width: var(--wrapper-lg-max-width, 1152px);
+      padding: 0;
     }
     @include screen(xl) {
-      max-width: var(--wrapper-xl-max-width, 1440px);
+      max-width: var(--wrapper-xl-max-width, 1280px);
+      padding: 0;
     }
   }
 }

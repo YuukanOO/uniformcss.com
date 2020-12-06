@@ -11,7 +11,7 @@ $custom-properties: ();
 
 $variants: (
 	core.merge(
-		core.sizes(23),
+		core.sizes(),
 		(
       auto: auto,
       0: 0,

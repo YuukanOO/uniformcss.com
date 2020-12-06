@@ -10,7 +10,12 @@ $properties: (line-height);
 $custom-properties: ();
 
 $variants: (
-  core.leadings()
+  core.merge(
+    core.leadings(),
+    (
+      0: 0,
+    )
+  )
 );
 
 $pseudos: ();

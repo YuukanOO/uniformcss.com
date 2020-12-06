@@ -38,7 +38,7 @@
 
 .toc {
 	font-size: font-size(sm);
-	line-height: leading(10);
+	line-height: leading(900);
 }
 
 .home-highlight {
@@ -87,7 +87,7 @@
 	}
 
 	& > h3 {
-		margin-bottom: var(--size-6);
+		margin-bottom: size(20);
 		font-size: var(--font-xl);
 		font-weight: 700;
 		letter-spacing: var(--tracking-n1);
@@ -106,7 +106,8 @@
 		}
 	}
 	& > h4 {
-		margin-bottom: var(--size-4);
+		margin-top: size(36);
+		margin-bottom: size(20);
 		font-size: var(--font-lg);
 		font-weight: 600;
 		letter-spacing: var(--tracking-n1);
@@ -153,7 +154,7 @@
 		color: var(--secondary-a500);
 	}
 	& > table {
-		margin-bottom: var(--size-6);
+		margin-bottom: size(20);
 	}
 	& > ul {
 		list-style-type: disc;
