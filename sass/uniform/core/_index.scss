@@ -394,11 +394,13 @@ $default-config: (
   ),
 
   trackings: (
+    tightest: -0.75em,
     tighter: -0.05em,
     tight: -0.025em,
     base: 0,
     loose: 1.025em,
     looser: 1.05em,
+    loosest: 1.075em,
 
     n100: -1em,
     n90: -0.09em,
