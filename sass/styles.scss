@@ -90,7 +90,7 @@
 		margin-bottom: size(20);
 		font-size: var(--font-xl);
 		font-weight: 700;
-		letter-spacing: var(--tracking-n1);
+		letter-spacing: tracking(tight);
 		@media (min-width: screen(sm)) {
 			font-size: var(--font-2xl);
 		}
@@ -110,7 +110,7 @@
 		margin-bottom: size(20);
 		font-size: var(--font-lg);
 		font-weight: 600;
-		letter-spacing: var(--tracking-n1);
+		letter-spacing: tracking(tight);
 		a {
 			display: none;
 			font-weight: 500;

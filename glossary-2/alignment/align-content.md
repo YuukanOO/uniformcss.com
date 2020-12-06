@@ -257,3 +257,9 @@ Items are evenly distributed within the alignment container along the cross axis
   <div>6</div>
 </div>
 ```
+
+---
+
+### Resources
+
+To learn more about this property please refer to the [MDN Documentation <i class="far fa-external-link ml-6"></i>](https://duckduckgo.com).

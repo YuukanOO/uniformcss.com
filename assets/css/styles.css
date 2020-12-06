@@ -39213,7 +39213,7 @@ pre[class*=language-] {
   margin-bottom: var(--size-20);
   font-size: var(--font-xl);
   font-weight: 700;
-  letter-spacing: var(--tracking-n1);
+  letter-spacing: var(--tracking-tight);
 }
 @media (min-width: 1024px) {
   .markdown > h3 {
@@ -39233,7 +39233,7 @@ pre[class*=language-] {
   margin-bottom: var(--size-20);
   font-size: var(--font-lg);
   font-weight: 600;
-  letter-spacing: var(--tracking-n1);
+  letter-spacing: var(--tracking-tight);
 }
 .markdown > h4 a {
   display: none;
