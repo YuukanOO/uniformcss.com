@@ -49,11 +49,13 @@
   --leading-800: 1.8;
   --leading-900: 1.9;
   --TRACKING----------------------:04;
+  --tracking-tightest: -0.75em;
   --tracking-tighter: -0.05em;
   --tracking-tight: -0.025em;
   --tracking-base: 0;
   --tracking-loose: 1.025em;
   --tracking-looser: 1.05em;
+  --tracking-loosest: 1.075em;
   --tracking-n100: -1em;
   --tracking-n90: -0.09em;
   --tracking-n80: -0.08em;
@@ -4267,6 +4269,10 @@ CUSTOM PROPERTIES
   line-height: 0;
 }
 
+.tracking-tightest {
+  letter-spacing: var(--tracking-tightest);
+}
+
 .tracking-tighter {
   letter-spacing: var(--tracking-tighter);
 }
@@ -4285,6 +4291,10 @@ CUSTOM PROPERTIES
 
 .tracking-looser {
   letter-spacing: var(--tracking-looser);
+}
+
+.tracking-loosest {
+  letter-spacing: var(--tracking-loosest);
 }
 
 .tracking-n100 {
