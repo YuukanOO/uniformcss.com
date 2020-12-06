@@ -46,6 +46,171 @@ layout: layouts/base.njk
             </nav>
           </div>
 
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Background
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.background -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Border
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.border -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Composition
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.composition -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Effect
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.effect -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Flexbox
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.flexbox -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Gap
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.gap -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Grid
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.grid -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Interactive
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.interactive -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Margin
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.margin -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Padding
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.padding -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Overflow
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.overflow -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              SVG
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.svg -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Typography
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.typography -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Transform
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.transform -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+            <div class="font-sm font-700 mb-16">
+              Transition
+            </div>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.transition -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
         </div>
       </aside>
 
@@ -72,7 +237,7 @@ layout: layouts/base.njk
             {{ content | safe }}
           </div>
           <div class="relative hidden lg:block lg:col-3">
-            <div class="sticky flex justify-content-end pt-48 t-0">
+            <div class="sticky flex justify-content-end pt-64 t-0">
               <div class="radius-md w-100p p-24 bg-silver-100">
                 <div class="font-sm font-700 mb-16">
                   On this page
