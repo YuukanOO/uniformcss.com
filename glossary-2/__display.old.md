@@ -1,5 +1,5 @@
 ---
-title: Display
+title: Display2
 discription: Learn all about Uniform CSS and how to implement it effectively
 date: 1000-01-01
 ---
