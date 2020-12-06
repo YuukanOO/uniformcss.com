@@ -30,7 +30,7 @@ layout: layouts/base.njk
             </div>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.alignment -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-900 hover:text-black">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -41,7 +41,7 @@ layout: layouts/base.njk
             </div>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.appearance -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-900 hover:text-black">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover:translate-x-1{% endif %} leading-looser hover:text-black">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
