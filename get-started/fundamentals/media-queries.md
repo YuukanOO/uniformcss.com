@@ -8,7 +8,7 @@ date: 1000-01-03
 
 ## Responsive Design
 
-You can apply responsive utility classes by appending the breakpoint variant to the beginning of your class name e.g. `<breakpoint-variant>:keyword-variant`.
+You can apply responsive utility classes by appending the breakpoint variant to the beginning of your class name e.g. `<breakpoint-variant>.keyword-variant`.
 
 ---
 

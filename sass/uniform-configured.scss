@@ -9,16 +9,21 @@
       //     trimmer: trim
       //   )
       // ),
-      // background-color: (
-      // 	pseudos: (active, focus, group-hover)
-      // ),
-      // border-color: (
-      // 	pseudos: (focus-within)
-      // ),
-      // color: (
-      //   responsive: true,
-      //   pseudos: (focus)
-      // ),
+      background-color: (
+      	pseudos: (active, focus, group-hover, empty)
+      ),
+      background-darken: (
+        pseudos: (active)
+      ),
+      opacity: (
+        pseudos: (focus, disabled, group-hover)
+      ),
+      border-color: (
+      	pseudos: (focus-within)
+      ),
+      color: (
+        pseudos: (group-focus)
+      )
     )
   )
 );

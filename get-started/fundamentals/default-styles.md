@@ -1,19 +1,20 @@
 ---
 title: Default Styles
+description: Learn about default reset and starter styles
 date: 1000-01-05
 ---
 
 
 ## Reset Styles
 
-By default, Uniform applies minimal resetting styles to flatten browser inconsistencies and to provide a clean foundation to build utility classes on. 
+By default, Uniform applies reset of styles to flatten browser inconsistencies and to provide a clean foundation to build utility classes on.
 
 **Here are the main points worth noting:**
 
-- All elements have no default `margin` or `padding`.
-- All elements have a default border style applied to make it easier to apply borders.
-- Body has a default `line-height` of 1.
-- All media elements are set to `display: block`.
+1. All elements have no default `margin` or `padding`.
+2. All elements have a default border style applied to make it easier to apply borders.
+3. Body has a default `line-height` of 1.
+4. All media elements are set to `display: block`.
 
 ```css
 /* Reset everything */
@@ -76,56 +77,70 @@ ol,ul {
 
 ## Disabling Reset Styles
 
-If you prefer to rock your own reset or normalization, you can disable the inclusion of Uniform reset styles by setting `$include-reset-styles` to `false` in your configuration. 
+If you prefer to exclude reset styles from your build, simply pass the following setting in your configuration. 
 
 ```scss
 @use "uniform" as * with (
-	$include-reset-styles: false
+  $config: (
+    excludes: (reset)
+  )
 );
 ```
 
 ---
 
+
 ## Starter Styles
 
-By default, Uniform applies very basic styling to common typographical elements such as `line-height` and `margin-bottom` properties for paragraph and heading elements.
+By default, Uniform provides optional starter styles to help apply rudimentary formatting to common html elements. Uniform starter styles also provide **custom property hooks** with fallback values to help theme quickly and get started.
 
-```scss
+```css
 html {
   background-color: var(--background-color, white);
 }
 
-h1,h2,h3,h4,h5,h6 {
-  line-height: var(--heading-leading, leading(3));
+body {
+  font-size: var(--body-font-size, 1rem);
+  line-height: var(--body-leading, 1);
+  color: var(--body-color, black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: var(--heading-leading, var(--leading-tighter));
   margin-bottom: var(--heading-margin, 0.5em);
   color: var(--heading-color, black);
-  &:last-child {
-    margin-bottom: 0;
-  }
+}
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
+  margin-bottom: 0;
 }
 
 p {
-  line-height: var(--paragraph-leading, leading(8));
-  margin-bottom: var(--paragraph-margin, 1.5em);
-  color: var(--paragraph-color, fill(gray-500));
-  &:last-child {
-    margin-bottom: 0;
-  }
+  line-height: var(--paragraph-leading, var(--leading-base));
+  margin-bottom: var(--paragraph-margin, 1.5rem);
+}
+p:last-child {
+  margin-bottom: 0;
 }
 
 a {
   text-decoration: none;
-  color: inherit;
   cursor: pointer;
+  color: var(--link-color, blue);
+}
+a:hover {
+  color: var(--link-hover-color, blue);
+}
+a:active {
+  color: var(--link-active-color, transparent);
 }
 
-b,strong {
-  font-weight: var(--bold-font-weight, font-weight(bold));
+b, strong {
+  font-weight: var(--bold-font-weight, var(--font-bold));
 }
 
-sub,sup {
+sub, sup {
   position: relative;
-  font-size: .75em;
+  font-size: 0.75em;
 }
 
 sub {
@@ -138,8 +153,37 @@ sup {
   left: 0.25em;
 }
 
-pre,code {
-  font-family: font-family(mono);
+pre, code {
+  font-family: var(--font-mono);
+}
+```
+
+---
+
+## Overriding Starter Styles
+
+Starter styles include customer properties with fallback values that act as a hook to be overwritten. The following start style custom properties are available to be overwritten.
+
+```css
+:root {
+  --background-color: ... ;
+
+  --body-font-size: ... ;
+  --body-leading: ... ;
+  --body-color: ... ;
+
+  --heading-leading: ... ;
+  --heading-margin: ... ;
+  --heading-color: ... ;
+
+  --paragraph-leading: ... ;
+  --paragraph-margin: ... ;
+
+  --link-color: ... ;
+  --link-hover-color: ... ;
+  --link-active-color: ... ;
+
+  --bold-font-weight: ... ;
 }
 ```
 
@@ -147,10 +191,12 @@ pre,code {
 
 ## Disabling Starter Styles
 
-If you prefer to exclude starter styles from your build, simply set `$include-starter-styles` to `false` in your configuration. 
+If you prefer to exclude starter styles from your build, simply pass the following setting in your configuration. 
 
 ```scss
 @use "uniform" as * with (
-	$include-starter-styles: false
+  $config: (
+    excludes: (starter)
+  )
 );
 ```

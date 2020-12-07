@@ -10,15 +10,15 @@ date: 1000-01-04
 Pseudo interactions such as hover can be achieved by appending the pseudo variant to the beginning of your class name e.g. `<pseudo>.keyword-variant`.
 
 <section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
-  <div class="p-14 px-20 bg-black hover.bg-red cursor-pointer font-bold font-lg text-white radius-sm">
+  <button class="p-12 px-18 bg-primary-500 hover.bg-primary-600 transition-100 cursor-pointer font-bold text-white radius-sm">
     Hover on me
-  </div>
+  </button>
 </section>
 
 ```html
-<div class="bg-black hover.bg-red">
-	Hover on me
-</div>
+<button class="bg-primary-500 hover.bg-primary-600">
+  Hover on me
+</button>
 ```
 
 ---
@@ -102,362 +102,24 @@ The following pseudo interactions are available to be activated for each propert
   </tbody>
 </table>
 
----
-
-### First Child
-
-The `first:<property>` allows you to apply a utility to the first child.
-
-<section class="bg-silver-200 p-20 radius-md">
-  <div class="bg-primary-900 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
-    Item A
-  </div>
-  <div class="bg-silver-600 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
-    Item B
-  </div>
-  <div class="bg-silver-600 text-white font-bold font-lg p-14 align-center radius-sm">
-    Item C
-  </div>
-</section>
-
-<section class="radius-sm bg-silver-100 p-6">
-  
-</section>
-
-```html
-<div class="bg-silver-600 first.bg-primary-900">
-	Item A
-</div>
-<div class="bg-silver-600 first.bg-primary-900">
-	Item B
-</div>
-<div class="bg-silver-600 first.bg-primary-900">
-	Item C
-</div>
-```
-
----
-
-### Last Child
-
-The `last.<property>` allows you to apply a utility to the last child.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-600 text-white font-bold font-lg p-2 mb-12 align-center radius-sm">
-    Item A
-  </div>
-  <div class="bg-silver-600 text-white font-bold font-lg p-2 mb-12 align-center radius-sm">
-    Item B
-  </div>
-  <div class="bg-primary-900 text-white font-bold font-lg p-2 align-center radius-sm">
-    Item C
-  </div>
-</section>
-
-```html
-<div class="bg-silver-600 last.bg-primary-900">
-	Item A
-</div>
-<div class="bg-silver-600 last.bg-primary-900">
-	Item B
-</div>
-<div class="bg-silver-600 last.bg-primary-900">
-	Item C
-</div>
-```
-
----
-
-### First of Type
-
-The `first-type:<property>` allows you to apply a utility to the first of type.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-primary-900 text-white font-bold font-lg p-2 mb-12 align-center radius-sm">
-    Item A
-  </div>
-  <div class="bg-silver-600 text-white font-bold font-lg p-2 mb-12 align-center radius-sm">
-    Item B
-  </div>
-  <div class="bg-silver-600 text-white font-bold font-lg p-2 align-center radius-sm">
-    Item C
-  </div>
-</section>
-
-```html
-<div class="bg-silver-600 first-type.bg-primary-900">
-	Item A
-</div>
-<div class="bg-silver-600 first-type.bg-primary-900">
-	Item B
-</div>
-<div class="bg-silver-600 first-type.bg-primary-900">
-	Item C
-</div>
-```
-
----
-
-### Last of Type
-
-The `last-type:<property>` allows you to apply a utility to the last of type.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-600 text-white font-bold font-lg p-2 mb-12 align-center radius-sm">
-    Item A
-  </div>
-  <div class="bg-silver-600 text-white font-bold font-lg p-2 mb-12 align-center radius-sm">
-    Item B
-  </div>
-  <div class="bg-primary-900 text-white font-bold font-lg p-2 align-center radius-sm">
-    Item C
-  </div>
-</section>
-
-```html
-<div class="bg-silver-600 last-type.bg-primary-900">
-	Item A
-</div>
-<div class="bg-silver-600 last-type.bg-primary-900">
-	Item B
-</div>
-<div class="bg-silver-600 last-type.bg-primary-900">
-	Item C
-</div>
-```
-
----
-
-### Odd Child
-
-The `odd:<property>` allows you to apply a utility to the odd child.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-primary-900 text-white font-bold font-lg p-2 mb-12 align-center radius-sm">
-    Item A
-  </div>
-  <div class="bg-silver-600 text-white font-bold font-lg p-2 mb-12 align-center radius-sm">
-    Item B
-  </div>
-  <div class="bg-primary-900 text-white font-bold font-lg p-2 align-center radius-sm">
-    Item C
-  </div>
-</section>
-
-```html
-<div class="bg-silver-600 odd.bg-primary-900">
-	Item A
-</div>
-<div class="bg-silver-600 odd.bg-primary-900">
-	Item B
-</div>
-<div class="bg-silver-600 odd.bg-primary-900">
-	Item C
-</div>
-```
-
----
-
-### Even Child
-
-The `even:<property>` allows you to apply a utility to the even child.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-600 text-white font-bold font-lg p-2 mb-12 align-center radius-sm">
-    Item A
-  </div>
-  <div class="bg-primary-900 text-white font-bold font-lg p-2 mb-12 align-center radius-sm">
-    Item B
-  </div>
-  <div class="bg-silver-600 text-white font-bold font-lg p-2 align-center radius-sm">
-    Item C
-  </div>
-</section>
-
-```html
-<div class="bg-silver-600 even.bg-primary-900">
-	Item A
-</div>
-<div class="bg-silver-600 even.bg-primary-900">
-	Item B
-</div>
-<div class="bg-silver-600 even.bg-primary-900">
-	Item C
-</div>
-```
-
----
-
-### Hover
-
-The `hover.<property>` allows you to apply a utility on hover.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-600 hover.bg-primary-900 text-white font-bold font-lg p-2 align-center radius-sm">
-    Hover
-  </div>
-</section>
-
-```html
-<div class="bg-silver-600 hover.bg-primary-900">
-	Hover
-</div>
-```
-
----
-
-### Active
-
-The `active:<property>` allows you to apply a utility on active.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-600 active.bg-primary-900 text-white font-bold font-lg p-2 align-center radius-sm">
-    Press
-  </div>
-</section>
-
-```html
-<div class="bg-silver-600 active.bg-primary-900">
-	Press
-</div>
-```
-
----
-
-### Visited
-
-The `visited:<property>` allows you to apply a utility on visited.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <a href="#" class="text-blue underline mr-4">Normal Link</a>
-  <a href="#" class="text-purple underline">Visited Link</a>
-</section>
-
-```html
-<a href="#" class="text-blue visited.text-purple-600">Normal Link</a>
-<a href="#" class="text-blue visited.text-purple-600">Visited Link</a>
-```
-
----
-
-### Focus
-
-The `focus.<property>` allows you to apply a utility on focus.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <input value="Focus" class="w-100p p-4 focus.bg-primary-900 focus.text-white font-bold font-lg">
-</section>
-
-```html
-<input value="Focus" class="focus.bg-primary-900" />
-```
-
----
-
-### Disabled
-
-The `focus.<property>` allows you to apply a utility on focus.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <input value="Focus" class="w-100p p-4" disabled>
-</section>
-
-```html
-<input value="Focus" class="disabled.bg-silver-600" disabled />
-```
-
----
-
-### Empty
-
-The `empty:<property>` allows you to apply a utility on empty.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="h-10 bg-primary-900"></div>
-</section>
-
-```html
-<div class="bg-silver-600 empty.bg-primary-900"></div>
-```
-
----
-
-### Focus Within
-
-The `focus-within:<property>` allows you to apply a utility on focus-within.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <form class="bg-white border-b-2px focus-within.border-blue">
-    <input placeholder="Focus" class="w-100p outline-0 p-4">
-  </form>
-</section>
-
-```html
-<form class="bg-white border-b-2px focus-within.border-blue">
-  <input placeholder="Focus" />
-</form>
-```
-
----
-
-### Group Hover
-
-The `group-hover.<property>` allows you to apply properties when the parent container is hovered. You must assign the parent container with a `group` class.
-
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="group bg-white align-center radius-sm">
-    <div class="flex-grow align-center py-4">
-      Hover
-    </div>
-    <div class="flex-grow align-center py-4 group-hover.bg-primary-900">
-      Group Hover
-    </div>
-    <div class="flex-grow align-center py-4">
-      Hover
-    </div>
-  </div>
-</section>
-
-```html
-<div class="group">
-  <div>
-    Hover
-  </div>
-  <div class="group-hover.bg-silver-100">
-    Group Hover
-  </div>
-  <div>
-    Hover
-  </div>
-</div>
-```
-
----
-
-### Group Focus
-
-The `group-focus.<property>` operates in the same way as `group-hover` but allows you to apply properties when the parent container is in focus. You must assign the parent container with a `group` class.
 
 ---
 
 ## Enabling Pseudos
 
-In order to maintain a reasonable file-size, Uniform by default only enables pseudo variants for a subset of CSS properties.
-
-You can enable a pseudo variants by passing in preferred pseudos to the  `pseudos` key to each property of your configuration.
+By default, only a subset of properties have pseudo variants enabled. To see which pseudos are enabled, please refer to the glossary. You can enable pseudo variants by passing preferred pseudos to the  `pseudos` map for each property in your configuration.
 
 ```scss
 @use "uniform" as * with (
   $config: (
     utilities: (
       background-color: (
-      	pseudos: (active, focus, group-hover)
+      	pseudos: (hover, active, focus, group-hover)
       ),
       border-color: (
       	pseudos: (focus-within)
       ),
       color: (
-        responsive: true,
         pseudos: (focus)
       ),
     )
@@ -491,7 +153,7 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 
 ## Extending Pseudos
 
-You can extend pseudos by passing in key value pairs to the `pseudos` key in your configuration variable.
+You can extend the available set of pseudos by passing in key value pairs to the `pseudos` key in your configuration variable.
 
 ```scss
 @use "uniform" as * with (
@@ -509,4 +171,338 @@ You can extend pseudos by passing in key value pairs to the `pseudos` key in you
 .nth4\:bg-red:nth-child(4) { ... }
 .nth5n\:bg-red:nth-child(5n) { ... }
 ...
+```
+
+
+---
+
+### First Child
+
+The `first.<property>` allows you to apply a utility to the first child.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 first.opacity-100">
+	1
+</div>
+<div class="opacity-30 first.opacity-100">
+	2
+</div>
+<div class="opacity-30 first.opacity-100">
+	3
+</div>
+```
+
+---
+
+### Last Child
+
+The `last.<property>` allows you to apply a utility to the last child.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 last.opacity-100">
+	1
+</div>
+<div class="opacity-30 last.opacity-100">
+	2
+</div>
+<div class="opacity-30 last.opacity-100">
+	3
+</div>
+```
+
+---
+
+### First of Type
+
+The `first-type.<property>` allows you to apply a utility to the first of type.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 first-type.opacity-100">
+	1
+</div>
+<div class="opacity-30 first-type.opacity-100">
+	2
+</div>
+<div class="opacity-30 first-type.opacity-100">
+	3
+</div>
+```
+
+---
+
+### Last of Type
+
+The `last-type.<property>` allows you to apply a utility to the last of type.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 last-type.opacity-100">
+	1
+</div>
+<div class="opacity-30 last-type.opacity-100">
+	2
+</div>
+<div class="opacity-30 last-type.opacity-100">
+	3
+</div>
+```
+
+---
+
+### Odd Child
+
+The `odd.<property>` allows you to apply a utility to the odd child.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 odd.opacity-100">
+	1
+</div>
+<div class="opacity-30 odd.opacity-100">
+	2
+</div>
+<div class="opacity-30 odd.opacity-100">
+	3
+</div>
+```
+
+---
+
+### Even Child
+
+The `even.<property>` allows you to apply a utility to the even child.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 even.opacity-100">
+	1
+</div>
+<div class="opacity-30 even.opacity-100">
+	2
+</div>
+<div class="opacity-30 even.opacity-100">
+	3
+</div>
+```
+
+---
+
+### Hover
+
+The `hover.<property>` allows you to apply a utility on hover.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <button class="p-12 px-18 bg-primary-500 hover.bg-primary-600 transition-100 cursor-pointer font-bold text-white radius-sm">
+    Hover on me
+  </button>
+</section>
+
+```html
+<button class="bg-primary-500 hover.bg-primary-600">
+	Hover on me
+</button>
+```
+
+---
+
+### Active
+
+The `active.<property>` allows you to apply a utility on active.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <button class="p-12 px-18 bg-primary-500 active.bg-primary-600 transition-100 cursor-pointer font-bold text-white radius-sm">
+    Click me
+  </button>
+</section>
+
+```html
+<button class="bg-primary-500 active.bg-primary-600">
+	Click me
+</button>
+```
+
+---
+
+### Visited
+
+The `visited.<property>` allows you to apply a utility on visited.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <a href="#" class="text-blue hover.text-blue underline mr-14">Normal Link</a>
+  <a href="#" class="text-purple hover.text-purple underline">Visited Link</a>
+</section>
+
+```html
+<a href="#" class="text-blue visited.text-blue">Normal Link</a>
+<a href="#" class="text-blue visited.text-purple">Visited Link</a>
+```
+
+---
+
+### Focus
+
+The `focus.<property>` allows you to apply a utility on focus.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <input value="Focus" class="p-12 opacity-50 focus.opacity-100 font-bold font-lg">
+</section>
+
+```html
+<input value="Focus" class="opacity-50 focus.opacity-100" />
+```
+
+---
+
+### Disabled
+
+The `disabled.<property>` allows you to apply a utility on disabled.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <input value="Disabled" class="bg-white p-12 opacity-100 disabled.opacity-50 font-bold font-lg" disabled>
+</section>
+
+```html
+<input value="Disabled" class="opacity-100 disabled.opacity-50" disabled />
+```
+
+---
+
+### Empty
+
+The `empty.<property>` allows you to apply a utility on empty.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <div class="w-64 h-64 radius-sm bg-blue empty.bg-mint"></div>
+</section>
+
+```html
+<div class="w-64 h-64 bg-blue empty.bg-mint"></div>
+```
+
+---
+
+### Focus Within
+
+The `focus-within.<property>` allows you to apply a utility on focus-within.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <form class="relative shadow-xs bg-white border-b-2 border-silver-500 focus-within.border-black">
+    <input placeholder="Focus on me" class="bg-white p-12 font-bold font-lg outline-0">
+  </form>
+</section>
+
+```html
+<form class="bg-white border-b-2 border-silver-500 focus-within.border-black">
+  <input placeholder="Focus on me" />
+</form>
+```
+
+---
+
+### Group Hover
+
+The `group-hover.<property>` allows you to apply properties when the parent container is hovered. You must assign the parent container with a `group` class.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <a class="group bg-white text-black hover.bg-black block p-20 radius-sm">
+    <h3 class="group-hover.text-mint">Group Hover</h3>
+    <p class="group-hover.text-white">Hover on this card to see change</p>
+  </a>
+</section>
+
+```html
+<a class="group bg-white text-black hover.bg-black block p-20 radius-sm">
+  <h3 class="group-hover.text-mint">Group Hover</h3>
+  <p class="group-hover.text-white">Hover on this card to see change</p>
+</a>
+```
+
+---
+
+### Group Focus
+
+The `group-focus.<property>` operates in the same way as `group-hover` but allows you to apply properties when the parent container is in focus. You must assign the parent container with a `group` class.
+
+
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <button class="group flex align-items-center p-12 px-18 bg-primary-500 focus.bg-black transition-100 cursor-pointer font-bold text-white radius-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="currentColor" class="w-24 h-24 group-focus.text-magenta mr-16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+    Focus on me
+  </button>
+</section>
+
+```html
+<button class="group text-white bg-primary-500 focus.bg-black">
+  <svg class="group-focus:text-cyan"></svg> Button
+</button>
 ```

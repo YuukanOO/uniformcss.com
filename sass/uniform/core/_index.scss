@@ -975,6 +975,16 @@ $var-trackings: variablize-map($trackings, tracking);
   }
 }
 
+@function font-weight($font-weight) {
+  @if (map.get($font-weights, $font-weight)) {
+    $result: ();
+    $result: map.get($var-font-weights, $font-weight);
+    @return $result;
+  } @else {
+    @error "[#{$font-weight}] does not exist";
+  }
+}
+
 @function leading($leading) {
   @if (map.get($leadings, $leading)) {
     $result: ();
