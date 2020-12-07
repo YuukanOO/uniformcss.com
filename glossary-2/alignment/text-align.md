@@ -30,27 +30,17 @@ The following default responsive and pseudo settings.
 
 ---
 
-## Left
+## {{ title }}
 
-<!-- TODO -->
+<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
+  <!-- ... -->
+</div>
 
----
-
-## Center
-
-<!-- TODO -->
-
----
-
-## Right
-
-<!-- TODO -->
-
----
-
-## Justify
-
-<!-- TODO -->
+```html
+<div class="TODO">
+	<!-- TODO -->
+</div>
+```
 
 ---
 

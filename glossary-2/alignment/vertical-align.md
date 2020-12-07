@@ -32,39 +32,17 @@ The following default responsive and pseudo settings.
 
 ---
 
-## Baseline
+## {{ title }}
 
-<!-- TODO -->
+<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
+  <!-- ... -->
+</div>
 
----
-
-## Top
-
-<!-- TODO -->
-
----
-
-## Middle
-
-<!-- TODO -->
-
----
-
-## Bottom
-
-<!-- TODO -->
-
----
-
-## Text-top
-
-<!-- TODO -->
-
----
-
-## Text-bottom
-
-<!-- TODO -->
+```html
+<div class="TODO">
+	<!-- TODO -->
+</div>
+```
 
 ---
 

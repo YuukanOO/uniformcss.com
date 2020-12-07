@@ -32,6 +32,20 @@ The following default responsive and pseudo settings.
 
 ---
 
+## {{ title }}
+
+<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
+  <!-- ... -->
+</div>
+
+```html
+<div class="TODO">
+	<!-- TODO -->
+</div>
+```
+
+<!--
+
 ## Center
 
 Items are packed flush to each other in the center of the alignment container along the cross axis.
@@ -257,6 +271,8 @@ Items are evenly distributed within the alignment container along the cross axis
 	<div>6</div>
 </div>
 ```
+
+-->
 
 ---
 
