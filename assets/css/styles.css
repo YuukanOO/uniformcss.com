@@ -12632,6 +12632,26 @@ CUSTOM PROPERTIES
   text-align: justify;
 }
 
+.justify-self-auto {
+  justify-self: auto;
+}
+
+.justify-self-start {
+  justify-self: start;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.justify-self-stretch {
+  justify-self: stretch;
+}
+
 .justify-items-auto {
   justify-items: auto;
 }
@@ -19171,6 +19191,26 @@ CUSTOM PROPERTIES
 
   .sm\.align-justify {
     text-align: justify;
+  }
+
+  .sm\.justify-self-auto {
+    justify-self: auto;
+  }
+
+  .sm\.justify-self-start {
+    justify-self: start;
+  }
+
+  .sm\.justify-self-end {
+    justify-self: end;
+  }
+
+  .sm\.justify-self-center {
+    justify-self: center;
+  }
+
+  .sm\.justify-self-stretch {
+    justify-self: stretch;
   }
 
   .sm\.justify-items-auto {
@@ -25714,6 +25754,26 @@ CUSTOM PROPERTIES
     text-align: justify;
   }
 
+  .md\.justify-self-auto {
+    justify-self: auto;
+  }
+
+  .md\.justify-self-start {
+    justify-self: start;
+  }
+
+  .md\.justify-self-end {
+    justify-self: end;
+  }
+
+  .md\.justify-self-center {
+    justify-self: center;
+  }
+
+  .md\.justify-self-stretch {
+    justify-self: stretch;
+  }
+
   .md\.justify-items-auto {
     justify-items: auto;
   }
@@ -32255,6 +32315,26 @@ CUSTOM PROPERTIES
     text-align: justify;
   }
 
+  .lg\.justify-self-auto {
+    justify-self: auto;
+  }
+
+  .lg\.justify-self-start {
+    justify-self: start;
+  }
+
+  .lg\.justify-self-end {
+    justify-self: end;
+  }
+
+  .lg\.justify-self-center {
+    justify-self: center;
+  }
+
+  .lg\.justify-self-stretch {
+    justify-self: stretch;
+  }
+
   .lg\.justify-items-auto {
     justify-items: auto;
   }
@@ -38794,6 +38874,26 @@ CUSTOM PROPERTIES
 
   .xl\.align-justify {
     text-align: justify;
+  }
+
+  .xl\.justify-self-auto {
+    justify-self: auto;
+  }
+
+  .xl\.justify-self-start {
+    justify-self: start;
+  }
+
+  .xl\.justify-self-end {
+    justify-self: end;
+  }
+
+  .xl\.justify-self-center {
+    justify-self: center;
+  }
+
+  .xl\.justify-self-stretch {
+    justify-self: stretch;
   }
 
   .xl\.justify-items-auto {

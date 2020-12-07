@@ -1,12 +1,12 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: justify-items;
-$keyword: justify-items;
+$name: justify-self;
+$keyword: justify-self;
 $responsive: true;
 $responsive-pseudos: false;
 
-$properties: (justify-items);
+$properties: (justify-self);
 $custom-properties: ();
 
 $variants: (
