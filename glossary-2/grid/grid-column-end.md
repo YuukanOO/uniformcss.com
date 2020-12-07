@@ -1,5 +1,7 @@
 ---
 title: Grid Column End
+property: grid-column-end
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
