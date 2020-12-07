@@ -1,12 +1,14 @@
 ---
 title: Vertical Alignment
+property: vertical-align
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `vertical-align` property sets vertical alignment of an inline, inline-block or table-cell box.
 
 | Class Name              | Property                       |
 | ----------------------- | ------------------------------ |
@@ -255,3 +257,9 @@ Items are evenly distributed within the alignment container along the cross axis
 	<div>6</div>
 </div>
 ```
+
+---
+
+## Resources
+
+To learn more about `{{ property }}` please refer to the [MDN Documentation <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
