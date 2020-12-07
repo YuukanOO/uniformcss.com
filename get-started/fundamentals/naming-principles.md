@@ -5,7 +5,7 @@ date: 1000-01-09
 
 {% include shortcodes/chapter, text: 'Fundamentals', color: 'yellow' %}
 
-### Naming Principles
+## Naming Principles
 
 Utility classes function in an immutable way by nature, therefore we want its name to be just as durable and future-proof. Every CSS property name and its variants follow a strict and scalable naming convention. The following is a list of principles Uniform follows when considering how properties and variants should be named.
 
@@ -13,7 +13,7 @@ Utility classes function in an immutable way by nature, therefore we want its na
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 text-white radius-round">1</span> Make use of verbose values</h4>
+<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-blue-500 leading-1 text-white radius-round">1</span> Make use of verbose values</h4>
 
 If the property values are verbose and self explanatory, then use the value to define keyword provided the value name does not cause any confusion or conflict with other properties.
 
@@ -26,7 +26,7 @@ If the property values are verbose and self explanatory, then use the value to d
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 text-white radius-round">2</span> Truncate property names when possible</h4>
+<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-blue-500 leading-1 text-white radius-round">2</span> Truncate property names when possible</h4>
 
 If the property name include words that can be shortened without confusion, shorten it.
 
@@ -38,7 +38,7 @@ If the property name include words that can be shortened without confusion, shor
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 text-white radius-round">3</span> Remove redundant hyphenation</h4>
+<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-blue-500 leading-1 text-white radius-round">3</span> Remove redundant hyphenation</h4>
 
 If the word is hyphenated but can be elegantly combined, remove hyphenation e.g. `wordbreak` and `whitespace` instead of `word-break` and `white-space`.
 
@@ -50,7 +50,7 @@ If the word is hyphenated but can be elegantly combined, remove hyphenation e.g.
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 text-white radius-round">4</span>Use single-letter keywords conservatively</h4>
+<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-blue-500 leading-1 text-white radius-round">4</span>Use single-letter keywords conservatively</h4>
 
 Single-characters are only reserved for directions and the `width`, `height`, `margin`, and `padding` properties e.g. `w`, `h`, `m`, `p`. For single letter properties, don't separate direction using a delimiter. For example, use `mr` for margin right instead of `m-r`.
 
@@ -65,7 +65,7 @@ Single-characters are only reserved for directions and the `width`, `height`, `m
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 text-white radius-round">5</span> Use single-characters for directions</h4>
+<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-blue-500 leading-1 text-white radius-round">5</span> Use single-characters for directions</h4>
 
 Common directional properties such as `top`, `right`, `bottom`, and `left` are represented with the first letter of the direction e.g. `border-t` for `border-top` etc. For more than one direction, combine the direction letters e.g. `tr` for `top-right`.
 
@@ -77,7 +77,7 @@ Common directional properties such as `top`, `right`, `bottom`, and `left` are r
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 text-white radius-round">6</span> Simplify properties names</h4>
+<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-blue-500 leading-1 text-white radius-round">6</span> Simplify properties names</h4>
 
 Simplify the property name to its most essential and ideal denominator of the word provided it does not cause confusion or conflict with others properties in the same family.
 
@@ -91,7 +91,7 @@ When dealing with multi-word properties such as `line-height`, simplifying it to
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 text-white radius-round">7</span> Append unit as alphabetical characters</h4>
+<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-blue-500 leading-1 text-white radius-round">7</span> Append unit as alphabetical characters</h4>
 
 Over qualify the unit by appending an abbreviated characters that represent the unit only if it causes conflict without. All negative values are suffixed have `n` (negative) at the beginning of the variant name. Append units to avoid conflicts with similarly numbered variants.
 
@@ -109,7 +109,7 @@ n100p: -100%,
 
 <div class="mb-10"></div>
 
-<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-none bg-blue-500 leading-1 text-white radius-round">8</span> Be consistent about how property scales</h4>
+<h4><span class="w-6 h-6 mr-2 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-blue-500 leading-1 text-white radius-round">8</span> Be consistent about how property scales</h4>
 
 Pixel based variants follow the `px`, `2px`, `3px...` pattern. General sizing follow the `sm`, `md`, `lg` pattern. Custom user-defined scales such as sizing and line-height properties follow the numerical `1`, `2`, `3` pattern.
 

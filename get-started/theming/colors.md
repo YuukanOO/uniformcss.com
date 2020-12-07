@@ -5,7 +5,7 @@ date: 1000-01-02
 
 {% include shortcodes/chapter, text: 'Theming', color: 'orange' %}
 
-### Color Variant Chart
+## Color Variant Chart
 
 Uniform provides a range of tints and shades across a broad spectrum of colors. Use the following chart as the reference for any breakpoint related property.
 
@@ -213,7 +213,7 @@ Uniform provides a range of tints and shades across a broad spectrum of colors. 
 
 ---
 
-### Basic Usage
+## Basic Usage
 
 The following example showcases how the variants can be applied.
 
@@ -231,7 +231,7 @@ The following example showcases how the variants can be applied.
 
 ---
 
-#### Extending Core Variants
+### Extending Core Variants
 
 There are two types of color maps that can be extended. The `$colors` map contains solid colors, and the `$gradients` map contain linear-gradient fills. You can extend each of these variant sets by adding key value pairs to each map.
 
@@ -262,7 +262,7 @@ There are two types of color maps that can be extended. The `$colors` map contai
 
 ---
 
-#### Replacing Core Variants
+### Replacing Core Variants
 
 You can replace default variants entirely by assigning key value pairs to the `$core-colors` and the `$core-gradients` map.
 
@@ -279,7 +279,7 @@ You can replace default variants entirely by assigning key value pairs to the `$
 
 ---
 
-#### API Functions
+### API Functions
 
 The color API function allows you to query and pull values from the color map. You can also pluralize the function name to pull all values, this can be helpful for when you need to loop through all the values using the `@each` rule.
 
@@ -307,7 +307,7 @@ fills()
 
 ---
 
-#### Root Variables
+### Root Variables
 
 If you are using the basic configuration setup of Uniform, use the following set of root variables to override default values.
 

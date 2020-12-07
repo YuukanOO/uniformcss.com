@@ -4,7 +4,7 @@ description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
 
-### Basic Usage
+## Basic Usage
 
 The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
 
@@ -19,7 +19,7 @@ Class Name | Property
 
 ---
 
-### Default Settings
+## Default Settings
 
 The following default responsive and pseudo settings.
 
@@ -32,7 +32,7 @@ Setting | Default Setting
 ---
 
 
-### Center
+## Center
 
 Items are packed flush to each other in the center of the alignment container along the cross axis.
 
@@ -70,7 +70,7 @@ Items are packed flush to each other in the center of the alignment container al
 
 ---
 
-### Start
+## Start
 
 Items are packed flush to each other against the start edge of the alignment container in the cross axis.
 
@@ -108,7 +108,7 @@ Items are packed flush to each other against the start edge of the alignment con
 
 ---
 
-### End
+## End
 
 Items are packed flush to each other against the end edge of the alignment container in the cross axis.
 
@@ -146,7 +146,7 @@ Items are packed flush to each other against the end edge of the alignment conta
 
 ---
 
-### Between
+## Between
 
 Items are evenly distributed within the alignment container along the cross axis. 
 
@@ -184,7 +184,7 @@ Items are evenly distributed within the alignment container along the cross axis
 
 ---
 
-### Around
+## Around
 
 Items are evenly distributed within the alignment container along the cross axis. 
 
@@ -222,7 +222,7 @@ Items are evenly distributed within the alignment container along the cross axis
 
 ---
 
-### Evenly
+## Evenly
 
 Items are evenly distributed within the alignment container along the cross axis. 
 
@@ -260,6 +260,6 @@ Items are evenly distributed within the alignment container along the cross axis
 
 ---
 
-### Resources
+## Resources
 
 To learn more about this property please refer to the [MDN Documentation <i class="far fa-external-link ml-6"></i>](https://duckduckgo.com).

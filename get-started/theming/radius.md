@@ -5,7 +5,7 @@ date: 1000-01-03
 
 {% include shortcodes/chapter, text: 'Theming', color: 'cyan' %}
 
-### Radius Variant Chart
+## Radius Variant Chart
 
 By default, Uniform provides **5 border radiuses** . Use the following chart as the reference for any `border-radius` related property.
 
@@ -71,7 +71,7 @@ By default, Uniform provides **5 border radiuses** . Use the following chart as 
 
 ---
 
-### Basic Usage
+## Basic Usage
 
 The following example showcases how the variants can be applied.
 
@@ -89,7 +89,7 @@ The following example showcases how the variants can be applied.
 
 ---
 
-#### Extending Core Variants
+### Extending Core Variants
 
 You can extend the core radius by adding key value pairs to the `$radius` map.
 
@@ -110,7 +110,7 @@ You can extend the core radius by adding key value pairs to the `$radius` map.
 
 ---
 
-#### Replacing Core Variants
+### Replacing Core Variants
 
 You can replace the default variants entirely by adding key value pairs to the `$core-radius` map.
 
@@ -124,7 +124,7 @@ You can replace the default variants entirely by adding key value pairs to the `
 
 ---
 
-### API Functions
+## API Functions
 
 The radius API function allows you to query and pull values from the radius map. You can also pluralize the function name to pull all values, this can be helpful for when you need to loop through all the values using the `@each` rule.
 
@@ -145,7 +145,7 @@ core.radiuses()
 
 ---
 
-#### Root Variables
+### Root Variables
 
 If you are using the basic configuration setup of Uniform, use the following set of root variables to override default values.
 

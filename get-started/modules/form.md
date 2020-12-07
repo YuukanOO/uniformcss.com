@@ -5,7 +5,7 @@ date: 1000-01-02
 
 {% include shortcodes/chapter, text: 'Modules', color: 'purple' %}
 
-### Form Module
+## Form Module
 
 The Form module is an optional pre-built component that provides customizable styling of input text fieds, checkboxes, select dropdown etc.
 
@@ -106,7 +106,7 @@ The Form module is an optional pre-built component that provides customizable st
 
 ---
 
-### Labels and Textfields
+## Labels and Textfields
 
 To add a required asterisk append the class `is-required` to your label.
 
@@ -123,7 +123,7 @@ To add a required asterisk append the class `is-required` to your label.
 
 <div class="mb-10"></div>
 
-#### Label and Textfield root variables
+### Label and Textfield root variables
 
 To customize the look of your label and textfields, override the following root variables.
 
@@ -158,7 +158,7 @@ To customize the look of your label and textfields, override the following root 
 
 ---
 
-### Input field sizes
+## Input field sizes
 
 Text fields come in **5 sizes**.
 
@@ -181,7 +181,7 @@ Text fields come in **5 sizes**.
 
 <div class="mb-10"></div>
 
-#### Input size root variables
+### Input size root variables
 
 To customize your text and select input field sizes, override the following root variables.
 
@@ -214,7 +214,7 @@ To customize your text and select input field sizes, override the following root
 
 ---
 
-### Select Fields
+## Select Fields
 
 
 <section class="radius-sm bg-silver-100 p-6">
@@ -240,7 +240,7 @@ To customize your text and select input field sizes, override the following root
 
 <div class="mb-10"></div>
 
-#### Select root variables
+### Select root variables
 
 To customize your select input field sizes, override the following root variables.
 
@@ -277,7 +277,7 @@ To customize your select input field sizes, override the following root variable
 
 ---
 
-### Select field sizes
+## Select field sizes
 
 Select fields come in **5 sizes**.
 
@@ -334,7 +334,7 @@ Select fields come in **5 sizes**.
 
 <div class="mb-10"></div>
 
-#### Select size root variables
+### Select size root variables
 
 To customize your select input field sizes, override the following root variables.
 
@@ -368,7 +368,7 @@ To customize your select input field sizes, override the following root variable
 
 ---
 
-### Responsive Text and Select Sizes
+## Responsive Text and Select Sizes
 
 Both text and select field sizes can vary depending on breakpoint.
 
@@ -382,7 +382,7 @@ Both text and select field sizes can vary depending on breakpoint.
 
 ---
 
-### Input States
+## Input States
 
 Text, select, and textarea fields come in *4* different states.
 
@@ -404,7 +404,7 @@ Text, select, and textarea fields come in *4* different states.
 
 <div class="mb-10"></div>
 
-#### State field root variables
+### State field root variables
 
 To customize your state fields, override the following root variables.
 
@@ -430,7 +430,7 @@ To customize your state fields, override the following root variables.
 
 ---
 
-### Radio and Checkboxes
+## Radio and Checkboxes
 
 Text and select input fields come in **5 sizes**.
 
@@ -478,7 +478,7 @@ Text and select input fields come in **5 sizes**.
 
 <div class="mb-10"></div>
 
-#### Radio and Checkbox root variables
+### Radio and Checkbox root variables
 
 To customize your radio or checkbox input fields, override the following root variables.
 
@@ -517,7 +517,7 @@ To customize your radio or checkbox input fields, override the following root va
 
 ---
 
-### Toggle switch
+## Toggle switch
 
 Checkboxes can also be transformed into a toggle switch.
 
@@ -538,7 +538,7 @@ Checkboxes can also be transformed into a toggle switch.
 
 <div class="mb-10"></div>
 
-#### Toggle switch root variables
+### Toggle switch root variables
 
 To customize your toggle switch, override the following root variables.
 
@@ -560,7 +560,7 @@ To customize your toggle switch, override the following root variables.
 
 ---
 
-### Textarea
+## Textarea
 
 Checkboxes can also be transformed into a toggle switch. Note, to set a default line-height apply the leading property.
 
@@ -575,7 +575,7 @@ Checkboxes can also be transformed into a toggle switch. Note, to set a default 
 
 <div class="mb-10"></div>
 
-#### Textarea root variables
+### Textarea root variables
 
 To customize your textarea, override the following root variables.
 
@@ -599,7 +599,7 @@ To customize your textarea, override the following root variables.
 
 ---
 
-### Disabled form fields
+## Disabled form fields
 
 All form field elements can be disabled with assigning the `disabled` attribute.
 
@@ -650,7 +650,7 @@ All form field elements can be disabled with assigning the `disabled` attribute.
 
 ---
 
-### How to Disable this Module
+## How to Disable this Module
 
 By default, all modules are enabled. To disable this module, set the `$include-form-module` variable to `false` in your module configuration.
 

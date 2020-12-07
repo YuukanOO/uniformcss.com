@@ -4,25 +4,25 @@ date: 1000-01-04
 ---
 
 
-### Pseudo Interactions
+## Pseudo Interactions
 
 Pseudo interactions such as hover and focus can be achieved by appending the pseudo variant to the beginning of your class name e.g. `<pseudo>.keyword-variant`.
 
 <section class="radius-sm bg-silver-200 p-6">
-  <div class="bg-black hover.bg-red transition transition-200 cursor-pointer text-white align-center py-8">
+  <div class="bg-black hover:bg-red transition transition-200 cursor-pointer text-white align-center py-8">
     Hover on me
   </div>
 </section>
 
 ```html
-<div class="bg-black hover.bg-red">
+<div class="bg-black hover:bg-red">
 	Hover on me
 </div>
 ```
 
 ---
 
-### Pseudo Variant Chart
+## Pseudo Variant Chart
 
 The following pseudo interactions are available to be activated for each property.
 
@@ -107,7 +107,7 @@ The following pseudo interactions are available to be activated for each propert
 
 ---
 
-#### First Child
+### First Child
 
 The `first.<property>` allows you to apply a utility to the first child.
 
@@ -137,7 +137,7 @@ The `first.<property>` allows you to apply a utility to the first child.
 
 ---
 
-#### Last Child
+### Last Child
 
 The `last.<property>` allows you to apply a utility to the last child.
 
@@ -167,7 +167,7 @@ The `last.<property>` allows you to apply a utility to the last child.
 
 ---
 
-#### First of Type
+### First of Type
 
 The `first-type.<property>` allows you to apply a utility to the first of type.
 
@@ -197,7 +197,7 @@ The `first-type.<property>` allows you to apply a utility to the first of type.
 
 ---
 
-#### Last of Type
+### Last of Type
 
 The `last-type.<property>` allows you to apply a utility to the last of type.
 
@@ -227,7 +227,7 @@ The `last-type.<property>` allows you to apply a utility to the last of type.
 
 ---
 
-#### Odd Child
+### Odd Child
 
 The `odd.<property>` allows you to apply a utility to the odd child.
 
@@ -257,7 +257,7 @@ The `odd.<property>` allows you to apply a utility to the odd child.
 
 ---
 
-#### Even Child
+### Even Child
 
 The `even.<property>` allows you to apply a utility to the even child.
 
@@ -287,25 +287,25 @@ The `even.<property>` allows you to apply a utility to the even child.
 
 ---
 
-#### Hover
+### Hover
 
-The `hover.<property>` allows you to apply a utility on hover.
+The `hover:<property>` allows you to apply a utility on hover:
 
 <section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-silver-400 hover.bg-blue text-white p-2 align-center">
+  <div class="bg-silver-400 hover:bg-blue text-white p-2 align-center">
     Hover
   </div>
 </section>
 
 ```html
-<div class="bg-silver-400 hover.bg-blue">
+<div class="bg-silver-400 hover:bg-blue">
 	Hover
 </div>
 ```
 
 ---
 
-#### Active
+### Active
 
 The `active.<property>` allows you to apply a utility on active.
 
@@ -323,7 +323,7 @@ The `active.<property>` allows you to apply a utility on active.
 
 ---
 
-#### Visited
+### Visited
 
 The `visited.<property>` allows you to apply a utility on visited.
 
@@ -339,7 +339,7 @@ The `visited.<property>` allows you to apply a utility on visited.
 
 ---
 
-#### Focus
+### Focus
 
 The `focus.<property>` allows you to apply a utility on focus.
 
@@ -353,7 +353,7 @@ The `focus.<property>` allows you to apply a utility on focus.
 
 ---
 
-#### Disabled
+### Disabled
 
 The `focus.<property>` allows you to apply a utility on focus.
 
@@ -367,7 +367,7 @@ The `focus.<property>` allows you to apply a utility on focus.
 
 ---
 
-#### Empty
+### Empty
 
 The `empty.<property>` allows you to apply a utility on empty.
 
@@ -381,7 +381,7 @@ The `empty.<property>` allows you to apply a utility on empty.
 
 ---
 
-#### Focus Within
+### Focus Within
 
 The `focus-within.<property>` allows you to apply a utility on focus-within.
 
@@ -399,16 +399,16 @@ The `focus-within.<property>` allows you to apply a utility on focus-within.
 
 ---
 
-#### Group Hover
+### Group Hover
 
-The `group-hover.<property>` allows you to apply properties when the parent container is hovered. You must assign the parent container with a `group` class.
+The `group-hover:<property>` allows you to apply properties when the parent container is hovered. You must assign the parent container with a `group` class.
 
 <section class="radius-sm bg-silver-100 p-6">
   <div class="group bg-white align-center">
     <div class="flex-grow align-center py-4">
       Hover
     </div>
-    <div class="flex-grow align-center py-4 group-hover.bg-blue">
+    <div class="flex-grow align-center py-4 group-hover:bg-blue">
       Group Hover
     </div>
     <div class="flex-grow align-center py-4">
@@ -422,7 +422,7 @@ The `group-hover.<property>` allows you to apply properties when the parent cont
   <div>
     Hover
   </div>
-  <div class="group-hover.bg-silver-100">
+  <div class="group-hover:bg-silver-100">
     Group Hover
   </div>
   <div>
@@ -433,13 +433,13 @@ The `group-hover.<property>` allows you to apply properties when the parent cont
 
 ---
 
-#### Group Focus
+### Group Focus
 
 The `group-focus.<property>` operates in the same way as `group-hover` but allows you to apply properties when the parent container is in focus. You must assign the parent container with a `group` class.
 
 ---
 
-### Enabling Pseudos
+## Enabling Pseudos
 
 In order to maintain a reasonable file-size, Uniform by default only enables pseudo variants for a subset of CSS properties.
 
@@ -466,7 +466,7 @@ You can enable a pseudo variants by passing in preferred pseudos to the  `pseudo
 
 ---
 
-### Pseudo Delimiter
+## Pseudo Delimiter
 
 By default, Uniform uses the `.` character to separate the breakpoints and pseudos from the property. You can override the default breakpoint delimiter by defining `pseudo-delimiter` in your configuration.
 
@@ -488,7 +488,7 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 
 ---
 
-### Extending Pseudos
+## Extending Pseudos
 
 You can extend pseudos by passing in key value pairs to the `pseudos` key in your configuration variable.
 

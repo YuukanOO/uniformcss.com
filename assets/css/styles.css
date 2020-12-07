@@ -279,9 +279,10 @@ html {
 }
 
 body {
-  font-weight: var(--body-font-weight, 400);
+  font-weight: var(--body-font-weight, font-weight(regular));
   font-size: var(--body-font-size, 1rem);
-  line-height: var(--body-leading);
+  line-height: var(--body-leading, 1);
+  color: var(--body-color, black);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -296,7 +297,6 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 p {
   line-height: var(--paragraph-leading, var(--leading-base));
   margin-bottom: var(--paragraph-margin, 1.5rem);
-  color: var(--paragraph-color, black);
 }
 p:last-child {
   margin-bottom: 0;
@@ -309,7 +309,7 @@ a {
 }
 
 b, strong {
-  font-weight: var(--bold-font-weight, 700);
+  font-weight: var(--bold-font-weight, font-weight(bold));
 }
 
 sub, sup {
@@ -38889,7 +38889,7 @@ CUSTOM PROPERTIES
   }
 }
 :root {
-  --paragraph-color: #576179;
+  --body-color: #515561;
   --font-sans: "Manrope", sans-serif;
   --font-mono: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   --body-font-weight: 450;
@@ -39207,25 +39207,25 @@ pre[class*=language-] {
   margin-bottom: 0;
 }
 .markdown > ol, .markdown ul {
-  line-height: var(--leading-8);
+  line-height: var(--leading-base);
 }
-.markdown > h3 {
+.markdown > h2 {
   margin-bottom: var(--size-20);
   font-size: var(--font-xl);
   font-weight: 700;
   letter-spacing: var(--tracking-tight);
 }
 @media (min-width: 1024px) {
-  .markdown > h3 {
+  .markdown > h2 {
     font-size: var(--font-2xl);
   }
 }
-.markdown > h3 a {
+.markdown > h2 a {
   display: none;
   font-weight: 500;
   color: var(--secondary-a500);
 }
-.markdown > h3:hover a {
+.markdown > h2:hover a {
   display: inline;
 }
 .markdown > h4 {
@@ -39257,13 +39257,13 @@ pre[class*=language-] {
 }
 .markdown > blockquote {
   margin-bottom: 1.5em;
-  padding: var(--size-4) var(--size-6);
+  padding: var(--size-20) var(--size-24);
   background: hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-200-ltn, 93%)));
   box-shadow: inset 4px 0px 0px 0px hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-400-ltn, 83%)));
 }
 .markdown > blockquote p {
   margin: 0;
-  font-size: var(--font-sm);
+  font-size: var(--font-base);
 }
 .markdown > blockquote cite {
   padding-top: var(--size-2);

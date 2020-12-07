@@ -5,7 +5,7 @@ date: 1000-01-01
 
 {% include shortcodes/chapter, text: 'Theming', color: 'blue' %}
 
-### Breakpoint Variant Chart
+## Breakpoint Variant Chart
 
 By default, Uniform provides **4 breakpoints** for any responsive properties. Use the following chart as the reference for any breakpoint related property.
 
@@ -50,7 +50,7 @@ By default, Uniform provides **4 breakpoints** for any responsive properties. Us
 
 ---
 
-### Basic Usage
+## Basic Usage
 
 The following example showcases how the variants can be applied.
 
@@ -68,7 +68,7 @@ The following example showcases how the variants can be applied.
 
 ---
 
-#### Extending Core Variants
+### Extending Core Variants
 
 You can extend the core breakpoints by adding key value pairs to the `$screens` map. Note, if you pass in a key that already exists, the original will be overwritten with the latest variant.
 
@@ -82,7 +82,7 @@ You can extend the core breakpoints by adding key value pairs to the `$screens` 
 
 ---
 
-#### Replacing Core Variants
+### Replacing Core Variants
 
 You can replace the default variants entirely by adding key value pairs to the `$core-screens` map.
 
@@ -96,7 +96,7 @@ You can replace the default variants entirely by adding key value pairs to the `
 
 ---
 
-#### API Functions
+### API Functions
 
 The screen API functions allow you to query and pull values from maps. You can also pluralize the function name to pull all values, this can be helpful for when you need to loop through all the values using the `@each` rule.
 

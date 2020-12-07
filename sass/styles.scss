@@ -83,12 +83,12 @@
 	}
 
 	& > ol, ul {
-		line-height: var(--leading-8);
+		line-height: leading(base);
 	}
 
-	& > h3 {
+	& > h2 {
 		margin-bottom: size(20);
-		font-size: var(--font-xl);
+		font-size: font-size(xl);
 		font-weight: 700;
 		letter-spacing: tracking(tight);
 		@media (min-width: screen(sm)) {
@@ -136,12 +136,12 @@
 	}
 	& > blockquote {
 		margin-bottom: 1.5em;
-		padding: size(4, 6);
+		padding: size(20, 24);
 		background: fill(silver-200);
 		box-shadow: inset 4px 0px 0px 0px fill(silver-400);
 		p {
 			margin: 0;
-			font-size: font-size(sm);
+			font-size: font-size(base);
 		}
 		cite {
 			padding-top: var(--size-2);

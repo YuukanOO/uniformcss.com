@@ -6,9 +6,10 @@
   }
 
   body {
-    font-weight: var(--body-font-weight, 400);
+    font-weight: var(--body-font-weight, font-weight(regular));
     font-size: var(--body-font-size, 1rem);
-    line-height: var(--body-leading);
+    line-height: var(--body-leading, 1);
+    color: var(--body-color, black);
   }
 
   h1,h2,h3,h4,h5,h6 {
@@ -23,7 +24,6 @@
   p {
     line-height: var(--paragraph-leading, leading(base));
     margin-bottom: var(--paragraph-margin, 1.5rem);
-    color: var(--paragraph-color, black);
     &:last-child {
       margin-bottom: 0;
     }
@@ -36,7 +36,7 @@
   }
 
   b,strong {
-    font-weight: var(--bold-font-weight, 700);
+    font-weight: var(--bold-font-weight, font-weight(bold));
   }
 
   sub,sup {

@@ -4,7 +4,7 @@ date: 1000-01-07
 ---
 
 
-### What are Modules?
+## What are Modules?
 
 Modules in Uniform are pre-built components for common UI elements such as buttons, forms, and tables. Uniform provides these modules to help avoid having to build these types of components from scratch.
 
@@ -13,9 +13,9 @@ Out of the box, Uniform includes modules for **buttons**, **responsive tables**,
 
 ---
 
-### Button Module
+## Button Module
 
-The button module come in various types and supports multiple sizes. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/button/">buttons</a>.
+The button module come in various types and supports multiple sizes. To learn more about using this module visit the dedicated modules page on <a class="hover:underline" href="/get-started/button/">buttons</a>.
 
 <section class="radius-sm bg-silver-200 p-6 align-center">
   <button class="btn">Button</button>
@@ -35,9 +35,9 @@ The button module come in various types and supports multiple sizes. To learn mo
 
 ---
 
-### Form Module
+## Form Module
 
-The form module provides styling for basic form elements. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/form/">form</a>.
+The form module provides styling for basic form elements. To learn more about using this module visit the dedicated modules page on <a class="hover:underline" href="/get-started/form/">form</a>.
 
 <section class="radius-sm bg-silver-200 p-6">
   <form>
@@ -150,9 +150,9 @@ The form module provides styling for basic form elements. To learn more about us
 
 ---
 
-### Table Module
+## Table Module
 
-The table module provides styling for the basic table element. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/table/">table</a>.
+The table module provides styling for the basic table element. To learn more about using this module visit the dedicated modules page on <a class="hover:underline" href="/get-started/table/">table</a>.
 
 <section class="radius-sm bg-silver-200 p-6">
   <table class="table table-stack sm.table-unstack">
@@ -206,9 +206,9 @@ All modules are disabled by default, to enable this module, pass in the value `t
 
 ---
 
-### Wrapper Module
+## Wrapper Module
 
-The wrapper module is a container that provides set of `max-width` properties based on various breakpoints. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/wrapper/">wrapper</a>.
+The wrapper module is a container that provides set of `max-width` properties based on various breakpoints. To learn more about using this module visit the dedicated modules page on <a class="hover:underline" href="/get-started/wrapper/">wrapper</a>.
 
 ```html
 <div class="wrapper">

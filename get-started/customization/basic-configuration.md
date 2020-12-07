@@ -5,7 +5,7 @@ date: 1000-01-01
 
 {% include shortcodes/chapter, text: 'Customization', color: 'violet' %}
 
-### Easiest way to Get Started
+## Easiest way to Get Started
 
 The quickest way to customize Uniform is to include the pre-packaged CSS version of Uniform and apply CSS variable overrides directly to the `:root`. There are a wide range of CSS variables you can override, use this guide to see what is available.
 
@@ -20,7 +20,7 @@ The quickest way to customize Uniform is to include the pre-packaged CSS version
 ---
 
 
-### Font Family Root Variables
+## Font Family Root Variables
 
 Values for the following CSS variables apply to the `font-family` property. 
 
@@ -35,7 +35,7 @@ Values for the following CSS variables apply to the `font-family` property.
 ---
 
 
-### Font Size Root Variables
+## Font Size Root Variables
 
 Values for the following CSS variables apply to the `font-size` property. 
 
@@ -63,7 +63,7 @@ Values for the following CSS variables apply to the `font-size` property.
 ---
 
 
-### Line Height Root Variables
+## Line Height Root Variables
 
 Values for the following CSS variables apply to the `line-height` property. 
 
@@ -88,7 +88,7 @@ Values for the following CSS variables apply to the `line-height` property.
 ---
 
 
-### Letter-spacing Root Variables
+## Letter-spacing Root Variables
 
 Values for the following CSS variables apply to the `letter-spacing` property. 
 
@@ -107,7 +107,7 @@ Values for the following CSS variables apply to the `letter-spacing` property.
 ---
 
 
-### Border Radius Root Variables
+## Border Radius Root Variables
 
 Values for the following CSS variables apply to the `border-radius` property. 
 
@@ -125,7 +125,7 @@ Values for the following CSS variables apply to the `border-radius` property.
 ---
 
 
-### Box Shadow Root Variables
+## Box Shadow Root Variables
 
 Values for the following CSS variables apply to the `box-shadow` property. 
 
@@ -141,7 +141,7 @@ Values for the following CSS variables apply to the `box-shadow` property.
 
 ---
 
-### Spacing Root Variables
+## Spacing Root Variables
 
 Values for the following CSS variables apply to any spacing related properties such as `margin` or `padding`. 
 
@@ -215,7 +215,7 @@ Values for the following CSS variables apply to any spacing related properties s
 
 ---
 
-### Color Root Variables
+## Color Root Variables
 
 Values for the following CSS variables apply to any color related properties such as `background-color` or `border-color`. 
 

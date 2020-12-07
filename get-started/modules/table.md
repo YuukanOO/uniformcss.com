@@ -5,7 +5,7 @@ date: 1000-01-03
 
 {% include shortcodes/chapter, text: 'Modules', color: 'violet' %}
 
-### Table Module
+## Table Module
 
 The Table module is an optional pre-built component that provides customizable styling for tables. This module also provides tables with the ability to become responsive.
 
@@ -53,7 +53,7 @@ The Table module is an optional pre-built component that provides customizable s
 
 <div class="mb-10"></div>
 
-#### Table root variables
+### Table root variables
 
 To customize the look of your table, override the following root variables.
 
@@ -77,7 +77,7 @@ To customize the look of your table, override the following root variables.
 
 ---
 
-### Responsive Tables
+## Responsive Tables
 
 Tables can become responsive at various breakpoints by adding the `table-stack` and `table-unstack` classes. You can also add the `data-table-label` attribute to allow for labels when table columns are stacked.
 
@@ -126,7 +126,7 @@ Tables can become responsive at various breakpoints by adding the `table-stack` 
 
 <div class="mb-10"></div>
 
-#### Responsive table root variables
+### Responsive table root variables
 
 To customize the look of your table, override the following root variables.
 
@@ -148,7 +148,7 @@ To customize the look of your table, override the following root variables.
 
 ---
 
-### Alternating Tables
+## Alternating Tables
 
 Table rows can also feature alternating rows with the `table-alt` class.
 
@@ -220,7 +220,7 @@ Table rows can also feature alternating rows with the `table-alt` class.
 
 <div class="mb-10"></div>
 
-#### Alternating table variables
+### Alternating table variables
 
 To customize the look of your alternating table, override the following root variables.
 
@@ -235,7 +235,7 @@ To customize the look of your alternating table, override the following root var
 
 ---
 
-### How to Disable this Module
+## How to Disable this Module
 
 By default, all modules are enabled. To disable this module, set the `$include-table-module` variable to `false` in your module configuration.
 

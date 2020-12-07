@@ -5,7 +5,7 @@ date: 1000-01-03
 
 {% include shortcodes/chapter, text: 'Customization', color: 'yellow' %}
 
-### Further Build Settings
+## Further Build Settings
 
 Uniform provides build settings to provide extra control over your properties.
 
@@ -29,7 +29,7 @@ Uniform provides build settings to provide extra control over your properties.
 ---
 
 
-### Core Build Settings
+## Core Build Settings
 
 Uniform provides build settings to provide extra control over your properties.
 

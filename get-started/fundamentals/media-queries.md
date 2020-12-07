@@ -5,13 +5,13 @@ date: 1000-01-03
 
 
 
-### Responsive Design
+## Responsive Design
 
 You can apply responsive utility classes by appending the breakpoint variant to the beginning of your class name e.g. `<breakpoint-variant>.keyword-variant`.
 
 ---
 
-### Mobile-First Design
+## Mobile-First Design
 
 Uniform uses a mobile-first CSS approach to allow for styles to be displayed correctly on mobile screens first before larger more complex screens styles.
 
@@ -28,9 +28,9 @@ This means is that by **default classes will cascade upwards in screen size** un
 
 ---
 
-### Breakpoint Variants
+## Breakpoint Variants
 
-By default, there are **four** breakpoint variants available `sm`, `md`, `lg` and `xl`. For more information on modifying these variants, please visit the page on <a class="hover.underline" href="/get-started/breakpoints">breakpoints</a>.
+By default, there are **four** breakpoint variants available `sm`, `md`, `lg` and `xl`. For more information on modifying these variants, please visit the page on <a class="hover:underline" href="/get-started/breakpoints">breakpoints</a>.
 
 ```scss
 // sm
@@ -54,7 +54,7 @@ By default, there are **four** breakpoint variants available `sm`, `md`, `lg` an
 
 ---
 
-### Breakpoint Delimiter
+## Breakpoint Delimiter
 
 By default, Uniform uses the `.` character to separate the breakpoints and pseudos from the property. You can override the default breakpoint delimiter by defining `screen-delimiter` in your configuration.
 
@@ -78,7 +78,7 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 
 ---
 
-### Enabling Responsiveness
+## Enabling Responsiveness
 
 By design, Uniform takes common design patterns into consideration and only enables responsiveness to a subset of CSS properties in order to maintain a reasonable file-size.
 
@@ -96,12 +96,12 @@ You can override the default responsive setting by passing the value `true` to `
 );
 ```
 
-> To see which properties are responsive, please visit the <a href="/glossary" class="hover.underline">glossary</a>.
+> To see which properties are responsive, please visit the <a href="/glossary" class="hover:underline">glossary</a>.
 
 
 ---
 
-### Extending Breakpoints
+## Extending Breakpoints
 
 You can change the number of breakpoints and even change their `min-width` values by passing in your own custom map to the `screens` key in your configuration.
 
@@ -129,7 +129,7 @@ You can change the number of breakpoints and even change their `min-width` value
 
 ---
 
-### Overriding Existing Breakpoints
+## Overriding Existing Breakpoints
 
 You can replace existing breakpoints by overriding existing keys in your `screens` configuration.
 

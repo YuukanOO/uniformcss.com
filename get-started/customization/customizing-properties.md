@@ -5,7 +5,7 @@ date: 1000-01-04
 
 {% include shortcodes/chapter, text: 'Customization', color: 'teal' %}
 
-### Customizing CSS Properties
+## Customizing CSS Properties
 
 You can customize almost every aspect of a CSS property. To customize a CSS property, simply pass property variables in your Uniform module configuration.
 
@@ -24,7 +24,7 @@ You can customize almost every aspect of a CSS property. To customize a CSS prop
 
 ---
 
-#### Changing the Keyword
+### Changing the Keyword
 
 The `$<property>-keyword` variable sets the class name that will be used to represent this property.
 
@@ -45,7 +45,7 @@ The `$<property>-keyword` variable sets the class name that will be used to repr
 
 ---
 
-#### Exempt Keywords
+### Exempt Keywords
 
 If the keyword variable is set as `exempt` then the variant name will be used as the class name to define the property.
 
@@ -65,7 +65,7 @@ If the keyword variable is set as `exempt` then the variant name will be used as
 
 ---
 
-#### Making a CSS property responsive
+### Making a CSS property responsive
 
 The `$<property>-responsive` variable controls wether the property will be responsive across breakpoints.
 
@@ -96,7 +96,7 @@ The `$<property>-responsive` variable controls wether the property will be respo
 
 ---
 
-#### Responsive Pseudos
+### Responsive Pseudos
 
 The `$<property>-responsive-pseudos` variable enables or disables responsiveness across pseudo variants.
 
@@ -127,7 +127,7 @@ The `$<property>-responsive-pseudos` variable enables or disables responsiveness
 
 ---
 
-#### Customizing Variants
+### Customizing Variants
 
 If you find yourself wanting an extra variant for a CSS property that is not available in the default set, simply add key value pairs to the `$<property>-variants` map in your module configuration. Note, if you pass in a key that already exists, the original will be overwritten with the latest variant.
 
@@ -166,7 +166,7 @@ If you find yourself wanting an extra variant for a CSS property that is not ava
 
 ---
 
-#### Replacing Default Variants
+### Replacing Default Variants
 
 By default, adding new variants to the property variant map is an additive process. The original default set of variants will still be available. To replace the default variants, add key value pairs to the `$<property>-core-variants` map in your module configuration.
 
@@ -205,7 +205,7 @@ By default, adding new variants to the property variant map is an additive proce
 
 ---
 
-#### Exempt Variants
+### Exempt Variants
 
 If the variant key is set as `exempt` then the keyword will be used to define both the class name and variant.
 
@@ -229,7 +229,7 @@ If the variant key is set as `exempt` then the keyword will be used to define bo
 
 ---
 
-#### Pseudos
+### Pseudos
 
 The `$<property>-pseudos` controls which pseudo interaction will be activated for the given property.
 

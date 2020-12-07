@@ -4,7 +4,7 @@ date: 1000-01-05
 ---
 
 
-### Reset Styles
+## Reset Styles
 
 By default, Uniform applies minimal resetting styles to flatten browser inconsistencies and to provide a clean foundation to build utility classes on. 
 
@@ -74,7 +74,7 @@ ol,ul {
 
 ---
 
-### Disabling Reset Styles
+## Disabling Reset Styles
 
 If you prefer to rock your own reset or normalization, you can disable the inclusion of Uniform reset styles by setting `$include-reset-styles` to `false` in your configuration. 
 
@@ -86,7 +86,7 @@ If you prefer to rock your own reset or normalization, you can disable the inclu
 
 ---
 
-### Starter Styles
+## Starter Styles
 
 By default, Uniform applies very basic styling to common typographical elements such as `line-height` and `margin-bottom` properties for paragraph and heading elements.
 
@@ -145,7 +145,7 @@ pre,code {
 
 ---
 
-### Disabling Starter Styles
+## Disabling Starter Styles
 
 If you prefer to exclude starter styles from your build, simply set `$include-starter-styles` to `false` in your configuration. 
 

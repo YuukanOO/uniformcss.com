@@ -5,7 +5,7 @@ date: 1000-01-05
 
 {% include shortcodes/chapter, text: 'Theming', color: 'pink' %}
 
-### Size Variant Chart
+## Size Variant Chart
 
 Uniform provides 27 sizing units for size and spacing related properties such as `heights` and `margins`.
 
@@ -65,7 +65,7 @@ Each size also has an negative equivalent. You can access the negative variants 
 
 ---
 
-### Basic Usage
+## Basic Usage
 
 The following example showcases how the variants can be applied. You can also apply negative sizes by appending `n` to the beginning of your variant e.g. `w-n10 h-n10` etc.
 
@@ -89,7 +89,7 @@ The following example showcases how the variants can be applied. You can also ap
 
 ---
 
-#### Extending Core Variants
+### Extending Core Variants
 
 There are two types of size maps that can be extended. The `$positive-sizes` map contains positive size values, and the `$negative-sizes` map contain negative values. You can extend each of these variant sets by adding key value pairs to each map.
 
@@ -116,7 +116,7 @@ There are two types of size maps that can be extended. The `$positive-sizes` map
 
 ---
 
-#### Replacing Core Variants
+### Replacing Core Variants
 
 You can replace the core sizes by adding key value pairs to the `$core-positive-sizes` or `$core-negative-sizes` map.
 
@@ -133,7 +133,7 @@ You can replace the core sizes by adding key value pairs to the `$core-positive-
 
 ---
 
-#### API Functions
+### API Functions
 
 The color API functions allow you to query and pull values from maps. You can also pluralize the function name to pull all values, this can be helpful for when you need to loop through all the values using the `@each` rule.
 
@@ -158,7 +158,7 @@ sizes()
 
 ---
 
-#### Querying Multiple Sizes
+### Querying Multiple Sizes
 
 Unlike other API Functions the `sizes()` function can query multiple sizes. This is particulary useful for shorthand properties such as `margin` or `padding`.
 
@@ -176,7 +176,7 @@ Unlike other API Functions the `sizes()` function can query multiple sizes. This
 
 ---
 
-#### Root Variables
+### Root Variables
 
 If you are using the basic configuration setup of Uniform, use the following set of root variables to override default values.
 

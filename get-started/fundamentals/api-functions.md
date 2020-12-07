@@ -5,7 +5,7 @@ date: 1000-01-08
 
 {% include shortcodes/chapter, text: 'Fundamentals', color: 'orange' %}
 
-### API Functions
+## API Functions
 
 If you are using the native Sass implementation of Uniform, you get access to useful internal API functions that allow you to **directly access theme variables and return values**. This is particularly useful for situations where you need to extrapolate a component.
 
@@ -31,16 +31,16 @@ To better understand how this works, it's important to note that behind the scen
 }
 ```
 
-For more information, please also visit the page on <a class="hover.underline" href="/get-started/custom-components">custom components</a>
+For more information, please also visit the page on <a class="hover:underline" href="/get-started/custom-components">custom components</a>
 
 
 ---
 
-### Breakpoints API
+## Breakpoints API
 
 The `screen()` function returns values from the breakpoint map provided a variant is passed in as a parameter. `screens()` function returns the entire map.
 
-For more information on which variants are available, visit <a class="hover.underline" href="/get-started/breakpoints">breakpoints</a>.
+For more information on which variants are available, visit <a class="hover:underline" href="/get-started/breakpoints">breakpoints</a>.
 
 ```bash
 screen()
@@ -61,13 +61,13 @@ screens()
 
 ---
 
-### Color API
+## Color API
 
 The `fill()` function returns values from the color map provided a variant is passed in as a parameter. The `fills()` function returns the entire map.
 
 This function has access to both **colors** and **gradient** map values, however these sets can also be queried seperately as well.
 
-For more information on which variants are available, visit <a class="hover.underline" href="/get-started/colors">colors</a>.
+For more information on which variants are available, visit <a class="hover:underline" href="/get-started/colors">colors</a>.
 
 ```bash
 fill()
@@ -95,13 +95,13 @@ gradients()
 
 ---
 
-### Sizes API
+## Sizes API
 
 The `size()` function returns values from the size map provided a variant is passed in as a parameter. `sizes()` function returns the entire map.
 
 This function has access to both **positive-sizes** and **negative-sizes** map values, however these sets can also be queried seperately as well.
 
-For more information on which variants are available, visit <a class="hover.underline" href="/get-started/sizes">sizes</a>.
+For more information on which variants are available, visit <a class="hover:underline" href="/get-started/sizes">sizes</a>.
 
 ```bash
 size()
@@ -139,11 +139,11 @@ Unlike other API Functions the `sizes()` function can query multiple sizes. This
 
 ---
 
-### Shadows API
+## Shadows API
 
 The `shadow()` function returns values from the shadow map provided a variant is passed in as a parameter. `shadows()` function returns the entire map.
 
-For more information on which variants are available, visit <a class="hover.underline" href="/get-started/shadows">shadows</a>.
+For more information on which variants are available, visit <a class="hover:underline" href="/get-started/shadows">shadows</a>.
 
 ```bash
 shadow()
@@ -162,9 +162,9 @@ shadows()
 
 ---
 
-### Typography API
+## Typography API
 
-Uniform provides various font related API function such as `font-size` and `font-family`. For more information on which variants are available, visit <a class="hover.underline" href="/get-started/typography">typography</a>.
+Uniform provides various font related API function such as `font-size` and `font-family`. For more information on which variants are available, visit <a class="hover:underline" href="/get-started/typography">typography</a>.
 
 ```bash
 font-family()
@@ -195,11 +195,11 @@ trackings()
 
 ---
 
-### Radius API
+## Radius API
 
 The `radius()` function returns values from the radius map provided a variant is passed in as a parameter. `core.radiuses()` function returns the entire map.
 
-For more information on which variants are available, visit <a class="hover.underline" href="/get-started/radius">radius</a>.
+For more information on which variants are available, visit <a class="hover:underline" href="/get-started/radius">radius</a>.
 
 ```scss
 radius()
@@ -218,13 +218,13 @@ core.radiuses()
 
 ---
 
-### Private Functions
+## Private Functions
 
 Additional to theme API functions, Uniform also provides two helper functions to help you perform certain tasks more easily.
 
 ---
 
-#### Rem Function
+### Rem Function
 
 The `rem()` function allows you easily convert a pixel value into a rem value.
 
@@ -236,7 +236,7 @@ The `rem()` function allows you easily convert a pixel value into a rem value.
 
 ---
 
-#### Merge Function
+### Merge Function
 
 The `merge()` function allows you merge any number of maps as you like. This differs from the native Sass module feature `map.merge()` where you are limited to merging only two maps.
 

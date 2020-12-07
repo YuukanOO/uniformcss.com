@@ -6,13 +6,13 @@ date: 1000-01-06
 {% include shortcodes/chapter, text: 'Customization', color: 'orange' %}
 
 
-### Extracting Components
+## Extracting Components
 
 Even though Uniform is a Utility-first CSS framework, it encourages extraction of components as design patterns emerge. Depending on your setup and workflow, Uniform provides multiple ways of extracting components. The following guide will cover the various ways you can extract components.
 
 ---
 
-#### Option 1. Use Custom Properties <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Basic</div>
+### Option 1. Use Custom Properties <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Basic</div>
 
 The simplest and easiest way you can extract components is to build your own CSS component using the custom properties that are available to you. This workflow is suitable for users who are using the pre-packaged CSS or CDN version of Uniform (basic coniguration).
 
@@ -32,9 +32,9 @@ The simplest and easiest way you can extract components is to build your own CSS
 ```
 ---
 
-#### Option 2. Use API Functions <div class="inline-block ml-2 px-2 py-1 bg-pink-400 radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Native</div>
+### Option 2. Use API Functions <div class="inline-block ml-2 px-2 py-1 bg-pink-400 radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Native</div>
 
-Similarly to **option 1**, if you are using the native configuration setup of Uniform you can build your own components using <a class="hover.underline" href="/get-started/api-functions">API functions</a>.
+Similarly to **option 1**, if you are using the native configuration setup of Uniform you can build your own components using <a class="hover:underline" href="/get-started/api-functions">API functions</a>.
 
 ```scss
 // stylesheet.scss
@@ -54,7 +54,7 @@ Similarly to **option 1**, if you are using the native configuration setup of Un
 
 ---
 
-#### Option 3. Use Sass @extend <div class="inline-block ml-2 px-2 py-1 bg-pink-400 radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Native</div>
+### Option 3. Use Sass @extend <div class="inline-block ml-2 px-2 py-1 bg-pink-400 radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Native</div>
 
 You can also extract components by utilizing the Sass `@extend` rule. This method is particularly useful when you want to simply copy and paste the html class list without having to write CSS properties from scratch.
 

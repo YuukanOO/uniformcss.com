@@ -5,7 +5,7 @@ date: 1000-01-04
 
 {% include shortcodes/chapter, text: 'Modules', color: 'red' %}
 
-### Wrapper Module
+## Wrapper Module
 
 The Wrapper module is an optional pre-built component that provides `max-width` set containerization to your page layout.
 
@@ -17,7 +17,7 @@ The Wrapper module is an optional pre-built component that provides `max-width` 
 
 <div class="mb-10"></div>
 
-#### Wrapper root variables
+### Wrapper root variables
 
 To customize the wrapper module, override the following root variables.
 
@@ -38,7 +38,7 @@ To customize the wrapper module, override the following root variables.
 
 ---
 
-### How to Disable this Module
+## How to Disable this Module
 
 By default, all modules are enabled. To disable this module, set the `$include-wrapper-module` variable to `false` in your module configuration.
 

@@ -5,7 +5,7 @@ date: 1000-01-01
 
 {% include shortcodes/chapter, text: 'Modules', color: 'yellow' %}
 
-### Button Module
+## Button Module
 
 The Button module is an optional pre-built component that can be useful for handling call-to-actions.
 
@@ -19,7 +19,7 @@ The Button module is an optional pre-built component that can be useful for hand
 
 <div class="mb-10"></div>
 
-#### Button root variables
+### Button root variables
 
 To customize the look of your button, override the following root variables.
 
@@ -58,7 +58,7 @@ To customize the look of your button, override the following root variables.
 
 ---
 
-### Branded Buttons
+## Branded Buttons
 
 There are three types of branded button variants available, `primary`, `secondary`, and `tertiary`. These can be further customized to match your brand.
 
@@ -76,7 +76,7 @@ There are three types of branded button variants available, `primary`, `secondar
 
 <div class="mb-10"></div>
 
-#### Branded button root variables
+### Branded button root variables
 
 To customize the look of your branded buttons, override the following root variables.
 
@@ -131,7 +131,7 @@ To customize the look of your branded buttons, override the following root varia
 
 ---
 
-### Light and Dark Buttons
+## Light and Dark Buttons
 
 There are two types of `light` and `dark` button variants available.
 
@@ -147,7 +147,7 @@ There are two types of `light` and `dark` button variants available.
 
 <div class="mb-10"></div>
 
-#### Light and Dark button root variables
+### Light and Dark button root variables
 
 To customize the look of your light and dark buttons, override the following root variables.
 
@@ -188,7 +188,7 @@ To customize the look of your light and dark buttons, override the following roo
 
 ---
 
-### State Buttons
+## State Buttons
 
 There are three types of state buttons to handle `success`, `warning`, and `danger`.
 
@@ -206,7 +206,7 @@ There are three types of state buttons to handle `success`, `warning`, and `dang
 
 <div class="mb-10"></div>
 
-#### State button root variables
+### State button root variables
 
 To customize the look of your state buttons, override the following root variables.
 
@@ -262,7 +262,7 @@ To customize the look of your state buttons, override the following root variabl
 
 ---
 
-### Outline Buttons
+## Outline Buttons
 
 You can create outline buttons by appending `btn-outline`.
 
@@ -276,7 +276,7 @@ You can create outline buttons by appending `btn-outline`.
 
 <div class="mb-10"></div>
 
-#### Outline button root variables
+### Outline button root variables
 
 To customize the look of your outline buttons, override the following root variables.
 
@@ -303,7 +303,7 @@ To customize the look of your outline buttons, override the following root varia
 
 ---
 
-### Button Sizes
+## Button Sizes
 
 Three are **5** button sizes to choose from.
 
@@ -325,7 +325,7 @@ Three are **5** button sizes to choose from.
 
 <div class="mb-10"></div>
 
-#### Button size root variables
+### Button size root variables
 
 To customize the sizes of your buttons, override the following root variables.
 
@@ -358,7 +358,7 @@ To customize the sizes of your buttons, override the following root variables.
 
 ---
 
-### Responsive Button Sizes
+## Responsive Button Sizes
 
 Button sizes can change based on breakpoint
 
@@ -372,7 +372,7 @@ Button sizes can change based on breakpoint
 
 ---
 
-### Button Groups
+## Button Groups
 
 Buttons can be combined by wrapping them with a `btns` class assigned container. Buttons can also have an `is-active` state.
 
@@ -394,7 +394,7 @@ Buttons can be combined by wrapping them with a `btns` class assigned container.
 
 ---
 
-### Loading Buttons
+## Loading Buttons
 
 Buttons can have loading animation by appending `is-loading`.
 
@@ -410,7 +410,7 @@ Buttons can have loading animation by appending `is-loading`.
 
 ---
 
-### How to disable this Module
+## How to disable this Module
 
 By default, all modules are enabled. To disable this button module, set the `$include-button-module` variable to `false` in your module configuration.
 

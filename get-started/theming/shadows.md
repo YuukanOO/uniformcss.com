@@ -5,7 +5,7 @@ date: 1000-01-04
 
 {% include shortcodes/chapter, text: 'Theming', color: 'violet' %}
 
-### Shadow Variant Chart
+## Shadow Variant Chart
 
 By default, Uniform provides 5 levels of shadows. Use the following chart as the reference for the `box-shadow` property.
 
@@ -56,7 +56,7 @@ By default, Uniform provides 5 levels of shadows. Use the following chart as the
 
 ---
 
-### Basic Usage
+## Basic Usage
 
 The following example showcases how the variants can be applied.
 
@@ -74,7 +74,7 @@ The following example showcases how the variants can be applied.
 
 ---
 
-#### Extending Core Variants
+### Extending Core Variants
 
 You can extend the core effects by adding key value pairs to the `$effects` map.
 
@@ -88,7 +88,7 @@ You can extend the core effects by adding key value pairs to the `$effects` map.
 
 ---
 
-#### Replacing Core Variants
+### Replacing Core Variants
 
 You can replace default variants entirely by adding key value pairs to the `$core-shadows` map.
 
@@ -102,7 +102,7 @@ You can replace default variants entirely by adding key value pairs to the `$cor
 
 ---
 
-#### API Functions
+### API Functions
 
 The color API functions allow you to query and pull values from maps. You can also pluralize the function name to pull all values, this can be helpful for when you need to loop through all the values using the `@each` rule.
 
@@ -123,7 +123,7 @@ shadows()
 
 ---
 
-#### Root Variables
+### Root Variables
 
 If you are using the basic configuration setup of Uniform, use the following set of root variables to override default values.
 

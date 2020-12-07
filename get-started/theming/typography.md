@@ -5,7 +5,7 @@ date: 1000-01-06
 
 {% include shortcodes/chapter, text: 'Theming', color: 'teal' %}
 
-### Font Family Chart
+## Font Family Chart
 
 Use the following chart as the reference for the `font-family` property. Each font family also has fall-back options set.
 
@@ -50,7 +50,7 @@ Use the following chart as the reference for the `font-family` property. Each fo
 
 ---
 
-### Font Size Chart
+## Font Size Chart
 
 Use the following chart as the reference for the `font-size` property.
 
@@ -179,7 +179,7 @@ Use the following chart as the reference for the `font-size` property.
 
 ---
 
-### Line-Height Chart
+## Line-Height Chart
 
 All default Uniform `line-height` values are unitless by default. Use the following chart as the reference for the `leading` property.
 
@@ -251,7 +251,7 @@ All default Uniform `line-height` values are unitless by default. Use the follow
 
 ---
 
-### Basic Usage
+## Basic Usage
 
 The following example showcases how typography variants can be applied.
 
@@ -269,7 +269,7 @@ The following example showcases how typography variants can be applied.
 
 ---
 
-#### Extending Core Variants
+### Extending Core Variants
 
 You can extend the various typography related maps to enable more variant options. Note, if you pass in a key that already exists, the original will be overwritten with the latest variant.
 
@@ -306,7 +306,7 @@ You can extend the various typography related maps to enable more variant option
 
 ---
 #
-### Replacing Core Variants
+## Replacing Core Variants
 
 You can replace the default variants entirely by adding key value pairs to each of the maps.
 
@@ -329,7 +329,7 @@ You can replace the default variants entirely by adding key value pairs to each 
 
 ---
 
-#### API Functions
+### API Functions
 
 The screen API functions allow you to query and pull values from maps. You can also pluralize the function name to pull all values, this can be helpful for when you need to loop through all the values using the `@each` rule.
 
@@ -362,7 +362,7 @@ leadings()
 
 ---
 
-#### Root Variables
+### Root Variables
 
 If you are using the basic configuration setup of Uniform, use the following set of root variables to override default values.
 

@@ -4,7 +4,7 @@ date: 1000-01-06
 ---
 
 
-### Getting started with Grid
+## Getting started with Grid
 
 Unlike more traditional grid systems, Uniform grid systems are built using the `grid` display type and designed to support between `1` to `12` columns.
 
@@ -59,7 +59,7 @@ Unlike more traditional grid systems, Uniform grid systems are built using the `
 
 ---
 
-### Gutters
+## Gutters
 
 You can create gutters by combining your grid layout with the `gap-<size>` property.
 
@@ -134,9 +134,9 @@ You can create gutters by combining your grid layout with the `gap-<size>` prope
 
 ---
 
-### Responsive Gutters
+## Responsive Gutters
 
-Gutters can be responsive by prefixing the `gap-<size>` property with the breakpoint variant. For more information on media queries, <a class="hover.underline" href="/get-started/media-queries">click here</a>. 
+Gutters can be responsive by prefixing the `gap-<size>` property with the breakpoint variant. For more information on media queries, <a class="hover:underline" href="/get-started/media-queries">click here</a>. 
 
 <section class="radius-sm bg-silver-200 p-6">
   <div class="grid grid-cols-3 gap-4 sm.gap-6 md.gap-8 lg.gap-12">
@@ -157,7 +157,7 @@ Gutters can be responsive by prefixing the `gap-<size>` property with the breakp
 
 ---
 
-### Columns
+## Columns
 
 You can control the size of each column by specifying its column span count.
 
@@ -182,7 +182,7 @@ You can control the size of each column by specifying its column span count.
 
 ---
 
-### Responsive Columns
+## Responsive Columns
 
 Both the grid column count and column span count can be responsive by prefixing each with the breakpoint variant. Adjust your browser width to see this in action.
 

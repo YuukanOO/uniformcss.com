@@ -5,17 +5,17 @@ date: 1000-01-05
 
 {% include shortcodes/chapter, text: 'Customization', color: 'teal' %}
 
-### Extending Uniform
+## Extending Uniform
 
 All of the most common and popular CSS properties are already built in and supported out of the box. If you need to add properties that Uniform does not yet support, you can do so by following the steps below.
 
 ---
 
-### Adding new CSS properties
+## Adding new CSS properties
 
 <div class="mb-10"></div>
 
-#### Step 1.  Use the boilerplate template
+### Step 1.  Use the boilerplate template
 
 Use the following boilerplate template to add in details about the CSS property you would like to support.
 
@@ -68,7 +68,7 @@ This example template will generate the following CSS.
 
 <div class="mb-10"></div>
 
-#### Step 2. Register your new custom property
+### Step 2. Register your new custom property
 
 To register your new custom property simply include it in your Sass stylesheet.
 
