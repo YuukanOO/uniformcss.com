@@ -1,8 +1,8 @@
 ---
 title: Margin X
-property: margin-x
+property: null
 mdn: null
-description: Row positioning inside grid and multi-row flex containers.
+description: Creates margins on the x-axis
 date: 1000-01-01
 ---
 

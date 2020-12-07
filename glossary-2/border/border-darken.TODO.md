@@ -1,14 +1,14 @@
 ---
 title: Border Darken
-property: border-darken
+property: null
 mdn: null
-description: Row positioning inside grid and multi-row flex containers.
+description: Darkens the border color
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `border-darken` utility synthetically brightens `border-color`.
 
 | Class Name              | Property                       |
 | ----------------------- | ------------------------------ |

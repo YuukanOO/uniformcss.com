@@ -1,8 +1,8 @@
 ---
 title: Ratio
-property: ratio
+property: null
 mdn: null
-description: Row positioning inside grid and multi-row flex containers.
+description: Constrains width and height to an aspect ratio
 date: 1000-01-01
 ---
 

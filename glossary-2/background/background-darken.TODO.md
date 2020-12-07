@@ -1,8 +1,8 @@
 ---
 title: Background Darken
-property: background-attachment
+property: null
 mdn: null
-description: Row positioning inside grid and multi-row flex containers.
+description: Darkens the background color
 date: 1000-01-01
 ---
 

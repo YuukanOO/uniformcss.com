@@ -1,8 +1,8 @@
 ---
 title: Text Lighten
-property: text-lighten
+property: null
 mdn: null
-description: Row positioning inside grid and multi-row flex containers.
+description: Lightens the text color
 date: 1000-01-01
 ---
 

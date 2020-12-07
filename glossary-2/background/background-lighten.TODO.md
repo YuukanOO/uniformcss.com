@@ -1,8 +1,8 @@
 ---
 title: Background Lighten
-property: background-lighten
+property: null
 mdn: null
-description: Row positioning inside grid and multi-row flex containers.
+description: Lightens the background color
 date: 1000-01-01
 ---
 
