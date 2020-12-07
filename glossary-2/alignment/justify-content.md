@@ -262,4 +262,4 @@ Items are evenly distributed within the alignment container along the cross axis
 
 ## Resources
 
-To learn more about `{{ property }}` please refer to the [MDN Documentation <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+To learn more about `{{ property }}`, refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).

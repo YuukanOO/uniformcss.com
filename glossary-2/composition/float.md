@@ -255,3 +255,9 @@ Items are evenly distributed within the alignment container along the cross axis
 	<div>6</div>
 </div>
 ```
+
+---
+
+## Resources
+
+To learn more about `{{ property }}`, refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).

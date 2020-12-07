@@ -1,5 +1,7 @@
 ---
 title: Background Brighten
+property: background-brighten
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/background-brighten
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
@@ -255,3 +257,5 @@ Items are evenly distributed within the alignment container along the cross axis
 	<div>6</div>
 </div>
 ```
+
+<!-- No MDN docs -->

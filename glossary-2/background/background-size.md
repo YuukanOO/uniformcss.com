@@ -1,5 +1,7 @@
 ---
 title: Background Size
+property: background-attachment
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
@@ -255,3 +257,9 @@ Items are evenly distributed within the alignment container along the cross axis
 	<div>6</div>
 </div>
 ```
+
+---
+
+## Resources
+
+To learn more about `{{ property }}`, refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
