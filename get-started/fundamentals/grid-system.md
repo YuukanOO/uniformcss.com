@@ -136,7 +136,7 @@ You can create gutters by combining your grid layout with the `gap-<size>` prope
 
 ## Responsive Gutters
 
-Gutters can be responsive by prefixing the `gap-<size>` property with the breakpoint variant. For more information on media queries, <a class="hover:underline" href="/get-started/media-queries">click here</a>. 
+Gutters can be responsive by prefixing the `gap-<size>` property with the breakpoint variant. For more information on media queries, <a class="hover.underline" href="/get-started/media-queries">click here</a>. 
 
 <section class="radius-sm bg-silver-200 p-6">
   <div class="grid grid-cols-3 gap-4 sm.gap-6 md.gap-8 lg.gap-12">

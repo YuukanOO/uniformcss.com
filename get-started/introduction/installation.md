@@ -24,7 +24,7 @@ The native installation is the recommended way to get setup. Native setups provi
 
 <h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-1 text-black radius-round">1</span> Clone and install dependencies</h4>
 
-Make sure you have <a class="hover:underline" href="https://nodejs.org/en/"  target="_black">Node.js</a> installed. Clone the latest version of Uniform and install its dependencies.
+Make sure you have <a class="hover.underline" href="https://nodejs.org/en/"  target="_black">Node.js</a> installed. Clone the latest version of Uniform and install its dependencies.
 
 ```bash
 # Clone project
@@ -55,7 +55,7 @@ Compile your sass file using your own build setup or optionally, you can run the
 npm run uniform:compile
 ```
 
-> By default Uniform **npm build scripts** will output to the root directory. To change the output destination, specify the location in `package.json`. For more info on other build commands refer to the page on <a class="hover:underline" href="/get-started/build-scripts/">build scripts</a>.
+> By default Uniform **npm build scripts** will output to the root directory. To change the output destination, specify the location in `package.json`. For more info on other build commands refer to the page on <a class="hover.underline" href="/get-started/build-scripts/">build scripts</a>.
 
 <div class="mb-10"></div>
 
@@ -71,7 +71,7 @@ Import the compiled stylesheet and you will now have access to all the Uniform g
 
 <h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-1 text-black radius-round">3</span> Configure Uniform (optional)</h4>
 
-You can customize Uniform directly in your sass stylesheet. For more information on what can be customized, visit the page on <a class="hover:underline" href="/get-started/configuration/">configuration</a>.
+You can customize Uniform directly in your sass stylesheet. For more information on what can be customized, visit the page on <a class="hover.underline" href="/get-started/configuration/">configuration</a>.
 
 ```scss
 // styles.scss
@@ -88,7 +88,7 @@ You can customize Uniform directly in your sass stylesheet. For more information
 );
 ```
 
-> If you're unfamiliar with the `@use` rule or configuring modules in this way, you can learn more about the new Sass module system <a class="hover:underline" href="https://sass-lang.com/blog/the-module-system-is-launched" target="_black">here.</a>
+> If you're unfamiliar with the `@use` rule or configuring modules in this way, you can learn more about the new Sass module system <a class="hover.underline" href="https://sass-lang.com/blog/the-module-system-is-launched" target="_black">here.</a>
 
 ---
 

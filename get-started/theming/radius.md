@@ -153,10 +153,10 @@ If you are using the basic configuration setup of Uniform, use the following set
 {% highlight css %}
 :root {
   --radius-xs: 0.25rem;
-  --radius-sm: 0.5rem;
-  --radius-md: 0.75rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.25rem;
+  --radius-sm. 0.5rem;
+  --radius-md. 0.75rem;
+  --radius-lg. 1rem;
+  --radius-xl. 1.25rem;
   --radius-round: 9999px;
 }
 {% endhighlight %}

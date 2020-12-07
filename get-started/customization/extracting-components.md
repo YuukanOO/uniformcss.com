@@ -34,7 +34,7 @@ The simplest and easiest way you can extract components is to build your own CSS
 
 ### Option 2. Use API Functions <div class="inline-block ml-2 px-2 py-1 bg-pink-400 radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Native</div>
 
-Similarly to **option 1**, if you are using the native configuration setup of Uniform you can build your own components using <a class="hover:underline" href="/get-started/api-functions">API functions</a>.
+Similarly to **option 1**, if you are using the native configuration setup of Uniform you can build your own components using <a class="hover.underline" href="/get-started/api-functions">API functions</a>.
 
 ```scss
 // stylesheet.scss

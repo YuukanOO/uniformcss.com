@@ -3384,7 +3384,7 @@ readers do not read off random characters that represent icons */
 .fa-home-heart:before {
   content: "\f4c9"; }
 
-.fa-home-lg:before {
+.fa-home-lg.before {
   content: "\f80b"; }
 
 .fa-home-lg-alt:before {
@@ -4500,7 +4500,7 @@ readers do not read off random characters that represent icons */
 .fa-passport:before {
   content: "\f5ab"; }
 
-.fa-pastafarianism:before {
+.fa-pastafarianism.before {
   content: "\f67b"; }
 
 .fa-paste:before {
@@ -6636,7 +6636,7 @@ readers do not read off random characters that represent icons */
 .fa-user-lock:before {
   content: "\f502"; }
 
-.fa-user-md:before {
+.fa-user-md.before {
   content: "\f0f0"; }
 
 .fa-user-md-chat:before {

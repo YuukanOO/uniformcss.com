@@ -51,7 +51,7 @@ The following command will automatically apply **vendor prefixes** to your CSS.
 npm run uniform:autoprefix
 ```
 
-> Default browserlist queries are applied (`> 0.5%, last 2 versions, Firefox ESR, not dead`). To learn more about browserlist queries <a class="hover:underline" href="https://github.com/browserslist/browserslist">click here</a>. 
+> Default browserlist queries are applied (`> 0.5%, last 2 versions, Firefox ESR, not dead`). To learn more about browserlist queries <a class="hover.underline" href="https://github.com/browserslist/browserslist">click here</a>. 
 
 ---
 

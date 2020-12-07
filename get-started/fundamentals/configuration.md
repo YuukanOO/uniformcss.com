@@ -7,7 +7,7 @@ date: 1000-01-01
 
 ## Customizing Uniform
 
-There are **two ways** you can customize Uniform to fit your project needs, **Basic** and **Native**. The Basic way to configure Uniform is to simply apply CSS variable overrides inside the `:root` pseudo element. The native method requires Sass and overrides are performed in the form of a <a class="hover:underline" href="https://sass-lang.com/documentation/at-rules/use#configuration">module configuration</a>.
+There are **two ways** you can customize Uniform to fit your project needs, **Basic** and **Native**. The Basic way to configure Uniform is to simply apply CSS variable overrides inside the `:root` pseudo element. The native method requires Sass and overrides are performed in the form of a <a class="hover.underline" href="https://sass-lang.com/documentation/at-rules/use#configuration">module configuration</a>.
 
 
 {% include shortcodes/video, id: 'tLqqi5gyxQg' %}
@@ -17,7 +17,7 @@ There are **two ways** you can customize Uniform to fit your project needs, **Ba
 
 ## Native Configuration &nbsp; 😎
 
-The native configuration method is the best way to take full advantage of Sass and Uniform's customization features. You can customize almost every aspect of this framework using the new and awesome <a class="hover:underline" href="https://sass-lang.com/documentation/at-rules/use#configuration">module configuration</a> method.
+The native configuration method is the best way to take full advantage of Sass and Uniform's customization features. You can customize almost every aspect of this framework using the new and awesome <a class="hover.underline" href="https://sass-lang.com/documentation/at-rules/use#configuration">module configuration</a> method.
 
 To apply native configuration, load Uniform into your main sass project and override the module by passing in settings to the `$config` variable. For more information, please refer to the dedicated customization section.
 

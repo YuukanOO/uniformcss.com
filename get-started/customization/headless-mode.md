@@ -7,7 +7,7 @@ date: 1000-01-07
 
 ## What is Headless Mode?
 
-When you include and compile the Uniform Sass module, you will automatically include all the CSS properties, theme root variables, and also grant you access to all the theme <a class="hover:underline" href="/get-started/api-functions/" target="_black">API Functions</a>. 
+When you include and compile the Uniform Sass module, you will automatically include all the CSS properties, theme root variables, and also grant you access to all the theme <a class="hover.underline" href="/get-started/api-functions/" target="_black">API Functions</a>. 
 
 However, there may be a case where you need API Functions **only** or load Uniform as a standalone package without including any CSS properties. This can be achieved by enabling headless mode in your configuration.
 

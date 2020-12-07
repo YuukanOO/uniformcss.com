@@ -7,60 +7,60 @@ layout: layouts/base.njk
 <section>
   <div class="wrapper">
     <div class="flex border-t-3 border-silver-200">
-      <aside class="hidden sm:block w-224 flex-none">
+      <aside class="hidden sm.block w-224 flex-none">
         <div class="t-0 sticky h-100vh overflow-auto py-64">
 
-          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
             <h6 class="font-sm font-bold mb-16">
               Introduction
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.introduction -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-primary-500{% else %}hover:translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-primary-500 hover.text-primary-500{% else %} text-gray-200 hover.text-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
             <h6 class="font-sm font-bold mb-16">
              Fundamentals
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.fundamentals -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-primary-500{% else %}hover:translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-primary-500 hover.text-primary-500{% else %} text-gray-200 hover.text-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
             <h6 class="font-sm font-bold mb-16">
               Customization
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.customization -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-primary-500{% else %}hover:translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-primary-500 hover.text-primary-500{% else %} text-gray-200 hover.text-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
             <h6 class="font-sm font-bold mb-16">
               Theming
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.theming -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-primary-500{% else %}hover:translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-primary-500 hover.text-primary-500{% else %} text-gray-200 hover.text-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-40 last:mb-0 pb-40 border-b-1 last:border-b-0 border-silver-300">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
             <h6 class="font-sm font-bold mb-16">
               Module
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.modules -%}
-                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-primary-500{% else %}hover:translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-primary-500 hover.text-primary-500{% else %} text-gray-200 hover.text-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -69,7 +69,7 @@ layout: layouts/base.njk
       </aside>
 
       <div class="flex-auto">
-        <div class="block sm:hidden p-6">
+        <div class="block sm.hidden p-6">
           <div class="select">
             <select class="js-select-url">
               <optgroup label="Introduction">
@@ -113,7 +113,7 @@ layout: layouts/base.njk
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-12 lg:gap-0">
+        <div class="grid grid-cols-1 sm.grid-cols-12 lg.gap-0">
           <div class="col-9 px-64 py-64">
             <h1 class="flex align-items-start relative font-6xl font-bold mb-20 tracking-tight">
               {{ title | safe }}
@@ -125,7 +125,7 @@ layout: layouts/base.njk
               {{ content | safe }}
             </div>
           </div>
-          <div class="relative hidden lg:block lg:col-3">
+          <div class="relative hidden lg.block lg.col-3">
             <div class="sticky flex justify-content-end pt-64 t-0">
               <div class="radius-md w-100p p-28 bg-silver-100">
                 <h6 class="font-sm font-bold mb-16">

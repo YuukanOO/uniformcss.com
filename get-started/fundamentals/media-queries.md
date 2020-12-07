@@ -1,5 +1,6 @@
 ---
 title: Media Queries
+description: Learn how to apply classes that change across on breakpoint.
 date: 1000-01-03
 ---
 
@@ -7,22 +8,21 @@ date: 1000-01-03
 
 ## Responsive Design
 
-You can apply responsive utility classes by appending the breakpoint variant to the beginning of your class name e.g. `<breakpoint-variant>.keyword-variant`.
+You can apply responsive utility classes by appending the breakpoint variant to the beginning of your class name e.g. `<breakpoint-variant>:keyword-variant`.
 
 ---
 
 ## Mobile-First Design
 
-Uniform uses a mobile-first CSS approach to allow for styles to be displayed correctly on mobile screens first before larger more complex screens styles.
-
-This means is that by **default classes will cascade upwards in screen size** unless specified otherwise.
+Uniform uses a mobile-first CSS approach to allow for styles to be applied on mobile screens first before larger more complex screen layouts. This means that by default, **classes will cascade upwards in screen size** unless specified otherwise.
 
 ```html
-<div class="h-10 sm.h-15 md.h-20 lg.h-24">
-  Size 10 height on mobile
-  Size 15 height on small screen sizes
-  Size 20 height on medium screen sizes
-  Size 24 height on medium screen sizes
+<div class="h-10 sm.h-14 md.h-20 lg.h-24 xl.h-64">
+  10px height on mobile
+  14px height on small screen sizes
+  20px height on medium screen sizes
+  24px height on large screen sizes
+  64px height on extra large screen sizes
 </div>
 ```
 
@@ -30,7 +30,7 @@ This means is that by **default classes will cascade upwards in screen size** un
 
 ## Breakpoint Variants
 
-By default, there are **four** breakpoint variants available `sm`, `md`, `lg` and `xl`. For more information on modifying these variants, please visit the page on <a class="hover:underline" href="/get-started/breakpoints">breakpoints</a>.
+By default, there are **four** breakpoint variants available `sm`, `md`, `lg` and `xl`. For more information on modifying these variants, please visit the page on <a class="hover.underline" href="/get-started/breakpoints">breakpoints</a>.
 
 ```scss
 // sm
@@ -62,7 +62,7 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    screen-delimiter: '\\:',
+    screen-delimiter: '__',
   )
 );
 ```
@@ -70,8 +70,8 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 ```css
 /* styles.css */
 @media (min-width: 1024px) {
-  .sm\:block { display: block; }
-  .sm\:flex { display: flex; }
+  .sm__block { display: block; }
+  .sm__flex { display: flex; }
   ...
 }
 ```
@@ -80,23 +80,21 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 
 ## Enabling Responsiveness
 
-By design, Uniform takes common design patterns into consideration and only enables responsiveness to a subset of CSS properties in order to maintain a reasonable file-size.
-
-You can override the default responsive setting by passing the value `true` to `responsive` key within each property setting in the configuration.
+By design, Uniform takes common design patterns into consideration and only enables responsiveness to a subset of CSS properties in order to maintain a reasonable file-size. You can override the default responsive setting by passing the value `true` to `responsive` key within each property setting in the configuration.
 
 ```scss
 @use "uniform" as * with (
   $config: (
     utilities: (
-      letter-spacing: ( esponsive: true ),
-      list-style-type: ( esponsive: true ),
-      text-transform: ( esponsive: true )
+      letter-spacing: ( responsive: true ),
+      list-style-type: ( responsive: true ),
+      text-transform: ( responsive: true )
     )
   )
 );
 ```
 
-> To see which properties are responsive, please visit the <a href="/glossary" class="hover:underline">glossary</a>.
+> To see which properties are responsive, please visit the glossary.
 
 
 ---
@@ -112,17 +110,14 @@ You can change the number of breakpoints and even change their `min-width` value
       custom-breakpoint: 1920px
     )
   )
-  $screens: (
-    custom-breakpoint: 1920px
-  )
 );
 ```
 
 ```css
 /* styles.css */
 @media (min-width: 1920px) {
-  .custom-breakpoint\:block { display: block; }
-  .custom-breakpoint\:flex { display: flex; }
+  .custom-breakpoint\.block { display: block; }
+  .custom-breakpoint\.flex { display: flex; }
   ...
 }
 ```
@@ -131,13 +126,13 @@ You can change the number of breakpoints and even change their `min-width` value
 
 ## Overriding Existing Breakpoints
 
-You can replace existing breakpoints by overriding existing keys in your `screens` configuration.
+You can replace existing breakpoints by overriding existing keys to the `screens` map in your configuration.
 
 ```scss
 @use "uniform" as * with (
   $config: (
     screens: (
-      md: 1920px
+      md. 1920px
     )
   )
 );
@@ -146,8 +141,8 @@ You can replace existing breakpoints by overriding existing keys in your `screen
 ```css
 /* styles.css */
 @media (min-width: 1920px) {
-  .md\:block { display: block; }
-  .md\:flex { display: flex; }
+  .md\.block { display: block; }
+  .md\.flex { display: flex; }
   ...
 }
 ```

@@ -70,8 +70,8 @@ Single-characters are only reserved for directions and the `width`, `height`, `m
 Common directional properties such as `top`, `right`, `bottom`, and `left` are represented with the first letter of the direction e.g. `border-t` for `border-top` etc. For more than one direction, combine the direction letters e.g. `tr` for `top-right`.
 
 ```scss
-.radius-tl-sm: {border-top-left-radius: 0.25rem;}
-.radius-tr-sm: {border-top-right-radius: 0.25rem;}
+.radius-tl-sm. {border-top-left-radius: 0.25rem;}
+.radius-tr-sm. {border-top-right-radius: 0.25rem;}
 ...
 ```
 
@@ -83,7 +83,7 @@ Simplify the property name to its most essential and ideal denominator of the wo
 
 ```scss
 .font-700: {font-weight: 700;}
-.font-xl: {font-size: 1.25rem;}
+.font-xl. {font-size: 1.25rem;}
 ...
 ```
 
@@ -128,12 +128,12 @@ px: 1px,
 3xs: 2px,
 2xs: 3px,
 xs: 4px,
-sm: 6px,
-md: 8px,
-lg: 10px,
-xl: 12px,
-2xl: 14px,
-3xl: 16px,
+sm. 6px,
+md. 8px,
+lg. 10px,
+xl. 12px,
+2xl. 14px,
+3xl. 16px,
 ...
 ```
 

@@ -15,7 +15,7 @@ Out of the box, Uniform includes modules for **buttons**, **responsive tables**,
 
 ## Button Module
 
-The button module come in various types and supports multiple sizes. To learn more about using this module visit the dedicated modules page on <a class="hover:underline" href="/get-started/button/">buttons</a>.
+The button module come in various types and supports multiple sizes. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/button/">buttons</a>.
 
 <section class="radius-sm bg-silver-200 p-6 align-center">
   <button class="btn">Button</button>
@@ -37,7 +37,7 @@ The button module come in various types and supports multiple sizes. To learn mo
 
 ## Form Module
 
-The form module provides styling for basic form elements. To learn more about using this module visit the dedicated modules page on <a class="hover:underline" href="/get-started/form/">form</a>.
+The form module provides styling for basic form elements. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/form/">form</a>.
 
 <section class="radius-sm bg-silver-200 p-6">
   <form>
@@ -152,7 +152,7 @@ The form module provides styling for basic form elements. To learn more about us
 
 ## Table Module
 
-The table module provides styling for the basic table element. To learn more about using this module visit the dedicated modules page on <a class="hover:underline" href="/get-started/table/">table</a>.
+The table module provides styling for the basic table element. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/table/">table</a>.
 
 <section class="radius-sm bg-silver-200 p-6">
   <table class="table table-stack sm.table-unstack">
@@ -208,7 +208,7 @@ All modules are disabled by default, to enable this module, pass in the value `t
 
 ## Wrapper Module
 
-The wrapper module is a container that provides set of `max-width` properties based on various breakpoints. To learn more about using this module visit the dedicated modules page on <a class="hover:underline" href="/get-started/wrapper/">wrapper</a>.
+The wrapper module is a container that provides set of `max-width` properties based on various breakpoints. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/wrapper/">wrapper</a>.
 
 ```html
 <div class="wrapper">

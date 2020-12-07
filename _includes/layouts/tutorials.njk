@@ -28,61 +28,61 @@ layout: layouts/base.njk
 
     <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="650" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FFBj55HzmryRvZ9sQiLl6ef%2FWIP%3Fnode-id%3D519%253A449" allowfullscreen class="radius-md overflow-hidden"></iframe>
 
-    <div class="grid grid-cols-1 sm:grid-cols-6 lg:grid-cols-12 bg-white radius-md shadow-3">
-      <aside class="hidden sm:block col-1 sm:col-2 lg:col-3 radius-l-md bg-blueberry-900">
+    <div class="grid grid-cols-1 sm.grid-cols-6 lg.grid-cols-12 bg-white radius-md shadow-3">
+      <aside class="hidden sm.block col-1 sm.col-2 lg.col-3 radius-l-md bg-blueberry-900">
         <div class="t-0 sticky h-100vh pt-11 pb-13 overflow-auto">
 
-          <div class="mb-12 last:mb-0 pl-8 pb-12 border-b-1 border-tint-10">
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-1 border-tint-10">
             <div class="font-sm font-600 text-white mb-4">
               <i class="fas fa-adjust mr-2 color-blue-500"></i> Introduction
             </div>
             <nav class="flex flex-col">
               {%- for post in collections.tutorial -%}
-                <a href="{{ post.url }}" class="font-sm xl:font-sm transition transform translate-x-0 {% if post.url == page.url %}text-white{% else %}text-gray-200 hover:translate-x-1{% endif %} leading-looser hover:text-white">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition transform translate-x-0 {% if post.url == page.url %}text-white{% else %}text-gray-200 hover.translate-x-1{% endif %} leading-looser hover.text-white">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-12 last:mb-0 pl-8 pb-12 border-b-1 border-tint-10">
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-1 border-tint-10">
             <div class="font-sm font-600 text-white mb-4">
               <i class="fas fa-book-reader mr-2 color-orange-500"></i> Fundamentals
             </div>
             <nav class="flex flex-col">
               {%- for post in collections.fundamentals -%}
-                <a href="{{ post.url }}" class="font-sm xl:font-sm transition transform translate-x-0 {% if post.url == page.url %}text-white{% else %}text-gray-200 hover:translate-x-1{% endif %} leading-looser hover:text-white">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition transform translate-x-0 {% if post.url == page.url %}text-white{% else %}text-gray-200 hover.translate-x-1{% endif %} leading-looser hover.text-white">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-12 last:mb-0 pl-8 pb-12 border-b-1 border-tint-10">
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-1 border-tint-10">
             <div class="font-sm font-600 text-white mb-4">
               <i class="fas fa-cogs mr-2 color-teal-500"></i> Customization
             </div>
             <nav class="flex flex-col">
               {%- for post in collections.customization -%}
-                <a href="{{ post.url }}" class="font-sm xl:font-sm transition transform translate-x-0 {% if post.url == page.url %}text-white{% else %}text-gray-200 hover:translate-x-1{% endif %} leading-looser hover:text-white">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition transform translate-x-0 {% if post.url == page.url %}text-white{% else %}text-gray-200 hover.translate-x-1{% endif %} leading-looser hover.text-white">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-12 last:mb-0 pl-8 pb-12 border-b-1 border-tint-10">
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-1 border-tint-10">
             <div class="font-sm font-600 text-white mb-4">
               <i class="fas fa-paint-brush mr-2 color-pink-500"></i> Theming
             </div>
             <nav class="flex flex-col">
               {%- for post in collections.theming -%}
-                <a href="{{ post.url }}" class="font-sm xl:font-sm transition transform translate-x-0 {% if post.url == page.url %}text-white{% else %}text-gray-200 hover:translate-x-1{% endif %} leading-looser hover:text-white">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition transform translate-x-0 {% if post.url == page.url %}text-white{% else %}text-gray-200 hover.translate-x-1{% endif %} leading-looser hover.text-white">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-12 last:mb-0 pl-8 pb-12 border-b-1 border-tint-10">
+          <div class="mb-12 last.mb-0 pl-8 pb-12 border-b-1 border-tint-10">
             <div class="font-sm font-600 text-white mb-4">
               <i class="fas fa-box-open mr-2 color-yellow-500"></i> Module
             </div>
             <nav class="flex flex-col">
               {%- for post in collections.modules -%}
-                <a href="{{ post.url }}" class="font-sm xl:font-sm transition transform translate-x-0 {% if post.url == page.url %}text-white{% else %}text-gray-200 hover:translate-x-1{% endif %} leading-looser hover:text-white">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm xl.font-sm transition transform translate-x-0 {% if post.url == page.url %}text-white{% else %}text-gray-200 hover.translate-x-1{% endif %} leading-looser hover.text-white">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -93,10 +93,10 @@ layout: layouts/base.njk
 
       <div class="
         col-1 
-        sm:col-4 
-        lg:col-9 
+        sm.col-4 
+        lg.col-9 
       ">
-        <div class="block sm:hidden p-6 bg-blueberry-100 radius-t-md">
+        <div class="block sm.hidden p-6 bg-blueberry-100 radius-t-md">
           <div class="select">
             <select class="js-select-url">
               <optgroup label="Introduction">
@@ -144,14 +144,14 @@ layout: layouts/base.njk
           markdown
 
           px-8 
-          sm:px-18 
-          sm:px-13 
-          md:px-18 
-          lg:px-19 
+          sm.px-18 
+          sm.px-13 
+          md.px-18 
+          lg.px-19 
           
           py-10 
-          sm:py-14 
-          sm:py-16
+          sm.py-14 
+          sm.py-16
         ">
           {{ content | safe }}
         </div>

@@ -59,7 +59,7 @@ You can of course, override the default settings and enable responsiveness, and 
 
 ## Reducing Size Further
 
-To reduce the file-size of your build even further, you can easily limit the number of variants or even disable unused CSS properties entirely. For more information on customizing your setup, visit the page on <a class="hover:underline" href="/get-started/configuration">configuration</a>.
+To reduce the file-size of your build even further, you can easily limit the number of variants or even disable unused CSS properties entirely. For more information on customizing your setup, visit the page on <a class="hover.underline" href="/get-started/configuration">configuration</a>.
 
 ```scss
 // Remove default properties

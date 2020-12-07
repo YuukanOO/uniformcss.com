@@ -2647,7 +2647,7 @@
 .fad.fa-home-heart:after {
   content: "\10f4c9"; }
 
-.fad.fa-home-lg:after {
+.fad.fa-home-lg.after {
   content: "\10f80b"; }
 
 .fad.fa-home-lg-alt:after {
@@ -3499,7 +3499,7 @@
 .fad.fa-passport:after {
   content: "\10f5ab"; }
 
-.fad.fa-pastafarianism:after {
+.fad.fa-pastafarianism.after {
   content: "\10f67b"; }
 
 .fad.fa-paste:after {
@@ -5269,7 +5269,7 @@
 .fad.fa-user-lock:after {
   content: "\10f502"; }
 
-.fad.fa-user-md:after {
+.fad.fa-user-md.after {
   content: "\10f0f0"; }
 
 .fad.fa-user-md-chat:after {

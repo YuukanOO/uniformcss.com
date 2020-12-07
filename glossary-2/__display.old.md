@@ -46,19 +46,19 @@ Values for the following CSS variables apply to the `font-size` property.
 
 ```css
 :root {
-  --font-10xl: 4.5rem;
-  --font-9xl: 4rem;
-  --font-8xl: 3.5rem;
-  --font-7xl: 3rem;
-  --font-6xl: 2.5rem;
-  --font-5xl: 2.25rem;
-  --font-4xl: 2rem;
-  --font-3xl: 1.75rem;
-  --font-2xl: 1.5rem;
-  --font-xl: 1.25rem;
-  --font-lg: 1.125rem;
-  --font-md: 1rem;
-  --font-sm: 0.875rem;
+  --font-10xl. 4.5rem;
+  --font-9xl. 4rem;
+  --font-8xl. 3.5rem;
+  --font-7xl. 3rem;
+  --font-6xl. 2.5rem;
+  --font-5xl. 2.25rem;
+  --font-4xl. 2rem;
+  --font-3xl. 1.75rem;
+  --font-2xl. 1.5rem;
+  --font-xl. 1.25rem;
+  --font-lg. 1.125rem;
+  --font-md. 1rem;
+  --font-sm. 0.875rem;
   --font-xs: 0.75rem;
   --font-2xs: 0.625rem;
 }
@@ -119,10 +119,10 @@ Values for the following CSS variables apply to the `border-radius` property.
 ```css
 :root {
   --radius-xs: 0.25rem;
-  --radius-sm: 0.5rem;
-  --radius-md: 0.75rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.25rem;
+  --radius-sm. 0.5rem;
+  --radius-md. 0.75rem;
+  --radius-lg. 1rem;
+  --radius-xl. 1.25rem;
   --radius-round: 9999px;
 }
 ```
@@ -137,7 +137,7 @@ Values for the following CSS variables apply to the `box-shadow` property.
 ```css
 :root {
   --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  --shadow-sm: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  --shadow-sm. 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   --shadow-3: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   --shadow-4: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   --shadow-5: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);

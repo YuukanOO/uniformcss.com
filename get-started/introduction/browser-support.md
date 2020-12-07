@@ -15,7 +15,7 @@ Out of the box, Uniform CSS looks and performs great on all the latest version o
 
 Uniform provides build scripts that uses the Autoprefixer package to automatically handle vendor prefixes. It uses the the following default browserlist setting (can be overwritten by modifying the npm build scripts).
 
-To learn more about browserlist queries <a class="hover:underline" href="https://github.com/browserslist/browserslist">click here</a>.
+To learn more about browserlist queries <a class="hover.underline" href="https://github.com/browserslist/browserslist">click here</a>.
 
 ```bash
 > 0.5%, last 2 versions, Firefox ESR, not dead

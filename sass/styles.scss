@@ -4,7 +4,6 @@
 @use "_comparison-slider" as *;
 @use "vendors/prism" as *;
 
-
 .gallery {
   display: flex;
   position: relative;
@@ -39,6 +38,12 @@
 .toc {
 	font-size: font-size(sm);
 	line-height: leading(looser);
+	a {
+		color: fill(gray-200);
+		&:hover {
+			color: fill(black);
+		}
+	}
 }
 
 .home-highlight {

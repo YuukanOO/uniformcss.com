@@ -24,8 +24,8 @@ $default-config: (
   important: false,
   prefix: '',
   delimiter: '-',
-  pseudo-delimiter: '\\:',
-  screen-delimiter: '\\:',
+  pseudo-delimiter: '\\.',
+  screen-delimiter: '\\.',
   headless: false,
   debugger: false,
   placeholders: false,
@@ -1103,16 +1103,9 @@ $var-trackings: variablize-map($trackings, tracking);
 //   $list: append($list, str-split($value, " "));
 // }
 
-@mixin this($utilities) {
-  $split-values: str-split($utilities, ' ');
-  $class-list: ();
-  @each $value in $split-values {
-    $class-list: list.append($class-list, str-split($value, ' '));
-  }
-
-  @each $class in $class-list {
-    $escaped-class: escape("#{$class}");
-    @extend %#{$escaped-class};
+@mixin this($utilities...) {
+  @each $utility in $utilities {
+    @extend %#{$utility};
   }
 }
 

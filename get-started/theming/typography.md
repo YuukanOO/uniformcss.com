@@ -373,19 +373,19 @@ If you are using the basic configuration setup of Uniform, use the following set
   --font-serif: serif;
   --font-mono: monospace;
 
-  --font-10xl: 4.5rem;
-  --font-9xl: 4rem;
-  --font-8xl: 3.5rem;
-  --font-7xl: 3rem;
-  --font-6xl: 2.5rem;
-  --font-5xl: 2.25rem;
-  --font-4xl: 2rem;
-  --font-3xl: 1.75rem;
-  --font-2xl: 1.5rem;
-  --font-xl: 1.25rem;
-  --font-lg: 1.125rem;
-  --font-md: 1rem;
-  --font-sm: 0.875rem;
+  --font-10xl. 4.5rem;
+  --font-9xl. 4rem;
+  --font-8xl. 3.5rem;
+  --font-7xl. 3rem;
+  --font-6xl. 2.5rem;
+  --font-5xl. 2.25rem;
+  --font-4xl. 2rem;
+  --font-3xl. 1.75rem;
+  --font-2xl. 1.5rem;
+  --font-xl. 1.25rem;
+  --font-lg. 1.125rem;
+  --font-md. 1rem;
+  --font-sm. 0.875rem;
   --font-xs: 0.75rem;
   --font-2xs: 0.625rem;
 
