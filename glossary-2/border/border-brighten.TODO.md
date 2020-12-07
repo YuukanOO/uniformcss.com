@@ -1,5 +1,7 @@
 ---
 title: Border Brighten
+property: border-brighten
+mdn: null
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---

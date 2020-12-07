@@ -1,5 +1,7 @@
 ---
 title: Border Style
+property: border-style
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-style
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---

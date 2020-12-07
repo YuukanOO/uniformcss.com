@@ -1,7 +1,7 @@
 ---
 title: Background
-property: background-attachment
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
+property: background
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/background
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---

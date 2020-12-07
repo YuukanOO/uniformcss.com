@@ -1,5 +1,7 @@
 ---
-title: Border Left Radius
+title: Border Top Radius
+property: border-top-radius
+mdn: null
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
@@ -256,8 +258,4 @@ Items are evenly distributed within the alignment container along the cross axis
 </div>
 ```
 
----
-
-## Resources
-
-To learn more about `{{ property }}`, refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+<!-- No MDN docs -->

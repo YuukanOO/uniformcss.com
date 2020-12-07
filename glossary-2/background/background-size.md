@@ -1,7 +1,7 @@
 ---
 title: Background Size
-property: background-attachment
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
+property: background-size
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---

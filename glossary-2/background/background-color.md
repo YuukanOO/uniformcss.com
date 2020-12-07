@@ -1,7 +1,7 @@
 ---
 title: Background Color
-property: background-attachment
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
+property: background-color
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/background-color
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---

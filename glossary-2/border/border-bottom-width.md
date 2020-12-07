@@ -1,5 +1,7 @@
 ---
 title: Border Bottom Width
+property: border-bottom-width
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-width
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
