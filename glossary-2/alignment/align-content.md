@@ -2,13 +2,13 @@
 title: Align Content
 property: align-content
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
-description: Row positioning inside grid and multi-row flex containers.
+description: Aligns multi-row Flexbox and CSS Grid children elements
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `align-content` utilities align multi-row Flexbox and CSS Grid children along the cross axis.
 
 | Class Name              | Property                       |
 | ----------------------- | ------------------------------ |
@@ -29,6 +29,44 @@ The following default responsive and pseudo settings.
 | ------------ | --------------- |
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
+
+---
+
+## Center
+
+<!-- TODO -->
+
+---
+
+## Start
+
+<!-- TODO -->
+
+---
+
+## End
+
+<!-- TODO -->
+
+---
+
+## Between
+
+<!-- TODO -->
+
+---
+
+## Around
+
+<!-- TODO -->
+
+---
+
+## Evenly
+
+<!-- TODO -->
+
+<!--
 
 ---
 
@@ -258,8 +296,10 @@ Items are evenly distributed within the alignment container along the cross axis
 </div>
 ```
 
+-->
+
 ---
 
 ## Resources
 
-To learn more about `{{ property }}`, refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).

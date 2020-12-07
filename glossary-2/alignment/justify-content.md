@@ -2,13 +2,13 @@
 title: Justify Content
 property: justify-content
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
-description: Row positioning inside grid and multi-row flex containers.
+description: Justifies multi-row Flexbox and CSS Grid children elements
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `justify-content` property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.
+The `justify-content` utilities justify multi-row Flexbox and CSS Grid children along the main axis.
 
 | Class Name              | Property                       |
 | ----------------------- | ------------------------------ |
@@ -29,6 +29,44 @@ The following default responsive and pseudo settings.
 | ------------ | --------------- |
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
+
+---
+
+## Center
+
+<!-- TODO -->
+
+---
+
+## Start
+
+<!-- TODO -->
+
+---
+
+## End
+
+<!-- TODO -->
+
+---
+
+## Between
+
+<!-- TODO -->
+
+---
+
+## Around
+
+<!-- TODO -->
+
+---
+
+## Evenly
+
+<!-- TODO -->
+
+<!--
 
 ---
 
@@ -258,8 +296,10 @@ Items are evenly distributed within the alignment container along the cross axis
 </div>
 ```
 
+-->
+
 ---
 
 ## Resources
 
-To learn more about `{{ property }}`, refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
