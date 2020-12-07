@@ -1,5 +1,7 @@
 ---
 title: Text Overflow
+property: text-overflow
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---

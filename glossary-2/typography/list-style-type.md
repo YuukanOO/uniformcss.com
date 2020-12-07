@@ -1,5 +1,7 @@
 ---
 title: List Style Type
+property: list-style-type
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---

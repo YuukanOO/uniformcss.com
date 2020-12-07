@@ -1,5 +1,7 @@
 ---
 title: White Space
+property: white-space
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
