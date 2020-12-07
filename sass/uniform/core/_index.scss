@@ -240,6 +240,7 @@ $default-config: (
   ),
 
   positive-sizes: (
+    0: 0,
     1: rem(1),
     2: rem(2),
     3: rem(3),
@@ -283,6 +284,7 @@ $default-config: (
   ),
 
   negative-sizes: (
+    0: 0,
     n1: rem(-1),
     n2: rem(-2),
     n3: rem(-3),

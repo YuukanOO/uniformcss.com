@@ -1,24 +1,30 @@
 ---
-title: API Functions
+title: Helper Functions
+description: Get started with built-in helper functions
 date: 1000-01-08
 ---
 
-{% include shortcodes/chapter, text: 'Fundamentals', color: 'orange' %}
+## About Helper Functions
 
-## API Functions
+If you are using the native Sass implementation of Uniform, you get access to useful helper functions that allow you to **directly access theme variables values**. This is particularly useful for situations where you need to extract a component.
 
-If you are using the native Sass implementation of Uniform, you get access to useful internal API functions that allow you to **directly access theme variables and return values**. This is particularly useful for situations where you need to extrapolate a component.
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
-To better understand how this works, it's important to note that behind the scenes, all user-defined variables such as colors and font-sizes in Uniform are enclosed inside a map. API Functions query this map and return the value of the key you are passing through (**API functions can either return a single value or the entire map**).
+---
+
+## How they work
+
+Behind the scenes, all default and user-defined theme variables such as colors and font sizes are merged and enclosed inside a map. Helper functions are essentially act as a get function that interacts with this map to pull thene values.
 
 ```scss
 // Example custom element
 .element {
-  margin-bottom: size(12);
-  padding: size(4);
-  background: fill(gray-100);
+  margin-bottom: size(40);
+  padding: size(20);
+  background: fill(primary-500);
   font-size: font-size(xl);
-  line-height: leading(8);
+  font-weight: font-weight(semibold);
+  line-height: leading(base);
 }
 
 // Example custom loop using map
@@ -30,8 +36,6 @@ To better understand how this works, it's important to note that behind the scen
   // for each fill, do the following
 }
 ```
-
-For more information, please also visit the page on <a class="hover.underline" href="/get-started/custom-components">custom components</a>
 
 
 ---

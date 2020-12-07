@@ -191,16 +191,16 @@ CUSTOM PROPERTIES
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: var(--btn-height, var(--size-10));
-    padding: var(--btn-padding, var(--size-0) var(--size-4));
+    height: var(--btn-height, size(40));
+    padding: var(--btn-padding, size(0, 18));
     outline: 0;
-    background: var(--btn-bg, var(--indigo-500));
+    background: var(--btn-bg, fill(primary-500));
     border: var(--btn-border, 0);
     box-shadow: var(--btn-shadow, none);
-    border-radius: var(--btn-radius, var(--radius-xs));
-    font-family: var(--btn-font-family, var(--font-sans));
-    font-size: var(--btn-font-size, var(--font-md));
-    font-weight: var(--btn-font-weight, 500);
+    border-radius: var(--btn-radius, radius(xs));
+    font-family: var(--btn-font-family, font-family(sans));
+    font-size: var(--btn-font-size, font-size(base));
+    font-weight: var(--btn-font-weight, font-weight(semibold));
     line-height: 1;
     text-decoration: none;
     text-transform: var(--btn-text-transform, none);
@@ -211,23 +211,17 @@ CUSTOM PROPERTIES
     cursor: pointer;
 
     &:hover {
-      background: var(--btn-hover-bg, var(--indigo-600));
-      color: var(--btn-hover-color, var(--white));
+      background: var(--btn-hover-bg, fill(primary-600));
+      color: var(--btn-hover-color, fill(white));
       border: var(--btn-hover-border, initial);
       box-shadow: var(--btn-hover-shadow, none);
     }
     &:focus {
-      box-shadow: var(--btn-focus-shadow, none);
-    }
-    &:active {
-      background: var(--btn-active-bg, var(--indigo-700));
-      color: var(--btn-active-color, var(--white));
-      border: var(--btn-active-border, initial);
-      box-shadow: var(--btn-active-shadow, none);
+      box-shadow: var(--btn-focus-shadow, shadow(focus));
     }
     &.is-active {
-      background: var(--btn-active-bg, var(--indigo-700));
-      color: var(--btn-active-color, var(--white));
+      background: var(--btn-active-bg, fill(primary-700));
+      color: var(--btn-active-color, fill(white));
       border: var(--btn-active-border, initial);
       box-shadow: var(--btn-active-shadow, none);
       pointer-events: none;
@@ -268,19 +262,19 @@ CUSTOM PROPERTIES
     --btn-font-size: var(--btn-sm-font-size, #{var(--font-sm)});
   }
   .btn-md {
-    --btn-height: var(--btn-md-height, #{var(--size-10)});
-    --btn-padding: var(--btn-md-padding, #{var(--size-0) var(--size-4)});
-    --btn-font-size: var(--btn-md-font-size, #{var(--font-md)});
+    --btn-height: var(--btn-md-height, #{size(40)});
+    --btn-padding: var(--btn-md-padding, #{size(0, 18)});
+    --btn-font-size: var(--btn-md-font-size, #{font-size(base)});
   }
   .btn-lg {
     --btn-height: var(--btn-lg-height, #{var(--size-11)});
-    --btn-padding: var(--btn-lg-padding, #{var(--size-0) var(--size-4)});
-    --btn-font-size: var(--btn-lg-font-size, #{var(--font-md)});
+    --btn-padding: var(--btn-lg-padding, #{size(0, 18)});
+    --btn-font-size: var(--btn-lg-font-size, #{font-size(base)});
   }
   .btn-xl {
     --btn-height: var(--btn-xl-height, #{var(--size-12)});
-    --btn-padding: var(--btn-xl-padding, #{var(--size-0) var(--size-4)});
-    --btn-font-size: var(--btn-xl-font-size, #{var(--font-md)});
+    --btn-padding: var(--btn-xl-padding, #{size(0, 18)});
+    --btn-font-size: var(--btn-xl-font-size, #{font-size(base)});
   }
 
   @each $screen, $screen-value in screens() {
@@ -296,19 +290,19 @@ CUSTOM PROPERTIES
         --btn-font-size: var(--btn-sm-font-size, #{var(--font-sm)});
       }
       .#{$screen}#{$screen-delimiter}btn-md {
-        --btn-height: var(--btn-md-height, #{var(--size-10)});
-        --btn-padding: var(--btn-md-padding, #{var(--size-0) var(--size-4)});
-        --btn-font-size: var(--btn-md-font-size, #{var(--font-md)});
+        --btn-height: var(--btn-md-height, #{size(40)});
+        --btn-padding: var(--btn-md-padding, #{size(0, 18)});
+        --btn-font-size: var(--btn-md-font-size, #{font-size(base)});
       }
       .#{$screen}#{$screen-delimiter}btn-lg {
         --btn-height: var(--btn-lg-height, #{var(--size-11)});
-        --btn-padding: var(--btn-lg-padding, #{var(--size-0) var(--size-4)});
-        --btn-font-size: var(--btn-lg-font-size, #{var(--font-md)});
+        --btn-padding: var(--btn-lg-padding, #{size(0, 18)});
+        --btn-font-size: var(--btn-lg-font-size, #{font-size(base)});
       }
       .#{$screen}#{$screen-delimiter}btn-xl {
         --btn-height: var(--btn-xl-height, #{var(--size-12)});
-        --btn-padding: var(--btn-xl-padding, #{var(--size-0) var(--size-4)});
-        --btn-font-size: var(--btn-xl-font-size, #{var(--font-md)});
+        --btn-padding: var(--btn-xl-padding, #{size(0, 18)});
+        --btn-font-size: var(--btn-xl-font-size, #{font-size(base)});
       }
     }
   }
@@ -327,13 +321,13 @@ CUSTOM PROPERTIES
       margin-right: calc(1px * -1);
       border-radius: 0;
       &:first-child {
-        border-top-left-radius: var(--btn-radius, var(--radius-xs));
-        border-bottom-left-radius: var(--btn-radius, var(--radius-xs));
+        border-top-left-radius: var(--btn-radius, radius(xs));
+        border-bottom-left-radius: var(--btn-radius, radius(xs));
       }
       &:last-child {
         margin-right: 0;
-        border-top-right-radius: var(--btn-radius, var(--radius-xs));
-        border-bottom-right-radius: var(--btn-radius, var(--radius-xs));
+        border-top-right-radius: var(--btn-radius, radius(xs));
+        border-bottom-right-radius: var(--btn-radius, radius(xs));
       }
     }
   }
@@ -354,7 +348,7 @@ CUSTOM PROPERTIES
     --btn-hover-border: var(--btn-light-hover-border, initial);
     --btn-hover-shadow: var(--btn-light-hover-shadow, none);
 
-    --btn-focus-shadow: var(--btn-light-focus-shadow, none);
+    --btn-focus-shadow: var(--btn-light-focus-shadow, shadow(focus));
 
     --btn-active-bg: var(--btn-light-active-bg, #{var(--silver-300)});
     --btn-active-color: var(--btn-light-active-color, #{var(--gray-900)});
@@ -373,7 +367,7 @@ CUSTOM PROPERTIES
     --btn-hover-border: var(--btn-dark-hover-border, initial);
     --btn-hover-shadow: var(--btn-dark-hover-shadow, none);
 
-    --btn-focus-shadow: var(--btn-dark-focus-shadow, none);
+    --btn-focus-shadow: var(--btn-dark-focus-shadow, shadow(focus));
 
     --btn-active-bg: var(--btn-dark-active-bg, #{var(--black)});
     --btn-active-color: var(--btn-dark-active-color, white);
@@ -392,7 +386,7 @@ CUSTOM PROPERTIES
     --btn-hover-border: var(--btn-outline-hover-border, 1px solid #{var(--silver-700)});
     --btn-hover-shadow: var(--btn-outline-hover-shadow, none);
 
-    --btn-focus-shadow: var(--btn-outline-focus-shadow, none);
+    --btn-focus-shadow: var(--btn-outline-focus-shadow, shadow(focus));
 
     --btn-active-bg: var(--btn-outline-active-bg, #{var(--silver-200)});
     --btn-active-color: var(--btn-outline-active-color, #{var(--gray-700)});
@@ -414,7 +408,7 @@ CUSTOM PROPERTIES
     --btn-hover-border: var(--btn-success-hover-border, 1px solid #{var(--green-600)});
     --btn-hover-shadow: var(--btn-success-hover-shadow, none);
 
-    --btn-focus-shadow: var(--btn-success-focus-shadow, none);
+    --btn-focus-shadow: var(--btn-success-focus-shadow, shadow(focus));
 
     --btn-active-bg: var(--btn-success-active-bg, #{var(--green-700)});
     --btn-active-color: var(--btn-success-active-color, white);
@@ -433,7 +427,7 @@ CUSTOM PROPERTIES
     --btn-hover-border: var(--btn-warning-hover-border, 1px solid #{var(--yellow-600)});
     --btn-hover-shadow: var(--btn-warning-hover-shadow, none);
 
-    --btn-focus-shadow: var(--btn-warning-focus-shadow, none);
+    --btn-focus-shadow: var(--btn-warning-focus-shadow, shadow(focus));
 
     --btn-active-bg: var(--btn-warning-active-bg, #{var(--yellow-700)});
     --btn-active-color: var(--btn-warning-active-color, white);
@@ -452,7 +446,7 @@ CUSTOM PROPERTIES
     --btn-hover-border: var(--btn-danger-hover-border, 1px solid #{var(--red-600)});
     --btn-hover-shadow: var(--btn-danger-hover-shadow, none);
 
-    --btn-focus-shadow: var(--btn-danger-focus-shadow, none);
+    --btn-focus-shadow: var(--btn-danger-focus-shadow, shadow(focus));
 
     --btn-active-bg: var(--btn-danger-active-bg, #{var(--red-700)});
     --btn-active-color: var(--btn-danger-active-color, white);
@@ -471,7 +465,7 @@ CUSTOM PROPERTIES
     --btn-hover-border: var(--btn-primary-hover-border, initial);
     --btn-hover-shadow: var(--btn-primary-hover-shadow, none);
 
-    --btn-focus-shadow: var(--btn-primary-focus-shadow, none);
+    --btn-focus-shadow: var(--btn-primary-focus-shadow, shadow(focus));
 
     --btn-active-bg: var(--btn-primary-active-bg, #1A2242);
     --btn-active-color: var(--btn-primary-active-color, white);
@@ -490,7 +484,7 @@ CUSTOM PROPERTIES
     --btn-hover-border: var(--btn-secondary-hover-border, initial);
     --btn-hover-shadow: var(--btn-secondary-hover-shadow, none);
 
-    --btn-focus-shadow: var(--btn-secondary-focus-shadow, none);
+    --btn-focus-shadow: var(--btn-secondary-focus-shadow, shadow(focus));
 
     --btn-active-bg: var(--btn-secondary-active-bg,  #24305C);
     --btn-active-color: var(--btn-secondary-active-color, white);
@@ -509,7 +503,7 @@ CUSTOM PROPERTIES
     --btn-hover-border: var(--btn-tertiary-hover-border, initial);
     --btn-hover-shadow: var(--btn-tertiary-hover-shadow, none);
 
-    --btn-focus-shadow: var(--btn-tertiary-focus-shadow, none);
+    --btn-focus-shadow: var(--btn-tertiary-focus-shadow, shadow(focus));
 
     --btn-active-bg: var(--btn-tertiary-active-bg,  #415394);
     --btn-active-color: var(--btn-tertiary-active-color, white);

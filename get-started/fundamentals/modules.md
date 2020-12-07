@@ -7,9 +7,9 @@ date: 1000-01-07
 
 ## What are Modules?
 
-Modules in Uniform are pre-built components for common UI elements such as buttons, forms, and tables. Uniform provides these modules to help avoid having to build these types of components from scratch.
+Modules in Uniform are pre-built components for common UI elements such as buttons, forms, and tables. Uniform provides these modules to help avoid having to build these types of components from scratch. 
 
-Out of the box, Uniform includes modules for **buttons**, **responsive tables**, **form elements**, and **wrappers**.
+Out of the box, Uniform includes modules for **buttons**, **responsive tables**, **form elements**, **markdown**, and **wrappers**.
 
 
 ---
@@ -18,20 +18,12 @@ Out of the box, Uniform includes modules for **buttons**, **responsive tables**,
 
 The button module come in various types and supports multiple sizes. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/button/">buttons</a>.
 
-<section class="radius-sm bg-silver-200 p-6 align-center">
+<section class="flex align-items-center justify-content-center h-192 bg-silver-200 p-20 radius-md">
   <button class="btn">Button</button>
 </section>
 
 ```html
 <button class="btn">Button</button>
-```
-
-**All modules are enabled by default**, to enable this module, pass in the setting `false`, to `$include-button-module` in your configuration.
-
-```scss
-@use "uniform" as * with (
-  $include-button-module: false
-);
 ```
 
 ---
@@ -197,12 +189,16 @@ The table module provides styling for the basic table element. To learn more abo
 </table>
 ```
 
-All modules are disabled by default, to enable this module, pass in the value `true`, to `$include-table-module` in your configuration.
+---
 
-```scss
-@use "uniform" as * with (
-  $include-table-module: true
-);
+## Markdown Module
+
+The markdown module provides basic typographical styling useful for markdown styling. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/markdown/">markdown</a>.
+
+```html
+<div class="wrapper">
+  ...
+</div>
 ```
 
 ---
@@ -217,10 +213,3 @@ The wrapper module is a container that provides set of `max-width` properties ba
 </div>
 ```
 
-All modules are disabled by default, to enable this module, pass in the value `true`, to `$include-wrapper-module` in your configuration.
-
-```scss
-@use "uniform" as * with (
-  $include-wrapper-module: true
-);
-```

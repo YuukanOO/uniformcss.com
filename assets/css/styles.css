@@ -137,6 +137,7 @@
   --darken-800: -40%;
   --darken-900: -45%;
   --SIZES-------------------------:11;
+  --size-0: 0;
   --size-n1: -0.0625rem;
   --size-n2: -0.125rem;
   --size-n3: -0.1875rem;
@@ -524,16 +525,16 @@ CUSTOM PROPERTIES
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: var(--btn-height, var(--size-10));
-  padding: var(--btn-padding, var(--size-0) var(--size-4));
+  height: var(--btn-height, var(--size-40));
+  padding: var(--btn-padding, var(--size-0) var(--size-18));
   outline: 0;
-  background: var(--btn-bg, var(--indigo-500));
+  background: var(--btn-bg, hsl(var(--primary-500-hue, var(--primary-hue, 225)), calc(0% + var(--primary-500-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-500-ltn, 50%))));
   border: var(--btn-border, 0);
   box-shadow: var(--btn-shadow, none);
   border-radius: var(--btn-radius, var(--radius-xs));
   font-family: var(--btn-font-family, var(--font-sans));
-  font-size: var(--btn-font-size, var(--font-md));
-  font-weight: var(--btn-font-weight, 500);
+  font-size: var(--btn-font-size, var(--font-base));
+  font-weight: var(--btn-font-weight, var(--font-semibold));
   line-height: 1;
   text-decoration: none;
   text-transform: var(--btn-text-transform, none);
@@ -544,23 +545,17 @@ CUSTOM PROPERTIES
   cursor: pointer;
 }
 .btn:hover {
-  background: var(--btn-hover-bg, var(--indigo-600));
-  color: var(--btn-hover-color, var(--white));
+  background: var(--btn-hover-bg, hsl(var(--primary-600-hue, var(--primary-hue, 225)), calc(0% + var(--primary-600-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-600-ltn, 40%))));
+  color: var(--btn-hover-color, hsl(0, calc(0% + 0%), calc(0% + 100%)));
   border: var(--btn-hover-border, initial);
   box-shadow: var(--btn-hover-shadow, none);
 }
 .btn:focus {
-  box-shadow: var(--btn-focus-shadow, none);
-}
-.btn:active {
-  background: var(--btn-active-bg, var(--indigo-700));
-  color: var(--btn-active-color, var(--white));
-  border: var(--btn-active-border, initial);
-  box-shadow: var(--btn-active-shadow, none);
+  box-shadow: var(--btn-focus-shadow, var(--shadow-focus));
 }
 .btn.is-active {
-  background: var(--btn-active-bg, var(--indigo-700));
-  color: var(--btn-active-color, var(--white));
+  background: var(--btn-active-bg, hsl(var(--primary-700-hue, var(--primary-hue, 225)), calc(0% + var(--primary-700-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-700-ltn, 30%))));
+  color: var(--btn-active-color, hsl(0, calc(0% + 0%), calc(0% + 100%)));
   border: var(--btn-active-border, initial);
   box-shadow: var(--btn-active-shadow, none);
   pointer-events: none;
@@ -600,21 +595,21 @@ SIZES
 }
 
 .btn-md {
-  --btn-height: var(--btn-md-height, var(--size-10));
-  --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-4));
-  --btn-font-size: var(--btn-md-font-size, var(--font-md));
+  --btn-height: var(--btn-md-height, var(--size-40));
+  --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-18));
+  --btn-font-size: var(--btn-md-font-size, var(--font-base));
 }
 
 .btn-lg {
   --btn-height: var(--btn-lg-height, var(--size-11));
-  --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-4));
-  --btn-font-size: var(--btn-lg-font-size, var(--font-md));
+  --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-18));
+  --btn-font-size: var(--btn-lg-font-size, var(--font-base));
 }
 
 .btn-xl {
   --btn-height: var(--btn-xl-height, var(--size-12));
-  --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-4));
-  --btn-font-size: var(--btn-xl-font-size, var(--font-md));
+  --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-18));
+  --btn-font-size: var(--btn-xl-font-size, var(--font-base));
 }
 
 @media (min-width: 1024px) {
@@ -631,21 +626,21 @@ SIZES
   }
 
   .sm\.btn-md {
-    --btn-height: var(--btn-md-height, var(--size-10));
-    --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-md-font-size, var(--font-md));
+    --btn-height: var(--btn-md-height, var(--size-40));
+    --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-md-font-size, var(--font-base));
   }
 
   .sm\.btn-lg {
     --btn-height: var(--btn-lg-height, var(--size-11));
-    --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-lg-font-size, var(--font-md));
+    --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-lg-font-size, var(--font-base));
   }
 
   .sm\.btn-xl {
     --btn-height: var(--btn-xl-height, var(--size-12));
-    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-xl-font-size, var(--font-md));
+    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-xl-font-size, var(--font-base));
   }
 }
 @media (min-width: 1152px) {
@@ -662,21 +657,21 @@ SIZES
   }
 
   .md\.btn-md {
-    --btn-height: var(--btn-md-height, var(--size-10));
-    --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-md-font-size, var(--font-md));
+    --btn-height: var(--btn-md-height, var(--size-40));
+    --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-md-font-size, var(--font-base));
   }
 
   .md\.btn-lg {
     --btn-height: var(--btn-lg-height, var(--size-11));
-    --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-lg-font-size, var(--font-md));
+    --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-lg-font-size, var(--font-base));
   }
 
   .md\.btn-xl {
     --btn-height: var(--btn-xl-height, var(--size-12));
-    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-xl-font-size, var(--font-md));
+    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-xl-font-size, var(--font-base));
   }
 }
 @media (min-width: 1280px) {
@@ -693,21 +688,21 @@ SIZES
   }
 
   .lg\.btn-md {
-    --btn-height: var(--btn-md-height, var(--size-10));
-    --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-md-font-size, var(--font-md));
+    --btn-height: var(--btn-md-height, var(--size-40));
+    --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-md-font-size, var(--font-base));
   }
 
   .lg\.btn-lg {
     --btn-height: var(--btn-lg-height, var(--size-11));
-    --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-lg-font-size, var(--font-md));
+    --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-lg-font-size, var(--font-base));
   }
 
   .lg\.btn-xl {
     --btn-height: var(--btn-xl-height, var(--size-12));
-    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-xl-font-size, var(--font-md));
+    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-xl-font-size, var(--font-base));
   }
 }
 @media (min-width: 1536px) {
@@ -724,21 +719,21 @@ SIZES
   }
 
   .xl\.btn-md {
-    --btn-height: var(--btn-md-height, var(--size-10));
-    --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-md-font-size, var(--font-md));
+    --btn-height: var(--btn-md-height, var(--size-40));
+    --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-md-font-size, var(--font-base));
   }
 
   .xl\.btn-lg {
     --btn-height: var(--btn-lg-height, var(--size-11));
-    --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-lg-font-size, var(--font-md));
+    --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-lg-font-size, var(--font-base));
   }
 
   .xl\.btn-xl {
     --btn-height: var(--btn-xl-height, var(--size-12));
-    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-4));
-    --btn-font-size: var(--btn-xl-font-size, var(--font-md));
+    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-18));
+    --btn-font-size: var(--btn-xl-font-size, var(--font-base));
   }
 }
 /******************************
@@ -776,7 +771,7 @@ VARIANTS
   --btn-hover-color: var(--btn-light-hover-color, var(--gray-900));
   --btn-hover-border: var(--btn-light-hover-border, initial);
   --btn-hover-shadow: var(--btn-light-hover-shadow, none);
-  --btn-focus-shadow: var(--btn-light-focus-shadow, none);
+  --btn-focus-shadow: var(--btn-light-focus-shadow, shadow(focus));
   --btn-active-bg: var(--btn-light-active-bg, var(--silver-300));
   --btn-active-color: var(--btn-light-active-color, var(--gray-900));
   --btn-active-border: var(--btn-light-active-border, initial);
@@ -792,7 +787,7 @@ VARIANTS
   --btn-hover-color: var(--btn-dark-hover-color, white);
   --btn-hover-border: var(--btn-dark-hover-border, initial);
   --btn-hover-shadow: var(--btn-dark-hover-shadow, none);
-  --btn-focus-shadow: var(--btn-dark-focus-shadow, none);
+  --btn-focus-shadow: var(--btn-dark-focus-shadow, shadow(focus));
   --btn-active-bg: var(--btn-dark-active-bg, var(--black));
   --btn-active-color: var(--btn-dark-active-color, white);
   --btn-active-border: var(--btn-dark-active-border, initial);
@@ -808,7 +803,7 @@ VARIANTS
   --btn-hover-color: var(--btn-outline-hover-color, var(--gray-700));
   --btn-hover-border: var(--btn-outline-hover-border, 1px solid var(--silver-700));
   --btn-hover-shadow: var(--btn-outline-hover-shadow, none);
-  --btn-focus-shadow: var(--btn-outline-focus-shadow, none);
+  --btn-focus-shadow: var(--btn-outline-focus-shadow, shadow(focus));
   --btn-active-bg: var(--btn-outline-active-bg, var(--silver-200));
   --btn-active-color: var(--btn-outline-active-color, var(--gray-700));
   --btn-active-border: var(--btn-outline-active-border, 1px solid var(--silver-700));
@@ -827,7 +822,7 @@ VARIANTS
   --btn-hover-color: var(--btn-success-hover-color, white);
   --btn-hover-border: var(--btn-success-hover-border, 1px solid var(--green-600));
   --btn-hover-shadow: var(--btn-success-hover-shadow, none);
-  --btn-focus-shadow: var(--btn-success-focus-shadow, none);
+  --btn-focus-shadow: var(--btn-success-focus-shadow, shadow(focus));
   --btn-active-bg: var(--btn-success-active-bg, var(--green-700));
   --btn-active-color: var(--btn-success-active-color, white);
   --btn-active-border: var(--btn-success-active-border, 1px solid var(--green-700));
@@ -843,7 +838,7 @@ VARIANTS
   --btn-hover-color: var(--btn-warning-hover-color, white);
   --btn-hover-border: var(--btn-warning-hover-border, 1px solid var(--yellow-600));
   --btn-hover-shadow: var(--btn-warning-hover-shadow, none);
-  --btn-focus-shadow: var(--btn-warning-focus-shadow, none);
+  --btn-focus-shadow: var(--btn-warning-focus-shadow, shadow(focus));
   --btn-active-bg: var(--btn-warning-active-bg, var(--yellow-700));
   --btn-active-color: var(--btn-warning-active-color, white);
   --btn-active-border: var(--btn-warning-active-border, 1px solid var(--yellow-700));
@@ -859,7 +854,7 @@ VARIANTS
   --btn-hover-color: var(--btn-danger-hover-color, white);
   --btn-hover-border: var(--btn-danger-hover-border, 1px solid var(--red-600));
   --btn-hover-shadow: var(--btn-danger-hover-shadow, none);
-  --btn-focus-shadow: var(--btn-danger-focus-shadow, none);
+  --btn-focus-shadow: var(--btn-danger-focus-shadow, shadow(focus));
   --btn-active-bg: var(--btn-danger-active-bg, var(--red-700));
   --btn-active-color: var(--btn-danger-active-color, white);
   --btn-active-border: var(--btn-danger-active-border, 1px solid var(--red-700));
@@ -875,7 +870,7 @@ VARIANTS
   --btn-hover-color: var(--btn-primary-hover-color, white);
   --btn-hover-border: var(--btn-primary-hover-border, initial);
   --btn-hover-shadow: var(--btn-primary-hover-shadow, none);
-  --btn-focus-shadow: var(--btn-primary-focus-shadow, none);
+  --btn-focus-shadow: var(--btn-primary-focus-shadow, shadow(focus));
   --btn-active-bg: var(--btn-primary-active-bg, #1A2242);
   --btn-active-color: var(--btn-primary-active-color, white);
   --btn-active-border: var(--btn-primary-active-border, initial);
@@ -891,7 +886,7 @@ VARIANTS
   --btn-hover-color: var(--btn-secondary-hover-color, white);
   --btn-hover-border: var(--btn-secondary-hover-border, initial);
   --btn-hover-shadow: var(--btn-secondary-hover-shadow, none);
-  --btn-focus-shadow: var(--btn-secondary-focus-shadow, none);
+  --btn-focus-shadow: var(--btn-secondary-focus-shadow, shadow(focus));
   --btn-active-bg: var(--btn-secondary-active-bg, #24305C);
   --btn-active-color: var(--btn-secondary-active-color, white);
   --btn-active-border: var(--btn-secondary-active-border, initial);
@@ -907,7 +902,7 @@ VARIANTS
   --btn-hover-color: var(--btn-tertiary-hover-color, white);
   --btn-hover-border: var(--btn-tertiary-hover-border, initial);
   --btn-hover-shadow: var(--btn-tertiary-hover-shadow, none);
-  --btn-focus-shadow: var(--btn-tertiary-focus-shadow, none);
+  --btn-focus-shadow: var(--btn-tertiary-focus-shadow, shadow(focus));
   --btn-active-bg: var(--btn-tertiary-active-bg, #415394);
   --btn-active-color: var(--btn-tertiary-active-color, white);
   --btn-active-border: var(--btn-tertiary-active-border, initial);
@@ -4689,6 +4684,10 @@ CUSTOM PROPERTIES
   --scale-x: 1.2;
 }
 
+.translate-y-0, .group:hover .group-hover\.translate-y-0, .hover\.translate-y-0:hover {
+  --translate-y: 0;
+}
+
 .translate-y-1, .group:hover .group-hover\.translate-y-1, .hover\.translate-y-1:hover {
   --translate-y: var(--size-1);
 }
@@ -4865,8 +4864,8 @@ CUSTOM PROPERTIES
   --translate-y: 50%;
 }
 
-.translate-y-0, .group:hover .group-hover\.translate-y-0, .hover\.translate-y-0:hover {
-  --translate-y: 0;
+.translate-x-0, .group:hover .group-hover\.translate-x-0, .hover\.translate-x-0:hover {
+  --translate-x: 0;
 }
 
 .translate-x-1, .group:hover .group-hover\.translate-x-1, .hover\.translate-x-1:hover {
@@ -5045,8 +5044,8 @@ CUSTOM PROPERTIES
   --translate-x: 50%;
 }
 
-.translate-x-0, .group:hover .group-hover\.translate-x-0, .hover\.translate-x-0:hover {
-  --translate-x: 0;
+.row-gap-0 {
+  row-gap: var(--size-0);
 }
 
 .row-gap-1 {
@@ -5169,6 +5168,10 @@ CUSTOM PROPERTIES
   row-gap: var(--size-160);
 }
 
+.col-gap-0 {
+  column-gap: var(--size-0);
+}
+
 .col-gap-1 {
   column-gap: var(--size-1);
 }
@@ -5287,6 +5290,10 @@ CUSTOM PROPERTIES
 
 .col-gap-160 {
   column-gap: var(--size-160);
+}
+
+.gap-0 {
+  gap: var(--size-0);
 }
 
 .gap-1 {
@@ -6461,6 +6468,10 @@ CUSTOM PROPERTIES
   --text-sat: var(--brighten-900);
 }
 
+.p-0 {
+  padding: 0;
+}
+
 .p-1 {
   padding: var(--size-1);
 }
@@ -6621,8 +6632,9 @@ CUSTOM PROPERTIES
   padding: var(--size-640);
 }
 
-.p-0 {
-  padding: 0;
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .py-1 {
@@ -6825,9 +6837,9 @@ CUSTOM PROPERTIES
   padding-bottom: var(--size-640);
 }
 
-.py-0 {
-  padding-top: 0;
-  padding-bottom: 0;
+.px-0 {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .px-1 {
@@ -7030,9 +7042,8 @@ CUSTOM PROPERTIES
   padding-left: var(--size-640);
 }
 
-.px-0 {
-  padding-right: 0;
-  padding-left: 0;
+.pt-0, .last\.pt-0:last-child, .first\.pt-0:first-child {
+  padding-top: 0;
 }
 
 .pt-1, .last\.pt-1:last-child, .first\.pt-1:first-child {
@@ -7195,8 +7206,8 @@ CUSTOM PROPERTIES
   padding-top: var(--size-640);
 }
 
-.pt-0, .last\.pt-0:last-child, .first\.pt-0:first-child {
-  padding-top: 0;
+.pr-0, .last\.pr-0:last-child, .first\.pr-0:first-child {
+  padding-right: 0;
 }
 
 .pr-1, .last\.pr-1:last-child, .first\.pr-1:first-child {
@@ -7359,8 +7370,8 @@ CUSTOM PROPERTIES
   padding-right: var(--size-640);
 }
 
-.pr-0, .last\.pr-0:last-child, .first\.pr-0:first-child {
-  padding-right: 0;
+.pl-0, .last\.pl-0:last-child, .first\.pl-0:first-child {
+  padding-left: 0;
 }
 
 .pl-1, .last\.pl-1:last-child, .first\.pl-1:first-child {
@@ -7523,8 +7534,8 @@ CUSTOM PROPERTIES
   padding-left: var(--size-640);
 }
 
-.pl-0, .last\.pl-0:last-child, .first\.pl-0:first-child {
-  padding-left: 0;
+.pb-0, .last\.pb-0:last-child, .first\.pb-0:first-child {
+  padding-bottom: 0;
 }
 
 .pb-1, .last\.pb-1:last-child, .first\.pb-1:first-child {
@@ -7687,8 +7698,8 @@ CUSTOM PROPERTIES
   padding-bottom: var(--size-640);
 }
 
-.pb-0, .last\.pb-0:last-child, .first\.pb-0:first-child {
-  padding-bottom: 0;
+.m-0 {
+  margin: 0;
 }
 
 .m-1 {
@@ -7855,8 +7866,9 @@ CUSTOM PROPERTIES
   margin: auto;
 }
 
-.m-0 {
-  margin: 0;
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .my-1 {
@@ -8064,9 +8076,9 @@ CUSTOM PROPERTIES
   margin-bottom: auto;
 }
 
-.my-0 {
-  margin-top: 0;
-  margin-bottom: 0;
+.mx-0 {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .mx-1 {
@@ -8274,9 +8286,8 @@ CUSTOM PROPERTIES
   margin-right: auto;
 }
 
-.mx-0 {
-  margin-left: 0;
-  margin-right: 0;
+.mt-0, .last\.mt-0:last-child, .first\.mt-0:first-child {
+  margin-top: 0;
 }
 
 .mt-n1, .last\.mt-n1:last-child, .first\.mt-n1:first-child {
@@ -8603,8 +8614,8 @@ CUSTOM PROPERTIES
   margin-top: auto;
 }
 
-.mt-0, .last\.mt-0:last-child, .first\.mt-0:first-child {
-  margin-top: 0;
+.mr-0, .last\.mr-0:last-child, .first\.mr-0:first-child {
+  margin-right: 0;
 }
 
 .mr-n1, .last\.mr-n1:last-child, .first\.mr-n1:first-child {
@@ -8931,8 +8942,8 @@ CUSTOM PROPERTIES
   margin-right: auto;
 }
 
-.mr-0, .last\.mr-0:last-child, .first\.mr-0:first-child {
-  margin-right: 0;
+.ml-0, .last\.ml-0:last-child, .first\.ml-0:first-child {
+  margin-left: 0;
 }
 
 .ml-n1, .last\.ml-n1:last-child, .first\.ml-n1:first-child {
@@ -9259,8 +9270,8 @@ CUSTOM PROPERTIES
   margin-left: auto;
 }
 
-.ml-0, .last\.ml-0:last-child, .first\.ml-0:first-child {
-  margin-left: 0;
+.mb-0, .last\.mb-0:last-child, .first\.mb-0:first-child {
+  margin-bottom: 0;
 }
 
 .mb-n1, .last\.mb-n1:last-child, .first\.mb-n1:first-child {
@@ -9587,10 +9598,6 @@ CUSTOM PROPERTIES
   margin-bottom: auto;
 }
 
-.mb-0, .last\.mb-0:last-child, .first\.mb-0:first-child {
-  margin-bottom: 0;
-}
-
 .z-auto {
   z-index: auto;
 }
@@ -9799,6 +9806,10 @@ CUSTOM PROPERTIES
 
 .b-0 {
   bottom: 0;
+}
+
+.max-w-0 {
+  max-width: var(--size-0);
 }
 
 .max-w-1 {
@@ -10057,6 +10068,10 @@ CUSTOM PROPERTIES
   max-width: 80%;
 }
 
+.max-h-0 {
+  max-height: var(--size-0);
+}
+
 .max-h-1 {
   max-height: var(--size-1);
 }
@@ -10235,6 +10250,10 @@ CUSTOM PROPERTIES
 
 .max-h-50vh {
   max-height: 50vh;
+}
+
+.min-w-0 {
+  min-width: var(--size-0);
 }
 
 .min-w-1 {
@@ -10489,6 +10508,10 @@ CUSTOM PROPERTIES
   min-width: 80%;
 }
 
+.min-h-0 {
+  min-height: var(--size-0);
+}
+
 .min-h-1 {
   min-height: var(--size-1);
 }
@@ -10663,6 +10686,10 @@ CUSTOM PROPERTIES
 
 .min-h-50vh {
   min-height: 50vh;
+}
+
+.w-0 {
+  width: var(--size-0);
 }
 
 .w-1 {
@@ -10919,6 +10946,10 @@ CUSTOM PROPERTIES
 
 .w-4-5 {
   width: 80%;
+}
+
+.h-0 {
+  height: var(--size-0);
 }
 
 .h-1 {
@@ -11405,6 +11436,10 @@ CUSTOM PROPERTIES
   border-collapse: collapse;
 }
 
+.border-0 {
+  border-width: 0;
+}
+
 .border-1 {
   border-width: var(--size-1);
 }
@@ -11445,12 +11480,8 @@ CUSTOM PROPERTIES
   border-width: var(--size-10);
 }
 
-.border-12 {
-  border-width: var(--size-12);
-}
-
-.border-0 {
-  border-width: 0;
+.border-t-0, .first\.border-t-0:first-child {
+  border-top-width: 0;
 }
 
 .border-t-1, .first\.border-t-1:first-child {
@@ -11493,12 +11524,8 @@ CUSTOM PROPERTIES
   border-top-width: var(--size-10);
 }
 
-.border-t-12, .first\.border-t-12:first-child {
-  border-top-width: var(--size-12);
-}
-
-.border-t-0, .first\.border-t-0:first-child {
-  border-top-width: 0;
+.border-r-0, .last\.border-r-0:last-child {
+  border-right-width: 0;
 }
 
 .border-r-1, .last\.border-r-1:last-child {
@@ -11541,12 +11568,8 @@ CUSTOM PROPERTIES
   border-right-width: var(--size-10);
 }
 
-.border-r-12, .last\.border-r-12:last-child {
-  border-right-width: var(--size-12);
-}
-
-.border-r-0, .last\.border-r-0:last-child {
-  border-right-width: 0;
+.border-l-0, .first\.border-l-0:first-child {
+  border-left-width: 0;
 }
 
 .border-l-1, .first\.border-l-1:first-child {
@@ -11589,12 +11612,8 @@ CUSTOM PROPERTIES
   border-left-width: var(--size-10);
 }
 
-.border-l-12, .first\.border-l-12:first-child {
-  border-left-width: var(--size-12);
-}
-
-.border-l-0, .first\.border-l-0:first-child {
-  border-left-width: 0;
+.border-b-0, .last\.border-b-0:last-child {
+  border-bottom-width: 0;
 }
 
 .border-b-1, .last\.border-b-1:last-child {
@@ -11635,14 +11654,6 @@ CUSTOM PROPERTIES
 
 .border-b-10, .last\.border-b-10:last-child {
   border-bottom-width: var(--size-10);
-}
-
-.border-b-12, .last\.border-b-12:last-child {
-  border-bottom-width: var(--size-12);
-}
-
-.border-b-0, .last\.border-b-0:last-child {
-  border-bottom-width: 0;
 }
 
 .radius-2xs {
@@ -12786,6 +12797,10 @@ CUSTOM PROPERTIES
     resize: vertical;
   }
 
+  .sm\.row-gap-0 {
+    row-gap: var(--size-0);
+  }
+
   .sm\.row-gap-1 {
     row-gap: var(--size-1);
   }
@@ -12906,6 +12921,10 @@ CUSTOM PROPERTIES
     row-gap: var(--size-160);
   }
 
+  .sm\.col-gap-0 {
+    column-gap: var(--size-0);
+  }
+
   .sm\.col-gap-1 {
     column-gap: var(--size-1);
   }
@@ -13024,6 +13043,10 @@ CUSTOM PROPERTIES
 
   .sm\.col-gap-160 {
     column-gap: var(--size-160);
+  }
+
+  .sm\.gap-0 {
+    gap: var(--size-0);
   }
 
   .sm\.gap-1 {
@@ -13730,6 +13753,10 @@ CUSTOM PROPERTIES
     font-size: var(--font-2xs);
   }
 
+  .sm\.p-0 {
+    padding: 0;
+  }
+
   .sm\.p-1 {
     padding: var(--size-1);
   }
@@ -13890,8 +13917,9 @@ CUSTOM PROPERTIES
     padding: var(--size-640);
   }
 
-  .sm\.p-0 {
-    padding: 0;
+  .sm\.py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .sm\.py-1 {
@@ -14094,9 +14122,9 @@ CUSTOM PROPERTIES
     padding-bottom: var(--size-640);
   }
 
-  .sm\.py-0 {
-    padding-top: 0;
-    padding-bottom: 0;
+  .sm\.px-0 {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .sm\.px-1 {
@@ -14299,9 +14327,8 @@ CUSTOM PROPERTIES
     padding-left: var(--size-640);
   }
 
-  .sm\.px-0 {
-    padding-right: 0;
-    padding-left: 0;
+  .sm\.pt-0 {
+    padding-top: 0;
   }
 
   .sm\.pt-1 {
@@ -14464,8 +14491,8 @@ CUSTOM PROPERTIES
     padding-top: var(--size-640);
   }
 
-  .sm\.pt-0 {
-    padding-top: 0;
+  .sm\.pr-0 {
+    padding-right: 0;
   }
 
   .sm\.pr-1 {
@@ -14628,8 +14655,8 @@ CUSTOM PROPERTIES
     padding-right: var(--size-640);
   }
 
-  .sm\.pr-0 {
-    padding-right: 0;
+  .sm\.pl-0 {
+    padding-left: 0;
   }
 
   .sm\.pl-1 {
@@ -14792,8 +14819,8 @@ CUSTOM PROPERTIES
     padding-left: var(--size-640);
   }
 
-  .sm\.pl-0 {
-    padding-left: 0;
+  .sm\.pb-0 {
+    padding-bottom: 0;
   }
 
   .sm\.pb-1 {
@@ -14956,8 +14983,8 @@ CUSTOM PROPERTIES
     padding-bottom: var(--size-640);
   }
 
-  .sm\.pb-0 {
-    padding-bottom: 0;
+  .sm\.m-0 {
+    margin: 0;
   }
 
   .sm\.m-1 {
@@ -15124,8 +15151,9 @@ CUSTOM PROPERTIES
     margin: auto;
   }
 
-  .sm\.m-0 {
-    margin: 0;
+  .sm\.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .sm\.my-1 {
@@ -15333,9 +15361,9 @@ CUSTOM PROPERTIES
     margin-bottom: auto;
   }
 
-  .sm\.my-0 {
-    margin-top: 0;
-    margin-bottom: 0;
+  .sm\.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .sm\.mx-1 {
@@ -15543,9 +15571,8 @@ CUSTOM PROPERTIES
     margin-right: auto;
   }
 
-  .sm\.mx-0 {
-    margin-left: 0;
-    margin-right: 0;
+  .sm\.mt-0 {
+    margin-top: 0;
   }
 
   .sm\.mt-n1 {
@@ -15872,8 +15899,8 @@ CUSTOM PROPERTIES
     margin-top: auto;
   }
 
-  .sm\.mt-0 {
-    margin-top: 0;
+  .sm\.mr-0 {
+    margin-right: 0;
   }
 
   .sm\.mr-n1 {
@@ -16200,8 +16227,8 @@ CUSTOM PROPERTIES
     margin-right: auto;
   }
 
-  .sm\.mr-0 {
-    margin-right: 0;
+  .sm\.ml-0 {
+    margin-left: 0;
   }
 
   .sm\.ml-n1 {
@@ -16528,8 +16555,8 @@ CUSTOM PROPERTIES
     margin-left: auto;
   }
 
-  .sm\.ml-0 {
-    margin-left: 0;
+  .sm\.mb-0 {
+    margin-bottom: 0;
   }
 
   .sm\.mb-n1 {
@@ -16856,10 +16883,6 @@ CUSTOM PROPERTIES
     margin-bottom: auto;
   }
 
-  .sm\.mb-0 {
-    margin-bottom: 0;
-  }
-
   .sm\.xy-0 {
     top: 0;
     right: 0;
@@ -16988,6 +17011,10 @@ CUSTOM PROPERTIES
 
   .sm\.b-0 {
     bottom: 0;
+  }
+
+  .sm\.max-w-0 {
+    max-width: var(--size-0);
   }
 
   .sm\.max-w-1 {
@@ -17246,6 +17273,10 @@ CUSTOM PROPERTIES
     max-width: 80%;
   }
 
+  .sm\.max-h-0 {
+    max-height: var(--size-0);
+  }
+
   .sm\.max-h-1 {
     max-height: var(--size-1);
   }
@@ -17424,6 +17455,10 @@ CUSTOM PROPERTIES
 
   .sm\.max-h-50vh {
     max-height: 50vh;
+  }
+
+  .sm\.min-w-0 {
+    min-width: var(--size-0);
   }
 
   .sm\.min-w-1 {
@@ -17678,6 +17713,10 @@ CUSTOM PROPERTIES
     min-width: 80%;
   }
 
+  .sm\.min-h-0 {
+    min-height: var(--size-0);
+  }
+
   .sm\.min-h-1 {
     min-height: var(--size-1);
   }
@@ -17852,6 +17891,10 @@ CUSTOM PROPERTIES
 
   .sm\.min-h-50vh {
     min-height: 50vh;
+  }
+
+  .sm\.w-0 {
+    width: var(--size-0);
   }
 
   .sm\.w-1 {
@@ -18108,6 +18151,10 @@ CUSTOM PROPERTIES
 
   .sm\.w-4-5 {
     width: 80%;
+  }
+
+  .sm\.h-0 {
+    height: var(--size-0);
   }
 
   .sm\.h-1 {
@@ -18378,6 +18425,10 @@ CUSTOM PROPERTIES
     float: none;
   }
 
+  .sm\.border-0 {
+    border-width: 0;
+  }
+
   .sm\.border-1 {
     border-width: var(--size-1);
   }
@@ -18418,12 +18469,8 @@ CUSTOM PROPERTIES
     border-width: var(--size-10);
   }
 
-  .sm\.border-12 {
-    border-width: var(--size-12);
-  }
-
-  .sm\.border-0 {
-    border-width: 0;
+  .sm\.border-t-0 {
+    border-top-width: 0;
   }
 
   .sm\.border-t-1 {
@@ -18466,12 +18513,8 @@ CUSTOM PROPERTIES
     border-top-width: var(--size-10);
   }
 
-  .sm\.border-t-12 {
-    border-top-width: var(--size-12);
-  }
-
-  .sm\.border-t-0 {
-    border-top-width: 0;
+  .sm\.border-r-0 {
+    border-right-width: 0;
   }
 
   .sm\.border-r-1 {
@@ -18514,12 +18557,8 @@ CUSTOM PROPERTIES
     border-right-width: var(--size-10);
   }
 
-  .sm\.border-r-12 {
-    border-right-width: var(--size-12);
-  }
-
-  .sm\.border-r-0 {
-    border-right-width: 0;
+  .sm\.border-l-0 {
+    border-left-width: 0;
   }
 
   .sm\.border-l-1 {
@@ -18562,12 +18601,8 @@ CUSTOM PROPERTIES
     border-left-width: var(--size-10);
   }
 
-  .sm\.border-l-12 {
-    border-left-width: var(--size-12);
-  }
-
-  .sm\.border-l-0 {
-    border-left-width: 0;
+  .sm\.border-b-0 {
+    border-bottom-width: 0;
   }
 
   .sm\.border-b-1 {
@@ -18608,14 +18643,6 @@ CUSTOM PROPERTIES
 
   .sm\.border-b-10 {
     border-bottom-width: var(--size-10);
-  }
-
-  .sm\.border-b-12 {
-    border-bottom-width: var(--size-12);
-  }
-
-  .sm\.border-b-0 {
-    border-bottom-width: 0;
   }
 
   .sm\.radius-2xs {
@@ -19311,6 +19338,10 @@ CUSTOM PROPERTIES
     resize: vertical;
   }
 
+  .md\.row-gap-0 {
+    row-gap: var(--size-0);
+  }
+
   .md\.row-gap-1 {
     row-gap: var(--size-1);
   }
@@ -19431,6 +19462,10 @@ CUSTOM PROPERTIES
     row-gap: var(--size-160);
   }
 
+  .md\.col-gap-0 {
+    column-gap: var(--size-0);
+  }
+
   .md\.col-gap-1 {
     column-gap: var(--size-1);
   }
@@ -19549,6 +19584,10 @@ CUSTOM PROPERTIES
 
   .md\.col-gap-160 {
     column-gap: var(--size-160);
+  }
+
+  .md\.gap-0 {
+    gap: var(--size-0);
   }
 
   .md\.gap-1 {
@@ -20255,6 +20294,10 @@ CUSTOM PROPERTIES
     font-size: var(--font-2xs);
   }
 
+  .md\.p-0 {
+    padding: 0;
+  }
+
   .md\.p-1 {
     padding: var(--size-1);
   }
@@ -20415,8 +20458,9 @@ CUSTOM PROPERTIES
     padding: var(--size-640);
   }
 
-  .md\.p-0 {
-    padding: 0;
+  .md\.py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .md\.py-1 {
@@ -20619,9 +20663,9 @@ CUSTOM PROPERTIES
     padding-bottom: var(--size-640);
   }
 
-  .md\.py-0 {
-    padding-top: 0;
-    padding-bottom: 0;
+  .md\.px-0 {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .md\.px-1 {
@@ -20824,9 +20868,8 @@ CUSTOM PROPERTIES
     padding-left: var(--size-640);
   }
 
-  .md\.px-0 {
-    padding-right: 0;
-    padding-left: 0;
+  .md\.pt-0 {
+    padding-top: 0;
   }
 
   .md\.pt-1 {
@@ -20989,8 +21032,8 @@ CUSTOM PROPERTIES
     padding-top: var(--size-640);
   }
 
-  .md\.pt-0 {
-    padding-top: 0;
+  .md\.pr-0 {
+    padding-right: 0;
   }
 
   .md\.pr-1 {
@@ -21153,8 +21196,8 @@ CUSTOM PROPERTIES
     padding-right: var(--size-640);
   }
 
-  .md\.pr-0 {
-    padding-right: 0;
+  .md\.pl-0 {
+    padding-left: 0;
   }
 
   .md\.pl-1 {
@@ -21317,8 +21360,8 @@ CUSTOM PROPERTIES
     padding-left: var(--size-640);
   }
 
-  .md\.pl-0 {
-    padding-left: 0;
+  .md\.pb-0 {
+    padding-bottom: 0;
   }
 
   .md\.pb-1 {
@@ -21481,8 +21524,8 @@ CUSTOM PROPERTIES
     padding-bottom: var(--size-640);
   }
 
-  .md\.pb-0 {
-    padding-bottom: 0;
+  .md\.m-0 {
+    margin: 0;
   }
 
   .md\.m-1 {
@@ -21649,8 +21692,9 @@ CUSTOM PROPERTIES
     margin: auto;
   }
 
-  .md\.m-0 {
-    margin: 0;
+  .md\.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .md\.my-1 {
@@ -21858,9 +21902,9 @@ CUSTOM PROPERTIES
     margin-bottom: auto;
   }
 
-  .md\.my-0 {
-    margin-top: 0;
-    margin-bottom: 0;
+  .md\.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .md\.mx-1 {
@@ -22068,9 +22112,8 @@ CUSTOM PROPERTIES
     margin-right: auto;
   }
 
-  .md\.mx-0 {
-    margin-left: 0;
-    margin-right: 0;
+  .md\.mt-0 {
+    margin-top: 0;
   }
 
   .md\.mt-n1 {
@@ -22397,8 +22440,8 @@ CUSTOM PROPERTIES
     margin-top: auto;
   }
 
-  .md\.mt-0 {
-    margin-top: 0;
+  .md\.mr-0 {
+    margin-right: 0;
   }
 
   .md\.mr-n1 {
@@ -22725,8 +22768,8 @@ CUSTOM PROPERTIES
     margin-right: auto;
   }
 
-  .md\.mr-0 {
-    margin-right: 0;
+  .md\.ml-0 {
+    margin-left: 0;
   }
 
   .md\.ml-n1 {
@@ -23053,8 +23096,8 @@ CUSTOM PROPERTIES
     margin-left: auto;
   }
 
-  .md\.ml-0 {
-    margin-left: 0;
+  .md\.mb-0 {
+    margin-bottom: 0;
   }
 
   .md\.mb-n1 {
@@ -23381,10 +23424,6 @@ CUSTOM PROPERTIES
     margin-bottom: auto;
   }
 
-  .md\.mb-0 {
-    margin-bottom: 0;
-  }
-
   .md\.xy-0 {
     top: 0;
     right: 0;
@@ -23513,6 +23552,10 @@ CUSTOM PROPERTIES
 
   .md\.b-0 {
     bottom: 0;
+  }
+
+  .md\.max-w-0 {
+    max-width: var(--size-0);
   }
 
   .md\.max-w-1 {
@@ -23771,6 +23814,10 @@ CUSTOM PROPERTIES
     max-width: 80%;
   }
 
+  .md\.max-h-0 {
+    max-height: var(--size-0);
+  }
+
   .md\.max-h-1 {
     max-height: var(--size-1);
   }
@@ -23949,6 +23996,10 @@ CUSTOM PROPERTIES
 
   .md\.max-h-50vh {
     max-height: 50vh;
+  }
+
+  .md\.min-w-0 {
+    min-width: var(--size-0);
   }
 
   .md\.min-w-1 {
@@ -24203,6 +24254,10 @@ CUSTOM PROPERTIES
     min-width: 80%;
   }
 
+  .md\.min-h-0 {
+    min-height: var(--size-0);
+  }
+
   .md\.min-h-1 {
     min-height: var(--size-1);
   }
@@ -24377,6 +24432,10 @@ CUSTOM PROPERTIES
 
   .md\.min-h-50vh {
     min-height: 50vh;
+  }
+
+  .md\.w-0 {
+    width: var(--size-0);
   }
 
   .md\.w-1 {
@@ -24633,6 +24692,10 @@ CUSTOM PROPERTIES
 
   .md\.w-4-5 {
     width: 80%;
+  }
+
+  .md\.h-0 {
+    height: var(--size-0);
   }
 
   .md\.h-1 {
@@ -24903,6 +24966,10 @@ CUSTOM PROPERTIES
     float: none;
   }
 
+  .md\.border-0 {
+    border-width: 0;
+  }
+
   .md\.border-1 {
     border-width: var(--size-1);
   }
@@ -24943,12 +25010,8 @@ CUSTOM PROPERTIES
     border-width: var(--size-10);
   }
 
-  .md\.border-12 {
-    border-width: var(--size-12);
-  }
-
-  .md\.border-0 {
-    border-width: 0;
+  .md\.border-t-0 {
+    border-top-width: 0;
   }
 
   .md\.border-t-1 {
@@ -24991,12 +25054,8 @@ CUSTOM PROPERTIES
     border-top-width: var(--size-10);
   }
 
-  .md\.border-t-12 {
-    border-top-width: var(--size-12);
-  }
-
-  .md\.border-t-0 {
-    border-top-width: 0;
+  .md\.border-r-0 {
+    border-right-width: 0;
   }
 
   .md\.border-r-1 {
@@ -25039,12 +25098,8 @@ CUSTOM PROPERTIES
     border-right-width: var(--size-10);
   }
 
-  .md\.border-r-12 {
-    border-right-width: var(--size-12);
-  }
-
-  .md\.border-r-0 {
-    border-right-width: 0;
+  .md\.border-l-0 {
+    border-left-width: 0;
   }
 
   .md\.border-l-1 {
@@ -25087,12 +25142,8 @@ CUSTOM PROPERTIES
     border-left-width: var(--size-10);
   }
 
-  .md\.border-l-12 {
-    border-left-width: var(--size-12);
-  }
-
-  .md\.border-l-0 {
-    border-left-width: 0;
+  .md\.border-b-0 {
+    border-bottom-width: 0;
   }
 
   .md\.border-b-1 {
@@ -25133,14 +25184,6 @@ CUSTOM PROPERTIES
 
   .md\.border-b-10 {
     border-bottom-width: var(--size-10);
-  }
-
-  .md\.border-b-12 {
-    border-bottom-width: var(--size-12);
-  }
-
-  .md\.border-b-0 {
-    border-bottom-width: 0;
   }
 
   .md\.radius-2xs {
@@ -25836,6 +25879,10 @@ CUSTOM PROPERTIES
     resize: vertical;
   }
 
+  .lg\.row-gap-0 {
+    row-gap: var(--size-0);
+  }
+
   .lg\.row-gap-1 {
     row-gap: var(--size-1);
   }
@@ -25956,6 +26003,10 @@ CUSTOM PROPERTIES
     row-gap: var(--size-160);
   }
 
+  .lg\.col-gap-0 {
+    column-gap: var(--size-0);
+  }
+
   .lg\.col-gap-1 {
     column-gap: var(--size-1);
   }
@@ -26074,6 +26125,10 @@ CUSTOM PROPERTIES
 
   .lg\.col-gap-160 {
     column-gap: var(--size-160);
+  }
+
+  .lg\.gap-0 {
+    gap: var(--size-0);
   }
 
   .lg\.gap-1 {
@@ -26780,6 +26835,10 @@ CUSTOM PROPERTIES
     font-size: var(--font-2xs);
   }
 
+  .lg\.p-0 {
+    padding: 0;
+  }
+
   .lg\.p-1 {
     padding: var(--size-1);
   }
@@ -26940,8 +26999,9 @@ CUSTOM PROPERTIES
     padding: var(--size-640);
   }
 
-  .lg\.p-0 {
-    padding: 0;
+  .lg\.py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .lg\.py-1 {
@@ -27144,9 +27204,9 @@ CUSTOM PROPERTIES
     padding-bottom: var(--size-640);
   }
 
-  .lg\.py-0 {
-    padding-top: 0;
-    padding-bottom: 0;
+  .lg\.px-0 {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .lg\.px-1 {
@@ -27349,9 +27409,8 @@ CUSTOM PROPERTIES
     padding-left: var(--size-640);
   }
 
-  .lg\.px-0 {
-    padding-right: 0;
-    padding-left: 0;
+  .lg\.pt-0 {
+    padding-top: 0;
   }
 
   .lg\.pt-1 {
@@ -27514,8 +27573,8 @@ CUSTOM PROPERTIES
     padding-top: var(--size-640);
   }
 
-  .lg\.pt-0 {
-    padding-top: 0;
+  .lg\.pr-0 {
+    padding-right: 0;
   }
 
   .lg\.pr-1 {
@@ -27678,8 +27737,8 @@ CUSTOM PROPERTIES
     padding-right: var(--size-640);
   }
 
-  .lg\.pr-0 {
-    padding-right: 0;
+  .lg\.pl-0 {
+    padding-left: 0;
   }
 
   .lg\.pl-1 {
@@ -27842,8 +27901,8 @@ CUSTOM PROPERTIES
     padding-left: var(--size-640);
   }
 
-  .lg\.pl-0 {
-    padding-left: 0;
+  .lg\.pb-0 {
+    padding-bottom: 0;
   }
 
   .lg\.pb-1 {
@@ -28006,8 +28065,8 @@ CUSTOM PROPERTIES
     padding-bottom: var(--size-640);
   }
 
-  .lg\.pb-0 {
-    padding-bottom: 0;
+  .lg\.m-0 {
+    margin: 0;
   }
 
   .lg\.m-1 {
@@ -28174,8 +28233,9 @@ CUSTOM PROPERTIES
     margin: auto;
   }
 
-  .lg\.m-0 {
-    margin: 0;
+  .lg\.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .lg\.my-1 {
@@ -28383,9 +28443,9 @@ CUSTOM PROPERTIES
     margin-bottom: auto;
   }
 
-  .lg\.my-0 {
-    margin-top: 0;
-    margin-bottom: 0;
+  .lg\.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .lg\.mx-1 {
@@ -28593,9 +28653,8 @@ CUSTOM PROPERTIES
     margin-right: auto;
   }
 
-  .lg\.mx-0 {
-    margin-left: 0;
-    margin-right: 0;
+  .lg\.mt-0 {
+    margin-top: 0;
   }
 
   .lg\.mt-n1 {
@@ -28922,8 +28981,8 @@ CUSTOM PROPERTIES
     margin-top: auto;
   }
 
-  .lg\.mt-0 {
-    margin-top: 0;
+  .lg\.mr-0 {
+    margin-right: 0;
   }
 
   .lg\.mr-n1 {
@@ -29250,8 +29309,8 @@ CUSTOM PROPERTIES
     margin-right: auto;
   }
 
-  .lg\.mr-0 {
-    margin-right: 0;
+  .lg\.ml-0 {
+    margin-left: 0;
   }
 
   .lg\.ml-n1 {
@@ -29578,8 +29637,8 @@ CUSTOM PROPERTIES
     margin-left: auto;
   }
 
-  .lg\.ml-0 {
-    margin-left: 0;
+  .lg\.mb-0 {
+    margin-bottom: 0;
   }
 
   .lg\.mb-n1 {
@@ -29906,10 +29965,6 @@ CUSTOM PROPERTIES
     margin-bottom: auto;
   }
 
-  .lg\.mb-0 {
-    margin-bottom: 0;
-  }
-
   .lg\.xy-0 {
     top: 0;
     right: 0;
@@ -30038,6 +30093,10 @@ CUSTOM PROPERTIES
 
   .lg\.b-0 {
     bottom: 0;
+  }
+
+  .lg\.max-w-0 {
+    max-width: var(--size-0);
   }
 
   .lg\.max-w-1 {
@@ -30296,6 +30355,10 @@ CUSTOM PROPERTIES
     max-width: 80%;
   }
 
+  .lg\.max-h-0 {
+    max-height: var(--size-0);
+  }
+
   .lg\.max-h-1 {
     max-height: var(--size-1);
   }
@@ -30474,6 +30537,10 @@ CUSTOM PROPERTIES
 
   .lg\.max-h-50vh {
     max-height: 50vh;
+  }
+
+  .lg\.min-w-0 {
+    min-width: var(--size-0);
   }
 
   .lg\.min-w-1 {
@@ -30728,6 +30795,10 @@ CUSTOM PROPERTIES
     min-width: 80%;
   }
 
+  .lg\.min-h-0 {
+    min-height: var(--size-0);
+  }
+
   .lg\.min-h-1 {
     min-height: var(--size-1);
   }
@@ -30902,6 +30973,10 @@ CUSTOM PROPERTIES
 
   .lg\.min-h-50vh {
     min-height: 50vh;
+  }
+
+  .lg\.w-0 {
+    width: var(--size-0);
   }
 
   .lg\.w-1 {
@@ -31158,6 +31233,10 @@ CUSTOM PROPERTIES
 
   .lg\.w-4-5 {
     width: 80%;
+  }
+
+  .lg\.h-0 {
+    height: var(--size-0);
   }
 
   .lg\.h-1 {
@@ -31428,6 +31507,10 @@ CUSTOM PROPERTIES
     float: none;
   }
 
+  .lg\.border-0 {
+    border-width: 0;
+  }
+
   .lg\.border-1 {
     border-width: var(--size-1);
   }
@@ -31468,12 +31551,8 @@ CUSTOM PROPERTIES
     border-width: var(--size-10);
   }
 
-  .lg\.border-12 {
-    border-width: var(--size-12);
-  }
-
-  .lg\.border-0 {
-    border-width: 0;
+  .lg\.border-t-0 {
+    border-top-width: 0;
   }
 
   .lg\.border-t-1 {
@@ -31516,12 +31595,8 @@ CUSTOM PROPERTIES
     border-top-width: var(--size-10);
   }
 
-  .lg\.border-t-12 {
-    border-top-width: var(--size-12);
-  }
-
-  .lg\.border-t-0 {
-    border-top-width: 0;
+  .lg\.border-r-0 {
+    border-right-width: 0;
   }
 
   .lg\.border-r-1 {
@@ -31564,12 +31639,8 @@ CUSTOM PROPERTIES
     border-right-width: var(--size-10);
   }
 
-  .lg\.border-r-12 {
-    border-right-width: var(--size-12);
-  }
-
-  .lg\.border-r-0 {
-    border-right-width: 0;
+  .lg\.border-l-0 {
+    border-left-width: 0;
   }
 
   .lg\.border-l-1 {
@@ -31612,12 +31683,8 @@ CUSTOM PROPERTIES
     border-left-width: var(--size-10);
   }
 
-  .lg\.border-l-12 {
-    border-left-width: var(--size-12);
-  }
-
-  .lg\.border-l-0 {
-    border-left-width: 0;
+  .lg\.border-b-0 {
+    border-bottom-width: 0;
   }
 
   .lg\.border-b-1 {
@@ -31658,14 +31725,6 @@ CUSTOM PROPERTIES
 
   .lg\.border-b-10 {
     border-bottom-width: var(--size-10);
-  }
-
-  .lg\.border-b-12 {
-    border-bottom-width: var(--size-12);
-  }
-
-  .lg\.border-b-0 {
-    border-bottom-width: 0;
   }
 
   .lg\.radius-2xs {
@@ -32361,6 +32420,10 @@ CUSTOM PROPERTIES
     resize: vertical;
   }
 
+  .xl\.row-gap-0 {
+    row-gap: var(--size-0);
+  }
+
   .xl\.row-gap-1 {
     row-gap: var(--size-1);
   }
@@ -32481,6 +32544,10 @@ CUSTOM PROPERTIES
     row-gap: var(--size-160);
   }
 
+  .xl\.col-gap-0 {
+    column-gap: var(--size-0);
+  }
+
   .xl\.col-gap-1 {
     column-gap: var(--size-1);
   }
@@ -32599,6 +32666,10 @@ CUSTOM PROPERTIES
 
   .xl\.col-gap-160 {
     column-gap: var(--size-160);
+  }
+
+  .xl\.gap-0 {
+    gap: var(--size-0);
   }
 
   .xl\.gap-1 {
@@ -33305,6 +33376,10 @@ CUSTOM PROPERTIES
     font-size: var(--font-2xs);
   }
 
+  .xl\.p-0 {
+    padding: 0;
+  }
+
   .xl\.p-1 {
     padding: var(--size-1);
   }
@@ -33465,8 +33540,9 @@ CUSTOM PROPERTIES
     padding: var(--size-640);
   }
 
-  .xl\.p-0 {
-    padding: 0;
+  .xl\.py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .xl\.py-1 {
@@ -33669,9 +33745,9 @@ CUSTOM PROPERTIES
     padding-bottom: var(--size-640);
   }
 
-  .xl\.py-0 {
-    padding-top: 0;
-    padding-bottom: 0;
+  .xl\.px-0 {
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .xl\.px-1 {
@@ -33874,9 +33950,8 @@ CUSTOM PROPERTIES
     padding-left: var(--size-640);
   }
 
-  .xl\.px-0 {
-    padding-right: 0;
-    padding-left: 0;
+  .xl\.pt-0 {
+    padding-top: 0;
   }
 
   .xl\.pt-1 {
@@ -34039,8 +34114,8 @@ CUSTOM PROPERTIES
     padding-top: var(--size-640);
   }
 
-  .xl\.pt-0 {
-    padding-top: 0;
+  .xl\.pr-0 {
+    padding-right: 0;
   }
 
   .xl\.pr-1 {
@@ -34203,8 +34278,8 @@ CUSTOM PROPERTIES
     padding-right: var(--size-640);
   }
 
-  .xl\.pr-0 {
-    padding-right: 0;
+  .xl\.pl-0 {
+    padding-left: 0;
   }
 
   .xl\.pl-1 {
@@ -34367,8 +34442,8 @@ CUSTOM PROPERTIES
     padding-left: var(--size-640);
   }
 
-  .xl\.pl-0 {
-    padding-left: 0;
+  .xl\.pb-0 {
+    padding-bottom: 0;
   }
 
   .xl\.pb-1 {
@@ -34531,8 +34606,8 @@ CUSTOM PROPERTIES
     padding-bottom: var(--size-640);
   }
 
-  .xl\.pb-0 {
-    padding-bottom: 0;
+  .xl\.m-0 {
+    margin: 0;
   }
 
   .xl\.m-1 {
@@ -34699,8 +34774,9 @@ CUSTOM PROPERTIES
     margin: auto;
   }
 
-  .xl\.m-0 {
-    margin: 0;
+  .xl\.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .xl\.my-1 {
@@ -34908,9 +34984,9 @@ CUSTOM PROPERTIES
     margin-bottom: auto;
   }
 
-  .xl\.my-0 {
-    margin-top: 0;
-    margin-bottom: 0;
+  .xl\.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .xl\.mx-1 {
@@ -35118,9 +35194,8 @@ CUSTOM PROPERTIES
     margin-right: auto;
   }
 
-  .xl\.mx-0 {
-    margin-left: 0;
-    margin-right: 0;
+  .xl\.mt-0 {
+    margin-top: 0;
   }
 
   .xl\.mt-n1 {
@@ -35447,8 +35522,8 @@ CUSTOM PROPERTIES
     margin-top: auto;
   }
 
-  .xl\.mt-0 {
-    margin-top: 0;
+  .xl\.mr-0 {
+    margin-right: 0;
   }
 
   .xl\.mr-n1 {
@@ -35775,8 +35850,8 @@ CUSTOM PROPERTIES
     margin-right: auto;
   }
 
-  .xl\.mr-0 {
-    margin-right: 0;
+  .xl\.ml-0 {
+    margin-left: 0;
   }
 
   .xl\.ml-n1 {
@@ -36103,8 +36178,8 @@ CUSTOM PROPERTIES
     margin-left: auto;
   }
 
-  .xl\.ml-0 {
-    margin-left: 0;
+  .xl\.mb-0 {
+    margin-bottom: 0;
   }
 
   .xl\.mb-n1 {
@@ -36431,10 +36506,6 @@ CUSTOM PROPERTIES
     margin-bottom: auto;
   }
 
-  .xl\.mb-0 {
-    margin-bottom: 0;
-  }
-
   .xl\.xy-0 {
     top: 0;
     right: 0;
@@ -36563,6 +36634,10 @@ CUSTOM PROPERTIES
 
   .xl\.b-0 {
     bottom: 0;
+  }
+
+  .xl\.max-w-0 {
+    max-width: var(--size-0);
   }
 
   .xl\.max-w-1 {
@@ -36821,6 +36896,10 @@ CUSTOM PROPERTIES
     max-width: 80%;
   }
 
+  .xl\.max-h-0 {
+    max-height: var(--size-0);
+  }
+
   .xl\.max-h-1 {
     max-height: var(--size-1);
   }
@@ -36999,6 +37078,10 @@ CUSTOM PROPERTIES
 
   .xl\.max-h-50vh {
     max-height: 50vh;
+  }
+
+  .xl\.min-w-0 {
+    min-width: var(--size-0);
   }
 
   .xl\.min-w-1 {
@@ -37253,6 +37336,10 @@ CUSTOM PROPERTIES
     min-width: 80%;
   }
 
+  .xl\.min-h-0 {
+    min-height: var(--size-0);
+  }
+
   .xl\.min-h-1 {
     min-height: var(--size-1);
   }
@@ -37427,6 +37514,10 @@ CUSTOM PROPERTIES
 
   .xl\.min-h-50vh {
     min-height: 50vh;
+  }
+
+  .xl\.w-0 {
+    width: var(--size-0);
   }
 
   .xl\.w-1 {
@@ -37683,6 +37774,10 @@ CUSTOM PROPERTIES
 
   .xl\.w-4-5 {
     width: 80%;
+  }
+
+  .xl\.h-0 {
+    height: var(--size-0);
   }
 
   .xl\.h-1 {
@@ -37953,6 +38048,10 @@ CUSTOM PROPERTIES
     float: none;
   }
 
+  .xl\.border-0 {
+    border-width: 0;
+  }
+
   .xl\.border-1 {
     border-width: var(--size-1);
   }
@@ -37993,12 +38092,8 @@ CUSTOM PROPERTIES
     border-width: var(--size-10);
   }
 
-  .xl\.border-12 {
-    border-width: var(--size-12);
-  }
-
-  .xl\.border-0 {
-    border-width: 0;
+  .xl\.border-t-0 {
+    border-top-width: 0;
   }
 
   .xl\.border-t-1 {
@@ -38041,12 +38136,8 @@ CUSTOM PROPERTIES
     border-top-width: var(--size-10);
   }
 
-  .xl\.border-t-12 {
-    border-top-width: var(--size-12);
-  }
-
-  .xl\.border-t-0 {
-    border-top-width: 0;
+  .xl\.border-r-0 {
+    border-right-width: 0;
   }
 
   .xl\.border-r-1 {
@@ -38089,12 +38180,8 @@ CUSTOM PROPERTIES
     border-right-width: var(--size-10);
   }
 
-  .xl\.border-r-12 {
-    border-right-width: var(--size-12);
-  }
-
-  .xl\.border-r-0 {
-    border-right-width: 0;
+  .xl\.border-l-0 {
+    border-left-width: 0;
   }
 
   .xl\.border-l-1 {
@@ -38137,12 +38224,8 @@ CUSTOM PROPERTIES
     border-left-width: var(--size-10);
   }
 
-  .xl\.border-l-12 {
-    border-left-width: var(--size-12);
-  }
-
-  .xl\.border-l-0 {
-    border-left-width: 0;
+  .xl\.border-b-0 {
+    border-bottom-width: 0;
   }
 
   .xl\.border-b-1 {
@@ -38183,14 +38266,6 @@ CUSTOM PROPERTIES
 
   .xl\.border-b-10 {
     border-bottom-width: var(--size-10);
-  }
-
-  .xl\.border-b-12 {
-    border-bottom-width: var(--size-12);
-  }
-
-  .xl\.border-b-0 {
-    border-bottom-width: 0;
   }
 
   .xl\.radius-2xs {
