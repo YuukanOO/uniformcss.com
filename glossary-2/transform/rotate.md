@@ -1,5 +1,7 @@
 ---
 title: Rotate
+property: rotate
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/rotate
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---

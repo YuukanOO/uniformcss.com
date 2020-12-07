@@ -1,5 +1,7 @@
 ---
 title: Transition Property
+property: transition-property
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/transition-property
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
