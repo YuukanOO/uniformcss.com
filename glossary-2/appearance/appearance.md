@@ -1,12 +1,14 @@
 ---
 title: Appearance
+property: appearance
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/appearance
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `appearance` property is used to display an element using platform-native styling, based on the operating system's theme. The `-moz-appearance` and `-webkit-appearance` properties are non-standard versions of this property, used (respectively) by Gecko (Firefox) and by WebKit-based (e.g., Safari) and Blink-based (e.g., Chrome, Opera) browsers to achieve the same thing. Note that Firefox and Edge also support `-webkit-appearance`, for compatibility reasons.
 
 | Class Name              | Property                       |
 | ----------------------- | ------------------------------ |
@@ -255,3 +257,9 @@ Items are evenly distributed within the alignment container along the cross axis
 	<div>6</div>
 </div>
 ```
+
+---
+
+## Resources
+
+To learn more about `{{ property }}` please refer to the [MDN Documentation <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
