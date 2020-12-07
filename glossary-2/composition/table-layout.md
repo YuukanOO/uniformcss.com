@@ -1,5 +1,7 @@
 ---
 title: Table Layout
+property: table-layout
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
