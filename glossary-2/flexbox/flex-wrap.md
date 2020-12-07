@@ -1,5 +1,7 @@
 ---
 title: Flex Wrap
+property: flex-wrap
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
