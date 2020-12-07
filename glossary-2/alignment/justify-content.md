@@ -2,7 +2,7 @@
 title: Justify Content
 property: justify-content
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
-description: Justifies multi-row Flexbox and CSS Grid children elements
+description: Justifies multi-row Flexbox and CSS Grid children
 date: 1000-01-01
 ---
 

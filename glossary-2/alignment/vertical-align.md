@@ -2,13 +2,13 @@
 title: Vertical Alignment
 property: vertical-align
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
-description: Vertically aligns text
+description: Aligns text vertically
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `vertical-align` utilities vertically align text.
+The `vertical-align` utilities align text vertically.
 
 | Class Name          | Property                      |
 | ------------------- | ----------------------------- |

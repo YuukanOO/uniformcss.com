@@ -2,13 +2,13 @@
 title: Text Align
 property: text-align
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/text-align
-description: Horizontally justifies text
+description: Justifies text horizontally
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `text-align` utilities horizontally justify text.
+The `text-align` utilities justify text horizontally.
 
 | Class Name      | Property              |
 | --------------- | --------------------- |

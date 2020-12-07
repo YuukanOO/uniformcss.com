@@ -2,7 +2,7 @@
 title: Align Content
 property: align-content
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
-description: Aligns multi-row Flexbox and CSS Grid children elements
+description: Aligns multi-row Flexbox and CSS Grid children
 date: 1000-01-01
 ---
 
