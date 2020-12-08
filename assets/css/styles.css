@@ -307,10 +307,10 @@ a {
   color: var(--link-color, blue);
 }
 a:hover {
-  color: var(--link-hover-color, blue);
+  color: var(--link-hover-color, inherit);
 }
 a:active {
-  color: var(--link-active-color, transparent);
+  color: var(--link-active-color, inherit);
 }
 
 b, strong {

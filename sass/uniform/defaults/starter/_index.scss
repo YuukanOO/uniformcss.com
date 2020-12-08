@@ -33,10 +33,10 @@
     cursor: pointer;
     color: var(--link-color, blue);
     &:hover {
-      color: var(--link-hover-color, blue);
+      color: var(--link-hover-color, inherit);
     }
     &:active {
-      color: var(--link-active-color, transparent);
+      color: var(--link-active-color, inherit);
     }
   }
 

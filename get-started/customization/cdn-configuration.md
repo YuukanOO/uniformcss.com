@@ -1,6 +1,6 @@
 ---
-title: Basic Configuration
-date: 1000-01-01
+title: CDN Configuration
+date: 1000-01-02
 ---
 
 {% include shortcodes/chapter, text: 'Customization', color: 'violet' %}

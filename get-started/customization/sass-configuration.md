@@ -1,9 +1,7 @@
 ---
-title: Native Configuration
-date: 1000-01-02
+title: Sass Configuration
+date: 1000-01-01
 ---
-
-{% include shortcodes/chapter, text: 'Customization', color: 'red' %}
 
 ## Setup for Maximum Flexibility
 

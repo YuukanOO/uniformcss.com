@@ -127,11 +127,21 @@ layout: layouts/base.njk
           </div>
           <div class="relative hidden lg.block lg.col-3">
             <div class="sticky flex justify-content-end pt-64 t-0">
-              <div class="radius-md w-100p p-28 bg-silver-100">
-                <h6 class="font-sm font-bold mb-16">
-                  On this page
-                </h6>
-                {{ content | toc | safe }}
+              <div class="w-100p">
+                <a class="block radius-md w-100p p-24 bg-primary-700 hover.bg-primary-800 transition-200 mb-20 last.mb-0">
+                  <h6 class="flex align-items-center font-sm font-bold mb-16 text-white">
+                    <i class="fab fa-github font-2xl mr-12"></i> Found an error?
+                  </h6>
+                  <p class="font-sm text-white opacity-70">Please submit your finding <br>and we will fix this quickly.</p>
+                </a>
+                <div class="radius-md w-100p p-24 bg-silver-100 mb-20 last.mb-0">
+                  <h6 class="font-sm font-bold mb-16">
+                    On this page
+                  </h6>
+                  {{ content | toc | safe }}
+                </div>
+
+                
               </div>
             </div>
           </div>
