@@ -2,7 +2,7 @@
 title: Translate X
 property: translate-x
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/translate-x
-description: Moves an element along the x-axis
+description: Translates an element along the x-axis
 date: 1000-01-01
 ---
 
