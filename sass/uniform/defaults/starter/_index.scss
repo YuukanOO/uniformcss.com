@@ -31,12 +31,9 @@
   a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--link-color, blue);
+    color: var(--link-color, MediumOrchid);
     &:hover {
-      color: var(--link-hover-color, inherit);
-    }
-    &:active {
-      color: var(--link-active-color, inherit);
+      color: var(--link-hover-color, MediumOrchid);
     }
   }
 

@@ -46,16 +46,25 @@
   <link rel="stylesheet" href="{{ '/assets/vendors/fontawesome/css/solid.min.css' | url }}">
   <link rel="stylesheet" href="{{ '/assets/vendors/fontawesome/css/regular.min.css' | url }}">
   <link rel="stylesheet" href="{{ '/assets/vendors/fontawesome/css/brands.min.css' | url }}">
+
+  <!-- SplitBee Analytics -->
+  <script async src="https://cdn.splitbee.io/sb.js"></script>
 </head>
-<body>
+<body data-barba="wrapper">
   {{ content | safe }}
 
-
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 <script>
+
+barba.init({
+  // ...
+})
+
 $(document).ready(function () {
+  
 
   // Change pages on mobile
   $('.js-select-url').on('change', function () {
@@ -87,22 +96,7 @@ $(document).ready(function () {
   });
 
 
-
-});
-
-
-
-
-
-
-
-
-
-
-
-
-jQuery(document).ready(function ($)
-{
+  // Homepage Image Compare Container
   var dragging = false,
     scrolling = false,
     resizing = false;

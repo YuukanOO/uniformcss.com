@@ -125,13 +125,10 @@ p:last-child {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: var(--link-color, blue);
+  color: var(--link-color, MediumOrchid);
 }
 a:hover {
-  color: var(--link-hover-color, blue);
-}
-a:active {
-  color: var(--link-active-color, transparent);
+  color: var(--link-hover-color, MediumOrchid);
 }
 
 b, strong {
