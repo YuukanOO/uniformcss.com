@@ -1,6 +1,8 @@
 ---
 title: Stroke Width
-description: Row positioning inside grid and multi-row flex containers.
+property: stroke-width
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/stroke-width
+description: Controls the SVG stroke width
 date: 1000-01-01
 ---
 

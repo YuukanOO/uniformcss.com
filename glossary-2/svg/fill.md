@@ -1,6 +1,8 @@
 ---
 title: Fill
-description: Row positioning inside grid and multi-row flex containers.
+property: fill
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/fill
+description: Sets the SVG color
 date: 1000-01-01
 ---
 
