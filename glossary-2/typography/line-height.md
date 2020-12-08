@@ -2,22 +2,33 @@
 title: Line Height
 property: line-height
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height
-description: Sets line height, also known as leading
+description: Sets text leading
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `line-height` utilities set text leading.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name         | Property                               |
+| ------------------ | -------------------------------------- |
+| `leading-tightest` | `line-height: var(--leading-tightest)` |
+| `leading-tighter`  | `line-height: var(--leading-tighter)`  |
+| `leading-tight`    | `line-height: var(--leading-tight)`    |
+| `leading-base`     | `line-height: var(--leading-base)`     |
+| `leading-loose`    | `line-height: var(--leading-loose)`    |
+| `leading-looser`   | `line-height: var(--leading-looser)`   |
+| `leading-loosest`  | `line-height: var(--leading-loosest)`  |
+| `leading-100`      | `line-height: var(--leading-100)`      |
+| `leading-200`      | `line-height: var(--leading-200)`      |
+| `leading-300`      | `line-height: var(--leading-300)`      |
+| `leading-400`      | `line-height: var(--leading-400)`      |
+| `leading-500`      | `line-height: var(--leading-500)`      |
+| `leading-600`      | `line-height: var(--leading-600)`      |
+| `leading-700`      | `line-height: var(--leading-700)`      |
+| `leading-800`      | `line-height: var(--leading-800)`      |
+| `leading-900`      | `line-height: var(--leading-900)`      |
+| `leading-0         | `line-height: 0`                       |
 
 ---
 

@@ -2,22 +2,32 @@
 title: Font Size
 property: font-size
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/font-size
-description: Sets the font size
+description: Sets font size
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `font-size` utilities set font size.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name  | Property                      |
+| ----------- | ----------------------------- |
+| `font-10xl` | `font-size: var(--font-10xl)` |
+| `font-9xl`  | `font-size: var(--font-9xl)`  |
+| `font-8xl`  | `font-size: var(--font-8xl)`  |
+| `font-7xl`  | `font-size: var(--font-7xl)`  |
+| `font-6xl`  | `font-size: var(--font-6xl)`  |
+| `font-5xl`  | `font-size: var(--font-5xl)`  |
+| `font-4xl`  | `font-size: var(--font-4xl)`  |
+| `font-3xl`  | `font-size: var(--font-3xl)`  |
+| `font-2xl`  | `font-size: var(--font-2xl)`  |
+| `font-xl`   | `font-size: var(--font-xl)`   |
+| `font-lg`   | `font-size: var(--font-lg)`   |
+| `font-base` | `font-size: var(--font-base)` |
+| `font-md`   | `font-size: var(--font-md)`   |
+| `font-sm`   | `font-size: var(--font-sm)`   |
+| `font-xs`   | `font-size: var(--font-xs)`   |
+| `font-2xs`  | `font-size: var(--font-2xs)`  |
 
 ---
 
@@ -27,7 +37,7 @@ The following default responsive and pseudo settings.
 
 | Setting      | Default Setting |
 | ------------ | --------------- |
-| `responsive` | `true`          |
+| `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
 ---

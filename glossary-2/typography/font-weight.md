@@ -2,22 +2,34 @@
 title: Font Weight
 property: font-weight
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight
-description: Sets the font weight
+description: Sets font weight
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `font-weight` utilities set font weight.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name        | Property                              |
+| ----------------- | ------------------------------------- |
+| `font-ultralight` | `font-weight: var(--font-ultralight)` |
+| `font-extralight` | `font-weight: var(--font-extralight)` |
+| `font-light`      | `font-weight: var(--font-light)`      |
+| `font-regular`    | `font-weight: var(--font-regular)`    |
+| `font-medium`     | `font-weight: var(--font-medium)`     |
+| `font-semibold`   | `font-weight: var(--font-semibold)`   |
+| `font-bold`       | `font-weight: var(--font-bold)`       |
+| `font-extrabold`  | `font-weight: var(--font-extrabold)`  |
+| `font-ultrabold`  | `font-weight: var(--font-ultrabold)`  |
+| `font-100`        | `font-weight: 100`                    |
+| `font-200`        | `font-weight: 200`                    |
+| `font-300`        | `font-weight: 300`                    |
+| `font-400`        | `font-weight: 400`                    |
+| `font-500`        | `font-weight: 500`                    |
+| `font-600`        | `font-weight: 600`                    |
+| `font-700`        | `font-weight: 700`                    |
+| `font-800`        | `font-weight: 800`                    |
+| `font-900`        | `font-weight: 900`                    |
 
 ---
 
@@ -27,7 +39,7 @@ The following default responsive and pseudo settings.
 
 | Setting      | Default Setting |
 | ------------ | --------------- |
-| `responsive` | `true`          |
+| `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
 ---
