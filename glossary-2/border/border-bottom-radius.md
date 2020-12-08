@@ -2,22 +2,25 @@
 title: Border Bottom Radius
 property: null
 mdn: null
-description: Controls the bottom-left and bottom-right corner radii
+description: Rounds the bottom-left and bottom-right corner radii
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `border-bottom-radius` utilities round the bottom-left and bottom-right corner radii.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name       | Property                                                                                                       |
+| ---------------- | -------------------------------------------------------------------------------------------------------------- |
+| `radius-b-2xs`   | <code>border-bottom-left-radius: var(--radius-2xs)<br>border-bottom-right-radius: var(--radius-2xs)</code>     |
+| `radius-b-xs`    | <code>border-bottom-left-radius: var(--radius-xs)<br>border-bottom-right-radius: var(--radius-xs)</code>       |
+| `radius-b-sm`    | <code>border-bottom-left-radius: var(--radius-sm)<br>border-bottom-right-radius: var(--radius-sm)</code>       |
+| `radius-b-md`    | <code>border-bottom-left-radius: var(--radius-md)<br>border-bottom-right-radius: var(--radius-md)</code>       |
+| `radius-b-lg`    | <code>border-bottom-left-radius: var(--radius-lg)<br>border-bottom-right-radius: var(--radius-lg)</code>       |
+| `radius-b-xl`    | <code>border-bottom-left-radius: var(--radius-xl)<br>border-bottom-right-radius: var(--radius-xl)</code>       |
+| `radius-b-2xl`   | <code>border-bottom-left-radius: var(--radius-2xl)<br>border-bottom-right-radius: var(--radius-2xl)</code>     |
+| `radius-b-round` | <code>border-bottom-left-radius: var(--radius-round)<br>border-bottom-right-radius: var(--radius-round)</code> |
+| `radius-b-0`     | <code>border-bottom-left-radius: 0<br>border-bottom-right-radius: 0</code>                                     |
 
 ---
 

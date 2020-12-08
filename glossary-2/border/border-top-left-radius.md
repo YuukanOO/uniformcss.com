@@ -2,22 +2,25 @@
 title: Border Top Left Radius
 property: border-top-left-radius
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius
-description: Controls the top-left corner radius
+description: Rounds the top-left corner radius
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `border-top-left-radius` utilities round the top-left corner radius.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name        | Property                                      |
+| ----------------- | --------------------------------------------- |
+| `radius-tl-2xs`   | `border-top-left-radius: var(--radius-2xs)`   |
+| `radius-tl-xs`    | `border-top-left-radius: var(--radius-xs)`    |
+| `radius-tl-sm`    | `border-top-left-radius: var(--radius-sm)`    |
+| `radius-tl-md`    | `border-top-left-radius: var(--radius-md)`    |
+| `radius-tl-lg`    | `border-top-left-radius: var(--radius-lg)`    |
+| `radius-tl-xl`    | `border-top-left-radius: var(--radius-xl)`    |
+| `radius-tl-2xl`   | `border-top-left-radius: var(--radius-2xl)`   |
+| `radius-tl-round` | `border-top-left-radius: var(--radius-round)` |
+| `radius-tl-0`     | `border-top-left-radius: 0`                   |
 
 ---
 
@@ -28,7 +31,7 @@ The following default responsive and pseudo settings.
 | Setting      | Default Setting |
 | ------------ | --------------- |
 | `responsive` | `true`          |
-| `pseudos`    | `none`          |
+| `pseudos`    | `true`          |
 
 ---
 

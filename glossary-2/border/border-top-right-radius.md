@@ -2,22 +2,25 @@
 title: Border Top Right Radius
 property: border-top-right-radius
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius
-description: Controls the top-right border radius
+description: Rounds the top-right corner radius
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `border-top-right-radius` utilities round the top-right corner radius.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name        | Property                                       |
+| ----------------- | ---------------------------------------------- |
+| `radius-tr-2xs`   | `border-top-right-radius: var(--radius-2xs)`   |
+| `radius-tr-xs`    | `border-top-right-radius: var(--radius-xs)`    |
+| `radius-tr-sm`    | `border-top-right-radius: var(--radius-sm)`    |
+| `radius-tr-md`    | `border-top-right-radius: var(--radius-md)`    |
+| `radius-tr-lg`    | `border-top-right-radius: var(--radius-lg)`    |
+| `radius-tr-xl`    | `border-top-right-radius: var(--radius-xl)`    |
+| `radius-tr-2xl`   | `border-top-right-radius: var(--radius-2xl)`   |
+| `radius-tr-round` | `border-top-right-radius: var(--radius-round)` |
+| `radius-tr-0`     | `border-top-right-radius: 0`                   |
 
 ---
 
@@ -28,7 +31,7 @@ The following default responsive and pseudo settings.
 | Setting      | Default Setting |
 | ------------ | --------------- |
 | `responsive` | `true`          |
-| `pseudos`    | `none`          |
+| `pseudos`    | `true`          |
 
 ---
 

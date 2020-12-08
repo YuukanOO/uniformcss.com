@@ -2,22 +2,25 @@
 title: Border Left Radius
 property: null
 mdn: null
-description: Controls the top-left and bottom-left corner radii
+description: Rounds the top-left and bottom-right corner radii
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `border-left-radius` utilities round the top-left and bottom-right corner radii.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name       | Property                                                                                                    |
+| ---------------- | ----------------------------------------------------------------------------------------------------------- |
+| `radius-l-2xs`   | <code>border-top-left-radius: var(--radius-2xs)<br>border-bottom-right-radius: var(--radius-2xs)</code>     |
+| `radius-l-xs`    | <code>border-top-left-radius: var(--radius-xs)<br>border-bottom-right-radius: var(--radius-xs)</code>       |
+| `radius-l-sm`    | <code>border-top-left-radius: var(--radius-sm)<br>border-bottom-right-radius: var(--radius-sm)</code>       |
+| `radius-l-md`    | <code>border-top-left-radius: var(--radius-md)<br>border-bottom-right-radius: var(--radius-md)</code>       |
+| `radius-l-lg`    | <code>border-top-left-radius: var(--radius-lg)<br>border-bottom-right-radius: var(--radius-lg)</code>       |
+| `radius-l-xl`    | <code>border-top-left-radius: var(--radius-xl)<br>border-bottom-right-radius: var(--radius-xl)</code>       |
+| `radius-l-2xl`   | <code>border-top-left-radius: var(--radius-2xl)<br>border-bottom-right-radius: var(--radius-2xl)</code>     |
+| `radius-l-round` | <code>border-top-left-radius: var(--radius-round)<br>border-bottom-right-radius: var(--radius-round)</code> |
+| `radius-l-0`     | <code>border-top-left-radius: 0<br>border-bottom-right-radius: 0</code>                                     |
 
 ---
 
@@ -32,229 +35,15 @@ The following default responsive and pseudo settings.
 
 ---
 
-## Center
+## {{ title }}
 
-Items are packed flush to each other in the center of the alignment container along the cross axis.
-
-<div class="bg-silver-200 p-5 h-200px radius-md flex flex-wrap align-content-center">
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
-  </div>
+<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
+  <!-- ... -->
 </div>
 
 ```html
-<div class="flex flex-wrap content-start">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-</div>
-```
-
----
-
-## Start
-
-Items are packed flush to each other against the start edge of the alignment container in the cross axis.
-
-<div class="bg-silver-200 p-5 h-200px radius-md flex flex-wrap align-content-start">
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
-  </div>
-</div>
-
-```html
-<div class="flex flex-wrap align-content-start">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-</div>
-```
-
----
-
-## End
-
-Items are packed flush to each other against the end edge of the alignment container in the cross axis.
-
-<div class="bg-silver-200 p-5 h-200px radius-md flex flex-wrap align-content-end">
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
-  </div>
-</div>
-
-```html
-<div class="flex flex-wrap align-content-end">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-</div>
-```
-
----
-
-## Between
-
-Items are evenly distributed within the alignment container along the cross axis.
-
-<div class="bg-silver-200 p-5 h-200px radius-md flex flex-wrap align-content-between">
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
-  </div>
-</div>
-
-```html
-<div class="flex flex-wrap align-content-between">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-</div>
-```
-
----
-
-## Around
-
-Items are evenly distributed within the alignment container along the cross axis.
-
-<div class="bg-silver-200 p-5 h-200px radius-md flex flex-wrap align-content-around">
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
-  </div>
-</div>
-
-```html
-<div class="flex flex-wrap align-content-around">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
-</div>
-```
-
----
-
-## Evenly
-
-Items are evenly distributed within the alignment container along the cross axis.
-
-<div class="bg-silver-200 p-5 h-200px radius-md flex flex-wrap align-content-evenly">
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
-  </div>
-  <div class="w-4-12 p-1">
-    <div class="flex align-items-center justify-content-center h-10 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
-  </div>
-</div>
-
-```html
-<div class="flex flex-wrap align-content-evenly">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
+<div class="TODO">
+	<!-- TODO -->
 </div>
 ```
 

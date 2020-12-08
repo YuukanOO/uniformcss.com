@@ -2,22 +2,25 @@
 title: Border Radius
 property: border-radius
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
-description: Controls the corner radii
+description: Rounds the corner radii
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `border-radius` utilities round the corner radii.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name     | Property                             |
+| -------------- | ------------------------------------ |
+| `radius-2xs`   | `border-radius: var(--radius-2xs)`   |
+| `radius-xs`    | `border-radius: var(--radius-xs)`    |
+| `radius-sm`    | `border-radius: var(--radius-sm)`    |
+| `radius-md`    | `border-radius: var(--radius-md)`    |
+| `radius-lg`    | `border-radius: var(--radius-lg)`    |
+| `radius-xl`    | `border-radius: var(--radius-xl)`    |
+| `radius-2xl`   | `border-radius: var(--radius-2xl)`   |
+| `radius-round` | `border-radius: var(--radius-round)` |
+| `radius-0`     | `border-radius: 0`                   |
 
 ---
 
