@@ -2,7 +2,7 @@
 title: Overflow X
 property: overflow-x
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls overflow-behavior for children (x-axis)
 date: 1000-01-01
 ---
 

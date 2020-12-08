@@ -2,7 +2,7 @@
 title: Overflow
 property: overflow
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls overflow-behavior for children
 date: 1000-01-01
 ---
 

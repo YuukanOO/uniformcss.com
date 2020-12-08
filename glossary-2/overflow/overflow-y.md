@@ -2,7 +2,7 @@
 title: Overflow Y
 property: overflow-y
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls overflow-behavior for children (y-axis)
 date: 1000-01-01
 ---
 
