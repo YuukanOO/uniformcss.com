@@ -2,7 +2,7 @@
 title: Padding X
 property: null
 mdn: null
-description: Creates padding on the x-axis
+description: Creates padding on the x-axis of an element
 date: 1000-01-01
 ---
 

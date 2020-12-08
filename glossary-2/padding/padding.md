@@ -2,7 +2,7 @@
 title: Padding
 property: padding
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/padding
-description: Creates padding on the x- and y-axes
+description: Creates padding on the x- and y-axes of an element
 date: 1000-01-01
 ---
 

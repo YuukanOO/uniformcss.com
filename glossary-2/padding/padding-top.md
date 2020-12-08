@@ -2,7 +2,7 @@
 title: Padding Top
 property: padding-top
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top
-description: Creates a padding on the top
+description: Creates padding on the top of an element
 date: 1000-01-01
 ---
 

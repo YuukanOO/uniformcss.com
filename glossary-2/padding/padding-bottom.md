@@ -2,7 +2,7 @@
 title: Padding Bottom
 property: padding-bottom
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom
-description: Creates a padding on the bottom
+description: Creates padding on the bottom of an element
 date: 1000-01-01
 ---
 

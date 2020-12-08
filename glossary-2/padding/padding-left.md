@@ -2,7 +2,7 @@
 title: Padding Left
 property: padding-left
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left
-description: Creates a padding on the left
+description: Creates padding on the left of an element
 date: 1000-01-01
 ---
 

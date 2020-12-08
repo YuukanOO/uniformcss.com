@@ -2,7 +2,7 @@
 title: Padding Right
 property: padding-right
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right
-description: Creates a padding on the right
+description: Creates padding on the right of an element
 date: 1000-01-01
 ---
 
