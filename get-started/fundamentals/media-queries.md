@@ -34,11 +34,11 @@ By default, there are **four** breakpoint variants available `sm`, `md`, `lg` an
 
 ```scss
 // sm
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   ...
 }
 // md
-@media (min-width: 1152px) {
+@media (min-width: 1024px) {
   ...
 }
 // lg

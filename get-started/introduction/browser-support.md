@@ -17,6 +17,10 @@ Uniform provides build scripts that uses the Autoprefixer package to automatical
 
 To learn more about browserlist queries <a class="hover.underline" href="https://github.com/browserslist/browserslist">click here</a>.
 
-```bash
-> 0.5%, last 2 versions, Firefox ESR, not dead
+```json
+"browserslist": [
+  "defaults",
+  "not IE 11",
+  "maintained node versions"
+]
 ```

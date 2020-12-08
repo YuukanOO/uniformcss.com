@@ -82,7 +82,7 @@ If you prefer to exclude reset styles from your build, simply pass the following
 ```scss
 @use "uniform" as * with (
   $config: (
-    excludes: (reset)
+    excludes: (default-reset)
   )
 );
 ```
@@ -196,7 +196,7 @@ If you prefer to exclude starter styles from your build, simply pass the followi
 ```scss
 @use "uniform" as * with (
   $config: (
-    excludes: (starter)
+    excludes: (default-starter)
   )
 );
 ```

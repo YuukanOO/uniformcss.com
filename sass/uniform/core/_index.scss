@@ -38,8 +38,8 @@ $default-config: (
   include-wrapper-module: true,
 
   screens: (
-    sm: 1024px,
-    md: 1152px,
+    sm: 768px,
+    md: 1024px,
     lg: 1280px,
     xl: 1536px,
   ),
@@ -383,15 +383,16 @@ $default-config: (
     looser: 2.25,
     loosest: 2.5,
 
-    100: 1.1,
-    200: 1.2,
-    300: 1.3,
-    400: 1.4,
-    500: 1.5,
-    600: 1.6,
-    700: 1.7,
-    800: 1.8,
-    900: 1.9
+    0: 1,
+    1: 1.1,
+    2: 1.2,
+    3: 1.3,
+    4: 1.4,
+    5: 1.5,
+    6: 1.6,
+    7: 1.7,
+    8: 1.8,
+    9: 1.9
   ),
 
   trackings: (
@@ -403,27 +404,25 @@ $default-config: (
     looser: 1.05em,
     loosest: 1.075em,
 
-    n100: -1em,
-    n90: -0.09em,
-    n80: -0.08em,
-    n70: -0.07em,
-    n60: -0.06em,
-    n50: -0.05em,
-    n40: -0.04em,
-    n30: -0.03em,
-    n20: -0.02em,
-    n10: -0.01em,
+    n9: -0.09em,
+    n8: -0.08em,
+    n7: -0.07em,
+    n6: -0.06em,
+    n5: -0.05em,
+    n4: -0.04em,
+    n3: -0.03em,
+    n2: -0.02em,
+    n1: -0.01em,
     0: 0,
-    10: 0.01em,
-    20: 0.02em,
-    30: 0.03em,
-    40: 0.04em,
-    50: 0.05em,
-    60: 0.06em,
-    70: 0.07em,
-    80: 0.08em,
-    90: 0.09em,
-    100: 0.1em,
+    1: 0.01em,
+    2: 0.02em,
+    3: 0.03em,
+    4: 0.04em,
+    5: 0.05em,
+    6: 0.06em,
+    7: 0.07em,
+    8: 0.08em,
+    9: 0.09em,
   ),
 
   radiuses: (
@@ -634,7 +633,7 @@ $var-trackings: variablize-map($trackings, tracking);
 
 
 
-// FETCH FUNCTIONS
+// HELPER FUNCTIONS
 // ============================================================
 
 // SCREEN FUNCTIONS
@@ -651,8 +650,21 @@ $var-trackings: variablize-map($trackings, tracking);
   @return $result;
 }
 
-
 // COLOR FUNCTIONS
+@function gradient($gradient) {
+  @if (map.get($gradients, $gradient)) {
+    $result: ();
+    $result: map.get($gradients, $gradient);
+    @return $result;
+  } @else {
+    @error "[#{$gradient}] does not exist";
+  }
+}
+
+@function gradients() {
+  @return $gradients;
+}
+
 @function brighten-levels() {
   @return $brighten-levels;
 }
@@ -796,97 +808,6 @@ $var-trackings: variablize-map($trackings, tracking);
   @return $result;
 }
 
-@function gradients() {
-  @return $gradients;
-}
-
-
-// RADIUS FUNCTIONS
-@function radiuses() {
-  @return $var-radiuses;
-}
-
-// SHADOW FUNCTIONS
-@function shadows() {
-  @return $var-shadows;
-}
-
-// SIZE FUNCTIONS
-@function positive-sizes($limit: null) {
-  @if ($limit != null) {
-    $positive-sizes: ();
-
-    @for $i from 1 through $limit {
-      $map: list.nth($var-positive-sizes, $i);
-      $key: list.nth($map, 1);
-      $value: list.nth($map, 2);
-      $sizes-map: (
-        $key: $value
-      );
-      $positive-sizes: map.merge($positive-sizes, $sizes-map);
-    }
-
-    @return $positive-sizes;
-  } @else {
-    @return $var-positive-sizes;
-  }
-}
-
-@function negative-sizes($limit: null) {
-  @if ($limit != null) {
-    $negative-sizes: ();
-
-    @for $i from 1 through $limit {
-      $map: list.nth($var-negative-sizes, $i);
-      $key: list.nth($map, 1);
-      $value: list.nth($map, 2);
-      $sizes-map: (
-        $key: $value
-      );
-      $negative-sizes: map.merge($negative-sizes, $sizes-map);
-    }
-
-    @return $negative-sizes;
-  } @else {
-    @return $var-negative-sizes;
-  }
-}
-
-@function sizes($limit: null) {
-  @if ($limit != null) {
-    $positive-sizes: positive-sizes($limit);
-    $negative-sizes: negative-sizes($limit);
-    $sizes: map.merge($positive-sizes, $negative-sizes);
-    @return $sizes;
-  } @else {
-    @return $var-sizes;
-  }
-}
-
-// TYPOGRAPHY FUNCTIONS
-@function font-families() {
-  @return $var-font-families;
-}
-
-@function font-sizes() {
-  @return $var-font-sizes;
-}
-
-@function font-weights() {
-  @return $var-font-weights;
-}
-
-@function leadings() {
-  @return $var-leadings;
-}
-
-@function trackings() {
-  @return $var-trackings;
-}
-
-// HELPER FUNCTIONS
-// ============================================================
-
 @function fill($key, $param-sat: base, $param-ltn: base) {
 
   $result: null;
@@ -938,6 +859,77 @@ $var-trackings: variablize-map($trackings, tracking);
   @return $result;
 }
 
+// RADIUS FUNCTIONS
+@function radius($radius) {
+  @if (map.get($radiuses, $radius)) {
+    $result: ();
+    $result: map.get($var-radiuses, $radius);
+    @return $result;
+  } @else {
+    @error "[#{$radius}] does not exist";
+  }
+}
+
+@function radiuses() {
+  @return $var-radiuses;
+}
+
+// SHADOW FUNCTIONS
+@function shadow($shadow) {
+  @if (map.get($shadows, $shadow)) {
+    $result: ();
+    $result: map.get($var-shadows, $shadow);
+    @return $result;
+  } @else {
+    @error "[#{$shadow}] does not exist";
+  }
+}
+
+@function shadows() {
+  @return $var-shadows;
+}
+
+// SIZE FUNCTIONS
+@function positive-sizes($limit: null) {
+  @if ($limit != null) {
+    $positive-sizes: ();
+
+    @for $i from 1 through $limit {
+      $map: list.nth($var-positive-sizes, $i);
+      $key: list.nth($map, 1);
+      $value: list.nth($map, 2);
+      $sizes-map: (
+        $key: $value
+      );
+      $positive-sizes: map.merge($positive-sizes, $sizes-map);
+    }
+
+    @return $positive-sizes;
+  } @else {
+    @return $var-positive-sizes;
+  }
+}
+
+@function negative-sizes($limit: null) {
+  @if ($limit != null) {
+    $negative-sizes: ();
+
+    @for $i from 1 through $limit {
+      $map: list.nth($var-negative-sizes, $i);
+      $key: list.nth($map, 1);
+      $value: list.nth($map, 2);
+      $sizes-map: (
+        $key: $value
+      );
+      $negative-sizes: map.merge($negative-sizes, $sizes-map);
+    }
+
+    @return $negative-sizes;
+  } @else {
+    @return $var-negative-sizes;
+  }
+}
+
 @function size($size, $sizes...) {
   $result: ();
   @if (map.has-key($merged-sizes, $size)) {
@@ -957,6 +949,18 @@ $var-trackings: variablize-map($trackings, tracking);
   @return $result;
 }
 
+@function sizes($limit: null) {
+  @if ($limit != null) {
+    $positive-sizes: positive-sizes($limit);
+    $negative-sizes: negative-sizes($limit);
+    $sizes: map.merge($positive-sizes, $negative-sizes);
+    @return $sizes;
+  } @else {
+    @return $var-sizes;
+  }
+}
+
+// TYPOGRAPHY FUNCTIONS
 @function font-family($font-family) {
   @if (map.get($font-families, $font-family)) {
     $result: ();
@@ -965,6 +969,10 @@ $var-trackings: variablize-map($trackings, tracking);
   } @else {
     @error "[#{$font-family}] does not exist";
   }
+}
+
+@function font-families() {
+  @return $var-font-families;
 }
 
 @function font-size($font-size) {
@@ -977,6 +985,10 @@ $var-trackings: variablize-map($trackings, tracking);
   }
 }
 
+@function font-sizes() {
+  @return $var-font-sizes;
+}
+
 @function font-weight($font-weight) {
   @if (map.get($font-weights, $font-weight)) {
     $result: ();
@@ -985,6 +997,10 @@ $var-trackings: variablize-map($trackings, tracking);
   } @else {
     @error "[#{$font-weight}] does not exist";
   }
+}
+
+@function font-weights() {
+  @return $var-font-weights;
 }
 
 @function leading($leading) {
@@ -997,6 +1013,10 @@ $var-trackings: variablize-map($trackings, tracking);
   }
 }
 
+@function leadings() {
+  @return $var-leadings;
+}
+
 @function tracking($tracking) {
   @if (map.get($trackings, $tracking)) {
     $result: ();
@@ -1007,34 +1027,11 @@ $var-trackings: variablize-map($trackings, tracking);
   }
 }
 
-@function shadow($shadow) {
-  @if (map.get($shadows, $shadow)) {
-    $result: ();
-    $result: map.get($var-shadows, $shadow);
-    @return $result;
-  } @else {
-    @error "[#{$shadow}] does not exist";
-  }
+@function trackings() {
+  @return $var-trackings;
 }
 
-@function radius($radius) {
-  @if (map.get($radiuses, $radius)) {
-    $result: ();
-    $result: map.get($var-radiuses, $radius);
-    @return $result;
-  } @else {
-    @error "[#{$radius}] does not exist";
-  }
-}
-
-// HELPER MIXINS
-// ============================================================
-
-@mixin screen($screen) {
-  @media (min-width: screen($screen)) {
-    @content; 
-  }
-}
+// EXPERIMENTAL HELPER FUNCTIONS (FUTURE)
 
 @function escape($any) {
   $escape-chars: (
@@ -1050,7 +1047,7 @@ $var-trackings: variablize-map($trackings, tracking);
     "\*",
     "\+",
     "\,",
-    "\-",
+    // "\-",
     "\.",
     "\/",
     "\:",
@@ -1071,53 +1068,55 @@ $var-trackings: variablize-map($trackings, tracking);
     "\~",
   );
 
-	$str: "" + $any;
-	$esc-str: "";
-	@for $x from 1 through string.length($str) {
-		$ch: string.slice($str, $x, $x);
-		@if list.index($escape-chars, $ch) {
+	$string: "" + $any;
+	$escaped-string: "";
+	@for $x from 1 through string.length($string) {
+		$character: string.slice($string, $x, $x);
+		@if list.index($escape-chars, $character) {
 			// NOTE: `"\\..."` must be quoted.
-			$esc-str: $esc-str + "\\"+ $ch;
+			$escaped-string: $escaped-string + "\\"+ $character;
 		} @else {
-			$esc-str: $esc-str + $ch;
+			$escaped-string: $escaped-string + $character;
 		}
 	}
-	@return $esc-str;
+	@return $escaped-string;
 }
 
-@function str-split($string, $separator) {
+@function string-split($string, $separator) {
   // empty array/list
-  $split-arr: ();
+  $split-array: ();
   // first index of separator in string
-  $index : str-index($string, $separator);
+  $index : string.index($string, $separator);
   // loop through string
   @while $index != null {
-      // get the substring from the first character to the separator
-      $item: str-slice($string, 1, $index - 1);
-      // push item to array
-      $split-arr: append($split-arr, $item);
-      // remove item and separator from string
-      $string: str-slice($string, $index + 1);
-      // find new index of separator
-      $index : str-index($string, $separator);
+    // get the substring from the first character to the separator
+    $item: string.slice($string, 1, $index - 1);
+    // push item to array
+    $split-array: append($split-array, $item);
+    // remove item and separator from string
+    $string: string.slice($string, $index + 1);
+    // find new index of separator
+    $index : string.index($string, $separator);
   }
   // add the remaining string to list (the last item)
-  $split-arr: append($split-arr, $string);
+  $split-array: append($split-array, $string);
 
-  @return $split-arr;
+  @return $split-array;
 }
 
-// $values: "10px 20px 30px, 20px 30px 40px";
-// $list: ();
+// HELPER MIXINS
+// ============================================================
 
-// $split-values: str-split($values, ", ");
-// @each $value in $split-values {
-//   $list: append($list, str-split($value, " "));
-// }
+@mixin screen($screen) {
+  @media (min-width: screen($screen)) {
+    @content; 
+  }
+}
 
-@mixin this($utilities...) {
+@mixin apply($utilities...) {
   @each $utility in $utilities {
-    @extend %#{$utility};
+    $escaped-utility: escape($utility);
+    @extend %#{$escaped-utility};
   }
 }
 
