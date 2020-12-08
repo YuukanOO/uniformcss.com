@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: user-select;
-$keyword: select;
+$shorthand: select;
 $responsive: false;
 $responsive-pseudos: false;
 
@@ -21,7 +21,7 @@ $pseudos: ();
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

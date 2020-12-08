@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: pointer-events;
-$keyword: pointer-events;
+$shorthand: pointer-events;
 $responsive: false;
 $responsive-pseudos: false;
 
@@ -19,7 +19,7 @@ $pseudos: ();
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

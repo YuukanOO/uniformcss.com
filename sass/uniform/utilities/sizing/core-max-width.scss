@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: max-width; 
-$keyword: max-w;
+$shorthand: max-w;
 $responsive: true;
 $responsive-pseudos: false;
 
@@ -46,7 +46,7 @@ $pseudos: ();
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

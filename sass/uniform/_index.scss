@@ -274,7 +274,7 @@ $config: core.$all-config;
       // NON RESPONSIVE
       // loop through utilities
       @each $utility, $utility-value in $utilities {
-        $keyword: map.get($utility-value, keyword);
+        $shorthand: map.get($utility-value, shorthand);
         $responsive: map.get($utility-value, responsive);
         $responsive-pseudos: map.get($utility-value, responsive-pseudos);
 
@@ -309,7 +309,7 @@ $config: core.$all-config;
           @each $merged-variant, $merged-variant-value in $merged-variants {
 
             // compile and define the final class name
-            $compiled-class-name: #{$prefix}#{if($keyword == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $keyword, $keyword + $delimiter + '' + $merged-variant ) )};
+            $compiled-class-name: #{$prefix}#{if($shorthand == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $shorthand, $shorthand + $delimiter + '' + $merged-variant ) )};
 
             %#{$compiled-class-name} {
               @each $custom-property, $custom-property-value in $custom-properties {
@@ -362,7 +362,7 @@ $config: core.$all-config;
           @each $merged-variant, $merged-variant-value in $merged-variants {
 
             // compile and define the final class name
-            $compiled-class-name: #{$prefix}#{if($keyword == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $keyword, $keyword + $delimiter + '' + $merged-variant ) )};
+            $compiled-class-name: #{$prefix}#{if($shorthand == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $shorthand, $shorthand + $delimiter + '' + $merged-variant ) )};
 
             %#{$compiled-class-name} {
               @each $custom-property, $custom-property-value in $custom-properties {
@@ -419,7 +419,7 @@ $config: core.$all-config;
         @media (min-width: $screen-value) {  
           // loop through utilities
           @each $utility, $utility-value in $utilities {
-            $keyword: map.get($utility-value, keyword);
+            $shorthand: map.get($utility-value, shorthand);
             $responsive: map.get($utility-value, responsive);
             $responsive-pseudos: map.get($utility-value, responsive-pseudos);
 
@@ -455,7 +455,7 @@ $config: core.$all-config;
                 @each $merged-variant, $merged-variant-value in $merged-variants {
 
                   // compile and define the final class name
-                  $compiled-class-name: #{$prefix}#{if($keyword == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $keyword, $keyword + $delimiter + '' + $merged-variant ) )};
+                  $compiled-class-name: #{$prefix}#{if($shorthand == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $shorthand, $shorthand + $delimiter + '' + $merged-variant ) )};
 
                   %#{$screen}#{$screen-delimiter}#{$compiled-class-name} {
                     @each $custom-property, $custom-property-value in $custom-properties {
@@ -511,7 +511,7 @@ $config: core.$all-config;
               @each $merged-variant, $merged-variant-value in $merged-variants {
 
                 // compile and define the final class name
-                $compiled-class-name: #{$prefix}#{if($keyword == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $keyword, $keyword + $delimiter + '' + $merged-variant ) )};
+                $compiled-class-name: #{$prefix}#{if($shorthand == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $shorthand, $shorthand + $delimiter + '' + $merged-variant ) )};
 
                 %#{$screen}#{$screen-delimiter}#{$compiled-class-name} {
                   @each $custom-property, $custom-property-value in $custom-properties {
@@ -573,7 +573,7 @@ $config: core.$all-config;
       // NON RESPONSIVE
       // loop through utilities
       @each $utility, $utility-value in $utilities {
-        $keyword: map.get($utility-value, keyword);
+        $shorthand: map.get($utility-value, shorthand);
         $responsive: map.get($utility-value, responsive);
         $responsive-pseudos: map.get($utility-value, responsive-pseudos);
 
@@ -608,7 +608,7 @@ $config: core.$all-config;
           @each $merged-variant, $merged-variant-value in $merged-variants {
 
             // compile and define the final class name
-            $compiled-class-name: #{$prefix}#{if($keyword == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $keyword, $keyword + $delimiter + '' + $merged-variant ) )};
+            $compiled-class-name: #{$prefix}#{if($shorthand == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $shorthand, $shorthand + $delimiter + '' + $merged-variant ) )};
             
             @if ($placeholders == true) {
               %#{$compiled-class-name} {
@@ -670,7 +670,7 @@ $config: core.$all-config;
           @each $merged-variant, $merged-variant-value in $merged-variants {
 
             // compile and define the final class name
-            $compiled-class-name: #{$prefix}#{if($keyword == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $keyword, $keyword + $delimiter + '' + $merged-variant ) )};
+            $compiled-class-name: #{$prefix}#{if($shorthand == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $shorthand, $shorthand + $delimiter + '' + $merged-variant ) )};
             @if ($placeholders == true) {
               %#{$compiled-class-name} {
                 @each $custom-property, $custom-property-value in $custom-properties {
@@ -734,7 +734,7 @@ $config: core.$all-config;
         @media (min-width: $screen-value) {  
           // loop through utilities
           @each $utility, $utility-value in $utilities {
-            $keyword: map.get($utility-value, keyword);
+            $shorthand: map.get($utility-value, shorthand);
             $responsive: map.get($utility-value, responsive);
             $responsive-pseudos: map.get($utility-value, responsive-pseudos);
 
@@ -770,7 +770,7 @@ $config: core.$all-config;
                 @each $merged-variant, $merged-variant-value in $merged-variants {
 
                   // compile and define the final class name
-                  $compiled-class-name: #{$prefix}#{if($keyword == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $keyword, $keyword + $delimiter + '' + $merged-variant ) )};
+                  $compiled-class-name: #{$prefix}#{if($shorthand == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $shorthand, $shorthand + $delimiter + '' + $merged-variant ) )};
 
                   @if ($placeholders == true) {
                     %#{$screen}#{$screen-delimiter}#{$compiled-class-name} {
@@ -834,7 +834,7 @@ $config: core.$all-config;
               @each $merged-variant, $merged-variant-value in $merged-variants {
 
                 // compile and define the final class name
-                $compiled-class-name: #{$prefix}#{if($keyword == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $keyword, $keyword + $delimiter + '' + $merged-variant ) )};
+                $compiled-class-name: #{$prefix}#{if($shorthand == null, if($merged-variant == null, null, $merged-variant), if($merged-variant == null, $shorthand, $shorthand + $delimiter + '' + $merged-variant ) )};
                 @if ($placeholders == true) {
                   %#{$screen}#{$screen-delimiter}#{$compiled-class-name} {
                     @each $custom-property, $custom-property-value in $custom-properties {

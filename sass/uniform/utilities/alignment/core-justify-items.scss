@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: justify-items;
-$keyword: justify-items;
+$shorthand: justify-items;
 $responsive: true;
 $responsive-pseudos: false;
 
@@ -22,7 +22,7 @@ $pseudos: ();
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

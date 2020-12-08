@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: padding-bottom;
-$keyword: pb;
+$shorthand: pb;
 $responsive: true;
 $responsive-pseudos: false;
 
@@ -23,7 +23,7 @@ $pseudos: (first, last);
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

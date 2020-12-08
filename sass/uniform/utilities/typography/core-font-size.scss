@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: font-size;
-$keyword: font;
+$shorthand: font;
 $responsive: true;
 $responsive-pseudos: false;
 
@@ -18,7 +18,7 @@ $pseudos: ();
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

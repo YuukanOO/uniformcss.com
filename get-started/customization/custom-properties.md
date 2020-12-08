@@ -24,7 +24,7 @@ Use the following boilerplate template to add in details about the CSS property 
 @use "uniform/_core" as *;
 @use "sass:map";
 
-$keyword: customProperty !default;
+$shorthand: customProperty !default;
 $responsive: false !default;
 $responsive-pseudos: false !default;
 
@@ -44,7 +44,7 @@ $pseudos: () !default;
 $final-pseudos: list.join($core-pseudos, $pseudos) !default;
 
 @include constructor(
-  $keyword,
+  $shorthand,
   $responsive,
   $responsive-pseudos,
   $properties,

@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: transition-duration;
-$keyword: duration;
+$shorthand: duration;
 $responsive: false;
 $responsive-pseudos: false;
 
@@ -27,7 +27,7 @@ $pseudos: ();
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

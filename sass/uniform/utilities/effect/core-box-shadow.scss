@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: box-shadow;
-$keyword: shadow;
+$shorthand: shadow;
 $responsive: false;
 $responsive-pseudos: false;
 
@@ -23,7 +23,7 @@ $pseudos: (hover, active, focus);
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: margin-y;
-$keyword: my;
+$shorthand: my;
 $responsive: true;
 $responsive-pseudos: false;
 
@@ -24,7 +24,7 @@ $pseudos: ();
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

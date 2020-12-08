@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: border-left-width;
-$keyword: border-l;
+$shorthand: border-l;
 $responsive: true;
 $responsive-pseudos: false;
 
@@ -23,7 +23,7 @@ $pseudos: (first);
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

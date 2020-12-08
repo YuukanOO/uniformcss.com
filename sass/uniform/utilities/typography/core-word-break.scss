@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: word-break;
-$keyword: wordbreak;
+$shorthand: wordbreak;
 $responsive: false;
 $responsive-pseudos: false;
 
@@ -19,7 +19,7 @@ $pseudos: ();
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

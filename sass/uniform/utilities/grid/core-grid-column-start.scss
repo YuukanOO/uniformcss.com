@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: grid-column-start;
-$keyword: col-start;
+$shorthand: col-start;
 $responsive: true;
 $responsive-pseudos: false;
 
@@ -31,7 +31,7 @@ $pseudos: ();
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

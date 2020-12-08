@@ -7,7 +7,7 @@ date: 1000-01-04
 
 ## Pseudo Interactions
 
-Pseudo interactions such as hover can be achieved by appending the pseudo variant to the beginning of your class name e.g. `<pseudo>.keyword-variant`.
+Pseudo interactions such as hover can be achieved by appending the pseudo variant to the beginning of your class name e.g. `<pseudo>.shorthand-variant`.
 
 <section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
   <button class="p-12 px-18 bg-primary-500 hover.bg-primary-600 transition-100 cursor-pointer font-bold text-white radius-sm">

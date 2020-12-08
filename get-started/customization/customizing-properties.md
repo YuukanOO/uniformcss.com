@@ -11,7 +11,7 @@ You can customize almost every aspect of a CSS property. To customize a CSS prop
 
 ```scss
 @use "uniform" as * with (
-  $background-color-keyword: bg,
+  $background-color-shorthand: bg,
   $background-color-responsive: true,
   $background-color-responsive-pseudos: false,
   $background-color-properties: (background-color),
@@ -24,14 +24,14 @@ You can customize almost every aspect of a CSS property. To customize a CSS prop
 
 ---
 
-### Changing the Keyword
+### Changing the shorthand
 
-The `$<property>-keyword` variable sets the class name that will be used to represent this property.
+The `$<property>-shorthand` variable sets the class name that will be used to represent this property.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
-  $background-color-keyword: bg
+  $background-color-shorthand: bg
 );
 ```
 
@@ -45,14 +45,14 @@ The `$<property>-keyword` variable sets the class name that will be used to repr
 
 ---
 
-### Exempt Keywords
+### Exempt shorthands
 
-If the keyword variable is set as `exempt` then the variant name will be used as the class name to define the property.
+If the shorthand variable is set as `exempt` then the variant name will be used as the class name to define the property.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
-  $display-keyword: exempt
+  $display-shorthand: exempt
 );
 ```
 
@@ -207,12 +207,12 @@ By default, adding new variants to the property variant map is an additive proce
 
 ### Exempt Variants
 
-If the variant key is set as `exempt` then the keyword will be used to define both the class name and variant.
+If the variant key is set as `exempt` then the shorthand will be used to define both the class name and variant.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
-  $flex-grow-keyword: flex-grow,
+  $flex-grow-shorthand: flex-grow,
   $flex-grow-variants: (
     exempt: 1,
     0: 0

@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: background-position;
-$keyword: bg-position;
+$shorthand: bg-position;
 $responsive: true;
 $responsive-pseudos: false;
 
@@ -26,7 +26,7 @@ $pseudos: ();
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

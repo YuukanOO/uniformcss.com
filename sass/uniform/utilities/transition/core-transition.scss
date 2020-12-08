@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: transition; 
-$keyword: transition;
+$shorthand: transition;
 $responsive: false;
 $responsive-pseudos: false;
 
@@ -107,7 +107,7 @@ $pseudos: ();
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

@@ -542,12 +542,12 @@ $gradients: map.get($all-config, gradients);
 }
 
 // VARIABLIZE MAP FUNCTION (CSS CUSTOM PROPERTIES)
-@function variablize-map($map, $keyword) {
+@function variablize-map($map, $shorthand) {
   $variablized-map: ();
   @each $key, $value in $map {
-    $delimiter: if($keyword == null, null, '-');
+    $delimiter: if($shorthand == null, null, '-');
     $map: (
-      $key: var(--#{$keyword}#{$delimiter}#{$key}),
+      $key: var(--#{$shorthand}#{$delimiter}#{$key}),
     );
     $variablized-map: map.merge($variablized-map, $map);
   }

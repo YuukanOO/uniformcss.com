@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: border-right-radius;
-$keyword: radius-r;
+$shorthand: radius-r;
 $responsive: true;
 $responsive-pseudos: false;
 
@@ -23,7 +23,7 @@ $pseudos: (last);
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,

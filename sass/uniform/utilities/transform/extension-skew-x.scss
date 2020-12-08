@@ -2,7 +2,7 @@
 @use "sass:map";
 
 $name: skew-x;
-$keyword: skew-x;
+$shorthand: skew-x;
 $responsive: false;
 $responsive-pseudos: false;
 
@@ -24,7 +24,7 @@ $pseudos: (hover, group-hover);
 $config: (
   utilities: (
     $name: (
-      keyword: $keyword,
+      shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
       properties: $properties,
