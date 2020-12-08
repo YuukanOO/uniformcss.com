@@ -1,5 +1,5 @@
 ---
-title: Margin Bottom
+title: Margin Left
 property: margin-left
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left
 description: Creates a margin on the left-side of an element
