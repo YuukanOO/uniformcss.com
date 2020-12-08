@@ -1,7 +1,7 @@
 ---
 title: Margin
-property: null
-mdn: null
+property: margin
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/margin
 description: Creates margins on the x- and y-axes
 date: 1000-01-01
 ---
@@ -120,4 +120,8 @@ The following default responsive and pseudo settings.
 </div>
 ```
 
-<!-- No MDN docs -->
+---
+
+## Resources
+
+To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
