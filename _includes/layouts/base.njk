@@ -60,7 +60,16 @@
 <script>
 
 barba.init({
-  // ...
+  transitions: [{
+    name: 'default-transition',
+    leave() {
+      // create your stunning leave animation here
+    },
+    enter() {
+      // create your amazing enter animation here
+      window.scrollTo(0, 0);   
+    }
+  }]
 })
 
 $(document).ready(function () {

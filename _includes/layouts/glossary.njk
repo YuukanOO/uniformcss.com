@@ -2,442 +2,213 @@
 layout: layouts/base.njk
 ---
 
-<div class="fixed t-0 l-0 w-100p z-n1 bg-hero">
-  <div class="min-h-27 h-100vh">
-
-  </div>
-</div>
-
 {% include "partials/nav.njk" %}
-
-<section class="bg-silver-100">
-  <div class="wrapper">
-    <div class="py-10">
-      <h1 class="flex align-items-start relative font-5xl font-bold mb-4 tracking-tight">
-        {{ title }} <span class="inline-flex align-items-center ml-2 bg-secondary-a text-white uppercase leading-0 tracking-2 font-2xs font-bold radius-xs px-1 py-1 "><span class="px-2px">New</span></span>
-      </h1>
-      <p class="font-md text-black">
-        The Castle mobile SDKs automatically capture device information.
-      </p>
-      
-    </div>
-  </div>
-</section>
 
 <section>
   <div class="wrapper">
-    <div class="grid grid-cols-1 sm.grid-cols-6 lg.grid-cols-12 gap-14">
-      <aside class="hidden sm.block col-1 sm.col-2 lg.col-3">
-        <div class="t-0 sticky h-100vh py-16 overflow-auto">
+    <div class="flex">
+      <aside class="hidden sm.block w-224 flex-none">
+        <div class="t-0 sticky h-100vh overflow-auto py-64">
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
               Alignment
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.alignment -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.alignment -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
-
             </nav>
           </div>
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
               Appearance
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.appearance -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.appearance -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
-
             </nav>
           </div>
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
               Background
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.background -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.background -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
-
             </nav>
           </div>
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
               Border
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.border -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.border -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
-
             </nav>
           </div>
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
               Composition
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.composition -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.composition -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
-
-            </nav>
-          </div>
-          
-
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
-              Overflow
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.overflow -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
-              {%- endfor -%}
-
             </nav>
           </div>
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
               Effect
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.effect -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.effect -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
-
             </nav>
           </div>
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
-              Sizing
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.sizing -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
-              {%- endfor -%}
-
-            </nav>
-          </div>
-
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
-              Position
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.position -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
-              {%- endfor -%}
-
-            </nav>
-          </div>
-
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
-              Margin
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.margin -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
-              {%- endfor -%}
-
-            </nav>
-          </div>
-
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
-              Padding
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.padding -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
-              {%- endfor -%}
-
-            </nav>
-          </div>
-
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
-              Typography
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.typography -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
-              {%- endfor -%}
-
-            </nav>
-          </div>
-
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
-              Grid
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.grid -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
-              {%- endfor -%}
-
-            </nav>
-          </div>
-
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
               Flexbox
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.flexbox -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.flexbox -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
-
             </nav>
           </div>
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
               Gap
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.gap -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.gap -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
-
             </nav>
           </div>
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
-              Multi-Column
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.multiColumn -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
+              Grid
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.grid -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
-
             </nav>
           </div>
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
-              Transform
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.transform -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
-              {%- endfor -%}
-
-            </nav>
-          </div>
-
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
-              Transition
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.transition -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
-              {%- endfor -%}
-
-            </nav>
-          </div>
-
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
               Interactive
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.interactive -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.interactive -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
-
             </nav>
           </div>
 
-          <div class="mb-12 last.mb-0 pb-12 border-b-1 last.border-b-0 border-silver-300">
-            <div class="font-sm font-bold mb-4">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
+              Margin
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.margin -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
+              Padding
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.padding -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
+              Overflow
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.overflow -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
               SVG
-            </div>
-            <nav class="flex flex-col">
-
-              {%- for property in properties.svg -%}
-                <a href="#{{ property.title }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ property.title }}</a>
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.svg -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
               {%- endfor -%}
-
             </nav>
           </div>
 
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
+              Typography
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.typography -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
 
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
+              Transform
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.transform -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-silver-300">
+            <h6 class="font-sm font-bold mb-16">
+              Transition
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.transition -%}
+                <a href="{{ post.url }}" class="font-sm transition-100 transform translate-x-0 {% if post.url == page.url %}text-black{% else %}text-gray-100 hover.translate-x-1{% endif %} leading-looser hover.text-black">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
 
         </div>
       </aside>
 
-      <div class="col-1 sm.col-4 lg.col-9">
-        <div class="sticky t-0 block sm.hidden p-6 bg-blueberry-100 radius-t-md">
+      <div class="flex-auto">
+        <div class="block sm.hidden p-24">
           <div class="select">
-            <select class="js-glossary-select-url">
-              <optgroup label="Alignment">
-                {%- for property in properties.alignment -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Appearance">
-                {%- for property in properties.appearance -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Background">
-                {%- for property in properties.background -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Border">
-                {%- for property in properties.border -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Composition">
-                {%- for property in properties.composition -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Overflow">
-                {%- for property in properties.overflow -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Effect">
-                {%- for property in properties.effect -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Sizing">
-                {%- for property in properties.sizing -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Position">
-                {%- for property in properties.position -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Margin">
-                {%- for property in properties.margin -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Padding">
-                {%- for property in properties.padding -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Typography">
-                {%- for property in properties.typography -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Grid">
-                {%- for property in properties.grid -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Flexbox">
-                {%- for property in properties.flexbox -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Gap">
-                {%- for property in properties.gap -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Multi-Column">
-                {%- for property in properties.multiColumn -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Transform">
-                {%- for property in properties.transform -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Transition">
-                {%- for property in properties.transition -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Interactive">
-                {%- for property in properties.interactive -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="SVG">
-                {%- for property in properties.svg -%}
-                  <option value="{{ property.title | slug }}"
-                    {% if property.url == page.url %}selected{% endif %}
-                  >{{ property.title }}</option>
+            <select class="js-select-url">
+              <optgroup label="Introduction">
+                {%- for post in collections.introduction -%}
+                  <option value="{{ post.data.title | slug }}"
+                    {% if post.url == page.url %}selected{% endif %}
+                  >{{ post.data.title }}</option>
                 {%- endfor -%}
               </optgroup>
             </select>
@@ -446,1451 +217,44 @@ layout: layouts/base.njk
             </div>
           </div>
         </div>
-
-        <div>
-          {%- for property in properties.alignment -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
+        
+        <div class="grid grid-cols-1 sm.grid-cols-12 lg.gap-0" data-barba="container" data-barba-namespace="glossary">
+          <div class="col-9 sm.px-64 py-64">
+            <h1 class="flex align-items-start relative font-6xl font-bold mb-20 tracking-tight">
+              {{ title | safe }}
+            </h1>
+            <p class="font-xl text-black pb-64 border-b-1 border-silver-300 mb-64">
+              {{ description | safe }}
+            </p>
+            <div class="markdown markdown-glossary">
+              {{ content | safe }}
+            </div>
+          </div>
+          <div class="relative hidden lg.block lg.col-3">
+            <div class="sticky flex justify-content-end pt-64 t-0">
+              <div class="w-100p">
+                <a class="flex align-items-center radius-md w-100p p-24 py-16 bg-primary-700 hover.bg-primary-800 transition-200 text-white hover.text-white mb-20 last.mb-0" data-barba-prevent>
+                  <i class="fab fa-github font-2xl mr-18"></i>
+                  <div>
+                    <h6 class="font-sm font-bold mb-4 text-white">
+                      Found an error?
+                    </h6>
+                    <p class="font-xs text-white opacity-70">Please submit your finding</p>
                   </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
+                </a>
+                <div class="radius-md w-100p p-24 bg-silver-100 mb-20 last.mb-0">
+                  <h6 class="font-sm font-bold mb-16">
+                    On this page
+                  </h6>
+                  {{ content | toc | safe }}
                 </div>
+
+                
               </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.appearance -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.background -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.border -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.composition -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.overflow -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.effect -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.sizing -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.position -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.margin -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.padding -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.typography -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.grid -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.flexbox -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.gap -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.multiColumn -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.transform -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.transition -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.interactive -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
-
-          {%- for property in properties.svg -%}
-            <article class="mb-8 last.mb-0">
-              <div class="markdown">
-                <h5 id="{{ property.title | safe }}" class="flex flex-col sm.flex-row align-items-center justify-content-between font-2xl md.font-2xl font-bold mb-6 sm.mb-4 pt-7 sm.pt-16">
-                  <div class="group mb-4 sm.mb-0 tracking-tight">{{ property.title | safe }}<a href="#{{ property.title | safe }}" class="hidden group-hover.inline-block ml-2 font-500 color-secondary-500">#</a> </div>
-
-                  {% if property.responsive == true%}
-                    <div class="flex align-items-center font-sm">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-room text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check"><polyline points="20 6 9 17 4 12"></polyline></svg>                        
-                      </div>
-                      Responsive
-                    </div>
-                  {% else %}
-                    <div class="flex align-items-center font-sm text-silver-300">
-                      <div class="flex align-items-center justify-content-center font-xs font-bold leading-0 w-5 h-5 radius-round bg-silver-300 text-white mr-2">
-                        <svg class="color-current w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>                
-                      </div>
-                      Not Responsive
-                    </div>
-                  {% endif %}
-                </h5>
-
-                <div class="h-px bg-silver-200 mb-6 sm.mb-3"></div>
-
-                <div class="mb-5 flex align-items-center">
-                  <div class="mr-2 font-bold font-xs text-silver-500 tracking-2">
-                    PSEUDOS
-                  </div>
-                  {%- for pseudo in property.pseudos -%}
-                    {% if pseudo == "none" %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-silver-300 text-gray-400 mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% else %}
-                      <div class="inline-flex px-2 py-1 radius-xs bg-blue-500 text-white mr-1 font-600 font-xs">
-                        {{ pseudo }}
-                      </div>
-                    {% endif %}
-                  {%- endfor -%}
-                </div>
-              </div>
-
-              <div class="font-sm md.font-md markdown">
-                {{ property.description | markdownify | safe }}
-              </div>
-
-              <table class="table shadow-sm mt-6">
-                <thead class="font-xs font-bold uppercase tracking-2">
-                  <tr>
-                    <th>Class</th>
-                    <th>Properties</th>
-                  </tr>
-                </thead>
-                <tbody class="font-sm leading-6">
-                  {%- for class in property.classes -%}
-                    <tr>
-                      <td class="font-xs md.font-sm color-secondary-600">
-                        {{ class.class | markdownInline | safe }}
-                      </td>
-                      <td class="font-xs md.font-sm text-silver-800">
-                        {%- for property in class.properties -%}
-                          {{ property | markdownInline | safe }}
-                        {%- endfor -%}
-                      </td>
-                    </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
-            </article>
-          {%- endfor -%}
+            </div>
+          </div>
         </div>
-
       </div>
-
     </div>
   </div>
 </section>
