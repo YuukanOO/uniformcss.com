@@ -2,7 +2,7 @@
 title: Transform
 property: transform
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/transform
-description: Row positioning inside grid and multi-row flex containers.
+description: Shorthand for transform properties
 date: 1000-01-01
 ---
 

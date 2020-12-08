@@ -2,7 +2,7 @@
 title: Transition Delay
 property: transition-delay
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/transition-delay
-description: Row positioning inside grid and multi-row flex containers.
+description: Delays the transition, measured in milliseconds
 date: 1000-01-01
 ---
 

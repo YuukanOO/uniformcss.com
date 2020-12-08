@@ -2,7 +2,7 @@
 title: Skew Y
 property: skew-y
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/skew-y
-description: Row positioning inside grid and multi-row flex containers.
+description: Distorts an element on the y-axis
 date: 1000-01-01
 ---
 

@@ -2,7 +2,7 @@
 title: Transition Timing Function
 property: transition-timing-function
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls the timing function used
 date: 1000-01-01
 ---
 

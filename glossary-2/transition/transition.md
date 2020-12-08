@@ -2,7 +2,7 @@
 title: Transition
 property: transition
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/transition
-description: Row positioning inside grid and multi-row flex containers.
+description: Shorthand for transition properties
 date: 1000-01-01
 ---
 

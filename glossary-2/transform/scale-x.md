@@ -2,7 +2,7 @@
 title: Scale X
 property: scale-x
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/scale-x
-description: Row positioning inside grid and multi-row flex containers.
+description: Scales an element on the x-axis
 date: 1000-01-01
 ---
 
