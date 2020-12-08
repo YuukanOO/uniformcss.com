@@ -2,7 +2,7 @@
 title: Resize
 property: resize
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/resize
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls whether an element is resizable
 date: 1000-01-01
 ---
 

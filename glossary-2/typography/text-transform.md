@@ -2,22 +2,19 @@
 title: Text Transform
 property: text-transform
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
-description: Controls text capitalization
+description: Controls text transformation
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `text-transform` utilities control text transformation. In other words, uppercasing, lowercasing, and capitalization.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name   | Property                     |
+| ------------ | ---------------------------- |
+| `uppercase`  | `text-transform: uppercase`  |
+| `lowercase`  | `text-transform: lowercase`  |
+| `capitalize` | `text-transform: capitalize` |
 
 ---
 
@@ -27,7 +24,7 @@ The following default responsive and pseudo settings.
 
 | Setting      | Default Setting |
 | ------------ | --------------- |
-| `responsive` | `true`          |
+| `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
 ---

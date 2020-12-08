@@ -2,22 +2,18 @@
 title: Work Break
 property: word-break
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/word-break
-description: Controls word breaking-behavior
+description: Controls how words should break
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `word-break` utilities control how words should break.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name       | Property                 |
+| ---------------- | ------------------------ |
+| `wordbreak-word` | `word-break: break-word` |
+| `wordbreak-all`  | `word-break: break-all`  |
 
 ---
 
@@ -27,7 +23,7 @@ The following default responsive and pseudo settings.
 
 | Setting      | Default Setting |
 | ------------ | --------------- |
-| `responsive` | `true`          |
+| `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
 ---
