@@ -213,3 +213,24 @@ The wrapper module is a container that provides set of `max-width` properties ba
 </div>
 ```
 
+---
+
+## Disabling Modules
+
+By default, Uniform CSS comes with all modules enabled. To exclude all or individual modules, include its name in the exclude key inside your configuration.
+
+```scss
+// styles.scss
+@use "uniform" as * with (
+  $config: (
+    excludes: (
+      module-button,
+      module-form,
+      module-table,
+      module-wrapper,
+      module-markdown,
+    )
+  )
+);
+```
+
