@@ -1,5 +1,5 @@
 ---
-title: Column Gap
+title: Row Gap
 property: row-gap
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap
 description: Controls the row gap between Flexbox and CSS Grid children
