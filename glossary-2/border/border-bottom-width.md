@@ -8,16 +8,21 @@ date: 1000-01-01
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `border-bottom-width` utilities control the bottom border width.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name    | Property                              |
+| ------------- | ------------------------------------- |
+| `border-b-0`  | `border-bottom-width: 0`              |
+| `border-b-1`  | `border-bottom-width: var(--size-1)`  |
+| `border-b-2`  | `border-bottom-width: var(--size-2)`  |
+| `border-b-3`  | `border-bottom-width: var(--size-3)`  |
+| `border-b-4`  | `border-bottom-width: var(--size-4)`  |
+| `border-b-5`  | `border-bottom-width: var(--size-5)`  |
+| `border-b-6`  | `border-bottom-width: var(--size-6)`  |
+| `border-b-7`  | `border-bottom-width: var(--size-7)`  |
+| `border-b-8`  | `border-bottom-width: var(--size-8)`  |
+| `border-b-9`  | `border-bottom-width: var(--size-9)`  |
+| `border-b-10` | `border-bottom-width: var(--size-10)` |
 
 ---
 

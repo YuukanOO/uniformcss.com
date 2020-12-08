@@ -8,16 +8,21 @@ date: 1000-01-01
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `border-left-width` utilities control the left border width.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name    | Property                            |
+| ------------- | ----------------------------------- |
+| `border-l-0`  | `border-left-width: 0`              |
+| `border-l-1`  | `border-left-width: var(--size-1)`  |
+| `border-l-2`  | `border-left-width: var(--size-2)`  |
+| `border-l-3`  | `border-left-width: var(--size-3)`  |
+| `border-l-4`  | `border-left-width: var(--size-4)`  |
+| `border-l-5`  | `border-left-width: var(--size-5)`  |
+| `border-l-6`  | `border-left-width: var(--size-6)`  |
+| `border-l-7`  | `border-left-width: var(--size-7)`  |
+| `border-l-8`  | `border-left-width: var(--size-8)`  |
+| `border-l-9`  | `border-left-width: var(--size-9)`  |
+| `border-l-10` | `border-left-width: var(--size-10)` |
 
 ---
 

@@ -8,16 +8,21 @@ date: 1000-01-01
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `border-top-width` utilities control the top border width.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name    | Property                           |
+| ------------- | ---------------------------------- |
+| `border-t-0`  | `border-top-width: 0`              |
+| `border-t-1`  | `border-top-width: var(--size-1)`  |
+| `border-t-2`  | `border-top-width: var(--size-2)`  |
+| `border-t-3`  | `border-top-width: var(--size-3)`  |
+| `border-t-4`  | `border-top-width: var(--size-4)`  |
+| `border-t-5`  | `border-top-width: var(--size-5)`  |
+| `border-t-6`  | `border-top-width: var(--size-6)`  |
+| `border-t-7`  | `border-top-width: var(--size-7)`  |
+| `border-t-8`  | `border-top-width: var(--size-8)`  |
+| `border-t-9`  | `border-top-width: var(--size-9)`  |
+| `border-t-10` | `border-top-width: var(--size-10)` |
 
 ---
 

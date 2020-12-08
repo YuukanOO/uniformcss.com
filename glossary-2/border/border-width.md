@@ -2,22 +2,27 @@
 title: Border Width
 property: border-width
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-width
-description: Controls the border width (x- and y-axes)
+description: Controls the border width
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `border-width` utilities control the bottom width.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name  | Property                       |
+| ----------- | ------------------------------ |
+| `border-0`  | `border-width: 0`              |
+| `border-1`  | `border-width: var(--size-1)`  |
+| `border-2`  | `border-width: var(--size-2)`  |
+| `border-3`  | `border-width: var(--size-3)`  |
+| `border-4`  | `border-width: var(--size-4)`  |
+| `border-5`  | `border-width: var(--size-5)`  |
+| `border-6`  | `border-width: var(--size-6)`  |
+| `border-7`  | `border-width: var(--size-7)`  |
+| `border-8`  | `border-width: var(--size-8)`  |
+| `border-9`  | `border-width: var(--size-9)`  |
+| `border-10` | `border-width: var(--size-10)` |
 
 ---
 

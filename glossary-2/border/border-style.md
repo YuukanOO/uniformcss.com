@@ -8,16 +8,15 @@ date: 1000-01-01
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `border-style` utilities control the border style.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name      | Property               |
+| --------------- | ---------------------- |
+| `border-solid`  | `border-style: solid`  |
+| `border-dashed` | `border-style: dashed` |
+| `border-dotted` | `border-style: dotted` |
+| `border-double` | `border-style: double` |
+| `border-none`   | `border-style: none`   |
 
 ---
 
@@ -27,7 +26,7 @@ The following default responsive and pseudo settings.
 
 | Setting      | Default Setting |
 | ------------ | --------------- |
-| `responsive` | `true`          |
+| `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
 ---
