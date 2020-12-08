@@ -1,8 +1,8 @@
 ---
 title: Border Right Radius
-property: border-right-radius
+property: null
 mdn: null
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls the top-right and bottom-right corner radii
 date: 1000-01-01
 ---
 

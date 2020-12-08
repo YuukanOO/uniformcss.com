@@ -2,7 +2,7 @@
 title: Border Radius
 property: border-radius
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls the corner radii
 date: 1000-01-01
 ---
 

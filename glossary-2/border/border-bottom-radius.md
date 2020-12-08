@@ -1,8 +1,8 @@
 ---
 title: Border Bottom Radius
-property: border-bottom-radius
+property: null
 mdn: null
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls the bottom-left and bottom-right corner radii
 date: 1000-01-01
 ---
 
@@ -44,8 +44,4 @@ The following default responsive and pseudo settings.
 </div>
 ```
 
----
-
-## Resources
-
-To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+<!-- No MDN docs -->

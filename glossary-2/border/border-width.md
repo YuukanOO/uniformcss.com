@@ -2,7 +2,7 @@
 title: Border Width
 property: border-width
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-width
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls the border width (x- and y-axes)
 date: 1000-01-01
 ---
 

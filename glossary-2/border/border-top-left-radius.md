@@ -2,7 +2,7 @@
 title: Border Top Left Radius
 property: border-top-left-radius
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls the top-left corner radius
 date: 1000-01-01
 ---
 

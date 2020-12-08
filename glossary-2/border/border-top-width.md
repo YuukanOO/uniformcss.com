@@ -2,7 +2,7 @@
 title: Border Top Width
 property: border-top-width
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-width
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls the top border width
 date: 1000-01-01
 ---
 

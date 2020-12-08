@@ -1,8 +1,8 @@
 ---
 title: Border Lighten
-property: border-bottom-left-radius
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius
-description: Row positioning inside grid and multi-row flex containers.
+property: null
+mdn: null
+description: Lightens the border color
 date: 1000-01-01
 ---
 

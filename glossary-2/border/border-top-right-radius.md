@@ -2,7 +2,7 @@
 title: Border Top Right Radius
 property: border-top-right-radius
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls the top-right border radius
 date: 1000-01-01
 ---
 

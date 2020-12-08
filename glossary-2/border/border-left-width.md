@@ -2,7 +2,7 @@
 title: Border Left Width
 property: border-left-width
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-width
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls the left border width
 date: 1000-01-01
 ---
 
