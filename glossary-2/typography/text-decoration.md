@@ -2,7 +2,7 @@
 title: Text Decoration
 property: text-decoration
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
-description: Row positioning inside grid and multi-row flex containers.
+description: Decorates text
 date: 1000-01-01
 ---
 

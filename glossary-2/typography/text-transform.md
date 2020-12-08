@@ -2,7 +2,7 @@
 title: Text Transform
 property: text-transform
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls text capitalization
 date: 1000-01-01
 ---
 

@@ -2,7 +2,7 @@
 title: Work Break
 property: word-break
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/word-break
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls word breaking-behavior
 date: 1000-01-01
 ---
 

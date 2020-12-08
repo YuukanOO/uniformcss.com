@@ -2,7 +2,7 @@
 title: Letter Spacing
 property: letter-spacing
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
-description: Row positioning inside grid and multi-row flex containers.
+description: Sets letter spacing, also known as tracking
 date: 1000-01-01
 ---
 
