@@ -1,20 +1,28 @@
 ---
 title: Build Settings
+description: Control how properties are constructed.
 date: 1000-01-03
 ---
 
-{% include shortcodes/chapter, text: 'Customization', color: 'yellow' %}
+## Build Settings
 
-## Further Build Settings
+Build settings are global in influence and specifies how your your utility classes are generated. These include the option of appending a prefix, changing the shorthand delimiter, and applying `!important` to each classes.
 
-Uniform provides build settings to provide extra control over your properties.
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
+
+## Build Setting Usage
+
+Build settings control how classes should look on a global level.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
-  $important: true,
-  $prefix: 'myPrefix-'
-  // chain as many variable overrides as you like here
+  $config: (
+    important: true,
+    prefix: 'myPrefix-',
+  )
 );
 ```
 
@@ -25,89 +33,85 @@ Uniform provides build settings to provide extra control over your properties.
 ...
 ```
 
+### Build Settings Table
+
+The following build setting definitions apply.
+
+| Setting | Default | Description |
+| - | - | - |
+| `important`{.code-a} | `false` | Append `!important` to each property. |
+| `prefix` | `null` | Append a namespace to the beginning of each class name. |
+| `delimiter` | `-` | Specifies the delimiter that separates shorthand name to its variant. |
+| `pseudo-delimiter` | `.` | Specifies the delimiter of pseudo variants. |
+| `screen-delimiter` | `.` | Specifies the delimiter of breakpoint variants. |
+
 
 ---
 
+## Advanced Settings
 
-## Core Build Settings
+Advanced settings provide extra functionality that go beyond standard use.
 
-Uniform provides build settings to provide extra control over your properties.
+### Advanced Setting Usage
+
+Build settings control how classes should look on a global level.
 
 ```scss
-// default values
+// styles.scss
 @use "uniform" as * with (
-  $important: false,
-  $prefix: '',
-  $delimiter: '-',
-  $child-delimiter: '__',
-  $pseudo-delimiter: '\\.',
-  $screen-delimiter: '\\.',
-  $responsive-pseudos: false,
-  $variablize: true,
-  $headless: false,
-  $headless-with-root: false,
-  $debugger: false,
+  $config: (
+    headless: false,
+    debugger: false,
+    placeholders: false,
+  )
 );
 ```
 
-<div class="mb-10"></div>
+### Advanced Settings Table
 
-<table class="table leading-7">
-  <thead class="uppercase font-xs font-600 tracking-1 text-black">
-    <tr>
-      <th>
-        Setting
-      </th>
-      <th>
-        Description
-      </th>
-    </tr>
-  </thead>
-  <tbody class="font-sm">
-    <tr>
-      <td class="font-xs md.font-sm color-teal-700 align-top whitespace-nowrap"><code>$important</code></td>
-      <td>Adds the <code class="color-blue-500">!important</code> tag at the end of all classes.</td>
-    </tr>
-    <tr>
-      <td class="font-xs md.font-sm color-teal-700 align-top whitespace-nowrap"><code>$prefix</code></td>
-      <td>Adds a prefix at the beginning of all classes.</td>
-    </tr>
-    <tr>
-      <td class="font-xs md.font-sm color-teal-700 align-top whitespace-nowrap"><code>$delimiter</code></td>
-      <td>Defines the characters that separates variants.</td>
-    </tr>
-    <tr>
-      <td class="font-xs md.font-sm color-teal-700 align-top whitespace-nowrap"><code>$child-delimiter</code></td>
-      <td>Defines the characters that separates block and elements featured in modules.</td>
-    </tr>
-    <tr>
-      <td class="font-xs md.font-sm color-teal-700 align-top whitespace-nowrap"><code>$pseudo-delimiter</code></td>
-      <td>Defines the characters that separates pseudo variants with property.</td>
-    </tr>
-    <tr>
-      <td class="font-xs md.font-sm color-teal-700 align-top whitespace-nowrap"><code>$screen-delimiter</code></td>
-      <td>Defines the characters that separates breakpoint variants with property.</td>
-    </tr>
-    <tr>
-      <td class="font-xs md.font-sm color-teal-700 align-top whitespace-nowrap"><code>$responsive-pseudos</code></td>
-      <td>When enabled, if property is responsive then pseudo variants also become responsive.</td>
-    </tr>
-    <tr>
-      <td class="font-xs md.font-sm color-teal-700 align-top whitespace-nowrap"><code>$variablize</code></td>
-      <td>If disabled, all custom properties will be converted to static values.</td>
-    </tr>
-    <tr>
-      <td class="font-xs md.font-sm color-teal-700 align-top whitespace-nowrap"><code>$headless</code></td>
-      <td>When enabled, Uniform will load in Headless mode.</td>
-    </tr>
-    <tr>
-      <td class="font-xs md.font-sm color-teal-700 align-top whitespace-nowrap"><code>$headless-with-root</code></td>
-      <td>When enabled, Uniform will load in Headless mode with custom properties.</td>
-    </tr>
-    <tr>
-      <td class="font-xs md.font-sm color-teal-700 align-top whitespace-nowrap"><code>$debugger</code></td>
-      <td>When enabled, Uniform will enable all properties with all pseudos and responsiveness enabled (for debugging purposes only).</td>
-    </tr>
-  </tbody>
-</table>
+The following build setting definitions apply.
+
+| Setting | Default | Description |
+| - | - | - |
+| `headless` | `false` | Loads Uniform CSS in Headless Mode. |
+| `debugger` | `false` | Enables all pseudos across all responsive breakpoints. |
+| `placeholders` | `false` | Builds with placeholder selectors enabled. |
+
+### Headless Mode
+
+When `headless` is enabled, Uniform CSS will be loaded but no class properties will be generated. This can be useful in situations where helper functions are needed without importing the entire utility library itself.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    headless: true, // false by default
+  )
+);
+```
+
+### Debugger
+
+When `debugger` is enabled, every single pseudo across all breakpoints will be generated for every single property. This will indeed create a very large file size but can be useful for testing and debugging variants.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    debugger: true, // false by default
+  )
+);
+```
+
+### Placeholders
+
+When `placeholders` is enabled, every property will also generate Sass placeholder selector counterparts. This setting must be enabled to use the experimental `apply()` helper mixin feature.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    placeholders: true, // false by default
+  )
+);
+```
+
+---
 
