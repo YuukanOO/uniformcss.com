@@ -1826,36 +1826,36 @@ CUSTOM PROPERTIES
 --table-label-tracking
 --table-label-color
 */
-.table, .markdown > table {
+.table {
   width: 100%;
   text-align: left;
   border-radius: var(--table-radius, var(--radius-sm));
   background-color: var(--table-bg, white);
   box-shadow: var(--table-shadow, var(--shadow-sm));
 }
-.table tr:last-child td, .markdown > table tr:last-child td {
+.table tr:last-child td {
   border-bottom: 0;
 }
-.table tr:last-child td:first-child, .markdown > table tr:last-child td:first-child {
+.table tr:last-child td:first-child {
   border-bottom-left-radius: var(--table-radius, var(--radius-sm));
 }
-.table tr:last-child td:last-child, .markdown > table tr:last-child td:last-child {
+.table tr:last-child td:last-child {
   border-bottom-right-radius: var(--table-radius, var(--radius-sm));
 }
-.table th, .markdown > table th {
+.table th {
   height: var(--table-th-height, var(--size-12));
   padding: var(--table-th-padding, var(--size-12) var(--size-16));
   box-shadow: var(--table-th-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-200-ltn, 93%))));
   background: var(--table-th-bg, white);
   white-space: nowrap;
 }
-.table th:first-child, .markdown > table th:first-child {
+.table th:first-child {
   border-top-left-radius: var(--table-radius, var(--radius-sm));
 }
-.table th:last-child, .markdown > table th:last-child {
+.table th:last-child {
   border-top-right-radius: var(--table-radius, var(--radius-sm));
 }
-.table td, .markdown > table td {
+.table td {
   height: var(--table-td-height, var(--size-12));
   padding: var(--table-td-padding, var(--size-12) var(--size-16));
   box-shadow: var(--table-td-border, inset 0px -1px 0 0 hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 10%))), calc(0% + var(--silver-200-ltn, 93%))));
@@ -12540,7 +12540,7 @@ CUSTOM PROPERTIES
   display: inline-table;
 }
 
-.table, .markdown > table {
+.table {
   display: table;
 }
 
@@ -39298,6 +39298,10 @@ pre[class*=language-] {
 
 .markdown {
   font-size: var(--font-base);
+}
+.markdown > table {
+  font-size: var(--font-sm);
+  line-height: var(--leading-tight);
 }
 .markdown > pre {
   border-radius: var(--radius-md);

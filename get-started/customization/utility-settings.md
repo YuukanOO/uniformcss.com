@@ -9,33 +9,48 @@ date: 1000-01-03
 
 The `utility` setting is a map where you can pass in settings to configure, replace, and extend variants for each property. For each property the following settings are available to be configured.
 
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
+
 ### Utility Setting Usage
 
 Utility settings control how classes should look on a global level.
 
 ```scss
-// default values
+// styles.scss
 @use "uniform" as * with (
   $config: (
     utilities: (
-      background-color: (
-        shorthand: bg,
+      text-align: (
+        shorthand: align,
         responsive: false,
-
+        ...
       )
     )
   )
 );
 ```
 
-### Build Settings Definitions
+```css
+/* styles.css */
+.align-left {text-align: left;}
+.align-right {text-align: right;}
+...
+```
 
-The following build setting definitions apply.
+### Utility Settings Table
 
-| Setting | Default | Description |
+The following utility setting definitions apply.
+
+| Setting | Type | Description |
 | - | - | - |
-| `important`{.code-a} | `false` | Append `!important` to each property. |
-| `prefix` | `null` | Append a namespace to the beginning of each class name. |
-| `delimiter` | `-` | Specifies the delimiter that separates shorthand name to its variant. |
-| `pseudo-delimiter` | `.` | Specifies the delimiter of pseudo variants. |
-| `screen-delimiter` | `.` | Specifies the delimiter of breakpoint variants. |
+| `shorthand` | `string` | Specifies the shorthand word to represent property. |
+| `responsive` | `boolean` | Specifies wether property is responsive. |
+| `responsive-pseudos` | `boolean` | Specifies wether property is responsive across pseudo variants. |
+| `pseudo-delimiter` | `boolean` | Specifies the delimiter of pseudo variants. |
+| `screen-delimiter` | `boolean` | Specifies the delimiter of breakpoint variants. |
+
+{.table}
+
+gesges

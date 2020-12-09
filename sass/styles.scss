@@ -68,7 +68,8 @@
 	font-size: font-size(base);
 
 	& > table {
-		@extend .table;
+		font-size: font-size(sm);
+		line-height: leading(tight);
 	}
 
 	& > pre {
