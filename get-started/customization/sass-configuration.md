@@ -1,47 +1,183 @@
 ---
 title: Sass Configuration
+description: Customizing Uniform CSS to your heart's content.
 date: 1000-01-01
 ---
 
-## Setup for Maximum Flexibility
+## How Configuration Works
 
-Native Uniform configuration workflow provides full customization features that go beyond what a basic setup may provide. The native configuration setup requires the Sass version of Uniform and its PostCSS dependencies. For more information on setting up Uniform natively, check out <a class="hover.underline" href="/get-started/installation">installation</a>.
+Customizations in Uniform CSS are all handled through a single point of entry from the root of your Sass project. Unlike the CDN option, the Sass implementation of Uniform CSS provides the most customization freedom. 
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
+
+## Basic Usage
+
+Uniform CSS is loaded in as a module and can be configured with by passing in settings to the `$config` map. To learn more about modules please visit the [official Sass docs](https://sass-lang.com/documentation/at-rules/use).
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
-  // settings here
+  $config: (
+    important: true,    
+    // override settings here
+  )
+);
+```
+
+```css
+/* styles.css */
+.align-left {text-align: left !important;}
+.align-right {text-align: right !important;}
+```
+
+---
+
+## Setting Groups
+
+It is helpful to note, there are four types of settings you can pass into your configuration, build, theme, utility, and excludes. 
+
+### Build Settings
+
+Build settings specifies globally how your properties are constructed.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    important: true,
+    // other build settings here
+  )
+);
+```
+
+### Theme Settings
+
+Theme settings specifies universally shared theme related settings such as breakpoints, sizes, and colors etc.
+
+```scss
+@use "uniform" as * with (
+  $config: (\
+    screens: (
+      ...
+    )
+    colors: (
+      ...
+    ),
+    // other theme settings here
+  )
+);
+```
+
+### Utilities Settings
+
+Utilities settings specifies the individual setting of each property.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    utilities: (
+      text-align: (
+        ...
+      )
+      // other utility settings here
+    ),
+  )
+);
+```
+
+### Exclude Settings
+
+Exclude and include settings specifies which properties or modules should be excluded or included during the build.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    excludes: (
+      all,
+      // other excluded properties
+    ),
+    includes: (
+      background-color,
+      text-align,
+      // other included properties
+    ),
+  )
 );
 ```
 
 ---
 
-## Variable Types
+## Build Settings
 
-There are two types of variables in Uniform, **Global** and **Local**. Global variables are used across all the properties, whereas Local variables can be set on a per property basis.
+Build settings are global in influence and specifies how your your utility classes are generated. These include the option of appending a prefix, changing the shorthand delimiter, and applying `!important` to each classes.
 
----
+### Build Setting Usage
 
-### Build Setting Variables <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Global</div>
-
-Build setting variables deal with controlling how the Uniform build should be handled.
+Build settings control how classes should look on a global level.
 
 ```scss
 // default values
 @use "uniform" as * with (
-  $important: false,
-  $prefix: '',
-  $delimiter: '-',
-  $child-delimiter: '__',
-  $pseudo-delimiter: '\\.',
-  $screen-delimiter: '\\.',
-  $responsive-pseudos: false,
-  $variablize: true,
-  $headless: false,
-  $headless-with-root: false,
-  $debugger: false,
+  $config: (
+    important: false,
+    prefix: '',
+    delimiter: '-',
+    pseudo-delimiter: '.',
+    screen-delimiter: '.',
+  )
 );
 ```
+
+### Build Settings Definitions
+
+The following build setting definitions apply.
+
+| Setting | Default | Description |
+| - | - | - |
+| `important`{.code-a} | `false` | Append `!important` to each property. |
+| `prefix` | `null` | Append a namespace to the beginning of each class name. |
+| `delimiter` | `-` | Specifies the delimiter that separates shorthand name to its variant. |
+| `pseudo-delimiter` | `.` | Specifies the delimiter of pseudo variants. |
+| `screen-delimiter` | `.` | Specifies the delimiter of breakpoint variants. |
+
+---
+
+## Utility Settings
+
+The `utility` setting is a map where you can pass in settings to configure, replace, and extend variants for each property. For each property the following settings are available to be configured.
+
+### Utility Setting Usage
+
+Utility settings control how classes should look on a global level.
+
+```scss
+// default values
+@use "uniform" as * with (
+  $config: (
+    utilities: (
+      background-color: (
+        shorthand: bg,
+        responsive: false,
+
+      )
+    )
+  )
+);
+```
+
+### Build Settings Definitions
+
+The following build setting definitions apply.
+
+| Setting | Default | Description |
+| - | - | - |
+| `important`{.code-a} | `false` | Append `!important` to each property. |
+| `prefix` | `null` | Append a namespace to the beginning of each class name. |
+| `delimiter` | `-` | Specifies the delimiter that separates shorthand name to its variant. |
+| `pseudo-delimiter` | `.` | Specifies the delimiter of pseudo variants. |
+| `screen-delimiter` | `.` | Specifies the delimiter of breakpoint variants. |
+
 
 ---
 
@@ -59,6 +195,45 @@ Include variables deal with controlling which reset, starter or modules should b
   $include-wrapper-module: true,
 );
 ```
+
+<table class="table">
+  <thead class="uppercase font-xs font-600 tracking-1 text-black">
+    <tr>
+      <th>
+        Variant
+      </th>
+      <th>
+        Value
+      </th>
+    </tr>
+  </thead>
+  <tbody class="font-sm">
+    <tr>
+      <td><code class="text-teal text-brighten-500 text-darken-200">sm</code></td>
+      <td>
+        <code class="text-gray-600">768px</code>
+      </td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500 text-darken-200">md</code></td>
+      <td>
+        <code class="text-gray-600">1024px</code>
+      </td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500 text-darken-200">lg</code></td>
+      <td>
+        <code class="text-gray-600">1280px</code>
+      </td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500 text-darken-200">xl</code></td>
+      <td>
+        <code class="text-gray-600">1536px</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -82,6 +257,8 @@ Theme variables are theme specific maps such as breakpoints, colors, and spacing
   )
 )
 ```
+
+
 
 ---
 

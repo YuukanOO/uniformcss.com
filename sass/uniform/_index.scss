@@ -246,11 +246,9 @@ $config: core.$all-config;
   $prefix: map.get($config, prefix);
   $delimiter: map.get($config, delimiter);
   $child-delimiter: map.get($config, child-delimiter);
-  $pseudo-delimiter: map.get($config, pseudo-delimiter);
-  $screen-delimiter: map.get($config, screen-delimiter);
-  $variablize: map.get($config, variablize);
+  $pseudo-delimiter: core.escape(map.get($config, pseudo-delimiter));
+  $screen-delimiter: core.escape(map.get($config, screen-delimiter));
   $headless: map.get($config, headless);
-  $root: map.get($config, root);
   $debugger: map.get($config, debugger);
   $placeholders: map.get($config, placeholders);
 

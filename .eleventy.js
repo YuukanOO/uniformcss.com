@@ -1,13 +1,14 @@
-const { DateTime } = require("luxon");
-
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginNavigation = require("@11ty/eleventy-navigation");
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require("markdown-it-anchor");
-const pluginTOC = require('eleventy-plugin-toc')
-
 module.exports = function(eleventyConfig) {
+  let { DateTime } = require("luxon");
+  let pluginRss = require("@11ty/eleventy-plugin-rss");
+  let pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+  let pluginNavigation = require("@11ty/eleventy-navigation");
+  let markdownIt = require("markdown-it");
+  let markdownItContainer = require('markdown-it-container');
+  let markdownItAttrs = require('markdown-it-attrs');
+  let markdownItAnchor = require("markdown-it-anchor");
+  let pluginTOC = require('eleventy-plugin-toc')
+
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginNavigation);
@@ -68,12 +69,28 @@ module.exports = function(eleventyConfig) {
     html: true,
     breaks: true,
     linkify: true
-  }).use(markdownItAnchor, {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#"
   });
-  eleventyConfig.setLibrary("md", markdownLibrary);
+  
+  
+  eleventyConfig.setLibrary("md", markdownLibrary
+    .use(markdownItAnchor, {
+      permalink: true,
+      permalinkClass: "direct-link",
+      permalinkSymbol: "#"
+    })
+    .use(require('markdown-it-attrs'))
+    .use(require('markdown-it-container'), '', {
+      validate: () => true,
+      render: (tokens, idx) => {
+        if (tokens[idx].nesting === 1) {
+          const classList = tokens[idx].info.trim()
+          return `<div ${classList && `class="${classList}"`}>`;
+        } else {
+          return `</div>`;
+        }
+      }
+    })
+  );
 
   eleventyConfig.addFilter('markdownify', (content) => {
     let markdownify = markdownIt({

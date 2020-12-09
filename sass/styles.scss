@@ -94,12 +94,26 @@
 
 	& > h2 {
 		margin-bottom: size(20);
-		font-size: font-size(xl);
+		font-size: font-size(2xl);
 		font-weight: 700;
 		letter-spacing: tracking(tight);
-		@media (min-width: screen(sm)) {
-			font-size: var(--font-2xl);
+		a {
+			display: none;
+			font-weight: 500;
+			color: var(--secondary-a500);
 		}
+		&:hover {
+			a {
+				display: inline;
+			}
+		}
+	}
+	& > h3 {
+		margin-top: size(48);
+		margin-bottom: size(20);
+		font-size: var(--font-xl);
+		font-weight: 600;
+		letter-spacing: tracking(tight);
 		a {
 			display: none;
 			font-weight: 500;
