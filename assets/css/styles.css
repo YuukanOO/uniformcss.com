@@ -137,9 +137,9 @@
   --darken-900: -45%;
   --SIZES-------------------------:11;
   --size-0: 0;
-  --size-n1: -0.0625rem;
-  --size-n2: -0.125rem;
-  --size-n3: -0.1875rem;
+  --size-n1: -1px;
+  --size-n2: -2px;
+  --size-n3: -3px;
   --size-n4: -0.25rem;
   --size-n5: -0.3125rem;
   --size-n6: -0.375rem;
@@ -177,9 +177,9 @@
   --size-n512: -32rem;
   --size-n576: -36rem;
   --size-n640: -40rem;
-  --size-1: 0.0625rem;
-  --size-2: 0.125rem;
-  --size-3: 0.1875rem;
+  --size-1: 1px;
+  --size-2: 2px;
+  --size-3: 3px;
   --size-4: 0.25rem;
   --size-5: 0.3125rem;
   --size-6: 0.375rem;

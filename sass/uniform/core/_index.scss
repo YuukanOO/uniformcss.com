@@ -242,9 +242,9 @@ $default-config: (
 
   positive-sizes: (
     0: 0,
-    1: rem(1),
-    2: rem(2),
-    3: rem(3),
+    1: 1px,
+    2: 2px,
+    3: 3px,
     4: rem(4),
     5: rem(5),
     6: rem(6),
@@ -286,9 +286,9 @@ $default-config: (
 
   negative-sizes: (
     0: 0,
-    n1: rem(-1),
-    n2: rem(-2),
-    n3: rem(-3),
+    n1: -1px,
+    n2: -2px,
+    n3: -3px,
     n4: rem(-4),
     n5: rem(-5),
     n6: rem(-6),
