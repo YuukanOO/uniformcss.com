@@ -17,18 +17,18 @@ First of all, thank you for taking the time to check out this project. Uniform C
 
 Here are the **top reasons** why Uniform CSS could be a great fit for your next project! 🚀
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 text-black radius-round">1</span> It's built entirely in Sass</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 text-black radius-round">1</span> It's written entirely in Sass</h4>
 
-Built entirely in Sass (the most well known CSS preprocessor currently out there). Adding Uniform into your existing project is **literally a single line of code**.
+Why Sass? Sass is the most popular CSS preprocessor in the world! Adding Uniform as a Sass dependency is **literally one line of code**{.text-black}.
 
 ```scss
 // add this to your main styles.scss
 @use "uniform" as *;
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">2</span> It's super-duper easy to configure</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">2</span> It's dead-easy to configure</h4>
 
-Uniform CSS is a top-grade utility class generator. Remove and extend colors, replace breakpoints, change property names, add prefixes, modify syntax, and more! **You can optionally configure almost every tiny detail imagineable**.
+Remove and extend colors? Check. Replace breakpoints? Check. Alias property names, add prefixes, modify syntax — you name it! Uniform is configurable to the last detail.
 
 ```scss
 // styles.scss
@@ -55,7 +55,7 @@ Uniform CSS is a top-grade utility class generator. Remove and extend colors, re
 
 <h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">3</span> You can add your own properties</h4>
 
-As shiny new CSS specs get finalized and introduced, you don't have to wait for Uniform to support it! Easily add your own properties in directly.
+While shiny new CSS specs become standardized, you don’t have to wait for Uniform. You can use Uniform APIs to add your own properties.
 
 ```scss
 // styles.scss
