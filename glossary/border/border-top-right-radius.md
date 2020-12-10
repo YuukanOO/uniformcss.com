@@ -2,13 +2,13 @@
 title: Border Top Right Radius
 property: border-top-right-radius
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius
-description: Rounds the top-right corners
+description: Rounds the top-right corner
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `border-top-right-radius` utilities round the top-right corners.
+The `border-top-right-radius` utilities round the top-right corner.
 
 | Class Name        | Property                                       |
 | ----------------- | ---------------------------------------------- |
