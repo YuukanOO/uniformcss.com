@@ -8,7 +8,7 @@ date: 1000-01-01
 
 ## Basic Usage
 
-The `transform` utilities enable compositions using the [Transform API].
+The `transform` utilities enable composition using the [Transform API].
 
 | Class Name  | Property                                                                                                                                                                                                      |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

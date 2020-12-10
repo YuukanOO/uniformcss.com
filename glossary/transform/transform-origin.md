@@ -2,13 +2,13 @@
 title: Transform Origin
 property: transform-origin
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin
-description: Controls the origin from which to transform or translate
+description: Controls the origin from which to transform or translate from
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `transform-origin` utilities control the origin from which to transform or translate using the [Transform API](TODO).
+The `transform-origin` utilities control the origin from which to transform or translate from using the [Transform API](TODO).
 
 | Class Name                | Property                          |
 | ------------------------- | --------------------------------- |
