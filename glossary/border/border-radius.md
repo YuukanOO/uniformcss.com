@@ -2,13 +2,13 @@
 title: Border Radius
 property: border-radius
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius
-description: Rounds the corner radii
+description: Rounds corners
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `border-radius` utilities round the corner radii.
+The `border-radius` utilities round corners.
 
 | Class Name     | Property                             |
 | -------------- | ------------------------------------ |

@@ -2,13 +2,13 @@
 title: Border Left Radius
 property: null
 mdn: null
-description: Rounds the top-left and bottom-right corner radii
+description: Rounds the top-left and bottom-right corners
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `border-left-radius` utilities round the top-left and bottom-right corner radii.
+The `border-left-radius` utilities round the top-left and bottom-right corners.
 
 | Class Name       | Property                                                                                                    |
 | ---------------- | ----------------------------------------------------------------------------------------------------------- |
