@@ -10,18 +10,18 @@ date: 1000-01-01
 
 The `transition-duration` utilities set the duration used for the [Transition API](TODO).
 
-| Class Name   | Property                   |
-| ------------ | -------------------------- |
-| `delay-100`  | `transition-delay: 100ms`  |
-| `delay-200`  | `transition-delay: 200ms`  |
-| `delay-300`  | `transition-delay: 300ms`  |
-| `delay-400`  | `transition-delay: 400ms`  |
-| `delay-500`  | `transition-delay: 500ms`  |
-| `delay-600`  | `transition-delay: 600ms`  |
-| `delay-700`  | `transition-delay: 700ms`  |
-| `delay-800`  | `transition-delay: 800ms`  |
-| `delay-900`  | `transition-delay: 900ms`  |
-| `delay-1000` | `transition-delay: 1000ms` |
+| Class Name      | Property                      |
+| --------------- | ----------------------------- |
+| `duration-100`  | `transition-duration: 100ms`  |
+| `duration-200`  | `transition-duration: 200ms`  |
+| `duration-300`  | `transition-duration: 300ms`  |
+| `duration-400`  | `transition-duration: 400ms`  |
+| `duration-500`  | `transition-duration: 500ms`  |
+| `duration-600`  | `transition-duration: 600ms`  |
+| `duration-700`  | `transition-duration: 700ms`  |
+| `duration-800`  | `transition-duration: 800ms`  |
+| `duration-900`  | `transition-duration: 900ms`  |
+| `duration-1000` | `transition-duration: 1000ms` |
 
 ---
 
