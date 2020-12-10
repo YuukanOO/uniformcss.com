@@ -1,18 +1,18 @@
 ---
-title: Outline
-property: outline
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/outline
-description: Row positioning inside grid and multi-row flex containers.
+title: Stroke
+property: stroke
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/stroke
+description: Sets stroke color for SVG elements
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `outline` shorthand property set all the outline properties in a single declaration.
+The `stroke` utilities set stroke color for SVG elements.
 
-| Class Name  | Property     |
-| ----------- | ------------ |
-| `outline-0` | `outline: 0` |
+| Class Name       | Property               |
+| ---------------- | ---------------------- |
+| `stroke-current` | `stroke: currentColor` |
 
 ---
 

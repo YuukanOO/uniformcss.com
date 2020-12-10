@@ -1,18 +1,18 @@
 ---
-title: Fill
-property: fill
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/fill
-description: Sets fill color for SVG elements
+title: Outline
+property: outline
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/outline
+description: Controls outline-rendering
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `fill` utilities set fill color for SVG elements.
+The `outline` utilities control outline-rendering. Note that outlines, unlike borders, do not reflow layout.
 
-| Class Name     | Property             |
-| -------------- | -------------------- |
-| `fill-current` | `fill: currentColor` |
+| Class Name  | Property     |
+| ----------- | ------------ |
+| `outline-0` | `outline: 0` |
 
 ---
 
