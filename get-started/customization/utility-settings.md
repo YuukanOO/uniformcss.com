@@ -53,4 +53,16 @@ The following utility setting definitions apply.
 
 {.table}
 
-gesges
+---
+
+## Customizing Shorthand
+
+When `headless` is enabled, Uniform CSS will be loaded but no class properties will be generated. This can be useful in situations where helper functions are needed without importing the entire utility library itself.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    headless: true, // false by default
+  )
+);
+```
