@@ -2,22 +2,20 @@
 title: Resize
 property: resize
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/resize
-description: Controls whether an element is resizable
+description: Controls along which axes an element is resizable
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `resize` utilities control along which axes an element is resizable.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name         | Property             |
+| ------------------ | -------------------- |
+| `resize-none       | `resize: none`       |
+| `resize-both       | `resize: both`       |
+| `resize-horizontal | `resize: horizontal` |
+| `resize-vertical   | `resize: vertical`   |
 
 ---
 

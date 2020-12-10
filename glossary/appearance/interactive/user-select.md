@@ -1,18 +1,21 @@
 ---
-title: Appearance
-property: appearance
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/appearance
-description: Controls whether to style inputs using browser defaults
+title: User Select
+property: user-select
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/user-select
+description: Controls whether text can be selected
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `appearance` utilities control whether to style inputs using browser defaults.
+The `user-select` utilities control whether text can be selected.
 
-| Class Name        | Property           |
-| ----------------- | ------------------ |
-| `appearance-none` | `appearance: none` |
+| Class Name    | Property            |
+| ------------- | ------------------- |
+| `select-none` | `user-select: none` |
+| `select-text` | `user-select: text` |
+| `select-all`  | `user-select: all`  |
+| `select-auto` | `user-select: auto` |
 
 ---
 

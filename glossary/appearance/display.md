@@ -2,13 +2,13 @@
 title: Display
 property: display
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/display
-description: Controls which box type an element uses
+description: Sets an element’s box type
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `display` utilities control which box type an element uses.
+The `display` utilities set an element’s box type.
 
 | Class Name           | Property                                 |
 | -------------------- | ---------------------------------------- |

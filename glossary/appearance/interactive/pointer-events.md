@@ -1,18 +1,19 @@
 ---
-title: Appearance
-property: appearance
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/appearance
-description: Controls whether to style inputs using browser defaults
+title: Pointer Events
+property: pointer-events
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events
+description: Controls whether an element can be interacted with
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `appearance` utilities control whether to style inputs using browser defaults.
+The `pointer-events` utilities control whether an element can be interacted with. This translates to whether an element can receive pointer events, such as mouse and touch events.
 
-| Class Name        | Property           |
-| ----------------- | ------------------ |
-| `appearance-none` | `appearance: none` |
+| Class Name            | Property               |
+| --------------------- | ---------------------- |
+| `pointer-events-none` | `pointer-events: none` |
+| `pointer-events-auto` | `pointer-events: auto` |
 
 ---
 

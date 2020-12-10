@@ -1,18 +1,19 @@
 ---
-title: Appearance
-property: appearance
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/appearance
-description: Controls whether to style inputs using browser defaults
+title: Scrolling
+property: scrolling
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling
+description: Enables or disables inertial scrolling
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `appearance` utilities control whether to style inputs using browser defaults.
+The `scrolling` utilities enables or disables inertial scrolling.
 
-| Class Name        | Property           |
-| ----------------- | ------------------ |
-| `appearance-none` | `appearance: none` |
+| Class Name        | Property                            |
+| ----------------- | ----------------------------------- |
+| `scrolling-auto`  | `-webkit-overflow-scrolling: auto`  |
+| `scrolling-touch` | `-webkit-overflow-scrolling: touch` |
 
 ---
 
