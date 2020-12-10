@@ -2,13 +2,13 @@
 title: Outline
 property: outline
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/outline
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls outline-rendering
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `outline` shorthand property set all the outline properties in a single declaration.
+The `outline` utilities control outline-rendering. Note that outlines, unlike borders, do not reflow layout.
 
 | Class Name  | Property     |
 | ----------- | ------------ |
@@ -43,4 +43,4 @@ The following default responsive and pseudo settings.
 
 ## Resources
 
-To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+To learn more about `{{ property }}`, refer to [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).

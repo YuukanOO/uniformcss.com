@@ -2,13 +2,13 @@
 title: Border Width
 property: border-width
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-width
-description: Controls the border width
+description: Controls border width
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `border-width` utilities control the bottom width.
+The `border-width` utilities control bottom width.
 
 | Class Name  | Property                       |
 | ----------- | ------------------------------ |
@@ -53,4 +53,4 @@ The following default responsive and pseudo settings.
 
 ## Resources
 
-To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+To learn more about `{{ property }}`, refer to [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).

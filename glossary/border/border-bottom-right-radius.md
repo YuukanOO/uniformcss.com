@@ -2,13 +2,13 @@
 title: Border Bottom Right Radius
 property: border-bottom-right-radius
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius
-description: Rounds the bottom-right corner radius
+description: Rounds the bottom-right corner
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `border-bottom-right-radius` utilities round the bottom-right corner radius.
+The `border-bottom-right-radius` utilities round the bottom-right corner.
 
 | Class Name        | Property                                          |
 | ----------------- | ------------------------------------------------- |
@@ -51,4 +51,4 @@ The following default responsive and pseudo settings.
 
 ## Resources
 
-To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+To learn more about `{{ property }}`, refer to [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).

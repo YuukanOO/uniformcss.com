@@ -2,13 +2,13 @@
 title: Display
 property: display
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/display
-description: Row positioning inside grid and multi-row flex containers.
+description: Sets an element’s box type
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `display` property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
+The `display` utilities set an element’s box type.
 
 | Class Name           | Property                                 |
 | -------------------- | ---------------------------------------- |
@@ -60,4 +60,4 @@ The following default responsive and pseudo settings.
 
 ## Resources
 
-To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+To learn more about `{{ property }}`, refer to [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).

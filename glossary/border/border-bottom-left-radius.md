@@ -2,13 +2,13 @@
 title: Border Bottom Left Radius
 property: border-bottom-left-radius
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius
-description: Rounds the bottom-left corner radius
+description: Rounds the bottom-left corner
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `border-bottom-left-radius` utilities round the bottom-left corner radius.
+The `border-bottom-left-radius` utilities round the bottom-left corner.
 
 | Class Name        | Property                                         |
 | ----------------- | ------------------------------------------------ |
@@ -51,4 +51,4 @@ The following default responsive and pseudo settings.
 
 ## Resources
 
-To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+To learn more about `{{ property }}`, refer to [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
