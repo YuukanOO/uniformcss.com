@@ -8,7 +8,7 @@ date: 1000-01-01
 
 ## Basic Usage
 
-The `justify-content` utilities justify multi-row Flexbox and CSS Grid children along the main axis.
+The `justify-content` utilities justify multi-row Flexbox or CSS Grid children along the main axis. Justification happens along the main-axis, which for a Flexbox row is left-to-right and for Flexbox column, top-to-bottom.
 
 | Class Name              | Property                       |
 | ----------------------- | ------------------------------ |

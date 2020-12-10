@@ -2,13 +2,13 @@
 title: Align Self
 property: align-self
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/align-self
-description: One-off aligns a Flexbox or CSS Grid child element
+description: Aligns a Flexbox or CSS Grid child
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-self` utilities one-off aligns a Flexbox or CSS Grid child element.
+The `align-self` utilities align a Flexbox or CSS Grid child. Alignment happens along the cross-axis, which for a Flexbox row is top-to-bottom and for Flexbox column, left-to-right.
 
 | Class Name           | Property              |
 | -------------------- | --------------------- |

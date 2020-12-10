@@ -2,13 +2,13 @@
 title: Justify Self
 property: justify-self
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-self
-description: One-off justifies a Flexbox or CSS Grid child element
+description: Justifies a Flexbox or CSS Grid child element
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `justify-self` utilities one-off justifies a Flexbox or CSS Grid child element.
+The `justify-self` utilities justify a Flexbox or CSS Grid child element.
 
 | Class Name             | Property                |
 | ---------------------- | ----------------------- |

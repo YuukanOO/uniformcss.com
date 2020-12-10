@@ -2,13 +2,13 @@
 title: Opacity
 property: opacity
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/opacity
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls element opacity
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `opacity` property sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
+The `opacity` utilities control element opacity. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency.
 
 | Class Name    | Property       |
 | ------------- | -------------- |

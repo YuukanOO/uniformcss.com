@@ -2,13 +2,13 @@
 title: Display
 property: display
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/display
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls which box type an element uses
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `display` property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
+The `display` utilities control which box type an element uses.
 
 | Class Name           | Property                                 |
 | -------------------- | ---------------------------------------- |

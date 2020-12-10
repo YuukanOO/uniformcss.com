@@ -2,13 +2,13 @@
 title: Appearance
 property: appearance
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/appearance
-description: Controls whether to use browser styles for inputs
+description: Controls whether inputs should use de facto browser styles
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `appearance` utility controls whether to use browser styles for inputs.
+The `appearance` utility controls whether inputs should use de facto browser styles.
 
 | Class Name        | Property           |
 | ----------------- | ------------------ |
