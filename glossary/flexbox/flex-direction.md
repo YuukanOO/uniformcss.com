@@ -2,22 +2,20 @@
 title: Flex Direction
 property: flex-direction
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction
-description: Row positioning inside grid and multi-row flex containers.
+description: Sets the Flexbox main-axis
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `flex-direction` utilities set the Flexbox main-axis. When the main-axis is row, children flow horizontally. When the main-axis is column, children flow vertically.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name         | Property                        |
+| ------------------ | ------------------------------- |
+| `flex-row`         | flex-direction: row`            |
+| `flex-row-reverse` | flex-direction: row-reverse`    |
+| `flex-col`         | flex-direction: column`         |
+| `flex-col-reverse` | flex-direction: column-reverse` |
 
 ---
 
