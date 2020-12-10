@@ -7,7 +7,7 @@ lastUpdated: 2020-10-20
 
 ## Introducing Uniform &nbsp;&nbsp;🦄
 
-First of all, thank you for taking the time to check out this project. Uniform CSS is the Sass based utility class generator and framework built for scale and customizability. One of its biggest strength is that it is easy to learn and can be implemented in both pre-packaged or native ways making it super adaptable to a wide range of workflows.
+Thank you for checking out Uniform CSS! Uniform is a Sass-based utility framework that is principled around scale, ease-of-use, and customizability. The easiest way to get started is via the CDN or as a Sass dependency.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
