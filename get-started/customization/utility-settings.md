@@ -15,7 +15,7 @@ The `utility` setting is a map where you can pass in settings to configure each 
 
 ## How it works
 
-Each property in Uniform CSS is constructed using the same data structure. By passing in your settings to the `utilities` map you can override these settings. Each property has a set number of settings available, if a certain setting is not specified in your configuration, it will use the default value instead.
+Each property in Uniform CSS is constructed using the same data structure. By passing in your settings to the `utilities` map, you can override these settings. Each property has a set number of settings available, if a certain setting is not specified in your configuration, it will use the default value instead.
 
 ```scss
 // styles.scss
