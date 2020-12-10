@@ -2,13 +2,13 @@
 title: Appearance
 property: appearance
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/appearance
-description: Controls whether to use browser styles for inputs
+description: Controls whether to style inputs using browser defaults
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `appearance` utility controls whether to use browser styles for inputs.
+The `appearance` utilities control whether to style inputs using browser defaults.
 
 | Class Name        | Property           |
 | ----------------- | ------------------ |
@@ -43,4 +43,4 @@ The following default responsive and pseudo settings.
 
 ## Resources
 
-To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+To learn more about `{{ property }}`, refer to [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).

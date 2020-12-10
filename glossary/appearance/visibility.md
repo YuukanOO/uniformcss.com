@@ -2,13 +2,13 @@
 title: Visibility
 property: visibility
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/visibility
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls element visibility
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `visibility` property shows or hides an element without changing the layout of a document. The property can also hide rows or columns in a `<table>`.
+The `visibility` utilities control element visibility. Note that invisible elements do not cause layout to reflow; invisible elements are _invisibly_ rendered. These utilities can also hide rows or columns in a `<table>`.
 
 | Class Name  | Property              |
 | ----------- | --------------------- |
@@ -44,4 +44,4 @@ The following default responsive and pseudo settings.
 
 ## Resources
 
-To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+To learn more about `{{ property }}`, refer to [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).

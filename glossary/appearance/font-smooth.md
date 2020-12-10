@@ -2,13 +2,13 @@
 title: Font Smooth
 property: font-smooth
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
-description: Row positioning inside grid and multi-row flex containers.
+description: Controls the antialiasing strategy for text
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `font-smooth` property controls the application of anti-aliasing when fonts are rendered.
+The `font-smooth` utilities control the antialiasing strategy for text.
 
 | Class Name             | Property                                                                                |
 | ---------------------- | --------------------------------------------------------------------------------------- |
@@ -44,4 +44,4 @@ The following default responsive and pseudo settings.
 
 ## Resources
 
-To learn more about the `{{ property }}` property refer to the [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
+To learn more about `{{ property }}`, refer to [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).
