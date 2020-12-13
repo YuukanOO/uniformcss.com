@@ -2,22 +2,19 @@
 title: Background Attachment
 property: background-attachment
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment
-description: Row positioning inside grid and multi-row flex containers.
+description: Sets background image attachment behavior
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `background-attachment` property sets whether a background image's position is fixed within the viewport, or scrolls with its containing block.
+The `background-attachment` utilities sets background image attachment behavior.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name  | Property                        |
+| ----------- | ------------------------------- |
+| `bg-scroll` | `background-attachment: scroll` |
+| `bg-fixed`  | `background-attachment: fixed`  |
+| `bg-local`  | `background-attachment: local`  |
 
 ---
 
