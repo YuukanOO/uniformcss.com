@@ -1,22 +1,22 @@
 ---
-title: Border Style
-property: border-style
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-style
-description: Sets border style
+title: Position
+property: position
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/position
+description: Sets element positioning
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `border-style` utilities set border style.
+The `position` utilities set element positioning.
 
-| Class Name      | Property               |
-| --------------- | ---------------------- |
-| `border-solid`  | `border-style: solid`  |
-| `border-dashed` | `border-style: dashed` |
-| `border-dotted` | `border-style: dotted` |
-| `border-double` | `border-style: double` |
-| `border-none`   | `border-style: none`   |
+| Class Name | Property             |
+| ---------- | -------------------- |
+| `static`   | `position: static`   |
+| `fixed`    | `position: fixed`    |
+| `absolute` | `position: absolute` |
+| `relative` | `position: relative` |
+| `sticky`   | `position: sticky`   |
 
 ---
 
@@ -26,7 +26,7 @@ The following default responsive and pseudo settings.
 
 | Setting      | Default Setting |
 | ------------ | --------------- |
-| `responsive` | `none`          |
+| `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
 ---

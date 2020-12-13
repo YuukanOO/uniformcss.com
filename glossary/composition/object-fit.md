@@ -1,22 +1,22 @@
 ---
-title: Border Style
-property: border-style
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-style
-description: Sets border style
+title: Object Fit
+property: object-fit
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+description: Controls image sizing
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `border-style` utilities set border style.
+The `object-fit` utilities control image sizing.
 
-| Class Name      | Property               |
-| --------------- | ---------------------- |
-| `border-solid`  | `border-style: solid`  |
-| `border-dashed` | `border-style: dashed` |
-| `border-dotted` | `border-style: dotted` |
-| `border-double` | `border-style: double` |
-| `border-none`   | `border-style: none`   |
+| Class Name         | Property                |
+| ------------------ | ----------------------- |
+| `object-contain`   | `object-fit: contain`   |
+| `object-cover`     | `object-fit: cover`     |
+| `object-fill`      | `object-fit: fill`      |
+| `object-none`      | `object-fit: none`      |
+| `object-size-down` | `object-fit: size-down` |
 
 ---
 

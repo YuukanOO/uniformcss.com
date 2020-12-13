@@ -1,22 +1,19 @@
 ---
-title: Border Style
-property: border-style
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-style
-description: Sets border style
+title: Border Collapse
+property: border-collapse
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse
+description: Sets border collapsing behavior for tables
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `border-style` utilities set border style.
+The `border-collapse` set border collapsing behavior for nested `<table>` cell elements.
 
-| Class Name      | Property               |
-| --------------- | ---------------------- |
-| `border-solid`  | `border-style: solid`  |
-| `border-dashed` | `border-style: dashed` |
-| `border-dotted` | `border-style: dotted` |
-| `border-double` | `border-style: double` |
-| `border-none`   | `border-style: none`   |
+| Class Name      | Property                    |
+| --------------- | --------------------------- |
+| border-separate | `border-collapse: separate` |
+| border-collapse | `border-collapse: collapse` |
 
 ---
 

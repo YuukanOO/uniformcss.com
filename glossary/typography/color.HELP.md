@@ -76,7 +76,7 @@ The following default responsive and pseudo settings.
 
 | Setting      | Default Setting |
 | ------------ | --------------- |
-| `responsive` | true`           |
+| `responsive` | none`           |
 | `pseudos`    | none`           |
 
 ---
