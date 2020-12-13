@@ -2,22 +2,22 @@
 title: Grid Template Rows
 property: grid-template-rows
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows
-description: Row positioning inside grid and multi-row flex containers.
+description: Templates CSS Grid rows (top-to-bottom)
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
+The `grid-template-rows` template CSS Grid rows (top-to-bottom).
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+| Class Name      | Property                                        |
+| --------------- | ----------------------------------------------- |
+| `grid-rows-none | `grid-template-rows: none`                      |
+| `grid-rows-1    | `grid-template-rows: repeat(1, minmax(0, 1fr))` |
+| `grid-rows-2    | `grid-template-rows: repeat(2, minmax(0, 1fr))` |
+| `grid-rows-3    | `grid-template-rows: repeat(3, minmax(0, 1fr))` |
+| `grid-rows-4    | `grid-template-rows: repeat(4, minmax(0, 1fr))` |
+| `grid-rows-5    | `grid-template-rows: repeat(5, minmax(0, 1fr))` |
 
 ---
 
