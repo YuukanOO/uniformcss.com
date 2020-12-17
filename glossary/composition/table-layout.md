@@ -2,13 +2,13 @@
 title: Table Layout
 property: table-layout
 mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/table-layout
-description: Sets the CSS algorithm used to lay out table elements
+description: Sets the layout algorithm for <table> elements
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `table-layout` set the CSS algorithm used to lay out table elements.
+The `table-layout` utilities sets the layout algorithm for `<table>` elements.
 
 | Class Name    | Property              |
 | ------------- | --------------------- |

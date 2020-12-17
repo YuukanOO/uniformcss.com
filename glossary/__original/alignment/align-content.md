@@ -1,52 +1,38 @@
 ---
-title: Justify Items
-property: justify-items
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items
+title: Align Content
 description: Row positioning inside grid and multi-row flex containers.
 date: 1000-01-01
 ---
 
-## Basic Usage
+### Basic Usage
 
-The `justify-items` property defines the default `justify-self` for all items of the box, giving them all a default way of justifying each box along the appropriate axis.
+The `align-content` property sets the distribution of space between and around content items along a flexbox's cross-axis or a grid's block axis.
 
-| Class Name              | Property                       |
-| ----------------------- | ------------------------------ |
-| `align-content-center`  | `align-content: center`        |
-| `align-content-start`   | `align-content: flex-start`    |
-| `align-content-end`     | `align-content: flex-end`      |
-| `align-content-between` | `align-content: space-between` |
-| `align-content-around`  | `align-content: space-around`  |
-| `align-content-evenly`  | `align-content: space-evenly`  |
+Class Name | Property
+- | -
+`align-content-center` | `align-content: center`
+`align-content-start` | `align-content: flex-start`
+`align-content-end` | `align-content: flex-end`
+`align-content-between` | `align-content: space-between`
+`align-content-around` | `align-content: space-around`
+`align-content-evenly` | `align-content: space-evenly`
 
 ---
 
-## Default Settings
+### Default Settings
 
 The following default responsive and pseudo settings.
 
-| Setting      | Default Setting |
-| ------------ | --------------- |
-| `responsive` | `true`          |
-| `pseudos`    | `none`          |
+Setting | Default Setting
+- | -
+`responsive` | `true`
+`pseudos` | `none`
+
 
 ---
 
-## {{ title }}
 
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
-
-<!--
-
-## Center
+### Center
 
 Items are packed flush to each other in the center of the alignment container along the cross axis.
 
@@ -73,18 +59,18 @@ Items are packed flush to each other in the center of the alignment container al
 
 ```html
 <div class="flex flex-wrap content-start">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
 </div>
 ```
 
 ---
 
-## Start
+### Start
 
 Items are packed flush to each other against the start edge of the alignment container in the cross axis.
 
@@ -111,18 +97,18 @@ Items are packed flush to each other against the start edge of the alignment con
 
 ```html
 <div class="flex flex-wrap align-content-start">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
 </div>
 ```
 
 ---
 
-## End
+### End
 
 Items are packed flush to each other against the end edge of the alignment container in the cross axis.
 
@@ -149,20 +135,20 @@ Items are packed flush to each other against the end edge of the alignment conta
 
 ```html
 <div class="flex flex-wrap align-content-end">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
 </div>
 ```
 
 ---
 
-## Between
+### Between
 
-Items are evenly distributed within the alignment container along the cross axis.
+Items are evenly distributed within the alignment container along the cross axis. 
 
 <div class="bg-silver-200 p-5 h-200px radius-md flex flex-wrap align-content-between">
   <div class="w-4-12 p-1">
@@ -187,20 +173,20 @@ Items are evenly distributed within the alignment container along the cross axis
 
 ```html
 <div class="flex flex-wrap align-content-between">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
 </div>
 ```
 
 ---
 
-## Around
+### Around
 
-Items are evenly distributed within the alignment container along the cross axis.
+Items are evenly distributed within the alignment container along the cross axis. 
 
 <div class="bg-silver-200 p-5 h-200px radius-md flex flex-wrap align-content-around">
   <div class="w-4-12 p-1">
@@ -225,20 +211,20 @@ Items are evenly distributed within the alignment container along the cross axis
 
 ```html
 <div class="flex flex-wrap align-content-around">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
 </div>
 ```
 
 ---
 
-## Evenly
+### Evenly
 
-Items are evenly distributed within the alignment container along the cross axis.
+Items are evenly distributed within the alignment container along the cross axis. 
 
 <div class="bg-silver-200 p-5 h-200px radius-md flex flex-wrap align-content-evenly">
   <div class="w-4-12 p-1">
@@ -263,19 +249,11 @@ Items are evenly distributed within the alignment container along the cross axis
 
 ```html
 <div class="flex flex-wrap align-content-evenly">
-	<div>1</div>
-	<div>2</div>
-	<div>3</div>
-	<div>4</div>
-	<div>5</div>
-	<div>6</div>
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
 </div>
 ```
-
--->
-
----
-
-## Resources
-
-To learn more about `{{ property }}`, refer to [MDN docs <i class="far fa-external-link ml-6"></i>]({{ mdn }}).

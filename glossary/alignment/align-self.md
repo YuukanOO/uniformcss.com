@@ -8,7 +8,7 @@ date: 1000-01-01
 
 ## Basic Usage
 
-The `align-self` utilities align a Flexbox or CSS Grid child. Alignment happens along the cross-axis, which for a Flexbox row is top-to-bottom and for Flexbox column, left-to-right.
+The `align-self` utilities align a Flexbox or CSS Grid child.
 
 | Class Name           | Property              |
 | -------------------- | --------------------- |
