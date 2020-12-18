@@ -1,52 +1,29 @@
 ---
 title: Breakpoints
+description: Customize breakpoints for all responsive properties
 date: 1000-01-01
 ---
 
-{% include shortcodes/chapter, text: 'Theming', color: 'blue' %}
+## Breakpoints
+
+By default, responsive properties will be generated for each breakpoint. Breakpoints are defined as `screens` in Uniform and breakpoints can be overwritten or extended.
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
 
 ## Breakpoint Variant Chart
 
-By default, Uniform provides **4 breakpoints** for any responsive properties. Use the following chart as the reference for any breakpoint related property.
+By default, there are **4 breakpoints** for any given responsive behavior. Use the following chart as the reference for any breakpoint related property.
 
-<table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 text-black">
-    <tr>
-      <th>
-        Variant
-      </th>
-      <th>
-        Value
-      </th>
-    </tr>
-  </thead>
-  <tbody class="font-sm">
-    <tr>
-      <td><code class="color-teal-500">sm</code></td>
-      <td>
-        <code class="text-gray-600">768px</code>
-      </td>
-    </tr>
-    <tr>
-      <td><code class="color-teal-500">md</code></td>
-      <td>
-        <code class="text-gray-600">1024px</code>
-      </td>
-    </tr>
-    <tr>
-      <td><code class="color-teal-500">lg</code></td>
-      <td>
-        <code class="text-gray-600">1280px</code>
-      </td>
-    </tr>
-    <tr>
-      <td><code class="color-teal-500">xl</code></td>
-      <td>
-        <code class="text-gray-600">1536px</code>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Variant | Value |
+| - | - |
+| `sm` | `768px` |
+| `md` | `1024px` |
+| `lg` | `1280px` |
+| `lg` | `1536px` |
+
+{.table}
 
 ---
 
@@ -54,63 +31,57 @@ By default, Uniform provides **4 breakpoints** for any responsive properties. Us
 
 The following example showcases how the variants can be applied.
 
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-black sm.bg-teal-500 md.bg-red-500 lg.bg-blue-500 text-white align-center py-8">
-    Adjust your browser to see change
-  </div>
-</section>
-
 ```html
-<div class="bg-black sm.bg-teal-500 md.bg-red-500 lg.bg-blue-500">
-	Adjust your browser to see change
+<div class="h-10 sm.h-14 md.h-20 lg.h-24 xl.h-64">
+  10px height on mobile
+  14px height on small screen sizes
+  20px height on medium screen sizes
+  24px height on large screen sizes
+  64px height on extra large screen sizes
 </div>
 ```
 
+
 ---
 
-### Extending Core Variants
+## Supporting Other Breakpoints
 
-You can extend the core breakpoints by adding key value pairs to the `$screens` map. Note, if you pass in a key that already exists, the original will be overwritten with the latest variant.
+You can add support for more breakpoints by appending your own key value pair to the screens setting in your configuration. Optionally, if a key already exists the newly defined value will take precedence.
 
 ```scss
 @use "uniform" as * with (
-  $screens: (
-    xs: 640px
+  $config: (
+    screens: (
+      xs: 640px // includes 640px as a supported breakpoint
+    )
   )
 );
 ```
 
 ---
 
-### Replacing Core Variants
+## Breakpoint Helper Functions
 
-You can replace the default variants entirely by adding key value pairs to the `$core-screens` map.
-
-```scss
-@use "uniform" as * with (
-  $core-screens: (
-    ...
-  )
-);
-```
-
----
-
-### API Functions
-
-The screen API functions allow you to query and pull values from maps. You can also pluralize the function name to pull all values, this can be helpful for when you need to loop through all the values using the `@each` rule.
-
-```bash
-screen()
-screens()
-```
+The `screen()` helper function returns values from the breakpoint map provided an existing variant is passed in as a parameter. This can be an easy way to pull pixel value of any given breakpoint.
 
 ```scss
-.element {
-  max-width: screen(md);
+// styles.scss
+@media (min-width: screen(lg)) {
+  ...
 }
+```
 
-@each $screen, $screen-value in screens() {
+```css
+/* styles.css */
+@media (min-width: 1280px) {
+  ...
+}
+```
+
+The `screens()` helper function returns the entire map. This can be useful for looping using the `@each` rule.
+
+```scss
+@each $breakpoint, $breakpoint-value in screens() {
   // for each breakpoint, do the following
 }
 ```

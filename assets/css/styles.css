@@ -2406,32 +2406,23 @@ CUSTOM PROPERTIES
 .wrapper {
   width: 100%;
   margin: auto;
-  max-width: var(--wrapper-max-width, 768px);
+  max-width: var(--wrapper-max-width, 680px);
   padding-left: var(--wrapper-padding, var(--size-20));
   padding-right: var(--wrapper-padding, var(--size-20));
 }
 @media (min-width: 768px) {
   .wrapper {
-    max-width: var(--wrapper-sm-max-width, 768px);
-    padding: 0;
+    max-width: var(--wrapper-sm-max-width, 808px);
   }
 }
 @media (min-width: 1024px) {
   .wrapper {
-    max-width: var(--wrapper-md-max-width, 1024px);
-    padding: 0;
+    max-width: var(--wrapper-md-max-width, 1064px);
   }
 }
 @media (min-width: 1280px) {
   .wrapper {
-    max-width: var(--wrapper-lg-max-width, 1152px);
-    padding: 0;
-  }
-}
-@media (min-width: 1536px) {
-  .wrapper {
-    max-width: var(--wrapper-xl-max-width, 1280px);
-    padding: 0;
+    max-width: var(--wrapper-lg-max-width, 1320px);
   }
 }
 

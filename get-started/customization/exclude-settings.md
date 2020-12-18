@@ -1,41 +1,72 @@
 ---
 title: Exclude Settings
-description: Control how individual properties are generated.
+description: Control which CSS properties are included and excluded.
 date: 1000-01-03
 ---
 
 
-## Utility Settings
+## Exclude Settings
 
-The `utility` setting is a map where you can pass in settings to configure, replace, and extend variants for each property. For each property the following settings are available to be configured.
+The `exclude` and `include` settings are a Sass list that tell Uniform which CSS properties should be included or excluded. By default all Uniform supported CSS properties and modules are included. In this guide, you can learn how you can override these settings.
 
-### Utility Setting Usage
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
-Utility settings control how classes should look on a global level.
+---
+
+## Excluding Properties
+
+There may be a time where you wish to exclude certain unused properties. You can achieve this by including the native CSS property name in the `excludes` map of your configuration.
 
 ```scss
 // default values
 @use "uniform" as * with (
   $config: (
-    utilities: (
-      background-color: (
-        shorthand: bg,
-        responsive: false,
-
-      )
+    excludes: (
+      background-color, 
+      background-attachment, 
+      letter-spacing,
     )
   )
 );
 ```
 
-### Build Settings Definitions
+---
 
-The following build setting definitions apply.
+## Excluding All Properties
 
-| Setting | Default | Description |
-| - | - | - |
-| `important`{.code-a} | `false` | Append `!important` to each property. |
-| `prefix` | `null` | Append a namespace to the beginning of each class name. |
-| `delimiter` | `-` | Specifies the delimiter that separates shorthand name to its variant. |
-| `pseudo-delimiter` | `.` | Specifies the delimiter of pseudo variants. |
-| `screen-delimiter` | `.` | Specifies the delimiter of breakpoint variants. |
+If you wish to exclude all properties, simply pass in `all` in your excludes map.
+
+```scss
+// default values
+@use "uniform" as * with (
+  $config: (
+    excludes: (
+      all
+    )
+  )
+);
+```
+
+---
+
+## Including Properties
+
+To include only a select set of CSS properties, pass in the native CSS properties you wish to include to the `includes` map.
+
+```scss
+// default values
+@use "uniform" as * with (
+  $config: (
+    excludes: (
+      all
+    ),
+    includes: (
+      background-color,
+      letter-spacing,
+      margin,
+      padding,
+      display
+    )
+  )
+);
+```

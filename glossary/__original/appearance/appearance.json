@@ -1,5 +1,5 @@
 {
-  "layout": "layouts/glossary-2.njk",
+  "layout": "layouts/glossary.njk",
   "permalink": "glossary-2/{{ title | slug }}/index.html",
   "tags": [
     "appearance"

@@ -1,68 +1,166 @@
 ---
 title: Custom Properties
-date: 1000-01-06
+description: Generating your own custom properties.
+date: 1000-01-07
 ---
 
-{% include shortcodes/chapter, text: 'Customization', color: 'orange' %}
 
+## Custom Properties
 
-## Extracting Components
+The `utilities` map can be used to generate your own custom properties by passing in the same data structure of a standard CSS property.
 
-Even though Uniform is a Utility-first CSS framework, it encourages extraction of components as design patterns emerge. Depending on your setup and workflow, Uniform provides multiple ways of extracting components. The following guide will cover the various ways you can extract components.
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
 ---
 
-### Option 1. Use Custom Properties <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Basic</div>
+## Generating Custom Properties
 
-The simplest and easiest way you can extract components is to build your own CSS component using the custom properties that are available to you. This workflow is suitable for users who are using the pre-packaged CSS or CDN version of Uniform (basic coniguration).
+You can use the same data structure of a utility setting to generate your own property.
+
+```scss
+// styles.scss
+@use "uniform" as * with (
+  $config: (
+    utilities: (
+      leading-trim: (
+        responsive: true,
+        shorthand: leading,
+        properties: (leading-trim),
+        variants: (
+          trimmer: both
+        )
+      ),
+      text-edge: (
+        shorthand: text,
+        properties: (text-edge),
+        variants: (
+          cap: cap alphabetic
+        )
+      )
+    )
+  )
+);
+```
 
 ```css
-// stylesheet.css
-
-.card {
-  display: block;
-  padding: var(--size-6);
-  background: var(--white);
-  box-shadow: var(--shadow-1);
-  border-radius: var(--radius-md);
-}
-.card:hover {
-  box-shadow: var(shadow-3);
-}
-```
----
-
-### Option 2. Use API Functions <div class="inline-block ml-2 px-2 py-1 bg-pink-400 radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Native</div>
-
-Similarly to **option 1**, if you are using the native configuration setup of Uniform you can build your own components using <a class="hover.underline" href="/get-started/api-functions">API functions</a>.
-
-```scss
-// stylesheet.scss
-
-.card {
-  display: block;
-  padding: size(6);
-  background: fill(white);
-  box-shadow: shadow(xs);
-  border-radius: radius(md);
-
-  &:hover {
-    box-shadow: var(shadow-3);
-  }
-}
+/* styles.css */
+.leading-trimmer { leading-trim: both; }
+.text-edge { text-edge: cap alphabetic; }
+...
 ```
 
 ---
 
-### Option 3. Use Sass @extend <div class="inline-block ml-2 px-2 py-1 bg-pink-400 radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Native</div>
+## Excluding Custom Properties
 
-You can also extract components by utilizing the Sass `@extend` rule. This method is particularly useful when you want to simply copy and paste the html class list without having to write CSS properties from scratch.
+Any new utilities generated through the `utilities` settings map will behave like any other utility and can be included or excluded using the `include` and `exclude` settings.
 
 ```scss
-// stylesheet.scss
-
-.card {
-  @extend .block, .p-6, .bg-white, .shadow-1, .hover\.shadow-3;
-}
+// default values
+@use "uniform" as * with (
+  $config: (
+    utilities: (
+      leading-trim: (
+        responsive: true,
+        shorthand: leading,
+        properties: (leading-trim),
+        variants: (
+          trimmer: both
+        )
+      ),
+    ),
+    excludes: (
+      all
+    ),
+    includes: (
+      leading-trim
+    )
+  )
+);
 ```
 
+---
+
+## Add to Core Library <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm leading-0 font-bold radius-round bg-blue bg-brighten-500 text-white align-middle">Advanced</span>
+
+Adding utilities through the utilities map can be a useful to quickly add properties however when adding many, your Uniform configuration may become long. To avoid this problem custom properties can also be added natively to the core library.
+
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 text-black radius-round">1</span> Build out your data structure</h4>
+
+Create a new `sass` document and use the following template to configure your own custom property.
+
+```scss
+// leading-trim.scss
+@use "uniform/core";
+@use "sass:map";
+
+$name: leading-trim;
+$shorthand: leading-trim;
+$responsive: false;
+$responsive-pseudos: false;
+
+$properties: (leading-trim);
+$custom-properties: ();
+
+$variants: ();
+
+$pseudos: ();
+
+$config: (
+  utilities: (
+    $name: (
+      shorthand: $shorthand,
+      responsive: $responsive,
+      responsive-pseudos: $responsive-pseudos,
+      properties: $properties,
+      custom-properties: $custom-properties,
+      default-variants: (
+        $variants
+      ),
+      default-pseudos: (
+        $pseudos
+      )
+    )
+  )
+);
+
+core.$all-config: map.deep-merge(core.$all-config, $config);
+core.$all-config: map.deep-merge(core.$all-config, core.$config);
+```
+
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 text-black radius-round">2</span> Include custom property to the import list</h4>
+
+Open `_index.scss` located inside the uniform directly and include the newly created custom property using the `@use` after the last imported property.
+
+```scss
+// uniform/_index.scss
+...
+@use "utilities/svg/core-fill";
+@use "utilities/svg/core-stroke";
+@use "utilities/svg/core-stroke-width";
+
+@use "utilities/leading-trim"; // include your custom property here
+```
+
+
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 text-black radius-round">3</span> Override or customize custom property</h4>
+
+Once your custom property has been added into the core library, it will behave like any other utility property. This means it can be configured, overwritten or extended like any other property inside the `utilities` map.
+
+```scss
+// styles.scss
+@use "uniform" as * with (
+  $config: (
+    utilities: (
+      leading-trim: (
+        responsive: true,
+        shorthand: leading,
+        properties: (leading-trim),
+        variants: (
+          trimmer: both
+        )
+      )
+    )
+  )
+);
+```

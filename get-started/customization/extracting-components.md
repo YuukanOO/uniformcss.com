@@ -1,68 +1,59 @@
 ---
 title: Extracting Components
-date: 1000-01-06
+description: Dealing with common utility patterns.
+date: 1000-01-08
 ---
-
-{% include shortcodes/chapter, text: 'Customization', color: 'orange' %}
-
 
 ## Extracting Components
 
-Even though Uniform is a Utility-first CSS framework, it encourages extraction of components as design patterns emerge. Depending on your setup and workflow, Uniform provides multiple ways of extracting components. The following guide will cover the various ways you can extract components.
+Even though Uniform is a Utility-first CSS framework, it encourages the extraction of components as common design patterns emerge. The following guide will cover the various ways you can extract components.
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
 ---
 
-### Option 1. Use Custom Properties <div class="inline-block ml-2 px-2 py-1 bg-black radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Basic</div>
+## Using Theme Helper Functions
 
-The simplest and easiest way you can extract components is to build your own CSS component using the custom properties that are available to you. This workflow is suitable for users who are using the pre-packaged CSS or CDN version of Uniform (basic coniguration).
-
-```css
-// stylesheet.css
-
-.card {
-  display: block;
-  padding: var(--size-6);
-  background: var(--white);
-  box-shadow: var(--shadow-1);
-  border-radius: var(--radius-md);
-}
-.card:hover {
-  box-shadow: var(shadow-3);
-}
-```
----
-
-### Option 2. Use API Functions <div class="inline-block ml-2 px-2 py-1 bg-pink-400 radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Native</div>
-
-Similarly to **option 1**, if you are using the native configuration setup of Uniform you can build your own components using <a class="hover.underline" href="/get-started/api-functions">API functions</a>.
+Uniform CSS encourages the extraction of components without breaking your existing Sass workflow. You can build custom components and still get access to theme settings using helper functions. To learn more about helper functions, refer to the page on helper functions.
 
 ```scss
-// stylesheet.scss
-
-.card {
+// styles.scss
+.custom-element {
   display: block;
-  padding: size(6);
-  background: fill(white);
-  box-shadow: shadow(xs);
+  padding: size(20);
+  font-family: font-family(sans);
   border-radius: radius(md);
+  box-shadow: shadow(sm);
 
   &:hover {
-    box-shadow: var(shadow-3);
+    box-shadow: shadow(md);
   }
 }
 ```
 
 ---
 
-### Option 3. Use Sass @extend <div class="inline-block ml-2 px-2 py-1 bg-pink-400 radius-xs font-2xs font-600 align-middle text-white uppercase tracking-1">Native</div>
+## Using @apply mixin <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm leading-0 font-bold radius-round bg-blue bg-brighten-500 text-white align-middle">Beta</span>
 
-You can also extract components by utilizing the Sass `@extend` rule. This method is particularly useful when you want to simply copy and paste the html class list without having to write CSS properties from scratch.
+The `apply()` mixin allows you to apply properties directly using shorthand utility class names. Behind the scene, it parses through the list of arguments and extends placeholder selectors that match the name.
 
 ```scss
-// stylesheet.scss
-
-.card {
-  @extend .block, .p-6, .bg-white, .shadow-1, .hover\.shadow-3;
+.element {
+  @include apply(
+    'mb-24',
+    'hover.mb-32',
+    'p-20',
+    'bg-white',
+  )
 }
 ```
 
+This is currently an experimental feature and should not be used for production. To enable this feature, placeholders must be set to `true` in your configuration.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    placeholders: true,
+  )
+);
+```
