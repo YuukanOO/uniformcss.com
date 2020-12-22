@@ -1,415 +1,119 @@
 ---
 title: Typography
-date: 1000-01-06
+description: Learn how to customize typography related settings.
+date: 1000-01-04
 ---
 
-{% include shortcodes/chapter, text: 'Theming', color: 'teal' %}
+## Shadow
 
-## Font Family Chart
+Box shadow effects can be applied using via the `shadow` utility. By default, there are 9 shadow effects available. These effects can also be extended, replaced, or overwritten through your configuration.
 
-Use the following chart as the reference for the `font-family` property. Each font family also has fall-back options set.
-
-<table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 text-black">
-    <tr>
-      <th>
-        Variant
-      </th>
-      <th>
-        Value
-      </th>
-      <th>
-        Preview
-      </th>
-    </tr>
-  </thead>
-  <tbody class="font-sm">
-    <tr>
-      <td>sans</td>
-      <td>sans-serif</td>
-      <td class="font-sans">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>serif</td>
-      <td>serif</td>
-      <td class="font-serif">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>mono</td>
-      <td>monospace</td>
-      <td class="font-mono">
-        Hello World
-      </td>
-    </tr>
-  </tbody>
-</table>
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
 ---
 
-## Font Size Chart
+## Shadow Variant Chart
 
-Use the following chart as the reference for the `font-size` property.
+By default, Uniform provides **9 shadow effects**. Use the following chart as the reference for each size.
 
-<table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 text-black">
-    <tr>
-      <th>
-        Variant
-      </th>
-      <th>
-        Value
-      </th>
-      <th>
-        Preview
-      </th>
-    </tr>
-  </thead>
-  <tbody class="font-sm">
-    <tr>
-      <td>2xs</td>
-      <td>10px</td>
-      <td class="font-2xs">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>xs</td>
-      <td>12px</td>
-      <td class="font-xs">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>sm</td>
-      <td>14px</td>
-      <td class="font-sm">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>md</td>
-      <td>16px</td>
-      <td class="font-md">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>lg</td>
-      <td>18px</td>
-      <td class="font-lg">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>xl</td>
-      <td>20px</td>
-      <td class="font-xl">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>2xl</td>
-      <td>24px</td>
-      <td class="font-2xl">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>3xl</td>
-      <td>28px</td>
-      <td class="font-3xl">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>4xl</td>
-      <td>32px</td>
-      <td class="font-4xl">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>5xl</td>
-      <td>36px</td>
-      <td class="font-5xl">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>6xl</td>
-      <td>40px</td>
-      <td class="font-6xl">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>7xl</td>
-      <td>48px</td>
-      <td class="font-7xl">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>8xl</td>
-      <td>56px</td>
-      <td class="font-8xl">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>9xl</td>
-      <td>64px</td>
-      <td class="font-9xl">
-        Hello World
-      </td>
-    </tr>
-    <tr>
-      <td>10xl</td>
-      <td>72px</td>
-      <td class="font-10xl">
-        Hello World
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Variant | Value |
+| - | - |
+| `xs` | `(0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24))` |
+| `sm` | `(0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23))` |
+| `md` | `(0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23))` |
+| `lg` | `(0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22))` |
+| `xl` | `(0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22))` |
+| `focus` | `(0 0 0 3px rgb(0, 145, 255, 0.2))` |
+| `success` | `(0 0 0 3px rgb(0, 182, 73, 0.2))` |
+| `warning` | `(0 0 0 3px rgb(255, 175, 22, 0.2))` |
+| `danger` | `(0 0 0 3px rgb(252, 95, 95, 0.2))` |
 
----
-
-## Line-Height Chart
-
-All default Uniform `line-height` values are unitless by default. Use the following chart as the reference for the `leading` property.
-
-<table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 text-black">
-    <tr>
-      <th>
-        Variant
-      </th>
-      <th>
-        Value
-      </th>
-    </tr>
-  </thead>
-  <tbody class="font-sm">
-    <tr>
-      <td>1</td>
-      <td>1</td>
-    <tr>
-      <td>2</td>
-      <td>1.125</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>1.25</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>1.375</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>1.5</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>1.625</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>1.75</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>1.875</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>2.125</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>2.25</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>2.375</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>2.5</td>
-    </tr>
-  </tbody>
-</table>
+{.table}
 
 ---
 
 ## Basic Usage
 
-The following example showcases how typography variants can be applied.
+The following example showcases how the variants can be applied.
 
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="bg-white shadow-3 p-4 py-8 font-h5 md.font-2xl font-600 leading-8 align-center radius-xs">
-    Hello World
+<div class="bg-silver-200 p-20 h-200px radius-md">
+  <div class="grid grid-cols-5 gap-18">
+    <div class="shadow-xs ratio-square bg-white">
+    </div>
+    <div class="shadow-sm ratio-square bg-white">
+    </div>
+    <div class="shadow-md ratio-square bg-white">
+    </div>
+    <div class="shadow-lg ratio-square bg-white">
+    </div>
+    <div class="shadow-xl ratio-square bg-white">
+    </div>
+    <div class="shadow-focus ratio-square bg-white">
+    </div>
+    <div class="shadow-success ratio-square bg-white">
+    </div>
+    <div class="shadow-warning ratio-square bg-white">
+    </div>
+    <div class="shadow-danger ratio-square bg-white">
+    </div>
   </div>
-</section>
+</div>
 
 ```html
-<div class="font-h5 md.font-2xl font-600 leading-8">
-	Hello World
-</div>
+<div class="shadow-xs ..."></div>
+<div class="shadow-sm ..."></div>
+<div class="shadow-md ..."></div>
+<div class="shadow-lg ..."></div>
+<div class="shadow-xl ..."></div>
+
+<div class="shadow-focus ..."></div>
+<div class="shadow-success ..."></div>
+<div class="shadow-warning ..."></div>
+<div class="shadow-danger ..."></div>
 ```
 
 ---
 
-### Extending Core Variants
+## Extending Shadows
 
-You can extend the various typography related maps to enable more variant options. Note, if you pass in a key that already exists, the original will be overwritten with the latest variant.
+You can customize the default shadows or add new ones by passing key value pairs to the `shadows` setting in your configuration. Customizations applied to the `shadows` setting will be applied to the `box-shadow` property.
 
 ```scss
+// styles.scss
 @use "uniform" as * with (
-  $font-families: (
-    helvetica: Helvetica
-  ),
-  $font-sizes: (
-    huge: 72px,
-    tiny: 8px
-  ),
-  $leadings: (
-    tall: 3
+  $config: (
+    shadows: (
+      card: ( 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) ),
+      chatbox: ( 0 20px 24px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.25) ),
+    ),
   )
 );
 ```
 
 ```css
 /* styles.css */
-.font-helvetica {
-  font-family: Helvetica;
+.shadow-card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.font-huge {
-  font-size: 72px;
+.shadow-chatbox {
+  box-shadow: 0 20px 24px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.25);
 }
-.font-tiny {
-  font-size: 8px;
-}
-.font-tall {
-  line-height: 3;
-}
+...
 ```
 
----
-#
-## Replacing Core Variants
+> Configuring radius sizes work in a similar way to other types of configuration in Uniform CSS. If the key exists, it will override the existing key otherwise it will be included as new variant.
 
-You can replace the default variants entirely by adding key value pairs to each of the maps.
+---
+
+## Disabling Radius Sizes
+
+To remove existing shadow effects, simply pass in `null` to the `shadows` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
-  $core-font-families: (
-    ...
-  ),
-  $core-font-sizes: (
-    ...
-  ),
-  $core-font-weights: (
-    ...
-  ),
-  $core-leadings: (
+  $config: (
+    shadows: null, // disable default shadow variants
     ...
   )
-);
+)
 ```
-
----
-
-### API Functions
-
-The screen API functions allow you to query and pull values from maps. You can also pluralize the function name to pull all values, this can be helpful for when you need to loop through all the values using the `@each` rule.
-
-```bash
-font-family()
-font-families()
-
-font-size()
-font-sizes()
-
-font-weight()
-font-weights()
-
-leading()
-leadings()
-```
-
-```scss
-.element {
-  font-family: font-family(sans);
-  font-size: font-size(6xl);
-  font-weight: 700;
-  line-height: leading(8);
-}
-
-@each $font-size, $font-size-value in font-sizes() {
-  // for each font-size, do the following
-}
-```
-
----
-
-### Root Variables
-
-If you are using the basic configuration setup of Uniform, use the following set of root variables to override default values.
-
-<div class="bg-black radius-sm h-25 overflow-auto">
-{% highlight css %}
-:root {
-  --font-sans: sans-serif;
-  --font-serif: serif;
-  --font-mono: monospace;
-
-  --font-10xl. 4.5rem;
-  --font-9xl. 4rem;
-  --font-8xl. 3.5rem;
-  --font-7xl. 3rem;
-  --font-6xl. 2.5rem;
-  --font-5xl. 2.25rem;
-  --font-4xl. 2rem;
-  --font-3xl. 1.75rem;
-  --font-2xl. 1.5rem;
-  --font-xl. 1.25rem;
-  --font-lg. 1.125rem;
-  --font-md. 1rem;
-  --font-sm. 0.875rem;
-  --font-xs: 0.75rem;
-  --font-2xs: 0.625rem;
-
-  --leading-1: 1;
-  --leading-2: 1.125;
-  --leading-3: 1.25;
-  --leading-4: 1.375;
-  --leading-5: 1.5;
-  --leading-6: 1.625;
-  --leading-7: 1.75;
-  --leading-8: 1.875;
-  --leading-9: 2;
-  --leading-10: 2.125;
-  --leading-11: 2.25;
-  --leading-12: 2.375;
-  --leading-13: 2.5;
-
-  --tracking-n3: -0.075em;
-  --tracking-n2: -0.05em;
-  --tracking-n1: -0.025em;
-  --tracking-0: 0;
-  --tracking-1: 0.025em;
-  --tracking-2: 0.05em;
-  --tracking-3: 0.075em;
-}
-{% endhighlight %}
-</div>

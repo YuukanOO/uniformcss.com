@@ -3021,6 +3021,13 @@ CUSTOM PROPERTIES
   background-color: hsla(0, calc(0% + var(--bg-sat)), calc(0% + var(--bg-ltn)), var(--bg-opacity));
 }
 
+.bg-subnav, .empty\.bg-subnav:empty, .focus\.bg-subnav:focus, .active\.bg-subnav:active, .group:hover .group-hover\.bg-subnav, .hover\.bg-subnav:hover {
+  --bg-sat: 0%;
+  --bg-ltn: 0%;
+  --bg-opacity: 1;
+  background-color: hsla(25, calc(25% + var(--bg-sat)), calc(50% + var(--bg-ltn)), var(--bg-opacity));
+}
+
 .bg-darken-100, .active\.bg-darken-100:active, .group:hover .group-hover\.bg-darken-100, .hover\.bg-darken-100:hover {
   --bg-ltn: var(--darken-100);
 }
@@ -3654,6 +3661,13 @@ CUSTOM PROPERTIES
   border-color: hsla(0, calc(0% + var(--border-sat)), calc(0% + var(--border-ltn)), var(--border-opacity));
 }
 
+.border-subnav, .focus-within\.border-subnav:focus-within, .group:hover .group-hover\.border-subnav, .hover\.border-subnav:hover {
+  --border-sat: 0%;
+  --border-ltn: 0%;
+  --border-opacity: 1;
+  border-color: hsla(25, calc(25% + var(--border-sat)), calc(50% + var(--border-ltn)), var(--border-opacity));
+}
+
 .text-primary-b900, .group:focus .group-focus\.text-primary-b900, .group:hover .group-hover\.text-primary-b900, .hover\.text-primary-b900:hover {
   --text-sat: 0%;
   --text-ltn: 0%;
@@ -4205,6 +4219,13 @@ CUSTOM PROPERTIES
   --text-ltn: 0%;
   --text-opacity: 1;
   color: hsla(0, calc(0% + var(--text-sat)), calc(0% + var(--text-ltn)), var(--text-opacity));
+}
+
+.text-subnav, .group:focus .group-focus\.text-subnav, .group:hover .group-hover\.text-subnav, .hover\.text-subnav:hover {
+  --text-sat: 0%;
+  --text-ltn: 0%;
+  --text-opacity: 1;
+  color: hsla(25, calc(25% + var(--text-sat)), calc(50% + var(--text-ltn)), var(--text-opacity));
 }
 
 .stroke-0 {
@@ -6268,39 +6289,39 @@ CUSTOM PROPERTIES
 }
 
 .text-opacity-10, .group:hover .group-hover\.text-opacity-10, .hover\.text-opacity-10:hover {
-  --text-opacity: 10%;
+  --text-opacity: 0.1;
 }
 
 .text-opacity-20, .group:hover .group-hover\.text-opacity-20, .hover\.text-opacity-20:hover {
-  --text-opacity: 20%;
+  --text-opacity: 0.2;
 }
 
 .text-opacity-30, .group:hover .group-hover\.text-opacity-30, .hover\.text-opacity-30:hover {
-  --text-opacity: 30%;
+  --text-opacity: 0.3;
 }
 
 .text-opacity-40, .group:hover .group-hover\.text-opacity-40, .hover\.text-opacity-40:hover {
-  --text-opacity: 40%;
+  --text-opacity: 0.4;
 }
 
 .text-opacity-50, .group:hover .group-hover\.text-opacity-50, .hover\.text-opacity-50:hover {
-  --text-opacity: 50%;
+  --text-opacity: 0.5;
 }
 
 .text-opacity-60, .group:hover .group-hover\.text-opacity-60, .hover\.text-opacity-60:hover {
-  --text-opacity: 60%;
+  --text-opacity: 0.6;
 }
 
 .text-opacity-70, .group:hover .group-hover\.text-opacity-70, .hover\.text-opacity-70:hover {
-  --text-opacity: 70%;
+  --text-opacity: 0.7;
 }
 
 .text-opacity-80, .group:hover .group-hover\.text-opacity-80, .hover\.text-opacity-80:hover {
-  --text-opacity: 80%;
+  --text-opacity: 0.8;
 }
 
 .text-opacity-90, .group:hover .group-hover\.text-opacity-90, .hover\.text-opacity-90:hover {
-  --text-opacity: 90%;
+  --text-opacity: 0.9;
 }
 
 .text-darken-100, .group:hover .group-hover\.text-darken-100, .hover\.text-darken-100:hover {
@@ -12012,39 +12033,39 @@ CUSTOM PROPERTIES
 }
 
 .border-opacity-10, .group:hover .group-hover\.border-opacity-10, .hover\.border-opacity-10:hover {
-  --border-opacity: 10%;
+  --border-opacity: 0.1;
 }
 
 .border-opacity-20, .group:hover .group-hover\.border-opacity-20, .hover\.border-opacity-20:hover {
-  --border-opacity: 20%;
+  --border-opacity: 0.2;
 }
 
 .border-opacity-30, .group:hover .group-hover\.border-opacity-30, .hover\.border-opacity-30:hover {
-  --border-opacity: 30%;
+  --border-opacity: 0.3;
 }
 
 .border-opacity-40, .group:hover .group-hover\.border-opacity-40, .hover\.border-opacity-40:hover {
-  --border-opacity: 40%;
+  --border-opacity: 0.4;
 }
 
 .border-opacity-50, .group:hover .group-hover\.border-opacity-50, .hover\.border-opacity-50:hover {
-  --border-opacity: 50%;
+  --border-opacity: 0.5;
 }
 
 .border-opacity-60, .group:hover .group-hover\.border-opacity-60, .hover\.border-opacity-60:hover {
-  --border-opacity: 60%;
+  --border-opacity: 0.6;
 }
 
 .border-opacity-70, .group:hover .group-hover\.border-opacity-70, .hover\.border-opacity-70:hover {
-  --border-opacity: 70%;
+  --border-opacity: 0.7;
 }
 
 .border-opacity-80, .group:hover .group-hover\.border-opacity-80, .hover\.border-opacity-80:hover {
-  --border-opacity: 80%;
+  --border-opacity: 0.8;
 }
 
 .border-opacity-90, .group:hover .group-hover\.border-opacity-90, .hover\.border-opacity-90:hover {
-  --border-opacity: 90%;
+  --border-opacity: 0.9;
 }
 
 .border-darken-100, .group:hover .group-hover\.border-darken-100, .hover\.border-darken-100:hover {
@@ -12340,39 +12361,39 @@ CUSTOM PROPERTIES
 }
 
 .bg-opacity-10, .group:hover .group-hover\.bg-opacity-10, .hover\.bg-opacity-10:hover {
-  --bg-opacity: 10%;
+  --bg-opacity: 0.1;
 }
 
 .bg-opacity-20, .group:hover .group-hover\.bg-opacity-20, .hover\.bg-opacity-20:hover {
-  --bg-opacity: 20%;
+  --bg-opacity: 0.2;
 }
 
 .bg-opacity-30, .group:hover .group-hover\.bg-opacity-30, .hover\.bg-opacity-30:hover {
-  --bg-opacity: 30%;
+  --bg-opacity: 0.3;
 }
 
 .bg-opacity-40, .group:hover .group-hover\.bg-opacity-40, .hover\.bg-opacity-40:hover {
-  --bg-opacity: 40%;
+  --bg-opacity: 0.4;
 }
 
 .bg-opacity-50, .group:hover .group-hover\.bg-opacity-50, .hover\.bg-opacity-50:hover {
-  --bg-opacity: 50%;
+  --bg-opacity: 0.5;
 }
 
 .bg-opacity-60, .group:hover .group-hover\.bg-opacity-60, .hover\.bg-opacity-60:hover {
-  --bg-opacity: 60%;
+  --bg-opacity: 0.6;
 }
 
 .bg-opacity-70, .group:hover .group-hover\.bg-opacity-70, .hover\.bg-opacity-70:hover {
-  --bg-opacity: 70%;
+  --bg-opacity: 0.7;
 }
 
 .bg-opacity-80, .group:hover .group-hover\.bg-opacity-80, .hover\.bg-opacity-80:hover {
-  --bg-opacity: 80%;
+  --bg-opacity: 0.8;
 }
 
 .bg-opacity-90, .group:hover .group-hover\.bg-opacity-90, .hover\.bg-opacity-90:hover {
-  --bg-opacity: 90%;
+  --bg-opacity: 0.9;
 }
 
 .bg-lighten-100, .group:hover .group-hover\.bg-lighten-100, .hover\.bg-lighten-100:hover {

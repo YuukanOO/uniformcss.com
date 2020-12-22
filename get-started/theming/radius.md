@@ -1,73 +1,33 @@
 ---
 title: Radius
+description: Learn how to customize default radius sizes.
 date: 1000-01-03
 ---
 
-{% include shortcodes/chapter, text: 'Theming', color: 'cyan' %}
+## Radius
+
+Border radius properties can be applied using via the `radius` utility. By default, there are 8 border radius sizes available. These sizes can also be extended, replaced, or overwritten through your configuration.
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
 
 ## Radius Variant Chart
 
-By default, Uniform provides **5 border radiuses** . Use the following chart as the reference for any `border-radius` related property.
+By default, Uniform provides **8 border radius sizes**. Use the following chart as the reference for each size.
 
-<table class="table">
-  <thead class="uppercase font-xs font-600 tracking-1 text-black">
-    <tr>
-      <th>
-        Variant
-      </th>
-      <th>
-        Value
-      </th>
-      <th>
-        Preview
-      </th>
-    </tr>
-  </thead>
-  <tbody class="font-sm">
-    <tr>
-      <td><code class="color-teal-500">xs</code></td>
-      <td><code class="text-gray-600">4px</code></td>
-      <td>
-        <div class="radius-sm bg-black w-12 h-12"></div>
-      </td>
-    </tr>
-    <tr>
-      <td><code class="color-teal-500">sm</code></td>
-      <td><code class="text-gray-600">8px</code></td>
-      <td>
-        <div class="radius-sm bg-black w-12 h-12"></div>
-      </td>
-    </tr>
-    <tr>
-      <td><code class="color-teal-500">md</code></td>
-      <td><code class="text-gray-600">12px</code></td>
-      <td>
-        <div class="radius-md bg-black w-12 h-12"></div>
-      </td>
-    </tr>
-    <tr>
-      <td><code class="color-teal-500">lg</code></td>
-      <td><code class="text-gray-600">16px</code></td>
-      <td>
-        <div class="radius-lg bg-black w-12 h-12"></div>
-      </td>
-    </tr>
-    <tr>
-      <td><code class="color-teal-500">xl</code></td>
-      <td><code class="text-gray-600">20px</code></td>
-      <td>
-        <div class="radius-lg bg-black w-12 h-12"></div>
-      </td>
-    </tr>
-    <tr>
-      <td><code class="color-teal-500">round</code></td>
-      <td><code class="text-gray-600">9999px</code></td>
-      <td>
-        <div class="radius-round bg-black w-12 h-12"></div>
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Variant | Value | Pixels |
+| - | - | - |
+| `2xs` | `0.125rem` | `2px` |
+| `xs` | `0.25rem` | `4px` |
+| `sm` | `0.375rem` | `6px` |
+| `md` | `0.5rem` | `8px` |
+| `lg` | `0.625rem` | `10px` |
+| `xl` | `0.75rem` | `12px` |
+| `2xl` | `0.875rem` | `14px` |
+| `round` | `9999px` | `9999px` |
+
+{.table}
 
 ---
 
@@ -75,28 +35,52 @@ By default, Uniform provides **5 border radiuses** . Use the following chart as 
 
 The following example showcases how the variants can be applied.
 
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="w-100p p-5 bg-white align-center shadow-3 radius-lg">
-    This container has a large radius
+<div class="bg-silver-200 p-20 h-200px radius-md">
+  <div class="grid grid-cols-8 gap-18">
+    <div class="ratio-square radius-2xs bg-black">
+    </div>
+    <div class="ratio-square radius-xs bg-black">
+    </div>
+    <div class="ratio-square radius-sm bg-black">
+    </div>
+    <div class="ratio-square radius-md bg-black">
+    </div>
+    <div class="ratio-square radius-lg bg-black">
+    </div>
+    <div class="ratio-square radius-xl bg-black">
+    </div>
+    <div class="ratio-square radius-2xl bg-black">
+    </div>
+    <div class="ratio-square radius-round bg-black">
+    </div>
   </div>
-</section>
+</div>
 
 ```html
-<div class="radius-lg">
-	This container has a large radius
-</div>
+<div class="radius-2xs ..."></div>
+<div class="radius-xs ..."></div>
+<div class="radius-sm ..."></div>
+<div class="radius-md ..."></div>
+<div class="radius-lg ..."></div>
+<div class="radius-xl ..."></div>
+<div class="radius-2xl ..."></div>
+<div class="radius-round ..."></div>
 ```
 
 ---
 
-### Extending Core Variants
+## Extending Radius
 
-You can extend the core radius by adding key value pairs to the `$radius` map.
+You can customize the default sizes or add new ones by passing key value pairs to the `radiuses` setting in your configuration. Customizations applied to the `radiuses` setting will be universally applied across all border radius related properties such as `border-radius`, `border-top-right-radius` etc.
 
 ```scss
+// styles.scss
 @use "uniform" as * with (
-  $radius: (
-    custom: 10px
+  $config: (
+    radiuses: (
+      custom: 5px,
+      card: 7px,
+    ),
   )
 );
 ```
@@ -104,60 +88,27 @@ You can extend the core radius by adding key value pairs to the `$radius` map.
 ```css
 /* styles.css */
 .radius-custom {
-  border-radius: 10px;
+  border-radius: 5px;
 }
+.radius-card {
+  border-radius: 7px;
+}
+...
 ```
+
+> Configuring radius sizes work in a similar way to other types of configuration in Uniform CSS. If the key exists, it will override the existing key otherwise it will be included as new variant.
 
 ---
 
-### Replacing Core Variants
+## Disabling Radius Sizes
 
-You can replace the default variants entirely by adding key value pairs to the `$core-radius` map.
+To remove existing radius sizes, simply pass in `null` to the `radiuses` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
-  $core-radius: (
+  $config: (
+    radiuses: null, // disable default radius sizes
     ...
   )
-);
+)
 ```
-
----
-
-## API Functions
-
-The radius API function allows you to query and pull values from the radius map. You can also pluralize the function name to pull all values, this can be helpful for when you need to loop through all the values using the `@each` rule.
-
-```bash
-radius()
-core.radiuses()
-```
-
-```scss
-.element {
-  border-radius: radius(md);
-}
-
-@each $radius, $radius-value in core.radiuses() {
-  // for each radius, do the following
-}
-```
-
----
-
-### Root Variables
-
-If you are using the basic configuration setup of Uniform, use the following set of root variables to override default values.
-
-<div class="bg-black radius-sm h-25 overflow-auto">
-{% highlight css %}
-:root {
-  --radius-xs: 0.25rem;
-  --radius-sm. 0.5rem;
-  --radius-md. 0.75rem;
-  --radius-lg. 1rem;
-  --radius-xl. 1.25rem;
-  --radius-round: 9999px;
-}
-{% endhighlight %}
-</div>

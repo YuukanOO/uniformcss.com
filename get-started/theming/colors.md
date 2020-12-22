@@ -4,322 +4,155 @@ description: Learn how to customize and manipulate colors.
 date: 1000-01-02
 ---
 
-## Colors
+## Adjusting Base Colors
 
-Customizing the color scheme to match your brand is an important aspect of Uniform CSS. Colors in Uniform are flexibile and semantically organized to fit standard brand design systems. Uniform also provides powerful utility-based manipulation features that provides both saturation and lightness control.
+All base colors in Uniform CSS can be quickly adjusted by overriding CSS variables to match Hue, Saturation, and Lightness of your brand and design. For each color you can adjust its color properties across all its set or on an individual swatch basis.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
 ---
 
-## Primary Colors
+### How Color Fallbacks Work
 
-Primary colors are associated to your core brand colors and are featured often in your UI. By default, there are three primary color variants available to be customized. Each primary color also has predefined shades available.
+Uniform applies provides two levels of undefined hue and saturation CSS variables that can be overwritten. Each level takes precedence over the other meaning you can scope the hue controls to the set or on an individual swatch basis.
 
-<div class="grid grid-cols-3 gap-24 leading-6">
-  <div class="radius-md overflow-hidden">
-    <div class="h-96 p-18 bg-primary-500 text-white font-xs font-bold">
-      primary-500 <span class="text-white text-opacity-50">• #f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-100">
-      primary-100 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-200">
-      primary-200 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-300">
-      primary-300 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-400">
-      primary-400 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-500">
-      primary-500 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-600">
-      primary-600 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-700">
-      primary-700 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-800">
-      primary-800 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-900">
-      primary-900 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-  </div>
-
-  <div class="radius-md overflow-hidden">
-    <div class="h-96 p-18 bg-primary-a500 text-white font-xs font-bold">
-      primary-a500 <span class="text-white text-opacity-50">• #f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a100">
-      primary-a100 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a200">
-      primary-a200 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a300">
-      primary-a300 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a400">
-      primary-a400 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a500">
-      primary-a500 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a600">
-      primary-a600 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a700">
-      primary-a700 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a800">
-      primary-a800 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a900">
-      primary-a900 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-  </div>
-
-  <div class="radius-md overflow-hidden">
-    <div class="h-96 p-18 bg-primary-b500 text-white font-xs font-bold">
-      primary-b500 <span class="text-white text-opacity-50">• #f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b100">
-      primary-b100 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b200">
-      primary-b200 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b300">
-      primary-b300 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b400">
-      primary-b400 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b500">
-      primary-b500 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b600">
-      primary-b600 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b700">
-      primary-b700 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b800">
-      primary-b800 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b900">
-      primary-b900 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-  </div>
-</div>
-
----
-
-## Secondary Colors
-
-Secondary colors are support primary colors or accents that compliment your brand. By default, there are 9 secondary color variants available.
-
-<div class="grid grid-cols-3 gap-24 leading-6">
-  <div class="h-96 p-18 radius-sm bg-secondary text-white font-xs font-bold">
-    secondary <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-a text-white font-xs font-bold">
-    secondary-a <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-b text-white font-xs font-bold">
-    secondary-b <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-c text-white font-xs font-bold">
-    secondary-c <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-d text-white font-xs font-bold">
-    secondary-d <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-e text-white font-xs font-bold">
-    secondary-e <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-f text-white font-xs font-bold">
-    secondary-f <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-g text-white font-xs font-bold">
-    secondary-g <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-h text-white font-xs font-bold">
-    secondary-h <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-</div>
-
----
-
-## Temperature Colors
-
-Temperature colors are colors dedicated to be used to represent intensity or state. They are intended to be used for representing form input states such as warning or danger.
-
-<div class="grid grid-cols-4 leading-6 gap-18">
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-cold">
-    cold <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-room">
-    room <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-warm">
-    warm <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-hot">
-    hot <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-</div>
-
----
-
-## Grayscale Colors
-
-There are two shades of grayscale available, `silver` and `gray`. Each grayscale color has predefined shades available.
-
-<div class="grid grid-cols-2 gap-24 leading-6">
-  <div class="radius-md overflow-hidden">
-    <div class="h-96 p-18 bg-silver-500 text-black font-xs font-bold">
-      silver-500 <span class="text-black text-opacity-50">• #f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-100">
-      silver-100 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-200">
-      silver-200 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-300">
-      silver-300 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-400">
-      silver-400 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-500">
-      silver-500 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-600">
-      silver-600 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-700">
-      silver-700 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-800">
-      silver-800 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-900">
-      silver-900 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-  </div>
-
-  <div class="radius-md overflow-hidden">
-    <div class="h-96 p-18 bg-gray-500 text-white font-xs font-bold">
-      gray-500 <span class="text-white text-opacity-50">• #f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-100">
-      gray-100 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-200">
-      gray-200 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-300">
-      gray-300 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-400">
-      gray-400 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-500">
-      gray-500 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-600">
-      gray-600 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-700">
-      gray-700 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-800">
-      gray-800 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-900">
-      gray-900 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-  </div>
-</div>
-
----
-
-## System Colors
-
-System colors are spectral colors that are reserved for situations that deviate outside of the existing sets.
-
-<div class="grid grid-cols-3 leading-6 gap-18">
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-red">
-    red <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-orange">
-    orange <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-yellow">
-    yellow <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-lemon">
-    lemon <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-olive">
-    olive <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-lime">
-    lime <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-green">
-    green <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-mint">
-    mint <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-teal">
-    teal <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-cyan">
-    cyan <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-sky">
-    sky <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-blue">
-    blue <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-indigo">
-    indigo <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-purple">
-    purple <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-orchid">
-    orchid <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-magenta">
-    magenta <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-pink">
-    pink <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-crimson">
-    crimson <span class="text-white text-opacity-50">#f052b2</span>
-  </div>
-</div>
-
----
-
-
-## Adjusting Base Colors
-
-todo
+For example, lets say the color `primary-500` has a base hue value set to `225`. Defining the `--primary-hue` variable will adjust the hue across all the primary set. However, defining the `--primary-500-hue` variable will further override the previously defined variable and apply the newly defined value to the `500` shade only. 
 
 ```scss
+:root {
+  --primary-hue: 20; // Universally overrides hue for all primary colors
+  --primary-500-hue: 75; // This takes precendence for the 500 shade only
+}
+```
 
+> **Note**, the same principle can be applied for saturations. Saturation overrides work in a similar way but with the `sat` keyword instead. For example, `--primary-sat` and `--primary-500-sat`.
+
+### Adjusting Set Hues
+
+To begin, you can rotate the hue by overriding the `--<color>-hue` variable.
+
+<div class="bg-silver-200 p-20 h-200px radius-md">
+  <div class="grid grid-cols-3 leading-6 gap-18">
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500">
+      primary-500
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600">
+      primary-600
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-700">
+      primary-700
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500" style="--primary-hue: 75;">
+      primary-500
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600" style="--primary-hue: 75;">
+      primary-600
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-700" style="--primary-hue: 75;">
+      primary-700
+    </div>
+  </div>
+</div>
+
+```html
+<div class="bg-primary-500 ..."></div>
+<div class="bg-primary-600 ..."></div>
+<div class="bg-primary-700 ..."></div>
+<div class="bg-primary-500 ..." style="--primary-hue: 75;"></div>
+<div class="bg-primary-600 ..." style="--primary-hue: 75;"></div>
+<div class="bg-primary-700 ..." style="--primary-hue: 75;"></div>
+```
+
+### Adjusting Swatch Hue
+
+If you want more control over a particular shade of a color you can override the hue of a shade instead e.g.`--<color>-<shade>-hue`.
+
+<div class="bg-silver-200 p-20 h-200px radius-md">
+  <div class="grid grid-cols-2 leading-6 gap-18">
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500">
+      primary-500
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600">
+      primary-600
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500" style="--primary-500-hue: 20;">
+      primary-500
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600" style="--primary-600-hue: 75;">
+      primary-600
+    </div>
+  </div>
+</div>
+
+```html
+<div class="bg-primary-500 ..."></div>
+<div class="bg-primary-600 ..."></div>
+<div class="bg-primary-500 ..." style="--primary-500-hue: 20;"></div>
+<div class="bg-primary-600 ..." style="--primary-600-hue: 75;"></div>
+```
+
+### Adjusting Set Saturations
+
+To begin, you can adjust the base saturation of each set by overriding the `--<color>-sat` variable. Note, values must be declared as a percentage.
+
+<div class="bg-silver-200 p-20 h-200px radius-md">
+  <div class="grid grid-cols-3 leading-6 gap-18">
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500">
+      primary-500
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600">
+      primary-600
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-700">
+      primary-700
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500" style="--primary-sat: 75%;">
+      primary-500
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600" style="--primary-sat: 75%;">
+      primary-600
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-700" style="--primary-sat: 75%;">
+      primary-700
+    </div>
+  </div>
+</div>
+
+```html
+<div class="bg-primary-500 ..."></div>
+<div class="bg-primary-600 ..."></div>
+<div class="bg-primary-700 ..."></div>
+<div class="bg-primary-500 ..." style="--primary-sat: 75%;"></div>
+<div class="bg-primary-600 ..." style="--primary-sat: 75%;"></div>
+<div class="bg-primary-700 ..." style="--primary-sat: 75%;"></div>
+```
+
+### Adjusting Swatch Saturation
+
+If you wish to control the saturation of a particular shade, you can do so by overriding `--<color>-<shade>-sat`.
+
+<div class="bg-silver-200 p-20 h-200px radius-md">
+  <div class="grid grid-cols-2 leading-6 gap-18">
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500">
+      primary-500
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600">
+      primary-600
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500" style="--primary-500-sat: 20%;">
+      primary-500
+    </div>
+    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600" style="--primary-600-sat: 95%;">
+      primary-600
+    </div>
+  </div>
+</div>
+
+```html
+<div class="bg-primary-500 ..."></div>
+<div class="bg-primary-600 ..."></div>
+<div class="bg-primary-500 ..." style="--primary-500-sat: 20%;"></div>
+<div class="bg-primary-600 ..." style="--primary-600-sat: 95%;"></div>
 ```
 
 ---
@@ -346,7 +179,7 @@ All colors in Uniform CSS are defined using HSL. This opens up the opportunity o
 
 ### How Color Manipulation Works
 
-The advanced color manipulation feature is only available to `background-color`, `color`, and `border-color` properties. For each type of manipulation the utility shorthand of the property you're trying to affect must be included.
+The advanced color manipulation feature is only available to `background-color`, `color`, and `border-color` properties. For each type of manipulation the utility shorthand of the property you're trying to affect must be included e.g. `<shorthand>-red`.
 
 <div class="bg-white border-1 border-silver-300 p-20 h-200px radius-md">
   <div class="grid grid-cols-1 leading-6 gap-18">
@@ -364,13 +197,13 @@ The advanced color manipulation feature is only available to `background-color`,
 
 ---
 
-## Adjusting Saturation
+## Adjusting Color Saturation
 
-Each color in Uniform can increase or decrease in saturation using the `brighten` or `deepen` properties. For each of these, there are 9 levels of adjustments.
+Each color in Uniform can increase or decrease in saturation using the `brighten` or `deepen` utilties. For each of these, there are 9 levels of adjustments.
 
-### Brightening Color
+### Brightening Colors
 
-Colors can increase their saturation using the `brighten` utility.
+Colors can increase their saturation using the `<shorthand>-brighten` utility.
 
 <div class="bg-silver-200 p-20 h-200px radius-md">
   <div class="grid grid-cols-5 leading-6 gap-18">
@@ -400,9 +233,31 @@ Colors can increase their saturation using the `brighten` utility.
 <div class="bg-blue bg-brighten-900 ..."></div>
 ```
 
-### Deepening Color
+### Default Brightness Levels
 
-Colors can decrease their saturation using the `deepen` utility.
+By default, the `brighten` utility adjusts saturation based on the following values. You can override this by passing in key value pairs to the `brighten-levels` in your configuration.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    brighten-levels: (
+      brighten-100: 5%,
+      brighten-200: 10%,
+      brighten-300: 15%,
+      brighten-400: 20%,
+      brighten-500: 25%,
+      brighten-600: 30%,
+      brighten-700: 35%,
+      brighten-800: 40%,
+      brighten-900: 45%,
+    ),
+  )
+)
+```
+
+### Deepening Colors
+
+Colors can decrease their saturation using the `<shorthand>-deepen` utility.
 
 <div class="bg-silver-200 p-20 h-200px radius-md">
   <div class="grid grid-cols-5 leading-6 gap-18">
@@ -432,15 +287,37 @@ Colors can decrease their saturation using the `deepen` utility.
 <div class="bg-blue bg-deepen-900 ..."></div>
 ```
 
+### Default Deepen Levels
+
+By default, the `deepen` utility adjusts saturation based on the following values. You can override this by passing in key value pairs to the `deepen-levels` in your configuration.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    deepen-levels: (
+      deepen-100: -5%,
+      deepen-200: -10%,
+      deepen-300: -15%,
+      deepen-400: -20%,
+      deepen-500: -25%,
+      deepen-600: -30%,
+      deepen-700: -35%,
+      deepen-800: -40%,
+      deepen-900: -45%,
+    ),
+  )
+)
+```
+
 ---
 
-## Adjusting Lightness
+## Adjusting Color Lightness
 
 Each color in Uniform can increase or decrease in lightness using the `lighten` or `darken` properties. For each of these, there are 9 levels of adjustments.
 
-### Lightening Color
+### Lightening Colors
 
-Colors can increase their lightness using the `lighten` utility.
+Colors can increase their lightness using the `<shorthand>-lighten` utility.
 
 <div class="bg-silver-200 p-20 h-200px radius-md">
   <div class="grid grid-cols-5 leading-6 gap-18">
@@ -470,9 +347,31 @@ Colors can increase their lightness using the `lighten` utility.
 <div class="bg-blue bg-lighten-900 ..."></div>
 ```
 
-### Darkening Color
+### Default Lighten Levels
 
-Colors can decrease their lightness using the `darken` utility.
+By default, the `lighten` utility adjusts lightness based on the following values. You can override this by passing in key value pairs to the `lighten-levels` in your configuration.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    lighten-levels: (
+      lighten-100: 5%,
+      lighten-200: 10%,
+      lighten-300: 15%,
+      lighten-400: 20%,
+      lighten-500: 25%,
+      lighten-600: 30%,
+      lighten-700: 35%,
+      lighten-800: 40%,
+      lighten-900: 45%,
+    ),
+  )
+)
+```
+
+### Darkening Colors
+
+Colors can decrease their lightness using the `<shorthand>-darken` utility.
 
 <div class="bg-silver-200 p-20 h-200px radius-md">
   <div class="grid grid-cols-5 leading-6 gap-18">
@@ -502,24 +401,131 @@ Colors can decrease their lightness using the `darken` utility.
 <div class="bg-blue bg-darken-900 ..."></div>
 ```
 
+### Default Darken Levels
+
+By default, the `darken` utility adjusts lightness based on the following values. You can override this by passing in key value pairs to the `darken-levels` in your configuration.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    darken-levels: (
+      darken-100: -5%,
+      darken-200: -10%,
+      darken-300: -15%,
+      darken-400: -20%,
+      darken-500: -25%,
+      darken-600: -30%,
+      darken-700: -35%,
+      darken-800: -40%,
+      darken-900: -45%,
+    ),
+  )
+)
+```
+
+
+---
+
+## Adjusting Color Opacity
+
+Color properties in Uniform can be applied with varying degrees of opacity using the `<shorthand>-opacity` utility. The opacity utility can be applied to any color related properties such as `background-color`, `color`, and `border-color`. 
+
+<div class="border-1 border-silver-300 p-20 h-200px radius-md">
+  <div class="grid grid-cols-4 leading-6 gap-18">
+    <div class="ratio-square flex align-items-center justify-content-center text-white font-xs font-bold radius-sm bg-blue bg-opacity-10"></div>
+    <div class="ratio-square flex align-items-center justify-content-center text-white font-xs font-bold radius-sm bg-blue bg-opacity-20"></div>
+    <div class="ratio-square flex align-items-center justify-content-center text-white font-xs font-bold radius-sm bg-blue bg-opacity-30"></div>
+    <div class="ratio-square flex align-items-center justify-content-center text-white font-xs font-bold radius-sm bg-blue bg-opacity-40"></div>
+  </div>
+</div>
+
+```html
+<div class="bg-blue bg-opacity-10 ..."></div>
+<div class="bg-blue bg-opacity-20 ..."></div>
+<div class="bg-blue bg-opacity-30 ..."></div>
+<div class="bg-blue bg-opacity-40 ..."></div>
+```
+
+### Default Opacity Levels
+
+By default, there are 13 levels of opacity available. Use the following list of values to see each level and its value. You can override the default levels and even include your own by passing in key value pairs to the `opacity-levels` setting in your configuration. The opacity setting is applied across all opacity related CSS properties.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    opacity-levels: (
+      opacity-02: 0.02,
+      opacity-04: 0.04,
+      opacity-06: 0.06,
+      opacity-08: 0.08,
+      opacity-10: 0.1,
+      opacity-20: 0.2,
+      opacity-30: 0.3,
+      opacity-40: 0.4,
+      opacity-50: 0.5,
+      opacity-60: 0.6,
+      opacity-70: 0.7,
+      opacity-80: 0.8,
+      opacity-90: 0.9,
+    ),
+  )
+)
+```
+
 ---
 
 ## Extending Colors
 
-todo
+You can include your own colors by passing key values to the `colors` setting or extend any existing color sets. Colors can be added in as hex values, however, if you would like to take advantage of Uniform's advanced color manipulation utilities, colors must be added as HSL values.
 
 ```scss
-
+@use "uniform" as * with (
+  $config: (
+    colors: (
+      navbar: #000000,
+      subnav: (
+        hue: 25, saturation: 25%, lightness: 50%
+      )
+    ),
+    system-colors: (
+      custom: #ffffff
+    ),
+    ...
+  )
+)
 ```
+
+```css
+.bg-navbar {
+  background-color: #000000;
+}
+
+.bg-subnav {
+  --bg-sat: 0%;
+  --bg-ltn: 0%;
+  --bg-opacity: 1;
+  background-color: hsla(25, calc(25% + var(--bg-sat)), calc(50% + var(--bg-ltn)), var(--bg-opacity));
+}
+
+.bg-custom {
+  background-color: #ffffff;
+}
+```
+
+> Configuring colors work in a similar way to other types of configuration in Uniform CSS. If the key exists, it will override the existing key otherwise it will be included as new variant.
 
 ---
 
-## Removing Colors
+## Disabling Colors
 
-todo
+To remove existing color sets, simply pass in `null` to each color set setting. Uniform CSS color sets are designed to help users quicky get started, however if there is a set that is not required, disabling color sets is a great way to reduce the build size of Uniform.
 
 ```scss
-
+@use "uniform" as * with (
+  $config: (
+    primary-colors: null, // primary colors will be excluded in your build
+    system-colors: null,  // system colors will be excluded in your build
+    ...
+  )
+)
 ```
-
----

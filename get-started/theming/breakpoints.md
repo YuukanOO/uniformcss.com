@@ -58,30 +58,3 @@ You can add support for more breakpoints by appending your own key value pair to
 );
 ```
 
----
-
-## Breakpoint Helper Functions
-
-The `screen()` helper function returns values from the breakpoint map provided an existing variant is passed in as a parameter. This can be an easy way to pull pixel value of any given breakpoint.
-
-```scss
-// styles.scss
-@media (min-width: screen(lg)) {
-  ...
-}
-```
-
-```css
-/* styles.css */
-@media (min-width: 1280px) {
-  ...
-}
-```
-
-The `screens()` helper function returns the entire map. This can be useful for looping using the `@each` rule.
-
-```scss
-@each $breakpoint, $breakpoint-value in screens() {
-  // for each breakpoint, do the following
-}
-```

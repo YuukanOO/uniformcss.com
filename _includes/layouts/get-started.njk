@@ -126,7 +126,7 @@ layout: layouts/base.njk
             </div>
           </div>
           <div class="relative hidden lg.block lg.col-3">
-            <div class="sticky flex justify-content-end pt-64 t-0">
+            <div class="sticky flex justify-content-end py-64 t-0 h-100vh overflow-auto">
               <div class="w-100p">
                 <a class="flex align-items-center radius-md w-100p p-24 py-16 bg-primary-700 hover.bg-primary-800 transition-200 text-white hover.text-white mb-20 last.mb-0" data-barba-prevent>
                   <i class="fab fa-github font-2xl mr-18"></i>
@@ -137,11 +137,13 @@ layout: layouts/base.njk
                     <p class="font-xs text-white opacity-70">Submit your issue</p>
                   </div>
                 </a>
-                <div class="radius-md w-100p p-24 bg-silver-100 mb-20 last.mb-0">
-                  <h6 class="font-sm font-bold mb-16">
-                    On this page
-                  </h6>
-                  {{ content | toc | safe }}
+                <div class="pb-64">
+                  <div class="radius-md w-100p p-24 bg-silver-100 mb-20 last.mb-0">
+                    <h6 class="font-sm font-bold mb-16">
+                      On this page
+                    </h6>
+                    {{ content | toc | safe }}
+                  </div>
                 </div>
 
                 
