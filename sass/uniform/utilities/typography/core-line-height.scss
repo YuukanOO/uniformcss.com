@@ -11,10 +11,7 @@ $custom-properties: ();
 
 $variants: (
   core.merge(
-    core.leadings(),
-    (
-      0: 0,
-    )
+    core.leadings()
   )
 );
 

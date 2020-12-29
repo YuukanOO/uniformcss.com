@@ -170,7 +170,7 @@ CUSTOM PROPERTIES
 
   .label {
     display: inline-block;
-    font-size: var(--label-font-size, var(--font-xs));
+    font-size: var(--label-font-size, font-size(xs));
     font-weight: var(--label-font-weight, 600);
     color: var(--label-color, black);
     letter-spacing: var(--label-tracking, 0);
@@ -182,7 +182,7 @@ CUSTOM PROPERTIES
         display: inline-block;
         top: -2px;
         left: 2px;
-        color: var(--label-required-color, var(--red-500));
+        color: var(--label-required-color, fill(red));
       }
     }
   }
@@ -197,103 +197,103 @@ CUSTOM PROPERTIES
     outline: 0;
     position: relative;
     width: 100%;
-    height: var(--input-height, var(--size-10));
-    padding: var(--input-padding, var(--size-0) var(--size-3));
+    height: var(--input-height, size(40));
+    padding: var(--input-padding, size(0, 16));
     background: var(--input-bg, white);
-    border: var(--input-border, 1px solid var(--silver-300));
-    border-radius: var(--input-radius, var(--radius-xs));
+    border: var(--input-border, 1px solid fill(silver-300));
+    border-radius: var(--input-radius, radius(xs));
     box-shadow: var(--input-shadow, none);
     transition: var(--input-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform  100ms);
 
     // PSEUDOS
     &:hover {
-      border: var(--input-hover-border, 1px solid var(--silver-500));
+      border: var(--input-hover-border, 1px solid fill(silver-500));
       box-shadow: var(--input-hover-shadow, none);
     }
     &:focus {
-      border: var(--input-focus-border, 1px solid var(--indigo-500));
-      box-shadow: var(--input-focus-shadow, var(--shadow-focus));
+      border: var(--input-focus-border, 1px solid fill(silver-500));
+      box-shadow: var(--input-focus-shadow, shadow(focus));
     }
     &:disabled {
-      background: var(--input-disabled-bg, var(--silver-300));
-      color: var(--input-disabled-color, var(--gray-400));
+      background: var(--input-disabled-bg, fill(silver-300));
+      color: var(--input-disabled-color, fill(gray-400));
       pointer-events: none;
     }
 
     // STATES
     &.is-success {
-      border: var(--input-success-border, 1px solid var(--green-500));
+      border: var(--input-success-border, 1px solid fill(lime, brighten-200));
       &:focus {
-        box-shadow: var(--input-focus-success-shadow, var(--shadow-success));
+        box-shadow: var(--input-focus-success-shadow, shadow(focus-success));
       }
     }
     &.is-warning {
-      border: var(--input-warning-border, 1px solid var(--yellow-500));
+      border: var(--input-warning-border, 1px solid fill(yellow, brighten-800));
       &:focus {
-        box-shadow: var(--input-focus-warning-shadow, var(--shadow-warning));
+        box-shadow: var(--input-focus-warning-shadow, shadow(focus-warning));
       }
     }
     &.is-danger {
-      border: var(--input-danger-border, 1px solid var(--red-500));
+      border: var(--input-danger-border, 1px solid fill(red, brighten-400, lighten-100));
       &:focus {
-        box-shadow: var(--input-focus-danger-shadow, var(--shadow-danger));
+        box-shadow: var(--input-focus-danger-shadow, shadow(focus-danger));
       }
     }
   }
 
   // SIZES	
   .input-xs {
-    height: var(--input-xs-height, var(--size-8));
-    padding: var(--input-xs-padding, var(--size-0) var(--size-3));
-    font-size: var(--input-xs-font-size, var(--font-xs));
+    height: var(--input-xs-height, size(24));
+    padding: var(--input-xs-padding, size(0, 8));
+    font-size: var(--input-xs-font-size, font-size(xs));
   }
   .input-sm {
-    height: var(--input-sm-height, var(--size-9));
-    padding: var(--input-sm-padding, var(--size-0) var(--size-3));
-    font-size: var(--input-sm-font-size, var(--font-sm));
+    height: var(--input-sm-height, size(36));
+    padding: var(--input-sm-padding, size(0, 12));
+    font-size: var(--input-sm-font-size, font-size(sm));
   }
   .input-md {
-    height: var(--input-md-height, var(--size-10));
-    padding: var(--input-md-padding, var(--size-0) var(--size-4));
-    font-size: var(--input-md-font-size, var(--font-md));
+    height: var(--input-md-height, size(40));
+    padding: var(--input-md-padding, size(0, 16));
+    font-size: var(--input-md-font-size, font-size(base));
   }
   .input-lg {
-    height: var(--input-lg-height, var(--size-11));
-    padding: var(--input-lg-padding, var(--size-0) var(--size-4));
-    font-size: var(--input-lg-font-size, var(--font-md));
+    height: var(--input-lg-height, size(48));
+    padding: var(--input-lg-padding, size(0, 18));
+    font-size: var(--input-lg-font-size, font-size(base));
   }
   .input-xl {
-    height: var(--input-xl-height, var(--size-12));
-    padding: var(--input-xl-padding, var(--size-0) var(--size-4));
-    font-size: var(--input-xl-font-size, var(--font-md));
+    height: var(--input-xl-height, size(56));
+    padding: var(--input-xl-padding, size(0, 20));
+    font-size: var(--input-xl-font-size, font-size(base));
   }
 
   @each $screen, $screen-value in screens() {
     @media (min-width: $screen-value) {
       .#{$screen}#{$screen-delimiter}input-xs {
-        height: var(--input-xs-height, var(--size-8));
-        padding: var(--input-xs-padding, var(--size-0) var(--size-3));
-        font-size: var(--input-xs-font-size, var(--font-xs));
+        height: var(--input-xs-height, size(24));
+        padding: var(--input-xs-padding, size(0, 8));
+        font-size: var(--input-xs-font-size, font-size(xs));
       }
       .#{$screen}#{$screen-delimiter}input-sm {
-        height: var(--input-sm-height, var(--size-9));
-        padding: var(--input-sm-padding, var(--size-0) var(--size-3));
-        font-size: var(--input-sm-font-size, var(--font-sm));
+        height: var(--input-sm-height, size(36));
+        padding: var(--input-sm-padding, size(0, 12));
+        font-size: var(--input-sm-font-size, font-size(sm));
       }
       .#{$screen}#{$screen-delimiter}input-md {
-        height: var(--input-md-height, var(--size-10));
-        padding: var(--input-md-padding, var(--size-0) var(--size-4));
-        font-size: var(--input-md-font-size, var(--font-md));
+        height: var(--input-md-height, size(40));
+        padding: var(--input-md-padding, size(0, 16));
+        font-size: var(--input-md-font-size, font-size(base));
       }
       .#{$screen}#{$screen-delimiter}input-lg {
-        height: var(--input-lg-height, var(--size-11));
-        padding: var(--input-lg-padding, var(--size-0) var(--size-4));
-        font-size: var(--input-lg-font-size, var(--font-md));
+        height: var(--input-lg-height, size(48));
+        padding: var(--input-lg-padding, size(0, 18));
+        font-size: var(--input-lg-font-size, font-size(base));
       }
       .#{$screen}#{$screen-delimiter}input-xl {
-        height: var(--input-xl-height, var(--size-12));
-        padding: var(--input-xl-padding, var(--size-0) var(--size-4));
-        font-size: var(--input-xl-font-size, var(--font-md));
+        height: var(--input-xl-height, size(56));
+        padding: var(--input-xl-padding, size(0, 20));
+        font-size: var(--input-xl-font-size, font-size(base));
       }
     }
   }
@@ -309,53 +309,53 @@ CUSTOM PROPERTIES
     cursor: pointer;
 
     &:hover {
-      .checkbox#{$child-delimiter}checkmark {
-        border: var(--checkbox-hover-border, 1px solid var(--silver-800));
+      .checkbox__checkmark {
+        border: var(--checkbox-hover-border, 1px solid fill(silver-800));
       }
     }
 
     input {
       display: none;
-      &:checked ~ .checkbox#{$child-delimiter}checkmark {
-        background: var(--checkbox-checked-bg, var(--indigo-500));
-        border: var(--checkbox-checked-border, 1px solid var(--indigo-500));
+      &:checked ~ .checkbox__checkmark {
+        background: var(--checkbox-checked-bg, fill(primary-500));
+        border: var(--checkbox-checked-border, 1px solid fill(primary-500));
         &:after {
           display: block;
         }
       }
-      &:disabled ~ .checkbox#{$child-delimiter}checkmark {
-        background: var(--checkbox-disabled-bg, var(--silver-300));
-        border-color: var(--checkbox-disabled-bg, var(--silver-500));
+      &:disabled ~ .checkbox__checkmark {
+        background: var(--checkbox-disabled-bg, fill(silver-300));
+        border-color: var(--checkbox-disabled-bg, fill(silver-500));
         &:after {
-          border-color: var(--checkbox-disabled-color, var(--gray-400));
+          border-color: var(--checkbox-disabled-color, fill(gray-400));
         }
       }
-      &:focus ~ .checkbox#{$child-delimiter}checkmark {
-        box-shadow: var(--checkbox-focus-shadow, var(--shadow-focus));
+      &:focus ~ .checkbox__checkmark {
+        box-shadow: var(--checkbox-focus-shadow, shadow(focus));
       }
     }
   }
-  .checkbox#{$child-delimiter}checkmark {
+  .checkbox__checkmark {
     flex: none;
     position: relative;
-    width: var(--checkbox-size, var(--size-4));
-    height: var(--checkbox-size, var(--size-4));
-    margin-right: var(--checkbox-margin, var(--size-3));
+    width: var(--checkbox-size, size(18));
+    height: var(--checkbox-size, size(18));
+    margin-right: var(--checkbox-margin, size(8));
     background: var(--checkbox-bg, white);
-    border: var(--checkbox-border, 1px solid var(--silver-500));
-    border-radius: var(--checkbox-radius, var(--radius-xs));
+    border: var(--checkbox-border, 1px solid fill(silver-500));
+    border-radius: var(--checkbox-radius, radius(xs));
     transition: var(--checkbox-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform  100ms);
 
     &:after {
       content: '';
       display: none;
       position: absolute;
-      left: 4px;
+      left: 5px;
       top: 0;
-      width: 6px;
-      height: 10px;
+      width: 7px;
+      height: 11px;
       border: solid #fff;
-      border-width: 0 2px 2px 0;
+      border-width: 0 3px 3px 0;
       transform: rotate(45deg);
     }
   }
@@ -371,45 +371,45 @@ CUSTOM PROPERTIES
     cursor: pointer;
 
     &:hover {
-      .radio#{$child-delimiter}checkmark {
-        border: var(--radio-hover-border, 1px solid var(--silver-800));
+      .radio__checkmark {
+        border: var(--radio-hover-border, 1px solid fill(silver-800));
       }
     }
 
     input {
       display: none;
-      &:checked ~ .radio#{$child-delimiter}checkmark {
-        background: var(--radio-checked-bg, var(--indigo-500));
-        border: var(--radio-checked-border, 1px solid var(--indigo-500));
+      &:checked ~ .radio__checkmark {
+        background: var(--radio-checked-bg, fill(primary-500));
+        border: var(--radio-checked-border, 1px solid fill(primary-500));
         &:after {
           display: block;
           background: white;
         }
       }
       &:disabled {
-        & ~ .radio#{$child-delimiter}checkmark {
-          background: var(--radio-disabled-bg, var(--silver-300));
-          border-color: var(--radio-disabled-bg, var(--silver-500));
+        & ~ .radio__checkmark {
+          background: var(--radio-disabled-bg, fill(silver-300));
+          border-color: var(--radio-disabled-bg, fill(silver-500));
           &:after {
-            border-color: var(--radio-disabled-color, var(--gray-400));
-            background: var(--radio-disabled-color, var(--gray-400));
+            border-color: var(--radio-disabled-color, fill(gray-400));
+            background: var(--radio-disabled-color, fill(gray-400));
           }
         }
       }
     }
   }
 
-  .radio#{$child-delimiter}checkmark {
+  .radio__checkmark {
     display: flex;
     flex: none;
     align-items: center;
     justify-content: center;
     position: relative;
-    width: var(--radio-size, var(--size-4));
-    height: var(--radio-size, var(--size-4));
-    margin-right: var(--radio-margin, var(--size-3));
+    width: var(--radio-size, size(18));
+    height: var(--radio-size, size(18));
+    margin-right: var(--radio-margin, size(8));
     border-radius: var(--radio-radius, 9999px);
-    border: var(--radio-border, 1px solid var(--silver-500));
+    border: var(--radio-border, 1px solid fill(silver-500));
     background: var(--radio-bg, white);
     transition: var(--radio-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform  100ms);
 
@@ -434,29 +434,29 @@ CUSTOM PROPERTIES
     cursor: pointer;
 
     &:hover {
-      .toggle#{$child-delimiter}switch {
-        background: var(--toggle-hover-bg, var(--gray-200));
+      .toggle__switch {
+        background: var(--toggle-hover-bg, fill(silver-700));
       }
     }
 
     input {
       display: none;
-      &:checked + .toggle#{$child-delimiter}switch {
-        background: var(--toggle-checked-bg, var(--green-500));
+      &:checked + .toggle__switch {
+        background: var(--toggle-checked-bg, fill(green, brighten-200));
       }
-      &:checked + .toggle#{$child-delimiter}switch:before {
-        transform: translateX(var(--toggle-checked-translate, var(--size-5)));
+      &:checked + .toggle__switch:before {
+        transform: translateX(var(--toggle-checked-translate, size(20)));
       }
-      &:disabled + .toggle#{$child-delimiter}switch {
-        background: var(--toggle-disabled-bg, var(--gray-100));
+      &:disabled + .toggle__switch {
+        background: var(--toggle-disabled-bg, fill(gray-100));
       }
     }
   }
-  .toggle#{$child-delimiter}switch {
+  .toggle__switch {
     position: relative;
-    width: var(--toggle-width, var(--size-10));
-    height: var(--toggle-height, var(--size-5));
-    background: var(--toggle-bg, var(--gray-100));
+    width: var(--toggle-width, size(40));
+    height: var(--toggle-height, size(20));
+    background: var(--toggle-bg, fill(silver-500));
     transition: var(--toggle-transition, background-color 200ms, border-color 200ms, color 200ms, fill 200ms, stroke 200ms, opacity 200ms, box-shadow 200ms, transform  200ms);
     border-radius: var(--toggle-radius, 9999px);
 
@@ -485,31 +485,31 @@ CUSTOM PROPERTIES
 
     select {
       width: 100%;
-      height: var(--select-height, var(--size-10));
-      padding: var(--select-padding, var(--size-0) var(--size-3));
+      height: var(--select-height, size(40));
+      padding: var(--select-padding, size(0, 16));
       background: var(--select-bg, white);
-      border: var(--select-border, 1px solid var(--silver-500));
-      border-radius: var(--select-radius, var(--radius-xs));
+      border: var(--select-border, 1px solid fill(silver-300));
+      border-radius: var(--select-radius, radius(xs));
       box-shadow: var(--select-shadow, none);
       outline: 0;
       appearance: none;
-      font-size: var(--select-font-size, var(--font-md));
+      font-size: var(--select-font-size, font-size(md));
       line-height: 1.5;
       transition: var(--select-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform  100ms);
       cursor: pointer;
 
       // PSEUDOS
       &:hover {
-        border: var(--select-hover-border, 1px solid var(--silver-800));
+        border: var(--select-hover-border, 1px solid fill(silver-500));
         box-shadow: var(--select-hover-shadow, none);
       }
       &:focus {
-        border: var(--select-focus-border, 1px solid var(--indigo-500));
-        box-shadow: var(--select-focus-shadow, var(--shadow-focus));
+        border: var(--select-focus-border, 1px solid fill(silver-500));
+        box-shadow: var(--select-focus-shadow, shadow(focus));
       }
       &:disabled {
-        background: var(--select-disabled-bg, var(--silver-500));
-        color: var(--select-disabled-color, var(--gray-400));
+        background: var(--select-disabled-bg, fill(silver-300));
+        color: var(--select-disabled-color, fill(gray-400));
         pointer-events: none;
       }
     }
@@ -529,12 +529,12 @@ CUSTOM PROPERTIES
     &:after {
       position: absolute;
       top: calc(50% - 6px);
-      right: var(--size-4);
+      right: size(14);
       content: "";
       display: block;
       width: 8px;
       height: 8px;
-      border: solid var(--select-angle-color, var(--gray-300));
+      border: solid var(--select-angle-color, fill(gray-300));
       border-width: 0 2px 2px 0;
       transform: rotate(45deg);
       transition: 100ms;
@@ -542,21 +542,21 @@ CUSTOM PROPERTIES
 
     // STATES
     &.is-success select {
-      border: var(--select-success-border, 1px solid var(--green-500));
+      border: var(--select-success-border, 1px solid fill(lime, brighten-200));
       &:focus {
-        box-shadow: var(--select-focus-success-shadow, var(--shadow-success));
+        box-shadow: var(--select-focus-success-shadow, shadow(focus-success));
       }
     }
     &.is-warning select {
-      border: var(--select-warning-border, 1px solid var(--yellow-500));
+      border: var(--select-warning-border, 1px solid fill(yellow, brighten-800));
       &:focus {
-        box-shadow: var(--select-focus-warning-shadow, var(--shadow-warning));
+        box-shadow: var(--select-focus-warning-shadow, shadow(focus-warning));
       }
     }
     &.is-danger select {
-      border: var(--select-danger-border, 1px solid var(--red-500));
+      border: var(--select-danger-border, 1px solid fill(red, brighten-400, lighten-100));
       &:focus {
-        box-shadow: var(--select-focus-danger-shadow, var(--shadow-danger));
+        box-shadow: var(--select-focus-danger-shadow, shadow(focus-danger));
       }
     }
   }
@@ -566,52 +566,52 @@ CUSTOM PROPERTIES
   // SIZES
   .select-xs {
     select {
-      height: var(--select-xs-height, var(--size-8));
-      padding: var(--select-xs-padding, var(--size-0) var(--size-3));
-      font-size: var(--select-xs-font-size, var(--font-xs));
+      height: var(--select-xs-height, size(24));
+      padding: var(--select-xs-padding, size(0, 8));
+      font-size: var(--select-xs-font-size, font-size(xs));
     }
     &:after {
-      right: var(--size-3);
+      right: size(14);
     }
   }
   .select-sm {
     select {
-      height: var(--select-sm-height, var(--size-9));
-      padding: var(--select-sm-padding, var(--size-0) var(--size-3));
-      font-size: var(--select-sm-font-size, var(--font-sm));
+      height: var(--select-sm-height, size(36));
+      padding: var(--select-sm-padding, size(0, 12));
+      font-size: var(--select-sm-font-size, font-size(sm));
     }
     &:after {
-      right: var(--size-3);
+      right: size(14);
     }
   }
   .select-md {
     select {
-      height: var(--select-md-height, var(--size-10));
-      padding: var(--select-md-padding, var(--size-0) var(--size-4));
-      font-size: var(--select-md-font-size, var(--font-md));
+      height: var(--select-md-height, size(40));
+      padding: var(--select-md-padding, size(0, 16));
+      font-size: var(--select-md-font-size, font-size(base));
     }
     &:after {
-      right: var(--size-4);
+      right: size(16);
     }
   }
   .select-lg {
     select {
-      height: var(--select-lg-height, var(--size-11));
-      padding: var(--select-lg-padding, var(--size-0) var(--size-4));
-      font-size: var(--select-lg-font-size, var(--font-md));
+      height: var(--select-lg-height, size(48));
+      padding: var(--select-lg-padding, size(0, 18));
+      font-size: var(--select-lg-font-size, font-size(base));
     }
     &:after {
-      right: var(--size-4);
+      right: size(18);
     }
   }
   .select-xl {
     select {
-      height: var(--select-xl-height, var(--size-12));
-      padding: var(--select-xl-padding, var(--size-0) var(--size-4));
-      font-size: var(--select-xl-font-size, var(--font-md));
+      height: var(--select-xl-height, size(56));
+      padding: var(--select-xl-padding, size(0, 20));
+      font-size: var(--select-xl-font-size, font-size(base));
     }
     &:after {
-      right: var(--size-4);
+      right: size(20);
     }
   }
 
@@ -619,54 +619,56 @@ CUSTOM PROPERTIES
     @media (min-width: $screen-value) {
       .#{$screen}#{$screen-delimiter}select-xs {
         select {
-          height: var(--select-xs-height, var(--size-8));
-          padding: var(--select-xs-padding, var(--size-0) var(--size-3));
-          font-size: var(--select-xs-font-size, var(--font-xs));
+          height: var(--select-xs-height, size(24));
+          padding: var(--select-xs-padding, size(0, 8));
+          font-size: var(--select-xs-font-size, font-size(xs));
         }
         &:after {
-          right: var(--size-3);
+          right: size(14);
         }
       }
       .#{$screen}#{$screen-delimiter}select-sm {
         select {
-          height: var(--select-sm-height, var(--size-9));
-          padding: var(--select-sm-padding, var(--size-0) var(--size-3));
-          font-size: var(--select-sm-font-size, var(--font-sm));
+          height: var(--select-sm-height, size(36));
+          padding: var(--select-sm-padding, size(0, 12));
+          font-size: var(--select-sm-font-size, font-size(sm));
         }
         &:after {
-          right: var(--size-4);
+          right: size(14);
         }
       }
       .#{$screen}#{$screen-delimiter}select-md {
         select {
-          height: var(--select-md-height, var(--size-10));
-          padding: var(--select-md-padding, var(--size-0) var(--size-4));
-          font-size: var(--select-md-font-size, var(--font-md));
+          height: var(--select-md-height, size(40));
+          padding: var(--select-md-padding, size(0, 16));
+          font-size: var(--select-md-font-size, font-size(base));
         }
         &:after {
-          right: var(--size-4);
+          right: size(16);
         }
       }
       .#{$screen}#{$screen-delimiter}select-lg {
         select {
-          height: var(--select-lg-height, var(--size-11));
-          padding: var(--select-lg-padding, var(--size-0) var(--size-4));
-          font-size: var(--select-lg-font-size, var(--font-lg));
+          height: var(--select-lg-height, size(48));
+          padding: var(--select-lg-padding, size(0, 18));
+          font-size: var(--select-lg-font-size, font-size(base));
         }
         &:after {
-          right: var(--size-5);
+          right: size(18);
         }
       }
       .#{$screen}#{$screen-delimiter}select-xl {
         select {
-          height: var(--select-xl-height, var(--size-12));
-          padding: var(--select-xl-padding, var(--size-0) var(--size-4));
-          font-size: var(--select-xl-font-size, var(--font-xl));
+          height: var(--select-xl-height, size(56));
+          padding: var(--select-xl-padding, size(0, 20));
+          font-size: var(--select-xl-font-size, font-size(base));
         }
         &:after {
-          right: var(--size-6);
+          right: size(20);
         }
       }
+
+      
     }
   }
 
@@ -678,10 +680,10 @@ CUSTOM PROPERTIES
   .textarea {
     position: relative;
     width: 100%;
-    padding: var(--textarea-padding, var(--size-4));
+    padding: var(--textarea-padding, size(16));
     background: var(--textarea-bg, white);
-    border: var(--textarea-border, 1px solid var(--silver-500));
-    border-radius: var(--textarea-radius, var(--radius-xs));
+    border: var(--textarea-border, 1px solid fill(silver-300));
+    border-radius: var(--textarea-radius, radius(xs));
     box-shadow: var(--textarea-shadow, none);
     outline: 0;
     appearance: none;
@@ -689,36 +691,36 @@ CUSTOM PROPERTIES
 
     // PSEUDOS
     &:hover {
-      border: var(--textarea-hover-border, 1px solid var(--silver-800));
+      border: var(--textarea-hover-border, 1px solid fill(silver-500));
       box-shadow: var(--textarea-hover-shadow, none);
     }
     &:focus {
-      border: var(--textarea-focus-border, 1px solid var(--indigo-500));
-      box-shadow: var(--textarea-focus-shadow, var(--shadow-focus));
+      border: var(--textarea-focus-border, 1px solid fill(silver-500));
+      box-shadow: var(--textarea-focus-shadow, shadow(focus));
     }
     &:disabled {
-      background: var(--textarea-disabled-bg, var(--silver-500));
-      color: var(--textarea-disabled-color, var(--gray-400));
+      background: var(--textarea-disabled-bg, fill(silver-300));
+      color: var(--textarea-disabled-color, fill(gray-400));
       pointer-events: none;
     }
 
     // STATES
     &.is-success {
-      border: var(--textarea-success-border, 1px solid var(--green-500));
+      border: var(--textarea-success-border, 1px solid fill(lime, brighten-200));
       &:focus {
-        box-shadow: var(--textarea-focus-success-shadow, var(--shadow-success));
+        box-shadow: var(--textarea-focus-success-shadow, shadow(focus-success));
       }
     }
     &.is-warning {
-      border: var(--textarea-warning-border, 1px solid var(--yellow-500));
+      border: var(--textarea-warning-border, 1px solid fill(yellow, brighten-800));
       &:focus {
-        box-shadow: var(--textarea-focus-warning-shadow, var(--shadow-warning));
+        box-shadow: var(--textarea-focus-warning-shadow, shadow(focus-warning));
       }
     }
     &.is-danger {
-      border: var(--textarea-danger-border, 1px solid var(--red-500));
+      border: var(--textarea-danger-border, 1px solid fill(red, brighten-400, lighten-100));
       &:focus {
-        box-shadow: var(--textarea-focus-danger-shadow, var(--shadow-danger));
+        box-shadow: var(--textarea-focus-danger-shadow, shadow(focus-danger));
       }
     }
   }

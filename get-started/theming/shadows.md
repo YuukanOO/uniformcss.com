@@ -50,11 +50,11 @@ The following example showcases how the variants can be applied.
     </div>
     <div class="shadow-focus ratio-square bg-white">
     </div>
-    <div class="shadow-success ratio-square bg-white">
+    <div class="shadow-focus-success ratio-square bg-white">
     </div>
-    <div class="shadow-warning ratio-square bg-white">
+    <div class="shadow-focus-warning ratio-square bg-white">
     </div>
-    <div class="shadow-danger ratio-square bg-white">
+    <div class="shadow-focus-danger ratio-square bg-white">
     </div>
   </div>
 </div>
@@ -67,9 +67,9 @@ The following example showcases how the variants can be applied.
 <div class="shadow-xl ..."></div>
 
 <div class="shadow-focus ..."></div>
-<div class="shadow-success ..."></div>
-<div class="shadow-warning ..."></div>
-<div class="shadow-danger ..."></div>
+<div class="shadow-focus-success ..."></div>
+<div class="shadow-focus-warning ..."></div>
+<div class="shadow-focus-danger ..."></div>
 ```
 
 ---
@@ -105,15 +105,22 @@ You can customize the default shadows or add new ones by passing key value pairs
 
 ---
 
-## Disabling Radius Sizes
+## Customizing via CDN
 
-To remove existing shadow effects, simply pass in `null` to the `shadows` setting in your configuration.
+If you are using the CDN version of Uniform CSS, you can still customizing default settings by overriding CSS variables. The following shadow CSS variables can be overwritten.
 
-```scss
-@use "uniform" as * with (
-  $config: (
-    shadows: null, // disable default shadow variants
-    ...
-  )
-)
+### Shadow CSS Variables
+
+```css
+:root {
+  --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-sm: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  --shadow-lg: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  --shadow-xl: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  --shadow-focus: 0 0 0 3px rgba(0, 145, 255, 0.2);
+  --shadow-success: 0 0 0 3px rgba(0, 182, 73, 0.2);
+  --shadow-warning: 0 0 0 3px rgba(255, 175, 22, 0.2);
+  --shadow-danger: 0 0 0 3px rgba(252, 95, 95, 0.2);
+}
 ```

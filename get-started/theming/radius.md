@@ -100,15 +100,22 @@ You can customize the default sizes or add new ones by passing key value pairs t
 
 ---
 
-## Disabling Radius Sizes
 
-To remove existing radius sizes, simply pass in `null` to the `radiuses` setting in your configuration.
+## Customizing via CDN
 
-```scss
-@use "uniform" as * with (
-  $config: (
-    radiuses: null, // disable default radius sizes
-    ...
-  )
-)
+If you are using the CDN version of Uniform CSS, you can still customizing default settings by overriding CSS variables. The following radius CSS variables can be overwritten.
+
+### Radius CSS Variables
+
+```css
+:root {
+  --radius-2xs: 0.125rem;
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.625rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 0.875rem;
+  --radius-round: 9999px;
+}
 ```

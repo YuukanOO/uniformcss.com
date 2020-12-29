@@ -1,15 +1,22 @@
 ---
 title: Table
+description: Learn about the Table module and how you can customize it.
 date: 1000-01-03
 ---
 
-{% include shortcodes/chapter, text: 'Modules', color: 'violet' %}
+## About Table Module
+
+The Table module is an optional pre-built component that provides customizable styling for tables. This module also provides tables with the ability to be responsive.
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
 
 ## Table Module
 
-The Table module is an optional pre-built component that provides customizable styling for tables. This module also provides tables with the ability to become responsive.
+To apply table styling, assign the class `table` to your table element.
 
-<section class="radius-sm bg-silver-100 p-6">
+<div class="bg-silver-200 radius-md p-20 align-center">
   <table class="table">
     <thead>
       <tr>
@@ -28,7 +35,7 @@ The Table module is an optional pre-built component that provides customizable s
       </tr>
     </tbody>
   </table>
-</section>
+</div>
 
 ```html
 <table class="table">
@@ -51,11 +58,11 @@ The Table module is an optional pre-built component that provides customizable s
 </table>
 ```
 
-<div class="mb-10"></div>
+---
 
-### Table root variables
+## Customizing Table
 
-To customize the look of your table, override the following root variables.
+The following CSS variable hooks are available to customize.
 
 <div class="bg-black radius-sm overflow-auto">
 {% highlight css %}
@@ -81,7 +88,7 @@ To customize the look of your table, override the following root variables.
 
 Tables can become responsive at various breakpoints by adding the `table-stack` and `table-unstack` classes. You can also add the `data-table-label` attribute to allow for labels when table columns are stacked.
 
-<section class="radius-sm bg-silver-100 p-6">
+<div class="bg-silver-200 radius-md p-20 align-center">
   <table class="table table-stack md.table-unstack">
     <thead>
       <tr>
@@ -100,7 +107,7 @@ Tables can become responsive at various breakpoints by adding the `table-stack` 
       </tr>
     </tbody>
   </table>
-</section>
+</div>
 
 ```html
 <table class="table table-stack md.table-unstack">
@@ -123,15 +130,13 @@ Tables can become responsive at various breakpoints by adding the `table-stack` 
 </table>
 ```
 
+---
 
-<div class="mb-10"></div>
+## Customizing Table
 
-### Responsive table root variables
+The following CSS variable hooks are available to customize.
 
-To customize the look of your table, override the following root variables.
-
-<div class="bg-black radius-sm overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --table-stack-margin: ...;
@@ -143,8 +148,7 @@ To customize the look of your table, override the following root variables.
   --table-label-tracking: ...;
   --table-label-color: ...;
 }
-{% endhighlight %}
-</div>
+```
 
 ---
 
@@ -152,7 +156,7 @@ To customize the look of your table, override the following root variables.
 
 Table rows can also feature alternating rows with the `table-alt` class.
 
-<section class="radius-sm bg-silver-100 p-6">
+<div class="bg-silver-200 radius-md p-20 align-center">
   <table class="table table-alt">
     <thead>
       <tr>
@@ -183,7 +187,7 @@ Table rows can also feature alternating rows with the `table-alt` class.
       </tr>
     </tbody>
   </table>
-</section>
+</div>
 
 ```html
 <table class="table table-alt">
@@ -218,29 +222,30 @@ Table rows can also feature alternating rows with the `table-alt` class.
 </table>
 ```
 
-<div class="mb-10"></div>
+---
 
-### Alternating table variables
+## Customizing Table
 
-To customize the look of your alternating table, override the following root variables.
+The following CSS variable hooks are available to customize.
 
-<div class="bg-black radius-sm overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --table-alt-bg: ...;
 }
-{% endhighlight %}
-</div>
-
+```
 ---
 
 ## How to Disable this Module
 
-By default, all modules are enabled. To disable this module, set the `$include-table-module` variable to `false` in your module configuration.
+By default, all modules are enabled. To disable this table module, pass `table-module` to the `excludes` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
-  $include-table-module: false
+  $config: (
+    excludes: (
+      table-module
+    )
+  )
 );
 ```

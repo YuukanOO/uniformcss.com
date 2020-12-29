@@ -1,30 +1,49 @@
 ---
 title: Button
+description: Learn about the Button module and how you can customize it.
 date: 1000-01-01
 ---
 
-{% include shortcodes/chapter, text: 'Modules', color: 'yellow' %}
+## About Button Module
 
-## Button Module
+The button module is an optional pre-built component that can be useful for dealing with call-to-actions on a page.
 
-The Button module is an optional pre-built component that can be useful for handling call-to-actions.
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
-<section class="radius-sm bg-silver-100 p-6 flex flex-wrap justify-content-center">
+---
+
+## How Customization Works
+
+Uniform CSS modules are built with CSS variable hooks, each with their own fallback value. On its own, CSS variable hooks don't do anything, however they are declared, they will take precedence over the fallback value allowing you to override and customize the default setting.
+
+```scss
+.btn {
+  // Height is 40px, unless `--btn-height` is declared in root
+  height: var(--btn-height, 40px);
+  ...
+}
+```
+---
+
+## Basic Button Usage
+
+To apply this module assign the class `btn` to your button element.
+
+<div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
   <button class="btn">Button</button>
-</section>
+</div>
 
 ```html
 <button class="btn">Button</button>
 ```
 
-<div class="mb-10"></div>
+---
 
-### Button root variables
+## Customizing Basic Button
 
-To customize the look of your button, override the following root variables.
+The following CSS variable hooks are available to customize.
 
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --btn-height: ...;
@@ -45,28 +64,22 @@ To customize the look of your button, override the following root variables.
   --btn-hover-color: ...;
   --btn-hover-border: ...;
   --btn-hover-shadow: ...;
-
   --btn-focus-shadow: ...;
-
-  --btn-active-bg: ...;
-  --btn-active-color: ...;
-  --btn-active-border: ...;
-  --btn-active-shadow: ...;
 }
-{% endhighlight %}
-</div>
+```
+
 
 ---
 
 ## Branded Buttons
 
-There are three types of branded button variants available, `primary`, `secondary`, and `tertiary`. These can be further customized to match your brand.
+There are three types of branded button variants available, `primary`, `secondary`, and `tertiary`. These can also be further customized to fit your brand.
 
-<section class="radius-sm bg-silver-100 p-6 flex flex-wrap justify-content-center">
+<div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
   <button class="btn btn-primary mr-4">Button</button>
   <button class="btn btn-secondary mr-4">Button</button>
   <button class="btn btn-tertiary">Button</button>
-</section>
+</div>
 
 ```html
 <button class="btn btn-primary">Button</button>
@@ -74,14 +87,13 @@ There are three types of branded button variants available, `primary`, `secondar
 <button class="btn btn-tertiary">Button</button>
 ```
 
-<div class="mb-10"></div>
+---
 
-### Branded button root variables
+## Customizing Branded Button
 
-To customize the look of your branded buttons, override the following root variables.
+The following CSS variable hooks are available to customize.
 
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --btn-primary-bg: ...;
@@ -93,10 +105,6 @@ To customize the look of your branded buttons, override the following root varia
   --btn-primary-hover-border: ...;
   --btn-primary-hover-shadow: ...;
   --btn-primary-focus-shadow: ...;
-  --btn-primary-active-bg: ...;
-  --btn-primary-active-color: ...;
-  --btn-primary-active-border: ...;
-  --btn-primary-active-shadow: ...;
 
   --btn-secondary-bg: ...;
   --btn-secondary-color: ...;
@@ -107,10 +115,6 @@ To customize the look of your branded buttons, override the following root varia
   --btn-secondary-hover-border: ...;
   --btn-secondary-hover-shadow: ...;
   --btn-secondary-focus-shadow: ...;
-  --btn-secondary-active-bg: ...;
-  --btn-secondary-active-color: ...;
-  --btn-secondary-active-border: ...;
-  --btn-secondary-active-shadow: ...;
 
   --btn-tertiary-bg: ...;
   --btn-tertiary-color: ...;
@@ -121,13 +125,8 @@ To customize the look of your branded buttons, override the following root varia
   --btn-tertiary-hover-border: ...;
   --btn-tertiary-hover-shadow: ...;
   --btn-tertiary-focus-shadow: ...;
-  --btn-tertiary-active-bg: ...;
-  --btn-tertiary-active-color: ...;
-  --btn-tertiary-active-border: ...;
-  --btn-tertiary-active-shadow: ...;
 }
-{% endhighlight %}
-</div>
+```
 
 ---
 
@@ -135,24 +134,23 @@ To customize the look of your branded buttons, override the following root varia
 
 There are two types of `light` and `dark` button variants available.
 
-<section class="radius-sm bg-silver-100 p-6 flex flex-wrap justify-content-center">
+<div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
   <button class="btn btn-light mr-4">Button</button>
   <button class="btn btn-dark">Button</button>
-</section>
+</div>
 
 ```html
 <button class="btn btn-light">Button</button>
 <button class="btn btn-dark">Button</button>
 ```
 
-<div class="mb-10"></div>
+---
 
-### Light and Dark button root variables
+## Customizing Light Dark Buttons
 
-To customize the look of your light and dark buttons, override the following root variables.
+The following CSS variable hooks are available to customize.
 
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --btn-light-bg: ...;
@@ -164,10 +162,6 @@ To customize the look of your light and dark buttons, override the following roo
   --btn-light-hover-border: ...;
   --btn-light-hover-shadow: ...;
   --btn-light-focus-shadow: ...;
-  --btn-light-active-bg: ...;
-  --btn-light-active-color: ...;
-  --btn-light-active-border: ...;
-  --btn-light-active-shadow: ...;
 
   --btn-dark-bg: ...;
   --btn-dark-color: ...;
@@ -178,13 +172,9 @@ To customize the look of your light and dark buttons, override the following roo
   --btn-dark-hover-border: ...;
   --btn-dark-hover-shadow: ...;
   --btn-dark-focus-shadow: ...;
-  --btn-dark-active-bg: ...;
-  --btn-dark-active-color: ...;
-  --btn-dark-active-border: ...;
-  --btn-dark-active-shadow: ...;
 }
-{% endhighlight %}
-</div>
+```
+
 
 ---
 
@@ -192,11 +182,11 @@ To customize the look of your light and dark buttons, override the following roo
 
 There are three types of state buttons to handle `success`, `warning`, and `danger`.
 
-<section class="radius-sm bg-silver-100 p-6 flex flex-wrap justify-content-center">
+<div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
   <button class="btn btn-success mr-4">Button</button>
   <button class="btn btn-warning mr-4">Button</button>
   <button class="btn btn-danger">Button</button>
-</section>
+</div>
 
 ```html
 <button class="btn btn-success">Button</button>
@@ -204,14 +194,13 @@ There are three types of state buttons to handle `success`, `warning`, and `dang
 <button class="btn btn-danger">Button</button>
 ```
 
-<div class="mb-10"></div>
+---
 
-### State button root variables
+## Customizing State Buttons
 
-To customize the look of your state buttons, override the following root variables.
+The following CSS variable hooks are available to customize.
 
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --btn-success-bg: ...;
@@ -223,10 +212,6 @@ To customize the look of your state buttons, override the following root variabl
   --btn-success-hover-border: ...;
   --btn-success-hover-shadow: ...;
   --btn-success-focus-shadow: ...;
-  --btn-success-active-bg: ...;
-  --btn-success-active-color: ...;
-  --btn-success-active-border: ...;
-  --btn-success-active-shadow: ...;
 
   --btn-warning-bg: ...;
   --btn-warning-color: ...;
@@ -237,10 +222,6 @@ To customize the look of your state buttons, override the following root variabl
   --btn-warning-hover-border: ...;
   --btn-warning-hover-shadow: ...;
   --btn-warning-focus-shadow: ...;
-  --btn-warning-active-bg: ...;
-  --btn-warning-active-color: ...;
-  --btn-warning-active-border: ...;
-  --btn-warning-active-shadow: ...;
 
   --btn-danger-bg: ...;
   --btn-danger-color: ...;
@@ -251,13 +232,9 @@ To customize the look of your state buttons, override the following root variabl
   --btn-danger-hover-border: ...;
   --btn-danger-hover-shadow: ...;
   --btn-danger-focus-shadow: ...;
-  --btn-danger-active-bg: ...;
-  --btn-danger-active-color: ...;
-  --btn-danger-active-border: ...;
-  --btn-danger-active-shadow: ...;
 }
-{% endhighlight %}
-</div>
+```
+
 
 
 ---
@@ -266,22 +243,21 @@ To customize the look of your state buttons, override the following root variabl
 
 You can create outline buttons by appending `btn-outline`.
 
-<section class="radius-sm bg-silver-100 p-6 flex flex-wrap justify-content-center">
+<div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
   <button class="btn btn-outline">Button</button>
-</section>
+</div>
 
 ```html
 <button class="btn btn-outline">Button</button>
 ```
 
-<div class="mb-10"></div>
+---
 
-### Outline button root variables
+## Customizing Outline Buttons
 
-To customize the look of your outline buttons, override the following root variables.
+The following CSS variable hooks are available to customize.
 
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --btn-outline-bg: ...;
@@ -293,13 +269,8 @@ To customize the look of your outline buttons, override the following root varia
   --btn-outline-hover-border: ...;
   --btn-outline-hover-shadow: ...;
   --btn-outline-focus-shadow: ...;
-  --btn-outline-active-bg: ...;
-  --btn-outline-active-color: ...;
-  --btn-outline-active-border: ...;
-  --btn-outline-active-shadow: ...;
 }
-{% endhighlight %}
-</div>
+```
 
 ---
 
@@ -307,13 +278,13 @@ To customize the look of your outline buttons, override the following root varia
 
 Three are **5** button sizes to choose from.
 
-<section class="radius-sm bg-silver-100 p-6 flex flex-wrap align-items-center justify-content-center">
+<div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
   <button class="btn btn-xs mr-4">Button</button>
   <button class="btn btn-sm mr-4">Button</button>
   <button class="btn btn-md mr-4">Button</button>
   <button class="btn btn-lg mr-4">Button</button>
   <button class="btn btn-xl">Button</button>
-</section>
+</div>
 
 ```html
 <button class="btn btn-xs">Button</button>
@@ -323,14 +294,13 @@ Three are **5** button sizes to choose from.
 <button class="btn btn-xl">Button</button>
 ```
 
-<div class="mb-10"></div>
+---
 
-### Button size root variables
+## Customizing Button Sizes
 
-To customize the sizes of your buttons, override the following root variables.
+The following CSS variable hooks are available to customize.
 
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --btn-xs-height: ...;
@@ -353,8 +323,7 @@ To customize the sizes of your buttons, override the following root variables.
   --btn-xl-padding: ...;
   --btn-xl-font-size: ...;
 }
-{% endhighlight %}
-</div>
+```
 
 ---
 
@@ -362,9 +331,9 @@ To customize the sizes of your buttons, override the following root variables.
 
 Button sizes can change based on breakpoint
 
-<section class="radius-sm bg-silver-100 p-6 flex flex-wrap align-items-center justify-content-center">
+<div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
   <button class="btn btn-sm md.btn-lg lg.btn-xl">Button</button>
-</section>
+</div>
 
 ```html
 <button class="btn btn-sm md.btn-lg lg.btn-xl">Button</button>
@@ -376,13 +345,13 @@ Button sizes can change based on breakpoint
 
 Buttons can be combined by wrapping them with a `btns` class assigned container. Buttons can also have an `is-active` state.
 
-<section class="radius-sm bg-silver-100 p-6 flex flex-wrap align-items-center justify-content-center">
+<div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
   <div class="btns">
     <button class="btn">1</button>
     <button class="btn is-active">2</button>
     <button class="btn">3</button>
   </div>
-</section>
+</div>
 
 ```html
 <div class="btns">
@@ -398,9 +367,9 @@ Buttons can be combined by wrapping them with a `btns` class assigned container.
 
 Buttons can have loading animation by appending `is-loading`.
 
-<section class="radius-sm bg-silver-100 p-6 flex flex-wrap align-items-center justify-content-center">
+<div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
   <button class="btn is-loading">Loading</button>
-</section>
+</div>
 
 ```html
 <div class="btns">
@@ -410,12 +379,16 @@ Buttons can have loading animation by appending `is-loading`.
 
 ---
 
-## How to disable this Module
+## How to Disable this Module
 
-By default, all modules are enabled. To disable this button module, set the `$include-button-module` variable to `false` in your module configuration.
+By default, all modules are enabled. To disable this button module, pass `button-module` to the `excludes` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
-  $include-button-module: false
+  $config: (
+    excludes: (
+      button-module
+    )
+  )
 );
 ```

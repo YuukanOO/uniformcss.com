@@ -132,7 +132,7 @@ You can replace existing breakpoints by overriding existing keys to the `screens
 @use "uniform" as * with (
   $config: (
     screens: (
-      md. 1920px
+      md: 1920px
     )
   )
 );

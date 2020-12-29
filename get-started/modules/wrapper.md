@@ -1,13 +1,20 @@
 ---
 title: Wrapper
+description: Learn about the Wrapper module and how you can customize it.
 date: 1000-01-04
 ---
 
-{% include shortcodes/chapter, text: 'Modules', color: 'red' %}
+## About Button Module
+
+The Wrapper module is an optional pre-built component that provides `max-width` set containerization to your page layout.
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
 
 ## Wrapper Module
 
-The Wrapper module is an optional pre-built component that provides `max-width` set containerization to your page layout.
+To apply this module assign the class `wrapper` to your element.
 
 ```html
 <div class="wrapper">
@@ -15,14 +22,13 @@ The Wrapper module is an optional pre-built component that provides `max-width` 
 </div>
 ```
 
-<div class="mb-10"></div>
+---
 
-### Wrapper root variables
+## Customizing Basic Button
 
-To customize the wrapper module, override the following root variables.
+The following CSS variable hooks are available to customize.
 
-<div class="bg-black radius-sm overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --wrapper-padding: ...;
@@ -33,17 +39,20 @@ To customize the wrapper module, override the following root variables.
   --wrapper-lg-max-width: ...;
   --wrapper-xl-max-width: ...;
 }
-{% endhighlight %}
-</div>
+```
 
 ---
 
 ## How to Disable this Module
 
-By default, all modules are enabled. To disable this module, set the `$include-wrapper-module` variable to `false` in your module configuration.
+By default, all modules are enabled. To disable this wrapper module, pass `wrapper-module` to the `excludes` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
-  $include-wrapper-module: false
+  $config: (
+    excludes: (
+      wrapper-module
+    )
+  )
 );
 ```

@@ -45,15 +45,14 @@ cssCodeExample: |
   {% include "partials/nav.njk" %}
 
   <div class="wrapper">
-    <div class="h-3px bg-black opacity-10"></div>
-    <div class="max-w-900px py-18 xl.py-19">
-      <div class="inline-block relative mb-4 font-bold font-sm">
-        Version 1.0.0 Release<span class="absolute t-0 r-0 mt-n3 mr-n9 inline-flex align-items-center h-4 bg-teal-500 text-white uppercase font-2xs font-bold radius-xs px-1">New</span>
+    <div class="max-w-900px py-112">
+      <div class="inline-block relative mb-20 font-bold font-md">
+        Version 1.0.0 Release<span class="absolute t-0 r-0 mt-n14 mr-n36 inline-flex align-items-center h-20 bg-teal text-white uppercase font-2xs font-bold radius-xs px-4">New</span>
       </div>
-      <h1 class="font-3xl sm.font-6xl xl.font-7xl font-bold m-auto mb-10 tracking-tight">Making the web more beautiful, fast, and open through great typography</h1>
-      <a href="#" class="group inline-flex align-items-center font-800 font-lg">
-        <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-md bg-white text-black group-hover.text-white group-hover.bg-black transition duration-200 mr-4">
-          <svg class="w-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
+      <h1 class="font-3xl sm.font-7xl xl.font-7xl font-bold m-auto mb-24 tracking-tight">Making the web more beautiful, fast, <br>and open through great typography</h1>
+      <a href="#" class="group inline-flex align-items-center font-800 font-lg text-black hover.text-black">
+        <div class="flex align-items-center justify-content-center w-48 h-48 radius-round shadow-md bg-white group-hover.text-white group-hover.bg-black transition duration-200 mr-18">
+          <svg class="w-24 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
         </div>
         Play on Codepen
       </a>
@@ -61,13 +60,13 @@ cssCodeExample: |
   </div>
 </section>
 
-<section class="relative">
+<section class="relative" data-barba="container" data-barba-namespace="get-started">
   <div class="wrapper relative z-2">
     <div class="home-highlight grid grid-cols-1 md.grid-cols-2 radius-md md.radius-xl shadow-sm overflow-hidden bg-primary-900 bg-brighten-400">
       <div>
-        <header class="flex align-items-center justify-content-between h-15 px-5 border-b-1 border-white border-opacity-10 text-white font-xs font-600">
+        <header class="flex align-items-center justify-content-between h-64 px-20 border-b-1 border-white border-opacity-10 text-white font-xs font-600">
           <div class="flex align-items-center">
-            <img src="/assets/img/sass-logo.svg" class="w-8 mr-4">
+            <img src="/assets/img/sass-logo.svg" class="w-28 mr-18">
             All headings should have a letter-spacing of -.8ems
           </div>
           <div class="text-white text-opacity-40">
@@ -75,7 +74,7 @@ cssCodeExample: |
           </div>
         </header>
         <div class="flex">
-<pre aria-hidden="true" class="hidden md.block flex-none w-12 py-4 pr-4 align-right text-white text-opacity-40 bg-white bg-opacity-10 font-mono font-sm leading-5">1
+<pre aria-hidden="true" class="hidden md.block flex-none w-48 py-24 pr-16 align-right text-white text-opacity-40 bg-white bg-opacity-10 font-mono font-sm leading-5">1
 2
 3
 4
@@ -90,8 +89,7 @@ cssCodeExample: |
 13
 14
 15
-16
-17</pre>
+16</pre>
           {% highlight "scss" %}
           {{ scssCodeExample | safe }}
           {% endhighlight %}
@@ -99,9 +97,9 @@ cssCodeExample: |
         
       </div>
       <div class="bg-white bg-opacity-06">
-        <header class="flex align-items-center justify-content-between h-15 px-5 border-b-1 border-white border-opacity-08 text-white font-xs font-600">
+        <header class="flex align-items-center justify-content-between h-64 px-20 border-b-1 border-white border-opacity-08 text-white font-xs font-600">
           <div>
-            <span class="font-sm font-bold color-tertiary-500 mr-2">css output</span>
+            <span class="font-md font-bold text-teal text-brighten-500 mr-16">css output</span>
             All headings should have a letter-spacing of -.8ems
           </div>
           <div class="text-white text-opacity-40">
@@ -109,7 +107,7 @@ cssCodeExample: |
           </div>
         </header>
         <div class="flex">
-<pre aria-hidden="true" class="hidden md.block flex-none w-12 py-4 pr-4 align-right text-white text-opacity-40 bg-white bg-opacity-04 font-mono font-sm leading-5">1
+<pre aria-hidden="true" class="hidden md.block flex-none w-48 py-24 pr-16 align-right text-white text-opacity-40 bg-white bg-opacity-04 font-mono font-sm leading-5">1
 2
 3
 4
@@ -124,8 +122,7 @@ cssCodeExample: |
 13
 14
 15
-16
-17</pre>
+16</pre>
           {% highlight "css" %}
           {{ cssCodeExample | safe }}
           {% endhighlight %}
@@ -137,23 +134,23 @@ cssCodeExample: |
 </section>
 
 
-<section class="relative z-1 bg-silver-100 py-18">
+<section class="relative z-1 bg-silver-100 py-112">
   <div class="wrapper">
-    <div class="grid grid-cols-1 md.grid-cols-3 gap-15">
+    <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
       <div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
-        <pre class="p-5 radius-sm bg-primary-900 text-white">npm install uniformcss</pre>
+        <h4 class="font-lg font-800 mb-20"><span>Step 1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <pre class="p-18 py-16 radius-sm bg-primary-900 text-white select-all">npm install uniformcss</pre>
       </div>
       <div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
-        <pre class="p-5 radius-sm bg-primary-900 text-white">npm install uniformcss</pre>
+        <h4 class="font-lg font-800 mb-20"><span>Step 2.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <pre class="p-18 py-16 radius-sm bg-primary-900 text-white select-all">npm install uniformcss</pre>
       </div>
       <div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
-        <pre class="p-5 radius-sm bg-primary-900 text-white">npm install uniformcss</pre>
+        <h4 class="font-lg font-800 mb-20"><span>Step 3.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <pre class="p-18 py-16 radius-sm bg-primary-900 text-white select-all">npm install uniformcss</pre>
       </div>
     </div>
   </div>
@@ -161,57 +158,57 @@ cssCodeExample: |
 
 
 <section>
-  <div class="wrapper py-19">
-    <div class="align-center mb-6">
-      <span class="inline-flex align-items-center h-8 px-3 radius-sm border-px border-black uppercase font-xs font-bold tracking-3">Components</span>
+  <div class="wrapper py-128">
+    <div class="align-center mb-20">
+      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Components</span>
     </div>
-    <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold m-auto mb-10 tracking-tight align-center">Making the web more beautiful</h1>
-    <div class="align-center mb-16">
-      <a href="#" class="group inline-flex align-items-center font-800 font-lg">
-        <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-md bg-white text-black group-hover.text-white group-hover.bg-black transition duration-200 mr-4">
-          <svg class="w-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
+    <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold m-auto mb-28 tracking-tight align-center">Making the web more beautiful</h1>
+    <div class="align-center mb-72">
+      <a href="#" class="group inline-flex align-items-center font-800 font-lg text-black hover.text-black">
+        <div class="flex align-items-center justify-content-center w-48 h-48 radius-round shadow-md bg-white group-hover.text-white group-hover.bg-black transition duration-200 mr-18">
+          <svg class="w-24 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
         </div>
         Play on Codepen
       </a>
     </div>
 
-    <figure class="cd-image-container radius-md md.radius-xl overflow-hidden mb-18">
-      <div class="flex align-items-center justify-content-center w-100p h-25 px-4 bg-silver-100">
-        <article class="w-100p max-w-500px radius-md bg-white shadow-md">
-          <header class="px-6 py-5 border-b-1">
+    <figure class="cd-image-container radius-md md.radius-xl overflow-hidden mb-64">
+      <div class="flex align-items-center justify-content-center w-100p h-448 px-18 bg-silver-100">
+        <article class="w-100p max-w-512 radius-md bg-white shadow-md">
+          <header class="px-24 py-20 border-b-1 border-black border-opacity-10">
             <h4 class="font-lg font-bold">Recent Messages</h4>
           </header>
-          <div class="p-6">
-            <div class="flex align-items-center mb-6">
-              <img src="/assets/img/diane-profile.png" class="w-12 h-12 radius-round mr-6">
+          <div class="p-24">
+            <div class="flex align-items-center mb-20">
+              <img src="/assets/img/diane-profile.png" class="w-48 h-48 radius-round mr-24">
               <div>
                 <h5 class="font-md font-bold">Diane Schaefer</h5>
                 <span class="font-sm">5 mins ago &bull; Public</span>
               </div>
             </div>
-            <div class="font-sm bg-silver-100 radius-sm mb-6 p-5">
+            <div class="font-md bg-silver-200 radius-sm mb-20 p-20">
               <p class="text-black">Hi, I am a graphic designer and I am looking for someone who would like to work on a project together. <b>Who's interested?</b></p>
             </div>
-            <div class="flex font-sm">
-              <a class="flex align-items-center mr-10 font-500 text-gray-500 hover.text-black transition-200">
-                <svg class="fill-current w-5 color-red-500 mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span class="hidden sm.inline">132 Likes</span>
+            <div class="flex font-md">
+              <a class="flex align-items-center mr-28 font-500 text-black hover.text-black transition-200">
+                <svg class="fill-current w-20 text-red text-brighten-500 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span class="hidden sm.inline">132 Likes</span>
               </a>
-              <a class="flex align-items-center mr-10 font-500 text-gray-500 hover.text-black transition-200">
-                <svg class="stroke-current w-5 mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> <span class="hidden sm.inline">36 Comments</span>
+              <a class="flex align-items-center mr-28 font-500 text-black hover.text-black transition-200">
+                <svg class="stroke-current w-20 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> <span class="hidden sm.inline">36 Comments</span>
               </a>
-              <a class="flex align-items-center mr-10 font-500 text-gray-500 hover.text-black transition-200">
-                <svg class="stroke-current w-5 mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg> <span class="hidden sm.inline">Share</span>
+              <a class="flex align-items-center mr-28 font-500 text-black hover.text-black transition-200">
+                <svg class="stroke-current w-20 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg> <span class="hidden sm.inline">Share</span>
               </a>
             </div>
           </div>
         </article>
       </div>
-      <span class="cd-image-label px-3 py-2 radius-round bg-black text-white mb-3 mr-3 font-xs font-bold tracking-2 uppercase" data-type="original">Preview</span>
+      <span class="cd-image-label px-10 py-8 radius-round bg-black text-white mb-12 mr-12 font-xs font-bold tracking-2 uppercase" data-type="original">Preview</span>
   
       <div class="cd-resize-img"> <!-- the resizable image on top -->
-        <div class="w-100p h-25 overflow-auto bg-primary-900">
+        <div class="w-100p h-448 overflow-auto bg-primary-900">
           <div class="flex">
-<pre aria-hidden="true" class="hidden md.block flex-none w-12 py-4 pr-4 align-right text-white text-opacity-40 bg-white bg-opacity-10 font-mono font-sm leading-5">1
+<pre aria-hidden="true" class="hidden md.block flex-none w-48 py-24 pr-14 align-right text-white text-opacity-40 bg-white bg-opacity-10 font-mono font-sm leading-5">1
 2
 3
 4
@@ -245,23 +242,23 @@ cssCodeExample: |
 32</pre>
 {% highlight "html" %}
 <article class="radius-md bg-white shadow-md">
-  <header class="px-6 py-5 border-b-1">
+  <header class="px-24 py-20 border-b-1">
     <h4 class="font-lg font-bold">Recent Messages</h4>
   </header>
-  <div class="p-6">
-    <div class="flex align-items-center mb-6">
-      <img class="w-12 h-12 radius-round mr-6" src="/assets/img/diane-profile.png">
-      <div class="font-sm">
+  <div class="p-24">
+    <div class="flex align-items-center mb-20">
+      <img class="w-48 h-12 radius-round mr-6" src="/assets/img/diane-profile.png">
+      <div class="font-md">
         <h5 class="font-md font-bold">Diane Schaefer</h5>
         5 mins ago &bull; Public
       </div>
     </div>
-    <div class="font-sm bg-silver-100 radius-sm mb-6 p-5">
+    <div class="font-md bg-silver-100 radius-sm mb-20 p-5">
       <p class="text-black">Hi, I am a graphic designer and I am looking for someone who would like to work on a project together. <b>Who's interested?</b></p>
     </div>
-    <div class="flex font-sm">
+    <div class="flex font-md">
       <a class="flex align-items-center mr-10 font-500 text-gray-500 hover.text-black transition-200">
-        <i class="fas fa-heart color-red-500 mr-3"></i>
+        <i class="fas fa-heart text-red-500 mr-3"></i>
         <span class="hidden sm.inline">132 Likes</span>
       </a>
       <a class="flex align-items-center mr-10 font-500 text-gray-500 hover.text-black transition-200">
@@ -279,28 +276,28 @@ cssCodeExample: |
 {% endhighlight %}
           </div>
         </div>
-        <span class="cd-image-label px-3 py-2 radius-round bg-white text-black mb-3 ml-3 font-xs font-bold tracking-2 uppercase" data-type="modified">HTML</span>
+        <span class="cd-image-label px-10 py-8 radius-round bg-white text-black mb-12 ml-12 font-xs font-bold tracking-2 uppercase" data-type="modified">HTML</span>
       </div>
   
       <span class="cd-handle"></span>
     </figure> <!-- cd-image-container -->
 
 
-    <div class="grid grid-cols-1 md.grid-cols-3 gap-15">
+    <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
       <div>
-        <div class="mb-7 font-5xl font-bold">25kb</div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <div class="mb-24 text-black font-5xl font-bold">25kb</div>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
       <div>
-        <div class="mb-7 font-5xl font-bold">25kb</div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <div class="mb-24 text-black font-5xl font-bold">25kb</div>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
       <div>
-        <div class="mb-7 font-5xl font-bold">25kb</div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <div class="mb-24 text-black font-5xl font-bold">25kb</div>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
     </div>
 
@@ -319,45 +316,45 @@ cssCodeExample: |
 
 
 
-<section class="bg-primary-900 py-19">
+<section class="bg-primary-900 py-128">
 
   <div class="wrapper">
     <div class="h-3px bg-black opacity-10"></div>
-    <div class="grid grid-cols-1 sm.grid-cols-2 mb-18">
+    <div class="grid grid-cols-1 sm.grid-cols-2 mb-72">
       <div class="flex align-items-center">
         <div>
-          <div class="mb-6">
-            <span class="inline-flex align-items-center h-8 px-3 radius-sm border-px border-tertiary-500 color-tertiary-500 uppercase font-xs tracking-3">Components</span>
+          <div class="mb-20">
+            <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-lime border-brighten-500 text-lime text-brighten-500 uppercase font-xs tracking-looser">Components</span>
           </div>
-          <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold m-auto mb-10 tracking-tight text-white">Make your sassy web more beautiful, fast, and open</h1>
-          <a href="#" class="group inline-flex align-items-center font-800 font-lg text-white">
-            <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-md bg-white text-black group-hover.text-white group-hover.bg-black transition duration-200 mr-4">
-              <svg class="w-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
+          <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold m-auto mb-28 tracking-tight text-white">Make your sassy web more beautiful, fast, and open</h1>
+          <a href="#" class="group inline-flex align-items-center font-800 font-lg text-white hover.text-white">
+            <div class="flex align-items-center justify-content-center w-48 h-48 radius-round shadow-md bg-white group-hover.bg-white text-black group-hover.text-black transition duration-200 mr-18">
+              <svg class="w-24 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
             </div>
             Play on Codepen
           </a>
         </div>
       </div>
       <div>
-        <img src="/assets/img/scss-css-html.svg" class="max-w-500px mx-auto">
+        <img src="/assets/img/scss-css-html.svg" class="max-w-512 mx-auto">
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md.grid-cols-3 gap-15">
+    <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
       <div>
-        <div class="mb-7 font-5xl font-bold text-white">25kb</div>
-        <h4 class="font-lg font-800 mb-6 text-white"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-white mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <div class="mb-24 font-5xl font-bold text-white">25kb</div>
+        <h4 class="font-lg font-800 mb-20 text-white"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-white mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
       <div>
-        <div class="mb-7 font-5xl font-bold text-white">25kb</div>
-        <h4 class="font-lg font-800 mb-6 text-white"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-white mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <div class="mb-24 font-5xl font-bold text-white">25kb</div>
+        <h4 class="font-lg font-800 mb-20 text-white"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-white mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
       <div>
-        <div class="mb-7 font-5xl font-bold text-white">25kb</div>
-        <h4 class="font-lg font-800 mb-6 text-white"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-white mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <div class="mb-24 font-5xl font-bold text-white">25kb</div>
+        <h4 class="font-lg font-800 mb-20 text-white"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-white mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
     </div>
   </div>
@@ -378,54 +375,54 @@ cssCodeExample: |
 
 
 <section>
-  <div class="wrapper py-19">
+  <div class="wrapper py-128">
 
-    <div class="mb-6">
-      <span class="inline-flex align-items-center h-8 px-3 radius-sm border-px border-black uppercase font-xs font-bold tracking-3">Components</span>
+    <div class="mb-20">
+      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Components</span>
     </div>
-    <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold mb-10 tracking-tight max-w-900px">
-      Making the web more beautiful, fast, and open through great typography
+    <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold m-auto mb-28 tracking-tight">
+      Making the web more beautiful, <br>fast, and open through great typography
     </h1>
 
-    <div class="mb-16">
-      <a href="#" class="group inline-flex align-items-center font-800 font-lg">
-        <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-md bg-white text-black group-hover.text-white group-hover.bg-black transition duration-200 mr-4">
-          <svg class="w-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
+    <div class="mb-72">
+      <a href="#" class="group inline-flex align-items-center font-800 font-lg text-black hover.text-black">
+        <div class="flex align-items-center justify-content-center w-48 h-48 radius-round shadow-md bg-white group-hover.text-white group-hover.bg-black transition duration-200 mr-18">
+          <svg class="w-24 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
         </div>
         Play on Codepen
       </a>
     </div>
 
-    <div class="grid grid-rows-2 grid-cols-3 gap-8 h-500px mb-18">
-      <div class="flex align-items-center justify-content-center row-2 radius-lg bg-red-100">
+    <div class="grid grid-rows-2 grid-cols-3 gap-20 h-448 mb-64">
+      <div class="flex align-items-center justify-content-center row-2 radius-lg bg-silver-200">
         1
       </div>
-      <div class="flex align-items-center justify-content-center radius-lg bg-red-100">
+      <div class="flex align-items-center justify-content-center radius-lg bg-silver-200">
         2
       </div>
-      <div class="flex align-items-center justify-content-center row-2 radius-lg bg-red-100">
+      <div class="flex align-items-center justify-content-center row-2 radius-lg bg-silver-200">
         3
       </div>
-      <div class="flex align-items-center justify-content-center radius-lg bg-red-100">
+      <div class="flex align-items-center justify-content-center radius-lg bg-silver-200">
         4
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md.grid-cols-3 gap-15">
+    <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
       <div>
-        <div class="mb-7 font-5xl font-bold">25kb</div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <div class="mb-24 text-black font-5xl font-bold">25kb</div>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
       <div>
-        <div class="mb-7 font-5xl font-bold">25kb</div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <div class="mb-24 text-black font-5xl font-bold">25kb</div>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
       <div>
-        <div class="mb-7 font-5xl font-bold">25kb</div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <div class="mb-24 text-black font-5xl font-bold">25kb</div>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
     </div>
 
@@ -440,10 +437,10 @@ cssCodeExample: |
 
 
 <section class="bg-silver-100">
-  <div class="wrapper py-19">
+  <div class="wrapper py-128">
 
-    <div class="mb-6">
-      <span class="inline-flex align-items-center h-8 px-3 radius-sm border-px border-black uppercase font-xs font-bold tracking-3">Components</span>
+    <div class="mb-20">
+      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser">Components</span>
     </div>
     <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold mb-10 tracking-tight max-w-900px">
       Making the web more beautiful, fast, and open through great typography
@@ -451,14 +448,14 @@ cssCodeExample: |
 
     <div class="mb-16">
       <a href="#" class="group inline-flex align-items-center font-800 font-lg">
-        <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-md bg-white text-black group-hover.text-white group-hover.bg-black transition duration-200 mr-4">
+        <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-md bg-white text-black group-hover.text-white group-hover.bg-black transition duration-200 mr-18">
           <svg class="w-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
         </div>
         Play on Codepen
       </a>
     </div>
 
-    <div class="grid grid-cols-2 gap-8 h-500px mb-18">
+    <div class="grid grid-cols-2 gap-8 h-500px mb-20">
       <div class="flex align-items-center justify-content-center radius-lg bg-white">
         1
       </div>
@@ -469,12 +466,12 @@ cssCodeExample: |
 
     <div class="grid grid-cols-1 md.grid-cols-2 gap-8">
       <div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8 max-w-500px">Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28 max-w-512">Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
       </div>
       <div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8 max-w-500px">Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28 max-w-512">Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
       </div>
     </div>
 
@@ -492,10 +489,10 @@ cssCodeExample: |
 
 
 <section>
-  <div class="wrapper py-19">
+  <div class="wrapper py-128">
 
-    <div class="mb-6">
-      <span class="inline-flex align-items-center h-8 px-3 radius-sm border-px border-black uppercase font-xs font-bold tracking-3">Components</span>
+    <div class="mb-20">
+      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser">Components</span>
     </div>
     <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold mb-10 tracking-tight max-w-900px">
       Making the web more beautiful, fast, and open through great typography
@@ -503,127 +500,127 @@ cssCodeExample: |
 
     <div class="mb-16">
       <a href="#" class="group inline-flex align-items-center font-800 font-lg">
-        <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-md bg-white text-black group-hover.text-white group-hover.bg-black transition duration-200 mr-4">
+        <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-md bg-white text-black group-hover.text-white group-hover.bg-black transition duration-200 mr-18">
           <svg class="w-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
         </div>
         Play on Codepen
       </a>
     </div>
 
-    <div class="grid grid-cols-4 col-gap-8 row-gap-14 mb-18">
+    <div class="grid grid-cols-4 col-gap-8 row-gap-14 mb-20">
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
       
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
 
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
 
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
 
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
 
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
 
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
 
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
 
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
 
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
 
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
 
       <div class="flex align-items-center radius-lg">
-        <div class="w-15 h-15 radius-round mr-4 bg-red-500"></div>
-        <div class="font-sm font-bold text-gray-500 lowercase leading-8">
+        <div class="w-15 h-64 radius-round mr-18 bg-red-500"></div>
+        <div class="font-md font-bold text-gray-500 lowercase leading-8">
           Primary<br>
           #1A2242
         </div>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md.grid-cols-4 gap-15">
+    <div class="grid grid-cols-1 md.grid-cols-4 gap-56">
       <div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
       <div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
       <div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
       <div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
       </div>
     </div>
 
@@ -648,11 +645,11 @@ cssCodeExample: |
 
 
 <section">
-  <div class="wrapper py-19">
+  <div class="wrapper py-128">
     
 
-    <div class="mb-6">
-      <span class="inline-flex align-items-center h-8 px-3 radius-sm border-px border-black uppercase font-xs font-bold tracking-3">Components</span>
+    <div class="mb-20">
+      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser">Components</span>
     </div>
     <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold mb-10 tracking-tight max-w-900px">
       Making the web more beautiful, fast, and open through great typography
@@ -660,14 +657,14 @@ cssCodeExample: |
 
     <div class="mb-16">
       <a href="#" class="group inline-flex align-items-center font-800 font-lg">
-        <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-md bg-white text-black group-hover.text-white group-hover.bg-black transition duration-200 mr-4">
+        <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-md bg-white text-black group-hover.text-white group-hover.bg-black transition duration-200 mr-18">
           <svg class="w-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
         </div>
         Play on Codepen
       </a>
     </div>
 
-    <div class="grid grid-cols-2 gap-8 h-500px mb-18">
+    <div class="grid grid-cols-2 gap-8 h-500px mb-20">
       <div class="flex align-items-center justify-content-center radius-lg bg-white">
         1
       </div>
@@ -678,12 +675,12 @@ cssCodeExample: |
 
     <div class="grid grid-cols-1 md.grid-cols-2 gap-8">
       <div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8 max-w-500px">Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28 max-w-512">Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
       </div>
       <div>
-        <h4 class="font-lg font-800 mb-6"><span>Step1.</span> Install the Package</h4>
-        <p class="font-sm text-black mb-8 max-w-500px">Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
+        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28 max-w-512">Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
       </div>
     </div>
 

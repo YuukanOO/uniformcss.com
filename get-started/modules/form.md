@@ -1,28 +1,35 @@
 ---
 title: Form
+description: Learn about the Form module and how you can customize it.
 date: 1000-01-02
 ---
 
-{% include shortcodes/chapter, text: 'Modules', color: 'purple' %}
+## About Form Module
+
+The form module is an optional pre-built component that can be useful for dealing with user input related fields on a page.
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
 
 ## Form Module
 
 The Form module is an optional pre-built component that provides customizable styling of input text fieds, checkboxes, select dropdown etc.
 
-<section class="radius-sm bg-silver-100 p-6">
+<div class="bg-white border-1 border-silver-200 radius-md p-20">
   <form>
-    <div class="mb-6 last.mb-0">
-      <label class="label mb-2">Email</label>
+    <div class="mb-20 last.mb-0">
+      <label class="label mb-8">Email</label>
       <input class="input" placeholder="Email" value="Placeholder Text">
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <label class="checkbox">
         <input type="checkbox" checked required />
         <div class="checkbox__checkmark"></div>
         Checkbox
       </label>
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <label class="radio mr-4">
         <input type="radio" name="radio" checked />
         <div class="radio__checkmark"></div>
@@ -34,13 +41,13 @@ The Form module is an optional pre-built component that provides customizable st
         Radio
       </label>
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <label class="toggle">
         <input type="checkbox" checked />
         <div class="toggle__switch"></div>
       </label>
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <div class="select">
         <select>
           <option selected>Selected</option>
@@ -50,59 +57,43 @@ The Form module is an optional pre-built component that provides customizable st
       </div>
     </div>
   </form>
-</section>
-
-<div class="mb-6"></div>
-
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight html %}
-<form>
-  <div class="mb-6 last.mb-0">
-    <label class="label mb-2">Email</label>
-    <input class="input" placeholder="Email" value="Placeholder Text">
-  </div>
-
-  <div class="mb-6 last.mb-0">
-    <label class="checkbox">
-      <input type="checkbox" checked required />
-      <div class="checkbox__checkmark"></div>
-      Checkbox
-    </label>
-  </div>
-
-  <div class="mb-6 last.mb-0">
-    <label class="radio mr-4">
-      <input type="radio" name="radio" checked />
-      <div class="radio__checkmark"></div>
-      Radio
-    </label>
-    <label class="radio">
-      <input type="radio" name="radio" checked />
-      <div class="radio__checkmark"></div>
-      Radio
-    </label>
-  </div>
-
-  <div class="mb-6 last.mb-0">
-    <label class="toggle">
-      <input type="checkbox" checked />
-      <div class="toggle__switch"></div>
-    </label>
-  </div>
-
-  <div class="mb-6 last.mb-0">
-    <div class="select">
-      <select>
-        <option selected>Selected</option>
-        <option>Option</option>
-        <option>Option</option>
-      </select>
-      <div class="select__angle"></div>
-    </div>
-  </div>
-</form>
-{% endhighlight %}
 </div>
+
+```html
+<label class="label mb-2">Email</label>
+<input class="input" placeholder="Email" value="Placeholder Text">
+
+<label class="checkbox">
+  <input type="checkbox" checked required />
+  <div class="checkbox__checkmark"></div>
+  Checkbox
+</label>
+
+<label class="radio mr-4">
+  <input type="radio" name="radio" checked />
+  <div class="radio__checkmark"></div>
+  Radio
+</label>
+<label class="radio">
+  <input type="radio" name="radio" checked />
+  <div class="radio__checkmark"></div>
+  Radio
+</label>
+
+<label class="toggle">
+  <input type="checkbox" checked />
+  <div class="toggle__switch"></div>
+</label>
+
+<div class="select">
+  <select>
+    <option selected>Selected</option>
+    <option>Option</option>
+    <option>Option</option>
+  </select>
+  <div class="select__angle"></div>
+</div>
+```
 
 ---
 
@@ -110,25 +101,23 @@ The Form module is an optional pre-built component that provides customizable st
 
 To add a required asterisk append the class `is-required` to your label.
 
-<section class="radius-sm bg-silver-100 p-6">
-  <label class="label is-required mb-2">Email</label>
+<div class="bg-white border-1 border-silver-200 radius-md p-20">
+  <label class="label is-required mb-8">Email</label>
   <input class="input" placeholder="Email" value="Placeholder Text" required>
-</section>
+</div>
 
 ```html
-<label class="label is-required mb-2">Email</label>
+<label class="label is-required mb-8">Email</label>
 <input class="input" placeholder="Email" value="Placeholder Text" required>
 ```
 
+---
 
-<div class="mb-10"></div>
+## Customizing Input
 
-### Label and Textfield root variables
+The following CSS variable hooks are available to customize.
 
-To customize the look of your label and textfields, override the following root variables.
-
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --label-font-size: ...;
@@ -152,9 +141,7 @@ To customize the look of your label and textfields, override the following root 
   --input-focus-border: ...;
   --input-focus-shadow: ...;
 }
-{% endhighlight %}
-</div>
-
+```
 
 ---
 
@@ -162,13 +149,13 @@ To customize the look of your label and textfields, override the following root 
 
 Text fields come in **5 sizes**.
 
-<section class="radius-sm bg-silver-100 p-6">
-  <input class="input input-xs mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
-  <input class="input input-sm mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
-  <input class="input input-md mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
-  <input class="input input-lg mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
-  <input class="input input-xl mb-4 last.mb-0" placeholder="Email" value="Placeholder Text">
-</section>
+<div class="bg-white border-1 border-silver-200 radius-md p-20">
+  <input class="input input-xs mb-8 last.mb-0" placeholder="Email" value="Placeholder Text">
+  <input class="input input-sm mb-8 last.mb-0" placeholder="Email" value="Placeholder Text">
+  <input class="input input-md mb-8 last.mb-0" placeholder="Email" value="Placeholder Text">
+  <input class="input input-lg mb-8 last.mb-0" placeholder="Email" value="Placeholder Text">
+  <input class="input input-xl mb-8 last.mb-0" placeholder="Email" value="Placeholder Text">
+</div>
 
 ```html
 <input class="input input-xs" placeholder="Email" value="Placeholder Text">
@@ -178,15 +165,13 @@ Text fields come in **5 sizes**.
 <input class="input input-xl" placeholder="Email" value="Placeholder Text">
 ```
 
+---
 
-<div class="mb-10"></div>
+## Customizing Input Sizes
 
-### Input size root variables
+The following CSS variable hooks are available to customize.
 
-To customize your text and select input field sizes, override the following root variables.
-
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --input-xs-height: ...;
@@ -209,15 +194,13 @@ To customize your text and select input field sizes, override the following root
   --input-xl-padding: ...;
   --input-xl-font-size: ...;
 }
-{% endhighlight %}
-</div>
+```
 
 ---
 
 ## Select Fields
 
-
-<section class="radius-sm bg-silver-100 p-6">
+<div class="bg-white border-1 border-silver-200 radius-md p-20">
   <div class="select">
     <select>
       <option selected>Selected</option>
@@ -225,7 +208,7 @@ To customize your text and select input field sizes, override the following root
       <option>Option</option>
     </select>
   </div>
-</section>
+</div>
 
 ```html
 <div class="select">
@@ -237,15 +220,13 @@ To customize your text and select input field sizes, override the following root
 </div>
 ```
 
+---
 
-<div class="mb-10"></div>
+## Customizing Select Field
 
-### Select root variables
+The following CSS variable hooks are available to customize.
 
-To customize your select input field sizes, override the following root variables.
-
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --select-height: ...;
@@ -256,15 +237,18 @@ To customize your select input field sizes, override the following root variable
   --select-shadow: ...;
   --select-font-size: ...;
   --select-transition: ...;
+
   --select-hover-border: ...;
   --select-hover-shadow: ...;
   --select-focus-border: ...;
   --select-focus-shadow: ...;
   --select-disabled-bg: ...;
   --select-disabled-color: ...;
+
   --select-angle-color: ...;
   --select-hover-angle-color: ...;
   --select-hover-focus-color: ...;
+  
   --select-success-border: ...;
   --select-focus-success-shadow: ...;
   --select-warning-border: ...;
@@ -272,8 +256,7 @@ To customize your select input field sizes, override the following root variable
   --select-danger-border: ...;
   --select-focus-danger-shadow: ...;
 }
-{% endhighlight %}
-</div>
+```
 
 ---
 
@@ -281,8 +264,8 @@ To customize your select input field sizes, override the following root variable
 
 Select fields come in **5 sizes**.
 
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="select select-xs mb-4 last.mb-0">
+<div class="bg-white border-1 border-silver-200 radius-md p-20">
+  <div class="select select-xs mb-8 last.mb-0">
     <select>
       <option selected>Selected</option>
       <option>Option</option>
@@ -290,7 +273,7 @@ Select fields come in **5 sizes**.
     </select>
   </div>
 
-  <div class="select select-sm mb-4 last.mb-0">
+  <div class="select select-sm mb-8 last.mb-0">
     <select>
       <option selected>Selected</option>
       <option>Option</option>
@@ -298,7 +281,7 @@ Select fields come in **5 sizes**.
     </select>
   </div>
 
-  <div class="select select-md mb-4 last.mb-0">
+  <div class="select select-md mb-8 last.mb-0">
     <select>
       <option selected>Selected</option>
       <option>Option</option>
@@ -306,7 +289,7 @@ Select fields come in **5 sizes**.
     </select>
   </div>
 
-  <div class="select select-lg mb-4 last.mb-0">
+  <div class="select select-lg mb-8 last.mb-0">
     <select>
       <option selected>Selected</option>
       <option>Option</option>
@@ -314,14 +297,14 @@ Select fields come in **5 sizes**.
     </select>
   </div>
 
-  <div class="select select-xl mb-4 last.mb-0">
+  <div class="select select-xl mb-8 last.mb-0">
     <select>
       <option selected>Selected</option>
       <option>Option</option>
       <option>Option</option>
     </select>
   </div>
-</section>
+</div>
 
 ```html
 <div class="select select-xs">...</div>
@@ -331,15 +314,13 @@ Select fields come in **5 sizes**.
 <div class="select select-xl">...</div>
 ```
 
+---
 
-<div class="mb-10"></div>
+## Customizing Select Sizes
 
-### Select size root variables
+The following CSS variable hooks are available to customize.
 
-To customize your select input field sizes, override the following root variables.
-
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --select-xs-height: ...;
@@ -362,8 +343,7 @@ To customize your select input field sizes, override the following root variable
   --select-xl-padding: ...;
   --select-xl-font-size: ...;
 }
-{% endhighlight %}
-</div>
+```
 
 
 ---
@@ -372,9 +352,9 @@ To customize your select input field sizes, override the following root variable
 
 Both text and select field sizes can vary depending on breakpoint.
 
-<section class="radius-sm bg-silver-100 p-6">
+<div class="bg-white border-1 border-silver-200 radius-md p-20">
   <input class="input input-xs lg.input-xl" placeholder="Resize browser to see change">
-</section>
+</div>
 
 ```html
 <input class="input input-xs lg.input-xl" placeholder="Resize browser to see change">
@@ -386,13 +366,13 @@ Both text and select field sizes can vary depending on breakpoint.
 
 Text, select, and textarea fields come in *4* different states.
 
-<section class="radius-sm bg-silver-100 p-6">
-  <input class="input mb-4 last.mb-0" placeholder="Disabled" disabled>
-  <input class="input is-success mb-4 last.mb-0" placeholder="Success">
-  <input class="input is-warning mb-4 last.mb-0" placeholder="Warning">
-  <input class="input is-danger mb-4 last.mb-0" placeholder="Danger">
+<div class="bg-white border-1 border-silver-200 radius-md p-20">
+  <input class="input mb-8 last.mb-0" placeholder="Disabled" disabled>
+  <input class="input is-success mb-8 last.mb-0" placeholder="Success">
+  <input class="input is-warning mb-8 last.mb-0" placeholder="Warning">
+  <input class="input is-danger mb-8 last.mb-0" placeholder="Danger">
   <textarea class="textarea is-warning leading-8" rows="4">Warning textarea</textarea>
-</section>
+</div>
 
 ```html
 <input class="input" placeholder="Success" disabled>
@@ -402,14 +382,13 @@ Text, select, and textarea fields come in *4* different states.
 <textarea class="textarea is-warning leading-8" rows="4">Warning textarea</textarea>
 ```
 
-<div class="mb-10"></div>
+---
 
-### State field root variables
+## Customizing Input States
 
-To customize your state fields, override the following root variables.
+The following CSS variable hooks are available to customize.
 
-<div class="bg-black radius-sm overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --input-disabled-bg: ...;
@@ -424,8 +403,7 @@ To customize your state fields, override the following root variables.
   --input-danger-border: ...;
   --input-focus-danger-shadow: ...;
 }
-{% endhighlight %}
-</div>
+```
 
 
 ---
@@ -434,8 +412,8 @@ To customize your state fields, override the following root variables.
 
 Text and select input fields come in **5 sizes**.
 
-<section class="radius-sm bg-silver-100 p-6">
-  <div class="mb-6">
+<div class="bg-white border-1 border-silver-200 radius-md p-20">
+  <div class="mb-20">
     <label class="radio mr-4">
       <input type="radio" name="radio" checked />
       <div class="radio__checkmark"></div>
@@ -454,7 +432,7 @@ Text and select input fields come in **5 sizes**.
       I agree to the terms and agreement.
     </label>
   </div>
-</section>
+</div>
 
 ```html
 <label class="radio mr-4">
@@ -475,15 +453,13 @@ Text and select input fields come in **5 sizes**.
 </label>
 ```
 
+---
 
-<div class="mb-10"></div>
+## Customizing Basic Button
 
-### Radio and Checkbox root variables
+The following CSS variable hooks are available to customize.
 
-To customize your radio or checkbox input fields, override the following root variables.
-
-<div class="bg-black radius-sm h-24 overflow-auto">
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --checkbox-size: ...;
@@ -510,8 +486,7 @@ To customize your radio or checkbox input fields, override the following root va
   --radio-disabled-bg: ...;
   --radio-disabled-color: ...;
 }
-{% endhighlight %}
-</div>
+```
 
 
 
@@ -521,12 +496,12 @@ To customize your radio or checkbox input fields, override the following root va
 
 Checkboxes can also be transformed into a toggle switch.
 
-<section class="radius-sm bg-silver-100 p-6 flex justify-content-center">
+<div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
   <label class="toggle">
     <input type="checkbox" checked />
     <div class="toggle__switch"></div>
   </label>
-</section>
+</div>
 
 ```html
 <label class="toggle">
@@ -534,15 +509,13 @@ Checkboxes can also be transformed into a toggle switch.
   <div class="toggle__switch"></div>
 </label>
 ```
+---
 
+## Customizing Toggle Switch
 
-<div class="mb-10"></div>
+The following CSS variable hooks are available to customize.
 
-### Toggle switch root variables
-
-To customize your toggle switch, override the following root variables.
-
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --toggle-width: ...;
@@ -555,7 +528,7 @@ To customize your toggle switch, override the following root variables.
   --toggle-checked-translate: ...;
   --toggle-disabled-bg: ...;
 }
-{% endhighlight %}
+```
 
 
 ---
@@ -564,22 +537,21 @@ To customize your toggle switch, override the following root variables.
 
 Checkboxes can also be transformed into a toggle switch. Note, to set a default line-height apply the leading property.
 
-<section class="radius-sm bg-silver-100 p-6 flex justify-content-center">
+<div class="bg-white border-1 border-silver-200 radius-md p-20">
   <textarea class="textarea leading-8" rows="4">Ask your question here</textarea>
-</section>
+</div>
 
 ```html
 <textarea class="textarea leading-8" rows="4">Ask your question here</textarea>
 ```
 
+---
 
-<div class="mb-10"></div>
+## Customizing Textarea
 
-### Textarea root variables
+The following CSS variable hooks are available to customize.
 
-To customize your textarea, override the following root variables.
-
-{% highlight css %}
+```css
 /* styles.css */
 :root {
   --textarea-hover-border: ...;
@@ -595,7 +567,7 @@ To customize your textarea, override the following root variables.
   --textarea-danger-border: ...;
   --textarea-focus-danger-shadow: ...;
 }
-{% endhighlight %}
+```
 
 ---
 
@@ -603,20 +575,20 @@ To customize your textarea, override the following root variables.
 
 All form field elements can be disabled with assigning the `disabled` attribute.
 
-<section class="radius-sm bg-silver-100 p-6">
+<div class="bg-white border-1 border-silver-200 radius-md p-20">
   <form>
-    <div class="mb-6 last.mb-0">
-      <label class="label mb-2">Email</label>
+    <div class="mb-20 last.mb-0">
+      <label class="label mb-8">Email</label>
       <input class="input" placeholder="Email" value="Placeholder Text" disabled>
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <label class="checkbox pointer-events-none">
         <input type="checkbox" checked required disabled />
         <div class="checkbox__checkmark"></div>
         Checkbox
       </label>
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <label class="radio pointer-events-none mr-4">
         <input type="radio" name="radio" checked disabled />
         <div class="radio__checkmark"></div>
@@ -628,13 +600,13 @@ All form field elements can be disabled with assigning the `disabled` attribute.
         Radio
       </label>
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <label class="toggle pointer-events-none">
         <input type="checkbox" checked disabled />
         <div class="toggle__switch"></div>
       </label>
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <div class="select">
         <select disabled>
           <option selected>Selected</option>
@@ -645,17 +617,21 @@ All form field elements can be disabled with assigning the `disabled` attribute.
       </div>
     </div>
   </form>
-</section>
+</div>
 
 
 ---
 
 ## How to Disable this Module
 
-By default, all modules are enabled. To disable this module, set the `$include-form-module` variable to `false` in your module configuration.
+By default, all modules are enabled. To disable this form module, pass `form-module` to the `excludes` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
-  $include-form-module: false
+  $config: (
+    excludes: (
+      form-module
+    )
+  )
 );
 ```

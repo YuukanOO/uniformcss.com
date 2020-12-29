@@ -12,8 +12,8 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  pre[class*="language-"] {
 	 color: #fff;
 	 background: none;
-	 font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	 font-size: var(--font-sm);
+	 font-family: Menlo, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	 font-size: font-size(sm);
 	 text-align: left;
 	 white-space: pre;
 	 word-spacing: normal;

@@ -145,18 +145,3 @@ You can customize the default sizing or add new ones by passing key value pairs 
 ```
 
 > Configuring sizes work in a similar way to other types of configuration in Uniform CSS. If the key exists, it will override the existing key otherwise it will be included as new variant.
-
----
-
-## Disabling Sizes
-
-To remove existing sizing units, simply pass in `null` to the any of the size settings in your configuration. Be aware, doing so will remove sizing variant ranges for all size related properties such as `margin`, `padding`, `width` and etc.
-
-```scss
-@use "uniform" as * with (
-  $config: (
-    positive-sizes: null, // disable all positive-sizes
-    ...
-  )
-)
-```

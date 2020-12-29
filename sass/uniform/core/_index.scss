@@ -20,6 +20,77 @@ $config: (
   @return #{$remSize}rem;
 }
 
+@function escape($any) {
+  $escape-chars: (
+    "!",
+    // """,
+    "#",
+    "$",
+    "%",
+    "&",
+    "'",
+    "(",
+    ")",
+    "*",
+    "+",
+    ",",
+    // "-",
+    ".",
+    "/",
+    ":",
+    ";",
+    "<",
+    "=",
+    ">",
+    "?",
+    "@",
+    "[",
+    // "\",
+    "]",
+    "^",
+    "`",
+    "{",
+    "|",
+    "}",
+    "~",
+  );
+
+	$string: "" + $any;
+	$escaped-string: "";
+	@for $x from 1 through string.length($string) {
+		$character: string.slice($string, $x, $x);
+		@if list.index($escape-chars, $character) {
+			// NOTE: `"\\..."` must be quoted.
+			$escaped-string: $escaped-string + "\\"+ $character;
+		} @else {
+			$escaped-string: $escaped-string + $character;
+		}
+	}
+	@return $escaped-string;
+}
+
+@function string-split($string, $separator) {
+  // empty array/list
+  $split-array: ();
+  // first index of separator in string
+  $index : string.index($string, $separator);
+  // loop through string
+  @while $index != null {
+    // get the substring from the first character to the separator
+    $item: string.slice($string, 1, $index - 1);
+    // push item to array
+    $split-array: append($split-array, $item);
+    // remove item and separator from string
+    $string: string.slice($string, $index + 1);
+    // find new index of separator
+    $index : string.index($string, $separator);
+  }
+  // add the remaining string to list (the last item)
+  $split-array: append($split-array, $string);
+
+  @return $split-array;
+}
+
 $default-config: (
   important: false,
   prefix: null,
@@ -329,15 +400,9 @@ $default-config: (
   ),
 
   font-families: (
-    sans: (
-      sans-serif,
-    ),
-    serif: (
-      serif,
-    ),
-    mono: (
-      monospace,
-    ),
+    sans: sans-serif,
+    serif: serif,
+    mono: monospace,
   ),
 
   font-sizes: (
@@ -401,9 +466,9 @@ $default-config: (
     tighter: -0.05em,
     tight: -0.025em,
     base: 0,
-    loose: 1.025em,
-    looser: 1.05em,
-    loosest: 1.075em,
+    loose: 0.025em,
+    looser: 0.05em,
+    loosest: 0.075em,
 
     n9: -0.09em,
     n8: -0.08em,
@@ -459,16 +524,16 @@ $default-config: (
       0 15px 12px rgba(0, 0, 0, 0.22),
     ),
     focus: (
-      0 0 0 3px rgb(0, 145, 255, 0.2)
+      0 0 0 3px rgb(63 96 191 / 30%)
     ),
-    success: (
-      0 0 0 3px rgb(0, 182, 73, 0.2)
+    focus-success: (
+      0 0 0 3px rgb(103 204 51 / 30%)
     ),
-    warning: (
-      0 0 0 3px rgb(255, 175, 22, 0.2)
+    focus-warning: (
+      0 0 0 3px rgb(242 166 13 / 30%)
     ),
-    danger: (
-      0 0 0 3px rgb(252, 95, 95, 0.2)
+    focus-danger: (
+      0 0 0 3px rgb(221 61 60 / 30%)
     )
   ) 
 ) !default;
@@ -487,8 +552,9 @@ $important: map.get($all-config, important);
 $prefix: map.get($all-config, prefix);
 $delimiter: map.get($all-config, delimiter);
 $child-delimiter: map.get($all-config, child-delimiter);
-$pseudo-delimiter: map.get($all-config, pseudo-delimiter);
-$screen-delimiter: map.get($all-config, screen-delimiter);
+$pseudo-delimiter: escape(map.get($all-config, pseudo-delimiter));
+$screen-delimiter: escape(map.get($all-config, screen-delimiter));
+
 $headless: map.get($all-config, headless);
 $root: map.get($all-config, root);
 $debugger: map.get($all-config, debugger);
@@ -1030,79 +1096,6 @@ $var-trackings: variablize-map($trackings, tracking);
 
 @function trackings() {
   @return $var-trackings;
-}
-
-// EXPERIMENTAL HELPER FUNCTIONS (FUTURE)
-
-@function escape($any) {
-  $escape-chars: (
-    "!",
-    // """,
-    "#",
-    "$",
-    "%",
-    "&",
-    "'",
-    "(",
-    ")",
-    "*",
-    "+",
-    ",",
-    // "-",
-    ".",
-    "/",
-    ":",
-    ";",
-    "<",
-    "=",
-    ">",
-    "?",
-    "@",
-    "[",
-    // "\",
-    "]",
-    "^",
-    "`",
-    "{",
-    "|",
-    "}",
-    "~",
-  );
-
-	$string: "" + $any;
-	$escaped-string: "";
-	@for $x from 1 through string.length($string) {
-		$character: string.slice($string, $x, $x);
-		@if list.index($escape-chars, $character) {
-			// NOTE: `"\\..."` must be quoted.
-			$escaped-string: $escaped-string + "\\"+ $character;
-		} @else {
-			$escaped-string: $escaped-string + $character;
-		}
-	}
-	@return $escaped-string;
-}
-
-@function string-split($string, $separator) {
-  // empty array/list
-  $split-array: ();
-  // first index of separator in string
-  $index : string.index($string, $separator);
-  // loop through string
-  @while $index != null {
-    // get the substring from the first character to the separator
-    $item: string.slice($string, 1, $index - 1);
-    // push item to array
-    $split-array: append($split-array, $item);
-    // remove item and separator from string
-    $string: string.slice($string, $index + 1);
-    // find new index of separator
-    $index : string.index($string, $separator);
-  }
-  // add the remaining string to list (the last item)
-  $split-array: append($split-array, $string);
-
-  @return $split-array;
 }
 
 // HELPER MIXINS
