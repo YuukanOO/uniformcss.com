@@ -1,0 +1,50 @@
+@use "uniform/core";
+@use "sass:map";
+
+$name: animation;
+$shorthand: animate;
+$responsive: false;
+$responsive-pseudos: false;
+
+$properties: (animation);
+$custom-properties: ();
+
+$variants: (
+  none: none,
+	spin: spin 1s linear infinite,
+	pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite,
+	ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite,
+	bounce: bounce 1s infinite
+);
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+$pseudos: ();
+
+$config: (
+  utilities: (
+    $name: (
+      shorthand: $shorthand,
+      responsive: $responsive,
+      responsive-pseudos: $responsive-pseudos,
+      properties: $properties,
+      custom-properties: $custom-properties,
+      default-variants: (
+        $variants
+      ),
+      default-pseudos: (
+        $pseudos
+      )
+    )
+  )
+);
+
+core.$all-config: map.deep-merge(core.$all-config, $config);
+core.$all-config: map.deep-merge(core.$all-config, core.$config);

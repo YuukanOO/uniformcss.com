@@ -7,35 +7,33 @@ eleventyNavigation:
 scssCodeExample: |
   @use "uniform" as * with (
     $config: (
-      gradients: (
-        hero: linear-gradient(to bottom, #101D36 0%, #023b7e 20%, #3988d7 50%, #e1f0ff 80%, #FFFFFF 100%)
-      ),
+      important: true,
       utilities: (
-        background-color: (
-          pseudos: (first, last, first-type, last-type, odd, even, empty)
-        ),
-        color: (
-          responsive: true,
-          pseuds: (group-focus)
-        ),
+        leading-trim: (
+          shorthand: trim,
+          properties: (leading-trim),
+          variants: (
+            both: both
+          )
+        )
       )
     )
   );
 cssCodeExample: |
-  .token.tag {
-    color: var(--cyan-600);
+  .trim-both { 
+    leading-trim: both !important; 
   }
 
-  .token.punctuation {
-    color: var(--teal-300);
+  .align-left { 
+    text-align: left !important; 
   }
 
-  .token.attr-name {
-    color: var(--pink-400);
+  .align-center { 
+    text-align: center !important; 
   }
 
-  .token.attr-value {
-    color: var(--blue-400);
+  .align-right { 
+    text-align: right !important; 
   }
 ---
 
@@ -46,10 +44,10 @@ cssCodeExample: |
 
   <div class="wrapper">
     <div class="max-w-900px py-112">
-      <div class="inline-block relative mb-20 font-bold font-md">
-        Version 1.0.0 Release<span class="absolute t-0 r-0 mt-n14 mr-n36 inline-flex align-items-center h-20 bg-teal text-white uppercase font-2xs font-bold radius-xs px-4">New</span>
+      <div class="flex align-items-center mb-20 font-semibold font-md text-silver-600">
+        <span class="inline-flex align-items-center h-20 mr-12 px-6 bg-cyan bg-brighten-500 bg-darken-100 text-white uppercase font-2xs font-bold tracking-loose radius-xs">New</span> Version 1.0.0 Release
       </div>
-      <h1 class="font-3xl sm.font-7xl xl.font-7xl font-bold m-auto mb-24 tracking-tight">Flexible and future proof utility-first <br>CSS framework built entirely in Sass.</h1>
+      <h1 class="font-3xl sm.font-7xl xl.font-7xl font-bold m-auto mb-24 tracking-tight">Simple and intuitive utility-first <br>CSS framework built entirely in Sass.</h1>
       <a href="#" class="group inline-flex align-items-center font-800 font-lg text-black hover.text-black">
         <div class="flex align-items-center justify-content-center w-48 h-48 radius-round shadow-md bg-white group-hover.text-white group-hover.bg-black transition duration-200 mr-18">
           <svg class="w-24 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
@@ -67,7 +65,7 @@ cssCodeExample: |
         <header class="flex align-items-center justify-content-between h-64 px-20 border-b-1 border-white border-opacity-10 text-white font-xs font-600">
           <div class="flex align-items-center">
             <img src="/assets/img/sass-logo.svg" class="w-28 mr-18">
-            Configure fast and intuitively directly in your Sass project.
+            Configure Uniform directly in your Sass project.
           </div>
           <div class="text-white text-opacity-40">
             styles.scss
@@ -88,8 +86,7 @@ cssCodeExample: |
 12
 13
 14
-15
-16</pre>
+15</pre>
           {% highlight "scss" %}
           {{ scssCodeExample | safe }}
           {% endhighlight %}
@@ -99,8 +96,8 @@ cssCodeExample: |
       <div class="bg-white bg-opacity-06">
         <header class="flex align-items-center justify-content-between h-64 px-20 border-b-1 border-white border-opacity-08 text-white font-xs font-600">
           <div>
-            <span class="font-md font-bold text-teal text-brighten-500 mr-16">css output</span>
-            Build scalable web components without ever touching your CSS.
+            <span class="font-base font-bold text-teal text-brighten-700 mr-16">css</span>
+            Quickly generate suite of utilities properties.
           </div>
           <div class="text-white text-opacity-40">
             styles.css
@@ -121,8 +118,7 @@ cssCodeExample: |
 12
 13
 14
-15
-16</pre>
+15</pre>
           {% highlight "css" %}
           {{ cssCodeExample | safe }}
           {% endhighlight %}
@@ -130,26 +126,26 @@ cssCodeExample: |
       </div>
     </div>
   </div>
-  <div class="absolute b-0 z-1 bg-silver-100 w-100p h-50p"></div>
+  <div class="absolute b-0 z-1 bg-silver-100 bg-brighten-500 w-100p h-50p"></div>
 </section>
 
 
-<section class="relative z-1 bg-silver-100 py-112">
+<section class="relative z-1 bg-silver-100 bg-brighten-500 py-112">
   <div class="wrapper">
     <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
       <div>
-        <h4 class="font-lg font-800 mb-20"><span>Step 1.</span> Install the Package</h4>
-        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
-        <pre class="p-18 py-16 radius-sm bg-primary-900 text-white select-all">npm install uniformcss</pre>
+        <h4 class="font-lg font-bold mb-20"><span>Step 1.</span> Install the Package</h4>
+        <p class="font-md text-black mb-28">Install the Uniform CSS npm package or clone the project and install its dependencies.</p>
+        <pre class="p-18 py-16 radius-sm bg-primary-900 text-white select-all">npm i uniformcss</pre>
       </div>
       <div>
-        <h4 class="font-lg font-800 mb-20"><span>Step 2.</span> Install the Package</h4>
-        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
-        <pre class="p-18 py-16 radius-sm bg-primary-900 text-white select-all">npm install uniformcss</pre>
+        <h4 class="font-lg font-bold mb-20"><span>Step 2.</span> Include Uniform</h4>
+        <p class="font-md text-black mb-28">Include Uniform CSS by adding the following line to your main Sass file and compile your project.</p>
+        <pre class="p-18 py-16 radius-sm bg-primary-900 text-white select-all">@use "uniform" as *;</pre>
       </div>
       <div>
-        <h4 class="font-lg font-800 mb-20"><span>Step 3.</span> Install the Package</h4>
-        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
+        <h4 class="font-lg font-bold mb-20"><span>Step 3.</span> Compose your UI</h4>
+        <p class="font-md text-black mb-28">Add the compiled CSS, and style components by writing composable utility properties in your HTML.</p>
         <pre class="p-18 py-16 radius-sm bg-primary-900 text-white select-all">npm install uniformcss</pre>
       </div>
     </div>
@@ -160,20 +156,12 @@ cssCodeExample: |
 <section>
   <div class="wrapper py-128">
     <div class="align-center mb-20">
-      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Components</span>
+      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Rapid Prototyping</span>
     </div>
-    <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold m-auto mb-28 tracking-tight align-center">Making the web more beautiful</h1>
-    <div class="align-center mb-72">
-      <a href="#" class="group inline-flex align-items-center font-800 font-lg text-black hover.text-black">
-        <div class="flex align-items-center justify-content-center w-48 h-48 radius-round shadow-md bg-white group-hover.text-white group-hover.bg-black transition duration-200 mr-18">
-          <svg class="w-24 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
-        </div>
-        Play on Codepen
-      </a>
-    </div>
+    <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold m-auto mb-96 tracking-tight align-center">Build web components without <br>ever touching your CSS.</h1>
 
     <figure class="cd-image-container radius-md md.radius-xl overflow-hidden mb-64">
-      <div class="flex align-items-center justify-content-center w-100p h-448 px-18 bg-silver-100">
+      <div class="flex align-items-center justify-content-center w-100p h-448 px-18 bg-silver-100 bg-brighten-500">
         <article class="w-100p max-w-512 radius-md bg-white shadow-md">
           <header class="px-24 py-20 border-b-1 border-black border-opacity-10">
             <h4 class="font-lg font-bold">Recent Messages</h4>
@@ -186,8 +174,8 @@ cssCodeExample: |
                 <span class="font-sm">5 mins ago &bull; Public</span>
               </div>
             </div>
-            <div class="font-md bg-silver-200 radius-sm mb-20 p-20">
-              <p class="text-black">Hi, I am a graphic designer and I am looking for someone who would like to work on a project together. <b>Who's interested?</b></p>
+            <div class="font-md bg-silver-200 bg-brighten-500 bg-opacity-60 radius-sm mb-20 p-20">
+              <p class="text-black">Hi, I am a graphic designer and I am looking for someone who would like to work on a project together.</p>
             </div>
             <div class="flex font-md">
               <a class="flex align-items-center mr-28 font-500 text-black hover.text-black transition-200">
@@ -241,36 +229,32 @@ cssCodeExample: |
 31
 32</pre>
 {% highlight "html" %}
-<article class="radius-md bg-white shadow-md">
-  <header class="px-24 py-20 border-b-1">
+<article class="w-100p max-w-512 radius-md bg-white shadow-md">
+  <header class="px-24 py-20 border-b-1 border-black border-opacity-10">
     <h4 class="font-lg font-bold">Recent Messages</h4>
   </header>
   <div class="p-24">
     <div class="flex align-items-center mb-20">
-      <img class="w-48 h-12 radius-round mr-6" src="/assets/img/diane-profile.png">
-      <div class="font-md">
+      <img src="/assets/img/diane-profile.png" class="w-48 h-48 radius-round mr-24">
+      <div>
         <h5 class="font-md font-bold">Diane Schaefer</h5>
-        5 mins ago &bull; Public
+        <span class="font-sm">5 mins ago &bull; Public</span>
       </div>
     </div>
-    <div class="font-md bg-silver-100 radius-sm mb-20 p-5">
-      <p class="text-black">Hi, I am a graphic designer and I am looking for someone who would like to work on a project together. <b>Who's interested?</b></p>
+    <div class="font-md bg-silver-200 bg-brighten-500 bg-opacity-60 radius-sm mb-20 p-20">
+      <p class="text-black">Hi, I am a graphic designer and I am looking for someone who would like to work on a project together.</p>
     </div>
     <div class="flex font-md">
-      <a class="flex align-items-center mr-10 font-500 text-gray-500 hover.text-black transition-200">
-        <i class="fas fa-heart text-red-500 mr-3"></i>
-        <span class="hidden sm.inline">132 Likes</span>
+      <a class="flex align-items-center mr-28 font-500 text-black hover.text-black transition-200">
+        <svg class="fill-current w-20 text-red text-brighten-500 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span class="hidden sm.inline">132 Likes</span>
       </a>
-      <a class="flex align-items-center mr-10 font-500 text-gray-500 hover.text-black transition-200">
-        <i class="fas fa-heart mr-3"></i>
-        <span class="hidden sm.inline"></span>36 Comments</span>
+      <a class="flex align-items-center mr-28 font-500 text-black hover.text-black transition-200">
+        <svg class="stroke-current w-20 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> <span class="hidden sm.inline">36 Comments</span>
       </a>
-      <a class="flex align-items-center mr-10 font-500 text-gray-500 hover.text-black transition-200">
-        <i class="fas fa-share-alt mr-3"></i>
-        <span class="hidden sm.inline">Share</span>
+      <a class="flex align-items-center mr-28 font-500 text-black hover.text-black transition-200">
+        <svg class="stroke-current w-20 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-share-2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg> <span class="hidden sm.inline">Share</span>
       </a>
     </div>
-
   </div>
 </article>
 {% endhighlight %}
@@ -282,6 +266,170 @@ cssCodeExample: |
       <span class="cd-handle"></span>
     </figure> <!-- cd-image-container -->
 
+
+    <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
+      <div>
+        <div class="mb-20 text-black font-5xl font-light">146</div>
+        <h4 class="font-lg font-extrabold mb-24">Properties Supported</h4>
+        <p class="font-md text-black mb-28">Uniform CSS supports all common CSS properties out of the box. Additionally, you can add your own custom properties directly through the configuration.</p>
+      </div>
+      <div>
+        <div class="mb-20 text-black font-5xl font-light">136</div>
+        <h4 class="font-lg font-extrabold mb-24">Semantic Colors Available</h4>
+        <p class="font-md text-black mb-28">Easily customize and configure Uniform to match your brand and design. Uniform CSS provides colors that are configurable using CSS variable overrides.</p>
+      </div>
+      <div>
+        <div class="mb-20 text-black font-5xl font-light">72</div>
+        <h4 class="font-lg font-extrabold mb-24">Spacing and Size Variants</h4>
+        <p class="font-md text-black mb-28">Build pixel perfect components without compromise. Uniform supports all common spacing and sizes across all breakpoints. </p>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+<div class="wrapper">
+  <div class="h-3 bg-silver-100 bg-brighten-500"></div>
+</div>
+
+
+
+
+
+<section>
+  <div class="wrapper py-128">
+
+    <div class="mb-20">
+      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Components</span>
+    </div>
+    <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold mb-36 tracking-tight max-w-900px">
+      Fully customizable components <br>for common UI elements
+    </h1>
+
+    <div class="mb-96">
+      <a href="#" class="font-extrabold font-lg text-black hover.text-black">
+        Learn more about modules 
+      </a>
+    </div>
+
+    <div class="grid grid-cols-2 gap-64 mb-64">
+      <div class="flex align-items-center justify-content-center py-96 radius-lg bg-silver-100 bg-brighten-500">
+        <form class="w-100p max-w-320 p-20 bg-white radius-md shadow-md">
+          <div class="mb-20 last.mb-0">
+            <label class="label mb-8">Email</label>
+            <input class="input" placeholder="Email" value="Placeholder Text">
+          </div>
+          <div class="mb-20 last.mb-0">
+            <label class="checkbox">
+              <input type="checkbox" checked required />
+              <div class="checkbox__checkmark"></div>
+              Checkbox
+            </label>
+          </div>
+          <div class="mb-20 last.mb-0">
+            <label class="radio mr-4">
+              <input type="radio" name="radio" checked />
+              <div class="radio__checkmark"></div>
+              Radio
+            </label>
+            <label class="radio">
+              <input type="radio" name="radio" checked />
+              <div class="radio__checkmark"></div>
+              Radio
+            </label>
+          </div>
+          <div class="mb-20 last.mb-0">
+            <label class="toggle">
+              <input type="checkbox" checked />
+              <div class="toggle__switch"></div>
+            </label>
+          </div>
+          <div class="mb-20 last.mb-0">
+            <div class="select">
+              <select>
+                <option selected>Selected</option>
+                <option>Option</option>
+                <option>Option</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="flex align-items-center justify-content-center radius-lg bg-silver-100 bg-brighten-500">
+        <div class="grid grid-cols-1 gap-24 w-100p max-w-320">
+          <button class="btn btn-primary">Button</button>
+          <button class="btn btn-secondary">Button</button>
+          <button class="btn btn-tertiary">Button</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md.grid-cols-2 gap-64">
+      <div>
+        <h4 class="font-lg font-800 mb-24">Form Module</h4>
+        <p class="font-md text-black mb-28 max-w-512">The form module is an optional pre-built component that can be useful for dealing with user input related fields on a page. You can customize the look of this module using CSS variable hooks directly in your CSS.</p>
+      </div>
+      <div>
+        <h4 class="font-lg font-800 mb-24">Form Module</h4>
+        <p class="font-md text-black mb-28 max-w-512">The button module is an optional pre-built component that can be useful for dealing with call-to-actions on a page. You can customize the look of this module using CSS variable hooks directly in your CSS.</p>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="bg-silver-100 bg-brighten-500">
+  <div class="wrapper py-128">
+
+    <div class="mb-20">
+      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Animations</span>
+    </div>
+    <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold m-auto mb-36 tracking-tight">
+      Apply motion-safe and smooth <br>animations using a single utility class.
+    </h1>
+
+    <div class="mb-96">
+      <a href="#" class="font-extrabold font-lg text-black hover.text-black">
+        Learn more about modules 
+      </a>
+    </div>
+
+    <div class="grid grid-rows-2 grid-cols-3 gap-20 h-512 mb-64">
+      <div class="flex align-items-center justify-content-center row-2 radius-lg bg-silver-200">
+        <button type="button" class="bg-rose-600 ..." disabled>
+          <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
+            <!-- ... -->
+          </svg>
+          Preparing PDF
+        </button>
+      </div>
+      <div class="flex align-items-center justify-content-center radius-lg bg-silver-200">
+        2
+      </div>
+      <div class="flex align-items-center justify-content-center row-2 radius-lg bg-silver-200">
+        3
+      </div>
+      <div class="flex align-items-center justify-content-center radius-lg bg-silver-200">
+        4
+      </div>
+    </div>
 
     <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
       <div>
@@ -304,6 +452,10 @@ cssCodeExample: |
 
   </div>
 </section>
+
+
+
+
 
 
 
@@ -374,110 +526,11 @@ cssCodeExample: |
 
 
 
-<section>
-  <div class="wrapper py-128">
-
-    <div class="mb-20">
-      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Components</span>
-    </div>
-    <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold m-auto mb-28 tracking-tight">
-      Making the web more beautiful, <br>fast, and open through great typography
-    </h1>
-
-    <div class="mb-72">
-      <a href="#" class="group inline-flex align-items-center font-800 font-lg text-black hover.text-black">
-        <div class="flex align-items-center justify-content-center w-48 h-48 radius-round shadow-md bg-white group-hover.text-white group-hover.bg-black transition duration-200 mr-18">
-          <svg class="w-24 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
-        </div>
-        Play on Codepen
-      </a>
-    </div>
-
-    <div class="grid grid-rows-2 grid-cols-3 gap-20 h-448 mb-64">
-      <div class="flex align-items-center justify-content-center row-2 radius-lg bg-silver-200">
-        1
-      </div>
-      <div class="flex align-items-center justify-content-center radius-lg bg-silver-200">
-        2
-      </div>
-      <div class="flex align-items-center justify-content-center row-2 radius-lg bg-silver-200">
-        3
-      </div>
-      <div class="flex align-items-center justify-content-center radius-lg bg-silver-200">
-        4
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
-      <div>
-        <div class="mb-24 text-black font-5xl font-bold">25kb</div>
-        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
-        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
-      </div>
-      <div>
-        <div class="mb-24 text-black font-5xl font-bold">25kb</div>
-        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
-        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
-      </div>
-      <div>
-        <div class="mb-24 text-black font-5xl font-bold">25kb</div>
-        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
-        <p class="font-md text-black mb-28">Install Material-UI's source files via npm. We take care of injecting the CSS needed.</p>
-      </div>
-    </div>
-
-
-  </div>
-</section>
 
 
 
 
 
-
-
-<section class="bg-silver-100">
-  <div class="wrapper py-128">
-
-    <div class="mb-20">
-      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser">Components</span>
-    </div>
-    <h1 class="font-3xl sm.font-6xl md.font-7xl font-bold mb-10 tracking-tight max-w-900px">
-      Making the web more beautiful, fast, and open through great typography
-    </h1>
-
-    <div class="mb-16">
-      <a href="#" class="group inline-flex align-items-center font-800 font-lg">
-        <div class="flex align-items-center justify-content-center w-11 h-11 radius-round shadow-md bg-white text-black group-hover.text-white group-hover.bg-black transition duration-200 mr-18">
-          <svg class="w-7 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
-        </div>
-        Play on Codepen
-      </a>
-    </div>
-
-    <div class="grid grid-cols-2 gap-8 h-500px mb-20">
-      <div class="flex align-items-center justify-content-center radius-lg bg-white">
-        1
-      </div>
-      <div class="flex align-items-center justify-content-center radius-lg bg-white">
-        2
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 md.grid-cols-2 gap-8">
-      <div>
-        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
-        <p class="font-md text-black mb-28 max-w-512">Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
-      </div>
-      <div>
-        <h4 class="font-lg font-800 mb-20"><span>Step1.</span> Install the Package</h4>
-        <p class="font-md text-black mb-28 max-w-512">Because Tailwind is so low-level, it never encourages you to design the same site twice. Even with the same color palette and sizing scale, it's easy to build the same component with a completely different look in the next project.</p>
-      </div>
-    </div>
-
-
-  </div>
-</section>
 
 
 

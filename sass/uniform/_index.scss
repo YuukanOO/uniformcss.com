@@ -203,12 +203,16 @@
 @use "utilities/transform/core-transform";
 
 
-// UTILITIES - TRANSITION (4)
+// UTILITIES - TRANSITION (5)
 @use "utilities/transition/core-transition-duration";
 @use "utilities/transition/core-transition-delay";
 @use "utilities/transition/core-transition-property";
 @use "utilities/transition/core-transition-timing-function";
 @use "utilities/transition/core-transition";
+
+
+// UTILITIES - ANIMATION
+@use "utilities/animation/core-animation";
 
 
 // UTILITIES - INTERACTIVE (5)

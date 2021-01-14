@@ -101,6 +101,7 @@ html {
 
 body {
   font-size: var(--body-font-size, 1rem);
+  font-weight: var(--body-font-weight, var(--font-regular));
   line-height: var(--body-leading, 1);
   color: var(--body-color, black);
 }
@@ -166,6 +167,7 @@ Starter styles include customer properties with fallback values that act as a ho
   --background-color: ... ;
 
   --body-font-size: ... ;
+  --body-font-weight: ... ;
   --body-leading: ... ;
   --body-color: ... ;
 
