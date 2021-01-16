@@ -374,7 +374,7 @@ cssCodeExample: |
         <p class="font-md text-black mb-28 max-w-512">The form module is an optional pre-built component that can be useful for dealing with user input related fields on a page. You can customize the look of this module using CSS variable hooks directly in your CSS.</p>
       </div>
       <div>
-        <h4 class="font-lg font-800 mb-24">Form Module</h4>
+        <h4 class="font-lg font-800 mb-24">Button Module</h4>
         <p class="font-md text-black mb-28 max-w-512">The button module is an optional pre-built component that can be useful for dealing with call-to-actions on a page. You can customize the look of this module using CSS variable hooks directly in your CSS.</p>
       </div>
     </div>
@@ -417,17 +417,35 @@ cssCodeExample: |
           <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
             <!-- ... -->
           </svg>
-          Preparing PDF
+          Processing
         </button>
       </div>
       <div class="flex align-items-center justify-content-center radius-lg bg-silver-200">
-        2
+        <button type="button" class="btn btn-lg" disabled>
+          {# <svg class="fill-current text-white animate-spin h-24 w-24 mr-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path d="M108.92 355.08a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-294.16a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm294.16 294.16a48 48 0 1 0 48 48 48 48 0 0 0-48-48z" class="fa-secondary"/><path d="M256 416a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm208-208a48 48 0 1 0 48 48 48 48 0 0 0-48-48zM256 0a48 48 0 1 0 48 48 48 48 0 0 0-48-48zM48 208a48 48 0 1 0 48 48 48 48 0 0 0-48-48z" class="fa-primary"/></svg> #}
+          <svg class="fill-current text-white animate-spin h-20 w-20 mr-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M456.433 371.72l-27.79-16.045c-7.192-4.152-10.052-13.136-6.487-20.636 25.82-54.328 23.566-118.602-6.768-171.03-30.265-52.529-84.802-86.621-144.76-91.424C262.35 71.922 256 64.953 256 56.649V24.56c0-9.31 7.916-16.609 17.204-15.96 81.795 5.717 156.412 51.902 197.611 123.408 41.301 71.385 43.99 159.096 8.042 232.792-4.082 8.369-14.361 11.575-22.424 6.92z"/></svg>
+          Processing
+        </button>
       </div>
       <div class="flex align-items-center justify-content-center row-2 radius-lg bg-silver-200">
-        3
+        <button type="button" class="btn btn-lg btn-outline" disabled>
+          {# <svg class="fill-current text-white animate-spin h-24 w-24 mr-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path d="M108.92 355.08a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-294.16a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm294.16 294.16a48 48 0 1 0 48 48 48 48 0 0 0-48-48z" class="fa-secondary"/><path d="M256 416a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm208-208a48 48 0 1 0 48 48 48 48 0 0 0-48-48zM256 0a48 48 0 1 0 48 48 48 48 0 0 0-48-48zM48 208a48 48 0 1 0 48 48 48 48 0 0 0-48-48z" class="fa-primary"/></svg> #}
+          <span class="flex h-10 w-10">
+            <span class="animate-ping absolute inline-flex h-10 w-10 radius-round bg-purple opacity-70"></span>
+            <span class="relative inline-flex radius-round h-10 w-10 bg-purple"></span>
+          </span>
+          Processing
+        </button>
       </div>
       <div class="flex align-items-center justify-content-center radius-lg bg-silver-200">
-        4
+        <button type="button" class="btn btn-lg btn-outline" disabled>
+          {# <svg class="fill-current text-white animate-spin h-24 w-24 mr-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.fa-secondary{opacity:.4}</style></defs><path d="M108.92 355.08a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0-294.16a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm294.16 294.16a48 48 0 1 0 48 48 48 48 0 0 0-48-48z" class="fa-secondary"/><path d="M256 416a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm208-208a48 48 0 1 0 48 48 48 48 0 0 0-48-48zM256 0a48 48 0 1 0 48 48 48 48 0 0 0-48-48zM48 208a48 48 0 1 0 48 48 48 48 0 0 0-48-48z" class="fa-primary"/></svg> #}
+          <span class="flex h-10 w-10">
+            <span class="animate-ping absolute inline-flex h-10 w-10 radius-round bg-purple opacity-70"></span>
+            <span class="relative inline-flex radius-round h-10 w-10 bg-purple"></span>
+          </span>
+          Processing
+        </button>
       </div>
     </div>
 

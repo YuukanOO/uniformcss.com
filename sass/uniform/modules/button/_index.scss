@@ -152,7 +152,7 @@ CUSTOM PROPERTIES
     align-items: center;
     justify-content: center;
     height: var(--btn-height, size(40));
-    padding: var(--btn-padding, size(0, 18));
+    padding: var(--btn-padding, size(0, 16));
     outline: 0;
     background: var(--btn-bg, fill(primary-500));
     border: var(--btn-border, 1px solid fill(primary-700));

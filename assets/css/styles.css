@@ -483,7 +483,7 @@ CUSTOM PROPERTIES
   align-items: center;
   justify-content: center;
   height: var(--btn-height, var(--size-40));
-  padding: var(--btn-padding, var(--size-0) var(--size-18));
+  padding: var(--btn-padding, var(--size-0) var(--size-16));
   outline: 0;
   background: var(--btn-bg, hsl(var(--primary-500-hue, var(--primary-hue, 225)), calc(0% + var(--primary-500-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-500-ltn, 50%))));
   border: var(--btn-border, 1px solid hsl(var(--primary-700-hue, var(--primary-hue, 225)), calc(0% + var(--primary-700-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-700-ltn, 30%))));
@@ -2341,6 +2341,47 @@ CUSTOM PROPERTIES
   }
 }
 
+/*
+CUSTOM PROPERTIES
+
+
+*/
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animationTimingFunction: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animationTimingFunction: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2383,14 +2424,6 @@ CUSTOM PROPERTIES
   transform: translateX(-50%) translateY(-50%);
 }
 
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .bg-primary-b900, .empty\.bg-primary-b900:empty, .focus\.bg-primary-b900:focus, .active\.bg-primary-b900:active, .group:hover .group-hover\.bg-primary-b900, .hover\.bg-primary-b900:hover {
   --bg-sat: 0%;
   --bg-ltn: 0%;
