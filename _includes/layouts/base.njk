@@ -73,7 +73,9 @@ barba.init({
 })
 
 $(document).ready(function () {
-  
+  $('.js-home-dark-switcher').change(function(){
+    $('body').toggleClass('dark');
+  });
 
   // Change pages on mobile
   $('.js-select-url').on('change', function () {

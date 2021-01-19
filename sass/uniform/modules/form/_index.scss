@@ -222,19 +222,19 @@ CUSTOM PROPERTIES
 
     // STATES
     &.is-success {
-      border: var(--input-success-border, 1px solid fill(lime, brighten-200));
+      border: var(--input-success-border, 1px solid fill(lime, brighten-2));
       &:focus {
         box-shadow: var(--input-focus-success-shadow, shadow(focus-success));
       }
     }
     &.is-warning {
-      border: var(--input-warning-border, 1px solid fill(yellow, brighten-800));
+      border: var(--input-warning-border, 1px solid fill(yellow, brighten-8));
       &:focus {
         box-shadow: var(--input-focus-warning-shadow, shadow(focus-warning));
       }
     }
     &.is-danger {
-      border: var(--input-danger-border, 1px solid fill(red, brighten-400, lighten-100));
+      border: var(--input-danger-border, 1px solid fill(red, brighten-4, lighten-1));
       &:focus {
         box-shadow: var(--input-focus-danger-shadow, shadow(focus-danger));
       }
@@ -304,9 +304,15 @@ CUSTOM PROPERTIES
   ******************************/
 
   .checkbox {
+    appearance: none;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
+    outline: 0;
+
+    &:checked {
+      background: url(data:image/svg+xml;utf8,%3Csvg%20width=%2210%22%20height=%229%22%20viewBox=%220%200%2010%208%22%20xmlns=%22http://www.w3.org/2000/svg%22%20fill=%22%23FFFFFF%22%3E%3Cpath%20d=%22M3.46975%205.70757L1.88358%204.1225C1.65832%203.8974%201.29423%203.8974%201.06897%204.1225C0.843675%204.34765%200.843675%204.7116%201.06897%204.93674L3.0648%206.93117C3.29006%207.15628%203.65414%207.15628%203.8794%206.93117L8.93103%201.88306C9.15633%201.65792%209.15633%201.29397%208.93103%201.06883C8.70578%200.843736%208.34172%200.843724%208.11646%201.06879C8.11645%201.0688%208.11643%201.06882%208.11642%201.06883L3.46975%205.70757Z%22%20stroke-width=%220.2%22%20/%3E%3C/svg%3E) 1px 2px no-repeat rgb(94, 106, 210);
+    }
 
     &:hover {
       .checkbox__checkmark {
@@ -316,6 +322,7 @@ CUSTOM PROPERTIES
 
     input {
       display: none;
+
       &:checked ~ .checkbox__checkmark {
         background: var(--checkbox-checked-bg, fill(primary-500));
         border: var(--checkbox-checked-border, 1px solid fill(primary-500));
@@ -442,7 +449,7 @@ CUSTOM PROPERTIES
     input {
       display: none;
       &:checked + .toggle__switch {
-        background: var(--toggle-checked-bg, fill(green, brighten-200));
+        background: var(--toggle-checked-bg, fill(green, brighten-2));
       }
       &:checked + .toggle__switch:before {
         transform: translateX(var(--toggle-checked-translate, size(20)));
@@ -542,19 +549,19 @@ CUSTOM PROPERTIES
 
     // STATES
     &.is-success select {
-      border: var(--select-success-border, 1px solid fill(lime, brighten-200));
+      border: var(--select-success-border, 1px solid fill(lime, brighten-2));
       &:focus {
         box-shadow: var(--select-focus-success-shadow, shadow(focus-success));
       }
     }
     &.is-warning select {
-      border: var(--select-warning-border, 1px solid fill(yellow, brighten-800));
+      border: var(--select-warning-border, 1px solid fill(yellow, brighten-8));
       &:focus {
         box-shadow: var(--select-focus-warning-shadow, shadow(focus-warning));
       }
     }
     &.is-danger select {
-      border: var(--select-danger-border, 1px solid fill(red, brighten-400, lighten-100));
+      border: var(--select-danger-border, 1px solid fill(red, brighten-4, lighten-1));
       &:focus {
         box-shadow: var(--select-focus-danger-shadow, shadow(focus-danger));
       }
@@ -706,22 +713,53 @@ CUSTOM PROPERTIES
 
     // STATES
     &.is-success {
-      border: var(--textarea-success-border, 1px solid fill(lime, brighten-200));
+      border: var(--textarea-success-border, 1px solid fill(lime, brighten-2));
       &:focus {
         box-shadow: var(--textarea-focus-success-shadow, shadow(focus-success));
       }
     }
     &.is-warning {
-      border: var(--textarea-warning-border, 1px solid fill(yellow, brighten-800));
+      border: var(--textarea-warning-border, 1px solid fill(yellow, brighten-8));
       &:focus {
         box-shadow: var(--textarea-focus-warning-shadow, shadow(focus-warning));
       }
     }
     &.is-danger {
-      border: var(--textarea-danger-border, 1px solid fill(red, brighten-400, lighten-100));
+      border: var(--textarea-danger-border, 1px solid fill(red, brighten-4, lighten-1));
       &:focus {
         box-shadow: var(--textarea-focus-danger-shadow, shadow(focus-danger));
       }
+    }
+  }
+
+
+  /******************************
+  SLIDER
+  ******************************/
+
+  .slider {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    outline: 0;
+    &::-webkit-slider-thumb {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+      background: #fff;
+      cursor: pointer;
+      border-radius: 9999px;
+    }
+    &::-moz-slider-thumb {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+      background: #fff;
+      cursor: pointer;
+      border-radius: 9999px;
     }
   }
 }

@@ -6,7 +6,7 @@ $shorthand: bg;
 $responsive: false;
 $responsive-pseudos: false;
 
-$properties: (background-clip);
+$properties: (background-clip, -webkit-background-clip);
 $custom-properties: ();
 
 $variants: (

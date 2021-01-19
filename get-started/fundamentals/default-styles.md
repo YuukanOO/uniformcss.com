@@ -169,7 +169,8 @@ Starter styles include customer properties with fallback values that act as a ho
   --body-font-size: ... ;
   --body-font-weight: ... ;
   --body-leading: ... ;
-  --body-color: ... ;
+  --body-background-color: ... ;
+  --body-text-color: ... ;
 
   --heading-leading: ... ;
   --heading-margin: ... ;

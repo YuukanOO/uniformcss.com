@@ -171,7 +171,7 @@ CUSTOM PROPERTIES
     cursor: pointer;
 
     &:hover {
-      background: var(--btn-hover-bg, fill(primary-500, brighten-100, lighten-100));
+      background: var(--btn-hover-bg, fill(primary-500, brighten-1, lighten-1));
       color: var(--btn-hover-color, fill(white));
       border: var(--btn-hover-border, 1px solid fill(primary-700));
       box-shadow: var(--btn-hover-shadow, none);
@@ -334,42 +334,42 @@ CUSTOM PROPERTIES
   }
 
   .btn-success {
-    --btn-bg: var(--btn-success-bg, #{fill(lime, brighten-200)});
+    --btn-bg: var(--btn-success-bg, #{fill(lime, brighten-2)});
     --btn-color: var(--btn-success-color, white);
-    --btn-border: var(--btn-success-border, 1px solid #{fill(green, brighten-200, darken-200)});
+    --btn-border: var(--btn-success-border, 1px solid #{fill(green, brighten-2, darken-2)});
     --btn-shadow: var(--btn-success-shadow, none);
 
-    --btn-hover-bg: var(--btn-success-hover-bg, #{fill(lime, brighten-300, lighten-100)});
+    --btn-hover-bg: var(--btn-success-hover-bg, #{fill(lime, brighten-3, lighten-1)});
     --btn-hover-color: var(--btn-success-hover-color, white);
-    --btn-hover-border: var(--btn-success-hover-border, 1px solid #{fill(green, brighten-200, darken-200)});
+    --btn-hover-border: var(--btn-success-hover-border, 1px solid #{fill(green, brighten-2, darken-2)});
     --btn-hover-shadow: var(--btn-success-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-success-focus-shadow, #{shadow(focus-success)});
   }
 
   .btn-warning {
-    --btn-bg: var(--btn-warning-bg, #{fill(yellow, brighten-800)});
+    --btn-bg: var(--btn-warning-bg, #{fill(yellow, brighten-8)});
     --btn-color: var(--btn-warning-color, white);
-    --btn-border: var(--btn-warning-border, 1px solid #{fill(yellow, brighten-800, darken-100)});
+    --btn-border: var(--btn-warning-border, 1px solid #{fill(yellow, brighten-8, darken-1)});
     --btn-shadow: var(--btn-warning-shadow, none);
 
-    --btn-hover-bg: var(--btn-warning-hover-bg, #{fill(yellow, brighten-900, lighten-100)});
+    --btn-hover-bg: var(--btn-warning-hover-bg, #{fill(yellow, brighten-9, lighten-1)});
     --btn-hover-color: var(--btn-warning-hover-color, white);
-    --btn-hover-border: var(--btn-warning-hover-border, 1px solid #{fill(yellow, brighten-800, darken-100)});
+    --btn-hover-border: var(--btn-warning-hover-border, 1px solid #{fill(yellow, brighten-8, darken-1)});
     --btn-hover-shadow: var(--btn-warning-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-warning-focus-shadow, #{shadow(focus-warning)});
   }
   
   .btn-danger {
-    --btn-bg: var(--btn-danger-bg, #{fill(red, brighten-400, lighten-100)});
+    --btn-bg: var(--btn-danger-bg, #{fill(red, brighten-4, lighten-1)});
     --btn-color: var(--btn-danger-color, white);
-    --btn-border: var(--btn-danger-border, 1px solid #{fill(red, brighten-400, darken-100)});
+    --btn-border: var(--btn-danger-border, 1px solid #{fill(red, brighten-4, darken-1)});
     --btn-shadow: var(--btn-danger-shadow, none);
 
-    --btn-hover-bg: var(--btn-danger-hover-bg, #{fill(red, brighten-500, lighten-200)});
+    --btn-hover-bg: var(--btn-danger-hover-bg, #{fill(red, brighten-5, lighten-2)});
     --btn-hover-color: var(--btn-danger-hover-color, white);
-    --btn-hover-border: var(--btn-danger-hover-border, 1px solid #{fill(red, brighten-400, darken-100)});
+    --btn-hover-border: var(--btn-danger-hover-border, 1px solid #{fill(red, brighten-4, darken-1)});
     --btn-hover-shadow: var(--btn-danger-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-danger-focus-shadow, #{shadow(focus-danger)});
@@ -381,7 +381,7 @@ CUSTOM PROPERTIES
     --btn-border: var(--btn-primary-border, 1px solid #{fill(primary-700)});
     --btn-shadow: var(--btn-primary-shadow, none);
 
-    --btn-hover-bg: var(--btn-primary-hover-bg, #{fill(primary-500, brighten-100, lighten-100)});
+    --btn-hover-bg: var(--btn-primary-hover-bg, #{fill(primary-500, brighten-1, lighten-1)});
     --btn-hover-color: var(--btn-primary-hover-color, white);
     --btn-hover-border: var(--btn-primary-hover-border, 1px solid #{fill(primary-700)});
     --btn-hover-shadow: var(--btn-primary-hover-shadow, none);
@@ -395,7 +395,7 @@ CUSTOM PROPERTIES
     --btn-border: var(--btn-secondary-border, 1px solid #{fill(primary-800)});
     --btn-shadow: var(--btn-secondary-shadow, none);
 
-    --btn-hover-bg: var(--btn-secondary-hover-bg, #{fill(primary-700, brighten-100, lighten-100)});
+    --btn-hover-bg: var(--btn-secondary-hover-bg, #{fill(primary-700, brighten-1, lighten-1)});
     --btn-hover-color: var(--btn-secondary-hover-color, white);
     --btn-hover-border: var(--btn-secondary-hover-border, 1px solid #{fill(primary-800)});
     --btn-hover-shadow: var(--btn-secondary-hover-shadow, none);
@@ -409,7 +409,7 @@ CUSTOM PROPERTIES
     --btn-border: var(--btn-secondary-border, 1px solid #{fill(primary-900)});
     --btn-shadow: var(--btn-secondary-shadow, none);
 
-    --btn-hover-bg: var(--btn-secondary-hover-bg, #{fill(primary-800, brighten-100, lighten-100)});
+    --btn-hover-bg: var(--btn-secondary-hover-bg, #{fill(primary-800, brighten-1, lighten-1)});
     --btn-hover-color: var(--btn-secondary-hover-color, white);
     --btn-hover-border: var(--btn-secondary-hover-border, 1px solid #{fill(primary-900)});
     --btn-hover-shadow: var(--btn-secondary-hover-shadow, none);

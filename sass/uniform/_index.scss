@@ -654,6 +654,15 @@ $config: core.$all-config;
                   .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
                     @extend .#{$compiled-class-name};
                   }
+                } @else if $pseudo == dark {
+                  @if ($placeholders == true) {
+                    .dark %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
+                      @extend %#{$compiled-class-name};
+                    }
+                  }
+                  .dark .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
+                    @extend .#{$compiled-class-name};
+                  }
                 } @else {
                   @if ($placeholders == true) {
                     %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
@@ -712,6 +721,15 @@ $config: core.$all-config;
                     }
                   }
                   .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
+                    @extend .#{$compiled-class-name};
+                  }
+                } @else if $pseudo == dark {
+                  @if ($placeholders == true) {
+                    .dark %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
+                      @extend %#{$compiled-class-name};
+                    }
+                  }
+                  .dark .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
                     @extend .#{$compiled-class-name};
                   }
                 } @else {
