@@ -19,14 +19,14 @@ CUSTOM PROPERTIES
     max-width: var(--wrapper-max-width, 680px);
     padding-left: var(--wrapper-padding, size(20));
     padding-right: var(--wrapper-padding, size(20));
-    @include screen(sm) {
-      max-width: var(--wrapper-sm-max-width, 808px);
-    }
     @include screen(md) {
-      max-width: var(--wrapper-md-max-width, 1064px);
+      max-width: var(--wrapper-sm-max-width, 960px);
     }
     @include screen(lg) {
-      max-width: var(--wrapper-lg-max-width, 1320px);
+      max-width: var(--wrapper-md-max-width, 1140px);
+    }
+    @include screen(xl) {
+      max-width: var(--wrapper-lg-max-width, 1280px);
     }
   }
 }

@@ -2368,19 +2368,19 @@ CUSTOM PROPERTIES
   padding-left: var(--wrapper-padding, var(--size-20));
   padding-right: var(--wrapper-padding, var(--size-20));
 }
-@media (min-width: 768px) {
-  .wrapper {
-    max-width: var(--wrapper-sm-max-width, 808px);
-  }
-}
 @media (min-width: 1024px) {
   .wrapper {
-    max-width: var(--wrapper-md-max-width, 1064px);
+    max-width: var(--wrapper-sm-max-width, 960px);
   }
 }
 @media (min-width: 1280px) {
   .wrapper {
-    max-width: var(--wrapper-lg-max-width, 1320px);
+    max-width: var(--wrapper-md-max-width, 1140px);
+  }
+}
+@media (min-width: 1536px) {
+  .wrapper {
+    max-width: var(--wrapper-lg-max-width, 1280px);
   }
 }
 
@@ -39344,7 +39344,7 @@ pre[class*=language-] {
 
 /* Code blocks */
 pre[class*=language-] {
-  padding: var(--size-24);
+  padding: var(--size-16) var(--size-20);
   overflow: auto;
 }
 
