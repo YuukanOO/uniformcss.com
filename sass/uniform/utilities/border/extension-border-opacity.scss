@@ -5,6 +5,7 @@ $name: border-opacity;
 $shorthand: border;
 $responsive: false;
 $responsive-pseudos: false;
+$extra-selector: null;
 
 $properties: (#{--border-opacity});
 $custom-properties: ();

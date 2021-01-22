@@ -5,6 +5,7 @@ $name: background-opacity;
 $shorthand: bg;
 $responsive: false;
 $responsive-pseudos: false;
+$extra-selector: null;
 
 $properties: (#{--bg-opacity});
 $custom-properties: ();

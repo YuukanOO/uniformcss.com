@@ -5,6 +5,7 @@ $name: background-brighten;
 $shorthand: bg;
 $responsive: false;
 $responsive-pseudos: false;
+$extra-selector: null;
 
 $properties: (#{--bg-sat});
 $custom-properties: ();

@@ -5,6 +5,7 @@ $name: background-clip;
 $shorthand: bg;
 $responsive: false;
 $responsive-pseudos: false;
+$extra-selector: null;
 
 $properties: (background-clip, -webkit-background-clip);
 $custom-properties: ();

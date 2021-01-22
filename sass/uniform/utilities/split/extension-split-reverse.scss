@@ -2,9 +2,10 @@
 @use "sass:map";
 
 $name: split-reverse;
-$shorthand: split-reverse #{"> * + *"};
+$shorthand: split-reverse;
 $responsive: true;
 $responsive-pseudos: false;
+$extra-selector: "> * + *";
 
 $properties: (margin);
 $custom-properties: (

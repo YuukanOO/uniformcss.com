@@ -5,6 +5,7 @@ $name: gutter-reverse;
 $shorthand: gutter-reverse #{"> * + *"};
 $responsive: true;
 $responsive-pseudos: false;
+$extra-selector: null;
 
 $properties: (margin);
 $custom-properties: (

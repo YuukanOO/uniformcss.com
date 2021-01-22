@@ -4,7 +4,6 @@ description: Generating your own custom properties.
 date: 1000-01-07
 ---
 
-
 ## Custom Properties
 
 The `utilities` map can be used to generate your own custom properties by passing in the same data structure of a standard CSS property.
@@ -98,6 +97,7 @@ $name: leading-trim;
 $shorthand: leading-trim;
 $responsive: false;
 $responsive-pseudos: false;
+$extra-selector: null;
 
 $properties: (leading-trim);
 $custom-properties: ();
@@ -115,13 +115,13 @@ $config: (
       properties: $properties,
       custom-properties: $custom-properties,
       default-variants: (
-        $variants
+        $variants,
       ),
       default-pseudos: (
-        $pseudos
-      )
-    )
-  )
+        $pseudos,
+      ),
+    ),
+  ),
 );
 
 core.$all-config: map.deep-merge(core.$all-config, $config);
@@ -141,7 +141,6 @@ Open `_index.scss` located inside the uniform directly and include the newly cre
 
 @use "utilities/leading-trim"; // include your custom property here
 ```
-
 
 <h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 text-black radius-round">3</span> Override or customize custom property</h4>
 

@@ -5,6 +5,7 @@ $name: background-darken;
 $shorthand: bg;
 $responsive: false;
 $responsive-pseudos: false;
+$extra-selector: null;
 
 $properties: (#{--bg-ltn});
 $custom-properties: ();
