@@ -48,11 +48,6 @@ cssCodeExample: |
         <span class="inline-flex align-items-center h-20 mr-12 px-6 bg-cyan bg-brighten-5 bg-darken-1 text-white uppercase font-2xs font-bold tracking-loose radius-xs">New</span> Version 1.0.0 Release
       </div>
       <h1 class="font-3xl sm.font-7xl xl.font-8xl font-extrabold m-auto mb-24 tracking-tighter">Sassy utility-first framework <br>built for lazy developers.</h1>
-      <div class="flex flex-row-reverse bg-white p-20 split-x-2 split-blue">
-        <div class="w-32 h-32 14">1</div>
-        <div class="w-32 h-32 14">2</div>
-        <div class="w-32 h-32 14">3</div>
-      </div>
       <a href="#" class="group inline-flex align-items-center font-semibold font-base text-black hover.text-black">
         <div class="flex align-items-center justify-content-center w-40 h-40 radius-round shadow-md bg-white group-hover.text-white group-hover.bg-black transition-200 mr-18">
           <svg class="w-20 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M502.285 159.704l-234-156c-7.987-4.915-16.511-4.96-24.571 0l-234 156C3.714 163.703 0 170.847 0 177.989v155.999c0 7.143 3.714 14.286 9.715 18.286l234 156.022c7.987 4.915 16.511 4.96 24.571 0l234-156.022c6-3.999 9.715-11.143 9.715-18.286V177.989c-.001-7.142-3.715-14.286-9.716-18.285zM278 63.131l172.286 114.858-76.857 51.429L278 165.703V63.131zm-44 0v102.572l-95.429 63.715-76.857-51.429L234 63.131zM44 219.132l55.143 36.857L44 292.846v-73.714zm190 229.715L61.714 333.989l76.857-51.429L234 346.275v102.572zm22-140.858l-77.715-52 77.715-52 77.715 52-77.715 52zm22 140.858V346.275l95.429-63.715 76.857 51.429L278 448.847zm190-156.001l-55.143-36.857L468 219.132v73.714z"/></svg>
@@ -457,35 +452,95 @@ cssCodeExample: |
       </a>
     </div>
 
-    <div class="grid grid-cols-12 gap-64">
-      <div class="col-4 flex align-items-center">
-        <div>
-          <div class="flex mb-36">
-            <div class="w-48 h-48 radius-round bg-blue"></div>
-            <div class="w-48 h-48 radius-round bg-blue"></div>
-            <div class="w-48 h-48 radius-round bg-blue"></div>
+    <div class="grid grid-cols-1 gap-20">
+      <div class="grid grid-cols-12 gap-64">
+        <div class="col-4 flex align-items-center">
+          <div>
+            <div class="flex mb-36 gutter-x-n14">
+              <div class="w-48 h-48 radius-round bg-blue"></div>
+              <div class="w-48 h-48 radius-round bg-blue"></div>
+              <div class="w-48 h-48 radius-round bg-blue"></div>
+            </div>
+            <h4 class="font-lg font-extrabold mb-24 tracking-tight">Reduced Motion Safe</h4>
+            <p class="font-md mb-64">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion enabled.</p>
           </div>
-          <h4 class="font-lg font-extrabold mb-24 tracking-tight">Reduced Motion Safe</h4>
-          <p class="font-md mb-64">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion enabled, animations will be displayed as static.</p>
         </div>
-      </div>
-      <div class="col-8 radius-lg bg-teal bg-darken-8 home-highlight">
-{% highlight "html" %}
-<div class="mb-96">
-  <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-    See how to customize CDN variables 
-    <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
-  </a>
-  <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-    See how to customize CDN variables
-  </a>
-  <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-    See how to customize CDN variables
-  </a>
-</div>
-{% endhighlight %}
-      </div>
-    </div>  
+        <div class="col-8 radius-lg bg-teal bg-darken-8 home-highlight">
+          {% highlight "html" %}
+          <div class="mb-96">
+            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
+              See how to customize CDN variables 
+              <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
+            </a>
+            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
+              See how to customize CDN variables
+            </a>
+            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
+              See how to customize CDN variables
+            </a>
+          </div>
+          {% endhighlight %}
+        </div>
+      </div> 
+      <div class="grid grid-cols-12 gap-64">
+        <div class="col-4 flex align-items-center">
+          <div>
+            <div class="flex mb-36 gutter-x-n14">
+              <div class="w-48 h-48 radius-round bg-blue"></div>
+              <div class="w-48 h-48 radius-round bg-blue"></div>
+              <div class="w-48 h-48 radius-round bg-blue"></div>
+            </div>
+            <h4 class="font-lg font-extrabold mb-24 tracking-tight">Reduced Motion Safe</h4>
+            <p class="font-md mb-64">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion enabled.</p>
+          </div>
+        </div>
+        <div class="col-8 radius-lg bg-purple bg-darken-8 home-highlight">
+          {% highlight "html" %}
+          <div class="mb-96">
+            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
+              See how to customize CDN variables 
+              <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
+            </a>
+            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
+              See how to customize CDN variables
+            </a>
+            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
+              See how to customize CDN variables
+            </a>
+          </div>
+          {% endhighlight %}
+        </div>
+      </div> 
+      <div class="grid grid-cols-12 gap-64">
+        <div class="col-4 flex align-items-center">
+          <div>
+            <div class="flex mb-36 gutter-x-n14">
+              <div class="w-48 h-48 radius-round bg-blue"></div>
+              <div class="w-48 h-48 radius-round bg-blue"></div>
+              <div class="w-48 h-48 radius-round bg-blue"></div>
+            </div>
+            <h4 class="font-lg font-extrabold mb-24 tracking-tight">Reduced Motion Safe</h4>
+            <p class="font-md mb-64">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion enabled.</p>
+          </div>
+        </div>
+        <div class="col-8 radius-lg bg-yellow bg-darken-8 home-highlight">
+          {% highlight "html" %}
+          <div class="mb-96">
+            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
+              See how to customize CDN variables 
+              <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
+            </a>
+            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
+              See how to customize CDN variables
+            </a>
+            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
+              See how to customize CDN variables
+            </a>
+          </div>
+          {% endhighlight %}
+        </div>
+      </div> 
+    </div> 
 
 
 

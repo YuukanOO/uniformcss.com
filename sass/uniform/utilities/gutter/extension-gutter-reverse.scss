@@ -2,10 +2,10 @@
 @use "sass:map";
 
 $name: gutter-reverse;
-$shorthand: gutter-reverse #{"> * + *"};
+$shorthand: gutter-reverse;
 $responsive: true;
 $responsive-pseudos: false;
-$extra-selector: null;
+$extra-selector: '> * + *';
 
 $properties: (margin);
 $custom-properties: (
@@ -27,6 +27,7 @@ $config: (
       shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
+      extra-selector: $extra-selector,
       properties: $properties,
       custom-properties: $custom-properties,
       default-variants: (

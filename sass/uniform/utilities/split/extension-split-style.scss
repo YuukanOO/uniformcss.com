@@ -1,25 +1,24 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: border-top-right-radius;
-$shorthand: radius-tr;
+$name: split-style;
+$shorthand: split;
 $responsive: true;
 $responsive-pseudos: false;
-$extra-selector: null;
+$extra-selector: "> * + *";
 
-$properties: (border-top-right-radius);
+$properties: (border-style);
 $custom-properties: ();
 
 $variants: (
-	core.merge(
-    core.radiuses(),
-    (
-      0: 0
-    )
-  )
+  solid: solid,
+  dashed: dashed,
+  dotted: dotted,
+  double: double,
+  none: none
 );
 
-$pseudos: (last);
+$pseudos: ();
 
 $config: (
   utilities: (

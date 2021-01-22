@@ -10,17 +10,9 @@ $extra-selector: '> * + *';
 $properties: (#{--split-opacity});
 $custom-properties: ();
 
-$split-map: ();
-@each $size-key, $size-value in core.opacity-levels() {
-  $map: (
-    $size-key: $size-value,
-  );
-  $split-map: map.merge($split-map, $map);
-}
-
 $variants: (
 	core.merge(
-    $split-map
+    core.opacity-levels() 
 	)
 );
 

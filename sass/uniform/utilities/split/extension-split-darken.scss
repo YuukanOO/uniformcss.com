@@ -1,25 +1,22 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: border-top-right-radius;
-$shorthand: radius-tr;
-$responsive: true;
+$name: split-darken;
+$shorthand: split;
+$responsive: false;
 $responsive-pseudos: false;
-$extra-selector: null;
+$extra-selector: '> * + *';
 
-$properties: (border-top-right-radius);
+$properties: (#{--split-ltn});
 $custom-properties: ();
 
 $variants: (
 	core.merge(
-    core.radiuses(),
-    (
-      0: 0
-    )
-  )
+    core.darken-levels() 
+	)
 );
 
-$pseudos: (last);
+$pseudos: (hover, group-hover, dark);
 
 $config: (
   utilities: (

@@ -198,10 +198,15 @@
 @use "utilities/gutter/extension-gutter-y";
 
 
-// UTILITIES - SPLIT (3)
+// UTILITIES - SPLIT (10)
+@use "utilities/split/extension-split-brighten";
+@use "utilities/split/extension-split-deepen";
+@use "utilities/split/extension-split-lighten";
+@use "utilities/split/extension-split-darken";
 @use "utilities/split/extension-split-opacity";
 @use "utilities/split/extension-split-color";
 @use "utilities/split/extension-split-reverse";
+@use "utilities/split/extension-split-style";
 @use "utilities/split/extension-split-x";
 @use "utilities/split/extension-split-y";
 
@@ -596,9 +601,6 @@ $config: core.$all-config;
         $responsive: map.get($utility-value, responsive);
         $responsive-pseudos: map.get($utility-value, responsive-pseudos);
         $extra-selector: map.get($utility-value, extra-selector);
-        @if ($shorthand == split-reverse) {
-          @debug $extra-selector;
-        }
         
         $properties: map.get($utility-value, properties);
         $custom-properties: map.get($utility-value, custom-properties);
