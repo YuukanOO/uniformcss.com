@@ -1,26 +1,30 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: margin-left;
-$shorthand: ml;
-$responsive: true;
+$name: split-opacity;
+$shorthand: split;
+$responsive: false;
 $responsive-pseudos: false;
+$special-suffix: '> * + *';
 
-$properties: (margin-left);
+$properties: (#{--split-opacity});
 $custom-properties: ();
 
-$range-limit: map.get(core.$all-config, range-limits, margin);
+$split-map: ();
+@each $size-key, $size-value in core.opacity-levels() {
+  $map: (
+    $size-key: $size-value,
+  );
+  $split-map: map.merge($split-map, $map);
+}
 
 $variants: (
 	core.merge(
-		core.sizes($range-limit),
-		(
-      auto: auto,
-    )
+    $split-map
 	)
 );
 
-$pseudos: (first, last);
+$pseudos: (hover, group-hover, dark);
 
 $config: (
   utilities: (
@@ -28,6 +32,7 @@ $config: (
       shorthand: $shorthand,
       responsive: $responsive,
       responsive-pseudos: $responsive-pseudos,
+      special-suffix: $special-suffix,
       properties: $properties,
       custom-properties: $custom-properties,
       default-variants: (

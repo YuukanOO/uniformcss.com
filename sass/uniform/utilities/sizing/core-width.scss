@@ -9,9 +9,11 @@ $responsive-pseudos: false;
 $properties: (width);
 $custom-properties: ();
 
+$range-limit: map.get(core.$all-config, range-limits, width);
+
 $variants: (
 	core.merge(
-		core.positive-sizes(),
+		core.positive-sizes($range-limit),
 		core.name-screens(),
 		(
 			auto: auto,

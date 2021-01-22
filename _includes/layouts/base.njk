@@ -77,6 +77,23 @@ $(document).ready(function () {
     $('body').toggleClass('dark');
   });
 
+  $(document).on('input change', '.js-hue-slider', function() {
+    let hue = $(this).val();
+    $('.js-theme-demo').get(0).style.setProperty("--primary-hue", hue);
+  });
+
+  $(document).on('input change', '.js-sat-slider', function() {
+    let sat = $(this).val() * 1;
+    $('.js-theme-demo').get(0).style.setProperty("--primary-sat", sat + '%');
+  });
+
+  $(document).on('input change', '.js-ltn-slider', function() {
+    let ltn = $(this).val() * 1;
+    $('.js-theme-demo').get(0).style.setProperty("--primary-ltn", ltn + '%');
+  });
+
+ 
+
   // Change pages on mobile
   $('.js-select-url').on('change', function () {
     console.log("changed");

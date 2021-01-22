@@ -1,26 +1,24 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: margin-left;
-$shorthand: ml;
+$name: gutter-reverse;
+$shorthand: gutter-reverse #{"> * + *"};
 $responsive: true;
 $responsive-pseudos: false;
 
-$properties: (margin-left);
-$custom-properties: ();
-
-$range-limit: map.get(core.$all-config, range-limits, margin);
-
-$variants: (
-	core.merge(
-		core.sizes($range-limit),
-		(
-      auto: auto,
-    )
-	)
+$properties: (margin);
+$custom-properties: (
+  --gutter-right: 1,
+  --gutter-left: 0,
+  --gutter-top: 1,
+  --gutter-bottom: 0,
 );
 
-$pseudos: (first, last);
+$variants: (
+  null: null
+);
+
+$pseudos: ();
 
 $config: (
   utilities: (

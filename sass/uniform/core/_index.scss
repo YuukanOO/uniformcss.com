@@ -117,21 +117,22 @@ $default-config: (
   ),
 
   pseudos: (
-    first: 'first-child',
-    last: 'last-child',
-    first-type: 'first-of-type',
-    last-type: 'last-of-type',
-    odd: 'nth-child(odd)',
-    even: 'nth-child(even)',
-    hover: 'hover',
-    active: 'active',
-    visited: 'visited',
-    focus: 'focus',
-    disabled: 'disabled',
-    empty: 'empty',
-    focus-within: 'focus-within',
-    group-hover: 'group-hover',
-    group-focus: 'group-focus',
+    first: ':first-child',
+    last: ':last-child',
+    first-type: ':first-of-type',
+    last-type: ':last-of-type',
+    odd: ':nth-child(odd)',
+    even: ':nth-child(even)',
+    hover: ':hover',
+    active: ':active',
+    visited: ':visited',
+    focus: ':focus',
+    disabled: ':disabled',
+    empty: ':empty',
+    focus-within: ':focus-within',
+    group-hover: ':group-hover',
+    group-focus: ':group-focus',
+    lob-owl: ' > * + *',   
   ),
 
   brighten-levels: (
@@ -209,6 +210,7 @@ $default-config: (
   ),
 
   primary-colors: (
+    primary: ( hue: var(--primary-hue, 225), saturation: var(--primary-sat, 50%), lightness: var(--primary-ltn, 100%) ),
     primary-100: ( hue: var(--primary-100-hue, var(--primary-hue, 225) ), saturation: var(--primary-100-sat, var(--primary-sat, 50%) ), lightness: var(--primary-100-ltn, 90%) ),
     primary-200: ( hue: var(--primary-200-hue, var(--primary-hue, 225) ), saturation: var(--primary-200-sat, var(--primary-sat, 50%) ), lightness: var(--primary-200-ltn, 80%) ),
     primary-300: ( hue: var(--primary-300-hue, var(--primary-hue, 225) ), saturation: var(--primary-300-sat, var(--primary-sat, 50%) ), lightness: var(--primary-300-ltn, 70%) ),
@@ -219,6 +221,7 @@ $default-config: (
     primary-800: ( hue: var(--primary-800-hue, var(--primary-hue, 225) ), saturation: var(--primary-800-sat, var(--primary-sat, 50%) ), lightness: var(--primary-800-ltn, 20%) ),
     primary-900: ( hue: var(--primary-900-hue, var(--primary-hue, 225) ), saturation: var(--primary-900-sat, var(--primary-sat, 50%) ), lightness: var(--primary-900-ltn, 10%) ),
 
+    primary-a: ( hue: var(--primary-a-hue, 200), saturation: var(--primary-a-sat, 50%), lightness: var(--primary-a-ltn, 100%) ),
     primary-a100: ( hue: var(--primary-a100-hue, var(--primary-a-hue, 200) ), saturation: var(--primary-a100-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a100-ltn, 90%) ),
     primary-a200: ( hue: var(--primary-a200-hue, var(--primary-a-hue, 200) ), saturation: var(--primary-a200-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a200-ltn, 80%) ),
     primary-a300: ( hue: var(--primary-a300-hue, var(--primary-a-hue, 200) ), saturation: var(--primary-a300-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a300-ltn, 70%) ),
@@ -229,6 +232,7 @@ $default-config: (
     primary-a800: ( hue: var(--primary-a800-hue, var(--primary-a-hue, 200) ), saturation: var(--primary-a800-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a800-ltn, 20%) ),
     primary-a900: ( hue: var(--primary-a900-hue, var(--primary-a-hue, 200) ), saturation: var(--primary-a900-sat, var(--primary-a-sat, 50%) ), lightness: var(--primary-a900-ltn, 10%) ),
 
+    primary-b: ( hue: var(--primary-b-hue, 180), saturation: var(--primary-b-sat, 50%), lightness: var(--primary-b-ltn, 100%) ),
     primary-b100: ( hue: var(--primary-b100-hue, var(--primary-b-hue, 180) ), saturation: var(--primary-b100-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b100-ltn, 90%) ),
     primary-b200: ( hue: var(--primary-b200-hue, var(--primary-b-hue, 180) ), saturation: var(--primary-b200-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b200-ltn, 80%) ),
     primary-b300: ( hue: var(--primary-b300-hue, var(--primary-b-hue, 180) ), saturation: var(--primary-b300-sat, var(--primary-b-sat, 50%) ), lightness: var(--primary-b300-ltn, 70%) ),
@@ -321,6 +325,17 @@ $default-config: (
     gradient-x-to-black: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%),
     gradient-y-from-black: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%),
     gradient-y-to-black: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%),
+  ),
+
+  range-limits: (
+    margin: 41,
+    padding: 41,
+    width: 41,
+    height: 41,
+    gap: 29,
+    gutter: 29,
+    border-width: 9,
+    split-width: 9,
   ),
 
   positive-sizes: (
@@ -579,6 +594,8 @@ $include-button-module: map.get($all-config, include-button-module);
 $include-form-module: map.get($all-config, include-form-module);
 
 $screens: map.get($all-config, screens);
+
+$range-limits: map.get($all-config, range-limits);
 $positive-sizes: map.get($all-config, positive-sizes);
 $negative-sizes: map.get($all-config, negative-sizes);
 
@@ -880,6 +897,28 @@ $var-trackings: variablize-map($trackings, tracking);
     } @else {
       $map: (
         $key: $value
+      );
+      $result: map.deep-merge($result, $map);
+    }
+  }
+  @return $result;
+}
+
+@function split-colors() {
+  $result: ();
+  @each $key, $value in $merged-colors {
+    @if (meta.type-of($value) == map) {
+      $hue: map.get($value, hue);
+      $saturation: map.get($value, saturation);
+      $lightness: map.get($value, lightness);
+
+      $map: (
+        $key #{"> * + *"}: hsla( #{$hue}, calc(#{$saturation} + var(--split-sat)), calc(#{$lightness} + var(--split-ltn)), var(--split-opacity) )
+      );
+      $result: map.deep-merge($result, $map);
+    } @else {
+      $map: (
+        $key #{"> * + *"}: $value
       );
       $result: map.deep-merge($result, $map);
     }

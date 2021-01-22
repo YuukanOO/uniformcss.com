@@ -1,26 +1,25 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: margin-left;
-$shorthand: ml;
+$name: split-color;
+$shorthand: split;
 $responsive: true;
 $responsive-pseudos: false;
 
-$properties: (margin-left);
-$custom-properties: ();
-
-$range-limit: map.get(core.$all-config, range-limits, margin);
+$properties: (border-color);
+$custom-properties: (
+  --split-sat: 0%,
+  --split-ltn: 0%,
+  --split-opacity: 1,
+);
 
 $variants: (
-	core.merge(
-		core.sizes($range-limit),
-		(
-      auto: auto,
-    )
+  core.merge(
+    core.split-colors()
 	)
 );
 
-$pseudos: (first, last);
+$pseudos: ();
 
 $config: (
   utilities: (

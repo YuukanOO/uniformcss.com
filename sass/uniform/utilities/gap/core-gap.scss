@@ -9,9 +9,11 @@ $responsive-pseudos: false;
 $properties: (gap);
 $custom-properties: ();
 
+$range-limit: map.get(core.$all-config, range-limits, gap);
+
 $variants: (
 	core.merge(
-		core.positive-sizes(31)
+		core.positive-sizes($range-limit)
 	)
 );
 

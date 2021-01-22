@@ -192,6 +192,20 @@
 @use "utilities/gap/core-row-gap";
 
 
+// UTILITIES - GUTTER (3)
+@use "utilities/gutter/extension-gutter-reverse";
+@use "utilities/gutter/extension-gutter-x";
+@use "utilities/gutter/extension-gutter-y";
+
+
+// UTILITIES - SPLIT (3)
+@use "utilities/split/extension-split-opacity";
+@use "utilities/split/extension-split-color";
+@use "utilities/split/extension-split-reverse";
+@use "utilities/split/extension-split-x";
+@use "utilities/split/extension-split-y";
+
+
 // UTILITIES - TRANSFORM (9)
 @use "utilities/transform/extension-translate-x";
 @use "utilities/transform/extension-translate-y";
@@ -349,10 +363,10 @@ $config: core.$all-config;
                     @extend .#{$compiled-class-name};
                   }
                 } @else {
-                  %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                  %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                     @extend %#{$compiled-class-name};
                   }
-                  .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                  .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                     @extend .#{$compiled-class-name};
                   }
                 }
@@ -402,10 +416,10 @@ $config: core.$all-config;
                     @extend .#{$compiled-class-name};
                   }
                 } @else {
-                  %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                  %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                     @extend %#{$compiled-class-name};
                   }
-                  .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                  .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                     @extend .#{$compiled-class-name};
                   }
                 }
@@ -496,10 +510,10 @@ $config: core.$all-config;
                             @extend .#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                           }
                         } @else {
-                          %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                          %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                             @extend %#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                           }
-                          .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                          .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                             @extend .#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                           }
                         }
@@ -552,10 +566,10 @@ $config: core.$all-config;
                           @extend .#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                         }
                       } @else {
-                        %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                        %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                           @extend %#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                         }
-                        .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                        .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                           @extend .#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                         }
                       }
@@ -665,11 +679,11 @@ $config: core.$all-config;
                   }
                 } @else {
                   @if ($placeholders == true) {
-                    %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                    %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                       @extend %#{$compiled-class-name};
                     }
                   }
-                  .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                  .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                     @extend .#{$compiled-class-name};
                   }
                 }
@@ -734,11 +748,11 @@ $config: core.$all-config;
                   }
                 } @else {
                   @if ($placeholders == true) {
-                    %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                    %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                       @extend %#{$compiled-class-name};
                     }
                   }
-                  .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                  .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                     @extend .#{$compiled-class-name};
                   }
                 }
@@ -836,11 +850,11 @@ $config: core.$all-config;
                           }
                         } @else {
                           @if ($placeholders == true) {
-                            %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                            %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                               @extend %#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                             }
                           }
-                          .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                          .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                             @extend .#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                           }
                         }
@@ -899,11 +913,11 @@ $config: core.$all-config;
                         }
                       } @else {
                         @if ($placeholders == true) {
-                          %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                          %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                             @extend %#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                           }
                         }
-                        .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}:#{map.get($all-pseudos, $pseudo)} {
+                        .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                           @extend .#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                         }
                       }

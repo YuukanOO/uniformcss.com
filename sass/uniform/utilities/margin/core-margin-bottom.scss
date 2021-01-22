@@ -9,12 +9,13 @@ $responsive-pseudos: false;
 $properties: (margin-bottom);
 $custom-properties: ();
 
+$range-limit: map.get(core.$all-config, range-limits, margin);
+
 $variants: (
   core.merge(
-    core.sizes(),
+    core.sizes($range-limit),
     (
       auto: auto,
-      0: 0,
     )
   )
 );
