@@ -550,18 +550,29 @@ $default-config: (
       0 15px 12px rgba(0, 0, 0, 0.22),
     ),
     focus: (
-      0 0 0 3px rgb(63 96 191 / 30%)
+      0 0 0 3px rgb(63 96 191 / 20%)
     ),
     focus-success: (
-      0 0 0 3px rgb(103 204 51 / 30%)
+      0 0 0 3px rgb(103 204 51 / 20%)
     ),
     focus-warning: (
-      0 0 0 3px rgb(242 166 13 / 30%)
+      0 0 0 3px rgb(242 166 13 / 20%)
     ),
     focus-danger: (
-      0 0 0 3px rgb(221 61 60 / 30%)
+      0 0 0 3px rgb(221 61 60 / 20%)
     )
-  ) 
+  ),
+
+  keyframes: (
+    spin: (
+      from: (
+        transform: rotate(0deg)
+      ),
+      to: (
+        transform: rotate(360deg)
+      )
+    )
+  )
 ) !default;
 
 
@@ -715,10 +726,6 @@ $merged-sizes: map.deep-merge($positive-sizes, $negative-sizes);
 
 $var-radiuses: variablize-map($radiuses, radius);
 $var-shadows: variablize-map($shadows, shadow);
-
-$var-sizes: variablize-map($merged-sizes, size);
-$var-positive-sizes: variablize-map($positive-sizes, size);
-$var-negative-sizes: variablize-map($negative-sizes, size);
 
 $var-font-families: variablize-map($font-families, font);
 $var-font-sizes: variablize-map($font-sizes, font);
@@ -1009,55 +1016,55 @@ $var-trackings: variablize-map($trackings, tracking);
 // SIZE FUNCTIONS
 @function positive-sizes($limit: null) {
   @if ($limit != null) {
-    $positive-sizes: ();
+    $size-map: ();
 
     @for $i from 1 through $limit {
-      $map: list.nth($var-positive-sizes, $i);
+      $map: list.nth($positive-sizes, $i);
       $key: list.nth($map, 1);
       $value: list.nth($map, 2);
-      $sizes-map: (
+      $limit-map: (
         $key: $value
       );
-      $positive-sizes: map.merge($positive-sizes, $sizes-map);
+      $size-map: map.merge($size-map, $limit-map);
     }
 
-    @return $positive-sizes;
+    @return $size-map;
   } @else {
-    @return $var-positive-sizes;
+    @return $positive-sizes;
   }
 }
 
 @function negative-sizes($limit: null) {
   @if ($limit != null) {
-    $negative-sizes: ();
+    $size-map: ();
 
     @for $i from 1 through $limit {
-      $map: list.nth($var-negative-sizes, $i);
+      $map: list.nth($negative-sizes, $i);
       $key: list.nth($map, 1);
       $value: list.nth($map, 2);
-      $sizes-map: (
+      $limit-map: (
         $key: $value
       );
-      $negative-sizes: map.merge($negative-sizes, $sizes-map);
+      $size-map: map.merge($size-map, $limit-map);
     }
 
-    @return $negative-sizes;
+    @return $size-map;
   } @else {
-    @return $var-negative-sizes;
+    @return $negative-sizes;
   }
 }
 
 @function size($size, $sizes...) {
   $result: ();
   @if (map.has-key($merged-sizes, $size)) {
-    $result: map.get($var-sizes, $size);
+    $result: map.get($merged-sizes, $size);
   } @else {
     @error "[#{$size}] does not exist";
   }
   @each $size in $sizes {
     $value: '';
     @if (map.has-key($merged-sizes, $size)) {
-      $value: map.get($var-sizes, $size);
+      $value: map.get($merged-sizes, $size);
       $result: list.append($result, $value);
     } @else {
       $result: list.append($result, $size);
@@ -1070,10 +1077,10 @@ $var-trackings: variablize-map($trackings, tracking);
   @if ($limit != null) {
     $positive-sizes: positive-sizes($limit);
     $negative-sizes: negative-sizes($limit);
-    $sizes: map.merge($positive-sizes, $negative-sizes);
-    @return $sizes;
+    $size-map: map.merge($positive-sizes, $negative-sizes);
+    @return $size-map;
   } @else {
-    @return $var-sizes;
+    @return $merged-sizes;
   }
 }
 
@@ -1212,9 +1219,5 @@ $var-trackings: variablize-map($trackings, tracking);
   --DARKEN-LEVELS-----------------:10;
   @each $key, $value in $darken-levels {
     --#{'' + $key}: #{$value};
-  }
-  --SIZES-------------------------:11;
-  @each $key, $value in $merged-sizes {
-    --size-#{'' + $key}: #{$value};
   }
 }

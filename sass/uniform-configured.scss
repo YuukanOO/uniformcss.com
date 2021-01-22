@@ -1,37 +1,4 @@
-@use "uniform" as * with (
-  $config: (
-    colors: (
-      subnav: (
-        hue: 25, saturation: 25%, lightness: 50%
-      ),
-    ),
-    utilities: (
-      // leading-trim: (
-      //   keyword: leading,
-      //   responsive: true,
-      //   properties: (leading-trim),
-      //   variants: (
-      //     trimmer: trim
-      //   )
-      // ),
-      background-color: (
-      	pseudos: (active, focus, group-hover, empty)
-      ),
-      background-darken: (
-        pseudos: (active)
-      ),
-      opacity: (
-        pseudos: (focus, disabled, group-hover)
-      ),
-      border-color: (
-      	pseudos: (focus-within)
-      ),
-      color: (
-        pseudos: (group-focus)
-      )
-    )
-  )
-);
+@use "uniform" as *;
 
 @forward "uniform";
 
