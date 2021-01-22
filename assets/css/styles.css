@@ -5934,63 +5934,63 @@ CUSTOM PROPERTIES
   border-color: hsla(25, calc(25% + var(--split-sat)), calc(50% + var(--split-ltn)), var(--split-opacity));
 }
 
-.split-opacity-0, .dark .dark\.split-opacity-0, .group:hover .group-hover\.split-opacity-0, .hover\.split-opacity-0:hover {
+.split-opacity-0 > * + *, .dark .dark\.split-opacity-0 > * + * > * + *, .group:hover .group-hover\.split-opacity-0 > * + * > * + *, .hover\.split-opacity-0:hover > * + * > * + * {
   --split-opacity: 0;
 }
 
-.split-opacity-02, .dark .dark\.split-opacity-02, .group:hover .group-hover\.split-opacity-02, .hover\.split-opacity-02:hover {
+.split-opacity-02 > * + *, .dark .dark\.split-opacity-02 > * + * > * + *, .group:hover .group-hover\.split-opacity-02 > * + * > * + *, .hover\.split-opacity-02:hover > * + * > * + * {
   --split-opacity: 0.02;
 }
 
-.split-opacity-04, .dark .dark\.split-opacity-04, .group:hover .group-hover\.split-opacity-04, .hover\.split-opacity-04:hover {
+.split-opacity-04 > * + *, .dark .dark\.split-opacity-04 > * + * > * + *, .group:hover .group-hover\.split-opacity-04 > * + * > * + *, .hover\.split-opacity-04:hover > * + * > * + * {
   --split-opacity: 0.04;
 }
 
-.split-opacity-06, .dark .dark\.split-opacity-06, .group:hover .group-hover\.split-opacity-06, .hover\.split-opacity-06:hover {
+.split-opacity-06 > * + *, .dark .dark\.split-opacity-06 > * + * > * + *, .group:hover .group-hover\.split-opacity-06 > * + * > * + *, .hover\.split-opacity-06:hover > * + * > * + * {
   --split-opacity: 0.06;
 }
 
-.split-opacity-08, .dark .dark\.split-opacity-08, .group:hover .group-hover\.split-opacity-08, .hover\.split-opacity-08:hover {
+.split-opacity-08 > * + *, .dark .dark\.split-opacity-08 > * + * > * + *, .group:hover .group-hover\.split-opacity-08 > * + * > * + *, .hover\.split-opacity-08:hover > * + * > * + * {
   --split-opacity: 0.08;
 }
 
-.split-opacity-10, .dark .dark\.split-opacity-10, .group:hover .group-hover\.split-opacity-10, .hover\.split-opacity-10:hover {
+.split-opacity-10 > * + *, .dark .dark\.split-opacity-10 > * + * > * + *, .group:hover .group-hover\.split-opacity-10 > * + * > * + *, .hover\.split-opacity-10:hover > * + * > * + * {
   --split-opacity: 0.1;
 }
 
-.split-opacity-20, .dark .dark\.split-opacity-20, .group:hover .group-hover\.split-opacity-20, .hover\.split-opacity-20:hover {
+.split-opacity-20 > * + *, .dark .dark\.split-opacity-20 > * + * > * + *, .group:hover .group-hover\.split-opacity-20 > * + * > * + *, .hover\.split-opacity-20:hover > * + * > * + * {
   --split-opacity: 0.2;
 }
 
-.split-opacity-30, .dark .dark\.split-opacity-30, .group:hover .group-hover\.split-opacity-30, .hover\.split-opacity-30:hover {
+.split-opacity-30 > * + *, .dark .dark\.split-opacity-30 > * + * > * + *, .group:hover .group-hover\.split-opacity-30 > * + * > * + *, .hover\.split-opacity-30:hover > * + * > * + * {
   --split-opacity: 0.3;
 }
 
-.split-opacity-40, .dark .dark\.split-opacity-40, .group:hover .group-hover\.split-opacity-40, .hover\.split-opacity-40:hover {
+.split-opacity-40 > * + *, .dark .dark\.split-opacity-40 > * + * > * + *, .group:hover .group-hover\.split-opacity-40 > * + * > * + *, .hover\.split-opacity-40:hover > * + * > * + * {
   --split-opacity: 0.4;
 }
 
-.split-opacity-50, .dark .dark\.split-opacity-50, .group:hover .group-hover\.split-opacity-50, .hover\.split-opacity-50:hover {
+.split-opacity-50 > * + *, .dark .dark\.split-opacity-50 > * + * > * + *, .group:hover .group-hover\.split-opacity-50 > * + * > * + *, .hover\.split-opacity-50:hover > * + * > * + * {
   --split-opacity: 0.5;
 }
 
-.split-opacity-60, .dark .dark\.split-opacity-60, .group:hover .group-hover\.split-opacity-60, .hover\.split-opacity-60:hover {
+.split-opacity-60 > * + *, .dark .dark\.split-opacity-60 > * + * > * + *, .group:hover .group-hover\.split-opacity-60 > * + * > * + *, .hover\.split-opacity-60:hover > * + * > * + * {
   --split-opacity: 0.6;
 }
 
-.split-opacity-70, .dark .dark\.split-opacity-70, .group:hover .group-hover\.split-opacity-70, .hover\.split-opacity-70:hover {
+.split-opacity-70 > * + *, .dark .dark\.split-opacity-70 > * + * > * + *, .group:hover .group-hover\.split-opacity-70 > * + * > * + *, .hover\.split-opacity-70:hover > * + * > * + * {
   --split-opacity: 0.7;
 }
 
-.split-opacity-80, .dark .dark\.split-opacity-80, .group:hover .group-hover\.split-opacity-80, .hover\.split-opacity-80:hover {
+.split-opacity-80 > * + *, .dark .dark\.split-opacity-80 > * + * > * + *, .group:hover .group-hover\.split-opacity-80 > * + * > * + *, .hover\.split-opacity-80:hover > * + * > * + * {
   --split-opacity: 0.8;
 }
 
-.split-opacity-90, .dark .dark\.split-opacity-90, .group:hover .group-hover\.split-opacity-90, .hover\.split-opacity-90:hover {
+.split-opacity-90 > * + *, .dark .dark\.split-opacity-90 > * + * > * + *, .group:hover .group-hover\.split-opacity-90 > * + * > * + *, .hover\.split-opacity-90:hover > * + * > * + * {
   --split-opacity: 0.9;
 }
 
-.split-opacity-100, .dark .dark\.split-opacity-100, .group:hover .group-hover\.split-opacity-100, .hover\.split-opacity-100:hover {
+.split-opacity-100 > * + *, .dark .dark\.split-opacity-100 > * + * > * + *, .group:hover .group-hover\.split-opacity-100 > * + * > * + *, .hover\.split-opacity-100:hover > * + * > * + * {
   --split-opacity: 1;
 }
 
