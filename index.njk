@@ -96,10 +96,13 @@ cssCodeExample: |
       </div>
     </div>
   </div>
+  <div class="absolute b-0 l-0 xbg-silver-200 bg-brighten-9 w-100p h-50p">
+
+  </div>
 </section>
 
 
-<section class="relative z-1 pt-64">
+<section class="relative z-1 py-112 pt-64 xbg-silver-200 bg-brighten-9">
   <div class="wrapper">
     <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
       <div>
@@ -109,26 +112,26 @@ cssCodeExample: |
       </div>
       <div>
         <h4 class="font-lg font-bold mb-24 tracking-tight"><span class="font-extrabold mr-4">Step 2.</span> Include Uniform</h4>
-        <p class="font-md">Include Uniform CSS by adding the following line to your main Sass file and compile your project.</p>
+        <p class="font-md">Include Uniform CSS by adding the following line to your main Sass project.</p>
         <pre class="p-18 py-16 radius-sm bg-primary-900 text-white select-all">@use "uniform" as *;</pre>
       </div>
       <div>
         <h4 class="font-lg font-bold mb-24 tracking-tight"><span class="font-extrabold mr-4">Step 3.</span> Compose your UI</h4>
-        <p class="font-md">Add the compiled CSS, and style components by writing composable utility properties in your HTML.</p>
+        <p class="font-md">Style components by writing composable utility properties directly in your HTML.</p>
         <pre class="p-18 py-16 radius-sm bg-primary-900 text-sky text-brighten-5 select-all">px-24 py-20 border-b-1 ...</pre>
       </div>
     </div>
   </div>
 </section>
 
-<section>
-  <div class="wrapper py-160">
+<section class="bg-silver-100 bg-brighten-5">
+  <div class="wrapper py-112">
     <div class="align-center">
       <span class="inline-flex align-items-center h-32 px-12 mb-20 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Rapid Prototyping</span>
       <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tight align-center">Build web components without <br>ever touching your CSS.</h1>
-      <div class="mb-96">
+      <div class="mb-64">
         <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-          Learn more about modules  
+          Learn more about Uniform
           <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
         </a>
       </div>
@@ -136,7 +139,7 @@ cssCodeExample: |
     
 
     <figure class="cd-image-container radius-md md.radius-xl overflow-hidden mb-64">
-      <div class="flex align-items-center justify-content-center w-100p h-448 px-18 bg-silver-100 bg-brighten-5">
+      <div class="flex align-items-center justify-content-center w-100p h-448 px-18 bg-silver-200 bg-brighten-5">
         <article class="w-100p max-w-512 radius-md bg-white shadow-md">
           <header class="px-24 py-20 border-b-1 border-black border-opacity-10">
             <h4 class="font-lg font-bold">Recent Messages</h4>
@@ -212,19 +215,19 @@ cssCodeExample: |
 
     <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
       <div>
-        <div class="mb-20 text-black font-5xl font-light">146</div>
+        <div class="mb-14 text-black font-5xl font-light">146</div>
         <h4 class="font-lg font-extrabold mb-24 tracking-tight">Properties Supported</h4>
-        <p class="font-md">Uniform CSS supports all common CSS properties out of the box. Additionally, you can add your own custom properties directly through the configuration.</p>
+        <p class="font-md">All common CSS properties out of the box are supported. Additionally, add your own custom properties directly in your configuration.</p>
       </div>
       <div>
-        <div class="mb-20 text-black font-5xl font-light">136</div>
+        <div class="mb-14 text-black font-5xl font-light">136</div>
         <h4 class="font-lg font-extrabold mb-24 tracking-tight">Semantic Colors Available</h4>
-        <p class="font-md">Easily customize and configure Uniform to match your brand and design. Uniform CSS provides colors that are configurable using CSS variable overrides.</p>
+        <p class="font-md">Easily customize Uniform to match your brand and design. Uniform CSS provides colors that are configurable using CSS variable overrides.</p>
       </div>
       <div>
-        <div class="mb-20 text-black font-5xl font-light">72</div>
+        <div class="mb-14 text-black font-5xl font-light">72</div>
         <h4 class="font-lg font-extrabold mb-24 tracking-tight">Spacing and Size Variants</h4>
-        <p class="font-md">Build pixel perfect components without compromise. Uniform supports all common spacing and sizes across all breakpoints. </p>
+        <p class="font-md">Build pixel perfect components without compromise. Uniform supports a wide range of spacing across multiple breakpoints. </p>
       </div>
     </div>
 
@@ -235,16 +238,16 @@ cssCodeExample: |
 
 
 
-<div class="wrapper">
+{# <div class="wrapper">
   <div class="h-3 bg-silver-300 bg-opacity-40 bg-brighten-5"></div>
-</div>
+</div> #}
 
 
 
 
 
 <section>
-  <div class="wrapper py-160">
+  <div class="wrapper py-112">
 
     <div class="mb-20">
       <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Components</span>
@@ -253,7 +256,7 @@ cssCodeExample: |
       Fully customizable components <br>for common UI elements
     </h1>
 
-    <div class="mb-96">
+    <div class="mb-64">
       <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
         Learn more about modules  
         <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
@@ -325,7 +328,7 @@ cssCodeExample: |
 
     <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
       <div>
-        <h4 class="font-lg font-extrabold mb-24 tracking-tight">Animate with a single property</h4>
+        <h4 class="font-lg font-extrabold mb-24 tracking-tight">Built-in components</h4>
         <p class="font-md">Animations are great for providing extra context  for your users. You can easily apply bounce, ping, pulse, and spin animations using a single utility class.</p>
       </div>
       <div>
@@ -347,6 +350,136 @@ cssCodeExample: |
 
 
 
+<div class="wrapper">
+  <div class="h-3 bg-silver-300 bg-opacity-40 bg-brighten-5"></div>
+</div>
+
+
+
+
+
+
+<section>
+  <div class="wrapper py-112">
+    
+    <div class="mb-20">
+      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Color &amp; Spacing</span>
+    </div>
+    <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold mb-36 tracking-tight">
+      Flexible colors to match any designs <br>with composable manipulations
+    </h1>
+
+    <div class="mb-64">
+      <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
+        See how colors work in Uniform 
+        <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 gap-20">
+      <div class="grid grid-cols-12 gap-64">
+        <div class="col-4 flex align-items-center">
+          <div>
+            <div class="flex mb-36 gutter-x-n14">
+              <div class="w-48 h-48 radius-round bg-primary-100 border-3 border-white"></div>
+              <div class="w-48 h-48 radius-round bg-primary-400 border-3 border-white"></div>
+              <div class="w-48 h-48 radius-round bg-primary-800 border-3 border-white"></div>
+            </div>
+            <h4 class="font-lg font-extrabold mb-24 tracking-tight">Design Agnostic Colors</h4>
+            <p class="font-md mb-64">Match your brand quickly with brand agnostic colors. Simply tweak each color token to match your design.</p>
+          </div>
+        </div>
+        <div class="col-8 radius-lg bg-teal bg-darken-8 home-highlight">
+{% highlight "css" %}
+/* styles.css */
+:root {
+  --primary-hue: 150;
+  --primary-sat: 24%;
+
+  --secondary-hue: 60;
+  --secondary-sat: 73%;
+
+  --blue-hue: 50;
+  --blue-sat: 20%;
+}
+{% endhighlight %}
+        </div>
+      </div> 
+      <div class="grid grid-cols-12 gap-64">
+        <div class="col-4 flex align-items-center">
+          <div>
+            <div class="flex mb-36 gutter-x-n14">
+              <div class="w-48 h-48 radius-round bg-cyan border-3 border-white"></div>
+              <div class="w-48 h-48 radius-round bg-cyan bg-deepen-5 border-3 border-white"></div>
+              <div class="w-48 h-48 radius-round bg-cyan bg-deepen-9 border-3 border-white"></div>
+            </div>
+            <h4 class="font-lg font-extrabold mb-24 tracking-tight">Composable Color Manipulation</h4>
+            <p class="font-md mb-64">Apply composable manipulation to any color. Increase or decrease saturation, lighten, darken directly in your html.</p>
+          </div>
+        </div>
+        <div class="col-8 radius-lg bg-purple bg-darken-8 home-highlight">
+{% highlight "html" %}
+<div class="bg-purple bg-lighten-2">
+  <div class="bg-primary-500 bg-deepen-4">
+    ...
+  </div>
+  <div class="border-1 border-white border-opacity-50 hover.border-opacity-100">
+    ...
+  </div>
+  <p class="text-gray-800 text-brighten-3">
+    ...
+  </p>
+</div>
+{% endhighlight %}
+        </div>
+      </div> 
+      <div class="grid grid-cols-12 gap-64">
+        <div class="col-4 flex align-items-center">
+          <div>
+            <div class="flex mb-36 gutter-x-n14">
+              <div class="w-48 h-48 radius-round bg-gradient-x border-3 border-white" style="--gradient-start-color: #ffbebe; --gradient-end-color: #4eff9d;"></div>
+              <div class="w-48 h-48 radius-round bg-gradient-x border-3 border-white" style="--gradient-start-color: #c39eff; --gradient-end-color: #85eeff;"></div>
+              <div class="w-48 h-48 radius-round bg-gradient-x border-3 border-white" style="--gradient-start-color: #d2d2d2; --gradient-end-color: #ff7ee3;"></div>
+            </div>
+            <h4 class="font-lg font-extrabold mb-24 tracking-tight">Inline Gradient Support</h4>
+            <p class="font-md mb-64">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
+          </div>
+        </div>
+        <div class="col-8 radius-lg bg-blue bg-darken-8 home-highlight">
+{% highlight "html" %}
+<div class="bg-gradient-x" 
+     style="--gradient-start-color: #ffbebe; 
+            --gradient-end-color: #4eff9d;">...</div>
+
+<div class="bg-gradient-x" 
+     style="--gradient-start-color: #c39eff; 
+            --gradient-end-color: #85eeff;">...</div>
+
+<div class="bg-gradient-x" 
+     style="--gradient-start-color: #d2d2d2; 
+            --gradient-end-color: #ff7ee3;">...</div>
+{% endhighlight %}
+        </div>
+      </div> 
+    </div> 
+
+
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -355,16 +488,16 @@ cssCodeExample: |
 
 
 <section class="bg-silver-100 bg-brighten-5">
-  <div class="wrapper py-160">
+  <div class="wrapper py-112">
 
     <div class="mb-20">
       <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Animations</span>
     </div>
     <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tight">
-      Apply motion-safe and smooth <br>animations using a single utility class.
+      Smooth and reduced motion safe<br>animations with a single utility class
     </h1>
 
-    <div class="mb-96">
+    <div class="mb-64">
       <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
         Learn more about modules  
         <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
@@ -406,16 +539,16 @@ cssCodeExample: |
 
     <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
       <div>
-        <h4 class="font-lg font-extrabold mb-24 tracking-tight">Animate with a single property</h4>
-        <p class="font-md">Animations are great for providing extra context  for your users. You can easily apply bounce, ping, pulse, and spin animations using a single utility class.</p>
+        <h4 class="font-lg font-extrabold mb-24 tracking-tight">Built-in Common Animations</h4>
+        <p class="font-md">Animations are great for providing extra context for your users. Easily apply bounce, ping, pulse, and spin animations.</p>
       </div>
       <div>
         <h4 class="font-lg font-extrabold mb-24 tracking-tight">Reduced Motion Safe</h4>
-        <p class="font-md">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion enabled, animations will be displayed as static.</p>
+        <p class="font-md">All animations and transitions are auto disabled for viewers that have the prefers reduced motion feature enabled.</p>
       </div>
       <div>
-        <h4 class="font-lg font-extrabold mb-24 tracking-tight">Responsive and customizable</h4>
-        <p class="font-md">All Uniform animations are both responsive and customizable. Simply apply overriding CSS variables to control animation timing functions.</p>
+        <h4 class="font-lg font-extrabold mb-24 tracking-tight">Customizable and Extendable</h4>
+        <p class="font-md">Custom configure existing animations and even add your own in your configuration dirctly in your Sass project.</p>
       </div>
     </div>
 
@@ -435,137 +568,6 @@ cssCodeExample: |
 
 
 
-<section>
-  <div class="wrapper py-160">
-    
-    <div class="mb-20">
-      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Color &amp; Spacing</span>
-    </div>
-    <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold mb-36 tracking-tight">
-      Auth0 is an easy to implement, <br>adaptable authentication and <br>authorization platform.
-    </h1>
-
-    <div class="mb-96">
-      <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-        See how to customize CDN variables 
-        <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
-      </a>
-    </div>
-
-    <div class="grid grid-cols-1 gap-20">
-      <div class="grid grid-cols-12 gap-64">
-        <div class="col-4 flex align-items-center">
-          <div>
-            <div class="flex mb-36 gutter-x-n14">
-              <div class="w-48 h-48 radius-round bg-primary-100 border-3 border-white"></div>
-              <div class="w-48 h-48 radius-round bg-primary-400 border-3 border-white"></div>
-              <div class="w-48 h-48 radius-round bg-primary-800 border-3 border-white"></div>
-            </div>
-            <h4 class="font-lg font-extrabold mb-24 tracking-tight">Design Agnostic Colors</h4>
-            <p class="font-md mb-64">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion enabled.</p>
-          </div>
-        </div>
-        <div class="col-8 radius-lg bg-teal bg-darken-8 home-highlight">
-          {% highlight "html" %}
-          <div class="mb-96">
-            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-              See how to customize CDN variables 
-              <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
-            </a>
-            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-              See how to customize CDN variables
-            </a>
-            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-              See how to customize CDN variables
-            </a>
-          </div>
-          {% endhighlight %}
-        </div>
-      </div> 
-      <div class="grid grid-cols-12 gap-64">
-        <div class="col-4 flex align-items-center">
-          <div>
-            <div class="flex mb-36 gutter-x-n14">
-              <div class="w-48 h-48 radius-round bg-cyan border-3 border-white"></div>
-              <div class="w-48 h-48 radius-round bg-cyan bg-deepen-5 border-3 border-white"></div>
-              <div class="w-48 h-48 radius-round bg-cyan bg-deepen-9 border-3 border-white"></div>
-            </div>
-            <h4 class="font-lg font-extrabold mb-24 tracking-tight">Composable Color Manipulation</h4>
-            <p class="font-md mb-64">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion enabled.</p>
-          </div>
-        </div>
-        <div class="col-8 radius-lg bg-purple bg-darken-8 home-highlight">
-          {% highlight "html" %}
-          <div class="mb-96">
-            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-              See how to customize CDN variables 
-              <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
-            </a>
-            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-              See how to customize CDN variables
-            </a>
-            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-              See how to customize CDN variables
-            </a>
-          </div>
-          {% endhighlight %}
-        </div>
-      </div> 
-      <div class="grid grid-cols-12 gap-64">
-        <div class="col-4 flex align-items-center">
-          <div>
-            <div class="flex mb-36 gutter-x-n14">
-              <div class="w-48 h-48 radius-round bg-gradient-x border-3 border-white" style="--gradient-start-color: #ffbebe; --gradient-end-color: #4eff9d;"></div>
-              <div class="w-48 h-48 radius-round bg-gradient-x border-3 border-white" style="--gradient-start-color: #c39eff; --gradient-end-color: #85eeff;"></div>
-              <div class="w-48 h-48 radius-round bg-gradient-x border-3 border-white" style="--gradient-start-color: #d2d2d2; --gradient-end-color: #ff7ee3;"></div>
-            </div>
-            <h4 class="font-lg font-extrabold mb-24 tracking-tight">Inline Gradient Support</h4>
-            <p class="font-md mb-64">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion enabled.</p>
-          </div>
-        </div>
-        <div class="col-8 radius-lg bg-yellow bg-darken-8 home-highlight">
-          {% highlight "html" %}
-          <div class="mb-96">
-            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-              See how to customize CDN variables 
-              <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
-            </a>
-            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-              See how to customize CDN variables
-            </a>
-            <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-              See how to customize CDN variables
-            </a>
-          </div>
-          {% endhighlight %}
-        </div>
-      </div> 
-    </div> 
-
-
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="wrapper">
-  <div class="h-3 bg-silver-300 bg-opacity-40 bg-brighten-5"></div>
-</div>
-
-
-
-
 
 
 
@@ -575,19 +577,19 @@ cssCodeExample: |
 
 
 <section>
-  <div class="wrapper py-160">
+  <div class="wrapper py-112">
     <div class="grid grid-cols-1 sm.grid-cols-2 gap-96">
       <div>
         <div class="mb-20">
           <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Themeable</span>
         </div>
         <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tight">
-          Auth0 is an easy to <br>implement, adaptable.
+          Theming is as simple as spinning a dial
         </h1>
 
         <div class="mb-64">
           <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
-            See how to customize CDN variables 
+            Learn how configuration works
             <svg class="fill-current w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
           </a>
         </div>
@@ -619,22 +621,22 @@ cssCodeExample: |
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md.grid-cols-2 gap-64">
+        <div class="grid grid-cols-1 md.grid-cols-2 gap-48">
           <div>
             <div class="flex mb-24">
               <h4 class="font-lg font-extrabold tracking-tight">
-                Animate with single property
+                Themeable design tokens
               </h4>
             </div>
-            <p class="font-md">Animations are great for providing extra context  for your users. You can easily apply bounce, ping, pulse, and spin animations using a single.</p>
+            <p class="font-md">Animations are great for providing extra context  for your users. You can easily apply bounce, ping, pulse.</p>
           </div>
           <div>
             <div class="flex mb-24">
               <h4 class="font-lg font-extrabold tracking-tight">
-                Future-proof Theming
+                Multiple theme support
               </h4>
             </div>
-            <p class="font-md">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion enabled, animations.</p>
+            <p class="font-md">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motions.</p>
           </div>
         </div>
       </div>
@@ -861,7 +863,7 @@ cssCodeExample: |
 
 <section class="bg-primary-900">
 
-  <div class="wrapper py-160">
+  <div class="wrapper py-112">
     <div class="grid grid-cols-1 sm.grid-cols-2 gap-96">
       <div class="flex align-items-center justify-content-center px-20 pb-0 pt-96 bg-primary-800 bg-deepen-3 radius-lg">
         <div>
@@ -916,7 +918,7 @@ cssCodeExample: |
           <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-yellow border-brighten-9 uppercase font-xs font-bold tracking-looser text-yellow text-brighten-9">Flexible Colors</span>
         </div>
         <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tight text-white">
-          Achieve Dark Mode <br>in a smart way
+          Apply Dark Mode <br>on any element
         </h1>
 
         <div class="mb-64">
@@ -934,22 +936,22 @@ cssCodeExample: |
 </div>
 </div>
 
-        <div class="grid grid-cols-1 md.grid-cols-2 gap-64 text-white">
+        <div class="grid grid-cols-1 md.grid-cols-2 gap-48 text-white">
           <div>
             <div class="flex mb-24">
               <h4 class="bg-gradient-x bg-text text-transparent font-lg font-extrabold tracking-tight" style="--gradient-start-color: #8F7CFF; --gradient-end-color: #fd7cff;">
-                Animate with single property
+                Dark mode everything
               </h4>
             </div>
-            <p class="font-md text-primary-100 text-opacity-80">Animations are great for providing extra context  for your users. You can easily apply bounce, ping, pulse, and spin animations using a single.</p>
+            <p class="font-md text-primary-100 text-opacity-80">Animations are great for providing extra context  for your users. You can easily apply bounce, ping, pulse, and spin.</p>
           </div>
           <div>
             <div class="flex mb-24">
               <h4 class="bg-gradient-x bg-text text-transparent font-lg font-extrabold tracking-tight" style="--gradient-start-color: #7CD0FF; --gradient-end-color: #7CFFA9;">
-                Future-proof Theming
+                Pseudo stackable
               </h4>
             </div>
-            <p class="font-md text-primary-100 text-opacity-80">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion enabled, animations.</p>
+            <p class="font-md text-primary-100 text-opacity-80">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion.</p>
           </div>
         </div>
       </div>
@@ -962,7 +964,7 @@ cssCodeExample: |
     <div class="h-3 bg-silver-200 bg-opacity-10 bg-brighten-5"></div>
   </div>
 
-  <div class="wrapper py-160">
+  <div class="wrapper py-112">
     <div class="grid grid-cols-1 sm.grid-cols-2 gap-96">
       <div class="">
         <div class="mb-20">
@@ -1010,7 +1012,7 @@ cssCodeExample: |
       <div class="grid grid-cols-1 gap-64">
         <div>
           <h4 class="font-lg font-bold mb-24 tracking-tight text-white"><span class="font-extrabold mr-4">Step 1.</span> Install the Package</h4>
-          <p class="font-md text-primary-100 text-opacity-80">Simply add the following code to the head of your HTML to any of your project.</p>
+          <p class="font-md text-primary-100 text-opacity-80">Add the following code to the head of your project.</p>
           <div class="home-highlight radius-sm bg-primary-800 bg-deepen-2 bg-opacity-60">
             {% highlight "bash" %}
               https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/base.css
@@ -1019,7 +1021,7 @@ cssCodeExample: |
         </div>
         <div>
           <h4 class="font-lg font-bold mb-24 tracking-tight text-white"><span class="font-extrabold mr-4">Step 2.</span> Install the Package</h4>
-          <p class="font-md text-primary-100 text-opacity-80">Customize design tokens directly in your CSS to match your design system.</p>
+          <p class="font-md text-primary-100 text-opacity-80">Customize design tokens directly in your CSS to fit your design.</p>
           <div class="home-highlight radius-sm bg-primary-800 bg-deepen-2 bg-opacity-60">
 {% highlight "css" %}
 :root {

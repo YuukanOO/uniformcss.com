@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:list";
 @use "uniform/core" as *;
 
 /*
@@ -144,7 +146,11 @@ CUSTOM PROPERTIES
 --btn-xl-font-size
 */
 
-@if $include-button-module == true and $headless == false {
+
+$excludes: map.get($all-config, excludes);
+$includes: map.get($all-config, includes);
+
+@if ( list.index($includes, module-button) != null or list.index($excludes, all) == null and list.index($excludes, module-button) == null ) {
 
   .btn {
     position: relative;
@@ -195,7 +201,7 @@ CUSTOM PROPERTIES
         border-radius: 290486px;
         border-right-color: transparent;
         border-top-color: transparent;
-        animation: btn-loading .5s infinite linear;
+        animation: spin .5s infinite linear;
       }
     }
   }
@@ -415,16 +421,6 @@ CUSTOM PROPERTIES
     --btn-hover-shadow: var(--btn-secondary-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-secondary-focus-shadow, #{shadow(focus)});
-  }
-
-  // Used for button loading animations
-  @keyframes btn-loading {
-    from {
-      transform: rotate(0)
-    }
-    to {
-      transform: rotate(359deg)
-    }
   }
 }
 

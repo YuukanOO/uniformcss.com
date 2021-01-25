@@ -102,12 +102,14 @@ $default-config: (
   debugger: false,
   placeholders: false,
 
-  include-reset-styles: true,
-  include-starter-styles: true,
-  include-button-module: true,
-  include-form-module: true,
-  include-table-module: true,
-  include-wrapper-module: true,
+  includes: (
+    module-button,
+    module-form,
+    module-table,
+    module-wrapper,
+    defaulr-starter,
+    default-reset,
+  ),
 
   screens: (
     sm: 768px,
@@ -570,6 +572,45 @@ $default-config: (
       ),
       to: (
         transform: rotate(360deg)
+      )
+    ),
+    ping: (
+      0%: (
+        transform: scale(1),
+        opacity: 1,
+      ),
+      80%: (
+        transform: scale(2.25),
+        opacity: 0,
+      ),
+      100%: (
+        transform: scale(2.25),
+        opacity: 0,
+      )
+    ),
+    bounce: (
+      0%: (
+        transform: translateY(-25%),
+        animation-timing-function: cubic-bezier(.8,0,1,1)
+      ),
+      50%: (
+        transform: none,
+        animation-timing-function: cubic-bezier(0,0,.2,1)
+      ),
+      100%: (
+        transform: translateY(-25%),
+        animation-timing-function: cubic-bezier(.8,0,1,1)
+      )
+    ),
+    pulse: (
+      0%: (
+        opacity: 1,
+      ),
+      50%: (
+        opacity: .5,
+      ),
+      100%: (
+        opacity: 1,
       )
     )
   )

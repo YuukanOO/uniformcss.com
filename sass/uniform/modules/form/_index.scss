@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:list";
 @use "uniform/core" as *;
 
 /*
@@ -162,7 +164,10 @@ CUSTOM PROPERTIES
 --textarea-focus-danger-shadow
 */
 
-@if $include-form-module == true and $headless == false {
+$excludes: map.get($all-config, excludes);
+$includes: map.get($all-config, includes);
+
+@if ( list.index($includes, module-form) != null or list.index($excludes, all) == null and list.index($excludes, module-form) == null ) {
 
   /******************************
   LABEL

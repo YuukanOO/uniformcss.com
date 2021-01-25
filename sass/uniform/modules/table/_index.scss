@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:list";
 @use "uniform/core" as *;
 
 /*
@@ -140,7 +142,10 @@ CUSTOM PROPERTIES
   }
 }
 
-@if $include-table-module == true and $headless == false {
+$excludes: map.get($all-config, excludes);
+$includes: map.get($all-config, includes);
+
+@if ( list.index($includes, module-table) != null or list.index($excludes, all) == null and list.index($excludes, module-table) == null ) {
 
   .table {
     width: 100%;

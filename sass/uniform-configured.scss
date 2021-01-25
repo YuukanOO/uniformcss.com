@@ -6,16 +6,16 @@
       ),
     ),
     utilities: (
-      // leading-trim: (
-      //   keyword: leading,
-      //   responsive: true,
-      //   properties: (leading-trim),
-      //   variants: (
-      //     trimmer: trim
-      //   )
-      // ),
+      leading-trim: (
+        keyword: leading,
+        responsive: true,
+        properties: (leading-trim),
+        variants: (
+          trimmer: trim
+        )
+      ),
       background-color: (
-      	pseudos: (active, focus, group-hover, empty)
+      	pseudos: (active, focus, group-hover, group-hover, empty)
       ),
       background-darken: (
         pseudos: (active)
@@ -29,6 +29,12 @@
       color: (
         pseudos: (group-focus)
       )
+    ),
+    excludes: (
+      
+    ),
+    includes: (
+      
     )
   )
 );

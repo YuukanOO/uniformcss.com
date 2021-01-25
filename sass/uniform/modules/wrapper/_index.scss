@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:list";
 @use "uniform/core" as *;
 
 /*
@@ -12,7 +14,10 @@ CUSTOM PROPERTIES
 --wrapper-xl-max-width
 */
 
-@if $include-wrapper-module == true and $headless == false {
+$excludes: map.get($all-config, excludes);
+$includes: map.get($all-config, includes);
+
+@if ( list.index($includes, module-wrapper) != null or list.index($excludes, all) == null and list.index($excludes, module-wrapper) == null ) {
   .wrapper {
     width: 100%;
     margin: auto;
