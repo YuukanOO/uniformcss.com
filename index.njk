@@ -71,7 +71,7 @@ cssCodeExample: |
           <header class="flex align-items-center justify-content-between h-64 px-20 border-b-1 border-white border-opacity-10 text-white font-xs font-600">
             <div class="flex align-items-center">
               <img src="/assets/img/sass-logo.svg" class="w-28 mr-18">
-              Configure Uniform directly in your Sass project.
+              Configure Uniform<span class="hidden sm.inline"> directly in your Sass project</span>.
             </div>
             <div class="text-white text-opacity-40">
               styles.scss
@@ -88,7 +88,7 @@ cssCodeExample: |
           <header class="flex align-items-center justify-content-between h-64 px-20 border-b-1 border-white border-opacity-10 text-white font-xs font-600">
             <div>
               <span class="font-base font-bold text-teal text-brighten-7 mr-16">css</span>
-              Quickly generate suite of utilities properties.
+              Quickly generate<span class="hidden sm.inline"> suite of utilities</span> properties.
             </div>
             <div class="text-white text-opacity-40">
               styles.css
@@ -272,7 +272,7 @@ cssCodeExample: |
       <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Components</span>
     </div>
     <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold mb-36 tracking-tighter max-w-900px">
-      Fully customizable components <br>for common UI elements
+      Fully customizable components <br class="hidden sm.inline">for common UI elements
     </h1>
 
     <div class="mb-64">
@@ -282,8 +282,8 @@ cssCodeExample: |
       </a>
     </div>
 
-    <div class="grid grid-cols-2 gap-20">
-      <div class="col-1 flex align-items-center justify-content-center py-96 radius-lg bg-gradient" style="--gradient: 45deg, #f3a2ed, #a8b9ea;">
+    <div class="grid grid-cols-1 sm.grid-cols-2 gap-20">
+      <div class="col-1 flex align-items-center justify-content-center px-20 py-96 radius-lg bg-gradient" style="--gradient: 45deg, #f3a2ed, #a8b9ea;">
         <form class="w-100p max-w-320 p-20 bg-white radius-md shadow-md font-sm">
           <div class="mb-20 last.mb-0">
             <label class="label mb-8">Label</label>
@@ -325,7 +325,7 @@ cssCodeExample: |
           </div>
         </form>
       </div>
-      <div class="col-1 flex align-items-center justify-content-center radius-lg bg-gradient" style="--gradient: 45deg,  #ffca93, #b5f3fd;">
+      <div class="col-1 flex align-items-center justify-content-center px-20 py-96 radius-lg bg-gradient" style="--gradient: 45deg,  #ffca93, #b5f3fd;">
         <div class="grid grid-cols-1 gap-24 w-100p max-w-320">
           <button class="btn btn-primary">Button</button>
           <button class="btn btn-secondary">Button</button>
@@ -358,7 +358,7 @@ cssCodeExample: |
       <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-white uppercase font-xs font-bold tracking-looser text-white">Color &amp; Spacing</span>
     </div>
     <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold mb-36 tracking-tighter text-white">
-      Flexible colors to match any designs <br>with composable manipulations
+      Flexible colors to match any designs <br class="hidden sm.inline">with composable manipulations
     </h1>
 
     <div class="mb-64">
@@ -368,9 +368,9 @@ cssCodeExample: |
       </a>
     </div>
 
-    <div class="grid grid-cols-1 gap-20">
-      <div class="grid grid-cols-12 gap-64">
-        <div class="col-4 flex align-items-center">
+    <div class="grid grid-cols-1 gap-64 sm.gap-20">
+      <div class="grid grid-cols-1 sm.grid-cols-12 gap-64">
+        <div class="col-1 sm.col-4 flex align-items-center">
           <div>
             <div class="flex mb-36 gutter-x-n14">
               <div class="w-48 h-48 radius-round bg-primary-100 border-3 border-white"></div>
@@ -381,7 +381,7 @@ cssCodeExample: |
             <p class="font-md mb-64 text-white">Match your brand quickly with brand agnostic colors. Simply tweak each color token to match your design.</p>
           </div>
         </div>
-        <div class="col-8 radius-lg bg-indigo bg-darken-8 border-1 border-indigo border-darken-4 home-highlight">
+        <div class="col-1 sm.col-8 radius-lg bg-indigo bg-darken-8 border-1 border-indigo border-darken-4 home-highlight">
 {% highlight "css" %}
 /* styles.css */
 :root {
@@ -397,8 +397,8 @@ cssCodeExample: |
 {% endhighlight %}
         </div>
       </div> 
-      <div class="grid grid-cols-12 gap-64">
-        <div class="col-4 flex align-items-center">
+      <div class="grid grid-cols-1 sm.grid-cols-12 gap-64">
+        <div class="col-1 sm.col-4 flex align-items-center">
           <div>
             <div class="flex mb-36 gutter-x-n14">
               <div class="w-48 h-48 radius-round bg-cyan border-3 border-white"></div>
@@ -409,7 +409,7 @@ cssCodeExample: |
             <p class="font-md mb-64 text-white">Apply composable manipulation to any color. Increase or decrease saturation, lighten, and darken colors directly in your html.</p>
           </div>
         </div>
-        <div class="col-8 radius-lg bg-sky bg-darken-8 border-1 border-sky border-darken-4 home-highlight">
+        <div class="col-1 sm.col-8 radius-lg bg-sky bg-darken-8 border-1 border-sky border-darken-4 home-highlight">
 {% highlight "html" %}
 <div class="bg-primary-500 bg-deepen-4">
   ...
@@ -425,8 +425,8 @@ cssCodeExample: |
 {% endhighlight %}
         </div>
       </div> 
-      <div class="grid grid-cols-12 gap-64">
-        <div class="col-4 flex align-items-center">
+      <div class="grid grid-cols-1 sm.grid-cols-12 gap-64">
+        <div class="col-1 sm.col-4 flex align-items-center">
           <div>
             <div class="flex mb-36 gutter-x-n14">
               <div class="w-48 h-48 radius-round bg-gradient border-3 border-white" style="--gradient: to right, #ffbebe, #4eff9d;"></div>
@@ -437,7 +437,7 @@ cssCodeExample: |
             <p class="font-md mb-64 text-white">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
           </div>
         </div>
-        <div class="col-8 radius-lg bg-pink bg-darken-8 border-1 border-pink border-darken-4 home-highlight">
+        <div class="col-1 sm.col-8 radius-lg bg-pink bg-darken-8 border-1 border-pink border-darken-4 home-highlight">
 {% highlight "html" %}
 <div class="bg-gradient" style="--gradient: to right, #ffbebe, #4eff9d;">
   ...
@@ -486,7 +486,7 @@ cssCodeExample: |
       <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Animations</span>
     </div>
     <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tighter">
-      Smooth and reduced motion safe<br>animations with a single utility class
+      Smooth and reduced motion safe<br class="hidden sm.inline"> animations with a single utility class
     </h1>
 
     <div class="mb-64">
@@ -496,7 +496,7 @@ cssCodeExample: |
       </a>
     </div>
 
-    <div class="grid grid-rows-2 grid-cols-3 gap-20 h-512 mb-64">
+    <div class="grid grid-rows-2 grid-cols-1 md.grid-cols-3 gap-20 h-512 mb-64">
       <div class="flex align-items-center justify-content-center row-2 radius-lg bg-gradient"  style="--gradient: to bottom, #f9d2be, #d69d7f;">
         <div class="w-100p max-w-288 radius-md overflow-hidden border-1 border-orange bg-white bg-opacity-20">
           <div class="grid grid-cols-1 gap-10 animate-pulse p-20">
