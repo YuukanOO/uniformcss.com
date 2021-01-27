@@ -267,19 +267,13 @@ $config: core.$all-config;
   $important: map.get($config, important);
   $prefix: map.get($config, prefix);
   $delimiter: map.get($config, delimiter);
-  $child-delimiter: map.get($config, child-delimiter);
   $pseudo-delimiter: core.escape(map.get($config, pseudo-delimiter));
   $screen-delimiter: core.escape(map.get($config, screen-delimiter));
+
   $headless: map.get($config, headless);
   $debugger: map.get($config, debugger);
   $placeholders: map.get($config, placeholders);
-
-  $include-reset-styles: map.get($config, include-reset-styles);
-  $include-starter-styles: map.get($config, include-starter-styles);
-  $include-wrapper-module: map.get($config, include-wrapper-module);
-  $include-table-module: map.get($config, include-table-module);
-  $include-button-module: map.get($config, include-button-module);
-  $include-form-module: map.get($config, include-form-module);
+  $dark-mode-support: map.get($config, dark-mode-support);
 
   $utilities: map.get($config, utilities);
   $excludes: map.get($config, excludes);
@@ -675,7 +669,7 @@ $config: core.$all-config;
                 .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
                   @extend .#{$compiled-class-name};
                 }
-              } @else {
+              } @else if $pseudo != dark {
                 @if ($placeholders == true) {
                   %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                     @extend %#{$compiled-class-name};
@@ -686,7 +680,7 @@ $config: core.$all-config;
                 }
               }
             }
-            @if (list.index($merged-pseudos, dark) != null) {
+            @if ($dark-mode-support == true or list.index($merged-pseudos, dark) != null) {
               @each $pseudo in $merged-pseudos {
                 @if $pseudo == group-hover {
                   @if ($placeholders == true) {
@@ -765,7 +759,7 @@ $config: core.$all-config;
                 .group:focus .#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
                   @extend .#{$compiled-class-name};
                 }
-              } @else {
+              } @else if $pseudo != dark {
                 @if ($placeholders == true) {
                   %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                     @extend %#{$compiled-class-name};
@@ -776,7 +770,7 @@ $config: core.$all-config;
                 }
               }
             }
-            @if (list.index($merged-pseudos, dark) != null) {
+            @if ($dark-mode-support == true or list.index($merged-pseudos, dark) != null) {
               @if $pseudo == group-hover {
                 @if ($placeholders == true) {
                   .dark .group:hover %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
@@ -896,7 +890,7 @@ $config: core.$all-config;
                         .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
                           @extend .#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                         }
-                      } @else {
+                      } @else if $pseudo != dark {
                         @if ($placeholders == true) {
                           %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                             @extend %#{$screen}#{$screen-delimiter}#{$compiled-class-name};
@@ -907,7 +901,7 @@ $config: core.$all-config;
                         }
                       }
                     }
-                    @if (list.index($merged-pseudos, dark) != null) {
+                    @if ($dark-mode-support == true or list.index($merged-pseudos, dark) != null) {
                       @each $pseudo in $merged-pseudos {
                         @if $pseudo == group-hover {
                           @if ($placeholders == true) {
@@ -989,7 +983,7 @@ $config: core.$all-config;
                       .group:focus .#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
                         @extend .#{$screen}#{$screen-delimiter}#{$compiled-class-name};
                       }
-                    } @else {
+                    } @else if $pseudo != dark {
                       @if ($placeholders == true) {
                         %#{$screen}#{$screen-delimiter}#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name}#{map.get($all-pseudos, $pseudo)} {
                           @extend %#{$screen}#{$screen-delimiter}#{$compiled-class-name};
@@ -1000,7 +994,7 @@ $config: core.$all-config;
                       }
                     }
                   }
-                  @if (list.index($merged-pseudos, dark) != null) {
+                  @if ($dark-mode-support == true or list.index($merged-pseudos, dark) != null) {
                     @each $pseudo in $merged-pseudos {
                       @if $pseudo == group-hover {
                         @if ($placeholders == true) {

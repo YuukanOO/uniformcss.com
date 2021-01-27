@@ -351,7 +351,7 @@ cssCodeExample: |
 
 
 
-<section class="bg-gradient" style="--gradient: to bottom, #27205f, black 75%;">
+<section class="bg-gradient" style="--gradient: 45deg, #27205f, black 75%;">
   <div class="wrapper py-112">
     
     <div class="mb-20">
@@ -381,7 +381,7 @@ cssCodeExample: |
             <p class="font-md mb-64 text-white">Match your brand quickly with brand agnostic colors. Simply tweak each color token to match your design.</p>
           </div>
         </div>
-        <div class="col-8 radius-lg bg-teal bg-darken-8 home-highlight">
+        <div class="col-8 radius-lg bg-indigo bg-darken-8 border-1 border-indigo border-darken-4 home-highlight">
 {% highlight "css" %}
 /* styles.css */
 :root {
@@ -409,7 +409,7 @@ cssCodeExample: |
             <p class="font-md mb-64 text-white">Apply composable manipulation to any color. Increase or decrease saturation, lighten, and darken colors directly in your html.</p>
           </div>
         </div>
-        <div class="col-8 radius-lg bg-purple bg-darken-8 home-highlight">
+        <div class="col-8 radius-lg bg-sky bg-darken-8 border-1 border-sky border-darken-4 home-highlight">
 {% highlight "html" %}
 <div class="bg-primary-500 bg-deepen-4">
   ...
@@ -437,7 +437,7 @@ cssCodeExample: |
             <p class="font-md mb-64 text-white">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
           </div>
         </div>
-        <div class="col-8 radius-lg bg-blue bg-darken-8 home-highlight">
+        <div class="col-8 radius-lg bg-pink bg-darken-8 border-1 border-pink border-darken-4 home-highlight">
 {% highlight "html" %}
 <div class="bg-gradient" style="--gradient: to right, #ffbebe, #4eff9d;">
   ...
@@ -576,7 +576,7 @@ cssCodeExample: |
           <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Themeable</span>
         </div>
         <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tighter">
-          Theming is as simple as spinning a dial
+          Theming your site is as easy as spinning a dial
         </h1>
 
         <div class="mb-64">
@@ -589,7 +589,7 @@ cssCodeExample: |
         <div class="grid grid-cols-1 gap-24 mb-64 p-20 radius-lg bg-black text-white font-bold font-xs max-w-512">
           <div class="flex align-items-center">
             <div class="flex flex-none align-items-center font-semibold w-112">
-              <div class="w-20 h-20 mr-12 radius-round bg-gradient-x" style="--gradient-start-color: #529fff; --gradient-end-color: #aeff7c;">
+              <div class="w-20 h-20 mr-12 radius-round bg-gradient" style="--gradient: to right, #529fff, #aeff7c;">
               </div>
               Hue
             </div>
@@ -597,7 +597,7 @@ cssCodeExample: |
           </div>
           <div class="flex align-items-center">
             <div class="flex flex-none align-items-center font-semibold w-112">
-              <div class="w-20 h-20 mr-12 radius-round bg-gradient-x" style="--gradient-start-color: #555; --gradient-end-color: orange;">
+              <div class="w-20 h-20 mr-12 radius-round bg-gradient" style="--gradient: to right, #555, orange;">
               </div>
               Saturation
             </div>
@@ -605,7 +605,7 @@ cssCodeExample: |
           </div>
           <div class="flex align-items-center">
             <div class="flex flex-none align-items-center font-semibold w-112">
-              <div class="w-20 h-20 mr-12 radius-round bg-gradient-x" style="--gradient-start-color: #fff; --gradient-end-color: #555;">
+              <div class="w-20 h-20 mr-12 radius-round bg-gradient" style="--gradient: to right, #fff, #555;">
               </div>          
               Lightness
             </div>
@@ -620,19 +620,19 @@ cssCodeExample: |
                 Themeable design tokens
               </h4>
             </div>
-            <p class="font-md">Animations are great for providing extra context  for your users. You can easily apply bounce, ping, pulse.</p>
+            <p class="font-md">Quickly utilize CSS variable hooks to activate customizeable theme variables directly in your CSS.</p>
           </div>
           <div>
             <div class="flex mb-24">
               <h4 class="font-lg font-extrabold tracking-tight">
-                Multiple theme support
+                Infinite theme support
               </h4>
             </div>
-            <p class="font-md">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motions.</p>
+            <p class="font-md">Uniform makes it easily to create, manage, conditionally apply any number of custom themes.</p>
           </div>
         </div>
       </div>
-      <div class="flex align-items-center radius-lg bg-silver-200 p-20 py-96 overflow-hidden">
+      <div class="flex align-items-center radius-lg bg-silver-200 p-20 py-80 overflow-hidden">
 
         <div class="js-theme-demo flex flex-none w-640 transform translate-x-64 radius-lg bg-primary overflow-hidden" style="--primary-hue: 186; --primary-sat: 43%; --primary-ltn: 24%;">
           <div class="w-224 flex-none border-r-1 border-white border-opacity-20">
@@ -915,7 +915,7 @@ cssCodeExample: |
 
         <div class="mb-64">
           <a href="#" class="inline-flex align-items-center font-bold font-lg text-white hover.text-white">
-            See how to customize CDN variables 
+            See how dark mode works
             <svg class="fill-current w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
           </a>
         </div>
@@ -931,19 +931,19 @@ cssCodeExample: |
         <div class="grid grid-cols-1 md.grid-cols-2 gap-48 text-white">
           <div>
             <div class="flex mb-24">
-              <h4 class="bg-gradient-x bg-text text-transparent font-lg font-extrabold tracking-tight" style="--gradient-start-color: #8F7CFF; --gradient-end-color: #fd7cff;">
+              <h4 class="bg-gradient bg-text text-transparent font-lg font-extrabold tracking-tight" style="--gradient: to right, #8F7CFF, #fd7cff;">
                 Dark mode everything
               </h4>
             </div>
-            <p class="font-md text-primary-100 text-opacity-80">Animations are great for providing extra context  for your users. You can easily apply bounce, ping, pulse, and spin.</p>
+            <p class="font-md text-primary-100 text-opacity-80">Apply conditional dark mode specific coloring to any element with the dark pseudo.</p>
           </div>
           <div>
             <div class="flex mb-24">
-              <h4 class="bg-gradient-x bg-text text-transparent font-lg font-extrabold tracking-tight" style="--gradient-start-color: #7CD0FF; --gradient-end-color: #7CFFA9;">
-                Pseudo stackable
+              <h4 class="bg-gradient bg-text text-transparent font-lg font-extrabold tracking-tight" style="--gradient: to right, #7CD0FF, #7CFFA9;">
+                Completely optional
               </h4>
             </div>
-            <p class="font-md text-primary-100 text-opacity-80">Animations are designed to help people with vestibular and seizure disorders. For users with reduced motion.</p>
+            <p class="font-md text-primary-100 text-opacity-80">Dark mode is completely optional and can be disabled with a single setting in your configuration.</p>
           </div>
         </div>
       </div>
@@ -968,7 +968,7 @@ cssCodeExample: |
 
         <div class="mb-64">
           <a href="#" class="inline-flex align-items-center font-bold font-lg text-white hover.text-white">
-            See how to customize CDN variables 
+            Customize your CDN build 
             <svg class="fill-current w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
           </a>
         </div>
@@ -976,25 +976,25 @@ cssCodeExample: |
         <div class="grid grid-cols-3 gap-20">
           <div class="radius-md px-20 py-28 bg-primary-800 bg-deepen-2 bg-opacity-60">
             <div class="flex mb-20">
-              <div class="font-5xl font-light bg-gradient-x bg-text text-transparent" style="--gradient-start-color: #8F7CFF; --gradient-end-color: #fd7cff;">2min</div>
+              <div class="font-5xl font-light bg-gradient bg-text text-transparent" style="--gradient: to right, #8F7CFF, #fd7cff;">2min</div>
             </div>
-            <div class="h-2 bg-gradient-x mb-14" style="--gradient-start-color: #8F7CFF; --gradient-end-color: #fd7cff;">
+            <div class="h-2 bg-gradient mb-14" style="--gradient: to right, #8F7CFF, #fd7cff;">
             </div>
             <p class="font-sm text-white">project <br>setup time <br>required only</p>
           </div>
           <div class="radius-md px-20 py-28 bg-primary-800 bg-deepen-2 bg-opacity-60">
             <div class="flex mb-20">
-              <div class="font-5xl font-light bg-gradient-x bg-text text-transparent" style="--gradient-start-color: #7CD0FF; --gradient-end-color: #7CFFA9;">61kb</div>
+              <div class="font-5xl font-light bg-gradient bg-text text-transparent" style="--gradient: to right, #7CD0FF, #7CFFA9;">61kb</div>
             </div>
-            <div class="h-2 bg-gradient-x mb-14" style="--gradient-start-color: #7CD0FF; --gradient-end-color: #7CFFA9;">
+            <div class="h-2 bg-gradient mb-14" style="--gradient: to right, #7CD0FF, #7CFFA9;">
             </div>
             <p class="font-sm text-white">gzipped for <br>lightning fast <br>delivery</p>
           </div>
           <div class="radius-md px-20 py-28 bg-primary-800 bg-deepen-2 bg-opacity-60">
             <div class="flex mb-20">
-              <div class="font-5xl font-light bg-gradient-x bg-text text-transparent" style="--gradient-start-color: #F5FF7C; --gradient-end-color: #FFBB7C;">136</div>
+              <div class="font-5xl font-light bg-gradient bg-text text-transparent" style="--gradient: to right, #F5FF7C, #FFBB7C;">136</div>
             </div>
-            <div class="h-2 bg-gradient-x mb-14" style="--gradient-start-color: #F5FF7C; --gradient-end-color: #FFBB7C;">
+            <div class="h-2 bg-gradient mb-14" style="--gradient: to right, #F5FF7C, #FFBB7C;">
             </div>
             <p class="font-sm text-white">configurable <br>design <br>tokens</p>
           </div>
@@ -1007,7 +1007,7 @@ cssCodeExample: |
           <p class="font-md text-primary-100 text-opacity-80">Add the following code to the head of your project.</p>
           <div class="home-highlight radius-sm bg-primary-800 bg-deepen-2 bg-opacity-60">
             {% highlight "bash" %}
-              https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/base.css
+              https://cdn.jsdelivr.net/npm/uniformcss@1.0.0/uniform.css
             {% endhighlight %}
           </div>
         </div>

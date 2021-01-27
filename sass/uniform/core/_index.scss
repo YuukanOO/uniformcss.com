@@ -101,6 +101,7 @@ $default-config: (
   headless: false,
   debugger: false,
   placeholders: false,
+  dark-mode-support: false,
 
   includes: (
     module-button,
@@ -635,13 +636,7 @@ $screen-delimiter: escape(map.get($all-config, screen-delimiter));
 $headless: map.get($all-config, headless);
 $root: map.get($all-config, root);
 $debugger: map.get($all-config, debugger);
-
-$include-reset-styles: map.get($all-config, include-reset-styles);
-$include-starter-styles: map.get($all-config, include-starter-styles);
-$include-wrapper-module: map.get($all-config, include-wrapper-module);
-$include-table-module: map.get($all-config, include-table-module);
-$include-button-module: map.get($all-config, include-button-module);
-$include-form-module: map.get($all-config, include-form-module);
+$dark-mode-support: map.get($all-config, dark-mode-support);
 
 $screens: map.get($all-config, screens);
 
