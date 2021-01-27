@@ -96,8 +96,17 @@
 
 // UTILITIES - EFFECT (3)
 @use "utilities/effect/core-box-shadow";
-@use "utilities/effect/core-filter";
 @use "utilities/effect/core-mix-blend-mode";
+@use "utilities/effect/extension-backdrop-grayscale";
+@use "utilities/effect/extension-backdrop-invert";
+@use "utilities/effect/extension-backdrop-saturate";
+@use "utilities/effect/extension-backdrop-blur";
+@use "utilities/effect/core-backdrop-filter";
+@use "utilities/effect/extension-filter-grayscale";
+@use "utilities/effect/extension-filter-invert";
+@use "utilities/effect/extension-filter-saturate";
+@use "utilities/effect/extension-filter-blur";
+@use "utilities/effect/core-filter";
 
 
 // UTILITIES - SIZING (6)

@@ -21,17 +21,17 @@ $includes: map.get($all-config, includes);
   .wrapper {
     width: 100%;
     margin: auto;
-    max-width: var(--wrapper-max-width, 680px);
+    max-width: var(--wrapper-max-width, 808px);
     padding-left: var(--wrapper-padding, size(20));
     padding-right: var(--wrapper-padding, size(20));
     @include screen(md) {
-      max-width: var(--wrapper-sm-max-width, 960px);
+      max-width: var(--wrapper-sm-max-width, 1064px);
     }
     @include screen(lg) {
-      max-width: var(--wrapper-md-max-width, 1140px);
+      max-width: var(--wrapper-md-max-width, 1180px);
     }
     @include screen(xl) {
-      max-width: var(--wrapper-lg-max-width, 1280px);
+      max-width: var(--wrapper-lg-max-width, 1320px);
     }
   }
 }

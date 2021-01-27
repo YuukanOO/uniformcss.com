@@ -1,5 +1,6 @@
 @use "uniform/core";
 @use "sass:map";
+@use "sass:string";
 
 $name: filter; 
 $shorthand: filter;
@@ -8,14 +9,18 @@ $responsive-pseudos: false;
 $extra-selector: null;
 
 $properties: (filter);
-$custom-properties: ();
-
-$variants: (
-  none: none,
-  grayscale: grayscale(100%)
+$custom-properties: (
+  --filter-blur: 0,
+  --filter-grayscale: 0,
+  --filter-saturate: 1,
+  --filter-invert: 0,
 );
 
-$pseudos: (hover, group-hover, active);
+$variants: (
+  null: blur(var(--filter-blur)) string.unquote("grayscale(var(--filter-grayscale))") string.unquote("saturate(var(--filter-saturate))") string.unquote("invert(var(--filter-invert))")
+);
+
+$pseudos: (hover, group-hover);
 
 $config: (
   utilities: (

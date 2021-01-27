@@ -1,24 +1,26 @@
 @use "uniform/core";
 @use "sass:map";
+@use "sass:string";
 
-$name: animation;
-$shorthand: animate;
+$name: backdrop-filter; 
+$shorthand: backdrop;
 $responsive: false;
 $responsive-pseudos: false;
 $extra-selector: null;
 
-$properties: (animation);
-$custom-properties: ();
-
-$variants: (
-  none: none,
-	spin: spin 1s linear infinite,
-	pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite,
-	ping: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite,
-	bounce: bounce 1s infinite,
+$properties: (backdrop-filter);
+$custom-properties: (
+  --backdrop-blur: 0,
+  --backdrop-grayscale: 0,
+  --backdrop-saturate: 1,
+  --backdrop-invert: 0,
 );
 
-$pseudos: ();
+$variants: (
+  null: blur(var(--backdrop-blur)) string.unquote("grayscale(var(--backdrop-grayscale))") string.unquote("saturate(var(--backdrop-saturate))") string.unquote("invert(var(--backdrop-invert))")
+);
+
+$pseudos: (hover, group-hover);
 
 $config: (
   utilities: (
