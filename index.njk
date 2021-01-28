@@ -37,11 +37,8 @@ cssCodeExample: |
   }
 ---
 <div class="bg-black">
-{% include "partials/nav.njk" %}
+{% include "partials/nav-docs.njk" %}
 
-<div class="wrapper">
-  <div class="bg-white bg-opacity-20 h-1"></div>
-</div>
 
 <section class="bg-black">
 
@@ -268,14 +265,14 @@ cssCodeExample: |
 <section class="bg-silver-100 bg-brighten-4">
   <div class="wrapper py-80 sm.py-112">
 
-    <div class="mb-20">
+    <div class="mb-20 align-center">
       <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Components</span>
     </div>
-    <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold mb-36 tracking-tighter max-w-900px">
+    <h1 class="align-center font-3xl sm.font-6xl md.font-7xl font-extrabold mb-36 tracking-tighter max-w-900px">
       Fully customizable components <br class="hidden sm.inline">for common UI elements
     </h1>
 
-    <div class="mb-64">
+    <div class="align-center mb-64">
       <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
         Learn more about modules  
         <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
@@ -351,18 +348,18 @@ cssCodeExample: |
 
 
 
-<section class="bg-gradient" style="--gradient: 45deg, #27205f, black 75%;">
+<section class="bg-white">
   <div class="wrapper py-80 sm.py-112">
     
     <div class="mb-20">
-      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-white uppercase font-xs font-bold tracking-looser text-white">Color &amp; Spacing</span>
+      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Fleixble Colors</span>
     </div>
-    <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold mb-36 tracking-tighter text-white">
+    <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold mb-36 tracking-tighter text-black">
       Flexible colors to match any designs <br class="hidden sm.inline">with composable manipulations
     </h1>
 
     <div class="mb-64">
-      <a href="#" class="inline-flex align-items-center font-bold font-lg text-white hover.text-white">
+      <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
         See how colors work 
         <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
       </a>
@@ -377,8 +374,8 @@ cssCodeExample: |
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-primary-400 border-2 sm.border-3 border-white"></div>
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-primary-800 border-2 sm.border-3 border-white"></div>
             </div>
-            <h4 class="font-lg font-extrabold mb-24 tracking-tight text-white">Design Agnostic Colors</h4>
-            <p class="font-md text-white">Match your brand quickly with brand agnostic colors. Simply tweak each color token to match your design.</p>
+            <h4 class="font-lg font-extrabold mb-24 tracking-tight text-black">Design Agnostic Colors</h4>
+            <p class="font-md text-black">Match your brand quickly with brand agnostic colors. Simply tweak each color token to match your design.</p>
           </div>
         </div>
         <div class="col-1 sm.col-7 md.col-8 radius-lg bg-indigo bg-darken-8 border-1 border-indigo border-darken-4 home-highlight">
@@ -405,8 +402,8 @@ cssCodeExample: |
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan bg-deepen-5 border-2 sm.border-3 border-white"></div>
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan bg-deepen-9 border-2 sm.border-3 border-white"></div>
             </div>
-            <h4 class="font-lg font-extrabold mb-24 tracking-tight text-white">Composable Color Manipulation</h4>
-            <p class="font-md text-white">Apply composable manipulation to any color. Increase or decrease saturation, lighten, and darken colors directly in your html.</p>
+            <h4 class="font-lg font-extrabold mb-24 tracking-tight text-black">Composable Color Manipulation</h4>
+            <p class="font-md text-black">Apply composable manipulation to any color. Increase or decrease saturation, lighten, and darken colors directly in your html.</p>
           </div>
         </div>
         <div class="col-1 sm.col-7 md.col-8 radius-lg bg-sky bg-darken-8 border-1 border-sky border-darken-4 home-highlight">
@@ -415,7 +412,7 @@ cssCodeExample: |
   ...
 </div>
 
-<div class="border-1 border-white border-opacity-50 hover.border-opacity-100">
+<div class="border-1 border-black border-opacity-50 hover.border-opacity-100">
   ...
 </div>
 
@@ -433,8 +430,8 @@ cssCodeExample: |
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-gradient border-2 sm.border-3 border-white" style="--gradient: to right, #c39eff, #85eeff;"></div>
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-gradient border-2 sm.border-3 border-white" style="--gradient: to right, #d2d2d2, #ff7ee3;"></div>
             </div>
-            <h4 class="font-lg font-extrabold mb-24 tracking-tight text-white">Inline Gradient Support</h4>
-            <p class="font-md text-white">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
+            <h4 class="font-lg font-extrabold mb-24 tracking-tight text-black">Inline Gradient Support</h4>
+            <p class="font-md text-black">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
           </div>
         </div>
         <div class="col-1 sm.col-7 md.col-8 radius-lg bg-pink bg-darken-8 border-1 border-pink border-darken-4 home-highlight">
@@ -613,7 +610,7 @@ cssCodeExample: |
           </div>
         </div>
 
-        <div class="grid grid-cols-1 sm.grid-cols-2 gap-48">
+        <div class="grid grid-cols-1 sm.grid-cols-2 gap-64 md.gap-48">
           <div>
             <div class="flex mb-24">
               <h4 class="font-lg font-extrabold tracking-tight">
