@@ -7,7 +7,7 @@ $responsive: false;
 $responsive-pseudos: false;
 $extra-selector: null;
 
-$properties: (user-select);
+$properties: (user-select, -webkit-user-select);
 $custom-properties: ();
 
 $variants: (
