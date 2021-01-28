@@ -37,10 +37,6 @@
   <!-- Styles -->
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;450;560;660;800&display=swap" rel="stylesheet">
-
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ '/assets/vendors/fontawesome/css/fontawesome.min.css' | url }}">
   <link rel="stylesheet" href="{{ '/assets/vendors/fontawesome/css/solid.min.css' | url }}">
@@ -49,6 +45,55 @@
 
   <!-- SplitBee Analytics -->
   <script async src="https://cdn.splitbee.io/sb.js"></script>
+
+  <!-- Fonts -->
+  <style>
+  /* manrope-300 - latin */
+  @font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('{{ '/assets/fonts/manrope/Manrope-Light.woff2' | url }}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('{{ '/assets/fonts/manrope/Manrope-Light.woff' | url }}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* manrope-regular - latin */
+  @font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('{{ '/assets/fonts/manrope/Manrope-Regular.woff2' | url }}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('{{ '/assets/fonts/manrope/Manrope-Regular.woff' | url }}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* manrope-500 - latin */
+  @font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('{{ '/assets/fonts/manrope/Manrope-Medium.woff2' | url }}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('{{ '/assets/fonts/manrope/Manrope-Medium.woff' | url }}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* manrope-600 - latin */
+  @font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('{{ '/assets/fonts/manrope/Manrope-Bold.woff2' | url }}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('{{ '/assets/fonts/manrope/Manrope-Bold.woff' | url }}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* manrope-800 - latin */
+  @font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+        url('{{ '/assets/fonts/manrope/Manrope-ExtraBold.woff2' | url }}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('{{ '/assets/fonts/manrope/Manrope-ExtraBold.woff' | url }}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  </style>
 </head>
 <body data-barba="wrapper">
   {{ content | safe }}
