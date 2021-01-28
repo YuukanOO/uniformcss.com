@@ -16,64 +16,100 @@
 @use "modules/wrapper";
 
 
-// UTILITIES - ALIGNMENT (6)
-@use "utilities/alignment/core-align-content";
-@use "utilities/alignment/core-align-items";
-@use "utilities/alignment/core-align-self";
-@use "utilities/alignment/core-justify-content";
-@use "utilities/alignment/core-justify-items";
-@use "utilities/alignment/core-justify-self";
-@use "utilities/alignment/core-text-align";
-@use "utilities/alignment/core-vertical-align";
+// UTILITIES - TRANSITION (5)
+@use "utilities/transition/core-transition-duration";
+@use "utilities/transition/core-transition-delay";
+@use "utilities/transition/core-transition-property";
+@use "utilities/transition/core-transition-timing-function";
+@use "utilities/transition/core-transition";
 
 
-// UTILITIES - APPEARANCE (6)
-@use "utilities/appearance/core-display";
-@use "utilities/appearance/core-opacity";
-@use "utilities/appearance/core-outline";
-@use "utilities/appearance/core-visibility";
-@use "utilities/appearance/extension-appearance";
-@use "utilities/appearance/extension-font-smooth";
+// UTILITIES - ANIMATION
+@use "utilities/animation/core-animation";
 
 
-// UTILITIES - BACKGROUND (7)
-@use "utilities/background/extension-background-brighten";
-@use "utilities/background/extension-background-deepen";
-@use "utilities/background/extension-background-lighten";
-@use "utilities/background/extension-background-darken";
-@use "utilities/background/extension-background-opacity";
-@use "utilities/background/core-background-attachment";
-@use "utilities/background/core-background-clip";
-@use "utilities/background/core-background-color";
-@use "utilities/background/core-background-position";
-@use "utilities/background/core-background-repeat";
-@use "utilities/background/core-background-size";
-@use "utilities/background/core-background";
+// UTILITIES - INTERACTIVE (5)
+@use "utilities/interactive/core-cursor";
+@use "utilities/interactive/core-pointer-events";
+@use "utilities/interactive/core-resize";
+@use "utilities/interactive/core-scrolling";
+@use "utilities/interactive/core-user-select";
 
 
-// UTILITIES - BORDER (17)
-@use "utilities/border/extension-border-brighten";
-@use "utilities/border/extension-border-deepen";
-@use "utilities/border/extension-border-lighten";
-@use "utilities/border/extension-border-darken";
-@use "utilities/border/extension-border-opacity";
-@use "utilities/border/extension-border-bottom-radius";
-@use "utilities/border/extension-border-left-radius";
-@use "utilities/border/extension-border-right-radius";
-@use "utilities/border/extension-border-top-radius";
-@use "utilities/border/core-border-bottom-left-radius";
-@use "utilities/border/core-border-bottom-right-radius";
-@use "utilities/border/core-border-top-left-radius";
-@use "utilities/border/core-border-top-right-radius";
-@use "utilities/border/core-border-radius";
-@use "utilities/border/core-border-bottom-width";
-@use "utilities/border/core-border-left-width";
-@use "utilities/border/core-border-right-width";
-@use "utilities/border/core-border-top-width";
-@use "utilities/border/core-border-width";
-@use "utilities/border/core-border-collapse";
-@use "utilities/border/core-border-color";
-@use "utilities/border/core-border-style";
+// UTILITIES - SVG (3)
+@use "utilities/svg/core-fill";
+@use "utilities/svg/core-stroke";
+@use "utilities/svg/core-stroke-width";
+
+
+// UTILITIES - TRANSFORM (9)
+@use "utilities/transform/extension-translate-x";
+@use "utilities/transform/extension-translate-y";
+@use "utilities/transform/extension-scale-x";
+@use "utilities/transform/extension-scale-y";
+@use "utilities/transform/extension-skew-x";
+@use "utilities/transform/extension-skew-y";
+@use "utilities/transform/extension-rotate";
+@use "utilities/transform/core-transform-origin";
+@use "utilities/transform/core-transform";
+
+
+// UTILITIES - GUTTER (3)
+@use "utilities/gutter/extension-gutter-reverse";
+@use "utilities/gutter/extension-gutter-x";
+@use "utilities/gutter/extension-gutter-y";
+
+
+// UTILITIES - SPLIT (10)
+@use "utilities/split/extension-split-brighten";
+@use "utilities/split/extension-split-deepen";
+@use "utilities/split/extension-split-lighten";
+@use "utilities/split/extension-split-darken";
+@use "utilities/split/extension-split-opacity";
+@use "utilities/split/extension-split-color";
+@use "utilities/split/extension-split-reverse";
+@use "utilities/split/extension-split-style";
+@use "utilities/split/extension-split-x";
+@use "utilities/split/extension-split-y";
+
+
+// UTILITIES - GRID (9)
+@use "utilities/grid/core-grid-auto-flow";
+@use "utilities/grid/core-grid-column";
+@use "utilities/grid/core-grid-column-end";
+@use "utilities/grid/core-grid-column-start";
+@use "utilities/grid/core-grid-row";
+@use "utilities/grid/core-grid-row-end";
+@use "utilities/grid/core-grid-row-start";
+@use "utilities/grid/core-grid-template-columns";
+@use "utilities/grid/core-grid-template-rows";
+
+
+// UTILITIES - FLEXBOX (6)
+@use "utilities/flexbox/core-flex";
+@use "utilities/flexbox/core-flex-direction";
+@use "utilities/flexbox/core-flex-grow";
+@use "utilities/flexbox/core-flex-shrink";
+@use "utilities/flexbox/core-flex-wrap";
+@use "utilities/flexbox/core-order";
+
+
+// UTILITIES - GAP (3)
+@use "utilities/gap/core-gap";
+@use "utilities/gap/core-column-gap";
+@use "utilities/gap/core-row-gap";
+
+
+// UTILITIES - POSITION (9)
+@use "utilities/position/core-bottom";
+@use "utilities/position/core-left";
+@use "utilities/position/core-right";
+@use "utilities/position/core-top";
+@use "utilities/position/extension-x";
+@use "utilities/position/extension-y";
+@use "utilities/position/extension-xy";
+@use "utilities/position/extension-absolute-center";
+@use "utilities/position/core-z-index";
 
 
 // UTILITIES - COMPOSITION (9)
@@ -109,26 +145,54 @@
 @use "utilities/effect/core-filter";
 
 
-// UTILITIES - SIZING (6)
-@use "utilities/sizing/core-height";
-@use "utilities/sizing/core-width";
-@use "utilities/sizing/core-min-height";
-@use "utilities/sizing/core-min-width";
-@use "utilities/sizing/core-max-height";
-@use "utilities/sizing/core-max-width";
+// UTILITIES - BORDER (17)
+@use "utilities/border/extension-border-brighten";
+@use "utilities/border/extension-border-deepen";
+@use "utilities/border/extension-border-lighten";
+@use "utilities/border/extension-border-darken";
+@use "utilities/border/extension-border-opacity";
+@use "utilities/border/extension-border-bottom-radius";
+@use "utilities/border/extension-border-left-radius";
+@use "utilities/border/extension-border-right-radius";
+@use "utilities/border/extension-border-top-radius";
+@use "utilities/border/core-border-bottom-left-radius";
+@use "utilities/border/core-border-bottom-right-radius";
+@use "utilities/border/core-border-top-left-radius";
+@use "utilities/border/core-border-top-right-radius";
+@use "utilities/border/core-border-radius";
+@use "utilities/border/core-border-bottom-width";
+@use "utilities/border/core-border-left-width";
+@use "utilities/border/core-border-right-width";
+@use "utilities/border/core-border-top-width";
+@use "utilities/border/core-border-width";
+@use "utilities/border/core-border-collapse";
+@use "utilities/border/core-border-color";
+@use "utilities/border/core-border-style";
 
 
-// UTILITIES - POSITION (9)
-@use "utilities/position/core-bottom";
-@use "utilities/position/core-left";
-@use "utilities/position/core-right";
-@use "utilities/position/core-top";
-@use "utilities/position/extension-x";
-@use "utilities/position/extension-y";
-@use "utilities/position/extension-xy";
-@use "utilities/position/extension-absolute-center";
-@use "utilities/position/core-z-index";
+// UTILITIES - BACKGROUND (7)
+@use "utilities/background/extension-background-brighten";
+@use "utilities/background/extension-background-deepen";
+@use "utilities/background/extension-background-lighten";
+@use "utilities/background/extension-background-darken";
+@use "utilities/background/extension-background-opacity";
+@use "utilities/background/core-background-attachment";
+@use "utilities/background/core-background-clip";
+@use "utilities/background/core-background-color";
+@use "utilities/background/core-background-position";
+@use "utilities/background/core-background-repeat";
+@use "utilities/background/core-background-size";
+@use "utilities/background/core-background";
 
+
+// UTILITIES - PADDING (7)
+@use "utilities/padding/core-padding-bottom";
+@use "utilities/padding/core-padding-left";
+@use "utilities/padding/core-padding-right";
+@use "utilities/padding/core-padding-top";
+@use "utilities/padding/extension-padding-x";
+@use "utilities/padding/extension-padding-y";
+@use "utilities/padding/core-padding";
 
 
 // UTILITIES - MARGIN (7)
@@ -141,14 +205,24 @@
 @use "utilities/margin/core-margin";
 
 
-// UTILITIES - PADDING (7)
-@use "utilities/padding/core-padding-bottom";
-@use "utilities/padding/core-padding-left";
-@use "utilities/padding/core-padding-right";
-@use "utilities/padding/core-padding-top";
-@use "utilities/padding/extension-padding-x";
-@use "utilities/padding/extension-padding-y";
-@use "utilities/padding/core-padding";
+// UTILITIES - ALIGNMENT (6)
+@use "utilities/alignment/core-align-content";
+@use "utilities/alignment/core-align-items";
+@use "utilities/alignment/core-align-self";
+@use "utilities/alignment/core-justify-content";
+@use "utilities/alignment/core-justify-items";
+@use "utilities/alignment/core-justify-self";
+@use "utilities/alignment/core-text-align";
+@use "utilities/alignment/core-vertical-align";
+
+
+// UTILITIES - SIZING (6)
+@use "utilities/sizing/core-height";
+@use "utilities/sizing/core-width";
+@use "utilities/sizing/core-min-height";
+@use "utilities/sizing/core-min-width";
+@use "utilities/sizing/core-max-height";
+@use "utilities/sizing/core-max-width";
 
 
 // UTILITIES - TYPOGRAPHY (14)
@@ -173,88 +247,13 @@
 @use "utilities/typography/core-word-break";
 
 
-// UTILITIES - GRID (9)
-@use "utilities/grid/core-grid-auto-flow";
-@use "utilities/grid/core-grid-column";
-@use "utilities/grid/core-grid-column-end";
-@use "utilities/grid/core-grid-column-start";
-@use "utilities/grid/core-grid-row";
-@use "utilities/grid/core-grid-row-end";
-@use "utilities/grid/core-grid-row-start";
-@use "utilities/grid/core-grid-template-columns";
-@use "utilities/grid/core-grid-template-rows";
-
-
-// UTILITIES - FLEXBOX (6)
-@use "utilities/flexbox/core-flex";
-@use "utilities/flexbox/core-flex-direction";
-@use "utilities/flexbox/core-flex-grow";
-@use "utilities/flexbox/core-flex-shrink";
-@use "utilities/flexbox/core-flex-wrap";
-@use "utilities/flexbox/core-order";
-
-
-// UTILITIES - GAP (3)
-@use "utilities/gap/core-gap";
-@use "utilities/gap/core-column-gap";
-@use "utilities/gap/core-row-gap";
-
-
-// UTILITIES - GUTTER (3)
-@use "utilities/gutter/extension-gutter-reverse";
-@use "utilities/gutter/extension-gutter-x";
-@use "utilities/gutter/extension-gutter-y";
-
-
-// UTILITIES - SPLIT (10)
-@use "utilities/split/extension-split-brighten";
-@use "utilities/split/extension-split-deepen";
-@use "utilities/split/extension-split-lighten";
-@use "utilities/split/extension-split-darken";
-@use "utilities/split/extension-split-opacity";
-@use "utilities/split/extension-split-color";
-@use "utilities/split/extension-split-reverse";
-@use "utilities/split/extension-split-style";
-@use "utilities/split/extension-split-x";
-@use "utilities/split/extension-split-y";
-
-
-// UTILITIES - TRANSFORM (9)
-@use "utilities/transform/extension-translate-x";
-@use "utilities/transform/extension-translate-y";
-@use "utilities/transform/extension-scale-x";
-@use "utilities/transform/extension-scale-y";
-@use "utilities/transform/extension-skew-x";
-@use "utilities/transform/extension-skew-y";
-@use "utilities/transform/extension-rotate";
-@use "utilities/transform/core-transform-origin";
-@use "utilities/transform/core-transform";
-
-
-// UTILITIES - TRANSITION (5)
-@use "utilities/transition/core-transition-duration";
-@use "utilities/transition/core-transition-delay";
-@use "utilities/transition/core-transition-property";
-@use "utilities/transition/core-transition-timing-function";
-@use "utilities/transition/core-transition";
-
-
-// UTILITIES - ANIMATION
-@use "utilities/animation/core-animation";
-
-
-// UTILITIES - INTERACTIVE (5)
-@use "utilities/interactive/core-cursor";
-@use "utilities/interactive/core-pointer-events";
-@use "utilities/interactive/core-resize";
-@use "utilities/interactive/core-scrolling";
-@use "utilities/interactive/core-user-select";
-
-
-// UTILITIES - SVG (3)
-@use "utilities/svg/core-fill";
-@use "utilities/svg/core-stroke";
-@use "utilities/svg/core-stroke-width";
+// UTILITIES - APPEARANCE (6)
+@use "utilities/appearance/core-display";
+@use "utilities/appearance/core-opacity";
+@use "utilities/appearance/core-outline";
+@use "utilities/appearance/core-visibility";
+@use "utilities/appearance/extension-appearance";
+@use "utilities/appearance/extension-font-smooth";
 
 
 // CONSTRUCTOR
