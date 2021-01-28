@@ -148,7 +148,7 @@ cssCodeExample: |
   <div class="wrapper py-80 sm.py-112">
     <div class="align-center">
       <span class="inline-flex align-items-center h-32 px-12 mb-20 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Rapid Prototyping</span>
-      <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tighter align-center">Build web components without <br>ever touching your CSS</h1>
+      <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tighter align-center">Build web components without <br class="hidden sm.inline">ever touching your CSS</h1>
       <div class="mb-64">
         <a href="#" class="inline-flex align-items-center font-bold font-lg text-black hover.text-black">
           Learn more about Uniform
@@ -158,7 +158,7 @@ cssCodeExample: |
     </div>
     
 
-    <figure class="cd-image-container radius-md md.radius-xl overflow-hidden mb-64">
+    <figure class="cd-image-container radius-xl overflow-hidden mb-64">
       <div class="flex align-items-center justify-content-center w-100p h-448 px-18 bg-gradient" style="--gradient: 45deg, #ff593f, #7e82ff;">
         <article class="w-100p max-w-512 radius-md bg-white shadow-md">
           <header class="px-24 py-20 border-b-1 border-black border-opacity-10">
@@ -191,7 +191,7 @@ cssCodeExample: |
       </div>
       <span class="cd-image-label px-10 py-8 radius-round bg-black text-white mb-12 mr-12 font-xs font-bold tracking-2 uppercase" data-type="original">Preview</span>
   
-      <div class="cd-resize-img"> <!-- the resizable image on top -->
+      <div class="cd-resize-img radius-l-xl"> <!-- the resizable image on top -->
         <div class="w-100p h-448 overflow-auto bg-primary-900">
           <div class="flex">
 {% highlight "html" %}
@@ -369,19 +369,19 @@ cssCodeExample: |
     </div>
 
     <div class="grid grid-cols-1 gap-64 sm.gap-20">
-      <div class="grid grid-cols-1 sm.grid-cols-12 gap-64">
-        <div class="col-1 sm.col-4 flex align-items-center">
+      <div class="grid grid-cols-1 sm.grid-cols-12 gap-36 sm.gap-64">
+        <div class="col-1 sm.col-5 md.col-4 flex align-items-center">
           <div>
-            <div class="flex mb-36 gutter-x-n14">
-              <div class="w-48 h-48 radius-round bg-primary-100 border-3 border-white"></div>
-              <div class="w-48 h-48 radius-round bg-primary-400 border-3 border-white"></div>
-              <div class="w-48 h-48 radius-round bg-primary-800 border-3 border-white"></div>
+            <div class="flex mb-24 sm.mb-36 gutter-x-n14">
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-primary-100 border-2 sm.border-3 border-white"></div>
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-primary-400 border-2 sm.border-3 border-white"></div>
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-primary-800 border-2 sm.border-3 border-white"></div>
             </div>
             <h4 class="font-lg font-extrabold mb-24 tracking-tight text-white">Design Agnostic Colors</h4>
-            <p class="font-md mb-64 text-white">Match your brand quickly with brand agnostic colors. Simply tweak each color token to match your design.</p>
+            <p class="font-md text-white">Match your brand quickly with brand agnostic colors. Simply tweak each color token to match your design.</p>
           </div>
         </div>
-        <div class="col-1 sm.col-8 radius-lg bg-indigo bg-darken-8 border-1 border-indigo border-darken-4 home-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-indigo bg-darken-8 border-1 border-indigo border-darken-4 home-highlight">
 {% highlight "css" %}
 /* styles.css */
 :root {
@@ -397,19 +397,19 @@ cssCodeExample: |
 {% endhighlight %}
         </div>
       </div> 
-      <div class="grid grid-cols-1 sm.grid-cols-12 gap-64">
-        <div class="col-1 sm.col-4 flex align-items-center">
+      <div class="grid grid-cols-1 sm.grid-cols-12 gap-36 sm.gap-64">
+        <div class="col-1 sm.col-5 md.col-4 flex align-items-center">
           <div>
-            <div class="flex mb-36 gutter-x-n14">
-              <div class="w-48 h-48 radius-round bg-cyan border-3 border-white"></div>
-              <div class="w-48 h-48 radius-round bg-cyan bg-deepen-5 border-3 border-white"></div>
-              <div class="w-48 h-48 radius-round bg-cyan bg-deepen-9 border-3 border-white"></div>
+            <div class="flex mb-24 sm.mb-36 gutter-x-n14">
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan border-2 sm.border-3 border-white"></div>
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan bg-deepen-5 border-2 sm.border-3 border-white"></div>
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan bg-deepen-9 border-2 sm.border-3 border-white"></div>
             </div>
             <h4 class="font-lg font-extrabold mb-24 tracking-tight text-white">Composable Color Manipulation</h4>
-            <p class="font-md mb-64 text-white">Apply composable manipulation to any color. Increase or decrease saturation, lighten, and darken colors directly in your html.</p>
+            <p class="font-md text-white">Apply composable manipulation to any color. Increase or decrease saturation, lighten, and darken colors directly in your html.</p>
           </div>
         </div>
-        <div class="col-1 sm.col-8 radius-lg bg-sky bg-darken-8 border-1 border-sky border-darken-4 home-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-sky bg-darken-8 border-1 border-sky border-darken-4 home-highlight">
 {% highlight "html" %}
 <div class="bg-primary-500 bg-deepen-4">
   ...
@@ -425,19 +425,19 @@ cssCodeExample: |
 {% endhighlight %}
         </div>
       </div> 
-      <div class="grid grid-cols-1 sm.grid-cols-12 gap-64">
-        <div class="col-1 sm.col-4 flex align-items-center">
+      <div class="grid grid-cols-1 sm.grid-cols-12 gap-36 sm.gap-64">
+        <div class="col-1 sm.col-5 md.col-4 flex align-items-center">
           <div>
-            <div class="flex mb-36 gutter-x-n14">
-              <div class="w-48 h-48 radius-round bg-gradient border-3 border-white" style="--gradient: to right, #ffbebe, #4eff9d;"></div>
-              <div class="w-48 h-48 radius-round bg-gradient border-3 border-white" style="--gradient: to right, #c39eff, #85eeff;"></div>
-              <div class="w-48 h-48 radius-round bg-gradient border-3 border-white" style="--gradient: to right, #d2d2d2, #ff7ee3;"></div>
+            <div class="flex mb-24 sm.mb-36 gutter-x-n14">
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-gradient border-2 sm.border-3 border-white" style="--gradient: to right, #ffbebe, #4eff9d;"></div>
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-gradient border-2 sm.border-3 border-white" style="--gradient: to right, #c39eff, #85eeff;"></div>
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-gradient border-2 sm.border-3 border-white" style="--gradient: to right, #d2d2d2, #ff7ee3;"></div>
             </div>
             <h4 class="font-lg font-extrabold mb-24 tracking-tight text-white">Inline Gradient Support</h4>
-            <p class="font-md mb-64 text-white">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
+            <p class="font-md text-white">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
           </div>
         </div>
-        <div class="col-1 sm.col-8 radius-lg bg-pink bg-darken-8 border-1 border-pink border-darken-4 home-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-pink bg-darken-8 border-1 border-pink border-darken-4 home-highlight">
 {% highlight "html" %}
 <div class="bg-gradient" style="--gradient: to right, #ffbebe, #4eff9d;">
   ...
@@ -496,7 +496,7 @@ cssCodeExample: |
       </a>
     </div>
 
-    <div class="grid grid-rows-2 grid-cols-1 md.grid-cols-3 gap-20 h-512 mb-64">
+    <div class="grid grid-rows-2 grid-cols-1 sm.grid-cols-2 md.grid-cols-3 gap-20 h-512 mb-64">
       <div class="flex align-items-center justify-content-center row-2 radius-lg bg-gradient"  style="--gradient: to bottom, #f9d2be, #d69d7f;">
         <div class="w-100p max-w-288 radius-md overflow-hidden border-1 border-orange bg-white bg-opacity-20">
           <div class="grid grid-cols-1 gap-10 animate-pulse p-20">
@@ -505,13 +505,13 @@ cssCodeExample: |
           </div>
         </div>
       </div>
-      <div class="flex align-items-center justify-content-center radius-lg bg-gradient" style="--gradient: to bottom, #F4D2DE, #cfbaf7;">
+      <div class="flex align-items-center justify-content-center radius-lg p-20 bg-gradient" style="--gradient: to bottom, #F4D2DE, #cfbaf7;">
         <button type="button" class="btn btn-lg pl-14 radius-round cursor-not-allowed" disabled>
           <svg class="fill-current text-white animate-spin h-20 w-20 mr-14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M456.433 371.72l-27.79-16.045c-7.192-4.152-10.052-13.136-6.487-20.636 25.82-54.328 23.566-118.602-6.768-171.03-30.265-52.529-84.802-86.621-144.76-91.424C262.35 71.922 256 64.953 256 56.649V24.56c0-9.31 7.916-16.609 17.204-15.96 81.795 5.717 156.412 51.902 197.611 123.408 41.301 71.385 43.99 159.096 8.042 232.792-4.082 8.369-14.361 11.575-22.424 6.92z"/></svg>
           Processing
         </button>
       </div>
-      <div class="flex align-items-center justify-content-center row-2 radius-lg bg-gradient" style="--gradient: to bottom, #556679, #232d42;">
+      <div class="flex align-items-center justify-content-center row-2 radius-lg p-20 bg-gradient" style="--gradient: to bottom, #556679, #232d42;">
         <div class="relative align-left px-18 py-12 w-100p max-w-288 radius-xs border-l-3 border-green border-brighten-6 leading-5 bg-white bg-opacity-10 text-white font-semibold">
           <span class="absolute t-0 r-0 mt-n4 mr-n4 flex h-12 w-12">
             <span class="animate-ping absolute inline-flex h-12 w-12 radius-round bg-green bg-brighten-6 opacity-70"></span>
@@ -521,7 +521,7 @@ cssCodeExample: |
           <span class="font-xs opacity-60">Received 2 minutes ago</span>
         </div>
       </div>
-      <div class="flex align-items-center justify-content-center radius-lg bg-gradient" style="--gradient: to bottom, #8eb3e0, #5781de;">
+      <div class="flex align-items-center justify-content-center radius-lg p-20 bg-gradient" style="--gradient: to bottom, #8eb3e0, #5781de;">
         <div class="flex align-items-center justify-content-center radius-round border-2 border-white w-48 h-48 animate-bounce">
           <svg class="fill-current text-white h-20 w-20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"/></svg>
         </div>
@@ -529,7 +529,7 @@ cssCodeExample: |
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
+    <div class="grid grid-cols-1 sm.grid-cols-2 md.grid-cols-3 gap-64">
       <div>
         <h4 class="font-lg font-extrabold mb-24 tracking-tight">Built-in Common Animations</h4>
         <p class="font-md">Animations are great for providing extra context for your users. Easily apply bounce, ping, pulse, and spin animations to any element.</p>
@@ -570,13 +570,13 @@ cssCodeExample: |
 
 <section class="bg-white">
   <div class="wrapper py-80 sm.py-112">
-    <div class="grid grid-cols-1 sm.grid-cols-2 gap-96">
+    <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
       <div>
         <div class="mb-20">
           <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs font-bold tracking-looser text-black">Themeable</span>
         </div>
         <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tighter">
-          Theming your site is as easy as spinning a dial
+          Theming your site is <br>as easy as spinning a dial
         </h1>
 
         <div class="mb-64">
@@ -613,7 +613,7 @@ cssCodeExample: |
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md.grid-cols-2 gap-48">
+        <div class="grid grid-cols-1 sm.grid-cols-2 gap-48">
           <div>
             <div class="flex mb-24">
               <h4 class="font-lg font-extrabold tracking-tight">
@@ -634,7 +634,7 @@ cssCodeExample: |
       </div>
       <div class="flex align-items-center radius-lg bg-silver-200 p-20 py-80 overflow-hidden">
 
-        <div class="js-theme-demo flex flex-none w-640 transform translate-x-64 radius-lg bg-primary overflow-hidden" style="--primary-hue: 186; --primary-sat: 43%; --primary-ltn: 24%;">
+        <div class="js-theme-demo flex flex-none w-640 transform translate-x-64 sm.translate-x-160 md.translate-x-64 radius-lg bg-primary overflow-hidden" style="--primary-hue: 186; --primary-sat: 43%; --primary-ltn: 24%;">
           <div class="w-224 flex-none border-r-1 border-white border-opacity-20">
             <div class="flex p-14">
               <div class="radius-round w-10 h-10 mr-6 bg-red bg-lighten-4 bg-brighten-8"></div>
@@ -856,8 +856,8 @@ cssCodeExample: |
 <section class="bg-primary-900">
 
   <div class="wrapper py-80 sm.py-112">
-    <div class="grid grid-cols-1 sm.grid-cols-2 gap-96">
-      <div class="flex align-items-center justify-content-center px-20 pb-0 pt-96 bg-primary-800 bg-deepen-3 radius-lg">
+    <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
+      <div class="order-2 md.order-1 flex align-items-center justify-content-center px-20 pb-0 pt-96 bg-primary-800 bg-deepen-3 radius-lg">
         <div>
           <div class="bg-white dark.bg-primary-900 transition-200 radius-lg overflow-hidden w-100p max-w-288">
             <img src="/assets/img/apartment.jpg" class="cursor-pointer">
@@ -905,12 +905,12 @@ cssCodeExample: |
           </div>
         </div>
       </div>
-      <div>
+      <div class="order-1 md.order-2">
         <div class="mb-20">
           <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-yellow border-brighten-9 uppercase font-xs font-bold tracking-looser text-yellow text-brighten-9">Flexible Colors</span>
         </div>
         <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tighter text-white">
-          Apply Dark Mode <br>on any element
+          Apply Dark Mode <br class="hidden md.inline">on any element
         </h1>
 
         <div class="mb-64">
@@ -928,7 +928,7 @@ cssCodeExample: |
 </div>
 </div>
 
-        <div class="grid grid-cols-1 md.grid-cols-2 gap-48 text-white">
+        <div class="grid grid-cols-1 sm.grid-cols-2 gap-64 md.gap-48 text-white">
           <div>
             <div class="flex mb-24">
               <h4 class="bg-gradient bg-text text-transparent font-lg font-extrabold tracking-tight" style="--gradient: to right, #8F7CFF, #fd7cff;">
@@ -957,13 +957,13 @@ cssCodeExample: |
   </div>
 
   <div class="wrapper py-80 sm.py-112">
-    <div class="grid grid-cols-1 sm.grid-cols-2 gap-96">
+    <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
       <div class="">
         <div class="mb-20">
           <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-lime border-brighten-9 uppercase font-xs font-bold tracking-looser text-lime text-brighten-9">CDN Ready</span>
         </div>
         <h1 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tighter text-white">
-          Blazing fast delivery <br>with customizable design tokens
+          Blazing fast delivery <br class="hidden sm.inline">with customizable design tokens
         </h1>
 
         <div class="mb-64">
@@ -973,7 +973,7 @@ cssCodeExample: |
           </a>
         </div>
 
-        <div class="grid grid-cols-3 gap-20">
+        <div class="grid grid-cols-1 sm.grid-cols-3 gap-20">
           <div class="radius-md px-20 py-28 bg-primary-800 bg-deepen-2 bg-opacity-60">
             <div class="flex mb-20">
               <div class="font-5xl font-light bg-gradient bg-text text-transparent" style="--gradient: to right, #8F7CFF, #fd7cff;">2min</div>
@@ -1001,7 +1001,7 @@ cssCodeExample: |
         </div>
 
       </div>
-      <div class="grid grid-cols-1 gap-64">
+      <div class="grid grid-cols-1 gap-64 md.gap-48 text-white">
         <div>
           <h4 class="font-lg font-bold mb-24 tracking-tight text-white"><span class="font-extrabold mr-4">Step 1.</span> Install the Package</h4>
           <p class="font-md text-primary-100 text-opacity-80">Add the following code to the head of your project.</p>

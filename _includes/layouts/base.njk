@@ -56,6 +56,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  
 
 <script>
 
@@ -124,14 +125,14 @@ $(document).ready(function () {
   });
 
 
-  // Homepage Image Compare Container
+  // homepage Image Compare Container
   var dragging = false,
     scrolling = false,
     resizing = false;
-  //cache jQuery objects
+  // cache jQuery objects
   var imageComparisonContainers = $('.cd-image-container');
-  //check if the .cd-image-container is in the viewport 
-  //if yes, animate it
+  // check if the .cd-image-container is in the viewport 
+  // if yes, animate it
   checkPosition(imageComparisonContainers);
   $(window).on('scroll', function ()
   {
@@ -149,14 +150,14 @@ $(document).ready(function () {
     }
   });
 
-  //make the .cd-handle element draggable and modify .cd-resize-img width according to its position
+  // make the .cd-handle element draggable and modify .cd-resize-img width according to its position
   imageComparisonContainers.each(function ()
   {
     var actual = $(this);
     drags(actual.find('.cd-handle'), actual.find('.cd-resize-img'), actual, actual.find('.cd-image-label[data-type="original"]'), actual.find('.cd-image-label[data-type="modified"]'));
   });
 
-  //upadate images label visibility
+  // upadate images label visibility
   $(window).on('resize', function ()
   {
     if (!resizing)
@@ -199,7 +200,7 @@ $(document).ready(function () {
     resizing = false;
   }
 
-  //draggable funtionality - credits to http://css-tricks.com/snippets/jquery/draggable-without-jquery-ui/
+  // draggable funtionality - credits to http://css-tricks.com/snippets/jquery/draggable-without-jquery-ui/
   function drags(dragElement, resizeElement, container, labelContainer, labelResizeElement)
   {
     dragElement.on("mousedown vmousedown", function (e)
@@ -244,7 +245,7 @@ $(document).ready(function () {
   function animateDraggedHandle(e, xPosition, dragWidth, minLeft, maxLeft, containerOffset, containerWidth, resizeElement, labelContainer, labelResizeElement)
   {
     var leftValue = e.pageX + xPosition - dragWidth;
-    //constrain the draggable element to move inside his container
+    // constrain the draggable element to move inside his container
     if (leftValue < minLeft)
     {
       leftValue = minLeft;
