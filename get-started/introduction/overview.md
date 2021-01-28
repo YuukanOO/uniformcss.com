@@ -5,7 +5,7 @@ date: 1000-01-01
 lastUpdated: 2020-10-20
 ---
 
-## Introducing Uniform &nbsp;&nbsp;🦄
+## Introducing Uniform &nbsp;&nbsp;
 
 Thank you for checking out Uniform CSS! Uniform is a Sass-based utility framework that is principled around scale, ease-of-use, and customizability. The easiest way to get started is via the CDN or as a Sass dependency.
 
@@ -59,14 +59,17 @@ Prefer not to worry about preprocessors and just start building your site? Just 
 
 ```html
 <!-- index.html -->
-<link rel="stylesheet" href="https://unpkg.com/@zaydek/duomo@0.7.0-rc.24/dist/stack.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@zaydek/duomo@0.7.0-rc.24/dist/stack.css"
+/>
 ```
 
 ```css
 /* styles.css */
 :root {
   --body-color: black;
-  --font-sans: 'custom-font', sans-serif;
+  --font-sans: "custom-font", sans-serif;
   --btn-radius: 6px;
 }
 ```
@@ -126,8 +129,6 @@ In Uniform CSS, there’s no need to repeat yourself. You can access your semant
   background-color: hsl(140, 50%, 50%);
 }
 ```
-
-
 
 <h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">6</span> Comes with pre-built common components</h4>
 
