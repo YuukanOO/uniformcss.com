@@ -8,7 +8,7 @@ $responsive: false;
 $responsive-pseudos: false;
 $extra-selector: null;
 
-$properties: (backdrop-filter);
+$properties: (backdrop-filter, -webkit-backdrop-filter);
 $custom-properties: (
   --backdrop-blur: 0,
   --backdrop-grayscale: 0,

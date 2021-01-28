@@ -38,9 +38,9 @@ $includes: map.get($all-config, includes);
   a {
     text-decoration: none;
     cursor: pointer;
-    color: var(--link-color, MediumOrchid);
+    color: var(--link-color, RoyalBlue);
     &:hover {
-      color: var(--link-hover-color, MediumOrchid);
+      color: var(--link-hover-color, RoyalBlue);
     }
   }
 
