@@ -1,6 +1,6 @@
 {
   "name": "uniformcss",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Fully configurable, drag-and-drop utility-first CSS framework built completly in Sass.",
   "main": "styles.sass",
   "scripts": {
@@ -25,6 +25,6 @@
   "license": "MIT",
   "devDependencies": {
     "clean-css-cli": "^4.3.0",
-    "sass": "^1.29.0"
+    "sass": "^1.32.5"
   }
 }
