@@ -6,7 +6,6 @@
   "scripts": {
     "uniform:compile": "sass --load-path=./ --no-source-map styles.scss ../assets/css/styles.css --style compressed",
     "uniform:watch": "sass --load-path=./ --no-source-map --watch styles.scss ../assets/css/styles.css",
-    "uniform:cleancss": "cleancss -O2 ../assets/css/styles.css --output ../assets/css/styles.css",
     "uniform": "npm run uniform:compile && npm run uniform:cleancss"
   },
   "keywords": [
@@ -24,7 +23,6 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "clean-css-cli": "^4.3.0",
     "sass": "^1.32.5"
   }
 }
