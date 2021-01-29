@@ -37,11 +37,20 @@
 
 .toc {
 	font-size: font-size(sm);
-	line-height: leading(looser);
+	line-height: leading(tight);
 	a {
 		color: fill(gray-200);
 		&:hover {
 			color: fill(black);
+		}
+	}
+	& > ol {
+		& > li {
+			margin-bottom: size(10);
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 }
