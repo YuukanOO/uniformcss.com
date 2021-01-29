@@ -74,6 +74,9 @@
 		}
 	}
 	& > ol {
+		ol {
+			display: none;
+		}
 		& > li {
 			margin-bottom: size(10);
 

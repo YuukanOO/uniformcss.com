@@ -49121,6 +49121,9 @@ pre[class*=language-] {
 .toc a:hover {
   color: hsl(0, calc(0% + 0%), calc(0% + 0%));
 }
+.toc > ol ol {
+  display: none;
+}
 .toc > ol > li {
   margin-bottom: 0.625rem;
 }
