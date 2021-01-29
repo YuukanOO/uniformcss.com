@@ -1,6 +1,6 @@
 ---
 title: Managing File Size
-description: Learn about Comma Compression&trade; and reducing file-size.
+description: Learn how to keep file-size in check.
 date: 1000-01-03
 ---
 
@@ -8,14 +8,16 @@ date: 1000-01-03
 
 Utility-first frameworks are generally known for their large file-size but Uniform comes in at only **29kb gzipped** and **256kb minified**. Below is a comparison of how Uniform ranks compared to other popular frameworks.
 
-| Framework | Original Size | Minified | Gzipped |
-| - | - | - | - |
-| Semantic UI | 809.4kb | 613.8kb | 100.6kb |
-| Tailwind | 783.5kb | 603.3kb | 78.0kb |
-| Uniform | 224.2kb | 189.9kb | 24.9kb |
-| Bulma | 224.2kb | 189.9kb | 24.9kb |
-| Bootstrap | 187.8kb | 152.1kb | 22.7kb |
-| Foundation | 154.1kb | 119.2kb | 15.9kb |
+| Framework   | Original Size | Minified | Gzipped |
+| ----------- | ------------- | -------- | ------- |
+| Semantic UI | 809.4kb       | 613.8kb  | 100.6kb |
+| Tailwind    | 783.5kb       | 603.3kb  | 78.0kb  |
+| Uniform     | 224.2kb       | 189.9kb  | 24.9kb  |
+| Bulma       | 224.2kb       | 189.9kb  | 24.9kb  |
+| Bootstrap   | 187.8kb       | 152.1kb  | 22.7kb  |
+| Foundation  | 154.1kb       | 119.2kb  | 15.9kb  |
+
+{.table}
 
 ---
 
@@ -25,8 +27,10 @@ Uniform takes a unique approach to how pseudo variant selectors are generated. R
 
 ```css
 /* styles.css */
-.bg-red, .hover\:bg-red:hover, .focus\:bg-red:focus {
-  ...
+.bg-red,
+.hover\:bg-red:hover,
+.focus\:bg-red:focus {
+  ...;
 }
 ```
 
@@ -34,7 +38,7 @@ Uniform takes a unique approach to how pseudo variant selectors are generated. R
 
 ## Tailored Configuration
 
-**Uniform takes a more considered approach** in determining which properties should have responsive ness and pseudo variants activated by default. For example, it makes sense for color properties such as `background-color` to change on hover, however properties such as `flex-wrap` would rarely need to. Also, properties such as `letter-spacing` will not need to be responsive as it would not normally change based on breakpoint. This type of tailored thinking helps to drastically improve file size footprint. 
+**Uniform takes a more considered approach** in determining which properties should have responsive ness and pseudo variants activated by default. For example, it makes sense for color properties such as `background-color` to change on hover, however properties such as `flex-wrap` would rarely need to. Also, properties such as `letter-spacing` will not need to be responsive as it would not normally change based on breakpoint. This type of tailored thinking helps to drastically improve file size footprint.
 
 You can of course, override the default settings and enable responsiveness, and customize variants for any CSS property.
 
@@ -52,7 +56,7 @@ You can of course, override the default settings and enable responsiveness, and 
       )
     )
   )
-)
+);
 ```
 
 ---

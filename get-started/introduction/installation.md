@@ -9,8 +9,8 @@ date: 1000-01-02
 Uniform is super easy to get started and setup, you can either:
 
 1. Use **npm** to install the Uniform package.
-3. Use the **jsDelivr CDN** to link directly to the Uniform stylesheet.
-4. Clone or download the project **directly** from the GitHub repository.
+2. Use the **jsDelivr CDN** to link directly to the Uniform stylesheet.
+3. Clone or download the project **directly** from the GitHub repository.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -94,19 +94,20 @@ You can customize Uniform directly in your sass stylesheet. For more information
 
 ## Using the jsDelivr CDN
 
-For a even quicker way to get started, simply add Uniform through **jsDelivr CDN**.
+For a even quicker way to get started, simply add the following in the head of your project.
 
 ```html
-<link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/uniformcss" />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/uniformcss@1.0.0/uniform.css"
+/>
 ```
 
-> Unlike the native installation, using the pre-packaged version of Uniform will only allow for customizations for attributes such as fonts, sizes and colors, you will not get access to more advanced customization options such as prefixing, custom variants, and custom breakpoints.
+> Unlike the native installation, using the pre-packaged version of Uniform will only allow for customizations for attributes such as fonts, sizes and colors, you will not get access to more advanced customization options such as prefixing, custom variants, and adding of custom breakpoints.
 
 ---
 
 ## Install with NPM
-
-
 
 <h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">1</span> Install the UniformCSS node package</h4>
 
@@ -117,7 +118,6 @@ npm i uniformcss
 ```
 
 <div class="mb-10"></div>
-
 
 <h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">2</span> Include Uniform in sass project</h4>
 
@@ -135,4 +135,4 @@ Ensure the Uniform folder is in the same directory as your `styles.scss` file. A
 
 To download the project directly, please visit the Github repository.
 
-<a class="font-600" href="https://github.com/ThinkUniform/UniformCSS" target="_blank">Visit Github Repository <i class="fas fa-external-link-alt ml-4"></i></a>
+<a class="font-semibold hover.underline" href="https://github.com/ThinkUniform/UniformCSS" target="_blank">Visit Github Repository</a>

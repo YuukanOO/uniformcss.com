@@ -7,7 +7,7 @@ lastUpdated: 2020-10-20
 
 ## Introducing Uniform &nbsp;&nbsp;
 
-Thank you for checking out Uniform CSS! Uniform is a Sass-based utility framework that is principled around scale, ease-of-use, and customizability. The easiest way to get started is via the CDN or as a Sass dependency.
+Thank you for checking out Uniform CSS, a utility-first CSS framework built entirely on Sass. Uniform was designed to help front-end teams build beautifully consistent and maintainable sites, and UI components. It is principled around scale, speed, ease-of-use, and customizability. The easiest way to get started is via the CDN or as a Sass dependency.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -15,7 +15,7 @@ Thank you for checking out Uniform CSS! Uniform is a Sass-based utility framewor
 
 ## How Uniform CSS is different
 
-Here are the **top reasons** why Uniform CSS could be a great fit for your next project! 🚀
+Here are some of the **top reasons** why Uniform CSS could be a great fit for your next ambitious project!
 
 <h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 text-black radius-round">1</span> It's written entirely in Sass</h4>
 
@@ -61,7 +61,7 @@ Prefer not to worry about preprocessors and just start building your site? Just 
 <!-- index.html -->
 <link
   rel="stylesheet"
-  href="https://unpkg.com/@zaydek/duomo@0.7.0-rc.24/dist/stack.css"
+  href="https://cdn.jsdelivr.net/npm/uniformcss@1.0.0/uniform.css"
 />
 ```
 
@@ -106,13 +106,13 @@ While shiny new CSS specs become standardized, you don’t have to wait for Unif
 ```css
 /* styles.css */
 .leading-trimmer { leading-trim: both; }
-.text-edge { text-edge: cap alphabetic; }
+.text-cap { text-edge: cap alphabetic; }
 ...
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">5</span> Built-in helpers to access semantic tokens</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">5</span> Built-in helper functions to access theme values</h4>
 
-In Uniform CSS, there’s no need to repeat yourself. You can access your semantic tokens, like `fill(red)`, using getter functions.
+You can build your own components and access your theme variables directly in Sass using helper functions.
 
 ```scss
 // styles.scss
@@ -134,7 +134,7 @@ In Uniform CSS, there’s no need to repeat yourself. You can access your semant
 
 To help save you time, Uniform CSS comes with **optional** pre-built components for common UI elements such as buttons and form elements. These can all be enabled, disabled, and customized down to the last pixel.
 
-<section class="flex align-items-center justify-content-center bg-silver-200 p-20 radius-md">
+<section class="flex align-items-center justify-content-center bg-silver-300 p-20 py-48 radius-md">
   <button class="btn btn-primary mr-4">Button</button>
   <button class="btn btn-secondary mr-4">Button</button>
   <button class="btn btn-tertiary">Button</button>
@@ -148,7 +148,7 @@ To help save you time, Uniform CSS comes with **optional** pre-built components 
 
 <h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">7</span> Exclude or include only the properties you need</h4>
 
-Almost every aspect of Uniform CSS is optional, you can very quickly exclude and include any number of properties.
+Every aspect of Uniform CSS is optional, you can quickly exclude all properties and only include what you need.
 
 ```scss
 // styles.scss
@@ -166,4 +166,31 @@ Almost every aspect of Uniform CSS is optional, you can very quickly exclude and
 
 <h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">8</span> Designed to be Lightweight</h4>
 
-Uniform automatically applies comma seperated selectors of pseudos variants and only activates responsiveness to the appropriate set of properties during the compilation. This helps to drastically improve file-size and make the CDN version a perfect way to get quickly started.
+Uniform is smart about which pseudo variants are activated for each utility property. Pseudo variants are also comma seperated to ensure no uncessary duplicate properties are included. This helps to drastically improve file-size and make the CDN version a perfect way to get quickly started.
+
+<div class="grid grid-cols-1 sm.grid-cols-3 gap-20">
+  <div class="radius-md px-20 py-28 bg-primary-900">
+    <div class="flex mb-20">
+      <div class="font-5xl font-light bg-gradient bg-text text-transparent" style="--gradient: to right, #8F7CFF, #fd7cff;">2min</div>
+    </div>
+    <div class="h-2 bg-gradient mb-14" style="--gradient: to right, #8F7CFF, #fd7cff;">
+    </div>
+    <p class="font-sm text-white">project <br>setup time <br>required only</p>
+  </div>
+  <div class="radius-md px-20 py-28 bg-primary-900">
+    <div class="flex mb-20">
+      <div class="font-5xl font-light bg-gradient bg-text text-transparent" style="--gradient: to right, #7CD0FF, #7CFFA9;">61kb</div>
+    </div>
+    <div class="h-2 bg-gradient mb-14" style="--gradient: to right, #7CD0FF, #7CFFA9;">
+    </div>
+    <p class="font-sm text-white">gzipped for <br>lightning fast <br>delivery</p>
+  </div>
+  <div class="radius-md px-20 py-28 bg-primary-900">
+    <div class="flex mb-20">
+      <div class="font-5xl font-light bg-gradient bg-text text-transparent" style="--gradient: to right, #F5FF7C, #FFBB7C;">136</div>
+    </div>
+    <div class="h-2 bg-gradient mb-14" style="--gradient: to right, #F5FF7C, #FFBB7C;">
+    </div>
+    <p class="font-sm text-white">configurable <br>design <br>tokens</p>
+  </div>
+</div>
