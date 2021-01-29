@@ -6,7 +6,7 @@ date: 1000-01-02
 
 ## Colors
 
-Customizing the color scheme to match your brand is an important aspect of Uniform CSS. Colors in Uniform are flexibile and semantically organized to fit standard brand design systems. Uniform also provides powerful utility-based manipulation features that provides both saturation and lightness control.
+Customizing the color scheme to match your brand is an important aspect of Uniform CSS. Colors in Uniform are flexibile and semantically organized to fit standard brand design systems. Uniform also provides a flexible way to apply color manipulation in a composable way directly in your HTML.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
