@@ -6,10 +6,18 @@ date: 1000-01-02
 
 ## Truly Plug'n Play
 
-Loading Uniform CSS through a CDN is the quickest and easiest way to get up and running. Although you may not get the full customization freedom that the Sass version provides, the CDN version still provides lots of ways to customize Uniform CSS in the form of CSS variables (custom properties).
+Although you may not get the full customization freedom that the Sass version provides, the CDN version still provides lots of ways to customize Uniform CSS in the form of CSS variables (custom properties).
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
+
+## Accessing CDN Build
+
+Loading Uniform CSS through a CDN is the quickest and easiest way to get up and running. Include the following CDN stylesheet in the head of your HTML.
 
 ```html
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/uniformcss@1.0.0/uniform.css" rel="stylesheet">
 ```
 
 ```css
@@ -24,7 +32,7 @@ Loading Uniform CSS through a CDN is the quickest and easiest way to get up and 
 
 ## How it works
 
-Behind the scenes, Uniform CSS provides CSS variable *hooks* with a fallback value. When these hook variables are defined in your CSS it will override the default fallback value. Using this method provides you with the ability to override and customize many of the default theme settings of Uniform CSS without the need for Sass. 
+Behind the scenes, Uniform CSS provides CSS variable *hooks* with a fallback value. When these hook variables are defined in your CSS it will override the default fallback value. Using this method provides you with the ability to override and customize many of the default theme settings Uniform provides without the need to include Sass in your build process. 
 
 ```css
 body {
@@ -61,7 +69,8 @@ The following starter style variables are available for overriding.
 :root {
   --body-font-size: 1rem;
   --body-leading: 1;
-  --body-color: black;
+  --body-background-color: white;
+  --body-text-color: black;
 
   --heading-leading: 1.25rem;
   --heading-margin: 0.5em;
@@ -70,8 +79,8 @@ The following starter style variables are available for overriding.
   --paragraph-leading: 1.75;
   --paragraph-margin: 1.5rem;
 
-  --link-color: MediumOrchid;
-  --link-hover-color: MediumOrchid;
+  --link-color: RoyalBlue;
+  --link-hover-color: RoyalBlue;
 
   --bold-font-weight: 700;  
 }
@@ -81,7 +90,7 @@ The following starter style variables are available for overriding.
 
 ## Theme Variables
 
-All theme variables are available for overriding as well. To see more information on which theme variables are available please visit the section on Theming.
+All theme variables are available for overriding as well. To see more information on which theme variables are available please visit the section on Theming. You can also inspect this page element to see which root variables are available.
 
 ```css
 :root {

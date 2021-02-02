@@ -14,7 +14,7 @@ Customizing the color scheme to match your brand is an important aspect of Unifo
 
 ## Primary Colors
 
-Primary colors are associated to your core brand colors and are featured often in your UI. By default, there are three primary color variants available to be customized. Each primary color also has predefined shades available.
+Primary colors are a color set designed to support your core brand colors. These are also colors that will typically be featured often in your UI. By default, there are three primary color variants available to be customized. Each primary color also has predefined shades available.
 
 <div class="grid grid-cols-3 gap-24 leading-6">
   <div class="radius-md overflow-hidden">
@@ -121,7 +121,7 @@ Primary colors are associated to your core brand colors and are featured often i
 
 ## Secondary Colors
 
-Secondary colors are support primary colors or accents that compliment your brand. By default, there are 9 secondary color variants available.
+Secondary colors are a palette of colors designed to be complimentary and supportive of the primary set. These colors are often referred to as accents and used to further accentuate your brand. By default, there are 9 secondary color variants available.
 
 <div class="grid grid-cols-3 gap-24 leading-6">
   <div class="h-96 p-18 radius-sm bg-secondary text-white font-xs font-bold">
@@ -157,7 +157,7 @@ Secondary colors are support primary colors or accents that compliment your bran
 
 ## Temperature Colors
 
-Temperature colors are colors dedicated to be used to represent intensity or state. They are intended to be used for representing form input states such as warning or danger.
+Temperature colors are specifically designed to be used to represent intensity or state. They are particularly useful for representing form input states such as warning or danger.
 
 <div class="grid grid-cols-4 leading-6 gap-18">
   <div class="p-12 radius-sm text-white font-xs font-bold bg-cold">
@@ -178,7 +178,7 @@ Temperature colors are colors dedicated to be used to represent intensity or sta
 
 ## Grayscale Colors
 
-There are two shades of grayscale available, `silver` and `gray`. Each grayscale color has predefined shades available.
+There are two ranges of grayscale available, `silver` and `gray`. Each have predefined shades available.
 
 <div class="grid grid-cols-2 gap-24 leading-6">
   <div class="radius-md overflow-hidden">
@@ -252,7 +252,7 @@ There are two shades of grayscale available, `silver` and `gray`. Each grayscale
 
 ## System Colors
 
-System colors are spectral colors that are reserved for situations that deviate outside of the existing sets.
+System colors are spectral colors that are reserved for one-off situations where a specific color is needed.
 
 <div class="grid grid-cols-3 leading-6 gap-18">
   <div class="p-12 radius-sm text-white font-xs font-bold bg-red">

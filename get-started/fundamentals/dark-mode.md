@@ -1,5 +1,5 @@
 ---
-title: Helper Functions
+title: Dark Mode
 description: Get started with built-in helper functions
 date: 1000-01-08
 ---

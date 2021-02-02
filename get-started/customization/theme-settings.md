@@ -71,7 +71,9 @@ The following theme setting definitions apply.
 | `colors` | Specifies the base colors |
 | `gradients` | Specifies the base gradients |
 | `breakpoints` | Specifies the base breakpoints |
-| `sizes` | Specifies the base sizes |
+| `positive-sizes` | Specifies the positive base sizes |
+| `negative-sizes` | Specifies the negative base sizes |
+| `range-limits` | Specify the size limits for size properties |
 | `shadows` | Specifies the base shadows |
 | `radiuses` | Specifies the base radiuses |
 | `font-families` | Specifies the base font-families |

@@ -4,21 +4,26 @@ description: Learn about default reset and starter styles
 date: 1000-01-05
 ---
 
-
 ## Reset Styles
 
-By default, Uniform applies reset of styles to flatten browser inconsistencies and to provide a clean foundation to build utility classes on.
+By default, Uniform applies reset of styles to flatten browser inconsistencies and to provide a clean foundation to build utility properties on.
 
-**Here are the main points worth noting:**
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
+
+## Main points worth noting
 
 1. All elements have no default `margin` or `padding`.
-2. All elements have a default border style applied to make it easier to apply borders.
+2. All elements have a default border style applied.
 3. Body has a default `line-height` of 1.
 4. All media elements are set to `display: block`.
 
 ```css
 /* Reset everything */
-*,*::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -68,8 +73,25 @@ select {
 }
 
 /* Remove list style */
-ol,ul {
+ol,
+ul {
   list-style: none;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 ```
 
@@ -77,7 +99,7 @@ ol,ul {
 
 ## Disabling Reset Styles
 
-If you prefer to exclude reset styles from your build, simply pass the following setting in your configuration. 
+If you prefer to exclude reset styles from your build, simply pass the following setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
@@ -88,7 +110,6 @@ If you prefer to exclude reset styles from your build, simply pass the following
 ```
 
 ---
-
 
 ## Starter Styles
 
@@ -103,40 +124,48 @@ body {
   font-size: var(--body-font-size, 1rem);
   font-weight: var(--body-font-weight, var(--font-regular));
   line-height: var(--body-leading, 1);
-  color: var(--body-color, black);
+  background-color: var(--body-background-color, white);
+  color: var(--body-text-color, black);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: var(--heading-leading, var(--leading-tighter));
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--heading-leading, leading(tighter));
   margin-bottom: var(--heading-margin, 0.5em);
   color: var(--heading-color, black);
-}
-h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 p {
-  line-height: var(--paragraph-leading, var(--leading-base));
+  line-height: var(--paragraph-leading, leading(base));
   margin-bottom: var(--paragraph-margin, 1.5rem);
-}
-p:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-  color: var(--link-color, MediumOrchid);
-}
-a:hover {
-  color: var(--link-hover-color, MediumOrchid);
-}
-
-b, strong {
-  font-weight: var(--bold-font-weight, var(--font-bold));
+  color: var(--link-color, RoyalBlue);
+  &:hover {
+    color: var(--link-hover-color, RoyalBlue);
+  }
 }
 
-sub, sup {
+b,
+strong {
+  font-weight: var(--bold-font-weight, font-weight(bold));
+}
+
+sub,
+sup {
   position: relative;
   font-size: 0.75em;
 }
@@ -151,8 +180,9 @@ sup {
   left: 0.25em;
 }
 
-pre, code {
-  font-family: var(--font-mono);
+pre,
+code {
+  font-family: font-family(mono);
 }
 ```
 
@@ -164,26 +194,26 @@ Starter styles include customer properties with fallback values that act as a ho
 
 ```css
 :root {
-  --background-color: ... ;
+  --background-color: ...;
 
-  --body-font-size: ... ;
-  --body-font-weight: ... ;
-  --body-leading: ... ;
-  --body-background-color: ... ;
-  --body-text-color: ... ;
+  --body-font-size: ...;
+  --body-font-weight: ...;
+  --body-leading: ...;
+  --body-background-color: ...;
+  --body-text-color: ...;
 
-  --heading-leading: ... ;
-  --heading-margin: ... ;
-  --heading-color: ... ;
+  --heading-leading: ...;
+  --heading-margin: ...;
+  --heading-color: ...;
 
-  --paragraph-leading: ... ;
-  --paragraph-margin: ... ;
+  --paragraph-leading: ...;
+  --paragraph-margin: ...;
 
-  --link-color: ... ;
-  --link-hover-color: ... ;
-  --link-active-color: ... ;
+  --link-color: ...;
+  --link-hover-color: ...;
+  --link-active-color: ...;
 
-  --bold-font-weight: ... ;
+  --bold-font-weight: ...;
 }
 ```
 
@@ -191,7 +221,7 @@ Starter styles include customer properties with fallback values that act as a ho
 
 ## Disabling Starter Styles
 
-If you prefer to exclude starter styles from your build, simply pass the following setting in your configuration. 
+If you prefer to exclude starter styles from your build, simply pass the following setting in your configuration.
 
 ```scss
 @use "uniform" as * with (

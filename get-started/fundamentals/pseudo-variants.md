@@ -4,6 +4,13 @@ description: Learn how classes can change based on pseudo interaction.
 date: 1000-01-04
 ---
 
+## Pseudo Interactions
+
+Pseudos allow for utility properties to be conditionally applied based on user interaction. These include interactions such as `hover`, `focus`, and etc.
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
 
 ## Pseudo Interactions
 
@@ -16,9 +23,7 @@ Pseudo interactions such as hover can be achieved by appending the pseudo varian
 </section>
 
 ```html
-<button class="bg-primary-500 hover.bg-primary-600">
-  Hover on me
-</button>
+<button class="bg-primary-500 hover.bg-primary-600">Hover on me</button>
 ```
 
 ---
@@ -102,12 +107,11 @@ The following pseudo interactions are available to be activated for each propert
   </tbody>
 </table>
 
-
 ---
 
 ## Enabling Pseudos
 
-By default, only a subset of properties have pseudo variants enabled. To see which pseudos are enabled, please refer to the glossary. You can enable pseudo variants by passing preferred pseudos to the  `pseudos` map for each property in your configuration.
+By default, only a subset of properties have pseudo variants enabled. To see which pseudos are enabled, please refer to the glossary. You can enable pseudo variants by passing preferred pseudos to the `pseudos` map for each property in your configuration.
 
 ```scss
 @use "uniform" as * with (
@@ -137,7 +141,7 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    pseudo-delimiter: '\\:',
+    pseudo-delimiter: ':',
   )
 );
 ```
@@ -173,7 +177,6 @@ You can extend the available set of pseudos by passing in key value pairs to the
 ...
 ```
 
-
 ---
 
 ### First Child
@@ -193,15 +196,9 @@ The `first.<property>` allows you to apply a utility to the first child.
 </section>
 
 ```html
-<div class="opacity-30 first.opacity-100">
-	1
-</div>
-<div class="opacity-30 first.opacity-100">
-	2
-</div>
-<div class="opacity-30 first.opacity-100">
-	3
-</div>
+<div class="opacity-30 first.opacity-100">1</div>
+<div class="opacity-30 first.opacity-100">2</div>
+<div class="opacity-30 first.opacity-100">3</div>
 ```
 
 ---
@@ -223,15 +220,9 @@ The `last.<property>` allows you to apply a utility to the last child.
 </section>
 
 ```html
-<div class="opacity-30 last.opacity-100">
-	1
-</div>
-<div class="opacity-30 last.opacity-100">
-	2
-</div>
-<div class="opacity-30 last.opacity-100">
-	3
-</div>
+<div class="opacity-30 last.opacity-100">1</div>
+<div class="opacity-30 last.opacity-100">2</div>
+<div class="opacity-30 last.opacity-100">3</div>
 ```
 
 ---
@@ -253,15 +244,9 @@ The `first-type.<property>` allows you to apply a utility to the first of type.
 </section>
 
 ```html
-<div class="opacity-30 first-type.opacity-100">
-	1
-</div>
-<div class="opacity-30 first-type.opacity-100">
-	2
-</div>
-<div class="opacity-30 first-type.opacity-100">
-	3
-</div>
+<div class="opacity-30 first-type.opacity-100">1</div>
+<div class="opacity-30 first-type.opacity-100">2</div>
+<div class="opacity-30 first-type.opacity-100">3</div>
 ```
 
 ---
@@ -283,15 +268,9 @@ The `last-type.<property>` allows you to apply a utility to the last of type.
 </section>
 
 ```html
-<div class="opacity-30 last-type.opacity-100">
-	1
-</div>
-<div class="opacity-30 last-type.opacity-100">
-	2
-</div>
-<div class="opacity-30 last-type.opacity-100">
-	3
-</div>
+<div class="opacity-30 last-type.opacity-100">1</div>
+<div class="opacity-30 last-type.opacity-100">2</div>
+<div class="opacity-30 last-type.opacity-100">3</div>
 ```
 
 ---
@@ -313,15 +292,9 @@ The `odd.<property>` allows you to apply a utility to the odd child.
 </section>
 
 ```html
-<div class="opacity-30 odd.opacity-100">
-	1
-</div>
-<div class="opacity-30 odd.opacity-100">
-	2
-</div>
-<div class="opacity-30 odd.opacity-100">
-	3
-</div>
+<div class="opacity-30 odd.opacity-100">1</div>
+<div class="opacity-30 odd.opacity-100">2</div>
+<div class="opacity-30 odd.opacity-100">3</div>
 ```
 
 ---
@@ -343,15 +316,9 @@ The `even.<property>` allows you to apply a utility to the even child.
 </section>
 
 ```html
-<div class="opacity-30 even.opacity-100">
-	1
-</div>
-<div class="opacity-30 even.opacity-100">
-	2
-</div>
-<div class="opacity-30 even.opacity-100">
-	3
-</div>
+<div class="opacity-30 even.opacity-100">1</div>
+<div class="opacity-30 even.opacity-100">2</div>
+<div class="opacity-30 even.opacity-100">3</div>
 ```
 
 ---
@@ -367,9 +334,7 @@ The `hover.<property>` allows you to apply a utility on hover.
 </section>
 
 ```html
-<button class="bg-primary-500 hover.bg-primary-600">
-	Hover on me
-</button>
+<button class="bg-primary-500 hover.bg-primary-600">Hover on me</button>
 ```
 
 ---
@@ -385,9 +350,7 @@ The `active.<property>` allows you to apply a utility on active.
 </section>
 
 ```html
-<button class="bg-primary-500 active.bg-primary-600">
-	Click me
-</button>
+<button class="bg-primary-500 active.bg-primary-600">Click me</button>
 ```
 
 ---
@@ -491,8 +454,6 @@ The `group-hover.<property>` allows you to apply properties when the parent cont
 ### Group Focus
 
 The `group-focus.<property>` operates in the same way as `group-hover` but allows you to apply properties when the parent container is in focus. You must assign the parent container with a `group` class.
-
-
 
 <section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
   <button class="group flex align-items-center p-12 px-18 bg-primary-500 focus.bg-black transition-100 cursor-pointer font-bold text-white radius-sm">

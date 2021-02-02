@@ -4,13 +4,13 @@ description: A quick introduction into built-in modules.
 date: 1000-01-07
 ---
 
-
 ## What are Modules?
 
-Modules in Uniform are pre-built components for common UI elements such as buttons, forms, and tables. Uniform provides these modules to help avoid having to build these types of components from scratch. 
+Modules in Uniform are pre-built components for common UI elements such as buttons, forms, and tables. Uniform provides these modules to help avoid having to build these types of components from scratch.
 
 Out of the box, Uniform includes modules for **buttons**, **responsive tables**, **form elements**, **markdown**, and **wrappers**.
 
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
 ---
 
@@ -32,24 +32,24 @@ The button module come in various types and supports multiple sizes. To learn mo
 
 The form module provides styling for basic form elements. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/form/">form</a>.
 
-<section class="radius-sm bg-silver-200 p-6">
+<section class="radius-sm bg-silver-200 p-20">
   <form>
-    <div class="mb-6 last.mb-0">
-      <label class="label mb-2">Email</label>
+    <div class="mb-20 last.mb-0">
+      <label class="label mb-6">Email</label>
       <input class="input" placeholder="Email" value="john.titor@apple.com">
     </div>
-    <div class="mb-6 last.mb-0">
-      <label class="label mb-2">Username</label>
+    <div class="mb-20 last.mb-0">
+      <label class="label mb-6">Username</label>
       <input class="input" type="text" placeholder="UniformCSS" value="@UniformCSS">
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <label class="checkbox">
         <input type="checkbox" checked required />
         <div class="checkbox__checkmark"></div>
         Checkbox
       </label>
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <label class="radio mr-4">
         <input type="radio" name="radio" checked />
         <div class="radio__checkmark"></div>
@@ -61,13 +61,13 @@ The form module provides styling for basic form elements. To learn more about us
         Radio
       </label>
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <label class="toggle">
         <input type="checkbox" checked />
         <div class="toggle__switch"></div>
       </label>
     </div>
-    <div class="mb-6 last.mb-0">
+    <div class="mb-20 last.mb-0">
       <div class="select">
         <select>
           <option selected>Selected</option>
@@ -82,17 +82,17 @@ The form module provides styling for basic form elements. To learn more about us
 
 ```html
 <form>
-  <div class="mb-6 last.mb-0">
-    <label class="label mb-2">Email</label>
-    <input class="input" placeholder="Email" value="john.titor@apple.com">
+  <div class="mb-20 last.mb-0">
+    <label class="label mb-6">Email</label>
+    <input class="input" placeholder="Email" value="john.titor@apple.com" />
   </div>
 
-  <div class="mb-6 last.mb-0">
-    <label class="label mb-2">Username</label>
-    <input class="input" type="text" placeholder="UniformCSS" value="@UniformCSS">
+  <div class="mb-20 last.mb-0">
+    <label class="label mb-6">Username</label>
+    <input class="input" type="text" placeholder="UniformCSS" value="@UniformCSS" />
   </div>
 
-  <div class="mb-6 last.mb-0">
+  <div class="mb-20 last.mb-0">
     <label class="checkbox">
       <input type="checkbox" checked required />
       <div class="checkbox__checkmark"></div>
@@ -100,7 +100,7 @@ The form module provides styling for basic form elements. To learn more about us
     </label>
   </div>
 
-  <div class="mb-6 last.mb-0">
+  <div class="mb-20 last.mb-0">
     <label class="radio mr-4">
       <input type="radio" name="radio" checked />
       <div class="radio__checkmark"></div>
@@ -113,7 +113,7 @@ The form module provides styling for basic form elements. To learn more about us
     </label>
   </div>
 
-  <div class="mb-6 last.mb-0">
+  <div class="mb-20 last.mb-0">
     <label class="toggle">
       <input type="checkbox" checked />
       <div class="toggle__switch"></div>
@@ -133,21 +133,13 @@ The form module provides styling for basic form elements. To learn more about us
 </form>
 ```
 
-**All modules are enabled by default**, to enable this module, pass in the setting `false`, to `$include-form-module` in your configuration.
-
-```scss
-@use "uniform" as * with (
-  $include-form-module: false
-);
-```
-
 ---
 
 ## Table Module
 
 The table module provides styling for the basic table element. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/table/">table</a>.
 
-<section class="radius-sm bg-silver-200 p-6">
+<section class="radius-sm bg-silver-200 p-20">
   <table class="table table-stack sm.table-unstack">
     <thead>
       <tr>
@@ -196,9 +188,7 @@ The table module provides styling for the basic table element. To learn more abo
 The markdown module provides basic typographical styling useful for markdown styling. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/markdown/">markdown</a>.
 
 ```html
-<div class="wrapper">
-  ...
-</div>
+<div class="markdown">...</div>
 ```
 
 ---
@@ -208,9 +198,7 @@ The markdown module provides basic typographical styling useful for markdown sty
 The wrapper module is a container that provides set of `max-width` properties based on various breakpoints. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/wrapper/">wrapper</a>.
 
 ```html
-<div class="wrapper">
-  ...
-</div>
+<div class="wrapper">...</div>
 ```
 
 ---
@@ -233,4 +221,3 @@ By default, Uniform CSS comes with all modules enabled. To exclude all or indivi
   )
 );
 ```
-

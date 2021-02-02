@@ -1,12 +1,12 @@
 ---
 title: Build Settings
-description: Control how properties are constructed.
+description: Explore global build settings for Uniform.
 date: 1000-01-03
 ---
 
 ## Build Settings
 
-Build settings are global in influence and specifies how your your utility classes are generated. These include the option of appending a prefix, changing the shorthand delimiter, and applying `!important` to each classes.
+Build settings are global in influence and specifies how your your utility classes are generated. These include the option of appending a prefix, changing the shorthand delimiter, and applying `!important` tags and more.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -44,7 +44,9 @@ The following build setting definitions apply.
 | `delimiter` | `-` | Specifies the delimiter that separates shorthand name to its variant. |
 | `pseudo-delimiter` | `.` | Specifies the delimiter of pseudo variants. |
 | `screen-delimiter` | `.` | Specifies the delimiter of breakpoint variants. |
+| `screen-delimiter` | `.` | Specifies the delimiter of breakpoint variants. |
 
+{.table}
 
 ---
 
@@ -54,7 +56,7 @@ Advanced settings provide extra functionality that go beyond standard use.
 
 ### Advanced Setting Usage
 
-Build settings control how classes should look on a global level.
+To enable each advanced setting, simply include the setting in your configuration.
 
 ```scss
 // styles.scss
@@ -63,19 +65,23 @@ Build settings control how classes should look on a global level.
     headless: false,
     debugger: false,
     placeholders: false,
+    dark-mode-support: false,
   )
 );
 ```
 
 ### Advanced Settings Table
 
-The following build setting definitions apply.
+The following advanced build setting definitions apply.
 
 | Setting | Default | Description |
 | - | - | - |
 | `headless` | `false` | Loads Uniform CSS in Headless Mode. |
 | `debugger` | `false` | Enables all pseudos across all responsive breakpoints. |
 | `placeholders` | `false` | Builds with placeholder selectors enabled. |
+| `dark-mode-support` | `false` | Enable dark pseudo across all properties. |
+
+{.table}
 
 ### Headless Mode
 
@@ -113,5 +119,15 @@ When `placeholders` is enabled, every property will also generate Sass placehold
 );
 ```
 
----
+### Dark Mode SUpport
+
+When `dark-mode-support` is enabled, every property will also generate a dark pseudo variant.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    dark-mode-support: true, // false by default
+  )
+);
+```
 

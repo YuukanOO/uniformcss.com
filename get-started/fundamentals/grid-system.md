@@ -4,10 +4,17 @@ description: Learn how to apply basic grid based layouts
 date: 1000-01-06
 ---
 
-
 ## Getting started with Grid
 
-Grids are a useful tool to help layout your page design. The Uniform grid systems are built using the `grid` display type and designed to support up to `12` columns.
+Grids are a useful tool to help containerize your page layout and seperate content into a certain number of columns.
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
+
+## Basic grid usage
+
+The Uniform grid systems are built using the `grid` display type and designed to support up to `12` columns. The `grid` property sets the element's displah type to `grid` and the `grid-cols-<1-12>` property sets the column count.
 
 <section class="bg-silver-200 p-20 radius-md">
   <div class="grid grid-cols-2 mb-20">
@@ -94,24 +101,18 @@ You can create gutters by combining your grid layout with the `gap-<size>` prope
 </section>
 
 ```html
-<div class="grid grid-cols-2 gap-36">
-  ...
-</div>
+<div class="grid grid-cols-2 gap-36">...</div>
 
-<div class="grid grid-cols-3 gap-48">
-  ...
-</div>
+<div class="grid grid-cols-3 gap-48">...</div>
 
-<div class="grid grid-cols-4 gap-24">
-  ...
-</div>
+<div class="grid grid-cols-4 gap-24">...</div>
 ```
 
 ---
 
 ## Responsive Gutters
 
-Gutters can be responsive by prefixing the `gap-<size>` property with the breakpoint variant. For more information on media queries, please refer to <a class="hover.underline" href="/get-started/media-queries">media queries</a>. 
+Gutters can be responsive by prefixing the `gap-<size>` property with the breakpoint variant. For more information on media queries, please refer to <a class="hover.underline" href="/get-started/media-queries">media queries</a>.
 
 <section class="bg-silver-200 p-20 radius-md">
   <div class="grid grid-cols-3 gap-12 sm.gap-24 md.gap-28 lg.gap-36">
@@ -125,9 +126,7 @@ Gutters can be responsive by prefixing the `gap-<size>` property with the breakp
 </section>
 
 ```html
-<div class="grid grid-cols-3 gap-12 sm.gap-24 md.gap-28 lg.gap-36">
-  ...
-</div>
+<div class="grid grid-cols-3 gap-12 sm.gap-24 md.gap-28 lg.gap-36">...</div>
 ```
 
 ---

@@ -195,6 +195,38 @@ The `responsive-pseudos` setting when enabled, will enable pseudo variants acros
 ...
 ```
 
+---
+
+## Extra Selectors
+
+The `extra-selector` setting when enabled, will apply CSS combinators to the end of the utility. This can be useful for achieving features such as the lobotomized owl.
+
+```scss
+// styles.scss
+@use "uniform" as * with (
+  $config: (
+    utilities: (
+      gutter-y: (
+        shorthand: gutter-x,
+        properties: (margin-top),
+        extra-selector: '> * + *',
+        variants: (
+          10: 10px;
+        );
+      ),
+    )
+  )
+);
+```
+
+```css
+/* styles.css */
+.gutter-y-10 > * + * {
+  margin-top: 10px;
+}
+...
+```
+
 
 ---
 

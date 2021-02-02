@@ -4,11 +4,11 @@ description: Learn how to apply classes that change across on breakpoint.
 date: 1000-01-03
 ---
 
-
-
 ## Responsive Design
 
 You can apply responsive utility classes by appending the breakpoint variant to the beginning of your class name e.g. `<breakpoint-variant>.shorthand-variant`.
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
 ---
 
@@ -18,11 +18,9 @@ Uniform uses a mobile-first CSS approach to allow for styles to be applied on mo
 
 ```html
 <div class="h-10 sm.h-14 md.h-20 lg.h-24 xl.h-64">
-  10px height on mobile
-  14px height on small screen sizes
-  20px height on medium screen sizes
-  24px height on large screen sizes
-  64px height on extra large screen sizes
+  10px height on mobile 14px height on small screen sizes 20px height on medium
+  screen sizes 24px height on large screen sizes 64px height on extra large
+  screen sizes
 </div>
 ```
 
@@ -51,7 +49,6 @@ By default, there are **four** breakpoint variants available `sm`, `md`, `lg` an
 }
 ```
 
-
 ---
 
 ## Breakpoint Delimiter
@@ -70,9 +67,13 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 ```css
 /* styles.css */
 @media (min-width: 1024px) {
-  .sm__block { display: block; }
-  .sm__flex { display: flex; }
-  ...
+  .sm__block {
+    display: block;
+  }
+  .sm__flex {
+    display: flex;
+  }
+  ...;
 }
 ```
 
@@ -96,7 +97,6 @@ By design, Uniform takes common design patterns into consideration and only enab
 
 > To see which properties are responsive, please visit the glossary.
 
-
 ---
 
 ## Extending Breakpoints
@@ -116,9 +116,13 @@ You can change the number of breakpoints and even change their `min-width` value
 ```css
 /* styles.css */
 @media (min-width: 1920px) {
-  .custom-breakpoint\.block { display: block; }
-  .custom-breakpoint\.flex { display: flex; }
-  ...
+  .custom-breakpoint\.block {
+    display: block;
+  }
+  .custom-breakpoint\.flex {
+    display: flex;
+  }
+  ...;
 }
 ```
 
@@ -141,8 +145,12 @@ You can replace existing breakpoints by overriding existing keys to the `screens
 ```css
 /* styles.css */
 @media (min-width: 1920px) {
-  .md\.block { display: block; }
-  .md\.flex { display: flex; }
-  ...
+  .md\.block {
+    display: block;
+  }
+  .md\.flex {
+    display: flex;
+  }
+  ...;
 }
 ```
