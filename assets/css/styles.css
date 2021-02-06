@@ -11246,6 +11246,122 @@ CUSTOM PROPERTIES
   right: auto;
 }
 
+.t-0 {
+  top: 0;
+}
+
+.t-1 {
+  top: 1px;
+}
+
+.t-2 {
+  top: 2px;
+}
+
+.t-3 {
+  top: 3px;
+}
+
+.t-4 {
+  top: 0.25rem;
+}
+
+.t-5 {
+  top: 0.3125rem;
+}
+
+.t-6 {
+  top: 0.375rem;
+}
+
+.t-7 {
+  top: 0.4375rem;
+}
+
+.t-8 {
+  top: 0.5rem;
+}
+
+.t-9 {
+  top: 0.5625rem;
+}
+
+.t-10 {
+  top: 0.625rem;
+}
+
+.t-12 {
+  top: 0.75rem;
+}
+
+.t-14 {
+  top: 0.875rem;
+}
+
+.t-16 {
+  top: 1rem;
+}
+
+.t-18 {
+  top: 1.125rem;
+}
+
+.t-20 {
+  top: 1.25rem;
+}
+
+.t-24 {
+  top: 1.5rem;
+}
+
+.t-28 {
+  top: 1.75rem;
+}
+
+.t-32 {
+  top: 2rem;
+}
+
+.t-36 {
+  top: 2.25rem;
+}
+
+.t-40 {
+  top: 2.5rem;
+}
+
+.t-48 {
+  top: 3rem;
+}
+
+.t-56 {
+  top: 3.5rem;
+}
+
+.t-64 {
+  top: 4rem;
+}
+
+.t-72 {
+  top: 4.5rem;
+}
+
+.t-80 {
+  top: 5rem;
+}
+
+.t-96 {
+  top: 6rem;
+}
+
+.t-112 {
+  top: 7rem;
+}
+
+.t-128 {
+  top: 8rem;
+}
+
 .t-auto {
   top: auto;
 }
@@ -11266,8 +11382,120 @@ CUSTOM PROPERTIES
   top: 50%;
 }
 
-.t-0 {
-  top: 0;
+.r-0 {
+  right: 0;
+}
+
+.r-1 {
+  right: 1px;
+}
+
+.r-2 {
+  right: 2px;
+}
+
+.r-3 {
+  right: 3px;
+}
+
+.r-4 {
+  right: 0.25rem;
+}
+
+.r-5 {
+  right: 0.3125rem;
+}
+
+.r-6 {
+  right: 0.375rem;
+}
+
+.r-7 {
+  right: 0.4375rem;
+}
+
+.r-8 {
+  right: 0.5rem;
+}
+
+.r-9 {
+  right: 0.5625rem;
+}
+
+.r-10 {
+  right: 0.625rem;
+}
+
+.r-12 {
+  right: 0.75rem;
+}
+
+.r-14 {
+  right: 0.875rem;
+}
+
+.r-16 {
+  right: 1rem;
+}
+
+.r-18 {
+  right: 1.125rem;
+}
+
+.r-20 {
+  right: 1.25rem;
+}
+
+.r-24 {
+  right: 1.5rem;
+}
+
+.r-28 {
+  right: 1.75rem;
+}
+
+.r-32 {
+  right: 2rem;
+}
+
+.r-36 {
+  right: 2.25rem;
+}
+
+.r-40 {
+  right: 2.5rem;
+}
+
+.r-48 {
+  right: 3rem;
+}
+
+.r-56 {
+  right: 3.5rem;
+}
+
+.r-64 {
+  right: 4rem;
+}
+
+.r-72 {
+  right: 4.5rem;
+}
+
+.r-80 {
+  right: 5rem;
+}
+
+.r-96 {
+  right: 6rem;
+}
+
+.r-112 {
+  right: 7rem;
+}
+
+.r-128 {
+  right: 8rem;
 }
 
 .r-auto {
@@ -11290,8 +11518,120 @@ CUSTOM PROPERTIES
   right: 50%;
 }
 
-.r-0 {
-  right: 0;
+.l-0 {
+  left: 0;
+}
+
+.l-1 {
+  left: 1px;
+}
+
+.l-2 {
+  left: 2px;
+}
+
+.l-3 {
+  left: 3px;
+}
+
+.l-4 {
+  left: 0.25rem;
+}
+
+.l-5 {
+  left: 0.3125rem;
+}
+
+.l-6 {
+  left: 0.375rem;
+}
+
+.l-7 {
+  left: 0.4375rem;
+}
+
+.l-8 {
+  left: 0.5rem;
+}
+
+.l-9 {
+  left: 0.5625rem;
+}
+
+.l-10 {
+  left: 0.625rem;
+}
+
+.l-12 {
+  left: 0.75rem;
+}
+
+.l-14 {
+  left: 0.875rem;
+}
+
+.l-16 {
+  left: 1rem;
+}
+
+.l-18 {
+  left: 1.125rem;
+}
+
+.l-20 {
+  left: 1.25rem;
+}
+
+.l-24 {
+  left: 1.5rem;
+}
+
+.l-28 {
+  left: 1.75rem;
+}
+
+.l-32 {
+  left: 2rem;
+}
+
+.l-36 {
+  left: 2.25rem;
+}
+
+.l-40 {
+  left: 2.5rem;
+}
+
+.l-48 {
+  left: 3rem;
+}
+
+.l-56 {
+  left: 3.5rem;
+}
+
+.l-64 {
+  left: 4rem;
+}
+
+.l-72 {
+  left: 4.5rem;
+}
+
+.l-80 {
+  left: 5rem;
+}
+
+.l-96 {
+  left: 6rem;
+}
+
+.l-112 {
+  left: 7rem;
+}
+
+.l-128 {
+  left: 8rem;
 }
 
 .l-auto {
@@ -11314,8 +11654,120 @@ CUSTOM PROPERTIES
   left: 50%;
 }
 
-.l-0 {
-  left: 0;
+.b-0 {
+  bottom: 0;
+}
+
+.b-1 {
+  bottom: 1px;
+}
+
+.b-2 {
+  bottom: 2px;
+}
+
+.b-3 {
+  bottom: 3px;
+}
+
+.b-4 {
+  bottom: 0.25rem;
+}
+
+.b-5 {
+  bottom: 0.3125rem;
+}
+
+.b-6 {
+  bottom: 0.375rem;
+}
+
+.b-7 {
+  bottom: 0.4375rem;
+}
+
+.b-8 {
+  bottom: 0.5rem;
+}
+
+.b-9 {
+  bottom: 0.5625rem;
+}
+
+.b-10 {
+  bottom: 0.625rem;
+}
+
+.b-12 {
+  bottom: 0.75rem;
+}
+
+.b-14 {
+  bottom: 0.875rem;
+}
+
+.b-16 {
+  bottom: 1rem;
+}
+
+.b-18 {
+  bottom: 1.125rem;
+}
+
+.b-20 {
+  bottom: 1.25rem;
+}
+
+.b-24 {
+  bottom: 1.5rem;
+}
+
+.b-28 {
+  bottom: 1.75rem;
+}
+
+.b-32 {
+  bottom: 2rem;
+}
+
+.b-36 {
+  bottom: 2.25rem;
+}
+
+.b-40 {
+  bottom: 2.5rem;
+}
+
+.b-48 {
+  bottom: 3rem;
+}
+
+.b-56 {
+  bottom: 3.5rem;
+}
+
+.b-64 {
+  bottom: 4rem;
+}
+
+.b-72 {
+  bottom: 4.5rem;
+}
+
+.b-80 {
+  bottom: 5rem;
+}
+
+.b-96 {
+  bottom: 6rem;
+}
+
+.b-112 {
+  bottom: 7rem;
+}
+
+.b-128 {
+  bottom: 8rem;
 }
 
 .b-auto {
@@ -11336,10 +11788,6 @@ CUSTOM PROPERTIES
 
 .b-50p {
   bottom: 50%;
-}
-
-.b-0 {
-  bottom: 0;
 }
 
 .row-gap-0 {
@@ -14122,54 +14570,6 @@ CUSTOM PROPERTIES
   --translate-y: 8rem;
 }
 
-.translate-y-144, .group:hover .group-hover\.translate-y-144, .hover\.translate-y-144:hover {
-  --translate-y: 9rem;
-}
-
-.translate-y-160, .group:hover .group-hover\.translate-y-160, .hover\.translate-y-160:hover {
-  --translate-y: 10rem;
-}
-
-.translate-y-192, .group:hover .group-hover\.translate-y-192, .hover\.translate-y-192:hover {
-  --translate-y: 12rem;
-}
-
-.translate-y-224, .group:hover .group-hover\.translate-y-224, .hover\.translate-y-224:hover {
-  --translate-y: 14rem;
-}
-
-.translate-y-256, .group:hover .group-hover\.translate-y-256, .hover\.translate-y-256:hover {
-  --translate-y: 16rem;
-}
-
-.translate-y-288, .group:hover .group-hover\.translate-y-288, .hover\.translate-y-288:hover {
-  --translate-y: 18rem;
-}
-
-.translate-y-320, .group:hover .group-hover\.translate-y-320, .hover\.translate-y-320:hover {
-  --translate-y: 20rem;
-}
-
-.translate-y-384, .group:hover .group-hover\.translate-y-384, .hover\.translate-y-384:hover {
-  --translate-y: 24rem;
-}
-
-.translate-y-448, .group:hover .group-hover\.translate-y-448, .hover\.translate-y-448:hover {
-  --translate-y: 28rem;
-}
-
-.translate-y-512, .group:hover .group-hover\.translate-y-512, .hover\.translate-y-512:hover {
-  --translate-y: 32rem;
-}
-
-.translate-y-576, .group:hover .group-hover\.translate-y-576, .hover\.translate-y-576:hover {
-  --translate-y: 36rem;
-}
-
-.translate-y-640, .group:hover .group-hover\.translate-y-640, .hover\.translate-y-640:hover {
-  --translate-y: 40rem;
-}
-
 .translate-y-n100p, .group:hover .group-hover\.translate-y-n100p, .hover\.translate-y-n100p:hover {
   --translate-y: -100%;
 }
@@ -14300,54 +14700,6 @@ CUSTOM PROPERTIES
 
 .translate-x-128, .group:hover .group-hover\.translate-x-128, .hover\.translate-x-128:hover {
   --translate-x: 8rem;
-}
-
-.translate-x-144, .group:hover .group-hover\.translate-x-144, .hover\.translate-x-144:hover {
-  --translate-x: 9rem;
-}
-
-.translate-x-160, .group:hover .group-hover\.translate-x-160, .hover\.translate-x-160:hover {
-  --translate-x: 10rem;
-}
-
-.translate-x-192, .group:hover .group-hover\.translate-x-192, .hover\.translate-x-192:hover {
-  --translate-x: 12rem;
-}
-
-.translate-x-224, .group:hover .group-hover\.translate-x-224, .hover\.translate-x-224:hover {
-  --translate-x: 14rem;
-}
-
-.translate-x-256, .group:hover .group-hover\.translate-x-256, .hover\.translate-x-256:hover {
-  --translate-x: 16rem;
-}
-
-.translate-x-288, .group:hover .group-hover\.translate-x-288, .hover\.translate-x-288:hover {
-  --translate-x: 18rem;
-}
-
-.translate-x-320, .group:hover .group-hover\.translate-x-320, .hover\.translate-x-320:hover {
-  --translate-x: 20rem;
-}
-
-.translate-x-384, .group:hover .group-hover\.translate-x-384, .hover\.translate-x-384:hover {
-  --translate-x: 24rem;
-}
-
-.translate-x-448, .group:hover .group-hover\.translate-x-448, .hover\.translate-x-448:hover {
-  --translate-x: 28rem;
-}
-
-.translate-x-512, .group:hover .group-hover\.translate-x-512, .hover\.translate-x-512:hover {
-  --translate-x: 32rem;
-}
-
-.translate-x-576, .group:hover .group-hover\.translate-x-576, .hover\.translate-x-576:hover {
-  --translate-x: 36rem;
-}
-
-.translate-x-640, .group:hover .group-hover\.translate-x-640, .hover\.translate-x-640:hover {
-  --translate-x: 40rem;
 }
 
 .translate-x-n100p, .group:hover .group-hover\.translate-x-n100p, .hover\.translate-x-n100p:hover {
@@ -20263,6 +20615,122 @@ CUSTOM PROPERTIES
     right: auto;
   }
 
+  .sm\.t-0 {
+    top: 0;
+  }
+
+  .sm\.t-1 {
+    top: 1px;
+  }
+
+  .sm\.t-2 {
+    top: 2px;
+  }
+
+  .sm\.t-3 {
+    top: 3px;
+  }
+
+  .sm\.t-4 {
+    top: 0.25rem;
+  }
+
+  .sm\.t-5 {
+    top: 0.3125rem;
+  }
+
+  .sm\.t-6 {
+    top: 0.375rem;
+  }
+
+  .sm\.t-7 {
+    top: 0.4375rem;
+  }
+
+  .sm\.t-8 {
+    top: 0.5rem;
+  }
+
+  .sm\.t-9 {
+    top: 0.5625rem;
+  }
+
+  .sm\.t-10 {
+    top: 0.625rem;
+  }
+
+  .sm\.t-12 {
+    top: 0.75rem;
+  }
+
+  .sm\.t-14 {
+    top: 0.875rem;
+  }
+
+  .sm\.t-16 {
+    top: 1rem;
+  }
+
+  .sm\.t-18 {
+    top: 1.125rem;
+  }
+
+  .sm\.t-20 {
+    top: 1.25rem;
+  }
+
+  .sm\.t-24 {
+    top: 1.5rem;
+  }
+
+  .sm\.t-28 {
+    top: 1.75rem;
+  }
+
+  .sm\.t-32 {
+    top: 2rem;
+  }
+
+  .sm\.t-36 {
+    top: 2.25rem;
+  }
+
+  .sm\.t-40 {
+    top: 2.5rem;
+  }
+
+  .sm\.t-48 {
+    top: 3rem;
+  }
+
+  .sm\.t-56 {
+    top: 3.5rem;
+  }
+
+  .sm\.t-64 {
+    top: 4rem;
+  }
+
+  .sm\.t-72 {
+    top: 4.5rem;
+  }
+
+  .sm\.t-80 {
+    top: 5rem;
+  }
+
+  .sm\.t-96 {
+    top: 6rem;
+  }
+
+  .sm\.t-112 {
+    top: 7rem;
+  }
+
+  .sm\.t-128 {
+    top: 8rem;
+  }
+
   .sm\.t-auto {
     top: auto;
   }
@@ -20283,8 +20751,120 @@ CUSTOM PROPERTIES
     top: 50%;
   }
 
-  .sm\.t-0 {
-    top: 0;
+  .sm\.r-0 {
+    right: 0;
+  }
+
+  .sm\.r-1 {
+    right: 1px;
+  }
+
+  .sm\.r-2 {
+    right: 2px;
+  }
+
+  .sm\.r-3 {
+    right: 3px;
+  }
+
+  .sm\.r-4 {
+    right: 0.25rem;
+  }
+
+  .sm\.r-5 {
+    right: 0.3125rem;
+  }
+
+  .sm\.r-6 {
+    right: 0.375rem;
+  }
+
+  .sm\.r-7 {
+    right: 0.4375rem;
+  }
+
+  .sm\.r-8 {
+    right: 0.5rem;
+  }
+
+  .sm\.r-9 {
+    right: 0.5625rem;
+  }
+
+  .sm\.r-10 {
+    right: 0.625rem;
+  }
+
+  .sm\.r-12 {
+    right: 0.75rem;
+  }
+
+  .sm\.r-14 {
+    right: 0.875rem;
+  }
+
+  .sm\.r-16 {
+    right: 1rem;
+  }
+
+  .sm\.r-18 {
+    right: 1.125rem;
+  }
+
+  .sm\.r-20 {
+    right: 1.25rem;
+  }
+
+  .sm\.r-24 {
+    right: 1.5rem;
+  }
+
+  .sm\.r-28 {
+    right: 1.75rem;
+  }
+
+  .sm\.r-32 {
+    right: 2rem;
+  }
+
+  .sm\.r-36 {
+    right: 2.25rem;
+  }
+
+  .sm\.r-40 {
+    right: 2.5rem;
+  }
+
+  .sm\.r-48 {
+    right: 3rem;
+  }
+
+  .sm\.r-56 {
+    right: 3.5rem;
+  }
+
+  .sm\.r-64 {
+    right: 4rem;
+  }
+
+  .sm\.r-72 {
+    right: 4.5rem;
+  }
+
+  .sm\.r-80 {
+    right: 5rem;
+  }
+
+  .sm\.r-96 {
+    right: 6rem;
+  }
+
+  .sm\.r-112 {
+    right: 7rem;
+  }
+
+  .sm\.r-128 {
+    right: 8rem;
   }
 
   .sm\.r-auto {
@@ -20307,8 +20887,120 @@ CUSTOM PROPERTIES
     right: 50%;
   }
 
-  .sm\.r-0 {
-    right: 0;
+  .sm\.l-0 {
+    left: 0;
+  }
+
+  .sm\.l-1 {
+    left: 1px;
+  }
+
+  .sm\.l-2 {
+    left: 2px;
+  }
+
+  .sm\.l-3 {
+    left: 3px;
+  }
+
+  .sm\.l-4 {
+    left: 0.25rem;
+  }
+
+  .sm\.l-5 {
+    left: 0.3125rem;
+  }
+
+  .sm\.l-6 {
+    left: 0.375rem;
+  }
+
+  .sm\.l-7 {
+    left: 0.4375rem;
+  }
+
+  .sm\.l-8 {
+    left: 0.5rem;
+  }
+
+  .sm\.l-9 {
+    left: 0.5625rem;
+  }
+
+  .sm\.l-10 {
+    left: 0.625rem;
+  }
+
+  .sm\.l-12 {
+    left: 0.75rem;
+  }
+
+  .sm\.l-14 {
+    left: 0.875rem;
+  }
+
+  .sm\.l-16 {
+    left: 1rem;
+  }
+
+  .sm\.l-18 {
+    left: 1.125rem;
+  }
+
+  .sm\.l-20 {
+    left: 1.25rem;
+  }
+
+  .sm\.l-24 {
+    left: 1.5rem;
+  }
+
+  .sm\.l-28 {
+    left: 1.75rem;
+  }
+
+  .sm\.l-32 {
+    left: 2rem;
+  }
+
+  .sm\.l-36 {
+    left: 2.25rem;
+  }
+
+  .sm\.l-40 {
+    left: 2.5rem;
+  }
+
+  .sm\.l-48 {
+    left: 3rem;
+  }
+
+  .sm\.l-56 {
+    left: 3.5rem;
+  }
+
+  .sm\.l-64 {
+    left: 4rem;
+  }
+
+  .sm\.l-72 {
+    left: 4.5rem;
+  }
+
+  .sm\.l-80 {
+    left: 5rem;
+  }
+
+  .sm\.l-96 {
+    left: 6rem;
+  }
+
+  .sm\.l-112 {
+    left: 7rem;
+  }
+
+  .sm\.l-128 {
+    left: 8rem;
   }
 
   .sm\.l-auto {
@@ -20331,8 +21023,120 @@ CUSTOM PROPERTIES
     left: 50%;
   }
 
-  .sm\.l-0 {
-    left: 0;
+  .sm\.b-0 {
+    bottom: 0;
+  }
+
+  .sm\.b-1 {
+    bottom: 1px;
+  }
+
+  .sm\.b-2 {
+    bottom: 2px;
+  }
+
+  .sm\.b-3 {
+    bottom: 3px;
+  }
+
+  .sm\.b-4 {
+    bottom: 0.25rem;
+  }
+
+  .sm\.b-5 {
+    bottom: 0.3125rem;
+  }
+
+  .sm\.b-6 {
+    bottom: 0.375rem;
+  }
+
+  .sm\.b-7 {
+    bottom: 0.4375rem;
+  }
+
+  .sm\.b-8 {
+    bottom: 0.5rem;
+  }
+
+  .sm\.b-9 {
+    bottom: 0.5625rem;
+  }
+
+  .sm\.b-10 {
+    bottom: 0.625rem;
+  }
+
+  .sm\.b-12 {
+    bottom: 0.75rem;
+  }
+
+  .sm\.b-14 {
+    bottom: 0.875rem;
+  }
+
+  .sm\.b-16 {
+    bottom: 1rem;
+  }
+
+  .sm\.b-18 {
+    bottom: 1.125rem;
+  }
+
+  .sm\.b-20 {
+    bottom: 1.25rem;
+  }
+
+  .sm\.b-24 {
+    bottom: 1.5rem;
+  }
+
+  .sm\.b-28 {
+    bottom: 1.75rem;
+  }
+
+  .sm\.b-32 {
+    bottom: 2rem;
+  }
+
+  .sm\.b-36 {
+    bottom: 2.25rem;
+  }
+
+  .sm\.b-40 {
+    bottom: 2.5rem;
+  }
+
+  .sm\.b-48 {
+    bottom: 3rem;
+  }
+
+  .sm\.b-56 {
+    bottom: 3.5rem;
+  }
+
+  .sm\.b-64 {
+    bottom: 4rem;
+  }
+
+  .sm\.b-72 {
+    bottom: 4.5rem;
+  }
+
+  .sm\.b-80 {
+    bottom: 5rem;
+  }
+
+  .sm\.b-96 {
+    bottom: 6rem;
+  }
+
+  .sm\.b-112 {
+    bottom: 7rem;
+  }
+
+  .sm\.b-128 {
+    bottom: 8rem;
   }
 
   .sm\.b-auto {
@@ -20353,10 +21157,6 @@ CUSTOM PROPERTIES
 
   .sm\.b-50p {
     bottom: 50%;
-  }
-
-  .sm\.b-0 {
-    bottom: 0;
   }
 
   .sm\.row-gap-0 {
@@ -22943,54 +23743,6 @@ CUSTOM PROPERTIES
     --translate-y: 8rem;
   }
 
-  .sm\.translate-y-144 {
-    --translate-y: 9rem;
-  }
-
-  .sm\.translate-y-160 {
-    --translate-y: 10rem;
-  }
-
-  .sm\.translate-y-192 {
-    --translate-y: 12rem;
-  }
-
-  .sm\.translate-y-224 {
-    --translate-y: 14rem;
-  }
-
-  .sm\.translate-y-256 {
-    --translate-y: 16rem;
-  }
-
-  .sm\.translate-y-288 {
-    --translate-y: 18rem;
-  }
-
-  .sm\.translate-y-320 {
-    --translate-y: 20rem;
-  }
-
-  .sm\.translate-y-384 {
-    --translate-y: 24rem;
-  }
-
-  .sm\.translate-y-448 {
-    --translate-y: 28rem;
-  }
-
-  .sm\.translate-y-512 {
-    --translate-y: 32rem;
-  }
-
-  .sm\.translate-y-576 {
-    --translate-y: 36rem;
-  }
-
-  .sm\.translate-y-640 {
-    --translate-y: 40rem;
-  }
-
   .sm\.translate-y-n100p {
     --translate-y: -100%;
   }
@@ -23121,54 +23873,6 @@ CUSTOM PROPERTIES
 
   .sm\.translate-x-128 {
     --translate-x: 8rem;
-  }
-
-  .sm\.translate-x-144 {
-    --translate-x: 9rem;
-  }
-
-  .sm\.translate-x-160 {
-    --translate-x: 10rem;
-  }
-
-  .sm\.translate-x-192 {
-    --translate-x: 12rem;
-  }
-
-  .sm\.translate-x-224 {
-    --translate-x: 14rem;
-  }
-
-  .sm\.translate-x-256 {
-    --translate-x: 16rem;
-  }
-
-  .sm\.translate-x-288 {
-    --translate-x: 18rem;
-  }
-
-  .sm\.translate-x-320 {
-    --translate-x: 20rem;
-  }
-
-  .sm\.translate-x-384 {
-    --translate-x: 24rem;
-  }
-
-  .sm\.translate-x-448 {
-    --translate-x: 28rem;
-  }
-
-  .sm\.translate-x-512 {
-    --translate-x: 32rem;
-  }
-
-  .sm\.translate-x-576 {
-    --translate-x: 36rem;
-  }
-
-  .sm\.translate-x-640 {
-    --translate-x: 40rem;
   }
 
   .sm\.translate-x-n100p {
@@ -28788,6 +29492,122 @@ CUSTOM PROPERTIES
     right: auto;
   }
 
+  .md\.t-0 {
+    top: 0;
+  }
+
+  .md\.t-1 {
+    top: 1px;
+  }
+
+  .md\.t-2 {
+    top: 2px;
+  }
+
+  .md\.t-3 {
+    top: 3px;
+  }
+
+  .md\.t-4 {
+    top: 0.25rem;
+  }
+
+  .md\.t-5 {
+    top: 0.3125rem;
+  }
+
+  .md\.t-6 {
+    top: 0.375rem;
+  }
+
+  .md\.t-7 {
+    top: 0.4375rem;
+  }
+
+  .md\.t-8 {
+    top: 0.5rem;
+  }
+
+  .md\.t-9 {
+    top: 0.5625rem;
+  }
+
+  .md\.t-10 {
+    top: 0.625rem;
+  }
+
+  .md\.t-12 {
+    top: 0.75rem;
+  }
+
+  .md\.t-14 {
+    top: 0.875rem;
+  }
+
+  .md\.t-16 {
+    top: 1rem;
+  }
+
+  .md\.t-18 {
+    top: 1.125rem;
+  }
+
+  .md\.t-20 {
+    top: 1.25rem;
+  }
+
+  .md\.t-24 {
+    top: 1.5rem;
+  }
+
+  .md\.t-28 {
+    top: 1.75rem;
+  }
+
+  .md\.t-32 {
+    top: 2rem;
+  }
+
+  .md\.t-36 {
+    top: 2.25rem;
+  }
+
+  .md\.t-40 {
+    top: 2.5rem;
+  }
+
+  .md\.t-48 {
+    top: 3rem;
+  }
+
+  .md\.t-56 {
+    top: 3.5rem;
+  }
+
+  .md\.t-64 {
+    top: 4rem;
+  }
+
+  .md\.t-72 {
+    top: 4.5rem;
+  }
+
+  .md\.t-80 {
+    top: 5rem;
+  }
+
+  .md\.t-96 {
+    top: 6rem;
+  }
+
+  .md\.t-112 {
+    top: 7rem;
+  }
+
+  .md\.t-128 {
+    top: 8rem;
+  }
+
   .md\.t-auto {
     top: auto;
   }
@@ -28808,8 +29628,120 @@ CUSTOM PROPERTIES
     top: 50%;
   }
 
-  .md\.t-0 {
-    top: 0;
+  .md\.r-0 {
+    right: 0;
+  }
+
+  .md\.r-1 {
+    right: 1px;
+  }
+
+  .md\.r-2 {
+    right: 2px;
+  }
+
+  .md\.r-3 {
+    right: 3px;
+  }
+
+  .md\.r-4 {
+    right: 0.25rem;
+  }
+
+  .md\.r-5 {
+    right: 0.3125rem;
+  }
+
+  .md\.r-6 {
+    right: 0.375rem;
+  }
+
+  .md\.r-7 {
+    right: 0.4375rem;
+  }
+
+  .md\.r-8 {
+    right: 0.5rem;
+  }
+
+  .md\.r-9 {
+    right: 0.5625rem;
+  }
+
+  .md\.r-10 {
+    right: 0.625rem;
+  }
+
+  .md\.r-12 {
+    right: 0.75rem;
+  }
+
+  .md\.r-14 {
+    right: 0.875rem;
+  }
+
+  .md\.r-16 {
+    right: 1rem;
+  }
+
+  .md\.r-18 {
+    right: 1.125rem;
+  }
+
+  .md\.r-20 {
+    right: 1.25rem;
+  }
+
+  .md\.r-24 {
+    right: 1.5rem;
+  }
+
+  .md\.r-28 {
+    right: 1.75rem;
+  }
+
+  .md\.r-32 {
+    right: 2rem;
+  }
+
+  .md\.r-36 {
+    right: 2.25rem;
+  }
+
+  .md\.r-40 {
+    right: 2.5rem;
+  }
+
+  .md\.r-48 {
+    right: 3rem;
+  }
+
+  .md\.r-56 {
+    right: 3.5rem;
+  }
+
+  .md\.r-64 {
+    right: 4rem;
+  }
+
+  .md\.r-72 {
+    right: 4.5rem;
+  }
+
+  .md\.r-80 {
+    right: 5rem;
+  }
+
+  .md\.r-96 {
+    right: 6rem;
+  }
+
+  .md\.r-112 {
+    right: 7rem;
+  }
+
+  .md\.r-128 {
+    right: 8rem;
   }
 
   .md\.r-auto {
@@ -28832,8 +29764,120 @@ CUSTOM PROPERTIES
     right: 50%;
   }
 
-  .md\.r-0 {
-    right: 0;
+  .md\.l-0 {
+    left: 0;
+  }
+
+  .md\.l-1 {
+    left: 1px;
+  }
+
+  .md\.l-2 {
+    left: 2px;
+  }
+
+  .md\.l-3 {
+    left: 3px;
+  }
+
+  .md\.l-4 {
+    left: 0.25rem;
+  }
+
+  .md\.l-5 {
+    left: 0.3125rem;
+  }
+
+  .md\.l-6 {
+    left: 0.375rem;
+  }
+
+  .md\.l-7 {
+    left: 0.4375rem;
+  }
+
+  .md\.l-8 {
+    left: 0.5rem;
+  }
+
+  .md\.l-9 {
+    left: 0.5625rem;
+  }
+
+  .md\.l-10 {
+    left: 0.625rem;
+  }
+
+  .md\.l-12 {
+    left: 0.75rem;
+  }
+
+  .md\.l-14 {
+    left: 0.875rem;
+  }
+
+  .md\.l-16 {
+    left: 1rem;
+  }
+
+  .md\.l-18 {
+    left: 1.125rem;
+  }
+
+  .md\.l-20 {
+    left: 1.25rem;
+  }
+
+  .md\.l-24 {
+    left: 1.5rem;
+  }
+
+  .md\.l-28 {
+    left: 1.75rem;
+  }
+
+  .md\.l-32 {
+    left: 2rem;
+  }
+
+  .md\.l-36 {
+    left: 2.25rem;
+  }
+
+  .md\.l-40 {
+    left: 2.5rem;
+  }
+
+  .md\.l-48 {
+    left: 3rem;
+  }
+
+  .md\.l-56 {
+    left: 3.5rem;
+  }
+
+  .md\.l-64 {
+    left: 4rem;
+  }
+
+  .md\.l-72 {
+    left: 4.5rem;
+  }
+
+  .md\.l-80 {
+    left: 5rem;
+  }
+
+  .md\.l-96 {
+    left: 6rem;
+  }
+
+  .md\.l-112 {
+    left: 7rem;
+  }
+
+  .md\.l-128 {
+    left: 8rem;
   }
 
   .md\.l-auto {
@@ -28856,8 +29900,120 @@ CUSTOM PROPERTIES
     left: 50%;
   }
 
-  .md\.l-0 {
-    left: 0;
+  .md\.b-0 {
+    bottom: 0;
+  }
+
+  .md\.b-1 {
+    bottom: 1px;
+  }
+
+  .md\.b-2 {
+    bottom: 2px;
+  }
+
+  .md\.b-3 {
+    bottom: 3px;
+  }
+
+  .md\.b-4 {
+    bottom: 0.25rem;
+  }
+
+  .md\.b-5 {
+    bottom: 0.3125rem;
+  }
+
+  .md\.b-6 {
+    bottom: 0.375rem;
+  }
+
+  .md\.b-7 {
+    bottom: 0.4375rem;
+  }
+
+  .md\.b-8 {
+    bottom: 0.5rem;
+  }
+
+  .md\.b-9 {
+    bottom: 0.5625rem;
+  }
+
+  .md\.b-10 {
+    bottom: 0.625rem;
+  }
+
+  .md\.b-12 {
+    bottom: 0.75rem;
+  }
+
+  .md\.b-14 {
+    bottom: 0.875rem;
+  }
+
+  .md\.b-16 {
+    bottom: 1rem;
+  }
+
+  .md\.b-18 {
+    bottom: 1.125rem;
+  }
+
+  .md\.b-20 {
+    bottom: 1.25rem;
+  }
+
+  .md\.b-24 {
+    bottom: 1.5rem;
+  }
+
+  .md\.b-28 {
+    bottom: 1.75rem;
+  }
+
+  .md\.b-32 {
+    bottom: 2rem;
+  }
+
+  .md\.b-36 {
+    bottom: 2.25rem;
+  }
+
+  .md\.b-40 {
+    bottom: 2.5rem;
+  }
+
+  .md\.b-48 {
+    bottom: 3rem;
+  }
+
+  .md\.b-56 {
+    bottom: 3.5rem;
+  }
+
+  .md\.b-64 {
+    bottom: 4rem;
+  }
+
+  .md\.b-72 {
+    bottom: 4.5rem;
+  }
+
+  .md\.b-80 {
+    bottom: 5rem;
+  }
+
+  .md\.b-96 {
+    bottom: 6rem;
+  }
+
+  .md\.b-112 {
+    bottom: 7rem;
+  }
+
+  .md\.b-128 {
+    bottom: 8rem;
   }
 
   .md\.b-auto {
@@ -28878,10 +30034,6 @@ CUSTOM PROPERTIES
 
   .md\.b-50p {
     bottom: 50%;
-  }
-
-  .md\.b-0 {
-    bottom: 0;
   }
 
   .md\.row-gap-0 {
@@ -31468,54 +32620,6 @@ CUSTOM PROPERTIES
     --translate-y: 8rem;
   }
 
-  .md\.translate-y-144 {
-    --translate-y: 9rem;
-  }
-
-  .md\.translate-y-160 {
-    --translate-y: 10rem;
-  }
-
-  .md\.translate-y-192 {
-    --translate-y: 12rem;
-  }
-
-  .md\.translate-y-224 {
-    --translate-y: 14rem;
-  }
-
-  .md\.translate-y-256 {
-    --translate-y: 16rem;
-  }
-
-  .md\.translate-y-288 {
-    --translate-y: 18rem;
-  }
-
-  .md\.translate-y-320 {
-    --translate-y: 20rem;
-  }
-
-  .md\.translate-y-384 {
-    --translate-y: 24rem;
-  }
-
-  .md\.translate-y-448 {
-    --translate-y: 28rem;
-  }
-
-  .md\.translate-y-512 {
-    --translate-y: 32rem;
-  }
-
-  .md\.translate-y-576 {
-    --translate-y: 36rem;
-  }
-
-  .md\.translate-y-640 {
-    --translate-y: 40rem;
-  }
-
   .md\.translate-y-n100p {
     --translate-y: -100%;
   }
@@ -31646,54 +32750,6 @@ CUSTOM PROPERTIES
 
   .md\.translate-x-128 {
     --translate-x: 8rem;
-  }
-
-  .md\.translate-x-144 {
-    --translate-x: 9rem;
-  }
-
-  .md\.translate-x-160 {
-    --translate-x: 10rem;
-  }
-
-  .md\.translate-x-192 {
-    --translate-x: 12rem;
-  }
-
-  .md\.translate-x-224 {
-    --translate-x: 14rem;
-  }
-
-  .md\.translate-x-256 {
-    --translate-x: 16rem;
-  }
-
-  .md\.translate-x-288 {
-    --translate-x: 18rem;
-  }
-
-  .md\.translate-x-320 {
-    --translate-x: 20rem;
-  }
-
-  .md\.translate-x-384 {
-    --translate-x: 24rem;
-  }
-
-  .md\.translate-x-448 {
-    --translate-x: 28rem;
-  }
-
-  .md\.translate-x-512 {
-    --translate-x: 32rem;
-  }
-
-  .md\.translate-x-576 {
-    --translate-x: 36rem;
-  }
-
-  .md\.translate-x-640 {
-    --translate-x: 40rem;
   }
 
   .md\.translate-x-n100p {
@@ -37313,6 +38369,122 @@ CUSTOM PROPERTIES
     right: auto;
   }
 
+  .lg\.t-0 {
+    top: 0;
+  }
+
+  .lg\.t-1 {
+    top: 1px;
+  }
+
+  .lg\.t-2 {
+    top: 2px;
+  }
+
+  .lg\.t-3 {
+    top: 3px;
+  }
+
+  .lg\.t-4 {
+    top: 0.25rem;
+  }
+
+  .lg\.t-5 {
+    top: 0.3125rem;
+  }
+
+  .lg\.t-6 {
+    top: 0.375rem;
+  }
+
+  .lg\.t-7 {
+    top: 0.4375rem;
+  }
+
+  .lg\.t-8 {
+    top: 0.5rem;
+  }
+
+  .lg\.t-9 {
+    top: 0.5625rem;
+  }
+
+  .lg\.t-10 {
+    top: 0.625rem;
+  }
+
+  .lg\.t-12 {
+    top: 0.75rem;
+  }
+
+  .lg\.t-14 {
+    top: 0.875rem;
+  }
+
+  .lg\.t-16 {
+    top: 1rem;
+  }
+
+  .lg\.t-18 {
+    top: 1.125rem;
+  }
+
+  .lg\.t-20 {
+    top: 1.25rem;
+  }
+
+  .lg\.t-24 {
+    top: 1.5rem;
+  }
+
+  .lg\.t-28 {
+    top: 1.75rem;
+  }
+
+  .lg\.t-32 {
+    top: 2rem;
+  }
+
+  .lg\.t-36 {
+    top: 2.25rem;
+  }
+
+  .lg\.t-40 {
+    top: 2.5rem;
+  }
+
+  .lg\.t-48 {
+    top: 3rem;
+  }
+
+  .lg\.t-56 {
+    top: 3.5rem;
+  }
+
+  .lg\.t-64 {
+    top: 4rem;
+  }
+
+  .lg\.t-72 {
+    top: 4.5rem;
+  }
+
+  .lg\.t-80 {
+    top: 5rem;
+  }
+
+  .lg\.t-96 {
+    top: 6rem;
+  }
+
+  .lg\.t-112 {
+    top: 7rem;
+  }
+
+  .lg\.t-128 {
+    top: 8rem;
+  }
+
   .lg\.t-auto {
     top: auto;
   }
@@ -37333,8 +38505,120 @@ CUSTOM PROPERTIES
     top: 50%;
   }
 
-  .lg\.t-0 {
-    top: 0;
+  .lg\.r-0 {
+    right: 0;
+  }
+
+  .lg\.r-1 {
+    right: 1px;
+  }
+
+  .lg\.r-2 {
+    right: 2px;
+  }
+
+  .lg\.r-3 {
+    right: 3px;
+  }
+
+  .lg\.r-4 {
+    right: 0.25rem;
+  }
+
+  .lg\.r-5 {
+    right: 0.3125rem;
+  }
+
+  .lg\.r-6 {
+    right: 0.375rem;
+  }
+
+  .lg\.r-7 {
+    right: 0.4375rem;
+  }
+
+  .lg\.r-8 {
+    right: 0.5rem;
+  }
+
+  .lg\.r-9 {
+    right: 0.5625rem;
+  }
+
+  .lg\.r-10 {
+    right: 0.625rem;
+  }
+
+  .lg\.r-12 {
+    right: 0.75rem;
+  }
+
+  .lg\.r-14 {
+    right: 0.875rem;
+  }
+
+  .lg\.r-16 {
+    right: 1rem;
+  }
+
+  .lg\.r-18 {
+    right: 1.125rem;
+  }
+
+  .lg\.r-20 {
+    right: 1.25rem;
+  }
+
+  .lg\.r-24 {
+    right: 1.5rem;
+  }
+
+  .lg\.r-28 {
+    right: 1.75rem;
+  }
+
+  .lg\.r-32 {
+    right: 2rem;
+  }
+
+  .lg\.r-36 {
+    right: 2.25rem;
+  }
+
+  .lg\.r-40 {
+    right: 2.5rem;
+  }
+
+  .lg\.r-48 {
+    right: 3rem;
+  }
+
+  .lg\.r-56 {
+    right: 3.5rem;
+  }
+
+  .lg\.r-64 {
+    right: 4rem;
+  }
+
+  .lg\.r-72 {
+    right: 4.5rem;
+  }
+
+  .lg\.r-80 {
+    right: 5rem;
+  }
+
+  .lg\.r-96 {
+    right: 6rem;
+  }
+
+  .lg\.r-112 {
+    right: 7rem;
+  }
+
+  .lg\.r-128 {
+    right: 8rem;
   }
 
   .lg\.r-auto {
@@ -37357,8 +38641,120 @@ CUSTOM PROPERTIES
     right: 50%;
   }
 
-  .lg\.r-0 {
-    right: 0;
+  .lg\.l-0 {
+    left: 0;
+  }
+
+  .lg\.l-1 {
+    left: 1px;
+  }
+
+  .lg\.l-2 {
+    left: 2px;
+  }
+
+  .lg\.l-3 {
+    left: 3px;
+  }
+
+  .lg\.l-4 {
+    left: 0.25rem;
+  }
+
+  .lg\.l-5 {
+    left: 0.3125rem;
+  }
+
+  .lg\.l-6 {
+    left: 0.375rem;
+  }
+
+  .lg\.l-7 {
+    left: 0.4375rem;
+  }
+
+  .lg\.l-8 {
+    left: 0.5rem;
+  }
+
+  .lg\.l-9 {
+    left: 0.5625rem;
+  }
+
+  .lg\.l-10 {
+    left: 0.625rem;
+  }
+
+  .lg\.l-12 {
+    left: 0.75rem;
+  }
+
+  .lg\.l-14 {
+    left: 0.875rem;
+  }
+
+  .lg\.l-16 {
+    left: 1rem;
+  }
+
+  .lg\.l-18 {
+    left: 1.125rem;
+  }
+
+  .lg\.l-20 {
+    left: 1.25rem;
+  }
+
+  .lg\.l-24 {
+    left: 1.5rem;
+  }
+
+  .lg\.l-28 {
+    left: 1.75rem;
+  }
+
+  .lg\.l-32 {
+    left: 2rem;
+  }
+
+  .lg\.l-36 {
+    left: 2.25rem;
+  }
+
+  .lg\.l-40 {
+    left: 2.5rem;
+  }
+
+  .lg\.l-48 {
+    left: 3rem;
+  }
+
+  .lg\.l-56 {
+    left: 3.5rem;
+  }
+
+  .lg\.l-64 {
+    left: 4rem;
+  }
+
+  .lg\.l-72 {
+    left: 4.5rem;
+  }
+
+  .lg\.l-80 {
+    left: 5rem;
+  }
+
+  .lg\.l-96 {
+    left: 6rem;
+  }
+
+  .lg\.l-112 {
+    left: 7rem;
+  }
+
+  .lg\.l-128 {
+    left: 8rem;
   }
 
   .lg\.l-auto {
@@ -37381,8 +38777,120 @@ CUSTOM PROPERTIES
     left: 50%;
   }
 
-  .lg\.l-0 {
-    left: 0;
+  .lg\.b-0 {
+    bottom: 0;
+  }
+
+  .lg\.b-1 {
+    bottom: 1px;
+  }
+
+  .lg\.b-2 {
+    bottom: 2px;
+  }
+
+  .lg\.b-3 {
+    bottom: 3px;
+  }
+
+  .lg\.b-4 {
+    bottom: 0.25rem;
+  }
+
+  .lg\.b-5 {
+    bottom: 0.3125rem;
+  }
+
+  .lg\.b-6 {
+    bottom: 0.375rem;
+  }
+
+  .lg\.b-7 {
+    bottom: 0.4375rem;
+  }
+
+  .lg\.b-8 {
+    bottom: 0.5rem;
+  }
+
+  .lg\.b-9 {
+    bottom: 0.5625rem;
+  }
+
+  .lg\.b-10 {
+    bottom: 0.625rem;
+  }
+
+  .lg\.b-12 {
+    bottom: 0.75rem;
+  }
+
+  .lg\.b-14 {
+    bottom: 0.875rem;
+  }
+
+  .lg\.b-16 {
+    bottom: 1rem;
+  }
+
+  .lg\.b-18 {
+    bottom: 1.125rem;
+  }
+
+  .lg\.b-20 {
+    bottom: 1.25rem;
+  }
+
+  .lg\.b-24 {
+    bottom: 1.5rem;
+  }
+
+  .lg\.b-28 {
+    bottom: 1.75rem;
+  }
+
+  .lg\.b-32 {
+    bottom: 2rem;
+  }
+
+  .lg\.b-36 {
+    bottom: 2.25rem;
+  }
+
+  .lg\.b-40 {
+    bottom: 2.5rem;
+  }
+
+  .lg\.b-48 {
+    bottom: 3rem;
+  }
+
+  .lg\.b-56 {
+    bottom: 3.5rem;
+  }
+
+  .lg\.b-64 {
+    bottom: 4rem;
+  }
+
+  .lg\.b-72 {
+    bottom: 4.5rem;
+  }
+
+  .lg\.b-80 {
+    bottom: 5rem;
+  }
+
+  .lg\.b-96 {
+    bottom: 6rem;
+  }
+
+  .lg\.b-112 {
+    bottom: 7rem;
+  }
+
+  .lg\.b-128 {
+    bottom: 8rem;
   }
 
   .lg\.b-auto {
@@ -37403,10 +38911,6 @@ CUSTOM PROPERTIES
 
   .lg\.b-50p {
     bottom: 50%;
-  }
-
-  .lg\.b-0 {
-    bottom: 0;
   }
 
   .lg\.row-gap-0 {
@@ -39993,54 +41497,6 @@ CUSTOM PROPERTIES
     --translate-y: 8rem;
   }
 
-  .lg\.translate-y-144 {
-    --translate-y: 9rem;
-  }
-
-  .lg\.translate-y-160 {
-    --translate-y: 10rem;
-  }
-
-  .lg\.translate-y-192 {
-    --translate-y: 12rem;
-  }
-
-  .lg\.translate-y-224 {
-    --translate-y: 14rem;
-  }
-
-  .lg\.translate-y-256 {
-    --translate-y: 16rem;
-  }
-
-  .lg\.translate-y-288 {
-    --translate-y: 18rem;
-  }
-
-  .lg\.translate-y-320 {
-    --translate-y: 20rem;
-  }
-
-  .lg\.translate-y-384 {
-    --translate-y: 24rem;
-  }
-
-  .lg\.translate-y-448 {
-    --translate-y: 28rem;
-  }
-
-  .lg\.translate-y-512 {
-    --translate-y: 32rem;
-  }
-
-  .lg\.translate-y-576 {
-    --translate-y: 36rem;
-  }
-
-  .lg\.translate-y-640 {
-    --translate-y: 40rem;
-  }
-
   .lg\.translate-y-n100p {
     --translate-y: -100%;
   }
@@ -40171,54 +41627,6 @@ CUSTOM PROPERTIES
 
   .lg\.translate-x-128 {
     --translate-x: 8rem;
-  }
-
-  .lg\.translate-x-144 {
-    --translate-x: 9rem;
-  }
-
-  .lg\.translate-x-160 {
-    --translate-x: 10rem;
-  }
-
-  .lg\.translate-x-192 {
-    --translate-x: 12rem;
-  }
-
-  .lg\.translate-x-224 {
-    --translate-x: 14rem;
-  }
-
-  .lg\.translate-x-256 {
-    --translate-x: 16rem;
-  }
-
-  .lg\.translate-x-288 {
-    --translate-x: 18rem;
-  }
-
-  .lg\.translate-x-320 {
-    --translate-x: 20rem;
-  }
-
-  .lg\.translate-x-384 {
-    --translate-x: 24rem;
-  }
-
-  .lg\.translate-x-448 {
-    --translate-x: 28rem;
-  }
-
-  .lg\.translate-x-512 {
-    --translate-x: 32rem;
-  }
-
-  .lg\.translate-x-576 {
-    --translate-x: 36rem;
-  }
-
-  .lg\.translate-x-640 {
-    --translate-x: 40rem;
   }
 
   .lg\.translate-x-n100p {
@@ -45838,6 +47246,122 @@ CUSTOM PROPERTIES
     right: auto;
   }
 
+  .xl\.t-0 {
+    top: 0;
+  }
+
+  .xl\.t-1 {
+    top: 1px;
+  }
+
+  .xl\.t-2 {
+    top: 2px;
+  }
+
+  .xl\.t-3 {
+    top: 3px;
+  }
+
+  .xl\.t-4 {
+    top: 0.25rem;
+  }
+
+  .xl\.t-5 {
+    top: 0.3125rem;
+  }
+
+  .xl\.t-6 {
+    top: 0.375rem;
+  }
+
+  .xl\.t-7 {
+    top: 0.4375rem;
+  }
+
+  .xl\.t-8 {
+    top: 0.5rem;
+  }
+
+  .xl\.t-9 {
+    top: 0.5625rem;
+  }
+
+  .xl\.t-10 {
+    top: 0.625rem;
+  }
+
+  .xl\.t-12 {
+    top: 0.75rem;
+  }
+
+  .xl\.t-14 {
+    top: 0.875rem;
+  }
+
+  .xl\.t-16 {
+    top: 1rem;
+  }
+
+  .xl\.t-18 {
+    top: 1.125rem;
+  }
+
+  .xl\.t-20 {
+    top: 1.25rem;
+  }
+
+  .xl\.t-24 {
+    top: 1.5rem;
+  }
+
+  .xl\.t-28 {
+    top: 1.75rem;
+  }
+
+  .xl\.t-32 {
+    top: 2rem;
+  }
+
+  .xl\.t-36 {
+    top: 2.25rem;
+  }
+
+  .xl\.t-40 {
+    top: 2.5rem;
+  }
+
+  .xl\.t-48 {
+    top: 3rem;
+  }
+
+  .xl\.t-56 {
+    top: 3.5rem;
+  }
+
+  .xl\.t-64 {
+    top: 4rem;
+  }
+
+  .xl\.t-72 {
+    top: 4.5rem;
+  }
+
+  .xl\.t-80 {
+    top: 5rem;
+  }
+
+  .xl\.t-96 {
+    top: 6rem;
+  }
+
+  .xl\.t-112 {
+    top: 7rem;
+  }
+
+  .xl\.t-128 {
+    top: 8rem;
+  }
+
   .xl\.t-auto {
     top: auto;
   }
@@ -45858,8 +47382,120 @@ CUSTOM PROPERTIES
     top: 50%;
   }
 
-  .xl\.t-0 {
-    top: 0;
+  .xl\.r-0 {
+    right: 0;
+  }
+
+  .xl\.r-1 {
+    right: 1px;
+  }
+
+  .xl\.r-2 {
+    right: 2px;
+  }
+
+  .xl\.r-3 {
+    right: 3px;
+  }
+
+  .xl\.r-4 {
+    right: 0.25rem;
+  }
+
+  .xl\.r-5 {
+    right: 0.3125rem;
+  }
+
+  .xl\.r-6 {
+    right: 0.375rem;
+  }
+
+  .xl\.r-7 {
+    right: 0.4375rem;
+  }
+
+  .xl\.r-8 {
+    right: 0.5rem;
+  }
+
+  .xl\.r-9 {
+    right: 0.5625rem;
+  }
+
+  .xl\.r-10 {
+    right: 0.625rem;
+  }
+
+  .xl\.r-12 {
+    right: 0.75rem;
+  }
+
+  .xl\.r-14 {
+    right: 0.875rem;
+  }
+
+  .xl\.r-16 {
+    right: 1rem;
+  }
+
+  .xl\.r-18 {
+    right: 1.125rem;
+  }
+
+  .xl\.r-20 {
+    right: 1.25rem;
+  }
+
+  .xl\.r-24 {
+    right: 1.5rem;
+  }
+
+  .xl\.r-28 {
+    right: 1.75rem;
+  }
+
+  .xl\.r-32 {
+    right: 2rem;
+  }
+
+  .xl\.r-36 {
+    right: 2.25rem;
+  }
+
+  .xl\.r-40 {
+    right: 2.5rem;
+  }
+
+  .xl\.r-48 {
+    right: 3rem;
+  }
+
+  .xl\.r-56 {
+    right: 3.5rem;
+  }
+
+  .xl\.r-64 {
+    right: 4rem;
+  }
+
+  .xl\.r-72 {
+    right: 4.5rem;
+  }
+
+  .xl\.r-80 {
+    right: 5rem;
+  }
+
+  .xl\.r-96 {
+    right: 6rem;
+  }
+
+  .xl\.r-112 {
+    right: 7rem;
+  }
+
+  .xl\.r-128 {
+    right: 8rem;
   }
 
   .xl\.r-auto {
@@ -45882,8 +47518,120 @@ CUSTOM PROPERTIES
     right: 50%;
   }
 
-  .xl\.r-0 {
-    right: 0;
+  .xl\.l-0 {
+    left: 0;
+  }
+
+  .xl\.l-1 {
+    left: 1px;
+  }
+
+  .xl\.l-2 {
+    left: 2px;
+  }
+
+  .xl\.l-3 {
+    left: 3px;
+  }
+
+  .xl\.l-4 {
+    left: 0.25rem;
+  }
+
+  .xl\.l-5 {
+    left: 0.3125rem;
+  }
+
+  .xl\.l-6 {
+    left: 0.375rem;
+  }
+
+  .xl\.l-7 {
+    left: 0.4375rem;
+  }
+
+  .xl\.l-8 {
+    left: 0.5rem;
+  }
+
+  .xl\.l-9 {
+    left: 0.5625rem;
+  }
+
+  .xl\.l-10 {
+    left: 0.625rem;
+  }
+
+  .xl\.l-12 {
+    left: 0.75rem;
+  }
+
+  .xl\.l-14 {
+    left: 0.875rem;
+  }
+
+  .xl\.l-16 {
+    left: 1rem;
+  }
+
+  .xl\.l-18 {
+    left: 1.125rem;
+  }
+
+  .xl\.l-20 {
+    left: 1.25rem;
+  }
+
+  .xl\.l-24 {
+    left: 1.5rem;
+  }
+
+  .xl\.l-28 {
+    left: 1.75rem;
+  }
+
+  .xl\.l-32 {
+    left: 2rem;
+  }
+
+  .xl\.l-36 {
+    left: 2.25rem;
+  }
+
+  .xl\.l-40 {
+    left: 2.5rem;
+  }
+
+  .xl\.l-48 {
+    left: 3rem;
+  }
+
+  .xl\.l-56 {
+    left: 3.5rem;
+  }
+
+  .xl\.l-64 {
+    left: 4rem;
+  }
+
+  .xl\.l-72 {
+    left: 4.5rem;
+  }
+
+  .xl\.l-80 {
+    left: 5rem;
+  }
+
+  .xl\.l-96 {
+    left: 6rem;
+  }
+
+  .xl\.l-112 {
+    left: 7rem;
+  }
+
+  .xl\.l-128 {
+    left: 8rem;
   }
 
   .xl\.l-auto {
@@ -45906,8 +47654,120 @@ CUSTOM PROPERTIES
     left: 50%;
   }
 
-  .xl\.l-0 {
-    left: 0;
+  .xl\.b-0 {
+    bottom: 0;
+  }
+
+  .xl\.b-1 {
+    bottom: 1px;
+  }
+
+  .xl\.b-2 {
+    bottom: 2px;
+  }
+
+  .xl\.b-3 {
+    bottom: 3px;
+  }
+
+  .xl\.b-4 {
+    bottom: 0.25rem;
+  }
+
+  .xl\.b-5 {
+    bottom: 0.3125rem;
+  }
+
+  .xl\.b-6 {
+    bottom: 0.375rem;
+  }
+
+  .xl\.b-7 {
+    bottom: 0.4375rem;
+  }
+
+  .xl\.b-8 {
+    bottom: 0.5rem;
+  }
+
+  .xl\.b-9 {
+    bottom: 0.5625rem;
+  }
+
+  .xl\.b-10 {
+    bottom: 0.625rem;
+  }
+
+  .xl\.b-12 {
+    bottom: 0.75rem;
+  }
+
+  .xl\.b-14 {
+    bottom: 0.875rem;
+  }
+
+  .xl\.b-16 {
+    bottom: 1rem;
+  }
+
+  .xl\.b-18 {
+    bottom: 1.125rem;
+  }
+
+  .xl\.b-20 {
+    bottom: 1.25rem;
+  }
+
+  .xl\.b-24 {
+    bottom: 1.5rem;
+  }
+
+  .xl\.b-28 {
+    bottom: 1.75rem;
+  }
+
+  .xl\.b-32 {
+    bottom: 2rem;
+  }
+
+  .xl\.b-36 {
+    bottom: 2.25rem;
+  }
+
+  .xl\.b-40 {
+    bottom: 2.5rem;
+  }
+
+  .xl\.b-48 {
+    bottom: 3rem;
+  }
+
+  .xl\.b-56 {
+    bottom: 3.5rem;
+  }
+
+  .xl\.b-64 {
+    bottom: 4rem;
+  }
+
+  .xl\.b-72 {
+    bottom: 4.5rem;
+  }
+
+  .xl\.b-80 {
+    bottom: 5rem;
+  }
+
+  .xl\.b-96 {
+    bottom: 6rem;
+  }
+
+  .xl\.b-112 {
+    bottom: 7rem;
+  }
+
+  .xl\.b-128 {
+    bottom: 8rem;
   }
 
   .xl\.b-auto {
@@ -45928,10 +47788,6 @@ CUSTOM PROPERTIES
 
   .xl\.b-50p {
     bottom: 50%;
-  }
-
-  .xl\.b-0 {
-    bottom: 0;
   }
 
   .xl\.row-gap-0 {
@@ -48518,54 +50374,6 @@ CUSTOM PROPERTIES
     --translate-y: 8rem;
   }
 
-  .xl\.translate-y-144 {
-    --translate-y: 9rem;
-  }
-
-  .xl\.translate-y-160 {
-    --translate-y: 10rem;
-  }
-
-  .xl\.translate-y-192 {
-    --translate-y: 12rem;
-  }
-
-  .xl\.translate-y-224 {
-    --translate-y: 14rem;
-  }
-
-  .xl\.translate-y-256 {
-    --translate-y: 16rem;
-  }
-
-  .xl\.translate-y-288 {
-    --translate-y: 18rem;
-  }
-
-  .xl\.translate-y-320 {
-    --translate-y: 20rem;
-  }
-
-  .xl\.translate-y-384 {
-    --translate-y: 24rem;
-  }
-
-  .xl\.translate-y-448 {
-    --translate-y: 28rem;
-  }
-
-  .xl\.translate-y-512 {
-    --translate-y: 32rem;
-  }
-
-  .xl\.translate-y-576 {
-    --translate-y: 36rem;
-  }
-
-  .xl\.translate-y-640 {
-    --translate-y: 40rem;
-  }
-
   .xl\.translate-y-n100p {
     --translate-y: -100%;
   }
@@ -48696,54 +50504,6 @@ CUSTOM PROPERTIES
 
   .xl\.translate-x-128 {
     --translate-x: 8rem;
-  }
-
-  .xl\.translate-x-144 {
-    --translate-x: 9rem;
-  }
-
-  .xl\.translate-x-160 {
-    --translate-x: 10rem;
-  }
-
-  .xl\.translate-x-192 {
-    --translate-x: 12rem;
-  }
-
-  .xl\.translate-x-224 {
-    --translate-x: 14rem;
-  }
-
-  .xl\.translate-x-256 {
-    --translate-x: 16rem;
-  }
-
-  .xl\.translate-x-288 {
-    --translate-x: 18rem;
-  }
-
-  .xl\.translate-x-320 {
-    --translate-x: 20rem;
-  }
-
-  .xl\.translate-x-384 {
-    --translate-x: 24rem;
-  }
-
-  .xl\.translate-x-448 {
-    --translate-x: 28rem;
-  }
-
-  .xl\.translate-x-512 {
-    --translate-x: 32rem;
-  }
-
-  .xl\.translate-x-576 {
-    --translate-x: 36rem;
-  }
-
-  .xl\.translate-x-640 {
-    --translate-x: 40rem;
   }
 
   .xl\.translate-x-n100p {

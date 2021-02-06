@@ -10,8 +10,11 @@ $extra-selector: null;
 $properties: (left);
 $custom-properties: ();
 
+$range-limit: map.get(core.$all-config, range-limits, left);
+
 $variants: (
   core.merge(
+    core.positive-sizes($range-limit),
     (
       auto: auto,
       n100p: -100%,
