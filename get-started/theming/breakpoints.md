@@ -21,7 +21,7 @@ By default, there are **4 breakpoints** for any given responsive behavior. Use t
 | `sm` | `768px` |
 | `md` | `1024px` |
 | `lg` | `1280px` |
-| `lg` | `1536px` |
+| `xl` | `1536px` |
 
 {.table}
 

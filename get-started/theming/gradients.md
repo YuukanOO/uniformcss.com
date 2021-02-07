@@ -1,6 +1,6 @@
 ---
-title: Colors
-description: Learn how to customize and manipulate colors.
+title: Gradients
+description: Learn how to customize and manipulate gradients.
 date: 1000-01-02
 ---
 
