@@ -1,5 +1,6 @@
 @use "uniform" as * with (
   $config: (
+		dark-mode-support: true,
     gradients: (
       flare: conic-gradient(from 240deg at 51.63% 52.16%, #1800ff 0deg, rgb(0 150 255) 20deg, rgb(255 12 140) 100deg, rgb(255 193 149) 167deg, rgb(255 98 53) 208deg, #691eff 290deg)
     ),
