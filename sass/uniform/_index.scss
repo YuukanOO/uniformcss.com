@@ -259,7 +259,7 @@
 // CONSTRUCTOR
 // ============================================================
 
-$config: core.$all-config;
+$config: map.deep-merge(core.$all-config, core.$config);
 
 @mixin constructor($config) {
 

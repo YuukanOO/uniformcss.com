@@ -36,4 +36,3 @@ $config: (
 );
 
 core.$all-config: map.deep-merge(core.$all-config, $config);
-core.$all-config: map.deep-merge(core.$all-config, core.$config);

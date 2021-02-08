@@ -126,7 +126,6 @@ $config: (
 );
 
 core.$all-config: map.deep-merge(core.$all-config, $config);
-core.$all-config: map.deep-merge(core.$all-config, core.$config);
 ```
 
 <h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 text-black radius-round">2</span> Include custom property to the import list</h4>
