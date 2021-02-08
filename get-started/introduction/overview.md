@@ -34,13 +34,17 @@ Remove and extend colors? Check. Replace breakpoints? Check. Alias property name
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    important: true,
-    prefix: myProject,
-    delimiter: '-',
-    colors: (
-      custom-color-1: red,
-      custom-color-2: blue
+    build: (
+      important: true,
+      prefix: myProject,
+      delimiter: '-',
     ),
+    theme: (
+      colors: (
+        custom-color-1: red,
+        custom-color-2: blue
+      ),
+    )
     ...
   )
 );

@@ -5,7 +5,7 @@ $name: split-style;
 $shorthand: split;
 $responsive: true;
 $responsive-pseudos: false;
-$extra-selector: "> * + *";
+$extra-selector: '> * + *';
 
 $properties: (border-style);
 $custom-properties: ();

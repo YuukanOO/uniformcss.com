@@ -141,7 +141,9 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    pseudo-delimiter: ':',
+    build: (
+      pseudo-delimiter: ':',
+    )
   )
 );
 ```
@@ -162,9 +164,11 @@ You can extend the available set of pseudos by passing in key value pairs to the
 ```scss
 @use "uniform" as * with (
   $config: (
-    pseudos: (
-      nth4: 'nth-child(4)',
-      nth5n: 'nth-child(5n)',
+    theme: (
+      pseudos: (
+        nth4: 'nth-child(4)',
+        nth5n: 'nth-child(5n)',
+      )
     )
   )
 );

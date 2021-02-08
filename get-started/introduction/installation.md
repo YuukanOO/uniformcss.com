@@ -77,12 +77,16 @@ You can customize Uniform directly in your sass stylesheet. For more information
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    important: true,
-    prefix: myProject,
-    colors: (
-      custom-color-1: red,
-      custom-color-2: blue
+    build: (
+      important: true,
+      prefix: myProject,
     ),
+    theme: (
+      colors: (
+        custom-color-1: red,
+        custom-color-2: blue
+      ),
+    )
     ...
   )
 );

@@ -5,7 +5,7 @@ $name: split-reverse;
 $shorthand: split-reverse;
 $responsive: true;
 $responsive-pseudos: false;
-$extra-selector: "> * + *";
+$extra-selector: '> * + *';
 
 $properties: (margin);
 $custom-properties: (

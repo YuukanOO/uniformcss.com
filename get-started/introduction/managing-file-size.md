@@ -77,9 +77,10 @@ To reduce the file-size of your build even further, you can easily limit the num
 // Remove default properties
 @use "uniform" as * with (
   $config: (
-    // remove default primary colors
-    primary-colors: null,
-
+    theme: (
+      // remove default primary colors
+      primary-colors: null,
+    ),
     // exclude the following properties from build
     excludes: (
       background,

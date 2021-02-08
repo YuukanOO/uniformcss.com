@@ -6,7 +6,7 @@ date: 1000-01-04
 
 ## Typography
 
-You can customize a full range of typography properties such as line-heights and font sizes in Uniform CSS. In this guide, you will learn which variants are available for each typography property and how you can customize them.
+You can customize full range of typography properties such as line-heights and font sizes in Uniform CSS. In this guide, you will learn which variants are available for each typography property and how you can customize them.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -32,21 +32,23 @@ Font family properties can be applied using the `font-<family>` utility. By defa
 
 ## Customizing Font Families
 
-You can extend and replace default font families by customizing the `font-families` setting in your configuration.
+You can extend and replace default font families by customizing the `font-families` setting in your theme configuration.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    font-families: (
-      // default
-      sans: sans-serif,
-      serif: serif,
-      mono: monospace,
+    theme: (
+      font-families: (
+        // default
+        sans: sans-serif,
+        serif: serif,
+        mono: monospace,
 
-      // custom
-      helvetica: ("Helvetica Now Display", system-ui, sans-serif),
-    ),
+        // custom
+        helvetica: ("Helvetica Now Display", system-ui, sans-serif),
+      ),
+    )
   )
 )
 ```
@@ -55,6 +57,7 @@ You can extend and replace default font families by customizing the `font-famili
 /* styles.css */
 .font-sans {font-family: sans-serif;}
 .font-serif {font-family: serif;}
+.font-mono {font-family: monospace;}
 .font-helvetica {font-family: "Helvetica Now Display", system-ui, sans-serif;}
 ```
 
@@ -195,15 +198,17 @@ Font size properties can be applied using the `font-<size>` utility. By default,
 
 ## Customizing Font Sizes
 
-You can extend and replace default font sizes by customizing the `font-sizes` setting in your configuration.
+You can extend and replace default font sizes by customizing the `font-sizes` setting in your theme configuration.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    font-sizes: (
-      custom-heading: 8rem,
-    ),
+    theme: (
+      font-sizes: (
+        custom-heading: 8rem,
+      ),
+    )
   )
 )
 ```
@@ -222,7 +227,7 @@ font-sm {font-size: 0.875rem;}
 
 ## Line Height
 
-Line height properties can be applied using the `leading-<size>` utility. By default, there are 17 font families available.
+Line height properties can be applied using the `leading-<size>` utility. By default, there are 17 line-heights available.
 
 <div class="grid grid-cols-1 gap-36 bg-black radius-md p-20 py-48">
   <div class="leading-0 text-white">
@@ -246,32 +251,34 @@ Line height properties can be applied using the `leading-<size>` utility. By def
 
 ## Customizing Line Height
 
-You can extend and override the default variants by passing key value pairs to the `leadings` setting in your configuration. By default there are 17 variants to choose from.
+You can extend and override the default variants by passing key value pairs to the `leadings` setting in your theme configuration. By default there are 17 variants to choose from.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    leadings: (
-      tightest: 1,
-      tighter: 1.25,
-      tight: 1.5,
-      base: 1.75,
-      loose: 2,
-      looser: 2.25,
-      loosest: 2.5,
+    theme: (
+      leadings: (
+        tightest: 1,
+        tighter: 1.25,
+        tight: 1.5,
+        base: 1.75,
+        loose: 2,
+        looser: 2.25,
+        loosest: 2.5,
 
-      0: 1,
-      1: 1.1,
-      2: 1.2,
-      3: 1.3,
-      4: 1.4,
-      5: 1.5,
-      6: 1.6,
-      7: 1.7,
-      8: 1.8,
-      9: 1.9
-    ),
+        0: 1,
+        1: 1.1,
+        2: 1.2,
+        3: 1.3,
+        4: 1.4,
+        5: 1.5,
+        6: 1.6,
+        7: 1.7,
+        8: 1.8,
+        9: 1.9
+      ),
+    )
   )
 )
 ```
@@ -281,7 +288,7 @@ You can extend and override the default variants by passing key value pairs to t
 
 ## Letter Spacing
 
-Letter spacing properties can be applied using the `tracking-<size>` utility. By default, there are 26 variant ranges available.
+Letter spacing properties can be applied using the `tracking-<size>` utility. By default, there are 26 letter-spacings available.
 
 <div class="grid grid-cols-1 gap-36 bg-black align-center radius-md p-20 py-48">
   <div class="tracking-8 font-3xl text-white">
@@ -305,41 +312,43 @@ Letter spacing properties can be applied using the `tracking-<size>` utility. By
 
 ## Customizing Letter Spacing
 
-You can extend and override the default variants by passing key value pairs to the `trackings` setting in your configuration. By default there are 26 variants to choose from.
+You can extend and override the default variants by passing key value pairs to the `trackings` setting in your theme configuration. By default there are 26 variants to choose from.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    trackings: (
-      tightest: -0.75em,
-      tighter: -0.05em,
-      tight: -0.025em,
-      base: 0,
-      loose: 1.025em,
-      looser: 1.05em,
-      loosest: 1.075em,
+    theme: (
+      trackings: (
+        tightest: -0.75em,
+        tighter: -0.05em,
+        tight: -0.025em,
+        base: 0,
+        loose: 0.025em,
+        looser: 0.05em,
+        loosest: 0.075em,
 
-      n9: -0.09em,
-      n8: -0.08em,
-      n7: -0.07em,
-      n6: -0.06em,
-      n5: -0.05em,
-      n4: -0.04em,
-      n3: -0.03em,
-      n2: -0.02em,
-      n1: -0.01em,
-      0: 0,
-      1: 0.01em,
-      2: 0.02em,
-      3: 0.03em,
-      4: 0.04em,
-      5: 0.05em,
-      6: 0.06em,
-      7: 0.07em,
-      8: 0.08em,
-      9: 0.09em,
-    ),
+        n9: -0.09em,
+        n8: -0.08em,
+        n7: -0.07em,
+        n6: -0.06em,
+        n5: -0.05em,
+        n4: -0.04em,
+        n3: -0.03em,
+        n2: -0.02em,
+        n1: -0.01em,
+        0: 0,
+        1: 0.01em,
+        2: 0.02em,
+        3: 0.03em,
+        4: 0.04em,
+        5: 0.05em,
+        6: 0.06em,
+        7: 0.07em,
+        8: 0.08em,
+        9: 0.09em,
+      ),
+    )
   )
 )
 ```

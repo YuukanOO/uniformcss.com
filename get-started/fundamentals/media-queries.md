@@ -59,7 +59,9 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    screen-delimiter: '__',
+    build: (
+      screen-delimiter: '__',
+    )
   )
 );
 ```
@@ -106,8 +108,10 @@ You can change the number of breakpoints and even change their `min-width` value
 ```scss
 @use "uniform" as * with (
   $config: (
-    screens: (
-      custom-breakpoint: 1920px
+    theme: (
+      screens: (
+        custom-breakpoint: 1920px
+      )
     )
   )
 );
@@ -135,8 +139,10 @@ You can replace existing breakpoints by overriding existing keys to the `screens
 ```scss
 @use "uniform" as * with (
   $config: (
-    screens: (
-      md: 1920px
+    theme: (
+      screens: (
+        md: 1920px
+      )
     )
   )
 );

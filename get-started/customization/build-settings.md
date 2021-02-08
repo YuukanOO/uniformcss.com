@@ -20,8 +20,10 @@ Build settings control how classes should look on a global level.
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    important: true,
-    prefix: 'myPrefix-',
+    build: (
+      important: true,
+      prefix: 'myPrefix-',
+    )
   )
 );
 ```
@@ -62,10 +64,12 @@ To enable each advanced setting, simply include the setting in your configuratio
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    headless: false,
-    debugger: false,
-    placeholders: false,
-    dark-mode-support: false,
+    build: (
+      headless: false,
+      debugger: false,
+      placeholders: false,
+      dark-mode-support: false,
+    )
   )
 );
 ```
@@ -90,7 +94,9 @@ When `headless` is enabled, Uniform CSS will be loaded but no class properties w
 ```scss
 @use "uniform" as * with (
   $config: (
-    headless: true, // false by default
+    build: (
+      headless: true, // false by default
+    )
   )
 );
 ```
@@ -102,7 +108,9 @@ When `debugger` is enabled, every single pseudo across all breakpoints will be g
 ```scss
 @use "uniform" as * with (
   $config: (
-    debugger: true, // false by default
+    build: (
+      debugger: true, // false by default
+    )
   )
 );
 ```
@@ -114,19 +122,23 @@ When `placeholders` is enabled, every property will also generate Sass placehold
 ```scss
 @use "uniform" as * with (
   $config: (
-    placeholders: true, // false by default
+    build: (
+      placeholders: true, // false by default
+    )
   )
 );
 ```
 
 ### Dark Mode SUpport
 
-When `dark-mode-support` is enabled, every property will also generate a dark pseudo variant.
+When `dark-mode` is enabled, every property will also generate a dark pseudo variant.
 
 ```scss
 @use "uniform" as * with (
   $config: (
-    dark-mode-support: true, // false by default
+    build: (
+      dark-mode: true, // false by default
+    )
   )
 );
 ```

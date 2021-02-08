@@ -117,17 +117,19 @@ Negative 32px margin-top
 
 ## Extending Sizes
 
-You can customize the default sizing or add new ones by passing key value pairs to the `positive-sixes` and `negative-sizes` setting in your configuration.
+You can customize the default sizing or add new ones by passing key value pairs to the `positive-sixes` and `negative-sizes` setting in your theme configuration.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    positive-sizes: (
-      400: 400px
-    ),
-    negative-sizes: (
-      n400: -400px
+    theme: (
+      positive-sizes: (
+        400: 400px
+      ),
+      negative-sizes: (
+        n400: -400px
+      )
     )
   )
 );
@@ -143,5 +145,3 @@ You can customize the default sizing or add new ones by passing key value pairs 
 }
 ...
 ```
-
-> Configuring sizes work in a similar way to other types of configuration in Uniform CSS. If the key exists, it will override the existing key otherwise it will be included as new variant.

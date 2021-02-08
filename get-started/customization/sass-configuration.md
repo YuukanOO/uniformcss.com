@@ -20,7 +20,9 @@ Uniform CSS is loaded in as a module and can be configured with by passing in se
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    important: true,    
+    build: (
+      important: true,
+    )
     // override settings here
   )
 );
@@ -45,8 +47,10 @@ Build settings specifies globally how your properties are constructed.
 ```scss
 @use "uniform" as * with (
   $config: (
-    important: true,
-    // other build settings here
+    build: (
+      important: true,
+      // other build settings here
+    )
   )
 );
 ```
@@ -58,13 +62,15 @@ Theme settings specifies universally shared theme related settings such as break
 ```scss
 @use "uniform" as * with (
   $config: (\
-    screens: (
-      ...
+    theme: (
+      screens: (
+        ...
+      )
+      colors: (
+        ...
+      ),
+      // other theme settings here
     )
-    colors: (
-      ...
-    ),
-    // other theme settings here
   )
 );
 ```

@@ -5,7 +5,7 @@ $name: split-color;
 $shorthand: split;
 $responsive: true;
 $responsive-pseudos: false;
-$extra-selector: null;
+$extra-selector: '> * + *';
 
 $properties: (border-color);
 $custom-properties: (

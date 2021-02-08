@@ -76,16 +76,18 @@ The following example showcases how the variants can be applied.
 
 ## Extending Shadows
 
-You can customize the default shadows or add new ones by passing key value pairs to the `shadows` setting in your configuration. Customizations applied to the `shadows` setting will be applied to the `box-shadow` property.
+You can customize the default shadows or add new ones by passing key value pairs to the `shadows` theme setting in your configuration.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    shadows: (
-      card: ( 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) ),
-      chatbox: ( 0 20px 24px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.25) ),
-    ),
+    theme: (
+      shadows: (
+        card: ( 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) ),
+        chatbox: ( 0 20px 24px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.25) ),
+      ),
+    )
   )
 );
 ```
@@ -101,15 +103,11 @@ You can customize the default shadows or add new ones by passing key value pairs
 ...
 ```
 
-> Configuring radius sizes work in a similar way to other types of configuration in Uniform CSS. If the key exists, it will override the existing key otherwise it will be included as new variant.
-
 ---
 
 ## Customizing via CDN
 
 If you are using the CDN version of Uniform CSS, you can still customizing default settings by overriding CSS variables. The following shadow CSS variables can be overwritten.
-
-### Shadow CSS Variables
 
 ```css
 :root {

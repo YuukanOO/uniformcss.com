@@ -77,10 +77,12 @@ You can customize the default sizes or add new ones by passing key value pairs t
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    radiuses: (
-      custom: 5px,
-      card: 7px,
-    ),
+    theme: (
+      radiuses: (
+        custom: 5px,
+        card: 7px,
+      ),
+    )
   )
 );
 ```
@@ -104,8 +106,6 @@ You can customize the default sizes or add new ones by passing key value pairs t
 ## Customizing via CDN
 
 If you are using the CDN version of Uniform CSS, you can still customizing default settings by overriding CSS variables. The following radius CSS variables can be overwritten.
-
-### Radius CSS Variables
 
 ```css
 :root {

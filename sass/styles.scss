@@ -1,7 +1,7 @@
 @use "uniform" as * with (
   $config: (    
 		build: (
-			dark-mode-support: true,
+			dark-mode: true,
 		),
 		theme: (
 			gradients: (
@@ -10,19 +10,19 @@
 		),
     utility: (
       background-color: (
-      	pseudos: (active, focus, group-hover, empty)
+      	pseudos: (active, hover, focus, group-hover, empty, dark)
       ),
       background-darken: (
-        pseudos: (active)
+        pseudos: (active, dark)
       ),
       opacity: (
-        pseudos: (focus, disabled, group-hover)
+        pseudos: (focus, disabled, group-hover, dark)
       ),
       border-color: (
-      	pseudos: (focus-within)
+      	pseudos: (focus-within, dark)
       ),
       color: (
-        pseudos: (group-focus)
+        pseudos: (hover, group-hover, group-focus, dark)
       )
     ),
     excludes: (
