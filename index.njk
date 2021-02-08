@@ -7,14 +7,14 @@ eleventyNavigation:
 scssCodeExample: |
   @use "uniform" as * with (
     $config: (
-      important: true,
+      build: (
+        important: true,
+      ),
       utility: (
         leading-trim: (
           shorthand: trim,
           properties: (leading-trim),
-          variants: (
-            both: both
-          )
+          variants: (both: both)
         )
       )
     )

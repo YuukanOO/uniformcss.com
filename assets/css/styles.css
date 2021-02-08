@@ -818,30 +818,34 @@ CUSTOM PROPERTIES
 
 
 --checkbox-size
---checkbox-margin
 --checkbox-radius
---checkbox-border
 --checkbox-bg
+--checkbox-border
+--checkbox-radius
 --checkbox-transition
 --checkbox-hover-border
---checkbox-checked-bg
+
 --checkbox-checked-border
+--checkbox-checked-bg
+
+--checkbox-disabled-border
 --checkbox-disabled-bg
---checkbox-disabled-color
 
 
 
 --radio-size
---radio-margin
 --radio-radius
---radio-border
 --radio-bg
+--radio-border
+--radio-radius
 --radio-transition
 --radio-hover-border
---radio-checked-bg
+
 --radio-checked-border
+--radio-checked-bg
+
+--radio-disabled-border
 --radio-disabled-bg
---radio-disabled-color
 
 
 
@@ -952,7 +956,7 @@ INPUT
   position: relative;
   width: 100%;
   height: var(--input-height, 2.5rem);
-  padding: var(--input-padding, 0 1rem);
+  padding: var(--input-padding, 0 0.875rem);
   background: var(--input-bg, white);
   border: var(--input-border, 1px solid hsl(var(--silver-300-hue, var(--silver-hue, 230)), calc(0% + var(--silver-300-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-300-ltn, 88%))));
   border-radius: var(--input-radius, var(--radius-xs));
@@ -1005,19 +1009,19 @@ INPUT
 
 .input-md {
   height: var(--input-md-height, 2.5rem);
-  padding: var(--input-md-padding, 0 1rem);
+  padding: var(--input-md-padding, 0 0.875rem);
   font-size: var(--input-md-font-size, var(--font-base));
 }
 
 .input-lg {
   height: var(--input-lg-height, 3rem);
-  padding: var(--input-lg-padding, 0 1.125rem);
+  padding: var(--input-lg-padding, 0 1rem);
   font-size: var(--input-lg-font-size, var(--font-base));
 }
 
 .input-xl {
   height: var(--input-xl-height, 3.5rem);
-  padding: var(--input-xl-padding, 0 1.25rem);
+  padding: var(--input-xl-padding, 0 1.125rem);
   font-size: var(--input-xl-font-size, var(--font-base));
 }
 
@@ -1036,19 +1040,19 @@ INPUT
 
   .sm\.input-md {
     height: var(--input-md-height, 2.5rem);
-    padding: var(--input-md-padding, 0 1rem);
+    padding: var(--input-md-padding, 0 0.875rem);
     font-size: var(--input-md-font-size, var(--font-base));
   }
 
   .sm\.input-lg {
     height: var(--input-lg-height, 3rem);
-    padding: var(--input-lg-padding, 0 1.125rem);
+    padding: var(--input-lg-padding, 0 1rem);
     font-size: var(--input-lg-font-size, var(--font-base));
   }
 
   .sm\.input-xl {
     height: var(--input-xl-height, 3.5rem);
-    padding: var(--input-xl-padding, 0 1.25rem);
+    padding: var(--input-xl-padding, 0 1.125rem);
     font-size: var(--input-xl-font-size, var(--font-base));
   }
 }
@@ -1067,19 +1071,19 @@ INPUT
 
   .md\.input-md {
     height: var(--input-md-height, 2.5rem);
-    padding: var(--input-md-padding, 0 1rem);
+    padding: var(--input-md-padding, 0 0.875rem);
     font-size: var(--input-md-font-size, var(--font-base));
   }
 
   .md\.input-lg {
     height: var(--input-lg-height, 3rem);
-    padding: var(--input-lg-padding, 0 1.125rem);
+    padding: var(--input-lg-padding, 0 1rem);
     font-size: var(--input-lg-font-size, var(--font-base));
   }
 
   .md\.input-xl {
     height: var(--input-xl-height, 3.5rem);
-    padding: var(--input-xl-padding, 0 1.25rem);
+    padding: var(--input-xl-padding, 0 1.125rem);
     font-size: var(--input-xl-font-size, var(--font-base));
   }
 }
@@ -1098,19 +1102,19 @@ INPUT
 
   .lg\.input-md {
     height: var(--input-md-height, 2.5rem);
-    padding: var(--input-md-padding, 0 1rem);
+    padding: var(--input-md-padding, 0 0.875rem);
     font-size: var(--input-md-font-size, var(--font-base));
   }
 
   .lg\.input-lg {
     height: var(--input-lg-height, 3rem);
-    padding: var(--input-lg-padding, 0 1.125rem);
+    padding: var(--input-lg-padding, 0 1rem);
     font-size: var(--input-lg-font-size, var(--font-base));
   }
 
   .lg\.input-xl {
     height: var(--input-xl-height, 3.5rem);
-    padding: var(--input-xl-padding, 0 1.25rem);
+    padding: var(--input-xl-padding, 0 1.125rem);
     font-size: var(--input-xl-font-size, var(--font-base));
   }
 }
@@ -1129,138 +1133,134 @@ INPUT
 
   .xl\.input-md {
     height: var(--input-md-height, 2.5rem);
-    padding: var(--input-md-padding, 0 1rem);
+    padding: var(--input-md-padding, 0 0.875rem);
     font-size: var(--input-md-font-size, var(--font-base));
   }
 
   .xl\.input-lg {
     height: var(--input-lg-height, 3rem);
-    padding: var(--input-lg-padding, 0 1.125rem);
+    padding: var(--input-lg-padding, 0 1rem);
     font-size: var(--input-lg-font-size, var(--font-base));
   }
 
   .xl\.input-xl {
     height: var(--input-xl-height, 3.5rem);
-    padding: var(--input-xl-padding, 0 1.25rem);
+    padding: var(--input-xl-padding, 0 1.125rem);
     font-size: var(--input-xl-font-size, var(--font-base));
   }
 }
 /******************************
 CHECKBOX
+
+--checkbox-size
+--checkbox-radius
+--checkbox-bg
+--checkbox-border
+--checkbox-radius
+--checkbox-transition
+--checkbox-hover-border
+
+--checkbox-checked-border
+--checkbox-checked-bg
+
+--checkbox-disabled-border
+--checkbox-disabled-bg
 ******************************/
 .checkbox {
-  appearance: none;
   display: inline-flex;
-  align-items: center;
-  cursor: pointer;
-  outline: 0;
-}
-.checkbox:checked {
-  background: url(data:image/svg+xml;utf8,%3Csvg%20width=%2210%22%20height=%229%22%20viewBox=%220%200%2010%208%22%20xmlns=%22http://www.w3.org/2000/svg%22%20fill=%22%23FFFFFF%22%3E%3Cpath%20d=%22M3.46975%205.70757L1.88358%204.1225C1.65832%203.8974%201.29423%203.8974%201.06897%204.1225C0.843675%204.34765%200.843675%204.7116%201.06897%204.93674L3.0648%206.93117C3.29006%207.15628%203.65414%207.15628%203.8794%206.93117L8.93103%201.88306C9.15633%201.65792%209.15633%201.29397%208.93103%201.06883C8.70578%200.843736%208.34172%200.843724%208.11646%201.06879C8.11645%201.0688%208.11643%201.06882%208.11642%201.06883L3.46975%205.70757Z%22%20stroke-width=%220.2%22%20/%3E%3C/svg%3E) 1px 2px no-repeat #5e6ad2;
-}
-.checkbox:hover .checkbox__checkmark {
-  border: var(--checkbox-hover-border, 1px solid hsl(var(--silver-800-hue, var(--silver-hue, 230)), calc(0% + var(--silver-800-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-800-ltn, 63%))));
-}
-.checkbox input {
-  display: none;
-}
-.checkbox input:checked ~ .checkbox__checkmark {
-  background: var(--checkbox-checked-bg, hsl(var(--primary-500-hue, var(--primary-hue, 225)), calc(0% + var(--primary-500-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-500-ltn, 50%))));
-  border: var(--checkbox-checked-border, 1px solid hsl(var(--primary-500-hue, var(--primary-hue, 225)), calc(0% + var(--primary-500-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-500-ltn, 50%))));
-}
-.checkbox input:checked ~ .checkbox__checkmark:after {
-  display: block;
-}
-.checkbox input:disabled ~ .checkbox__checkmark {
-  background: var(--checkbox-disabled-bg, hsl(var(--silver-300-hue, var(--silver-hue, 230)), calc(0% + var(--silver-300-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-300-ltn, 88%))));
-  border-color: var(--checkbox-disabled-bg, hsl(var(--silver-500-hue, var(--silver-hue, 230)), calc(0% + var(--silver-500-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-500-ltn, 78%))));
-}
-.checkbox input:disabled ~ .checkbox__checkmark:after {
-  border-color: var(--checkbox-disabled-color, hsl(var(--gray-400-hue, var(--gray-hue, 230)), calc(0% + var(--gray-400-sat, var(--gray-sat, 0%))), calc(0% + var(--gray-400-ltn, 38%))));
-}
-.checkbox input:focus ~ .checkbox__checkmark {
-  box-shadow: var(--checkbox-focus-shadow, var(--shadow-focus));
-}
-
-.checkbox__checkmark {
   flex: none;
   position: relative;
-  width: var(--checkbox-size, 1.125rem);
-  height: var(--checkbox-size, 1.125rem);
-  margin-right: var(--checkbox-margin, 0.5rem);
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--checkbox-size, 1rem);
+  height: var(--checkbox-size, 1rem);
   background: var(--checkbox-bg, white);
   border: var(--checkbox-border, 1px solid hsl(var(--silver-500-hue, var(--silver-hue, 230)), calc(0% + var(--silver-500-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-500-ltn, 78%))));
   border-radius: var(--checkbox-radius, var(--radius-xs));
   transition: var(--checkbox-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform 100ms);
+  cursor: pointer;
 }
-.checkbox__checkmark:after {
-  content: "";
-  display: none;
-  position: absolute;
-  left: 5px;
-  top: 1px;
-  width: 6px;
-  height: 10px;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+.checkbox:focus {
+  outline: 0;
+  box-shadow: var(--shadow-focus);
+}
+.checkbox:hover {
+  border: var(--checkbox-hover-border, 1px solid hsl(var(--silver-800-hue, var(--silver-hue, 230)), calc(0% + var(--silver-800-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-800-ltn, 63%))));
+}
+.checkbox:checked {
+  border: var(--checkbox-checked-border, 1px solid hsl(var(--primary-500-hue, var(--primary-hue, 225)), calc(0% + var(--primary-500-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-500-ltn, 50%))));
+  background-color: var(--checkbox-checked-bg, hsl(var(--primary-500-hue, var(--primary-hue, 225)), calc(0% + var(--primary-500-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-500-ltn, 50%))));
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+.checkbox:checked:disabled {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23666' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+.checkbox:checked:hover {
+  border: var(--checkbox-checked-border, 1px solid hsl(var(--primary-500-hue, var(--primary-hue, 225)), calc(0% + var(--primary-500-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-500-ltn, 50%))));
+}
+.checkbox:disabled {
+  border-color: var(--checkbox-disabled-border, hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-400-ltn, 83%))));
+  background-color: var(--checkbox-disabled-bg, hsl(var(--silver-300-hue, var(--silver-hue, 230)), calc(0% + var(--silver-300-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-300-ltn, 88%))));
+}
+.checkbox:disabled:hover {
+  border: var(--checkbox-disabled-border, 1px solid hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-400-ltn, 83%))));
 }
 
 /******************************
 RADIO
+
+--radio-size
+--radio-radius
+--radio-bg
+--radio-border
+--radio-radius
+--radio-transition
+--radio-hover-border
+
+--radio-checked-border
+--radio-checked-bg
+
+--radio-disabled-border
+--radio-disabled-bg
 ******************************/
 .radio {
   display: inline-flex;
-  align-items: center;
+  flex: none;
+  position: relative;
+  -webkit-appearance: none;
+  appearance: none;
+  width: var(--radio-size, 1rem);
+  height: var(--radio-size, 1rem);
+  background: var(--radio-bg, white);
+  border: var(--radio-border, 1px solid hsl(var(--silver-500-hue, var(--silver-hue, 230)), calc(0% + var(--silver-500-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-500-ltn, 78%))));
+  border-radius: var(--radio-radius, 9999px);
+  transition: var(--radio-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform 100ms);
   cursor: pointer;
 }
-.radio:hover .radio__checkmark {
+.radio:focus {
+  outline: 0;
+  box-shadow: var(--shadow-focus);
+}
+.radio:hover {
   border: var(--radio-hover-border, 1px solid hsl(var(--silver-800-hue, var(--silver-hue, 230)), calc(0% + var(--silver-800-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-800-ltn, 63%))));
 }
 .radio:checked {
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+  border: var(--radio-checked-border, 1px solid hsl(var(--primary-500-hue, var(--primary-hue, 225)), calc(0% + var(--primary-500-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-500-ltn, 50%))));
+  background-color: var(--radio-checked-bg, hsl(var(--primary-500-hue, var(--primary-hue, 225)), calc(0% + var(--primary-500-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-500-ltn, 50%))));
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
-.radio input {
-  display: none;
+.radio:checked:disabled {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23666'/%3e%3c/svg%3e");
 }
-.radio input:checked ~ .radio__checkmark {
-  background: var(--radio-checked-bg, hsl(var(--primary-500-hue, var(--primary-hue, 225)), calc(0% + var(--primary-500-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-500-ltn, 50%))));
+.radio:checked:hover {
   border: var(--radio-checked-border, 1px solid hsl(var(--primary-500-hue, var(--primary-hue, 225)), calc(0% + var(--primary-500-sat, var(--primary-sat, 50%))), calc(0% + var(--primary-500-ltn, 50%))));
 }
-.radio input:checked ~ .radio__checkmark:after {
-  display: block;
-  background: white;
+.radio:disabled {
+  border-color: var(--radio-disabled-border, hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-400-ltn, 83%))));
+  background-color: var(--radio-disabled-bg, hsl(var(--silver-300-hue, var(--silver-hue, 230)), calc(0% + var(--silver-300-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-300-ltn, 88%))));
 }
-.radio input:disabled ~ .radio__checkmark {
-  background: var(--radio-disabled-bg, hsl(var(--silver-300-hue, var(--silver-hue, 230)), calc(0% + var(--silver-300-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-300-ltn, 88%))));
-  border-color: var(--radio-disabled-bg, hsl(var(--silver-500-hue, var(--silver-hue, 230)), calc(0% + var(--silver-500-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-500-ltn, 78%))));
-}
-.radio input:disabled ~ .radio__checkmark:after {
-  border-color: var(--radio-disabled-color, hsl(var(--gray-400-hue, var(--gray-hue, 230)), calc(0% + var(--gray-400-sat, var(--gray-sat, 0%))), calc(0% + var(--gray-400-ltn, 38%))));
-  background: var(--radio-disabled-color, hsl(var(--gray-400-hue, var(--gray-hue, 230)), calc(0% + var(--gray-400-sat, var(--gray-sat, 0%))), calc(0% + var(--gray-400-ltn, 38%))));
-}
-
-.radio__checkmark {
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: var(--radio-size, 1.125rem);
-  height: var(--radio-size, 1.125rem);
-  margin-right: var(--radio-margin, 0.5rem);
-  border-radius: var(--radio-radius, 9999px);
-  border: var(--radio-border, 1px solid hsl(var(--silver-500-hue, var(--silver-hue, 230)), calc(0% + var(--silver-500-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-500-ltn, 78%))));
-  background: var(--radio-bg, white);
-  transition: var(--radio-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform 100ms);
-}
-.radio__checkmark:after {
-  content: "";
-  display: none;
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: var(--radio-radius, 9999px);
+.radio:disabled:hover {
+  border: var(--radio-disabled-border, 1px solid hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-400-ltn, 83%))));
 }
 
 /******************************
@@ -1344,10 +1344,10 @@ SELECT
   pointer-events: none;
 }
 .select:hover:after {
-  border-color: var(--select-hover-angle-color, black);
+  border-color: var(--select-hover-angle-color, hsl(var(--gray-300-hue, var(--gray-hue, 230)), calc(0% + var(--gray-300-sat, var(--gray-sat, 0%))), calc(0% + var(--gray-300-ltn, 43%))));
 }
 .select:focus:after {
-  border-color: var(--select-hover-focus-color, black);
+  border-color: var(--select-hover-focus-color, hsl(var(--gray-300-hue, var(--gray-hue, 230)), calc(0% + var(--gray-300-sat, var(--gray-sat, 0%))), calc(0% + var(--gray-300-ltn, 43%))));
 }
 .select:after {
   position: absolute;
@@ -1401,7 +1401,7 @@ SELECT
 
 .select-md select {
   height: var(--select-md-height, 2.5rem);
-  padding: var(--select-md-padding, 0 1rem);
+  padding: var(--select-md-padding, 0 0.875rem);
   font-size: var(--select-md-font-size, var(--font-base));
 }
 .select-md:after {
@@ -1410,7 +1410,7 @@ SELECT
 
 .select-lg select {
   height: var(--select-lg-height, 3rem);
-  padding: var(--select-lg-padding, 0 1.125rem);
+  padding: var(--select-lg-padding, 0 1rem);
   font-size: var(--select-lg-font-size, var(--font-base));
 }
 .select-lg:after {
@@ -1419,7 +1419,7 @@ SELECT
 
 .select-xl select {
   height: var(--select-xl-height, 3.5rem);
-  padding: var(--select-xl-padding, 0 1.25rem);
+  padding: var(--select-xl-padding, 0 1.125rem);
   font-size: var(--select-xl-font-size, var(--font-base));
 }
 .select-xl:after {
@@ -1447,7 +1447,7 @@ SELECT
 
   .sm\.select-md select {
     height: var(--select-md-height, 2.5rem);
-    padding: var(--select-md-padding, 0 1rem);
+    padding: var(--select-md-padding, 0 0.875rem);
     font-size: var(--select-md-font-size, var(--font-base));
   }
   .sm\.select-md:after {
@@ -1456,7 +1456,7 @@ SELECT
 
   .sm\.select-lg select {
     height: var(--select-lg-height, 3rem);
-    padding: var(--select-lg-padding, 0 1.125rem);
+    padding: var(--select-lg-padding, 0 1rem);
     font-size: var(--select-lg-font-size, var(--font-base));
   }
   .sm\.select-lg:after {
@@ -1465,7 +1465,7 @@ SELECT
 
   .sm\.select-xl select {
     height: var(--select-xl-height, 3.5rem);
-    padding: var(--select-xl-padding, 0 1.25rem);
+    padding: var(--select-xl-padding, 0 1.125rem);
     font-size: var(--select-xl-font-size, var(--font-base));
   }
   .sm\.select-xl:after {
@@ -1493,7 +1493,7 @@ SELECT
 
   .md\.select-md select {
     height: var(--select-md-height, 2.5rem);
-    padding: var(--select-md-padding, 0 1rem);
+    padding: var(--select-md-padding, 0 0.875rem);
     font-size: var(--select-md-font-size, var(--font-base));
   }
   .md\.select-md:after {
@@ -1502,7 +1502,7 @@ SELECT
 
   .md\.select-lg select {
     height: var(--select-lg-height, 3rem);
-    padding: var(--select-lg-padding, 0 1.125rem);
+    padding: var(--select-lg-padding, 0 1rem);
     font-size: var(--select-lg-font-size, var(--font-base));
   }
   .md\.select-lg:after {
@@ -1511,7 +1511,7 @@ SELECT
 
   .md\.select-xl select {
     height: var(--select-xl-height, 3.5rem);
-    padding: var(--select-xl-padding, 0 1.25rem);
+    padding: var(--select-xl-padding, 0 1.125rem);
     font-size: var(--select-xl-font-size, var(--font-base));
   }
   .md\.select-xl:after {
@@ -1539,7 +1539,7 @@ SELECT
 
   .lg\.select-md select {
     height: var(--select-md-height, 2.5rem);
-    padding: var(--select-md-padding, 0 1rem);
+    padding: var(--select-md-padding, 0 0.875rem);
     font-size: var(--select-md-font-size, var(--font-base));
   }
   .lg\.select-md:after {
@@ -1548,7 +1548,7 @@ SELECT
 
   .lg\.select-lg select {
     height: var(--select-lg-height, 3rem);
-    padding: var(--select-lg-padding, 0 1.125rem);
+    padding: var(--select-lg-padding, 0 1rem);
     font-size: var(--select-lg-font-size, var(--font-base));
   }
   .lg\.select-lg:after {
@@ -1557,7 +1557,7 @@ SELECT
 
   .lg\.select-xl select {
     height: var(--select-xl-height, 3.5rem);
-    padding: var(--select-xl-padding, 0 1.25rem);
+    padding: var(--select-xl-padding, 0 1.125rem);
     font-size: var(--select-xl-font-size, var(--font-base));
   }
   .lg\.select-xl:after {
@@ -1585,7 +1585,7 @@ SELECT
 
   .xl\.select-md select {
     height: var(--select-md-height, 2.5rem);
-    padding: var(--select-md-padding, 0 1rem);
+    padding: var(--select-md-padding, 0 0.875rem);
     font-size: var(--select-md-font-size, var(--font-base));
   }
   .xl\.select-md:after {
@@ -1594,7 +1594,7 @@ SELECT
 
   .xl\.select-lg select {
     height: var(--select-lg-height, 3rem);
-    padding: var(--select-lg-padding, 0 1.125rem);
+    padding: var(--select-lg-padding, 0 1rem);
     font-size: var(--select-lg-font-size, var(--font-base));
   }
   .xl\.select-lg:after {
@@ -1603,7 +1603,7 @@ SELECT
 
   .xl\.select-xl select {
     height: var(--select-xl-height, 3.5rem);
-    padding: var(--select-xl-padding, 0 1.25rem);
+    padding: var(--select-xl-padding, 0 1.125rem);
     font-size: var(--select-xl-font-size, var(--font-base));
   }
   .xl\.select-xl:after {
@@ -61516,6 +61516,7 @@ pre[class*=language-] {
 
 .toc {
   font-size: var(--font-sm);
+  font-weight: var(--font-semibold);
   line-height: var(--leading-tight);
 }
 .toc a {

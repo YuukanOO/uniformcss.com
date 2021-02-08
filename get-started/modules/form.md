@@ -23,21 +23,18 @@ The Form module is an optional pre-built component that provides customizable st
       <input class="input" placeholder="Email" value="Placeholder Text">
     </div>
     <div class="mb-20 last.mb-0">
-      <label class="checkbox">
-        <input type="checkbox" checked required />
-        <div class="checkbox__checkmark"></div>
+      <label class="inline-flex align-items-center">
+        <input class="checkbox mr-10" type="checkbox" checked required />
         Checkbox
       </label>
     </div>
     <div class="mb-20 last.mb-0">
-      <label class="radio mr-4">
-        <input type="radio" name="radio" checked />
-        <div class="radio__checkmark"></div>
+      <label class="inline-flex align-items-center mr-16">
+        <input class="radio mr-10" type="radio" name="radio" checked />
         Radio
       </label>
-      <label class="radio">
-        <input type="radio" name="radio" checked />
-        <div class="radio__checkmark"></div>
+      <label class="inline-flex align-items-center">
+        <input class="radio mr-10" type="radio" name="radio" />
         Radio
       </label>
     </div>
@@ -60,23 +57,20 @@ The Form module is an optional pre-built component that provides customizable st
 </div>
 
 ```html
-<label class="label mb-2">Email</label>
+<label class="label mb-8">Email</label>
 <input class="input" placeholder="Email" value="Placeholder Text">
 
-<label class="checkbox">
-  <input type="checkbox" checked required />
-  <div class="checkbox__checkmark"></div>
+<label class="inline-flex align-items-center">
+  <input class="checkbox mr-10" type="checkbox" checked required />
   Checkbox
 </label>
 
-<label class="radio mr-4">
-  <input type="radio" name="radio" checked />
-  <div class="radio__checkmark"></div>
+<label class="inline-flex align-items-center mr-16">
+  <input class="radio mr-10" type="radio" name="radio" checked />
   Radio
 </label>
-<label class="radio">
-  <input type="radio" name="radio" checked />
-  <div class="radio__checkmark"></div>
+<label class="inline-flex align-items-center">
+  <input class="radio mr-10" type="radio" name="radio" />
   Radio
 </label>
 
@@ -91,7 +85,6 @@ The Form module is an optional pre-built component that provides customizable st
     <option>Option</option>
     <option>Option</option>
   </select>
-  <div class="select__angle"></div>
 </div>
 ```
 
@@ -111,9 +104,7 @@ To add a required asterisk append the class `is-required` to your label.
 <input class="input" placeholder="Email" value="Placeholder Text" required>
 ```
 
----
-
-## Customizing Input
+### Customizing Input
 
 The following CSS variable hooks are available to customize.
 
@@ -150,24 +141,22 @@ The following CSS variable hooks are available to customize.
 Text fields come in **5 sizes**.
 
 <div class="bg-white border-1 border-silver-200 radius-md p-20">
-  <input class="input input-xs mb-8 last.mb-0" placeholder="Email" value="Placeholder Text">
-  <input class="input input-sm mb-8 last.mb-0" placeholder="Email" value="Placeholder Text">
-  <input class="input input-md mb-8 last.mb-0" placeholder="Email" value="Placeholder Text">
-  <input class="input input-lg mb-8 last.mb-0" placeholder="Email" value="Placeholder Text">
-  <input class="input input-xl mb-8 last.mb-0" placeholder="Email" value="Placeholder Text">
+  <input class="input input-xs mb-8 last.mb-0" placeholder="Full name">
+  <input class="input input-sm mb-8 last.mb-0" placeholder="Full name">
+  <input class="input input-md mb-8 last.mb-0" placeholder="Full name">
+  <input class="input input-lg mb-8 last.mb-0" placeholder="Full name">
+  <input class="input input-xl mb-8 last.mb-0" placeholder="Full name">
 </div>
 
 ```html
-<input class="input input-xs" placeholder="Email" value="Placeholder Text">
-<input class="input input-sm" placeholder="Email" value="Placeholder Text">
-<input class="input input-md" placeholder="Email" value="Placeholder Text">
-<input class="input input-lg" placeholder="Email" value="Placeholder Text">
-<input class="input input-xl" placeholder="Email" value="Placeholder Text">
+<input class="input input-xs" placeholder="Full name">
+<input class="input input-sm" placeholder="Full name">
+<input class="input input-md" placeholder="Full name">
+<input class="input input-lg" placeholder="Full name">
+<input class="input input-xl" placeholder="Full name">
 ```
 
----
-
-## Customizing Input Sizes
+### Customizing Input Sizes
 
 The following CSS variable hooks are available to customize.
 
@@ -220,9 +209,7 @@ The following CSS variable hooks are available to customize.
 </div>
 ```
 
----
-
-## Customizing Select Field
+### Customizing Select Field
 
 The following CSS variable hooks are available to customize.
 
@@ -314,9 +301,7 @@ Select fields come in **5 sizes**.
 <div class="select select-xl">...</div>
 ```
 
----
-
-## Customizing Select Sizes
+### Customizing Select Sizes
 
 The following CSS variable hooks are available to customize.
 
@@ -382,9 +367,7 @@ Text, select, and textarea fields come in *4* different states.
 <textarea class="textarea is-warning leading-8" rows="4">Warning textarea</textarea>
 ```
 
----
-
-## Customizing Input States
+### Customizing Input States
 
 The following CSS variable hooks are available to customize.
 
@@ -414,48 +397,40 @@ Text and select input fields come in **5 sizes**.
 
 <div class="bg-white border-1 border-silver-200 radius-md p-20">
   <div class="mb-20">
-    <label class="radio mr-4">
-      <input type="radio" name="radio" checked />
-      <div class="radio__checkmark"></div>
+    <label class="inline-flex align-items-center mr-16">
+      <input class="radio mr-10" type="radio" name="radio" checked />
       Radio
     </label>
-    <label class="radio">
-      <input type="radio" name="radio" checked />
-      <div class="radio__checkmark"></div>
+    <label class="inline-flex align-items-center">
+      <input class="radio mr-10" type="radio" name="radio" checked />
       Radio
     </label>
   </div>
   <div>
-    <label class="checkbox">
-      <input type="checkbox" checked required />
-      <div class="checkbox__checkmark"></div>
+    <label class="inline-flex align-items-center">
+      <input class="checkbox mr-10" type="checkbox" checked required />
       I agree to the terms and agreement.
     </label>
   </div>
 </div>
 
 ```html
-<label class="radio mr-4">
-  <input type="radio" name="radio" checked />
-  <div class="radio__checkmark"></div>
+<label class="inline-flex align-items-center mr-16">
+  <input class="radio mr-10" type="radio" name="radio" checked />
   Radio
 </label>
-<label class="radio">
-  <input type="radio" name="radio" checked />
-  <div class="radio__checkmark"></div>
+<label class="inline-flex align-items-center">
+  <input class="radio mr-10" type="radio" name="radio" checked />
   Radio
 </label>
 
-<label class="checkbox">
-  <input type="checkbox" checked required />
-  <div class="checkbox__checkmark"></div>
+<label class="inline-flex align-items-center">
+  <input class="checkbox mr-10" type="checkbox" checked required />
   I agree to the terms and agreement.
 </label>
 ```
 
----
-
-## Customizing Basic Button
+### Customizing Basic Button
 
 The following CSS variable hooks are available to customize.
 
@@ -463,31 +438,30 @@ The following CSS variable hooks are available to customize.
 /* styles.css */
 :root {
   --checkbox-size: ...;
-  --checkbox-margin: ...;
   --checkbox-radius: ...;
-  --checkbox-border: ...;
   --checkbox-bg: ...;
+  --checkbox-border: ...;
+  --checkbox-radius: ...;
   --checkbox-transition: ...;
   --checkbox-hover-border: ...;
-  --checkbox-checked-bg: ...;
   --checkbox-checked-border: ...;
+  --checkbox-checked-bg: ...;
+  --checkbox-disabled-border: ...;
   --checkbox-disabled-bg: ...;
-  --checkbox-disabled-color: ...;
 
   --radio-size: ...;
-  --radio-margin: ...;
   --radio-radius: ...;
-  --radio-border: ...;
   --radio-bg: ...;
+  --radio-border: ...;
+  --radio-radius: ...;
   --radio-transition: ...;
   --radio-hover-border: ...;
-  --radio-checked-bg: ...;
   --radio-checked-border: ...;
+  --radio-checked-bg: ...;
+  --radio-disabled-border: ...;
   --radio-disabled-bg: ...;
-  --radio-disabled-color: ...;
 }
 ```
-
 
 
 ---
@@ -509,9 +483,8 @@ Checkboxes can also be transformed into a toggle switch.
   <div class="toggle__switch"></div>
 </label>
 ```
----
 
-## Customizing Toggle Switch
+### Customizing Toggle Switch
 
 The following CSS variable hooks are available to customize.
 
@@ -545,9 +518,7 @@ Checkboxes can also be transformed into a toggle switch. Note, to set a default 
 <textarea class="textarea leading-8" rows="4">Ask your question here</textarea>
 ```
 
----
-
-## Customizing Textarea
+### Customizing Textarea
 
 The following CSS variable hooks are available to customize.
 
@@ -582,26 +553,23 @@ All form field elements can be disabled with assigning the `disabled` attribute.
       <input class="input" placeholder="Email" value="Placeholder Text" disabled>
     </div>
     <div class="mb-20 last.mb-0">
-      <label class="checkbox pointer-events-none">
-        <input type="checkbox" checked required disabled />
-        <div class="checkbox__checkmark"></div>
+      <label class="inline-flex align-items-center">
+        <input class="checkbox mr-10" type="checkbox" checked required disabled />
         Checkbox
       </label>
     </div>
     <div class="mb-20 last.mb-0">
-      <label class="radio pointer-events-none mr-4">
-        <input type="radio" name="radio" checked disabled />
-        <div class="radio__checkmark"></div>
+      <label class="inline-flex align-items-center mr-16">
+        <input class="radio mr-10" type="radio" name="radio" checked disabled />
         Radio
       </label>
-      <label class="radio pointer-events-none">
-        <input type="radio" name="radio" checked disabled />
-        <div class="radio__checkmark"></div>
+      <label class="inline-flex align-items-center">
+        <input class="radio mr-10" type="radio" name="radio" disabled />
         Radio
       </label>
     </div>
     <div class="mb-20 last.mb-0">
-      <label class="toggle pointer-events-none">
+      <label class="toggle">
         <input type="checkbox" checked disabled />
         <div class="toggle__switch"></div>
       </label>
@@ -613,7 +581,6 @@ All form field elements can be disabled with assigning the `disabled` attribute.
           <option>Option</option>
           <option>Option</option>
         </select>
-        <div class="select__angle"></div>
       </div>
     </div>
   </form>
@@ -624,13 +591,13 @@ All form field elements can be disabled with assigning the `disabled` attribute.
 
 ## How to Disable this Module
 
-By default, all modules are enabled. To disable this form module, pass `form-module` to the `excludes` setting in your configuration.
+By default, all modules are enabled. To disable this form module, pass `module-form` to the `excludes` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
   $config: (
     excludes: (
-      form-module
+      module-form
     )
   )
 );
