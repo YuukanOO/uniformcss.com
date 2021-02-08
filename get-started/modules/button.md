@@ -14,7 +14,7 @@ The button module is an optional pre-built component that can be useful for deal
 
 ## How Customization Works
 
-Uniform CSS modules are built with CSS variable hooks, each with their own fallback value. On its own, CSS variable hooks don't do anything, however they are declared, they will take precedence over the fallback value allowing you to override and customize the default setting.
+Uniform CSS modules are built with CSS variable hooks, each with their own fallback value. On its own, CSS variable hooks don't do anything, however when they are declared, they will take precedence over the fallback value allowing you to override and customize the default setting.
 
 ```scss
 .btn {
@@ -183,15 +183,15 @@ The following CSS variable hooks are available to customize.
 There are three types of state buttons to handle `success`, `warning`, and `danger`.
 
 <div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
-  <button class="btn btn-success mr-4">Button</button>
-  <button class="btn btn-warning mr-4">Button</button>
-  <button class="btn btn-danger">Button</button>
+  <button class="btn btn-success mr-4">Success</button>
+  <button class="btn btn-warning mr-4">Warning</button>
+  <button class="btn btn-danger">Danger</button>
 </div>
 
 ```html
-<button class="btn btn-success">Button</button>
-<button class="btn btn-warning">Button</button>
-<button class="btn btn-danger">Button</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-danger">Danger</button>
 ```
 
 ---
@@ -381,13 +381,13 @@ Buttons can have loading animation by appending `is-loading`.
 
 ## How to Disable this Module
 
-By default, all modules are enabled. To disable this button module, pass `button-module` to the `excludes` setting in your configuration.
+By default, all modules are enabled. To disable this button module, pass `module-button` to the `excludes` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
   $config: (
     excludes: (
-      button-module
+      module-button
     )
   )
 );

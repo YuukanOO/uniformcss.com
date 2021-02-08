@@ -1,6 +1,6 @@
 ---
 title: Table
-description: Learn about the Table module and how you can customize it.
+description: Everything to know about the Table module
 date: 1000-01-03
 ---
 
@@ -68,16 +68,17 @@ The following CSS variable hooks are available to customize.
 {% highlight css %}
 /* styles.css */
 :root {
-  --table-border: ...;
   --table-radius: ...;
   --table-shadow: ...;
   --table-bg: ...;
 
   --table-th-height: ...;
   --table-th-padding: ...;
+  --table-th-bg: ...;
 
   --table-td-height: ...;
   --table-td-padding: ...;
+  --table-td-border: ...;
 }
 {% endhighlight %}
 </div>
@@ -132,7 +133,7 @@ Tables can become responsive at various breakpoints by adding the `table-stack` 
 
 ---
 
-## Customizing Table
+## Customizing Responsive Table
 
 The following CSS variable hooks are available to customize.
 
@@ -238,13 +239,13 @@ The following CSS variable hooks are available to customize.
 
 ## How to Disable this Module
 
-By default, all modules are enabled. To disable this table module, pass `table-module` to the `excludes` setting in your configuration.
+By default, all modules are enabled. To disable this table module, pass `module-table` to the `excludes` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
   $config: (
     excludes: (
-      table-module
+      module-table
     )
   )
 );

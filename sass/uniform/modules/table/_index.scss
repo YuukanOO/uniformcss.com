@@ -5,7 +5,6 @@
 /*
 CUSTOM PROPERTIES
 
---table-border
 --table-radius
 --table-shadow
 --table-bg
@@ -16,6 +15,7 @@ CUSTOM PROPERTIES
 
 --table-td-height
 --table-td-padding
+--table-td-border
 
 --table-alt-bg
 
@@ -70,7 +70,7 @@ CUSTOM PROPERTIES
       &:before {
         display: block;
         content: attr(data-table-label);
-        margin-bottom: var(--table-label-margin, size(18));
+        margin-bottom: var(--table-label-margin, size(10));
         font-size: var(--table-label-font-size, font-size(2xs));
         font-weight: var(--table-label-font-weight, 600);
         text-transform: var(--table-label-text-transform, uppercase);
@@ -196,9 +196,9 @@ $includes: map.get($all-config, includes);
   ******************************/
 
   .table-alt {
-    --table-border: 0;
+    --table-td-border: 0;
     tbody tr:nth-child(even) {
-      background-color: var(--table-alt-bg, white);
+      background-color: var(--table-alt-bg, fill(silver-100));
     }
   }
 

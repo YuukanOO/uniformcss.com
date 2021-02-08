@@ -1689,7 +1689,6 @@ SLIDER
 /*
 CUSTOM PROPERTIES
 
---table-border
 --table-radius
 --table-shadow
 --table-bg
@@ -1700,6 +1699,7 @@ CUSTOM PROPERTIES
 
 --table-td-height
 --table-td-padding
+--table-td-border
 
 --table-alt-bg
 
@@ -1751,10 +1751,10 @@ CUSTOM PROPERTIES
 ALTERNATING COLORS
 ******************************/
 .table-alt {
-  --table-border: 0;
+  --table-td-border: 0;
 }
 .table-alt tbody tr:nth-child(even) {
-  background-color: var(--table-alt-bg, white);
+  background-color: var(--table-alt-bg, hsl(var(--silver-100-hue, var(--silver-hue, 230)), calc(0% + var(--silver-100-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-100-ltn, 98%))));
 }
 
 /******************************
@@ -1800,7 +1800,7 @@ RESPONSIVE
 .table-stack td[data-table-label]:before {
   display: block;
   content: attr(data-table-label);
-  margin-bottom: var(--table-label-margin, 1.125rem);
+  margin-bottom: var(--table-label-margin, 0.625rem);
   font-size: var(--table-label-font-size, var(--font-2xs));
   font-weight: var(--table-label-font-weight, 600);
   text-transform: var(--table-label-text-transform, uppercase);
@@ -1903,7 +1903,7 @@ RESPONSIVE
   .sm\.table-stack td[data-table-label]:before {
     display: block;
     content: attr(data-table-label);
-    margin-bottom: var(--table-label-margin, 1.125rem);
+    margin-bottom: var(--table-label-margin, 0.625rem);
     font-size: var(--table-label-font-size, var(--font-2xs));
     font-weight: var(--table-label-font-weight, 600);
     text-transform: var(--table-label-text-transform, uppercase);
@@ -1957,7 +1957,7 @@ RESPONSIVE
   .md\.table-stack td[data-table-label]:before {
     display: block;
     content: attr(data-table-label);
-    margin-bottom: var(--table-label-margin, 1.125rem);
+    margin-bottom: var(--table-label-margin, 0.625rem);
     font-size: var(--table-label-font-size, var(--font-2xs));
     font-weight: var(--table-label-font-weight, 600);
     text-transform: var(--table-label-text-transform, uppercase);
@@ -2011,7 +2011,7 @@ RESPONSIVE
   .lg\.table-stack td[data-table-label]:before {
     display: block;
     content: attr(data-table-label);
-    margin-bottom: var(--table-label-margin, 1.125rem);
+    margin-bottom: var(--table-label-margin, 0.625rem);
     font-size: var(--table-label-font-size, var(--font-2xs));
     font-weight: var(--table-label-font-weight, 600);
     text-transform: var(--table-label-text-transform, uppercase);
@@ -2065,7 +2065,7 @@ RESPONSIVE
   .xl\.table-stack td[data-table-label]:before {
     display: block;
     content: attr(data-table-label);
-    margin-bottom: var(--table-label-margin, 1.125rem);
+    margin-bottom: var(--table-label-margin, 0.625rem);
     font-size: var(--table-label-font-size, var(--font-2xs));
     font-weight: var(--table-label-font-weight, 600);
     text-transform: var(--table-label-text-transform, uppercase);
