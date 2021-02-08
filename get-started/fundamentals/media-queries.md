@@ -86,7 +86,7 @@ By design, Uniform takes common design patterns into consideration and only enab
 ```scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       letter-spacing: ( responsive: true ),
       list-style-type: ( responsive: true ),
       text-transform: ( responsive: true )

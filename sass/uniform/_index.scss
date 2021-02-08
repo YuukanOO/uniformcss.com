@@ -274,7 +274,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
   $placeholders: map.get($config, build, placeholders);
   $dark-mode-support: map.get($config, build, dark-mode-support);
 
-  $utilities: map.get($config, utilities);
+  $utilities: map.get($config, utility);
   $excludes: map.get($config, excludes);
   $includes: map.get($config, includes);
 
@@ -319,7 +319,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
         @if (list.index($pseudo-extends, null) == null) {
           $merged-pseudos: list.join($merged-pseudos, $pseudo-extends, $separator: comma);
         }
-
+        
 
         // check if utility exists in the exclude list
         @if (list.index($excludes, all) == null and list.index($excludes, $utility) == null) {
@@ -380,7 +380,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
                 }
               }
             }
-            @if ($dark-mode-support == true or list.index($merged-pseudos, dark) != null) {
+            @if (list.index($merged-pseudos, dark) != null) {
               @each $pseudo in $merged-pseudos {
                 @if $pseudo == group-hover {
                   @if ($placeholders == true) {
@@ -470,7 +470,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
                 }
               }
             }
-            @if ($dark-mode-support == true or list.index($merged-pseudos, dark) != null) {
+            @if (list.index($merged-pseudos, dark) != null) {
               @if $pseudo == group-hover {
                 @if ($placeholders == true) {
                   .dark .group:hover %#{$pseudo}#{$pseudo-delimiter}#{$compiled-class-name} {
@@ -601,7 +601,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
                         }
                       }
                     }
-                    @if ($dark-mode-support == true or list.index($merged-pseudos, dark) != null) {
+                    @if (list.index($merged-pseudos, dark) != null) {
                       @each $pseudo in $merged-pseudos {
                         @if $pseudo == group-hover {
                           @if ($placeholders == true) {
@@ -694,7 +694,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
                       }
                     }
                   }
-                  @if ($dark-mode-support == true or list.index($merged-pseudos, dark) != null) {
+                  @if (list.index($merged-pseudos, dark) != null) {
                     @each $pseudo in $merged-pseudos {
                       @if $pseudo == group-hover {
                         @if ($placeholders == true) {

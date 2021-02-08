@@ -20,7 +20,7 @@ You can use the same data structure of a utility setting to generate your own pr
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       leading-trim: (
         responsive: true,
         shorthand: leading,
@@ -58,7 +58,7 @@ Any new utilities generated through the `utilities` settings map will behave lik
 // default values
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       leading-trim: (
         responsive: true,
         shorthand: leading,
@@ -107,7 +107,7 @@ $variants: ();
 $pseudos: ();
 
 $config: (
-  utilities: (
+  utility: (
     $name: (
       shorthand: $shorthand,
       responsive: $responsive,
@@ -150,7 +150,7 @@ Once your custom property has been added into the core library, it will behave l
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       leading-trim: (
         responsive: true,
         shorthand: leading,

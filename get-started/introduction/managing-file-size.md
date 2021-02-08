@@ -53,7 +53,7 @@ You can of course, override the default settings and enable responsiveness, and 
 ```scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       background-color: (
         responsive: true,
         pseudos: ( hover, focus, active )

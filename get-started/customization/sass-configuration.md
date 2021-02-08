@@ -76,7 +76,7 @@ Utilities settings specifies the individual setting of each property.
 ```scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       text-align: (
         ...
       )

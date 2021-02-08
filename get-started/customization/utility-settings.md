@@ -21,7 +21,7 @@ Each property in Uniform CSS is constructed using the same data structure. By pa
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       text-align: (
         shorthand: align,
         responsive: false,
@@ -76,7 +76,7 @@ The `shorthand` setting overrides the default keyword used to identify the prope
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       margin-top: (
         shorthand: customMarginTop
       ),
@@ -107,7 +107,7 @@ If `null` is passed in as a value for `shorthand` the property will omit the sho
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       display: (
         shorthand: null
       )
@@ -134,7 +134,7 @@ The `responsive` setting enables or disables the responsiveness of a given prope
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       text-align: (
         responsive: true,
       ),
@@ -173,7 +173,7 @@ The `responsive-pseudos` setting when enabled, will enable pseudo variants acros
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       float: (
         responsive: true,
         responsive-pseudos: true,
@@ -205,7 +205,7 @@ The `extra-selector` setting when enabled, will apply CSS combinators to the end
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       gutter-y: (
         shorthand: gutter-x,
         properties: (margin-top),
@@ -238,7 +238,7 @@ The `properties` setting specifies the CSS property to include. All properties h
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       line-height: (
         shorthand: leading,
         properties: (line-height)
@@ -268,7 +268,7 @@ It is important to note, the `properties` setting must be passed in as a map and
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       padding-x: (
         shorthand: px,
         properties: (
@@ -308,7 +308,7 @@ The `custom-properties` setting specifies custom properties that the CSS propert
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       background-color: (
         custom-properties: (
           --bg-sat: 0%,
@@ -349,7 +349,7 @@ The `variants` setting specifies which variants should be generated for a given 
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       margin: (
         shorthand: m,
         properties: (margin),
@@ -386,7 +386,7 @@ If `null` is passed in as a value for a variant key the property will omit the v
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       transition-property: (
         shorthand: transition-property,
         properties: (transition-property),
@@ -426,7 +426,7 @@ Default Variants and Pseudos can be both removed, overwritten, or extended. Simi
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       text-align: (
         variants: null,
         default-pseudos: null,

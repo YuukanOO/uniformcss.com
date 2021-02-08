@@ -116,7 +116,7 @@ By default, only a subset of properties have pseudo variants enabled. To see whi
 ```scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       background-color: (
       	pseudos: (hover, active, focus, group-hover)
       ),

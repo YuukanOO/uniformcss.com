@@ -82,7 +82,7 @@ While shiny new CSS specs become standardized, you don’t have to wait for Unif
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    utilities: (
+    utility: (
       leading-trim: (
         responsive: true,
         shorthand: leading,
