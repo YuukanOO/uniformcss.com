@@ -30,10 +30,10 @@ $config: (
       extra-selector: $extra-selector,
       properties: $properties,
       custom-properties: $custom-properties,
-      default-variants: (
+      variants: (
         $variants
       ),
-      default-pseudos: (
+      pseudos: (
         $pseudos
       )
     )

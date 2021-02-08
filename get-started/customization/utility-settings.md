@@ -428,7 +428,7 @@ Default Variants and Pseudos can be both removed, overwritten, or extended. Simi
   $config: (
     utilities: (
       text-align: (
-        default-variants: null,
+        variants: null,
         default-pseudos: null,
         variants: (
           customVariant: left
