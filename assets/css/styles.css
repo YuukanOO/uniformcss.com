@@ -762,8 +762,8 @@ VARIANTS
   --btn-focus-shadow: var(--btn-secondary-focus-shadow, var(--shadow-focus));
 }
 
-/*
-CUSTOM PROPERTIES
+/******************************
+LABEL
 
 --label-font-size
 --label-font-weight
@@ -771,164 +771,6 @@ CUSTOM PROPERTIES
 --label-tracking
 --label-text-transform
 --label-required-color
-
-
-
---input-height
---input-padding
---input-bg
---input-border
---input-radius
---input-shadow
---input-transition
---input-hover-border
---input-hover-shadow
---input-focus-border
---input-focus-shadow
-
-
-
---input-disabled-bg
---input-disabled-color
---input-success-border
---input-focus-success-shadow
---input-warning-border
---input-focus-warning-shadow
---input-danger-border
---input-focus-danger-shadow
-
-
-
---input-xs-height
---input-xs-padding
---input-xs-font-size
---input-sm-height
---input-sm-padding
---input-sm-font-size
---input-md-height
---input-md-padding
---input-md-font-size
---input-lg-height
---input-lg-padding
---input-lg-font-size
---input-xl-height
---input-xl-padding
---input-xl-font-size
-
-
-
---checkbox-size
---checkbox-radius
---checkbox-bg
---checkbox-border
---checkbox-radius
---checkbox-transition
---checkbox-hover-border
-
---checkbox-checked-border
---checkbox-checked-bg
-
---checkbox-disabled-border
---checkbox-disabled-bg
-
-
-
---radio-size
---radio-radius
---radio-bg
---radio-border
---radio-radius
---radio-transition
---radio-hover-border
-
---radio-checked-border
---radio-checked-bg
-
---radio-disabled-border
---radio-disabled-bg
-
-
-
---toggle-width
---toggle-height
---toggle-bg
---toggle-transition
---toggle-radius
---toggle-hover-bg
---toggle-checked-bg
---toggle-checked-translate
---toggle-disabled-bg
-
-
-
---select-height
---select-padding
---select-bg
---select-border
---select-radius
---select-shadow
---select-font-size
---select-transition
---select-hover-border
---select-hover-shadow
---select-focus-border
---select-focus-shadow
---select-disabled-bg
---select-disabled-color
---select-angle-color
---select-hover-angle-color
---select-hover-focus-color
---select-success-border
---select-focus-success-shadow
---select-warning-border
---select-focus-warning-shadow
---select-danger-border
---select-focus-danger-shadow
-
---select-xs-height
---select-xs-padding
---select-xs-font-size
-
---select-sm-height
---select-sm-padding
---select-sm-font-size
-
---select-md-height
---select-md-padding
---select-md-font-size
-
---select-lg-height
---select-lg-padding
---select-lg-font-size
-
---select-xl-height
---select-xl-padding
---select-xl-font-size
-
-
-
---textarea-padding
---textarea-bg
---textarea-border
---textarea-radius
---textarea-shadow
---textarea-transition
-
---textarea-hover-border
---textarea-hover-shadow
---textarea-focus-border
---textarea-focus-shadow
---textarea-disabled-bg
---textarea-disabled-color
---textarea-success-border
---textarea-focus-success-shadow
---textarea-warning-border
---textarea-focus-warning-shadow
---textarea-danger-border
---textarea-focus-danger-shadow
-*/
-/******************************
-LABEL
 ******************************/
 .label {
   display: inline-block;
@@ -949,6 +791,49 @@ LABEL
 
 /******************************
 INPUT
+
+--input-height
+--input-padding
+--input-bg
+--input-border
+--input-radius
+--input-shadow
+--input-transition
+
+--input-hover-border
+--input-hover-shadow
+--input-focus-border
+--input-focus-shadow
+
+--input-disabled-border
+--input-disabled-bg
+--input-disabled-color
+--input-success-border
+--input-focus-success-shadow
+--input-warning-border
+--input-focus-warning-shadow
+--input-danger-border
+--input-focus-danger-shadow
+
+--input-xs-height
+--input-xs-padding
+--input-xs-font-size
+
+--input-sm-height
+--input-sm-padding
+--input-sm-font-size
+
+--input-md-height
+--input-md-padding
+--input-md-font-size
+
+--input-lg-height
+--input-lg-padding
+--input-lg-font-size
+
+--input-xl-height
+--input-xl-padding
+--input-xl-font-size
 ******************************/
 .input {
   appearance: none;
@@ -961,6 +846,7 @@ INPUT
   border: var(--input-border, 1px solid hsl(var(--silver-300-hue, var(--silver-hue, 230)), calc(0% + var(--silver-300-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-300-ltn, 88%))));
   border-radius: var(--input-radius, var(--radius-xs));
   box-shadow: var(--input-shadow, none);
+  line-height: normal;
   transition: var(--input-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform 100ms);
 }
 .input:hover {
@@ -972,6 +858,7 @@ INPUT
   box-shadow: var(--input-focus-shadow, var(--shadow-focus));
 }
 .input:disabled {
+  border: var(--input-disabled-border, 1px solid hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-400-ltn, 83%))));
   background: var(--input-disabled-bg, hsl(var(--silver-300-hue, var(--silver-hue, 230)), calc(0% + var(--silver-300-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-300-ltn, 88%))));
   color: var(--input-disabled-color, hsl(var(--gray-400-hue, var(--gray-hue, 230)), calc(0% + var(--gray-400-sat, var(--gray-sat, 0%))), calc(0% + var(--gray-400-ltn, 38%))));
   pointer-events: none;
@@ -1171,6 +1058,7 @@ CHECKBOX
   flex: none;
   position: relative;
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   width: var(--checkbox-size, 1rem);
   height: var(--checkbox-size, 1rem);
@@ -1228,6 +1116,7 @@ RADIO
   flex: none;
   position: relative;
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   width: var(--radio-size, 1rem);
   height: var(--radio-size, 1rem);
@@ -1265,6 +1154,16 @@ RADIO
 
 /******************************
 TOGGLE
+
+--toggle-width
+--toggle-height
+--toggle-bg
+--toggle-transition
+--toggle-radius
+--toggle-hover-bg
+--toggle-checked-bg
+--toggle-checked-translate
+--toggle-disabled-bg
 ******************************/
 .toggle {
   display: inline-flex;
@@ -1284,7 +1183,7 @@ TOGGLE
   transform: translateX(var(--toggle-checked-translate, 1.25rem));
 }
 .toggle input:disabled + .toggle__switch {
-  background: var(--toggle-disabled-bg, hsl(var(--gray-100-hue, var(--gray-hue, 230)), calc(0% + var(--gray-100-sat, var(--gray-sat, 0%))), calc(0% + var(--gray-100-ltn, 53%))));
+  background: var(--toggle-disabled-bg, hsl(var(--silver-300-hue, var(--silver-hue, 230)), calc(0% + var(--silver-300-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-300-ltn, 88%))));
 }
 
 .toggle__switch {
@@ -1310,6 +1209,55 @@ TOGGLE
 
 /******************************
 SELECT
+
+--select-height
+--select-padding
+--select-bg
+--select-border
+--select-radius
+--select-shadow
+--select-font-size
+--select-transition
+
+--select-hover-border
+--select-hover-shadow
+--select-focus-border
+--select-focus-shadow
+
+--select-disabled-border
+--select-disabled-bg
+--select-disabled-color
+
+--select-angle-color
+--select-hover-angle-color
+--select-hover-focus-color
+
+--select-success-border
+--select-focus-success-shadow
+--select-warning-border
+--select-focus-warning-shadow
+--select-danger-border
+--select-focus-danger-shadow
+
+--select-xs-height
+--select-xs-padding
+--select-xs-font-size
+
+--select-sm-height
+--select-sm-padding
+--select-sm-font-size
+
+--select-md-height
+--select-md-padding
+--select-md-font-size
+
+--select-lg-height
+--select-lg-padding
+--select-lg-font-size
+
+--select-xl-height
+--select-xl-padding
+--select-xl-font-size
 ******************************/
 .select {
   position: relative;
@@ -1324,6 +1272,8 @@ SELECT
   border-radius: var(--select-radius, var(--radius-xs));
   box-shadow: var(--select-shadow, none);
   outline: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   font-size: var(--select-font-size, var(--font-md));
   line-height: 1.5;
@@ -1339,6 +1289,7 @@ SELECT
   box-shadow: var(--select-focus-shadow, var(--shadow-focus));
 }
 .select select:disabled {
+  border: var(--select-disabled-border, 1px solid hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-400-ltn, 83%))));
   background: var(--select-disabled-bg, hsl(var(--silver-300-hue, var(--silver-hue, 230)), calc(0% + var(--silver-300-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-300-ltn, 88%))));
   color: var(--select-disabled-color, hsl(var(--gray-400-hue, var(--gray-hue, 230)), calc(0% + var(--gray-400-sat, var(--gray-sat, 0%))), calc(0% + var(--gray-400-ltn, 38%))));
   pointer-events: none;
@@ -1612,6 +1563,27 @@ SELECT
 }
 /******************************
 TEXTAREA
+
+--textarea-padding
+--textarea-bg
+--textarea-border
+--textarea-radius
+--textarea-shadow
+--textarea-transition
+
+--textarea-hover-border
+--textarea-hover-shadow
+--textarea-focus-border
+--textarea-focus-shadow
+--textarea-disabled-bg
+--textarea-disabled-color
+
+--textarea-success-border
+--textarea-focus-success-shadow
+--textarea-warning-border
+--textarea-focus-warning-shadow
+--textarea-danger-border
+--textarea-focus-danger-shadow
 ******************************/
 .textarea {
   position: relative;
@@ -1659,31 +1631,49 @@ TEXTAREA
 
 /******************************
 SLIDER
+
+--slider-track-height
+--slider-track-color
+
+--slider-size
+--slider-color
+--slider-radius
+--slider-hover-color
 ******************************/
 .slider {
   appearance: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
   width: 100%;
-  height: 2px;
+  height: var(--slider-track-height, 2px);
   outline: 0;
+  background: var(--slider-track-color, #ccc);
 }
 .slider::-webkit-slider-thumb {
   appearance: none;
   -webkit-appearance: none;
-  width: 14px;
-  height: 14px;
-  background: #fff;
+  -moz-appearance: none;
+  width: var(--slider-size, 14px);
+  height: var(--slider-size, 14px);
+  background: var(--slider-color, #000);
   cursor: pointer;
-  border-radius: 9999px;
+  border-radius: var(--slider-radius, 9999px);
+}
+.slider::-webkit-slider-thumb:hover {
+  background: var(--slider-hover-color, #000);
 }
 .slider::-moz-slider-thumb {
   appearance: none;
   -webkit-appearance: none;
-  width: 14px;
-  height: 14px;
-  background: #fff;
+  -moz-appearance: none;
+  width: var(--slider-size, 14px);
+  height: var(--slider-size, 14px);
+  background: var(--slider-color, #000);
   cursor: pointer;
-  border-radius: 9999px;
+  border-radius: var(--slider-radius, 9999px);
+}
+.slider::-moz-slider-thumb:hover {
+  background: var(--slider-hover-color, #000);
 }
 
 /*
@@ -2310,6 +2300,126 @@ CUSTOM PROPERTIES
   .wrapper {
     max-width: var(--wrapper-lg-max-width, 1320px);
   }
+}
+
+.markdown {
+  font-size: var(--font-base);
+  /******************************
+  HEADING
+  ******************************/
+  /******************************
+  HORIZONTAL RULE
+  ******************************/
+  /******************************
+  BLOCKQUOTE
+  ******************************/
+  /******************************
+  TABLE
+  ******************************/
+  /******************************
+  LISTS
+  ******************************/
+}
+.markdown > h1:first-child, .markdown > h2:first-child, .markdown > h3:first-child, .markdown > h4:first-child, .markdown > h5:first-child, .markdown > h6:first-child {
+  margin-top: 0;
+}
+.markdown > h1:last-child, .markdown > h2:last-child, .markdown > h3:last-child, .markdown > h4:last-child, .markdown > h5:last-child, .markdown > h6:last-child {
+  margin-bottom: 0;
+}
+.markdown > h1 {
+  margin-top: 3rem;
+  margin-bottom: 1.125rem;
+  font-size: var(--font-6xl);
+  font-weight: var(--font-extrabold);
+  letter-spacing: var(--tracking-tight);
+}
+.markdown > h2 {
+  margin-top: 2.25rem;
+  margin-bottom: 1.125rem;
+  font-size: var(--font-2xl);
+  font-weight: var(--font-extrabold);
+  letter-spacing: var(--tracking-tight);
+}
+.markdown > h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: var(--font-xl);
+  font-weight: var(--font-extrabold);
+  letter-spacing: var(--tracking-tight);
+}
+.markdown > h4 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.875rem;
+  font-size: var(--font-lg);
+  font-weight: var(--font-extrabold);
+  letter-spacing: var(--tracking-tight);
+}
+.markdown > hr {
+  height: 1px;
+  margin: 4rem 0;
+  border: 0;
+  background: #e3e5e8;
+}
+.markdown > p code, .markdown > ul li code {
+  padding: 4px 5px;
+  font-size: var(--font-sm);
+  border-radius: var(--radius-sm);
+  color: hsl(var(--blue-hue, 220), calc(var(--blue-sat, 50%) + 30%), calc(var(--blue-ltn, 50%) + 5%));
+}
+.markdown > blockquote {
+  margin-bottom: 1.5em;
+  padding: 0.625rem 1.25rem;
+  background: hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-200-ltn, 93%)));
+  border-radius: var(--radius-2xs);
+  box-shadow: inset 4px 0px 0px 0px hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-400-ltn, 83%)));
+}
+.markdown > blockquote:last-child {
+  margin-bottom: 0;
+}
+.markdown > blockquote code {
+  padding: 4px 5px;
+  font-size: var(--font-sm);
+  color: var(--secondary-a500);
+}
+.markdown > table {
+  margin-bottom: 1.25rem;
+  font-size: var(--font-sm);
+  line-height: var(--leading-tight);
+}
+.markdown > pre {
+  border-radius: var(--radius-md);
+}
+.markdown > p a {
+  color: hsl(var(--secondary-a-hue, var(--secondary-hue, 10)), calc(0% + var(--secondary-a-sat, var(--secondary-sat, 90%))), calc(0% + var(--secondary-200-ltn, 60%)));
+}
+.markdown > pre {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.markdown > pre:last-child {
+  margin-bottom: 0;
+}
+.markdown > ol, .markdown ul {
+  margin-bottom: 1.5rem;
+  line-height: var(--leading-base);
+}
+.markdown > ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.markdown > ul ul {
+  padding-left: 1.5rem;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.markdown > ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.markdown > ol ol {
+  list-style-type: decimal;
+  list-style-position: inside;
 }
 
 .absolute-center {
@@ -61229,7 +61339,7 @@ CUSTOM PROPERTIES
   }
 }
 :root {
-  --body-text-color: #636465;
+  --body-text-color: #434446;
   --font-sans: "Manrope", sans-serif;
   --font-mono: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   --body-font-weight: 400;
@@ -61549,113 +61659,11 @@ pre[class*=language-] {
   color: hsl(var(--silver-900-hue, var(--silver-hue, 230)), calc(0% + var(--silver-900-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-900-ltn, 58%)));
 }
 
-.markdown {
-  font-size: var(--font-base);
-}
-.markdown > table {
-  font-size: var(--font-sm);
-  line-height: var(--leading-tight);
-}
-.markdown > pre {
-  border-radius: var(--radius-md);
-}
-.markdown > p a {
-  color: hsl(var(--secondary-a-hue, var(--secondary-hue, 10)), calc(0% + var(--secondary-a-sat, var(--secondary-sat, 90%))), calc(0% + var(--secondary-200-ltn, 60%)));
-}
-.markdown > pre {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-.markdown > pre:last-child {
-  margin-bottom: 0;
-}
-.markdown > ol, .markdown ul {
-  margin-bottom: 1.5rem;
-  line-height: var(--leading-base);
-}
-.markdown > h2 {
-  margin-bottom: 1.25rem;
-  font-size: var(--font-2xl);
-  font-weight: 700;
-  letter-spacing: var(--tracking-tight);
-}
-.markdown > h2 a {
+.markdown > h1 a, .markdown > h2 a, .markdown > h3 a, .markdown > h4 a, .markdown > h5 a, .markdown > h6 a {
   display: none;
   font-weight: 500;
   color: var(--secondary-a500);
 }
-.markdown > h2:hover a {
+.markdown > h1:hover a, .markdown > h2:hover a, .markdown > h3:hover a, .markdown > h4:hover a, .markdown > h5:hover a, .markdown > h6:hover a {
   display: inline;
-}
-.markdown > h3 {
-  margin-top: 3rem;
-  margin-bottom: 1.25rem;
-  font-size: var(--font-xl);
-  font-weight: 600;
-  letter-spacing: var(--tracking-tight);
-}
-.markdown > h3 a {
-  display: none;
-  font-weight: 500;
-  color: var(--secondary-a500);
-}
-.markdown > h3:hover a {
-  display: inline;
-}
-.markdown > h4 {
-  margin-top: 3rem;
-  margin-bottom: 1.25rem;
-  font-size: var(--font-lg);
-  font-weight: 600;
-  letter-spacing: var(--tracking-tight);
-}
-.markdown > h4 a {
-  display: none;
-  font-weight: 500;
-  color: var(--secondary-a500);
-}
-.markdown > h4:hover a {
-  display: inline;
-}
-.markdown > hr {
-  height: 1px;
-  margin: 4rem 0;
-  border: 0;
-  background: #e3e5e8;
-}
-.markdown > p code, .markdown > ul li code {
-  padding: 4px 5px;
-  font-size: var(--font-sm);
-  border-radius: var(--radius-sm);
-  color: hsl(var(--blue-hue, 220), calc(var(--blue-sat, 50%) + 30%), calc(var(--blue-ltn, 50%) + 5%));
-}
-.markdown > blockquote {
-  margin-bottom: 1.5em;
-  padding: 1.25rem 1.5rem;
-  background: hsl(var(--silver-200-hue, var(--silver-hue, 230)), calc(0% + var(--silver-200-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-200-ltn, 93%)));
-  box-shadow: inset 4px 0px 0px 0px hsl(var(--silver-400-hue, var(--silver-hue, 230)), calc(0% + var(--silver-400-sat, var(--silver-sat, 0%))), calc(0% + var(--silver-400-ltn, 83%)));
-}
-.markdown > blockquote p {
-  margin: 0;
-  font-size: var(--font-base);
-}
-.markdown > blockquote cite {
-  padding-top: var(--size-2);
-  display: block;
-}
-.markdown > blockquote code {
-  padding: 4px 5px;
-  font-size: var(--font-sm);
-  color: var(--secondary-a500);
-}
-.markdown > table {
-  margin-bottom: 1.25rem;
-}
-.markdown > ul {
-  list-style-type: disc;
-  list-style-position: inside;
-}
-.markdown > ol {
-  list-style-type: decimal;
-  list-style-position: inside;
 }

@@ -508,7 +508,7 @@ The following CSS variable hooks are available to customize.
 
 ## Textarea
 
-Checkboxes can also be transformed into a toggle switch. Note, to set a default line-height apply the leading property.
+Textarea fields are similar to text input fields but supports multi-lines.
 
 <div class="bg-white border-1 border-silver-200 radius-md p-20">
   <textarea class="textarea leading-8" rows="4">Ask your question here</textarea>
@@ -537,6 +537,37 @@ The following CSS variable hooks are available to customize.
   --textarea-focus-warning-shadow: ...;
   --textarea-danger-border: ...;
   --textarea-focus-danger-shadow: ...;
+}
+```
+
+---
+
+## Slider
+
+Slider provides interactive range value inputs.
+
+<div class="bg-white border-1 border-silver-200 radius-md p-20">
+  <input type="range" min="0" max="360" value="186" class="slider">
+</div>
+
+```html
+ <input type="range" min="0" max="360" value="186" class="slider">
+```
+
+### Customizing Slider
+
+The following CSS variable hooks are available to customize.
+
+```css
+/* styles.css */
+:root {
+  --slider-track-height: ...;
+  --slider-track-color: ...;
+
+  --slider-size: ...;
+  --slider-color: ...;
+  --slider-radius: ...;
+  --slider-hover-color: ...;
 }
 ```
 

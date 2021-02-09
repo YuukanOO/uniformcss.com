@@ -2,172 +2,6 @@
 @use "sass:list";
 @use "uniform/core" as *;
 
-/*
-CUSTOM PROPERTIES
-
---label-font-size
---label-font-weight
---label-color
---label-tracking
---label-text-transform
---label-required-color
-
-
-
---input-height
---input-padding
---input-bg
---input-border
---input-radius
---input-shadow
---input-transition
---input-hover-border
---input-hover-shadow
---input-focus-border
---input-focus-shadow
-
-
-
---input-disabled-bg
---input-disabled-color
---input-success-border
---input-focus-success-shadow
---input-warning-border
---input-focus-warning-shadow
---input-danger-border
---input-focus-danger-shadow
-
-
-
---input-xs-height
---input-xs-padding
---input-xs-font-size
---input-sm-height
---input-sm-padding
---input-sm-font-size
---input-md-height
---input-md-padding
---input-md-font-size
---input-lg-height
---input-lg-padding
---input-lg-font-size
---input-xl-height
---input-xl-padding
---input-xl-font-size
-
-
-
---checkbox-size
---checkbox-radius
---checkbox-bg
---checkbox-border
---checkbox-radius
---checkbox-transition
---checkbox-hover-border
-
---checkbox-checked-border
---checkbox-checked-bg
-
---checkbox-disabled-border
---checkbox-disabled-bg
-
-
-
---radio-size
---radio-radius
---radio-bg
---radio-border
---radio-radius
---radio-transition
---radio-hover-border
-
---radio-checked-border
---radio-checked-bg
-
---radio-disabled-border
---radio-disabled-bg
-
-
-
---toggle-width
---toggle-height
---toggle-bg
---toggle-transition
---toggle-radius
---toggle-hover-bg
---toggle-checked-bg
---toggle-checked-translate
---toggle-disabled-bg
-
-
-
---select-height
---select-padding
---select-bg
---select-border
---select-radius
---select-shadow
---select-font-size
---select-transition
---select-hover-border
---select-hover-shadow
---select-focus-border
---select-focus-shadow
---select-disabled-bg
---select-disabled-color
---select-angle-color
---select-hover-angle-color
---select-hover-focus-color
---select-success-border
---select-focus-success-shadow
---select-warning-border
---select-focus-warning-shadow
---select-danger-border
---select-focus-danger-shadow
-
---select-xs-height
---select-xs-padding
---select-xs-font-size
-
---select-sm-height
---select-sm-padding
---select-sm-font-size
-
---select-md-height
---select-md-padding
---select-md-font-size
-
---select-lg-height
---select-lg-padding
---select-lg-font-size
-
---select-xl-height
---select-xl-padding
---select-xl-font-size
-
-
-
---textarea-padding
---textarea-bg
---textarea-border
---textarea-radius
---textarea-shadow
---textarea-transition
-
---textarea-hover-border
---textarea-hover-shadow
---textarea-focus-border
---textarea-focus-shadow
---textarea-disabled-bg
---textarea-disabled-color
---textarea-success-border
---textarea-focus-success-shadow
---textarea-warning-border
---textarea-focus-warning-shadow
---textarea-danger-border
---textarea-focus-danger-shadow
-*/
-
 $excludes: map.get($all-config, excludes);
 $includes: map.get($all-config, includes);
 
@@ -175,6 +9,13 @@ $includes: map.get($all-config, includes);
 
   /******************************
   LABEL
+
+  --label-font-size
+  --label-font-weight
+  --label-color
+  --label-tracking
+  --label-text-transform
+  --label-required-color
   ******************************/
 
   .label {
@@ -199,6 +40,49 @@ $includes: map.get($all-config, includes);
 
   /******************************
   INPUT
+
+  --input-height
+  --input-padding
+  --input-bg
+  --input-border
+  --input-radius
+  --input-shadow
+  --input-transition
+
+  --input-hover-border
+  --input-hover-shadow
+  --input-focus-border
+  --input-focus-shadow
+
+  --input-disabled-border
+  --input-disabled-bg
+  --input-disabled-color
+  --input-success-border
+  --input-focus-success-shadow
+  --input-warning-border
+  --input-focus-warning-shadow
+  --input-danger-border
+  --input-focus-danger-shadow
+
+  --input-xs-height
+  --input-xs-padding
+  --input-xs-font-size
+
+  --input-sm-height
+  --input-sm-padding
+  --input-sm-font-size
+
+  --input-md-height
+  --input-md-padding
+  --input-md-font-size
+
+  --input-lg-height
+  --input-lg-padding
+  --input-lg-font-size
+
+  --input-xl-height
+  --input-xl-padding
+  --input-xl-font-size
   ******************************/
 
   .input {
@@ -212,6 +96,7 @@ $includes: map.get($all-config, includes);
     border: var(--input-border, 1px solid fill(silver-300));
     border-radius: var(--input-radius, radius(xs));
     box-shadow: var(--input-shadow, none);
+    line-height: normal;
     transition: var(--input-transition, background-color 100ms, border-color 100ms, color 100ms, fill 100ms, stroke 100ms, opacity 100ms, box-shadow 100ms, transform  100ms);
 
     // PSEUDOS
@@ -224,6 +109,7 @@ $includes: map.get($all-config, includes);
       box-shadow: var(--input-focus-shadow, shadow(focus));
     }
     &:disabled {
+      border: var(--input-disabled-border, 1px solid fill(silver-400));
       background: var(--input-disabled-bg, fill(silver-300));
       color: var(--input-disabled-color, fill(gray-400));
       pointer-events: none;
@@ -331,6 +217,7 @@ $includes: map.get($all-config, includes);
     flex: none;
     position: relative;
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     width: var(--checkbox-size, size(16));
     height: var(--checkbox-size, size(16));
@@ -391,6 +278,7 @@ $includes: map.get($all-config, includes);
     flex: none;
     position: relative;
     -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
     width: var(--radio-size, size(16));
     height: var(--radio-size, size(16));
@@ -430,6 +318,16 @@ $includes: map.get($all-config, includes);
 
   /******************************
   TOGGLE
+
+  --toggle-width
+  --toggle-height
+  --toggle-bg
+  --toggle-transition
+  --toggle-radius
+  --toggle-hover-bg
+  --toggle-checked-bg
+  --toggle-checked-translate
+  --toggle-disabled-bg
   ******************************/
 
   .toggle {
@@ -452,7 +350,7 @@ $includes: map.get($all-config, includes);
         transform: translateX(var(--toggle-checked-translate, size(20)));
       }
       &:disabled + .toggle__switch {
-        background: var(--toggle-disabled-bg, fill(gray-100));
+        background: var(--toggle-disabled-bg, fill(silver-300));
       }
     }
   }
@@ -481,6 +379,55 @@ $includes: map.get($all-config, includes);
 
   /******************************
   SELECT
+
+  --select-height
+  --select-padding
+  --select-bg
+  --select-border
+  --select-radius
+  --select-shadow
+  --select-font-size
+  --select-transition
+
+  --select-hover-border
+  --select-hover-shadow
+  --select-focus-border
+  --select-focus-shadow
+
+  --select-disabled-border
+  --select-disabled-bg
+  --select-disabled-color
+  
+  --select-angle-color
+  --select-hover-angle-color
+  --select-hover-focus-color
+
+  --select-success-border
+  --select-focus-success-shadow
+  --select-warning-border
+  --select-focus-warning-shadow
+  --select-danger-border
+  --select-focus-danger-shadow
+
+  --select-xs-height
+  --select-xs-padding
+  --select-xs-font-size
+
+  --select-sm-height
+  --select-sm-padding
+  --select-sm-font-size
+
+  --select-md-height
+  --select-md-padding
+  --select-md-font-size
+
+  --select-lg-height
+  --select-lg-padding
+  --select-lg-font-size
+
+  --select-xl-height
+  --select-xl-padding
+  --select-xl-font-size
   ******************************/
   
   .select {
@@ -496,6 +443,8 @@ $includes: map.get($all-config, includes);
       border-radius: var(--select-radius, radius(xs));
       box-shadow: var(--select-shadow, none);
       outline: 0;
+      -webkit-appearance: none;
+      -moz-appearance: none;
       appearance: none;
       font-size: var(--select-font-size, font-size(md));
       line-height: 1.5;
@@ -512,6 +461,7 @@ $includes: map.get($all-config, includes);
         box-shadow: var(--select-focus-shadow, shadow(focus));
       }
       &:disabled {
+        border: var(--select-disabled-border, 1px solid fill(silver-400));
         background: var(--select-disabled-bg, fill(silver-300));
         color: var(--select-disabled-color, fill(gray-400));
         pointer-events: none;
@@ -679,6 +629,27 @@ $includes: map.get($all-config, includes);
 
   /******************************
   TEXTAREA
+
+  --textarea-padding
+  --textarea-bg
+  --textarea-border
+  --textarea-radius
+  --textarea-shadow
+  --textarea-transition
+
+  --textarea-hover-border
+  --textarea-hover-shadow
+  --textarea-focus-border
+  --textarea-focus-shadow
+  --textarea-disabled-bg
+  --textarea-disabled-color
+
+  --textarea-success-border
+  --textarea-focus-success-shadow
+  --textarea-warning-border
+  --textarea-focus-warning-shadow
+  --textarea-danger-border
+  --textarea-focus-danger-shadow
   ******************************/
 
   .textarea {
@@ -732,31 +703,49 @@ $includes: map.get($all-config, includes);
 
   /******************************
   SLIDER
+
+  --slider-track-height
+  --slider-track-color
+
+  --slider-size
+  --slider-color
+  --slider-radius
+  --slider-hover-color
   ******************************/
 
   .slider {
     appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
     width: 100%;
-    height: 2px;
+    height: var(--slider-track-height, 2px);
     outline: 0;
+    background: var(--slider-track-color, #ccc);
     &::-webkit-slider-thumb {
       appearance: none;
       -webkit-appearance: none;
-      width: 14px;
-      height: 14px;
-      background: #fff;
+      -moz-appearance: none;
+      width: var(--slider-size, 14px);
+      height: var(--slider-size, 14px);
+      background: var(--slider-color, #000);
       cursor: pointer;
-      border-radius: 9999px;
+      border-radius: var(--slider-radius, 9999px);
+      &:hover {
+        background: var(--slider-hover-color, #000);
+      }
     }
     &::-moz-slider-thumb {
       appearance: none;
       -webkit-appearance: none;
-      width: 14px;
-      height: 14px;
-      background: #fff;
+      -moz-appearance: none;
+      width: var(--slider-size, 14px);
+      height: var(--slider-size, 14px);
+      background: var(--slider-color, #000);
       cursor: pointer;
-      border-radius: 9999px;
+      border-radius: var(--slider-radius, 9999px);
+      &:hover {
+        background: var(--slider-hover-color, #000);
+      }
     }
   }
 }
