@@ -142,10 +142,10 @@ CUSTOM PROPERTIES
   }
 }
 
-$excludes: map.get($all-config, excludes);
-$includes: map.get($all-config, includes);
+$exclude: map.get($all-config, exclude);
+$include: map.get($all-config, include);
 
-@if ( list.index($includes, module-table) != null or list.index($excludes, all) == null and list.index($excludes, module-table) == null ) {
+@if ( list.index($include, module-table) != null or list.index($exclude, all) == null and list.index($exclude, module-table) == null ) {
 
   .table {
     width: 100%;

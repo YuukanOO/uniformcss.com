@@ -2,10 +2,10 @@
 @use "sass:list";
 @use "uniform/core" as *;
 
-$excludes: map.get($all-config, excludes);
-$includes: map.get($all-config, includes);
+$exclude: map.get($all-config, exclude);
+$include: map.get($all-config, include);
 
-@if ( list.index($includes, default-starter) != null or list.index($excludes, all) == null and list.index($excludes, default-starter) == null ) {
+@if ( list.index($include, default-starter) != null or list.index($exclude, all) == null and list.index($exclude, default-starter) == null ) {
   html {
     background-color: var(--background-color, white);
   }

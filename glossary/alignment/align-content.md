@@ -19,16 +19,7 @@ The `align-content` utilities align multi-row Flexbox and CSS Grid children alon
 | `align-content-around`  | `align-content: space-around`  |
 | `align-content-evenly`  | `align-content: space-evenly`  |
 
----
-
-## Default Settings
-
-The following default responsive and pseudo settings.
-
-| Setting      | Default Setting |
-| ------------ | --------------- |
-| `responsive` | `true`          |
-| `pseudos`    | `none`          |
+{.table}
 
 ---
 
@@ -41,17 +32,234 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
+{.table}
+
 ---
 
-## {{ title }}
 
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
+## Center
+
+Items are packed flush to each other in the center of the alignment container along the cross axis.
+
+<div class="bg-silver-200 p-10 h-224 radius-md flex flex-wrap align-content-center">
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
+  </div>
 </div>
 
 ```html
-<div class="TODO">
-	<!-- TODO -->
+<div class="flex flex-wrap content-start">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+```
+
+---
+
+## Start
+
+Items are packed flush to each other against the start edge of the alignment container in the cross axis.
+
+<div class="bg-silver-200 p-10 h-224 radius-md flex flex-wrap align-content-start">
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
+  </div>
+</div>
+
+```html
+<div class="flex flex-wrap align-content-start">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+```
+
+---
+
+## End
+
+Items are packed flush to each other against the end edge of the alignment container in the cross axis.
+
+<div class="bg-silver-200 p-10 h-224 radius-md flex flex-wrap align-content-end">
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
+  </div>
+</div>
+
+```html
+<div class="flex flex-wrap align-content-end">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+```
+
+---
+
+## Between
+
+Items are evenly distributed within the alignment container along the cross axis. 
+
+<div class="bg-silver-200 p-10 h-224 radius-md flex flex-wrap align-content-between">
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
+  </div>
+</div>
+
+```html
+<div class="flex flex-wrap align-content-between">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+```
+
+---
+
+## Around
+
+Items are evenly distributed within the alignment container along the cross axis. 
+
+<div class="bg-silver-200 p-10 h-224 radius-md flex flex-wrap align-content-around">
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
+  </div>
+</div>
+
+```html
+<div class="flex flex-wrap align-content-around">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+</div>
+```
+
+---
+
+## Evenly
+
+Items are evenly distributed within the alignment container along the cross axis. 
+
+<div class="bg-silver-200 p-10 h-224 radius-md flex flex-wrap align-content-evenly">
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">1</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">2</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">3</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">4</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">5</div>
+  </div>
+  <div class="w-4-12 p-10">
+    <div class="flex align-items-center justify-content-center h-40 bg-primary-900 font-bold font-xl text-white radius-sm">6</div>
+  </div>
+</div>
+
+```html
+<div class="flex flex-wrap align-content-evenly">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
 </div>
 ```
 

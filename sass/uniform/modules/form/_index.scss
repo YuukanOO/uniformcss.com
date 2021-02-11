@@ -2,10 +2,10 @@
 @use "sass:list";
 @use "uniform/core" as *;
 
-$excludes: map.get($all-config, excludes);
-$includes: map.get($all-config, includes);
+$exclude: map.get($all-config, exclude);
+$include: map.get($all-config, include);
 
-@if ( list.index($includes, module-form) != null or list.index($excludes, all) == null and list.index($excludes, module-form) == null ) {
+@if ( list.index($include, module-form) != null or list.index($exclude, all) == null and list.index($exclude, module-form) == null ) {
 
   /******************************
   LABEL

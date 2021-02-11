@@ -264,25 +264,25 @@ $config: map.deep-merge(core.$all-config, core.$config);
 
 @mixin constructor($config) {
 
-  $important: map.get($config, build, important);
-  $prefix: map.get($config, build, prefix);
-  $delimiter: map.get($config, build, delimiter);
-  $pseudo-delimiter: core.escape(map.get($config, build, pseudo-delimiter));
-  $screen-delimiter: core.escape(map.get($config, build, screen-delimiter));
+  $important: map.get($config, important);
+  $prefix: map.get($config, prefix);
+  $delimiter: map.get($config, delimiter);
+  $pseudo-delimiter: core.escape(map.get($config, pseudo-delimiter));
+  $screen-delimiter: core.escape(map.get($config, screen-delimiter));
 
-  $headless: map.get($config, build, headless);
-  $debugger: map.get($config, build, debugger);
-  $placeholders: map.get($config, build, placeholders);
-  $dark-mode: map.get($config, build, dark-mode);
+  $headless: map.get($config, headless);
+  $debugger: map.get($config, debugger);
+  $placeholders: map.get($config, placeholders);
+  $dark-mode: map.get($config, dark-mode);
 
   $utilities: map.get($config, utility);
-  $excludes: map.get($config, excludes);
-  $includes: map.get($config, includes);
+  $exclude: map.get($config, exclude);
+  $include: map.get($config, include);
 
-  $all-pseudos: map.get($config, theme, pseudos);
-  $all-screens: map.get($config, theme, screens);
+  $all-pseudos: map.get($config, pseudos);
+  $all-screens: map.get($config, screens);
 
-  $keyframes: map.get($config, theme, keyframes);
+  $keyframes: map.get($config, keyframes);
 
   @if ($headless == false) {
     @if ($debugger == true) {
@@ -323,7 +323,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
         
 
         // check if utility exists in the exclude list
-        @if (list.index($excludes, all) == null and list.index($excludes, $utility) == null) {
+        @if (list.index($exclude, all) == null and list.index($exclude, $utility) == null) {
           // for EACH VARIANT do the following
           @each $merged-variant, $merged-variant-value in $merged-variants {
 
@@ -415,7 +415,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
             }
             
           }
-        } @else if (list.index($includes, $utility)) {
+        } @else if (list.index($include, $utility)) {
           // for EACH VARIANT do the following
           @each $merged-variant, $merged-variant-value in $merged-variants {
 
@@ -543,7 +543,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
 
 
             // check if utility exists in the exclude list
-            @if (list.index($excludes, all) == null and list.index($excludes, $utility) == null) {
+            @if (list.index($exclude, all) == null and list.index($exclude, $utility) == null) {
               @if $responsive == true {
                 // for EACH VARIANT do the following
                 @each $merged-variant, $merged-variant-value in $merged-variants {
@@ -638,7 +638,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
                   
                 }
               }
-            } @else if (list.index($includes, $utility)) {
+            } @else if (list.index($include, $utility)) {
               // for EACH VARIANT do the following
               @each $merged-variant, $merged-variant-value in $merged-variants {
 

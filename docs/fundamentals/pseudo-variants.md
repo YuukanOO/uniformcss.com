@@ -1,0 +1,469 @@
+---
+title: Pseudo Variants
+description: Learn how classes can change based on pseudo interaction.
+date: 1000-01-04
+---
+
+## Pseudo Interactions
+
+Pseudos allow for utility properties to be conditionally applied based on user interaction. These include interactions such as `hover`, `focus`, and etc.
+
+{% include shortcodes/video, id: 'GUQqC8abh6Y' %}
+
+---
+
+## Pseudo Interactions
+
+Pseudo interactions such as hover can be achieved by appending the pseudo variant to the beginning of your class name e.g. `<pseudo>.shorthand-variant`.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <button class="p-12 px-18 bg-primary-500 hover.bg-primary-600 transition-100 cursor-pointer font-bold text-white radius-sm">
+    Hover on me
+  </button>
+</section>
+
+```html
+<button class="bg-primary-500 hover.bg-primary-600">Hover on me</button>
+```
+
+---
+
+## Pseudo Variant Chart
+
+The following pseudo interactions are available to be activated for each property.
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>
+        Variant
+      </th>
+      <th>
+        Value
+      </th>
+    </tr>
+  </thead>
+  <tbody class="font-sm">
+    <tr>
+      <td><code class="text-teal text-brighten-500">first</code></td>
+      <td><code class="text-gray-600">:first-child</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">last</code></td>
+      <td><code class="text-gray-600">:last-child</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">last-type</code></td>
+      <td><code class="text-gray-600">:last-of-type</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">odd</code></td>
+      <td><code class="text-gray-600">:nth-child(odd)</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">even</code></td>
+      <td><code class="text-gray-600">:nth-child(even)</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">hover</code></td>
+      <td><code class="text-gray-600">:hover</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">focus</code></td>
+      <td><code class="text-gray-600">:focus</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">active</code></td>
+      <td><code class="text-gray-600">:active</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">visited</code></td>
+      <td><code class="text-gray-600">:visited</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">disabled</code></td>
+      <td><code class="text-gray-600">:disabled</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">checked</code></td>
+      <td><code class="text-gray-600">:checked</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">empty</code></td>
+      <td><code class="text-gray-600">:empty</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">focus-within</code></td>
+      <td><code class="text-gray-600">:focus-within</code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">group-hover</code></td>
+      <td><code class="text-gray-600">.group:hover </code></td>
+    </tr>
+    <tr>
+      <td><code class="text-teal text-brighten-500">group-focus</code></td>
+      <td><code class="text-gray-600">.group:focus</code></td>
+    </tr>
+  </tbody>
+</table>
+
+---
+
+## Enabling Pseudos
+
+By default, only a subset of properties have pseudo variants enabled. To see which pseudos are enabled, please refer to the glossary. You can enable pseudo variants by passing preferred pseudos to the `pseudos` map for each property in your configuration.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    utility: (
+      background-color: (
+      	pseudos: (hover, active, focus, group-hover)
+      ),
+      border-color: (
+      	pseudos: (focus-within)
+      ),
+      color: (
+        pseudos: (focus)
+      ),
+    )
+  )
+);
+```
+
+---
+
+## Pseudo Delimiter
+
+By default, Uniform uses the `.` character to separate the breakpoints and pseudos from the property. You can override the default breakpoint delimiter by defining `pseudo-delimiter` in your configuration.
+
+```scss
+// styles.scss
+@use "uniform" as * with (
+  $config: (
+    pseudo-delimiter: ':',
+  )
+);
+```
+
+```css
+/* styles.css */
+.hover\:bg-red:hover { ... }
+.hover\:bg-primary-900:hover { ... }
+...
+```
+
+---
+
+## Extending Pseudos
+
+You can extend the available set of pseudos by passing in key value pairs to the `pseudos` key in your configuration variable.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    pseudos: (
+      nth4: 'nth-child(4)',
+      nth5n: 'nth-child(5n)',
+    )
+  )
+);
+```
+
+```css
+/* styles.css */
+.nth4\:bg-red:nth-child(4) { ... }
+.nth5n\:bg-red:nth-child(5n) { ... }
+...
+```
+
+---
+
+### First Child
+
+The `first.<property>` allows you to apply a utility to the first child.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 first.opacity-100">1</div>
+<div class="opacity-30 first.opacity-100">2</div>
+<div class="opacity-30 first.opacity-100">3</div>
+```
+
+---
+
+### Last Child
+
+The `last.<property>` allows you to apply a utility to the last child.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 last.opacity-100">1</div>
+<div class="opacity-30 last.opacity-100">2</div>
+<div class="opacity-30 last.opacity-100">3</div>
+```
+
+---
+
+### First of Type
+
+The `first-type.<property>` allows you to apply a utility to the first of type.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 first-type.opacity-100">1</div>
+<div class="opacity-30 first-type.opacity-100">2</div>
+<div class="opacity-30 first-type.opacity-100">3</div>
+```
+
+---
+
+### Last of Type
+
+The `last-type.<property>` allows you to apply a utility to the last of type.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 last-type.opacity-100">1</div>
+<div class="opacity-30 last-type.opacity-100">2</div>
+<div class="opacity-30 last-type.opacity-100">3</div>
+```
+
+---
+
+### Odd Child
+
+The `odd.<property>` allows you to apply a utility to the odd child.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 odd.opacity-100">1</div>
+<div class="opacity-30 odd.opacity-100">2</div>
+<div class="opacity-30 odd.opacity-100">3</div>
+```
+
+---
+
+### Even Child
+
+The `even.<property>` allows you to apply a utility to the even child.
+
+<section class="bg-silver-200 p-20 radius-md">
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    1
+  </div>
+  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+    2
+  </div>
+  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 align-center radius-sm">
+    3
+  </div>
+</section>
+
+```html
+<div class="opacity-30 even.opacity-100">1</div>
+<div class="opacity-30 even.opacity-100">2</div>
+<div class="opacity-30 even.opacity-100">3</div>
+```
+
+---
+
+### Hover
+
+The `hover.<property>` allows you to apply a utility on hover.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <button class="p-12 px-18 bg-primary-500 hover.bg-primary-600 transition-100 cursor-pointer font-bold text-white radius-sm">
+    Hover on me
+  </button>
+</section>
+
+```html
+<button class="bg-primary-500 hover.bg-primary-600">Hover on me</button>
+```
+
+---
+
+### Active
+
+The `active.<property>` allows you to apply a utility on active.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <button class="p-12 px-18 bg-primary-500 active.bg-primary-600 transition-100 cursor-pointer font-bold text-white radius-sm">
+    Click me
+  </button>
+</section>
+
+```html
+<button class="bg-primary-500 active.bg-primary-600">Click me</button>
+```
+
+---
+
+### Visited
+
+The `visited.<property>` allows you to apply a utility on visited.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <a href="#" class="text-blue hover.text-blue underline mr-14">Normal Link</a>
+  <a href="#" class="text-purple hover.text-purple underline">Visited Link</a>
+</section>
+
+```html
+<a href="#" class="text-blue visited.text-blue">Normal Link</a>
+<a href="#" class="text-blue visited.text-purple">Visited Link</a>
+```
+
+---
+
+### Focus
+
+The `focus.<property>` allows you to apply a utility on focus.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <input value="Focus" class="p-12 opacity-50 focus.opacity-100 font-bold font-lg">
+</section>
+
+```html
+<input value="Focus" class="opacity-50 focus.opacity-100" />
+```
+
+---
+
+### Disabled
+
+The `disabled.<property>` allows you to apply a utility on disabled.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <input value="Disabled" class="bg-white p-12 opacity-100 disabled.opacity-50 font-bold font-lg" disabled>
+</section>
+
+```html
+<input value="Disabled" class="opacity-100 disabled.opacity-50" disabled />
+```
+
+---
+
+### Empty
+
+The `empty.<property>` allows you to apply a utility on empty.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <div class="w-64 h-64 radius-sm bg-blue empty.bg-mint"></div>
+</section>
+
+```html
+<div class="w-64 h-64 bg-blue empty.bg-mint"></div>
+```
+
+---
+
+### Focus Within
+
+The `focus-within.<property>` allows you to apply a utility on focus-within.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <form class="relative shadow-xs bg-white border-b-2 border-silver-500 focus-within.border-black">
+    <input placeholder="Focus on me" class="bg-white p-12 font-bold font-lg outline-0">
+  </form>
+</section>
+
+```html
+<form class="bg-white border-b-2 border-silver-500 focus-within.border-black">
+  <input placeholder="Focus on me" />
+</form>
+```
+
+---
+
+### Group Hover
+
+The `group-hover.<property>` allows you to apply properties when the parent container is hovered. You must assign the parent container with a `group` class.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <a class="group bg-white text-black hover.bg-black block p-20 radius-sm">
+    <h3 class="group-hover.text-mint">Group Hover</h3>
+    <p class="group-hover.text-white">Hover on this card to see change</p>
+  </a>
+</section>
+
+```html
+<a class="group bg-white text-black hover.bg-black block p-20 radius-sm">
+  <h3 class="group-hover.text-mint">Group Hover</h3>
+  <p class="group-hover.text-white">Hover on this card to see change</p>
+</a>
+```
+
+---
+
+### Group Focus
+
+The `group-focus.<property>` operates in the same way as `group-hover` but allows you to apply properties when the parent container is in focus. You must assign the parent container with a `group` class.
+
+<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+  <button class="group flex align-items-center p-12 px-18 bg-primary-500 focus.bg-black transition-100 cursor-pointer font-bold text-white radius-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="currentColor" class="w-24 h-24 group-focus.text-magenta mr-16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+    Focus on me
+  </button>
+</section>
+
+```html
+<button class="group text-white bg-primary-500 focus.bg-black">
+  <svg class="group-focus:text-cyan"></svg> Button
+</button>
+```
