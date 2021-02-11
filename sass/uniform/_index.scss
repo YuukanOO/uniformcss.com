@@ -271,8 +271,8 @@ $config: map.deep-merge(core.$all-config, core.$config);
   $screen-delimiter: core.escape(map.get($config, screen-delimiter));
 
   $headless: map.get($config, headless);
-  $debugger: map.get($config, debugger);
   $placeholders: map.get($config, placeholders);
+  $god-mode: map.get($config, god-mode);
   $dark-mode: map.get($config, dark-mode);
 
   $utilities: map.get($config, utility);
@@ -291,7 +291,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
       $shorthand: map.get($utility-value, shorthand);
       $responsive: null;
       $responsive-pseudos: null;
-      @if ($debugger == true) {
+      @if ($god-mode == true) {
         $responsive: true;
         $responsive-pseudos: true;
       } @else {
@@ -317,8 +317,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
       $pseudos: map.get($utility-value, pseudos);
       $pseudo-extends: map.get($utility-value, extends, pseudos);
       $merged-pseudos: ();
-
-      @if ($debugger == true) {
+      @if ($god-mode == true) {
         $merged-pseudos: (first, last, first-type, last-type, odd, even, hover, active, visited, focus, disabled, empty, focus-within, group-hover, group-focus, dark);
       } @else {
         @if (list.index($pseudos, null) == null) {
@@ -330,7 +329,6 @@ $config: map.deep-merge(core.$all-config, core.$config);
       }
       
       
-
       // check if utility exists in the exclude list
       @if (list.index($exclude, all) == null and list.index($exclude, $utility) == null) {
         // for EACH VARIANT do the following
@@ -524,6 +522,13 @@ $config: map.deep-merge(core.$all-config, core.$config);
           $shorthand: map.get($utility-value, shorthand);
           $responsive: map.get($utility-value, responsive);
           $responsive-pseudos: map.get($utility-value, responsive-pseudos);
+          @if ($god-mode == true) {
+            $responsive: true;
+            $responsive-pseudos: true;
+          } @else {
+            $responsive: map.get($utility-value, responsive);
+            $responsive-pseudos: map.get($utility-value, responsive-pseudos);
+          }
           $extra-selector: map.get($utility-value, extra-selector);
 
           $properties: map.get($utility-value, properties);
@@ -543,11 +548,15 @@ $config: map.deep-merge(core.$all-config, core.$config);
           $pseudos: map.get($utility-value, pseudos);
           $pseudo-extends: map.get($utility-value, extends, pseudos);
           $merged-pseudos: ();
-          @if (list.index($pseudos, null) == null) {
-            $merged-pseudos: list.join($merged-pseudos, $pseudos, $separator: comma);
-          }
-          @if (list.index($pseudo-extends, null) == null) {
-            $merged-pseudos: list.join($merged-pseudos, $pseudo-extends, $separator: comma);
+          @if ($god-mode == true) {
+            $merged-pseudos: (first, last, first-type, last-type, odd, even, hover, active, visited, focus, disabled, empty, focus-within, group-hover, group-focus, dark);
+          } @else {
+            @if (list.index($pseudos, null) == null) {
+              $merged-pseudos: list.join($merged-pseudos, $pseudos);
+            }
+            @if (list.index($pseudo-extends, null) == null) {
+              $merged-pseudos: list.join($merged-pseudos, $pseudo-extends, $separator: comma);
+            }
           }
 
 

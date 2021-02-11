@@ -63,9 +63,9 @@ To enable each advanced setting, simply include the setting in your configuratio
 @use "uniform" as * with (
   $config: (
     headless: false,
-    debugger: false,
     placeholders: false,
     dark-mode: false,
+    god-mode: false,
   )
 );
 ```
@@ -77,9 +77,9 @@ The following advanced build setting definitions apply.
 | Setting | Default | Description |
 | - | - | - |
 | `headless` | `false` | Loads Uniform CSS in Headless Mode. |
-| `debugger` | `false` | Enables all pseudos across all responsive breakpoints. |
 | `placeholders` | `false` | Builds with placeholder selectors enabled. |
 | `dark-mode` | `false` | Enable dark pseudo across all properties. |
+| `god-mode` | `false` | Enables all pseudos across all responsive breakpoints. |
 
 {.table}
 
@@ -91,18 +91,6 @@ When `headless` is enabled, Uniform CSS will be loaded but no class properties w
 @use "uniform" as * with (
   $config: (
     headless: true, // false by default
-  )
-);
-```
-
-### Debugger
-
-When `debugger` is enabled, every single pseudo across all breakpoints will be generated for every single property. This will indeed create a very large file size but can be useful for testing and debugging variants.
-
-```scss
-@use "uniform" as * with (
-  $config: (
-    debugger: true, // false by default
   )
 );
 ```
@@ -131,3 +119,14 @@ When `dark-mode` is enabled, every property will also generate a dark pseudo var
 );
 ```
 
+### God-mode
+
+God mode is a dangerous but powerful feature, when `god-mode` enabled, **every single pseudo across all breakpoints will be generated for every single property**. This will indeed create a massively large CSS file size but it can be a useful way to debug, test, and exerpiement.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    god-mode: true, // false by default
+  )
+);
+```
