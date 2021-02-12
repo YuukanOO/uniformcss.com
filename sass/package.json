@@ -1,6 +1,6 @@
 {
   "name": "uniformcss",
-  "version": "0.8.1",
+  "version": "1.0.0",
   "description": "Supercharged utility-first CSS framework built for Sass projects.",
   "main": "styles.sass",
   "scripts": {
