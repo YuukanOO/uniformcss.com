@@ -18,6 +18,8 @@ The `position` utilities set element positioning.
 | `relative` | `position: relative` |
 | `sticky`   | `position: sticky`   |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -29,19 +31,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

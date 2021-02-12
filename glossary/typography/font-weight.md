@@ -31,6 +31,8 @@ The `font-weight` utilities set font weight.
 | `font-800`        | `font-weight: 800`                    |
 | `font-900`        | `font-weight: 900`                    |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -42,19 +44,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

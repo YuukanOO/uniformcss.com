@@ -24,6 +24,8 @@ The `stroke-width` utilities set stroke width for SVG elements.
 | `stroke-9`  | `stroke-width: 9`  |
 | `stroke-10` | `stroke-width: 10` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -35,19 +37,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

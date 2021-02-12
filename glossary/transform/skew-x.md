@@ -20,6 +20,8 @@ The `skew-x` utilities skew an element along the x-axis using the [Transform API
 | `skew-x-8`   | `--skew-x: 8deg`   |
 | `skew-x-12`  | `--skew-x: 12deg`  |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -31,19 +33,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

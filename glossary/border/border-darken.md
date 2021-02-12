@@ -22,6 +22,8 @@ The `border-darken` utilities darken border color.
 | `border-darken-800` | `--border-ltn: var(--darken-800)` |
 | `border-darken-900` | `--border-ltn: var(--darken-900)` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -33,19 +35,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

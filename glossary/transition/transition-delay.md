@@ -23,6 +23,8 @@ The `transition-delay` utilities set the delay used for the [Transition API](TOD
 | `delay-900`  | `transition-delay: 900ms`  |
 | `delay-1000` | `transition-delay: 1000ms` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -34,19 +36,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

@@ -20,6 +20,8 @@ The `grid-row-start` utilities set a grid item’s row start cell.
 | `row-start-5`    | `grid-row-start: 5`    |
 | `row-start-6`    | `grid-row-start: 6`    |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -31,19 +33,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

@@ -24,6 +24,8 @@ The `opacity` utilities control element opacity. Opacity is the degree to which 
 | `opacity-90`  | `opacity: 0.9` |
 | `opacity-100` | `opacity: 1`   |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -35,19 +37,9 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
+{.table}
+
 ---
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

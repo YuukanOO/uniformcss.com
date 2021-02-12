@@ -20,6 +20,8 @@ The `rotate` utilities rotate an element using the [Transform API](TODO). Rotati
 | `rotate-n90` | `--rotate: -90deg`  |
 | `rotate-n18` | `--rotate: -180deg` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -31,19 +33,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

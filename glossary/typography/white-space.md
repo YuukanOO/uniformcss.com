@@ -17,6 +17,8 @@ The `white-space` utilities control whether to preserve or collapse white-space.
 | `pre-line` | `white-space: pre-line` |
 | `pre-wrap` | `white-space: pre-wrap` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -28,19 +30,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

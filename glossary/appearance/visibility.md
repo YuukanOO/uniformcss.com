@@ -15,6 +15,8 @@ The `visibility` utilities control element visibility. Note that invisible eleme
 | `visible`   | `visibility: visible` |
 | `invisible` | `visibility: hidden`  |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -26,19 +28,9 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
+{.table}
+
 ---
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

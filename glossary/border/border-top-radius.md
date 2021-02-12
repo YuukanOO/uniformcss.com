@@ -22,6 +22,8 @@ The `border-top-radius` utilities round the top-side corners.
 | `radius-t-round` | <code>border-top-left-radius: var(--radius-round)<br>border-top-right-radius: var(--radius-round)</code> |
 | `radius-t-0`     | <code>border-top-left-radius: 0<br>border-top-right-radius: 0</code>                                     |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -33,18 +35,5 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
+{.table}
 
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
-
-<!-- No MDN docs -->

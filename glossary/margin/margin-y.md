@@ -95,6 +95,8 @@ The `margin-y` utilities creates margins on the y-axis of an element.
 | `my-640`   | <code>margin-top: var(--size-640)<br>margin-bottom: var(--size-640)</code>   |
 | `my-auto`  | <code>margin-top: var(--size-auto)<br>margin-bottom: var(--size-auto)</code> |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -106,18 +108,4 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
-
-<!-- No MDN docs -->
+{.table}

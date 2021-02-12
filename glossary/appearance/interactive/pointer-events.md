@@ -15,6 +15,8 @@ The `pointer-events` utilities control whether an element can be interacted with
 | `pointer-events-none` | `pointer-events: none` |
 | `pointer-events-auto` | `pointer-events: auto` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -26,19 +28,9 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
+{.table}
+
 ---
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

@@ -24,6 +24,8 @@ The `border-bottom-width` utilities control the bottom border width.
 | `border-b-9`  | `border-bottom-width: var(--size-9)`  |
 | `border-b-10` | `border-bottom-width: var(--size-10)` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -35,19 +37,9 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
+{.table}
+
 ---
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

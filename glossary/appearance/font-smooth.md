@@ -15,6 +15,8 @@ The `font-smooth` utilities control the antialiasing strategy for text.
 | `antialiased`          | <code>-webkit-font-smoothing: antialiased;<br>-moz-osx-font-smoothing: grayscale</code> |
 | `subpixel-antialiased` | <code>-webkit-font-smoothing: auto;<br>-moz-osx-font-smoothing: auto</code>             |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -26,19 +28,9 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
+{.table}
+
 ---
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

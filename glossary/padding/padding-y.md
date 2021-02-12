@@ -95,6 +95,8 @@ The `padding-y` utilities creates padding on the y-axis of an element.
 | `my-640`   | <code>padding-top: var(--size-640)<br>padding-bottom: var(--size-640)</code>   |
 | `my-auto`  | <code>padding-top: var(--size-auto)<br>padding-bottom: var(--size-auto)</code> |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -106,18 +108,5 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
+{.table}
 
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
-
-<!-- No MDN docs -->

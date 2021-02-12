@@ -95,6 +95,8 @@ The `margin-x` utilities creates margins on the x-axis of an element.
 | `mx-640`   | <code>margin-left: var(--size-640)<br>margin-right: var(--size-640)</code>   |
 | `mx-auto`  | <code>margin-left: var(--size-auto)<br>margin-right: var(--size-auto)</code> |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -106,18 +108,5 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
+{.table}
 
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
-
-<!-- No MDN docs -->

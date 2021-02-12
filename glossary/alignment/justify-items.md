@@ -18,6 +18,8 @@ The `justify-items` utilities justify CSS Grid children relative to their contai
 | `justify-items-center`  | `justify-items: center`  |
 | `justify-items-stretch` | `justify-items: stretch` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -29,19 +31,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

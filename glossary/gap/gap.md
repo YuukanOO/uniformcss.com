@@ -44,6 +44,8 @@ The `gap` utilities control the gap between Flexbox and CSS Grid children.
 | `gap-144`  | `gap: var(--size-144)` |
 | `gap-160`  | `gap: var(--size-160)` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -55,19 +57,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

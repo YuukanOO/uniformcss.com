@@ -19,6 +19,8 @@ The `grid-row` utilities set a grid item’s row start and end cell.
 | `row-4`    | `grid-row: span 4 / span 4` |
 | `row-5`    | `grid-row: span 5 / span 5` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -30,19 +32,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

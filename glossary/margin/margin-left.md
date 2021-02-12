@@ -95,6 +95,8 @@ The `margin-left` utilities create a margin on the left of an element.
 | `ml-640`   | `margin-left: var(--size-640)`  |
 | `ml-auto`  | `margin-left: var(--size-auto); |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -106,19 +108,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

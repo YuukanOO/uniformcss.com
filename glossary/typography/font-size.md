@@ -29,6 +29,8 @@ The `font-size` utilities set font size.
 | `font-xs`   | `font-size: var(--font-xs)`   |
 | `font-2xs`  | `font-size: var(--font-2xs)`  |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -40,19 +42,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

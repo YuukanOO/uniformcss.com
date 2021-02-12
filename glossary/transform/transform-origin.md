@@ -25,6 +25,8 @@ The `transform-origin` utilities control the origin from which to transform or t
 | `transform-left`          | ` transform-origin: left`         |
 | `transform-top-left`      | ` transform-origin: top left`     |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -36,19 +38,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

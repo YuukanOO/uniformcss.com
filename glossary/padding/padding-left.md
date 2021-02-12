@@ -95,6 +95,8 @@ The `padding-left` utilities create padding on the left of an element.
 | `pl-640`   | `padding-left: var(--size-640)`  |
 | `pl-auto`  | `padding-left: var(--size-auto); |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -106,19 +108,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

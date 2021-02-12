@@ -22,6 +22,8 @@ The `background-deepen` utilities deepen the background color.
 | `bg-deepen-800` | --bg-sat: var(--deepen-800)` |
 | `bg-deepen-900` | --bg-sat: var(--deepen-900)` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -33,19 +35,9 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
+{.table}
+
 ---
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

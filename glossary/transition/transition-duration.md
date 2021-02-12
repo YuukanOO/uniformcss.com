@@ -23,6 +23,8 @@ The `transition-duration` utilities set the duration used for the [Transition AP
 | `duration-900`  | `transition-duration: 900ms`  |
 | `duration-1000` | `transition-duration: 1000ms` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -34,19 +36,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

@@ -15,6 +15,8 @@ The `table-layout` utilities sets the layout algorithm for `<table>` elements.
 | `table-auto`  | `table-layout: auto`  |
 | `table-fixed` | `table-layout: fixed` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -26,19 +28,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

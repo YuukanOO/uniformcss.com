@@ -95,6 +95,8 @@ The `margin-bottom` utilities create a margin on the bottom of an element.
 | `mb-640`   | `margin-bottom: var(--size-640)`  |
 | `mb-auto`  | `margin-bottom: var(--size-auto)` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -106,19 +108,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

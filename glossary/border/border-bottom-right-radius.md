@@ -22,6 +22,8 @@ The `border-bottom-right-radius` utilities round the bottom-right corner.
 | `radius-br-round` | `border-bottom-right-radius: var(--radius-round)` |
 | `radius-br-0`     | `border-bottom-right-radius: 0`                   |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -33,19 +35,9 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `true`          |
 
+{.table}
+
 ---
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

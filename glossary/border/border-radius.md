@@ -22,6 +22,8 @@ The `border-radius` utilities round corners on every side.
 | `radius-round` | `border-radius: var(--radius-round)` |
 | `radius-0`     | `border-radius: 0`                   |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -33,19 +35,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

@@ -23,6 +23,8 @@ The `box-shadow` utilities cast a shadow. Note that the casted shadow responds t
 | `shadow-danger`  | `box-shadow: var(--shadow-danger)`  |
 | `shadow-none`    | `box-shadow: none`                  |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -34,19 +36,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

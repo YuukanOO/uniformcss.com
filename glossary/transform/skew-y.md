@@ -20,6 +20,8 @@ The `skew-y` utilities skew an element along the y-axis using the [Transform API
 | `skew-y-8`   | `--skew-y: 8deg`   |
 | `skew-y-12`  | `--skew-y: 12deg`  |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -31,19 +33,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

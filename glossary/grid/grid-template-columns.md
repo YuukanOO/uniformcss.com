@@ -19,6 +19,8 @@ The `grid-template-cols` template CSS Grid columns (left-to-right).
 | `grid-cols-4    | `grid-template-columns: repeat(4, minmax(0, 1fr))` |
 | `grid-cols-5    | `grid-template-columns: repeat(5, minmax(0, 1fr))` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -30,19 +32,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

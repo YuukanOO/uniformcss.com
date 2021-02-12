@@ -17,6 +17,8 @@ The `transition-timing-function` utilities set the timing function used for the 
 | `ease-in`     | `transition-timing-function: ease-in`     |
 | `ease-in-out` | `transition-timing-function: ease-in-out` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -28,19 +30,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

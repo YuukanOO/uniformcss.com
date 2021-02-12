@@ -17,6 +17,8 @@ The `background-clip` utilities set whether the background extends underneath th
 | `bg-content` | `background-clip: content-box` |
 | `bg-text`    | `background-clip: text`        |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -28,19 +30,9 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
+{.table}
+
 ---
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

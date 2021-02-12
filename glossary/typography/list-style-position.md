@@ -15,6 +15,8 @@ The `list-style-position` utilities set the position for list item markers.
 | `list-inside`  | `list-style-position: inside`  |
 | `list-outside` | `list-style-position: outside` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -26,19 +28,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

@@ -22,6 +22,8 @@ The `object-position` utilities set the origin for [`object-fit`](/glossary/obje
 | `object-right-top`    | `object-position: right-top`    |
 | `object-top`          | `object-position: top`          |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -33,19 +35,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

@@ -27,6 +27,8 @@ The `grid-column-start` utilities set a grid item’s column start cell.
 | `col-start-12`   | `grid-column-start: 12`   |
 | `col-start-13`   | `grid-column-start: 13`   |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -38,19 +40,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

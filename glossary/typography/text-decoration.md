@@ -15,6 +15,8 @@ The `text-decoration` utilities decorate text.
 | `underline`    | `text-decoration: underline`    |
 | `line-through` | `text-decoration: line-through` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -26,19 +28,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

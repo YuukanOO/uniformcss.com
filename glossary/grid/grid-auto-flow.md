@@ -17,6 +17,8 @@ The `grid-auto-flow` utilities set the layout algorithm for CSS Grid children.
 | `grid-flow-row-dense` | `grid-auto-flow: row dense`    |
 | `grid-flow-col-dense` | `grid-auto-flow: column dense` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -28,19 +30,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

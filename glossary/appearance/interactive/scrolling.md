@@ -15,6 +15,8 @@ The `scrolling` utilities enables or disables inertial scrolling.
 | `scrolling-auto`  | `-webkit-overflow-scrolling: auto`  |
 | `scrolling-touch` | `-webkit-overflow-scrolling: touch` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -26,19 +28,9 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
+{.table}
+
 ---
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

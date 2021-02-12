@@ -14,6 +14,8 @@ The `font-style` utilities set font style.
 | ---------- | -------------------- |
 | `italic`   | `font-style: italic` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -25,19 +27,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

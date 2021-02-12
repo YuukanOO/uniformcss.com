@@ -27,6 +27,8 @@ The `order` utilities control layout order for Flexbox and CSS Grid chidlren.
 | `order-11`    | `order: 11`    |
 | `order-12`    | `order: 12`    |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -38,19 +40,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

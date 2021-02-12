@@ -19,6 +19,8 @@ The `vertical-align` utilities align text vertically.
 | `align-text-top`    | `vertical-align: text-top`    |
 | `align-text-bottom` | `vertical-align: text-bottom` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -30,19 +32,9 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
+{.table}
+
 ---
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

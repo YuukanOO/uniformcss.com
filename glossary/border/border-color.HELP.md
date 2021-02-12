@@ -68,6 +68,8 @@ The `border-color` utilities set the border color.
 | `border-silver-100`   | TODO     |
 | `border-transparent`  | TODO     |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -79,17 +81,7 @@ The following default responsive and pseudo settings.
 | `responsive` | none`           |
 | `pseudos`    | none`           |
 
----
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

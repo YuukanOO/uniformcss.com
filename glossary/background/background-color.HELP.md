@@ -68,6 +68,8 @@ The `background-color` utilities set the background color.
 | `bg-silver-100`   | TODO     |
 | `bg-transparent`  | TODO     |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -79,17 +81,9 @@ The following default responsive and pseudo settings.
 | `responsive` | none`           |
 | `pseudos`    | none`           |
 
+{.table}
+
 ---
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

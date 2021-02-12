@@ -19,6 +19,8 @@ The `align-items` property controls alignment for items inside the flex containe
 | `align-items-end`      | `align-items: flex-end`   |
 | `align-items-baseline` | `align-items: baseline`   |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -30,19 +32,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

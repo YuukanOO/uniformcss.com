@@ -22,6 +22,8 @@ The `text-darken` utilities deepen text color.
 | `text-deepen-800` | --text-sat: var(--deepen-800)` |
 | `text-deepen-900` | --text-sat: var(--deepen-900)` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -33,20 +35,4 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
-
----
-
-<!-- No MDN docs -->
+{.table}

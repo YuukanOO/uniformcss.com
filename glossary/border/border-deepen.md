@@ -22,6 +22,8 @@ The `border-darken` utilities deepen border color.
 | `border-deepen-800` | --border-sat: var(--deepen-800)` |
 | `border-deepen-900` | --border-sat: var(--deepen-900)` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -33,20 +35,6 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
+{.table}
 
-## {{ title }}
 
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
-
----
-
-<!-- No MDN docs -->

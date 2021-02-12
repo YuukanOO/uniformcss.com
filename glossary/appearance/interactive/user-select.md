@@ -17,6 +17,8 @@ The `user-select` utilities control whether text can be selected.
 | `select-all`  | `user-select: all`  |
 | `select-auto` | `user-select: auto` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -28,19 +30,9 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
+{.table}
+
 ---
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
 
 ---
 

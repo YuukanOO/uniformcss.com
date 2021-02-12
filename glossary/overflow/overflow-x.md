@@ -19,6 +19,9 @@ The `align-content` property sets the distribution of space between and around c
 | `align-content-around`  | `align-content: space-around`  |
 | `align-content-evenly`  | `align-content: space-evenly`  |
 
+
+{.table}
+
 ---
 
 ## Default Settings
@@ -30,19 +33,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

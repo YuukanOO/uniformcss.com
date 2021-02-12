@@ -22,6 +22,8 @@ The `text-darken` utilities darken text color.
 | `text-darken-800` | `--text-ltn: var(--darken-800)` |
 | `text-darken-900` | `--text-ltn: var(--darken-900)` |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -33,19 +35,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `none`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 

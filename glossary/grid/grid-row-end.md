@@ -20,6 +20,8 @@ The `grid-row-end` utilities set a grid item’s row end cell.
 | `row-end-5`    | `grid-row-end: 5`    |
 | `row-end-6`    | `grid-row-end: 6`    |
 
+{.table}
+
 ---
 
 ## Default Settings
@@ -31,19 +33,7 @@ The following default responsive and pseudo settings.
 | `responsive` | `true`          |
 | `pseudos`    | `none`          |
 
----
-
-## {{ title }}
-
-<div class="bg-silver-200 p-20 h-256 radius-md flex flex-wrap align-content-center">
-  <!-- ... -->
-</div>
-
-```html
-<div class="TODO">
-	<!-- TODO -->
-</div>
-```
+{.table}
 
 ---
 
