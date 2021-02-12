@@ -125,10 +125,14 @@
 @use "utilities/composition/core-table-layout";
 
 
-// UTILITIES - OVERFLOW (3)
-@use "utilities/overflow/core-overflow-x";
-@use "utilities/overflow/core-overflow-y";
-@use "utilities/overflow/core-overflow";
+// UTILITIES - SCROLL (3)
+@use "utilities/scroll/core-overflow-x";
+@use "utilities/scroll/core-overflow-y";
+@use "utilities/scroll/core-overflow";
+@use "utilities/scroll/core-overscroll-x";
+@use "utilities/scroll/core-overscroll-y";
+@use "utilities/scroll/core-overscroll";
+@use "utilities/scroll/core-scroll-behavior";
 
 
 // UTILITIES - EFFECT (3)

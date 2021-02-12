@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="antialiased bg-white font-sans">
+<html lang="en" class="antialiased bg-white font-sans scroll-smooth">
 <head>
   <title>{{ metadata.sitename }}{{ title or metadata.title }}</title>
 
@@ -175,8 +175,8 @@ $(document).ready(function () {
 
   // homepage Image Compare Container
   var dragging = false,
-    scrolling = false,
-    resizing = false;
+      scrolling = false,
+      resizing = false;
   // cache jQuery objects
   var imageComparisonContainers = $('.cd-image-container');
   // check if the .cd-image-container is in the viewport 

@@ -1,5 +1,5 @@
 {
-  "layout": "layouts/get-started.njk",
+  "layout": "layouts/docs.njk",
   "permalink": "docs/{{ title | slug }}/index.html",
   "tags": ["theming"]
 }

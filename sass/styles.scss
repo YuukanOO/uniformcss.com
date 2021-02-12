@@ -111,6 +111,14 @@
 
 
 .markdown {
+	& > h2 {
+		margin-top: 0;
+		padding-top: size(64);
+	}
+	& > hr {
+		margin-bottom: 0;
+	}
+
 	& > h1, 
 	& > h2,
 	& > h3,
