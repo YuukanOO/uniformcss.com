@@ -7,7 +7,7 @@
     "uniform:compile": "sass --load-path=./ --no-source-map styles.scss ../assets/css/styles.css",
     "uniform:compress": "sass --load-path=./ --no-source-map styles.scss ../assets/css/styles.css --style compressed",
     "uniform:watch": "sass --load-path=./ --no-source-map --watch styles.scss ../assets/css/styles.css",
-    "uniform": "npm run uniform:compile"
+    "uniform": "npm run uniform:compress"
   },
   "keywords": [
     "css",
