@@ -1,18 +1,18 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: text-darken;
-$shorthand: text;
+$name: placeholder-lightness;
+$shorthand: placeholder;
 $responsive: false;
 $responsive-pseudos: false;
-$extra-selector: null;
+$extra-selector: #{'::placeholder'};
 
-$properties: (#{--text-ltn});
+$properties: (#{--placeholder-ltn});
 $custom-properties: ();
 
 $variants: (
 	core.merge(
-    core.var-darken-levels(),
+    core.var-lighten-levels(),
 	)
 );
 

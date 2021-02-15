@@ -160,8 +160,8 @@ $include: map.get($all-config, include);
     height: var(--btn-height, size(40));
     padding: var(--btn-padding, size(0, 16));
     outline: 0;
-    background: var(--btn-bg, fill(primary-500));
-    border: var(--btn-border, 1px solid fill(primary-700));
+    background: var(--btn-bg, fill(primary-blue));
+    border: var(--btn-border, 1px solid fill(primary-blue, shade-200));
     box-shadow: var(--btn-shadow, none);
     border-radius: var(--btn-radius, radius(xs));
     font-family: var(--btn-font-family, font-family(sans));
@@ -214,27 +214,27 @@ $include: map.get($all-config, include);
   .btn-xs {
     --btn-height: var(--btn-xs-height, #{size(24)});
     --btn-padding: var(--btn-xs-padding, #{size(0, 8)});
-    --btn-font-size: var(--btn-xs-font-size, #{font-size(xs)});
+    --btn-font-size: var(--btn-xs-font-size, var(--btn-font-size, #{font-size(xs)});)
   }
   .btn-sm {
     --btn-height: var(--btn-sm-height, #{size(36)});
     --btn-padding: var(--btn-sm-padding, #{size(0, 12)});
-    --btn-font-size: var(--btn-sm-font-size, #{font-size(sm)});
+    --btn-font-size: var(--btn-sm-font-size, var(--btn-font-size, #{font-size(sm)});)
   }
   .btn-md {
     --btn-height: var(--btn-md-height, #{size(40)});
     --btn-padding: var(--btn-md-padding, #{size(0, 16)});
-    --btn-font-size: var(--btn-md-font-size, #{font-size(base)});
+    --btn-font-size: var(--btn-md-font-size, var(--btn-font-size, #{font-size(base)}));
   }
   .btn-lg {
     --btn-height: var(--btn-lg-height, #{size(48)});
     --btn-padding: var(--btn-lg-padding, #{size(0, 18)});
-    --btn-font-size: var(--btn-lg-font-size, #{font-size(base)});
+    --btn-font-size: var(--btn-lg-font-size, var(--btn-font-size, #{font-size(base)}));
   }
   .btn-xl {
     --btn-height: var(--btn-xl-height, #{size(56)});
     --btn-padding: var(--btn-xl-padding, #{size(0, 20)});
-    --btn-font-size: var(--btn-xl-font-size, #{font-size(base)});
+    --btn-font-size: var(--btn-xl-font-size, var(--btn-font-size, #{font-size(base)}));
   }
 
   @each $screen, $screen-value in screens() {
@@ -242,27 +242,27 @@ $include: map.get($all-config, include);
       .#{$screen}#{$screen-delimiter}btn-xs {
         --btn-height: var(--btn-xs-height, #{size(24)});
         --btn-padding: var(--btn-xs-padding, #{size(0, 8)});
-        --btn-font-size: var(--btn-xs-font-size, #{font-size(xs)});
+        --btn-font-size: var(--btn-xs-font-size, var(--btn-font-size, #{font-size(xs)});)
       }
       .#{$screen}#{$screen-delimiter}btn-sm {
         --btn-height: var(--btn-sm-height, #{size(36)});
         --btn-padding: var(--btn-sm-padding, #{size(0, 12)});
-        --btn-font-size: var(--btn-sm-font-size, #{font-size(sm)});
+        --btn-font-size: var(--btn-sm-font-size, var(--btn-font-size, #{font-size(sm)});)
       }
       .#{$screen}#{$screen-delimiter}btn-md {
         --btn-height: var(--btn-md-height, #{size(40)});
         --btn-padding: var(--btn-md-padding, #{size(0, 16)});
-        --btn-font-size: var(--btn-md-font-size, #{font-size(base)});
+        --btn-font-size: var(--btn-md-font-size, var(--btn-font-size, #{font-size(base)}));
       }
       .#{$screen}#{$screen-delimiter}btn-lg {
         --btn-height: var(--btn-lg-height, #{size(48)});
         --btn-padding: var(--btn-lg-padding, #{size(0, 18)});
-        --btn-font-size: var(--btn-lg-font-size, #{font-size(base)});
+        --btn-font-size: var(--btn-lg-font-size, var(--btn-font-size, #{font-size(base)}));
       }
       .#{$screen}#{$screen-delimiter}btn-xl {
         --btn-height: var(--btn-xl-height, #{size(56)});
         --btn-padding: var(--btn-xl-padding, #{size(0, 20)});
-        --btn-font-size: var(--btn-xl-font-size, #{font-size(base)});
+        --btn-font-size: var(--btn-xl-font-size, var(--btn-font-size, #{font-size(base)}));
       }
     }
   }

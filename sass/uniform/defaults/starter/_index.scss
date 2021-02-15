@@ -19,7 +19,7 @@ $include: map.get($all-config, include);
   }
 
   h1,h2,h3,h4,h5,h6 {
-    line-height: var(--heading-leading, leading(tighter));
+    line-height: var(--heading-leading, var(--leading-tighter));
     margin-bottom: var(--heading-margin, 0.5em);
     color: var(--heading-color, black);
     &:last-child {
@@ -28,7 +28,7 @@ $include: map.get($all-config, include);
   }
 
   p {
-    line-height: var(--paragraph-leading, leading(base));
+    line-height: var(--paragraph-leading, var(--leading-normal));
     margin-bottom: var(--paragraph-margin, 1.5rem);
     &:last-child {
       margin-bottom: 0;
@@ -45,7 +45,7 @@ $include: map.get($all-config, include);
   }
 
   b,strong {
-    font-weight: var(--bold-font-weight, font-weight(bold));
+    font-weight: var(--bold-font-weight, var(--font-bold));
   }
 
   sub,sup {

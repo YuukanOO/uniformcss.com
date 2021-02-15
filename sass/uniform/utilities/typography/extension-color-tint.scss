@@ -1,7 +1,7 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: text-darken;
+$name: text-shade;
 $shorthand: text;
 $responsive: false;
 $responsive-pseudos: false;
@@ -12,7 +12,7 @@ $custom-properties: ();
 
 $variants: (
 	core.merge(
-    core.var-darken-levels(),
+    core.var-shade-levels(),
 	)
 );
 

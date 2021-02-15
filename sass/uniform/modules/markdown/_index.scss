@@ -57,32 +57,32 @@ $include: map.get($all-config, include);
       margin-top: var(--markdown-h1-margin-top, size(48));
       margin-bottom: var(--markdown-h1-margin-bottom, size(18));
       font-size: var(--markdown-h1-size, font-size(6xl));
-      font-weight: var(--markdown-h1-weight, font-weight(extrabold));
-      letter-spacing: var(--markdown-h1-tracking, tracking(tight));
+      font-weight: var(--markdown-h1-weight, font-weight(bold));
+      letter-spacing: var(--markdown-h1-tracking, 0);
     }
 
     & > h2 {
       margin-top: var(--markdown-h2-margin-top, size(40));
       margin-bottom: var(--markdown-h2-margin-bottom, size(18));
       font-size: var(--markdown-h2-size, font-size(2xl));
-      font-weight: var(--markdown-h2-weight, font-weight(extrabold));
-      letter-spacing: var(--markdown-h2-tracking, tracking(tight));
+      font-weight: var(--markdown-h2-weight, font-weight(bold));
+      letter-spacing: var(--markdown-h2-tracking, 0);
     }
 
     & > h3 {
       margin-top: var(--markdown-h3-margin-top, size(36));
       margin-bottom: var(--markdown-h3-margin-bottom, size(16));
       font-size: var(--markdown-h3-size, font-size(xl));
-      font-weight: var(--markdown-h3-weight, font-weight(extrabold));
-      letter-spacing: var(--markdown-h3-tracking, tracking(tight));
+      font-weight: var(--markdown-h3-weight, font-weight(bold));
+      letter-spacing: var(--markdown-h3-tracking, 0);
     }
 
     & > h4 {
       margin-top: var(--markdown-h4-margin-top, size(32));
       margin-bottom: var(--markdown-h4-margin-bottom, size(14));
       font-size: var(--markdown-h4-size, font-size(lg));
-      font-weight: var(--markdown-h4-weight, font-weight(extrabold));
-      letter-spacing: var(--markdown-h4-tracking, tracking(tight));
+      font-weight: var(--markdown-h4-weight, font-weight(bold));
+      letter-spacing: var(--markdown-h4-tracking, 0);
     }
 
     /******************************

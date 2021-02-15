@@ -1,18 +1,18 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: text-darken;
-$shorthand: text;
+$name: background-tint;
+$shorthand: bg;
 $responsive: false;
 $responsive-pseudos: false;
 $extra-selector: null;
 
-$properties: (#{--text-ltn});
+$properties: (#{--bg-ltn});
 $custom-properties: ();
 
 $variants: (
 	core.merge(
-    core.var-darken-levels(),
+    core.var-tint-levels(),
 	)
 );
 

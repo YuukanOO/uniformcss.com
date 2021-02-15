@@ -9,18 +9,20 @@ $extra-selector: null;
 
 $properties: (border-color);
 $custom-properties: (
-  --border-sat: 0%,
-  --border-ltn: 0%,
+  --border-ltn: 50%,
   --border-opacity: 1,
 );
 
 $variants: (
 	core.merge(
-    core.border-colors()
+    core.border-colors(),
+    (
+      transparent: transparent,
+    )
 	)
 );
 
-$pseudos: (hover, group-hover, dark);
+$pseudos: (hover, group-hover, focus, dark);
 
 $config: (
   utility: (
