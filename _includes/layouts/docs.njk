@@ -16,7 +16,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.introduction -%}
-                <a href="{{ post.url }}" class="font-sm font-semibold transition-100 transform translate-x-0 {% if post.url == page.url %}text-black hover.text-black{% else %} text-gray-200 hover.text-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm font-semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-gray-200 hover.color-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -27,7 +27,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.fundamentals -%}
-                <a href="{{ post.url }}" class="font-sm font-semibold transition-100 transform translate-x-0 {% if post.url == page.url %}text-black hover.text-black{% else %} text-gray-200 hover.text-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm font-semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-gray-200 hover.color-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -38,7 +38,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.customization -%}
-                <a href="{{ post.url }}" class="font-sm font-semibold transition-100 transform translate-x-0 {% if post.url == page.url %}text-black hover.text-black{% else %} text-gray-200 hover.text-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm font-semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-gray-200 hover.color-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -49,7 +49,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.theming -%}
-                <a href="{{ post.url }}" class="font-sm font-semibold transition-100 transform translate-x-0 {% if post.url == page.url %}text-black hover.text-black{% else %} text-gray-200 hover.text-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm font-semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-gray-200 hover.color-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -60,7 +60,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.modules -%}
-                <a href="{{ post.url }}" class="font-sm font-semibold transition-100 transform translate-x-0 {% if post.url == page.url %}text-black hover.text-black{% else %} text-gray-200 hover.text-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm font-semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-gray-200 hover.color-black hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -119,7 +119,7 @@ layout: layouts/base.njk
             <h1 class="flex align-items-start relative font-6xl font-extrabold mb-12 tracking-tight">
               {{ title | safe }}
             </h1>
-            <p class="font-xl font-semibold text-black pb-56 border-b-4 border-silver-200">
+            <p class="font-xl font-semibold color-black pb-56 border-b-4 border-silver-200">
               {{ description | safe }}
             </p>
             <div class="markdown">

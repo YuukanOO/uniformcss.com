@@ -13,7 +13,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 	 color: #fff;
 	 background: none;
 	 font-family: Menlo, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	 font-size: font-size(sm);
+	 font-size: var(--font-sm);
 	 text-align: left;
 	 white-space: pre;
 	 word-spacing: normal;
@@ -41,7 +41,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-	 background: fill(primary-900);
+	 background: hsl(var(--primary-hue), var(--primary-sat), var(--shade-800));
  }
  
  /* Inline code */
@@ -132,15 +132,15 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  // OVERRIDES
 
 .token.comment {
-	color: fill(silver-800);
+	color: #ccc;
 }
 
 .token.selector {
-	color: fill(cyan, brighten-3, lighten-3);
+	color: #00ffff;
 }
 
 .token.important {
-	color: fill(red, brighten-3);
+	color: #ff5e5e;
 }
 
 .token.tag {

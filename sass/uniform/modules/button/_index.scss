@@ -9,6 +9,7 @@ CUSTOM PROPERTIES
 --btn-padding
 --btn-bg
 --btn-border
+--btn-border-width
 --btn-shadow
 --btn-radius
 --btn-font-family
@@ -166,7 +167,7 @@ $include: map.get($all-config, include);
     border-radius: var(--btn-radius, var(--radius-xs));
     font-family: var(--btn-font-family, var(--font-sans));
     font-size: var(--btn-font-size, var(--font-base));
-    font-weight: var(--btn-font-weight, var(--font-semibold));
+    font-weight: var(--btn-font-weight, var(--font-bold));
     line-height: 1;
     text-decoration: none;
     text-transform: var(--btn-text-transform, none);
@@ -218,22 +219,22 @@ $include: map.get($all-config, include);
   }
   .btn-sm {
     --btn-height: var(--btn-sm-height, var(--size-36));
-    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size12));
+    --btn-padding: var(--btn-sm-padding, var(--size-0) var(--size-12));
     --btn-font-size: var(--btn-sm-font-size, var(--btn-font-size, var(--font-sm)));
   }
   .btn-md {
     --btn-height: var(--btn-md-height, var(--size-40));
-    --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-16));
+    --btn-padding: var(--btn-md-padding, var(--size-0) var(--size-14));
     --btn-font-size: var(--btn-md-font-size, var(--btn-font-size, var(--font-base)));
   }
   .btn-lg {
     --btn-height: var(--btn-lg-height, var(--size-48));
-    --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-18));
+    --btn-padding: var(--btn-lg-padding, var(--size-0) var(--size-16));
     --btn-font-size: var(--btn-lg-font-size, var(--btn-font-size, var(--font-base)));
   }
   .btn-xl {
     --btn-height: var(--btn-xl-height, var(--size-56));
-    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-20));
+    --btn-padding: var(--btn-xl-padding, var(--size-0) var(--size-18));
     --btn-font-size: var(--btn-xl-font-size, var(--btn-font-size, var(--font-base)));
   }
 
@@ -296,134 +297,134 @@ $include: map.get($all-config, include);
   }
 
 
-  // /******************************
-  // VARIANTS
-  // ******************************/
+  /******************************
+  VARIANTS
+  ******************************/
 
-  // .btn-light {
-  //   --btn-bg: var(--btn-light-bg, #{fill(silver-200)});
-  //   --btn-color: var(--btn-light-color, #{fill(gray-900)});
-  //   --btn-border: var(--btn-light-border, initial);
-  //   --btn-shadow: var(--btn-light-shadow, none);
+  .btn-light {
+    --btn-bg: var(--btn-light-bg, hsl( var(--gray-hue), var(--gray-sat), var(--tint-800) ));
+    --btn-color: var(--btn-light-color, hsl( var(--gray-hue), var(--gray-sat), var(--shade-800) ));
+    --btn-border: var(--btn-light-border, initial);
+    --btn-shadow: var(--btn-light-shadow, none);
 
-  //   --btn-hover-bg: var(--btn-light-hover-bg, #{fill(silver-300)});
-  //   --btn-hover-color: var(--btn-light-hover-color, #{fill(gray-900)});
-  //   --btn-hover-border: var(--btn-light-hover-border, initial);
-  //   --btn-hover-shadow: var(--btn-light-hover-shadow, none);
+    --btn-hover-bg: var(--btn-light-hover-bg, hsl( var(--gray-hue), var(--gray-sat), var(--tint-700) ));
+    --btn-hover-color: var(--btn-light-hover-color, hsl( var(--gray-hue), var(--gray-sat), var(--shade-800) ));
+    --btn-hover-border: var(--btn-light-hover-border, initial);
+    --btn-hover-shadow: var(--btn-light-hover-shadow, none);
 
-  //   --btn-focus-shadow: var(--btn-light-focus-shadow, #{shadow(focus)});
-  // }
+    --btn-focus-shadow: var(--btn-light-focus-shadow, var(--shadow-focus));
+  }
 
-  // .btn-dark {
-  //   --btn-bg: var(--btn-dark-bg, #{fill(gray-800)});
-  //   --btn-color: var(--btn-dark-color, white);
-  //   --btn-border: var(--btn-dark-border, initial);
-  //   --btn-shadow: var(--btn-dark-shadow, none);
+  .btn-dark {
+    --btn-bg: var(--btn-dark-bg, hsl( var(--gray-hue), var(--gray-sat), var(--shade-800) ));
+    --btn-color: var(--btn-dark-color, white );
+    --btn-border: var(--btn-dark-border, initial);
+    --btn-shadow: var(--btn-dark-shadow, none);
 
-  //   --btn-hover-bg: var(--btn-dark-hover-bg, #{fill(black)});
-  //   --btn-hover-color: var(--btn-dark-hover-color, white);
-  //   --btn-hover-border: var(--btn-dark-hover-border, initial);
-  //   --btn-hover-shadow: var(--btn-dark-hover-shadow, none);
+    --btn-hover-bg: var(--btn-dark-hover-bg, hsl( var(--gray-hue), var(--gray-sat), var(--shade-600) ));
+    --btn-hover-color: var(--btn-dark-hover-color, white );
+    --btn-hover-border: var(--btn-dark-hover-border, initial);
+    --btn-hover-shadow: var(--btn-dark-hover-shadow, none);
 
-  //   --btn-focus-shadow: var(--btn-dark-focus-shadow, #{shadow(focus)});
-  // }
+    --btn-focus-shadow: var(--btn-dark-focus-shadow, var(--shadow-focus));
+  }
 
-  // .btn-outline {
-  //   --btn-bg: var(--btn-outline-bg, transparent);
-  //   --btn-color: var(--btn-outline-color, #{fill(gray-600)});
-  //   --btn-border: var(--btn-outline-border, 1px solid #{fill(silver-500)});
-  //   --btn-shadow: var(--btn-outline-shadow, none);
+  .btn-outline {
+    --btn-bg: var(--btn-outline-bg, transparent );
+    --btn-color: var(--btn-outline-color, hsl( var(--gray-hue), var(--gray-sat), var(--shade-800) ));
+    --btn-border: var(--btn-outline-border, 1px solid hsl( var(--gray-hue), var(--gray-sat), var(--tint-600) ));
+    --btn-shadow: var(--btn-outline-shadow, none);
 
-  //   --btn-hover-bg: var(--btn-outline-hover-bg, #{fill(silver-100)});
-  //   --btn-hover-color: var(--btn-outline-hover-color, #{fill(gray-600)});
-  //   --btn-hover-border: var(--btn-outline-hover-border, 1px solid #{fill(silver-700)});
-  //   --btn-hover-shadow: var(--btn-outline-hover-shadow, none);
+    --btn-hover-bg: var(--btn-outline-hover-bg, hsl( var(--gray-hue), var(--gray-sat), var(--tint-900) ));
+    --btn-hover-color: var(--btn-outline-hover-color, hsl( var(--gray-hue), var(--gray-sat), var(--shade-800) ));
+    --btn-hover-border: var(--btn-outline-hover-border, 1px solid hsl( var(--gray-hue), var(--gray-sat), var(--tint-400) ));
+    --btn-hover-shadow: var(--btn-outline-hover-shadow, none);
 
-  //   --btn-focus-shadow: var(--btn-outline-focus-shadow, #{shadow(focus)});
-  // }
+    --btn-focus-shadow: var(--btn-outline-focus-shadow, var(--shadow-focus));
+  }
 
-  // .btn-success {
-  //   --btn-bg: var(--btn-success-bg, #{fill(lime, brighten-2)});
-  //   --btn-color: var(--btn-success-color, white);
-  //   --btn-border: var(--btn-success-border, 1px solid #{fill(green, brighten-2, darken-2)});
-  //   --btn-shadow: var(--btn-success-shadow, none);
+  .btn-success {
+    --btn-bg: var(--btn-success-bg, hsl( var(--system-green-hue), var(--system-green-sat), var(--shade-100) ));
+    --btn-color: var(--btn-success-color, white );
+    --btn-border: var(--btn-success-border, 1px solid hsl( var(--system-green-hue), var(--system-green-sat), var(--shade-200) ));
+    --btn-shadow: var(--btn-success-shadow, none);
 
-  //   --btn-hover-bg: var(--btn-success-hover-bg, #{fill(lime, brighten-3, lighten-1)});
-  //   --btn-hover-color: var(--btn-success-hover-color, white);
-  //   --btn-hover-border: var(--btn-success-hover-border, 1px solid #{fill(green, brighten-2, darken-2)});
-  //   --btn-hover-shadow: var(--btn-success-hover-shadow, none);
+    --btn-hover-bg: var(--btn-success-hover-bg, hsl( var(--system-green-hue), var(--system-green-sat), var(--shade-50) ));
+    --btn-hover-color: var(--btn-success-hover-color, white );
+    --btn-hover-border: var(--btn-success-hover-border, 1px solid hsl( var(--system-green-hue), var(--system-green-sat), var(--shade-200) ));
+    --btn-hover-shadow: var(--btn-success-hover-shadow, none);
 
-  //   --btn-focus-shadow: var(--btn-success-focus-shadow, #{shadow(focus-success)});
-  // }
+    --btn-focus-shadow: var(--btn-success-focus-shadow, var(--shadow-focus-success));
+  }
 
-  // .btn-warning {
-  //   --btn-bg: var(--btn-warning-bg, #{fill(yellow, brighten-8)});
-  //   --btn-color: var(--btn-warning-color, white);
-  //   --btn-border: var(--btn-warning-border, 1px solid #{fill(yellow, brighten-8, darken-1)});
-  //   --btn-shadow: var(--btn-warning-shadow, none);
+  .btn-warning {
+    --btn-bg: var(--btn-warning-bg, hsl( var(--system-yellow-hue), var(--system-yellow-sat), 50% ));
+    --btn-color: var(--btn-warning-color, white );
+    --btn-border: var(--btn-warning-border, 1px solid hsl( var(--system-yellow-hue), var(--system-yellow-sat), var(--shade-50) ));
+    --btn-shadow: var(--btn-warning-shadow, none);
 
-  //   --btn-hover-bg: var(--btn-warning-hover-bg, #{fill(yellow, brighten-9, lighten-1)});
-  //   --btn-hover-color: var(--btn-warning-hover-color, white);
-  //   --btn-hover-border: var(--btn-warning-hover-border, 1px solid #{fill(yellow, brighten-8, darken-1)});
-  //   --btn-hover-shadow: var(--btn-warning-hover-shadow, none);
+    --btn-hover-bg: var(--btn-warning-hover-bg, hsl( var(--system-yellow-hue), var(--system-yellow-sat), var(--tint-100) ));
+    --btn-hover-color: var(--btn-warning-hover-color, white );
+    --btn-hover-border: var(--btn-warning-hover-border, 1px solid hsl( var(--system-yellow-hue), var(--system-yellow-sat), var(--shade-50) ));
+    --btn-hover-shadow: var(--btn-warning-hover-shadow, none);
 
-  //   --btn-focus-shadow: var(--btn-warning-focus-shadow, #{shadow(focus-warning)});
-  // }
+    --btn-focus-shadow: var(--btn-warning-focus-shadow, var(--shadow-focus-warning));
+  }
   
-  // .btn-danger {
-  //   --btn-bg: var(--btn-danger-bg, #{fill(red, brighten-4, lighten-1)});
-  //   --btn-color: var(--btn-danger-color, white);
-  //   --btn-border: var(--btn-danger-border, 1px solid #{fill(red, brighten-4, darken-1)});
-  //   --btn-shadow: var(--btn-danger-shadow, none);
+  .btn-danger {
+    --btn-bg: var(--btn-danger-bg, hsl( var(--system-red-hue), var(--system-red-sat), 50% ));
+    --btn-color: var(--btn-danger-color, white );
+    --btn-border: var(--btn-danger-border, 1px solid hsl( var(--system-red-hue), var(--system-red-sat), var(--shade-100) ));
+    --btn-shadow: var(--btn-danger-shadow, none);
 
-  //   --btn-hover-bg: var(--btn-danger-hover-bg, #{fill(red, brighten-5, lighten-2)});
-  //   --btn-hover-color: var(--btn-danger-hover-color, white);
-  //   --btn-hover-border: var(--btn-danger-hover-border, 1px solid #{fill(red, brighten-4, darken-1)});
-  //   --btn-hover-shadow: var(--btn-danger-hover-shadow, none);
+    --btn-hover-bg: var(--btn-danger-hover-bg, hsl( var(--system-red-hue), var(--system-red-sat), var(--tint-100) ));
+    --btn-hover-color: var(--btn-danger-hover-color, white );
+    --btn-hover-border: var(--btn-danger-hover-border, 1px solid hsl( var(--system-red-hue), var(--system-red-sat), var(--shade-100) ));
+    --btn-hover-shadow: var(--btn-danger-hover-shadow, none);
 
-  //   --btn-focus-shadow: var(--btn-danger-focus-shadow, #{shadow(focus-danger)});
-  // }
+    --btn-focus-shadow: var(--btn-danger-focus-shadow, var(--shadow-focus-danger));
+  }
 
-  // .btn-primary {
-  //   --btn-bg: var(--btn-primary-bg, #{fill(primary-500)});
-  //   --btn-color: var(--btn-primary-color, white);
-  //   --btn-border: var(--btn-primary-border, 1px solid #{fill(primary-700)});
-  //   --btn-shadow: var(--btn-primary-shadow, none);
+  .btn-primary {
+    --btn-bg: var(--btn-primary-bg, hsl( var(--primary-hue), var(--primary-sat), 50% ));
+    --btn-color: var(--btn-primary-color, white );
+    --btn-border: var(--btn-primary-border, 1px solid hsl( var(--primary-hue), var(--primary-sat), var(--shade-200) ));
+    --btn-shadow: var(--btn-primary-shadow, none);
 
-  //   --btn-hover-bg: var(--btn-primary-hover-bg, #{fill(primary-500, brighten-1, lighten-1)});
-  //   --btn-hover-color: var(--btn-primary-hover-color, white);
-  //   --btn-hover-border: var(--btn-primary-hover-border, 1px solid #{fill(primary-700)});
-  //   --btn-hover-shadow: var(--btn-primary-hover-shadow, none);
+    --btn-hover-bg: var(--btn-primary-hover-bg, hsl( var(--primary-hue), var(--primary-sat), var(--tint-50) ));
+    --btn-hover-color: var(--btn-primary-hover-color, white );
+    --btn-hover-border: var(--btn-primary-hover-border, 1px solid hsl( var(--primary-hue), var(--primary-sat), var(--shade-200) ));
+    --btn-hover-shadow: var(--btn-primary-hover-shadow, none);
 
-  //   --btn-focus-shadow: var(--btn-primary-focus-shadow, #{shadow(focus)});
-  // }
+    --btn-focus-shadow: var(--btn-primary-focus-shadow, var(--shadow-focus));
+  }
 
-  // .btn-secondary {
-  //   --btn-bg: var(--btn-secondary-bg, #{fill(primary-700)});
-  //   --btn-color: var(--btn-secondary-color, white);
-  //   --btn-border: var(--btn-secondary-border, 1px solid #{fill(primary-800)});
-  //   --btn-shadow: var(--btn-secondary-shadow, none);
+  .btn-secondary {
+    --btn-bg: var(--btn-primary-blue-bg, hsl( var(--primary-blue-hue), var(--primary-blue-sat), var(--shade-300) ));
+    --btn-color: var(--btn-primary-blue-color, white );
+    --btn-border: var(--btn-primary-blue-border, 1px solid hsl( var(--primary-blue-hue), var(--primary-blue-sat), var(--shade-500) ));
+    --btn-shadow: var(--btn-primary-blue-shadow, none);
 
-  //   --btn-hover-bg: var(--btn-secondary-hover-bg, #{fill(primary-700, brighten-1, lighten-1)});
-  //   --btn-hover-color: var(--btn-secondary-hover-color, white);
-  //   --btn-hover-border: var(--btn-secondary-hover-border, 1px solid #{fill(primary-800)});
-  //   --btn-hover-shadow: var(--btn-secondary-hover-shadow, none);
+    --btn-hover-bg: var(--btn-primary-blue-hover-bg, hsl( var(--primary-blue-hue), var(--primary-blue-sat), var(--shade-200) ));
+    --btn-hover-color: var(--btn-primary-blue-hover-color, white );
+    --btn-hover-border: var(--btn-primary-blue-hover-border, 1px solid hsl( var(--primary-blue-hue), var(--primary-blue-sat), var(--shade-500) ));
+    --btn-hover-shadow: var(--btn-primary-blue-hover-shadow, none);
 
-  //   --btn-focus-shadow: var(--btn-secondary-focus-shadow, #{shadow(focus)});
-  // }
+    --btn-focus-shadow: var(--btn-primary-blue-focus-shadow, var(--shadow-focus));
+  }
 
-  // .btn-tertiary {
-  //   --btn-bg: var(--btn-secondary-bg, #{fill(primary-800)});
-  //   --btn-color: var(--btn-secondary-color, white);
-  //   --btn-border: var(--btn-secondary-border, 1px solid #{fill(primary-900)});
-  //   --btn-shadow: var(--btn-secondary-shadow, none);
+  .btn-tertiary {
+    --btn-bg: var(--btn-primary-blue-bg, hsl( var(--primary-blue-hue), var(--primary-blue-sat), var(--shade-500) ));
+    --btn-color: var(--btn-primary-blue-color, white );
+    --btn-border: var(--btn-primary-blue-border, 1px solid hsl( var(--primary-blue-hue), var(--primary-blue-sat), var(--shade-700) ));
+    --btn-shadow: var(--btn-primary-blue-shadow, none);
 
-  //   --btn-hover-bg: var(--btn-secondary-hover-bg, #{fill(primary-800, brighten-1, lighten-1)});
-  //   --btn-hover-color: var(--btn-secondary-hover-color, white);
-  //   --btn-hover-border: var(--btn-secondary-hover-border, 1px solid #{fill(primary-900)});
-  //   --btn-hover-shadow: var(--btn-secondary-hover-shadow, none);
+    --btn-hover-bg: var(--btn-primary-blue-hover-bg, hsl( var(--primary-blue-hue), var(--primary-blue-sat), var(--shade-400) ));
+    --btn-hover-color: var(--btn-primary-blue-hover-color, white );
+    --btn-hover-border: var(--btn-primary-blue-hover-border, 1px solid hsl( var(--primary-blue-hue), var(--primary-blue-sat), var(--shade-700) ));
+    --btn-hover-shadow: var(--btn-primary-blue-hover-shadow, none);
 
-  //   --btn-focus-shadow: var(--btn-secondary-focus-shadow, #{shadow(focus)});
-  // }
+    --btn-focus-shadow: var(--btn-primary-blue-focus-shadow, var(--shadow-focus));
+  }
 }
 
