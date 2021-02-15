@@ -343,12 +343,12 @@ Button sizes can change based on breakpoint
 
 ## Button Groups
 
-Buttons can be combined by wrapping them with a `btns` class assigned container. Buttons can also have an `is-active` state.
+Buttons can be combined by wrapping them with a `btns` class assigned container.
 
 <div class="bg-white border-1 border-silver-200 radius-md p-20 align-center">
   <div class="btns">
     <button class="btn">1</button>
-    <button class="btn is-active">2</button>
+    <button class="btn">2</button>
     <button class="btn">3</button>
   </div>
 </div>
@@ -356,7 +356,7 @@ Buttons can be combined by wrapping them with a `btns` class assigned container.
 ```html
 <div class="btns">
   <button class="btn">1</button>
-  <button class="btn is-active">2</button>
+  <button class="btn">2</button>
   <button class="btn">3</button>
 </div>
 ```

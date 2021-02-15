@@ -23,7 +23,9 @@
       )
     ),
     exclude: (
-      
+      module-form,
+			module-table,
+			module-markdown
     ),
     include: (
       
@@ -33,7 +35,7 @@
 
 @use "_roots" as *;
 @use "_comparison-slider" as *;
-@use "vendors/prism" as *;
+// @use "vendors/prism" as *;
 
 
 .gallery {
@@ -71,7 +73,7 @@
 	font-weight: font-weight(semibold);
 	line-height: leading(tight);
 	a {
-		color: fill(gray-200);
+		color: fill(gray, tint-800);
 		&:hover {
 			color: fill(black);
 		}
@@ -100,10 +102,10 @@
 	& > table td {
 		font-size: font-size(sm);
 		&:first-child {
-			color: fill(cyan, brighten-4, darken-2);
+			color: fill(system-cyan, shade-200);
 		}
 		&:last-child {
-			color: fill(silver-900);
+			color: fill(gray, tint-900);
 		}
 	}
 }
