@@ -44,8 +44,8 @@ cssCodeExample: |
 
   <div class="wrapper">
     <div class="max-w-900px py-80 sm.py-112 sm.pb-96">
-      <div class="flex align-items-center mb-20 font-semibold font-sm color-gray-100">
-        <span class="inline-flex align-items-center h-20 mr-12 px-6 bg-blue bg-brighten-5 bg-darken-1 color-white uppercase font-2xs font-bold tracking-loose radius-xs">New</span> Version 1.0.0 Release
+      <div class="flex align-items-center mb-20 font-semibold font-sm color-white color-opacity-40">
+        <span class="inline-flex align-items-center h-20 mr-12 px-6 bg-blue color-white uppercase font-2xs font-bold tracking-loose radius-xs">New</span> Version 1.0.0 Release
       </div>
       <h1 class="font-3xl sm.font-7xl lg.font-8xl xl.font-8xl font-extrabold m-auto mb-24 tracking-tighter color-white">Supercharged utility-first <br class="hidden sm.inline">CSS framework built on Sass</h1>
       <a href="https://codepen.io/ThinkUniform/pen/poNNqaE" class="group inline-flex align-items-center font-bold font-lg color-white hover.color-white">
@@ -63,7 +63,7 @@ cssCodeExample: |
     <div class="relative p-2">
       <div class="absolute t-0 l-0 w-100p h-100p bg-flare radius-xl radius-b-0 filter filter-blur-60"></div>
       <div class="absolute t-0 l-0 w-100p h-100p bg-flare radius-xl radius-b-0"></div>
-      <div class="relative z-2 home-highlight grid grid-cols-1 md.grid-cols-2 radius-xl radius-b-0 shadow-sm overflow-hidden bg-black bg-deepen-6 bg-opacity-90 backdrop backdrop-blur-60 backdrop-saturate-4">
+      <div class="relative z-2 home-highlight grid grid-cols-1 md.grid-cols-2 radius-xl radius-b-0 shadow-sm overflow-hidden bg-black bg-opacity-90 backdrop backdrop-blur-60 backdrop-saturate-4">
         <div>
           <header class="flex align-items-center justify-content-between h-64 px-20 border-b-1 border-white border-opacity-10 color-white font-xs font-bold">
             <div class="flex align-items-center">
@@ -84,7 +84,7 @@ cssCodeExample: |
         <div class="bg-white bg-opacity-04">
           <header class="flex align-items-center justify-content-between h-64 px-20 border-b-1 border-white border-opacity-10 color-white font-xs font-bold">
             <div>
-              <span class="font-base font-bold color-teal color-brighten-7 mr-16">css</span>
+              <span class="font-base font-bold color-teal mr-16">css</span>
               Quickly generate<span class="hidden sm.inline"> suite of</span> utilities properties.
             </div>
             <div class="color-white color-opacity-40">
@@ -100,9 +100,6 @@ cssCodeExample: |
       </div>
     </div>
   </div>
-  <div class="absolute b-0 l-0 xbg-silver-200 bg-brighten-9 w-100p h-50p">
-
-  </div>
 </section>
 
 
@@ -114,21 +111,21 @@ cssCodeExample: |
           <h4 class="font-lg font-extrabold tracking-tight">Step 1. Install the Package</h4>
         </div>
         <p class="font-base mb-36">Install the Uniform node package or clone the project and install its dependencies.</p>
-        <pre class="p-18 py-16 radius-sm bg-primary-900 color-white select-all">npm i uniformcss</pre>
+        <pre class="p-18 py-16 radius-sm bg-blue bg-shade-900 color-white select-all">npm i uniformcss</pre>
       </div>
       <div>
         <div class="flex align-items-center mb-24 ">
           <h4 class="font-lg font-extrabold tracking-tight">Step 2. Include Uniform</h4>
         </div>
         <p class="font-base mb-36">Utility-first CSS framework that can be added directly into Sass projects with only one line.</p>
-        <pre class="p-18 py-16 radius-sm bg-primary-900 color-white select-all"><code class="language-scss"><span class="token keyword">@use</span> <span class="token string">"uniform"</span> <span class="token module-modifier keyword">as</span> *<span class="token punctuation">;</span></code></pre>
+        <pre class="p-18 py-16 radius-sm bg-blue bg-shade-900 color-white select-all"><code class="language-scss"><span class="token keyword">@use</span> <span class="token string">"uniform"</span> <span class="token module-modifier keyword">as</span> *<span class="token punctuation">;</span></code></pre>
       </div>
       <div>
         <div class="flex align-items-center mb-24 ">
           <h4 class="font-lg font-extrabold tracking-tight">Step 3. Compose your UI</h4>
         </div>
         <p class="font-base mb-36">Style components by writing composable utility properties directly in your HTML.</p>
-        <pre class="p-18 py-16 radius-sm bg-primary-900 color-sky color-brighten-5 select-all">px-24 py-20 border-b-1 ...</pre>
+        <pre class="p-18 py-16 radius-sm bg-blue bg-shade-900 color-blue color-tint-800 select-all">px-24 py-20 border-b-1 ...</pre>
       </div>
     </div>
   </div>
@@ -160,18 +157,18 @@ cssCodeExample: |
           </header>
           <div class="p-24">
             <div class="flex align-items-center mb-20">
-              <img src="/assets/img/diane-profile.png" class="w-48 h-48 radius-round mr-24">
+              <img src="/assets/img/diane-profile.png" class="w-48 h-48 radius-round mr-20">
               <div>
                 <h5 class="font-base font-bold">Diane Schaefer</h5>
                 <span class="font-sm">5 mins ago &bull; Public</span>
               </div>
             </div>
-            <div class="font-base bg-silver-200 bg-brighten-5 bg-opacity-60 radius-sm mb-20 p-20">
+            <div class="font-base bg-gray bg-tint-800 radius-sm mb-20 p-20">
               <p class="color-black">Hi, I am a graphic designer and I am looking for someone who would like to work on a project together.</p>
             </div>
             <div class="flex font-base">
               <a class="flex align-items-center mr-28 font-500 color-black hover.color-black transition-200">
-                <svg class="fill-current w-20 color-red color-brighten-5 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span class="hidden sm.inline">132 Likes</span>
+                <svg class="fill-current w-20 color-red color-tint-300 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span class="hidden sm.inline">132 Likes</span>
               </a>
               <a class="flex align-items-center mr-28 font-500 color-black hover.color-black transition-200">
                 <svg class="stroke-current w-20 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> <span class="hidden sm.inline">36 Comments</span>
@@ -186,7 +183,7 @@ cssCodeExample: |
       <span class="cd-image-label px-10 py-8 radius-round bg-black color-white mb-12 mr-12 font-xs font-bold tracking-2 uppercase" data-type="original">Preview</span>
   
       <div class="cd-resize-img radius-l-xl"> <!-- the resizable image on top -->
-        <div class="w-100p h-448 overflow-auto bg-primary-900">
+        <div class="w-100p h-448 overflow-auto bg-blue bg-shade-900">
           <div class="flex">
 {% highlight "html" %}
 <article class="w-100p max-w-512 radius-md bg-white shadow-md">
@@ -195,18 +192,18 @@ cssCodeExample: |
   </header>
   <div class="p-24">
     <div class="flex align-items-center mb-20">
-      <img src="/assets/img/diane-profile.png" class="w-48 h-48 radius-round mr-24">
+      <img src="/assets/img/diane-profile.png" class="w-48 h-48 radius-round mr-20">
       <div>
         <h5 class="font-base font-bold">Diane Schaefer</h5>
         <span class="font-sm">5 mins ago &bull; Public</span>
       </div>
     </div>
-    <div class="font-base bg-silver-200 bg-brighten-5 bg-opacity-60 radius-sm mb-20 p-20">
+    <div class="font-base bg-gray bg-tint-800 radius-sm mb-20 p-20">
       <p class="color-black">Hi, I am a graphic designer and I am looking for someone who would like to work on a project together.</p>
     </div>
     <div class="flex font-base">
       <a class="flex align-items-center mr-28 font-500 color-black hover.color-black transition-200">
-        <svg class="fill-current w-20 color-red color-brighten-5 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span class="hidden sm.inline">132 Likes</span>
+        <svg class="fill-current w-20 color-red color-tint-300 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> <span class="hidden sm.inline">132 Likes</span>
       </a>
       <a class="flex align-items-center mr-28 font-500 color-black hover.color-black transition-200">
         <svg class="stroke-current w-20 mr-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg> <span class="hidden sm.inline">36 Comments</span>
@@ -332,15 +329,6 @@ cssCodeExample: |
 
 
 
-{# 
-<div class="wrapper">
-  <div class="h-3 bg-silver-300 bg-opacity-40 bg-brighten-5"></div>
-</div>
- #}
-
-
-
-
 
 <section class="bg-white">
   <div class="wrapper py-80 sm.py-112">
@@ -364,23 +352,23 @@ cssCodeExample: |
         <div class="col-1 sm.col-5 md.col-4 flex align-items-center">
           <div>
             <div class="flex mb-24 sm.mb-36 gutter-x-n14">
-              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-primary-100 border-2 sm.border-3 border-white"></div>
-              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-primary-400 border-2 sm.border-3 border-white"></div>
-              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-primary-800 border-2 sm.border-3 border-white"></div>
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-blue bg-tint-100 border-2 sm.border-3 border-white"></div>
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-blue bg-tint-400 border-2 sm.border-3 border-white"></div>
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-blue bg-tint-800 border-2 sm.border-3 border-white"></div>
             </div>
             <h4 class="font-lg font-extrabold mb-24 tracking-tight color-black">Design Agnostic Colors</h4>
             <p class="font-base">Match your brand quickly with brand agnostic colors. Simply tweak each color token to match your design.</p>
           </div>
         </div>
-        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-indigo bg-darken-8 border-1 border-indigo border-darken-4 home-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-indigo bg-shade-700 home-highlight">
 {% highlight "css" %}
 /* styles.css */
 :root {
-  --primary-hue: 150;
-  --primary-sat: 24%;
+  --color-sat: 60%;
+  --accent-sat: 75%;
 
-  --secondary-hue: 60;
-  --secondary-sat: 73%;
+  --orange-sat: 60%;
+  --yellow-sat: 75%;
 
   --blue-hue: 50;
   --blue-sat: 20%;
@@ -393,24 +381,24 @@ cssCodeExample: |
           <div>
             <div class="flex mb-24 sm.mb-36 gutter-x-n14">
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan border-2 sm.border-3 border-white"></div>
-              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan bg-deepen-5 border-2 sm.border-3 border-white"></div>
-              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan bg-deepen-9 border-2 sm.border-3 border-white"></div>
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan bg-shade-300 border-2 sm.border-3 border-white"></div>
+              <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan bg-shade-600 border-2 sm.border-3 border-white"></div>
             </div>
             <h4 class="font-lg font-extrabold mb-24 tracking-tight color-black">Composable Color Manipulation</h4>
             <p class="font-base">Apply composable manipulation to any color. Increase or decrease saturation, lighten, and darken colors directly in your html.</p>
           </div>
         </div>
-        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-sky bg-darken-8 border-1 border-sky border-darken-4 home-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-sky bg-shade-700 home-highlight">
 {% highlight "html" %}
-<div class="bg-primary-500 bg-deepen-4">
+<div class="bg-blue bg-shade-400">
   ...
 </div>
 
-<div class="border-1 border-black border-opacity-50 hover.border-opacity-100">
+<div class="border-1 border-gray border-opacity-50 hover.border-opacity-100">
   ...
 </div>
 
-<p class="color-gray-800 color-brighten-3">
+<p class="color-yellow color-tint-300">
   ...
 </p>
 {% endhighlight %}
@@ -428,7 +416,7 @@ cssCodeExample: |
             <p class="font-base">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
           </div>
         </div>
-        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-pink bg-darken-8 border-1 border-pink border-darken-4 home-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-pink bg-shade-700 home-highlight">
 {% highlight "html" %}
 <div class="bg-gradient" style="--gradient: to right, #ffbebe, #4eff9d;">
   ...
@@ -470,7 +458,7 @@ cssCodeExample: |
 
 
 
-<section class="bg-silver-100 bg-brighten-5">
+<section class="bg-gray bg-tint-900">
   <div class="wrapper py-80 sm.py-112">
 
     <div class="mb-20">
@@ -491,8 +479,8 @@ cssCodeExample: |
       <div class="flex align-items-center justify-content-center row-2 radius-lg bg-gradient"  style="--gradient: to bottom, #f9d2be, #d69d7f;">
         <div class="w-100p max-w-288 radius-md overflow-hidden border-1 border-orange bg-white bg-opacity-20">
           <div class="grid grid-cols-1 gap-10 animate-pulse p-20">
-            <div class="w-6-12 h-18 radius-sm bg-orange bg-lighten-2"></div>
-            <div class="w-10-12 h-18 radius-sm bg-orange bg-lighten-4"></div>
+            <div class="w-6-12 h-18 radius-sm bg-orange bg-tint-200"></div>
+            <div class="w-10-12 h-18 radius-sm bg-orange bg-tint-400"></div>
           </div>
         </div>
       </div>
@@ -503,10 +491,10 @@ cssCodeExample: |
         </button>
       </div>
       <div class="flex align-items-center justify-content-center row-2 radius-lg p-20 bg-gradient" style="--gradient: to bottom, #556679, #232d42;">
-        <div class="relative align-left px-18 py-12 w-100p max-w-288 radius-xs border-l-3 border-green border-brighten-6 leading-5 bg-white bg-opacity-10 color-white font-semibold">
+        <div class="relative align-left px-18 py-12 w-100p max-w-288 radius-xs border-l-3 border-green leading-5 bg-white bg-opacity-10 color-white font-semibold">
           <span class="absolute t-0 r-0 mt-n4 mr-n4 flex h-12 w-12">
-            <span class="animate-ping absolute inline-flex h-12 w-12 radius-round bg-green bg-brighten-6 opacity-70"></span>
-            <span class="relative inline-flex radius-round h-12 w-12 bg-green bg-brighten-6"></span>
+            <span class="animate-ping absolute inline-flex h-12 w-12 radius-round bg-green bg-tint-300 opacity-70"></span>
+            <span class="relative inline-flex radius-round h-12 w-12 bg-green bg-tint-300"></span>
           </span>
           2 New messages <br>
           <span class="font-xs opacity-60">Received 2 minutes ago</span>
@@ -594,14 +582,6 @@ cssCodeExample: |
             </div>
             <input type="range" min="0" max="100" value="43" class="slider js-sat-slider">
           </div>
-          <div class="flex align-items-center">
-            <div class="flex flex-none align-items-center font-semibold w-112">
-              <div class="w-20 h-20 mr-12 radius-round bg-gradient" style="--gradient: to right, #fff, #555;">
-              </div>          
-              Lightness
-            </div>
-            <input type="range" min="0" max="100" value="24" class="slider js-ltn-slider">
-          </div>
         </div>
 
         <div class="grid grid-cols-1 sm.grid-cols-2 gap-64 md.gap-48">
@@ -623,13 +603,13 @@ cssCodeExample: |
           </div>
         </div>
       </div>
-      <div class="flex align-items-center radius-lg bg-silver-200 p-20 py-80 overflow-hidden">
+      <div class="flex align-items-center radius-lg bg-blue-gray bg-tint-800 p-20 py-80 overflow-hidden">
 
-        <div class="js-theme-demo flex flex-none w-640 transform translate-x-64 sm.translate-x-160 md.translate-x-64 radius-lg bg-primary overflow-hidden" style="--primary-hue: 186; --primary-sat: 43%; --primary-ltn: 24%; --checkbox-bg: transparent; --checkbox-border: 1px solid rgba(255,255,255,.2);">
+        <div class="js-theme-demo flex flex-none w-640 transform translate-x-64 sm.translate-x-160 md.translate-x-64 radius-lg bg-blue bg-shade-400 overflow-hidden" style="--blue-hue: 186; --blue-sat: 43%; --checkbox-bg: transparent; --checkbox-border: 1px solid rgba(255,255,255,.2); --checkbox-hover-border: 1px solid rgba(255,255,255,.4);">
           <div class="w-224 flex-none border-r-1 border-white border-opacity-20">
             <div class="flex p-14">
-              <div class="radius-round w-10 h-10 mr-6 bg-red bg-lighten-4 bg-brighten-8"></div>
-              <div class="radius-round w-10 h-10 mr-6 bg-yellow bg-lighten-3 bg-brighten-9"></div>
+              <div class="radius-round w-10 h-10 mr-6 bg-red bg-tint-200"></div>
+              <div class="radius-round w-10 h-10 mr-6 bg-yellow"></div>
               <div class="radius-round w-10 h-10 mr-6 bg-green"></div>
             </div>
             <div class="flex align-items-center justify-content-between border-b-1 border-white border-opacity-10">
@@ -642,8 +622,8 @@ cssCodeExample: |
                 <div class="relative mr-10">
                   <img src="/assets/img/jin-profile.jpg" class="flex align-items-center justify-content-center w-24 h-24 radius-round">
                   <div class="absolute b-0 r-0 h-8 w-8">
-                    <div class="animate-ping absolute h-8 w-8 radius-round bg-green bg-brighten-6 opacity-70"></div>
-                    <div class="relative radius-round h-8 w-8 bg-green bg-brighten-6"></div>
+                    <div class="animate-ping absolute h-8 w-8 radius-round bg-green opacity-70"></div>
+                    <div class="relative radius-round h-8 w-8 bg-green"></div>
                   </div>
                 </div>
                 <svg class="fill-current color-white w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"/></svg>
@@ -673,17 +653,17 @@ cssCodeExample: |
 
             <div class="grid grid-cols-1 gap-1 p-10 mb-12">
               <a class="flex align-items-center px-10 py-8 radius-sm color-white hover.color-white color-opacity-70 font-xs font-semibold hover.bg-white hover.bg-opacity-10 transition-200">
-                <div class="w-10 h-10 bg-red bg-brighten-6 bg-lighten-3 radius-round mr-12"></div>
+                <div class="w-10 h-10 bg-red bg-tint-300 radius-round mr-12"></div>
                 Bug
               </a>
 
               <a class="flex align-items-center px-10 py-8 radius-sm color-white hover.color-white color-opacity-70 font-xs font-semibold hover.bg-white hover.bg-opacity-10 transition-200">
-                <div class="w-10 h-10 bg-yellow bg-brighten-6 bg-lighten-3 radius-round mr-12"></div>
+                <div class="w-10 h-10 bg-yellow radius-round mr-12"></div>
                 Improvement
               </a>
 
               <a class="flex align-items-center px-10 py-8 radius-sm color-white hover.color-white color-opacity-70 font-xs font-semibold hover.bg-white hover.bg-opacity-10 transition-200">
-                <div class="w-10 h-10 bg-sky bg-brighten-8 bg-lighten-3 radius-round mr-12"></div>
+                <div class="w-10 h-10 bg-sky radius-round mr-12"></div>
                 Backlog
               </a>
             </div>
@@ -715,7 +695,7 @@ cssCodeExample: |
               </a>
             </div>
           </div>
-          <div class="w-100p bg-primary-900 bg-opacity-40">
+          <div class="w-100p bg-blue bg-shade-900 bg-opacity-40">
             <div class="px-24 py-18 color-white font-xs font-semibold border-b-1 border-white border-opacity-10">
               Active issues <span class="ml-6 opacity-40">12</span>
               <a class="inline-flex ml-12 px-6 py-4 radius-xs font-xs border-1 border-white border-opacity-20 hover.border-opacity-40 color-white color-opacity-50 hover.color-white transition-200">+ Filter</a>
@@ -844,41 +824,41 @@ cssCodeExample: |
 
 
 
-<section class="bg-primary-900">
+<section class="bg-blue bg-shade-800">
 
   <div class="wrapper py-80 sm.py-112">
     <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
-      <div class="order-2 md.order-1 flex align-items-center justify-content-center px-20 pb-0 pt-96 bg-primary-800 bg-deepen-3 radius-lg">
+      <div class="order-2 md.order-1 flex align-items-center justify-content-center px-20 pb-0 pt-96 bg-blue bg-shade-700 radius-lg">
         <div>
-          <div class="bg-white dark.bg-primary-900 transition-200 radius-lg overflow-hidden w-100p max-w-288">
+          <div class="bg-white dark.bg-blue dark.bg-shade-900 transition-200 radius-lg overflow-hidden w-100p max-w-288">
             <img src="/assets/img/apartment.jpg" class="cursor-pointer">
             <div class="relative px-20 py-24">
-              <div class="flex align-items-center justify-content-center absolute t-0 r-0 mr-24 mt-n20 bg-pink bg-brighten-9 bg-lighten-3 hover.bg-lighten-1 transition-200 cursor-pointer radius-round w-40 h-40">
+              <div class="flex align-items-center justify-content-center absolute t-0 r-0 mr-24 mt-n20 bg-pink bg-tint-50 shadow-sm hover.bg-tint-100 transition-200 cursor-pointer radius-round w-40 h-40">
                 <svg class="fill-current color-white w-auto h-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"/></svg>
               </div>
-              <div class="mb-20 font-lg font-bold color-pink color-brighten-9 color-lighten-1">
+              <div class="mb-20 font-lg font-bold color-pink color-tint-100">
                 $450
-                <span class="color-primary-300 dark.color-primary-500 dark.color-deepen-4 transition-200 font-sm">/mo</span>
-                <span class="bg-teal dark.bg-brighten-4 bg-opacity-20 dark.bg-opacity-20 color-cyan color-darken-4 dark.color-darken-2 color-brighten-9 dark.color-brighten-9 transition-200 ml-8 px-10 py-6 radius-sm font-2xs">10% discount</span>
+                <span class="color-300 dark.color-500 transition-200 font-sm">/mo</span>
+                <span class="bg-teal bg-opacity-20 dark.bg-opacity-20 color-cyan transition-200 ml-8 px-10 py-6 radius-sm font-2xs">10% discount</span>
               </div>
               <h3 class="color-black dark.color-white transition-200 font-base font-bold mb-16 cursor-pointer">
                 Elizabeth Street Apartments
               </h3>
-              <div class="color-primary-400 color-deepen-6 dark.color-primary-500 dark.color-deepen-4 transition-200 flex align-items-center font-xs font-semibold mb-24">
-                <svg class="fill-current w-auto h-12 mr-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
+              <div class="color-blue-gray color-tint-200 transition-200 flex align-items-center font-xs font-semibold mb-24">
+                <svg class="color-cyan fill-current w-auto h-12 mr-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"/></svg>
                 Riccarton, Christchurch
               </div>
               <div class="grid grid-cols-3">
-                <div class="color-primary-400 color-deepen-6 dark.color-primary-500 dark.color-deepen-4 transition-200 flex align-items-center font-xs font-semibold">
-                  <svg class="color-cyan color-brighten-1 dark.color-brighten-3 fill-current w-12 h-12 mr-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M488 352h-40V96c0-17.67-14.33-32-32-32H192v96h160v328c0 13.25 10.75 24 24 24h48c13.25 0 24-10.75 24-24v-40h40c13.25 0 24-10.75 24-24v-48c0-13.26-10.75-24-24-24zM160 24c0-13.26-10.75-24-24-24H88C74.75 0 64 10.74 64 24v40H24C10.75 64 0 74.74 0 88v48c0 13.25 10.75 24 24 24h40v256c0 17.67 14.33 32 32 32h224v-96H160V24z"/></svg>
+                <div class="color-blue-gray color-tint-200 transition-200 flex align-items-center font-xs font-semibold">
+                  <svg class="color-cyan fill-current w-12 h-12 mr-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M488 352h-40V96c0-17.67-14.33-32-32-32H192v96h160v328c0 13.25 10.75 24 24 24h48c13.25 0 24-10.75 24-24v-40h40c13.25 0 24-10.75 24-24v-48c0-13.26-10.75-24-24-24zM160 24c0-13.26-10.75-24-24-24H88C74.75 0 64 10.74 64 24v40H24C10.75 64 0 74.74 0 88v48c0 13.25 10.75 24 24 24h40v256c0 17.67 14.33 32 32 32h224v-96H160V24z"/></svg>
                   32 sqm
                 </div>
-                <div class="color-primary-400 color-deepen-6 dark.color-primary-500 dark.color-deepen-4 transition-200 flex align-items-center font-xs font-semibold">
-                  <svg class="fill-current color-cyan color-brighten-1 dark.color-brighten-3 w-12 h-12 mr-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M80,160a32,32,0,0,1,32-32h96a32,32,0,0,1,32,32v32h32V160a32,32,0,0,1,32-32h96a32,32,0,0,1,32,32v32h48V64a32,32,0,0,0-32-32H64A32,32,0,0,0,32,64V192H80Zm368,64H64A64,64,0,0,0,0,288V464a16,16,0,0,0,16,16H48a16,16,0,0,0,16-16V416H448v48a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V288A64,64,0,0,0,448,224Z"/></svg>
+                <div class="color-blue-gray color-tint-200 transition-200 flex align-items-center font-xs font-semibold">
+                  <svg class="fill-current color-cyan w-12 h-12 mr-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M80,160a32,32,0,0,1,32-32h96a32,32,0,0,1,32,32v32h32V160a32,32,0,0,1,32-32h96a32,32,0,0,1,32,32v32h48V64a32,32,0,0,0-32-32H64A32,32,0,0,0,32,64V192H80Zm368,64H64A64,64,0,0,0,0,288V464a16,16,0,0,0,16,16H48a16,16,0,0,0,16-16V416H448v48a16,16,0,0,0,16,16h32a16,16,0,0,0,16-16V288A64,64,0,0,0,448,224Z"/></svg>
                   2 rooms
                 </div>
-                <div class="color-primary-400 color-deepen-6 dark.color-primary-500 dark.color-deepen-4 transition-200 flex align-items-center font-xs font-semibold">
-                  <svg class="fill-current color-cyan color-brighten-1 dark.color-brighten-3 w-12 h-12 mr-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0,160V48A48,48,0,0,1,48,0H336a48,48,0,0,1,48,48V160H320V72a8,8,0,0,0-8-8H296a8,8,0,0,0-8,8v88Zm320,32V376a8,8,0,0,1-8,8H296a8,8,0,0,1-8-8V192H0V464a48,48,0,0,0,48,48H336a48,48,0,0,0,48-48V192Z"/></svg>
+                <div class="color-blue-gray color-tint-200 transition-200 flex align-items-center font-xs font-semibold">
+                  <svg class="fill-current color-cyan w-12 h-12 mr-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M0,160V48A48,48,0,0,1,48,0H336a48,48,0,0,1,48,48V160H320V72a8,8,0,0,0-8-8H296a8,8,0,0,0-8,8v88Zm320,32V376a8,8,0,0,1-8,8H296a8,8,0,0,1-8-8V192H0V464a48,48,0,0,0,48,48H336a48,48,0,0,0,48-48V192Z"/></svg>
                   1 kitchen
                 </div>
               </div>
@@ -898,7 +878,7 @@ cssCodeExample: |
       </div>
       <div class="order-1 md.order-2">
         <div class="mb-20">
-          <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-yellow border-brighten-9 uppercase font-xs font-bold tracking-looser color-yellow color-brighten-9">Flexible Colors</span>
+          <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-yellow uppercase font-xs font-bold tracking-looser color-yellow">Flexible Colors</span>
         </div>
         <h2 class="font-3xl sm.font-6xl md.font-7xl font-extrabold m-auto mb-36 tracking-tighter color-white">
           Apply Dark Mode <br class="hidden md.inline">on any element
@@ -911,10 +891,10 @@ cssCodeExample: |
           </a>
         </div>
 <div class="flex">
-<div class="home-highlight mb-64 p-14 px-18 radius-md overflow-auto bg-primary-900 color-white select-all bg-primary-800">
-<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="dark.opacity-40 transition-200">bg-white</span> <span class="opacity-40 dark.opacity-100 transition-200">dark.bg-primary-900</span> <span class="dark.opacity-40 transition-200">transition-200</span> <span class="dark.opacity-40 transition-200">...</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+<div class="home-highlight mb-64 p-14 px-18 radius-md overflow-auto bg-blue bg-shade-900 color-white select-all bg-800">
+<pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="dark.opacity-40 transition-200">bg-white</span> <span class="opacity-40 dark.opacity-100 transition-200">dark.bg-blue dark.bg-shade-900</span> <span class="dark.opacity-40 transition-200">transition-200</span> <span class="dark.opacity-40 transition-200">...</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
 {# {% highlight "html" %}
-<div class="bg-white dark.bg-primary-900 transition-200 ...">
+<div class="bg-white dark.bg-blue bg-shade-900 transition-200 ...">
 {% endhighlight %} #}
 </div>
 </div>
@@ -926,7 +906,7 @@ cssCodeExample: |
                 Dark mode everything
               </h4>
             </div>
-            <p class="font-base color-primary-100 color-opacity-80">Apply conditional dark mode specific coloring to any element with the dark pseudo.</p>
+            <p class="font-base color-100 color-opacity-80">Apply conditional dark mode specific coloring to any element with the dark pseudo.</p>
           </div>
           <div>
             <div class="flex mb-24">
@@ -934,7 +914,7 @@ cssCodeExample: |
                 Completely optional
               </h4>
             </div>
-            <p class="font-base color-primary-100 color-opacity-80">Dark mode is completely optional and can be disabled with a single setting in your configuration.</p>
+            <p class="font-base color-100 color-opacity-80">Dark mode is completely optional and can be disabled with a single setting in your configuration.</p>
           </div>
         </div>
       </div>
@@ -944,7 +924,7 @@ cssCodeExample: |
   </div>
 
   <div class="wrapper">
-    <div class="h-3 bg-silver-200 bg-opacity-10 bg-brighten-5"></div>
+    <div class="h-3 bg-blue bg-shade-700"></div>
   </div>
 
   <div class="wrapper py-80 sm.py-112">
@@ -965,7 +945,7 @@ cssCodeExample: |
         </div>
 
         <div class="grid grid-cols-1 sm.grid-cols-3 gap-20">
-          <div class="radius-md px-20 py-28 bg-primary-800 bg-deepen-2 bg-opacity-60">
+          <div class="radius-md px-20 py-28 bg-blue bg-shade-700">
             <div class="flex mb-20">
               <div class="font-5xl font-light bg-gradient bg-text color-transparent" style="--gradient: to right, #8F7CFF, #fd7cff;">2min</div>
             </div>
@@ -973,7 +953,7 @@ cssCodeExample: |
             </div>
             <p class="font-sm color-white">project <br>setup time <br>required only</p>
           </div>
-          <div class="radius-md px-20 py-28 bg-primary-800 bg-deepen-2 bg-opacity-60">
+          <div class="radius-md px-20 py-28 bg-blue bg-shade-700">
             <div class="flex mb-20">
               <div class="font-5xl font-light bg-gradient bg-text color-transparent" style="--gradient: to right, #7CD0FF, #7CFFA9;">61kb</div>
             </div>
@@ -981,7 +961,7 @@ cssCodeExample: |
             </div>
             <p class="font-sm color-white">gzipped for <br>lightning fast <br>delivery</p>
           </div>
-          <div class="radius-md px-20 py-28 bg-primary-800 bg-deepen-2 bg-opacity-60">
+          <div class="radius-md px-20 py-28 bg-blue bg-shade-700">
             <div class="flex mb-20">
               <div class="font-5xl font-light bg-gradient bg-text color-transparent" style="--gradient: to right, #F5FF7C, #FFBB7C;">136</div>
             </div>
@@ -995,8 +975,8 @@ cssCodeExample: |
       <div class="grid grid-cols-1 gap-64 md.gap-48 color-white">
         <div>
           <h4 class="font-lg font-bold mb-24 tracking-tight color-white"><span class="font-extrabold mr-4">Step 1.</span> Install the Package</h4>
-          <p class="font-base color-primary-100 color-opacity-80">Add the following code to the head of your project.</p>
-          <div class="home-highlight radius-sm bg-primary-800 bg-deepen-2 bg-opacity-60">
+          <p class="font-base color-100 color-opacity-80">Add the following code to the head of your project.</p>
+          <div class="home-highlight radius-sm bg-blue bg-shade-700">
             {% highlight "bash" %}
               https://cdn.jsdelivr.net/npm/uniformcss@1.0.0/uniform.css
             {% endhighlight %}
@@ -1004,12 +984,12 @@ cssCodeExample: |
         </div>
         <div>
           <h4 class="font-lg font-bold mb-24 tracking-tight color-white"><span class="font-extrabold mr-4">Step 2.</span> Install the Package</h4>
-          <p class="font-base color-primary-100 color-opacity-80">Customize design tokens directly in your CSS to fit your design.</p>
-          <div class="home-highlight radius-sm bg-primary-800 bg-deepen-2 bg-opacity-60">
+          <p class="font-base color-100 color-opacity-80">Customize design tokens directly in your CSS to fit your design.</p>
+          <div class="home-highlight radius-sm bg-blue bg-shade-700">
 {% highlight "css" %}
 :root {
-  --primary-hue: 50;
-  --primary-sat: 20%;
+  --blue-hue: 50;
+  --blue-sat: 20%;
   
   --font-sans: "manrope";
   --font-regular: 400;

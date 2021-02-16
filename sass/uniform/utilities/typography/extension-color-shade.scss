@@ -1,13 +1,13 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: text-shade;
-$shorthand: text;
+$name: color-shade;
+$shorthand: color;
 $responsive: false;
 $responsive-pseudos: false;
 $extra-selector: null;
 
-$properties: (#{--text-ltn});
+$properties: (#{--color-ltn});
 $custom-properties: ();
 
 $variants: (

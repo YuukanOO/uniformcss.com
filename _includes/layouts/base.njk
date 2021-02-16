@@ -128,19 +128,13 @@ $(document).ready(function () {
 
   $(document).on('input change', '.js-hue-slider', function() {
     let hue = $(this).val();
-    $('.js-theme-demo').get(0).style.setProperty("--primary-hue", hue);
+    $('.js-theme-demo').get(0).style.setProperty("--blue-hue", hue);
   });
 
   $(document).on('input change', '.js-sat-slider', function() {
     let sat = $(this).val() * 1;
-    $('.js-theme-demo').get(0).style.setProperty("--primary-sat", sat + '%');
+    $('.js-theme-demo').get(0).style.setProperty("--blue-sat", sat + '%');
   });
-
-  $(document).on('input change', '.js-ltn-slider', function() {
-    let ltn = $(this).val() * 1;
-    $('.js-theme-demo').get(0).style.setProperty("--primary-ltn", ltn + '%');
-  });
-
  
 
   // Change pages on mobile

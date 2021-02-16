@@ -15,10 +15,7 @@ $custom-properties: (
 
 $variants: (
 	core.merge(
-    core.border-colors(),
-    (
-      transparent: transparent,
-    )
+    core.border-colors()
 	)
 );
 

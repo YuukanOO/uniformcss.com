@@ -176,88 +176,46 @@ $default-config: (
     opacity-100: 1,
   ),
 
-  primary-colors: (
-    primary-red: ( hue: 0, sat: 50% ),
-    primary-orange: ( hue: 20, sat: 50% ),
-    primary-yellow: ( hue: 40, sat: 50% ),
-    primary-lemon: ( hue: 60, sat: 50% ),
-    primary-olive: ( hue: 80, sat: 50% ),
-    primary-lime: ( hue: 100, sat: 50% ),
-    primary-green: ( hue: 120, sat: 50% ),
-    primary-mint: ( hue: 140, sat: 50% ),
-    primary-teal: ( hue: 160, sat: 50% ),
-    primary-cyan: ( hue: 180, sat: 50% ),
-    primary-sky: ( hue: 200, sat: 50% ),
-    primary-blue: ( hue: 220, sat: 50% ),
-    primary-indigo: ( hue: 240, sat: 50% ),
-    primary-purple: ( hue: 260, sat: 50% ),
-    primary-orchid: ( hue: 280, sat: 50% ),
-    primary-magenta: ( hue: 300, sat: 50% ),
-    primary-pink: ( hue: 320, sat: 50% ),
-    primary-crimson: ( hue: 340, sat: 50% ),
+  colors: (
+    red: ( hue: 0, sat: var(--color-sat, 60%) ),
+    orange: ( hue: 20, sat: var(--color-sat, 60%) ),
+    yellow: ( hue: 40, sat: var(--color-sat, 60%) ),
+    lemon: ( hue: 60, sat: var(--color-sat, 60%) ),
+    olive: ( hue: 80, sat: var(--color-sat, 60%) ),
+    lime: ( hue: 100, sat: var(--color-sat, 60%) ),
+    green: ( hue: 120, sat: var(--color-sat, 60%) ),
+    mint: ( hue: 140, sat: var(--color-sat, 60%) ),
+    teal: ( hue: 160, sat: var(--color-sat, 60%) ),
+    cyan: ( hue: 180, sat: var(--color-sat, 60%) ),
+    sky: ( hue: 200, sat: var(--color-sat, 60%) ),
+    blue: ( hue: 220, sat: var(--color-sat, 60%) ),
+    indigo: ( hue: 240, sat: var(--color-sat, 60%) ),
+    purple: ( hue: 260, sat: var(--color-sat, 60%) ),
+    orchid: ( hue: 280, sat: var(--color-sat, 60%) ),
+    magenta: ( hue: 300, sat: var(--color-sat, 60%) ),
+    pink: ( hue: 320, sat: var(--color-sat, 60%) ),
+    crimson: ( hue: 340, sat: var(--color-sat, 60%) ),
   ),
 
-  secondary-colors: (
-    secondary-red: ( hue: 0, sat: 50% ),
-    secondary-orange: ( hue: 20, sat: 50% ),
-    secondary-yellow: ( hue: 40, sat: 50% ),
-    secondary-lemon: ( hue: 60, sat: 50% ),
-    secondary-olive: ( hue: 80, sat: 50% ),
-    secondary-lime: ( hue: 100, sat: 50% ),
-    secondary-green: ( hue: 120, sat: 50% ),
-    secondary-mint: ( hue: 140, sat: 50% ),
-    secondary-teal: ( hue: 160, sat: 50% ),
-    secondary-cyan: ( hue: 180, sat: 50% ),
-    secondary-sky: ( hue: 200, sat: 50% ),
-    secondary-blue: ( hue: 220, sat: 50% ),
-    secondary-indigo: ( hue: 240, sat: 50% ),
-    secondary-purple: ( hue: 260, sat: 50% ),
-    secondary-orchid: ( hue: 280, sat: 50% ),
-    secondary-magenta: ( hue: 300, sat: 50% ),
-    secondary-pink: ( hue: 320, sat: 50% ),
-    secondary-crimson: ( hue: 340, sat: 50% ),
-  ),
-
-  tertiary-colors: (
-    tertiary-red: ( hue: 0, sat: 50% ),
-    tertiary-orange: ( hue: 20, sat: 50% ),
-    tertiary-yellow: ( hue: 40, sat: 50% ),
-    tertiary-lemon: ( hue: 60, sat: 50% ),
-    tertiary-olive: ( hue: 80, sat: 50% ),
-    tertiary-lime: ( hue: 100, sat: 50% ),
-    tertiary-green: ( hue: 120, sat: 50% ),
-    tertiary-mint: ( hue: 140, sat: 50% ),
-    tertiary-teal: ( hue: 160, sat: 50% ),
-    tertiary-cyan: ( hue: 180, sat: 50% ),
-    tertiary-sky: ( hue: 200, sat: 50% ),
-    tertiary-blue: ( hue: 220, sat: 50% ),
-    tertiary-indigo: ( hue: 240, sat: 50% ),
-    tertiary-purple: ( hue: 260, sat: 50% ),
-    tertiary-orchid: ( hue: 280, sat: 50% ),
-    tertiary-magenta: ( hue: 300, sat: 50% ),
-    tertiary-pink: ( hue: 320, sat: 50% ),
-    tertiary-crimson: ( hue: 340, sat: 50% ),
-  ),
-
-  system-colors: (
-    system-red: ( hue: 0, sat: 80% ),
-    system-orange: ( hue: 20, sat: 80% ),
-    system-yellow: ( hue: 40, sat: 80% ),
-    system-lemon: ( hue: 60, sat: 80% ),
-    system-olive: ( hue: 80, sat: 80% ),
-    system-lime: ( hue: 100, sat: 80% ),
-    system-green: ( hue: 120, sat: 80% ),
-    system-mint: ( hue: 140, sat: 80% ),
-    system-teal: ( hue: 160, sat: 80% ),
-    system-cyan: ( hue: 180, sat: 80% ),
-    system-sky: ( hue: 200, sat: 80% ),
-    system-blue: ( hue: 220, sat: 80% ),
-    system-indigo: ( hue: 240, sat: 80% ),
-    system-purple: ( hue: 260, sat: 80% ),
-    system-orchid: ( hue: 280, sat: 80% ),
-    system-magenta: ( hue: 300, sat: 80% ),
-    system-pink: ( hue: 320, sat: 80% ),
-    system-crimson: ( hue: 340, sat: 80% ),
+  accent-colors: (
+    accent-red: ( hue: 0, sat: var(--accent-sat, 60%) ),
+    accent-orange: ( hue: 10, sat: var(--accent-sat, 60%) ),
+    accent-yellow: ( hue: 30, sat: var(--accent-sat, 60%) ),
+    accent-lemon: ( hue: 70, sat: var(--accent-sat, 60%) ),
+    accent-olive: ( hue: 90, sat: var(--accent-sat, 60%) ),
+    accent-lime: ( hue: 110, sat: var(--accent-sat, 60%) ),
+    accent-green: ( hue: 130, sat: var(--accent-sat, 60%) ),
+    accent-mint: ( hue: 150, sat: var(--accent-sat, 60%) ),
+    accent-teal: ( hue: 170, sat: var(--accent-sat, 60%) ),
+    accent-cyan: ( hue: 190, sat: var(--accent-sat, 60%) ),
+    accent-sky: ( hue: 210, sat: var(--accent-sat, 60%) ),
+    accent-blue: ( hue: 230, sat: var(--accent-sat, 60%) ),
+    accent-indigo: ( hue: 250, sat: var(--accent-sat, 60%) ),
+    accent-purple: ( hue: 270, sat: var(--accent-sat, 60%) ),
+    accent-orchid: ( hue: 290, sat: var(--accent-sat, 60%) ),
+    accent-magenta: ( hue: 310, sat: var(--accent-sat, 60%) ),
+    accent-pink: ( hue: 330, sat: var(--accent-sat, 60%) ),
+    accent-crimson: ( hue: 350, sat: var(--accent-sat, 60%) ),
   ),
 
   grayscale-colors: (
@@ -265,9 +223,8 @@ $default-config: (
     black: ( hue: 0, sat: 0% ),
     blue-gray: ( hue: 220, sat: 20% ),
     gray: ( hue: 0, sat: 0% ),
+    transparent: transparent,
   ),
-
-  colors: (),
 
   gradients: (
     gradient: linear-gradient(var(--gradient)),
@@ -627,14 +584,9 @@ $tint-levels: map.get($all-config, tint-levels);
 $shade-levels: map.get($all-config, shade-levels);
 $opacity-levels: map.get($all-config, opacity-levels);
 
-$primary-colors: map.get($all-config, primary-colors);
-$secondary-colors: map.get($all-config, secondary-colors);
-$tertiary-colors: map.get($all-config, tertiary-colors);
-$temperature-colors: map.get($all-config, temperature-colors);
-$system-colors: map.get($all-config, system-colors);
-$grayscale-colors: map.get($all-config, grayscale-colors);
-
 $colors: map.get($all-config, colors);
+$accent-colors: map.get($all-config, accent-colors);
+$grayscale-colors: map.get($all-config, grayscale-colors);
 $gradients: map.get($all-config, gradients);
 
 
@@ -682,23 +634,14 @@ $gradients: map.get($all-config, gradients);
 
 
 $merged-colors: ();
-@if ($primary-colors != null) {
-  $merged-colors: map.deep-merge($merged-colors, $primary-colors);
+@if ($colors != null) {
+  $merged-colors: map.deep-merge($merged-colors, $colors);
 }
-@if ($secondary-colors != null) {
-  $merged-colors: map.deep-merge($merged-colors, $secondary-colors);
-}
-@if ($tertiary-colors != null) {
-  $merged-colors: map.deep-merge($merged-colors, $tertiary-colors);
-}
-@if ($system-colors != null) {
-  $merged-colors: map.deep-merge($merged-colors, $system-colors);
+@if ($accent-colors != null) {
+  $merged-colors: map.deep-merge($merged-colors, $accent-colors);
 }
 @if ($grayscale-colors != null) {
   $merged-colors: map.deep-merge($merged-colors, $grayscale-colors);
-}
-@if ($colors != null) {
-  $merged-colors: map.deep-merge($merged-colors, $colors);
 }
 
 $merged-sizes: map.deep-merge($positive-sizes, $negative-sizes);

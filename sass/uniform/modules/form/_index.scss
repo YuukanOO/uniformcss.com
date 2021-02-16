@@ -32,7 +32,7 @@ $include: map.get($all-config, include);
         display: inline-block;
         top: -2px;
         left: 2px;
-        color: var(--label-required-color, hsl( var(--system-red-hue), var(--system-red-sat), 50% ));
+        color: var(--label-required-color, hsl( var(--red-hue), var(--red-sat), 50% ));
       }
     }
   }
@@ -121,19 +121,19 @@ $include: map.get($all-config, include);
 
     // STATES
     &.is-success {
-      border: var(--input-success-border, 1px solid hsl( var(--system-green-hue), var(--system-green-sat), var(--shade-100) ));
+      border: var(--input-success-border, 1px solid hsl( var(--green-hue), var(--green-sat), var(--shade-100) ));
       &:focus {
         box-shadow: var(--input-focus-success-shadow, var(--shadow-focus-success));
       }
     }
     &.is-warning {
-      border: var(--input-warning-border, 1px solid hsl( var(--system-yellow-hue), var(--system-yellow-sat), 50% ));
+      border: var(--input-warning-border, 1px solid hsl( var(--yellow-hue), var(--yellow-sat), 50% ));
       &:focus {
         box-shadow: var(--input-focus-warning-shadow, var(--shadow-focus-warning));
       }
     }
     &.is-danger {
-      border: var(--input-danger-border, 1px solid hsl( var(--system-red-hue), var(--system-red-sat), 50% ));
+      border: var(--input-danger-border, 1px solid hsl( var(--red-hue), var(--red-sat), 50% ));
       &:focus {
         box-shadow: var(--input-focus-danger-shadow, var(--shadow-focus-danger));
       }
@@ -235,17 +235,17 @@ $include: map.get($all-config, include);
       box-shadow: var(--shadow-focus);
     }
     &:hover {
-      border: var(--input-hover-border, 1px solid hsl( var(--gray-hue), var(--gray-sat), var(--tint-400) ));
+      border: var(--checkbox-hover-border, 1px solid hsl( var(--gray-hue), var(--gray-sat), var(--tint-400) ));
     }
     &:checked {
-      border: var(--checkbox-checked-border, 1px solid hsla( var(--primary-blue-hue), var(--primary-blue-sat), 50% ));
-      background-color: var(--checkbox-checked-bg, hsla( var(--primary-blue-hue), var(--primary-blue-sat), 50% ));
+      border: var(--checkbox-checked-border, 1px solid hsla( var(--blue-hue), var(--blue-sat), 50% ));
+      background-color: var(--checkbox-checked-bg, hsla( var(--blue-hue), var(--blue-sat), 50% ));
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
       &:disabled {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23666' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
       }
       &:hover {
-        border: var(--checkbox-checked-border, 1px solid hsl( var(--primary-blue-hue), var(--primary-blue-sat), 50% ));
+        border: var(--checkbox-checked-border, 1px solid hsl( var(--blue-hue), var(--blue-sat), 50% ));
       }
     }
     &:disabled {
@@ -296,17 +296,17 @@ $include: map.get($all-config, include);
       box-shadow: var(--shadow-focus);
     }
     &:hover {
-      border: var(--input-hover-border, 1px solid hsl( var(--gray-hue), var(--gray-sat), var(--tint-400) ));
+      border: var(--radio-hover-border, 1px solid hsl( var(--gray-hue), var(--gray-sat), var(--tint-400) ));
     }
     &:checked {
-      border: var(--radio-checked-border, 1px solid hsla( var(--primary-blue-hue), var(--primary-blue-sat), 50% ));
-      background-color: var(--radio-checked-bg, hsla( var(--primary-blue-hue), var(--primary-blue-sat), 50% ));
+      border: var(--radio-checked-border, 1px solid hsla( var(--blue-hue), var(--blue-sat), 50% ));
+      background-color: var(--radio-checked-bg, hsla( var(--blue-hue), var(--blue-sat), 50% ));
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
       &:disabled {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23666'/%3e%3c/svg%3e");
       }
       &:hover {
-        border: var(--radio-checked-border, 1px solid hsl( var(--primary-blue-hue), var(--primary-blue-sat), 50% ));
+        border: var(--radio-checked-border, 1px solid hsl( var(--blue-hue), var(--blue-sat), 50% ));
       }
     }
     &:disabled {
@@ -347,7 +347,7 @@ $include: map.get($all-config, include);
     input {
       display: none;
       &:checked + .toggle__switch {
-        background: var(--toggle-checked-bg, hsl( var(--system-green-hue), var(--system-green-sat), var(--shade-100) ));
+        background: var(--toggle-checked-bg, hsl( var(--green-hue), var(--green-sat), var(--shade-100) ));
       }
       &:checked + .toggle__switch:before {
         transform: translateX(var(--toggle-checked-translate, var(--size-20)));
@@ -499,19 +499,19 @@ $include: map.get($all-config, include);
 
     // STATES
     &.is-success {
-      border: var(--select-success-border, 1px solid hsl( var(--system-green-hue), var(--system-green-sat), var(--shade-100) ));
+      border: var(--select-success-border, 1px solid hsl( var(--green-hue), var(--green-sat), var(--shade-100) ));
       &:focus {
         box-shadow: var(--select-focus-success-shadow, var(--shadow-focus-success));
       }
     }
     &.is-warning {
-      border: var(--select-warning-border, 1px solid hsl( var(--system-yellow-hue), var(--system-yellow-sat), 50% ));
+      border: var(--select-warning-border, 1px solid hsl( var(--yellow-hue), var(--yellow-sat), 50% ));
       &:focus {
         box-shadow: var(--select-focus-warning-shadow, var(--shadow-focus-warning));
       }
     }
     &.is-danger {
-      border: var(--select-danger-border, 1px solid hsl( var(--system-red-hue), var(--system-red-sat), 50% ));
+      border: var(--select-danger-border, 1px solid hsl( var(--red-hue), var(--red-sat), 50% ));
       &:focus {
         box-shadow: var(--select-focus-danger-shadow, var(--shadow-focus-danger));
       }
@@ -683,19 +683,19 @@ $include: map.get($all-config, include);
 
     // STATES
     &.is-success {
-      border: var(--textarea-success-border, 1px solid hsl( var(--system-green-hue), var(--system-green-sat), var(--shade-100) ));
+      border: var(--textarea-success-border, 1px solid hsl( var(--green-hue), var(--green-sat), var(--shade-100) ));
       &:focus {
         box-shadow: var(--textarea-focus-success-shadow, var(--shadow-focus-success));
       }
     }
     &.is-warning {
-      border: var(--textarea-warning-border, 1px solid hsl( var(--system-yellow-hue), var(--system-yellow-sat), 50% ));
+      border: var(--textarea-warning-border, 1px solid hsl( var(--yellow-hue), var(--yellow-sat), 50% ));
       &:focus {
         box-shadow: var(--textarea-focus-warning-shadow, var(--shadow-focus-warning));
       }
     }
     &.is-danger {
-      border: var(--textarea-danger-border, 1px solid hsl( var(--system-red-hue), var(--system-red-sat), 50% ));
+      border: var(--textarea-danger-border, 1px solid hsl( var(--red-hue), var(--red-sat), 50% ));
       &:focus {
         box-shadow: var(--textarea-focus-danger-shadow, var(--shadow-focus-danger));
       }

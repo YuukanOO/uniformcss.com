@@ -17,16 +17,16 @@ Thank you for checking out Uniform CSS, a utility-first CSS framework built enti
 
 Here are some of the **top reasons** why Uniform CSS could be a great fit for your next ambitious project!
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 text-black radius-round">1</span> It's written entirely in Sass</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">1</span> It's written entirely in Sass</h4>
 
-Why Sass? Sass is the most popular CSS preprocessor in the world! Adding Uniform as a Sass dependency is **literally one line of code**{.text-black}.
+Why Sass? Sass is the most popular CSS preprocessor in the world! Adding Uniform as a Sass dependency is **literally one line of code**{.color-black}.
 
 ```scss
 // add this to your main styles.scss
 @use "uniform" as *;
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">2</span> It's dead-easy to configure</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">2</span> It's dead-easy to configure</h4>
 
 Remove and extend colors? Check. Replace breakpoints? Check. Alias property names, add prefixes, modify syntax — you name it! Uniform is configurable to the last detail.
 
@@ -53,7 +53,7 @@ Remove and extend colors? Check. Replace breakpoints? Check. Alias property name
 ...
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">3</span> Built with CSS Variables in mind</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">3</span> Built with CSS Variables in mind</h4>
 
 Prefer not to worry about preprocessors and just start building your site? Just add the pre-packaged CDN version of Uniform and customize fonts, colors, sizes, and more by directly overriding each CSS variable. It's that easy.
 
@@ -74,7 +74,7 @@ Prefer not to worry about preprocessors and just start building your site? Just 
 }
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">4</span> You can add your own properties</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">4</span> You can add your own properties</h4>
 
 While shiny new CSS specs become standardized, you don’t have to wait for Uniform. You can use Uniform APIs to add your own properties.
 
@@ -91,9 +91,9 @@ While shiny new CSS specs become standardized, you don’t have to wait for Unif
           trimmer: both
         )
       ),
-      text-edge: (
+      color-edge: (
         shorthand: text,
-        properties: (text-edge),
+        properties: (color-edge),
         variants: (
           cap: cap alphabetic
         )
@@ -106,11 +106,11 @@ While shiny new CSS specs become standardized, you don’t have to wait for Unif
 ```css
 /* styles.css */
 .leading-trimmer { leading-trim: both; }
-.text-cap { text-edge: cap alphabetic; }
+.color-cap { color-edge: cap alphabetic; }
 ...
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">5</span> Built-in helper functions to access theme values</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">5</span> Built-in helper functions to access theme values</h4>
 
 You can build your own components and access your theme variables directly in Sass using helper functions.
 
@@ -130,7 +130,7 @@ You can build your own components and access your theme variables directly in Sa
 }
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">6</span> Comes with pre-built common components</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">6</span> Comes with pre-built common components</h4>
 
 To help save you time, Uniform CSS comes with **optional** pre-built components for common UI elements such as buttons and form elements. These can all be enabled, disabled, and customized down to the last pixel.
 
@@ -146,7 +146,7 @@ To help save you time, Uniform CSS comes with **optional** pre-built components 
 <button class="btn btn-tertiary">Button</button>
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">7</span> Exclude or include only the properties you need</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">7</span> Exclude or include only the properties you need</h4>
 
 Every aspect of Uniform CSS is optional, you can quickly exclude all properties and only include what you need.
 
@@ -164,33 +164,33 @@ Every aspect of Uniform CSS is optional, you can quickly exclude all properties 
 );
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-silver-200 leading-0 text-black radius-round">8</span> Designed to be Lightweight</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">8</span> Designed to be Lightweight</h4>
 
 Uniform is smart about which pseudo variants are activated for each utility property. Pseudo variants are also comma seperated to ensure no uncessary duplicate properties are included. This helps to drastically improve file-size and make the CDN version a perfect way to get quickly started.
 
 <div class="grid grid-cols-1 sm.grid-cols-3 gap-20">
-  <div class="radius-md px-20 py-28 bg-primary-900">
+  <div class="radius-md px-20 py-28 bg-blue-gray bg-opacity-10">
     <div class="flex mb-20">
-      <div class="font-5xl font-light bg-gradient bg-text text-transparent" style="--gradient: to right, #8F7CFF, #fd7cff;">2min</div>
+      <div class="font-5xl font-light bg-gradient bg-text color-transparent" style="--gradient: to right, #8F7CFF, #fd7cff;">2min</div>
     </div>
     <div class="h-2 bg-gradient mb-14" style="--gradient: to right, #8F7CFF, #fd7cff;">
     </div>
-    <p class="font-sm text-white">project <br>setup time <br>required only</p>
+    <p class="font-sm color-black">project <br>setup time <br>required only</p>
   </div>
-  <div class="radius-md px-20 py-28 bg-primary-900">
+  <div class="radius-md px-20 py-28 bg-blue-gray bg-opacity-10">
     <div class="flex mb-20">
-      <div class="font-5xl font-light bg-gradient bg-text text-transparent" style="--gradient: to right, #7CD0FF, #7CFFA9;">61kb</div>
+      <div class="font-5xl font-light bg-gradient bg-text color-transparent" style="--gradient: to right, #72cdff, #46f381;">61kb</div>
     </div>
-    <div class="h-2 bg-gradient mb-14" style="--gradient: to right, #7CD0FF, #7CFFA9;">
+    <div class="h-2 bg-gradient mb-14" style="--gradient: to right, #72cdff, #46f381;">
     </div>
-    <p class="font-sm text-white">gzipped for <br>lightning fast <br>delivery</p>
+    <p class="font-sm color-black">gzipped for <br>lightning fast <br>delivery</p>
   </div>
-  <div class="radius-md px-20 py-28 bg-primary-900">
+  <div class="radius-md px-20 py-28 bg-blue-gray bg-opacity-10">
     <div class="flex mb-20">
-      <div class="font-5xl font-light bg-gradient bg-text text-transparent" style="--gradient: to right, #F5FF7C, #FFBB7C;">136</div>
+      <div class="font-5xl font-light bg-gradient bg-text color-transparent" style="--gradient: to right, #ff7b7b, #d8bb2f;">136</div>
     </div>
-    <div class="h-2 bg-gradient mb-14" style="--gradient: to right, #F5FF7C, #FFBB7C;">
+    <div class="h-2 bg-gradient mb-14" style="--gradient: to right, #ff7b7b, #d8bb2f;">
     </div>
-    <p class="font-sm text-white">configurable <br>design <br>tokens</p>
+    <p class="font-sm color-black">configurable <br>design <br>tokens</p>
   </div>
 </div>

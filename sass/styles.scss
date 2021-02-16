@@ -71,9 +71,10 @@
 	font-weight: font-weight(semibold);
 	line-height: leading(tight);
 	a {
-		color: fill(gray, tint-800);
+		//color-blue-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6
+		color: fill(blue-gray, shade-400, opacity-60);
 		&:hover {
-			color: fill(black);
+			color: fill(blue-gray, shade-400, opacity-80);
 		}
 	}
 	& > ol {
@@ -100,7 +101,7 @@
 	& > table td {
 		font-size: font-size(sm);
 		&:first-child {
-			color: fill(system-cyan, shade-200);
+			color: fill(cyan, shade-200);
 		}
 		&:last-child {
 			color: fill(gray, tint-900);

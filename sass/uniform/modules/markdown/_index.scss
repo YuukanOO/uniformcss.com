@@ -116,9 +116,9 @@ $include: map.get($all-config, include);
       padding: var(--markdown-code-padding, 5px 6px);
       font-size: var(--markdown-code-font-size, var(--font-sm));
       border-radius: var(--markdown-code-radius, var(--radius-sm));
-      background: var(--markdown-code-bg, hsla( var(--system-blue-hue), var(--system-blue-sat), 50%, var(--opacity-10) ));
+      background: var(--markdown-code-bg, hsla( var(--blue-hue), var(--blue-sat), 50%, var(--opacity-10) ));
       border: var(--markdown-code-border, 0);
-      color: var(--markdown-code-color, hsl( var(--system-blue-hue), var(--system-blue-sat), 50% ));
+      color: var(--markdown-code-color, hsl( var(--blue-hue), var(--blue-sat), 50% ));
     }
 
     /******************************
@@ -197,9 +197,9 @@ $include: map.get($all-config, include);
     ******************************/
 
     & > p a {
-      color: var(--markdown-link-color, hsl( var(--system-blue-hue), var(--system-blue-sat), 50% ));
+      color: var(--markdown-link-color, hsl( var(--blue-hue), var(--blue-sat), 50% ));
       &:hover {
-        color: var(--markdown-link-hover-color, hsl( var(--system-blue-hue), var(--system-blue-sat), 50% ));
+        color: var(--markdown-link-hover-color, hsl( var(--blue-hue), var(--blue-sat), 50% ));
         text-decoration: underline;
       }
     }

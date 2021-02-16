@@ -39,9 +39,6 @@ $include: map.get($all-config, include);
     text-decoration: none;
     cursor: pointer;
     color: var(--link-color, RoyalBlue);
-    &:hover {
-      color: var(--link-hover-color, RoyalBlue);
-    }
   }
 
   b,strong {
@@ -64,6 +61,6 @@ $include: map.get($all-config, include);
   }
 
   pre,code {
-		font-family: font-family(mono);
+		font-family: var(--font-mono);
 	}
 }

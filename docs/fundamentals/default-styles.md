@@ -21,9 +21,7 @@ By default, Uniform applies reset of styles to flatten browser inconsistencies a
 
 ```css
 /* Reset everything */
-*,
-*::before,
-*::after {
+*,*::before,*::after {
   box-sizing: border-box;
 }
 
@@ -73,17 +71,16 @@ select {
 }
 
 /* Remove list style */
-ol,
-ul {
+ol,ul {
   list-style: none;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-    scroll-behavior: auto;
+  scroll-behavior: auto;
   }
-
+  
   *,
   *::before,
   *::after {
@@ -128,13 +125,8 @@ body {
   color: var(--body-text-color, black);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: var(--heading-leading, leading(tighter));
+h1,h2,h3,h4,h5,h6 {
+  line-height: var(--heading-leading, var(--leading-tighter));
   margin-bottom: var(--heading-margin, 0.5em);
   color: var(--heading-color, black);
   &:last-child {
@@ -143,7 +135,7 @@ h6 {
 }
 
 p {
-  line-height: var(--paragraph-leading, leading(base));
+  line-height: var(--paragraph-leading, var(--leading-normal));
   margin-bottom: var(--paragraph-margin, 1.5rem);
   &:last-child {
     margin-bottom: 0;
@@ -154,20 +146,15 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: var(--link-color, RoyalBlue);
-  &:hover {
-    color: var(--link-hover-color, RoyalBlue);
-  }
 }
 
-b,
-strong {
-  font-weight: var(--bold-font-weight, font-weight(bold));
+b,strong {
+  font-weight: var(--bold-font-weight, var(--font-bold));
 }
 
-sub,
-sup {
+sub,sup {
   position: relative;
-  font-size: 0.75em;
+  font-size: .75em;
 }
 
 sub {
@@ -180,9 +167,8 @@ sup {
   left: 0.25em;
 }
 
-pre,
-code {
-  font-family: font-family(mono);
+pre,code {
+  font-family: var(--font-mono);
 }
 ```
 
@@ -210,8 +196,6 @@ Starter styles include customer properties with fallback values that act as a ho
   --paragraph-margin: ...;
 
   --link-color: ...;
-  --link-hover-color: ...;
-  --link-active-color: ...;
 
   --bold-font-weight: ...;
 }
