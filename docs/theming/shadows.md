@@ -36,7 +36,7 @@ By default, Uniform provides **9 shadow effects**. Use the following chart as th
 
 The following example showcases how the variants can be applied.
 
-<div class="bg-silver-200 p-20 h-200px radius-md">
+<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-5 gap-18">
     <div class="shadow-xs ratio-square bg-white">
     </div>

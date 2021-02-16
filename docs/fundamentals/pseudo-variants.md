@@ -16,8 +16,8 @@ Pseudos allow for utility properties to be conditionally applied based on user i
 
 Pseudo interactions such as hover can be achieved by appending the pseudo variant to the beginning of your class name e.g. `<pseudo>.shorthand-variant`.
 
-<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
-  <button class="p-12 px-18 bg-primary-500 hover.bg-primary-600 transition-100 cursor-pointer font-bold text-white radius-sm">
+<section class="flex align-items-center justify-content-center bg-blue-gray bg-tint-800 p-20 h-192 radius-md">
+  <button class="p-12 px-18 bg-primary-500 hover.bg-primary-600 transition-100 cursor-pointer font-bold color-white radius-sm">
     Hover on me
   </button>
 </section>
@@ -45,64 +45,64 @@ The following pseudo interactions are available to be activated for each propert
   </thead>
   <tbody class="font-sm">
     <tr>
-      <td><code class="text-teal text-brighten-500">first</code></td>
-      <td><code class="text-gray-600">:first-child</code></td>
+      <td><code class="color-teal color-brighten-500">first</code></td>
+      <td><code class="color-gray-600">:first-child</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">last</code></td>
-      <td><code class="text-gray-600">:last-child</code></td>
+      <td><code class="color-teal color-brighten-500">last</code></td>
+      <td><code class="color-gray-600">:last-child</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">last-type</code></td>
-      <td><code class="text-gray-600">:last-of-type</code></td>
+      <td><code class="color-teal color-brighten-500">last-type</code></td>
+      <td><code class="color-gray-600">:last-of-type</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">odd</code></td>
-      <td><code class="text-gray-600">:nth-child(odd)</code></td>
+      <td><code class="color-teal color-brighten-500">odd</code></td>
+      <td><code class="color-gray-600">:nth-child(odd)</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">even</code></td>
-      <td><code class="text-gray-600">:nth-child(even)</code></td>
+      <td><code class="color-teal color-brighten-500">even</code></td>
+      <td><code class="color-gray-600">:nth-child(even)</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">hover</code></td>
-      <td><code class="text-gray-600">:hover</code></td>
+      <td><code class="color-teal color-brighten-500">hover</code></td>
+      <td><code class="color-gray-600">:hover</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">focus</code></td>
-      <td><code class="text-gray-600">:focus</code></td>
+      <td><code class="color-teal color-brighten-500">focus</code></td>
+      <td><code class="color-gray-600">:focus</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">active</code></td>
-      <td><code class="text-gray-600">:active</code></td>
+      <td><code class="color-teal color-brighten-500">active</code></td>
+      <td><code class="color-gray-600">:active</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">visited</code></td>
-      <td><code class="text-gray-600">:visited</code></td>
+      <td><code class="color-teal color-brighten-500">visited</code></td>
+      <td><code class="color-gray-600">:visited</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">disabled</code></td>
-      <td><code class="text-gray-600">:disabled</code></td>
+      <td><code class="color-teal color-brighten-500">disabled</code></td>
+      <td><code class="color-gray-600">:disabled</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">checked</code></td>
-      <td><code class="text-gray-600">:checked</code></td>
+      <td><code class="color-teal color-brighten-500">checked</code></td>
+      <td><code class="color-gray-600">:checked</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">empty</code></td>
-      <td><code class="text-gray-600">:empty</code></td>
+      <td><code class="color-teal color-brighten-500">empty</code></td>
+      <td><code class="color-gray-600">:empty</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">focus-within</code></td>
-      <td><code class="text-gray-600">:focus-within</code></td>
+      <td><code class="color-teal color-brighten-500">focus-within</code></td>
+      <td><code class="color-gray-600">:focus-within</code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">group-hover</code></td>
-      <td><code class="text-gray-600">.group:hover </code></td>
+      <td><code class="color-teal color-brighten-500">group-hover</code></td>
+      <td><code class="color-gray-600">.group:hover </code></td>
     </tr>
     <tr>
-      <td><code class="text-teal text-brighten-500">group-focus</code></td>
-      <td><code class="text-gray-600">.group:focus</code></td>
+      <td><code class="color-teal color-brighten-500">group-focus</code></td>
+      <td><code class="color-gray-600">.group:focus</code></td>
     </tr>
   </tbody>
 </table>
@@ -183,14 +183,14 @@ You can extend the available set of pseudos by passing in key value pairs to the
 
 The `first.<property>` allows you to apply a utility to the first child.
 
-<section class="bg-silver-200 p-20 radius-md">
-  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+<section class="bg-blue-gray bg-tint-800 p-20 radius-md">
+  <div class="bg-primary-900 bg-opacity-100 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     1
   </div>
-  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+  <div class="bg-primary-900 opacity-30 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     2
   </div>
-  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 align-center radius-sm">
+  <div class="bg-primary-900 opacity-30 color-white font-bold font-lg p-14 align-center radius-sm">
     3
   </div>
 </section>
@@ -207,14 +207,14 @@ The `first.<property>` allows you to apply a utility to the first child.
 
 The `last.<property>` allows you to apply a utility to the last child.
 
-<section class="bg-silver-200 p-20 radius-md">
-  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+<section class="bg-blue-gray bg-tint-800 p-20 radius-md">
+  <div class="bg-primary-900 opacity-30 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     1
   </div>
-  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+  <div class="bg-primary-900 opacity-30 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     2
   </div>
-  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 align-center radius-sm">
+  <div class="bg-primary-900 bg-opacity-100 color-white font-bold font-lg p-14 align-center radius-sm">
     3
   </div>
 </section>
@@ -231,14 +231,14 @@ The `last.<property>` allows you to apply a utility to the last child.
 
 The `first-type.<property>` allows you to apply a utility to the first of type.
 
-<section class="bg-silver-200 p-20 radius-md">
-  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+<section class="bg-blue-gray bg-tint-800 p-20 radius-md">
+  <div class="bg-primary-900 bg-opacity-100 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     1
   </div>
-  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+  <div class="bg-primary-900 opacity-30 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     2
   </div>
-  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 align-center radius-sm">
+  <div class="bg-primary-900 opacity-30 color-white font-bold font-lg p-14 align-center radius-sm">
     3
   </div>
 </section>
@@ -255,14 +255,14 @@ The `first-type.<property>` allows you to apply a utility to the first of type.
 
 The `last-type.<property>` allows you to apply a utility to the last of type.
 
-<section class="bg-silver-200 p-20 radius-md">
-  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+<section class="bg-blue-gray bg-tint-800 p-20 radius-md">
+  <div class="bg-primary-900 opacity-30 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     1
   </div>
-  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+  <div class="bg-primary-900 opacity-30 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     2
   </div>
-  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 align-center radius-sm">
+  <div class="bg-primary-900 bg-opacity-100 color-white font-bold font-lg p-14 align-center radius-sm">
     3
   </div>
 </section>
@@ -279,14 +279,14 @@ The `last-type.<property>` allows you to apply a utility to the last of type.
 
 The `odd.<property>` allows you to apply a utility to the odd child.
 
-<section class="bg-silver-200 p-20 radius-md">
-  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+<section class="bg-blue-gray bg-tint-800 p-20 radius-md">
+  <div class="bg-primary-900 bg-opacity-100 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     1
   </div>
-  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+  <div class="bg-primary-900 opacity-30 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     2
   </div>
-  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 align-center radius-sm">
+  <div class="bg-primary-900 bg-opacity-100 color-white font-bold font-lg p-14 align-center radius-sm">
     3
   </div>
 </section>
@@ -303,14 +303,14 @@ The `odd.<property>` allows you to apply a utility to the odd child.
 
 The `even.<property>` allows you to apply a utility to the even child.
 
-<section class="bg-silver-200 p-20 radius-md">
-  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+<section class="bg-blue-gray bg-tint-800 p-20 radius-md">
+  <div class="bg-primary-900 opacity-30 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     1
   </div>
-  <div class="bg-primary-900 bg-opacity-100 text-white font-bold font-lg p-14 mb-12 align-center radius-sm">
+  <div class="bg-primary-900 bg-opacity-100 color-white font-bold font-lg p-14 mb-12 align-center radius-sm">
     2
   </div>
-  <div class="bg-primary-900 opacity-30 text-white font-bold font-lg p-14 align-center radius-sm">
+  <div class="bg-primary-900 opacity-30 color-white font-bold font-lg p-14 align-center radius-sm">
     3
   </div>
 </section>
@@ -327,8 +327,8 @@ The `even.<property>` allows you to apply a utility to the even child.
 
 The `hover.<property>` allows you to apply a utility on hover.
 
-<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
-  <button class="p-12 px-18 bg-primary-500 hover.bg-primary-600 transition-100 cursor-pointer font-bold text-white radius-sm">
+<section class="flex align-items-center justify-content-center bg-blue-gray bg-tint-800 p-20 h-192 radius-md">
+  <button class="p-12 px-18 bg-primary-500 hover.bg-primary-600 transition-100 cursor-pointer font-bold color-white radius-sm">
     Hover on me
   </button>
 </section>
@@ -343,8 +343,8 @@ The `hover.<property>` allows you to apply a utility on hover.
 
 The `active.<property>` allows you to apply a utility on active.
 
-<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
-  <button class="p-12 px-18 bg-primary-500 active.bg-primary-600 transition-100 cursor-pointer font-bold text-white radius-sm">
+<section class="flex align-items-center justify-content-center bg-blue-gray bg-tint-800 p-20 h-192 radius-md">
+  <button class="p-12 px-18 bg-primary-500 active.bg-primary-600 transition-100 cursor-pointer font-bold color-white radius-sm">
     Click me
   </button>
 </section>
@@ -359,14 +359,14 @@ The `active.<property>` allows you to apply a utility on active.
 
 The `visited.<property>` allows you to apply a utility on visited.
 
-<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
-  <a href="#" class="text-blue hover.text-blue underline mr-14">Normal Link</a>
-  <a href="#" class="text-purple hover.text-purple underline">Visited Link</a>
+<section class="flex align-items-center justify-content-center bg-blue-gray bg-tint-800 p-20 h-192 radius-md">
+  <a href="#" class="color-blue hover.color-blue underline mr-14">Normal Link</a>
+  <a href="#" class="color-purple hover.color-purple underline">Visited Link</a>
 </section>
 
 ```html
-<a href="#" class="text-blue visited.text-blue">Normal Link</a>
-<a href="#" class="text-blue visited.text-purple">Visited Link</a>
+<a href="#" class="color-blue visited.color-blue">Normal Link</a>
+<a href="#" class="color-blue visited.color-purple">Visited Link</a>
 ```
 
 ---
@@ -375,7 +375,7 @@ The `visited.<property>` allows you to apply a utility on visited.
 
 The `focus.<property>` allows you to apply a utility on focus.
 
-<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+<section class="flex align-items-center justify-content-center bg-blue-gray bg-tint-800 p-20 h-192 radius-md">
   <input value="Focus" class="p-12 opacity-50 focus.opacity-100 font-bold font-lg">
 </section>
 
@@ -389,7 +389,7 @@ The `focus.<property>` allows you to apply a utility on focus.
 
 The `disabled.<property>` allows you to apply a utility on disabled.
 
-<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+<section class="flex align-items-center justify-content-center bg-blue-gray bg-tint-800 p-20 h-192 radius-md">
   <input value="Disabled" class="bg-white p-12 opacity-100 disabled.opacity-50 font-bold font-lg" disabled>
 </section>
 
@@ -403,7 +403,7 @@ The `disabled.<property>` allows you to apply a utility on disabled.
 
 The `empty.<property>` allows you to apply a utility on empty.
 
-<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+<section class="flex align-items-center justify-content-center bg-blue-gray bg-tint-800 p-20 h-192 radius-md">
   <div class="w-64 h-64 radius-sm bg-blue empty.bg-mint"></div>
 </section>
 
@@ -417,7 +417,7 @@ The `empty.<property>` allows you to apply a utility on empty.
 
 The `focus-within.<property>` allows you to apply a utility on focus-within.
 
-<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
+<section class="flex align-items-center justify-content-center bg-blue-gray bg-tint-800 p-20 h-192 radius-md">
   <form class="relative shadow-xs bg-white border-b-2 border-silver-500 focus-within.border-black">
     <input placeholder="Focus on me" class="bg-white p-12 font-bold font-lg outline-0">
   </form>
@@ -435,17 +435,17 @@ The `focus-within.<property>` allows you to apply a utility on focus-within.
 
 The `group-hover.<property>` allows you to apply properties when the parent container is hovered. You must assign the parent container with a `group` class.
 
-<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
-  <a class="group bg-white text-black hover.bg-black block p-20 radius-sm">
-    <h3 class="group-hover.text-mint">Group Hover</h3>
-    <p class="group-hover.text-white">Hover on this card to see change</p>
+<section class="flex align-items-center justify-content-center bg-blue-gray bg-tint-800 p-20 h-192 radius-md">
+  <a class="group bg-white color-black hover.bg-black block p-20 radius-sm">
+    <h3 class="group-hover.color-mint">Group Hover</h3>
+    <p class="group-hover.color-white">Hover on this card to see change</p>
   </a>
 </section>
 
 ```html
-<a class="group bg-white text-black hover.bg-black block p-20 radius-sm">
-  <h3 class="group-hover.text-mint">Group Hover</h3>
-  <p class="group-hover.text-white">Hover on this card to see change</p>
+<a class="group bg-white color-black hover.bg-black block p-20 radius-sm">
+  <h3 class="group-hover.color-mint">Group Hover</h3>
+  <p class="group-hover.color-white">Hover on this card to see change</p>
 </a>
 ```
 
@@ -455,15 +455,15 @@ The `group-hover.<property>` allows you to apply properties when the parent cont
 
 The `group-focus.<property>` operates in the same way as `group-hover` but allows you to apply properties when the parent container is in focus. You must assign the parent container with a `group` class.
 
-<section class="flex align-items-center justify-content-center bg-silver-200 p-20 h-192 radius-md">
-  <button class="group flex align-items-center p-12 px-18 bg-primary-500 focus.bg-black transition-100 cursor-pointer font-bold text-white radius-sm">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="currentColor" class="w-24 h-24 group-focus.text-magenta mr-16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+<section class="flex align-items-center justify-content-center bg-blue-gray bg-tint-800 p-20 h-192 radius-md">
+  <button class="group flex align-items-center p-12 px-18 bg-primary-500 focus.bg-black transition-100 cursor-pointer font-bold color-white radius-sm">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="currentColor" class="w-24 h-24 group-focus.color-magenta mr-16"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
     Focus on me
   </button>
 </section>
 
 ```html
-<button class="group text-white bg-primary-500 focus.bg-black">
-  <svg class="group-focus:text-cyan"></svg> Button
+<button class="group color-white bg-primary-500 focus.bg-black">
+  <svg class="group-focus:color-cyan"></svg> Button
 </button>
 ```

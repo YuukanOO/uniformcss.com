@@ -8,19 +8,19 @@ date: 1000-01-01
 
 ## Basic Usage
 
-The `text-darken` utilities darken text color.
+The `color-darken` utilities darken text color.
 
 | Class Name        | Property                        |
 | ----------------- | ------------------------------- |
-| `text-darken-100` | `--text-ltn: var(--darken-100)` |
-| `text-darken-200` | `--text-ltn: var(--darken-200)` |
-| `text-darken-300` | `--text-ltn: var(--darken-300)` |
-| `text-darken-400` | `--text-ltn: var(--darken-400)` |
-| `text-darken-500` | `--text-ltn: var(--darken-500)` |
-| `text-darken-600` | `--text-ltn: var(--darken-600)` |
-| `text-darken-700` | `--text-ltn: var(--darken-700)` |
-| `text-darken-800` | `--text-ltn: var(--darken-800)` |
-| `text-darken-900` | `--text-ltn: var(--darken-900)` |
+| `color-darken-100` | `--color-ltn: var(--darken-100)` |
+| `color-darken-200` | `--color-ltn: var(--darken-200)` |
+| `color-darken-300` | `--color-ltn: var(--darken-300)` |
+| `color-darken-400` | `--color-ltn: var(--darken-400)` |
+| `color-darken-500` | `--color-ltn: var(--darken-500)` |
+| `color-darken-600` | `--color-ltn: var(--darken-600)` |
+| `color-darken-700` | `--color-ltn: var(--darken-700)` |
+| `color-darken-800` | `--color-ltn: var(--darken-800)` |
+| `color-darken-900` | `--color-ltn: var(--darken-900)` |
 
 {.table}
 

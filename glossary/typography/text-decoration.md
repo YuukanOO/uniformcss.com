@@ -1,19 +1,19 @@
 ---
 title: Text Decoration
-property: text-decoration
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+property: color-decoration
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/color-decoration
 description: Decorates text
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `text-decoration` utilities decorate text.
+The `color-decoration` utilities decorate text.
 
 | Class Name     | Property                        |
 | -------------- | ------------------------------- |
-| `underline`    | `text-decoration: underline`    |
-| `line-through` | `text-decoration: line-through` |
+| `underline`    | `color-decoration: underline`    |
+| `line-through` | `color-decoration: line-through` |
 
 {.table}
 

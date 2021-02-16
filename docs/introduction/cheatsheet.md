@@ -5,304 +5,151 @@ date: 1000-01-10
 lastUpdated: 2020-10-20
 ---
 
-## Primary Colors
+## Colors
 
-Primary colors are coupled closely to your brand. By default, there are three variations available.
+Uniform provides 18 default colors. Each color is positioned on the hue spectrum in increments of 20. The following colors can be applied across borders, text, and backgrounds.
 
-<div class="grid grid-cols-3 gap-24 leading-6">
-  <div class="radius-md overflow-hidden">
-    <div class="h-96 p-18 bg-primary-500 text-white font-xs font-bold">
-      primary-500 <span class="text-white text-opacity-50">• #f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-100">
-      primary-100 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-200">
-      primary-200 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-300">
-      primary-300 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-400">
-      primary-400 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-500">
-      primary-500 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-600">
-      primary-600 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-700">
-      primary-700 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-800">
-      primary-800 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-900">
-      primary-900 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
+<div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
+  <div class="radius-sm p-16 bg-red color-white font-xs font-bold">
+    red <span class="color-white color-opacity-50">• #f052b2</span>
   </div>
-
-  <div class="radius-md overflow-hidden">
-    <div class="h-96 p-18 bg-primary-a500 text-white font-xs font-bold">
-      primary-a500 <span class="text-white text-opacity-50">• #f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a100">
-      primary-a100 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a200">
-      primary-a200 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a300">
-      primary-a300 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a400">
-      primary-a400 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a500">
-      primary-a500 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a600">
-      primary-a600 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a700">
-      primary-a700 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a800">
-      primary-a800 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-a900">
-      primary-a900 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
+  <div class="radius-sm p-16 bg-orange color-white font-xs font-bold">
+    orange <span class="color-white color-opacity-50">• #f052b2</span>
   </div>
-
-  <div class="radius-md overflow-hidden">
-    <div class="h-96 p-18 bg-primary-b500 text-white font-xs font-bold">
-      primary-b500 <span class="text-white text-opacity-50">• #f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b100">
-      primary-b100 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b200">
-      primary-b200 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b300">
-      primary-b300 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b400">
-      primary-b400 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b500">
-      primary-b500 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b600">
-      primary-b600 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b700">
-      primary-b700 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b800">
-      primary-b800 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-primary-b900">
-      primary-b900 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
+  <div class="radius-sm p-16 bg-yellow color-white font-xs font-bold">
+    yellow <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-lemon color-white font-xs font-bold">
+    lemon <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-olive color-white font-xs font-bold">
+    olive <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-lime color-white font-xs font-bold">
+    lime <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-green color-white font-xs font-bold">
+    green <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-mint color-white font-xs font-bold">
+    mint <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-teal color-white font-xs font-bold">
+    teal <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-cyan color-white font-xs font-bold">
+    cyan <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-sky color-white font-xs font-bold">
+    sky <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-blue color-white font-xs font-bold">
+    blue <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-indigo color-white font-xs font-bold">
+    indigo <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-purple color-white font-xs font-bold">
+    purple <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-orchid color-white font-xs font-bold">
+    orchid <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-magenta color-white font-xs font-bold">
+    magenta <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-pink color-white font-xs font-bold">
+    pink <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-crimson color-white font-xs font-bold">
+    crimson <span class="color-white color-opacity-50">• #f052b2</span>
   </div>
 </div>
 
 ---
 
-## Secondary Colors
+## Monotone Colors
 
-Secondary colors are complimentary accent colors that support primary brand colors.
+The monotone color set contains blacks, whites, and grays.
 
-<div class="grid grid-cols-3 gap-24 leading-6">
-  <div class="h-96 p-18 radius-sm bg-secondary text-white font-xs font-bold">
-    secondary <span class="text-white text-opacity-50">• #f052b2</span>
+<div class="grid grid-cols-2 gap-10 overflow-hidden">
+  <div class="radius-sm p-16 bg-white color-black font-xs font-bold border-1">
+    white <span class="color-black color-opacity-50">• #f052b2</span>
   </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-a text-white font-xs font-bold">
-    secondary-a <span class="text-white text-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-16 bg-black color-white font-xs font-bold">
+    black <span class="color-white color-opacity-50">• #f052b2</span>
   </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-b text-white font-xs font-bold">
-    secondary-b <span class="text-white text-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-16 bg-gray color-white font-xs font-bold">
+    gray <span class="color-white color-opacity-50">• #f052b2</span>
   </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-c text-white font-xs font-bold">
-    secondary-c <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-d text-white font-xs font-bold">
-    secondary-d <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-e text-white font-xs font-bold">
-    secondary-e <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-f text-white font-xs font-bold">
-    secondary-f <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-g text-white font-xs font-bold">
-    secondary-g <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-  <div class="h-96 p-18 radius-sm bg-secondary-h text-white font-xs font-bold">
-    secondary-h <span class="text-white text-opacity-50">• #f052b2</span>
-  </div>
-</div>
-
-## Grayscale Colors
-
-There are two shades of grays available. Silver is light and gray is the dark variant.
-
-<div class="grid grid-cols-2 gap-24 leading-6">
-  <div class="radius-md overflow-hidden">
-    <div class="h-96 p-18 bg-silver-500 text-black font-xs font-bold">
-      silver-500 <span class="text-black text-opacity-50">• #f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-100">
-      silver-100 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-200">
-      silver-200 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-300">
-      silver-300 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-400">
-      silver-400 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-500">
-      silver-500 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-600">
-      silver-600 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-700">
-      silver-700 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-800">
-      silver-800 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-black font-xs font-bold bg-silver-900">
-      silver-900 <span class="text-black text-opacity-50">#f052b2</span>
-    </div>
-  </div>
-
-  <div class="radius-md overflow-hidden">
-    <div class="h-96 p-18 bg-gray-500 text-white font-xs font-bold">
-      gray-500 <span class="text-white text-opacity-50">• #f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-100">
-      gray-100 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-200">
-      gray-200 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-300">
-      gray-300 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-400">
-      gray-400 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-500">
-      gray-500 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-600">
-      gray-600 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-700">
-      gray-700 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-800">
-      gray-800 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 text-white font-xs font-bold bg-gray-900">
-      gray-900 <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
+  <div class="radius-sm p-16 bg-blue-gray color-white font-xs font-bold">
+    blue-gray <span class="color-white color-opacity-50">• #f052b2</span>
   </div>
 </div>
 
 ---
 
-## Temperature Colors
+## Accent Colors
 
-Temperature colors are colors that are reserved for highlighting error or success states.
+The accent colors are an alternate set of colors that is intended to provide you with an extra color bandwidth. Accent colors are colors that are used for emphasis in a color scheme.
 
-<div class="grid grid-cols-4 leading-6 gap-18">
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-cold">
-    cold <span class="text-white text-opacity-50">#f052b2</span>
+<div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
+  <div class="radius-sm p-16 bg-accent-red color-white font-xs font-bold">
+    accent-red <span class="color-white color-opacity-50">• #f052b2</span>
   </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-room">
-    room <span class="text-white text-opacity-50">#f052b2</span>
+  <div class="radius-sm p-16 bg-accent-orange color-white font-xs font-bold">
+    accent-orange <span class="color-white color-opacity-50">• #f052b2</span>
   </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-warm">
-    warm <span class="text-white text-opacity-50">#f052b2</span>
+  <div class="radius-sm p-16 bg-accent-yellow color-white font-xs font-bold">
+    accent-yellow <span class="color-white color-opacity-50">• #f052b2</span>
   </div>
-  <div class="p-12 radius-sm text-white font-xs font-bold bg-hot">
-    hot <span class="text-white text-opacity-50">#f052b2</span>
+  <div class="radius-sm p-16 bg-accent-lemon color-white font-xs font-bold">
+    accent-lemon <span class="color-white color-opacity-50">• #f052b2</span>
   </div>
-</div>
-
----
-
-## System Colors
-
-System colors are colors that are reserved for one-off color situations.
-
-<div class="mb-40 last.mb-0">
-  <div class="grid grid-cols-3 leading-6 gap-18">
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-red">
-      red <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-orange">
-      orange <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-yellow">
-      yellow <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-lemon">
-      lemon <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-olive">
-      olive <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-lime">
-      lime <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-green">
-      green <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-mint">
-      mint <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-teal">
-      teal <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-cyan">
-      cyan <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-sky">
-      sky <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-blue">
-      blue <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-indigo">
-      indigo <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-purple">
-      purple <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-orchid">
-      orchid <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-magenta">
-      magenta <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-pink">
-      pink <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
-    <div class="p-12 radius-sm text-white font-xs font-bold bg-crimson">
-      crimson <span class="text-white text-opacity-50">#f052b2</span>
-    </div>
+  <div class="radius-sm p-16 bg-accent-olive color-white font-xs font-bold">
+    accent-olive <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-lime color-white font-xs font-bold">
+    accent-lime <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-green color-white font-xs font-bold">
+    accent-green <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-mint color-white font-xs font-bold">
+    accent-mint <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-teal color-white font-xs font-bold">
+    accent-teal <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-cyan color-white font-xs font-bold">
+    accent-cyan <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-sky color-white font-xs font-bold">
+    accent-sky <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-blue color-white font-xs font-bold">
+    accent-blue <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-indigo color-white font-xs font-bold">
+    accent-indigo <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-purple color-white font-xs font-bold">
+    accent-purple <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-orchid color-white font-xs font-bold">
+    accent-orchid <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-magenta color-white font-xs font-bold">
+    accent-magenta <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-pink color-white font-xs font-bold">
+    accent-pink <span class="color-white color-opacity-50">• #f052b2</span>
+  </div>
+  <div class="radius-sm p-16 bg-accent-crimson color-white font-xs font-bold">
+    accent-crimson <span class="color-white color-opacity-50">• #f052b2</span>
   </div>
 </div>
+
 
 ---
 
@@ -311,43 +158,43 @@ System colors are colors that are reserved for one-off color situations.
 Basic white or black fade out gradients are available in vertical and horizontal direction.
 
 <div class="grid grid-cols-2 leading-6 gap-18">
-  <div class="bg-gray-500 radius-sm overflow-hidden">
-    <div class="p-18 h-96 text-white font-xs font-bold bg-gradient-x-to-white">
+  <div class="bg-gray radius-sm overflow-hidden">
+    <div class="p-18 h-96 color-white font-xs font-bold bg-gradient-x-to-white">
       gradient-x-to-white
     </div>
   </div>
-  <div class="bg-gray-500 radius-sm overflow-hidden">
-    <div class="p-18 h-96 text-white font-xs font-bold bg-gradient-x-from-white align-right">
+  <div class="bg-gray radius-sm overflow-hidden">
+    <div class="p-18 h-96 color-white font-xs font-bold bg-gradient-x-from-white align-right">
       gradient-x-from-white
     </div>
   </div>
-  <div class="bg-gray-500 radius-sm overflow-hidden">
-    <div class="p-18 h-96 text-white font-xs font-bold bg-gradient-y-to-white">
+  <div class="bg-gray radius-sm overflow-hidden">
+    <div class="p-18 h-96 color-white font-xs font-bold bg-gradient-y-to-white">
       gradient-y-to-white
     </div>
   </div>
-  <div class="bg-gray-500 radius-sm overflow-hidden">
-    <div class="p-18 h-96 text-white font-xs font-bold bg-gradient-y-from-white align-right">
+  <div class="bg-gray radius-sm overflow-hidden">
+    <div class="p-18 h-96 color-white font-xs font-bold bg-gradient-y-from-white align-right">
       gradient-y-from-white
     </div>
   </div>
-    <div class="bg-gray-500 radius-sm overflow-hidden">
-    <div class="p-18 h-96 text-white font-xs font-bold bg-gradient-x-to-black">
+    <div class="bg-gray radius-sm overflow-hidden">
+    <div class="p-18 h-96 color-white font-xs font-bold bg-gradient-x-to-black">
       gradient-x-to-black
     </div>
   </div>
-  <div class="bg-gray-500 radius-sm overflow-hidden">
-    <div class="p-18 h-96 text-white font-xs font-bold bg-gradient-x-from-black align-right">
+  <div class="bg-gray radius-sm overflow-hidden">
+    <div class="p-18 h-96 color-white font-xs font-bold bg-gradient-x-from-black align-right">
       gradient-x-from-black
     </div>
   </div>
-  <div class="bg-gray-500 radius-sm overflow-hidden">
-    <div class="p-18 h-96 text-white font-xs font-bold bg-gradient-y-to-black">
+  <div class="bg-gray radius-sm overflow-hidden">
+    <div class="p-18 h-96 color-white font-xs font-bold bg-gradient-y-to-black">
       gradient-y-to-black
     </div>
   </div>
-  <div class="bg-gray-500 radius-sm overflow-hidden">
-    <div class="p-18 h-96 text-white font-xs font-bold bg-gradient-y-from-black align-right">
+  <div class="bg-gray radius-sm overflow-hidden">
+    <div class="p-18 h-96 color-white font-xs font-bold bg-gradient-y-from-black align-right">
       gradient-y-from-black
     </div>
   </div>
@@ -360,7 +207,7 @@ Basic white or black fade out gradients are available in vertical and horizontal
 By default, there are a total of 15 font sizes to choose from.
 
 <div class="mb-40 last.mb-0">
-  <div class="radius-md overflow-hidden bg-black text-white">
+  <div class="radius-md overflow-hidden bg-black color-white">
     <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-2xs">
       2xs text
       <div class="flex align-items-center font-xs">
@@ -476,7 +323,7 @@ By default, there are a total of 15 font sizes to choose from.
 All possible font weights are supported. Font weights can support both numerical and semantic class naming.
 
 <div class="mb-40 last.mb-0">
-  <div class="radius-md overflow-hidden bg-black text-white">
+  <div class="radius-md overflow-hidden bg-black color-white">
     <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-100 font-2xl">
       Ultralight
       <div class="flex align-items-center font-xs">
@@ -541,19 +388,19 @@ All possible font weights are supported. Font weights can support both numerical
 All possible font weights are supported. Font weights can support both numerical and semantic class naming.
 
 <div class="grid grid-cols-5 gap-18">
-  <div class="p-18 h-96 bg-white radius-md shadow-xs text-black font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 h-96 bg-white radius-md shadow-xs color-black font-xs font-bold radius-sm overflow-hidden">
     shadow-xs
   </div>
-  <div class="p-18 h-96 bg-white radius-md shadow-sm text-black font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 h-96 bg-white radius-md shadow-sm color-black font-xs font-bold radius-sm overflow-hidden">
     shadow-sm
   </div>
-  <div class="p-18 h-96 bg-white radius-md shadow-md text-black font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 h-96 bg-white radius-md shadow-md color-black font-xs font-bold radius-sm overflow-hidden">
     shadow-md
   </div>
-  <div class="p-18 h-96 bg-white radius-md shadow-lg text-black font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 h-96 bg-white radius-md shadow-lg color-black font-xs font-bold radius-sm overflow-hidden">
     shadow-lg
   </div>
-  <div class="p-18 h-96 bg-white radius-md shadow-xl text-black font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 h-96 bg-white radius-md shadow-xl color-black font-xs font-bold radius-sm overflow-hidden">
     shadow-xl
   </div>
 </div>
@@ -565,30 +412,30 @@ All possible font weights are supported. Font weights can support both numerical
 All possible font weights are supported. Font weights can support both numerical and semantic class naming.
 
 <div class="grid grid-cols-3 gap-18">
-  <div class="p-18 h-96 bg-black radius-xs text-white font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 h-96 bg-black radius-xs color-white font-xs font-bold radius-sm overflow-hidden">
     radius-xs<br>
-    <span class="leading-looser text-gray-100">4px • 0.25rem</span>
+    <span class="leading-looser color-gray-100">4px • 0.25rem</span>
   </div>
-  <div class="p-18 h-96 bg-black radius-sm text-white font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 h-96 bg-black radius-sm color-white font-xs font-bold radius-sm overflow-hidden">
     radius-sm<br>
-    <span class="leading-looser text-gray-100">8px • 0.5rem</span>
+    <span class="leading-looser color-gray-100">8px • 0.5rem</span>
   </div>
-  <div class="p-18 h-96 bg-black radius-md text-white font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 h-96 bg-black radius-md color-white font-xs font-bold radius-sm overflow-hidden">
     radius-md<br>
-    <span class="leading-looser text-gray-100">12px • 0.75rem</span>
+    <span class="leading-looser color-gray-100">12px • 0.75rem</span>
   </div>
-  <div class="p-18 h-96 bg-black radius-lg text-white font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 h-96 bg-black radius-lg color-white font-xs font-bold radius-sm overflow-hidden">
     radius-lg<br>
-    <span class="leading-looser text-gray-100">16px • 1rem</span>
+    <span class="leading-looser color-gray-100">16px • 1rem</span>
   </div>
-  <div class="p-18 h-96 bg-black radius-xl text-white font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 h-96 bg-black radius-xl color-white font-xs font-bold radius-sm overflow-hidden">
     radius-xl<br>
-    <span class="leading-looser text-gray-100">20px • 1.25rem</span>
+    <span class="leading-looser color-gray-100">20px • 1.25rem</span>
   </div>
-  <div class="flex align-items-center justify-content-center align-center p-18 h-96 bg-black radius-round text-white font-xs font-bold radius-sm overflow-hidden">
+  <div class="flex align-items-center justify-content-center align-center p-18 h-96 bg-black radius-round color-white font-xs font-bold radius-sm overflow-hidden">
     <div>
       radius-round<br>
-      <span class="leading-looser text-gray-100">9999px</span>
+      <span class="leading-looser color-gray-100">9999px</span>
     </div>
   </div>
 </div>
@@ -603,7 +450,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 1<br>
-      <span class="text-gray-100">4px • 0.25rem</span>
+      <span class="color-gray-100">4px • 0.25rem</span>
     </div>
     <div class="h-1 bg-gray-200"></div>
   </div>
@@ -611,7 +458,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 2<br>
-      <span class="text-gray-100">8px • 0.5rem</span>
+      <span class="color-gray-100">8px • 0.5rem</span>
     </div>
     <div class="h-2 bg-gray-200"></div>
   </div>
@@ -619,7 +466,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 3<br>
-      <span class="text-gray-100">8px • 0.5rem</span>
+      <span class="color-gray-100">8px • 0.5rem</span>
     </div>
     <div class="h-3 bg-gray-200"></div>
   </div>
@@ -627,7 +474,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 4<br>
-      <span class="text-gray-100">16px • 1rem</span>
+      <span class="color-gray-100">16px • 1rem</span>
     </div>
     <div class="h-4 bg-gray-200"></div>
   </div>
@@ -635,7 +482,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 5<br>
-      <span class="text-gray-100">20px • 1.25rem</span>
+      <span class="color-gray-100">20px • 1.25rem</span>
     </div>
     <div class="h-5 bg-gray-200"></div>
   </div>
@@ -643,7 +490,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 6<br>
-      <span class="text-gray-100">24px • 1.5rem</span>
+      <span class="color-gray-100">24px • 1.5rem</span>
     </div>
     <div class="h-6 bg-gray-200"></div>
   </div>
@@ -651,7 +498,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 7<br>
-      <span class="text-gray-100">28px • 2rem</span>
+      <span class="color-gray-100">28px • 2rem</span>
     </div>
     <div class="h-7 bg-gray-200"></div>
   </div>
@@ -659,7 +506,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 8<br>
-      <span class="text-gray-100">32px • 2rem</span>
+      <span class="color-gray-100">32px • 2rem</span>
     </div>
     <div class="h-8 bg-gray-200"></div>
   </div>
@@ -667,7 +514,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 9<br>
-      <span class="text-gray-100">36px • 2.25rem</span>
+      <span class="color-gray-100">36px • 2.25rem</span>
     </div>
     <div class="h-9 bg-gray-200"></div>
   </div>
@@ -675,7 +522,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 10<br>
-      <span class="text-gray-100">40px • 2.5rem</span>
+      <span class="color-gray-100">40px • 2.5rem</span>
     </div>
     <div class="h-10 bg-gray-200"></div>
   </div>
@@ -683,7 +530,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 11<br>
-      <span class="text-gray-100">44px • 2.75rem</span>
+      <span class="color-gray-100">44px • 2.75rem</span>
     </div>
     <div class="h-11 bg-gray-200"></div>
   </div>
@@ -691,7 +538,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 12<br>
-      <span class="text-gray-100">48px • 3rem</span>
+      <span class="color-gray-100">48px • 3rem</span>
     </div>
     <div class="h-40 bg-gray-200"></div>
   </div>
@@ -699,7 +546,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 13<br>
-      <span class="text-gray-100">56px • 3.5rem</span>
+      <span class="color-gray-100">56px • 3.5rem</span>
     </div>
     <div class="h-13 bg-gray-200"></div>
   </div>
@@ -707,7 +554,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 14<br>
-      <span class="text-gray-100">64px • 4rem</span>
+      <span class="color-gray-100">64px • 4rem</span>
     </div>
     <div class="h-14 bg-gray-200"></div>
   </div>
@@ -715,7 +562,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 15<br>
-      <span class="text-gray-100">72px • 4.5rem</span>
+      <span class="color-gray-100">72px • 4.5rem</span>
     </div>
     <div class="h-15 bg-gray-200"></div>
   </div>
@@ -723,7 +570,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 16<br>
-      <span class="text-gray-100">80px • 5rem</span>
+      <span class="color-gray-100">80px • 5rem</span>
     </div>
     <div class="h-16 bg-gray-200"></div>
   </div>
@@ -731,7 +578,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 17<br>
-      <span class="text-gray-100">88px • 5.5rem</span>
+      <span class="color-gray-100">88px • 5.5rem</span>
     </div>
     <div class="h-17 bg-gray-200"></div>
   </div>
@@ -739,7 +586,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 18<br>
-      <span class="text-gray-100">96px • 6rem</span>
+      <span class="color-gray-100">96px • 6rem</span>
     </div>
     <div class="h-16 bg-gray-200"></div>
   </div>
@@ -747,7 +594,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 19<br>
-      <span class="text-gray-100">128px • 8rem</span>
+      <span class="color-gray-100">128px • 8rem</span>
     </div>
     <div class="h-19 bg-gray-200"></div>
   </div>
@@ -755,7 +602,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 20<br>
-      <span class="text-gray-100">160px • 10rem</span>
+      <span class="color-gray-100">160px • 10rem</span>
     </div>
     <div class="h-20 bg-gray-200"></div>
   </div>
@@ -763,7 +610,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 21<br>
-      <span class="text-gray-100">192px • 12rem</span>
+      <span class="color-gray-100">192px • 12rem</span>
     </div>
     <div class="h-21 bg-gray-200"></div>
   </div>
@@ -771,7 +618,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 22<br>
-      <span class="text-gray-100">256px • 16rem</span>
+      <span class="color-gray-100">256px • 16rem</span>
     </div>
     <div class="h-22 bg-gray-200"></div>
   </div>
@@ -779,7 +626,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 23<br>
-      <span class="text-gray-100">320px • 20rem</span>
+      <span class="color-gray-100">320px • 20rem</span>
     </div>
     <div class="h-23 bg-gray-200"></div>
   </div>
@@ -787,7 +634,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 24<br>
-      <span class="text-gray-100">384px • 24rem</span>
+      <span class="color-gray-100">384px • 24rem</span>
     </div>
     <div class="h-23 bg-gray-200"></div>
   </div>
@@ -795,7 +642,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 25<br>
-      <span class="text-gray-100">512px • 32rem</span>
+      <span class="color-gray-100">512px • 32rem</span>
     </div>
     <div class="h-23 bg-gray-200"></div>
   </div>
@@ -803,7 +650,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 26<br>
-      <span class="text-gray-100">640px • 40rem</span>
+      <span class="color-gray-100">640px • 40rem</span>
     </div>
     <div class="h-23 bg-gray-200"></div>
   </div>
@@ -811,7 +658,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 27<br>
-      <span class="text-gray-100">768px • 48rem</span>
+      <span class="color-gray-100">768px • 48rem</span>
     </div>
     <div class="h-23 bg-gray-200"></div>
   </div>
@@ -819,7 +666,7 @@ There are a total of 40 pixel based sizes available for sizing and spacing prope
   <div>
     <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
       Size 28<br>
-      <span class="text-gray-100">896px • 56rem</span>
+      <span class="color-gray-100">896px • 56rem</span>
     </div>
     <div class="h-23 bg-gray-200"></div>
   </div>

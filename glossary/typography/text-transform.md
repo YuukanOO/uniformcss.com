@@ -1,20 +1,20 @@
 ---
 title: Text Transform
-property: text-transform
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform
+property: color-transform
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/color-transform
 description: Controls text transformation
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `text-transform` utilities control text transformation. In other words, uppercasing, lowercasing, and capitalization.
+The `color-transform` utilities control text transformation. In other words, uppercasing, lowercasing, and capitalization.
 
 | Class Name   | Property                     |
 | ------------ | ---------------------------- |
-| `uppercase`  | `text-transform: uppercase`  |
-| `lowercase`  | `text-transform: lowercase`  |
-| `capitalize` | `text-transform: capitalize` |
+| `uppercase`  | `color-transform: uppercase`  |
+| `lowercase`  | `color-transform: lowercase`  |
+| `capitalize` | `color-transform: capitalize` |
 
 {.table}
 

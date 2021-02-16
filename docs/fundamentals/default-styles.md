@@ -33,7 +33,7 @@ By default, Uniform applies reset of styles to flatten browser inconsistencies a
 
 /* Prevent iOS font size change */
 html {
-  -webkit-text-size-adjust: 100%;
+  -webkit-color-size-adjust: 100%;
 }
 
 /* Reset body line-height */
@@ -122,7 +122,7 @@ body {
   font-weight: var(--body-font-weight, var(--font-regular));
   line-height: var(--body-leading, 1);
   background-color: var(--body-background-color, white);
-  color: var(--body-text-color, black);
+  color: var(--body-color-color, black);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -143,7 +143,7 @@ p {
 }
 
 a {
-  text-decoration: none;
+  color-decoration: none;
   cursor: pointer;
   color: var(--link-color, RoyalBlue);
 }
@@ -186,7 +186,7 @@ Starter styles include customer properties with fallback values that act as a ho
   --body-font-weight: ...;
   --body-leading: ...;
   --body-background-color: ...;
-  --body-text-color: ...;
+  --body-color-color: ...;
 
   --heading-leading: ...;
   --heading-margin: ...;

@@ -89,7 +89,7 @@ By design, Uniform takes common design patterns into consideration and only enab
     utility: (
       letter-spacing: ( responsive: true ),
       list-style-type: ( responsive: true ),
-      text-transform: ( responsive: true )
+      color-transform: ( responsive: true )
     )
   )
 );

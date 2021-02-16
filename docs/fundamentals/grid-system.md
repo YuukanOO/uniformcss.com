@@ -16,7 +16,7 @@ Grids are a useful tool to help containerize your page layout and seperate conte
 
 The Uniform grid systems are built using the `grid` display type and designed to support up to `12` columns. The `grid` property sets the element's displah type to `grid` and the `grid-cols-<1-12>` property sets the column count.
 
-<section class="bg-silver-200 p-20 radius-md">
+<section class="bg-blue-gray bg-tint-800 p-20 radius-md">
   <div class="grid grid-cols-2 mb-20">
     <div class="h-40 bg-gray-500">
     </div>
@@ -71,7 +71,7 @@ The Uniform grid systems are built using the `grid` display type and designed to
 
 You can create gutters by combining your grid layout with the `gap-<size>` property. There are a total of **30** sizing units available for gaps. To get a sense of the available sizing units, please refer to the cheatsheet.
 
-<section class="bg-silver-200 p-20 radius-md">
+<section class="bg-blue-gray bg-tint-800 p-20 radius-md">
   <div class="grid grid-cols-2 mb-20 gap-36">
     <div class="h-40 bg-gray-500">
     </div>
@@ -114,7 +114,7 @@ You can create gutters by combining your grid layout with the `gap-<size>` prope
 
 Gutters can be responsive by prefixing the `gap-<size>` property with the breakpoint variant. For more information on media queries, please refer to <a class="hover.underline" href="/get-started/media-queries">media queries</a>.
 
-<section class="bg-silver-200 p-20 radius-md">
+<section class="bg-blue-gray bg-tint-800 p-20 radius-md">
   <div class="grid grid-cols-3 gap-12 sm.gap-24 md.gap-28 lg.gap-36">
     <div class="h-40 bg-gray-500">
     </div>
@@ -135,7 +135,7 @@ Gutters can be responsive by prefixing the `gap-<size>` property with the breakp
 
 You can control the size of each column by specifying its column span count.
 
-<section class="bg-silver-200 p-20 radius-md">
+<section class="bg-blue-gray bg-tint-800 p-20 radius-md">
   <div class="grid grid-cols-5 gap-14">
     <div class="h-40 bg-gray-100 col-1">
     </div>
@@ -160,7 +160,7 @@ You can control the size of each column by specifying its column span count.
 
 Both the grid column count and column span count can be responsive by prefixing the breakpoint variant. Adjust your browser width to see this in action.
 
-<section class="bg-silver-200 p-20 radius-md">
+<section class="bg-blue-gray bg-tint-800 p-20 radius-md">
   <div class="grid grid-cols-1 md.grid-cols-5 gap-14">
     <div class="h-40 bg-gray-100 col-1 md.col-1">
     </div>

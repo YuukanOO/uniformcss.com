@@ -145,7 +145,7 @@ The following CSS variable hooks are available to customize.
   --table-label-margin: ...;
   --table-label-font-size: ...;
   --table-label-font-weight: ...;
-  --table-label-text-transform: ...;
+  --table-label-color-transform: ...;
   --table-label-tracking: ...;
   --table-label-color: ...;
 }

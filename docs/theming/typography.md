@@ -17,9 +17,9 @@ You can customize full range of typography properties such as line-heights and f
 Font family properties can be applied using the `font-<family>` utility. By default, there are three font families available.
 
 <div class="grid grid-cols-1 gap-36 align-center bg-black radius-md py-48">
-  <div class="font-sans font-3xl text-white">Sans Family</div>
-  <div class="font-serif font-3xl text-white">Serif Family</div>
-  <div class="font-mono font-3xl text-white">Mono Family</div>
+  <div class="font-sans font-3xl color-white">Sans Family</div>
+  <div class="font-serif font-3xl color-white">Serif Family</div>
+  <div class="font-mono font-3xl color-white">Mono Family</div>
 </div>
 
 ```html
@@ -65,7 +65,7 @@ You can extend and replace default font families by customizing the `font-famili
 
 Font size properties can be applied using the `font-<size>` utility. By default, there are 16 font families available.
 
-<div class="radius-md overflow-hidden bg-black text-white">
+<div class="radius-md overflow-hidden bg-black color-white">
   <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-2xs">
     2xs text
     <div class="flex align-items-center font-xs">
@@ -226,10 +226,10 @@ font-sm {font-size: 0.875rem;}
 Line height properties can be applied using the `leading-<size>` utility. By default, there are 17 line-heights available.
 
 <div class="grid grid-cols-1 gap-36 bg-black radius-md p-20 py-48">
-  <div class="leading-0 text-white">
+  <div class="leading-0 color-white">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis velit ipsum, commodo feugiat felis condimentum nec.
   </div>
-  <div class="leading-8 text-white">
+  <div class="leading-8 color-white">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam facilisis velit ipsum, commodo feugiat felis condimentum nec.
   </div>
 </div>
@@ -285,10 +285,10 @@ You can extend and override the default variants by passing key value pairs to t
 Letter spacing properties can be applied using the `tracking-<size>` utility. By default, there are 26 letter-spacings available.
 
 <div class="grid grid-cols-1 gap-36 bg-black align-center radius-md p-20 py-48">
-  <div class="tracking-8 font-3xl text-white">
+  <div class="tracking-8 font-3xl color-white">
     Lorem ipsum
   </div>
-  <div class="tracking-tight font-3xl text-white">
+  <div class="tracking-tight font-3xl color-white">
     Lorem ipsum
   </div>
 </div>

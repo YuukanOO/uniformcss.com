@@ -17,7 +17,7 @@ Thank you for checking out Uniform CSS, a utility-first CSS framework built enti
 
 Here are some of the **top reasons** why Uniform CSS could be a great fit for your next ambitious project!
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">1</span> It's written entirely in Sass</h4>
+<h4>1. It's written entirely in Sass</h4>
 
 Why Sass? Sass is the most popular CSS preprocessor in the world! Adding Uniform as a Sass dependency is **literally one line of code**{.color-black}.
 
@@ -26,7 +26,7 @@ Why Sass? Sass is the most popular CSS preprocessor in the world! Adding Uniform
 @use "uniform" as *;
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">2</span> It's dead-easy to configure</h4>
+<h4>2. It's dead-easy to configure</h4>
 
 Remove and extend colors? Check. Replace breakpoints? Check. Alias property names, add prefixes, modify syntax — you name it! Uniform is configurable to the last detail.
 
@@ -53,7 +53,7 @@ Remove and extend colors? Check. Replace breakpoints? Check. Alias property name
 ...
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">3</span> Built with CSS Variables in mind</h4>
+<h4>3. Built with CSS Variables in mind</h4>
 
 Prefer not to worry about preprocessors and just start building your site? Just add the pre-packaged CDN version of Uniform and customize fonts, colors, sizes, and more by directly overriding each CSS variable. It's that easy.
 
@@ -74,7 +74,7 @@ Prefer not to worry about preprocessors and just start building your site? Just 
 }
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">4</span> You can add your own properties</h4>
+<h4>4. You can add your own properties</h4>
 
 While shiny new CSS specs become standardized, you don’t have to wait for Uniform. You can use Uniform APIs to add your own properties.
 
@@ -91,9 +91,9 @@ While shiny new CSS specs become standardized, you don’t have to wait for Unif
           trimmer: both
         )
       ),
-      color-edge: (
+      text-edge: (
         shorthand: text,
-        properties: (color-edge),
+        properties: (text-edge),
         variants: (
           cap: cap alphabetic
         )
@@ -106,11 +106,11 @@ While shiny new CSS specs become standardized, you don’t have to wait for Unif
 ```css
 /* styles.css */
 .leading-trimmer { leading-trim: both; }
-.color-cap { color-edge: cap alphabetic; }
+.color-cap { text-edge: cap alphabetic; }
 ...
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">5</span> Built-in helper functions to access theme values</h4>
+<h4>5. Built-in helper functions to access theme values</h4>
 
 You can build your own components and access your theme variables directly in Sass using helper functions.
 
@@ -130,7 +130,7 @@ You can build your own components and access your theme variables directly in Sa
 }
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">6</span> Comes with pre-built common components</h4>
+<h4>6. Comes with pre-built common components</h4>
 
 To help save you time, Uniform CSS comes with **optional** pre-built components for common UI elements such as buttons and form elements. These can all be enabled, disabled, and customized down to the last pixel.
 
@@ -146,7 +146,7 @@ To help save you time, Uniform CSS comes with **optional** pre-built components 
 <button class="btn btn-tertiary">Button</button>
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">7</span> Exclude or include only the properties you need</h4>
+<h4>7. Exclude or include only the properties you need</h4>
 
 Every aspect of Uniform CSS is optional, you can quickly exclude all properties and only include what you need.
 
@@ -164,7 +164,7 @@ Every aspect of Uniform CSS is optional, you can quickly exclude all properties 
 );
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-600 leading-0 bg-gray bg-opacity-20 leading-0 color-black radius-round">8</span> Designed to be Lightweight</h4>
+<h4>8. Designed to be Lightweight</h4>
 
 Uniform is smart about which pseudo variants are activated for each utility property. Pseudo variants are also comma seperated to ensure no uncessary duplicate properties are included. This helps to drastically improve file-size and make the CDN version a perfect way to get quickly started.
 

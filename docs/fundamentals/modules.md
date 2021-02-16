@@ -18,7 +18,7 @@ Out of the box, Uniform includes modules for **buttons**, **responsive tables**,
 
 The button module come in various types and supports multiple sizes. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/button/">buttons</a>.
 
-<section class="flex align-items-center justify-content-center h-192 bg-silver-200 p-20 radius-md">
+<section class="flex align-items-center justify-content-center h-192 bg-blue-gray bg-tint-800 p-20 radius-md">
   <button class="btn">Button</button>
 </section>
 
@@ -32,7 +32,7 @@ The button module come in various types and supports multiple sizes. To learn mo
 
 The form module provides styling for basic form elements. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/form/">form</a>.
 
-<section class="radius-sm bg-silver-200 p-20">
+<section class="radius-sm bg-blue-gray bg-tint-800 p-20">
   <form>
     <div class="mb-20 last.mb-0">
       <label class="label mb-6">Email</label>
@@ -139,7 +139,7 @@ The form module provides styling for basic form elements. To learn more about us
 
 The table module provides styling for the basic table element. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/table/">table</a>.
 
-<section class="radius-sm bg-silver-200 p-20">
+<section class="radius-sm bg-blue-gray bg-tint-800 p-20">
   <table class="table table-stack sm.table-unstack">
     <thead>
       <tr>

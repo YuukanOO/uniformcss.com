@@ -1,18 +1,18 @@
 ---
 title: Text Overflow
-property: text-overflow
-mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow
+property: color-overflow
+mdn: https://developer.mozilla.org/en-US/docs/Web/CSS/color-overflow
 description: Sets text overflow behavior
 date: 1000-01-01
 ---
 
 ## Basic Usage
 
-The `text-overflow` utilities set text overflow behavior.
+The `color-overflow` utilities set text overflow behavior.
 
 | Class Name | Property                  |
 | ---------- | ------------------------- |
-| `ellipsis` | `text-overflow: ellipsis` |
+| `ellipsis` | `color-overflow: ellipsis` |
 
 {.table}
 

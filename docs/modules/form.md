@@ -115,7 +115,7 @@ The following CSS variable hooks are available to customize.
   --label-font-weight: ...;
   --label-color: ...;
   --label-tracking: ...;
-  --label-text-transform: ...;
+  --label-color-transform: ...;
   --label-required-color: ...;
 
   --input-height: ...;

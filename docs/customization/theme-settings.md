@@ -31,7 +31,7 @@ Theme settings are shared across multiple related CSS properties.
 ```css
 /* styles.css */
 .bg-custom-color {background-color: #B20000;}
-.text-custom-color {color: #B20000;}
+.color-custom-color {color: #B20000;}
 .border-custom-color {color: #B20000;}
 ...
 ```
@@ -110,7 +110,7 @@ To override base theme settings, pass key value pairs to each setting in your co
 ```css
 /* styles.css */
 .bg-red {background-color: #B20000;}
-.text-red {color: #B20000;}
+.color-red {color: #B20000;}
 .border-red {color: #B20000;}
 .leading-loose {line-height: 1.6}
 ...

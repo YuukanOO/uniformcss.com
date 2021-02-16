@@ -8,19 +8,19 @@ date: 1000-01-01
 
 ## Basic Usage
 
-The `text-darken` utilities deepen text color.
+The `color-darken` utilities deepen text color.
 
 | Class Name        | Property                       |
 | ----------------- | ------------------------------ |
-| `text-deepen-100` | --text-sat: var(--deepen-100)` |
-| `text-deepen-200` | --text-sat: var(--deepen-200)` |
-| `text-deepen-300` | --text-sat: var(--deepen-300)` |
-| `text-deepen-400` | --text-sat: var(--deepen-400)` |
-| `text-deepen-500` | --text-sat: var(--deepen-500)` |
-| `text-deepen-600` | --text-sat: var(--deepen-600)` |
-| `text-deepen-700` | --text-sat: var(--deepen-700)` |
-| `text-deepen-800` | --text-sat: var(--deepen-800)` |
-| `text-deepen-900` | --text-sat: var(--deepen-900)` |
+| `color-deepen-100` | --color-sat: var(--deepen-100)` |
+| `color-deepen-200` | --color-sat: var(--deepen-200)` |
+| `color-deepen-300` | --color-sat: var(--deepen-300)` |
+| `color-deepen-400` | --color-sat: var(--deepen-400)` |
+| `color-deepen-500` | --color-sat: var(--deepen-500)` |
+| `color-deepen-600` | --color-sat: var(--deepen-600)` |
+| `color-deepen-700` | --color-sat: var(--deepen-700)` |
+| `color-deepen-800` | --color-sat: var(--deepen-800)` |
+| `color-deepen-900` | --color-sat: var(--deepen-900)` |
 
 {.table}
 

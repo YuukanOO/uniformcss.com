@@ -44,7 +44,7 @@ Each property in Uniform CSS is constructed using the same data structure. By pa
 ...
 ```
 
-> **Note to JavaScript developers**{.text-black}, Sass maps appear similar to JSON but do not require quotation marks around the key or strings. This is one of the convenient features of using Sass to configure your data structure.
+> **Note to JavaScript developers**{.color-black}, Sass maps appear similar to JSON but do not require quotation marks around the key or strings. This is one of the convenient features of using Sass to configure your data structure.
 
 ---
 

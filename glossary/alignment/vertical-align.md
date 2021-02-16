@@ -16,8 +16,8 @@ The `vertical-align` utilities align text vertically.
 | `align-top`         | `vertical-align: top`         |
 | `align-middle`      | `vertical-align: middle`      |
 | `align-bottom`      | `vertical-align: bottom`      |
-| `align-text-top`    | `vertical-align: text-top`    |
-| `align-text-bottom` | `vertical-align: text-bottom` |
+| `align-color-top`    | `vertical-align: color-top`    |
+| `align-color-bottom` | `vertical-align: color-bottom` |
 
 {.table}
 

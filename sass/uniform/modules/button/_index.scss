@@ -178,7 +178,7 @@ $include: map.get($all-config, include);
     cursor: pointer;
 
     &:hover {
-      background: var(--btn-hover-bg, hsl( var(--blue-hue), var(--blue-sat), var(--tint-50) ));
+      background: var(--btn-hover-bg, hsl( var(--blue-hue), var(--blue-sat), var(--tint-100) ));
       color: var(--btn-hover-color, white);
       border: var(--btn-hover-border, 1px solid hsl( var(--blue-hue), var(--blue-sat), var(--shade-200) ));
       box-shadow: var(--btn-hover-shadow, none);
@@ -349,7 +349,7 @@ $include: map.get($all-config, include);
     --btn-border: var(--btn-success-border, 1px solid hsl( var(--green-hue), var(--green-sat), var(--shade-200) ));
     --btn-shadow: var(--btn-success-shadow, none);
 
-    --btn-hover-bg: var(--btn-success-hover-bg, hsl( var(--green-hue), var(--green-sat), var(--shade-50) ));
+    --btn-hover-bg: var(--btn-success-hover-bg, hsl( var(--green-hue), var(--green-sat), var(--shade-100) ));
     --btn-hover-color: var(--btn-success-hover-color, white );
     --btn-hover-border: var(--btn-success-hover-border, 1px solid hsl( var(--green-hue), var(--green-sat), var(--shade-200) ));
     --btn-hover-shadow: var(--btn-success-hover-shadow, none);
@@ -360,12 +360,12 @@ $include: map.get($all-config, include);
   .btn-warning {
     --btn-bg: var(--btn-warning-bg, hsl( var(--yellow-hue), var(--yellow-sat), 50% ));
     --btn-color: var(--btn-warning-color, white );
-    --btn-border: var(--btn-warning-border, 1px solid hsl( var(--yellow-hue), var(--yellow-sat), var(--shade-50) ));
+    --btn-border: var(--btn-warning-border, 1px solid hsl( var(--yellow-hue), var(--yellow-sat), var(--shade-100) ));
     --btn-shadow: var(--btn-warning-shadow, none);
 
     --btn-hover-bg: var(--btn-warning-hover-bg, hsl( var(--yellow-hue), var(--yellow-sat), var(--tint-100) ));
     --btn-hover-color: var(--btn-warning-hover-color, white );
-    --btn-hover-border: var(--btn-warning-hover-border, 1px solid hsl( var(--yellow-hue), var(--yellow-sat), var(--shade-50) ));
+    --btn-hover-border: var(--btn-warning-hover-border, 1px solid hsl( var(--yellow-hue), var(--yellow-sat), var(--shade-100) ));
     --btn-hover-shadow: var(--btn-warning-hover-shadow, none);
 
     --btn-focus-shadow: var(--btn-warning-focus-shadow, var(--shadow-focus-warning));
@@ -391,7 +391,7 @@ $include: map.get($all-config, include);
     --btn-border: var(--btn-primary-border, 1px solid hsl( var(--hue), var(--sat), var(--shade-200) ));
     --btn-shadow: var(--btn-primary-shadow, none);
 
-    --btn-hover-bg: var(--btn-primary-hover-bg, hsl( var(--hue), var(--sat), var(--tint-50) ));
+    --btn-hover-bg: var(--btn-primary-hover-bg, hsl( var(--hue), var(--sat), var(--tint-100) ));
     --btn-hover-color: var(--btn-primary-hover-color, white );
     --btn-hover-border: var(--btn-primary-hover-border, 1px solid hsl( var(--hue), var(--sat), var(--shade-200) ));
     --btn-hover-shadow: var(--btn-primary-hover-shadow, none);

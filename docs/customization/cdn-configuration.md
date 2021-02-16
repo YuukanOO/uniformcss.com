@@ -70,7 +70,7 @@ The following starter style variables are available for overriding.
   --body-font-size: 1rem;
   --body-leading: 1;
   --body-background-color: white;
-  --body-text-color: black;
+  --body-color-color: black;
 
   --heading-leading: 1.25rem;
   --heading-margin: 0.5em;

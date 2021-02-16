@@ -8,19 +8,19 @@ date: 1000-01-01
 
 ## Basic Usage
 
-The `text-brighten` utilities brighten text color.
+The `color-brighten` utilities brighten text color.
 
 | Class Name          | Property                          |
 | ------------------- | --------------------------------- |
-| `text-brighten-100` | `--text-sat: var(--brighten-100)` |
-| `text-brighten-200` | `--text-sat: var(--brighten-200)` |
-| `text-brighten-300` | `--text-sat: var(--brighten-300)` |
-| `text-brighten-400` | `--text-sat: var(--brighten-400)` |
-| `text-brighten-500` | `--text-sat: var(--brighten-500)` |
-| `text-brighten-600` | `--text-sat: var(--brighten-600)` |
-| `text-brighten-700` | `--text-sat: var(--brighten-700)` |
-| `text-brighten-800` | `--text-sat: var(--brighten-800)` |
-| `text-brighten-900` | `--text-sat: var(--brighten-900)` |
+| `color-brighten-100` | `--color-sat: var(--brighten-100)` |
+| `color-brighten-200` | `--color-sat: var(--brighten-200)` |
+| `color-brighten-300` | `--color-sat: var(--brighten-300)` |
+| `color-brighten-400` | `--color-sat: var(--brighten-400)` |
+| `color-brighten-500` | `--color-sat: var(--brighten-500)` |
+| `color-brighten-600` | `--color-sat: var(--brighten-600)` |
+| `color-brighten-700` | `--color-sat: var(--brighten-700)` |
+| `color-brighten-800` | `--color-sat: var(--brighten-800)` |
+| `color-brighten-900` | `--color-sat: var(--brighten-900)` |
 
 {.table}
 

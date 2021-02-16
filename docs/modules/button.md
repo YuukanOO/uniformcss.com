@@ -55,7 +55,7 @@ The following CSS variable hooks are available to customize.
   --btn-font-family: ...;
   --btn-font-size: ...;
   --btn-font-weight: ...;
-  --btn-text-transform: ...;
+  --btn-color-transform: ...;
   --btn-tracking: ...;
   --btn-color: ...;
   --btn-transition: ...;

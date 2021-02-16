@@ -31,24 +31,24 @@ For example, lets say the color `primary-500` has a base hue value set to `225`.
 
 To begin, you can rotate the hue by overriding the `--<color>-hue` variable.
 
-<div class="bg-silver-200 p-20 h-200px radius-md">
+<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-3 leading-6 gap-18">
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-500">
       primary-500
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-600">
       primary-600
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-700">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-700">
       primary-700
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500" style="--primary-hue: 75;">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-500" style="--primary-hue: 75;">
       primary-500
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600" style="--primary-hue: 75;">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-600" style="--primary-hue: 75;">
       primary-600
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-700" style="--primary-hue: 75;">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-700" style="--primary-hue: 75;">
       primary-700
     </div>
   </div>
@@ -67,18 +67,18 @@ To begin, you can rotate the hue by overriding the `--<color>-hue` variable.
 
 If you want more control over a particular shade of a color you can override the hue of a shade instead e.g.`--<color>-<shade>-hue`.
 
-<div class="bg-silver-200 p-20 h-200px radius-md">
+<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-2 leading-6 gap-18">
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-500">
       primary-500
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-600">
       primary-600
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500" style="--primary-500-hue: 20;">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-500" style="--primary-500-hue: 20;">
       primary-500
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600" style="--primary-600-hue: 75;">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-600" style="--primary-600-hue: 75;">
       primary-600
     </div>
   </div>
@@ -95,24 +95,24 @@ If you want more control over a particular shade of a color you can override the
 
 To begin, you can adjust the base saturation of each set by overriding the `--<color>-sat` variable. Note, values must be declared as a percentage.
 
-<div class="bg-silver-200 p-20 h-200px radius-md">
+<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-3 leading-6 gap-18">
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-500">
       primary-500
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-600">
       primary-600
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-700">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-700">
       primary-700
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500" style="--primary-sat: 75%;">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-500" style="--primary-sat: 75%;">
       primary-500
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600" style="--primary-sat: 75%;">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-600" style="--primary-sat: 75%;">
       primary-600
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-700" style="--primary-sat: 75%;">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-700" style="--primary-sat: 75%;">
       primary-700
     </div>
   </div>
@@ -131,18 +131,18 @@ To begin, you can adjust the base saturation of each set by overriding the `--<c
 
 If you wish to control the saturation of a particular shade, you can do so by overriding `--<color>-<shade>-sat`.
 
-<div class="bg-silver-200 p-20 h-200px radius-md">
+<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-2 leading-6 gap-18">
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-500">
       primary-500
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-600">
       primary-600
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-500" style="--primary-500-sat: 20%;">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-500" style="--primary-500-sat: 20%;">
       primary-500
     </div>
-    <div class="radius-sm p-12 text-white font-xs font-bold bg-primary-600" style="--primary-600-sat: 95%;">
+    <div class="radius-sm p-12 color-white font-xs font-bold bg-primary-600" style="--primary-600-sat: 95%;">
       primary-600
     </div>
   </div>
@@ -161,7 +161,7 @@ If you wish to control the saturation of a particular shade, you can do so by ov
 
 All colors in Uniform CSS are defined using HSL. This opens up the opportunity of adjusting saturation and lightness using utility properties. By doing so, color vibrancy and shade can be manipulated in a composable manner.
 
-<div class="bg-silver-200 p-20 h-200px radius-md">
+<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-4 leading-6 gap-18">
     <div class="ratio-square radius-sm bg-red"></div>
     <div class="ratio-square radius-sm bg-red bg-brighten-5"></div>
@@ -183,14 +183,14 @@ The advanced color manipulation feature is only available to `background-color`,
 
 <div class="bg-white border-1 border-silver-300 p-20 h-200px radius-md">
   <div class="grid grid-cols-1 leading-6 gap-18">
-    <div class="flex align-items-center justify-content-center h-48 align-center radius-sm text-blue text-lighten-3">Light blue text</div>
-    <div class="flex align-items-center justify-content-center h-48 align-center radius-sm bg-blue bg-darken-4 text-white">Dark blue background</div>
+    <div class="flex align-items-center justify-content-center h-48 align-center radius-sm color-blue color-lighten-3">Light blue text</div>
+    <div class="flex align-items-center justify-content-center h-48 align-center radius-sm bg-blue bg-darken-4 color-white">Dark blue background</div>
     <div class="flex align-items-center justify-content-center h-48 align-center radius-sm border-4 border-red border-lighten-8 border-brighten-5">Light and bright red border</div>
   </div>
 </div>
 
 ```html
-<div class="text-blue text-lighten-3 ..."></div>
+<div class="color-blue color-lighten-3 ..."></div>
 <div class="bg-blue bg-darken-4 ..."></div>
 <div class="border-red border-lighten-800 border-brighten-5 ..."></div>
 ```
@@ -205,18 +205,18 @@ Each color in Uniform can increase or decrease in saturation using the `brighten
 
 Colors can increase their saturation using the `<shorthand>-brighten` utility.
 
-<div class="bg-silver-200 p-20 h-200px radius-md">
+<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-5 leading-6 gap-18">
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue">base</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-brighten-1">1</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-brighten-2">2</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-brighten-3">3</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-brighten-4">4</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-brighten-5">5</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-brighten-6">6</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-brighten-7">7</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-brighten-8">8</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-brighten-9">9</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue">base</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-brighten-1">1</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-brighten-2">2</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-brighten-3">3</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-brighten-4">4</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-brighten-5">5</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-brighten-6">6</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-brighten-7">7</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-brighten-8">8</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-brighten-9">9</div>
   </div>
 </div>
 
@@ -259,18 +259,18 @@ By default, the `brighten` utility adjusts saturation based on the following val
 
 Colors can decrease their saturation using the `<shorthand>-deepen` utility.
 
-<div class="bg-silver-200 p-20 h-200px radius-md">
+<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-5 leading-6 gap-18">
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue">base</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-deepen-1">1</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-deepen-2">2</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-deepen-3">3</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-deepen-4">4</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-deepen-5">5</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-deepen-6">6</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-deepen-7">7</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-deepen-8">8</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-deepen-9">9</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue">base</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-deepen-1">1</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-deepen-2">2</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-deepen-3">3</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-deepen-4">4</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-deepen-5">5</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-deepen-6">6</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-deepen-7">7</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-deepen-8">8</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-deepen-9">9</div>
   </div>
 </div>
 
@@ -319,18 +319,18 @@ Each color in Uniform can increase or decrease in lightness using the `lighten` 
 
 Colors can increase their lightness using the `<shorthand>-lighten` utility.
 
-<div class="bg-silver-200 p-20 h-200px radius-md">
+<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-5 leading-6 gap-18">
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue">base</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-lighten-1">1</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-lighten-2">2</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-lighten-3">3</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-lighten-4">4</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-lighten-5">5</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-lighten-6">6</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-lighten-7">7</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-lighten-8">8</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-lighten-9">9</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue">base</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-lighten-1">1</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-lighten-2">2</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-lighten-3">3</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-lighten-4">4</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-lighten-5">5</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-lighten-6">6</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-lighten-7">7</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-lighten-8">8</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-lighten-9">9</div>
   </div>
 </div>
 
@@ -373,18 +373,18 @@ By default, the `lighten` utility adjusts lightness based on the following value
 
 Colors can decrease their lightness using the `<shorthand>-darken` utility.
 
-<div class="bg-silver-200 p-20 h-200px radius-md">
+<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-5 leading-6 gap-18">
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue">base</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-darken-1">1</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-darken-2">2</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-darken-3">3</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-darken-4">4</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-darken-5">5</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-darken-6">6</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-darken-7">7</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-darken-8">8</div>
-    <div class="flex align-items-center justify-content-center h-56 text-white font-xs font-bold radius-sm bg-blue bg-darken-9">9</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue">base</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-darken-1">1</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-darken-2">2</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-darken-3">3</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-darken-4">4</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-darken-5">5</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-darken-6">6</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-darken-7">7</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-darken-8">8</div>
+    <div class="flex align-items-center justify-content-center h-56 color-white font-xs font-bold radius-sm bg-blue bg-darken-9">9</div>
   </div>
 </div>
 
@@ -432,10 +432,10 @@ Color properties in Uniform can be applied with varying degrees of opacity using
 
 <div class="border-1 border-silver-300 p-20 h-200px radius-md">
   <div class="grid grid-cols-4 leading-6 gap-18">
-    <div class="ratio-square flex align-items-center justify-content-center text-white font-xs font-bold radius-sm bg-blue bg-opacity-10"></div>
-    <div class="ratio-square flex align-items-center justify-content-center text-white font-xs font-bold radius-sm bg-blue bg-opacity-20"></div>
-    <div class="ratio-square flex align-items-center justify-content-center text-white font-xs font-bold radius-sm bg-blue bg-opacity-30"></div>
-    <div class="ratio-square flex align-items-center justify-content-center text-white font-xs font-bold radius-sm bg-blue bg-opacity-40"></div>
+    <div class="ratio-square flex align-items-center justify-content-center color-white font-xs font-bold radius-sm bg-blue bg-opacity-10"></div>
+    <div class="ratio-square flex align-items-center justify-content-center color-white font-xs font-bold radius-sm bg-blue bg-opacity-20"></div>
+    <div class="ratio-square flex align-items-center justify-content-center color-white font-xs font-bold radius-sm bg-blue bg-opacity-30"></div>
+    <div class="ratio-square flex align-items-center justify-content-center color-white font-xs font-bold radius-sm bg-blue bg-opacity-40"></div>
   </div>
 </div>
 
