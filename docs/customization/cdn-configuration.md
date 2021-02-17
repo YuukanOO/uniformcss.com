@@ -80,7 +80,6 @@ The following starter style variables are available for overriding.
   --paragraph-margin: 1.5rem;
 
   --link-color: RoyalBlue;
-  --link-hover-color: RoyalBlue;
 
   --bold-font-weight: 700;  
 }

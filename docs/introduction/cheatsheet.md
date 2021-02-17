@@ -10,59 +10,59 @@ lastUpdated: 2020-10-20
 Uniform provides 18 default colors. Each color is positioned on the hue spectrum in increments of 20. The following colors can be applied across borders, text, and backgrounds.
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-16 bg-red color-white font-xs font-bold">
-    red <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-red color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">red hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-orange color-white font-xs font-bold">
-    orange <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-orange color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orange hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-yellow color-white font-xs font-bold">
-    yellow <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-yellow color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">yellow hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-lemon color-white font-xs font-bold">
-    lemon <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-lemon color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lemon hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-olive color-white font-xs font-bold">
-    olive <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-olive color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">olive hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-lime color-white font-xs font-bold">
-    lime <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-lime color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lime hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-green color-white font-xs font-bold">
-    green <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-green color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">green hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-mint color-white font-xs font-bold">
-    mint <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-mint color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">mint hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-teal color-white font-xs font-bold">
-    teal <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-teal color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">teal hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-cyan color-white font-xs font-bold">
-    cyan <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-cyan color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cyan hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-sky color-white font-xs font-bold">
-    sky <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-sky color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">sky hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-blue color-white font-xs font-bold">
-    blue <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-blue color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">blue hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-indigo color-white font-xs font-bold">
-    indigo <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-indigo color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">indigo hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-purple color-white font-xs font-bold">
-    purple <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-purple color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">purple hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-orchid color-white font-xs font-bold">
-    orchid <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-orchid color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orchid hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-magenta color-white font-xs font-bold">
-    magenta <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-magenta color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">magenta hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-pink color-white font-xs font-bold">
-    pink <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-pink color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">pink hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-crimson color-white font-xs font-bold">
-    crimson <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-crimson color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">crimson hsl(20, 75%, 50%)</span>
   </div>
 </div>
 
@@ -72,84 +72,95 @@ Uniform provides 18 default colors. Each color is positioned on the hue spectrum
 
 The monotone color set contains blacks, whites, and grays.
 
-<div class="grid grid-cols-2 gap-10 overflow-hidden">
-  <div class="radius-sm p-16 bg-white color-black font-xs font-bold border-1">
-    white <span class="color-black color-opacity-50">• #f052b2</span>
+<div class="grid grid-cols-1 gap-10 overflow-hidden">
+  <div class="radius-sm p-12 bg-white color-black font-xs font-bold border-1">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">white hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-black color-white font-xs font-bold">
-    black <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-black color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">black hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-gray color-white font-xs font-bold">
-    gray <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-cool-gray color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cool-gray hsl(20, 75%, 50%)</span>
   </div>
-  <div class="radius-sm p-16 bg-blue-gray color-white font-xs font-bold">
-    blue-gray <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-gray color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">gray hsl(20, 75%, 50%)</span>
+  </div>
+  <div class="radius-sm p-12 bg-warm-gray color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">warm-gray hsl(20, 75%, 50%)</span>
   </div>
 </div>
 
 ---
 
-## Accent Colors
+## Shades
 
-The accent colors are an alternate set of colors that is intended to provide you with an extra color bandwidth. Accent colors are colors that are used for emphasis in a color scheme.
+Shades make your colors darker. There are `9` levels of tints and shades available. Similar to Google Material's Design System, Uniform follows the `100 ... 900` syntax for defining shades.
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-16 bg-accent-red color-white font-xs font-bold">
-    accent-red <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-blue bg-shade-100">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-100</span>
   </div>
-  <div class="radius-sm p-16 bg-accent-orange color-white font-xs font-bold">
-    accent-orange <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-blue bg-shade-200">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-200</span>
   </div>
-  <div class="radius-sm p-16 bg-accent-yellow color-white font-xs font-bold">
-    accent-yellow <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-blue bg-shade-300">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-300</span>
   </div>
-  <div class="radius-sm p-16 bg-accent-lemon color-white font-xs font-bold">
-    accent-lemon <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-blue bg-shade-400">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-400</span>
   </div>
-  <div class="radius-sm p-16 bg-accent-olive color-white font-xs font-bold">
-    accent-olive <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-blue bg-shade-500">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-500</span>
   </div>
-  <div class="radius-sm p-16 bg-accent-lime color-white font-xs font-bold">
-    accent-lime <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-blue bg-shade-600">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-600</span>
   </div>
-  <div class="radius-sm p-16 bg-accent-green color-white font-xs font-bold">
-    accent-green <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-blue bg-shade-700">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-700</span>
   </div>
-  <div class="radius-sm p-16 bg-accent-mint color-white font-xs font-bold">
-    accent-mint <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-blue bg-shade-800">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-800</span>
   </div>
-  <div class="radius-sm p-16 bg-accent-teal color-white font-xs font-bold">
-    accent-teal <span class="color-white color-opacity-50">• #f052b2</span>
-  </div>
-  <div class="radius-sm p-16 bg-accent-cyan color-white font-xs font-bold">
-    accent-cyan <span class="color-white color-opacity-50">• #f052b2</span>
-  </div>
-  <div class="radius-sm p-16 bg-accent-sky color-white font-xs font-bold">
-    accent-sky <span class="color-white color-opacity-50">• #f052b2</span>
-  </div>
-  <div class="radius-sm p-16 bg-accent-blue color-white font-xs font-bold">
-    accent-blue <span class="color-white color-opacity-50">• #f052b2</span>
-  </div>
-  <div class="radius-sm p-16 bg-accent-indigo color-white font-xs font-bold">
-    accent-indigo <span class="color-white color-opacity-50">• #f052b2</span>
-  </div>
-  <div class="radius-sm p-16 bg-accent-purple color-white font-xs font-bold">
-    accent-purple <span class="color-white color-opacity-50">• #f052b2</span>
-  </div>
-  <div class="radius-sm p-16 bg-accent-orchid color-white font-xs font-bold">
-    accent-orchid <span class="color-white color-opacity-50">• #f052b2</span>
-  </div>
-  <div class="radius-sm p-16 bg-accent-magenta color-white font-xs font-bold">
-    accent-magenta <span class="color-white color-opacity-50">• #f052b2</span>
-  </div>
-  <div class="radius-sm p-16 bg-accent-pink color-white font-xs font-bold">
-    accent-pink <span class="color-white color-opacity-50">• #f052b2</span>
-  </div>
-  <div class="radius-sm p-16 bg-accent-crimson color-white font-xs font-bold">
-    accent-crimson <span class="color-white color-opacity-50">• #f052b2</span>
+  <div class="radius-sm p-12 bg-blue bg-shade-900">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-900</span>
   </div>
 </div>
 
+---
+
+## Tints
+
+Tints make your base color lighter. There are `9` levels of tints available. Similar to Google Material's Design System, Uniform follows the `100 ... 900` syntax for defining shades.
+
+<div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
+  <div class="radius-sm p-12 bg-blue bg-tint-100">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-100</span>
+  </div>
+  <div class="radius-sm p-12 bg-blue bg-tint-200">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-200</span>
+  </div>
+  <div class="radius-sm p-12 bg-blue bg-tint-300">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-300</span>
+  </div>
+  <div class="radius-sm p-12 bg-blue bg-tint-400">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-400</span>
+  </div>
+  <div class="radius-sm p-12 bg-blue bg-tint-500">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-500</span>
+  </div>
+  <div class="radius-sm p-12 bg-blue bg-tint-600">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-600</span>
+  </div>
+  <div class="radius-sm p-12 bg-blue bg-tint-700">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-700</span>
+  </div>
+  <div class="radius-sm p-12 bg-blue bg-tint-800">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-800</span>
+  </div>
+  <div class="radius-sm p-12 bg-blue bg-tint-900">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-900</span>
+  </div>
+</div>
 
 ---
 

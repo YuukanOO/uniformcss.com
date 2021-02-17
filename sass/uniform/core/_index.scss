@@ -101,7 +101,6 @@ $default-config: (
   headless: false,
   placeholders: false,
   dark-mode: false,
-  god-mode: false,
 
   exclude: (),
 
@@ -175,52 +174,34 @@ $default-config: (
   ),
 
   colors: (
-    red: ( hue: 0, sat: var(--color-sat, 60%) ),
-    orange: ( hue: 20, sat: var(--color-sat, 60%) ),
-    yellow: ( hue: 40, sat: var(--color-sat, 60%) ),
-    lemon: ( hue: 60, sat: var(--color-sat, 60%) ),
-    olive: ( hue: 80, sat: var(--color-sat, 60%) ),
-    lime: ( hue: 100, sat: var(--color-sat, 60%) ),
-    green: ( hue: 120, sat: var(--color-sat, 60%) ),
-    mint: ( hue: 140, sat: var(--color-sat, 60%) ),
-    teal: ( hue: 160, sat: var(--color-sat, 60%) ),
-    cyan: ( hue: 180, sat: var(--color-sat, 60%) ),
-    sky: ( hue: 200, sat: var(--color-sat, 60%) ),
-    blue: ( hue: 220, sat: var(--color-sat, 60%) ),
-    indigo: ( hue: 240, sat: var(--color-sat, 60%) ),
-    purple: ( hue: 260, sat: var(--color-sat, 60%) ),
-    orchid: ( hue: 280, sat: var(--color-sat, 60%) ),
-    magenta: ( hue: 300, sat: var(--color-sat, 60%) ),
-    pink: ( hue: 320, sat: var(--color-sat, 60%) ),
-    crimson: ( hue: 340, sat: var(--color-sat, 60%) ),
-  ),
-
-  accent-colors: (
-    accent-red: ( hue: 0, sat: var(--accent-sat, 60%) ),
-    accent-orange: ( hue: 10, sat: var(--accent-sat, 60%) ),
-    accent-yellow: ( hue: 30, sat: var(--accent-sat, 60%) ),
-    accent-lemon: ( hue: 70, sat: var(--accent-sat, 60%) ),
-    accent-olive: ( hue: 90, sat: var(--accent-sat, 60%) ),
-    accent-lime: ( hue: 110, sat: var(--accent-sat, 60%) ),
-    accent-green: ( hue: 130, sat: var(--accent-sat, 60%) ),
-    accent-mint: ( hue: 150, sat: var(--accent-sat, 60%) ),
-    accent-teal: ( hue: 170, sat: var(--accent-sat, 60%) ),
-    accent-cyan: ( hue: 190, sat: var(--accent-sat, 60%) ),
-    accent-sky: ( hue: 210, sat: var(--accent-sat, 60%) ),
-    accent-blue: ( hue: 230, sat: var(--accent-sat, 60%) ),
-    accent-indigo: ( hue: 250, sat: var(--accent-sat, 60%) ),
-    accent-purple: ( hue: 270, sat: var(--accent-sat, 60%) ),
-    accent-orchid: ( hue: 290, sat: var(--accent-sat, 60%) ),
-    accent-magenta: ( hue: 310, sat: var(--accent-sat, 60%) ),
-    accent-pink: ( hue: 330, sat: var(--accent-sat, 60%) ),
-    accent-crimson: ( hue: 350, sat: var(--accent-sat, 60%) ),
+    red: ( hue: 0, sat: var(--color-sat, 75%) ),
+    orange: ( hue: 20, sat: var(--color-sat, 75%) ),
+    yellow: ( hue: 40, sat: var(--color-sat, 75%) ),
+    lemon: ( hue: 60, sat: var(--color-sat, 75%) ),
+    olive: ( hue: 80, sat: var(--color-sat, 75%) ),
+    lime: ( hue: 100, sat: var(--color-sat, 75%) ),
+    green: ( hue: 120, sat: var(--color-sat, 75%) ),
+    mint: ( hue: 140, sat: var(--color-sat, 75%) ),
+    teal: ( hue: 160, sat: var(--color-sat, 75%) ),
+    cyan: ( hue: 180, sat: var(--color-sat, 75%) ),
+    sky: ( hue: 200, sat: var(--color-sat, 75%) ),
+    blue: ( hue: 220, sat: var(--color-sat, 75%) ),
+    indigo: ( hue: 240, sat: var(--color-sat, 75%) ),
+    purple: ( hue: 260, sat: var(--color-sat, 75%) ),
+    orchid: ( hue: 280, sat: var(--color-sat, 75%) ),
+    magenta: ( hue: 300, sat: var(--color-sat, 75%) ),
+    pink: ( hue: 320, sat: var(--color-sat, 75%) ),
+    crimson: ( hue: 340, sat: var(--color-sat, 75%) ),
   ),
 
   grayscale-colors: (
     white: ( hue: 0, sat: 0% ),
     black: ( hue: 0, sat: 0% ),
-    blue-gray: ( hue: 220, sat: 20% ),
-    gray: ( hue: 0, sat: 0% ),
+
+    cool-gray: ( hue: 220, sat: 10% ),
+    gray: ( hue: 220, sat: 5% ),
+    warm-gray: ( hue: 24, sat: 10% ),
+    
     transparent: transparent,
   ),
 
@@ -445,13 +426,11 @@ $default-config: (
   ),
 
   radiuses: (
-    2xs: rem(2),
     xs: rem(4),
     sm: rem(6),
     md: rem(8),
     lg: rem(10),
     xl: rem(12),
-    2xl: rem(14),
     round: 9999px,
   ),
 
@@ -583,7 +562,6 @@ $shade-levels: map.get($all-config, shade-levels);
 $opacity-levels: map.get($all-config, opacity-levels);
 
 $colors: map.get($all-config, colors);
-$accent-colors: map.get($all-config, accent-colors);
 $grayscale-colors: map.get($all-config, grayscale-colors);
 $gradients: map.get($all-config, gradients);
 
@@ -634,9 +612,6 @@ $gradients: map.get($all-config, gradients);
 $merged-colors: ();
 @if ($colors != null) {
   $merged-colors: map.deep-merge($merged-colors, $colors);
-}
-@if ($accent-colors != null) {
-  $merged-colors: map.deep-merge($merged-colors, $accent-colors);
 }
 @if ($grayscale-colors != null) {
   $merged-colors: map.deep-merge($merged-colors, $grayscale-colors);

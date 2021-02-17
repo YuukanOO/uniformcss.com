@@ -169,7 +169,7 @@ Every aspect of Uniform CSS is optional, you can quickly exclude all properties 
 Uniform is smart about which pseudo variants are activated for each utility property. Pseudo variants are also comma seperated to ensure no uncessary duplicate properties are included. This helps to drastically improve file-size and make the CDN version a perfect way to get quickly started.
 
 <div class="grid grid-cols-1 sm.grid-cols-3 gap-20">
-  <div class="radius-md px-20 py-28 bg-blue-gray bg-opacity-10">
+  <div class="radius-md px-20 py-28 bg-cool-gray bg-opacity-10">
     <div class="flex mb-20">
       <div class="font-5xl font-light bg-gradient bg-text color-transparent" style="--gradient: to right, #8F7CFF, #fd7cff;">2min</div>
     </div>
@@ -177,7 +177,7 @@ Uniform is smart about which pseudo variants are activated for each utility prop
     </div>
     <p class="font-sm color-black">project <br>setup time <br>required only</p>
   </div>
-  <div class="radius-md px-20 py-28 bg-blue-gray bg-opacity-10">
+  <div class="radius-md px-20 py-28 bg-cool-gray bg-opacity-10">
     <div class="flex mb-20">
       <div class="font-5xl font-light bg-gradient bg-text color-transparent" style="--gradient: to right, #72cdff, #46f381;">61kb</div>
     </div>
@@ -185,7 +185,7 @@ Uniform is smart about which pseudo variants are activated for each utility prop
     </div>
     <p class="font-sm color-black">gzipped for <br>lightning fast <br>delivery</p>
   </div>
-  <div class="radius-md px-20 py-28 bg-blue-gray bg-opacity-10">
+  <div class="radius-md px-20 py-28 bg-cool-gray bg-opacity-10">
     <div class="flex mb-20">
       <div class="font-5xl font-light bg-gradient bg-text color-transparent" style="--gradient: to right, #ff7b7b, #d8bb2f;">136</div>
     </div>
