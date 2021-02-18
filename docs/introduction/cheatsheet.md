@@ -7,86 +7,80 @@ lastUpdated: 2020-10-20
 
 ## Colors
 
-Uniform provides 18 default colors. Each color is positioned on the hue spectrum in increments of 20. The following colors can be applied across borders, text, and backgrounds.
+Uniform provides a total of `24` default colors. Color hues are positioned spaced across the spectrum in increments of 20. The following colors can be applied across borders, text, and backgrounds.
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
   <div class="radius-sm p-12 bg-red color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">red hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">red • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-orange color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orange hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orange • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-yellow color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">yellow hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">yellow • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-lemon color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lemon hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lemon • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-olive color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">olive hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">olive • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-lime color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lime hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lime • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-green color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">green hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">green • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-mint color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">mint hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">mint • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-teal color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">teal hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">teal • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-cyan color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cyan hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cyan • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-sky color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">sky hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">sky • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-blue color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">blue hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">blue • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-indigo color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">indigo hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">indigo • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-purple color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">purple hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">purple • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-orchid color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orchid hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orchid • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-magenta color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">magenta hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">magenta • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-pink color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">pink hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">pink • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-crimson color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">crimson hsl(20, 75%, 50%)</span>
-  </div>
-</div>
-
----
-
-## Monotone Colors
-
-The monotone color set contains blacks, whites, and grays.
-
-<div class="grid grid-cols-1 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 bg-white color-black font-xs font-bold border-1">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">white hsl(20, 75%, 50%)</span>
-  </div>
-  <div class="radius-sm p-12 bg-black color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">black hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">crimson • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-cool-gray color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cool-gray hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cool-gray • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-gray color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">gray hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">gray • #f052b2</span>
   </div>
   <div class="radius-sm p-12 bg-warm-gray color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">warm-gray hsl(20, 75%, 50%)</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">warm-gray • #f052b2</span>
+  </div>
+  <div class="radius-sm p-12 bg-black color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">black • #f052b2</span>
+  </div>
+  <div class="radius-sm p-12 bg-white color-black font-xs font-bold border-1">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">white • #f052b2</span>
+  </div>
+  <div class="radius-sm p-12 bg-transparent color-white font-xs font-bold border-1">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">transparent • #f052b2</span>
   </div>
 </div>
 
@@ -166,7 +160,7 @@ Tints make your base color lighter. There are `9` levels of tints available. Sim
 
 ## Gradients
 
-Basic white or black fade out gradients are available in vertical and horizontal direction.
+White and black gradients are supported by default.
 
 <div class="grid grid-cols-2 leading-6 gap-18">
   <div class="bg-gray radius-sm overflow-hidden">
@@ -215,113 +209,134 @@ Basic white or black fade out gradients are available in vertical and horizontal
 
 ## Font Sizes
 
-By default, there are a total of 15 font sizes to choose from.
+By default, there are `18` font sizes available to choose from.
 
 <div class="mb-40 last.mb-0">
   <div class="radius-md overflow-hidden bg-black color-white">
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-2xs">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-500 font-2xs">
       2xs text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">10px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">0.625rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-xs">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-500 font-xs">
       xs text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">12px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">0.75rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-sm">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-500 font-sm">
       sm text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">14px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">0.875rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-md">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-500 font-md">
       md text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">16px</div>
-        <div class="w-56 align-right opacity-60 ml-18 select-all">1rem</div>
+        <div class="w-56 align-right opacity-60 ml-18 select-all">8.533rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-lg">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-500 font-lg">
       lg text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">18px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">1.125rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-500 font-xl">
       xl text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">20px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">1.25rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-2xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-500 font-2xl">
       2xl text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">24px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">1.5rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-3xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-500 font-3xl">
       3xl text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">28px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">1.75rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-4xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-500 font-4xl">
       4xl text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">32px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">2rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-5xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-500 font-5xl">
       5xl text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">36px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">2.25rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-6xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 last.mb-0 font-500 font-6xl">
       6xl text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">40px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">2.5rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-7xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 last.mb-0 font-500 font-7xl">
       7xl text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">48px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">3rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-8xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 last.mb-0 font-500 font-8xl">
       8xl text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">56px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">3.5rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-9xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 last.mb-0 font-500 font-9xl">
       9xl text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">64px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">4rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 last.mb-0 font-500 font-10xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 last.mb-0 font-500 font-10xl">
       10xl text
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all">72px</div>
         <div class="w-56 align-right opacity-60 ml-18 select-all">4.5rem</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 last.mb-0 font-500 font-11xl">
+      11xl text
+      <div class="flex align-items-center font-xs">
+        <div class="w-48 align-right select-all">88px</div>
+        <div class="w-56 align-right opacity-60 ml-18 select-all">5.5rem</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 last.mb-0 font-500 font-12xl">
+      12xl text
+      <div class="flex align-items-center font-xs">
+        <div class="w-48 align-right select-all">104px</div>
+        <div class="w-56 align-right opacity-60 ml-18 select-all">6.5rem</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 last.mb-0 font-500 font-13xl">
+      13xl text
+      <div class="flex align-items-center font-xs">
+        <div class="w-48 align-right select-all">120px</div>
+        <div class="w-56 align-right opacity-60 ml-18 select-all">7.5rem</div>
       </div>
     </div>
   </div>
@@ -331,59 +346,59 @@ By default, there are a total of 15 font sizes to choose from.
 
 ## Font Weights
 
-All possible font weights are supported. Font weights can support both numerical and semantic class naming.
+The following font weights are available. All numerical font weights such as `100 ... 900` are also supported by default.
 
 <div class="mb-40 last.mb-0">
   <div class="radius-md overflow-hidden bg-black color-white">
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-100 font-2xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-100 font-2xl">
       Ultralight
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all font-500">100</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-200 font-2xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-200 font-2xl">
       Extralight
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all font-500">200</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-300 font-2xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-300 font-2xl">
       Light
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all font-500">300</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-400 font-2xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-400 font-2xl">
       Regular
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all font-500">400</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-500 font-2xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-500 font-2xl">
       Medium
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all font-500">500</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-600 font-2xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-600 font-2xl">
       semibold
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all font-500">600</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-bold font-2xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-bold font-2xl">
       Bold
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all font-500">700</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-800 font-2xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-800 font-2xl">
       Extrabold
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all font-500">800</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray-900 hover.bg-gray-900 transition-100 last.mb-0 font-900 font-2xl">
+    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-shade-700 hover.bg-gray hover.bg-shade-800 transition-100 last.mb-0 font-900 font-2xl">
       Ultrabold
       <div class="flex align-items-center font-xs">
         <div class="w-48 align-right select-all font-500">900</div>
@@ -455,231 +470,327 @@ All possible font weights are supported. Font weights can support both numerical
 
 ## Sizing Chart
 
-There are a total of 40 pixel based sizes available for sizing and spacing properties.
+Use the following chart as a reference for sizes.
 
 <div class="grid grid-cols-1 gap-24">
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 1<br>
-      <span class="color-gray-100">4px • 0.25rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 1
+      <span class="opacity-40">1px • 0.25rem</span>
     </div>
-    <div class="h-1 bg-gray-200"></div>
+    <div class="h-1 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 2<br>
-      <span class="color-gray-100">8px • 0.5rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 2
+      <span class="opacity-40">2px • 0.5rem</span>
     </div>
-    <div class="h-2 bg-gray-200"></div>
+    <div class="h-2 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 3<br>
-      <span class="color-gray-100">8px • 0.5rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 3
+      <span class="opacity-40">3px • 0.5rem</span>
     </div>
-    <div class="h-3 bg-gray-200"></div>
+    <div class="h-3 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 4<br>
-      <span class="color-gray-100">16px • 1rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 4
+      <span class="opacity-40">4px • 1rem</span>
     </div>
-    <div class="h-4 bg-gray-200"></div>
+    <div class="h-4 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 5<br>
-      <span class="color-gray-100">20px • 1.25rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 5
+      <span class="opacity-40">5px • 1.25rem</span>
     </div>
-    <div class="h-5 bg-gray-200"></div>
+    <div class="h-5 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 6<br>
-      <span class="color-gray-100">24px • 1.5rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 6
+      <span class="opacity-40">6px • 1.5rem</span>
     </div>
-    <div class="h-6 bg-gray-200"></div>
+    <div class="h-6 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 7<br>
-      <span class="color-gray-100">28px • 2rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 7
+      <span class="opacity-40">7px • 2rem</span>
     </div>
-    <div class="h-7 bg-gray-200"></div>
+    <div class="h-7 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 8<br>
-      <span class="color-gray-100">32px • 2rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 8
+      <span class="opacity-40">8px • 2rem</span>
     </div>
-    <div class="h-8 bg-gray-200"></div>
+    <div class="h-8 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 9<br>
-      <span class="color-gray-100">36px • 2.25rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 9
+      <span class="opacity-40">9px • 2.25rem</span>
     </div>
-    <div class="h-9 bg-gray-200"></div>
+    <div class="h-9 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 10<br>
-      <span class="color-gray-100">40px • 2.5rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 10
+      <span class="opacity-40">10px • 2.5rem</span>
     </div>
-    <div class="h-10 bg-gray-200"></div>
+    <div class="h-10 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 11<br>
-      <span class="color-gray-100">44px • 2.75rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 12
+      <span class="opacity-40">12px • 3rem</span>
     </div>
-    <div class="h-11 bg-gray-200"></div>
+    <div class="h-12 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 12<br>
-      <span class="color-gray-100">48px • 3rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 14
+      <span class="opacity-40">14px • 3.5rem</span>
     </div>
-    <div class="h-40 bg-gray-200"></div>
+    <div class="h-14 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 13<br>
-      <span class="color-gray-100">56px • 3.5rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 16
+      <span class="opacity-40">16px • 5rem</span>
     </div>
-    <div class="h-13 bg-gray-200"></div>
+    <div class="h-16 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 14<br>
-      <span class="color-gray-100">64px • 4rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 18
+      <span class="opacity-40">18px • 6rem</span>
     </div>
-    <div class="h-14 bg-gray-200"></div>
+    <div class="h-18 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 15<br>
-      <span class="color-gray-100">72px • 4.5rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 20
+      <span class="opacity-40">20px • 10rem</span>
     </div>
-    <div class="h-15 bg-gray-200"></div>
+    <div class="h-20 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 16<br>
-      <span class="color-gray-100">80px • 5rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 24
+      <span class="opacity-40">24px • 12rem</span>
     </div>
-    <div class="h-16 bg-gray-200"></div>
+    <div class="h-24 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 17<br>
-      <span class="color-gray-100">88px • 5.5rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 28
+      <span class="opacity-40">28px • 16rem</span>
     </div>
-    <div class="h-17 bg-gray-200"></div>
+    <div class="h-28 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 18<br>
-      <span class="color-gray-100">96px • 6rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 32
+      <span class="opacity-40">32px • 20rem</span>
     </div>
-    <div class="h-16 bg-gray-200"></div>
+    <div class="h-32 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 19<br>
-      <span class="color-gray-100">128px • 8rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 36
+      <span class="opacity-40">36px • 24rem</span>
     </div>
-    <div class="h-19 bg-gray-200"></div>
+    <div class="h-36 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 20<br>
-      <span class="color-gray-100">160px • 10rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 40
+      <span class="opacity-40">40px • 32rem</span>
     </div>
-    <div class="h-20 bg-gray-200"></div>
+    <div class="h-40 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 21<br>
-      <span class="color-gray-100">192px • 12rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 48
+      <span class="opacity-40">48px • 40rem</span>
     </div>
-    <div class="h-21 bg-gray-200"></div>
+    <div class="h-48 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 22<br>
-      <span class="color-gray-100">256px • 16rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 56
+      <span class="opacity-40">56px • 48rem</span>
     </div>
-    <div class="h-22 bg-gray-200"></div>
+    <div class="h-56 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 23<br>
-      <span class="color-gray-100">320px • 20rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 64
+      <span class="opacity-40">64px • 56rem</span>
     </div>
-    <div class="h-23 bg-gray-200"></div>
+    <div class="h-64 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 24<br>
-      <span class="color-gray-100">384px • 24rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 72
+      <span class="opacity-40">72px • 56rem</span>
     </div>
-    <div class="h-23 bg-gray-200"></div>
+    <div class="h-72 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 25<br>
-      <span class="color-gray-100">512px • 32rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 80
+      <span class="opacity-40">80px • 56rem</span>
     </div>
-    <div class="h-23 bg-gray-200"></div>
+    <div class="h-80 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 26<br>
-      <span class="color-gray-100">640px • 40rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 96
+      <span class="opacity-40">96px • 40rem</span>
     </div>
-    <div class="h-23 bg-gray-200"></div>
+    <div class="h-96 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 27<br>
-      <span class="color-gray-100">768px • 48rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 112
+      <span class="opacity-40">112px • 40rem</span>
     </div>
-    <div class="h-23 bg-gray-200"></div>
+    <div class="h-112 bg-gray"></div>
   </div>
 
   <div>
-    <div class="leading-8 font-xs font-bold uppercase tracking-2 mb-2">
-      Size 28<br>
-      <span class="color-gray-100">896px • 56rem</span>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 128
+      <span class="opacity-40">128px • 40rem</span>
     </div>
-    <div class="h-23 bg-gray-200"></div>
+    <div class="h-128 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 144
+      <span class="opacity-40">144px • 40rem</span>
+    </div>
+    <div class="h-144 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 160
+      <span class="opacity-40">160px • 40rem</span>
+    </div>
+    <div class="h-160 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 192
+      <span class="opacity-40">192px • 40rem</span>
+    </div>
+    <div class="h-192 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 224
+      <span class="opacity-40">224px • 40rem</span>
+    </div>
+    <div class="h-224 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 256
+      <span class="opacity-40">256px • 40rem</span>
+    </div>
+    <div class="h-256 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 288
+      <span class="opacity-40">288px • 40rem</span>
+    </div>
+    <div class="h-288 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 320
+      <span class="opacity-40">320px • 40rem</span>
+    </div>
+    <div class="h-320 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 384
+      <span class="opacity-40">384px • 40rem</span>
+    </div>
+    <div class="h-384 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 448
+      <span class="opacity-40">448px • 40rem</span>
+    </div>
+    <div class="h-448 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 512
+      <span class="opacity-40">512px • 40rem</span>
+    </div>
+    <div class="h-512 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 576
+      <span class="opacity-40">576px • 40rem</span>
+    </div>
+    <div class="h-576 bg-gray"></div>
+  </div>
+
+  <div>
+    <div class="flex align-items-center justify-content-between leading-9 font-xs font-bold mb-4">
+      Size 640
+      <span class="opacity-40">640px • 40rem</span>
+    </div>
+    <div class="h-640 bg-gray"></div>
   </div>
 
 </div>

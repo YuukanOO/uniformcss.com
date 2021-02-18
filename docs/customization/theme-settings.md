@@ -46,10 +46,6 @@ Uniform CSS comes pre-set with default theme settings which are applied across i
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    primary-colors: (...),
-    secondary-colors: (...),
-    temperature-colors: (...),
-    system-colors: (...),
     colors: (...),
     ...
   )
@@ -64,11 +60,10 @@ The following theme setting definitions apply.
 
 | Setting | Description |
 | - | - |
-| `primary-colors` | Specifies the base primary colors |
-| `secondary-colors` | Specifies the base secondary colors |
-| `temperature-colors` | Specifies the base temperature colors |
-| `system-colors` | Specifies the base system colors |
 | `colors` | Specifies the base colors |
+| `tint-levels` | Specifies the tint levels |
+| `shade-levels` | Specifies the shade levels |
+| `opacity-levels` | Specifies the opacity-levels |
 | `gradients` | Specifies the base gradients |
 | `breakpoints` | Specifies the base breakpoints |
 | `positive-sizes` | Specifies the positive base sizes |
@@ -95,7 +90,7 @@ To override base theme settings, pass key value pairs to each setting in your co
 // default values
 @use "uniform" as * with (
   $config: (
-    system-colors: (
+    colors: (
       red: #B20000,
       ...
     ),
@@ -127,9 +122,8 @@ Theme settings can be disabled by passing the value `null` to each setting.
 // default values
 @use "uniform" as * with (
   $config: (
-    secondary-colors: null,
-    system-colors: null,
-    leadings: null
+    colors: null,
+    leadings: null,
     ...
   )
 );

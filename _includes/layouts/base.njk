@@ -99,16 +99,14 @@
   </style>
 </head>
 <body data-barba="wrapper">
-  {{ content | safe }}
+{{ content | safe }}
 
-  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  
-
+{# <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> #}
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>
 
-barba.init({
+{# barba.init({
   transitions: [{
     name: 'default-transition',
     leave() {
@@ -119,9 +117,11 @@ barba.init({
       window.scrollTo(0, 64);   
     }
   }]
-})
+}) #}
 
 $(document).ready(function () {
+
+  // home color interactions
   $('.js-home-dark-switcher').change(function(){
     $('body').toggleClass('is-dark');
   });
@@ -137,12 +137,12 @@ $(document).ready(function () {
   });
  
 
-  // Change pages on mobile
+  // change pages on mobile select
   $('.js-select-url').on('change', function () {
     console.log("changed");
     let url = $(this).val(); // get selected value
     if (url) { // require a URL
-      window.location = '/get-started/' + url; // redirect
+      window.location = '/docs/' + url; // redirect
     }
     return false;
   });
@@ -154,16 +154,6 @@ $(document).ready(function () {
       window.location = '/glossary/#' + url; // redirect
     }
     return false;
-  });
-
-  $('.js-btn-reveal-colors').click(function() {
-    $(this).parent().hide();
-    $('.js-colors').fadeIn();
-  });
-
-  $('.js-btn-reveal-sizes').click(function() {
-    $(this).parent().hide();
-    $('.js-sizes').fadeIn();
   });
 
 
@@ -199,7 +189,7 @@ $(document).ready(function () {
     drags(actual.find('.cd-handle'), actual.find('.cd-resize-img'), actual, actual.find('.cd-image-label[data-type="original"]'), actual.find('.cd-image-label[data-type="modified"]'));
   });
 
-  // upadate images label visibility
+  // update images label visibility
   $(window).on('resize', function ()
   {
     if (!resizing)

@@ -134,7 +134,7 @@ You can build your own components and access your theme variables directly in Sa
 
 To help save you time, Uniform CSS comes with **optional** pre-built components for common UI elements such as buttons and form elements. These can all be enabled, disabled, and customized down to the last pixel.
 
-<section class="flex align-items-center justify-content-center bg-silver-300 p-20 py-48 radius-md">
+<section class="flex align-items-center justify-content-center bg-gray bg-tint-900 p-20 py-48 radius-md">
   <button class="btn btn-primary mr-4">Button</button>
   <button class="btn btn-secondary mr-4">Button</button>
   <button class="btn btn-tertiary">Button</button>

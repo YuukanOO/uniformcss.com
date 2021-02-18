@@ -34,7 +34,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  /* Code blocks */
  pre[class*="language-"] {
-	 padding: size(16, 20);
+	 padding: var(--size-16) var(--size-20);
 	//  margin: .5em 0;
 	 overflow: auto;
  }

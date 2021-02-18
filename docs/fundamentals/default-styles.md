@@ -119,10 +119,10 @@ html {
 
 body {
   font-size: var(--body-font-size, 1rem);
-  font-weight: var(--body-font-weight, var(--font-regular));
+  font-weight: var(--body-font-weight, 400);
   line-height: var(--body-leading, 1);
   background-color: var(--body-background-color, white);
-  color: var(--body-color-color, black);
+  color: var(--body-text-color, black);
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -136,14 +136,14 @@ h1,h2,h3,h4,h5,h6 {
 
 p {
   line-height: var(--paragraph-leading, var(--leading-normal));
-  margin-bottom: var(--paragraph-margin, 1.5rem);
+  margin-bottom: var(--paragraph-margin, 1.5em);
   &:last-child {
     margin-bottom: 0;
   }
 }
 
 a {
-  color-decoration: none;
+  text-decoration: none;
   cursor: pointer;
   color: var(--link-color, RoyalBlue);
 }
@@ -186,7 +186,7 @@ Starter styles include customer properties with fallback values that act as a ho
   --body-font-weight: ...;
   --body-leading: ...;
   --body-background-color: ...;
-  --body-color-color: ...;
+  --body-text-color: ...;
 
   --heading-leading: ...;
   --heading-margin: ...;

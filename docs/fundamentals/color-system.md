@@ -14,7 +14,7 @@ Customizing and manipulating colors to match your brand or design is an importan
 
 ## Colors
 
-Uniform provides 18 default colors. Each color is positioned on the hue spectrum in increments of 20. The following colors can be applied across borders, text, and backgrounds.
+Uniform provides a total of `24` default colors. Color hues are positioned spaced across the spectrum in increments of 20. The following colors can be applied across borders, text, and backgrounds.
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
   <div class="radius-sm p-12 bg-red color-white font-xs font-bold">
@@ -71,21 +71,6 @@ Uniform provides 18 default colors. Each color is positioned on the hue spectrum
   <div class="radius-sm p-12 bg-crimson color-white font-xs font-bold">
     <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">crimson • #f052b2</span>
   </div>
-</div>
-
----
-
-## Monotone Colors
-
-The monotone color set contains blacks, whites, and grays.
-
-<div class="grid grid-cols-1 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 bg-white color-black font-xs font-bold border-1">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">white • #f052b2</span>
-  </div>
-  <div class="radius-sm p-12 bg-black color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">black • #f052b2</span>
-  </div>
   <div class="radius-sm p-12 bg-cool-gray color-white font-xs font-bold">
     <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cool-gray • #f052b2</span>
   </div>
@@ -94,6 +79,15 @@ The monotone color set contains blacks, whites, and grays.
   </div>
   <div class="radius-sm p-12 bg-warm-gray color-white font-xs font-bold">
     <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">warm-gray • #f052b2</span>
+  </div>
+  <div class="radius-sm p-12 bg-black color-white font-xs font-bold">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">black • #f052b2</span>
+  </div>
+  <div class="radius-sm p-12 bg-white color-black font-xs font-bold border-1">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">white • #f052b2</span>
+  </div>
+  <div class="radius-sm p-12 bg-transparent color-white font-xs font-bold border-1">
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">transparent • #f052b2</span>
   </div>
 </div>
 

@@ -64,8 +64,7 @@ To enable each advanced setting, simply include the setting in your configuratio
   $config: (
     headless: false,
     placeholders: false,
-    dark-mode: false,
-    god-mode: false,
+    dark-mode: false
   )
 );
 ```
@@ -115,18 +114,6 @@ When `dark-mode` is enabled, every property will also generate a dark pseudo var
 @use "uniform" as * with (
   $config: (
     dark-mode: true, // false by default
-  )
-);
-```
-
-### God-mode
-
-God mode is a dangerous but powerful feature, when `god-mode` enabled, **every single pseudo across all breakpoints will be generated for every single property**. This will indeed create a massively large CSS file size but it can be a useful way to debug, test, and exerpiement.
-
-```scss
-@use "uniform" as * with (
-  $config: (
-    god-mode: true, // false by default
   )
 );
 ```

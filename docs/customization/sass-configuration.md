@@ -75,9 +75,9 @@ Theme settings specifies universally shared theme related settings such as break
 );
 ```
 
-### Utilities Settings
+### Utility Settings
 
-Utilities settings specifies the individual setting of each property.
+Utility settings specifies the individual setting of each property.
 
 ```scss
 @use "uniform" as * with (
