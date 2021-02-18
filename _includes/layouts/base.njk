@@ -35,11 +35,12 @@
   <link rel="manifest" href="{{ '/manifest.json' | url }}" />
 
   <!-- Styles -->
-  {% if site.environment === 'production' %}
+  {# {% if site.environment === 'production' %}
     <!-- INLINE CSS-->
   {% else %}
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
-  {% endif %}
+  {% endif %} #}
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | url }}">
 
   <!-- SplitBee Analytics -->
   <script async src="https://cdn.splitbee.io/sb.js"></script>
