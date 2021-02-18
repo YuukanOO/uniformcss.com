@@ -411,23 +411,35 @@ The following font weights are available. All numerical font weights such as `10
 
 ## Box Shadows
 
-All possible font weights are supported. Font weights can support both numerical and semantic class naming.
+Use the following chart as a reference for `shadow` property.
 
-<div class="grid grid-cols-5 gap-18">
-  <div class="p-18 h-96 bg-white radius-md shadow-xs color-black font-xs font-bold radius-sm overflow-hidden">
+<div class="grid grid-cols-1 gap-18">
+  <div class="p-18 bg-white radius-md shadow-xs color-black font-xs font-bold radius-sm overflow-hidden">
     shadow-xs
   </div>
-  <div class="p-18 h-96 bg-white radius-md shadow-sm color-black font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 bg-white radius-md shadow-sm color-black font-xs font-bold radius-sm overflow-hidden">
     shadow-sm
   </div>
-  <div class="p-18 h-96 bg-white radius-md shadow-md color-black font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 bg-white radius-md shadow-md color-black font-xs font-bold radius-sm overflow-hidden">
     shadow-md
   </div>
-  <div class="p-18 h-96 bg-white radius-md shadow-lg color-black font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 bg-white radius-md shadow-lg color-black font-xs font-bold radius-sm overflow-hidden">
     shadow-lg
   </div>
-  <div class="p-18 h-96 bg-white radius-md shadow-xl color-black font-xs font-bold radius-sm overflow-hidden">
+  <div class="p-18 bg-white radius-md shadow-xl color-black font-xs font-bold radius-sm overflow-hidden">
     shadow-xl
+  </div>
+  <div class="p-18 bg-white radius-md shadow-focus color-black font-xs font-bold radius-sm overflow-hidden">
+    shadow-focus
+  </div>
+  <div class="p-18 bg-white radius-md shadow-focus-success color-black font-xs font-bold radius-sm overflow-hidden">
+    shadow-focus-success
+  </div>
+  <div class="p-18 bg-white radius-md shadow-focus-warning color-black font-xs font-bold radius-sm overflow-hidden">
+    shadow-focus-warning
+  </div>
+  <div class="p-18 bg-white radius-md shadow-focus-danger color-black font-xs font-bold radius-sm overflow-hidden">
+    shadow-focus-danger
   </div>
 </div>
 
@@ -435,9 +447,9 @@ All possible font weights are supported. Font weights can support both numerical
 
 ## Border Radiuses
 
-All possible font weights are supported. Font weights can support both numerical and semantic class naming.
+Use the following chart as a reference for `radius` property.
 
-<div class="grid grid-cols-3 gap-18">
+<div class="grid grid-cols-2 sm.grid-cols-3 gap-18">
   <div class="p-18 h-96 bg-black radius-xs color-white font-xs font-bold radius-sm overflow-hidden">
     radius-xs<br>
     <span class="leading-looser color-gray-100">4px • 0.25rem</span>
@@ -470,7 +482,7 @@ All possible font weights are supported. Font weights can support both numerical
 
 ## Sizing Chart
 
-Use the following chart as a reference for sizes.
+Use the following chart as a reference for size relatied properties.
 
 <div class="grid grid-cols-1 gap-24">
   <div>

@@ -166,3 +166,9 @@ Every aspect of Uniform CSS is optional, you can easily remove all properties an
 ### 8. Designed to be Lightweight
 
 Uniform is much smaller compared to other utility-first CSS frameworks whilst still supporting all the properties you need. Uniform only activates responsiveness and pseudo variants for properties that make sense.
+
+---
+
+## Browser Support
+
+Out of the box, Uniform CSS looks and performs great on all the latest version of modern browsers. Uniform CSS is tested and built to support the latest stable version of **Chrome**, **Firefox**, **Edge**, and **Safari**. Uniform CSS does not support any version of IE, including IE 11.
