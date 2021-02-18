@@ -8,7 +8,7 @@ date: 1000-01-07
 
 Modules in Uniform are pre-built components for common UI elements such as buttons, forms, and tables. Uniform provides these modules to help avoid having to build these types of components from scratch.
 
-Out of the box, Uniform includes modules for **buttons**, **responsive tables**, **form elements**, **markdown**, and **wrappers**.
+Out of the box, Uniform includes modules for **buttons**, **tables**, **form elements**, **markdown**, and **wrappers**.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -16,9 +16,9 @@ Out of the box, Uniform includes modules for **buttons**, **responsive tables**,
 
 ## Button Module
 
-The button module come in various types and supports multiple sizes. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/button/">buttons</a>.
+The button module come in various types and supports multiple sizes. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/docs/button/">buttons</a>.
 
-<section class="flex align-items-center justify-content-center h-192 bg-blue-gray bg-tint-800 p-20 radius-md">
+<section class="flex align-items-center justify-content-center h-192 bg-cool-gray bg-tint-800 p-20 radius-md">
   <button class="btn">Button</button>
 </section>
 
@@ -30,116 +30,87 @@ The button module come in various types and supports multiple sizes. To learn mo
 
 ## Form Module
 
-The form module provides styling for basic form elements. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/form/">form</a>.
+The form module provides styling for basic form elements.
 
-<section class="radius-sm bg-blue-gray bg-tint-800 p-20">
+<section class="radius-sm bg-cool-gray bg-tint-800 p-20">
   <form>
     <div class="mb-20 last.mb-0">
-      <label class="label mb-6">Email</label>
-      <input class="input" placeholder="Email" value="john.titor@apple.com">
+      <label class="label mb-8">Email</label>
+      <input class="input" placeholder="Email" value="Placeholder Text">
     </div>
     <div class="mb-20 last.mb-0">
-      <label class="label mb-6">Username</label>
-      <input class="input" type="text" placeholder="UniformCSS" value="@UniformCSS">
-    </div>
-    <div class="mb-20 last.mb-0">
-      <label class="checkbox">
-        <input type="checkbox" checked required />
-        <div class="checkbox__checkmark"></div>
+      <label class="inline-flex align-items-center">
+        <input class="checkbox mr-10" type="checkbox" checked="" required="">
         Checkbox
       </label>
     </div>
     <div class="mb-20 last.mb-0">
-      <label class="radio mr-4">
-        <input type="radio" name="radio" checked />
-        <div class="radio__checkmark"></div>
+      <label class="inline-flex align-items-center mr-16">
+        <input class="radio mr-10" type="radio" name="radio" checked="">
         Radio
       </label>
-      <label class="radio">
-        <input type="radio" name="radio" checked />
-        <div class="radio__checkmark"></div>
+      <label class="inline-flex align-items-center">
+        <input class="radio mr-10" type="radio" name="radio">
         Radio
       </label>
     </div>
     <div class="mb-20 last.mb-0">
       <label class="toggle">
-        <input type="checkbox" checked />
+        <input type="checkbox" checked="">
         <div class="toggle__switch"></div>
       </label>
     </div>
     <div class="mb-20 last.mb-0">
       <div class="select">
         <select>
-          <option selected>Selected</option>
+          <option selected="">Selected</option>
           <option>Option</option>
           <option>Option</option>
         </select>
-        <div class="select__angle"></div>
       </div>
     </div>
   </form>
 </section>
 
 ```html
-<form>
-  <div class="mb-20 last.mb-0">
-    <label class="label mb-6">Email</label>
-    <input class="input" placeholder="Email" value="john.titor@apple.com" />
-  </div>
+<label class="label mb-8">Email</label>
+<input class="input" placeholder="Email" value="Placeholder Text">
 
-  <div class="mb-20 last.mb-0">
-    <label class="label mb-6">Username</label>
-    <input class="input" type="text" placeholder="UniformCSS" value="@UniformCSS" />
-  </div>
+<label class="inline-flex align-items-center">
+  <input class="checkbox mr-10" type="checkbox" checked required />
+  Checkbox
+</label>
 
-  <div class="mb-20 last.mb-0">
-    <label class="checkbox">
-      <input type="checkbox" checked required />
-      <div class="checkbox__checkmark"></div>
-      Checkbox
-    </label>
-  </div>
+<label class="inline-flex align-items-center mr-16">
+  <input class="radio mr-10" type="radio" name="radio" checked />
+  Radio
+</label>
+<label class="inline-flex align-items-center">
+  <input class="radio mr-10" type="radio" name="radio" />
+  Radio
+</label>
 
-  <div class="mb-20 last.mb-0">
-    <label class="radio mr-4">
-      <input type="radio" name="radio" checked />
-      <div class="radio__checkmark"></div>
-      Radio
-    </label>
-    <label class="radio">
-      <input type="radio" name="radio" checked />
-      <div class="radio__checkmark"></div>
-      Radio
-    </label>
-  </div>
+<label class="toggle">
+  <input type="checkbox" checked />
+  <div class="toggle__switch"></div>
+</label>
 
-  <div class="mb-20 last.mb-0">
-    <label class="toggle">
-      <input type="checkbox" checked />
-      <div class="toggle__switch"></div>
-    </label>
-  </div>
-
-  <div class="mb-6 last.mb-0">
-    <div class="select">
-      <select>
-        <option selected>Selected</option>
-        <option>Option</option>
-        <option>Option</option>
-      </select>
-      <div class="select__angle"></div>
-    </div>
-  </div>
-</form>
+<div class="select">
+  <select>
+    <option selected>Selected</option>
+    <option>Option</option>
+    <option>Option</option>
+  </select>
+</div>
 ```
 
 ---
 
 ## Table Module
 
-The table module provides styling for the basic table element. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/table/">table</a>.
+The table module provides styling for the basic table element. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/docs/table/">table</a>.
 
-<section class="radius-sm bg-blue-gray bg-tint-800 p-20">
+<section class="radius-sm bg-cool-gray bg-tint-800 p-20">
   <table class="table table-stack sm.table-unstack">
     <thead>
       <tr>
@@ -185,7 +156,7 @@ The table module provides styling for the basic table element. To learn more abo
 
 ## Markdown Module
 
-The markdown module provides basic typographical styling useful for markdown styling. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/markdown/">markdown</a>.
+The markdown module provides basic typographical styling useful for markdown styling. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/docs/markdown/">markdown</a>.
 
 ```html
 <div class="markdown">...</div>
@@ -195,7 +166,7 @@ The markdown module provides basic typographical styling useful for markdown sty
 
 ## Wrapper Module
 
-The wrapper module is a container that provides set of `max-width` properties based on various breakpoints. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/get-started/wrapper/">wrapper</a>.
+The wrapper module is a container that provides set of `max-width` properties based on various breakpoints. To learn more about using this module visit the dedicated modules page on <a class="hover.underline" href="/docs/wrapper/">wrapper</a>.
 
 ```html
 <div class="wrapper">...</div>
@@ -205,7 +176,7 @@ The wrapper module is a container that provides set of `max-width` properties ba
 
 ## Disabling Modules
 
-By default, Uniform CSS comes with all modules enabled. To exclude all or individual modules, include its name in the exclude key inside your configuration.
+By default, Uniform CSS comes with all modules enabled. To exclude all or individual modules, include its name in the exclude setting of your configuration.
 
 ```scss
 // styles.scss

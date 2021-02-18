@@ -19,7 +19,14 @@
       ),
       color: (
         pseudos: (hover, group-hover, group-focus, dark)
-      )
+      ),
+			background-shade: (
+				extend: (
+					pseudos: (
+						active
+					)
+				)
+			)
     ),
     exclude: (
 

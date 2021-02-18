@@ -35,7 +35,7 @@ By default, Uniform provides **8 border radius sizes**. Use the following chart 
 
 The following example showcases how the variants can be applied.
 
-<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
+<div class="bg-cool-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-8 gap-18">
     <div class="ratio-square radius-2xs bg-black">
     </div>

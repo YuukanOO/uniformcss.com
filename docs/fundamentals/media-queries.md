@@ -28,7 +28,7 @@ Uniform uses a mobile-first CSS approach to allow for styles to be applied on mo
 
 ## Breakpoint Variants
 
-By default, there are **four** breakpoint variants available `sm`, `md`, `lg` and `xl`. For more information on modifying these variants, please visit the page on <a class="hover.underline" href="/get-started/breakpoints">breakpoints</a>.
+By default, there are **four** breakpoint variants available `sm`, `md`, `lg` and `xl`.
 
 ```scss
 // sm
@@ -95,7 +95,7 @@ By design, Uniform takes common design patterns into consideration and only enab
 );
 ```
 
-> To see which properties are responsive, please visit the glossary.
+> To see which properties are responsive, please refer to the glossary.
 
 ---
 

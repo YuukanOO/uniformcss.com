@@ -11,76 +11,76 @@ Uniform provides a total of `24` default colors. Color hues are positioned space
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
   <div class="radius-sm p-12 bg-red color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">red • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">red • h0 s75</span>
   </div>
   <div class="radius-sm p-12 bg-orange color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orange • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orange • h20 s75</span>
   </div>
   <div class="radius-sm p-12 bg-yellow color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">yellow • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">yellow • h40 s75</span>
   </div>
   <div class="radius-sm p-12 bg-lemon color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lemon • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lemon • h60 s75</span>
   </div>
   <div class="radius-sm p-12 bg-olive color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">olive • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">olive • h80 s75</span>
   </div>
   <div class="radius-sm p-12 bg-lime color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lime • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lime • h100 s75</span>
   </div>
   <div class="radius-sm p-12 bg-green color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">green • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">green • h120 s75</span>
   </div>
   <div class="radius-sm p-12 bg-mint color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">mint • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">mint • h140 s75</span>
   </div>
   <div class="radius-sm p-12 bg-teal color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">teal • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">teal • h160 s75</span>
   </div>
   <div class="radius-sm p-12 bg-cyan color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cyan • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cyan • h180 s75</span>
   </div>
   <div class="radius-sm p-12 bg-sky color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">sky • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">sky • h200 s75</span>
   </div>
   <div class="radius-sm p-12 bg-blue color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">blue • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">blue • h220 s75</span>
   </div>
   <div class="radius-sm p-12 bg-indigo color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">indigo • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">indigo • h240 s75</span>
   </div>
   <div class="radius-sm p-12 bg-purple color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">purple • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">purple • h260 s75</span>
   </div>
   <div class="radius-sm p-12 bg-orchid color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orchid • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orchid • h280 s75</span>
   </div>
   <div class="radius-sm p-12 bg-magenta color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">magenta • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">magenta • h300 s75</span>
   </div>
   <div class="radius-sm p-12 bg-pink color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">pink • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">pink • h320 s75</span>
   </div>
   <div class="radius-sm p-12 bg-crimson color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">crimson • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">crimson • h340 s75</span>
   </div>
   <div class="radius-sm p-12 bg-cool-gray color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cool-gray • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cool-gray • h220 s10</span>
   </div>
   <div class="radius-sm p-12 bg-gray color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">gray • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">gray • h220 s5</span>
   </div>
   <div class="radius-sm p-12 bg-warm-gray color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">warm-gray • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">warm-gray • h24 s10</span>
   </div>
   <div class="radius-sm p-12 bg-black color-white font-xs font-bold">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">black • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">black</span>
   </div>
   <div class="radius-sm p-12 bg-white color-black font-xs font-bold border-1">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">white • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">white</span>
   </div>
   <div class="radius-sm p-12 bg-transparent color-white font-xs font-bold border-1">
-    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">transparent • #f052b2</span>
+    <span class="font-xs font-bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">transparent</span>
   </div>
 </div>
 

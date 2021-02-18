@@ -68,7 +68,7 @@ By default, Uniform provides **40 sizing units**. The variant key for each sizin
 
 The following example showcases how the variants can be applied.
 
-<div class="bg-blue-gray bg-tint-800 p-20 h-200px radius-md">
+<div class="bg-cool-gray bg-tint-800 p-20 h-200px radius-md">
   <div class="grid grid-cols-5 gap-18">
     <div>
       <div class="w-24 h-24 radius-round bg-black">

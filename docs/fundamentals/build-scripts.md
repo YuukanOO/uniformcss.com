@@ -6,9 +6,9 @@ date: 1000-01-02
 
 ## Build Scripts
 
-At its core, Uniform only requires Sass to compile. However, if you would like to auto-prefix for vendor support and run minification, you can do so by running the following built-in build commands. The following **npm build commands** help perform and automate these tasks.
+Sass preprocessor is the only thing you need to get up and running. Uniform CSS comes with a predefined build commands in the `package.json`. The following **npm build commands** are available.
 
-> By default, the build scripts will automatically input `styles.scss` and output files into the root directory. You can modify the output location inside `package.json` to change this default behavior.
+> By default, the following build scripts will automatically input `styles.scss` and output files into the root directory. You can modify `package.json` to change the output location.
 
 {% include shortcodes/video, id: 'tLqqi5gyxQg' %}
 
@@ -16,7 +16,7 @@ At its core, Uniform only requires Sass to compile. However, if you would like t
 
 ### uniform
 
-The following command will compile Sass and run deep optimizations to your CSS. This is the command you should run when outputting for **production**.
+The following command will compile your Sass with `--style compressed` enabled. This is the command you should run when outputting for **production**.
 
 ```bash
 npm run uniform
@@ -26,7 +26,7 @@ npm run uniform
 
 ### uniform:compile
 
-The following command will only compile `styles.scss` and output `styles.css`.
+The following command will compile `styles.scss` and output `styles.css`.
 
 ```bash
 npm run uniform:compile
@@ -41,3 +41,9 @@ The following command will compile `styles.scss` file and watch for changes.
 ```bash
 npm run uniform:watch
 ```
+
+---
+
+## Build Performance
+
+Uniform CSS requires `dart-sass` version `1.27.0` and up. Using the Javascript version of Sass is slower than the stand-alone `dart` executable, therefore using the native `dart` version is recommended for fastest build time.

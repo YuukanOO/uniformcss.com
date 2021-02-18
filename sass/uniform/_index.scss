@@ -310,7 +310,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
 
       
       $pseudos: map.get($utility-value, pseudos);
-      $pseudo-extends: map.get($utility-value, extends, pseudos);
+      $pseudo-extends: map.get($utility-value, extend, pseudos);
       $merged-pseudos: ();
       @if (list.index($pseudos, null) == null) {
         $merged-pseudos: list.join($merged-pseudos, $pseudos);
@@ -529,7 +529,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
 
 
           $pseudos: map.get($utility-value, pseudos);
-          $pseudo-extends: map.get($utility-value, extends, pseudos);
+          $pseudo-extends: map.get($utility-value, extend, pseudos);
           $merged-pseudos: ();
           @if (list.index($pseudos, null) == null) {
             $merged-pseudos: list.join($merged-pseudos, $pseudos);
