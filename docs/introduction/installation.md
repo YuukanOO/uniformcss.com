@@ -6,7 +6,7 @@ date: 1000-01-02
 
 ## Getting up and running
 
-Uniform is super easy to get started and setup, you can either:
+Uniform is super easy to get started and setup, all you need to do is add the `.scss` project or use the precompiled `.css` file. You can get started using the following ways:
 
 1. Use **npm** to install the Uniform package.
 2. Use the **jsDelivr CDN** to link directly to the Uniform stylesheet.
@@ -18,60 +18,50 @@ Uniform is super easy to get started and setup, you can either:
 
 ## Native installation
 
-The native installation is the recommended way to get setup. Native setups provide the full functionality of Uniform CSS giving you access to customization, extendability, and useful helper functions.
+The native installation is the recommended way to get setup. Native setups provide the full functionality of Uniform CSS giving you access to customization and useful helper functions.
 
-<div class="mb-10"></div>
+### 1. Clone or install Uniform CSS
 
-<h4>1. Clone and install dependencies</h4>
-
-Make sure you have <a class="hover.underline" href="https://nodejs.org/en/"  target="_black">Node.js</a> installed. Clone the latest version of Uniform and install its dependencies.
+If you have <a class="hover.underline" href="https://nodejs.org/en/"  target="_black">Node.js</a> installed, you can load Uniform as a dependency. Alternatively you can download or clone the project directly.
 
 ```bash
-# Clone project
-git clone https://github.com/ThinkUniform/UniformCSS
-
 # Install dependencies
-npm install
+npm install uniformcss
+
+# or Clone project
+git clone https://github.com/ThinkUniform/UniformCSS
 ```
 
-<div class="mb-10"></div>
+### 2. Include Uniform in Sass project
 
-<h4>2. Include Uniform in sass project</h4>
-
-Ensure the Uniform folder is in the same directory as your `styles.scss` file. Add the following line to your main sass stylesheet.
+Add the following line to your main sass stylesheet to add Uniform to your project.
 
 ```bash
 // styles.scss
 @use "uniform" as *;
 ```
 
-<div class="mb-10"></div>
+### 3. Compile and watch for changes
 
-<h4>3. Compile and watch for changes</h4>
-
-Compile your sass file using your own build setup or optionally, you can run the following command to build your first `uniform.css`. The Uniform package also comes with default build scripts to help you compile, minify, and watch for changes, refer to the build scripts section for more information.
+Compile your Sass project or optionally, you can run the following command to build your `styles.css`. The Uniform `package.json` also comes with other watch and minify build scripts, for more information please check out the [build scripts](/docs/build-scripts) page.
 
 ```bash
-npm run uniform:compile
+npm run uniform
 ```
 
-> By default Uniform **npm build scripts** will output to the root directory. To change the output destination, specify the location in `package.json`. For more info on other build commands refer to the page on <a class="hover.underline" href="/get-started/build-scripts/">build scripts</a>.
+> Please note, Uniform CSS features many newer Sass features and therefore require the `dart-sass` version `1.27.0` and up.
 
-<div class="mb-10"></div>
+### 4. Add compiled stylesheet
 
-<h4>4. Add compiled stylesheet</h4>
-
-Import the compiled stylesheet and you will now have access to all the Uniform goodness, it's that simple!
+Import the compiled stylesheet to your `<head>` inside your `html` and you will now have access to all the Uniform goodness.
 
 ```html
 <link rel="stylesheet" href="styles.css" />
 ```
 
-<div class="mb-10"></div>
+### 4. Configure Uniform (optional)
 
-<h4>4. Configure Uniform (optional)</h4>
-
-You can customize Uniform directly in your sass stylesheet. For more information on what can be customized, visit the page on <a class="hover.underline" href="/get-started/configuration/">configuration</a>.
+Optionally, you can customize Uniform directly in your sass stylesheet. For more information, visit [configuration](/docs/configuration).
 
 ```scss
 // styles.scss
@@ -92,47 +82,12 @@ You can customize Uniform directly in your sass stylesheet. For more information
 
 ---
 
-## Using the jsDelivr CDN
+## Install with CDN
 
-For a even quicker way to get started, simply add the following in the head of your project.
+For a even quicker way to get started, simply add the following stylesheet in the head of your project.
 
 ```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/uniformcss@1.0.0/uniform.css"
-/>
+<link href="https://cdn.jsdelivr.net/ThinkUniform/UniformCSS/dist/uniform.css" rel="stylesheet" />
 ```
 
-> Unlike the native installation, using the pre-packaged version of Uniform will only allow for customizations for attributes such as fonts, sizes and colors, you will not get access to more advanced customization options such as prefixing, custom variants, and adding of custom breakpoints.
-
----
-
-## Install with NPM
-
-<h4>1. Install the UniformCSS node package</h4>
-
-Run the following command to install Uniform as a package.
-
-```bash
-npm i uniformcss
-```
-
-<div class="mb-10"></div>
-
-<h4>2. Include Uniform in sass project</h4>
-
-Ensure the Uniform folder is in the same directory as your `styles.scss` file. Add the following line to your main sass stylesheet.
-
-```bash
-@use "../node_modules/uniformcss/uniform" as *;
-```
-
-<div class="mb-10"></div>
-
----
-
-## Download Project Directly
-
-To download the project directly, please visit the Github repository.
-
-<a class="font-semibold hover.underline" href="https://github.com/ThinkUniform/UniformCSS" target="_blank">Visit Github Repository</a>
+> Unlike the native installation, using the pre-compiled version of Uniform will only allow for limited customizations, you will not get access to more advanced customization options such as prefixing, custom variants, and etc.
