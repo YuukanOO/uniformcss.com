@@ -84,7 +84,7 @@ Any new utilities generated through the `utilities` settings map will behave lik
 
 Adding utilities through the utilities map can be a useful to quickly add properties however when adding many, your Uniform configuration may become long. To avoid this problem custom properties can also be added natively to the core library.
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 color-black radius-round">1</span> Build out your data structure</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-gray bg-tint-800 leading-0 color-black radius-round">1</span> Build out your data structure</h4>
 
 Create a new `sass` document and use the following template to configure your own custom property.
 
@@ -128,7 +128,7 @@ $config: (
 core.$all-config: map.deep-merge(core.$all-config, $config);
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 color-black radius-round">2</span> Include custom property to the import list</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-gray bg-tint-800 leading-0 color-black radius-round">2</span> Include custom property to the import list</h4>
 
 Open `_index.scss` located inside the uniform directly and include the newly created custom property using the `@use` after the last imported property.
 
@@ -142,7 +142,7 @@ Open `_index.scss` located inside the uniform directly and include the newly cre
 @use "utilities/leading-trim"; // include your custom property here
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-silver-200 leading-0 color-black radius-round">3</span> Override or customize custom property</h4>
+<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-gray bg-tint-800 leading-0 color-black radius-round">3</span> Override or customize custom property</h4>
 
 Once your custom property has been added into the core library, it will behave like any other utility property. This means it can be configured, overwritten or extended like any other property inside the `utilities` map.
 

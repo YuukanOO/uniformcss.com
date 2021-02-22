@@ -64,7 +64,7 @@ The `background-color` utilities set the background color.
 | `bg-silver-500`   | TODO     |
 | `bg-silver-400`   | TODO     |
 | `bg-gray bg-tint-900`   | TODO     |
-| `bg-silver-200`   | TODO     |
+| `bg-gray bg-tint-800`   | TODO     |
 | `bg-silver-100`   | TODO     |
 | `bg-transparent`  | TODO     |
 

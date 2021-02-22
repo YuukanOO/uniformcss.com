@@ -6,19 +6,28 @@
 		),
     utility: (
       background-color: (
-      	pseudos: (active, hover, focus, group-hover, empty, dark)
-      ),
-      background-darken: (
-        pseudos: (active, dark)
+      	extend: (
+					pseudos: (
+						active, hover, focus, group-hover, empty
+					)
+				)
       ),
       opacity: (
-        pseudos: (focus, disabled, group-hover, dark)
+        extend: (
+					pseudos: (focus, checked, disabled, group-hover)
+				)
       ),
       border-color: (
-      	pseudos: (focus-within, dark)
+      	extend: (
+					pseudos: (
+						focus-within
+					)
+				)
       ),
       color: (
-        pseudos: (hover, group-hover, group-focus, dark)
+        extend: (
+					pseudos: (hover, group-hover, group-focus)
+				)
       ),
 			background-shade: (
 				extend: (
@@ -29,7 +38,9 @@
 			)
     ),
     exclude: (
-
+			module-form,
+			module-markdown,
+			module-button
     ),
     include: (
       
@@ -115,7 +126,62 @@
 	}
 }
 
+.slider {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 100%;
+	height: var(--slider-track-height, 2px);
+	outline: 0;
+	background: var(--slider-track-color, #ccc);
+	&::-webkit-slider-thumb {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		width: var(--slider-size, 14px);
+		height: var(--slider-size, 14px);
+		background: var(--slider-color, #000);
+		cursor: pointer;
+		border-radius: var(--slider-radius, 9999px);
+		&:hover {
+			background: var(--slider-hover-color, #000);
+		}
+	}
+	&::-moz-slider-thumb {
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		width: var(--slider-size, 14px);
+		height: var(--slider-size, 14px);
+		background: var(--slider-color, #000);
+		cursor: pointer;
+		border-radius: var(--slider-radius, 9999px);
+		&:hover {
+			background: var(--slider-hover-color, #000);
+		}
+	}
+}
 
+.carousel {
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	will-change: transform;
+	&__group {
+		display: flex;
+		// animation: slideshow 120s linear infinite;
+		flex: none;
+	}
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 .markdown {
 	
@@ -154,7 +220,168 @@
 		}
 	}
 	
-	// & > p a {
-	// 	color: fill(secondary-a);
-	// }
+	table {
+		th, td {
+			border: 1px solid fill(cool-gray, tint-800);
+		}
+	}
+}
+
+.swiper-container-pointer-events {
+	touch-action: pan-y;
+}
+
+.swiper-container-android .swiper-slide, .swiper-wrapper {
+	transform: translate3d(0px,0,0);
+}
+
+.swiper-container {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	list-style: none;
+	padding: 0;
+	z-index: 1;
+}
+
+.swiper-wrapper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	display: flex;
+	transition-property: transform;
+	box-sizing: content-box;
+}
+
+.swiper-slide {
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transition-property: transform;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+	left: var(--size-24);
+	right: auto;
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+	right: var(--size-24);
+	left: auto;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	width: 48px;
+	height: 48px;
+	border-radius: 1000px;
+	background: black;
+	box-shadow: var(--shadow-lg);
+	transform: translateY(-50%);
+	z-index: 2;
+}
+
+.swiper-container .swiper-notification {
+	position: absolute;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+	opacity: 0;
+	z-index: -1000;
+}
+
+.ds-dropdown-menu {
+	&:before {
+		display: none !important;
+	}
+}
+
+.algolia-autocomplete {
+	width: 100% !important;
+}
+
+.algolia-autocomplete .ds-dropdown-menu {
+	max-width: 100% !important;
+	min-width: 100% !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	border-bottom-left-radius: 12px !important;
+	border-bottom-right-radius: 12px !important;
+	margin: 0 !important;
+	margin-top: 1px !important;
+}
+
+.algolia-autocomplete .ds-dropdown-menu [class^=ds-dataset-] {
+	background: hsla(220deg, 20%, 10%, 95%) !important;
+	border-radius: 0 !important;
+	border-bottom-left-radius: 12px !important;
+	border-bottom-right-radius: 12px !important;
+	border: transparent !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion {
+	background: transparent !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
+	border-bottom: 0;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
+	width: 30% !important;
+	line-height: 1.625 !important;
+	font-size: 14px !important;
+	font-weight: 600 !important;
+	color: rgb(255 255 255 / 60%) !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--content {
+	width: 70% !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--content:before {
+	background: #f2b084 !important;
+	width: 2px !important;
+}
+.algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column:before {
+	background: #f2b084 !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--title {
+	color: white !important;
+	font-size: 14px !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion.algolia-docsearch-suggestion__main .algolia-docsearch-suggestion--category-header {
+	display: none !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--content {
+	line-height: 1.625 !important;
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--highlight {
+	color: #ffb679 !important;
+}
+
+.algolia-docsearch-suggestion--text {
+	line-height: 1.625 !important;
+}
+
+.algolia-autocomplete .ds-dropdown-menu .ds-suggestion.ds-cursor .algolia-docsearch-suggestion:not(.suggestion-layout-simple) .algolia-docsearch-suggestion--content {
+	background-color: rgb(69 142 225 / 10%) !important;
+	border-top-right-radius: 6px !important;
+	border-bottom-right-radius: 6px !important;
+	transition: background-color .2s;
+}
+
+.algolia-autocomplete .algolia-docsearch-footer {
+	width: 120px !important;
 }

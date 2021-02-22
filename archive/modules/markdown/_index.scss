@@ -112,7 +112,7 @@ $include: map.get($all-config, include);
     --markdown-code-color
     ******************************/
     
-    & > p code, & > ul li code, & > ol li code, & > blockquote code {
+    & > p code, & > ul li code, & > blockquote code {
       padding: var(--markdown-code-padding, 5px 6px);
       font-size: var(--markdown-code-font-size, var(--font-sm));
       border-radius: var(--markdown-code-radius, var(--radius-sm));

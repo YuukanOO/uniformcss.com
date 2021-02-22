@@ -1,0 +1,43 @@
+@use "sass:map";
+@use "sass:list";
+@use "uniform/core" as *;
+
+/*
+CUSTOM PROPERTIES
+
+--wrapper-padding
+
+--wrapper-xs-max-width
+--wrapper-sm-max-width
+--wrapper-md-max-width
+--wrapper-lg-max-width
+--wrapper-xl-max-width
+*/
+
+$exclude: map.get($all-config, exclude);
+$include: map.get($all-config, include);
+
+@if ( list.index($include, module-wrapper) != null or list.index($exclude, all) == null and list.index($exclude, module-wrapper) == null ) {
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    max-width: var(--wrapper-max-width, 808px);
+    padding-left: var(--wrapper-padding, var(--size-20));
+    padding-right: var(--wrapper-padding, var(--size-20));
+    @include screen(md) {
+      padding-left: var(--wrapper-sm-padding, var(--size-20));
+      padding-right: var(--wrapper-sm-padding, var(--size-20));
+      max-width: var(--wrapper-sm-max-width, 1064px);
+    }
+    @include screen(lg) {
+      padding-left: var(--wrapper-md-padding, var(--size-20));
+      padding-right: var(--wrapper-md-padding, var(--size-20));
+      max-width: var(--wrapper-md-max-width, 1180px);
+    }
+    @include screen(xl) {
+      padding-left: var(--wrapper-lg-padding, var(--size-20));
+      padding-right: var(--wrapper-lg-padding, var(--size-20));
+      max-width: var(--wrapper-lg-max-width, 1320px);
+    }
+  }
+}

@@ -1,25 +1,24 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: letter-spacing;
-$shorthand: tracking;
-$responsive: false;
+$name: scale;
+$shorthand: scale;
+$responsive: true;
 $responsive-pseudos: false;
 $extra-selector: null;
 
-$properties: (letter-spacing);
+$properties: (--scale-x, --scale-y);
 $custom-properties: ();
 
 $variants: (
-  core.merge(
-    core.trackings(),
-    (
-      none: 0
-    )
-  )
+	xs: 0.8,
+	sm: 0.9,
+	md: 1,
+	lg: 1.1,
+	xl: 1.2,
 );
 
-$pseudos: ();
+$pseudos: (hover, group-hover);
 
 $config: (
   utility: (

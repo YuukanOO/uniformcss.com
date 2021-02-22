@@ -113,6 +113,7 @@ $default-config: (
     font-families: (),
     font-sizes: (),
     font-weights: (),
+    text-sizes: (),
     leadings: (),
     trackings: (),
     tints: (),
@@ -215,11 +216,12 @@ $default-config: (
     white: ( hue: 0, sat: 0% ),
     black: ( hue: 0, sat: 0% ),
 
-    cool-gray: ( hue: 220, sat: 10% ),
-    gray: ( hue: 220, sat: 5% ),
-    warm-gray: ( hue: 24, sat: 10% ),
+    cool-gray: ( hue: 220, sat: 12% ),
+    gray: ( hue: 220, sat: 6% ),
+    warm-gray: ( hue: 24, sat: 12% ),
     
     transparent: transparent,
+    current: currentColor
   ),
 
   gradients: (
@@ -356,27 +358,78 @@ $default-config: (
   ),
 
   font-sizes: (
-    13xl: rem(120),
-    12xl: rem(104),
-    11xl: rem(88),
-
-    10xl: rem(72),
-    9xl: rem(64),
-    8xl: rem(56),
-    7xl: rem(48),
-
-    6xl: rem(40),
-    5xl: rem(36),
-    4xl: rem(32),
-    3xl: rem(28),
-    2xl: rem(24),
-
-    xl: rem(20),
-    lg: rem(18),
-    md: rem(16),
-    sm: rem(14),
-    xs: rem(12),
-    2xs: rem(10),
+    13xl: (
+      font-size: rem(120),
+      line-height: 1,
+    ),
+    12xl: (
+      font-size: rem(104),
+      line-height: 1,
+    ),
+    11xl: (
+      font-size: rem(88),
+      line-height: 1,
+    ),
+    10xl: (
+      font-size: rem(72),
+      line-height: var(--leading-xtight),
+    ),
+    9xl: (
+      font-size: rem(64),
+      line-height: var(--leading-xtight),
+    ),
+    8xl: (
+      font-size: rem(56),
+      line-height: var(--leading-xtight),
+    ),
+    7xl: (
+      font-size: rem(48),
+      line-height: var(--leading-xtight),
+    ),
+    6xl: (
+      font-size: rem(40),
+      line-height: var(--leading-xtight),
+    ),
+    5xl: (
+      font-size: rem(36),
+      line-height: var(--leading-tight),
+    ),
+    4xl: (
+      font-size: rem(32),
+      line-height: var(--leading-tight),
+    ),
+    3xl: (
+      font-size: rem(28),
+      line-height: var(--leading-tight),
+    ),
+    2xl: (
+      font-size: rem(24),
+      line-height: var(--leading-tight),
+    ),
+    xl: (
+      font-size: rem(20),
+      line-height: var(--leading-tight),
+    ),
+    lg: (
+      font-size: rem(18),
+      line-height: var(--leading-normal),
+    ),
+    md: (
+      font-size: rem(16),
+      line-height: var(--leading-normal),
+    ),
+    sm: (
+      font-size: rem(14),
+      line-height: var(--leading-normal),
+    ),
+    xs: (
+      font-size: rem(12),
+      line-height: var(--leading-normal),
+    ),
+    2xs: (
+      font-size: rem(10),
+      line-height: var(--leading-tight),
+    ),
   ),
 
   font-weights: (
@@ -392,38 +445,33 @@ $default-config: (
   ),
 
   leadings: (
-    tightest: 1,
-    tighter: 1.25,
+    xtight: 1.25,
     tight: 1.5,
     normal: 1.75,
     loose: 2,
-    looser: 2.25,
-    loosest: 2.5
+    xloose: 2.25
   ),
 
   trackings: (
-    tightest: -0.75em,
-    tighter: -0.05em,
-    tight: -0.025em,
+    xtight: -0.08em,
+    tight: -0.04em,
     normal: 0,
-    loose: 0.025em,
-    looser: 0.05em,
-    loosest: 0.075em,
+    loose: 0.04em,
+    xloose: 0.08em
   ),
 
   radiuses: (
     xs: rem(4),
     sm: rem(6),
     md: rem(8),
-    lg: rem(10),
-    xl: rem(12),
+    lg: rem(12),
+    xl: rem(16),
     round: 9999px,
   ),
 
   shadows: (
     xs: (
-      0 1px 3px rgba(0, 0, 0, 0.12),
-      0 1px 2px rgba(0, 0, 0, 0.24),
+      0 1px 2px 0 rgba(0, 0, 0, 0.05)
     ),
     sm: (
       0 3px 6px rgba(0, 0, 0, 0.16),
@@ -442,16 +490,19 @@ $default-config: (
       0 15px 12px rgba(0, 0, 0, 0.22),
     ),
     focus: (
-      0 0 0 3px rgb(63 96 191 / 25%)
+      0 0 0 4px hsla(220, 70%, 60%, 20%)
     ),
-    focus-success: (
-      0 0 0 3px rgb(103 204 51 / 25%)
+    input-focus: (
+      0 0 0 3px hsla(220, 70%, 60%, 100%)
     ),
-    focus-warning: (
-      0 0 0 3px rgb(242 166 13 / 25%)
+    input-success: (
+      0 0 0 3px hsla(70, 70%, 60%, 100%)
     ),
-    focus-danger: (
-      0 0 0 3px rgb(221 61 60 / 25%)
+    input-warning: (
+      0 0 0 3px hsla(30, 70%, 60%, 100%)
+    ),
+    input-danger: (
+      0 0 0 3px hsla(0, 70%, 60%, 100%)
     )
   ),
 
@@ -539,6 +590,7 @@ $shadows: map.get($all-config, shadows);
 $font-families: map.get($all-config, font-families);
 $font-sizes: map.get($all-config, font-sizes);
 $font-weights: map.get($all-config, font-weights);
+$text-sizes: map.get($all-config, text-sizes);
 $leadings: map.get($all-config, leadings);
 $trackings: map.get($all-config, trackings);
 $radiuses: map.get($all-config, radiuses);
@@ -556,6 +608,7 @@ $extend-negative-sizes: map.get($all-config, extend, negative-sizes);
 $extend-shadows: map.get($all-config, extend, shadows);
 $extend-font-families: map.get($all-config, extend, font-families);
 $extend-font-sizes: map.get($all-config, extend, font-sizes);
+$extend-text-sizes: map.get($all-config, extend, text-sizes);
 $extend-font-weights: map.get($all-config, extend, font-weights);
 $extend-leadings: map.get($all-config, extend, leadings);
 $extend-trackings: map.get($all-config, extend, trackings);
@@ -639,12 +692,19 @@ $merged-font-families: ();
 }
 $merged-font-families: map.deep-merge($merged-font-families, $extend-font-families);
 
-// MERGED SIZES
+// MERGED FONT SIZES
 $merged-font-sizes: ();
 @if ($font-sizes != null) {
   $merged-font-sizes: map.deep-merge($merged-font-sizes, $font-sizes);
 }
 $merged-font-sizes: map.deep-merge($merged-font-sizes, $extend-font-sizes);
+
+// // MERGED TEXT SIZES
+// $merged-text-sizes: ();
+// @if ($text-sizes != null) {
+//   $merged-text-sizes: map.deep-merge($merged-text-sizes, $text-sizes);
+// }
+// $merged-text-sizes: map.deep-merge($merged-text-sizes, $extend-text-sizes);
 
 // MERGED WEIGHTS
 $merged-font-weights: ();
@@ -1104,6 +1164,30 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   @return $result;
 }
 
+@function text-sizes() {
+  $result: ();
+  @each $key, $value in $merged-font-sizes {
+    @if (meta.type-of($value) == map) {
+      $map: (
+        $key: (
+          font-size: var(--font-#{$key}),
+          line-height: var(--font-#{$key}-leading)
+        )
+      );
+      $result: map.merge($result, $map);
+    } @else {
+      $map: (
+        $key: (
+          font-size: var(--font-#{$key}),
+          line-height: 1
+        )
+      );
+      $result: map.merge($result, $map);
+    }
+  }
+  @return $result;
+}
+
 @function font-weight($font-weight) {
   @if (map.get($merged-font-weights, $font-weight)) {
     $result: var(--font-#{$font-weight});
@@ -1191,7 +1275,11 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
     }
     --FONT-SIZES--------------------:#02;
     @each $key, $value in $merged-font-sizes {
-      --font-#{'' + $key}: #{$value};
+      @if (meta.type-of($value) == map) {
+        --font-#{'' + $key}: #{map.get($value, font-size)};
+      } @else {
+        --font-#{'' + $key}: #{$value};
+      }
     }
     --FONT-WEIGHTS------------------:#03;
     @each $key, $value in $merged-font-weights {
@@ -1201,31 +1289,39 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
     @each $key, $value in $merged-leadings {
       --leading-#{'' + $key}: #{$value};
     }
-    --TRACKING----------------------:#05;
+    --TEXT-LEADING------------------:#05;
+    @each $key, $value in $merged-font-sizes {
+      @if (meta.type-of($value) == map) {
+        --font-#{'' + $key}-leading: #{map.get($value, line-height)};
+      } @else {
+        --font-#{'' + $key}-leading: 1;
+      }
+    }
+    --TRACKING----------------------:#06;
     @each $key, $value in $merged-trackings {
       --tracking-#{'' + $key}: #{$value};
     }
-    --RADIUS------------------------:#06;
+    --RADIUS------------------------:#07;
     @each $key, $value in $merged-radiuses {
       --radius-#{'' + $key}: #{$value};
     }
-    --SHADOWS-----------------------:#07;
+    --SHADOWS-----------------------:#08;
     @each $key, $value in $merged-shadows {
       --shadow-#{'' + $key}: #{$value};
     }
-    --TINTS-------------------------:#08;
+    --TINTS-------------------------:#09;
     @each $key, $value in $merged-tints {
       --tint-#{'' + $key}: #{$value};
     }
-    --SHADES------------------------:#09;
+    --SHADES------------------------:#10;
     @each $key, $value in $merged-shades {
       --shade-#{'' + $key}: #{$value};
     }
-    --OPACITIES---------------------:#10;
+    --OPACITIES---------------------:#11;
     @each $key, $value in $merged-opacities {
       --opacity-#{'' + $key}: #{$value};
     }
-    --COLORS------------------------:#11;
+    --COLORS------------------------:#12;
     @each $color, $color-value in $merged-colors {
       @if (meta.type-of($color-value) == map) {
         @each $key, $value in $color-value {
@@ -1235,7 +1331,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
         --#{'' + $color}: #{$color-value};
       }
     }
-    --GRADIENTS---------------------:#12;
+    --GRADIENTS---------------------:#13;
     @each $gradient, $gradient-value in $merged-gradients {
       @if (meta.type-of($gradient-value) == map) {
         @each $key, $value in $gradient-value {
@@ -1245,7 +1341,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
         --#{'' + $gradient}: #{$gradient-value};
       }
     }
-    --SIZES-------------------------:#13;
+    --SIZES-------------------------:#14;
     @each $key, $value in $merged-sizes {
       --size-#{'' + $key}: #{$value};
     }

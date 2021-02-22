@@ -12,10 +12,7 @@ $custom-properties: ();
 
 $variants: (
   core.merge(
-    core.font-sizes(),
-    (
-      base: 1rem,
-    )
+    core.font-sizes()
   )
 );
 

@@ -1,21 +1,18 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: letter-spacing;
-$shorthand: tracking;
-$responsive: false;
+$name: font-size;
+$shorthand: font;
+$responsive: true;
 $responsive-pseudos: false;
 $extra-selector: null;
 
-$properties: (letter-spacing);
+$properties: (font-size, line-height);
 $custom-properties: ();
 
 $variants: (
   core.merge(
-    core.trackings(),
-    (
-      none: 0
-    )
+    core.text-sizes()
   )
 );
 
