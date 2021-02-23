@@ -10,8 +10,9 @@
 @use "defaults/starter";
 
 
-// PLUGINS (1)
+// PLUGINS (2)
 @use "plugins/wrapper";
+@use "plugins/markdown";
 
 
 // UTILITIES - TRANSITION (5)

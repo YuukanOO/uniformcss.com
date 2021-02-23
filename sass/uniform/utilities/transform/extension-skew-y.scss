@@ -12,12 +12,18 @@ $custom-properties: ();
 
 $variants: (
   n12: -12deg,
-	n8: -8deg,
-	n4: -4deg,
-	0: 0,
-	4: 4deg,
+  n10: -10deg,
+  n8: -8deg,
+  n6: -6deg,
+  n4: -4deg,
+  n2: -2deg,
+  0: 0,
+  2: 2deg,
+  4: 4deg,
+  6: 6deg,
   8: 8deg,
-	12: 12deg,
+  10: 8deg,
+  12: 12deg,
 );
 
 $pseudos: (hover, group-hover);

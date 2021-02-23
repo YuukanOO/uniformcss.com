@@ -10,7 +10,7 @@ $extra-selector: null;
 $properties: (--translate-y);
 $custom-properties: ();
 
-$range-limit: map.get(core.$all-config, range-limits, translate);
+$range-limit: map.get(core.$all-config, range-limits, translate-y);
 
 $variants: (
 	core.merge(

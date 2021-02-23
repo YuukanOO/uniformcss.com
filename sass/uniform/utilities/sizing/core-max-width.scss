@@ -10,7 +10,7 @@ $extra-selector: null;
 $properties: (max-width);
 $custom-properties: ();
 
-$range-limit: map.get(core.$all-config, range-limits, width);
+$range-limit: map.get(core.$all-config, range-limits, max-width);
 
 $variants: (
 	core.merge(

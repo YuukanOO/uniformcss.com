@@ -236,19 +236,24 @@ $default-config: (
   ),
 
   range-limits: (
-    margin: 41,
-    padding: 41,
-    width: 47,
-    height: 41,
-    gap: 29,
-    gutter: 29,
-    border-width: 9,
-    split-width: 9,
-    top: 29,
-    right: 29,
-    bottom: 29,
-    left: 29,
-    translate: 29
+    margin: (1, 41),
+    padding: (1, 41),
+    width: (1, 41),
+    min-width: (1, 1),
+    max-width: (34, 41),
+    height: (1, 41),
+    min-height: (1, 1),
+    max-height: (1, 41),
+    gap: (1, 29),
+    gutter: (1, 29),
+    border-width: (1, 9),
+    split-width: (1, 9),
+    top: (1, 29),
+    right: (1, 29),
+    bottom: (1, 29),
+    left: (1, 29),
+    translate-x: (1, 29),
+    translate-y: (1, 29)
   ),
 
   positive-sizes: (
@@ -1058,8 +1063,10 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
 @function positive-sizes($limit: null) {
   @if ($limit != null) {
     $size-map: ();
+    $min: list.nth($limit, 1);
+    $max: list.nth($limit, 2);
 
-    @for $i from 1 through $limit {
+    @for $i from $min through $max {
       $map: list.nth($merged-positive-sizes, $i);
       $key: list.nth($map, 1);
       $limit-map: (
@@ -1077,8 +1084,10 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
 @function negative-sizes($limit: null) {
   @if ($limit != null) {
     $size-map: ();
+    $min: list.nth($limit, 1);
+    $max: list.nth($limit, 2);
 
-    @for $i from 1 through $limit {
+    @for $i from $min through $max {
       $map: list.nth($merged-negative-sizes, $i);
       $key: list.nth($map, 1);
       $limit-map: (
