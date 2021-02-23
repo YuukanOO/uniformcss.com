@@ -691,7 +691,7 @@ cssCodeExample: |
   </div>
 </section>
 
-<section class="bg-blue bg-shade-800" :class="{ 'is-dark' : isDark }">
+<section class="bg-blue bg-shade-800" x-data="{ isDark: false }" :class="{ 'is-dark' : isDark }">
 
   <div class="wrapper py-80 sm.py-112">
     <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
