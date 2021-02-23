@@ -16,7 +16,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.introduction -%}
-                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-100 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -27,7 +27,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.fundamentals -%}
-                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-100 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -38,7 +38,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.customization -%}
-                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-100 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -49,7 +49,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.theming -%}
-                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-100 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -60,7 +60,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.modules -%}
-                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-100 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-looser">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -119,10 +119,10 @@ layout: layouts/base.njk
             <h1 class="flex align-items-start relative font-6xl extrabold color-white mb-12 tracking-tight">
               {{ title | safe }}
             </h1>
-            <p class="font-xl semibold color-white pb-56 color-white border-b-4 border-gray border-opacity-20">
+            <p class="font-xl semibold color-white pb-56 color-white border-b-4 border-white">
               {{ description | safe }}
             </p>
-            <div class="markdown color-white">
+            <div class="markdown color-white" style="--markdown-heading-color: white; --markdown-paragraph-color: white;">
               {{ content | safe }}
             </div>
           </div>

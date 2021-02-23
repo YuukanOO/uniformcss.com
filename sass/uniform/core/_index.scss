@@ -1292,7 +1292,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
     }
     --FONT-WEIGHTS------------------:#03;
     @each $key, $value in $merged-font-weights {
-      --font-#{'' + $key}: #{$value};
+      --#{'' + $key}: #{$value};
     }
     --LEADING-----------------------:#04;
     @each $key, $value in $merged-leadings {
