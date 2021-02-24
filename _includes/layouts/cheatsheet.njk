@@ -1,0 +1,56 @@
+---
+layout: layouts/base.njk
+---
+
+{% include "partials/nav.njk" %}
+
+<section>
+  <div class="wrapper">
+    {# <div class="pt-96">
+      <span class="inline-flex align-items-center h-32 px-12 mb-20 radius-sm border-1 border-white uppercase font-xs bold tracking-loose color-white">Cheatsheet</span>
+      <h2 class="font-3xl sm.font-6xl md.font-7xl extrabold m-auto mb-32 tracking-tight color-white">Build web components without <br class="hidden sm.inline">ever touching your CSS</h2>
+      <div>
+        <a href="#" class="inline-flex align-items-center bold font-lg color-white hover.color-white">
+          Learn more about Uniform
+          <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
+        </a>
+      </div>
+    </div> #}
+
+    <div class="grid grid-cols-1 sm.grid-cols-12 gap-72" data-barba="container" data-barba-namespace="get-started">
+      <div class="sm.col-12 lg.col-9 py-64 pt-48 sm.pt-72">
+        <div class="color-white" style="--markdown-heading-color: white; --markdown-paragraph-color: white;">
+          {{ content | safe }}
+        </div>
+      </div>
+      <div class="relative hidden lg.block lg.col-3">
+        <div class="sticky flex justify-content-end py-64 pt-72 top-56 h-100vh overflow-auto">
+          <div class="w-100p">
+            
+            <div class="pb-64">
+              <h6 class="font-sm bold mb-18 color-white">
+                On this page
+              </h6>
+              {{ content | toc | safe }}
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      {# <div class="relative hidden lg.block lg.col-2">
+        <div class="sticky flex justify-content-end py-64 pt-72 top-56 h-100vh overflow-auto">
+          <div class="w-100p">
+            
+            <div class="pb-64">
+              <h6 class="font-sm bold mb-18 color-white">
+                On this page
+              </h6>
+              {{ content | toc | safe }}
+            </div>
+            
+          </div>
+        </div>
+      </div> #}
+    </div>
+  </div>
+</section>

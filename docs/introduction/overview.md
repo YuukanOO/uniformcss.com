@@ -15,7 +15,7 @@ Thank you for checking out Uniform CSS, a utility-first CSS framework built enti
 
 ## How Uniform CSS is different
 
-Here are some **top reasons** why Uniform CSS could be a great fit for your next ambitious project.
+Here are some **top reasons** why Uniform CSS could be a great fit for you.
 
 ### 1. It's written entirely in Sass
 

@@ -21,7 +21,7 @@ $include: map.get($all-config, include);
   .label {
     display: inline-block;
     font-size: var(--label-font-size, var(--font-xs));
-    font-weight: var(--label-font-weight, var(--font-bold));
+    font-weight: var(--label-font-weight, var(--bold));
     color: var(--label-color, black);
     letter-spacing: var(--label-tracking, 0);
     text-transform: var(--label-text-transform, none);

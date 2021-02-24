@@ -15,6 +15,7 @@ $range-limit: map.get(core.$all-config, range-limits, translate-y);
 $variants: (
 	core.merge(
     core.positive-sizes($range-limit),
+    core.negative-sizes($range-limit),
     (
       n100p: -100%,
       100p: 100%,

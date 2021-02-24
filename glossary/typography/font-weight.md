@@ -17,8 +17,8 @@ The `font-weight` utilities set font weight.
 | `font-light`      | `font-weight: var(--font-light)`      |
 | `font-regular`    | `font-weight: var(--font-regular)`    |
 | `font-medium`     | `font-weight: var(--font-medium)`     |
-| `font-semibold`   | `font-weight: var(--font-semibold)`   |
-| `font-bold`       | `font-weight: var(--font-bold)`       |
+| `semibold`   | `font-weight: var(--semibold)`   |
+| `bold`       | `font-weight: var(--bold)`       |
 | `font-extrabold`  | `font-weight: var(--font-extrabold)`  |
 | `font-ultrabold`  | `font-weight: var(--font-ultrabold)`  |
 | `font-100`        | `font-weight: 100`                    |

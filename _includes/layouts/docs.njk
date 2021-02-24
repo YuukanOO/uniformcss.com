@@ -7,60 +7,60 @@ layout: layouts/base.njk
 <section>
   <div class="wrapper">
     <div class="flex">
-      <aside class="hidden sm.block w-192 flex-none">
+      <aside class="hidden sm.block w-224 flex-none">
         <div class="top-56 sticky h-100vh overflow-auto overscroll-contain py-64 pt-72">
           
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-30">
             <h6 class="font-sm bold mb-18 color-white">
               Introduction
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.introduction -%}
-                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-30">
             <h6 class="font-sm bold mb-18 color-white">
              Fundamentals
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.fundamentals -%}
-                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-30">
             <h6 class="font-sm bold mb-18 color-white">
               Customization
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.customization -%}
-                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-30">
             <h6 class="font-sm bold mb-18 color-white">
               Theming
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.theming -%}
-                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-30">
             <h6 class="font-sm bold mb-18 color-white">
               Module
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.modules -%}
-                <a href="{{ post.url }}" class="font-sm semibold leading-xloose transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-looser">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="font-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-cool-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -115,8 +115,8 @@ layout: layouts/base.njk
         </div>
 
         <div class="grid grid-cols-1 sm.grid-cols-12 lg.gap-0" data-barba="container" data-barba-namespace="get-started">
-          <div class="sm.col-12 lg.col-10 sm.pl-56 lg.px-80 py-64 pt-48 sm.pt-72">
-            <h1 class="flex align-items-start relative font-6xl extrabold color-white mb-12 tracking-tight">
+          <div class="sm.col-12 lg.col-9 sm.pl-56 lg.px-72 py-64 pt-48 sm.pt-72">
+            <h1 class="flex align-items-start relative font-7xl extrabold color-white tracking-tight mb-16">
               {{ title | safe }}
             </h1>
             <p class="font-xl semibold color-white pb-56 color-white border-b-4 border-white">
@@ -126,7 +126,7 @@ layout: layouts/base.njk
               {{ content | safe }}
             </div>
           </div>
-          <div class="relative hidden lg.block lg.col-2">
+          <div class="relative hidden lg.block lg.col-3">
             <div class="sticky flex justify-content-end py-64 pt-72 top-56 h-100vh overflow-auto">
               <div class="w-100p">
                 

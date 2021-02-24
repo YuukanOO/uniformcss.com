@@ -393,8 +393,8 @@ If you are using the CDN version of Uniform CSS, you can still customizing defau
   --font-light: 300;
   --font-regular: 400;
   --font-medium: 500;
-  --font-semibold: 600;
-  --font-bold: 700;
+  --semibold: 600;
+  --bold: 700;
   --font-extrabold: 800;
   --font-ultrabold: 900;
 }

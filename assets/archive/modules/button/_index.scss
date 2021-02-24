@@ -167,7 +167,7 @@ $include: map.get($all-config, include);
     border-radius: var(--btn-radius, var(--radius-xs));
     font-family: var(--btn-font-family, var(--font-sans));
     font-size: var(--btn-font-size, var(--font-base));
-    font-weight: var(--btn-font-weight, var(--font-bold));
+    font-weight: var(--btn-font-weight, var(--bold));
     line-height: 1;
     text-decoration: none;
     text-transform: var(--btn-text-transform, none);

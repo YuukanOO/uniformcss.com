@@ -33,7 +33,7 @@ Uniform CSS encourages the extraction of components without breaking your existi
 
 ---
 
-## Using @apply mixin <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm leading-0 font-bold radius-round bg-blue bg-brighten-500 color-white align-middle">Beta</span>
+## Using @apply mixin <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm leading-0 bold radius-round bg-blue bg-brighten-500 color-white align-middle">Beta</span>
 
 The `apply()` mixin allows you to apply properties directly using shorthand utility class names. Behind the scene, it parses through the list of arguments and extends placeholder selectors that match the name.
 

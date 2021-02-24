@@ -80,7 +80,7 @@ Any new utilities generated through the `utilities` settings map will behave lik
 
 ---
 
-## Add to Core Library <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm leading-0 font-bold radius-round bg-blue bg-brighten-500 color-white align-middle">Advanced</span>
+## Add to Core Library <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm leading-0 bold radius-round bg-blue bg-brighten-500 color-white align-middle">Advanced</span>
 
 Adding utilities through the utilities map can be a useful to quickly add properties however when adding many, your Uniform configuration may become long. To avoid this problem custom properties can also be added natively to the core library.
 

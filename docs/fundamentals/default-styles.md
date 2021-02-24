@@ -149,7 +149,7 @@ a {
 }
 
 b,strong {
-  font-weight: var(--bold-font-weight, var(--font-bold));
+  font-weight: var(--bold-font-weight, var(--bold));
 }
 
 sub,sup {
