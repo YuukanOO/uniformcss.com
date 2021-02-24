@@ -397,7 +397,10 @@ lastUpdated: 2020-10-20
 
 ## Box Shadows { .font-7xl .extrabold .color-white .tracking-tight .mt-96 .first.mt-0 .mb-24 }
 
-<div class="grid grid-cols-2 gap-48 bg-white p-36 radius-lg">
+<div class="grid grid-cols-1 gap-48 bg-gray bg-tint-900 p-36 radius-lg">
+  <div class="p-18 bg-white radius-md shadow-2xs color-black font-xs bold radius-sm overflow-hidden">
+    shadow-2xs
+  </div>
   <div class="p-18 bg-white radius-md shadow-xs color-black font-xs bold radius-sm overflow-hidden">
     shadow-xs
   </div>
@@ -412,6 +415,9 @@ lastUpdated: 2020-10-20
   </div>
   <div class="p-18 bg-white radius-md shadow-xl color-black font-xs bold radius-sm overflow-hidden">
     shadow-xl
+  </div>
+  <div class="p-18 bg-white radius-md shadow-2xl color-black font-xs bold radius-sm overflow-hidden">
+    shadow-2xl
   </div>
   <div class="p-18 bg-white radius-md shadow-focus color-black font-xs bold radius-sm overflow-hidden">
     shadow-focus
@@ -432,7 +438,13 @@ lastUpdated: 2020-10-20
 
 ## Border Radiuses { .font-7xl .extrabold .color-white .tracking-tight .mt-96 .first.mt-0 .mb-24 }
 
-<div class="grid grid-cols-2 sm.grid-cols-3 gap-18">
+<div class="grid grid-cols-2 sm.grid-cols-4 gap-18">
+  <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-2xs">
+    <div>
+      radius-2xs<br>
+      <span class="leading-looser color-black">3px • 0.187rem</span>
+    </div>
+  </div>
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-xs">
     <div>
       radius-xs<br>
@@ -461,6 +473,12 @@ lastUpdated: 2020-10-20
     <div>
       radius-xl<br>
       <span class="leading-looser color-black">16px • 1rem</span>
+    </div>
+  </div>
+  <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-2xl">
+    <div>
+      radius-2xl<br>
+      <span class="leading-looser color-black">20px • 1.25rem</span>
     </div>
   </div>
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-round">
