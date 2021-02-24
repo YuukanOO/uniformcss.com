@@ -104,27 +104,27 @@ cssCodeExample: |
 
 <section class="relative z-4 bg-gray bg-tint-900">
   <div class="wrapper py-64">
-    <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
+    <div class="grid grid-cols-1 md.grid-cols-3 gap-64 md.gap-48 lg.gap-64">
       <div>
         <div class="flex align-items-center mb-24 ">
           <h4 class="font-lg extrabold tracking-tight">Step 1. Install the Package</h4>
         </div>
         <p class="font-md mb-36">Install the Uniform node package or clone the project and install its dependencies.</p>
-        <pre class="p-18 py-16 radius-sm bg-blue bg-shade-900 color-white select-all">npm i uniformcss</pre>
+        <pre class="font-sm leading-150 px-18 py-16 radius-md bg-blue bg-shade-900 color-white select-all">npm i uniformcss</pre>
       </div>
       <div>
         <div class="flex align-items-center mb-24 ">
           <h4 class="font-lg extrabold tracking-tight">Step 2. Include Uniform</h4>
         </div>
-        <p class="font-md mb-36">The entire CSS framework can be added directly into any Sass projects with only one line of code.</p>
-        <pre class="p-18 py-16 radius-sm bg-blue bg-shade-900 color-white select-all"><code class="language-scss"><span class="token keyword">@use</span> <span class="token string">"uniform"</span> <span class="token module-modifier keyword">as</span> *<span class="token punctuation">;</span></code></pre>
+        <p class="font-md mb-36">Uniform CSS can be added directly into any Sass project with one line of code.</p>
+        <pre class="font-sm leading-150 px-18 py-16 radius-md bg-blue bg-shade-900 color-white select-all"><code class="language-scss"><span class="token keyword">@use</span> <span class="token string">"uniform"</span> <span class="token module-modifier keyword">as</span> *<span class="token punctuation">;</span></code></pre>
       </div>
       <div>
         <div class="flex align-items-center mb-24 ">
           <h4 class="font-lg extrabold tracking-tight">Step 3. Compose your UI</h4>
         </div>
         <p class="font-md mb-36">Style components by writing composable utility properties directly in your HTML.</p>
-        <pre class="p-18 py-16 radius-sm bg-blue bg-shade-900 color-blue color-tint-300 select-all">px-24 py-20 border-b-1 ...</pre>
+        <pre class="font-sm leading-150 px-18 py-16 radius-md bg-blue bg-shade-900 color-blue color-tint-300 select-all">px-24 py-20 border-b-1 ...</pre>
       </div>
     </div>
   </div>
@@ -219,7 +219,7 @@ cssCodeExample: |
     </figure> <!-- cd-image-container -->
 
 
-    <div class="grid grid-cols-1 md.grid-cols-3 gap-64">
+    <div class="grid grid-cols-1 md.grid-cols-3 gap-64 md.gap-48 lg.gap-64">
       <div>
         <div class="mb-20">
           <h4 class="font-lg extrabold tracking-tight">Wide Property Support</h4>
@@ -738,7 +738,7 @@ cssCodeExample: |
               <div class="flex">
                 <button type="button" class="flex-none group relative radius-round inline-flex align-items-center align-justify-center h-20 w-40 mx-6" @click="isDark = !isDark">
                   <span class="bg-gray bg-tint-600 group-hover.bg-tint-500 pointer-events-none absolute h-16 w-36 mx-auto radius-round transition-200" :class="{ 'bg-gray bg-tint-600 group-hover.bg-tint-500' : !isDark, 'bg-green' : isDark }"></span>
-                  <span class="translate-x-0 pointer-events-none absolute left-0 inline-block h-18 w-18 border-1 border-gray border-tint-500 radius-round bg-white shadow-xs transform transition-transform ease-in-out transition-200" :class="{ 'translate-x-20': isDark, 'translate-x-0': !isDark }"></span>
+                  <span class="translate-x-0 pointer-events-none absolute left-0 inline-block h-18 w-18 border-1 border-gray border-tint-500 radius-round bg-white shadow-2xs transform transition-transform ease-in-out transition-200" :class="{ 'translate-x-20': isDark, 'translate-x-0': !isDark }"></span>
                 </button>
               </div>
 
