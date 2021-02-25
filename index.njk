@@ -63,7 +63,7 @@ cssCodeExample: |
     <div class="relative p-2">
       <div class="absolute top-0 left-0 w-100p h-100p bg-flare radius-xl filter filter-blur-60"></div>
       <div class="absolute top-0 left-0 w-100p h-100p bg-flare radius-xl"></div>
-      <div class="relative z-2 home-highlight grid grid-cols-1 md.grid-cols-2 radius-xl shadow-sm overflow-hidden bg-black bg-opacity-90 backdrop backdrop-blur-60 backdrop-saturate-4">
+      <div class="relative z-2 transparent-highlight grid grid-cols-1 md.grid-cols-2 radius-xl shadow-sm overflow-hidden bg-black bg-opacity-90 backdrop backdrop-blur-60 backdrop-saturate-4">
         <div>
           <header class="flex align-items-center justify-content-between h-64 px-20 border-b-1 border-white border-opacity-10 color-white font-xs bold">
             <div class="flex align-items-center">
@@ -284,7 +284,7 @@ cssCodeExample: |
             <p class="font-md color-white color-opacity-80">Take advantage of HSL based colors to instantaneously configure Uniform to match your design with simple to tweak color tokens. .</p>
           </div>
         </div>
-        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-indigo bg-shade-700 home-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-gray bg-shade-700 border-1 border-white border-opacity-20 transparent-highlight">
 {% highlight "css" %}
 /* styles.css */
 :root {
@@ -312,7 +312,7 @@ cssCodeExample: |
             <p class="font-md color-white color-opacity-80">Apply composable manipulation to any color. Increase or decrease saturation, lighten, and darken colors directly in your html.</p>
           </div>
         </div>
-        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-sky bg-shade-700 home-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-gray bg-shade-700 border-1 border-white border-opacity-20 transparent-highlight">
 {% highlight "html" %}
 <div class="bg-blue bg-shade-400">
   ...
@@ -340,7 +340,7 @@ cssCodeExample: |
             <p class="font-md color-white color-opacity-80">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
           </div>
         </div>
-        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-pink bg-shade-700 home-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-gray bg-shade-700 border-1 border-white border-opacity-20 transparent-highlight">
 {% highlight "html" %}
 <div class="bg-gradient" style="--gradient: to right, #ffbebe, #4eff9d;">
   ...
@@ -361,14 +361,14 @@ cssCodeExample: |
   </div>
 </section>
 
-<section class="bg-gray bg-tint-900">
+<section class="bg-white">
   <div class="wrapper py-80 sm.py-160">
 
     <div class="mb-20">
       <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs bold tracking-loose color-black">Animations</span>
     </div>
     <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold m-auto mb-32 tracking-tight">
-      Built-in buttery smooth animations <br class="hidden sm.inline">for rich user experiences
+       <span class="color-transparent bg-gradient bg-text" style="--gradient: to right, #af89ff, #68b2ff;">Buttery smooth</span> animations <br class="hidden sm.inline">for rich user experiences
     </h2>
 
     <div class="mb-64">
@@ -394,13 +394,13 @@ cssCodeExample: |
         </button>
       </div>
       <div class="flex align-items-center justify-content-center row-2 radius-lg p-20 bg-gradient" style="--gradient: to bottom, #556679, #232d42;">
-        <div class="relative align-left px-18 py-12 w-100p max-w-288 radius-xs border-l-3 border-green leading-normal bg-white bg-opacity-10 color-white bold">
+        <div class="relative align-left px-18 py-18 w-100p max-w-288 radius-xs border-l-3 border-green bg-white bg-opacity-10 color-white bold">
           <span class="absolute top-0 right-0 mt-n4 mr-n4 flex h-12 w-12">
             <span class="animate-ping absolute inline-flex h-12 w-12 radius-round bg-green bg-tint-300 opacity-70"></span>
             <span class="relative inline-flex radius-round h-12 w-12 bg-green bg-tint-300"></span>
           </span>
-          2 New messages <br>
-          <span class="font-xs opacity-60">Received 2 minutes ago</span>
+          2 New messages
+          <div class="mt-10 font-xs semibold opacity-60">Received 2 minutes ago</div>
         </div>
       </div>
       <div class="flex align-items-center justify-content-center radius-lg p-20 bg-gradient" style="--gradient: to bottom, #8eb3e0, #5781de;">
@@ -431,7 +431,7 @@ cssCodeExample: |
   </div>
 </section>
 
-<section class="bg-white">
+<section class="bg-cool-gray bg-tint-800">
   <div class="wrapper py-80 sm.py-160">
     <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
       <div>
@@ -487,7 +487,7 @@ cssCodeExample: |
           </div>
         </div>
       </div>
-      <div class="flex align-items-center radius-lg bg-cool-gray bg-tint-800 p-20 py-80 overflow-hidden">
+      <div class="flex align-items-center radius-lg bg-cool-gray bg-tint-600 p-20 py-80 overflow-hidden">
 
         <div class="js-theme-demo flex flex-none w-640 transform translate-x-64 sm.translate-x-160 md.translate-x-64 radius-lg bg-blue bg-shade-400 overflow-hidden" style="--blue-hue: 186; --blue-sat: 43%; --checkbox-bg: transparent; --checkbox-border: 1px solid rgba(255,255,255,.2); --checkbox-hover-border: 1px solid rgba(255,255,255,.4);">
           <div class="w-224 flex-none border-r-1 border-white border-opacity-20">
@@ -701,7 +701,7 @@ cssCodeExample: |
 
   <div class="wrapper py-80 sm.py-160">
     <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
-      <div class="order-2 md.order-1 flex align-items-center justify-content-center px-20 pb-0 pt-96 bg-blue bg-shade-700 radius-lg">
+      <div class="order-2 md.order-1 flex align-items-center justify-content-center px-20 pb-0 pt-96 bg-blue bg-shade-800 radius-lg">
         <div>
           <div class="bg-white dark.bg-blue dark.bg-shade-900 transition-200 radius-lg overflow-hidden w-100p max-w-288">
             <img src="/assets/img/apartment.jpg" class="cursor-pointer">
@@ -814,7 +814,7 @@ cssCodeExample: |
           Blazing fast delivery <br class="hidden sm.inline">with customizable <br class="hidden md.inline">design tokens
         </h2>
 
-        <div class="mb-64">
+        <div class="mb-56">
           <a href="#" class="inline-flex align-items-center bold font-lg color-white hover.color-white">
             Customize your CDN build 
             <svg class="fill-current w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
@@ -822,7 +822,7 @@ cssCodeExample: |
         </div>
 
         <div class="grid grid-cols-1 sm.grid-cols-3 gap-20">
-          <div class="radius-md px-20 py-24 bg-blue bg-shade-700">
+          <div class="radius-md px-20 py-24 bg-black">
             <div class="flex mb-20">
               <div class="font-5xl font-light leading-none bg-gradient bg-text color-transparent" style="--gradient: to right, #8F7CFF, #fd7cff;">1s</div>
             </div>
@@ -830,7 +830,7 @@ cssCodeExample: |
             </div>
             <p class="font-sm leading-tight color-white">build time <br>using <br>dart sass</p>
           </div>
-          <div class="radius-md px-20 py-24 bg-blue bg-shade-700">
+          <div class="radius-md px-20 py-24 bg-black">
             <div class="flex mb-20">
               <div class="font-5xl font-light leading-none bg-gradient bg-text color-transparent" style="--gradient: to right, #7CD0FF, #7CFFA9;">48kb</div>
             </div>
@@ -838,7 +838,7 @@ cssCodeExample: |
             </div>
             <p class="font-sm leading-tight color-white">brotli compression <br>for lightning <br>fast delivery</p>
           </div>
-          <div class="radius-md px-20 py-24 bg-blue bg-shade-700">
+          <div class="radius-md px-20 py-24 bg-black">
             <div class="flex mb-20">
               <div class="font-5xl font-light leading-none bg-gradient bg-text color-transparent" style="--gradient: to right, #F5FF7C, #FFBB7C;">300+</div>
             </div>
@@ -853,7 +853,7 @@ cssCodeExample: |
         <div>
           <h4 class="font-lg bold mb-20 tracking-tight color-white"><span class="extrabold mr-4">Step 1.</span> Install the Package</h4>
           <p class="font-md color-white color-opacity-80 mb-24">Add the following code to the head of your project.</p>
-          <div class="home-highlight radius-sm bg-blue bg-shade-700">
+          <div class="transparent-highlight radius-sm bg-blue bg-shade-700">
             {% highlight "bash" %}
               https://cdn.jsdelivr.net/npm/uniformcss@1.0.0/uniform.css
             {% endhighlight %}
@@ -862,7 +862,7 @@ cssCodeExample: |
         <div>
           <h4 class="font-lg bold mb-20 tracking-tight color-white"><span class="extrabold mr-4">Step 2.</span> Install the Package</h4>
           <p class="font-md color-white color-opacity-80 mb-24">Customize design tokens directly in your CSS to fit your design.</p>
-          <div class="home-highlight radius-sm bg-blue bg-shade-700">
+          <div class="transparent-highlight radius-sm bg-blue bg-shade-700">
 {% highlight "css" %}
 :root {
   --blue-hue: 50;

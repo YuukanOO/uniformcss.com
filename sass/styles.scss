@@ -63,8 +63,10 @@
 	display: none !important;
 }
 
-.transparent-highlight .language-html {
-	background: transparent;
+.transparent-highlight {
+	pre[class*=language-] {
+		background: transparent;
+	}
 }
 
 .docs-sidebar:before {
@@ -93,12 +95,6 @@
 		ol {
 			display: none;
 		}
-	}
-}
-
-.home-highlight {
-	pre[class*=language-] {
-		background: transparent;
 	}
 }
 
