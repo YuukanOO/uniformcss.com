@@ -61,9 +61,9 @@ cssCodeExample: |
 <section class="relative bg-black mb-n2" data-barba="container" data-barba-namespace="get-started">
   <div class="wrapper">
     <div class="relative p-2">
-      <div class="absolute top-0 left-0 w-100p h-100p bg-flare radius-xl radius-b-0 filter filter-blur-60"></div>
-      <div class="absolute top-0 left-0 w-100p h-100p bg-flare radius-xl radius-b-0"></div>
-      <div class="relative z-2 home-highlight grid grid-cols-1 md.grid-cols-2 radius-xl radius-b-0 shadow-sm overflow-hidden bg-black bg-opacity-90 backdrop backdrop-blur-60 backdrop-saturate-4">
+      <div class="absolute top-0 left-0 w-100p h-100p bg-flare radius-xl filter filter-blur-60"></div>
+      <div class="absolute top-0 left-0 w-100p h-100p bg-flare radius-xl"></div>
+      <div class="relative z-2 home-highlight grid grid-cols-1 md.grid-cols-2 radius-xl shadow-sm overflow-hidden bg-black bg-opacity-90 backdrop backdrop-blur-60 backdrop-saturate-4">
         <div>
           <header class="flex align-items-center justify-content-between h-64 px-20 border-b-1 border-white border-opacity-10 color-white font-xs bold">
             <div class="flex align-items-center">
@@ -102,43 +102,49 @@ cssCodeExample: |
   </div>
 </section>
 
-<section class="relative z-4 bg-gray bg-tint-900">
-  <div class="wrapper py-64">
+<section class="relative z-4 color-white pb-160">
+  <div class="wrapper pt-64">
     <div class="grid grid-cols-1 md.grid-cols-3 gap-64 md.gap-48 lg.gap-64">
       <div>
         <div class="flex align-items-center mb-24 ">
           <h4 class="font-lg extrabold tracking-tight">Step 1. Install the Package</h4>
         </div>
-        <p class="font-md mb-36">Install the Uniform node package or clone the project and install its dependencies.</p>
-        <pre class="font-sm leading-150 px-18 py-16 radius-md bg-blue bg-shade-900 color-white select-all">npm i uniformcss</pre>
+        <p class="font-md mb-36 color-white color-opacity-80">Install the Uniform node package or clone the project and install its dependencies.</p>
+        <pre class="font-sm leading-150 px-18 py-16 radius-md bg-cool-gray bg-opacity-10 border-1 border-blue border-tint-500 border-opacity-20 color-white select-all">npm i uniformcss</pre>
       </div>
       <div>
         <div class="flex align-items-center mb-24 ">
           <h4 class="font-lg extrabold tracking-tight">Step 2. Include Uniform</h4>
         </div>
-        <p class="font-md mb-36">Uniform CSS can be added directly into any Sass project with one line of code.</p>
-        <pre class="font-sm leading-150 px-18 py-16 radius-md bg-blue bg-shade-900 color-white select-all"><code class="language-scss"><span class="token keyword">@use</span> <span class="token string">"uniform"</span> <span class="token module-modifier keyword">as</span> *<span class="token punctuation">;</span></code></pre>
+        <p class="font-md mb-36 color-white color-opacity-80">Uniform CSS can be added directly into any Sass project with one line of code.</p>
+        <pre class="font-sm leading-150 px-18 py-16 radius-md bg-cool-gray bg-opacity-10 border-1 border-blue border-tint-500 border-opacity-20 color-white select-all"><code class="language-scss"><span class="token keyword">@use</span> <span class="token string">"uniform"</span> <span class="token module-modifier keyword">as</span> *<span class="token punctuation">;</span></code></pre>
       </div>
       <div>
         <div class="flex align-items-center mb-24 ">
           <h4 class="font-lg extrabold tracking-tight">Step 3. Compose your UI</h4>
         </div>
-        <p class="font-md mb-36">Style components by writing composable utility properties directly in your HTML.</p>
-        <pre class="font-sm leading-150 px-18 py-16 radius-md bg-blue bg-shade-900 color-blue color-tint-300 select-all">px-24 py-20 border-b-1 ...</pre>
+        <p class="font-md mb-36 color-white color-opacity-80">Style components by writing composable utility properties directly in your HTML.</p>
+        <pre class="font-sm leading-150 px-18 py-16 radius-md bg-cool-gray bg-opacity-10 border-1 border-blue border-tint-500 border-opacity-20 color-blue color-tint-300 select-all">px-24 py-20 border-b-1 ...</pre>
       </div>
     </div>
   </div>
 </section>
 
-<section class="bg-white">
-  <div class="wrapper py-80 sm.py-128">
-    <div class="text-center">
-      <span class="inline-flex align-items-center h-32 px-12 mb-20 radius-sm border-1 border-black uppercase font-xs bold tracking-loose color-black">Rapid Prototyping</span>
-      <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold m-auto mb-32 tracking-tight text-center">Build web components without <br class="hidden sm.inline">ever touching your CSS</h2>
+{# <div class="relative bg-white">
+  <div class="wrapper">
+    <div class="h-2 bg-gray bg-tint-800"></div>
+  </div>
+</div> #}
+
+<section class="bg-cool-gray bg-shade-800">
+  <div class="wrapper py-80 sm.py-160">
+    <div>
+      <span class="inline-flex align-items-center h-32 px-12 mb-20 radius-sm border-1 border-white uppercase font-xs bold tracking-loose color-white">Rapid Prototyping</span>
+      <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold m-auto mb-32 tracking-tight color-white">Build <span class="bg-text color-transparent bg-gradient" style="--gradient: to right, #ff9dd9, #ffa594;">web components</span> without <br class="hidden sm.inline">ever touching your CSS</h2>
       <div class="mb-64">
-        <a href="#" class="inline-flex align-items-center bold font-lg color-black hover.color-black">
+        <a href="#" class="inline-flex align-items-center bold font-lg color-white hover.color-white">
           Learn more about Uniform
-          <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
+          <svg class="fill-current w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
         </a>
       </div>
     </div>
@@ -178,8 +184,8 @@ cssCodeExample: |
       <span class="cd-image-label px-10 py-3 radius-round bg-black color-white mb-12 mr-12 font-xs bold tracking-loose uppercase" data-type="original">Preview</span>
   
       <div class="cd-resize-img radius-l-xl"> <!-- the resizable image on top -->
-        <div class="w-100p h-448 overflow-auto bg-blue bg-shade-900">
-          <div class="flex">
+        <div class="w-100p h-448 overflow-auto bg-black">
+          <div class="flex transparent-highlight">
 {% highlight "html" %}
 <article class="w-100p max-w-512 radius-md bg-white shadow-md">
   <header class="px-24 py-20 border-b-1 border-black border-opacity-10">
@@ -222,21 +228,21 @@ cssCodeExample: |
     <div class="grid grid-cols-1 md.grid-cols-3 gap-64 md.gap-48 lg.gap-64">
       <div>
         <div class="mb-20">
-          <h4 class="font-lg extrabold tracking-tight">Wide Property Support</h4>
+          <h4 class="font-lg extrabold tracking-tight color-white">Wide Property Support</h4>
         </div>
-        <p class="font-md">All common CSS properties are supported out of the box. You can even add your own custom properties directly in your configuration.</p>
+        <p class="font-md color-white color-opacity-80">All common CSS properties are supported out of the box. You can even add your own custom properties directly in your configuration.</p>
       </div>
       <div>
         <div class="mb-20">
-          <h4 class="font-lg extrabold tracking-tight">HSL Color Models</h4>
+          <h4 class="font-lg extrabold tracking-tight color-white">HSL Color Models</h4>
         </div>
-        <p class="font-md">Select from a wide range of colors, tints, and shades. Easily tweak the hue and saturation of each color to match any design.</p>
+        <p class="font-md color-white color-opacity-80">Select from a wide range of colors, tints, and shades. Easily tweak the hue and saturation of each color to match any design.</p>
       </div>
       <div>
         <div class="mb-20">
-          <h4 class="font-lg extrabold tracking-tight">Common Pixel Sizing</h4>
+          <h4 class="font-lg extrabold tracking-tight color-white">Common Pixel Sizing</h4>
         </div>
-        <p class="font-md">Build pixel perfect components without any  compromise. Uniform supports a wide range of common spacing and sizing values. </p>
+        <p class="font-md color-white color-opacity-80">Build pixel perfect components without any  compromise. Uniform supports a wide range of common spacing and sizing values. </p>
       </div>
     </div>
 
@@ -244,22 +250,22 @@ cssCodeExample: |
   </div>
 </section>
 
-<section class="bg-white">
+<section class="bg-cool-gray bg-shade-800">
   {% include "partials/components.njk" %}
 </section>
 
-<section class="bg-white">
-  <div class="wrapper py-80 sm.py-128">
+<section class="bg-cool-gray bg-shade-800">
+  <div class="wrapper py-80 sm.py-160">
     
     <div class="mb-20">
-      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs bold tracking-loose color-black">Fleixble Colors</span>
+      <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-white uppercase font-xs bold tracking-loose color-white">Colorfinity</span>
     </div>
-    <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold mb-32 tracking-tight color-black">
-      Flexible colors to match any designs <br class="hidden sm.inline">with composable manipulations
+    <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold mb-32 tracking-tight color-white">
+      <span class="color-transparent bg-gradient bg-text" style="--gradient: to right, #89d5ff, #68ffb3, #ffd066;">Flexible colors</span> to match any designs <br class="hidden sm.inline">with composable manipulations
     </h2>
 
     <div class="mb-64">
-      <a href="#" class="inline-flex align-items-center bold font-lg color-black hover.color-black">
+      <a href="#" class="inline-flex align-items-center bold font-lg color-white hover.color-white">
         See how colors work 
         <svg class="w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
       </a>
@@ -274,8 +280,8 @@ cssCodeExample: |
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-blue bg-tint-400 border-2 sm.border-3 border-white"></div>
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-blue bg-tint-800 border-2 sm.border-3 border-white"></div>
             </div>
-            <h4 class="font-lg extrabold mb-20 tracking-tight color-black">Instant Color Sync</h4>
-            <p class="font-md">Take advantage of HSL based colors to instantaneously configure Uniform to match your design with simple to tweak color tokens. .</p>
+            <h4 class="font-lg extrabold mb-20 tracking-tight color-white">Instant Color Sync</h4>
+            <p class="font-md color-white color-opacity-80">Take advantage of HSL based colors to instantaneously configure Uniform to match your design with simple to tweak color tokens. .</p>
           </div>
         </div>
         <div class="col-1 sm.col-7 md.col-8 radius-lg bg-indigo bg-shade-700 home-highlight">
@@ -302,8 +308,8 @@ cssCodeExample: |
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan bg-shade-300 border-2 sm.border-3 border-white"></div>
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-cyan bg-shade-600 border-2 sm.border-3 border-white"></div>
             </div>
-            <h4 class="font-lg extrabold mb-20 tracking-tight color-black">Composable Color Manipulation</h4>
-            <p class="font-md">Apply composable manipulation to any color. Increase or decrease saturation, lighten, and darken colors directly in your html.</p>
+            <h4 class="font-lg extrabold mb-20 tracking-tight color-white">Composable Color Manipulation</h4>
+            <p class="font-md color-white color-opacity-80">Apply composable manipulation to any color. Increase or decrease saturation, lighten, and darken colors directly in your html.</p>
           </div>
         </div>
         <div class="col-1 sm.col-7 md.col-8 radius-lg bg-sky bg-shade-700 home-highlight">
@@ -330,8 +336,8 @@ cssCodeExample: |
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-gradient border-2 sm.border-3 border-white" style="--gradient: to right, #c39eff, #85eeff;"></div>
               <div class="w-40 h-40 sm.w-48 sm.h-48 radius-round bg-gradient border-2 sm.border-3 border-white" style="--gradient: to right, #d2d2d2, #ff7ee3;"></div>
             </div>
-            <h4 class="font-lg extrabold mb-20 tracking-tight color-black">Inline Gradient Support</h4>
-            <p class="font-md">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
+            <h4 class="font-lg extrabold mb-20 tracking-tight color-white">Inline Gradient Support</h4>
+            <p class="font-md color-white color-opacity-80">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
           </div>
         </div>
         <div class="col-1 sm.col-7 md.col-8 radius-lg bg-pink bg-shade-700 home-highlight">
@@ -356,13 +362,13 @@ cssCodeExample: |
 </section>
 
 <section class="bg-gray bg-tint-900">
-  <div class="wrapper py-80 sm.py-128">
+  <div class="wrapper py-80 sm.py-160">
 
     <div class="mb-20">
       <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs bold tracking-loose color-black">Animations</span>
     </div>
     <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold m-auto mb-32 tracking-tight">
-      Built-in buttery smooth animations <br class="hidden sm.inline">for rich user experience
+      Built-in buttery smooth animations <br class="hidden sm.inline">for rich user experiences
     </h2>
 
     <div class="mb-64">
@@ -426,7 +432,7 @@ cssCodeExample: |
 </section>
 
 <section class="bg-white">
-  <div class="wrapper py-80 sm.py-128">
+  <div class="wrapper py-80 sm.py-160">
     <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
       <div>
         <div class="mb-20">
@@ -515,7 +521,7 @@ cssCodeExample: |
               </a>
 
               <a class="flex align-items-center px-10 py-4 radius-sm color-white hover.color-white color-opacity-70 font-xs semibold hover.bg-white hover.bg-opacity-10 transition-200">
-                <svg class="fill-current w-12 mr-12 opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M567.403 235.642L462.323 84.589A48 48 0 0 0 422.919 64H153.081a48 48 0 0 0-39.404 20.589L8.597 235.642A48.001 48.001 0 0 0 0 263.054V400c0 26.51 21.49 48 48 48h480c26.51 0 48-21.49 48-48V263.054c0-9.801-3-19.366-8.597-27.412zM153.081 112h269.838l77.913 112H378.334l-32 64H229.666l-32-64H75.168l77.913-112zM528 400H48V272h120l32 64h176l32-64h120v128z"/></svg>
+                <svg class="fill-current w-12 mr-12 opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M567.403 235.642L462.323 84.589A48 48 0 0 0 422.919 64H153.081a48 48 0 0 0-39.404 20.589L8.597 235.642A48.001 48.001 0 0 0 0 263.054V400c0 26.51 21.49 48 48 48h480c26.51 0 48-21.49 48-48V263.054c0-9.801-3-19.366-8.597-27.412zM153.081 112h269.838l77.913 112H378.334l-32 64H229.666l-32-64H75.168l77.913-112zM528 400H48V272h120l32 64h176l32-64h120v160z"/></svg>
                 Inbox
               </a>
 
@@ -691,9 +697,9 @@ cssCodeExample: |
   </div>
 </section>
 
-<section class="bg-blue bg-shade-800" x-data="{ isDark: false }" :class="{ 'is-dark' : isDark }">
+<section class="bg-blue bg-shade-900" x-data="{ isDark: false }" :class="{ 'is-dark' : isDark }">
 
-  <div class="wrapper py-80 sm.py-128">
+  <div class="wrapper py-80 sm.py-160">
     <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
       <div class="order-2 md.order-1 flex align-items-center justify-content-center px-20 pb-0 pt-96 bg-blue bg-shade-700 radius-lg">
         <div>
@@ -762,7 +768,7 @@ cssCodeExample: |
           </a>
         </div>
 <div class="flex">
-<div class="home-highlight mb-64 p-14 px-18 radius-md overflow-auto bg-blue bg-shade-900 color-white select-all bg-800">
+<div class="mb-64 p-16 px-18 radius-md overflow-auto bg-blue bg-shade-700 color-white select-all bg-800">
 <pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="dark.opacity-40 transition-200">bg-white</span> <span class="opacity-40 dark.opacity-100 transition-200">dark.bg-blue dark.bg-shade-900</span> <span class="dark.opacity-40 transition-200">transition-200</span> <span class="dark.opacity-40 transition-200">...</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
 {# {% highlight "html" %}
 <div class="bg-white dark.bg-blue bg-shade-900 transition-200 ...">
@@ -798,7 +804,7 @@ cssCodeExample: |
     <div class="h-3 bg-blue bg-shade-700"></div>
   </div>
 
-  <div class="wrapper py-80 sm.py-128">
+  <div class="wrapper py-80 sm.py-160">
     <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
       <div class="">
         <div class="mb-20">
@@ -816,7 +822,7 @@ cssCodeExample: |
         </div>
 
         <div class="grid grid-cols-1 sm.grid-cols-3 gap-20">
-          <div class="radius-md px-20 py-28 bg-blue bg-shade-700">
+          <div class="radius-md px-20 py-24 bg-blue bg-shade-700">
             <div class="flex mb-20">
               <div class="font-5xl font-light leading-none bg-gradient bg-text color-transparent" style="--gradient: to right, #8F7CFF, #fd7cff;">1s</div>
             </div>
@@ -824,7 +830,7 @@ cssCodeExample: |
             </div>
             <p class="font-sm leading-tight color-white">build time <br>using <br>dart sass</p>
           </div>
-          <div class="radius-md px-20 py-28 bg-blue bg-shade-700">
+          <div class="radius-md px-20 py-24 bg-blue bg-shade-700">
             <div class="flex mb-20">
               <div class="font-5xl font-light leading-none bg-gradient bg-text color-transparent" style="--gradient: to right, #7CD0FF, #7CFFA9;">48kb</div>
             </div>
@@ -832,7 +838,7 @@ cssCodeExample: |
             </div>
             <p class="font-sm leading-tight color-white">brotli compression <br>for lightning <br>fast delivery</p>
           </div>
-          <div class="radius-md px-20 py-28 bg-blue bg-shade-700">
+          <div class="radius-md px-20 py-24 bg-blue bg-shade-700">
             <div class="flex mb-20">
               <div class="font-5xl font-light leading-none bg-gradient bg-text color-transparent" style="--gradient: to right, #F5FF7C, #FFBB7C;">300+</div>
             </div>
@@ -846,7 +852,7 @@ cssCodeExample: |
       <div class="grid grid-cols-1 gap-64 md.gap-48 color-white">
         <div>
           <h4 class="font-lg bold mb-20 tracking-tight color-white"><span class="extrabold mr-4">Step 1.</span> Install the Package</h4>
-          <p class="font-md color-100 color-opacity-80 mb-24">Add the following code to the head of your project.</p>
+          <p class="font-md color-white color-opacity-80 mb-24">Add the following code to the head of your project.</p>
           <div class="home-highlight radius-sm bg-blue bg-shade-700">
             {% highlight "bash" %}
               https://cdn.jsdelivr.net/npm/uniformcss@1.0.0/uniform.css
@@ -855,7 +861,7 @@ cssCodeExample: |
         </div>
         <div>
           <h4 class="font-lg bold mb-20 tracking-tight color-white"><span class="extrabold mr-4">Step 2.</span> Install the Package</h4>
-          <p class="font-md color-100 color-opacity-80 mb-24">Customize design tokens directly in your CSS to fit your design.</p>
+          <p class="font-md color-white color-opacity-80 mb-24">Customize design tokens directly in your CSS to fit your design.</p>
           <div class="home-highlight radius-sm bg-blue bg-shade-700">
 {% highlight "css" %}
 :root {
