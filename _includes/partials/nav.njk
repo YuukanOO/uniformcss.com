@@ -41,14 +41,15 @@
           <button class="relative font-sm semibold color-white hover.color-white color-opacity-80 hover.color-opacity-100 transition-100 overflow-visible" x-data="{ open: !open }" @click="open = !open" data-barba-prevent>
             <img src="/assets/img/logo-square-400w.png" class="radius-sm w-36 h-36">
 
-            <div class="absolute top-100p right-0 mt-8 transform transform-top-right w-144 py-4 radius-sm overflow-hidden bg-white shadow-sm" 
+            <div class="absolute right-0 mt-8 transform transform-top-right w-144 py-4 radius-sm overflow-hidden bg-white shadow-sm" 
               x-show="open" 
               @click.away="open = false" 
-              x-transition:enter="transition-200 ease-out"
-              x-transition:enter-start="opacity-0 transform translate-y-8"
-              x-transition:enter-end="opacity-100 transform translate-y-0"
-              x-transition:leave="transition-200 ease-in"
-              x-transition:leave-end="opacity-0 transform translate-y-8"
+              x-transition:enter="transition ease-out transition-100" 
+              x-transition:enter-start="transform opacity-0 scale-90" 
+              x-transition:enter-end="transform opacity-100 scale-100" 
+              x-transition:leave="transition ease-in transition-100" 
+              x-transition:leave-start="transform opacity-100 scale-100" 
+              x-transition:leave-end="transform opacity-0 scale-90"
               x-cloak
             >
               <a href="" class="flex align-items-center px-14 py-6 transition-200 hover.bg-cool-gray hover.bg-tint-900 color-black">
