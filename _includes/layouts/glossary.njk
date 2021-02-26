@@ -6,243 +6,79 @@ layout: layouts/base.njk
 
 <section>
   <div class="wrapper">
-    <div class="flex">
-      <aside class="hidden sm.block w-192 flex-none">
-        <div class="t-56 sticky h-100vh overflow-auto py-64 pt-72">
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Alignment
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.alignment -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Appearance
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.appearance -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Background
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.background -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Border
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.border -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Composition
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.composition -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Effect
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.effect -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Flexbox
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.flexbox -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Gap
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.gap -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Grid
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.grid -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Interactive
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.interactive -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Margin
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.margin -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Padding
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.padding -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Overflow
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.overflow -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              SVG
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.svg -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Typography
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.typography -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Transform
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.transform -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-20">
-            <h6 class="font-sm bold mb-18">
-              Transition
-            </h6>
-            <nav class="flex flex-col align-items-start">
-              {%- for post in collections.transition -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-100 transform translate-x-0 {% if post.url == page.url %}color-black hover.color-black{% else %} color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6{% endif %} leading-looser">{{ post.data.title }}</a>
-              {%- endfor -%}
-            </nav>
-          </div>
-
-        </div>
-      </aside>
-
-      <div class="flex-auto">
-        <div class="block sm.hidden py-20">
-          <div class="select">
-            <select class="js-select-url">
-              <optgroup label="Introduction">
-                {%- for post in collections.introduction -%}
-                  <option value="{{ post.data.title | slug }}"
-                    {% if post.url == page.url %}selected{% endif %}
-                  >{{ post.data.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-            </select>
-            <div class="select__angle">
-
-            </div>
-          </div>
-        </div>
-        
-        <div class="grid grid-cols-1 sm.grid-cols-12 lg.gap-0" data-barba="container" data-barba-namespace="glossary">
-          <div class="col-10 sm.px-56 lg.px-80 py-64 pt-48 sm.pt-72">
-            <h1 class="flex align-items-start relative font-6xl font-extrabold mb-12 tracking-tight">
-              {{ title | safe }}
-            </h1>
-            <p class="font-xl semibold color-black pb-56 border-b-4 border-gray border-opacity-20">
-              {{ description | safe }}
-            </p>
-            <div class="markdown markdown-glossary">
-              {{ content | safe }}
-            </div>
-          </div>
-          <div class="relative hidden lg.block lg.col-2">
-            <div class="sticky flex justify-content-end py-64 pt-72 t-56 h-100vh overflow-auto">
-              <div class="w-100p">
-                
-                <div class="pb-64">
-                  <h6 class="font-sm bold mb-18">
-                    On this page
-                  </h6>
-                  {{ content | toc | safe }}
+    <div class="grid grid-cols-1 sm.grid-cols-12 gap-72" data-barba="container" data-barba-namespace="get-started">
+      <div class="sm.col-12 lg.col-9 py-64 pt-48 sm.pt-72">
+        {%- for property in properties.alignment -%}
+          <article class="mb-72">
+            <h2 id="{{ property.title | slug }}" class="font-3xl sm.font-7xl extrabold color-white tracking-tight mt-96 first.mt-0 mb-14">
+              {{ property.title }}
+            </h2>
+            {# <div class="markdown font-sm mb-20" style="--markdown-paragraph-color: white;">
+              {{ property.description | markdownify | safe }}
+            </div> #}
+            <div class="relative flex flex-wrap align-items-center gutter-x-10 mb-20">
+              {%- if property.responsive -%}
+                <span class="radius-round my-10 px-12 py-3 bg-green bg-opacity-20 font-xs semibold color-green">
+                  responsive
+                </span>
+                <div>
+                  <div class="w-1 h-32 mx-6 bg-cool-gray bg-shade-600"></div>
                 </div>
-                
-              </div>
+              {%- endif -%}
+              {%- for pseudo in property.pseudos -%}      
+                <span class="radius-round my-10 px-12 py-3 bg-cool-gray bg-opacity-30 font-xs semibold color-cool-gray color-tint-400">
+                  {{ pseudo }}
+                </span>
+              {%- endfor -%}
             </div>
+            <div class="markdown" style="--markdown-table-border: 1px solid hsl(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-700));">
+              <table class="table-auto w-100p text-left mb-56 font-xs color-white">
+                <thead>
+                  <tr>
+                    <th class="px-12 py-12 bold">Class Name</th>
+                    <th class="px-12 py-12 bold">Property</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {%- for utility in property.utilities -%}
+                    <tr>
+                      <td class="border-b-1 border-cool-gray border-shade-800 py-8 color-teal align-top">
+                        <code class="whitespace-nowrap"><span class="select-all">{{utility.class}}</span> <span class="opacity-30">{{ property.extraSelector }}</span></code>
+                      </td>
+                      <td class="border-b-1 border-cool-gray border-shade-800 py-8 color-cool-gray color-tint-300">
+                        {%- for item in property.customProperties -%}
+                          <code class="opacity-70">{{ item }}</code><br>
+                        {%- endfor -%}
+                        {%- for item in utility.properties -%}
+                          <code>{{ item }}</code>
+                        {%- endfor -%}
+                      </td>
+                    </tr>
+                  {%- endfor -%}
+                </tbody>
+              </table>
+            </div>
+
+          </article>
+        {%- endfor -%}
+
+        
+
+        <div class="color-white" style="--markdown-heading-color: white; --markdown-paragraph-color: white;">
+          {{ content | safe }}
+        </div>
+      </div>
+      <div class="relative hidden lg.block lg.col-3">
+        <div class="sticky flex justify-content-end py-64 pt-72 top-56 h-100vh overflow-auto">
+          <div class="w-100p">
+            
+            <div class="pb-64">
+              <h6 class="font-sm bold mb-18 color-white">
+                On this page
+              </h6>
+              {{ content | toc | safe }}
+            </div>
+            
           </div>
         </div>
       </div>

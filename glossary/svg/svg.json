@@ -1,7 +1,0 @@
-{
-  "layout": "layouts/glossary.njk",
-  "permalink": "glossary/{{ title | slug }}/index.html",
-  "tags": [
-    "svg"
-  ]
-}

@@ -6,6 +6,7 @@ layout: layouts/base.njk
 
 <section>
   <div class="wrapper">
+  
     <div class="flex">
       <aside class="hidden sm.block w-224 flex-none">
         <div class="top-56 sticky h-100vh overflow-auto overscroll-contain py-64 pt-72">
@@ -69,54 +70,49 @@ layout: layouts/base.njk
       </aside>
 
       <div class="flex-auto">
-        <div class="block sm.hidden py-20">
-          <div class="select">
-            <select class="js-select-url">
-              <optgroup label="Introduction">
-                {%- for post in collections.introduction -%}
-                  <option value="{{ post.data.title | slug }}"
-                    {% if post.url == page.url %}selected{% endif %}
-                  >{{ post.data.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Fundamentals">
-                {%- for post in collections.fundamentals -%}
-                  <option value="{{ post.data.title | slug }}"
-                    {% if post.url == page.url %}selected{% endif %}
-                  >{{ post.data.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Customization">
-                {%- for post in collections.customization -%}
-                  <option value="{{ post.data.title | slug }}"
-                    {% if post.url == page.url %}selected{% endif %}
-                  >{{ post.data.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Theming">
-                {%- for post in collections.theming -%}
-                  <option value="{{ post.data.title | slug }}"
-                    {% if post.url == page.url %}selected{% endif %}
-                  >{{ post.data.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-              <optgroup label="Modules">
-                {%- for post in collections.modules -%}
-                  <option value="{{ post.data.title | slug }}"
-                    {% if post.url == page.url %}selected{% endif %}
-                  >{{ post.data.title }}</option>
-                {%- endfor -%}
-              </optgroup>
-            </select>
-            <div class="select__angle">
-
-            </div>
-          </div>
+        <div class="block sm.hidden pt-20">
+          <select class="radius-sm border-gray border-tint-600 hover.border-tint-400 transition-200 border-1 block shadow-2xs focus.shadow-input-focus js-select-url">
+            <optgroup label="Introduction">
+              {%- for post in collections.introduction -%}
+                <option value="{{ post.data.title | slug }}"
+                  {% if post.url == page.url %}selected{% endif %}
+                >{{ post.data.title }}</option>
+              {%- endfor -%}
+            </optgroup>
+            <optgroup label="Fundamentals">
+              {%- for post in collections.fundamentals -%}
+                <option value="{{ post.data.title | slug }}"
+                  {% if post.url == page.url %}selected{% endif %}
+                >{{ post.data.title }}</option>
+              {%- endfor -%}
+            </optgroup>
+            <optgroup label="Customization">
+              {%- for post in collections.customization -%}
+                <option value="{{ post.data.title | slug }}"
+                  {% if post.url == page.url %}selected{% endif %}
+                >{{ post.data.title }}</option>
+              {%- endfor -%}
+            </optgroup>
+            <optgroup label="Theming">
+              {%- for post in collections.theming -%}
+                <option value="{{ post.data.title | slug }}"
+                  {% if post.url == page.url %}selected{% endif %}
+                >{{ post.data.title }}</option>
+              {%- endfor -%}
+            </optgroup>
+            <optgroup label="Modules">
+              {%- for post in collections.modules -%}
+                <option value="{{ post.data.title | slug }}"
+                  {% if post.url == page.url %}selected{% endif %}
+                >{{ post.data.title }}</option>
+              {%- endfor -%}
+            </optgroup>
+          </select>
         </div>
 
         <div class="grid grid-cols-1 sm.grid-cols-12 lg.gap-0" data-barba="container" data-barba-namespace="get-started">
-          <div class="sm.col-12 lg.col-9 sm.pl-56 lg.px-72 py-64 pt-48 sm.pt-72">
-            <h1 class="flex align-items-start relative font-8xl extrabold color-white tracking-tight mb-16">
+          <div class="sm.col-12 lg.col-9 sm.pl-56 lg.px-72 py-64 sm.pt-72">
+            <h1 class="flex align-items-start relative font-6xl md.font-8xl extrabold color-white tracking-tight mb-16">
               {{ title | safe }}
             </h1>
             <p class="font-xl semibold color-white pb-64 color-white border-b-4 border-white">

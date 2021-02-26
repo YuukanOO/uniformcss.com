@@ -44,8 +44,8 @@ cssCodeExample: |
 
   <div class="wrapper">
     <div class="max-w-900px py-80 sm.py-160 sm.pb-112">
-      <div class="flex align-items-center mb-20 semibold font-sm color-white color-opacity-40">
-        <span class="inline-flex align-items-center h-20 mr-12 px-6 bg-blue color-white uppercase font-2xs bold tracking-loose radius-xs">New</span> Version 1.0.0 Release
+      <div class="flex align-items-center mb-20 semibold font-sm color-cool-gray color-shade-300">
+        <span class="inline-flex align-items-center h-20 mr-12 px-6 bg-teal bg-mint-200 color-black uppercase font-2xs bold tracking-loose radius-xs">New</span> Version 1.0.0 Release
       </div>
       <h1 class="font-3xl sm.font-7xl lg.font-8xl xl.font-9xl extrabold m-auto mb-24 tracking-tight color-white">Supercharged utility-first <br class="hidden sm.inline">CSS framework built on Sass</h1>
       <a href="https://codepen.io/ThinkUniform/pen/poNNqaE" class="group inline-flex align-items-center bold font-lg color-white hover.color-white">
@@ -697,7 +697,7 @@ cssCodeExample: |
   </div>
 </section>
 
-<section class="bg-blue bg-shade-900" x-data="{ isDark: false }" :class="{ 'is-dark' : isDark }">
+<section class="bg-blue bg-shade-900" x-data="{ dark: false }" :class="{ 'dark' : dark }">
 
   <div class="wrapper py-80 sm.py-160">
     <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
@@ -742,9 +742,9 @@ cssCodeExample: |
               <svg class="w-18 h-18 mr-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5" fill="currentColor"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
 
               <div class="flex">
-                <button type="button" class="flex-none group relative radius-round inline-flex align-items-center align-justify-center h-20 w-40 mx-6" @click="isDark = !isDark">
-                  <span class="bg-gray bg-tint-600 group-hover.bg-tint-500 pointer-events-none absolute h-16 w-36 mx-auto radius-round transition-200" :class="{ 'bg-gray bg-tint-600 group-hover.bg-tint-500' : !isDark, 'bg-green' : isDark }"></span>
-                  <span class="translate-x-0 pointer-events-none absolute left-0 inline-block h-18 w-18 border-1 border-gray border-tint-500 radius-round bg-white shadow-2xs transform transition-transform ease-in-out transition-200" :class="{ 'translate-x-20': isDark, 'translate-x-0': !isDark }"></span>
+                <button type="button" class="flex-none group relative radius-round inline-flex align-items-center align-justify-center h-20 w-40 mx-6" @click="dark = !dark">
+                  <span class="bg-gray bg-tint-600 group-hover.bg-tint-500 pointer-events-none absolute h-16 w-36 mx-auto radius-round transition-200" :class="{ 'bg-gray bg-tint-600 group-hover.bg-tint-500' : !dark, 'bg-green' : dark }"></span>
+                  <span class="translate-x-0 pointer-events-none absolute left-0 inline-block h-18 w-18 border-1 border-gray border-tint-500 radius-round bg-white shadow-2xs transform transition-transform ease-in-out transition-200" :class="{ 'translate-x-20': dark, 'translate-x-0': !dark }"></span>
                 </button>
               </div>
 
