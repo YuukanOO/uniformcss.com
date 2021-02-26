@@ -2,7 +2,8 @@
 @use "sass:list";
 @use "uniform/core" as *;
 
-/*
+/* 
+========================================================================
 CUSTOM PROPERTIES
 
 --wrapper-padding
@@ -12,6 +13,7 @@ CUSTOM PROPERTIES
 --wrapper-md-max-width
 --wrapper-lg-max-width
 --wrapper-xl-max-width
+======================================================================== 
 */
 
 $exclude: map.get($all-config, exclude);

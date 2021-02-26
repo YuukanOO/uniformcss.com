@@ -41,7 +41,8 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-	 background: hsl(var(--blue-hue), var(--blue-sat), var(--shade-800));
+	 background: hsl(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-800));
+	 border: 1px solid hsl(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-600));
  }
  
  /* Inline code */

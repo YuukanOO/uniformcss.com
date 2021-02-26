@@ -4,16 +4,21 @@
 @use "sass:meta";
 /*! UniformCSS v1.0.0 | MIT License | github.com/ThinkUniform/UniformCSS */
 
-// USER CONFIG
-// ============================================================
+/*
+========================================================================
+USER CONFIG
+========================================================================
+*/
 
 $config: (
   
 ) !default;
 
-
-// DEFAULT CONFIG
-// ============================================================
+/*
+========================================================================
+DEFAULT CONFIG
+========================================================================
+*/
 
 @function rem($size-in-pixel) {
   $remSize: $size-in-pixel / 16;
@@ -585,15 +590,19 @@ $default-config: (
   )
 ) !default;
 
-
-// CONFIG COMPILER
-// ============================================================
+/*
+========================================================================
+CONFIG COMPILER
+========================================================================
+*/
 
 $all-config: map.deep-merge($default-config, $config);
 
-
-// FETCHED VARIABLES
-// ============================================================
+/*
+========================================================================
+FETCHED VARIABLES
+========================================================================
+*/
 
 $important: map.get($all-config, important);
 $prefix: map.get($all-config, prefix);
@@ -647,9 +656,11 @@ $extend-opacities: map.get($all-config, extend, opacities);
 $extend-colors: map.get($all-config, extend, colors);
 $extend-gradients: map.get($all-config, extend, gradients);
 
-
-// PRIVATE FUNCTIONS
-// ============================================================
+/*
+========================================================================
+PRIVATE FUNCTIONS
+========================================================================
+*/
 
 // MULTIPLE MAP MERGE FUNCTION
 @function merge($maps...) {
@@ -672,9 +683,11 @@ $extend-gradients: map.get($all-config, extend, gradients);
   @return $named-screens;
 }
 
-
-// MERGED VARIABLES
-// ============================================================
+/*
+========================================================================
+MERGED VARIABLES
+========================================================================
+*/
 
 // MERGED SCREENS
 $merged-screens: ();
@@ -726,13 +739,6 @@ $merged-font-sizes: ();
   $merged-font-sizes: map.deep-merge($merged-font-sizes, $font-sizes);
 }
 $merged-font-sizes: map.deep-merge($merged-font-sizes, $extend-font-sizes);
-
-// // MERGED TEXT SIZES
-// $merged-text-sizes: ();
-// @if ($text-sizes != null) {
-//   $merged-text-sizes: map.deep-merge($merged-text-sizes, $text-sizes);
-// }
-// $merged-text-sizes: map.deep-merge($merged-text-sizes, $extend-text-sizes);
 
 // MERGED WEIGHTS
 $merged-font-weights: ();
@@ -798,10 +804,11 @@ $merged-gradients: ();
 $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
 
 
-
-
-// HELPER FUNCTIONS
-// ============================================================
+/*
+========================================================================
+HELPER FUNCTIONS
+========================================================================
+*/
 
 // GET SCREEN FUNCTIONS
 @function screen($screen) {
@@ -1280,8 +1287,11 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   @return $result;
 }
 
-// HELPER MIXINS
-// ============================================================
+/*
+========================================================================
+HELPER MIXINS
+========================================================================
+*/
 
 @mixin screen($screen) {
   @media (min-width: screen($screen)) {
@@ -1296,8 +1306,11 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   }
 }
 
-// ROOT VARIABLES
-// ============================================================
+/*
+========================================================================
+ROOT VARIABLES
+========================================================================
+*/
 
 @if ($headless == false) {
   :root {
