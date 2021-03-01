@@ -6,7 +6,7 @@ date: 1000-01-02
 
 ## Getting up and running
 
-Uniform is super easy to get started and setup, all you need to do is add the `.scss` project or use the precompiled `.css` file. You can get started using the following ways:
+Uniform is super easy to get started and setup, all you need to do is add Uniform to your `.scss` project or use the precompiled `.css` file. You can get started using the following ways:
 
 1. Use **npm** to install the Uniform package.
 2. Use the **jsDelivr CDN** to link directly to the Uniform stylesheet.
@@ -32,18 +32,21 @@ npm install uniformcss
 git clone https://github.com/ThinkUniform/UniformCSS
 ```
 
-### 2. Include Uniform in Sass project
+### 2. Include Uniform in your Sass project
 
 Add the following line to your main sass stylesheet to add Uniform to your project.
 
-```bash
+```scss
 // styles.scss
 @use "uniform" as *;
+
+// or the following if using the npm option
+@use "../node_modules/uniform/uniform" as *;
 ```
 
 ### 3. Compile and watch for changes
 
-Compile your Sass project or optionally, you can run the following command to build your `styles.css`. The Uniform `package.json` also comes with other watch and minify build scripts, for more information please check out the [build scripts](/docs/build-scripts) page.
+Compile your Sass project using your preferred pre-processor build process. Optionally, the Uniform `package.json` provides useful build scripts you can run to compile and watch Sass. For more information please check out the [build scripts](/docs/build-scripts) page.
 
 ```bash
 npm run uniform

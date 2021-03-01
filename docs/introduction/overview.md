@@ -19,7 +19,7 @@ Here are some **top reasons** why Uniform CSS could be a great fit for you.
 
 ### 1. It's written entirely in Sass
 
-Why Sass? Sass is the most popular CSS preprocessor in the world! Adding Uniform in your project **literally one line of code**.
+Millions of projects are powered by Sass, Uniform **does not** take away any benefits of using Sass. Add Uniform directly into your Sass project with **one line of code**.
 
 ```scss
 // add this to your main styles.scss
@@ -55,7 +55,7 @@ Remove and extend colors? Check. Replace breakpoints? Check. Alias property name
 
 ### 3. Built with CSS Variables in mind
 
-Prefer not to worry about preprocessors and just start building your site? Just add the pre-packaged CDN version of Uniform and customize fonts, colors, sizes, and more by directly overriding each CSS variable. It's that easy.
+Prefer not to worry about preprocessors and just start building your site? Just add the pre-packaged CDN version of Uniform and customize fonts and colors to match your project by overriding each CSS variable. It's that easy.
 
 ```html
 <!-- index.html -->
@@ -65,9 +65,8 @@ Prefer not to worry about preprocessors and just start building your site? Just 
 ```css
 /* styles.css */
 :root {
-  --body-color: black;
   --font-sans: "custom-font", sans-serif;
-  --btn-radius: 6px;
+  --blue-hue: 210;
 }
 ```
 
@@ -85,7 +84,7 @@ While shiny new CSS specs become standardized, you don’t have to wait for Unif
         shorthand: leading,
         properties: (leading-trim),
         variants: (
-          trimmer: both
+          trim: both
         )
       ),
       text-edge: (
@@ -102,9 +101,8 @@ While shiny new CSS specs become standardized, you don’t have to wait for Unif
 
 ```css
 /* styles.css */
-.leading-trimmer { leading-trim: both; }
-.color-cap { text-edge: cap alphabetic; }
-...
+.leading-trim { leading-trim: both; }
+.text-cap { text-edge: cap alphabetic; }
 ```
 
 ### 5. Built-in helper functions to access theme values
@@ -115,6 +113,7 @@ Prefer to write components the old fashioned way? You have all benefits of Sass 
 // styles.scss
 .custom-element {
   padding: size(20, 24);
+  font-weight: font-weight(bold);
   background-color: fill(mint, shade-200);
 }
 ```
@@ -122,28 +121,13 @@ Prefer to write components the old fashioned way? You have all benefits of Sass 
 ```css
 /* styles.css */
 .custom-element {
-  padding: 1.25rem 1.5rem;
+  padding: var(--size-20), var(--size-24); /* 1.25rem 1.5rem */
+  font-weight: var(--bold); /* 700 */
   background-color: hsl(var(--mint-hue), var(--mint-sat), var(--shade-200));
 }
 ```
 
-### 6. Comes with pre-built common components
-
-To help save you time, Uniform CSS comes with **optional** pre-built components for common UI elements such as buttons and form elements. These can all be enabled, disabled, and even customized to fit your design.
-
-<section class="flex align-items-center justify-content-center bg-gray bg-tint-900 p-20 py-48 radius-md">
-  <button class="btn btn-primary mr-4">Button</button>
-  <button class="btn btn-secondary mr-4">Button</button>
-  <button class="btn btn-tertiary">Button</button>
-</section>
-
-```html
-<button class="btn btn-primary">Button</button>
-<button class="btn btn-secondary">Button</button>
-<button class="btn btn-tertiary">Button</button>
-```
-
-### 7. Exclude or include only the properties you need
+### 6. Exclude or include only the properties you need
 
 Every aspect of Uniform CSS is optional, you can easily remove all properties and only include what you need, as you need them.
 
@@ -163,7 +147,7 @@ Every aspect of Uniform CSS is optional, you can easily remove all properties an
 );
 ```
 
-### 8. Designed to be Lightweight
+### 7. Designed to be Lightweight
 
 Uniform is much smaller compared to other utility-first CSS frameworks whilst still supporting all the properties you need. Uniform only activates responsiveness and pseudo variants for properties that make sense.
 
@@ -171,4 +155,4 @@ Uniform is much smaller compared to other utility-first CSS frameworks whilst st
 
 ## Browser Support
 
-Out of the box, Uniform CSS looks and performs great on all the latest version of modern browsers. Uniform CSS is tested and built to support the latest stable version of **Chrome**, **Firefox**, **Edge**, and **Safari**. Uniform CSS does not support any version of IE, including IE 11.
+Uniform CSS looks and performs great on all the latest version of modern browsers. Uniform CSS is tested and built to support the latest stable version of **Chrome**, **Firefox**, **Edge**, and **Safari**. Uniform CSS does not support any version of IE, including IE 11.

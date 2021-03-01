@@ -16,16 +16,16 @@ Due to its low-level nature, utility-first CSS frameworks are generally known to
 
 Uniform comes in at **48kb brotli** and **675kb minified**. Below is a comparison of how Uniform ranks compared to other popular frameworks.
 
-| Framework   | Original Size | Minified    | Gzipped    |
+| Framework   | Minified | Minified    | Gzipped    |
 | ----------- | ------------- | ----------- | ---------- |
-| Tailwind    | 3739.4kb      | 3020.9kb    | 294.0kb    |
-| Semantic UI | 828.9kb       | 629.8kb     | 103.8kb    |
-| **Uniform** | **856.5kb**   | **675.9kb** | **88.4kb** |
-| Bulma       | 224.2kb       | 189.9kb     | 24.9kb     |
-| Bootstrap   | 187.8kb       | 152.1kb     | 22.7kb     |
-| Foundation  | 154.1kb       | 119.2kb     | 15.9kb     |
+| Tailwind    | 3020.9kb      | 3020.9kb    | 294.0kb    |
+| Semantic UI | 629.8kb       | 629.8kb     | 103.8kb    |
+| **Uniform** | **640.9kb**   | **675.9kb** | **88.4kb** |
+| Bulma       | 189.9kb       | 189.9kb     | 24.9kb     |
+| Bootstrap   | 152.1kb       | 152.1kb     | 22.7kb     |
+| Foundation  | 119.2kb       | 119.2kb     | 15.9kb     |
 
-{.table}
+{.text-left}
 
 ---
 
@@ -46,7 +46,9 @@ Uniform compiles pseudos using comma seperators rather than duplicating whole se
 
 ## Tailored Configuration
 
-**Uniform takes a more considered approach** in determining which properties should have responsive and pseudo variants activated by default. For example, it makes sense for color properties such as `background-color` to change on hover, however properties such as `flex-wrap` would rarely need to. Also, one-off properties such as `letter-spacing` will not need to be responsive as it would rarely change based on breakpoint. This type of tailored thinking helps to drastically improve the size of your generated output.
+**Uniform takes a more considered approach** in determining which properties should have responsive and pseudo variants activated by default. 
+
+For example, it makes sense for color properties such as `background-color` to change on hover, however properties such as `flex-wrap` would rarely need to. Also, one-off properties such as `letter-spacing` will not need to be responsive as it would rarely change based on breakpoint. This type of tailored thinking helps to drastically improve the size of your generated output.
 
 You can of course, override the default settings and enable responsiveness, and customize variants for any CSS property.
 
