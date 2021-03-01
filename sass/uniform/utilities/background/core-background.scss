@@ -8,13 +8,18 @@ $responsive-pseudos: false;
 $extra-selector: null;
 
 $properties: (background);
-$custom-properties: ();
+$custom-properties: (
+  --gradient: initial
+);
 
 $variants: (
   core.merge(
     core.gradients(),
     (
-      gradient: linear-gradient(var(--gradient)),
+      linear: linear-gradient(var(--gradient)),
+    ),
+    (
+      conic: conic-gradient(var(--gradient)),
     )
 	)
 );
