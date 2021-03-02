@@ -1,11 +1,14 @@
 [
   {
-    "name": "cursor",
+    "name": "placeholder-color",
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [],
-    "pseudos": ["hover", "active"],
+    "customProperties": [
+    "--placeholder-ltn: 50%",
+    "--placeholder-opacity: 1"
+    ],
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
         "class": "",
@@ -14,12 +17,12 @@
     ]
   },
   {
-    "name": "pointer-events",
+    "name": "placeholder-opacity",
     "responsive": false,
     "responsive-pseudos": false,
-    "extraSelector": "",
+    "extraSelector": "::placeholder",
     "customProperties": [],
-    "pseudos": [""],
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
         "class": "",
@@ -28,12 +31,12 @@
     ]
   },
   {
-    "name": "resize",
-    "responsive": true,
+    "name": "placeholder-shade",
+    "responsive": false,
     "responsive-pseudos": false,
-    "extraSelector": "",
+    "extraSelector": "::placeholder",
     "customProperties": [],
-    "pseudos": [""],
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
         "class": "",
@@ -42,26 +45,12 @@
     ]
   },
   {
-    "name": "scrolling",
+    "name": "placeholder-tint",
     "responsive": false,
     "responsive-pseudos": false,
-    "extraSelector": "",
+    "extraSelector": "::placeholder",
     "customProperties": [],
-    "pseudos": [""],
-    "utilities": [
-      {
-        "class": "",
-        "properties": ["display"]
-      }
-    ]
-  },
-  {
-    "name": "user-select",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [],
-    "pseudos": [""],
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
         "class": "",

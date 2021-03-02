@@ -1,39 +1,14 @@
 [
   {
-    "name": "box-sizing",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
-    "utilities": [
-      {
-        "class": "",
-        "properties": ["display"]
-      }
-    ]
-  },
-  {
-    "name": "clear",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
-    "utilities": [
-      {
-        "class": "",
-        "properties": ["display"]
-      }
-    ]
-  },
-  {
-    "name": "float",
+    "name": "split-color",
     "responsive": true,
     "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "extraSelector": "> * + *",
+    "customProperties": [
+    "--split-ltn: 50%",
+    "--split-opacity: 1"
+    ],
+    "pseudos": ["dark"],
     "utilities": [
       {
         "class": "",
@@ -42,12 +17,12 @@
     ]
   },
   {
-    "name": "object-fit",
+    "name": "split-opacity",
     "responsive": false,
     "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "extraSelector": "> * + *",
+    "customProperties": [],
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
         "class": "",
@@ -56,26 +31,17 @@
     ]
   },
   {
-    "name": "object-position",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
-    "utilities": [
-      {
-        "class": "",
-        "properties": ["display"]
-      }
-    ]
-  },
-  {
-    "name": "position",
+    "name": "split-reverse",
     "responsive": true,
     "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "extraSelector": "> * + *",
+    "customProperties": [
+    "--split-right: 1",
+    "--split-left: 0",
+    "--split-top: 1",
+    "--split-bottom: 0"
+    ],
+    "pseudos": [],
     "utilities": [
       {
         "class": "",
@@ -84,11 +50,25 @@
     ]
   },
   {
-    "name": "table-layout",
+    "name": "split-shade",
+    "responsive": false,
+    "responsive-pseudos": false,
+    "extraSelector": "> * + *",
+    "customProperties": [],
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
+    "utilities": [
+      {
+        "class": "",
+        "properties": ["display"]
+      }
+    ]
+  },
+  {
+    "name": "split-style",
     "responsive": true,
     "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
+    "extraSelector": "> * + *",
+    "customProperties": [],
     "pseudos": [""],
     "utilities": [
       {
@@ -98,11 +78,28 @@
     ]
   },
   {
-    "name": "clearfix",
+    "name": "split-tint",
     "responsive": false,
     "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
+    "extraSelector": "> * + *",
+    "customProperties": [],
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
+    "utilities": [
+      {
+        "class": "",
+        "properties": ["display"]
+      }
+    ]
+  },
+  {
+    "name": "split-x",
+    "responsive":true,
+    "responsive-pseudos": false,
+    "extraSelector": "> * + *",
+    "customProperties": [
+    "--split-right: 0",
+    "--split-left: 1",
+    ],
     "pseudos": [""],
     "utilities": [
       {
@@ -112,11 +109,14 @@
     ]
   },
   {
-    "name": "ratio",
-    "responsive": false,
+    "name": "split-y",
+    "responsive":true,
     "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
+    "extraSelector": "> * + *",
+    "customProperties": [
+    "--split-top: 1",
+    "--split-bottom: 0",
+    ],
     "pseudos": [""],
     "utilities": [
       {

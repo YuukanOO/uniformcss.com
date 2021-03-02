@@ -1,0 +1,16 @@
+[
+  {
+    "name": "animation",
+    "responsive": false,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": [""]
+      }
+    ]
+  }
+]

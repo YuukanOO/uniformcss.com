@@ -1,34 +1,6 @@
 [
   {
-    "name": "cursor",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [],
-    "pseudos": ["hover", "active"],
-    "utilities": [
-      {
-        "class": "",
-        "properties": ["display"]
-      }
-    ]
-  },
-  {
-    "name": "pointer-events",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [],
-    "pseudos": [""],
-    "utilities": [
-      {
-        "class": "",
-        "properties": ["display"]
-      }
-    ]
-  },
-  {
-    "name": "resize",
+    "name": "overflow-x",
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
@@ -42,8 +14,8 @@
     ]
   },
   {
-    "name": "scrolling",
-    "responsive": false,
+    "name": "overflow-y",
+    "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
@@ -56,8 +28,64 @@
     ]
   },
   {
-    "name": "user-select",
-    "responsive": false,
+    "name": "overflow",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": ["display"]
+      }
+    ]
+  },
+  {
+    "name": "overscroll-x",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": ["display"]
+      }
+    ]
+  },
+  {
+    "name": "overflow-y",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": ["display"]
+      }
+    ]
+  },
+  {
+    "name": "overscroll",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": ["display"]
+      }
+    ]
+  },
+  {
+    "name": "scroll-behavior",
+    "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],

@@ -1,10 +1,15 @@
 [
   {
-    "name": "column-gap",
+    "name": "gutter-reverse",
     "responsive": true,
     "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
+    "extraSelector": "> * + *",
+    "customProperties": [
+      "--gutter-right: 1",
+      "--gutter-left: 0",
+      "--gutter-top: 0",
+      "--gutter-bottom: 1"
+    ],
     "pseudos": [""],
     "utilities": [
       {
@@ -14,11 +19,14 @@
     ]
   },
   {
-    "name": "gap",
+    "name": "gutter-x",
     "responsive": true,
     "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
+    "extraSelector": "> * + *",
+    "customProperties": [
+      "--gutter-right: 0",
+      "--gutter-left: 1"
+    ],
     "pseudos": [""],
     "utilities": [
       {
@@ -28,11 +36,14 @@
     ]
   },
   {
-    "name": "row-gap",
+    "name": "gutter-y",
     "responsive": true,
     "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
+    "extraSelector": "> * + *",
+    "customProperties": [
+      "--gutter-top: 1",
+      "--gutter-bottom: 0"
+    ],
     "pseudos": [""],
     "utilities": [
       {

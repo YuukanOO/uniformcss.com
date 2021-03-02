@@ -1,487 +1,270 @@
 [
   {
-    "title": "color",
-    "family": "core",
-    "description": "The `color` property specifies the color of text.",
+    "name": "color",
     "responsive": false,
-    "pseudos": [
-      "hover",
-      "group-hover"
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [
+      "--color-ltn: 50%", 
+      "--color-opacity: 1"
     ],
-    "classes": [
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
+    "utilities": [
       {
-        "class": "`.color-{color}`",
-        "properties": [
-          "`color: {color}`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "font-family",
-    "family": "core",
-    "description": "The `font-family` property specifies the font for an element.",
+    "name": "font-family",
     "responsive": false,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.font-{font-families}`",
-        "properties": [
-          "`font-family: {font-families}`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "font-size",
-    "family": "core",
-    "description": "The `font-size` property sets the size of a font.",
+    "name": "font-size",
     "responsive": true,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.font-{font-sizes}`",
-        "properties": [
-          "`font-size: {font-sizes}`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "font-style",
-    "family": "core",
-    "description": "The `font-style` property specifies the font style for a text.",
+    "name": "font-style",
     "responsive": false,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.italic`",
-        "properties": [
-          "`font-style: italic;`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "font-weight",
-    "family": "core",
-    "description": "The `font-weight` property sets how thick or thin characters in text should be displayed.",
+    "name": "font-weight",
     "responsive": false,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": ["hover"],
+    "utilities": [
       {
-        "class": "`.font-100`",
-        "properties": [
-          "`font-weight: 100`"
-        ]
-      },
-      {
-        "class": "`.font-200`",
-        "properties": [
-          "`font-weight: 200`"
-        ]
-      },
-      {
-        "class": "`.font-300`",
-        "properties": [
-          "`font-weight: 300`"
-        ]
-      },
-      {
-        "class": "`.font-400`",
-        "properties": [
-          "`font-weight: 400`"
-        ]
-      },
-      {
-        "class": "`.font-500`",
-        "properties": [
-          "`font-weight: 500`"
-        ]
-      },
-      {
-        "class": "`.font-600`",
-        "properties": [
-          "`font-weight: 600`"
-        ]
-      },
-      {
-        "class": "`.font-700`",
-        "properties": [
-          "`font-weight: 700`"
-        ]
-      },
-      {
-        "class": "`.font-800`",
-        "properties": [
-          "`font-weight: 800`"
-        ]
-      },
-      {
-        "class": "`.font-900`",
-        "properties": [
-          "`font-weight: 900`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "letter-spacing",
-    "family": "core",
-    "description": "The `letter-spacing` property increases or decreases the space between characters in a text.",
+    "name": "letter-spacing",
     "responsive": false,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.tracking-n5`",
-        "properties": [
-          "`letter-spacing: -0.1em;`"
-        ]
-      },
-      {
-        "class": "`.tracking-n4`",
-        "properties": [
-          "`letter-spacing: -0.08em;`"
-        ]
-      },
-      {
-        "class": "`.tracking-n3`",
-        "properties": [
-          "`letter-spacing: -0.06em;`"
-        ]
-      },
-      {
-        "class": "`.tracking-n2`",
-        "properties": [
-          "`letter-spacing: -0.04em;`"
-        ]
-      },
-      {
-        "class": "`.tracking-n1`",
-        "properties": [
-          "`letter-spacing: -0.02em;`"
-        ]
-      },
-      {
-        "class": "`.tracking-0`",
-        "properties": [
-          "`letter-spacing: 0;`"
-        ]
-      },
-      {
-        "class": "`.tracking-1`",
-        "properties": [
-          "`letter-spacing: 0.02em;`"
-        ]
-      },
-      {
-        "class": "`.tracking-2`",
-        "properties": [
-          "`letter-spacing: 0.04em;`"
-        ]
-      },
-      {
-        "class": "`.tracking-3`",
-        "properties": [
-          "`letter-spacing: 0.06em;`"
-        ]
-      },
-      {
-        "class": "`.tracking-4`",
-        "properties": [
-          "`letter-spacing: 0.08em;`"
-        ]
-      },
-      {
-        "class": "`.tracking-5`",
-        "properties": [
-          "`letter-spacing: 0.1em;`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "line-height",
-    "family": "core",
-    "description": "The `line-height` property specifies the height of a line.",
+    "name": "line-height",
     "responsive": true,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.leading-1`",
-        "properties": [
-          "`line-height: 1`"
-        ]
-      },
-      {
-        "class": "`.leading-2`",
-        "properties": [
-          "`line-height: 1.125`"
-        ]
-      },
-      {
-        "class": "`.leading-3`",
-        "properties": [
-          "`line-height: 1.25`"
-        ]
-      },
-      {
-        "class": "`.leading-4`",
-        "properties": [
-          "`line-height: 1.375`"
-        ]
-      },
-      {
-        "class": "`.leading-5`",
-        "properties": [
-          "`line-height: 1.5`"
-        ]
-      },
-      {
-        "class": "`.leading-6`",
-        "properties": [
-          "`line-height: 1.625`"
-        ]
-      },
-      {
-        "class": "`.leading-7`",
-        "properties": [
-          "`line-height: 1.75`"
-        ]
-      },
-      {
-        "class": "`.leading-8`",
-        "properties": [
-          "`line-height: 1.875`"
-        ]
-      },
-      {
-        "class": "`.leading-9`",
-        "properties": [
-          "`line-height: 2`"
-        ]
-      },
-      {
-        "class": "`.leading-10`",
-        "properties": [
-          "`line-height: 2.125`"
-        ]
-      },
-      {
-        "class": "`.leading-11`",
-        "properties": [
-          "`line-height: 2.25`"
-        ]
-      },
-      {
-        "class": "`.leading-12`",
-        "properties": [
-          "`line-height: 2.375`"
-        ]
-      },
-      {
-        "class": "`.leading-13`",
-        "properties": [
-          "`line-height: 2.5`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "list-style-position",
-    "family": "core",
-    "description": "The `list-style-position` property specifies the position of the list-item markers (bullet points).",
+    "name": "list-style-position",
     "responsive": false,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.list-inside`",
-        "properties": [
-          "`list-style-position: inside;`"
-        ]
-      },
-      {
-        "class": "`.list-outside`",
-        "properties": [
-          "`list-style-position: outside;`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "list-style-type",
-    "family": "core",
-    "description": "The `list-style-type` specifies the type of list-item marker in a list.",
+    "name": "list-style-type",
     "responsive": false,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.list-none`",
-        "properties": [
-          "`list-style-type: none;`"
-        ]
-      },
-      {
-        "class": "`.list-disc`",
-        "properties": [
-          "`list-style-type: disc;`"
-        ]
-      },
-      {
-        "class": "`.list-square`",
-        "properties": [
-          "`list-style-type: square;`"
-        ]
-      },
-      {
-        "class": "`.list-decimal`",
-        "properties": [
-          "`list-style-type: decimal;`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "text-decoration",
-    "family": "core",
-    "description": "The `text-decoration` property specifies the decoration added to text, and is a shorthand property for:",
-    "responsive": false,
-    "pseudos": [
-      "hover",
-      "group-hover"
-    ],
-    "classes": [
+    "name": "text-align",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.underline`",
-        "properties": [
-          "`text-decoration: underline;`"
-        ]
-      },
-      {
-        "class": "`.line-through`",
-        "properties": [
-          "`text-decoration: line-through;`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "text-overflow",
-    "family": "core",
-    "description": "The `text-overflow` property specifies how overflowed content that is not displayed should be signaled to the user.",
+    "name": "text-decoration",
     "responsive": false,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": ["hover", "group-hover"],
+    "utilities": [
       {
-        "class": "`.ellipsis`",
-        "properties": [
-          "`text-overflow: ellipsis;`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "text-transform",
-    "family": "core",
-    "description": "The `text-overflow` property specifies how overflowed content that is not displayed should be signaled to the user.",
+    "name": "text-overflow",
     "responsive": false,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.uppercase`",
-        "properties": [
-          "`text-decoration: uppercase;`"
-        ]
-      },
-      {
-        "class": "`.lowercase`",
-        "properties": [
-          "`text-decoration: lowercase;`"
-        ]
-      },
-      {
-        "class": "`.capitalize`",
-        "properties": [
-          "`text-decoration: capitalize;`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "white-space",
-    "family": "core",
-    "description": "The `white-space` property specifies how white-space inside an element is handled.",
+    "name": "text-transform",
     "responsive": false,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.whitespace-no-wrap`",
-        "properties": [
-          "`white-space: nowrap;`"
-        ]
-      },
-      {
-        "class": "`.whitespace-pre`",
-        "properties": [
-          "`white-space: pre;`"
-        ]
-      },
-      {
-        "class": "`.whitespace-pre-line`",
-        "properties": [
-          "`white-space: normal;`"
-        ]
-      },
-      {
-        "class": "`.whitespace-pre-wrap`",
-        "properties": [
-          "`white-space: pre-wrap;`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "word-break",
-    "family": "core",
-    "description": "The `word-break` property specifies how words should break when reaching the end of a line.",
+    "name": "white-space",
     "responsive": false,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.wordbreak-word`",
-        "properties": [
-          "`word-break: break-word;`"
-        ]
-      },
+        "class": "",
+        "properties": ["display"]
+      }
+    ]
+  },
+  {
+    "name": "word-break",
+    "responsive": false,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.wordbreak-all`",
-        "properties": [
-          "`word-break: break-all;`"
-        ]
+        "class": "",
+        "properties": ["display"]
+      }
+    ]
+  },
+  {
+    "name": "color-opacity",
+    "responsive": false,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
+    "utilities": [
+      {
+        "class": "",
+        "properties": ["display"]
+      }
+    ]
+  },
+  {
+    "name": "color-shade",
+    "responsive": false,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": ["hover", "group-hover", "focus", "dark"]
+    "utilities": [
+      {
+        "class": "",
+        "properties": ["display"]
+      }
+    ]
+  },
+  {
+    "name": "color-tint",
+    "responsive": false,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
+    "utilities": [
+      {
+        "class": "",
+        "properties": ["display"]
+      }
+    ]
+  },
+  {
+    "name": "font-size",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": ["display"]
       }
     ]
   }

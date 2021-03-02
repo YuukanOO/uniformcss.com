@@ -1,70 +1,128 @@
 [
   {
-    "title": "align-content",
+    "name": "align-content",
     "responsive": true,
     "responsive-pseudos": false,
-    "extraSelector": "> * + *",
-    "customProperties": ["--bg-red: 1;", "--bg-red: 1;"],
-    "pseudos": ["hover", "group-hover", "dark"],
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
     "utilities": [
       {
-        "class": "align-content-stretch",
-        "properties": ["align-content: stretch;"]
-      },
-      {
-        "class": "align-content-center",
-        "properties": ["align-content: center;"]
-      },
-      {
-        "class": "align-content-start",
-        "properties": ["align-content: start;"]
-      },
-      {
-        "class": "align-content-end",
-        "properties": ["align-content: end;"]
-      },
-      {
-        "class": "align-content-between",
-        "properties": ["align-content: between;"]
-      },
-      {
-        "class": "align-content-around",
-        "properties": ["align-content: around;"]
+        "class": "",
+        "properties": [""]
       }
     ]
   },
   {
-    "title": "align-content",
+    "name": "align-items",
     "responsive": true,
     "responsive-pseudos": false,
-    "extraSelector": "> * + *",
-    "customProperties": ["--bg-red: 1;", "--bg-red: 1;"],
-    "pseudos": ["hover", "group-hover", "dark"],
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
     "utilities": [
       {
-        "class": "align-content-stretch",
-        "properties": ["align-content: stretch;"]
-      },
-      {
-        "class": "align-content-center",
-        "properties": ["align-content: center;"]
-      },
-      {
-        "class": "align-content-start",
-        "properties": ["align-content: start;"]
-      },
-      {
-        "class": "align-content-end",
-        "properties": ["align-content: end;"]
-      },
-      {
-        "class": "align-content-between",
-        "properties": ["align-content: between;"]
-      },
-      {
-        "class": "align-content-around",
-        "properties": ["align-content: around;"]
+        "class": "",
+        "properties": [""]
       }
     ]
-  }
+  },
+  {
+    "name": "align-self",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": [""]
+      }
+    ]
+  },
+  {
+    "name": "justify-content",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": [""]
+      }
+    ]
+  },
+  {
+    "name": "justify-items",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": [""]
+      }
+    ]
+  },
+  {
+    "name": "justify-self",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": [""]
+      }
+    ]
+  },
+  {
+    "name": "justify-content",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": [""]
+      }
+    ]
+  },
+  {
+    "name": "justify-items",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": [""]
+      }
+    ]
+  },
+  {
+    "name": "vertival-align",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": [""]
+      }
+    ]
+  },
 ]

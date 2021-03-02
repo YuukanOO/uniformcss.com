@@ -1,306 +1,99 @@
 [
   {
-    "title": "margin",
-    "family": "core",
-    "description": "The `margin` property sets the margins for an element, and is a shorthand property for the margin.",
+    "name": "margin-bottom",
     "responsive": true,
-    "pseudos": [
-      "none"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": ["first", "last"],
+    "utilities": [
       {
-        "class": "`.m-auto`",
-        "properties": [
-          "`margin: auto;`"
-        ]
-      },
-      {
-        "class": "`.m-{positive-scale}`",
-        "properties": [
-          "`margin: {positive-scale}`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "margin-x",
-    "family": "extension",
-    "description": "The `margin-x` extension applies margins to the left and right of an element.",
+    "name": "margin-left",
     "responsive": true,
-    "pseudos": ["none"],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": ["first", "last"],
+    "utilities": [
       {
-        "class": "`.mx-auto`",
-        "properties": [
-          "`margin-left: auto`",
-          "`margin-right: auto`"
-        ]
-      },
-      {
-        "class": "`.mx-{positive-scale}`",
-        "properties": [
-          "`margin-left: {positive-scale}`",
-          "`margin-right: {positive-scale}`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "margin-y",
-    "family": "extension",
-    "description": "The `margin-y` extension applies margins to the top and bottom of an element.",
+    "name": "margin-bright",
     "responsive": true,
-    "pseudos": ["none"],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": ["first", "last"],
+    "utilities": [
       {
-        "class": "`.my-auto`",
-        "properties": [
-          "`margin-top: auto`",
-          "`margin-bottom: auto`"
-        ]
-      },
-      {
-        "class": "`.my-{positive-scale}`",
-        "properties": [
-          "`margin-top: {positive-scale}`",
-          "`margin-bottom: {positive-scale}`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "margin-bottom",
-    "family": "core",
-    "description": "The `margin-bottom` property sets the bottom margin of an element.",
+    "name": "margin-top",
     "responsive": true,
-    "pseudos": [
-      "first, last"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": ["first", "last"],
+    "utilities": [
       {
-        "class": "`.mb-auto`",
-        "properties": [
-          "`margin-bottom: auto;`"
-        ]
-      },
-      {
-        "class": "`.mb-{scale-variant}`",
-        "properties": [
-          "`margin-bottom: {scale-variant}`"
-        ]
-      },
-      {
-        "class": "`.mb-px`",
-        "properties": [
-          "`margin-bottom: 1px`"
-        ]
-      },
-      {
-        "class": "`.mb-2px`",
-        "properties": [
-          "`margin-bottom: 2px`"
-        ]
-      },
-      {
-        "class": "`.mb-3px`",
-        "properties": [
-          "`margin-bottom: 3px`"
-        ]
-      },
-      {
-        "class": "`.mb-npx`",
-        "properties": [
-          "`margin-bottom: -1px`"
-        ]
-      },
-      {
-        "class": "`.mb-n2px`",
-        "properties": [
-          "`margin-bottom: -2px`"
-        ]
-      },
-      {
-        "class": "`.mb-n3px`",
-        "properties": [
-          "`margin-bottom: -3px`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "margin-left",
-    "family": "core",
-    "description": "The `margin-left` property sets the left margin of an element.",
+    "name": "margin-bottom",
     "responsive": true,
-    "pseudos": [
-      "first, last"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.ml-auto`",
-        "properties": [
-          "`margin-left: auto;`"
-        ]
-      },
-      {
-        "class": "`.ml-{scale-variant}`",
-        "properties": [
-          "`margin-left: {scale-variant}`"
-        ]
-      },
-      {
-        "class": "`.ml-px`",
-        "properties": [
-          "`margin-left: 1px`"
-        ]
-      },
-      {
-        "class": "`.ml-2px`",
-        "properties": [
-          "`margin-left: 2px`"
-        ]
-      },
-      {
-        "class": "`.ml-3px`",
-        "properties": [
-          "`margin-left: 3px`"
-        ]
-      },
-      {
-        "class": "`.ml-npx`",
-        "properties": [
-          "`margin-left: -1px`"
-        ]
-      },
-      {
-        "class": "`.ml-n2px`",
-        "properties": [
-          "`margin-left: -2px`"
-        ]
-      },
-      {
-        "class": "`.ml-n3px`",
-        "properties": [
-          "`margin-left: -3px`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "margin-right",
-    "family": "core",
-    "description": "The `margin-right` property sets the right margin of an element.",
+    "name": "margin-x",
     "responsive": true,
-    "pseudos": [
-      "first, last"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.mr-auto`",
-        "properties": [
-          "`margin-right: auto;`"
-        ]
-      },
-      {
-        "class": "`.mr-{scale-variant}`",
-        "properties": [
-          "`margin-right: {scale-variant}`"
-        ]
-      },
-      {
-        "class": "`.mr-px`",
-        "properties": [
-          "`margin-right: 1px`"
-        ]
-      },
-      {
-        "class": "`.mr-2px`",
-        "properties": [
-          "`margin-right: 2px`"
-        ]
-      },
-      {
-        "class": "`.mr-3px`",
-        "properties": [
-          "`margin-right: 3px`"
-        ]
-      },
-      {
-        "class": "`.mr-npx`",
-        "properties": [
-          "`margin-right: -1px`"
-        ]
-      },
-      {
-        "class": "`.mr-n2px`",
-        "properties": [
-          "`margin-right: -2px`"
-        ]
-      },
-      {
-        "class": "`.mr-n3px`",
-        "properties": [
-          "`margin-right: -3px`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   },
   {
-    "title": "margin-top",
-    "family": "core",
-    "description": "The `margin-top` property sets the top margin of an element.",
+    "name": "margin-y",
     "responsive": true,
-    "pseudos": [
-      "first, last"
-    ],
-    "classes": [
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": [""],
+    "utilities": [
       {
-        "class": "`.mt-auto`",
-        "properties": [
-          "`margin-top: auto;`"
-        ]
-      },
-      {
-        "class": "`.mt-{scale-variant}`",
-        "properties": [
-          "`margin-top: {scale-variant}`"
-        ]
-      },
-      {
-        "class": "`.mt-px`",
-        "properties": [
-          "`margin-top: 1px`"
-        ]
-      },
-      {
-        "class": "`.mt-2px`",
-        "properties": [
-          "`margin-top: 2px`"
-        ]
-      },
-      {
-        "class": "`.mt-3px`",
-        "properties": [
-          "`margin-top: 3px`"
-        ]
-      },
-      {
-        "class": "`.mt-npx`",
-        "properties": [
-          "`margin-top: -1px`"
-        ]
-      },
-      {
-        "class": "`.mt-n2px`",
-        "properties": [
-          "`margin-top: -2px`"
-        ]
-      },
-      {
-        "class": "`.mt-n3px`",
-        "properties": [
-          "`margin-top: -3px`"
-        ]
+        "class": "",
+        "properties": ["display"]
       }
     ]
   }
