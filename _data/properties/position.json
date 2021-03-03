@@ -70,20 +70,6 @@
     ]
   },
   {
-    "name": "absolute-center",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [],
-    "pseudos": [""],
-    "utilities": [
-      {
-        "class": "",
-        "properties": ["display"]
-      }
-    ]
-  },
-  {
     "name": "x",
     "responsive": true,
     "responsive-pseudos": false,

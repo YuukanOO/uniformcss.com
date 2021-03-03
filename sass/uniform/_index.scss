@@ -4,16 +4,13 @@
 @forward "uniform/core";
 @use "uniform/core";
 
-
 // DEFAULTS (2)
 @use "defaults/reset";
 @use "defaults/starter";
 
-
 // PLUGINS (2)
 @use "plugins/wrapper";
 @use "plugins/markdown";
-
 
 // UTILITIES - TRANSITION (5)
 @use "utilities/transition/core-transition-duration";
@@ -22,10 +19,8 @@
 @use "utilities/transition/core-transition-timing-function";
 @use "utilities/transition/core-transition";
 
-
 // UTILITIES - ANIMATION
 @use "utilities/animation/core-animation";
-
 
 // UTILITIES - INTERACTIVE (5)
 @use "utilities/interactive/core-cursor";
@@ -34,12 +29,10 @@
 @use "utilities/interactive/core-scrolling";
 @use "utilities/interactive/core-user-select";
 
-
 // UTILITIES - SVG (3)
 @use "utilities/svg/core-fill";
 @use "utilities/svg/core-stroke";
 @use "utilities/svg/core-stroke-width";
-
 
 // UTILITIES - TRANSFORM (9)
 @use "utilities/transform/extension-translate-x";
@@ -53,12 +46,10 @@
 @use "utilities/transform/core-transform-origin";
 @use "utilities/transform/core-transform";
 
-
 // UTILITIES - GUTTER (3)
 @use "utilities/gutter/extension-gutter-reverse";
 @use "utilities/gutter/extension-gutter-x";
 @use "utilities/gutter/extension-gutter-y";
-
 
 // UTILITIES - SPLIT (10)
 @use "utilities/split/extension-split-tint";
@@ -69,7 +60,6 @@
 @use "utilities/split/extension-split-style";
 @use "utilities/split/extension-split-x";
 @use "utilities/split/extension-split-y";
-
 
 // UTILITIES - GRID (9)
 @use "utilities/grid/core-grid-auto-flow";
@@ -82,7 +72,6 @@
 @use "utilities/grid/core-grid-template-columns";
 @use "utilities/grid/core-grid-template-rows";
 
-
 // UTILITIES - FLEXBOX (6)
 @use "utilities/flexbox/core-flex";
 @use "utilities/flexbox/core-flex-direction";
@@ -91,12 +80,10 @@
 @use "utilities/flexbox/core-flex-wrap";
 @use "utilities/flexbox/core-order";
 
-
 // UTILITIES - GAP (3)
 @use "utilities/gap/core-gap";
 @use "utilities/gap/core-column-gap";
 @use "utilities/gap/core-row-gap";
-
 
 // UTILITIES - POSITION (9)
 @use "utilities/position/core-bottom";
@@ -106,12 +93,9 @@
 @use "utilities/position/extension-x";
 @use "utilities/position/extension-y";
 @use "utilities/position/extension-xy";
-@use "utilities/position/extension-absolute-center";
 @use "utilities/position/core-z-index";
 
-
 // UTILITIES - COMPOSITION (9)
-@use "utilities/composition/extension-clearfix";
 @use "utilities/composition/extension-ratio";
 @use "utilities/composition/core-box-sizing";
 @use "utilities/composition/core-clear";
@@ -121,7 +105,6 @@
 @use "utilities/composition/core-position";
 @use "utilities/composition/core-table-layout";
 
-
 // UTILITIES - SCROLL (3)
 @use "utilities/scroll/core-overflow-x";
 @use "utilities/scroll/core-overflow-y";
@@ -130,7 +113,6 @@
 @use "utilities/scroll/core-overscroll-y";
 @use "utilities/scroll/core-overscroll";
 @use "utilities/scroll/core-scroll-behavior";
-
 
 // UTILITIES - EFFECT (12)
 @use "utilities/effect/core-box-shadow";
@@ -145,7 +127,6 @@
 @use "utilities/effect/extension-filter-saturate";
 @use "utilities/effect/extension-filter-blur";
 @use "utilities/effect/core-filter";
-
 
 // UTILITIES - BORDER (20)
 @use "utilities/border/extension-border-tint";
@@ -169,7 +150,6 @@
 @use "utilities/border/core-border-color";
 @use "utilities/border/core-border-style";
 
-
 // UTILITIES - BACKGROUND (10)
 @use "utilities/background/extension-background-tint";
 @use "utilities/background/extension-background-shade";
@@ -182,7 +162,6 @@
 @use "utilities/background/core-background-size";
 @use "utilities/background/core-background";
 
-
 // UTILITIES - PADDING (7)
 @use "utilities/padding/core-padding-bottom";
 @use "utilities/padding/core-padding-left";
@@ -191,7 +170,6 @@
 @use "utilities/padding/extension-padding-x";
 @use "utilities/padding/extension-padding-y";
 @use "utilities/padding/core-padding";
-
 
 // UTILITIES - MARGIN (7)
 @use "utilities/margin/core-margin-bottom";
@@ -202,7 +180,6 @@
 @use "utilities/margin/extension-margin-y";
 @use "utilities/margin/core-margin";
 
-
 // UTILITIES - ALIGNMENT (7)
 @use "utilities/alignment/core-align-content";
 @use "utilities/alignment/core-align-items";
@@ -212,7 +189,6 @@
 @use "utilities/alignment/core-justify-self";
 @use "utilities/alignment/core-vertical-align";
 
-
 // UTILITIES - SIZING (6)
 @use "utilities/sizing/core-height";
 @use "utilities/sizing/core-width";
@@ -220,7 +196,6 @@
 @use "utilities/sizing/core-min-width";
 @use "utilities/sizing/core-max-height";
 @use "utilities/sizing/core-max-width";
-
 
 // UTILITIES - TYPOGRAPHY (19)
 @use "utilities/typography/extension-color-tint";
@@ -238,11 +213,9 @@
 @use "utilities/typography/core-white-space";
 @use "utilities/typography/core-word-break";
 @use "utilities/typography/core-font-family";
-// @use "utilities/typography/core-font-size";
 @use "utilities/typography/core-font-style";
 @use "utilities/typography/core-font-weight";
 @use "utilities/typography/extension-font-size";
-
 
 // UTILITIES - PLACEHOLDER (4)
 @use "utilities/placeholder/extension-placeholder-tint";
@@ -250,19 +223,15 @@
 @use "utilities/placeholder/extension-placeholder-opacity";
 @use "utilities/placeholder/core-placeholder-color";
 
-
 // UTILITIES - APPEARANCE (6)
 @use "utilities/appearance/core-display";
 @use "utilities/appearance/core-opacity";
 @use "utilities/appearance/core-outline";
 @use "utilities/appearance/core-visibility";
-@use "utilities/appearance/extension-appearance";
-@use "utilities/appearance/extension-font-smooth";
-
+@use "utilities/appearance/core-appearance";
+@use "utilities/appearance/core-font-smooth";
 
 // CONSTRUCTOR
-// ============================================================
-
 $config: map.deep-merge(core.$all-config, core.$config);
 
 @mixin constructor($config) {
@@ -1102,15 +1071,15 @@ $config: map.deep-merge(core.$all-config, core.$config);
         }
       }
     }
-  }
 
-  // GENERATE KEYFRAMES
-  @each $keyframe-key, $keyframe-value in $keyframes {
-    @keyframes #{$keyframe-key} {
-      @each $keyframe-timestamp, $keyframe-property in $keyframe-value {
-        #{$keyframe-timestamp} {
-          @each $keyframe-transform-property, $keyframe-property-value in $keyframe-property {
-            #{$keyframe-transform-property}: #{$keyframe-property-value};
+    // GENERATE KEYFRAMES
+    @each $keyframe-key, $keyframe-value in $keyframes {
+      @keyframes #{$keyframe-key} {
+        @each $keyframe-timestamp, $keyframe-property in $keyframe-value {
+          #{$keyframe-timestamp} {
+            @each $keyframe-transform-property, $keyframe-property-value in $keyframe-property {
+              #{$keyframe-transform-property}: #{$keyframe-property-value};
+            }
           }
         }
       }

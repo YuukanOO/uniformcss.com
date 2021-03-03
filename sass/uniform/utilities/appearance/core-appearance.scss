@@ -1,28 +1,17 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: ratio;
-$shorthand: ratio;
+$name: appearance;
+$shorthand: appearance;
 $responsive: false;
 $responsive-pseudos: false;
 $extra-selector: null;
 
-$properties: ();
+$properties: (appearance, -moz-appearance, -webkit-appearance);
 $custom-properties: ();
 
 $variants: (
-  square: (
-    width: 100%,
-    padding-top: 100%,
-  ),
-  '16-9': (
-    width: 100%,
-    padding-top: 56.25%,
-  ),
-  '4-3': (
-    width: 100%,
-    padding-top: 75%,
-  )
+  none: none
 );
 
 $pseudos: ();
