@@ -18,8 +18,9 @@ CUSTOM PROPERTIES
 
 $exclude: map.get($all-config, exclude);
 $include: map.get($all-config, include);
+$headless: map.get($all-config, headless);
 
-@if ( list.index($include, module-wrapper) != null or list.index($exclude, all) == null and list.index($exclude, module-wrapper) == null ) {
+@if ( $headless == false or list.index($include, plugin-wrapper) != null or list.index($exclude, all) != null or list.index($exclude, plugin-wrapper) != null ) {
   .wrapper {
     width: 100%;
     margin: auto;

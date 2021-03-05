@@ -10,8 +10,8 @@ layout: layouts/base.njk
       <div class="sm.col-12 lg.col-9 py-64 pt-48 sm.pt-72">
         {%- for property in properties.alignment -%}
           <article class="mb-72">
-            <h2 id="{{ property.title | slug }}" class="font-3xl sm.font-7xl extrabold color-white tracking-tight mt-96 first.mt-0 mb-14">
-              {{ property.title }}
+            <h2 id="{{ property.name | slug }}" class="font-3xl sm.font-7xl extrabold color-white tracking-tight mt-96 first.mt-0 mb-14">
+              {{ property.name }}
             </h2>
             {# <div class="markdown font-sm mb-20" style="--markdown-paragraph-color: white;">
               {{ property.description | markdownify | safe }}
