@@ -7,7 +7,7 @@ $include: map.get($all-config, include);
 $headless: map.get($all-config, headless);
 
 @if ( $headless == false or list.index($include, default-reset) != null or list.index($exclude, all) != null or list.index($exclude, default-reset) != null ) {
-  @debug inside;
+
   // reset everything
   *,*::before,*::after {
     box-sizing: border-box;
