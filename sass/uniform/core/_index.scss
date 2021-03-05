@@ -155,7 +155,7 @@ $default-config: (
   ),
 
   tints: (
-    0: 50%,
+    none: 50%,
     100: 55.12%,
     200: 60.23%,
     300: 65.34%,
@@ -165,10 +165,11 @@ $default-config: (
     700: 85.78%,
     800: 90.89%,
     900: 96%,
+    full: 100%,
   ),
 
   shades: (
-    0: 50%,
+    none: 50%,
     100: 44.9%,
     200: 39.79%,
     300: 34.68%,
@@ -178,6 +179,7 @@ $default-config: (
     700: 14.24%,
     800: 9.13%,
     900: 4%,
+    full: 0%,
   ),
 
   opacities: (
@@ -245,7 +247,7 @@ $default-config: (
     padding: (1, 41),
     width: (1, 41),
     min-width: (1, 1),
-    max-width: (34, 41),
+    max-width: (36, 41),
     height: (1, 41),
     min-height: (1, 1),
     max-height: (1, 41),

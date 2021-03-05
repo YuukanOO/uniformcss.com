@@ -145,7 +145,7 @@ ROOT VARIABLES
   --shadow-input-warning: 0 0 0 3px #e09952;
   --shadow-input-danger: 0 0 0 3px #e05252;
   --TINTS-------------------------:#09;
-  --tint-0: 50%;
+  --tint-none: 50%;
   --tint-100: 55.12%;
   --tint-200: 60.23%;
   --tint-300: 65.34%;
@@ -155,8 +155,9 @@ ROOT VARIABLES
   --tint-700: 85.78%;
   --tint-800: 90.89%;
   --tint-900: 96%;
+  --tint-full: 100%;
   --SHADES------------------------:#10;
-  --shade-0: 50%;
+  --shade-none: 50%;
   --shade-100: 44.9%;
   --shade-200: 39.79%;
   --shade-300: 34.68%;
@@ -166,6 +167,7 @@ ROOT VARIABLES
   --shade-700: 14.24%;
   --shade-800: 9.13%;
   --shade-900: 4%;
+  --shade-full: 0%;
   --OPACITIES---------------------:#11;
   --opacity-0: 0;
   --opacity-02: 0.02;
