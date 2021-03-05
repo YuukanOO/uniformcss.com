@@ -117,8 +117,8 @@ To apply colors, use the property shorthand followed by the color key.
 Shades make your colors darker by changing the lightness value. There are `9` levels of shades available. Similar to Google Material's Design System, Uniform follows the `100 ... 900` syntax for defining shades.
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 flex bg-blue bg-shade-none">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-none</span>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-base">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-base</span>
   </div>
   <div class="radius-sm p-12 flex bg-blue bg-shade-100">
     <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-100</span>
@@ -173,8 +173,8 @@ Shades make your colors darker by changing the lightness value. There are `9` le
 Tints make your base color lighter by changing the lightness value. There are `9` levels of tints available. Similar to Google Material's Design System, Uniform follows the `100 ... 900` syntax for defining shades.
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 flex bg-blue bg-tint-none">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-none</span>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-base">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-base</span>
   </div>
   <div class="radius-sm p-12 flex bg-blue bg-tint-100">
     <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-100</span>
@@ -209,7 +209,7 @@ Tints make your base color lighter by changing the lightness value. There are `9
 </div>
 
 ```html
-<div class="bg-blue bg-tint-none">...</div>
+<div class="bg-blue bg-tint-base">...</div>
 <div class="bg-blue bg-tint-100">...</div>
 <div class="bg-blue bg-tint-200">...</div>
 <div class="bg-blue bg-tint-300">...</div>

@@ -145,7 +145,7 @@ ROOT VARIABLES
   --shadow-input-warning: 0 0 0 3px #e09952;
   --shadow-input-danger: 0 0 0 3px #e05252;
   --TINTS-------------------------:#09;
-  --tint-none: 50%;
+  --tint-base: 50%;
   --tint-100: 55.12%;
   --tint-200: 60.23%;
   --tint-300: 65.34%;
@@ -157,7 +157,7 @@ ROOT VARIABLES
   --tint-900: 96%;
   --tint-full: 100%;
   --SHADES------------------------:#10;
-  --shade-none: 50%;
+  --shade-base: 50%;
   --shade-100: 44.9%;
   --shade-200: 39.79%;
   --shade-300: 34.68%;
@@ -170,10 +170,10 @@ ROOT VARIABLES
   --shade-full: 0%;
   --OPACITIES---------------------:#11;
   --opacity-0: 0;
-  --opacity-02: 0.02;
-  --opacity-04: 0.04;
-  --opacity-06: 0.06;
-  --opacity-08: 0.08;
+  --opacity-2: 0.02;
+  --opacity-4: 0.04;
+  --opacity-6: 0.06;
+  --opacity-8: 0.08;
   --opacity-10: 0.1;
   --opacity-20: 0.2;
   --opacity-30: 0.3;
@@ -554,7 +554,7 @@ CUSTOM PROPERTIES
 
 --wrapper-padding
 
---wrapper-xs-max-width
+--wrapper-max-width
 --wrapper-sm-max-width
 --wrapper-md-max-width
 --wrapper-lg-max-width
@@ -564,29 +564,36 @@ CUSTOM PROPERTIES
 .wrapper {
   width: 100%;
   margin: auto;
-  max-width: var(--wrapper-max-width, 808px);
+  max-width: var(--wrapper-max-width, 640px);
   padding-left: var(--wrapper-padding, var(--size-20));
   padding-right: var(--wrapper-padding, var(--size-20));
 }
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: var(--wrapper-sm-max-width, 758px);
+    padding-left: var(--wrapper-sm-padding, 0);
+    padding-right: var(--wrapper-sm-padding, 0);
+  }
+}
 @media (min-width: 1024px) {
   .wrapper {
-    padding-left: var(--wrapper-sm-padding, var(--size-20));
-    padding-right: var(--wrapper-sm-padding, var(--size-20));
-    max-width: var(--wrapper-sm-max-width, 1064px);
+    max-width: var(--wrapper-md-max-width, 1024px);
+    padding-left: var(--wrapper-md-padding, 0);
+    padding-right: var(--wrapper-md-padding, 0);
   }
 }
 @media (min-width: 1280px) {
   .wrapper {
-    padding-left: var(--wrapper-md-padding, var(--size-20));
-    padding-right: var(--wrapper-md-padding, var(--size-20));
-    max-width: var(--wrapper-md-max-width, 1180px);
+    max-width: var(--wrapper-lg-max-width, 1152px);
+    padding-left: var(--wrapper-lg-padding, 0);
+    padding-right: var(--wrapper-lg-padding, 0);
   }
 }
 @media (min-width: 1536px) {
   .wrapper {
-    padding-left: var(--wrapper-lg-padding, var(--size-20));
-    padding-right: var(--wrapper-lg-padding, var(--size-20));
-    max-width: var(--wrapper-lg-max-width, 1320px);
+    max-width: var(--wrapper-xl-max-width, 1280px);
+    padding-left: var(--wrapper-xl-padding, 0);
+    padding-right: var(--wrapper-xl-padding, 0);
   }
 }
 
@@ -983,20 +990,20 @@ CUSTOM PROPERTIES
   opacity: var(--opacity-0);
 }
 
-.opacity-02, .dark .group:hover .group-hover\.opacity-02, .dark .disabled\.opacity-02:disabled, .dark .checked\.opacity-02, .dark .focus\.opacity-02:focus, .dark .dark\.opacity-02, .dark .active\.opacity-02:active, .dark .hover\.opacity-02:hover, .group:hover .group-hover\.opacity-02, .disabled\.opacity-02:disabled, .checked\.opacity-02, .focus\.opacity-02:focus, .active\.opacity-02:active, .hover\.opacity-02:hover {
-  opacity: var(--opacity-02);
+.opacity-2, .dark .group:hover .group-hover\.opacity-2, .dark .disabled\.opacity-2:disabled, .dark .checked\.opacity-2, .dark .focus\.opacity-2:focus, .dark .dark\.opacity-2, .dark .active\.opacity-2:active, .dark .hover\.opacity-2:hover, .group:hover .group-hover\.opacity-2, .disabled\.opacity-2:disabled, .checked\.opacity-2, .focus\.opacity-2:focus, .active\.opacity-2:active, .hover\.opacity-2:hover {
+  opacity: var(--opacity-2);
 }
 
-.opacity-04, .dark .group:hover .group-hover\.opacity-04, .dark .disabled\.opacity-04:disabled, .dark .checked\.opacity-04, .dark .focus\.opacity-04:focus, .dark .dark\.opacity-04, .dark .active\.opacity-04:active, .dark .hover\.opacity-04:hover, .group:hover .group-hover\.opacity-04, .disabled\.opacity-04:disabled, .checked\.opacity-04, .focus\.opacity-04:focus, .active\.opacity-04:active, .hover\.opacity-04:hover {
-  opacity: var(--opacity-04);
+.opacity-4, .dark .group:hover .group-hover\.opacity-4, .dark .disabled\.opacity-4:disabled, .dark .checked\.opacity-4, .dark .focus\.opacity-4:focus, .dark .dark\.opacity-4, .dark .active\.opacity-4:active, .dark .hover\.opacity-4:hover, .group:hover .group-hover\.opacity-4, .disabled\.opacity-4:disabled, .checked\.opacity-4, .focus\.opacity-4:focus, .active\.opacity-4:active, .hover\.opacity-4:hover {
+  opacity: var(--opacity-4);
 }
 
-.opacity-06, .dark .group:hover .group-hover\.opacity-06, .dark .disabled\.opacity-06:disabled, .dark .checked\.opacity-06, .dark .focus\.opacity-06:focus, .dark .dark\.opacity-06, .dark .active\.opacity-06:active, .dark .hover\.opacity-06:hover, .group:hover .group-hover\.opacity-06, .disabled\.opacity-06:disabled, .checked\.opacity-06, .focus\.opacity-06:focus, .active\.opacity-06:active, .hover\.opacity-06:hover {
-  opacity: var(--opacity-06);
+.opacity-6, .dark .group:hover .group-hover\.opacity-6, .dark .disabled\.opacity-6:disabled, .dark .checked\.opacity-6, .dark .focus\.opacity-6:focus, .dark .dark\.opacity-6, .dark .active\.opacity-6:active, .dark .hover\.opacity-6:hover, .group:hover .group-hover\.opacity-6, .disabled\.opacity-6:disabled, .checked\.opacity-6, .focus\.opacity-6:focus, .active\.opacity-6:active, .hover\.opacity-6:hover {
+  opacity: var(--opacity-6);
 }
 
-.opacity-08, .dark .group:hover .group-hover\.opacity-08, .dark .disabled\.opacity-08:disabled, .dark .checked\.opacity-08, .dark .focus\.opacity-08:focus, .dark .dark\.opacity-08, .dark .active\.opacity-08:active, .dark .hover\.opacity-08:hover, .group:hover .group-hover\.opacity-08, .disabled\.opacity-08:disabled, .checked\.opacity-08, .focus\.opacity-08:focus, .active\.opacity-08:active, .hover\.opacity-08:hover {
-  opacity: var(--opacity-08);
+.opacity-8, .dark .group:hover .group-hover\.opacity-8, .dark .disabled\.opacity-8:disabled, .dark .checked\.opacity-8, .dark .focus\.opacity-8:focus, .dark .dark\.opacity-8, .dark .active\.opacity-8:active, .dark .hover\.opacity-8:hover, .group:hover .group-hover\.opacity-8, .disabled\.opacity-8:disabled, .checked\.opacity-8, .focus\.opacity-8:focus, .active\.opacity-8:active, .hover\.opacity-8:hover {
+  opacity: var(--opacity-8);
 }
 
 .opacity-10, .dark .group:hover .group-hover\.opacity-10, .dark .disabled\.opacity-10:disabled, .dark .checked\.opacity-10, .dark .focus\.opacity-10:focus, .dark .dark\.opacity-10, .dark .active\.opacity-10:active, .dark .hover\.opacity-10:hover, .group:hover .group-hover\.opacity-10, .disabled\.opacity-10:disabled, .checked\.opacity-10, .focus\.opacity-10:focus, .active\.opacity-10:active, .hover\.opacity-10:hover {
@@ -1339,8 +1346,8 @@ CUSTOM PROPERTIES
   color: hsla(var(--red-hue), var(--red-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.bg-shade-none, .dark .active\.bg-shade-none:active, .dark .dark\.bg-shade-none, .dark .focus\.bg-shade-none:focus, .dark .group:hover .group-hover\.bg-shade-none, .dark .hover\.bg-shade-none:hover, .active\.bg-shade-none:active, .focus\.bg-shade-none:focus, .group:hover .group-hover\.bg-shade-none, .hover\.bg-shade-none:hover {
-  --bg-ltn: var(--shade-none);
+.bg-shade-base, .dark .active\.bg-shade-base:active, .dark .dark\.bg-shade-base, .dark .focus\.bg-shade-base:focus, .dark .group:hover .group-hover\.bg-shade-base, .dark .hover\.bg-shade-base:hover, .active\.bg-shade-base:active, .focus\.bg-shade-base:focus, .group:hover .group-hover\.bg-shade-base, .hover\.bg-shade-base:hover {
+  --bg-ltn: var(--shade-base);
 }
 
 .bg-shade-100, .dark .active\.bg-shade-100:active, .dark .dark\.bg-shade-100, .dark .focus\.bg-shade-100:focus, .dark .group:hover .group-hover\.bg-shade-100, .dark .hover\.bg-shade-100:hover, .active\.bg-shade-100:active, .focus\.bg-shade-100:focus, .group:hover .group-hover\.bg-shade-100, .hover\.bg-shade-100:hover {
@@ -1641,20 +1648,20 @@ CUSTOM PROPERTIES
   --placeholder-opacity: var(--opacity-0);
 }
 
-.placeholder-opacity-02::placeholder, .dark .dark\.placeholder-opacity-02::placeholder, .dark .focus\.placeholder-opacity-02:focus::placeholder, .dark .group:hover .group-hover\.placeholder-opacity-02::placeholder, .dark .hover\.placeholder-opacity-02:hover::placeholder, .focus\.placeholder-opacity-02:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-02::placeholder, .hover\.placeholder-opacity-02:hover::placeholder {
-  --placeholder-opacity: var(--opacity-02);
+.placeholder-opacity-2::placeholder, .dark .dark\.placeholder-opacity-2::placeholder, .dark .focus\.placeholder-opacity-2:focus::placeholder, .dark .group:hover .group-hover\.placeholder-opacity-2::placeholder, .dark .hover\.placeholder-opacity-2:hover::placeholder, .focus\.placeholder-opacity-2:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-2::placeholder, .hover\.placeholder-opacity-2:hover::placeholder {
+  --placeholder-opacity: var(--opacity-2);
 }
 
-.placeholder-opacity-04::placeholder, .dark .dark\.placeholder-opacity-04::placeholder, .dark .focus\.placeholder-opacity-04:focus::placeholder, .dark .group:hover .group-hover\.placeholder-opacity-04::placeholder, .dark .hover\.placeholder-opacity-04:hover::placeholder, .focus\.placeholder-opacity-04:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-04::placeholder, .hover\.placeholder-opacity-04:hover::placeholder {
-  --placeholder-opacity: var(--opacity-04);
+.placeholder-opacity-4::placeholder, .dark .dark\.placeholder-opacity-4::placeholder, .dark .focus\.placeholder-opacity-4:focus::placeholder, .dark .group:hover .group-hover\.placeholder-opacity-4::placeholder, .dark .hover\.placeholder-opacity-4:hover::placeholder, .focus\.placeholder-opacity-4:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-4::placeholder, .hover\.placeholder-opacity-4:hover::placeholder {
+  --placeholder-opacity: var(--opacity-4);
 }
 
-.placeholder-opacity-06::placeholder, .dark .dark\.placeholder-opacity-06::placeholder, .dark .focus\.placeholder-opacity-06:focus::placeholder, .dark .group:hover .group-hover\.placeholder-opacity-06::placeholder, .dark .hover\.placeholder-opacity-06:hover::placeholder, .focus\.placeholder-opacity-06:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-06::placeholder, .hover\.placeholder-opacity-06:hover::placeholder {
-  --placeholder-opacity: var(--opacity-06);
+.placeholder-opacity-6::placeholder, .dark .dark\.placeholder-opacity-6::placeholder, .dark .focus\.placeholder-opacity-6:focus::placeholder, .dark .group:hover .group-hover\.placeholder-opacity-6::placeholder, .dark .hover\.placeholder-opacity-6:hover::placeholder, .focus\.placeholder-opacity-6:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-6::placeholder, .hover\.placeholder-opacity-6:hover::placeholder {
+  --placeholder-opacity: var(--opacity-6);
 }
 
-.placeholder-opacity-08::placeholder, .dark .dark\.placeholder-opacity-08::placeholder, .dark .focus\.placeholder-opacity-08:focus::placeholder, .dark .group:hover .group-hover\.placeholder-opacity-08::placeholder, .dark .hover\.placeholder-opacity-08:hover::placeholder, .focus\.placeholder-opacity-08:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-08::placeholder, .hover\.placeholder-opacity-08:hover::placeholder {
-  --placeholder-opacity: var(--opacity-08);
+.placeholder-opacity-8::placeholder, .dark .dark\.placeholder-opacity-8::placeholder, .dark .focus\.placeholder-opacity-8:focus::placeholder, .dark .group:hover .group-hover\.placeholder-opacity-8::placeholder, .dark .hover\.placeholder-opacity-8:hover::placeholder, .focus\.placeholder-opacity-8:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-8::placeholder, .hover\.placeholder-opacity-8:hover::placeholder {
+  --placeholder-opacity: var(--opacity-8);
 }
 
 .placeholder-opacity-10::placeholder, .dark .dark\.placeholder-opacity-10::placeholder, .dark .focus\.placeholder-opacity-10:focus::placeholder, .dark .group:hover .group-hover\.placeholder-opacity-10::placeholder, .dark .hover\.placeholder-opacity-10:hover::placeholder, .focus\.placeholder-opacity-10:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-10::placeholder, .hover\.placeholder-opacity-10:hover::placeholder {
@@ -1697,8 +1704,8 @@ CUSTOM PROPERTIES
   --placeholder-opacity: var(--opacity-100);
 }
 
-.placeholder-shade-none::placeholder, .dark .dark\.placeholder-shade-none::placeholder, .dark .focus\.placeholder-shade-none:focus::placeholder, .dark .group:hover .group-hover\.placeholder-shade-none::placeholder, .dark .hover\.placeholder-shade-none:hover::placeholder, .focus\.placeholder-shade-none:focus::placeholder, .group:hover .group-hover\.placeholder-shade-none::placeholder, .hover\.placeholder-shade-none:hover::placeholder {
-  --placeholder-ltn: var(--shade-none);
+.placeholder-shade-base::placeholder, .dark .dark\.placeholder-shade-base::placeholder, .dark .focus\.placeholder-shade-base:focus::placeholder, .dark .group:hover .group-hover\.placeholder-shade-base::placeholder, .dark .hover\.placeholder-shade-base:hover::placeholder, .focus\.placeholder-shade-base:focus::placeholder, .group:hover .group-hover\.placeholder-shade-base::placeholder, .hover\.placeholder-shade-base:hover::placeholder {
+  --placeholder-ltn: var(--shade-base);
 }
 
 .placeholder-shade-100::placeholder, .dark .dark\.placeholder-shade-100::placeholder, .dark .focus\.placeholder-shade-100:focus::placeholder, .dark .group:hover .group-hover\.placeholder-shade-100::placeholder, .dark .hover\.placeholder-shade-100:hover::placeholder, .focus\.placeholder-shade-100:focus::placeholder, .group:hover .group-hover\.placeholder-shade-100::placeholder, .hover\.placeholder-shade-100:hover::placeholder {
@@ -1741,8 +1748,8 @@ CUSTOM PROPERTIES
   --placeholder-ltn: var(--shade-full);
 }
 
-.placeholder-tint-none::placeholder, .dark .dark\.placeholder-tint-none::placeholder, .dark .focus\.placeholder-tint-none:focus::placeholder, .dark .group:hover .group-hover\.placeholder-tint-none::placeholder, .dark .hover\.placeholder-tint-none:hover::placeholder, .focus\.placeholder-tint-none:focus::placeholder, .group:hover .group-hover\.placeholder-tint-none::placeholder, .hover\.placeholder-tint-none:hover::placeholder {
-  --placeholder-ltn: var(--tint-none);
+.placeholder-tint-base::placeholder, .dark .dark\.placeholder-tint-base::placeholder, .dark .focus\.placeholder-tint-base:focus::placeholder, .dark .group:hover .group-hover\.placeholder-tint-base::placeholder, .dark .hover\.placeholder-tint-base:hover::placeholder, .focus\.placeholder-tint-base:focus::placeholder, .group:hover .group-hover\.placeholder-tint-base::placeholder, .hover\.placeholder-tint-base:hover::placeholder {
+  --placeholder-ltn: var(--tint-base);
 }
 
 .placeholder-tint-100::placeholder, .dark .dark\.placeholder-tint-100::placeholder, .dark .focus\.placeholder-tint-100:focus::placeholder, .dark .group:hover .group-hover\.placeholder-tint-100::placeholder, .dark .hover\.placeholder-tint-100:hover::placeholder, .focus\.placeholder-tint-100:focus::placeholder, .group:hover .group-hover\.placeholder-tint-100::placeholder, .hover\.placeholder-tint-100:hover::placeholder {
@@ -2123,20 +2130,20 @@ CUSTOM PROPERTIES
   --color-opacity: var(--opacity-0);
 }
 
-.color-opacity-02, .dark .dark\.color-opacity-02, .dark .focus\.color-opacity-02:focus, .dark .group:hover .group-hover\.color-opacity-02, .dark .hover\.color-opacity-02:hover, .focus\.color-opacity-02:focus, .group:hover .group-hover\.color-opacity-02, .hover\.color-opacity-02:hover {
-  --color-opacity: var(--opacity-02);
+.color-opacity-2, .dark .dark\.color-opacity-2, .dark .focus\.color-opacity-2:focus, .dark .group:hover .group-hover\.color-opacity-2, .dark .hover\.color-opacity-2:hover, .focus\.color-opacity-2:focus, .group:hover .group-hover\.color-opacity-2, .hover\.color-opacity-2:hover {
+  --color-opacity: var(--opacity-2);
 }
 
-.color-opacity-04, .dark .dark\.color-opacity-04, .dark .focus\.color-opacity-04:focus, .dark .group:hover .group-hover\.color-opacity-04, .dark .hover\.color-opacity-04:hover, .focus\.color-opacity-04:focus, .group:hover .group-hover\.color-opacity-04, .hover\.color-opacity-04:hover {
-  --color-opacity: var(--opacity-04);
+.color-opacity-4, .dark .dark\.color-opacity-4, .dark .focus\.color-opacity-4:focus, .dark .group:hover .group-hover\.color-opacity-4, .dark .hover\.color-opacity-4:hover, .focus\.color-opacity-4:focus, .group:hover .group-hover\.color-opacity-4, .hover\.color-opacity-4:hover {
+  --color-opacity: var(--opacity-4);
 }
 
-.color-opacity-06, .dark .dark\.color-opacity-06, .dark .focus\.color-opacity-06:focus, .dark .group:hover .group-hover\.color-opacity-06, .dark .hover\.color-opacity-06:hover, .focus\.color-opacity-06:focus, .group:hover .group-hover\.color-opacity-06, .hover\.color-opacity-06:hover {
-  --color-opacity: var(--opacity-06);
+.color-opacity-6, .dark .dark\.color-opacity-6, .dark .focus\.color-opacity-6:focus, .dark .group:hover .group-hover\.color-opacity-6, .dark .hover\.color-opacity-6:hover, .focus\.color-opacity-6:focus, .group:hover .group-hover\.color-opacity-6, .hover\.color-opacity-6:hover {
+  --color-opacity: var(--opacity-6);
 }
 
-.color-opacity-08, .dark .dark\.color-opacity-08, .dark .focus\.color-opacity-08:focus, .dark .group:hover .group-hover\.color-opacity-08, .dark .hover\.color-opacity-08:hover, .focus\.color-opacity-08:focus, .group:hover .group-hover\.color-opacity-08, .hover\.color-opacity-08:hover {
-  --color-opacity: var(--opacity-08);
+.color-opacity-8, .dark .dark\.color-opacity-8, .dark .focus\.color-opacity-8:focus, .dark .group:hover .group-hover\.color-opacity-8, .dark .hover\.color-opacity-8:hover, .focus\.color-opacity-8:focus, .group:hover .group-hover\.color-opacity-8, .hover\.color-opacity-8:hover {
+  --color-opacity: var(--opacity-8);
 }
 
 .color-opacity-10, .dark .dark\.color-opacity-10, .dark .focus\.color-opacity-10:focus, .dark .group:hover .group-hover\.color-opacity-10, .dark .hover\.color-opacity-10:hover, .focus\.color-opacity-10:focus, .group:hover .group-hover\.color-opacity-10, .hover\.color-opacity-10:hover {
@@ -2179,8 +2186,8 @@ CUSTOM PROPERTIES
   --color-opacity: var(--opacity-100);
 }
 
-.color-shade-none, .dark .dark\.color-shade-none, .dark .focus\.color-shade-none:focus, .dark .group:hover .group-hover\.color-shade-none, .dark .hover\.color-shade-none:hover, .focus\.color-shade-none:focus, .group:hover .group-hover\.color-shade-none, .hover\.color-shade-none:hover {
-  --color-ltn: var(--shade-none);
+.color-shade-base, .dark .dark\.color-shade-base, .dark .focus\.color-shade-base:focus, .dark .group:hover .group-hover\.color-shade-base, .dark .hover\.color-shade-base:hover, .focus\.color-shade-base:focus, .group:hover .group-hover\.color-shade-base, .hover\.color-shade-base:hover {
+  --color-ltn: var(--shade-base);
 }
 
 .color-shade-100, .dark .dark\.color-shade-100, .dark .focus\.color-shade-100:focus, .dark .group:hover .group-hover\.color-shade-100, .dark .hover\.color-shade-100:hover, .focus\.color-shade-100:focus, .group:hover .group-hover\.color-shade-100, .hover\.color-shade-100:hover {
@@ -2223,8 +2230,8 @@ CUSTOM PROPERTIES
   --color-ltn: var(--shade-full);
 }
 
-.color-tint-none, .dark .dark\.color-tint-none, .dark .focus\.color-tint-none:focus, .dark .group:hover .group-hover\.color-tint-none, .dark .hover\.color-tint-none:hover, .focus\.color-tint-none:focus, .group:hover .group-hover\.color-tint-none, .hover\.color-tint-none:hover {
-  --color-ltn: var(--tint-none);
+.color-tint-base, .dark .dark\.color-tint-base, .dark .focus\.color-tint-base:focus, .dark .group:hover .group-hover\.color-tint-base, .dark .hover\.color-tint-base:hover, .focus\.color-tint-base:focus, .group:hover .group-hover\.color-tint-base, .hover\.color-tint-base:hover {
+  --color-ltn: var(--tint-base);
 }
 
 .color-tint-100, .dark .dark\.color-tint-100, .dark .focus\.color-tint-100:focus, .dark .group:hover .group-hover\.color-tint-100, .dark .hover\.color-tint-100:hover, .focus\.color-tint-100:focus, .group:hover .group-hover\.color-tint-100, .hover\.color-tint-100:hover {
@@ -5036,7 +5043,7 @@ CUSTOM PROPERTIES
 }
 
 .p-0 {
-  padding: 0;
+  padding: var(--size-0);
 }
 
 .p-1 {
@@ -5200,8 +5207,8 @@ CUSTOM PROPERTIES
 }
 
 .py-0 {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: var(--size-0);
+  padding-bottom: var(--size-0);
 }
 
 .py-1 {
@@ -5405,8 +5412,8 @@ CUSTOM PROPERTIES
 }
 
 .px-0 {
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: var(--size-0);
+  padding-left: var(--size-0);
 }
 
 .px-1 {
@@ -5610,7 +5617,7 @@ CUSTOM PROPERTIES
 }
 
 .pt-0, .last\.pt-0:last-child, .first\.pt-0:first-child {
-  padding-top: 0;
+  padding-top: var(--size-0);
 }
 
 .pt-1, .last\.pt-1:last-child, .first\.pt-1:first-child {
@@ -5774,7 +5781,7 @@ CUSTOM PROPERTIES
 }
 
 .pr-0, .last\.pr-0:last-child, .first\.pr-0:first-child {
-  padding-right: 0;
+  padding-right: var(--size-0);
 }
 
 .pr-1, .last\.pr-1:last-child, .first\.pr-1:first-child {
@@ -5938,7 +5945,7 @@ CUSTOM PROPERTIES
 }
 
 .pl-0, .last\.pl-0:last-child, .first\.pl-0:first-child {
-  padding-left: 0;
+  padding-left: var(--size-0);
 }
 
 .pl-1, .last\.pl-1:last-child, .first\.pl-1:first-child {
@@ -6102,7 +6109,7 @@ CUSTOM PROPERTIES
 }
 
 .pb-0, .last\.pb-0:last-child, .first\.pb-0:first-child {
-  padding-bottom: 0;
+  padding-bottom: var(--size-0);
 }
 
 .pb-1, .last\.pb-1:last-child, .first\.pb-1:first-child {
@@ -6423,20 +6430,20 @@ CUSTOM PROPERTIES
   --bg-opacity: var(--opacity-0);
 }
 
-.bg-opacity-02, .dark .dark\.bg-opacity-02, .dark .focus\.bg-opacity-02:focus, .dark .group:hover .group-hover\.bg-opacity-02, .dark .hover\.bg-opacity-02:hover, .focus\.bg-opacity-02:focus, .group:hover .group-hover\.bg-opacity-02, .hover\.bg-opacity-02:hover {
-  --bg-opacity: var(--opacity-02);
+.bg-opacity-2, .dark .dark\.bg-opacity-2, .dark .focus\.bg-opacity-2:focus, .dark .group:hover .group-hover\.bg-opacity-2, .dark .hover\.bg-opacity-2:hover, .focus\.bg-opacity-2:focus, .group:hover .group-hover\.bg-opacity-2, .hover\.bg-opacity-2:hover {
+  --bg-opacity: var(--opacity-2);
 }
 
-.bg-opacity-04, .dark .dark\.bg-opacity-04, .dark .focus\.bg-opacity-04:focus, .dark .group:hover .group-hover\.bg-opacity-04, .dark .hover\.bg-opacity-04:hover, .focus\.bg-opacity-04:focus, .group:hover .group-hover\.bg-opacity-04, .hover\.bg-opacity-04:hover {
-  --bg-opacity: var(--opacity-04);
+.bg-opacity-4, .dark .dark\.bg-opacity-4, .dark .focus\.bg-opacity-4:focus, .dark .group:hover .group-hover\.bg-opacity-4, .dark .hover\.bg-opacity-4:hover, .focus\.bg-opacity-4:focus, .group:hover .group-hover\.bg-opacity-4, .hover\.bg-opacity-4:hover {
+  --bg-opacity: var(--opacity-4);
 }
 
-.bg-opacity-06, .dark .dark\.bg-opacity-06, .dark .focus\.bg-opacity-06:focus, .dark .group:hover .group-hover\.bg-opacity-06, .dark .hover\.bg-opacity-06:hover, .focus\.bg-opacity-06:focus, .group:hover .group-hover\.bg-opacity-06, .hover\.bg-opacity-06:hover {
-  --bg-opacity: var(--opacity-06);
+.bg-opacity-6, .dark .dark\.bg-opacity-6, .dark .focus\.bg-opacity-6:focus, .dark .group:hover .group-hover\.bg-opacity-6, .dark .hover\.bg-opacity-6:hover, .focus\.bg-opacity-6:focus, .group:hover .group-hover\.bg-opacity-6, .hover\.bg-opacity-6:hover {
+  --bg-opacity: var(--opacity-6);
 }
 
-.bg-opacity-08, .dark .dark\.bg-opacity-08, .dark .focus\.bg-opacity-08:focus, .dark .group:hover .group-hover\.bg-opacity-08, .dark .hover\.bg-opacity-08:hover, .focus\.bg-opacity-08:focus, .group:hover .group-hover\.bg-opacity-08, .hover\.bg-opacity-08:hover {
-  --bg-opacity: var(--opacity-08);
+.bg-opacity-8, .dark .dark\.bg-opacity-8, .dark .focus\.bg-opacity-8:focus, .dark .group:hover .group-hover\.bg-opacity-8, .dark .hover\.bg-opacity-8:hover, .focus\.bg-opacity-8:focus, .group:hover .group-hover\.bg-opacity-8, .hover\.bg-opacity-8:hover {
+  --bg-opacity: var(--opacity-8);
 }
 
 .bg-opacity-10, .dark .dark\.bg-opacity-10, .dark .focus\.bg-opacity-10:focus, .dark .group:hover .group-hover\.bg-opacity-10, .dark .hover\.bg-opacity-10:hover, .focus\.bg-opacity-10:focus, .group:hover .group-hover\.bg-opacity-10, .hover\.bg-opacity-10:hover {
@@ -6479,8 +6486,8 @@ CUSTOM PROPERTIES
   --bg-opacity: var(--opacity-100);
 }
 
-.bg-tint-none, .dark .dark\.bg-tint-none, .dark .focus\.bg-tint-none:focus, .dark .group:hover .group-hover\.bg-tint-none, .dark .hover\.bg-tint-none:hover, .focus\.bg-tint-none:focus, .group:hover .group-hover\.bg-tint-none, .hover\.bg-tint-none:hover {
-  --bg-ltn: var(--tint-none);
+.bg-tint-base, .dark .dark\.bg-tint-base, .dark .focus\.bg-tint-base:focus, .dark .group:hover .group-hover\.bg-tint-base, .dark .hover\.bg-tint-base:hover, .focus\.bg-tint-base:focus, .group:hover .group-hover\.bg-tint-base, .hover\.bg-tint-base:hover {
+  --bg-ltn: var(--tint-base);
 }
 
 .bg-tint-100, .dark .dark\.bg-tint-100, .dark .focus\.bg-tint-100:focus, .dark .group:hover .group-hover\.bg-tint-100, .dark .hover\.bg-tint-100:hover, .focus\.bg-tint-100:focus, .group:hover .group-hover\.bg-tint-100, .hover\.bg-tint-100:hover {
@@ -7095,20 +7102,20 @@ CUSTOM PROPERTIES
   --border-opacity: var(--opacity-0);
 }
 
-.border-opacity-02, .dark .dark\.border-opacity-02, .dark .focus\.border-opacity-02:focus, .dark .group:hover .group-hover\.border-opacity-02, .dark .hover\.border-opacity-02:hover, .focus\.border-opacity-02:focus, .group:hover .group-hover\.border-opacity-02, .hover\.border-opacity-02:hover {
-  --border-opacity: var(--opacity-02);
+.border-opacity-2, .dark .dark\.border-opacity-2, .dark .focus\.border-opacity-2:focus, .dark .group:hover .group-hover\.border-opacity-2, .dark .hover\.border-opacity-2:hover, .focus\.border-opacity-2:focus, .group:hover .group-hover\.border-opacity-2, .hover\.border-opacity-2:hover {
+  --border-opacity: var(--opacity-2);
 }
 
-.border-opacity-04, .dark .dark\.border-opacity-04, .dark .focus\.border-opacity-04:focus, .dark .group:hover .group-hover\.border-opacity-04, .dark .hover\.border-opacity-04:hover, .focus\.border-opacity-04:focus, .group:hover .group-hover\.border-opacity-04, .hover\.border-opacity-04:hover {
-  --border-opacity: var(--opacity-04);
+.border-opacity-4, .dark .dark\.border-opacity-4, .dark .focus\.border-opacity-4:focus, .dark .group:hover .group-hover\.border-opacity-4, .dark .hover\.border-opacity-4:hover, .focus\.border-opacity-4:focus, .group:hover .group-hover\.border-opacity-4, .hover\.border-opacity-4:hover {
+  --border-opacity: var(--opacity-4);
 }
 
-.border-opacity-06, .dark .dark\.border-opacity-06, .dark .focus\.border-opacity-06:focus, .dark .group:hover .group-hover\.border-opacity-06, .dark .hover\.border-opacity-06:hover, .focus\.border-opacity-06:focus, .group:hover .group-hover\.border-opacity-06, .hover\.border-opacity-06:hover {
-  --border-opacity: var(--opacity-06);
+.border-opacity-6, .dark .dark\.border-opacity-6, .dark .focus\.border-opacity-6:focus, .dark .group:hover .group-hover\.border-opacity-6, .dark .hover\.border-opacity-6:hover, .focus\.border-opacity-6:focus, .group:hover .group-hover\.border-opacity-6, .hover\.border-opacity-6:hover {
+  --border-opacity: var(--opacity-6);
 }
 
-.border-opacity-08, .dark .dark\.border-opacity-08, .dark .focus\.border-opacity-08:focus, .dark .group:hover .group-hover\.border-opacity-08, .dark .hover\.border-opacity-08:hover, .focus\.border-opacity-08:focus, .group:hover .group-hover\.border-opacity-08, .hover\.border-opacity-08:hover {
-  --border-opacity: var(--opacity-08);
+.border-opacity-8, .dark .dark\.border-opacity-8, .dark .focus\.border-opacity-8:focus, .dark .group:hover .group-hover\.border-opacity-8, .dark .hover\.border-opacity-8:hover, .focus\.border-opacity-8:focus, .group:hover .group-hover\.border-opacity-8, .hover\.border-opacity-8:hover {
+  --border-opacity: var(--opacity-8);
 }
 
 .border-opacity-10, .dark .dark\.border-opacity-10, .dark .focus\.border-opacity-10:focus, .dark .group:hover .group-hover\.border-opacity-10, .dark .hover\.border-opacity-10:hover, .focus\.border-opacity-10:focus, .group:hover .group-hover\.border-opacity-10, .hover\.border-opacity-10:hover {
@@ -7151,8 +7158,8 @@ CUSTOM PROPERTIES
   --border-opacity: var(--opacity-100);
 }
 
-.border-shade-none, .dark .dark\.border-shade-none, .dark .focus\.border-shade-none:focus, .dark .group:hover .group-hover\.border-shade-none, .dark .hover\.border-shade-none:hover, .focus\.border-shade-none:focus, .group:hover .group-hover\.border-shade-none, .hover\.border-shade-none:hover {
-  --border-ltn: var(--shade-none);
+.border-shade-base, .dark .dark\.border-shade-base, .dark .focus\.border-shade-base:focus, .dark .group:hover .group-hover\.border-shade-base, .dark .hover\.border-shade-base:hover, .focus\.border-shade-base:focus, .group:hover .group-hover\.border-shade-base, .hover\.border-shade-base:hover {
+  --border-ltn: var(--shade-base);
 }
 
 .border-shade-100, .dark .dark\.border-shade-100, .dark .focus\.border-shade-100:focus, .dark .group:hover .group-hover\.border-shade-100, .dark .hover\.border-shade-100:hover, .focus\.border-shade-100:focus, .group:hover .group-hover\.border-shade-100, .hover\.border-shade-100:hover {
@@ -7195,8 +7202,8 @@ CUSTOM PROPERTIES
   --border-ltn: var(--shade-full);
 }
 
-.border-tint-none, .dark .dark\.border-tint-none, .dark .focus\.border-tint-none:focus, .dark .group:hover .group-hover\.border-tint-none, .dark .hover\.border-tint-none:hover, .focus\.border-tint-none:focus, .group:hover .group-hover\.border-tint-none, .hover\.border-tint-none:hover {
-  --border-ltn: var(--tint-none);
+.border-tint-base, .dark .dark\.border-tint-base, .dark .focus\.border-tint-base:focus, .dark .group:hover .group-hover\.border-tint-base, .dark .hover\.border-tint-base:hover, .focus\.border-tint-base:focus, .group:hover .group-hover\.border-tint-base, .hover\.border-tint-base:hover {
+  --border-ltn: var(--tint-base);
 }
 
 .border-tint-100, .dark .dark\.border-tint-100, .dark .focus\.border-tint-100:focus, .dark .group:hover .group-hover\.border-tint-100, .dark .hover\.border-tint-100:hover, .focus\.border-tint-100:focus, .group:hover .group-hover\.border-tint-100, .hover\.border-tint-100:hover {
@@ -7921,7 +7928,7 @@ CUSTOM PROPERTIES
 }
 
 .top-0 {
-  top: 0;
+  top: var(--size-0);
 }
 
 .top-1 {
@@ -8057,7 +8064,7 @@ CUSTOM PROPERTIES
 }
 
 .right-0 {
-  right: 0;
+  right: var(--size-0);
 }
 
 .right-1 {
@@ -8193,7 +8200,7 @@ CUSTOM PROPERTIES
 }
 
 .left-0 {
-  left: 0;
+  left: var(--size-0);
 }
 
 .left-1 {
@@ -8329,7 +8336,7 @@ CUSTOM PROPERTIES
 }
 
 .bottom-0 {
-  bottom: 0;
+  bottom: var(--size-0);
 }
 
 .bottom-1 {
@@ -9649,20 +9656,20 @@ CUSTOM PROPERTIES
   --split-opacity: var(--opacity-0);
 }
 
-.split-opacity-02 > * + *, .dark .dark\.split-opacity-02 > * + *, .dark .focus\.split-opacity-02:focus > * + *, .dark .group:hover .group-hover\.split-opacity-02 > * + *, .dark .hover\.split-opacity-02:hover > * + *, .focus\.split-opacity-02:focus > * + *, .group:hover .group-hover\.split-opacity-02 > * + *, .hover\.split-opacity-02:hover > * + * {
-  --split-opacity: var(--opacity-02);
+.split-opacity-2 > * + *, .dark .dark\.split-opacity-2 > * + *, .dark .focus\.split-opacity-2:focus > * + *, .dark .group:hover .group-hover\.split-opacity-2 > * + *, .dark .hover\.split-opacity-2:hover > * + *, .focus\.split-opacity-2:focus > * + *, .group:hover .group-hover\.split-opacity-2 > * + *, .hover\.split-opacity-2:hover > * + * {
+  --split-opacity: var(--opacity-2);
 }
 
-.split-opacity-04 > * + *, .dark .dark\.split-opacity-04 > * + *, .dark .focus\.split-opacity-04:focus > * + *, .dark .group:hover .group-hover\.split-opacity-04 > * + *, .dark .hover\.split-opacity-04:hover > * + *, .focus\.split-opacity-04:focus > * + *, .group:hover .group-hover\.split-opacity-04 > * + *, .hover\.split-opacity-04:hover > * + * {
-  --split-opacity: var(--opacity-04);
+.split-opacity-4 > * + *, .dark .dark\.split-opacity-4 > * + *, .dark .focus\.split-opacity-4:focus > * + *, .dark .group:hover .group-hover\.split-opacity-4 > * + *, .dark .hover\.split-opacity-4:hover > * + *, .focus\.split-opacity-4:focus > * + *, .group:hover .group-hover\.split-opacity-4 > * + *, .hover\.split-opacity-4:hover > * + * {
+  --split-opacity: var(--opacity-4);
 }
 
-.split-opacity-06 > * + *, .dark .dark\.split-opacity-06 > * + *, .dark .focus\.split-opacity-06:focus > * + *, .dark .group:hover .group-hover\.split-opacity-06 > * + *, .dark .hover\.split-opacity-06:hover > * + *, .focus\.split-opacity-06:focus > * + *, .group:hover .group-hover\.split-opacity-06 > * + *, .hover\.split-opacity-06:hover > * + * {
-  --split-opacity: var(--opacity-06);
+.split-opacity-6 > * + *, .dark .dark\.split-opacity-6 > * + *, .dark .focus\.split-opacity-6:focus > * + *, .dark .group:hover .group-hover\.split-opacity-6 > * + *, .dark .hover\.split-opacity-6:hover > * + *, .focus\.split-opacity-6:focus > * + *, .group:hover .group-hover\.split-opacity-6 > * + *, .hover\.split-opacity-6:hover > * + * {
+  --split-opacity: var(--opacity-6);
 }
 
-.split-opacity-08 > * + *, .dark .dark\.split-opacity-08 > * + *, .dark .focus\.split-opacity-08:focus > * + *, .dark .group:hover .group-hover\.split-opacity-08 > * + *, .dark .hover\.split-opacity-08:hover > * + *, .focus\.split-opacity-08:focus > * + *, .group:hover .group-hover\.split-opacity-08 > * + *, .hover\.split-opacity-08:hover > * + * {
-  --split-opacity: var(--opacity-08);
+.split-opacity-8 > * + *, .dark .dark\.split-opacity-8 > * + *, .dark .focus\.split-opacity-8:focus > * + *, .dark .group:hover .group-hover\.split-opacity-8 > * + *, .dark .hover\.split-opacity-8:hover > * + *, .focus\.split-opacity-8:focus > * + *, .group:hover .group-hover\.split-opacity-8 > * + *, .hover\.split-opacity-8:hover > * + * {
+  --split-opacity: var(--opacity-8);
 }
 
 .split-opacity-10 > * + *, .dark .dark\.split-opacity-10 > * + *, .dark .focus\.split-opacity-10:focus > * + *, .dark .group:hover .group-hover\.split-opacity-10 > * + *, .dark .hover\.split-opacity-10:hover > * + *, .focus\.split-opacity-10:focus > * + *, .group:hover .group-hover\.split-opacity-10 > * + *, .hover\.split-opacity-10:hover > * + * {
@@ -9705,8 +9712,8 @@ CUSTOM PROPERTIES
   --split-opacity: var(--opacity-100);
 }
 
-.split-shade-none > * + *, .dark .dark\.split-shade-none > * + *, .dark .focus\.split-shade-none:focus > * + *, .dark .group:hover .group-hover\.split-shade-none > * + *, .dark .hover\.split-shade-none:hover > * + *, .focus\.split-shade-none:focus > * + *, .group:hover .group-hover\.split-shade-none > * + *, .hover\.split-shade-none:hover > * + * {
-  --split-ltn: var(--shade-none);
+.split-shade-base > * + *, .dark .dark\.split-shade-base > * + *, .dark .focus\.split-shade-base:focus > * + *, .dark .group:hover .group-hover\.split-shade-base > * + *, .dark .hover\.split-shade-base:hover > * + *, .focus\.split-shade-base:focus > * + *, .group:hover .group-hover\.split-shade-base > * + *, .hover\.split-shade-base:hover > * + * {
+  --split-ltn: var(--shade-base);
 }
 
 .split-shade-100 > * + *, .dark .dark\.split-shade-100 > * + *, .dark .focus\.split-shade-100:focus > * + *, .dark .group:hover .group-hover\.split-shade-100 > * + *, .dark .hover\.split-shade-100:hover > * + *, .focus\.split-shade-100:focus > * + *, .group:hover .group-hover\.split-shade-100 > * + *, .hover\.split-shade-100:hover > * + * {
@@ -9749,8 +9756,8 @@ CUSTOM PROPERTIES
   --split-ltn: var(--shade-full);
 }
 
-.split-tint-none > * + *, .dark .dark\.split-tint-none > * + *, .dark .focus\.split-tint-none:focus > * + *, .dark .group:hover .group-hover\.split-tint-none > * + *, .dark .hover\.split-tint-none:hover > * + *, .focus\.split-tint-none:focus > * + *, .group:hover .group-hover\.split-tint-none > * + *, .hover\.split-tint-none:hover > * + * {
-  --split-ltn: var(--tint-none);
+.split-tint-base > * + *, .dark .dark\.split-tint-base > * + *, .dark .focus\.split-tint-base:focus > * + *, .dark .group:hover .group-hover\.split-tint-base > * + *, .dark .hover\.split-tint-base:hover > * + *, .focus\.split-tint-base:focus > * + *, .group:hover .group-hover\.split-tint-base > * + *, .hover\.split-tint-base:hover > * + * {
+  --split-ltn: var(--tint-base);
 }
 
 .split-tint-100 > * + *, .dark .dark\.split-tint-100 > * + *, .dark .focus\.split-tint-100:focus > * + *, .dark .group:hover .group-hover\.split-tint-100 > * + *, .dark .hover\.split-tint-100:hover > * + *, .focus\.split-tint-100:focus > * + *, .group:hover .group-hover\.split-tint-100 > * + *, .hover\.split-tint-100:hover > * + * {
@@ -11636,20 +11643,20 @@ CUSTOM PROPERTIES
     opacity: var(--opacity-0);
   }
 
-  .sm\.opacity-02 {
-    opacity: var(--opacity-02);
+  .sm\.opacity-2 {
+    opacity: var(--opacity-2);
   }
 
-  .sm\.opacity-04 {
-    opacity: var(--opacity-04);
+  .sm\.opacity-4 {
+    opacity: var(--opacity-4);
   }
 
-  .sm\.opacity-06 {
-    opacity: var(--opacity-06);
+  .sm\.opacity-6 {
+    opacity: var(--opacity-6);
   }
 
-  .sm\.opacity-08 {
-    opacity: var(--opacity-08);
+  .sm\.opacity-8 {
+    opacity: var(--opacity-8);
   }
 
   .sm\.opacity-10 {
@@ -14719,7 +14726,7 @@ CUSTOM PROPERTIES
   }
 
   .sm\.p-0 {
-    padding: 0;
+    padding: var(--size-0);
   }
 
   .sm\.p-1 {
@@ -14883,8 +14890,8 @@ CUSTOM PROPERTIES
   }
 
   .sm\.py-0 {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: var(--size-0);
+    padding-bottom: var(--size-0);
   }
 
   .sm\.py-1 {
@@ -15088,8 +15095,8 @@ CUSTOM PROPERTIES
   }
 
   .sm\.px-0 {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: var(--size-0);
+    padding-left: var(--size-0);
   }
 
   .sm\.px-1 {
@@ -15293,7 +15300,7 @@ CUSTOM PROPERTIES
   }
 
   .sm\.pt-0 {
-    padding-top: 0;
+    padding-top: var(--size-0);
   }
 
   .sm\.pt-1 {
@@ -15457,7 +15464,7 @@ CUSTOM PROPERTIES
   }
 
   .sm\.pr-0 {
-    padding-right: 0;
+    padding-right: var(--size-0);
   }
 
   .sm\.pr-1 {
@@ -15621,7 +15628,7 @@ CUSTOM PROPERTIES
   }
 
   .sm\.pl-0 {
-    padding-left: 0;
+    padding-left: var(--size-0);
   }
 
   .sm\.pl-1 {
@@ -15785,7 +15792,7 @@ CUSTOM PROPERTIES
   }
 
   .sm\.pb-0 {
-    padding-bottom: 0;
+    padding-bottom: var(--size-0);
   }
 
   .sm\.pb-1 {
@@ -16755,7 +16762,7 @@ CUSTOM PROPERTIES
   }
 
   .sm\.top-0 {
-    top: 0;
+    top: var(--size-0);
   }
 
   .sm\.top-1 {
@@ -16891,7 +16898,7 @@ CUSTOM PROPERTIES
   }
 
   .sm\.right-0 {
-    right: 0;
+    right: var(--size-0);
   }
 
   .sm\.right-1 {
@@ -17027,7 +17034,7 @@ CUSTOM PROPERTIES
   }
 
   .sm\.left-0 {
-    left: 0;
+    left: var(--size-0);
   }
 
   .sm\.left-1 {
@@ -17163,7 +17170,7 @@ CUSTOM PROPERTIES
   }
 
   .sm\.bottom-0 {
-    bottom: 0;
+    bottom: var(--size-0);
   }
 
   .sm\.bottom-1 {
@@ -20015,20 +20022,20 @@ CUSTOM PROPERTIES
     opacity: var(--opacity-0);
   }
 
-  .md\.opacity-02 {
-    opacity: var(--opacity-02);
+  .md\.opacity-2 {
+    opacity: var(--opacity-2);
   }
 
-  .md\.opacity-04 {
-    opacity: var(--opacity-04);
+  .md\.opacity-4 {
+    opacity: var(--opacity-4);
   }
 
-  .md\.opacity-06 {
-    opacity: var(--opacity-06);
+  .md\.opacity-6 {
+    opacity: var(--opacity-6);
   }
 
-  .md\.opacity-08 {
-    opacity: var(--opacity-08);
+  .md\.opacity-8 {
+    opacity: var(--opacity-8);
   }
 
   .md\.opacity-10 {
@@ -23098,7 +23105,7 @@ CUSTOM PROPERTIES
   }
 
   .md\.p-0 {
-    padding: 0;
+    padding: var(--size-0);
   }
 
   .md\.p-1 {
@@ -23262,8 +23269,8 @@ CUSTOM PROPERTIES
   }
 
   .md\.py-0 {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: var(--size-0);
+    padding-bottom: var(--size-0);
   }
 
   .md\.py-1 {
@@ -23467,8 +23474,8 @@ CUSTOM PROPERTIES
   }
 
   .md\.px-0 {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: var(--size-0);
+    padding-left: var(--size-0);
   }
 
   .md\.px-1 {
@@ -23672,7 +23679,7 @@ CUSTOM PROPERTIES
   }
 
   .md\.pt-0 {
-    padding-top: 0;
+    padding-top: var(--size-0);
   }
 
   .md\.pt-1 {
@@ -23836,7 +23843,7 @@ CUSTOM PROPERTIES
   }
 
   .md\.pr-0 {
-    padding-right: 0;
+    padding-right: var(--size-0);
   }
 
   .md\.pr-1 {
@@ -24000,7 +24007,7 @@ CUSTOM PROPERTIES
   }
 
   .md\.pl-0 {
-    padding-left: 0;
+    padding-left: var(--size-0);
   }
 
   .md\.pl-1 {
@@ -24164,7 +24171,7 @@ CUSTOM PROPERTIES
   }
 
   .md\.pb-0 {
-    padding-bottom: 0;
+    padding-bottom: var(--size-0);
   }
 
   .md\.pb-1 {
@@ -25134,7 +25141,7 @@ CUSTOM PROPERTIES
   }
 
   .md\.top-0 {
-    top: 0;
+    top: var(--size-0);
   }
 
   .md\.top-1 {
@@ -25270,7 +25277,7 @@ CUSTOM PROPERTIES
   }
 
   .md\.right-0 {
-    right: 0;
+    right: var(--size-0);
   }
 
   .md\.right-1 {
@@ -25406,7 +25413,7 @@ CUSTOM PROPERTIES
   }
 
   .md\.left-0 {
-    left: 0;
+    left: var(--size-0);
   }
 
   .md\.left-1 {
@@ -25542,7 +25549,7 @@ CUSTOM PROPERTIES
   }
 
   .md\.bottom-0 {
-    bottom: 0;
+    bottom: var(--size-0);
   }
 
   .md\.bottom-1 {
@@ -28394,20 +28401,20 @@ CUSTOM PROPERTIES
     opacity: var(--opacity-0);
   }
 
-  .lg\.opacity-02 {
-    opacity: var(--opacity-02);
+  .lg\.opacity-2 {
+    opacity: var(--opacity-2);
   }
 
-  .lg\.opacity-04 {
-    opacity: var(--opacity-04);
+  .lg\.opacity-4 {
+    opacity: var(--opacity-4);
   }
 
-  .lg\.opacity-06 {
-    opacity: var(--opacity-06);
+  .lg\.opacity-6 {
+    opacity: var(--opacity-6);
   }
 
-  .lg\.opacity-08 {
-    opacity: var(--opacity-08);
+  .lg\.opacity-8 {
+    opacity: var(--opacity-8);
   }
 
   .lg\.opacity-10 {
@@ -31477,7 +31484,7 @@ CUSTOM PROPERTIES
   }
 
   .lg\.p-0 {
-    padding: 0;
+    padding: var(--size-0);
   }
 
   .lg\.p-1 {
@@ -31641,8 +31648,8 @@ CUSTOM PROPERTIES
   }
 
   .lg\.py-0 {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: var(--size-0);
+    padding-bottom: var(--size-0);
   }
 
   .lg\.py-1 {
@@ -31846,8 +31853,8 @@ CUSTOM PROPERTIES
   }
 
   .lg\.px-0 {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: var(--size-0);
+    padding-left: var(--size-0);
   }
 
   .lg\.px-1 {
@@ -32051,7 +32058,7 @@ CUSTOM PROPERTIES
   }
 
   .lg\.pt-0 {
-    padding-top: 0;
+    padding-top: var(--size-0);
   }
 
   .lg\.pt-1 {
@@ -32215,7 +32222,7 @@ CUSTOM PROPERTIES
   }
 
   .lg\.pr-0 {
-    padding-right: 0;
+    padding-right: var(--size-0);
   }
 
   .lg\.pr-1 {
@@ -32379,7 +32386,7 @@ CUSTOM PROPERTIES
   }
 
   .lg\.pl-0 {
-    padding-left: 0;
+    padding-left: var(--size-0);
   }
 
   .lg\.pl-1 {
@@ -32543,7 +32550,7 @@ CUSTOM PROPERTIES
   }
 
   .lg\.pb-0 {
-    padding-bottom: 0;
+    padding-bottom: var(--size-0);
   }
 
   .lg\.pb-1 {
@@ -33513,7 +33520,7 @@ CUSTOM PROPERTIES
   }
 
   .lg\.top-0 {
-    top: 0;
+    top: var(--size-0);
   }
 
   .lg\.top-1 {
@@ -33649,7 +33656,7 @@ CUSTOM PROPERTIES
   }
 
   .lg\.right-0 {
-    right: 0;
+    right: var(--size-0);
   }
 
   .lg\.right-1 {
@@ -33785,7 +33792,7 @@ CUSTOM PROPERTIES
   }
 
   .lg\.left-0 {
-    left: 0;
+    left: var(--size-0);
   }
 
   .lg\.left-1 {
@@ -33921,7 +33928,7 @@ CUSTOM PROPERTIES
   }
 
   .lg\.bottom-0 {
-    bottom: 0;
+    bottom: var(--size-0);
   }
 
   .lg\.bottom-1 {
@@ -36773,20 +36780,20 @@ CUSTOM PROPERTIES
     opacity: var(--opacity-0);
   }
 
-  .xl\.opacity-02 {
-    opacity: var(--opacity-02);
+  .xl\.opacity-2 {
+    opacity: var(--opacity-2);
   }
 
-  .xl\.opacity-04 {
-    opacity: var(--opacity-04);
+  .xl\.opacity-4 {
+    opacity: var(--opacity-4);
   }
 
-  .xl\.opacity-06 {
-    opacity: var(--opacity-06);
+  .xl\.opacity-6 {
+    opacity: var(--opacity-6);
   }
 
-  .xl\.opacity-08 {
-    opacity: var(--opacity-08);
+  .xl\.opacity-8 {
+    opacity: var(--opacity-8);
   }
 
   .xl\.opacity-10 {
@@ -39856,7 +39863,7 @@ CUSTOM PROPERTIES
   }
 
   .xl\.p-0 {
-    padding: 0;
+    padding: var(--size-0);
   }
 
   .xl\.p-1 {
@@ -40020,8 +40027,8 @@ CUSTOM PROPERTIES
   }
 
   .xl\.py-0 {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: var(--size-0);
+    padding-bottom: var(--size-0);
   }
 
   .xl\.py-1 {
@@ -40225,8 +40232,8 @@ CUSTOM PROPERTIES
   }
 
   .xl\.px-0 {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: var(--size-0);
+    padding-left: var(--size-0);
   }
 
   .xl\.px-1 {
@@ -40430,7 +40437,7 @@ CUSTOM PROPERTIES
   }
 
   .xl\.pt-0 {
-    padding-top: 0;
+    padding-top: var(--size-0);
   }
 
   .xl\.pt-1 {
@@ -40594,7 +40601,7 @@ CUSTOM PROPERTIES
   }
 
   .xl\.pr-0 {
-    padding-right: 0;
+    padding-right: var(--size-0);
   }
 
   .xl\.pr-1 {
@@ -40758,7 +40765,7 @@ CUSTOM PROPERTIES
   }
 
   .xl\.pl-0 {
-    padding-left: 0;
+    padding-left: var(--size-0);
   }
 
   .xl\.pl-1 {
@@ -40922,7 +40929,7 @@ CUSTOM PROPERTIES
   }
 
   .xl\.pb-0 {
-    padding-bottom: 0;
+    padding-bottom: var(--size-0);
   }
 
   .xl\.pb-1 {
@@ -41892,7 +41899,7 @@ CUSTOM PROPERTIES
   }
 
   .xl\.top-0 {
-    top: 0;
+    top: var(--size-0);
   }
 
   .xl\.top-1 {
@@ -42028,7 +42035,7 @@ CUSTOM PROPERTIES
   }
 
   .xl\.right-0 {
-    right: 0;
+    right: var(--size-0);
   }
 
   .xl\.right-1 {
@@ -42164,7 +42171,7 @@ CUSTOM PROPERTIES
   }
 
   .xl\.left-0 {
-    left: 0;
+    left: var(--size-0);
   }
 
   .xl\.left-1 {
@@ -42300,7 +42307,7 @@ CUSTOM PROPERTIES
   }
 
   .xl\.bottom-0 {
-    bottom: 0;
+    bottom: var(--size-0);
   }
 
   .xl\.bottom-1 {

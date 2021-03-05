@@ -86,8 +86,8 @@ lastUpdated: 2020-10-20
 ## Shades { .font-7xl .extrabold .color-white .tracking-tight .mt-96 .first.mt-0 .mb-24 }
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 flex bg-blue bg-shade-none">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-none</span>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-base">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-base</span>
   </div>
   <div class="radius-sm p-12 flex bg-blue bg-shade-100">
     <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-100</span>
@@ -124,8 +124,8 @@ lastUpdated: 2020-10-20
 ## Tints { .font-7xl .extrabold .color-white .tracking-tight .mt-96 .first.mt-0 .mb-24 }
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 flex bg-blue bg-tint-none">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-none</span>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-base">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-base</span>
   </div>
   <div class="radius-sm p-12 flex bg-blue bg-tint-100">
     <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-100</span>

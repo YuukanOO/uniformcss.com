@@ -14,10 +14,7 @@ $range-limit: map.get(core.$all-config, range-limits, padding);
 
 $variants: (
 	core.merge(
-    core.positive-sizes($range-limit),
-    (
-      0: 0,
-    )
+    core.positive-sizes($range-limit)
 	)
 );
 
