@@ -2,6 +2,7 @@
   $config: (    
 		// placeholders: true,
 		dark-mode: true,
+		headless: true,
     utility: (
       background-color: (
       	extend: (
@@ -36,78 +37,10 @@
 			)
     ),
     exclude: (
-			// all
+			all
     ),
     include: (
-			// position,
-			// top,
-			// right,
-			// bottom,
-			// left,
-			// display,
-			// width,
-			// height,
-			// margin,
-			// margin-bottom,
-			// margin-right,
-			// margin-left,
-			// margin-top,
-			// padding,
-			// padding-top,
-			// padding-right,
-			// padding-bottom,
-			// padding-left,
-			// padding-x,
-			// padding-y,
-			// align-items,
-			// justify-content,
-			// max-width,
-			// ratio,
 
-
-			// border,
-			// border-width,
-			// border-radius,
-			// border-color,
-			// border-opacity,
-			// border-tint,
-			// border-shade,
-
-			// background,
-			// background-clip,
-			// background-color,
-			// background-opacity,
-			// background-tint,
-			// background-shade,
-
-			// color,
-			// color-opacity,
-			// color-tint,
-			// color-shade,
-
-			// placeholder-color,
-			// placeholder-opacity,
-			// placeholder-tint,
-			// placeholder-shade,
-
-			// default-starter,
-			// default-reset,
-			// module-wrapper,
-
-			// font-family,
-			// font-weight,
-			// font-size,
-			// letter-spacing,
-			// line-height,
-			
-			// gutter-x,
-
-			// grid,
-			// grid-column,
-			// grid-template-columns,
-			// gap,
-
-			// fill,
     )
   )
 );

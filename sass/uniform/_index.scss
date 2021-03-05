@@ -254,7 +254,7 @@ $config: map.deep-merge(core.$all-config, core.$config);
   $all-screens: map.get($config, screens);
 
   $keyframes: map.get($config, keyframes);
-
+  @debug $headless;
   @if ($headless == false) {
     // NON RESPONSIVE
     // loop through utilities

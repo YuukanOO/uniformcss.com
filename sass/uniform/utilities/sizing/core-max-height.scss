@@ -16,7 +16,7 @@ $variants: (
 	core.merge(
 		core.positive-sizes($range-limit),
 		(
-			none: none,
+      none: none,
 			100p: 100%,
 			100vh: 100vh,
 			50p: 50%,
