@@ -10,67 +10,67 @@ lastUpdated: 2020-10-20
 
 <div class="grid grid-cols-2 sm.grid-cols-3 md.grid-cols-4 gap-10 overflow-hidden">
   <div class="radius-sm p-12 bg-red color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">red • h0 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">red - h0 s75</span>
   </div>
   <div class="radius-sm p-12 bg-orange color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orange • h20 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orange - h20 s75</span>
   </div>
   <div class="radius-sm p-12 bg-yellow color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">yellow • h40 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">yellow - h40 s75</span>
   </div>
   <div class="radius-sm p-12 bg-lemon color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lemon • h60 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lemon - h60 s75</span>
   </div>
   <div class="radius-sm p-12 bg-olive color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">olive • h80 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">olive - h80 s75</span>
   </div>
   <div class="radius-sm p-12 bg-lime color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lime • h100 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lime - h100 s75</span>
   </div>
   <div class="radius-sm p-12 bg-green color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">green • h120 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">green - h120 s75</span>
   </div>
   <div class="radius-sm p-12 bg-mint color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">mint • h140 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">mint - h140 s75</span>
   </div>
   <div class="radius-sm p-12 bg-teal color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">teal • h160 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">teal - h160 s75</span>
   </div>
   <div class="radius-sm p-12 bg-cyan color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cyan • h180 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cyan - h180 s75</span>
   </div>
   <div class="radius-sm p-12 bg-sky color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">sky • h200 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">sky - h200 s75</span>
   </div>
   <div class="radius-sm p-12 bg-blue color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">blue • h220 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">blue - h220 s75</span>
   </div>
   <div class="radius-sm p-12 bg-indigo color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">indigo • h240 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">indigo - h240 s75</span>
   </div>
   <div class="radius-sm p-12 bg-purple color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">purple • h260 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">purple - h260 s75</span>
   </div>
   <div class="radius-sm p-12 bg-orchid color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orchid • h280 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orchid - h280 s75</span>
   </div>
   <div class="radius-sm p-12 bg-magenta color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">magenta • h300 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">magenta - h300 s75</span>
   </div>
   <div class="radius-sm p-12 bg-pink color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">pink • h320 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">pink - h320 s75</span>
   </div>
   <div class="radius-sm p-12 bg-crimson color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">crimson • h340 s75</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">crimson - h340 s75</span>
   </div>
   <div class="radius-sm p-12 bg-cool-gray color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cool-gray • h220 s10</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cool-gray - h220 s10</span>
   </div>
   <div class="radius-sm p-12 bg-gray color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">gray • h220 s5</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">gray - h220 s5</span>
   </div>
   <div class="radius-sm p-12 bg-warm-gray color-white font-xs bold">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">warm-gray • h24 s10</span>
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">warm-gray - h24 s10</span>
   </div>
   <div class="radius-sm p-12 bg-white color-black font-xs bold">
     <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-60 color-white">white</span>
@@ -86,64 +86,76 @@ lastUpdated: 2020-10-20
 ## Shades { .font-7xl .extrabold .color-white .tracking-tight .mt-96 .first.mt-0 .mb-24 }
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 bg-blue bg-shade-100">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-100</span>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-none">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-none</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-shade-200">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-200</span>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-100">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-100</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-shade-300">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-300</span>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-200">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-200</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-shade-400">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-400</span>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-300">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-300</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-shade-500">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-500</span>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-400">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-400</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-shade-600">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-600</span>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-500">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-500</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-shade-700">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-700</span>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-600">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-600</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-shade-800">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-800</span>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-700">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-700</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-shade-900 border-1 border-white border-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">shade-900</span>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-800">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-800</span>
+  </div>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-900 border-1 border-white border-opacity-20">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-900</span>
+  </div>
+  <div class="radius-sm p-12 flex bg-blue bg-shade-full border-1 border-white border-opacity-20">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-full</span>
   </div>
 </div>
 
 ## Tints { .font-7xl .extrabold .color-white .tracking-tight .mt-96 .first.mt-0 .mb-24 }
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 bg-blue bg-tint-100">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-100</span>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-none">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-none</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-tint-200">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-200</span>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-100">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-100</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-tint-300">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-300</span>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-200">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-200</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-tint-400">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-400</span>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-300">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-300</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-tint-500">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-500</span>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-400">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-400</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-tint-600">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-600</span>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-500">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-500</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-tint-700">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-700</span>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-600">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-600</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-tint-800">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-800</span>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-700">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-700</span>
   </div>
-  <div class="radius-sm p-12 bg-blue bg-tint-900">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-30 color-white">tint-900</span>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-800">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-800</span>
+  </div>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-900">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-900</span>
+  </div>
+  <div class="radius-sm p-12 flex bg-blue bg-tint-full">
+    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-full</span>
   </div>
 </div>
 
@@ -442,43 +454,43 @@ lastUpdated: 2020-10-20
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-2xs">
     <div>
       radius-2xs<br>
-      <span class="leading-looser color-black">3px • 0.187rem</span>
+      <span class="leading-looser color-black">3px - 0.187rem</span>
     </div>
   </div>
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-xs">
     <div>
       radius-xs<br>
-      <span class="leading-looser color-black">4px • 0.25rem</span>
+      <span class="leading-looser color-black">4px - 0.25rem</span>
     </div>
   </div>
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-sm">
     <div>
       radius-sm<br>
-      <span class="leading-looser color-black">6px • 0.375rem</span>
+      <span class="leading-looser color-black">6px - 0.375rem</span>
     </div>
   </div>
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-md">
     <div>
       radius-md<br>
-      <span class="leading-looser color-black">8px • 0.5rem</span>
+      <span class="leading-looser color-black">8px - 0.5rem</span>
     </div>
   </div>
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-lg">
     <div>
       radius-lg<br>
-      <span class="leading-looser color-black">12px • 0.75rem</span>
+      <span class="leading-looser color-black">12px - 0.75rem</span>
     </div>
   </div>
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-xl">
     <div>
       radius-xl<br>
-      <span class="leading-looser color-black">16px • 1rem</span>
+      <span class="leading-looser color-black">16px - 1rem</span>
     </div>
   </div>
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-2xl">
     <div>
       radius-2xl<br>
-      <span class="leading-looser color-black">20px • 1.25rem</span>
+      <span class="leading-looser color-black">20px - 1.25rem</span>
     </div>
   </div>
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-round">
@@ -495,7 +507,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 1
-      <span class="opacity-40">1px • 0.25rem</span>
+      <span class="opacity-40">1px - 0.25rem</span>
     </div>
     <div class="h-1 bg-gray"></div>
   </div>
@@ -503,7 +515,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 2
-      <span class="opacity-40">2px • 0.5rem</span>
+      <span class="opacity-40">2px - 0.5rem</span>
     </div>
     <div class="h-2 bg-gray"></div>
   </div>
@@ -511,7 +523,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 3
-      <span class="opacity-40">3px • 0.5rem</span>
+      <span class="opacity-40">3px - 0.5rem</span>
     </div>
     <div class="h-3 bg-gray"></div>
   </div>
@@ -519,7 +531,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 4
-      <span class="opacity-40">4px • 1rem</span>
+      <span class="opacity-40">4px - 1rem</span>
     </div>
     <div class="h-4 bg-gray"></div>
   </div>
@@ -527,7 +539,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 5
-      <span class="opacity-40">5px • 1.25rem</span>
+      <span class="opacity-40">5px - 1.25rem</span>
     </div>
     <div class="h-5 bg-gray"></div>
   </div>
@@ -535,7 +547,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 6
-      <span class="opacity-40">6px • 1.5rem</span>
+      <span class="opacity-40">6px - 1.5rem</span>
     </div>
     <div class="h-6 bg-gray"></div>
   </div>
@@ -543,7 +555,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 7
-      <span class="opacity-40">7px • 2rem</span>
+      <span class="opacity-40">7px - 2rem</span>
     </div>
     <div class="h-7 bg-gray"></div>
   </div>
@@ -551,7 +563,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 8
-      <span class="opacity-40">8px • 2rem</span>
+      <span class="opacity-40">8px - 2rem</span>
     </div>
     <div class="h-8 bg-gray"></div>
   </div>
@@ -559,7 +571,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 9
-      <span class="opacity-40">9px • 2.25rem</span>
+      <span class="opacity-40">9px - 2.25rem</span>
     </div>
     <div class="h-9 bg-gray"></div>
   </div>
@@ -567,7 +579,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 10
-      <span class="opacity-40">10px • 2.5rem</span>
+      <span class="opacity-40">10px - 2.5rem</span>
     </div>
     <div class="h-10 bg-gray"></div>
   </div>
@@ -575,7 +587,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 12
-      <span class="opacity-40">12px • 3rem</span>
+      <span class="opacity-40">12px - 3rem</span>
     </div>
     <div class="h-12 bg-gray"></div>
   </div>
@@ -583,7 +595,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 14
-      <span class="opacity-40">14px • 3.5rem</span>
+      <span class="opacity-40">14px - 3.5rem</span>
     </div>
     <div class="h-14 bg-gray"></div>
   </div>
@@ -591,7 +603,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 16
-      <span class="opacity-40">16px • 5rem</span>
+      <span class="opacity-40">16px - 5rem</span>
     </div>
     <div class="h-16 bg-gray"></div>
   </div>
@@ -599,7 +611,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 18
-      <span class="opacity-40">18px • 6rem</span>
+      <span class="opacity-40">18px - 6rem</span>
     </div>
     <div class="h-18 bg-gray"></div>
   </div>
@@ -607,7 +619,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 20
-      <span class="opacity-40">20px • 10rem</span>
+      <span class="opacity-40">20px - 10rem</span>
     </div>
     <div class="h-20 bg-gray"></div>
   </div>
@@ -615,7 +627,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 24
-      <span class="opacity-40">24px • 12rem</span>
+      <span class="opacity-40">24px - 12rem</span>
     </div>
     <div class="h-24 bg-gray"></div>
   </div>
@@ -623,7 +635,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 28
-      <span class="opacity-40">28px • 16rem</span>
+      <span class="opacity-40">28px - 16rem</span>
     </div>
     <div class="h-28 bg-gray"></div>
   </div>
@@ -631,7 +643,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 32
-      <span class="opacity-40">32px • 20rem</span>
+      <span class="opacity-40">32px - 20rem</span>
     </div>
     <div class="h-32 bg-gray"></div>
   </div>
@@ -639,7 +651,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 36
-      <span class="opacity-40">36px • 24rem</span>
+      <span class="opacity-40">36px - 24rem</span>
     </div>
     <div class="h-36 bg-gray"></div>
   </div>
@@ -647,7 +659,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 40
-      <span class="opacity-40">40px • 32rem</span>
+      <span class="opacity-40">40px - 32rem</span>
     </div>
     <div class="h-40 bg-gray"></div>
   </div>
@@ -655,7 +667,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 48
-      <span class="opacity-40">48px • 40rem</span>
+      <span class="opacity-40">48px - 40rem</span>
     </div>
     <div class="h-48 bg-gray"></div>
   </div>
@@ -663,7 +675,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 56
-      <span class="opacity-40">56px • 48rem</span>
+      <span class="opacity-40">56px - 48rem</span>
     </div>
     <div class="h-56 bg-gray"></div>
   </div>
@@ -671,7 +683,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 64
-      <span class="opacity-40">64px • 56rem</span>
+      <span class="opacity-40">64px - 56rem</span>
     </div>
     <div class="h-64 bg-gray"></div>
   </div>
@@ -679,7 +691,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 72
-      <span class="opacity-40">72px • 56rem</span>
+      <span class="opacity-40">72px - 56rem</span>
     </div>
     <div class="h-72 bg-gray"></div>
   </div>
@@ -687,7 +699,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 80
-      <span class="opacity-40">80px • 56rem</span>
+      <span class="opacity-40">80px - 56rem</span>
     </div>
     <div class="h-80 bg-gray"></div>
   </div>
@@ -695,7 +707,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 96
-      <span class="opacity-40">96px • 40rem</span>
+      <span class="opacity-40">96px - 40rem</span>
     </div>
     <div class="h-96 bg-gray"></div>
   </div>
@@ -703,7 +715,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 112
-      <span class="opacity-40">112px • 40rem</span>
+      <span class="opacity-40">112px - 40rem</span>
     </div>
     <div class="h-112 bg-gray"></div>
   </div>
@@ -711,7 +723,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 128
-      <span class="opacity-40">128px • 40rem</span>
+      <span class="opacity-40">128px - 40rem</span>
     </div>
     <div class="h-128 bg-gray"></div>
   </div>
@@ -719,7 +731,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 144
-      <span class="opacity-40">144px • 40rem</span>
+      <span class="opacity-40">144px - 40rem</span>
     </div>
     <div class="h-144 bg-gray"></div>
   </div>
@@ -727,7 +739,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 160
-      <span class="opacity-40">160px • 40rem</span>
+      <span class="opacity-40">160px - 40rem</span>
     </div>
     <div class="h-160 bg-gray"></div>
   </div>
@@ -735,7 +747,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 192
-      <span class="opacity-40">192px • 40rem</span>
+      <span class="opacity-40">192px - 40rem</span>
     </div>
     <div class="h-192 bg-gray"></div>
   </div>
@@ -743,7 +755,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 224
-      <span class="opacity-40">224px • 40rem</span>
+      <span class="opacity-40">224px - 40rem</span>
     </div>
     <div class="h-224 bg-gray"></div>
   </div>
@@ -751,7 +763,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 256
-      <span class="opacity-40">256px • 40rem</span>
+      <span class="opacity-40">256px - 40rem</span>
     </div>
     <div class="h-256 bg-gray"></div>
   </div>
@@ -759,7 +771,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 288
-      <span class="opacity-40">288px • 40rem</span>
+      <span class="opacity-40">288px - 40rem</span>
     </div>
     <div class="h-288 bg-gray"></div>
   </div>
@@ -767,7 +779,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 320
-      <span class="opacity-40">320px • 40rem</span>
+      <span class="opacity-40">320px - 40rem</span>
     </div>
     <div class="h-320 bg-gray"></div>
   </div>
@@ -775,7 +787,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 384
-      <span class="opacity-40">384px • 40rem</span>
+      <span class="opacity-40">384px - 40rem</span>
     </div>
     <div class="h-384 bg-gray"></div>
   </div>
@@ -783,7 +795,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 448
-      <span class="opacity-40">448px • 40rem</span>
+      <span class="opacity-40">448px - 40rem</span>
     </div>
     <div class="h-448 bg-gray"></div>
   </div>
@@ -791,7 +803,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 512
-      <span class="opacity-40">512px • 40rem</span>
+      <span class="opacity-40">512px - 40rem</span>
     </div>
     <div class="h-512 bg-gray"></div>
   </div>
@@ -799,7 +811,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 576
-      <span class="opacity-40">576px • 40rem</span>
+      <span class="opacity-40">576px - 40rem</span>
     </div>
     <div class="h-576 bg-gray"></div>
   </div>
@@ -807,7 +819,7 @@ lastUpdated: 2020-10-20
   <div>
     <div class="flex align-items-center justify-content-between leading-9 font-xs bold mb-4">
       Size 640
-      <span class="opacity-40">640px • 40rem</span>
+      <span class="opacity-40">640px - 40rem</span>
     </div>
     <div class="h-640 bg-gray"></div>
   </div>

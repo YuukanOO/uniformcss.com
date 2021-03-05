@@ -4,10 +4,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [
-      "--color-ltn: 50%", 
-      "--color-opacity: 1"
-    ],
+    "customProperties": ["--color-ltn: 50%", "--color-opacity: 1"],
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
@@ -232,7 +229,7 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [""],
-    "pseudos": ["hover", "group-hover", "focus", "dark"]
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
         "class": "",
