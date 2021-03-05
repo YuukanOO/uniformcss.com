@@ -154,14 +154,16 @@ $headless: map.get($all-config, headless);
     ======================================================================== 
     */
     
-    code {
-      padding: var(--markdown-code-padding, 5px 6px);
-      font-size: var(--markdown-code-font-size, var(--font-sm));
-      border-radius: var(--markdown-code-radius, var(--radius-sm));
-      background: var(--markdown-code-bg, hsla( var(--blue-hue), var(--blue-sat), 50%, var(--opacity-10) ));
-      border: var(--markdown-code-border, 0);
-      color: var(--markdown-code-color, hsl( var(--blue-hue), var(--blue-sat), 50% ));
-      white-space: nowrap;
+    p, blockquote, ol, ul {
+      code {
+        padding: var(--markdown-code-padding, 5px 6px);
+        font-size: var(--markdown-code-font-size, var(--font-sm));
+        border-radius: var(--markdown-code-radius, var(--radius-sm));
+        background: var(--markdown-code-bg, hsla( var(--sky-hue), var(--sky-sat), 50%, var(--opacity-20) ));
+        border: var(--markdown-code-border, 0);
+        color: var(--markdown-code-color, hsl( var(--sky-hue), var(--sky-sat), 50% ));
+        white-space: nowrap;
+      }
     }
 
     /* 
@@ -253,9 +255,9 @@ $headless: map.get($all-config, headless);
     */
 
     a {
-      color: var(--markdown-link-color, hsl( var(--blue-hue), var(--blue-sat), 50% ));
+      color: var(--markdown-link-color, hsl( var(--sky-hue), var(--sky-sat), 50% ));
       &:hover {
-        color: var(--markdown-link-hover-color, hsl( var(--blue-hue), var(--blue-sat), 50% ));
+        color: var(--markdown-link-hover-color, hsl( var(--sky-hue), var(--sky-sat), 50% ));
         text-decoration: underline;
       }
     }
