@@ -149,7 +149,7 @@ cssCodeExample: |
   <div class="wrapper py-80 lg.py-128 xl.py-160">
     <div>
       <span class="inline-flex align-items-center h-32 px-12 mb-20 radius-sm border-1 border-white uppercase font-xs bold tracking-loose color-white">Rapid Prototyping</span>
-      <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold m-auto mb-32 tracking-tight color-white">Build <span class="bg-text color-transparent bg-linear" style="--gradient: to right, #ff9dd9, #ffa594;">web components</span> without <br class="hidden sm.inline">ever touching your CSS</h2>
+      <h2 class="font-3xl sm.font-6xl lg.font-7xl xl.font-8xl extrabold m-auto mb-28 tracking-tight color-white">Build <span class="bg-text color-transparent bg-linear" style="--gradient: to right, #ff9dd9, #ffa594;">web components</span> without <br class="hidden sm.inline">ever touching your CSS</h2>
       <div class="mb-64">
         <a href="#" class="inline-flex align-items-center bold font-lg color-white hover.color-white">
           Learn more about Uniform
@@ -239,7 +239,7 @@ cssCodeExample: |
         <div class="mb-20">
           <h4 class="font-lg extrabold tracking-tight color-white">Wide Property Support</h4>
         </div>
-        <p class="font-md color-white color-opacity-80">All common CSS properties are supported out of the box. You can even add your own custom properties directly in your configuration.</p>
+        <p class="font-md color-white color-opacity-80">All common CSS properties are supported out of the box. You can even add your own custom properties directly in Sass.</p>
       </div>
       <div>
         <div class="mb-20">
@@ -269,7 +269,7 @@ cssCodeExample: |
     <div class="mb-20">
       <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-white uppercase font-xs bold tracking-loose color-white">Colorfinity</span>
     </div>
-    <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold mb-32 tracking-tight color-white">
+    <h2 class="font-3xl sm.font-6xl lg.font-7xl xl.font-8xl extrabold mb-28 tracking-tight color-white">
       <span class="color-transparent bg-linear bg-text" style="--gradient: to right, #89d5ff, #68ffb3, #ffd066;">Flexible colors</span> to match any designs <br class="hidden sm.inline">with composable manipulations
     </h2>
 
@@ -376,7 +376,7 @@ cssCodeExample: |
     <div class="mb-20">
       <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs bold tracking-loose color-black">Animations</span>
     </div>
-    <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold m-auto mb-32 tracking-tight">
+    <h2 class="font-3xl sm.font-6xl lg.font-7xl xl.font-8xl extrabold m-auto mb-28 tracking-tight">
        <span class="color-transparent bg-linear bg-text" style="--gradient: to right, #af89ff, #68b2ff;">Buttery smooth</span> animations <br class="hidden sm.inline">for rich user experiences
     </h2>
 
@@ -388,10 +388,10 @@ cssCodeExample: |
     </div>
 
     <div class="grid grid-rows-2 grid-cols-1 sm.grid-cols-2 md.grid-cols-3 gap-20 h-512 mb-64">
-      <div class="flex align-items-center justify-content-center row-2 radius-lg bg-linear"  style="--gradient: to bottom, #f9d2be, #d69d7f;">
-        <div class="w-100p max-w-288 radius-md overflow-hidden border-1 border-orange bg-white bg-opacity-20">
+      <div class="flex align-items-center justify-content-center row-2 radius-lg p-20 bg-linear"  style="--gradient: to bottom, #f9d2be, #d69d7f;">
+        <div class="w-100p max-w-288 radius-md overflow-hidden border-1 border-orange bg-white bg-opacity-30">
           <div class="grid grid-cols-1 gap-10 animate-pulse p-20">
-            <div class="w-6-12 h-18 radius-sm bg-orange bg-tint-200"></div>
+            <div class="w-6-12 h-18 radius-sm bg-orange bg-tint-300"></div>
             <div class="w-10-12 h-18 radius-sm bg-orange bg-tint-400"></div>
           </div>
         </div>
@@ -408,8 +408,8 @@ cssCodeExample: |
             <span class="animate-ping absolute inline-flex h-12 w-12 radius-round bg-green bg-tint-300 opacity-70"></span>
             <span class="relative inline-flex radius-round h-12 w-12 bg-green bg-tint-300"></span>
           </span>
-          2 New messages
-          <div class="mt-10 font-xs semibold opacity-60">Received 2 minutes ago</div>
+          <div class="font-md leading-none mb-10">2 New messages</div>
+          <div class="font-sm leading-none semibold opacity-60">Received 2 minutes ago</div>
         </div>
       </div>
       <div class="flex align-items-center justify-content-center radius-lg p-20 bg-linear" style="--gradient: to bottom, #8eb3e0, #5781de;">
@@ -420,14 +420,14 @@ cssCodeExample: |
       </div>
     </div>
 
-    <div class="grid grid-cols-1 sm.grid-cols-2 md.grid-cols-3 gap-64">
+    <div class="grid grid-cols-1 sm.grid-cols-2 md.grid-cols-3 gap-48 xl.gap-64">
       <div>
-        <h4 class="font-lg extrabold mb-20 tracking-tight">Built-in Common Animations</h4>
+        <h4 class="font-lg extrabold mb-20 tracking-tight">Built-in Animations</h4>
         <p class="font-md">Animations are great for providing extra context for your users. Easily apply bounce, ping, pulse, and spin animations to any element.</p>
       </div>
       <div>
-        <h4 class="font-lg extrabold mb-20 tracking-tight">Reduced Motion Safe</h4>
-        <p class="font-md">Rest assured all animations and transitions are automatically disabled for viewers that have the prefers reduced motion feature enabled.</p>
+        <h4 class="font-lg extrabold mb-20 tracking-tight">Extendable Keyframes</h4>
+        <p class="font-md">Uniform is designed to be fully extendable. Add your own keyframe animations through the configuration directly in your Sass project.</p>
       </div>
       <div>
         <h4 class="font-lg extrabold mb-20 tracking-tight">Customizable and Extendable</h4>
@@ -442,57 +442,59 @@ cssCodeExample: |
 
 <section class="bg-gray bg-tint-800">
   <div class="wrapper py-80 lg.py-128 xl.py-160">
-    <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
-      <div>
-        <div class="mb-20">
-          <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs bold tracking-loose color-black">Themeable</span>
-        </div>
-        <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold mb-32 tracking-tight max-w-512">
-          Theming is easy as spinning a dial
-        </h2>
+    <div class="grid grid-cols-1 md.grid-cols-2 gap-72 xl.gap-96">
+      <div class="flex align-items-center">
+        <div>
+          <div class="mb-20">
+            <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-black uppercase font-xs bold tracking-loose color-black">Themeable</span>
+          </div>
+          <h2 class="font-3xl sm.font-6xl lg.font-7xl xl.font-8xl extrabold mb-28 tracking-tight max-w-512">
+            Theming is easy as spinning a dial
+          </h2>
 
-        <div class="mb-64">
-          <a href="#" class="inline-flex align-items-center bold font-lg color-black hover.color-black">
-            Learn about configuration
-            <svg class="fill-current w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
-          </a>
-        </div>
+          <div class="mb-64">
+            <a href="#" class="inline-flex align-items-center bold font-lg color-black hover.color-black">
+              Learn about configuration
+              <svg class="fill-current w-6 ml-10 mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"/></svg>
+            </a>
+          </div>
 
-        <div class="grid grid-cols-1 gap-24 mb-64 p-20 radius-lg bg-black color-white bold font-xs max-w-512" style="--slider-track-color: #fff; --slider-color: #fff; --slider-hover-color: #fff;">
-          <div class="flex align-items-center">
-            <div class="flex flex-none align-items-center semibold w-112">
-              <div class="w-20 h-20 mr-12 radius-round bg-linear" style="--gradient: to right, #529fff, #aeff7c;">
+          <div class="grid grid-cols-1 gap-24 mb-64 p-20 radius-lg bg-black color-white bold font-xs max-w-512" style="--slider-track-color: #fff; --slider-color: #fff; --slider-hover-color: #fff;">
+            <div class="flex align-items-center">
+              <div class="flex flex-none align-items-center semibold w-112">
+                <div class="w-20 h-20 mr-12 radius-round bg-linear" style="--gradient: to right, #529fff, #aeff7c;">
+                </div>
+                Hue
               </div>
-              Hue
+              <input type="range" min="0" max="360" value="186" class="slider js-hue-slider">
             </div>
-            <input type="range" min="0" max="360" value="186" class="slider js-hue-slider">
-          </div>
-          <div class="flex align-items-center">
-            <div class="flex flex-none align-items-center semibold w-112">
-              <div class="w-20 h-20 mr-12 radius-round bg-linear" style="--gradient: to right, #555, orange;">
+            <div class="flex align-items-center">
+              <div class="flex flex-none align-items-center semibold w-112">
+                <div class="w-20 h-20 mr-12 radius-round bg-linear" style="--gradient: to right, #555, orange;">
+                </div>
+                Saturation
               </div>
-              Saturation
+              <input type="range" min="0" max="100" value="43" class="slider js-sat-slider">
             </div>
-            <input type="range" min="0" max="100" value="43" class="slider js-sat-slider">
           </div>
-        </div>
 
-        <div class="grid grid-cols-1 sm.grid-cols-2 gap-64 md.gap-48">
-          <div>
-            <div class="flex mb-24">
-              <h4 class="font-lg extrabold tracking-tight">
-                CSS design tokens
-              </h4>
+          <div class="grid grid-cols-1 sm.grid-cols-2 gap-64 md.gap-48">
+            <div>
+              <div class="flex mb-18">
+                <h4 class="font-lg extrabold tracking-tight">
+                  CSS design tokens
+                </h4>
+              </div>
+              <p class="font-md">Quickly utilize CSS variable hooks to activate theme variables directly in your CSS.</p>
             </div>
-            <p class="font-md">Quickly utilize CSS variable hooks to activate customizeable theme variables directly in your CSS.</p>
-          </div>
-          <div>
-            <div class="flex mb-24">
-              <h4 class="font-lg extrabold tracking-tight">
-                Infinite theme support
-              </h4>
+            <div>
+              <div class="flex mb-18">
+                <h4 class="font-lg extrabold tracking-tight">
+                  Infinite theme support
+                </h4>
+              </div>
+              <p class="font-md">Uniform makes it easily to create, manage, conditionally apply any number of custom themes.</p>
             </div>
-            <p class="font-md">Uniform makes it easily to create, manage, conditionally apply any number of custom themes.</p>
           </div>
         </div>
       </div>
@@ -709,7 +711,7 @@ cssCodeExample: |
 <section class="bg-blue bg-shade-900" x-data="{ dark: false }" :class="{ 'dark' : dark }">
 
   <div class="wrapper py-80 lg.py-128 xl.py-160">
-    <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
+    <div class="grid grid-cols-1 md.grid-cols-2 gap-72 xl.gap-96">
       <div class="order-2 md.order-1 flex align-items-center justify-content-center px-20 pb-0 pt-96 bg-blue bg-shade-800 radius-lg">
         <div>
           <div class="bg-white dark.bg-blue dark.bg-shade-900 transition-200 radius-lg overflow-hidden w-100p max-w-288">
@@ -766,7 +768,7 @@ cssCodeExample: |
         <div class="mb-20">
           <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-yellow uppercase font-xs bold tracking-loose color-yellow">Dark Mode Support</span>
         </div>
-        <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold m-auto mb-32 tracking-tight color-white">
+        <h2 class="font-3xl sm.font-6xl lg.font-7xl xl.font-8xl extrabold m-auto mb-28 tracking-tight color-white">
           Apply Dark Mode <br class="hidden md.inline">on any element
         </h2>
 
@@ -787,7 +789,7 @@ cssCodeExample: |
 
         <div class="grid grid-cols-1 sm.grid-cols-2 gap-64 md.gap-48 color-white">
           <div>
-            <div class="flex mb-24">
+            <div class="flex mb-18">
               <h4 class="bg-linear bg-text color-transparent font-lg extrabold tracking-tight" style="--gradient: to right, #8F7CFF, #fd7cff;">
                 Dark mode everything
               </h4>
@@ -795,7 +797,7 @@ cssCodeExample: |
             <p class="font-md color-100 color-opacity-80">Apply conditional dark mode specific coloring to any element with the dark pseudo.</p>
           </div>
           <div>
-            <div class="flex mb-24">
+            <div class="flex mb-18">
               <h4 class="bg-linear bg-text color-transparent font-lg extrabold tracking-tight" style="--gradient: to right, #7CD0FF, #7CFFA9;">
                 Completely optional
               </h4>
@@ -814,12 +816,12 @@ cssCodeExample: |
   </div>
 
   <div class="wrapper py-80 lg.py-128 xl.py-160">
-    <div class="grid grid-cols-1 md.grid-cols-2 gap-96">
+    <div class="grid grid-cols-1 md.grid-cols-2 gap-72 xl.gap-96">
       <div class="">
         <div class="mb-20">
           <span class="inline-flex align-items-center h-32 px-12 radius-sm border-1 border-lime border-brighten-9 uppercase font-xs bold tracking-loose color-lime color-brighten-9">CDN Ready</span>
         </div>
-        <h2 class="font-3xl sm.font-6xl md.font-8xl extrabold m-auto mb-32 tracking-tight color-white">
+        <h2 class="font-3xl sm.font-6xl lg.font-7xl xl.font-8xl extrabold m-auto mb-28 tracking-tight color-white">
           Blazing fast delivery <br class="hidden sm.inline">with customizable <br class="hidden md.inline">design tokens
         </h2>
 

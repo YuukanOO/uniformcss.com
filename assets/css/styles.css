@@ -2267,6 +2267,14 @@ CUSTOM PROPERTIES
   --color-ltn: var(--tint-full);
 }
 
+.max-w-256 {
+  max-width: var(--size-256);
+}
+
+.max-w-288 {
+  max-width: var(--size-288);
+}
+
 .max-w-320 {
   max-width: var(--size-320);
 }
@@ -11942,6 +11950,14 @@ CUSTOM PROPERTIES
     line-height: 1;
   }
 
+  .sm\.max-w-256 {
+    max-width: var(--size-256);
+  }
+
+  .sm\.max-w-288 {
+    max-width: var(--size-288);
+  }
+
   .sm\.max-w-320 {
     max-width: var(--size-320);
   }
@@ -20311,6 +20327,14 @@ CUSTOM PROPERTIES
 
   .md\.leading-none {
     line-height: 1;
+  }
+
+  .md\.max-w-256 {
+    max-width: var(--size-256);
+  }
+
+  .md\.max-w-288 {
+    max-width: var(--size-288);
   }
 
   .md\.max-w-320 {
@@ -28684,6 +28708,14 @@ CUSTOM PROPERTIES
     line-height: 1;
   }
 
+  .lg\.max-w-256 {
+    max-width: var(--size-256);
+  }
+
+  .lg\.max-w-288 {
+    max-width: var(--size-288);
+  }
+
   .lg\.max-w-320 {
     max-width: var(--size-320);
   }
@@ -37053,6 +37085,14 @@ CUSTOM PROPERTIES
 
   .xl\.leading-none {
     line-height: 1;
+  }
+
+  .xl\.max-w-256 {
+    max-width: var(--size-256);
+  }
+
+  .xl\.max-w-288 {
+    max-width: var(--size-288);
   }
 
   .xl\.max-w-320 {

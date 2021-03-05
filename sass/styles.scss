@@ -41,6 +41,10 @@
     ),
     include: (
 
+    ),
+		plugins: (
+			markdown,
+			wrapper
     )
   )
 );
