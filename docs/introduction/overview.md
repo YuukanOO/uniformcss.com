@@ -157,23 +157,23 @@ Lightweight in size but is packed with all the utility goodness. Uniform achieve
 
 The utility-first approach is a CSS methodology that optimizes for CSS maintainability by defining highly reusable and immutable low-level classes that only serve one purpose. Many other different methodologies exist, however, this style of writing CSS is particularly well optimized to support complex application-based projects due to its versatility and low-level design.
 
-### 1. Simple to reuse and transfer across projects
+### 1. Simple to reuse and transfer
 
 Since all utility properties are written in a pre-defined API-like manner, multiple projects can all share the same CSS library regardless of complexity. Not only does this make it incredibly easy to make incremental changes but transferring resources and assets between projects is fast, reusable, and frictionless. Just copy any component markup and paste it into any location of your choosing.
 
-### 2. Easier to maintain documentation
+### 2. Easier to scale and maintain
 
-Since all utility classes are pre-defined and predictable, code documentation is much easier to develop and maintain since you only need to list the classes once in an API reference-like manner.
+Since all utility classes are pre-defined and predictable, you rarely have to worry about CSS bloat. Simply remove large amounts of the HTML without ever worrying about cleaning up its style footprint.
 
 ### 3. Quicker to onboard new develoeprs
 
-Utility classes expose a well-defined set of APIs that you can use to compose more complex components. This makes it incredibly quick and painless for new developers to learn and synchronize themself with the project since all they have to learn is the API instead of the entire system.
+Utility classes expose a well-defined set of styling APIs you can reference on an as needed basis. This makes it incredibly quick and easy for new developers to learn and synchronize themself with your project since all they are required to do is learn the API instead of the entire system.
 
 ### 4. Helps to avoid premature abstraction
 
-With a more traditional approach, the developer is required to specify a semantic name for every block, element, or modifier. This requirement adds extra cognitive load and can often lead to premature extrapolation of patterns and components.
+In a more traditional setting, developers are required to specify a semantic name for every block, element, or modifier. This requirement adds extra cognitive load and can also lead to premature extrapolation of patterns and components.
 
-Higher-level abstraction is encouraged but only when it makes sense or design patterns emerge. This helps to avoid premature extrapolation during the iterative phase of a component's lifecycle.
+With a utility-first approach, higher-level abstraction is encouraged but only when it makes sense or design patterns emerge. This helps to avoid premature extrapolation during the iterative phase of a component's lifecycle.
 
 ---
 
