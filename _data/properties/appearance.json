@@ -1,4 +1,22 @@
-[
+[ 
+  {
+    "name": "appearance",
+    "responsive": false,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "appearance-none",
+        "properties": [
+          "appearance: none;", 
+          "-moz-appearance: none;",
+          "-webkit-appearance: none;"
+        ]
+      }
+    ]
+  },
   {
     "name": "display",
     "responsive": true,
@@ -8,8 +26,8 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "appearance-none",
+        "properties": ["appearance;"]
       }
     ]
   },
@@ -52,20 +70,6 @@
       {
         "class": "",
         "properties": ["visibility"]
-      }
-    ]
-  },
-  {
-    "name": "appearance",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
-    "utilities": [
-      {
-        "class": "",
-        "properties": ["appearance"]
       }
     ]
   },
