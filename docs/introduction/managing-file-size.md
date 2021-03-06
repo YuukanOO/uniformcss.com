@@ -6,7 +6,7 @@ date: 1000-01-03
 
 ## Managing File Size
 
-Due to its low-level nature, utility-first CSS frameworks are generally known to possess a large file-sizes. Compared to other frameworks, Uniform CSS is uniquely designed to maintain a minimal footprint. The following guide also covers ways you can further reduce your output.
+Due to its low-level nature, utility-first CSS frameworks are generally known to possess a large file-sizes. Compared to other frameworks, Uniform CSS is uniquely designed to maintain a minimal footprint. The following guide also covers ways you can further reduce your output size.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -48,7 +48,7 @@ Uniform compiles pseudos using comma seperators rather than duplicating whole se
 
 **Uniform takes a more considered approach** in determining which properties should have responsive and pseudo variants activated by default. 
 
-For example, it makes sense for color properties such as `background-color` to change on hover, however properties such as `flex-wrap` would rarely need to. Also, one-off properties such as `letter-spacing` will not need to be responsive as it would rarely change based on breakpoint. This type of tailored thinking helps to drastically improve the size of your generated output.
+For example, it makes sense for color properties such as `background-color` to change on hover, however properties such as `flex-wrap` would rarely require this interaction. This type of selective activation of pseudo and responsive variants helps to drastically improve the size of your generated output.
 
 You can of course, override the default settings and enable responsiveness, and customize variants for any CSS property.
 
@@ -99,6 +99,6 @@ You can drastically further reduce your output size by excluding properties or v
 
 ## Remove unused CSS
 
-**PurgeCSS** is a third-party tool to remove unused CSS. This tool will analyze your template and match selectors against your CSS. Using PurgeCSS in production will result in the smallest file size (usually under 10kb).
+For an even smaller output, you can utilize third-party tools such as **PurgeCSS** to treeshake and remove remove unused CSS. This tool will analyze your template and match selectors against your CSS. Using PurgeCSS in production will result in the smallest file size (usually under 10kb).
 
 To learn more about setting up purge CSS, visit [PurgeCSS]("https://purgecss.com/").

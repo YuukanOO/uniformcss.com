@@ -7,13 +7,13 @@ lastUpdated: 2020-10-20
 
 ## Introducing Uniform
 
-Thank you for checking out Uniform CSS, a utility-first CSS framework built entirely on Sass. Uniform was designed to help front-end teams build beautifully consistent and maintainable sites, and UI components. It is principled around scale, speed, ease-of-use, and customizability. The easiest way to get started is via the CDN or as a Sass dependency.
+Uniform CSS is a utility-first CSS framework **built entirely on Sass** to help front-end teams build beautifully consistent and maintainable web applications. You can use Uniform CSS to generate low-level single purpose CSS classes that you can use to compose complex web components. The easiest way to get started is via the CDN or as a Sass dependency.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
 ---
 
-## How Uniform CSS is different
+## How Uniform is different
 
 Here are some **top reasons** why Uniform CSS could be a great fit for you.
 
@@ -28,7 +28,7 @@ Millions of projects are powered by Sass, Uniform **does not** take away any ben
 
 ### 2. It's dead-easy to configure
 
-Remove and extend colors? Check. Replace breakpoints? Check. Alias property names, add prefixes, modify syntax — you name it! Uniform is configurable to the last detail.
+Remove and extend colors? Check. Replace breakpoints? Check. Alias property names, add prefixes, modify syntax &mdash; you name it! Uniform is configurable to the last detail.
 
 ```scss
 // styles.scss
@@ -55,7 +55,7 @@ Remove and extend colors? Check. Replace breakpoints? Check. Alias property name
 
 ### 3. Built with CSS Variables in mind
 
-Prefer not to worry about preprocessors and just start building your site? Just add the pre-packaged CDN version of Uniform and customize fonts and colors to match your project by overriding each CSS variable. It's that easy.
+Prefer not to worry about preprocessors and just start building your site? Just add the pre-packaged CDN version of Uniform and customize fonts and colors to match your project by activating and overriding CSS variables. It's that easy.
 
 ```html
 <!-- index.html -->
@@ -72,7 +72,7 @@ Prefer not to worry about preprocessors and just start building your site? Just 
 
 ### 4. You can add your own properties
 
-While shiny new CSS specs become standardized, you don’t have to wait for Uniform. You can use Uniform APIs to add your own properties.
+While shiny new CSS specs become standardized, you don’t have to wait for Uniform. Add your own properties directly in your Sass configuration.
 
 ```scss
 // styles.scss
@@ -149,7 +149,31 @@ Every aspect of Uniform CSS is optional, you can easily remove all properties an
 
 ### 7. Designed to be Lightweight
 
-Uniform is much smaller compared to other utility-first CSS frameworks whilst still supporting all the properties you need. Uniform only activates responsiveness and pseudo variants for properties that make sense.
+Lightweight in size but is packed with all the utility goodness. Uniform achieves this by ensuring each property is compiled with a careful selection of default pseudo and responsive variants.
+
+---
+
+## Benefits of utility-first
+
+The utility-first approach is a CSS methodology that optimizes for CSS maintainability by defining highly reusable and immutable low-level classes that only serve one purpose. Many other different methodologies exist, however, this style of writing CSS is particularly well optimized to support complex application-based projects due to its versatility and low-level design.
+
+### 1. Simple to reuse and transfer
+
+Since all utility properties are written in a pre-defined API-like manner, multiple projects can all share the same CSS library regardless of complexity. Not only does this make it incredibly easy to make incremental changes but transferring resources and assets between projects is fast, reusable, and frictionless. Just copy any component markup and paste it into any location of your choosing.
+
+### 2. Easier to scale and maintain
+
+Since all utility classes are pre-defined and predictable, you rarely have to worry about CSS bloat. Simply remove large amounts of the HTML without ever worrying about cleaning up its style footprint.
+
+### 3. Quicker to onboard new develoeprs
+
+Utility classes expose a well-defined set of styling APIs you can reference on an as needed basis. This makes it incredibly quick and easy for new developers to learn and synchronize themself with your project since all they are required to do is learn the API instead of the entire system.
+
+### 4. Helps to avoid premature abstraction
+
+In a more traditional setting, developers are required to specify a semantic name for every block, element, or modifier. This requirement adds extra cognitive load and can also lead to premature extrapolation of patterns and components.
+
+With a utility-first approach, higher-level abstraction is encouraged but only when it makes sense or design patterns emerge. This helps to avoid premature extrapolation during the iterative phase of a component's lifecycle.
 
 ---
 

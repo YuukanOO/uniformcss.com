@@ -4,10 +4,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
-    "customProperties": [
-    "--split-ltn: 50%",
-    "--split-opacity: 1"
-    ],
+    "customProperties": ["--split-ltn: 50%", "--split-opacity: 1"],
     "pseudos": ["dark"],
     "utilities": [
       {
@@ -21,7 +18,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
-    "customProperties": [],
+    "customProperties": [""],
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
@@ -36,12 +33,12 @@
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
     "customProperties": [
-    "--split-right: 1",
-    "--split-left: 0",
-    "--split-top: 1",
-    "--split-bottom: 0"
+      "--split-right: 1",
+      "--split-left: 0",
+      "--split-top: 1",
+      "--split-bottom: 0"
     ],
-    "pseudos": [],
+    "pseudos": [""],
     "utilities": [
       {
         "class": "",
@@ -54,7 +51,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
-    "customProperties": [],
+    "customProperties": [""],
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
@@ -68,7 +65,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
-    "customProperties": [],
+    "customProperties": [""],
     "pseudos": [""],
     "utilities": [
       {
@@ -82,7 +79,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
-    "customProperties": [],
+    "customProperties": [""],
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
@@ -93,13 +90,10 @@
   },
   {
     "name": "split-x",
-    "responsive":true,
+    "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
-    "customProperties": [
-    "--split-right: 0",
-    "--split-left: 1",
-    ],
+    "customProperties": ["--split-right: 0", "--split-left: 1"],
     "pseudos": [""],
     "utilities": [
       {
@@ -110,13 +104,10 @@
   },
   {
     "name": "split-y",
-    "responsive":true,
+    "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
-    "customProperties": [
-    "--split-top: 1",
-    "--split-bottom: 0",
-    ],
+    "customProperties": ["--split-top: 1", "--split-bottom: 0"],
     "pseudos": [""],
     "utilities": [
       {

@@ -12,14 +12,17 @@ $custom-properties: ();
 
 $variants: (
   square: (
+    position: relative,
     width: 100%,
     padding-top: 100%,
   ),
   '16-9': (
+    position: relative,
     width: 100%,
     padding-top: 56.25%,
   ),
   '4-3': (
+    position: relative,
     width: 100%,
     padding-top: 75%,
   )

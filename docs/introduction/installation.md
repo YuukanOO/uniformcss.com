@@ -34,7 +34,7 @@ git clone https://github.com/ThinkUniform/UniformCSS
 
 ### 2. Include Uniform in your Sass project
 
-Add the following line to your main sass stylesheet to add Uniform to your project.
+Add the following line to your main sass stylesheet to add Uniform in your project.
 
 ```scss
 // styles.scss
@@ -46,13 +46,13 @@ Add the following line to your main sass stylesheet to add Uniform to your proje
 
 ### 3. Compile and watch for changes
 
-Compile your Sass project using your preferred pre-processor build process. Optionally, the Uniform `package.json` provides useful build scripts you can run to compile and watch Sass. For more information please check out the [build scripts](/docs/build-scripts) page.
+Compile your Sass project using your preferred CSS preprocessor. Optionally, the Uniform `package.json` provides useful build scripts you can run to compile and watch Sass. For more information please check out the [build scripts](/docs/build-scripts) page.
 
 ```bash
 npm run uniform
 ```
 
-> Please note, Uniform CSS features many newer Sass features and therefore require the `dart-sass` version `1.27.0` and up.
+> Please note, Uniform CSS features newer Sass functionality and therefore require `dart-sass` version `1.27.0` and up to compile correctly.
 
 ### 4. Add compiled stylesheet
 
@@ -93,4 +93,4 @@ For a even quicker way to get started, simply add the following stylesheet in th
 <link href="https://cdn.jsdelivr.net/ThinkUniform/UniformCSS/dist/uniform.css" rel="stylesheet" />
 ```
 
-> Unlike the native installation, using the pre-compiled version of Uniform will only allow for limited customizations, you will not get access to more advanced customization options such as prefixing, custom variants, and etc.
+> Unlike the native installation, using the pre-compiled version of Uniform will only allow for limited customizations, you will not get access to more advanced customization options such as prefixing and custom variants.

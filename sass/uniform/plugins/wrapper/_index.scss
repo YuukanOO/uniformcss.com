@@ -8,7 +8,7 @@ CUSTOM PROPERTIES
 
 --wrapper-padding
 
---wrapper-xs-max-width
+--wrapper-max-width
 --wrapper-sm-max-width
 --wrapper-md-max-width
 --wrapper-lg-max-width
@@ -18,28 +18,35 @@ CUSTOM PROPERTIES
 
 $exclude: map.get($all-config, exclude);
 $include: map.get($all-config, include);
+$headless: map.get($all-config, headless);
 
-@if ( list.index($include, module-wrapper) != null or list.index($exclude, all) == null and list.index($exclude, module-wrapper) == null ) {
+@if ( $headless == false or list.index($include, plugin-wrapper) != null or list.index($exclude, all) != null or list.index($exclude, plugin-wrapper) != null ) {
   .wrapper {
     width: 100%;
     margin: auto;
-    max-width: var(--wrapper-max-width, 808px);
+    max-width: var(--wrapper-max-width, 640px);
     padding-left: var(--wrapper-padding, var(--size-20));
     padding-right: var(--wrapper-padding, var(--size-20));
+
+    @include screen(sm) {
+      max-width: var(--wrapper-sm-max-width, 758px);
+      padding-left: var(--wrapper-sm-padding, 0);
+      padding-right: var(--wrapper-sm-padding, 0);
+    }
     @include screen(md) {
-      padding-left: var(--wrapper-sm-padding, var(--size-20));
-      padding-right: var(--wrapper-sm-padding, var(--size-20));
-      max-width: var(--wrapper-sm-max-width, 1064px);
+      max-width: var(--wrapper-md-max-width, 1024px);
+      padding-left: var(--wrapper-md-padding, 0);
+      padding-right: var(--wrapper-md-padding, 0);
     }
     @include screen(lg) {
-      padding-left: var(--wrapper-md-padding, var(--size-20));
-      padding-right: var(--wrapper-md-padding, var(--size-20));
-      max-width: var(--wrapper-md-max-width, 1180px);
+      max-width: var(--wrapper-lg-max-width, 1152px);
+      padding-left: var(--wrapper-lg-padding, 0);
+      padding-right: var(--wrapper-lg-padding, 0);
     }
     @include screen(xl) {
-      padding-left: var(--wrapper-lg-padding, var(--size-20));
-      padding-right: var(--wrapper-lg-padding, var(--size-20));
-      max-width: var(--wrapper-lg-max-width, 1320px);
+      max-width: var(--wrapper-xl-max-width, 1280px);
+      padding-left: var(--wrapper-xl-padding, 0);
+      padding-right: var(--wrapper-xl-padding, 0);
     }
   }
 }

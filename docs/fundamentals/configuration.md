@@ -6,7 +6,7 @@ date: 1000-01-01
 
 ## Customizing Uniform
 
-Configuring Uniform to match your project is super intuitive and easy. There are **two ways** you can load and customize Uniform CSS, **Sass** and **CDN**. The CDN method can be configured using CSS variable overrides inside the `:root` pseudo element. The native Sass method can be configured using [module configuration](https://sass-lang.com/documentation/at-rules/use#configuration).
+Configuring Uniform to match your project is super intuitive and easy. There are **two ways** you can load and customize Uniform CSS, **Sass** and **CDN**. The CDN method can be configured using CSS variable overrides inside the `:root` pseudo element. The native Sass method can be configured using Sass's [module configuration](https://sass-lang.com/documentation/at-rules/use#configuration) method.
 
 {% include shortcodes/video, id: 'tLqqi5gyxQg' %}
 
@@ -47,7 +47,7 @@ To apply configuration, load Uniform into your main sass project and override th
 
 The CDN configuration method is the easiest way get started, however you will only be able to override basic variables. It does not allow you to perform more deeper customizations that the Sass implementation provides.
 
-To apply basic configuration, simply define CSS variable overrides inside a `:root` pseudo element. To see which CSS variables are available, inspect element this page to see a full list.
+To apply basic configuration, simply define CSS variable overrides inside a `:root` pseudo element. To see which CSS variables are available, please inspect element this page to see a full list.
 
 ```css
 :root {
