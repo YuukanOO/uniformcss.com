@@ -26,8 +26,94 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "appearance-none",
-        "properties": ["appearance;"]
+        "class": "inline",
+        "properties": ["display: inline;"]
+      },
+      {
+        "class": "block",
+        "properties": ["display: block;"]
+      },
+      {
+        "class": "flex",
+        "properties": ["display: flex;"]
+      },
+      {
+        "class": "grid",
+        "properties": ["display: grid;"]
+      },
+      {
+        "class": "inline-block",
+        "properties": ["display: inline-block;"]
+      },
+      {
+        "class": "inline-flex",
+        "properties": ["display: inline-flex;"]
+      },
+      {
+        "class": "inline-grid",
+        "properties": ["display: inline-grid;"]
+      },
+      {
+        "class": "inline-table",
+        "properties": ["display: inline-table;"]
+      },
+      {
+        "class": "table",
+        "properties": ["display: table;"]
+      },
+      {
+        "class": "table-row-group",
+        "properties": ["display: table-caption;"]
+      },
+      {
+        "class": "table-column-group",
+        "properties": ["display: table-column-group;"]
+      },
+      {
+        "class": "table-header-group",
+        "properties": ["display: table-header-group;"]
+      },
+      {
+        "class": "table-footer-group",
+        "properties": ["display: table-footer-group;"]
+      },
+      {
+        "class": "table-row-group",
+        "properties": ["display: table-row-group;"]
+      },
+      {
+        "class": "table-cell",
+        "properties": ["display: table-cell;"]
+      },
+      {
+        "class": "table-column",
+        "properties": ["display: table-column;"]
+      },
+      {
+        "class": "table-row",
+        "properties": ["display: table-row;"]
+      },
+      {
+        "class": "hidden",
+        "properties": ["display: hidden;"]
+      },
+      {
+        "class": "flow-root",
+        "properties": ["display: flow-root;"]
+      }
+    ]
+  },
+  {
+    "name": "font-smooth",
+    "responsive": false,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [""],
+    "pseudos": [""],
+    "utilities": [
+      {
+        "class": "",
+        "properties": [""]
       }
     ]
   },
@@ -70,20 +156,6 @@
       {
         "class": "",
         "properties": ["visibility"]
-      }
-    ]
-  },
-  {
-    "name": "font-smooth",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
-    "utilities": [
-      {
-        "class": "",
-        "properties": [""]
       }
     ]
   }

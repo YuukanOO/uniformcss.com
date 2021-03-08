@@ -43,7 +43,7 @@ cssCodeExample: |
 <section class="bg-black">
 
   <div class="wrapper">
-    <div class="max-w-900px py-80 xl.pb-112 lg.pt-128 xl.pt-160 ">
+    <div class="max-w-900px py-80 xl.pb-112 lg.pt-128 xl.pt-160">
       <div class="flex align-items-center mb-28 semibold font-xs color-gray color-shade-300">
         <span class="inline-flex align-items-center h-20 mr-12 px-6 bg-teal bg-mint-200 color-black uppercase font-2xs bold tracking-loose radius-xs">New</span> New documentation and version released. <a href="/docs/overview" class="ml-10 bold color-white hover.color-opacity-80 transition-200">Read docs</a>
       </div>
@@ -140,7 +140,7 @@ cssCodeExample: |
 </section>
 
 
-<section class="bg-gray bg-shade-800 border-t-1 border-gray border-shade-600">
+<section class="bg-gray bg-shade-800">
   <div class="wrapper py-80 lg.py-128 xl.py-160">
     <div>
       <span class="inline-flex align-items-center h-32 px-12 mb-20 radius-sm border-1 border-white uppercase font-xs bold tracking-loose color-white">Rapid Prototyping</span>
@@ -246,7 +246,7 @@ cssCodeExample: |
         <div class="mb-20">
           <h4 class="font-lg extrabold tracking-tight color-white">Common Pixel Sizing</h4>
         </div>
-        <p class="font-md color-white color-opacity-80">Build pixel perfect components without any  compromise. Uniform supports a wide range of common spacing and sizing values. </p>
+        <p class="font-md color-white color-opacity-80">Build pixel perfect components without any compromise. Uniform supports a wide range of common spacing and sizing values. </p>
       </div>
     </div>
 
@@ -435,7 +435,13 @@ cssCodeExample: |
   </div>
 </section>
 
-<section class="bg-gray bg-tint-800">
+<section class="bg-white">
+  <div class="wrapper">
+    <div class="h-2 bg-gray bg-tint-800"></div>
+  </div>
+</div>
+
+<section class="bg-white">
   <div class="wrapper py-80 lg.py-128 xl.py-160">
     <div class="grid grid-cols-1 md.grid-cols-2 gap-72 xl.gap-96">
       <div class="flex align-items-center">
@@ -703,11 +709,11 @@ cssCodeExample: |
   </div>
 </section>
 
-<section class="bg-blue bg-shade-900" x-data="{ dark: false }" :class="{ 'dark' : dark }">
+<section class="bg-gray bg-shade-800" x-data="{ dark: false }" :class="{ 'dark' : dark }">
 
   <div class="wrapper py-80 lg.py-128 xl.py-160">
     <div class="grid grid-cols-1 md.grid-cols-2 gap-72 xl.gap-96">
-      <div class="order-2 md.order-1 flex align-items-center justify-content-center px-20 pb-0 pt-96 bg-blue bg-shade-800 radius-lg">
+      <div class="order-2 md.order-1 flex align-items-center justify-content-center px-20 pb-0 pt-96 bg-gray bg-shade-300 radius-lg">
         <div>
           <div class="bg-white dark.bg-blue dark.bg-shade-900 transition-200 radius-lg overflow-hidden w-100p max-w-288">
             <img src="/assets/img/apartment.jpg" class="cursor-pointer">
@@ -774,12 +780,9 @@ cssCodeExample: |
           </a>
         </div>
 <div class="flex">
-<div class="mb-64 p-16 px-18 radius-md overflow-auto bg-blue bg-shade-700 color-white select-all bg-800">
+  <div class="mb-64 p-16 px-18 radius-md overflow-auto bg-gray bg-shade-700 border-1 border-white border-opacity-20 transparent-highlight color-white select-all bg-800">
 <pre><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="dark.opacity-40 transition-200">bg-white</span> <span class="opacity-40 dark.opacity-100 transition-200">dark.bg-blue dark.bg-shade-900</span> <span class="dark.opacity-40 transition-200">transition-200</span> <span class="dark.opacity-40 transition-200">...</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
-{# {% highlight "html" %}
-<div class="bg-white dark.bg-blue bg-shade-900 transition-200 ...">
-{% endhighlight %} #}
-</div>
+  </div>
 </div>
 
         <div class="grid grid-cols-1 sm.grid-cols-2 gap-64 md.gap-36 xl.gap-48 color-white">
@@ -807,7 +810,7 @@ cssCodeExample: |
   </div>
 
   <div class="wrapper">
-    <div class="h-1 bg-white opacity-10"></div>
+    <div class="h-2 bg-white opacity-10"></div>
   </div>
 
   <div class="wrapper py-80 lg.py-128 xl.py-160">
@@ -859,7 +862,7 @@ cssCodeExample: |
         <div>
           <h4 class="font-lg bold mb-20 tracking-tight color-white"><span class="extrabold mr-4">Step 1.</span> Install the Package</h4>
           <p class="font-md color-white color-opacity-80 mb-24">Add the following code to the head of your project.</p>
-          <div class="transparent-highlight radius-sm bg-blue bg-shade-700">
+          <div class="radius-sm bg-gray bg-shade-700 border-1 border-white border-opacity-20 transparent-highlight">
             {% highlight "bash" %}
               https://cdn.jsdelivr.net/npm/uniformcss@1.0.0/uniform.css
             {% endhighlight %}
@@ -868,7 +871,7 @@ cssCodeExample: |
         <div>
           <h4 class="font-lg bold mb-20 tracking-tight color-white"><span class="extrabold mr-4">Step 2.</span> Install the Package</h4>
           <p class="font-md color-white color-opacity-80 mb-24">Customize design tokens directly in your CSS to fit your design.</p>
-          <div class="transparent-highlight radius-sm bg-blue bg-shade-700">
+          <div class="radius-sm bg-gray bg-shade-700 border-1 border-white border-opacity-20 transparent-highlight">
 {% highlight "css" %}
 :root {
   --blue-hue: 50;
