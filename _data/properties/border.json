@@ -40,10 +40,6 @@
         "properties": ["border-bottom-left-radius: 1.25rem;"]
       },
       {
-        "class": "radius-bl-2xl",
-        "properties": ["border-bottom-left-radius: 1.25rem;"]
-      },
-      {
         "class": "radius-bl-full",
         "properties": ["border-bottom-left-radius: 9999px;"]
       }
@@ -90,10 +86,6 @@
         "properties": ["border-bottom-right-radius: 1.25rem;"]
       },
       {
-        "class": "radius-br-2xl",
-        "properties": ["border-bottom-right-radius: 1.25rem;"]
-      },
-      {
         "class": "radius-br-full",
         "properties": ["border-bottom-right-radius: 9999px;"]
       }
@@ -134,10 +126,6 @@
       {
         "class": "border-b-xl",
         "properties": ["border-bottom-width: 1rem;"]
-      },
-      {
-        "class": "border-b-2xl",
-        "properties": ["border-bottom-width: 1.25rem;"]
       },
       {
         "class": "border-b-2xl",

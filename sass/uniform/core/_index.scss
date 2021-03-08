@@ -28,7 +28,6 @@ DEFAULT CONFIG
 @function escape($any) {
   $escape-chars: (
     "!",
-    // """,
     "#",
     "$",
     "%",
@@ -39,7 +38,6 @@ DEFAULT CONFIG
     "*",
     "+",
     ",",
-    // "-",
     ".",
     "/",
     ":",
@@ -50,7 +48,6 @@ DEFAULT CONFIG
     "?",
     "@",
     "[",
-    // "\",
     "]",
     "^",
     "`",
