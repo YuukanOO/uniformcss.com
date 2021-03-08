@@ -486,6 +486,7 @@ $default-config: (
   ),
 
   radiuses: (
+    none: 0,
     2xs: rem(3),
     xs: rem(4),
     sm: rem(6),
@@ -493,7 +494,7 @@ $default-config: (
     lg: rem(12),
     xl: rem(16),
     2xl: rem(20),
-    round: 9999px,
+    full: 9999px,
   ),
 
   shadows: (

@@ -112,8 +112,18 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": [""]
+        "class": "antialiased",
+        "properties": [
+          "-webkit-font-smoothing: antialiased",
+          "-moz-osx-font-smoothing: grayscale"
+        ]
+      },
+      {
+        "class": "subpixel-antialiased",
+        "properties": [
+          "-webkit-font-smoothing: auto",
+          "-moz-osx-font-smoothing: auto"
+        ]
       }
     ]
   },
@@ -126,8 +136,60 @@
     "pseudos": ["hover", "active", "dark"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["opacity"]
+        "class": "opacity-0",
+        "properties": ["opacity: 0;"]
+      },
+      {
+        "class": "opacity-2",
+        "properties": ["opacity: 0.02;"]
+      },
+      {
+        "class": "opacity-4",
+        "properties": ["opacity: 0.04;"]
+      },
+      {
+        "class": "opacity-6",
+        "properties": ["opacity: 0.06;"]
+      },
+      {
+        "class": "opacity-8",
+        "properties": ["opacity: 0.08;"]
+      },
+      {
+        "class": "opacity-10",
+        "properties": ["opacity: 0.1;"]
+      },
+      {
+        "class": "opacity-20",
+        "properties": ["opacity: 0.2;"]
+      },
+      {
+        "class": "opacity-30",
+        "properties": ["opacity: 0.3;"]
+      },
+      {
+        "class": "opacity-40",
+        "properties": ["opacity: 0.4;"]
+      },
+      {
+        "class": "opacity-50",
+        "properties": ["opacity: 0.5;"]
+      },
+      {
+        "class": "opacity-60",
+        "properties": ["opacity: 0.6;"]
+      },
+      {
+        "class": "opacity-80",
+        "properties": ["opacity: 0.8;"]
+      },
+      {
+        "class": "opacity-90",
+        "properties": ["opacity: 0.9;"]
+      },
+      {
+        "class": "opacity-100",
+        "properties": ["opacity: 1;"]
       }
     ]
   },
@@ -140,8 +202,8 @@
     "pseudos": ["focus"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["outline"]
+        "class": "outline-none",
+        "properties": ["outline: none;"]
       }
     ]
   },
@@ -154,8 +216,12 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["visibility"]
+        "class": "visible",
+        "properties": ["visibility: visible;"]
+      },
+      {
+        "class": "invisible",
+        "properties": ["visibility: hidden;"]
       }
     ]
   }

@@ -8,8 +8,12 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "border-box",
+        "properties": ["box-sizing: border-box;"]
+      },
+      {
+        "class": "content-box",
+        "properties": ["box-sizing: content-box;"]
       }
     ]
   },
@@ -22,8 +26,16 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "clear-left",
+        "properties": ["clear: left"]
+      },
+      {
+        "class": "clear-right",
+        "properties": ["clear: right"]
+      },
+      {
+        "class": "clear-both",
+        "properties": ["clear: both"]
       }
     ]
   },
@@ -36,8 +48,16 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "float-l",
+        "properties": ["float: left;"]
+      },
+      {
+        "class": "float-r",
+        "properties": ["float: right;"]
+      },
+      {
+        "class": "float-none",
+        "properties": ["float: none;"]
       }
     ]
   },
@@ -50,8 +70,24 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "object-contain",
+        "properties": ["object-fit: contain;"]
+      },
+      {
+        "class": "object-cover",
+        "properties": ["object-fit: cover;"]
+      },
+      {
+        "class": "object-fill",
+        "properties": ["object-fit: fill;"]
+      },
+      {
+        "class": "object-none",
+        "properties": ["object-fit: none;"]
+      },
+      {
+        "class": "object-size-down",
+        "properties": ["object-fit: size-down;"]
       }
     ]
   },
@@ -64,8 +100,40 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "object-bottom",
+        "properties": ["object-position: bottom;"]
+      },
+      {
+        "class": "object-center",
+        "properties": ["object-position: center;"]
+      },
+      {
+        "class": "object-left",
+        "properties": ["object-position: left;"]
+      },
+      {
+        "class": "object-left-bottom",
+        "properties": ["object-position: left-bottom;"]
+      },
+      {
+        "class": "object-left-top",
+        "properties": ["object-position: left-top;"]
+      },
+      {
+        "class": "object-right",
+        "properties": ["object-position: right;"]
+      },
+      {
+        "class": "object-right-bottom",
+        "properties": ["object-position: right-bottom;"]
+      },
+      {
+        "class": "object-right-top",
+        "properties": ["object-position: right-top;"]
+      },
+      {
+        "class": "object-top",
+        "properties": ["object-position: top;"]
       }
     ]
   },
@@ -78,8 +146,24 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "static",
+        "properties": ["position: static;"]
+      },
+      {
+        "class": "fixed",
+        "properties": ["position: fixed;"]
+      },
+      {
+        "class": "absolute",
+        "properties": ["position: absolute;"]
+      },
+      {
+        "class": "relative",
+        "properties": ["position: relative;"]
+      },
+      {
+        "class": "sticky",
+        "properties": ["position: sticky;"]
       }
     ]
   },
@@ -92,22 +176,12 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
-      }
-    ]
-  },
-  {
-    "name": "clearfix",
-    "responsive": false,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
-    "utilities": [
+        "class": "table-auto",
+        "properties": ["table-layout: auto;"]
+      },
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "table-fixed",
+        "properties": ["table-layout: fixed;"]
       }
     ]
   },
@@ -120,7 +194,7 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
+        "class": "ratio-square",
         "properties": ["display"]
       }
     ]
