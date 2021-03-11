@@ -50,8 +50,12 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "italic",
+        "properties": ["font-style: italic;"]
+      },
+      {
+        "class": "normal",
+        "properties": ["font-style: normal;"]
       }
     ]
   },
@@ -106,8 +110,12 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "list-inside",
+        "properties": ["list-style-position: inside;"]
+      },
+      {
+        "class": "list-outside",
+        "properties": ["list-style-position: outside;"]
       }
     ]
   },
@@ -120,8 +128,20 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "list-none",
+        "properties": ["list-style-type: none;"]
+      },
+      {
+        "class": "list-disc",
+        "properties": ["list-style-type: disc;"]
+      },
+      {
+        "class": "list-square",
+        "properties": ["list-style-type: square;"]
+      },
+      {
+        "class": "list-decimal",
+        "properties": ["list-style-type: decimal;"]
       }
     ]
   },
@@ -134,8 +154,20 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "text-left",
+        "properties": ["text-align: left;"]
+      },
+      {
+        "class": "text-center",
+        "properties": ["text-align: center;"]
+      },
+      {
+        "class": "text-right",
+        "properties": ["text-align: right;"]
+      },
+      {
+        "class": "text-justify",
+        "properties": ["text-align: justify;"]
       }
     ]
   },
@@ -148,8 +180,12 @@
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "underline",
+        "properties": ["text-decoration: underline;"]
+      },
+      {
+        "class": "line-through",
+        "properties": ["text-decoration: line-through;"]
       }
     ]
   },
@@ -162,8 +198,8 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "ellipsis",
+        "properties": ["text-overflow: ellipsis;"]
       }
     ]
   },
@@ -176,8 +212,16 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "uppercase",
+        "properties": ["text-transform: uppercase;"]
+      },
+      {
+        "class": "lowercase",
+        "properties": ["text-transform: lowercase;"]
+      },
+      {
+        "class": "capitalize",
+        "properties": ["text-transform: capitalize;"]
       }
     ]
   },
@@ -190,8 +234,20 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "whitespace-nowrap",
+        "properties": ["white-space: nowrap;"]
+      },
+      {
+        "class": "whitespace-pre",
+        "properties": ["white-space: pre;"]
+      },
+      {
+        "class": "whitespace-pre-line",
+        "properties": ["white-space: pre-line;"]
+      },
+      {
+        "class": "whitespace-pre-wrap",
+        "properties": ["white-space: pre-wrap;"]
       }
     ]
   },
@@ -204,8 +260,12 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "wordbreak-word",
+        "properties": ["word-break: break-word;"]
+      },
+      {
+        "class": "wordbreak-all",
+        "properties": ["word-break: all;"]
       }
     ]
   },

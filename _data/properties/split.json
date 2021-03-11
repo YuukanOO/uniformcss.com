@@ -41,8 +41,8 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "split-reverse-null",
+        "properties": ["margin: null;"]
       }
     ]
   },
@@ -69,8 +69,24 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "split-solid",
+        "properties": ["border-style: solid;"]
+      },
+      {
+        "class": "split-dashed",
+        "properties": ["border-style: dashed;"]
+      },
+      {
+        "class": "split-dotted",
+        "properties": ["border-style: dotted;"]
+      },
+      {
+        "class": "split-double",
+        "properties": ["border-style: double;"]
+      },
+      {
+        "class": "split-none",
+        "properties": ["border-style: none;"]
       }
     ]
   },

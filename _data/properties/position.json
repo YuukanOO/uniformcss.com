@@ -64,8 +64,84 @@
     "pseudos": ["focus"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "z-auto",
+        "properties": ["z-index: auto;"]
+      },
+      {
+        "class": "z-n9",
+        "properties": ["z-index: -9;"]
+      },
+      {
+        "class": "z-n8",
+        "properties": ["z-index: -8;"]
+      },
+      {
+        "class": "z-n7",
+        "properties": ["z-index: -7;"]
+      },
+      {
+        "class": "z-n6",
+        "properties": ["z-index: -6;"]
+      },
+      {
+        "class": "z-n5",
+        "properties": ["z-index: -5;"]
+      },
+      {
+        "class": "z-n4",
+        "properties": ["z-index: -4;"]
+      },
+      {
+        "class": "z-n3",
+        "properties": ["z-index: -3;"]
+      },
+      {
+        "class": "z-n2",
+        "properties": ["z-index: -2;"]
+      },
+      {
+        "class": "z-n1",
+        "properties": ["z-index: -1;"]
+      },
+      {
+        "class": "z-0",
+        "properties": ["z-index: 0;"]
+      },
+      {
+        "class": "z-1",
+        "properties": ["z-index: 1;"]
+      },
+      {
+        "class": "z-2",
+        "properties": ["z-index: 2;"]
+      },
+      {
+        "class": "z-3",
+        "properties": ["z-index: 3;"]
+      },
+      {
+        "class": "z-4",
+        "properties": ["z-index: 4;"]
+      },
+      {
+        "class": "z-5",
+        "properties": ["z-index: 5;"]
+      },
+      {
+        "class": "z-6",
+        "properties": ["z-index: 6;"]
+      },
+      {
+        "class": "z-7",
+        "properties": ["z-index: 7;"]
+      },
+      {
+        "class": "z-8",
+        "properties": ["z-index: 8;"]
+      },
+      {
+        "class": "z-9",
+        "properties": ["z-index: 9;"]
       }
     ]
   },
@@ -78,8 +154,12 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "x-0",
+        "properties": ["left", "right: 0;"]
+      },
+      {
+        "class": "x-auto",
+        "properties": ["left", "right: auto;"]
       }
     ]
   },
@@ -92,8 +172,22 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "xy-0",
+        "properties": [
+          "top: 0;",
+          "right: 0;",
+          "bottom: 0;",
+          "left: 0;"
+        ]
+      },
+      {
+        "class": "xy-auto",
+        "properties": [
+          "top: auto;",
+          "right: auto;",
+          "bottom: auto;",
+          "left: auto;"
+        ]
       }
     ]
   },
@@ -106,8 +200,18 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "y-0",
+        "properties": [
+          "top: 0;",
+          "bottom: 0;"
+      ]
+      },
+      {
+        "class": "y-auto",
+        "properties": [
+          "top: auto;",
+          "bottom: auto;"
+      ]
       }
     ]
   }

@@ -13,7 +13,7 @@
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
-        "class": "",
+        "class": "backdrop-",
         "properties": ["display"]
       }
     ]

@@ -13,8 +13,8 @@
     "pseudos": [""],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "gutter-reverse",
+        "properties": ["margin"]
       }
     ]
   },

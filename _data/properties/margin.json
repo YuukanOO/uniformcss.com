@@ -8,7 +8,7 @@
     "pseudos": ["first", "last"],
     "utilities": [
       {
-        "class": "",
+        "class": "mb",
         "properties": ["display"]
       }
     ]
