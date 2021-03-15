@@ -1,13 +1,13 @@
 @use "uniform/core";
 @use "sass:map";
 
-$name: font-size;
-$shorthand: font;
+$name: text-size;
+$shorthand: text;
 $responsive: true;
 $responsive-pseudos: false;
 $extra-selector: null;
 
-$properties: (font-size, line-height);
+$properties: ();
 $custom-properties: ();
 
 $variants: (

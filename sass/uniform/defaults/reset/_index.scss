@@ -16,7 +16,7 @@ $headless: map.get($all-config, headless);
   * {
     margin: 0;
     padding: 0;
-    border: 0 solid #000;
+    border: 0 solid transparent;
     line-height: inherit;
     color: inherit;
     font: inherit;

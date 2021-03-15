@@ -102,7 +102,7 @@ $default-config: (
 
   headless: false,
   placeholders: false,
-  dark-mode: false,
+  dark-mode-support: false,
 
   exclude: (),
   include: (),
@@ -221,8 +221,12 @@ $default-config: (
     black: ( hue: 0, sat: 0% ),
 
     cool-gray: ( hue: 220, sat: 12% ),
-    gray: ( hue: 220, sat: 6% ),
+    gray: ( hue: 220, sat: 0% ),
     warm-gray: ( hue: 24, sat: 12% ),
+
+    primary: ( hue: 220, sat: 75% ),
+    secondary: ( hue: 240, sat: 75% ),
+    tertiary: ( hue: 40, sat: 75% ),
     
     transparent: transparent,
     current: currentColor
@@ -614,7 +618,7 @@ $screen-delimiter: escape(map.get($all-config, screen-delimiter));
 $headless: map.get($all-config, headless);
 $root: map.get($all-config, root);
 $debugger: map.get($all-config, debugger);
-$dark-mode: map.get($all-config, dark-mode);
+$dark-mode-support: map.get($all-config, dark-mode-support);
 
 $screens: map.get($all-config, screens);
 
@@ -1195,10 +1199,21 @@ HELPER FUNCTIONS
 @function font-sizes() {
   $result: ();
   @each $key, $value in $merged-font-sizes {
-    $map: (
-      $key: var(--font-#{$key})
-    );
-    $result: map.merge($result, $map);
+    @if (meta.type-of($value) == map) {
+      $map: (
+        $key: (
+          font-size: var(--font-#{$key})
+        )
+      );
+      $result: map.merge($result, $map);
+    } @else {
+      $map: (
+        $key: (
+          font-size: var(--font-#{$key})
+        )
+      );
+      $result: map.merge($result, $map);
+    }
   }
   @return $result;
 }
