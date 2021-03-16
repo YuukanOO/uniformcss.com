@@ -12,56 +12,56 @@ layout: layouts/base.njk
         <div class="top-48 sticky h-100vh overflow-auto py-64">
           
           <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
-            <h6 class="font-sm bold mb-18 color-white">
+            <h6 class="text-sm bold mb-18 color-white">
               Introduction
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.introduction -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
           <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
-            <h6 class="font-sm bold mb-18 color-white">
+            <h6 class="text-sm bold mb-18 color-white">
              Fundamentals
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.fundamentals -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
           <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
-            <h6 class="font-sm bold mb-18 color-white">
+            <h6 class="text-sm bold mb-18 color-white">
               Customization
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.customization -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
           <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
-            <h6 class="font-sm bold mb-18 color-white">
+            <h6 class="text-sm bold mb-18 color-white">
               Theming
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.theming -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
           <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
-            <h6 class="font-sm bold mb-18 color-white">
+            <h6 class="text-sm bold mb-18 color-white">
               Module
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.modules -%}
-                <a href="{{ post.url }}" class="font-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}color-white hover.color-white{% else %} color-gray color-tint-500 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-200">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -70,10 +70,10 @@ layout: layouts/base.njk
       </aside>
 
       <div class="overflow-auto sm.px-56 xl.px-72 py-64">
-        <h1 class="flex align-items-start relative font-6xl lg.font-7xl xl.font-8xl extrabold color-white tracking-tight mb-16">
+        <h1 class="flex align-items-start relative text-6xl lg.text-7xl xl.text-8xl extrabold color-white tracking-tight mb-16">
           {{ title | safe }}
         </h1>
-        <p class="font-xl semibold color-white pb-64 color-white border-b-2 border-white">
+        <p class="text-xl semibold color-white pb-64 color-white border-b-2 border-white">
           {{ description | safe }}
         </p>
         <div class="markdown color-white" style="--markdown-heading-color: white; --markdown-paragraph-color: rgb(255 255 255 / 80%);">
@@ -85,7 +85,7 @@ layout: layouts/base.njk
           <div class="w-100p">
             
             <div class="pb-64">
-              <h6 class="font-sm bold mb-18 color-white">
+              <h6 class="text-sm bold mb-18 color-white">
                 On this page
               </h6>
               {{ content | toc | safe }}
