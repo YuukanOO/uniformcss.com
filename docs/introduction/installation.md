@@ -41,7 +41,7 @@ Add the following line to your main sass stylesheet to add Uniform in your proje
 @use "uniform" as *;
 
 // or the following if using the npm option
-@use "../node_modules/uniform/uniform" as *;
+@use "../node_modules/uniformcss/uniform" as *;
 ```
 
 ### 3. Compile and watch for changes

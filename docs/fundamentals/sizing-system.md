@@ -1,10 +1,10 @@
 ---
-title: Color System
-description: Flexible HSL color system to fit any design.
+title: Sizing System
+description: Flexible sizing system to fit any design.
 date: 1000-01-02
 ---
 
-## Color System
+## Sizing System
 
 The ability to customize colors to match design is an important aspect of Uniform CSS. Colors in Uniform are produced using the HSL model which provides opportunities to manipulate colors using composable classes.
 

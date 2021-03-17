@@ -6,7 +6,7 @@ date: 1000-01-03
 
 ## Managing File Size
 
-Due to its low-level nature, utility-first CSS frameworks are generally known to possess a large file-sizes. Compared to other frameworks, Uniform CSS is uniquely designed to maintain a minimal footprint. The following guide also covers ways you can further reduce your output size.
+Due to its low-level nature, utility-first CSS frameworks are generally known to be large in file-sizes. Compared to other frameworks, Uniform CSS is uniquely designed to maintain a minimal footprint. The following guide also covers ways you can further reduce your output size.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
