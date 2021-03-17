@@ -778,7 +778,7 @@ CUSTOM PROPERTIES
   border: 0;
   background: var(--markdown-hr-color, #e3e5e8);
 }
-.markdown p code, .markdown blockquote code, .markdown ol code, .markdown ul code {
+.markdown p code, .markdown blockquote code, .markdown ol code, .markdown ul code, .markdown table code {
   padding: var(--markdown-code-padding, 5px 6px);
   font-size: var(--markdown-code-font-size, var(--font-sm));
   border-radius: var(--markdown-code-radius, var(--radius-sm));

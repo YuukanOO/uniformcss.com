@@ -154,7 +154,7 @@ $headless: map.get($all-config, headless);
     ======================================================================== 
     */
     
-    p, blockquote, ol, ul {
+    p, blockquote, ol, ul, table {
       code {
         padding: var(--markdown-code-padding, 5px 6px);
         font-size: var(--markdown-code-font-size, var(--font-sm));

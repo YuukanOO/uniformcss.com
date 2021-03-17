@@ -1,105 +1,321 @@
 ---
 title: Sizing System
-description: Flexible sizing system to fit any design.
+description: Flexible sizing system for pixel perfect adjusments.
 date: 1000-01-02
 ---
 
 ## Sizing System
 
-The ability to customize colors to match design is an important aspect of Uniform CSS. Colors in Uniform are produced using the HSL model which provides opportunities to manipulate colors using composable classes.
+Uniform provides a broad range of sizes to help you achieve pixel perfect sizing of objects and margins. All sizes are produced in `rem` however represented as the numerical `px` equivalent for easier reference. Most pixel sizing featured in common design patterns are supported.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
 ---
 
-## Colors
+## Sizes
 
-Uniform provides a total of `23` default colors. Color hues are distributed across the color spectrum in increments of 20. The following colors can be applied for `border`, `text`, `placeholder`, and `background-color` properties.
+Uniform provides a total of `47` default sizes. Each size related property such as `width` and `margin` support different ranges of sizes.
 
-<div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 flex bg-primary">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">primary - h220 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-secondary">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">secondary - h240 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-tertiary">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tertiary - h24 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-red">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">red - h0 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-orange">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orange - h20 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-yellow">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">yellow - h40 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-lemon">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lemon - h60 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-olive">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">olive - h80 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-lime">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lime - h100 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-green">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">green - h120 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-mint">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">mint - h140 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-teal">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">teal - h160 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-cyan">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cyan - h180 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-sky">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">sky - h200 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex flex bg-blue">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">blue - h220 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-indigo">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">indigo - h240 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-purple">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">purple - h260 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-orchid">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orchid - h280 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-magenta">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">magenta - h300 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-pink">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">pink - h320 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-crimson">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">crimson - h340 s75</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-cool-gray">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cool-gray - h220 s10</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-gray">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">gray - h220 s5</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-warm-gray">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">warm-gray - h24 s10</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-white">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-60 color-white">white</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-black border-1 border-white border-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">black</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-transparent border-1 border-white border-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">transparent</span>
-  </div>
-</div>
+<!-- <div class="relative">
+  <table class="text-left" style="--markdown-table-border: 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--shade-700))">
+    <thead>
+      <tr>
+        <th>Size</th>
+        <th>Pixel</th>
+        <th>Rem</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>--size-0</code></td>
+        <td>0px</td>
+        <td>0rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-1</code></td>
+        <td>1px</td>
+        <td>0.0625rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-2</code></td>
+        <td>2px</td>
+        <td>0.125rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-3</code></td>
+        <td>3px</td>
+        <td>0.1875rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-4</code></td>
+        <td>4px</td>
+        <td>0.25rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-5</code></td>
+        <td>5px</td>
+        <td>0.3125rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-6</code></td>
+        <td>6px</td>
+        <td>0.375rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-7</code></td>
+        <td>7px</td>
+        <td>0.4375rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-8</code></td>
+        <td>8px</td>
+        <td>0.5rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-9</code></td>
+        <td>9px</td>
+        <td>0.5625rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-10</code></td>
+        <td>10px</td>
+        <td>0.625rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-12</code></td>
+        <td>12px</td>
+        <td>0.75rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-14</code></td>
+        <td>14px</td>
+        <td>0.875rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-16</code></td>
+        <td>16px</td>
+        <td>1rem (base)</td>
+      </tr>
+      <tr>
+        <td><code>--size-18</code></td>
+        <td>18px</td>
+        <td>1.125rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-20</code></td>
+        <td>20px</td>
+        <td>1.25rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-24</code></td>
+        <td>24px</td>
+        <td>1.5rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-28</code></td>
+        <td>28px</td>
+        <td>1.75rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-32</code></td>
+        <td>32px</td>
+        <td>2rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-36</code></td>
+        <td>36px</td>
+        <td>2.25rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-40</code></td>
+        <td>40px</td>
+        <td>2.5rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-48</code></td>
+        <td>48px</td>
+        <td>3rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-56</code></td>
+        <td>56px</td>
+        <td>3.5rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-64</code></td>
+        <td>64px</td>
+        <td>4rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-72</code></td>
+        <td>72px</td>
+        <td>4.5rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-80</code></td>
+        <td>80px</td>
+        <td>5rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-96</code></td>
+        <td>96px</td>
+        <td>6rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-112</code></td>
+        <td>112px</td>
+        <td>7rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-128</code></td>
+        <td>128px</td>
+        <td>8rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-144</code></td>
+        <td>144px</td>
+        <td>9rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-160</code></td>
+        <td>160px</td>
+        <td>10rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-192</code></td>
+        <td>192px</td>
+        <td>12rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-224</code></td>
+        <td>224px</td>
+        <td>14rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-256</code></td>
+        <td>256px</td>
+        <td>16rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-288</code></td>
+        <td>288px</td>
+        <td>18rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-320</code></td>
+        <td>320px</td>
+        <td>20rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-384</code></td>
+        <td>384px</td>
+        <td>24rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-448</code></td>
+        <td>448px</td>
+        <td>28rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-512</code></td>
+        <td>512px</td>
+        <td>32rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-576</code></td>
+        <td>576px</td>
+        <td>36rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-640</code></td>
+        <td>640px</td>
+        <td>40rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-768</code></td>
+        <td>768px</td>
+        <td>48rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-896</code></td>
+        <td>896px</td>
+        <td>56rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-1024</code></td>
+        <td>1024px</td>
+        <td>64rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-1152</code></td>
+        <td>1152px</td>
+        <td>72rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-1280</code></td>
+        <td>1280px</td>
+        <td>80rem</td>
+      </tr>
+      <tr>
+        <td><code>--size-1536</code></td>
+        <td>1536px</td>
+        <td>96rem</td>
+      </tr>
+    </tbody>
+  </table>
+</div> -->
 
+| Size | Pixel | Rem |
+| - | - | - |
+| `size-0` | 0px | 0rem |
+| `size-1` | 1px | 0.0625rem |
+| `size-2` | 2px | 0.125rem |
+| `size-3` | 3px | 0.1875rem |
+| `size-4` | 4px | 0.25rem |
+| `size-5` | 5px | 0.3125rem |
+| `size-6` | 6px | 0.375rem |
+| `size-7` | 7px | 0.4375rem |
+| `size-8` | 8px | 0.5rem |
+| `size-9` | 9px | 0.5625rem |
+| `size-10` | 10px | 0.625rem |
+| `size-12` | 12px | 0.75rem |
+| `size-14` | 14px | 0.875rem |
+| `size-16` | **16px** | **1rem (base)** |
+| `size-18` | 18px | 1.125rem |
+| `size-20` | 20px | 1.25rem |
+| `size-24` | 24px | 1.5rem |
+| `size-28` | 28px | 1.75rem |
+| `size-32` | 32px | 2rem |
+| `size-36` | 36px | 2.25rem |
+| `size-40` | 40px | 2.5rem |
+| `size-48` | 48px | 3rem |
+| `size-56` | 56px | 3.5rem |
+| `size-64` | 64px | 4rem |
+| `size-72` | 72px | 4.5rem |
+| `size-80` | 80px | 5rem |
+| `size-96` | 96px | 6rem |
+| `size-112` | 112px | 7rem |
+| `size-128` | 128px | 8rem |
+| `size-144` | 144px | 9rem |
+| `size-160` | 160px | 10rem |
+| `size-192` | 192px | 12rem |
+| `size-224` | 224px | 14rem |
+| `size-256` | 256px | 16rem |
+| `size-288` | 288px | 18rem |
+| `size-320` | 320px | 20rem |
+| `size-384` | 384px | 24rem |
+| `size-448` | 448px | 28rem |
+| `size-512` | 512px | 32rem |
+| `size-576` | 576px | 36rem |
+| `size-640` | 640px | 40rem |
+| `size-768` | 768px | 48rem |
+| `size-896` | 896px | 56rem |
+| `size-1024` | 1024px | 64rem |
+| `size-1152` | 1152px | 72rem |
+| `size-1280` | 1280px | 80rem |
+| `size-1536` | 1536px | 96rem |
+
+{.text-left style="--markdown-table-border: 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--shade-700))"}
 
 ---
 
@@ -108,196 +324,17 @@ Uniform provides a total of `23` default colors. Color hues are distributed acro
 To apply colors, use the property shorthand followed by the color key.
 
 ```html
-<div class="bg-pink color-white">
-  pink background with white text
-</div>
-<div class="color-blue">
-  blue text
-</div>
-<div class="border-1 border-orange">
-  1 pixel orange border
-</div>
-```
-
----
-
-## Shades
-
-Shades make your colors darker by changing the lightness value. There are `9` levels of shades available. Similar to Google Material's Design System, Uniform follows the `100 ... 900` syntax for defining shades.
-
-<div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 flex bg-blue bg-shade-base">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-base</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-100">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-100</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-200">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-200</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-300">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-300</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-400">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-400</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-500">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-500</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-600">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-600</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-700">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-700</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-800">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-800</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-900 border-1 border-white border-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-900</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-full border-1 border-white border-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-full</span>
-  </div>
+<div class="w-32 h-32">
+  32px width
+  32px height
 </div>
 
-
-```html
-<div class="bg-blue bg-shade-base">...</div>
-<div class="bg-blue bg-shade-100">...</div>
-<div class="bg-blue bg-shade-200">...</div>
-<div class="bg-blue bg-shade-300">...</div>
-<div class="bg-blue bg-shade-400">...</div>
-<div class="bg-blue bg-shade-500">...</div>
-<div class="bg-blue bg-shade-600">...</div>
-<div class="bg-blue bg-shade-700">...</div>
-<div class="bg-blue bg-shade-800">...</div>
-<div class="bg-blue bg-shade-900">...</div>
-<div class="bg-blue bg-shade-full">...</div>
-```
-
----
-
-## Tints
-
-Tints make your base color lighter by changing the lightness value. There are `9` levels of tints available. Similar to Google Material's Design System, Uniform follows the `100 ... 900` syntax for defining shades.
-
-<div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 flex bg-blue bg-tint-base">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-base</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-100">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-100</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-200">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-200</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-300">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-300</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-400">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-400</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-500">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-500</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-600">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-600</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-700">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-700</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-800">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-800</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-900 border-1 border-white border-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-900</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-full border-1 border-white border-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-full</span>
-  </div>
+<div class="mb-36">
+  36px margin-bottom
 </div>
 
-```html
-<div class="bg-blue bg-tint-base">...</div>
-<div class="bg-blue bg-tint-100">...</div>
-<div class="bg-blue bg-tint-200">...</div>
-<div class="bg-blue bg-tint-300">...</div>
-<div class="bg-blue bg-tint-400">...</div>
-<div class="bg-blue bg-tint-500">...</div>
-<div class="bg-blue bg-tint-600">...</div>
-<div class="bg-blue bg-tint-700">...</div>
-<div class="bg-blue bg-tint-800">...</div>
-<div class="bg-blue bg-tint-900">...</div>
-<div class="bg-blue bg-tint-full">...</div>
-```
-
----
-
-## Opacity
-
-Each color can change in opacity. Color opacity properties manipulates the alpha channel of the HSL color model. By default, there are `15` levels of opacity to choose from.
-
-<div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-0 border-1 border-gray border-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-0</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-2 border-1 border-gray border-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-2</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-4 border-1 border-gray border-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-4</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-6">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-6</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-8">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-8</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-10">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-10</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-20</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-20">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-30</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-40">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-40</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-50">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-50</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-60">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-60</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-70">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-70</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-80">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-80</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-90">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-90</span>
-  </div>
-  <div class="radius-sm p-12 flex bg-blue bg-opacity-100">
-    <span class="font-xs leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">opacity-100</span>
-  </div>
+<div class="mb-20 md.mb-24">
+  20px margin-bottom on mobile
+  24px margin-bottom on medium screen
 </div>
-
-```html
-<div class="bg-blue bg-opacity-0">...</div>
-<div class="bg-blue bg-opacity-2">...</div>
-<div class="bg-blue bg-opacity-4">...</div>
-<div class="bg-blue bg-opacity-6">...</div>
-<div class="bg-blue bg-opacity-8">...</div>
-<div class="bg-blue bg-opacity-10">...</div>
-<div class="bg-blue bg-opacity-20">...</div>
-<div class="bg-blue bg-opacity-20">...</div>
-<div class="bg-blue bg-opacity-40">...</div>
-<div class="bg-blue bg-opacity-50">...</div>
-<div class="bg-blue bg-opacity-80">...</div>
-<div class="bg-blue bg-opacity-90">...</div>
-<div class="bg-blue bg-opacity-100">...</div>
 ```
