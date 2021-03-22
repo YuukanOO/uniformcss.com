@@ -843,611 +843,611 @@ CUSTOM PROPERTIES
   font-style: italic;
 }
 
-.bg-current, .empty\.bg-current:empty, .active\.bg-current:active, .focus\.bg-current:focus, .group:hover .group-hover\.bg-current, .hover\.bg-current:hover {
+.bg-current, .dark .dark\.empty\.bg-current:empty, .dark .dark\.active\.bg-current:active, .dark .dark\.bg-current, .dark .dark\.focus\.bg-current:focus, .dark .group:hover .dark\.group-hover\.bg-current, .dark .dark\.hover\.bg-current:hover, .empty\.bg-current:empty, .active\.bg-current:active, .focus\.bg-current:focus, .group:hover .group-hover\.bg-current, .hover\.bg-current:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: currentColor;
 }
 
-.bg-transparent, .empty\.bg-transparent:empty, .active\.bg-transparent:active, .focus\.bg-transparent:focus, .group:hover .group-hover\.bg-transparent, .hover\.bg-transparent:hover {
+.bg-transparent, .dark .dark\.empty\.bg-transparent:empty, .dark .dark\.active\.bg-transparent:active, .dark .dark\.bg-transparent, .dark .dark\.focus\.bg-transparent:focus, .dark .group:hover .dark\.group-hover\.bg-transparent, .dark .dark\.hover\.bg-transparent:hover, .empty\.bg-transparent:empty, .active\.bg-transparent:active, .focus\.bg-transparent:focus, .group:hover .group-hover\.bg-transparent, .hover\.bg-transparent:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: transparent;
 }
 
-.bg-tertiary, .empty\.bg-tertiary:empty, .active\.bg-tertiary:active, .focus\.bg-tertiary:focus, .group:hover .group-hover\.bg-tertiary, .hover\.bg-tertiary:hover {
+.bg-tertiary, .dark .dark\.empty\.bg-tertiary:empty, .dark .dark\.active\.bg-tertiary:active, .dark .dark\.bg-tertiary, .dark .dark\.focus\.bg-tertiary:focus, .dark .group:hover .dark\.group-hover\.bg-tertiary, .dark .dark\.hover\.bg-tertiary:hover, .empty\.bg-tertiary:empty, .active\.bg-tertiary:active, .focus\.bg-tertiary:focus, .group:hover .group-hover\.bg-tertiary, .hover\.bg-tertiary:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--tertiary-hue), var(--tertiary-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-secondary, .empty\.bg-secondary:empty, .active\.bg-secondary:active, .focus\.bg-secondary:focus, .group:hover .group-hover\.bg-secondary, .hover\.bg-secondary:hover {
+.bg-secondary, .dark .dark\.empty\.bg-secondary:empty, .dark .dark\.active\.bg-secondary:active, .dark .dark\.bg-secondary, .dark .dark\.focus\.bg-secondary:focus, .dark .group:hover .dark\.group-hover\.bg-secondary, .dark .dark\.hover\.bg-secondary:hover, .empty\.bg-secondary:empty, .active\.bg-secondary:active, .focus\.bg-secondary:focus, .group:hover .group-hover\.bg-secondary, .hover\.bg-secondary:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--secondary-hue), var(--secondary-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-primary, .empty\.bg-primary:empty, .active\.bg-primary:active, .focus\.bg-primary:focus, .group:hover .group-hover\.bg-primary, .hover\.bg-primary:hover {
+.bg-primary, .dark .dark\.empty\.bg-primary:empty, .dark .dark\.active\.bg-primary:active, .dark .dark\.bg-primary, .dark .dark\.focus\.bg-primary:focus, .dark .group:hover .dark\.group-hover\.bg-primary, .dark .dark\.hover\.bg-primary:hover, .empty\.bg-primary:empty, .active\.bg-primary:active, .focus\.bg-primary:focus, .group:hover .group-hover\.bg-primary, .hover\.bg-primary:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--primary-hue), var(--primary-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-warm-gray, .empty\.bg-warm-gray:empty, .active\.bg-warm-gray:active, .focus\.bg-warm-gray:focus, .group:hover .group-hover\.bg-warm-gray, .hover\.bg-warm-gray:hover {
+.bg-warm-gray, .dark .dark\.empty\.bg-warm-gray:empty, .dark .dark\.active\.bg-warm-gray:active, .dark .dark\.bg-warm-gray, .dark .dark\.focus\.bg-warm-gray:focus, .dark .group:hover .dark\.group-hover\.bg-warm-gray, .dark .dark\.hover\.bg-warm-gray:hover, .empty\.bg-warm-gray:empty, .active\.bg-warm-gray:active, .focus\.bg-warm-gray:focus, .group:hover .group-hover\.bg-warm-gray, .hover\.bg-warm-gray:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--warm-gray-hue), var(--warm-gray-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-gray, .empty\.bg-gray:empty, .active\.bg-gray:active, .focus\.bg-gray:focus, .group:hover .group-hover\.bg-gray, .hover\.bg-gray:hover {
+.bg-gray, .dark .dark\.empty\.bg-gray:empty, .dark .dark\.active\.bg-gray:active, .dark .dark\.bg-gray, .dark .dark\.focus\.bg-gray:focus, .dark .group:hover .dark\.group-hover\.bg-gray, .dark .dark\.hover\.bg-gray:hover, .empty\.bg-gray:empty, .active\.bg-gray:active, .focus\.bg-gray:focus, .group:hover .group-hover\.bg-gray, .hover\.bg-gray:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--gray-hue), var(--gray-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-cool-gray, .empty\.bg-cool-gray:empty, .active\.bg-cool-gray:active, .focus\.bg-cool-gray:focus, .group:hover .group-hover\.bg-cool-gray, .hover\.bg-cool-gray:hover {
+.bg-cool-gray, .dark .dark\.empty\.bg-cool-gray:empty, .dark .dark\.active\.bg-cool-gray:active, .dark .dark\.bg-cool-gray, .dark .dark\.focus\.bg-cool-gray:focus, .dark .group:hover .dark\.group-hover\.bg-cool-gray, .dark .dark\.hover\.bg-cool-gray:hover, .empty\.bg-cool-gray:empty, .active\.bg-cool-gray:active, .focus\.bg-cool-gray:focus, .group:hover .group-hover\.bg-cool-gray, .hover\.bg-cool-gray:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-black, .empty\.bg-black:empty, .active\.bg-black:active, .focus\.bg-black:focus, .group:hover .group-hover\.bg-black, .hover\.bg-black:hover {
+.bg-black, .dark .dark\.empty\.bg-black:empty, .dark .dark\.active\.bg-black:active, .dark .dark\.bg-black, .dark .dark\.focus\.bg-black:focus, .dark .group:hover .dark\.group-hover\.bg-black, .dark .dark\.hover\.bg-black:hover, .empty\.bg-black:empty, .active\.bg-black:active, .focus\.bg-black:focus, .group:hover .group-hover\.bg-black, .hover\.bg-black:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--black-hue), var(--black-sat), 0%, var(--bg-opacity));
 }
 
-.bg-white, .empty\.bg-white:empty, .active\.bg-white:active, .focus\.bg-white:focus, .group:hover .group-hover\.bg-white, .hover\.bg-white:hover {
+.bg-white, .dark .dark\.empty\.bg-white:empty, .dark .dark\.active\.bg-white:active, .dark .dark\.bg-white, .dark .dark\.focus\.bg-white:focus, .dark .group:hover .dark\.group-hover\.bg-white, .dark .dark\.hover\.bg-white:hover, .empty\.bg-white:empty, .active\.bg-white:active, .focus\.bg-white:focus, .group:hover .group-hover\.bg-white, .hover\.bg-white:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--white-hue), var(--white-sat), 100%, var(--bg-opacity));
 }
 
-.bg-crimson, .empty\.bg-crimson:empty, .active\.bg-crimson:active, .focus\.bg-crimson:focus, .group:hover .group-hover\.bg-crimson, .hover\.bg-crimson:hover {
+.bg-crimson, .dark .dark\.empty\.bg-crimson:empty, .dark .dark\.active\.bg-crimson:active, .dark .dark\.bg-crimson, .dark .dark\.focus\.bg-crimson:focus, .dark .group:hover .dark\.group-hover\.bg-crimson, .dark .dark\.hover\.bg-crimson:hover, .empty\.bg-crimson:empty, .active\.bg-crimson:active, .focus\.bg-crimson:focus, .group:hover .group-hover\.bg-crimson, .hover\.bg-crimson:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--crimson-hue), var(--crimson-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-pink, .empty\.bg-pink:empty, .active\.bg-pink:active, .focus\.bg-pink:focus, .group:hover .group-hover\.bg-pink, .hover\.bg-pink:hover {
+.bg-pink, .dark .dark\.empty\.bg-pink:empty, .dark .dark\.active\.bg-pink:active, .dark .dark\.bg-pink, .dark .dark\.focus\.bg-pink:focus, .dark .group:hover .dark\.group-hover\.bg-pink, .dark .dark\.hover\.bg-pink:hover, .empty\.bg-pink:empty, .active\.bg-pink:active, .focus\.bg-pink:focus, .group:hover .group-hover\.bg-pink, .hover\.bg-pink:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--pink-hue), var(--pink-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-magenta, .empty\.bg-magenta:empty, .active\.bg-magenta:active, .focus\.bg-magenta:focus, .group:hover .group-hover\.bg-magenta, .hover\.bg-magenta:hover {
+.bg-magenta, .dark .dark\.empty\.bg-magenta:empty, .dark .dark\.active\.bg-magenta:active, .dark .dark\.bg-magenta, .dark .dark\.focus\.bg-magenta:focus, .dark .group:hover .dark\.group-hover\.bg-magenta, .dark .dark\.hover\.bg-magenta:hover, .empty\.bg-magenta:empty, .active\.bg-magenta:active, .focus\.bg-magenta:focus, .group:hover .group-hover\.bg-magenta, .hover\.bg-magenta:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--magenta-hue), var(--magenta-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-orchid, .empty\.bg-orchid:empty, .active\.bg-orchid:active, .focus\.bg-orchid:focus, .group:hover .group-hover\.bg-orchid, .hover\.bg-orchid:hover {
+.bg-orchid, .dark .dark\.empty\.bg-orchid:empty, .dark .dark\.active\.bg-orchid:active, .dark .dark\.bg-orchid, .dark .dark\.focus\.bg-orchid:focus, .dark .group:hover .dark\.group-hover\.bg-orchid, .dark .dark\.hover\.bg-orchid:hover, .empty\.bg-orchid:empty, .active\.bg-orchid:active, .focus\.bg-orchid:focus, .group:hover .group-hover\.bg-orchid, .hover\.bg-orchid:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--orchid-hue), var(--orchid-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-purple, .empty\.bg-purple:empty, .active\.bg-purple:active, .focus\.bg-purple:focus, .group:hover .group-hover\.bg-purple, .hover\.bg-purple:hover {
+.bg-purple, .dark .dark\.empty\.bg-purple:empty, .dark .dark\.active\.bg-purple:active, .dark .dark\.bg-purple, .dark .dark\.focus\.bg-purple:focus, .dark .group:hover .dark\.group-hover\.bg-purple, .dark .dark\.hover\.bg-purple:hover, .empty\.bg-purple:empty, .active\.bg-purple:active, .focus\.bg-purple:focus, .group:hover .group-hover\.bg-purple, .hover\.bg-purple:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--purple-hue), var(--purple-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-indigo, .empty\.bg-indigo:empty, .active\.bg-indigo:active, .focus\.bg-indigo:focus, .group:hover .group-hover\.bg-indigo, .hover\.bg-indigo:hover {
+.bg-indigo, .dark .dark\.empty\.bg-indigo:empty, .dark .dark\.active\.bg-indigo:active, .dark .dark\.bg-indigo, .dark .dark\.focus\.bg-indigo:focus, .dark .group:hover .dark\.group-hover\.bg-indigo, .dark .dark\.hover\.bg-indigo:hover, .empty\.bg-indigo:empty, .active\.bg-indigo:active, .focus\.bg-indigo:focus, .group:hover .group-hover\.bg-indigo, .hover\.bg-indigo:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--indigo-hue), var(--indigo-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-blue, .empty\.bg-blue:empty, .active\.bg-blue:active, .focus\.bg-blue:focus, .group:hover .group-hover\.bg-blue, .hover\.bg-blue:hover {
+.bg-blue, .dark .dark\.empty\.bg-blue:empty, .dark .dark\.active\.bg-blue:active, .dark .dark\.bg-blue, .dark .dark\.focus\.bg-blue:focus, .dark .group:hover .dark\.group-hover\.bg-blue, .dark .dark\.hover\.bg-blue:hover, .empty\.bg-blue:empty, .active\.bg-blue:active, .focus\.bg-blue:focus, .group:hover .group-hover\.bg-blue, .hover\.bg-blue:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--blue-hue), var(--blue-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-sky, .empty\.bg-sky:empty, .active\.bg-sky:active, .focus\.bg-sky:focus, .group:hover .group-hover\.bg-sky, .hover\.bg-sky:hover {
+.bg-sky, .dark .dark\.empty\.bg-sky:empty, .dark .dark\.active\.bg-sky:active, .dark .dark\.bg-sky, .dark .dark\.focus\.bg-sky:focus, .dark .group:hover .dark\.group-hover\.bg-sky, .dark .dark\.hover\.bg-sky:hover, .empty\.bg-sky:empty, .active\.bg-sky:active, .focus\.bg-sky:focus, .group:hover .group-hover\.bg-sky, .hover\.bg-sky:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--sky-hue), var(--sky-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-cyan, .empty\.bg-cyan:empty, .active\.bg-cyan:active, .focus\.bg-cyan:focus, .group:hover .group-hover\.bg-cyan, .hover\.bg-cyan:hover {
+.bg-cyan, .dark .dark\.empty\.bg-cyan:empty, .dark .dark\.active\.bg-cyan:active, .dark .dark\.bg-cyan, .dark .dark\.focus\.bg-cyan:focus, .dark .group:hover .dark\.group-hover\.bg-cyan, .dark .dark\.hover\.bg-cyan:hover, .empty\.bg-cyan:empty, .active\.bg-cyan:active, .focus\.bg-cyan:focus, .group:hover .group-hover\.bg-cyan, .hover\.bg-cyan:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--cyan-hue), var(--cyan-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-teal, .empty\.bg-teal:empty, .active\.bg-teal:active, .focus\.bg-teal:focus, .group:hover .group-hover\.bg-teal, .hover\.bg-teal:hover {
+.bg-teal, .dark .dark\.empty\.bg-teal:empty, .dark .dark\.active\.bg-teal:active, .dark .dark\.bg-teal, .dark .dark\.focus\.bg-teal:focus, .dark .group:hover .dark\.group-hover\.bg-teal, .dark .dark\.hover\.bg-teal:hover, .empty\.bg-teal:empty, .active\.bg-teal:active, .focus\.bg-teal:focus, .group:hover .group-hover\.bg-teal, .hover\.bg-teal:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--teal-hue), var(--teal-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-mint, .empty\.bg-mint:empty, .active\.bg-mint:active, .focus\.bg-mint:focus, .group:hover .group-hover\.bg-mint, .hover\.bg-mint:hover {
+.bg-mint, .dark .dark\.empty\.bg-mint:empty, .dark .dark\.active\.bg-mint:active, .dark .dark\.bg-mint, .dark .dark\.focus\.bg-mint:focus, .dark .group:hover .dark\.group-hover\.bg-mint, .dark .dark\.hover\.bg-mint:hover, .empty\.bg-mint:empty, .active\.bg-mint:active, .focus\.bg-mint:focus, .group:hover .group-hover\.bg-mint, .hover\.bg-mint:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--mint-hue), var(--mint-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-green, .empty\.bg-green:empty, .active\.bg-green:active, .focus\.bg-green:focus, .group:hover .group-hover\.bg-green, .hover\.bg-green:hover {
+.bg-green, .dark .dark\.empty\.bg-green:empty, .dark .dark\.active\.bg-green:active, .dark .dark\.bg-green, .dark .dark\.focus\.bg-green:focus, .dark .group:hover .dark\.group-hover\.bg-green, .dark .dark\.hover\.bg-green:hover, .empty\.bg-green:empty, .active\.bg-green:active, .focus\.bg-green:focus, .group:hover .group-hover\.bg-green, .hover\.bg-green:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--green-hue), var(--green-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-lime, .empty\.bg-lime:empty, .active\.bg-lime:active, .focus\.bg-lime:focus, .group:hover .group-hover\.bg-lime, .hover\.bg-lime:hover {
+.bg-lime, .dark .dark\.empty\.bg-lime:empty, .dark .dark\.active\.bg-lime:active, .dark .dark\.bg-lime, .dark .dark\.focus\.bg-lime:focus, .dark .group:hover .dark\.group-hover\.bg-lime, .dark .dark\.hover\.bg-lime:hover, .empty\.bg-lime:empty, .active\.bg-lime:active, .focus\.bg-lime:focus, .group:hover .group-hover\.bg-lime, .hover\.bg-lime:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--lime-hue), var(--lime-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-olive, .empty\.bg-olive:empty, .active\.bg-olive:active, .focus\.bg-olive:focus, .group:hover .group-hover\.bg-olive, .hover\.bg-olive:hover {
+.bg-olive, .dark .dark\.empty\.bg-olive:empty, .dark .dark\.active\.bg-olive:active, .dark .dark\.bg-olive, .dark .dark\.focus\.bg-olive:focus, .dark .group:hover .dark\.group-hover\.bg-olive, .dark .dark\.hover\.bg-olive:hover, .empty\.bg-olive:empty, .active\.bg-olive:active, .focus\.bg-olive:focus, .group:hover .group-hover\.bg-olive, .hover\.bg-olive:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--olive-hue), var(--olive-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-lemon, .empty\.bg-lemon:empty, .active\.bg-lemon:active, .focus\.bg-lemon:focus, .group:hover .group-hover\.bg-lemon, .hover\.bg-lemon:hover {
+.bg-lemon, .dark .dark\.empty\.bg-lemon:empty, .dark .dark\.active\.bg-lemon:active, .dark .dark\.bg-lemon, .dark .dark\.focus\.bg-lemon:focus, .dark .group:hover .dark\.group-hover\.bg-lemon, .dark .dark\.hover\.bg-lemon:hover, .empty\.bg-lemon:empty, .active\.bg-lemon:active, .focus\.bg-lemon:focus, .group:hover .group-hover\.bg-lemon, .hover\.bg-lemon:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--lemon-hue), var(--lemon-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-yellow, .empty\.bg-yellow:empty, .active\.bg-yellow:active, .focus\.bg-yellow:focus, .group:hover .group-hover\.bg-yellow, .hover\.bg-yellow:hover {
+.bg-yellow, .dark .dark\.empty\.bg-yellow:empty, .dark .dark\.active\.bg-yellow:active, .dark .dark\.bg-yellow, .dark .dark\.focus\.bg-yellow:focus, .dark .group:hover .dark\.group-hover\.bg-yellow, .dark .dark\.hover\.bg-yellow:hover, .empty\.bg-yellow:empty, .active\.bg-yellow:active, .focus\.bg-yellow:focus, .group:hover .group-hover\.bg-yellow, .hover\.bg-yellow:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--yellow-hue), var(--yellow-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-orange, .empty\.bg-orange:empty, .active\.bg-orange:active, .focus\.bg-orange:focus, .group:hover .group-hover\.bg-orange, .hover\.bg-orange:hover {
+.bg-orange, .dark .dark\.empty\.bg-orange:empty, .dark .dark\.active\.bg-orange:active, .dark .dark\.bg-orange, .dark .dark\.focus\.bg-orange:focus, .dark .group:hover .dark\.group-hover\.bg-orange, .dark .dark\.hover\.bg-orange:hover, .empty\.bg-orange:empty, .active\.bg-orange:active, .focus\.bg-orange:focus, .group:hover .group-hover\.bg-orange, .hover\.bg-orange:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--orange-hue), var(--orange-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.bg-red, .empty\.bg-red:empty, .active\.bg-red:active, .focus\.bg-red:focus, .group:hover .group-hover\.bg-red, .hover\.bg-red:hover {
+.bg-red, .dark .dark\.empty\.bg-red:empty, .dark .dark\.active\.bg-red:active, .dark .dark\.bg-red, .dark .dark\.focus\.bg-red:focus, .dark .group:hover .dark\.group-hover\.bg-red, .dark .dark\.hover\.bg-red:hover, .empty\.bg-red:empty, .active\.bg-red:active, .focus\.bg-red:focus, .group:hover .group-hover\.bg-red, .hover\.bg-red:hover {
   --bg-ltn: 50%;
   --bg-opacity: 1;
   background-color: hsla(var(--red-hue), var(--red-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.opacity-0, .group:hover .group-hover\.opacity-0, .disabled\.opacity-0:disabled, .checked\.opacity-0, .focus\.opacity-0:focus, .active\.opacity-0:active, .hover\.opacity-0:hover {
+.opacity-0, .dark .group:hover .dark\.group-hover\.opacity-0, .dark .dark\.disabled\.opacity-0:disabled, .dark .dark\.checked\.opacity-0, .dark .dark\.focus\.opacity-0:focus, .dark .dark\.opacity-0, .dark .dark\.active\.opacity-0:active, .dark .dark\.hover\.opacity-0:hover, .group:hover .group-hover\.opacity-0, .disabled\.opacity-0:disabled, .checked\.opacity-0, .focus\.opacity-0:focus, .active\.opacity-0:active, .hover\.opacity-0:hover {
   opacity: var(--opacity-0);
 }
 
-.opacity-2, .group:hover .group-hover\.opacity-2, .disabled\.opacity-2:disabled, .checked\.opacity-2, .focus\.opacity-2:focus, .active\.opacity-2:active, .hover\.opacity-2:hover {
+.opacity-2, .dark .group:hover .dark\.group-hover\.opacity-2, .dark .dark\.disabled\.opacity-2:disabled, .dark .dark\.checked\.opacity-2, .dark .dark\.focus\.opacity-2:focus, .dark .dark\.opacity-2, .dark .dark\.active\.opacity-2:active, .dark .dark\.hover\.opacity-2:hover, .group:hover .group-hover\.opacity-2, .disabled\.opacity-2:disabled, .checked\.opacity-2, .focus\.opacity-2:focus, .active\.opacity-2:active, .hover\.opacity-2:hover {
   opacity: var(--opacity-2);
 }
 
-.opacity-4, .group:hover .group-hover\.opacity-4, .disabled\.opacity-4:disabled, .checked\.opacity-4, .focus\.opacity-4:focus, .active\.opacity-4:active, .hover\.opacity-4:hover {
+.opacity-4, .dark .group:hover .dark\.group-hover\.opacity-4, .dark .dark\.disabled\.opacity-4:disabled, .dark .dark\.checked\.opacity-4, .dark .dark\.focus\.opacity-4:focus, .dark .dark\.opacity-4, .dark .dark\.active\.opacity-4:active, .dark .dark\.hover\.opacity-4:hover, .group:hover .group-hover\.opacity-4, .disabled\.opacity-4:disabled, .checked\.opacity-4, .focus\.opacity-4:focus, .active\.opacity-4:active, .hover\.opacity-4:hover {
   opacity: var(--opacity-4);
 }
 
-.opacity-6, .group:hover .group-hover\.opacity-6, .disabled\.opacity-6:disabled, .checked\.opacity-6, .focus\.opacity-6:focus, .active\.opacity-6:active, .hover\.opacity-6:hover {
+.opacity-6, .dark .group:hover .dark\.group-hover\.opacity-6, .dark .dark\.disabled\.opacity-6:disabled, .dark .dark\.checked\.opacity-6, .dark .dark\.focus\.opacity-6:focus, .dark .dark\.opacity-6, .dark .dark\.active\.opacity-6:active, .dark .dark\.hover\.opacity-6:hover, .group:hover .group-hover\.opacity-6, .disabled\.opacity-6:disabled, .checked\.opacity-6, .focus\.opacity-6:focus, .active\.opacity-6:active, .hover\.opacity-6:hover {
   opacity: var(--opacity-6);
 }
 
-.opacity-8, .group:hover .group-hover\.opacity-8, .disabled\.opacity-8:disabled, .checked\.opacity-8, .focus\.opacity-8:focus, .active\.opacity-8:active, .hover\.opacity-8:hover {
+.opacity-8, .dark .group:hover .dark\.group-hover\.opacity-8, .dark .dark\.disabled\.opacity-8:disabled, .dark .dark\.checked\.opacity-8, .dark .dark\.focus\.opacity-8:focus, .dark .dark\.opacity-8, .dark .dark\.active\.opacity-8:active, .dark .dark\.hover\.opacity-8:hover, .group:hover .group-hover\.opacity-8, .disabled\.opacity-8:disabled, .checked\.opacity-8, .focus\.opacity-8:focus, .active\.opacity-8:active, .hover\.opacity-8:hover {
   opacity: var(--opacity-8);
 }
 
-.opacity-10, .group:hover .group-hover\.opacity-10, .disabled\.opacity-10:disabled, .checked\.opacity-10, .focus\.opacity-10:focus, .active\.opacity-10:active, .hover\.opacity-10:hover {
+.opacity-10, .dark .group:hover .dark\.group-hover\.opacity-10, .dark .dark\.disabled\.opacity-10:disabled, .dark .dark\.checked\.opacity-10, .dark .dark\.focus\.opacity-10:focus, .dark .dark\.opacity-10, .dark .dark\.active\.opacity-10:active, .dark .dark\.hover\.opacity-10:hover, .group:hover .group-hover\.opacity-10, .disabled\.opacity-10:disabled, .checked\.opacity-10, .focus\.opacity-10:focus, .active\.opacity-10:active, .hover\.opacity-10:hover {
   opacity: var(--opacity-10);
 }
 
-.opacity-20, .group:hover .group-hover\.opacity-20, .disabled\.opacity-20:disabled, .checked\.opacity-20, .focus\.opacity-20:focus, .active\.opacity-20:active, .hover\.opacity-20:hover {
+.opacity-20, .dark .group:hover .dark\.group-hover\.opacity-20, .dark .dark\.disabled\.opacity-20:disabled, .dark .dark\.checked\.opacity-20, .dark .dark\.focus\.opacity-20:focus, .dark .dark\.opacity-20, .dark .dark\.active\.opacity-20:active, .dark .dark\.hover\.opacity-20:hover, .group:hover .group-hover\.opacity-20, .disabled\.opacity-20:disabled, .checked\.opacity-20, .focus\.opacity-20:focus, .active\.opacity-20:active, .hover\.opacity-20:hover {
   opacity: var(--opacity-20);
 }
 
-.opacity-30, .group:hover .group-hover\.opacity-30, .disabled\.opacity-30:disabled, .checked\.opacity-30, .focus\.opacity-30:focus, .active\.opacity-30:active, .hover\.opacity-30:hover {
+.opacity-30, .dark .group:hover .dark\.group-hover\.opacity-30, .dark .dark\.disabled\.opacity-30:disabled, .dark .dark\.checked\.opacity-30, .dark .dark\.focus\.opacity-30:focus, .dark .dark\.opacity-30, .dark .dark\.active\.opacity-30:active, .dark .dark\.hover\.opacity-30:hover, .group:hover .group-hover\.opacity-30, .disabled\.opacity-30:disabled, .checked\.opacity-30, .focus\.opacity-30:focus, .active\.opacity-30:active, .hover\.opacity-30:hover {
   opacity: var(--opacity-30);
 }
 
-.opacity-40, .group:hover .group-hover\.opacity-40, .disabled\.opacity-40:disabled, .checked\.opacity-40, .focus\.opacity-40:focus, .active\.opacity-40:active, .hover\.opacity-40:hover {
+.opacity-40, .dark .group:hover .dark\.group-hover\.opacity-40, .dark .dark\.disabled\.opacity-40:disabled, .dark .dark\.checked\.opacity-40, .dark .dark\.focus\.opacity-40:focus, .dark .dark\.opacity-40, .dark .dark\.active\.opacity-40:active, .dark .dark\.hover\.opacity-40:hover, .group:hover .group-hover\.opacity-40, .disabled\.opacity-40:disabled, .checked\.opacity-40, .focus\.opacity-40:focus, .active\.opacity-40:active, .hover\.opacity-40:hover {
   opacity: var(--opacity-40);
 }
 
-.opacity-50, .group:hover .group-hover\.opacity-50, .disabled\.opacity-50:disabled, .checked\.opacity-50, .focus\.opacity-50:focus, .active\.opacity-50:active, .hover\.opacity-50:hover {
+.opacity-50, .dark .group:hover .dark\.group-hover\.opacity-50, .dark .dark\.disabled\.opacity-50:disabled, .dark .dark\.checked\.opacity-50, .dark .dark\.focus\.opacity-50:focus, .dark .dark\.opacity-50, .dark .dark\.active\.opacity-50:active, .dark .dark\.hover\.opacity-50:hover, .group:hover .group-hover\.opacity-50, .disabled\.opacity-50:disabled, .checked\.opacity-50, .focus\.opacity-50:focus, .active\.opacity-50:active, .hover\.opacity-50:hover {
   opacity: var(--opacity-50);
 }
 
-.opacity-60, .group:hover .group-hover\.opacity-60, .disabled\.opacity-60:disabled, .checked\.opacity-60, .focus\.opacity-60:focus, .active\.opacity-60:active, .hover\.opacity-60:hover {
+.opacity-60, .dark .group:hover .dark\.group-hover\.opacity-60, .dark .dark\.disabled\.opacity-60:disabled, .dark .dark\.checked\.opacity-60, .dark .dark\.focus\.opacity-60:focus, .dark .dark\.opacity-60, .dark .dark\.active\.opacity-60:active, .dark .dark\.hover\.opacity-60:hover, .group:hover .group-hover\.opacity-60, .disabled\.opacity-60:disabled, .checked\.opacity-60, .focus\.opacity-60:focus, .active\.opacity-60:active, .hover\.opacity-60:hover {
   opacity: var(--opacity-60);
 }
 
-.opacity-70, .group:hover .group-hover\.opacity-70, .disabled\.opacity-70:disabled, .checked\.opacity-70, .focus\.opacity-70:focus, .active\.opacity-70:active, .hover\.opacity-70:hover {
+.opacity-70, .dark .group:hover .dark\.group-hover\.opacity-70, .dark .dark\.disabled\.opacity-70:disabled, .dark .dark\.checked\.opacity-70, .dark .dark\.focus\.opacity-70:focus, .dark .dark\.opacity-70, .dark .dark\.active\.opacity-70:active, .dark .dark\.hover\.opacity-70:hover, .group:hover .group-hover\.opacity-70, .disabled\.opacity-70:disabled, .checked\.opacity-70, .focus\.opacity-70:focus, .active\.opacity-70:active, .hover\.opacity-70:hover {
   opacity: var(--opacity-70);
 }
 
-.opacity-80, .group:hover .group-hover\.opacity-80, .disabled\.opacity-80:disabled, .checked\.opacity-80, .focus\.opacity-80:focus, .active\.opacity-80:active, .hover\.opacity-80:hover {
+.opacity-80, .dark .group:hover .dark\.group-hover\.opacity-80, .dark .dark\.disabled\.opacity-80:disabled, .dark .dark\.checked\.opacity-80, .dark .dark\.focus\.opacity-80:focus, .dark .dark\.opacity-80, .dark .dark\.active\.opacity-80:active, .dark .dark\.hover\.opacity-80:hover, .group:hover .group-hover\.opacity-80, .disabled\.opacity-80:disabled, .checked\.opacity-80, .focus\.opacity-80:focus, .active\.opacity-80:active, .hover\.opacity-80:hover {
   opacity: var(--opacity-80);
 }
 
-.opacity-90, .group:hover .group-hover\.opacity-90, .disabled\.opacity-90:disabled, .checked\.opacity-90, .focus\.opacity-90:focus, .active\.opacity-90:active, .hover\.opacity-90:hover {
+.opacity-90, .dark .group:hover .dark\.group-hover\.opacity-90, .dark .dark\.disabled\.opacity-90:disabled, .dark .dark\.checked\.opacity-90, .dark .dark\.focus\.opacity-90:focus, .dark .dark\.opacity-90, .dark .dark\.active\.opacity-90:active, .dark .dark\.hover\.opacity-90:hover, .group:hover .group-hover\.opacity-90, .disabled\.opacity-90:disabled, .checked\.opacity-90, .focus\.opacity-90:focus, .active\.opacity-90:active, .hover\.opacity-90:hover {
   opacity: var(--opacity-90);
 }
 
-.opacity-100, .group:hover .group-hover\.opacity-100, .disabled\.opacity-100:disabled, .checked\.opacity-100, .focus\.opacity-100:focus, .active\.opacity-100:active, .hover\.opacity-100:hover {
+.opacity-100, .dark .group:hover .dark\.group-hover\.opacity-100, .dark .dark\.disabled\.opacity-100:disabled, .dark .dark\.checked\.opacity-100, .dark .dark\.focus\.opacity-100:focus, .dark .dark\.opacity-100, .dark .dark\.active\.opacity-100:active, .dark .dark\.hover\.opacity-100:hover, .group:hover .group-hover\.opacity-100, .disabled\.opacity-100:disabled, .checked\.opacity-100, .focus\.opacity-100:focus, .active\.opacity-100:active, .hover\.opacity-100:hover {
   opacity: var(--opacity-100);
 }
 
-.border-current, .focus-within\.border-current:focus-within, .focus\.border-current:focus, .group:hover .group-hover\.border-current, .hover\.border-current:hover {
+.border-current, .dark .dark\.focus-within\.border-current:focus-within, .dark .dark\.border-current, .dark .dark\.focus\.border-current:focus, .dark .group:hover .dark\.group-hover\.border-current, .dark .dark\.hover\.border-current:hover, .focus-within\.border-current:focus-within, .focus\.border-current:focus, .group:hover .group-hover\.border-current, .hover\.border-current:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: currentColor;
 }
 
-.border-transparent, .focus-within\.border-transparent:focus-within, .focus\.border-transparent:focus, .group:hover .group-hover\.border-transparent, .hover\.border-transparent:hover {
+.border-transparent, .dark .dark\.focus-within\.border-transparent:focus-within, .dark .dark\.border-transparent, .dark .dark\.focus\.border-transparent:focus, .dark .group:hover .dark\.group-hover\.border-transparent, .dark .dark\.hover\.border-transparent:hover, .focus-within\.border-transparent:focus-within, .focus\.border-transparent:focus, .group:hover .group-hover\.border-transparent, .hover\.border-transparent:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: transparent;
 }
 
-.border-tertiary, .focus-within\.border-tertiary:focus-within, .focus\.border-tertiary:focus, .group:hover .group-hover\.border-tertiary, .hover\.border-tertiary:hover {
+.border-tertiary, .dark .dark\.focus-within\.border-tertiary:focus-within, .dark .dark\.border-tertiary, .dark .dark\.focus\.border-tertiary:focus, .dark .group:hover .dark\.group-hover\.border-tertiary, .dark .dark\.hover\.border-tertiary:hover, .focus-within\.border-tertiary:focus-within, .focus\.border-tertiary:focus, .group:hover .group-hover\.border-tertiary, .hover\.border-tertiary:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--tertiary-hue), var(--tertiary-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-secondary, .focus-within\.border-secondary:focus-within, .focus\.border-secondary:focus, .group:hover .group-hover\.border-secondary, .hover\.border-secondary:hover {
+.border-secondary, .dark .dark\.focus-within\.border-secondary:focus-within, .dark .dark\.border-secondary, .dark .dark\.focus\.border-secondary:focus, .dark .group:hover .dark\.group-hover\.border-secondary, .dark .dark\.hover\.border-secondary:hover, .focus-within\.border-secondary:focus-within, .focus\.border-secondary:focus, .group:hover .group-hover\.border-secondary, .hover\.border-secondary:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--secondary-hue), var(--secondary-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-primary, .focus-within\.border-primary:focus-within, .focus\.border-primary:focus, .group:hover .group-hover\.border-primary, .hover\.border-primary:hover {
+.border-primary, .dark .dark\.focus-within\.border-primary:focus-within, .dark .dark\.border-primary, .dark .dark\.focus\.border-primary:focus, .dark .group:hover .dark\.group-hover\.border-primary, .dark .dark\.hover\.border-primary:hover, .focus-within\.border-primary:focus-within, .focus\.border-primary:focus, .group:hover .group-hover\.border-primary, .hover\.border-primary:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--primary-hue), var(--primary-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-warm-gray, .focus-within\.border-warm-gray:focus-within, .focus\.border-warm-gray:focus, .group:hover .group-hover\.border-warm-gray, .hover\.border-warm-gray:hover {
+.border-warm-gray, .dark .dark\.focus-within\.border-warm-gray:focus-within, .dark .dark\.border-warm-gray, .dark .dark\.focus\.border-warm-gray:focus, .dark .group:hover .dark\.group-hover\.border-warm-gray, .dark .dark\.hover\.border-warm-gray:hover, .focus-within\.border-warm-gray:focus-within, .focus\.border-warm-gray:focus, .group:hover .group-hover\.border-warm-gray, .hover\.border-warm-gray:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--warm-gray-hue), var(--warm-gray-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-gray, .focus-within\.border-gray:focus-within, .focus\.border-gray:focus, .group:hover .group-hover\.border-gray, .hover\.border-gray:hover {
+.border-gray, .dark .dark\.focus-within\.border-gray:focus-within, .dark .dark\.border-gray, .dark .dark\.focus\.border-gray:focus, .dark .group:hover .dark\.group-hover\.border-gray, .dark .dark\.hover\.border-gray:hover, .focus-within\.border-gray:focus-within, .focus\.border-gray:focus, .group:hover .group-hover\.border-gray, .hover\.border-gray:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--gray-hue), var(--gray-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-cool-gray, .focus-within\.border-cool-gray:focus-within, .focus\.border-cool-gray:focus, .group:hover .group-hover\.border-cool-gray, .hover\.border-cool-gray:hover {
+.border-cool-gray, .dark .dark\.focus-within\.border-cool-gray:focus-within, .dark .dark\.border-cool-gray, .dark .dark\.focus\.border-cool-gray:focus, .dark .group:hover .dark\.group-hover\.border-cool-gray, .dark .dark\.hover\.border-cool-gray:hover, .focus-within\.border-cool-gray:focus-within, .focus\.border-cool-gray:focus, .group:hover .group-hover\.border-cool-gray, .hover\.border-cool-gray:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-black, .focus-within\.border-black:focus-within, .focus\.border-black:focus, .group:hover .group-hover\.border-black, .hover\.border-black:hover {
+.border-black, .dark .dark\.focus-within\.border-black:focus-within, .dark .dark\.border-black, .dark .dark\.focus\.border-black:focus, .dark .group:hover .dark\.group-hover\.border-black, .dark .dark\.hover\.border-black:hover, .focus-within\.border-black:focus-within, .focus\.border-black:focus, .group:hover .group-hover\.border-black, .hover\.border-black:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--black-hue), var(--black-sat), 0%, var(--border-opacity));
 }
 
-.border-white, .focus-within\.border-white:focus-within, .focus\.border-white:focus, .group:hover .group-hover\.border-white, .hover\.border-white:hover {
+.border-white, .dark .dark\.focus-within\.border-white:focus-within, .dark .dark\.border-white, .dark .dark\.focus\.border-white:focus, .dark .group:hover .dark\.group-hover\.border-white, .dark .dark\.hover\.border-white:hover, .focus-within\.border-white:focus-within, .focus\.border-white:focus, .group:hover .group-hover\.border-white, .hover\.border-white:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--white-hue), var(--white-sat), 100%, var(--border-opacity));
 }
 
-.border-crimson, .focus-within\.border-crimson:focus-within, .focus\.border-crimson:focus, .group:hover .group-hover\.border-crimson, .hover\.border-crimson:hover {
+.border-crimson, .dark .dark\.focus-within\.border-crimson:focus-within, .dark .dark\.border-crimson, .dark .dark\.focus\.border-crimson:focus, .dark .group:hover .dark\.group-hover\.border-crimson, .dark .dark\.hover\.border-crimson:hover, .focus-within\.border-crimson:focus-within, .focus\.border-crimson:focus, .group:hover .group-hover\.border-crimson, .hover\.border-crimson:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--crimson-hue), var(--crimson-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-pink, .focus-within\.border-pink:focus-within, .focus\.border-pink:focus, .group:hover .group-hover\.border-pink, .hover\.border-pink:hover {
+.border-pink, .dark .dark\.focus-within\.border-pink:focus-within, .dark .dark\.border-pink, .dark .dark\.focus\.border-pink:focus, .dark .group:hover .dark\.group-hover\.border-pink, .dark .dark\.hover\.border-pink:hover, .focus-within\.border-pink:focus-within, .focus\.border-pink:focus, .group:hover .group-hover\.border-pink, .hover\.border-pink:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--pink-hue), var(--pink-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-magenta, .focus-within\.border-magenta:focus-within, .focus\.border-magenta:focus, .group:hover .group-hover\.border-magenta, .hover\.border-magenta:hover {
+.border-magenta, .dark .dark\.focus-within\.border-magenta:focus-within, .dark .dark\.border-magenta, .dark .dark\.focus\.border-magenta:focus, .dark .group:hover .dark\.group-hover\.border-magenta, .dark .dark\.hover\.border-magenta:hover, .focus-within\.border-magenta:focus-within, .focus\.border-magenta:focus, .group:hover .group-hover\.border-magenta, .hover\.border-magenta:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--magenta-hue), var(--magenta-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-orchid, .focus-within\.border-orchid:focus-within, .focus\.border-orchid:focus, .group:hover .group-hover\.border-orchid, .hover\.border-orchid:hover {
+.border-orchid, .dark .dark\.focus-within\.border-orchid:focus-within, .dark .dark\.border-orchid, .dark .dark\.focus\.border-orchid:focus, .dark .group:hover .dark\.group-hover\.border-orchid, .dark .dark\.hover\.border-orchid:hover, .focus-within\.border-orchid:focus-within, .focus\.border-orchid:focus, .group:hover .group-hover\.border-orchid, .hover\.border-orchid:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--orchid-hue), var(--orchid-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-purple, .focus-within\.border-purple:focus-within, .focus\.border-purple:focus, .group:hover .group-hover\.border-purple, .hover\.border-purple:hover {
+.border-purple, .dark .dark\.focus-within\.border-purple:focus-within, .dark .dark\.border-purple, .dark .dark\.focus\.border-purple:focus, .dark .group:hover .dark\.group-hover\.border-purple, .dark .dark\.hover\.border-purple:hover, .focus-within\.border-purple:focus-within, .focus\.border-purple:focus, .group:hover .group-hover\.border-purple, .hover\.border-purple:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--purple-hue), var(--purple-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-indigo, .focus-within\.border-indigo:focus-within, .focus\.border-indigo:focus, .group:hover .group-hover\.border-indigo, .hover\.border-indigo:hover {
+.border-indigo, .dark .dark\.focus-within\.border-indigo:focus-within, .dark .dark\.border-indigo, .dark .dark\.focus\.border-indigo:focus, .dark .group:hover .dark\.group-hover\.border-indigo, .dark .dark\.hover\.border-indigo:hover, .focus-within\.border-indigo:focus-within, .focus\.border-indigo:focus, .group:hover .group-hover\.border-indigo, .hover\.border-indigo:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--indigo-hue), var(--indigo-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-blue, .focus-within\.border-blue:focus-within, .focus\.border-blue:focus, .group:hover .group-hover\.border-blue, .hover\.border-blue:hover {
+.border-blue, .dark .dark\.focus-within\.border-blue:focus-within, .dark .dark\.border-blue, .dark .dark\.focus\.border-blue:focus, .dark .group:hover .dark\.group-hover\.border-blue, .dark .dark\.hover\.border-blue:hover, .focus-within\.border-blue:focus-within, .focus\.border-blue:focus, .group:hover .group-hover\.border-blue, .hover\.border-blue:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--blue-hue), var(--blue-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-sky, .focus-within\.border-sky:focus-within, .focus\.border-sky:focus, .group:hover .group-hover\.border-sky, .hover\.border-sky:hover {
+.border-sky, .dark .dark\.focus-within\.border-sky:focus-within, .dark .dark\.border-sky, .dark .dark\.focus\.border-sky:focus, .dark .group:hover .dark\.group-hover\.border-sky, .dark .dark\.hover\.border-sky:hover, .focus-within\.border-sky:focus-within, .focus\.border-sky:focus, .group:hover .group-hover\.border-sky, .hover\.border-sky:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--sky-hue), var(--sky-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-cyan, .focus-within\.border-cyan:focus-within, .focus\.border-cyan:focus, .group:hover .group-hover\.border-cyan, .hover\.border-cyan:hover {
+.border-cyan, .dark .dark\.focus-within\.border-cyan:focus-within, .dark .dark\.border-cyan, .dark .dark\.focus\.border-cyan:focus, .dark .group:hover .dark\.group-hover\.border-cyan, .dark .dark\.hover\.border-cyan:hover, .focus-within\.border-cyan:focus-within, .focus\.border-cyan:focus, .group:hover .group-hover\.border-cyan, .hover\.border-cyan:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--cyan-hue), var(--cyan-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-teal, .focus-within\.border-teal:focus-within, .focus\.border-teal:focus, .group:hover .group-hover\.border-teal, .hover\.border-teal:hover {
+.border-teal, .dark .dark\.focus-within\.border-teal:focus-within, .dark .dark\.border-teal, .dark .dark\.focus\.border-teal:focus, .dark .group:hover .dark\.group-hover\.border-teal, .dark .dark\.hover\.border-teal:hover, .focus-within\.border-teal:focus-within, .focus\.border-teal:focus, .group:hover .group-hover\.border-teal, .hover\.border-teal:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--teal-hue), var(--teal-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-mint, .focus-within\.border-mint:focus-within, .focus\.border-mint:focus, .group:hover .group-hover\.border-mint, .hover\.border-mint:hover {
+.border-mint, .dark .dark\.focus-within\.border-mint:focus-within, .dark .dark\.border-mint, .dark .dark\.focus\.border-mint:focus, .dark .group:hover .dark\.group-hover\.border-mint, .dark .dark\.hover\.border-mint:hover, .focus-within\.border-mint:focus-within, .focus\.border-mint:focus, .group:hover .group-hover\.border-mint, .hover\.border-mint:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--mint-hue), var(--mint-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-green, .focus-within\.border-green:focus-within, .focus\.border-green:focus, .group:hover .group-hover\.border-green, .hover\.border-green:hover {
+.border-green, .dark .dark\.focus-within\.border-green:focus-within, .dark .dark\.border-green, .dark .dark\.focus\.border-green:focus, .dark .group:hover .dark\.group-hover\.border-green, .dark .dark\.hover\.border-green:hover, .focus-within\.border-green:focus-within, .focus\.border-green:focus, .group:hover .group-hover\.border-green, .hover\.border-green:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--green-hue), var(--green-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-lime, .focus-within\.border-lime:focus-within, .focus\.border-lime:focus, .group:hover .group-hover\.border-lime, .hover\.border-lime:hover {
+.border-lime, .dark .dark\.focus-within\.border-lime:focus-within, .dark .dark\.border-lime, .dark .dark\.focus\.border-lime:focus, .dark .group:hover .dark\.group-hover\.border-lime, .dark .dark\.hover\.border-lime:hover, .focus-within\.border-lime:focus-within, .focus\.border-lime:focus, .group:hover .group-hover\.border-lime, .hover\.border-lime:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--lime-hue), var(--lime-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-olive, .focus-within\.border-olive:focus-within, .focus\.border-olive:focus, .group:hover .group-hover\.border-olive, .hover\.border-olive:hover {
+.border-olive, .dark .dark\.focus-within\.border-olive:focus-within, .dark .dark\.border-olive, .dark .dark\.focus\.border-olive:focus, .dark .group:hover .dark\.group-hover\.border-olive, .dark .dark\.hover\.border-olive:hover, .focus-within\.border-olive:focus-within, .focus\.border-olive:focus, .group:hover .group-hover\.border-olive, .hover\.border-olive:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--olive-hue), var(--olive-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-lemon, .focus-within\.border-lemon:focus-within, .focus\.border-lemon:focus, .group:hover .group-hover\.border-lemon, .hover\.border-lemon:hover {
+.border-lemon, .dark .dark\.focus-within\.border-lemon:focus-within, .dark .dark\.border-lemon, .dark .dark\.focus\.border-lemon:focus, .dark .group:hover .dark\.group-hover\.border-lemon, .dark .dark\.hover\.border-lemon:hover, .focus-within\.border-lemon:focus-within, .focus\.border-lemon:focus, .group:hover .group-hover\.border-lemon, .hover\.border-lemon:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--lemon-hue), var(--lemon-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-yellow, .focus-within\.border-yellow:focus-within, .focus\.border-yellow:focus, .group:hover .group-hover\.border-yellow, .hover\.border-yellow:hover {
+.border-yellow, .dark .dark\.focus-within\.border-yellow:focus-within, .dark .dark\.border-yellow, .dark .dark\.focus\.border-yellow:focus, .dark .group:hover .dark\.group-hover\.border-yellow, .dark .dark\.hover\.border-yellow:hover, .focus-within\.border-yellow:focus-within, .focus\.border-yellow:focus, .group:hover .group-hover\.border-yellow, .hover\.border-yellow:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--yellow-hue), var(--yellow-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-orange, .focus-within\.border-orange:focus-within, .focus\.border-orange:focus, .group:hover .group-hover\.border-orange, .hover\.border-orange:hover {
+.border-orange, .dark .dark\.focus-within\.border-orange:focus-within, .dark .dark\.border-orange, .dark .dark\.focus\.border-orange:focus, .dark .group:hover .dark\.group-hover\.border-orange, .dark .dark\.hover\.border-orange:hover, .focus-within\.border-orange:focus-within, .focus\.border-orange:focus, .group:hover .group-hover\.border-orange, .hover\.border-orange:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--orange-hue), var(--orange-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.border-red, .focus-within\.border-red:focus-within, .focus\.border-red:focus, .group:hover .group-hover\.border-red, .hover\.border-red:hover {
+.border-red, .dark .dark\.focus-within\.border-red:focus-within, .dark .dark\.border-red, .dark .dark\.focus\.border-red:focus, .dark .group:hover .dark\.group-hover\.border-red, .dark .dark\.hover\.border-red:hover, .focus-within\.border-red:focus-within, .focus\.border-red:focus, .group:hover .group-hover\.border-red, .hover\.border-red:hover {
   --border-ltn: 50%;
   --border-opacity: 1;
   border-color: hsla(var(--red-hue), var(--red-sat), var(--border-ltn), var(--border-opacity));
 }
 
-.color-current, .group:focus .group-focus\.color-current, .focus\.color-current:focus, .group:hover .group-hover\.color-current, .hover\.color-current:hover {
+.color-current, .group:focus .dark\.group-focus\.color-current, .dark .dark\.color-current, .dark .dark\.focus\.color-current:focus, .dark .group:hover .dark\.group-hover\.color-current, .dark .dark\.hover\.color-current:hover, .group:focus .group-focus\.color-current, .focus\.color-current:focus, .group:hover .group-hover\.color-current, .hover\.color-current:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: currentColor;
 }
 
-.color-transparent, .group:focus .group-focus\.color-transparent, .focus\.color-transparent:focus, .group:hover .group-hover\.color-transparent, .hover\.color-transparent:hover {
+.color-transparent, .group:focus .dark\.group-focus\.color-transparent, .dark .dark\.color-transparent, .dark .dark\.focus\.color-transparent:focus, .dark .group:hover .dark\.group-hover\.color-transparent, .dark .dark\.hover\.color-transparent:hover, .group:focus .group-focus\.color-transparent, .focus\.color-transparent:focus, .group:hover .group-hover\.color-transparent, .hover\.color-transparent:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: transparent;
 }
 
-.color-tertiary, .group:focus .group-focus\.color-tertiary, .focus\.color-tertiary:focus, .group:hover .group-hover\.color-tertiary, .hover\.color-tertiary:hover {
+.color-tertiary, .group:focus .dark\.group-focus\.color-tertiary, .dark .dark\.color-tertiary, .dark .dark\.focus\.color-tertiary:focus, .dark .group:hover .dark\.group-hover\.color-tertiary, .dark .dark\.hover\.color-tertiary:hover, .group:focus .group-focus\.color-tertiary, .focus\.color-tertiary:focus, .group:hover .group-hover\.color-tertiary, .hover\.color-tertiary:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--tertiary-hue), var(--tertiary-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-secondary, .group:focus .group-focus\.color-secondary, .focus\.color-secondary:focus, .group:hover .group-hover\.color-secondary, .hover\.color-secondary:hover {
+.color-secondary, .group:focus .dark\.group-focus\.color-secondary, .dark .dark\.color-secondary, .dark .dark\.focus\.color-secondary:focus, .dark .group:hover .dark\.group-hover\.color-secondary, .dark .dark\.hover\.color-secondary:hover, .group:focus .group-focus\.color-secondary, .focus\.color-secondary:focus, .group:hover .group-hover\.color-secondary, .hover\.color-secondary:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--secondary-hue), var(--secondary-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-primary, .group:focus .group-focus\.color-primary, .focus\.color-primary:focus, .group:hover .group-hover\.color-primary, .hover\.color-primary:hover {
+.color-primary, .group:focus .dark\.group-focus\.color-primary, .dark .dark\.color-primary, .dark .dark\.focus\.color-primary:focus, .dark .group:hover .dark\.group-hover\.color-primary, .dark .dark\.hover\.color-primary:hover, .group:focus .group-focus\.color-primary, .focus\.color-primary:focus, .group:hover .group-hover\.color-primary, .hover\.color-primary:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--primary-hue), var(--primary-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-warm-gray, .group:focus .group-focus\.color-warm-gray, .focus\.color-warm-gray:focus, .group:hover .group-hover\.color-warm-gray, .hover\.color-warm-gray:hover {
+.color-warm-gray, .group:focus .dark\.group-focus\.color-warm-gray, .dark .dark\.color-warm-gray, .dark .dark\.focus\.color-warm-gray:focus, .dark .group:hover .dark\.group-hover\.color-warm-gray, .dark .dark\.hover\.color-warm-gray:hover, .group:focus .group-focus\.color-warm-gray, .focus\.color-warm-gray:focus, .group:hover .group-hover\.color-warm-gray, .hover\.color-warm-gray:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--warm-gray-hue), var(--warm-gray-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-gray, .group:focus .group-focus\.color-gray, .focus\.color-gray:focus, .group:hover .group-hover\.color-gray, .hover\.color-gray:hover {
+.color-gray, .group:focus .dark\.group-focus\.color-gray, .dark .dark\.color-gray, .dark .dark\.focus\.color-gray:focus, .dark .group:hover .dark\.group-hover\.color-gray, .dark .dark\.hover\.color-gray:hover, .group:focus .group-focus\.color-gray, .focus\.color-gray:focus, .group:hover .group-hover\.color-gray, .hover\.color-gray:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--gray-hue), var(--gray-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-cool-gray, .group:focus .group-focus\.color-cool-gray, .focus\.color-cool-gray:focus, .group:hover .group-hover\.color-cool-gray, .hover\.color-cool-gray:hover {
+.color-cool-gray, .group:focus .dark\.group-focus\.color-cool-gray, .dark .dark\.color-cool-gray, .dark .dark\.focus\.color-cool-gray:focus, .dark .group:hover .dark\.group-hover\.color-cool-gray, .dark .dark\.hover\.color-cool-gray:hover, .group:focus .group-focus\.color-cool-gray, .focus\.color-cool-gray:focus, .group:hover .group-hover\.color-cool-gray, .hover\.color-cool-gray:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-black, .group:focus .group-focus\.color-black, .focus\.color-black:focus, .group:hover .group-hover\.color-black, .hover\.color-black:hover {
+.color-black, .group:focus .dark\.group-focus\.color-black, .dark .dark\.color-black, .dark .dark\.focus\.color-black:focus, .dark .group:hover .dark\.group-hover\.color-black, .dark .dark\.hover\.color-black:hover, .group:focus .group-focus\.color-black, .focus\.color-black:focus, .group:hover .group-hover\.color-black, .hover\.color-black:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--black-hue), var(--black-sat), 0%, var(--color-opacity));
 }
 
-.color-white, .group:focus .group-focus\.color-white, .focus\.color-white:focus, .group:hover .group-hover\.color-white, .hover\.color-white:hover {
+.color-white, .group:focus .dark\.group-focus\.color-white, .dark .dark\.color-white, .dark .dark\.focus\.color-white:focus, .dark .group:hover .dark\.group-hover\.color-white, .dark .dark\.hover\.color-white:hover, .group:focus .group-focus\.color-white, .focus\.color-white:focus, .group:hover .group-hover\.color-white, .hover\.color-white:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--white-hue), var(--white-sat), 100%, var(--color-opacity));
 }
 
-.color-crimson, .group:focus .group-focus\.color-crimson, .focus\.color-crimson:focus, .group:hover .group-hover\.color-crimson, .hover\.color-crimson:hover {
+.color-crimson, .group:focus .dark\.group-focus\.color-crimson, .dark .dark\.color-crimson, .dark .dark\.focus\.color-crimson:focus, .dark .group:hover .dark\.group-hover\.color-crimson, .dark .dark\.hover\.color-crimson:hover, .group:focus .group-focus\.color-crimson, .focus\.color-crimson:focus, .group:hover .group-hover\.color-crimson, .hover\.color-crimson:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--crimson-hue), var(--crimson-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-pink, .group:focus .group-focus\.color-pink, .focus\.color-pink:focus, .group:hover .group-hover\.color-pink, .hover\.color-pink:hover {
+.color-pink, .group:focus .dark\.group-focus\.color-pink, .dark .dark\.color-pink, .dark .dark\.focus\.color-pink:focus, .dark .group:hover .dark\.group-hover\.color-pink, .dark .dark\.hover\.color-pink:hover, .group:focus .group-focus\.color-pink, .focus\.color-pink:focus, .group:hover .group-hover\.color-pink, .hover\.color-pink:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--pink-hue), var(--pink-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-magenta, .group:focus .group-focus\.color-magenta, .focus\.color-magenta:focus, .group:hover .group-hover\.color-magenta, .hover\.color-magenta:hover {
+.color-magenta, .group:focus .dark\.group-focus\.color-magenta, .dark .dark\.color-magenta, .dark .dark\.focus\.color-magenta:focus, .dark .group:hover .dark\.group-hover\.color-magenta, .dark .dark\.hover\.color-magenta:hover, .group:focus .group-focus\.color-magenta, .focus\.color-magenta:focus, .group:hover .group-hover\.color-magenta, .hover\.color-magenta:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--magenta-hue), var(--magenta-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-orchid, .group:focus .group-focus\.color-orchid, .focus\.color-orchid:focus, .group:hover .group-hover\.color-orchid, .hover\.color-orchid:hover {
+.color-orchid, .group:focus .dark\.group-focus\.color-orchid, .dark .dark\.color-orchid, .dark .dark\.focus\.color-orchid:focus, .dark .group:hover .dark\.group-hover\.color-orchid, .dark .dark\.hover\.color-orchid:hover, .group:focus .group-focus\.color-orchid, .focus\.color-orchid:focus, .group:hover .group-hover\.color-orchid, .hover\.color-orchid:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--orchid-hue), var(--orchid-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-purple, .group:focus .group-focus\.color-purple, .focus\.color-purple:focus, .group:hover .group-hover\.color-purple, .hover\.color-purple:hover {
+.color-purple, .group:focus .dark\.group-focus\.color-purple, .dark .dark\.color-purple, .dark .dark\.focus\.color-purple:focus, .dark .group:hover .dark\.group-hover\.color-purple, .dark .dark\.hover\.color-purple:hover, .group:focus .group-focus\.color-purple, .focus\.color-purple:focus, .group:hover .group-hover\.color-purple, .hover\.color-purple:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--purple-hue), var(--purple-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-indigo, .group:focus .group-focus\.color-indigo, .focus\.color-indigo:focus, .group:hover .group-hover\.color-indigo, .hover\.color-indigo:hover {
+.color-indigo, .group:focus .dark\.group-focus\.color-indigo, .dark .dark\.color-indigo, .dark .dark\.focus\.color-indigo:focus, .dark .group:hover .dark\.group-hover\.color-indigo, .dark .dark\.hover\.color-indigo:hover, .group:focus .group-focus\.color-indigo, .focus\.color-indigo:focus, .group:hover .group-hover\.color-indigo, .hover\.color-indigo:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--indigo-hue), var(--indigo-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-blue, .group:focus .group-focus\.color-blue, .focus\.color-blue:focus, .group:hover .group-hover\.color-blue, .hover\.color-blue:hover {
+.color-blue, .group:focus .dark\.group-focus\.color-blue, .dark .dark\.color-blue, .dark .dark\.focus\.color-blue:focus, .dark .group:hover .dark\.group-hover\.color-blue, .dark .dark\.hover\.color-blue:hover, .group:focus .group-focus\.color-blue, .focus\.color-blue:focus, .group:hover .group-hover\.color-blue, .hover\.color-blue:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--blue-hue), var(--blue-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-sky, .group:focus .group-focus\.color-sky, .focus\.color-sky:focus, .group:hover .group-hover\.color-sky, .hover\.color-sky:hover {
+.color-sky, .group:focus .dark\.group-focus\.color-sky, .dark .dark\.color-sky, .dark .dark\.focus\.color-sky:focus, .dark .group:hover .dark\.group-hover\.color-sky, .dark .dark\.hover\.color-sky:hover, .group:focus .group-focus\.color-sky, .focus\.color-sky:focus, .group:hover .group-hover\.color-sky, .hover\.color-sky:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--sky-hue), var(--sky-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-cyan, .group:focus .group-focus\.color-cyan, .focus\.color-cyan:focus, .group:hover .group-hover\.color-cyan, .hover\.color-cyan:hover {
+.color-cyan, .group:focus .dark\.group-focus\.color-cyan, .dark .dark\.color-cyan, .dark .dark\.focus\.color-cyan:focus, .dark .group:hover .dark\.group-hover\.color-cyan, .dark .dark\.hover\.color-cyan:hover, .group:focus .group-focus\.color-cyan, .focus\.color-cyan:focus, .group:hover .group-hover\.color-cyan, .hover\.color-cyan:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--cyan-hue), var(--cyan-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-teal, .group:focus .group-focus\.color-teal, .focus\.color-teal:focus, .group:hover .group-hover\.color-teal, .hover\.color-teal:hover {
+.color-teal, .group:focus .dark\.group-focus\.color-teal, .dark .dark\.color-teal, .dark .dark\.focus\.color-teal:focus, .dark .group:hover .dark\.group-hover\.color-teal, .dark .dark\.hover\.color-teal:hover, .group:focus .group-focus\.color-teal, .focus\.color-teal:focus, .group:hover .group-hover\.color-teal, .hover\.color-teal:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--teal-hue), var(--teal-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-mint, .group:focus .group-focus\.color-mint, .focus\.color-mint:focus, .group:hover .group-hover\.color-mint, .hover\.color-mint:hover {
+.color-mint, .group:focus .dark\.group-focus\.color-mint, .dark .dark\.color-mint, .dark .dark\.focus\.color-mint:focus, .dark .group:hover .dark\.group-hover\.color-mint, .dark .dark\.hover\.color-mint:hover, .group:focus .group-focus\.color-mint, .focus\.color-mint:focus, .group:hover .group-hover\.color-mint, .hover\.color-mint:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--mint-hue), var(--mint-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-green, .group:focus .group-focus\.color-green, .focus\.color-green:focus, .group:hover .group-hover\.color-green, .hover\.color-green:hover {
+.color-green, .group:focus .dark\.group-focus\.color-green, .dark .dark\.color-green, .dark .dark\.focus\.color-green:focus, .dark .group:hover .dark\.group-hover\.color-green, .dark .dark\.hover\.color-green:hover, .group:focus .group-focus\.color-green, .focus\.color-green:focus, .group:hover .group-hover\.color-green, .hover\.color-green:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--green-hue), var(--green-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-lime, .group:focus .group-focus\.color-lime, .focus\.color-lime:focus, .group:hover .group-hover\.color-lime, .hover\.color-lime:hover {
+.color-lime, .group:focus .dark\.group-focus\.color-lime, .dark .dark\.color-lime, .dark .dark\.focus\.color-lime:focus, .dark .group:hover .dark\.group-hover\.color-lime, .dark .dark\.hover\.color-lime:hover, .group:focus .group-focus\.color-lime, .focus\.color-lime:focus, .group:hover .group-hover\.color-lime, .hover\.color-lime:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--lime-hue), var(--lime-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-olive, .group:focus .group-focus\.color-olive, .focus\.color-olive:focus, .group:hover .group-hover\.color-olive, .hover\.color-olive:hover {
+.color-olive, .group:focus .dark\.group-focus\.color-olive, .dark .dark\.color-olive, .dark .dark\.focus\.color-olive:focus, .dark .group:hover .dark\.group-hover\.color-olive, .dark .dark\.hover\.color-olive:hover, .group:focus .group-focus\.color-olive, .focus\.color-olive:focus, .group:hover .group-hover\.color-olive, .hover\.color-olive:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--olive-hue), var(--olive-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-lemon, .group:focus .group-focus\.color-lemon, .focus\.color-lemon:focus, .group:hover .group-hover\.color-lemon, .hover\.color-lemon:hover {
+.color-lemon, .group:focus .dark\.group-focus\.color-lemon, .dark .dark\.color-lemon, .dark .dark\.focus\.color-lemon:focus, .dark .group:hover .dark\.group-hover\.color-lemon, .dark .dark\.hover\.color-lemon:hover, .group:focus .group-focus\.color-lemon, .focus\.color-lemon:focus, .group:hover .group-hover\.color-lemon, .hover\.color-lemon:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--lemon-hue), var(--lemon-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-yellow, .group:focus .group-focus\.color-yellow, .focus\.color-yellow:focus, .group:hover .group-hover\.color-yellow, .hover\.color-yellow:hover {
+.color-yellow, .group:focus .dark\.group-focus\.color-yellow, .dark .dark\.color-yellow, .dark .dark\.focus\.color-yellow:focus, .dark .group:hover .dark\.group-hover\.color-yellow, .dark .dark\.hover\.color-yellow:hover, .group:focus .group-focus\.color-yellow, .focus\.color-yellow:focus, .group:hover .group-hover\.color-yellow, .hover\.color-yellow:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--yellow-hue), var(--yellow-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-orange, .group:focus .group-focus\.color-orange, .focus\.color-orange:focus, .group:hover .group-hover\.color-orange, .hover\.color-orange:hover {
+.color-orange, .group:focus .dark\.group-focus\.color-orange, .dark .dark\.color-orange, .dark .dark\.focus\.color-orange:focus, .dark .group:hover .dark\.group-hover\.color-orange, .dark .dark\.hover\.color-orange:hover, .group:focus .group-focus\.color-orange, .focus\.color-orange:focus, .group:hover .group-hover\.color-orange, .hover\.color-orange:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--orange-hue), var(--orange-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.color-red, .group:focus .group-focus\.color-red, .focus\.color-red:focus, .group:hover .group-hover\.color-red, .hover\.color-red:hover {
+.color-red, .group:focus .dark\.group-focus\.color-red, .dark .dark\.color-red, .dark .dark\.focus\.color-red:focus, .dark .group:hover .dark\.group-hover\.color-red, .dark .dark\.hover\.color-red:hover, .group:focus .group-focus\.color-red, .focus\.color-red:focus, .group:hover .group-hover\.color-red, .hover\.color-red:hover {
   --color-ltn: 50%;
   --color-opacity: 1;
   color: hsla(var(--red-hue), var(--red-sat), var(--color-ltn), var(--color-opacity));
 }
 
-.bg-shade-base, .active\.bg-shade-base:active, .focus\.bg-shade-base:focus, .group:hover .group-hover\.bg-shade-base, .hover\.bg-shade-base:hover {
+.bg-shade-base, .dark .dark\.active\.bg-shade-base:active, .dark .dark\.bg-shade-base, .dark .dark\.focus\.bg-shade-base:focus, .dark .group:hover .dark\.group-hover\.bg-shade-base, .dark .dark\.hover\.bg-shade-base:hover, .active\.bg-shade-base:active, .focus\.bg-shade-base:focus, .group:hover .group-hover\.bg-shade-base, .hover\.bg-shade-base:hover {
   --bg-ltn: var(--shade-base);
 }
 
-.bg-shade-100, .active\.bg-shade-100:active, .focus\.bg-shade-100:focus, .group:hover .group-hover\.bg-shade-100, .hover\.bg-shade-100:hover {
+.bg-shade-100, .dark .dark\.active\.bg-shade-100:active, .dark .dark\.bg-shade-100, .dark .dark\.focus\.bg-shade-100:focus, .dark .group:hover .dark\.group-hover\.bg-shade-100, .dark .dark\.hover\.bg-shade-100:hover, .active\.bg-shade-100:active, .focus\.bg-shade-100:focus, .group:hover .group-hover\.bg-shade-100, .hover\.bg-shade-100:hover {
   --bg-ltn: var(--shade-100);
 }
 
-.bg-shade-200, .active\.bg-shade-200:active, .focus\.bg-shade-200:focus, .group:hover .group-hover\.bg-shade-200, .hover\.bg-shade-200:hover {
+.bg-shade-200, .dark .dark\.active\.bg-shade-200:active, .dark .dark\.bg-shade-200, .dark .dark\.focus\.bg-shade-200:focus, .dark .group:hover .dark\.group-hover\.bg-shade-200, .dark .dark\.hover\.bg-shade-200:hover, .active\.bg-shade-200:active, .focus\.bg-shade-200:focus, .group:hover .group-hover\.bg-shade-200, .hover\.bg-shade-200:hover {
   --bg-ltn: var(--shade-200);
 }
 
-.bg-shade-300, .active\.bg-shade-300:active, .focus\.bg-shade-300:focus, .group:hover .group-hover\.bg-shade-300, .hover\.bg-shade-300:hover {
+.bg-shade-300, .dark .dark\.active\.bg-shade-300:active, .dark .dark\.bg-shade-300, .dark .dark\.focus\.bg-shade-300:focus, .dark .group:hover .dark\.group-hover\.bg-shade-300, .dark .dark\.hover\.bg-shade-300:hover, .active\.bg-shade-300:active, .focus\.bg-shade-300:focus, .group:hover .group-hover\.bg-shade-300, .hover\.bg-shade-300:hover {
   --bg-ltn: var(--shade-300);
 }
 
-.bg-shade-400, .active\.bg-shade-400:active, .focus\.bg-shade-400:focus, .group:hover .group-hover\.bg-shade-400, .hover\.bg-shade-400:hover {
+.bg-shade-400, .dark .dark\.active\.bg-shade-400:active, .dark .dark\.bg-shade-400, .dark .dark\.focus\.bg-shade-400:focus, .dark .group:hover .dark\.group-hover\.bg-shade-400, .dark .dark\.hover\.bg-shade-400:hover, .active\.bg-shade-400:active, .focus\.bg-shade-400:focus, .group:hover .group-hover\.bg-shade-400, .hover\.bg-shade-400:hover {
   --bg-ltn: var(--shade-400);
 }
 
-.bg-shade-500, .active\.bg-shade-500:active, .focus\.bg-shade-500:focus, .group:hover .group-hover\.bg-shade-500, .hover\.bg-shade-500:hover {
+.bg-shade-500, .dark .dark\.active\.bg-shade-500:active, .dark .dark\.bg-shade-500, .dark .dark\.focus\.bg-shade-500:focus, .dark .group:hover .dark\.group-hover\.bg-shade-500, .dark .dark\.hover\.bg-shade-500:hover, .active\.bg-shade-500:active, .focus\.bg-shade-500:focus, .group:hover .group-hover\.bg-shade-500, .hover\.bg-shade-500:hover {
   --bg-ltn: var(--shade-500);
 }
 
-.bg-shade-600, .active\.bg-shade-600:active, .focus\.bg-shade-600:focus, .group:hover .group-hover\.bg-shade-600, .hover\.bg-shade-600:hover {
+.bg-shade-600, .dark .dark\.active\.bg-shade-600:active, .dark .dark\.bg-shade-600, .dark .dark\.focus\.bg-shade-600:focus, .dark .group:hover .dark\.group-hover\.bg-shade-600, .dark .dark\.hover\.bg-shade-600:hover, .active\.bg-shade-600:active, .focus\.bg-shade-600:focus, .group:hover .group-hover\.bg-shade-600, .hover\.bg-shade-600:hover {
   --bg-ltn: var(--shade-600);
 }
 
-.bg-shade-700, .active\.bg-shade-700:active, .focus\.bg-shade-700:focus, .group:hover .group-hover\.bg-shade-700, .hover\.bg-shade-700:hover {
+.bg-shade-700, .dark .dark\.active\.bg-shade-700:active, .dark .dark\.bg-shade-700, .dark .dark\.focus\.bg-shade-700:focus, .dark .group:hover .dark\.group-hover\.bg-shade-700, .dark .dark\.hover\.bg-shade-700:hover, .active\.bg-shade-700:active, .focus\.bg-shade-700:focus, .group:hover .group-hover\.bg-shade-700, .hover\.bg-shade-700:hover {
   --bg-ltn: var(--shade-700);
 }
 
-.bg-shade-800, .active\.bg-shade-800:active, .focus\.bg-shade-800:focus, .group:hover .group-hover\.bg-shade-800, .hover\.bg-shade-800:hover {
+.bg-shade-800, .dark .dark\.active\.bg-shade-800:active, .dark .dark\.bg-shade-800, .dark .dark\.focus\.bg-shade-800:focus, .dark .group:hover .dark\.group-hover\.bg-shade-800, .dark .dark\.hover\.bg-shade-800:hover, .active\.bg-shade-800:active, .focus\.bg-shade-800:focus, .group:hover .group-hover\.bg-shade-800, .hover\.bg-shade-800:hover {
   --bg-ltn: var(--shade-800);
 }
 
-.bg-shade-900, .active\.bg-shade-900:active, .focus\.bg-shade-900:focus, .group:hover .group-hover\.bg-shade-900, .hover\.bg-shade-900:hover {
+.bg-shade-900, .dark .dark\.active\.bg-shade-900:active, .dark .dark\.bg-shade-900, .dark .dark\.focus\.bg-shade-900:focus, .dark .group:hover .dark\.group-hover\.bg-shade-900, .dark .dark\.hover\.bg-shade-900:hover, .active\.bg-shade-900:active, .focus\.bg-shade-900:focus, .group:hover .group-hover\.bg-shade-900, .hover\.bg-shade-900:hover {
   --bg-ltn: var(--shade-900);
 }
 
-.bg-shade-full, .active\.bg-shade-full:active, .focus\.bg-shade-full:focus, .group:hover .group-hover\.bg-shade-full, .hover\.bg-shade-full:hover {
+.bg-shade-full, .dark .dark\.active\.bg-shade-full:active, .dark .dark\.bg-shade-full, .dark .dark\.focus\.bg-shade-full:focus, .dark .group:hover .dark\.group-hover\.bg-shade-full, .dark .dark\.hover\.bg-shade-full:hover, .active\.bg-shade-full:active, .focus\.bg-shade-full:focus, .group:hover .group-hover\.bg-shade-full, .hover\.bg-shade-full:hover {
   --bg-ltn: var(--shade-full);
 }
 
@@ -1555,319 +1555,319 @@ CUSTOM PROPERTIES
   display: flow-root;
 }
 
-.placeholder-current::placeholder, .focus\.placeholder-current:focus::placeholder, .group:hover .group-hover\.placeholder-current::placeholder, .hover\.placeholder-current:hover::placeholder {
+.placeholder-current::placeholder, .dark .dark\.placeholder-current::placeholder, .dark .dark\.focus\.placeholder-current:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-current::placeholder, .dark .dark\.hover\.placeholder-current:hover::placeholder, .focus\.placeholder-current:focus::placeholder, .group:hover .group-hover\.placeholder-current::placeholder, .hover\.placeholder-current:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: currentColor;
 }
 
-.placeholder-transparent::placeholder, .focus\.placeholder-transparent:focus::placeholder, .group:hover .group-hover\.placeholder-transparent::placeholder, .hover\.placeholder-transparent:hover::placeholder {
+.placeholder-transparent::placeholder, .dark .dark\.placeholder-transparent::placeholder, .dark .dark\.focus\.placeholder-transparent:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-transparent::placeholder, .dark .dark\.hover\.placeholder-transparent:hover::placeholder, .focus\.placeholder-transparent:focus::placeholder, .group:hover .group-hover\.placeholder-transparent::placeholder, .hover\.placeholder-transparent:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: transparent;
 }
 
-.placeholder-tertiary::placeholder, .focus\.placeholder-tertiary:focus::placeholder, .group:hover .group-hover\.placeholder-tertiary::placeholder, .hover\.placeholder-tertiary:hover::placeholder {
+.placeholder-tertiary::placeholder, .dark .dark\.placeholder-tertiary::placeholder, .dark .dark\.focus\.placeholder-tertiary:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tertiary::placeholder, .dark .dark\.hover\.placeholder-tertiary:hover::placeholder, .focus\.placeholder-tertiary:focus::placeholder, .group:hover .group-hover\.placeholder-tertiary::placeholder, .hover\.placeholder-tertiary:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--tertiary-hue), var(--tertiary-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-secondary::placeholder, .focus\.placeholder-secondary:focus::placeholder, .group:hover .group-hover\.placeholder-secondary::placeholder, .hover\.placeholder-secondary:hover::placeholder {
+.placeholder-secondary::placeholder, .dark .dark\.placeholder-secondary::placeholder, .dark .dark\.focus\.placeholder-secondary:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-secondary::placeholder, .dark .dark\.hover\.placeholder-secondary:hover::placeholder, .focus\.placeholder-secondary:focus::placeholder, .group:hover .group-hover\.placeholder-secondary::placeholder, .hover\.placeholder-secondary:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--secondary-hue), var(--secondary-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-primary::placeholder, .focus\.placeholder-primary:focus::placeholder, .group:hover .group-hover\.placeholder-primary::placeholder, .hover\.placeholder-primary:hover::placeholder {
+.placeholder-primary::placeholder, .dark .dark\.placeholder-primary::placeholder, .dark .dark\.focus\.placeholder-primary:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-primary::placeholder, .dark .dark\.hover\.placeholder-primary:hover::placeholder, .focus\.placeholder-primary:focus::placeholder, .group:hover .group-hover\.placeholder-primary::placeholder, .hover\.placeholder-primary:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--primary-hue), var(--primary-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-warm-gray::placeholder, .focus\.placeholder-warm-gray:focus::placeholder, .group:hover .group-hover\.placeholder-warm-gray::placeholder, .hover\.placeholder-warm-gray:hover::placeholder {
+.placeholder-warm-gray::placeholder, .dark .dark\.placeholder-warm-gray::placeholder, .dark .dark\.focus\.placeholder-warm-gray:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-warm-gray::placeholder, .dark .dark\.hover\.placeholder-warm-gray:hover::placeholder, .focus\.placeholder-warm-gray:focus::placeholder, .group:hover .group-hover\.placeholder-warm-gray::placeholder, .hover\.placeholder-warm-gray:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--warm-gray-hue), var(--warm-gray-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-gray::placeholder, .focus\.placeholder-gray:focus::placeholder, .group:hover .group-hover\.placeholder-gray::placeholder, .hover\.placeholder-gray:hover::placeholder {
+.placeholder-gray::placeholder, .dark .dark\.placeholder-gray::placeholder, .dark .dark\.focus\.placeholder-gray:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-gray::placeholder, .dark .dark\.hover\.placeholder-gray:hover::placeholder, .focus\.placeholder-gray:focus::placeholder, .group:hover .group-hover\.placeholder-gray::placeholder, .hover\.placeholder-gray:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--gray-hue), var(--gray-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-cool-gray::placeholder, .focus\.placeholder-cool-gray:focus::placeholder, .group:hover .group-hover\.placeholder-cool-gray::placeholder, .hover\.placeholder-cool-gray:hover::placeholder {
+.placeholder-cool-gray::placeholder, .dark .dark\.placeholder-cool-gray::placeholder, .dark .dark\.focus\.placeholder-cool-gray:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-cool-gray::placeholder, .dark .dark\.hover\.placeholder-cool-gray:hover::placeholder, .focus\.placeholder-cool-gray:focus::placeholder, .group:hover .group-hover\.placeholder-cool-gray::placeholder, .hover\.placeholder-cool-gray:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-black::placeholder, .focus\.placeholder-black:focus::placeholder, .group:hover .group-hover\.placeholder-black::placeholder, .hover\.placeholder-black:hover::placeholder {
+.placeholder-black::placeholder, .dark .dark\.placeholder-black::placeholder, .dark .dark\.focus\.placeholder-black:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-black::placeholder, .dark .dark\.hover\.placeholder-black:hover::placeholder, .focus\.placeholder-black:focus::placeholder, .group:hover .group-hover\.placeholder-black::placeholder, .hover\.placeholder-black:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--black-hue), var(--black-sat), 0%, var(--placeholder-opacity));
 }
 
-.placeholder-white::placeholder, .focus\.placeholder-white:focus::placeholder, .group:hover .group-hover\.placeholder-white::placeholder, .hover\.placeholder-white:hover::placeholder {
+.placeholder-white::placeholder, .dark .dark\.placeholder-white::placeholder, .dark .dark\.focus\.placeholder-white:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-white::placeholder, .dark .dark\.hover\.placeholder-white:hover::placeholder, .focus\.placeholder-white:focus::placeholder, .group:hover .group-hover\.placeholder-white::placeholder, .hover\.placeholder-white:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--white-hue), var(--white-sat), 100%, var(--placeholder-opacity));
 }
 
-.placeholder-crimson::placeholder, .focus\.placeholder-crimson:focus::placeholder, .group:hover .group-hover\.placeholder-crimson::placeholder, .hover\.placeholder-crimson:hover::placeholder {
+.placeholder-crimson::placeholder, .dark .dark\.placeholder-crimson::placeholder, .dark .dark\.focus\.placeholder-crimson:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-crimson::placeholder, .dark .dark\.hover\.placeholder-crimson:hover::placeholder, .focus\.placeholder-crimson:focus::placeholder, .group:hover .group-hover\.placeholder-crimson::placeholder, .hover\.placeholder-crimson:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--crimson-hue), var(--crimson-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-pink::placeholder, .focus\.placeholder-pink:focus::placeholder, .group:hover .group-hover\.placeholder-pink::placeholder, .hover\.placeholder-pink:hover::placeholder {
+.placeholder-pink::placeholder, .dark .dark\.placeholder-pink::placeholder, .dark .dark\.focus\.placeholder-pink:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-pink::placeholder, .dark .dark\.hover\.placeholder-pink:hover::placeholder, .focus\.placeholder-pink:focus::placeholder, .group:hover .group-hover\.placeholder-pink::placeholder, .hover\.placeholder-pink:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--pink-hue), var(--pink-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-magenta::placeholder, .focus\.placeholder-magenta:focus::placeholder, .group:hover .group-hover\.placeholder-magenta::placeholder, .hover\.placeholder-magenta:hover::placeholder {
+.placeholder-magenta::placeholder, .dark .dark\.placeholder-magenta::placeholder, .dark .dark\.focus\.placeholder-magenta:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-magenta::placeholder, .dark .dark\.hover\.placeholder-magenta:hover::placeholder, .focus\.placeholder-magenta:focus::placeholder, .group:hover .group-hover\.placeholder-magenta::placeholder, .hover\.placeholder-magenta:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--magenta-hue), var(--magenta-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-orchid::placeholder, .focus\.placeholder-orchid:focus::placeholder, .group:hover .group-hover\.placeholder-orchid::placeholder, .hover\.placeholder-orchid:hover::placeholder {
+.placeholder-orchid::placeholder, .dark .dark\.placeholder-orchid::placeholder, .dark .dark\.focus\.placeholder-orchid:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-orchid::placeholder, .dark .dark\.hover\.placeholder-orchid:hover::placeholder, .focus\.placeholder-orchid:focus::placeholder, .group:hover .group-hover\.placeholder-orchid::placeholder, .hover\.placeholder-orchid:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--orchid-hue), var(--orchid-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-purple::placeholder, .focus\.placeholder-purple:focus::placeholder, .group:hover .group-hover\.placeholder-purple::placeholder, .hover\.placeholder-purple:hover::placeholder {
+.placeholder-purple::placeholder, .dark .dark\.placeholder-purple::placeholder, .dark .dark\.focus\.placeholder-purple:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-purple::placeholder, .dark .dark\.hover\.placeholder-purple:hover::placeholder, .focus\.placeholder-purple:focus::placeholder, .group:hover .group-hover\.placeholder-purple::placeholder, .hover\.placeholder-purple:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--purple-hue), var(--purple-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-indigo::placeholder, .focus\.placeholder-indigo:focus::placeholder, .group:hover .group-hover\.placeholder-indigo::placeholder, .hover\.placeholder-indigo:hover::placeholder {
+.placeholder-indigo::placeholder, .dark .dark\.placeholder-indigo::placeholder, .dark .dark\.focus\.placeholder-indigo:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-indigo::placeholder, .dark .dark\.hover\.placeholder-indigo:hover::placeholder, .focus\.placeholder-indigo:focus::placeholder, .group:hover .group-hover\.placeholder-indigo::placeholder, .hover\.placeholder-indigo:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--indigo-hue), var(--indigo-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-blue::placeholder, .focus\.placeholder-blue:focus::placeholder, .group:hover .group-hover\.placeholder-blue::placeholder, .hover\.placeholder-blue:hover::placeholder {
+.placeholder-blue::placeholder, .dark .dark\.placeholder-blue::placeholder, .dark .dark\.focus\.placeholder-blue:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-blue::placeholder, .dark .dark\.hover\.placeholder-blue:hover::placeholder, .focus\.placeholder-blue:focus::placeholder, .group:hover .group-hover\.placeholder-blue::placeholder, .hover\.placeholder-blue:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--blue-hue), var(--blue-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-sky::placeholder, .focus\.placeholder-sky:focus::placeholder, .group:hover .group-hover\.placeholder-sky::placeholder, .hover\.placeholder-sky:hover::placeholder {
+.placeholder-sky::placeholder, .dark .dark\.placeholder-sky::placeholder, .dark .dark\.focus\.placeholder-sky:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-sky::placeholder, .dark .dark\.hover\.placeholder-sky:hover::placeholder, .focus\.placeholder-sky:focus::placeholder, .group:hover .group-hover\.placeholder-sky::placeholder, .hover\.placeholder-sky:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--sky-hue), var(--sky-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-cyan::placeholder, .focus\.placeholder-cyan:focus::placeholder, .group:hover .group-hover\.placeholder-cyan::placeholder, .hover\.placeholder-cyan:hover::placeholder {
+.placeholder-cyan::placeholder, .dark .dark\.placeholder-cyan::placeholder, .dark .dark\.focus\.placeholder-cyan:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-cyan::placeholder, .dark .dark\.hover\.placeholder-cyan:hover::placeholder, .focus\.placeholder-cyan:focus::placeholder, .group:hover .group-hover\.placeholder-cyan::placeholder, .hover\.placeholder-cyan:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--cyan-hue), var(--cyan-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-teal::placeholder, .focus\.placeholder-teal:focus::placeholder, .group:hover .group-hover\.placeholder-teal::placeholder, .hover\.placeholder-teal:hover::placeholder {
+.placeholder-teal::placeholder, .dark .dark\.placeholder-teal::placeholder, .dark .dark\.focus\.placeholder-teal:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-teal::placeholder, .dark .dark\.hover\.placeholder-teal:hover::placeholder, .focus\.placeholder-teal:focus::placeholder, .group:hover .group-hover\.placeholder-teal::placeholder, .hover\.placeholder-teal:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--teal-hue), var(--teal-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-mint::placeholder, .focus\.placeholder-mint:focus::placeholder, .group:hover .group-hover\.placeholder-mint::placeholder, .hover\.placeholder-mint:hover::placeholder {
+.placeholder-mint::placeholder, .dark .dark\.placeholder-mint::placeholder, .dark .dark\.focus\.placeholder-mint:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-mint::placeholder, .dark .dark\.hover\.placeholder-mint:hover::placeholder, .focus\.placeholder-mint:focus::placeholder, .group:hover .group-hover\.placeholder-mint::placeholder, .hover\.placeholder-mint:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--mint-hue), var(--mint-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-green::placeholder, .focus\.placeholder-green:focus::placeholder, .group:hover .group-hover\.placeholder-green::placeholder, .hover\.placeholder-green:hover::placeholder {
+.placeholder-green::placeholder, .dark .dark\.placeholder-green::placeholder, .dark .dark\.focus\.placeholder-green:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-green::placeholder, .dark .dark\.hover\.placeholder-green:hover::placeholder, .focus\.placeholder-green:focus::placeholder, .group:hover .group-hover\.placeholder-green::placeholder, .hover\.placeholder-green:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--green-hue), var(--green-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-lime::placeholder, .focus\.placeholder-lime:focus::placeholder, .group:hover .group-hover\.placeholder-lime::placeholder, .hover\.placeholder-lime:hover::placeholder {
+.placeholder-lime::placeholder, .dark .dark\.placeholder-lime::placeholder, .dark .dark\.focus\.placeholder-lime:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-lime::placeholder, .dark .dark\.hover\.placeholder-lime:hover::placeholder, .focus\.placeholder-lime:focus::placeholder, .group:hover .group-hover\.placeholder-lime::placeholder, .hover\.placeholder-lime:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--lime-hue), var(--lime-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-olive::placeholder, .focus\.placeholder-olive:focus::placeholder, .group:hover .group-hover\.placeholder-olive::placeholder, .hover\.placeholder-olive:hover::placeholder {
+.placeholder-olive::placeholder, .dark .dark\.placeholder-olive::placeholder, .dark .dark\.focus\.placeholder-olive:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-olive::placeholder, .dark .dark\.hover\.placeholder-olive:hover::placeholder, .focus\.placeholder-olive:focus::placeholder, .group:hover .group-hover\.placeholder-olive::placeholder, .hover\.placeholder-olive:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--olive-hue), var(--olive-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-lemon::placeholder, .focus\.placeholder-lemon:focus::placeholder, .group:hover .group-hover\.placeholder-lemon::placeholder, .hover\.placeholder-lemon:hover::placeholder {
+.placeholder-lemon::placeholder, .dark .dark\.placeholder-lemon::placeholder, .dark .dark\.focus\.placeholder-lemon:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-lemon::placeholder, .dark .dark\.hover\.placeholder-lemon:hover::placeholder, .focus\.placeholder-lemon:focus::placeholder, .group:hover .group-hover\.placeholder-lemon::placeholder, .hover\.placeholder-lemon:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--lemon-hue), var(--lemon-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-yellow::placeholder, .focus\.placeholder-yellow:focus::placeholder, .group:hover .group-hover\.placeholder-yellow::placeholder, .hover\.placeholder-yellow:hover::placeholder {
+.placeholder-yellow::placeholder, .dark .dark\.placeholder-yellow::placeholder, .dark .dark\.focus\.placeholder-yellow:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-yellow::placeholder, .dark .dark\.hover\.placeholder-yellow:hover::placeholder, .focus\.placeholder-yellow:focus::placeholder, .group:hover .group-hover\.placeholder-yellow::placeholder, .hover\.placeholder-yellow:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--yellow-hue), var(--yellow-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-orange::placeholder, .focus\.placeholder-orange:focus::placeholder, .group:hover .group-hover\.placeholder-orange::placeholder, .hover\.placeholder-orange:hover::placeholder {
+.placeholder-orange::placeholder, .dark .dark\.placeholder-orange::placeholder, .dark .dark\.focus\.placeholder-orange:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-orange::placeholder, .dark .dark\.hover\.placeholder-orange:hover::placeholder, .focus\.placeholder-orange:focus::placeholder, .group:hover .group-hover\.placeholder-orange::placeholder, .hover\.placeholder-orange:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--orange-hue), var(--orange-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-red::placeholder, .focus\.placeholder-red:focus::placeholder, .group:hover .group-hover\.placeholder-red::placeholder, .hover\.placeholder-red:hover::placeholder {
+.placeholder-red::placeholder, .dark .dark\.placeholder-red::placeholder, .dark .dark\.focus\.placeholder-red:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-red::placeholder, .dark .dark\.hover\.placeholder-red:hover::placeholder, .focus\.placeholder-red:focus::placeholder, .group:hover .group-hover\.placeholder-red::placeholder, .hover\.placeholder-red:hover::placeholder {
   --placeholder-ltn: 50%;
   --placeholder-opacity: 1;
   color: hsla(var(--red-hue), var(--red-sat), var(--placeholder-ltn), var(--placeholder-opacity));
 }
 
-.placeholder-opacity-0::placeholder, .focus\.placeholder-opacity-0:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-0::placeholder, .hover\.placeholder-opacity-0:hover::placeholder {
+.placeholder-opacity-0::placeholder, .dark .dark\.placeholder-opacity-0::placeholder, .dark .dark\.focus\.placeholder-opacity-0:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-0::placeholder, .dark .dark\.hover\.placeholder-opacity-0:hover::placeholder, .focus\.placeholder-opacity-0:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-0::placeholder, .hover\.placeholder-opacity-0:hover::placeholder {
   --placeholder-opacity: var(--opacity-0);
 }
 
-.placeholder-opacity-2::placeholder, .focus\.placeholder-opacity-2:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-2::placeholder, .hover\.placeholder-opacity-2:hover::placeholder {
+.placeholder-opacity-2::placeholder, .dark .dark\.placeholder-opacity-2::placeholder, .dark .dark\.focus\.placeholder-opacity-2:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-2::placeholder, .dark .dark\.hover\.placeholder-opacity-2:hover::placeholder, .focus\.placeholder-opacity-2:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-2::placeholder, .hover\.placeholder-opacity-2:hover::placeholder {
   --placeholder-opacity: var(--opacity-2);
 }
 
-.placeholder-opacity-4::placeholder, .focus\.placeholder-opacity-4:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-4::placeholder, .hover\.placeholder-opacity-4:hover::placeholder {
+.placeholder-opacity-4::placeholder, .dark .dark\.placeholder-opacity-4::placeholder, .dark .dark\.focus\.placeholder-opacity-4:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-4::placeholder, .dark .dark\.hover\.placeholder-opacity-4:hover::placeholder, .focus\.placeholder-opacity-4:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-4::placeholder, .hover\.placeholder-opacity-4:hover::placeholder {
   --placeholder-opacity: var(--opacity-4);
 }
 
-.placeholder-opacity-6::placeholder, .focus\.placeholder-opacity-6:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-6::placeholder, .hover\.placeholder-opacity-6:hover::placeholder {
+.placeholder-opacity-6::placeholder, .dark .dark\.placeholder-opacity-6::placeholder, .dark .dark\.focus\.placeholder-opacity-6:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-6::placeholder, .dark .dark\.hover\.placeholder-opacity-6:hover::placeholder, .focus\.placeholder-opacity-6:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-6::placeholder, .hover\.placeholder-opacity-6:hover::placeholder {
   --placeholder-opacity: var(--opacity-6);
 }
 
-.placeholder-opacity-8::placeholder, .focus\.placeholder-opacity-8:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-8::placeholder, .hover\.placeholder-opacity-8:hover::placeholder {
+.placeholder-opacity-8::placeholder, .dark .dark\.placeholder-opacity-8::placeholder, .dark .dark\.focus\.placeholder-opacity-8:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-8::placeholder, .dark .dark\.hover\.placeholder-opacity-8:hover::placeholder, .focus\.placeholder-opacity-8:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-8::placeholder, .hover\.placeholder-opacity-8:hover::placeholder {
   --placeholder-opacity: var(--opacity-8);
 }
 
-.placeholder-opacity-10::placeholder, .focus\.placeholder-opacity-10:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-10::placeholder, .hover\.placeholder-opacity-10:hover::placeholder {
+.placeholder-opacity-10::placeholder, .dark .dark\.placeholder-opacity-10::placeholder, .dark .dark\.focus\.placeholder-opacity-10:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-10::placeholder, .dark .dark\.hover\.placeholder-opacity-10:hover::placeholder, .focus\.placeholder-opacity-10:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-10::placeholder, .hover\.placeholder-opacity-10:hover::placeholder {
   --placeholder-opacity: var(--opacity-10);
 }
 
-.placeholder-opacity-20::placeholder, .focus\.placeholder-opacity-20:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-20::placeholder, .hover\.placeholder-opacity-20:hover::placeholder {
+.placeholder-opacity-20::placeholder, .dark .dark\.placeholder-opacity-20::placeholder, .dark .dark\.focus\.placeholder-opacity-20:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-20::placeholder, .dark .dark\.hover\.placeholder-opacity-20:hover::placeholder, .focus\.placeholder-opacity-20:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-20::placeholder, .hover\.placeholder-opacity-20:hover::placeholder {
   --placeholder-opacity: var(--opacity-20);
 }
 
-.placeholder-opacity-30::placeholder, .focus\.placeholder-opacity-30:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-30::placeholder, .hover\.placeholder-opacity-30:hover::placeholder {
+.placeholder-opacity-30::placeholder, .dark .dark\.placeholder-opacity-30::placeholder, .dark .dark\.focus\.placeholder-opacity-30:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-30::placeholder, .dark .dark\.hover\.placeholder-opacity-30:hover::placeholder, .focus\.placeholder-opacity-30:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-30::placeholder, .hover\.placeholder-opacity-30:hover::placeholder {
   --placeholder-opacity: var(--opacity-30);
 }
 
-.placeholder-opacity-40::placeholder, .focus\.placeholder-opacity-40:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-40::placeholder, .hover\.placeholder-opacity-40:hover::placeholder {
+.placeholder-opacity-40::placeholder, .dark .dark\.placeholder-opacity-40::placeholder, .dark .dark\.focus\.placeholder-opacity-40:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-40::placeholder, .dark .dark\.hover\.placeholder-opacity-40:hover::placeholder, .focus\.placeholder-opacity-40:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-40::placeholder, .hover\.placeholder-opacity-40:hover::placeholder {
   --placeholder-opacity: var(--opacity-40);
 }
 
-.placeholder-opacity-50::placeholder, .focus\.placeholder-opacity-50:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-50::placeholder, .hover\.placeholder-opacity-50:hover::placeholder {
+.placeholder-opacity-50::placeholder, .dark .dark\.placeholder-opacity-50::placeholder, .dark .dark\.focus\.placeholder-opacity-50:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-50::placeholder, .dark .dark\.hover\.placeholder-opacity-50:hover::placeholder, .focus\.placeholder-opacity-50:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-50::placeholder, .hover\.placeholder-opacity-50:hover::placeholder {
   --placeholder-opacity: var(--opacity-50);
 }
 
-.placeholder-opacity-60::placeholder, .focus\.placeholder-opacity-60:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-60::placeholder, .hover\.placeholder-opacity-60:hover::placeholder {
+.placeholder-opacity-60::placeholder, .dark .dark\.placeholder-opacity-60::placeholder, .dark .dark\.focus\.placeholder-opacity-60:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-60::placeholder, .dark .dark\.hover\.placeholder-opacity-60:hover::placeholder, .focus\.placeholder-opacity-60:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-60::placeholder, .hover\.placeholder-opacity-60:hover::placeholder {
   --placeholder-opacity: var(--opacity-60);
 }
 
-.placeholder-opacity-70::placeholder, .focus\.placeholder-opacity-70:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-70::placeholder, .hover\.placeholder-opacity-70:hover::placeholder {
+.placeholder-opacity-70::placeholder, .dark .dark\.placeholder-opacity-70::placeholder, .dark .dark\.focus\.placeholder-opacity-70:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-70::placeholder, .dark .dark\.hover\.placeholder-opacity-70:hover::placeholder, .focus\.placeholder-opacity-70:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-70::placeholder, .hover\.placeholder-opacity-70:hover::placeholder {
   --placeholder-opacity: var(--opacity-70);
 }
 
-.placeholder-opacity-80::placeholder, .focus\.placeholder-opacity-80:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-80::placeholder, .hover\.placeholder-opacity-80:hover::placeholder {
+.placeholder-opacity-80::placeholder, .dark .dark\.placeholder-opacity-80::placeholder, .dark .dark\.focus\.placeholder-opacity-80:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-80::placeholder, .dark .dark\.hover\.placeholder-opacity-80:hover::placeholder, .focus\.placeholder-opacity-80:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-80::placeholder, .hover\.placeholder-opacity-80:hover::placeholder {
   --placeholder-opacity: var(--opacity-80);
 }
 
-.placeholder-opacity-90::placeholder, .focus\.placeholder-opacity-90:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-90::placeholder, .hover\.placeholder-opacity-90:hover::placeholder {
+.placeholder-opacity-90::placeholder, .dark .dark\.placeholder-opacity-90::placeholder, .dark .dark\.focus\.placeholder-opacity-90:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-90::placeholder, .dark .dark\.hover\.placeholder-opacity-90:hover::placeholder, .focus\.placeholder-opacity-90:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-90::placeholder, .hover\.placeholder-opacity-90:hover::placeholder {
   --placeholder-opacity: var(--opacity-90);
 }
 
-.placeholder-opacity-100::placeholder, .focus\.placeholder-opacity-100:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-100::placeholder, .hover\.placeholder-opacity-100:hover::placeholder {
+.placeholder-opacity-100::placeholder, .dark .dark\.placeholder-opacity-100::placeholder, .dark .dark\.focus\.placeholder-opacity-100:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-opacity-100::placeholder, .dark .dark\.hover\.placeholder-opacity-100:hover::placeholder, .focus\.placeholder-opacity-100:focus::placeholder, .group:hover .group-hover\.placeholder-opacity-100::placeholder, .hover\.placeholder-opacity-100:hover::placeholder {
   --placeholder-opacity: var(--opacity-100);
 }
 
-.placeholder-shade-base::placeholder, .focus\.placeholder-shade-base:focus::placeholder, .group:hover .group-hover\.placeholder-shade-base::placeholder, .hover\.placeholder-shade-base:hover::placeholder {
+.placeholder-shade-base::placeholder, .dark .dark\.placeholder-shade-base::placeholder, .dark .dark\.focus\.placeholder-shade-base:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-shade-base::placeholder, .dark .dark\.hover\.placeholder-shade-base:hover::placeholder, .focus\.placeholder-shade-base:focus::placeholder, .group:hover .group-hover\.placeholder-shade-base::placeholder, .hover\.placeholder-shade-base:hover::placeholder {
   --placeholder-ltn: var(--shade-base);
 }
 
-.placeholder-shade-100::placeholder, .focus\.placeholder-shade-100:focus::placeholder, .group:hover .group-hover\.placeholder-shade-100::placeholder, .hover\.placeholder-shade-100:hover::placeholder {
+.placeholder-shade-100::placeholder, .dark .dark\.placeholder-shade-100::placeholder, .dark .dark\.focus\.placeholder-shade-100:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-shade-100::placeholder, .dark .dark\.hover\.placeholder-shade-100:hover::placeholder, .focus\.placeholder-shade-100:focus::placeholder, .group:hover .group-hover\.placeholder-shade-100::placeholder, .hover\.placeholder-shade-100:hover::placeholder {
   --placeholder-ltn: var(--shade-100);
 }
 
-.placeholder-shade-200::placeholder, .focus\.placeholder-shade-200:focus::placeholder, .group:hover .group-hover\.placeholder-shade-200::placeholder, .hover\.placeholder-shade-200:hover::placeholder {
+.placeholder-shade-200::placeholder, .dark .dark\.placeholder-shade-200::placeholder, .dark .dark\.focus\.placeholder-shade-200:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-shade-200::placeholder, .dark .dark\.hover\.placeholder-shade-200:hover::placeholder, .focus\.placeholder-shade-200:focus::placeholder, .group:hover .group-hover\.placeholder-shade-200::placeholder, .hover\.placeholder-shade-200:hover::placeholder {
   --placeholder-ltn: var(--shade-200);
 }
 
-.placeholder-shade-300::placeholder, .focus\.placeholder-shade-300:focus::placeholder, .group:hover .group-hover\.placeholder-shade-300::placeholder, .hover\.placeholder-shade-300:hover::placeholder {
+.placeholder-shade-300::placeholder, .dark .dark\.placeholder-shade-300::placeholder, .dark .dark\.focus\.placeholder-shade-300:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-shade-300::placeholder, .dark .dark\.hover\.placeholder-shade-300:hover::placeholder, .focus\.placeholder-shade-300:focus::placeholder, .group:hover .group-hover\.placeholder-shade-300::placeholder, .hover\.placeholder-shade-300:hover::placeholder {
   --placeholder-ltn: var(--shade-300);
 }
 
-.placeholder-shade-400::placeholder, .focus\.placeholder-shade-400:focus::placeholder, .group:hover .group-hover\.placeholder-shade-400::placeholder, .hover\.placeholder-shade-400:hover::placeholder {
+.placeholder-shade-400::placeholder, .dark .dark\.placeholder-shade-400::placeholder, .dark .dark\.focus\.placeholder-shade-400:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-shade-400::placeholder, .dark .dark\.hover\.placeholder-shade-400:hover::placeholder, .focus\.placeholder-shade-400:focus::placeholder, .group:hover .group-hover\.placeholder-shade-400::placeholder, .hover\.placeholder-shade-400:hover::placeholder {
   --placeholder-ltn: var(--shade-400);
 }
 
-.placeholder-shade-500::placeholder, .focus\.placeholder-shade-500:focus::placeholder, .group:hover .group-hover\.placeholder-shade-500::placeholder, .hover\.placeholder-shade-500:hover::placeholder {
+.placeholder-shade-500::placeholder, .dark .dark\.placeholder-shade-500::placeholder, .dark .dark\.focus\.placeholder-shade-500:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-shade-500::placeholder, .dark .dark\.hover\.placeholder-shade-500:hover::placeholder, .focus\.placeholder-shade-500:focus::placeholder, .group:hover .group-hover\.placeholder-shade-500::placeholder, .hover\.placeholder-shade-500:hover::placeholder {
   --placeholder-ltn: var(--shade-500);
 }
 
-.placeholder-shade-600::placeholder, .focus\.placeholder-shade-600:focus::placeholder, .group:hover .group-hover\.placeholder-shade-600::placeholder, .hover\.placeholder-shade-600:hover::placeholder {
+.placeholder-shade-600::placeholder, .dark .dark\.placeholder-shade-600::placeholder, .dark .dark\.focus\.placeholder-shade-600:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-shade-600::placeholder, .dark .dark\.hover\.placeholder-shade-600:hover::placeholder, .focus\.placeholder-shade-600:focus::placeholder, .group:hover .group-hover\.placeholder-shade-600::placeholder, .hover\.placeholder-shade-600:hover::placeholder {
   --placeholder-ltn: var(--shade-600);
 }
 
-.placeholder-shade-700::placeholder, .focus\.placeholder-shade-700:focus::placeholder, .group:hover .group-hover\.placeholder-shade-700::placeholder, .hover\.placeholder-shade-700:hover::placeholder {
+.placeholder-shade-700::placeholder, .dark .dark\.placeholder-shade-700::placeholder, .dark .dark\.focus\.placeholder-shade-700:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-shade-700::placeholder, .dark .dark\.hover\.placeholder-shade-700:hover::placeholder, .focus\.placeholder-shade-700:focus::placeholder, .group:hover .group-hover\.placeholder-shade-700::placeholder, .hover\.placeholder-shade-700:hover::placeholder {
   --placeholder-ltn: var(--shade-700);
 }
 
-.placeholder-shade-800::placeholder, .focus\.placeholder-shade-800:focus::placeholder, .group:hover .group-hover\.placeholder-shade-800::placeholder, .hover\.placeholder-shade-800:hover::placeholder {
+.placeholder-shade-800::placeholder, .dark .dark\.placeholder-shade-800::placeholder, .dark .dark\.focus\.placeholder-shade-800:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-shade-800::placeholder, .dark .dark\.hover\.placeholder-shade-800:hover::placeholder, .focus\.placeholder-shade-800:focus::placeholder, .group:hover .group-hover\.placeholder-shade-800::placeholder, .hover\.placeholder-shade-800:hover::placeholder {
   --placeholder-ltn: var(--shade-800);
 }
 
-.placeholder-shade-900::placeholder, .focus\.placeholder-shade-900:focus::placeholder, .group:hover .group-hover\.placeholder-shade-900::placeholder, .hover\.placeholder-shade-900:hover::placeholder {
+.placeholder-shade-900::placeholder, .dark .dark\.placeholder-shade-900::placeholder, .dark .dark\.focus\.placeholder-shade-900:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-shade-900::placeholder, .dark .dark\.hover\.placeholder-shade-900:hover::placeholder, .focus\.placeholder-shade-900:focus::placeholder, .group:hover .group-hover\.placeholder-shade-900::placeholder, .hover\.placeholder-shade-900:hover::placeholder {
   --placeholder-ltn: var(--shade-900);
 }
 
-.placeholder-shade-full::placeholder, .focus\.placeholder-shade-full:focus::placeholder, .group:hover .group-hover\.placeholder-shade-full::placeholder, .hover\.placeholder-shade-full:hover::placeholder {
+.placeholder-shade-full::placeholder, .dark .dark\.placeholder-shade-full::placeholder, .dark .dark\.focus\.placeholder-shade-full:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-shade-full::placeholder, .dark .dark\.hover\.placeholder-shade-full:hover::placeholder, .focus\.placeholder-shade-full:focus::placeholder, .group:hover .group-hover\.placeholder-shade-full::placeholder, .hover\.placeholder-shade-full:hover::placeholder {
   --placeholder-ltn: var(--shade-full);
 }
 
-.placeholder-tint-base::placeholder, .focus\.placeholder-tint-base:focus::placeholder, .group:hover .group-hover\.placeholder-tint-base::placeholder, .hover\.placeholder-tint-base:hover::placeholder {
+.placeholder-tint-base::placeholder, .dark .dark\.placeholder-tint-base::placeholder, .dark .dark\.focus\.placeholder-tint-base:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tint-base::placeholder, .dark .dark\.hover\.placeholder-tint-base:hover::placeholder, .focus\.placeholder-tint-base:focus::placeholder, .group:hover .group-hover\.placeholder-tint-base::placeholder, .hover\.placeholder-tint-base:hover::placeholder {
   --placeholder-ltn: var(--tint-base);
 }
 
-.placeholder-tint-100::placeholder, .focus\.placeholder-tint-100:focus::placeholder, .group:hover .group-hover\.placeholder-tint-100::placeholder, .hover\.placeholder-tint-100:hover::placeholder {
+.placeholder-tint-100::placeholder, .dark .dark\.placeholder-tint-100::placeholder, .dark .dark\.focus\.placeholder-tint-100:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tint-100::placeholder, .dark .dark\.hover\.placeholder-tint-100:hover::placeholder, .focus\.placeholder-tint-100:focus::placeholder, .group:hover .group-hover\.placeholder-tint-100::placeholder, .hover\.placeholder-tint-100:hover::placeholder {
   --placeholder-ltn: var(--tint-100);
 }
 
-.placeholder-tint-200::placeholder, .focus\.placeholder-tint-200:focus::placeholder, .group:hover .group-hover\.placeholder-tint-200::placeholder, .hover\.placeholder-tint-200:hover::placeholder {
+.placeholder-tint-200::placeholder, .dark .dark\.placeholder-tint-200::placeholder, .dark .dark\.focus\.placeholder-tint-200:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tint-200::placeholder, .dark .dark\.hover\.placeholder-tint-200:hover::placeholder, .focus\.placeholder-tint-200:focus::placeholder, .group:hover .group-hover\.placeholder-tint-200::placeholder, .hover\.placeholder-tint-200:hover::placeholder {
   --placeholder-ltn: var(--tint-200);
 }
 
-.placeholder-tint-300::placeholder, .focus\.placeholder-tint-300:focus::placeholder, .group:hover .group-hover\.placeholder-tint-300::placeholder, .hover\.placeholder-tint-300:hover::placeholder {
+.placeholder-tint-300::placeholder, .dark .dark\.placeholder-tint-300::placeholder, .dark .dark\.focus\.placeholder-tint-300:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tint-300::placeholder, .dark .dark\.hover\.placeholder-tint-300:hover::placeholder, .focus\.placeholder-tint-300:focus::placeholder, .group:hover .group-hover\.placeholder-tint-300::placeholder, .hover\.placeholder-tint-300:hover::placeholder {
   --placeholder-ltn: var(--tint-300);
 }
 
-.placeholder-tint-400::placeholder, .focus\.placeholder-tint-400:focus::placeholder, .group:hover .group-hover\.placeholder-tint-400::placeholder, .hover\.placeholder-tint-400:hover::placeholder {
+.placeholder-tint-400::placeholder, .dark .dark\.placeholder-tint-400::placeholder, .dark .dark\.focus\.placeholder-tint-400:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tint-400::placeholder, .dark .dark\.hover\.placeholder-tint-400:hover::placeholder, .focus\.placeholder-tint-400:focus::placeholder, .group:hover .group-hover\.placeholder-tint-400::placeholder, .hover\.placeholder-tint-400:hover::placeholder {
   --placeholder-ltn: var(--tint-400);
 }
 
-.placeholder-tint-500::placeholder, .focus\.placeholder-tint-500:focus::placeholder, .group:hover .group-hover\.placeholder-tint-500::placeholder, .hover\.placeholder-tint-500:hover::placeholder {
+.placeholder-tint-500::placeholder, .dark .dark\.placeholder-tint-500::placeholder, .dark .dark\.focus\.placeholder-tint-500:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tint-500::placeholder, .dark .dark\.hover\.placeholder-tint-500:hover::placeholder, .focus\.placeholder-tint-500:focus::placeholder, .group:hover .group-hover\.placeholder-tint-500::placeholder, .hover\.placeholder-tint-500:hover::placeholder {
   --placeholder-ltn: var(--tint-500);
 }
 
-.placeholder-tint-600::placeholder, .focus\.placeholder-tint-600:focus::placeholder, .group:hover .group-hover\.placeholder-tint-600::placeholder, .hover\.placeholder-tint-600:hover::placeholder {
+.placeholder-tint-600::placeholder, .dark .dark\.placeholder-tint-600::placeholder, .dark .dark\.focus\.placeholder-tint-600:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tint-600::placeholder, .dark .dark\.hover\.placeholder-tint-600:hover::placeholder, .focus\.placeholder-tint-600:focus::placeholder, .group:hover .group-hover\.placeholder-tint-600::placeholder, .hover\.placeholder-tint-600:hover::placeholder {
   --placeholder-ltn: var(--tint-600);
 }
 
-.placeholder-tint-700::placeholder, .focus\.placeholder-tint-700:focus::placeholder, .group:hover .group-hover\.placeholder-tint-700::placeholder, .hover\.placeholder-tint-700:hover::placeholder {
+.placeholder-tint-700::placeholder, .dark .dark\.placeholder-tint-700::placeholder, .dark .dark\.focus\.placeholder-tint-700:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tint-700::placeholder, .dark .dark\.hover\.placeholder-tint-700:hover::placeholder, .focus\.placeholder-tint-700:focus::placeholder, .group:hover .group-hover\.placeholder-tint-700::placeholder, .hover\.placeholder-tint-700:hover::placeholder {
   --placeholder-ltn: var(--tint-700);
 }
 
-.placeholder-tint-800::placeholder, .focus\.placeholder-tint-800:focus::placeholder, .group:hover .group-hover\.placeholder-tint-800::placeholder, .hover\.placeholder-tint-800:hover::placeholder {
+.placeholder-tint-800::placeholder, .dark .dark\.placeholder-tint-800::placeholder, .dark .dark\.focus\.placeholder-tint-800:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tint-800::placeholder, .dark .dark\.hover\.placeholder-tint-800:hover::placeholder, .focus\.placeholder-tint-800:focus::placeholder, .group:hover .group-hover\.placeholder-tint-800::placeholder, .hover\.placeholder-tint-800:hover::placeholder {
   --placeholder-ltn: var(--tint-800);
 }
 
-.placeholder-tint-900::placeholder, .focus\.placeholder-tint-900:focus::placeholder, .group:hover .group-hover\.placeholder-tint-900::placeholder, .hover\.placeholder-tint-900:hover::placeholder {
+.placeholder-tint-900::placeholder, .dark .dark\.placeholder-tint-900::placeholder, .dark .dark\.focus\.placeholder-tint-900:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tint-900::placeholder, .dark .dark\.hover\.placeholder-tint-900:hover::placeholder, .focus\.placeholder-tint-900:focus::placeholder, .group:hover .group-hover\.placeholder-tint-900::placeholder, .hover\.placeholder-tint-900:hover::placeholder {
   --placeholder-ltn: var(--tint-900);
 }
 
-.placeholder-tint-full::placeholder, .focus\.placeholder-tint-full:focus::placeholder, .group:hover .group-hover\.placeholder-tint-full::placeholder, .hover\.placeholder-tint-full:hover::placeholder {
+.placeholder-tint-full::placeholder, .dark .dark\.placeholder-tint-full::placeholder, .dark .dark\.focus\.placeholder-tint-full:focus::placeholder, .dark .group:hover .dark\.group-hover\.placeholder-tint-full::placeholder, .dark .dark\.hover\.placeholder-tint-full:hover::placeholder, .focus\.placeholder-tint-full:focus::placeholder, .group:hover .group-hover\.placeholder-tint-full::placeholder, .hover\.placeholder-tint-full:hover::placeholder {
   --placeholder-ltn: var(--tint-full);
 }
 
@@ -2277,151 +2277,151 @@ CUSTOM PROPERTIES
   letter-spacing: 0;
 }
 
-.color-opacity-0, .focus\.color-opacity-0:focus, .group:hover .group-hover\.color-opacity-0, .hover\.color-opacity-0:hover {
+.color-opacity-0, .dark .dark\.color-opacity-0, .dark .dark\.focus\.color-opacity-0:focus, .dark .group:hover .dark\.group-hover\.color-opacity-0, .dark .dark\.hover\.color-opacity-0:hover, .focus\.color-opacity-0:focus, .group:hover .group-hover\.color-opacity-0, .hover\.color-opacity-0:hover {
   --color-opacity: var(--opacity-0);
 }
 
-.color-opacity-2, .focus\.color-opacity-2:focus, .group:hover .group-hover\.color-opacity-2, .hover\.color-opacity-2:hover {
+.color-opacity-2, .dark .dark\.color-opacity-2, .dark .dark\.focus\.color-opacity-2:focus, .dark .group:hover .dark\.group-hover\.color-opacity-2, .dark .dark\.hover\.color-opacity-2:hover, .focus\.color-opacity-2:focus, .group:hover .group-hover\.color-opacity-2, .hover\.color-opacity-2:hover {
   --color-opacity: var(--opacity-2);
 }
 
-.color-opacity-4, .focus\.color-opacity-4:focus, .group:hover .group-hover\.color-opacity-4, .hover\.color-opacity-4:hover {
+.color-opacity-4, .dark .dark\.color-opacity-4, .dark .dark\.focus\.color-opacity-4:focus, .dark .group:hover .dark\.group-hover\.color-opacity-4, .dark .dark\.hover\.color-opacity-4:hover, .focus\.color-opacity-4:focus, .group:hover .group-hover\.color-opacity-4, .hover\.color-opacity-4:hover {
   --color-opacity: var(--opacity-4);
 }
 
-.color-opacity-6, .focus\.color-opacity-6:focus, .group:hover .group-hover\.color-opacity-6, .hover\.color-opacity-6:hover {
+.color-opacity-6, .dark .dark\.color-opacity-6, .dark .dark\.focus\.color-opacity-6:focus, .dark .group:hover .dark\.group-hover\.color-opacity-6, .dark .dark\.hover\.color-opacity-6:hover, .focus\.color-opacity-6:focus, .group:hover .group-hover\.color-opacity-6, .hover\.color-opacity-6:hover {
   --color-opacity: var(--opacity-6);
 }
 
-.color-opacity-8, .focus\.color-opacity-8:focus, .group:hover .group-hover\.color-opacity-8, .hover\.color-opacity-8:hover {
+.color-opacity-8, .dark .dark\.color-opacity-8, .dark .dark\.focus\.color-opacity-8:focus, .dark .group:hover .dark\.group-hover\.color-opacity-8, .dark .dark\.hover\.color-opacity-8:hover, .focus\.color-opacity-8:focus, .group:hover .group-hover\.color-opacity-8, .hover\.color-opacity-8:hover {
   --color-opacity: var(--opacity-8);
 }
 
-.color-opacity-10, .focus\.color-opacity-10:focus, .group:hover .group-hover\.color-opacity-10, .hover\.color-opacity-10:hover {
+.color-opacity-10, .dark .dark\.color-opacity-10, .dark .dark\.focus\.color-opacity-10:focus, .dark .group:hover .dark\.group-hover\.color-opacity-10, .dark .dark\.hover\.color-opacity-10:hover, .focus\.color-opacity-10:focus, .group:hover .group-hover\.color-opacity-10, .hover\.color-opacity-10:hover {
   --color-opacity: var(--opacity-10);
 }
 
-.color-opacity-20, .focus\.color-opacity-20:focus, .group:hover .group-hover\.color-opacity-20, .hover\.color-opacity-20:hover {
+.color-opacity-20, .dark .dark\.color-opacity-20, .dark .dark\.focus\.color-opacity-20:focus, .dark .group:hover .dark\.group-hover\.color-opacity-20, .dark .dark\.hover\.color-opacity-20:hover, .focus\.color-opacity-20:focus, .group:hover .group-hover\.color-opacity-20, .hover\.color-opacity-20:hover {
   --color-opacity: var(--opacity-20);
 }
 
-.color-opacity-30, .focus\.color-opacity-30:focus, .group:hover .group-hover\.color-opacity-30, .hover\.color-opacity-30:hover {
+.color-opacity-30, .dark .dark\.color-opacity-30, .dark .dark\.focus\.color-opacity-30:focus, .dark .group:hover .dark\.group-hover\.color-opacity-30, .dark .dark\.hover\.color-opacity-30:hover, .focus\.color-opacity-30:focus, .group:hover .group-hover\.color-opacity-30, .hover\.color-opacity-30:hover {
   --color-opacity: var(--opacity-30);
 }
 
-.color-opacity-40, .focus\.color-opacity-40:focus, .group:hover .group-hover\.color-opacity-40, .hover\.color-opacity-40:hover {
+.color-opacity-40, .dark .dark\.color-opacity-40, .dark .dark\.focus\.color-opacity-40:focus, .dark .group:hover .dark\.group-hover\.color-opacity-40, .dark .dark\.hover\.color-opacity-40:hover, .focus\.color-opacity-40:focus, .group:hover .group-hover\.color-opacity-40, .hover\.color-opacity-40:hover {
   --color-opacity: var(--opacity-40);
 }
 
-.color-opacity-50, .focus\.color-opacity-50:focus, .group:hover .group-hover\.color-opacity-50, .hover\.color-opacity-50:hover {
+.color-opacity-50, .dark .dark\.color-opacity-50, .dark .dark\.focus\.color-opacity-50:focus, .dark .group:hover .dark\.group-hover\.color-opacity-50, .dark .dark\.hover\.color-opacity-50:hover, .focus\.color-opacity-50:focus, .group:hover .group-hover\.color-opacity-50, .hover\.color-opacity-50:hover {
   --color-opacity: var(--opacity-50);
 }
 
-.color-opacity-60, .focus\.color-opacity-60:focus, .group:hover .group-hover\.color-opacity-60, .hover\.color-opacity-60:hover {
+.color-opacity-60, .dark .dark\.color-opacity-60, .dark .dark\.focus\.color-opacity-60:focus, .dark .group:hover .dark\.group-hover\.color-opacity-60, .dark .dark\.hover\.color-opacity-60:hover, .focus\.color-opacity-60:focus, .group:hover .group-hover\.color-opacity-60, .hover\.color-opacity-60:hover {
   --color-opacity: var(--opacity-60);
 }
 
-.color-opacity-70, .focus\.color-opacity-70:focus, .group:hover .group-hover\.color-opacity-70, .hover\.color-opacity-70:hover {
+.color-opacity-70, .dark .dark\.color-opacity-70, .dark .dark\.focus\.color-opacity-70:focus, .dark .group:hover .dark\.group-hover\.color-opacity-70, .dark .dark\.hover\.color-opacity-70:hover, .focus\.color-opacity-70:focus, .group:hover .group-hover\.color-opacity-70, .hover\.color-opacity-70:hover {
   --color-opacity: var(--opacity-70);
 }
 
-.color-opacity-80, .focus\.color-opacity-80:focus, .group:hover .group-hover\.color-opacity-80, .hover\.color-opacity-80:hover {
+.color-opacity-80, .dark .dark\.color-opacity-80, .dark .dark\.focus\.color-opacity-80:focus, .dark .group:hover .dark\.group-hover\.color-opacity-80, .dark .dark\.hover\.color-opacity-80:hover, .focus\.color-opacity-80:focus, .group:hover .group-hover\.color-opacity-80, .hover\.color-opacity-80:hover {
   --color-opacity: var(--opacity-80);
 }
 
-.color-opacity-90, .focus\.color-opacity-90:focus, .group:hover .group-hover\.color-opacity-90, .hover\.color-opacity-90:hover {
+.color-opacity-90, .dark .dark\.color-opacity-90, .dark .dark\.focus\.color-opacity-90:focus, .dark .group:hover .dark\.group-hover\.color-opacity-90, .dark .dark\.hover\.color-opacity-90:hover, .focus\.color-opacity-90:focus, .group:hover .group-hover\.color-opacity-90, .hover\.color-opacity-90:hover {
   --color-opacity: var(--opacity-90);
 }
 
-.color-opacity-100, .focus\.color-opacity-100:focus, .group:hover .group-hover\.color-opacity-100, .hover\.color-opacity-100:hover {
+.color-opacity-100, .dark .dark\.color-opacity-100, .dark .dark\.focus\.color-opacity-100:focus, .dark .group:hover .dark\.group-hover\.color-opacity-100, .dark .dark\.hover\.color-opacity-100:hover, .focus\.color-opacity-100:focus, .group:hover .group-hover\.color-opacity-100, .hover\.color-opacity-100:hover {
   --color-opacity: var(--opacity-100);
 }
 
-.color-shade-base, .focus\.color-shade-base:focus, .group:hover .group-hover\.color-shade-base, .hover\.color-shade-base:hover {
+.color-shade-base, .dark .dark\.color-shade-base, .dark .dark\.focus\.color-shade-base:focus, .dark .group:hover .dark\.group-hover\.color-shade-base, .dark .dark\.hover\.color-shade-base:hover, .focus\.color-shade-base:focus, .group:hover .group-hover\.color-shade-base, .hover\.color-shade-base:hover {
   --color-ltn: var(--shade-base);
 }
 
-.color-shade-100, .focus\.color-shade-100:focus, .group:hover .group-hover\.color-shade-100, .hover\.color-shade-100:hover {
+.color-shade-100, .dark .dark\.color-shade-100, .dark .dark\.focus\.color-shade-100:focus, .dark .group:hover .dark\.group-hover\.color-shade-100, .dark .dark\.hover\.color-shade-100:hover, .focus\.color-shade-100:focus, .group:hover .group-hover\.color-shade-100, .hover\.color-shade-100:hover {
   --color-ltn: var(--shade-100);
 }
 
-.color-shade-200, .focus\.color-shade-200:focus, .group:hover .group-hover\.color-shade-200, .hover\.color-shade-200:hover {
+.color-shade-200, .dark .dark\.color-shade-200, .dark .dark\.focus\.color-shade-200:focus, .dark .group:hover .dark\.group-hover\.color-shade-200, .dark .dark\.hover\.color-shade-200:hover, .focus\.color-shade-200:focus, .group:hover .group-hover\.color-shade-200, .hover\.color-shade-200:hover {
   --color-ltn: var(--shade-200);
 }
 
-.color-shade-300, .focus\.color-shade-300:focus, .group:hover .group-hover\.color-shade-300, .hover\.color-shade-300:hover {
+.color-shade-300, .dark .dark\.color-shade-300, .dark .dark\.focus\.color-shade-300:focus, .dark .group:hover .dark\.group-hover\.color-shade-300, .dark .dark\.hover\.color-shade-300:hover, .focus\.color-shade-300:focus, .group:hover .group-hover\.color-shade-300, .hover\.color-shade-300:hover {
   --color-ltn: var(--shade-300);
 }
 
-.color-shade-400, .focus\.color-shade-400:focus, .group:hover .group-hover\.color-shade-400, .hover\.color-shade-400:hover {
+.color-shade-400, .dark .dark\.color-shade-400, .dark .dark\.focus\.color-shade-400:focus, .dark .group:hover .dark\.group-hover\.color-shade-400, .dark .dark\.hover\.color-shade-400:hover, .focus\.color-shade-400:focus, .group:hover .group-hover\.color-shade-400, .hover\.color-shade-400:hover {
   --color-ltn: var(--shade-400);
 }
 
-.color-shade-500, .focus\.color-shade-500:focus, .group:hover .group-hover\.color-shade-500, .hover\.color-shade-500:hover {
+.color-shade-500, .dark .dark\.color-shade-500, .dark .dark\.focus\.color-shade-500:focus, .dark .group:hover .dark\.group-hover\.color-shade-500, .dark .dark\.hover\.color-shade-500:hover, .focus\.color-shade-500:focus, .group:hover .group-hover\.color-shade-500, .hover\.color-shade-500:hover {
   --color-ltn: var(--shade-500);
 }
 
-.color-shade-600, .focus\.color-shade-600:focus, .group:hover .group-hover\.color-shade-600, .hover\.color-shade-600:hover {
+.color-shade-600, .dark .dark\.color-shade-600, .dark .dark\.focus\.color-shade-600:focus, .dark .group:hover .dark\.group-hover\.color-shade-600, .dark .dark\.hover\.color-shade-600:hover, .focus\.color-shade-600:focus, .group:hover .group-hover\.color-shade-600, .hover\.color-shade-600:hover {
   --color-ltn: var(--shade-600);
 }
 
-.color-shade-700, .focus\.color-shade-700:focus, .group:hover .group-hover\.color-shade-700, .hover\.color-shade-700:hover {
+.color-shade-700, .dark .dark\.color-shade-700, .dark .dark\.focus\.color-shade-700:focus, .dark .group:hover .dark\.group-hover\.color-shade-700, .dark .dark\.hover\.color-shade-700:hover, .focus\.color-shade-700:focus, .group:hover .group-hover\.color-shade-700, .hover\.color-shade-700:hover {
   --color-ltn: var(--shade-700);
 }
 
-.color-shade-800, .focus\.color-shade-800:focus, .group:hover .group-hover\.color-shade-800, .hover\.color-shade-800:hover {
+.color-shade-800, .dark .dark\.color-shade-800, .dark .dark\.focus\.color-shade-800:focus, .dark .group:hover .dark\.group-hover\.color-shade-800, .dark .dark\.hover\.color-shade-800:hover, .focus\.color-shade-800:focus, .group:hover .group-hover\.color-shade-800, .hover\.color-shade-800:hover {
   --color-ltn: var(--shade-800);
 }
 
-.color-shade-900, .focus\.color-shade-900:focus, .group:hover .group-hover\.color-shade-900, .hover\.color-shade-900:hover {
+.color-shade-900, .dark .dark\.color-shade-900, .dark .dark\.focus\.color-shade-900:focus, .dark .group:hover .dark\.group-hover\.color-shade-900, .dark .dark\.hover\.color-shade-900:hover, .focus\.color-shade-900:focus, .group:hover .group-hover\.color-shade-900, .hover\.color-shade-900:hover {
   --color-ltn: var(--shade-900);
 }
 
-.color-shade-full, .focus\.color-shade-full:focus, .group:hover .group-hover\.color-shade-full, .hover\.color-shade-full:hover {
+.color-shade-full, .dark .dark\.color-shade-full, .dark .dark\.focus\.color-shade-full:focus, .dark .group:hover .dark\.group-hover\.color-shade-full, .dark .dark\.hover\.color-shade-full:hover, .focus\.color-shade-full:focus, .group:hover .group-hover\.color-shade-full, .hover\.color-shade-full:hover {
   --color-ltn: var(--shade-full);
 }
 
-.color-tint-base, .focus\.color-tint-base:focus, .group:hover .group-hover\.color-tint-base, .hover\.color-tint-base:hover {
+.color-tint-base, .dark .dark\.color-tint-base, .dark .dark\.focus\.color-tint-base:focus, .dark .group:hover .dark\.group-hover\.color-tint-base, .dark .dark\.hover\.color-tint-base:hover, .focus\.color-tint-base:focus, .group:hover .group-hover\.color-tint-base, .hover\.color-tint-base:hover {
   --color-ltn: var(--tint-base);
 }
 
-.color-tint-100, .focus\.color-tint-100:focus, .group:hover .group-hover\.color-tint-100, .hover\.color-tint-100:hover {
+.color-tint-100, .dark .dark\.color-tint-100, .dark .dark\.focus\.color-tint-100:focus, .dark .group:hover .dark\.group-hover\.color-tint-100, .dark .dark\.hover\.color-tint-100:hover, .focus\.color-tint-100:focus, .group:hover .group-hover\.color-tint-100, .hover\.color-tint-100:hover {
   --color-ltn: var(--tint-100);
 }
 
-.color-tint-200, .focus\.color-tint-200:focus, .group:hover .group-hover\.color-tint-200, .hover\.color-tint-200:hover {
+.color-tint-200, .dark .dark\.color-tint-200, .dark .dark\.focus\.color-tint-200:focus, .dark .group:hover .dark\.group-hover\.color-tint-200, .dark .dark\.hover\.color-tint-200:hover, .focus\.color-tint-200:focus, .group:hover .group-hover\.color-tint-200, .hover\.color-tint-200:hover {
   --color-ltn: var(--tint-200);
 }
 
-.color-tint-300, .focus\.color-tint-300:focus, .group:hover .group-hover\.color-tint-300, .hover\.color-tint-300:hover {
+.color-tint-300, .dark .dark\.color-tint-300, .dark .dark\.focus\.color-tint-300:focus, .dark .group:hover .dark\.group-hover\.color-tint-300, .dark .dark\.hover\.color-tint-300:hover, .focus\.color-tint-300:focus, .group:hover .group-hover\.color-tint-300, .hover\.color-tint-300:hover {
   --color-ltn: var(--tint-300);
 }
 
-.color-tint-400, .focus\.color-tint-400:focus, .group:hover .group-hover\.color-tint-400, .hover\.color-tint-400:hover {
+.color-tint-400, .dark .dark\.color-tint-400, .dark .dark\.focus\.color-tint-400:focus, .dark .group:hover .dark\.group-hover\.color-tint-400, .dark .dark\.hover\.color-tint-400:hover, .focus\.color-tint-400:focus, .group:hover .group-hover\.color-tint-400, .hover\.color-tint-400:hover {
   --color-ltn: var(--tint-400);
 }
 
-.color-tint-500, .focus\.color-tint-500:focus, .group:hover .group-hover\.color-tint-500, .hover\.color-tint-500:hover {
+.color-tint-500, .dark .dark\.color-tint-500, .dark .dark\.focus\.color-tint-500:focus, .dark .group:hover .dark\.group-hover\.color-tint-500, .dark .dark\.hover\.color-tint-500:hover, .focus\.color-tint-500:focus, .group:hover .group-hover\.color-tint-500, .hover\.color-tint-500:hover {
   --color-ltn: var(--tint-500);
 }
 
-.color-tint-600, .focus\.color-tint-600:focus, .group:hover .group-hover\.color-tint-600, .hover\.color-tint-600:hover {
+.color-tint-600, .dark .dark\.color-tint-600, .dark .dark\.focus\.color-tint-600:focus, .dark .group:hover .dark\.group-hover\.color-tint-600, .dark .dark\.hover\.color-tint-600:hover, .focus\.color-tint-600:focus, .group:hover .group-hover\.color-tint-600, .hover\.color-tint-600:hover {
   --color-ltn: var(--tint-600);
 }
 
-.color-tint-700, .focus\.color-tint-700:focus, .group:hover .group-hover\.color-tint-700, .hover\.color-tint-700:hover {
+.color-tint-700, .dark .dark\.color-tint-700, .dark .dark\.focus\.color-tint-700:focus, .dark .group:hover .dark\.group-hover\.color-tint-700, .dark .dark\.hover\.color-tint-700:hover, .focus\.color-tint-700:focus, .group:hover .group-hover\.color-tint-700, .hover\.color-tint-700:hover {
   --color-ltn: var(--tint-700);
 }
 
-.color-tint-800, .focus\.color-tint-800:focus, .group:hover .group-hover\.color-tint-800, .hover\.color-tint-800:hover {
+.color-tint-800, .dark .dark\.color-tint-800, .dark .dark\.focus\.color-tint-800:focus, .dark .group:hover .dark\.group-hover\.color-tint-800, .dark .dark\.hover\.color-tint-800:hover, .focus\.color-tint-800:focus, .group:hover .group-hover\.color-tint-800, .hover\.color-tint-800:hover {
   --color-ltn: var(--tint-800);
 }
 
-.color-tint-900, .focus\.color-tint-900:focus, .group:hover .group-hover\.color-tint-900, .hover\.color-tint-900:hover {
+.color-tint-900, .dark .dark\.color-tint-900, .dark .dark\.focus\.color-tint-900:focus, .dark .group:hover .dark\.group-hover\.color-tint-900, .dark .dark\.hover\.color-tint-900:hover, .focus\.color-tint-900:focus, .group:hover .group-hover\.color-tint-900, .hover\.color-tint-900:hover {
   --color-ltn: var(--tint-900);
 }
 
-.color-tint-full, .focus\.color-tint-full:focus, .group:hover .group-hover\.color-tint-full, .hover\.color-tint-full:hover {
+.color-tint-full, .dark .dark\.color-tint-full, .dark .dark\.focus\.color-tint-full:focus, .dark .group:hover .dark\.group-hover\.color-tint-full, .dark .dark\.hover\.color-tint-full:hover, .focus\.color-tint-full:focus, .group:hover .group-hover\.color-tint-full, .hover\.color-tint-full:hover {
   --color-ltn: var(--tint-full);
 }
 
@@ -6577,107 +6577,107 @@ CUSTOM PROPERTIES
   background-attachment: local;
 }
 
-.bg-opacity-0, .focus\.bg-opacity-0:focus, .group:hover .group-hover\.bg-opacity-0, .hover\.bg-opacity-0:hover {
+.bg-opacity-0, .dark .dark\.bg-opacity-0, .dark .dark\.focus\.bg-opacity-0:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-0, .dark .dark\.hover\.bg-opacity-0:hover, .focus\.bg-opacity-0:focus, .group:hover .group-hover\.bg-opacity-0, .hover\.bg-opacity-0:hover {
   --bg-opacity: var(--opacity-0);
 }
 
-.bg-opacity-2, .focus\.bg-opacity-2:focus, .group:hover .group-hover\.bg-opacity-2, .hover\.bg-opacity-2:hover {
+.bg-opacity-2, .dark .dark\.bg-opacity-2, .dark .dark\.focus\.bg-opacity-2:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-2, .dark .dark\.hover\.bg-opacity-2:hover, .focus\.bg-opacity-2:focus, .group:hover .group-hover\.bg-opacity-2, .hover\.bg-opacity-2:hover {
   --bg-opacity: var(--opacity-2);
 }
 
-.bg-opacity-4, .focus\.bg-opacity-4:focus, .group:hover .group-hover\.bg-opacity-4, .hover\.bg-opacity-4:hover {
+.bg-opacity-4, .dark .dark\.bg-opacity-4, .dark .dark\.focus\.bg-opacity-4:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-4, .dark .dark\.hover\.bg-opacity-4:hover, .focus\.bg-opacity-4:focus, .group:hover .group-hover\.bg-opacity-4, .hover\.bg-opacity-4:hover {
   --bg-opacity: var(--opacity-4);
 }
 
-.bg-opacity-6, .focus\.bg-opacity-6:focus, .group:hover .group-hover\.bg-opacity-6, .hover\.bg-opacity-6:hover {
+.bg-opacity-6, .dark .dark\.bg-opacity-6, .dark .dark\.focus\.bg-opacity-6:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-6, .dark .dark\.hover\.bg-opacity-6:hover, .focus\.bg-opacity-6:focus, .group:hover .group-hover\.bg-opacity-6, .hover\.bg-opacity-6:hover {
   --bg-opacity: var(--opacity-6);
 }
 
-.bg-opacity-8, .focus\.bg-opacity-8:focus, .group:hover .group-hover\.bg-opacity-8, .hover\.bg-opacity-8:hover {
+.bg-opacity-8, .dark .dark\.bg-opacity-8, .dark .dark\.focus\.bg-opacity-8:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-8, .dark .dark\.hover\.bg-opacity-8:hover, .focus\.bg-opacity-8:focus, .group:hover .group-hover\.bg-opacity-8, .hover\.bg-opacity-8:hover {
   --bg-opacity: var(--opacity-8);
 }
 
-.bg-opacity-10, .focus\.bg-opacity-10:focus, .group:hover .group-hover\.bg-opacity-10, .hover\.bg-opacity-10:hover {
+.bg-opacity-10, .dark .dark\.bg-opacity-10, .dark .dark\.focus\.bg-opacity-10:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-10, .dark .dark\.hover\.bg-opacity-10:hover, .focus\.bg-opacity-10:focus, .group:hover .group-hover\.bg-opacity-10, .hover\.bg-opacity-10:hover {
   --bg-opacity: var(--opacity-10);
 }
 
-.bg-opacity-20, .focus\.bg-opacity-20:focus, .group:hover .group-hover\.bg-opacity-20, .hover\.bg-opacity-20:hover {
+.bg-opacity-20, .dark .dark\.bg-opacity-20, .dark .dark\.focus\.bg-opacity-20:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-20, .dark .dark\.hover\.bg-opacity-20:hover, .focus\.bg-opacity-20:focus, .group:hover .group-hover\.bg-opacity-20, .hover\.bg-opacity-20:hover {
   --bg-opacity: var(--opacity-20);
 }
 
-.bg-opacity-30, .focus\.bg-opacity-30:focus, .group:hover .group-hover\.bg-opacity-30, .hover\.bg-opacity-30:hover {
+.bg-opacity-30, .dark .dark\.bg-opacity-30, .dark .dark\.focus\.bg-opacity-30:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-30, .dark .dark\.hover\.bg-opacity-30:hover, .focus\.bg-opacity-30:focus, .group:hover .group-hover\.bg-opacity-30, .hover\.bg-opacity-30:hover {
   --bg-opacity: var(--opacity-30);
 }
 
-.bg-opacity-40, .focus\.bg-opacity-40:focus, .group:hover .group-hover\.bg-opacity-40, .hover\.bg-opacity-40:hover {
+.bg-opacity-40, .dark .dark\.bg-opacity-40, .dark .dark\.focus\.bg-opacity-40:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-40, .dark .dark\.hover\.bg-opacity-40:hover, .focus\.bg-opacity-40:focus, .group:hover .group-hover\.bg-opacity-40, .hover\.bg-opacity-40:hover {
   --bg-opacity: var(--opacity-40);
 }
 
-.bg-opacity-50, .focus\.bg-opacity-50:focus, .group:hover .group-hover\.bg-opacity-50, .hover\.bg-opacity-50:hover {
+.bg-opacity-50, .dark .dark\.bg-opacity-50, .dark .dark\.focus\.bg-opacity-50:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-50, .dark .dark\.hover\.bg-opacity-50:hover, .focus\.bg-opacity-50:focus, .group:hover .group-hover\.bg-opacity-50, .hover\.bg-opacity-50:hover {
   --bg-opacity: var(--opacity-50);
 }
 
-.bg-opacity-60, .focus\.bg-opacity-60:focus, .group:hover .group-hover\.bg-opacity-60, .hover\.bg-opacity-60:hover {
+.bg-opacity-60, .dark .dark\.bg-opacity-60, .dark .dark\.focus\.bg-opacity-60:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-60, .dark .dark\.hover\.bg-opacity-60:hover, .focus\.bg-opacity-60:focus, .group:hover .group-hover\.bg-opacity-60, .hover\.bg-opacity-60:hover {
   --bg-opacity: var(--opacity-60);
 }
 
-.bg-opacity-70, .focus\.bg-opacity-70:focus, .group:hover .group-hover\.bg-opacity-70, .hover\.bg-opacity-70:hover {
+.bg-opacity-70, .dark .dark\.bg-opacity-70, .dark .dark\.focus\.bg-opacity-70:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-70, .dark .dark\.hover\.bg-opacity-70:hover, .focus\.bg-opacity-70:focus, .group:hover .group-hover\.bg-opacity-70, .hover\.bg-opacity-70:hover {
   --bg-opacity: var(--opacity-70);
 }
 
-.bg-opacity-80, .focus\.bg-opacity-80:focus, .group:hover .group-hover\.bg-opacity-80, .hover\.bg-opacity-80:hover {
+.bg-opacity-80, .dark .dark\.bg-opacity-80, .dark .dark\.focus\.bg-opacity-80:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-80, .dark .dark\.hover\.bg-opacity-80:hover, .focus\.bg-opacity-80:focus, .group:hover .group-hover\.bg-opacity-80, .hover\.bg-opacity-80:hover {
   --bg-opacity: var(--opacity-80);
 }
 
-.bg-opacity-90, .focus\.bg-opacity-90:focus, .group:hover .group-hover\.bg-opacity-90, .hover\.bg-opacity-90:hover {
+.bg-opacity-90, .dark .dark\.bg-opacity-90, .dark .dark\.focus\.bg-opacity-90:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-90, .dark .dark\.hover\.bg-opacity-90:hover, .focus\.bg-opacity-90:focus, .group:hover .group-hover\.bg-opacity-90, .hover\.bg-opacity-90:hover {
   --bg-opacity: var(--opacity-90);
 }
 
-.bg-opacity-100, .focus\.bg-opacity-100:focus, .group:hover .group-hover\.bg-opacity-100, .hover\.bg-opacity-100:hover {
+.bg-opacity-100, .dark .dark\.bg-opacity-100, .dark .dark\.focus\.bg-opacity-100:focus, .dark .group:hover .dark\.group-hover\.bg-opacity-100, .dark .dark\.hover\.bg-opacity-100:hover, .focus\.bg-opacity-100:focus, .group:hover .group-hover\.bg-opacity-100, .hover\.bg-opacity-100:hover {
   --bg-opacity: var(--opacity-100);
 }
 
-.bg-tint-base, .focus\.bg-tint-base:focus, .group:hover .group-hover\.bg-tint-base, .hover\.bg-tint-base:hover {
+.bg-tint-base, .dark .dark\.bg-tint-base, .dark .dark\.focus\.bg-tint-base:focus, .dark .group:hover .dark\.group-hover\.bg-tint-base, .dark .dark\.hover\.bg-tint-base:hover, .focus\.bg-tint-base:focus, .group:hover .group-hover\.bg-tint-base, .hover\.bg-tint-base:hover {
   --bg-ltn: var(--tint-base);
 }
 
-.bg-tint-100, .focus\.bg-tint-100:focus, .group:hover .group-hover\.bg-tint-100, .hover\.bg-tint-100:hover {
+.bg-tint-100, .dark .dark\.bg-tint-100, .dark .dark\.focus\.bg-tint-100:focus, .dark .group:hover .dark\.group-hover\.bg-tint-100, .dark .dark\.hover\.bg-tint-100:hover, .focus\.bg-tint-100:focus, .group:hover .group-hover\.bg-tint-100, .hover\.bg-tint-100:hover {
   --bg-ltn: var(--tint-100);
 }
 
-.bg-tint-200, .focus\.bg-tint-200:focus, .group:hover .group-hover\.bg-tint-200, .hover\.bg-tint-200:hover {
+.bg-tint-200, .dark .dark\.bg-tint-200, .dark .dark\.focus\.bg-tint-200:focus, .dark .group:hover .dark\.group-hover\.bg-tint-200, .dark .dark\.hover\.bg-tint-200:hover, .focus\.bg-tint-200:focus, .group:hover .group-hover\.bg-tint-200, .hover\.bg-tint-200:hover {
   --bg-ltn: var(--tint-200);
 }
 
-.bg-tint-300, .focus\.bg-tint-300:focus, .group:hover .group-hover\.bg-tint-300, .hover\.bg-tint-300:hover {
+.bg-tint-300, .dark .dark\.bg-tint-300, .dark .dark\.focus\.bg-tint-300:focus, .dark .group:hover .dark\.group-hover\.bg-tint-300, .dark .dark\.hover\.bg-tint-300:hover, .focus\.bg-tint-300:focus, .group:hover .group-hover\.bg-tint-300, .hover\.bg-tint-300:hover {
   --bg-ltn: var(--tint-300);
 }
 
-.bg-tint-400, .focus\.bg-tint-400:focus, .group:hover .group-hover\.bg-tint-400, .hover\.bg-tint-400:hover {
+.bg-tint-400, .dark .dark\.bg-tint-400, .dark .dark\.focus\.bg-tint-400:focus, .dark .group:hover .dark\.group-hover\.bg-tint-400, .dark .dark\.hover\.bg-tint-400:hover, .focus\.bg-tint-400:focus, .group:hover .group-hover\.bg-tint-400, .hover\.bg-tint-400:hover {
   --bg-ltn: var(--tint-400);
 }
 
-.bg-tint-500, .focus\.bg-tint-500:focus, .group:hover .group-hover\.bg-tint-500, .hover\.bg-tint-500:hover {
+.bg-tint-500, .dark .dark\.bg-tint-500, .dark .dark\.focus\.bg-tint-500:focus, .dark .group:hover .dark\.group-hover\.bg-tint-500, .dark .dark\.hover\.bg-tint-500:hover, .focus\.bg-tint-500:focus, .group:hover .group-hover\.bg-tint-500, .hover\.bg-tint-500:hover {
   --bg-ltn: var(--tint-500);
 }
 
-.bg-tint-600, .focus\.bg-tint-600:focus, .group:hover .group-hover\.bg-tint-600, .hover\.bg-tint-600:hover {
+.bg-tint-600, .dark .dark\.bg-tint-600, .dark .dark\.focus\.bg-tint-600:focus, .dark .group:hover .dark\.group-hover\.bg-tint-600, .dark .dark\.hover\.bg-tint-600:hover, .focus\.bg-tint-600:focus, .group:hover .group-hover\.bg-tint-600, .hover\.bg-tint-600:hover {
   --bg-ltn: var(--tint-600);
 }
 
-.bg-tint-700, .focus\.bg-tint-700:focus, .group:hover .group-hover\.bg-tint-700, .hover\.bg-tint-700:hover {
+.bg-tint-700, .dark .dark\.bg-tint-700, .dark .dark\.focus\.bg-tint-700:focus, .dark .group:hover .dark\.group-hover\.bg-tint-700, .dark .dark\.hover\.bg-tint-700:hover, .focus\.bg-tint-700:focus, .group:hover .group-hover\.bg-tint-700, .hover\.bg-tint-700:hover {
   --bg-ltn: var(--tint-700);
 }
 
-.bg-tint-800, .focus\.bg-tint-800:focus, .group:hover .group-hover\.bg-tint-800, .hover\.bg-tint-800:hover {
+.bg-tint-800, .dark .dark\.bg-tint-800, .dark .dark\.focus\.bg-tint-800:focus, .dark .group:hover .dark\.group-hover\.bg-tint-800, .dark .dark\.hover\.bg-tint-800:hover, .focus\.bg-tint-800:focus, .group:hover .group-hover\.bg-tint-800, .hover\.bg-tint-800:hover {
   --bg-ltn: var(--tint-800);
 }
 
-.bg-tint-900, .focus\.bg-tint-900:focus, .group:hover .group-hover\.bg-tint-900, .hover\.bg-tint-900:hover {
+.bg-tint-900, .dark .dark\.bg-tint-900, .dark .dark\.focus\.bg-tint-900:focus, .dark .group:hover .dark\.group-hover\.bg-tint-900, .dark .dark\.hover\.bg-tint-900:hover, .focus\.bg-tint-900:focus, .group:hover .group-hover\.bg-tint-900, .hover\.bg-tint-900:hover {
   --bg-ltn: var(--tint-900);
 }
 
-.bg-tint-full, .focus\.bg-tint-full:focus, .group:hover .group-hover\.bg-tint-full, .hover\.bg-tint-full:hover {
+.bg-tint-full, .dark .dark\.bg-tint-full, .dark .dark\.focus\.bg-tint-full:focus, .dark .group:hover .dark\.group-hover\.bg-tint-full, .dark .dark\.hover\.bg-tint-full:hover, .focus\.bg-tint-full:focus, .group:hover .group-hover\.bg-tint-full, .hover\.bg-tint-full:hover {
   --bg-ltn: var(--tint-full);
 }
 
@@ -7249,151 +7249,151 @@ CUSTOM PROPERTIES
   border-bottom-right-radius: var(--radius-full);
 }
 
-.border-opacity-0, .focus\.border-opacity-0:focus, .group:hover .group-hover\.border-opacity-0, .hover\.border-opacity-0:hover {
+.border-opacity-0, .dark .dark\.border-opacity-0, .dark .dark\.focus\.border-opacity-0:focus, .dark .group:hover .dark\.group-hover\.border-opacity-0, .dark .dark\.hover\.border-opacity-0:hover, .focus\.border-opacity-0:focus, .group:hover .group-hover\.border-opacity-0, .hover\.border-opacity-0:hover {
   --border-opacity: var(--opacity-0);
 }
 
-.border-opacity-2, .focus\.border-opacity-2:focus, .group:hover .group-hover\.border-opacity-2, .hover\.border-opacity-2:hover {
+.border-opacity-2, .dark .dark\.border-opacity-2, .dark .dark\.focus\.border-opacity-2:focus, .dark .group:hover .dark\.group-hover\.border-opacity-2, .dark .dark\.hover\.border-opacity-2:hover, .focus\.border-opacity-2:focus, .group:hover .group-hover\.border-opacity-2, .hover\.border-opacity-2:hover {
   --border-opacity: var(--opacity-2);
 }
 
-.border-opacity-4, .focus\.border-opacity-4:focus, .group:hover .group-hover\.border-opacity-4, .hover\.border-opacity-4:hover {
+.border-opacity-4, .dark .dark\.border-opacity-4, .dark .dark\.focus\.border-opacity-4:focus, .dark .group:hover .dark\.group-hover\.border-opacity-4, .dark .dark\.hover\.border-opacity-4:hover, .focus\.border-opacity-4:focus, .group:hover .group-hover\.border-opacity-4, .hover\.border-opacity-4:hover {
   --border-opacity: var(--opacity-4);
 }
 
-.border-opacity-6, .focus\.border-opacity-6:focus, .group:hover .group-hover\.border-opacity-6, .hover\.border-opacity-6:hover {
+.border-opacity-6, .dark .dark\.border-opacity-6, .dark .dark\.focus\.border-opacity-6:focus, .dark .group:hover .dark\.group-hover\.border-opacity-6, .dark .dark\.hover\.border-opacity-6:hover, .focus\.border-opacity-6:focus, .group:hover .group-hover\.border-opacity-6, .hover\.border-opacity-6:hover {
   --border-opacity: var(--opacity-6);
 }
 
-.border-opacity-8, .focus\.border-opacity-8:focus, .group:hover .group-hover\.border-opacity-8, .hover\.border-opacity-8:hover {
+.border-opacity-8, .dark .dark\.border-opacity-8, .dark .dark\.focus\.border-opacity-8:focus, .dark .group:hover .dark\.group-hover\.border-opacity-8, .dark .dark\.hover\.border-opacity-8:hover, .focus\.border-opacity-8:focus, .group:hover .group-hover\.border-opacity-8, .hover\.border-opacity-8:hover {
   --border-opacity: var(--opacity-8);
 }
 
-.border-opacity-10, .focus\.border-opacity-10:focus, .group:hover .group-hover\.border-opacity-10, .hover\.border-opacity-10:hover {
+.border-opacity-10, .dark .dark\.border-opacity-10, .dark .dark\.focus\.border-opacity-10:focus, .dark .group:hover .dark\.group-hover\.border-opacity-10, .dark .dark\.hover\.border-opacity-10:hover, .focus\.border-opacity-10:focus, .group:hover .group-hover\.border-opacity-10, .hover\.border-opacity-10:hover {
   --border-opacity: var(--opacity-10);
 }
 
-.border-opacity-20, .focus\.border-opacity-20:focus, .group:hover .group-hover\.border-opacity-20, .hover\.border-opacity-20:hover {
+.border-opacity-20, .dark .dark\.border-opacity-20, .dark .dark\.focus\.border-opacity-20:focus, .dark .group:hover .dark\.group-hover\.border-opacity-20, .dark .dark\.hover\.border-opacity-20:hover, .focus\.border-opacity-20:focus, .group:hover .group-hover\.border-opacity-20, .hover\.border-opacity-20:hover {
   --border-opacity: var(--opacity-20);
 }
 
-.border-opacity-30, .focus\.border-opacity-30:focus, .group:hover .group-hover\.border-opacity-30, .hover\.border-opacity-30:hover {
+.border-opacity-30, .dark .dark\.border-opacity-30, .dark .dark\.focus\.border-opacity-30:focus, .dark .group:hover .dark\.group-hover\.border-opacity-30, .dark .dark\.hover\.border-opacity-30:hover, .focus\.border-opacity-30:focus, .group:hover .group-hover\.border-opacity-30, .hover\.border-opacity-30:hover {
   --border-opacity: var(--opacity-30);
 }
 
-.border-opacity-40, .focus\.border-opacity-40:focus, .group:hover .group-hover\.border-opacity-40, .hover\.border-opacity-40:hover {
+.border-opacity-40, .dark .dark\.border-opacity-40, .dark .dark\.focus\.border-opacity-40:focus, .dark .group:hover .dark\.group-hover\.border-opacity-40, .dark .dark\.hover\.border-opacity-40:hover, .focus\.border-opacity-40:focus, .group:hover .group-hover\.border-opacity-40, .hover\.border-opacity-40:hover {
   --border-opacity: var(--opacity-40);
 }
 
-.border-opacity-50, .focus\.border-opacity-50:focus, .group:hover .group-hover\.border-opacity-50, .hover\.border-opacity-50:hover {
+.border-opacity-50, .dark .dark\.border-opacity-50, .dark .dark\.focus\.border-opacity-50:focus, .dark .group:hover .dark\.group-hover\.border-opacity-50, .dark .dark\.hover\.border-opacity-50:hover, .focus\.border-opacity-50:focus, .group:hover .group-hover\.border-opacity-50, .hover\.border-opacity-50:hover {
   --border-opacity: var(--opacity-50);
 }
 
-.border-opacity-60, .focus\.border-opacity-60:focus, .group:hover .group-hover\.border-opacity-60, .hover\.border-opacity-60:hover {
+.border-opacity-60, .dark .dark\.border-opacity-60, .dark .dark\.focus\.border-opacity-60:focus, .dark .group:hover .dark\.group-hover\.border-opacity-60, .dark .dark\.hover\.border-opacity-60:hover, .focus\.border-opacity-60:focus, .group:hover .group-hover\.border-opacity-60, .hover\.border-opacity-60:hover {
   --border-opacity: var(--opacity-60);
 }
 
-.border-opacity-70, .focus\.border-opacity-70:focus, .group:hover .group-hover\.border-opacity-70, .hover\.border-opacity-70:hover {
+.border-opacity-70, .dark .dark\.border-opacity-70, .dark .dark\.focus\.border-opacity-70:focus, .dark .group:hover .dark\.group-hover\.border-opacity-70, .dark .dark\.hover\.border-opacity-70:hover, .focus\.border-opacity-70:focus, .group:hover .group-hover\.border-opacity-70, .hover\.border-opacity-70:hover {
   --border-opacity: var(--opacity-70);
 }
 
-.border-opacity-80, .focus\.border-opacity-80:focus, .group:hover .group-hover\.border-opacity-80, .hover\.border-opacity-80:hover {
+.border-opacity-80, .dark .dark\.border-opacity-80, .dark .dark\.focus\.border-opacity-80:focus, .dark .group:hover .dark\.group-hover\.border-opacity-80, .dark .dark\.hover\.border-opacity-80:hover, .focus\.border-opacity-80:focus, .group:hover .group-hover\.border-opacity-80, .hover\.border-opacity-80:hover {
   --border-opacity: var(--opacity-80);
 }
 
-.border-opacity-90, .focus\.border-opacity-90:focus, .group:hover .group-hover\.border-opacity-90, .hover\.border-opacity-90:hover {
+.border-opacity-90, .dark .dark\.border-opacity-90, .dark .dark\.focus\.border-opacity-90:focus, .dark .group:hover .dark\.group-hover\.border-opacity-90, .dark .dark\.hover\.border-opacity-90:hover, .focus\.border-opacity-90:focus, .group:hover .group-hover\.border-opacity-90, .hover\.border-opacity-90:hover {
   --border-opacity: var(--opacity-90);
 }
 
-.border-opacity-100, .focus\.border-opacity-100:focus, .group:hover .group-hover\.border-opacity-100, .hover\.border-opacity-100:hover {
+.border-opacity-100, .dark .dark\.border-opacity-100, .dark .dark\.focus\.border-opacity-100:focus, .dark .group:hover .dark\.group-hover\.border-opacity-100, .dark .dark\.hover\.border-opacity-100:hover, .focus\.border-opacity-100:focus, .group:hover .group-hover\.border-opacity-100, .hover\.border-opacity-100:hover {
   --border-opacity: var(--opacity-100);
 }
 
-.border-shade-base, .focus\.border-shade-base:focus, .group:hover .group-hover\.border-shade-base, .hover\.border-shade-base:hover {
+.border-shade-base, .dark .dark\.border-shade-base, .dark .dark\.focus\.border-shade-base:focus, .dark .group:hover .dark\.group-hover\.border-shade-base, .dark .dark\.hover\.border-shade-base:hover, .focus\.border-shade-base:focus, .group:hover .group-hover\.border-shade-base, .hover\.border-shade-base:hover {
   --border-ltn: var(--shade-base);
 }
 
-.border-shade-100, .focus\.border-shade-100:focus, .group:hover .group-hover\.border-shade-100, .hover\.border-shade-100:hover {
+.border-shade-100, .dark .dark\.border-shade-100, .dark .dark\.focus\.border-shade-100:focus, .dark .group:hover .dark\.group-hover\.border-shade-100, .dark .dark\.hover\.border-shade-100:hover, .focus\.border-shade-100:focus, .group:hover .group-hover\.border-shade-100, .hover\.border-shade-100:hover {
   --border-ltn: var(--shade-100);
 }
 
-.border-shade-200, .focus\.border-shade-200:focus, .group:hover .group-hover\.border-shade-200, .hover\.border-shade-200:hover {
+.border-shade-200, .dark .dark\.border-shade-200, .dark .dark\.focus\.border-shade-200:focus, .dark .group:hover .dark\.group-hover\.border-shade-200, .dark .dark\.hover\.border-shade-200:hover, .focus\.border-shade-200:focus, .group:hover .group-hover\.border-shade-200, .hover\.border-shade-200:hover {
   --border-ltn: var(--shade-200);
 }
 
-.border-shade-300, .focus\.border-shade-300:focus, .group:hover .group-hover\.border-shade-300, .hover\.border-shade-300:hover {
+.border-shade-300, .dark .dark\.border-shade-300, .dark .dark\.focus\.border-shade-300:focus, .dark .group:hover .dark\.group-hover\.border-shade-300, .dark .dark\.hover\.border-shade-300:hover, .focus\.border-shade-300:focus, .group:hover .group-hover\.border-shade-300, .hover\.border-shade-300:hover {
   --border-ltn: var(--shade-300);
 }
 
-.border-shade-400, .focus\.border-shade-400:focus, .group:hover .group-hover\.border-shade-400, .hover\.border-shade-400:hover {
+.border-shade-400, .dark .dark\.border-shade-400, .dark .dark\.focus\.border-shade-400:focus, .dark .group:hover .dark\.group-hover\.border-shade-400, .dark .dark\.hover\.border-shade-400:hover, .focus\.border-shade-400:focus, .group:hover .group-hover\.border-shade-400, .hover\.border-shade-400:hover {
   --border-ltn: var(--shade-400);
 }
 
-.border-shade-500, .focus\.border-shade-500:focus, .group:hover .group-hover\.border-shade-500, .hover\.border-shade-500:hover {
+.border-shade-500, .dark .dark\.border-shade-500, .dark .dark\.focus\.border-shade-500:focus, .dark .group:hover .dark\.group-hover\.border-shade-500, .dark .dark\.hover\.border-shade-500:hover, .focus\.border-shade-500:focus, .group:hover .group-hover\.border-shade-500, .hover\.border-shade-500:hover {
   --border-ltn: var(--shade-500);
 }
 
-.border-shade-600, .focus\.border-shade-600:focus, .group:hover .group-hover\.border-shade-600, .hover\.border-shade-600:hover {
+.border-shade-600, .dark .dark\.border-shade-600, .dark .dark\.focus\.border-shade-600:focus, .dark .group:hover .dark\.group-hover\.border-shade-600, .dark .dark\.hover\.border-shade-600:hover, .focus\.border-shade-600:focus, .group:hover .group-hover\.border-shade-600, .hover\.border-shade-600:hover {
   --border-ltn: var(--shade-600);
 }
 
-.border-shade-700, .focus\.border-shade-700:focus, .group:hover .group-hover\.border-shade-700, .hover\.border-shade-700:hover {
+.border-shade-700, .dark .dark\.border-shade-700, .dark .dark\.focus\.border-shade-700:focus, .dark .group:hover .dark\.group-hover\.border-shade-700, .dark .dark\.hover\.border-shade-700:hover, .focus\.border-shade-700:focus, .group:hover .group-hover\.border-shade-700, .hover\.border-shade-700:hover {
   --border-ltn: var(--shade-700);
 }
 
-.border-shade-800, .focus\.border-shade-800:focus, .group:hover .group-hover\.border-shade-800, .hover\.border-shade-800:hover {
+.border-shade-800, .dark .dark\.border-shade-800, .dark .dark\.focus\.border-shade-800:focus, .dark .group:hover .dark\.group-hover\.border-shade-800, .dark .dark\.hover\.border-shade-800:hover, .focus\.border-shade-800:focus, .group:hover .group-hover\.border-shade-800, .hover\.border-shade-800:hover {
   --border-ltn: var(--shade-800);
 }
 
-.border-shade-900, .focus\.border-shade-900:focus, .group:hover .group-hover\.border-shade-900, .hover\.border-shade-900:hover {
+.border-shade-900, .dark .dark\.border-shade-900, .dark .dark\.focus\.border-shade-900:focus, .dark .group:hover .dark\.group-hover\.border-shade-900, .dark .dark\.hover\.border-shade-900:hover, .focus\.border-shade-900:focus, .group:hover .group-hover\.border-shade-900, .hover\.border-shade-900:hover {
   --border-ltn: var(--shade-900);
 }
 
-.border-shade-full, .focus\.border-shade-full:focus, .group:hover .group-hover\.border-shade-full, .hover\.border-shade-full:hover {
+.border-shade-full, .dark .dark\.border-shade-full, .dark .dark\.focus\.border-shade-full:focus, .dark .group:hover .dark\.group-hover\.border-shade-full, .dark .dark\.hover\.border-shade-full:hover, .focus\.border-shade-full:focus, .group:hover .group-hover\.border-shade-full, .hover\.border-shade-full:hover {
   --border-ltn: var(--shade-full);
 }
 
-.border-tint-base, .focus\.border-tint-base:focus, .group:hover .group-hover\.border-tint-base, .hover\.border-tint-base:hover {
+.border-tint-base, .dark .dark\.border-tint-base, .dark .dark\.focus\.border-tint-base:focus, .dark .group:hover .dark\.group-hover\.border-tint-base, .dark .dark\.hover\.border-tint-base:hover, .focus\.border-tint-base:focus, .group:hover .group-hover\.border-tint-base, .hover\.border-tint-base:hover {
   --border-ltn: var(--tint-base);
 }
 
-.border-tint-100, .focus\.border-tint-100:focus, .group:hover .group-hover\.border-tint-100, .hover\.border-tint-100:hover {
+.border-tint-100, .dark .dark\.border-tint-100, .dark .dark\.focus\.border-tint-100:focus, .dark .group:hover .dark\.group-hover\.border-tint-100, .dark .dark\.hover\.border-tint-100:hover, .focus\.border-tint-100:focus, .group:hover .group-hover\.border-tint-100, .hover\.border-tint-100:hover {
   --border-ltn: var(--tint-100);
 }
 
-.border-tint-200, .focus\.border-tint-200:focus, .group:hover .group-hover\.border-tint-200, .hover\.border-tint-200:hover {
+.border-tint-200, .dark .dark\.border-tint-200, .dark .dark\.focus\.border-tint-200:focus, .dark .group:hover .dark\.group-hover\.border-tint-200, .dark .dark\.hover\.border-tint-200:hover, .focus\.border-tint-200:focus, .group:hover .group-hover\.border-tint-200, .hover\.border-tint-200:hover {
   --border-ltn: var(--tint-200);
 }
 
-.border-tint-300, .focus\.border-tint-300:focus, .group:hover .group-hover\.border-tint-300, .hover\.border-tint-300:hover {
+.border-tint-300, .dark .dark\.border-tint-300, .dark .dark\.focus\.border-tint-300:focus, .dark .group:hover .dark\.group-hover\.border-tint-300, .dark .dark\.hover\.border-tint-300:hover, .focus\.border-tint-300:focus, .group:hover .group-hover\.border-tint-300, .hover\.border-tint-300:hover {
   --border-ltn: var(--tint-300);
 }
 
-.border-tint-400, .focus\.border-tint-400:focus, .group:hover .group-hover\.border-tint-400, .hover\.border-tint-400:hover {
+.border-tint-400, .dark .dark\.border-tint-400, .dark .dark\.focus\.border-tint-400:focus, .dark .group:hover .dark\.group-hover\.border-tint-400, .dark .dark\.hover\.border-tint-400:hover, .focus\.border-tint-400:focus, .group:hover .group-hover\.border-tint-400, .hover\.border-tint-400:hover {
   --border-ltn: var(--tint-400);
 }
 
-.border-tint-500, .focus\.border-tint-500:focus, .group:hover .group-hover\.border-tint-500, .hover\.border-tint-500:hover {
+.border-tint-500, .dark .dark\.border-tint-500, .dark .dark\.focus\.border-tint-500:focus, .dark .group:hover .dark\.group-hover\.border-tint-500, .dark .dark\.hover\.border-tint-500:hover, .focus\.border-tint-500:focus, .group:hover .group-hover\.border-tint-500, .hover\.border-tint-500:hover {
   --border-ltn: var(--tint-500);
 }
 
-.border-tint-600, .focus\.border-tint-600:focus, .group:hover .group-hover\.border-tint-600, .hover\.border-tint-600:hover {
+.border-tint-600, .dark .dark\.border-tint-600, .dark .dark\.focus\.border-tint-600:focus, .dark .group:hover .dark\.group-hover\.border-tint-600, .dark .dark\.hover\.border-tint-600:hover, .focus\.border-tint-600:focus, .group:hover .group-hover\.border-tint-600, .hover\.border-tint-600:hover {
   --border-ltn: var(--tint-600);
 }
 
-.border-tint-700, .focus\.border-tint-700:focus, .group:hover .group-hover\.border-tint-700, .hover\.border-tint-700:hover {
+.border-tint-700, .dark .dark\.border-tint-700, .dark .dark\.focus\.border-tint-700:focus, .dark .group:hover .dark\.group-hover\.border-tint-700, .dark .dark\.hover\.border-tint-700:hover, .focus\.border-tint-700:focus, .group:hover .group-hover\.border-tint-700, .hover\.border-tint-700:hover {
   --border-ltn: var(--tint-700);
 }
 
-.border-tint-800, .focus\.border-tint-800:focus, .group:hover .group-hover\.border-tint-800, .hover\.border-tint-800:hover {
+.border-tint-800, .dark .dark\.border-tint-800, .dark .dark\.focus\.border-tint-800:focus, .dark .group:hover .dark\.group-hover\.border-tint-800, .dark .dark\.hover\.border-tint-800:hover, .focus\.border-tint-800:focus, .group:hover .group-hover\.border-tint-800, .hover\.border-tint-800:hover {
   --border-ltn: var(--tint-800);
 }
 
-.border-tint-900, .focus\.border-tint-900:focus, .group:hover .group-hover\.border-tint-900, .hover\.border-tint-900:hover {
+.border-tint-900, .dark .dark\.border-tint-900, .dark .dark\.focus\.border-tint-900:focus, .dark .group:hover .dark\.group-hover\.border-tint-900, .dark .dark\.hover\.border-tint-900:hover, .focus\.border-tint-900:focus, .group:hover .group-hover\.border-tint-900, .hover\.border-tint-900:hover {
   --border-ltn: var(--tint-900);
 }
 
-.border-tint-full, .focus\.border-tint-full:focus, .group:hover .group-hover\.border-tint-full, .hover\.border-tint-full:hover {
+.border-tint-full, .dark .dark\.border-tint-full, .dark .dark\.focus\.border-tint-full:focus, .dark .group:hover .dark\.group-hover\.border-tint-full, .dark .dark\.hover\.border-tint-full:hover, .focus\.border-tint-full:focus, .group:hover .group-hover\.border-tint-full, .hover\.border-tint-full:hover {
   --border-ltn: var(--tint-full);
 }
 
@@ -9653,319 +9653,319 @@ CUSTOM PROPERTIES
   --split-bottom: 0;
 }
 
-.split-current > * + * {
+.split-current > * + *, .dark .dark\.split-current > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: currentColor;
 }
 
-.split-transparent > * + * {
+.split-transparent > * + *, .dark .dark\.split-transparent > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: transparent;
 }
 
-.split-tertiary > * + * {
+.split-tertiary > * + *, .dark .dark\.split-tertiary > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--tertiary-hue), var(--tertiary-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-secondary > * + * {
+.split-secondary > * + *, .dark .dark\.split-secondary > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--secondary-hue), var(--secondary-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-primary > * + * {
+.split-primary > * + *, .dark .dark\.split-primary > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--primary-hue), var(--primary-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-warm-gray > * + * {
+.split-warm-gray > * + *, .dark .dark\.split-warm-gray > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--warm-gray-hue), var(--warm-gray-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-gray > * + * {
+.split-gray > * + *, .dark .dark\.split-gray > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--gray-hue), var(--gray-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-cool-gray > * + * {
+.split-cool-gray > * + *, .dark .dark\.split-cool-gray > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-black > * + * {
+.split-black > * + *, .dark .dark\.split-black > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--black-hue), var(--black-sat), 0%, var(--split-opacity));
 }
 
-.split-white > * + * {
+.split-white > * + *, .dark .dark\.split-white > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--white-hue), var(--white-sat), 100%, var(--split-opacity));
 }
 
-.split-crimson > * + * {
+.split-crimson > * + *, .dark .dark\.split-crimson > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--crimson-hue), var(--crimson-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-pink > * + * {
+.split-pink > * + *, .dark .dark\.split-pink > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--pink-hue), var(--pink-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-magenta > * + * {
+.split-magenta > * + *, .dark .dark\.split-magenta > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--magenta-hue), var(--magenta-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-orchid > * + * {
+.split-orchid > * + *, .dark .dark\.split-orchid > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--orchid-hue), var(--orchid-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-purple > * + * {
+.split-purple > * + *, .dark .dark\.split-purple > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--purple-hue), var(--purple-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-indigo > * + * {
+.split-indigo > * + *, .dark .dark\.split-indigo > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--indigo-hue), var(--indigo-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-blue > * + * {
+.split-blue > * + *, .dark .dark\.split-blue > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--blue-hue), var(--blue-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-sky > * + * {
+.split-sky > * + *, .dark .dark\.split-sky > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--sky-hue), var(--sky-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-cyan > * + * {
+.split-cyan > * + *, .dark .dark\.split-cyan > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--cyan-hue), var(--cyan-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-teal > * + * {
+.split-teal > * + *, .dark .dark\.split-teal > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--teal-hue), var(--teal-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-mint > * + * {
+.split-mint > * + *, .dark .dark\.split-mint > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--mint-hue), var(--mint-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-green > * + * {
+.split-green > * + *, .dark .dark\.split-green > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--green-hue), var(--green-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-lime > * + * {
+.split-lime > * + *, .dark .dark\.split-lime > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--lime-hue), var(--lime-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-olive > * + * {
+.split-olive > * + *, .dark .dark\.split-olive > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--olive-hue), var(--olive-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-lemon > * + * {
+.split-lemon > * + *, .dark .dark\.split-lemon > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--lemon-hue), var(--lemon-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-yellow > * + * {
+.split-yellow > * + *, .dark .dark\.split-yellow > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--yellow-hue), var(--yellow-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-orange > * + * {
+.split-orange > * + *, .dark .dark\.split-orange > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--orange-hue), var(--orange-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-red > * + * {
+.split-red > * + *, .dark .dark\.split-red > * + * {
   --split-ltn: 50%;
   --split-opacity: 1;
   border-color: hsla(var(--red-hue), var(--red-sat), var(--split-ltn), var(--split-opacity));
 }
 
-.split-opacity-0 > * + *, .focus\.split-opacity-0:focus > * + *, .group:hover .group-hover\.split-opacity-0 > * + *, .hover\.split-opacity-0:hover > * + * {
+.split-opacity-0 > * + *, .dark .dark\.split-opacity-0 > * + *, .dark .dark\.focus\.split-opacity-0:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-0 > * + *, .dark .dark\.hover\.split-opacity-0:hover > * + *, .focus\.split-opacity-0:focus > * + *, .group:hover .group-hover\.split-opacity-0 > * + *, .hover\.split-opacity-0:hover > * + * {
   --split-opacity: var(--opacity-0);
 }
 
-.split-opacity-2 > * + *, .focus\.split-opacity-2:focus > * + *, .group:hover .group-hover\.split-opacity-2 > * + *, .hover\.split-opacity-2:hover > * + * {
+.split-opacity-2 > * + *, .dark .dark\.split-opacity-2 > * + *, .dark .dark\.focus\.split-opacity-2:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-2 > * + *, .dark .dark\.hover\.split-opacity-2:hover > * + *, .focus\.split-opacity-2:focus > * + *, .group:hover .group-hover\.split-opacity-2 > * + *, .hover\.split-opacity-2:hover > * + * {
   --split-opacity: var(--opacity-2);
 }
 
-.split-opacity-4 > * + *, .focus\.split-opacity-4:focus > * + *, .group:hover .group-hover\.split-opacity-4 > * + *, .hover\.split-opacity-4:hover > * + * {
+.split-opacity-4 > * + *, .dark .dark\.split-opacity-4 > * + *, .dark .dark\.focus\.split-opacity-4:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-4 > * + *, .dark .dark\.hover\.split-opacity-4:hover > * + *, .focus\.split-opacity-4:focus > * + *, .group:hover .group-hover\.split-opacity-4 > * + *, .hover\.split-opacity-4:hover > * + * {
   --split-opacity: var(--opacity-4);
 }
 
-.split-opacity-6 > * + *, .focus\.split-opacity-6:focus > * + *, .group:hover .group-hover\.split-opacity-6 > * + *, .hover\.split-opacity-6:hover > * + * {
+.split-opacity-6 > * + *, .dark .dark\.split-opacity-6 > * + *, .dark .dark\.focus\.split-opacity-6:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-6 > * + *, .dark .dark\.hover\.split-opacity-6:hover > * + *, .focus\.split-opacity-6:focus > * + *, .group:hover .group-hover\.split-opacity-6 > * + *, .hover\.split-opacity-6:hover > * + * {
   --split-opacity: var(--opacity-6);
 }
 
-.split-opacity-8 > * + *, .focus\.split-opacity-8:focus > * + *, .group:hover .group-hover\.split-opacity-8 > * + *, .hover\.split-opacity-8:hover > * + * {
+.split-opacity-8 > * + *, .dark .dark\.split-opacity-8 > * + *, .dark .dark\.focus\.split-opacity-8:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-8 > * + *, .dark .dark\.hover\.split-opacity-8:hover > * + *, .focus\.split-opacity-8:focus > * + *, .group:hover .group-hover\.split-opacity-8 > * + *, .hover\.split-opacity-8:hover > * + * {
   --split-opacity: var(--opacity-8);
 }
 
-.split-opacity-10 > * + *, .focus\.split-opacity-10:focus > * + *, .group:hover .group-hover\.split-opacity-10 > * + *, .hover\.split-opacity-10:hover > * + * {
+.split-opacity-10 > * + *, .dark .dark\.split-opacity-10 > * + *, .dark .dark\.focus\.split-opacity-10:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-10 > * + *, .dark .dark\.hover\.split-opacity-10:hover > * + *, .focus\.split-opacity-10:focus > * + *, .group:hover .group-hover\.split-opacity-10 > * + *, .hover\.split-opacity-10:hover > * + * {
   --split-opacity: var(--opacity-10);
 }
 
-.split-opacity-20 > * + *, .focus\.split-opacity-20:focus > * + *, .group:hover .group-hover\.split-opacity-20 > * + *, .hover\.split-opacity-20:hover > * + * {
+.split-opacity-20 > * + *, .dark .dark\.split-opacity-20 > * + *, .dark .dark\.focus\.split-opacity-20:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-20 > * + *, .dark .dark\.hover\.split-opacity-20:hover > * + *, .focus\.split-opacity-20:focus > * + *, .group:hover .group-hover\.split-opacity-20 > * + *, .hover\.split-opacity-20:hover > * + * {
   --split-opacity: var(--opacity-20);
 }
 
-.split-opacity-30 > * + *, .focus\.split-opacity-30:focus > * + *, .group:hover .group-hover\.split-opacity-30 > * + *, .hover\.split-opacity-30:hover > * + * {
+.split-opacity-30 > * + *, .dark .dark\.split-opacity-30 > * + *, .dark .dark\.focus\.split-opacity-30:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-30 > * + *, .dark .dark\.hover\.split-opacity-30:hover > * + *, .focus\.split-opacity-30:focus > * + *, .group:hover .group-hover\.split-opacity-30 > * + *, .hover\.split-opacity-30:hover > * + * {
   --split-opacity: var(--opacity-30);
 }
 
-.split-opacity-40 > * + *, .focus\.split-opacity-40:focus > * + *, .group:hover .group-hover\.split-opacity-40 > * + *, .hover\.split-opacity-40:hover > * + * {
+.split-opacity-40 > * + *, .dark .dark\.split-opacity-40 > * + *, .dark .dark\.focus\.split-opacity-40:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-40 > * + *, .dark .dark\.hover\.split-opacity-40:hover > * + *, .focus\.split-opacity-40:focus > * + *, .group:hover .group-hover\.split-opacity-40 > * + *, .hover\.split-opacity-40:hover > * + * {
   --split-opacity: var(--opacity-40);
 }
 
-.split-opacity-50 > * + *, .focus\.split-opacity-50:focus > * + *, .group:hover .group-hover\.split-opacity-50 > * + *, .hover\.split-opacity-50:hover > * + * {
+.split-opacity-50 > * + *, .dark .dark\.split-opacity-50 > * + *, .dark .dark\.focus\.split-opacity-50:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-50 > * + *, .dark .dark\.hover\.split-opacity-50:hover > * + *, .focus\.split-opacity-50:focus > * + *, .group:hover .group-hover\.split-opacity-50 > * + *, .hover\.split-opacity-50:hover > * + * {
   --split-opacity: var(--opacity-50);
 }
 
-.split-opacity-60 > * + *, .focus\.split-opacity-60:focus > * + *, .group:hover .group-hover\.split-opacity-60 > * + *, .hover\.split-opacity-60:hover > * + * {
+.split-opacity-60 > * + *, .dark .dark\.split-opacity-60 > * + *, .dark .dark\.focus\.split-opacity-60:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-60 > * + *, .dark .dark\.hover\.split-opacity-60:hover > * + *, .focus\.split-opacity-60:focus > * + *, .group:hover .group-hover\.split-opacity-60 > * + *, .hover\.split-opacity-60:hover > * + * {
   --split-opacity: var(--opacity-60);
 }
 
-.split-opacity-70 > * + *, .focus\.split-opacity-70:focus > * + *, .group:hover .group-hover\.split-opacity-70 > * + *, .hover\.split-opacity-70:hover > * + * {
+.split-opacity-70 > * + *, .dark .dark\.split-opacity-70 > * + *, .dark .dark\.focus\.split-opacity-70:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-70 > * + *, .dark .dark\.hover\.split-opacity-70:hover > * + *, .focus\.split-opacity-70:focus > * + *, .group:hover .group-hover\.split-opacity-70 > * + *, .hover\.split-opacity-70:hover > * + * {
   --split-opacity: var(--opacity-70);
 }
 
-.split-opacity-80 > * + *, .focus\.split-opacity-80:focus > * + *, .group:hover .group-hover\.split-opacity-80 > * + *, .hover\.split-opacity-80:hover > * + * {
+.split-opacity-80 > * + *, .dark .dark\.split-opacity-80 > * + *, .dark .dark\.focus\.split-opacity-80:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-80 > * + *, .dark .dark\.hover\.split-opacity-80:hover > * + *, .focus\.split-opacity-80:focus > * + *, .group:hover .group-hover\.split-opacity-80 > * + *, .hover\.split-opacity-80:hover > * + * {
   --split-opacity: var(--opacity-80);
 }
 
-.split-opacity-90 > * + *, .focus\.split-opacity-90:focus > * + *, .group:hover .group-hover\.split-opacity-90 > * + *, .hover\.split-opacity-90:hover > * + * {
+.split-opacity-90 > * + *, .dark .dark\.split-opacity-90 > * + *, .dark .dark\.focus\.split-opacity-90:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-90 > * + *, .dark .dark\.hover\.split-opacity-90:hover > * + *, .focus\.split-opacity-90:focus > * + *, .group:hover .group-hover\.split-opacity-90 > * + *, .hover\.split-opacity-90:hover > * + * {
   --split-opacity: var(--opacity-90);
 }
 
-.split-opacity-100 > * + *, .focus\.split-opacity-100:focus > * + *, .group:hover .group-hover\.split-opacity-100 > * + *, .hover\.split-opacity-100:hover > * + * {
+.split-opacity-100 > * + *, .dark .dark\.split-opacity-100 > * + *, .dark .dark\.focus\.split-opacity-100:focus > * + *, .dark .group:hover .dark\.group-hover\.split-opacity-100 > * + *, .dark .dark\.hover\.split-opacity-100:hover > * + *, .focus\.split-opacity-100:focus > * + *, .group:hover .group-hover\.split-opacity-100 > * + *, .hover\.split-opacity-100:hover > * + * {
   --split-opacity: var(--opacity-100);
 }
 
-.split-shade-base > * + *, .focus\.split-shade-base:focus > * + *, .group:hover .group-hover\.split-shade-base > * + *, .hover\.split-shade-base:hover > * + * {
+.split-shade-base > * + *, .dark .dark\.split-shade-base > * + *, .dark .dark\.focus\.split-shade-base:focus > * + *, .dark .group:hover .dark\.group-hover\.split-shade-base > * + *, .dark .dark\.hover\.split-shade-base:hover > * + *, .focus\.split-shade-base:focus > * + *, .group:hover .group-hover\.split-shade-base > * + *, .hover\.split-shade-base:hover > * + * {
   --split-ltn: var(--shade-base);
 }
 
-.split-shade-100 > * + *, .focus\.split-shade-100:focus > * + *, .group:hover .group-hover\.split-shade-100 > * + *, .hover\.split-shade-100:hover > * + * {
+.split-shade-100 > * + *, .dark .dark\.split-shade-100 > * + *, .dark .dark\.focus\.split-shade-100:focus > * + *, .dark .group:hover .dark\.group-hover\.split-shade-100 > * + *, .dark .dark\.hover\.split-shade-100:hover > * + *, .focus\.split-shade-100:focus > * + *, .group:hover .group-hover\.split-shade-100 > * + *, .hover\.split-shade-100:hover > * + * {
   --split-ltn: var(--shade-100);
 }
 
-.split-shade-200 > * + *, .focus\.split-shade-200:focus > * + *, .group:hover .group-hover\.split-shade-200 > * + *, .hover\.split-shade-200:hover > * + * {
+.split-shade-200 > * + *, .dark .dark\.split-shade-200 > * + *, .dark .dark\.focus\.split-shade-200:focus > * + *, .dark .group:hover .dark\.group-hover\.split-shade-200 > * + *, .dark .dark\.hover\.split-shade-200:hover > * + *, .focus\.split-shade-200:focus > * + *, .group:hover .group-hover\.split-shade-200 > * + *, .hover\.split-shade-200:hover > * + * {
   --split-ltn: var(--shade-200);
 }
 
-.split-shade-300 > * + *, .focus\.split-shade-300:focus > * + *, .group:hover .group-hover\.split-shade-300 > * + *, .hover\.split-shade-300:hover > * + * {
+.split-shade-300 > * + *, .dark .dark\.split-shade-300 > * + *, .dark .dark\.focus\.split-shade-300:focus > * + *, .dark .group:hover .dark\.group-hover\.split-shade-300 > * + *, .dark .dark\.hover\.split-shade-300:hover > * + *, .focus\.split-shade-300:focus > * + *, .group:hover .group-hover\.split-shade-300 > * + *, .hover\.split-shade-300:hover > * + * {
   --split-ltn: var(--shade-300);
 }
 
-.split-shade-400 > * + *, .focus\.split-shade-400:focus > * + *, .group:hover .group-hover\.split-shade-400 > * + *, .hover\.split-shade-400:hover > * + * {
+.split-shade-400 > * + *, .dark .dark\.split-shade-400 > * + *, .dark .dark\.focus\.split-shade-400:focus > * + *, .dark .group:hover .dark\.group-hover\.split-shade-400 > * + *, .dark .dark\.hover\.split-shade-400:hover > * + *, .focus\.split-shade-400:focus > * + *, .group:hover .group-hover\.split-shade-400 > * + *, .hover\.split-shade-400:hover > * + * {
   --split-ltn: var(--shade-400);
 }
 
-.split-shade-500 > * + *, .focus\.split-shade-500:focus > * + *, .group:hover .group-hover\.split-shade-500 > * + *, .hover\.split-shade-500:hover > * + * {
+.split-shade-500 > * + *, .dark .dark\.split-shade-500 > * + *, .dark .dark\.focus\.split-shade-500:focus > * + *, .dark .group:hover .dark\.group-hover\.split-shade-500 > * + *, .dark .dark\.hover\.split-shade-500:hover > * + *, .focus\.split-shade-500:focus > * + *, .group:hover .group-hover\.split-shade-500 > * + *, .hover\.split-shade-500:hover > * + * {
   --split-ltn: var(--shade-500);
 }
 
-.split-shade-600 > * + *, .focus\.split-shade-600:focus > * + *, .group:hover .group-hover\.split-shade-600 > * + *, .hover\.split-shade-600:hover > * + * {
+.split-shade-600 > * + *, .dark .dark\.split-shade-600 > * + *, .dark .dark\.focus\.split-shade-600:focus > * + *, .dark .group:hover .dark\.group-hover\.split-shade-600 > * + *, .dark .dark\.hover\.split-shade-600:hover > * + *, .focus\.split-shade-600:focus > * + *, .group:hover .group-hover\.split-shade-600 > * + *, .hover\.split-shade-600:hover > * + * {
   --split-ltn: var(--shade-600);
 }
 
-.split-shade-700 > * + *, .focus\.split-shade-700:focus > * + *, .group:hover .group-hover\.split-shade-700 > * + *, .hover\.split-shade-700:hover > * + * {
+.split-shade-700 > * + *, .dark .dark\.split-shade-700 > * + *, .dark .dark\.focus\.split-shade-700:focus > * + *, .dark .group:hover .dark\.group-hover\.split-shade-700 > * + *, .dark .dark\.hover\.split-shade-700:hover > * + *, .focus\.split-shade-700:focus > * + *, .group:hover .group-hover\.split-shade-700 > * + *, .hover\.split-shade-700:hover > * + * {
   --split-ltn: var(--shade-700);
 }
 
-.split-shade-800 > * + *, .focus\.split-shade-800:focus > * + *, .group:hover .group-hover\.split-shade-800 > * + *, .hover\.split-shade-800:hover > * + * {
+.split-shade-800 > * + *, .dark .dark\.split-shade-800 > * + *, .dark .dark\.focus\.split-shade-800:focus > * + *, .dark .group:hover .dark\.group-hover\.split-shade-800 > * + *, .dark .dark\.hover\.split-shade-800:hover > * + *, .focus\.split-shade-800:focus > * + *, .group:hover .group-hover\.split-shade-800 > * + *, .hover\.split-shade-800:hover > * + * {
   --split-ltn: var(--shade-800);
 }
 
-.split-shade-900 > * + *, .focus\.split-shade-900:focus > * + *, .group:hover .group-hover\.split-shade-900 > * + *, .hover\.split-shade-900:hover > * + * {
+.split-shade-900 > * + *, .dark .dark\.split-shade-900 > * + *, .dark .dark\.focus\.split-shade-900:focus > * + *, .dark .group:hover .dark\.group-hover\.split-shade-900 > * + *, .dark .dark\.hover\.split-shade-900:hover > * + *, .focus\.split-shade-900:focus > * + *, .group:hover .group-hover\.split-shade-900 > * + *, .hover\.split-shade-900:hover > * + * {
   --split-ltn: var(--shade-900);
 }
 
-.split-shade-full > * + *, .focus\.split-shade-full:focus > * + *, .group:hover .group-hover\.split-shade-full > * + *, .hover\.split-shade-full:hover > * + * {
+.split-shade-full > * + *, .dark .dark\.split-shade-full > * + *, .dark .dark\.focus\.split-shade-full:focus > * + *, .dark .group:hover .dark\.group-hover\.split-shade-full > * + *, .dark .dark\.hover\.split-shade-full:hover > * + *, .focus\.split-shade-full:focus > * + *, .group:hover .group-hover\.split-shade-full > * + *, .hover\.split-shade-full:hover > * + * {
   --split-ltn: var(--shade-full);
 }
 
-.split-tint-base > * + *, .focus\.split-tint-base:focus > * + *, .group:hover .group-hover\.split-tint-base > * + *, .hover\.split-tint-base:hover > * + * {
+.split-tint-base > * + *, .dark .dark\.split-tint-base > * + *, .dark .dark\.focus\.split-tint-base:focus > * + *, .dark .group:hover .dark\.group-hover\.split-tint-base > * + *, .dark .dark\.hover\.split-tint-base:hover > * + *, .focus\.split-tint-base:focus > * + *, .group:hover .group-hover\.split-tint-base > * + *, .hover\.split-tint-base:hover > * + * {
   --split-ltn: var(--tint-base);
 }
 
-.split-tint-100 > * + *, .focus\.split-tint-100:focus > * + *, .group:hover .group-hover\.split-tint-100 > * + *, .hover\.split-tint-100:hover > * + * {
+.split-tint-100 > * + *, .dark .dark\.split-tint-100 > * + *, .dark .dark\.focus\.split-tint-100:focus > * + *, .dark .group:hover .dark\.group-hover\.split-tint-100 > * + *, .dark .dark\.hover\.split-tint-100:hover > * + *, .focus\.split-tint-100:focus > * + *, .group:hover .group-hover\.split-tint-100 > * + *, .hover\.split-tint-100:hover > * + * {
   --split-ltn: var(--tint-100);
 }
 
-.split-tint-200 > * + *, .focus\.split-tint-200:focus > * + *, .group:hover .group-hover\.split-tint-200 > * + *, .hover\.split-tint-200:hover > * + * {
+.split-tint-200 > * + *, .dark .dark\.split-tint-200 > * + *, .dark .dark\.focus\.split-tint-200:focus > * + *, .dark .group:hover .dark\.group-hover\.split-tint-200 > * + *, .dark .dark\.hover\.split-tint-200:hover > * + *, .focus\.split-tint-200:focus > * + *, .group:hover .group-hover\.split-tint-200 > * + *, .hover\.split-tint-200:hover > * + * {
   --split-ltn: var(--tint-200);
 }
 
-.split-tint-300 > * + *, .focus\.split-tint-300:focus > * + *, .group:hover .group-hover\.split-tint-300 > * + *, .hover\.split-tint-300:hover > * + * {
+.split-tint-300 > * + *, .dark .dark\.split-tint-300 > * + *, .dark .dark\.focus\.split-tint-300:focus > * + *, .dark .group:hover .dark\.group-hover\.split-tint-300 > * + *, .dark .dark\.hover\.split-tint-300:hover > * + *, .focus\.split-tint-300:focus > * + *, .group:hover .group-hover\.split-tint-300 > * + *, .hover\.split-tint-300:hover > * + * {
   --split-ltn: var(--tint-300);
 }
 
-.split-tint-400 > * + *, .focus\.split-tint-400:focus > * + *, .group:hover .group-hover\.split-tint-400 > * + *, .hover\.split-tint-400:hover > * + * {
+.split-tint-400 > * + *, .dark .dark\.split-tint-400 > * + *, .dark .dark\.focus\.split-tint-400:focus > * + *, .dark .group:hover .dark\.group-hover\.split-tint-400 > * + *, .dark .dark\.hover\.split-tint-400:hover > * + *, .focus\.split-tint-400:focus > * + *, .group:hover .group-hover\.split-tint-400 > * + *, .hover\.split-tint-400:hover > * + * {
   --split-ltn: var(--tint-400);
 }
 
-.split-tint-500 > * + *, .focus\.split-tint-500:focus > * + *, .group:hover .group-hover\.split-tint-500 > * + *, .hover\.split-tint-500:hover > * + * {
+.split-tint-500 > * + *, .dark .dark\.split-tint-500 > * + *, .dark .dark\.focus\.split-tint-500:focus > * + *, .dark .group:hover .dark\.group-hover\.split-tint-500 > * + *, .dark .dark\.hover\.split-tint-500:hover > * + *, .focus\.split-tint-500:focus > * + *, .group:hover .group-hover\.split-tint-500 > * + *, .hover\.split-tint-500:hover > * + * {
   --split-ltn: var(--tint-500);
 }
 
-.split-tint-600 > * + *, .focus\.split-tint-600:focus > * + *, .group:hover .group-hover\.split-tint-600 > * + *, .hover\.split-tint-600:hover > * + * {
+.split-tint-600 > * + *, .dark .dark\.split-tint-600 > * + *, .dark .dark\.focus\.split-tint-600:focus > * + *, .dark .group:hover .dark\.group-hover\.split-tint-600 > * + *, .dark .dark\.hover\.split-tint-600:hover > * + *, .focus\.split-tint-600:focus > * + *, .group:hover .group-hover\.split-tint-600 > * + *, .hover\.split-tint-600:hover > * + * {
   --split-ltn: var(--tint-600);
 }
 
-.split-tint-700 > * + *, .focus\.split-tint-700:focus > * + *, .group:hover .group-hover\.split-tint-700 > * + *, .hover\.split-tint-700:hover > * + * {
+.split-tint-700 > * + *, .dark .dark\.split-tint-700 > * + *, .dark .dark\.focus\.split-tint-700:focus > * + *, .dark .group:hover .dark\.group-hover\.split-tint-700 > * + *, .dark .dark\.hover\.split-tint-700:hover > * + *, .focus\.split-tint-700:focus > * + *, .group:hover .group-hover\.split-tint-700 > * + *, .hover\.split-tint-700:hover > * + * {
   --split-ltn: var(--tint-700);
 }
 
-.split-tint-800 > * + *, .focus\.split-tint-800:focus > * + *, .group:hover .group-hover\.split-tint-800 > * + *, .hover\.split-tint-800:hover > * + * {
+.split-tint-800 > * + *, .dark .dark\.split-tint-800 > * + *, .dark .dark\.focus\.split-tint-800:focus > * + *, .dark .group:hover .dark\.group-hover\.split-tint-800 > * + *, .dark .dark\.hover\.split-tint-800:hover > * + *, .focus\.split-tint-800:focus > * + *, .group:hover .group-hover\.split-tint-800 > * + *, .hover\.split-tint-800:hover > * + * {
   --split-ltn: var(--tint-800);
 }
 
-.split-tint-900 > * + *, .focus\.split-tint-900:focus > * + *, .group:hover .group-hover\.split-tint-900 > * + *, .hover\.split-tint-900:hover > * + * {
+.split-tint-900 > * + *, .dark .dark\.split-tint-900 > * + *, .dark .dark\.focus\.split-tint-900:focus > * + *, .dark .group:hover .dark\.group-hover\.split-tint-900 > * + *, .dark .dark\.hover\.split-tint-900:hover > * + *, .focus\.split-tint-900:focus > * + *, .group:hover .group-hover\.split-tint-900 > * + *, .hover\.split-tint-900:hover > * + * {
   --split-ltn: var(--tint-900);
 }
 
-.split-tint-full > * + *, .focus\.split-tint-full:focus > * + *, .group:hover .group-hover\.split-tint-full > * + *, .hover\.split-tint-full:hover > * + * {
+.split-tint-full > * + *, .dark .dark\.split-tint-full > * + *, .dark .dark\.focus\.split-tint-full:focus > * + *, .dark .group:hover .dark\.group-hover\.split-tint-full > * + *, .dark .dark\.hover\.split-tint-full:hover > * + *, .focus\.split-tint-full:focus > * + *, .group:hover .group-hover\.split-tint-full > * + *, .hover\.split-tint-full:hover > * + * {
   --split-ltn: var(--tint-full);
 }
 

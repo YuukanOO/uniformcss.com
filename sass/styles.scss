@@ -1,7 +1,7 @@
 @use "uniform" as * with (
   $config: (    
 		// placeholders: true,
-		dark-mode: true,
+		dark-mode-support: true,
 		// headless: true,
     utility: (
       background-color: (
