@@ -139,8 +139,13 @@ cssCodeExample: |
   </div>
 </section>
 
+<section class="bg-black">
+  <div class="wrapper">
+    <div class="h-1 bg-gray bg-shade-700"></div>
+  </div>
+</section>
 
-<section class="bg-gray bg-shade-800">
+<section class="bg-black">
   <div class="wrapper py-80 lg.py-128 xl.py-160">
     <div>
       <span class="inline-flex align-items-center h-32 px-12 mb-20 radius-sm border-1 border-white uppercase text-xs bold tracking-loose color-white">Rapid Prototyping</span>
@@ -187,8 +192,8 @@ cssCodeExample: |
       </div>
       <span class="cd-image-label px-10 py-3 radius-full bg-black color-white mb-12 mr-12 text-xs bold tracking-loose uppercase" data-type="original">Preview</span>
   
-      <div class="cd-resize-img radius-l-xl"> <!-- the resizable image on top -->
-        <div class="w-100p h-448 overflow-auto bg-black">
+      <div class="cd-resize-img"> <!-- the resizable image on top -->
+        <div class="w-100p h-448 overflow-auto bg-gray bg-shade-800">
           <div class="flex transparent-highlight">
 {% highlight "html" %}
 <article class="w-100p max-w-512 radius-md bg-white shadow-md">
@@ -254,11 +259,11 @@ cssCodeExample: |
   </div>
 </section>
 
-<section class="bg-gray bg-shade-800">
+<section class="bg-black">
   {% include "partials/components.njk" %}
 </section>
 
-<section class="bg-gray bg-shade-800">
+<section class="bg-black">
   <div class="wrapper py-80 lg.py-128 xl.py-160">
     
     <div class="mb-20">
@@ -288,7 +293,7 @@ cssCodeExample: |
             <p class="text-md color-white color-opacity-80">Take advantage of HSL based colors to instantaneously configure Uniform to match your design with simple to tweak color tokens.</p>
           </div>
         </div>
-        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-gray bg-shade-700 border-1 border-white border-opacity-20 transparent-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-gray bg-shade-800 border-1 border-white border-opacity-10 transparent-highlight">
 {% highlight "css" %}
 /* styles.css */
 :root {
@@ -316,7 +321,7 @@ cssCodeExample: |
             <p class="text-md color-white color-opacity-80">Apply composable manipulation to any color. Increase or decrease saturation, lighten, and darken colors directly in your html.</p>
           </div>
         </div>
-        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-gray bg-shade-700 border-1 border-white border-opacity-20 transparent-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-gray bg-shade-800 border-1 border-white border-opacity-10 transparent-highlight">
 {% highlight "html" %}
 <div class="bg-blue bg-shade-400">
   ...
@@ -344,7 +349,7 @@ cssCodeExample: |
             <p class="text-md color-white color-opacity-80">Uniform comes with built-in inline gradient support. Just override CSS custom properties to apply start and end colors.</p>
           </div>
         </div>
-        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-gray bg-shade-700 border-1 border-white border-opacity-20 transparent-highlight">
+        <div class="col-1 sm.col-7 md.col-8 radius-lg bg-gray bg-shade-800 border-1 border-white border-opacity-10 transparent-highlight">
 {% highlight "html" %}
 <div class="bg-linear" style="--gradient: to right, #ffbebe, #4eff9d;">
   ...
