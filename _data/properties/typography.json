@@ -186,6 +186,10 @@
       {
         "class": "line-through",
         "properties": ["text-decoration: line-through;"]
+      },
+      {
+        "class": "no-underline",
+        "properties": ["text-decoration: none;"]
       }
     ]
   },

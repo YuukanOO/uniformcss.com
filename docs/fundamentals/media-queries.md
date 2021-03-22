@@ -1,6 +1,6 @@
 ---
 title: Media Queries
-description: Learn how to apply classes that change across on breakpoint.
+description: Learn how to apply classes that change across breakpoint.
 date: 1000-01-03
 ---
 
@@ -81,7 +81,7 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 
 ## Enabling Responsiveness
 
-By design, Uniform takes common design patterns into consideration and only enables responsiveness to a subset of CSS properties in order to maintain a reasonable file-size. You can override the default responsive setting by passing the value `true` to `responsive` key within each property setting in the configuration.
+By design, Uniform only enables responsiveness to a subset of CSS properties. You can enable responsiveness by passing `responsive: true` to each property setting in your configuration. To see which properties are responsive, please refer to the [glossary](/glossary).
 
 ```scss
 @use "uniform" as * with (
@@ -94,8 +94,6 @@ By design, Uniform takes common design patterns into consideration and only enab
   )
 );
 ```
-
-> To see which properties are responsive, please refer to the glossary.
 
 ---
 
@@ -151,6 +149,6 @@ You can replace existing breakpoints by overriding existing keys to the `screens
   .md\.flex {
     display: flex;
   }
-  ...;
+  ...
 }
 ```
