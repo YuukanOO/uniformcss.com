@@ -18,9 +18,10 @@ By default, Uniform applies reset of styles to flatten browser inconsistencies a
 2. All elements have a default border style applied.
 3. Body has a default `line-height` of 1.
 4. All media elements are set to `display: block`.
+5. All typography styles are reset
 
-```css
-/* Reset everything */
+```scss
+// reset everything
 *,*::before,*::after {
   box-sizing: border-box;
 }
@@ -28,21 +29,24 @@ By default, Uniform applies reset of styles to flatten browser inconsistencies a
 * {
   margin: 0;
   padding: 0;
-  border: 0 solid #000;
+  border: 0 solid transparent;
+  line-height: inherit;
+  color: inherit;
+  font: inherit;
 }
 
-/* Prevent iOS font size change */
+// prevent iOS font size change
 html {
-  -webkit-color-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-/* Reset body line-height */
+// reset body line-height
 body {
   min-height: 100vh;
   line-height: 1;
 }
 
-/* All media elements set to block */
+// all media elements set to block and full width
 img,
 svg,
 video,
@@ -52,35 +56,101 @@ iframe,
 embed,
 object {
   display: block;
-  width: 100%;
   vertical-align: middle;
+  width: 100%;
 }
 
-/* Collapse table */
+// collapse table
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
+// assign button hover state
+button, [role="button"] {
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
 }
 
-/* Remove list style */
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+// reset anchor style
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// reset heading style
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+// reset list style
 ol,ul {
   list-style: none;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+// reset text input style
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  &:focus {
+    outline: 0;
+  }
+}
+
+// reset textarea style
+textarea {
+  // move the label to the top
+  vertical-align: top;
+
+  // turn off scroll bars in IE unless needed
+  overflow: auto;
+}
+
+[type='checkbox'],
+[type='radio'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &:focus {
+    outline: 0
+  }
+}
+
+// remove all animations, transitions and smooth scroll for people that prefer not to see them
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
-  scroll-behavior: auto;
+    scroll-behavior: auto;
   }
-  
+
   *,
   *::before,
   *::after {
@@ -96,7 +166,7 @@ ol,ul {
 
 ## Disabling Reset Styles
 
-If you prefer to exclude reset styles from your build, simply pass the following setting in your configuration.
+If you prefer to exclude default reset styles from your build, simply pass the following `exclude` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
@@ -110,49 +180,10 @@ If you prefer to exclude reset styles from your build, simply pass the following
 
 ## Starter Styles
 
-By default, Uniform provides optional starter styles to help apply rudimentary formatting to common html elements. Uniform starter styles also provide **custom property hooks** with fallback values to help theme quickly and get started.
+By default, Uniform provides starter styles to help apply rudimentary formatting to common html elements.
 
 ```css
-html {
-  background-color: var(--background-color, white);
-}
-
-body {
-  font-size: var(--body-font-size, 1rem);
-  font-weight: var(--body-font-weight, 400);
-  line-height: var(--body-leading, 1);
-  background-color: var(--body-background-color, white);
-  color: var(--body-text-color, black);
-}
-
-h1,h2,h3,h4,h5,h6 {
-  line-height: var(--heading-leading, var(--leading-tighter));
-  margin-bottom: var(--heading-margin, 0.5em);
-  color: var(--heading-color, black);
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-p {
-  line-height: var(--paragraph-leading, var(--leading-normal));
-  margin-bottom: var(--paragraph-margin, 1.5em);
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  color: var(--link-color, RoyalBlue);
-}
-
-b,strong {
-  font-weight: var(--bold-font-weight, var(--bold));
-}
-
-sub,sup {
+sub, sup {
   position: relative;
   font-size: .75em;
 }
@@ -167,37 +198,61 @@ sup {
   left: 0.25em;
 }
 
-pre,code {
+pre, code {
   font-family: var(--font-mono);
 }
-```
 
----
+[type=date],
+[type=datetime],
+[type=datetime-local],
+[type=email],
+[type=month],
+[type=number],
+[type=password],
+[type=search],
+[type=tel],
+[type=text],
+[type=time],
+[type=url],
+[type=week],
+textarea,
+select {
+  padding: 0.5em 0.75em;
+  font-size: 1rem;
+  line-height: 1.5;
+}
 
-## Overriding Starter Styles
+[type='checkbox'], 
+[type='radio'] {
+  width: 1em;
+  height: 1em;
+  &:checked {
+    border-color: transparent;
+    background-color: currentColor;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 
-Starter styles include customer properties with fallback values that act as a hook to be overwritten. The following start style custom properties are available to be overwritten.
+[type='checkbox'] {
+  &:checked {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  }
+}
 
-```css
-:root {
-  --background-color: ...;
+[type='radio'] {
+  border-radius: 9999px;
+  &:checked {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='white'/%3e%3c/svg%3e");
+  }
+}
 
-  --body-font-size: ...;
-  --body-font-weight: ...;
-  --body-leading: ...;
-  --body-background-color: ...;
-  --body-text-color: ...;
-
-  --heading-leading: ...;
-  --heading-margin: ...;
-  --heading-color: ...;
-
-  --paragraph-leading: ...;
-  --paragraph-margin: ...;
-
-  --link-color: ...;
-
-  --bold-font-weight: ...;
+select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right .75em center;
+  background-size: 16px 12px;
 }
 ```
 
@@ -205,7 +260,7 @@ Starter styles include customer properties with fallback values that act as a ho
 
 ## Disabling Starter Styles
 
-If you prefer to exclude starter styles from your build, simply pass the following setting in your configuration.
+If you prefer to exclude default starter styles from your build, simply pass the following `exclude` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
