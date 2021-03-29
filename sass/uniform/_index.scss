@@ -1,12 +1,13 @@
+@forward "uniform/core";
+@use "uniform/core";
 @use "sass:map";
 @use "sass:list";
 @use "sass:meta";
-@forward "uniform/core";
-@use "uniform/core";
 
 // DEFAULTS (2)
 @use "defaults/reset";
 @use "defaults/starter";
+@use "defaults/wrapper";
 
 // UTILITIES - TRANSITION (5)
 @use "utilities/transition/core-transition-duration";

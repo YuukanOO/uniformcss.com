@@ -37,7 +37,7 @@
       },
       {
         "class": "radius-bl-2xl",
-        "properties": ["border-bottom-left-radius: 1.25rem;"]
+        "properties": ["border-bottom-left-radius: 1.5rem;"]
       },
       {
         "class": "radius-bl-full",
@@ -83,7 +83,7 @@
       },
       {
         "class": "radius-br-2xl",
-        "properties": ["border-bottom-right-radius: 1.25rem;"]
+        "properties": ["border-bottom-right-radius: 1.5rem;"]
       },
       {
         "class": "radius-br-full",
@@ -129,7 +129,7 @@
       },
       {
         "class": "border-b-2xl",
-        "properties": ["border-bottom-width: 1.25rem;"]
+        "properties": ["border-bottom-width: 1.5rem;"]
       },
       {
         "class": "border-b-full",

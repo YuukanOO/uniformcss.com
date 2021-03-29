@@ -6,7 +6,7 @@ $exclude: map.get($all-config, exclude);
 $include: map.get($all-config, include);
 $headless: map.get($all-config, headless);
 
-@if ( $headless == false or list.index($include, default-reset) != null or list.index($exclude, all) != null or list.index($exclude, default-reset) != null ) {
+@if ( $headless == false or list.index($include, reset) != null or list.index($exclude, all) != null or list.index($exclude, reset) != null ) {
 
   // reset everything
   *,*::before,*::after {

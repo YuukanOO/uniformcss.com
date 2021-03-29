@@ -102,20 +102,20 @@ WRAPPER MODULE
   ========================================================================
   PARAGRAPH
 
-  --paragraph-margin
-  --paragraph-weight
-  --paragraph-size
-  --paragraph-color
+  --markdown-p-margin
+  --markdown-p-weight
+  --markdown-p-size
+  --markdown-p-color
   ======================================================================== 
   */
 
-	& > p {
-		margin-top: var(--markdown-paragraph-margin-top, var(--size-24));
-		margin-bottom: var(--markdown-paragraph-margin-bottom, var(--size-24));
-		font-size: var(--markdown-paragraph-size, var(--font-md));
-		font-weight: var(--markdown-paragraph-weight, var(--regular));
-		line-height: var(--markdown-paragraph-leading, var(--leading-normal));
-		color: var(--markdown-paragraph-color, black);
+	& > p, & > ol, & > ul {
+		margin-top: var(--markdown-p-margin-top, var(--size-24));
+		margin-bottom: var(--markdown-p-margin-bottom, var(--size-24));
+		font-size: var(--markdown-p-size, var(--font-md));
+		font-weight: var(--markdown-p-weight, var(--regular));
+		line-height: var(--markdown-p-leading, var(--leading-normal));
+		color: var(--markdown-p-color, black);
 	}
 
 	/* 
@@ -165,6 +165,7 @@ WRAPPER MODULE
 			border: var(--markdown-code-border, 0);
 			color: var(--markdown-code-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
 			white-space: nowrap;
+			user-select: all;
 		}
 	}
 

@@ -226,8 +226,8 @@ $default-config: (
     warm-gray: ( hue: 24, sat: 12% ),
 
     primary: ( hue: 220, sat: 75% ),
-    secondary: ( hue: 240, sat: 75% ),
-    tertiary: ( hue: 40, sat: 75% ),
+    secondary: ( hue: 220, sat: 50% ),
+    tertiary: ( hue: 220, sat: 25% ),
     
     transparent: transparent,
     current: currentColor
@@ -312,7 +312,11 @@ $default-config: (
     1024: rem(1024),
     1152: rem(1152),
     1280: rem(1280),
-    1536: rem(1536)
+    1536: rem(1536),
+    1792: rem(1792),
+    2048: rem(2048),
+    2304: rem(2304),
+    2560: rem(2560),
   ),
 
   negative-sizes: (
@@ -362,7 +366,11 @@ $default-config: (
     n1024: rem(-1024),
     n1152: rem(-1152),
     n1280: rem(-1280),
-    n1536: rem(-1536)
+    n1536: rem(-1536),
+    n1792: rem(-1792),
+    n2048: rem(-2048),
+    n2304: rem(-2304),
+    n2560: rem(-2560),
   ),
 
   font-families: (
@@ -494,8 +502,7 @@ $default-config: (
     sm: rem(6),
     md: rem(8),
     lg: rem(12),
-    xl: rem(16),
-    2xl: rem(20),
+    2xl: rem(24),
     full: 9999px,
   ),
 

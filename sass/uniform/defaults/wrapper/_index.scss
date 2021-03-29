@@ -1,0 +1,30 @@
+@use "sass:map";
+@use "sass:list";
+@use "uniform/core" as *;
+
+$exclude: map.get($all-config, exclude);
+$include: map.get($all-config, include);
+$headless: map.get($all-config, headless);
+
+@if ( $headless == false or list.index($include, wrapper) != null or list.index($exclude, all) != null or list.index($exclude, wrapper) != null ) {
+
+  .wrapper {
+		width: 100%;
+		margin: auto;
+		max-width: var(--wrapper-max-width, 640px);
+	
+		@include screen(sm) {
+			max-width: var(--wrapper-sm-max-width, 768px);
+		}
+		@include screen(md) {
+			max-width: var(--wrapper-md-max-width, 1024px);
+		}
+		@include screen(lg) {
+			max-width: var(--wrapper-lg-max-width, 1280px);
+		}
+		@include screen(xl) {
+			max-width: var(--wrapper-xl-max-width, 1536px);
+		}
+	}
+}
+

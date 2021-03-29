@@ -490,7 +490,7 @@ lastUpdated: 2020-10-20
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-2xl">
     <div>
       radius-2xl<br>
-      <span class="leading-looser color-black">20px - 1.25rem</span>
+      <span class="leading-looser color-black">24px - 1.5rem</span>
     </div>
   </div>
   <div class="flex align-items-center justify-content-center px-20 h-80 bg-white color-black font-xs text-center bold radius-round">
