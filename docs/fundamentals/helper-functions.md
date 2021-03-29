@@ -14,7 +14,7 @@ If you are using the native Sass implementation of Uniform, you get access to us
 
 ## How they work
 
-Behind the scenes, all default and user-defined theme variables such as colors, sizes, and font values are merged and enclosed inside a map. Helper functions essentially act as a get function that interacts with this map to pull theme values.
+Behind the scenes, all default and user-defined theme settings such as colors, sizes, and font values are merged and enclosed inside thee `$config` map. Helper functions essentially act as a get function that interacts with this map to pull theme values.
 
 ```scss
 // Example custom element
@@ -39,11 +39,11 @@ Behind the scenes, all default and user-defined theme variables such as colors, 
 
 ---
 
-## Breakpoints Functions
+## Screen Functions
 
-The `screen()` function returns values from the breakpoint map provided an existing variant is passed in as a parameter. `screens()` function returns the entire map, useful for looping.
+The `screen()` function returns values from the `screen` map provided an existing variant is passed in as a parameter. `screens()` function returns the entire map, useful for looping.
 
-For more information on breakpoints, visit <a class="hover.underline" href="/get-started/breakpoints">breakpoints</a>.
+For more information on breakpoints, visit [media queries](/docs/media-queries).
 
 ```scss
 @media (min-width: screen(lg)) {
@@ -64,9 +64,9 @@ For more information on breakpoints, visit <a class="hover.underline" href="/get
 
 ---
 
-## Color Functions
+## Fill Functions
 
-There are two color helper functions available. The `fill()` function returns values from the merged colors map provided an existing variant is passed in as a parameter. The `gradient()` function returns values from the gradients map provided an existing variant is passed in as a parameter.
+There are two color helper functions available. The `fill()` function returns values from the `colors` and the `gradient()` function returns values from the `gradients` map provided an existing variant is passed in as a parameter.
 
 ```scss
 .element {
@@ -80,15 +80,27 @@ There are two color helper functions available. The `fill()` function returns va
 
 #### Advanced Color Manipulation
 
-The `fill()` can dynamically apply saturation and lightness transformations by passing in four parameters. You can specify your base color, saturation level, lightness level, and opacity level. 
+The `fill()` function can dynamically apply shade, tint, and opacity transformations.
 
 ```scss
-.element {
-  background-color: fill(red, brighten-500, lightness-200, opacity-50);
+// styles.scss
+.element-1 {
+  background-color: fill(red, shade-500);
 }
 
 .element-2 {
-  background-color: fill(blue, base, darken-400);
+  background-color: fill(red, tint-500, opacity-50);
+}
+```
+
+```css
+/* styles.css */
+.element-1 { 
+  background-color: hsla(var(--blue-hue), var(--blue-sat), var(--shade-500), var(--opacity-100)); 
+}
+
+.element-2 { 
+  background-color: hsla(var(--red-hue), var(--red-sat), var(--tint-500), var(--opacity-50)); 
 }
 ```
 
@@ -96,7 +108,7 @@ The `fill()` can dynamically apply saturation and lightness transformations by p
 
 ## Size Functions
 
-The `size()` function returns values from the size map for both positive and negative sizes provided an existing variant is passed in as a parameter.
+The `size()` function returns values from the size map for both positive and negative sizes.
 
 ```scss
 .element {
@@ -105,7 +117,7 @@ The `size()` function returns values from the size map for both positive and neg
 }
 ```
 
-The `size()` function can also accept multiple parameters for joint sizing units for shorthand properties.
+The `size()` function can also accept multiple arguments for joint sizing units for shorthand properties.
 
 ```scss
 .element {
@@ -113,7 +125,7 @@ The `size()` function can also accept multiple parameters for joint sizing units
 }
 ```
 
-When pluralized, the `sizes()` function returns all the sizes useful for loops. By default, the sizes function will return both positive and negative sizes.
+When pluralized, the `sizes()` function returns all the sizes. By default, the sizes function will return both positive and negative sizes.
 
 ```scss
 @each $size, $size-value in sizes() {
@@ -133,15 +145,13 @@ You can also return positive or negative sizes only with `positive-sizes()` and 
 }
 ```
 
-For more information on which variants are available, visit <a class="hover.underline" href="/get-started/sizes">sizes</a>.
+For more information on sizing, visit [sizing system](/docs/sizing-system).
 
 ---
 
 ## Shadows Functions
 
-The `shadow()` function returns values from the shadow map provided an existing variant is passed in as a parameter. `shadows()` function returns the entire map.
-
-For more information on which variants are available, visit <a class="hover.underline" href="/get-started/shadows">shadows</a>.
+The `shadow()` function returns values from the `shadows` map. The `shadows()` function returns the entire map.
 
 ```scss
 .element {
@@ -159,11 +169,11 @@ For more information on which variants are available, visit <a class="hover.unde
 
 ## Typography Functions
 
-Uniform provides various functions to pull values from font related maps such as `font-size` and `font-family`. For more information, please visit <a class="hover.underline" href="/get-started/typography">typography</a>.
+Uniform provides various functions to pull values from font related maps such as `font-sizes` and `font-families`.
 
 #### Font Family
 
-The `font-family()` function returns values from the font-family map provided an existing variant is passed in as a parameter. When pluralized, the `font-families()` function returns the entire map.
+The `font-family()` function returns values from the `font-families` map. When pluralized, the `font-families()` function returns the entire map.
 
 ```scss
 .element {
@@ -179,11 +189,11 @@ The `font-family()` function returns values from the font-family map provided an
 
 #### Font Size
 
-The `font-size()` function returns values from the font-size map provided an existing variant is passed in as a parameter. When pluralized, the `font-sizes()` function returns the entire map.
+The `font-size()` function returns values from the `font-sizes`. When pluralized, the `font-sizes()` function returns the entire map.
 
 ```scss
 .element {
-  font-size: font-size(sans);
+  font-size: font-size(xl);
 }
 ```
 
@@ -195,7 +205,7 @@ The `font-size()` function returns values from the font-size map provided an exi
 
 #### Font Weight
 
-The `font-weight()` function returns values from the font-weight map provided an existing variant is passed in as a parameter. When pluralized, the `font-weights()` function returns the entire map.
+The `font-weight()` function returns values from the `font-weights` map. When pluralized, the `font-weights()` function returns the entire map.
 
 ```scss
 .element {
@@ -211,11 +221,11 @@ The `font-weight()` function returns values from the font-weight map provided an
 
 #### Line Height
 
-The `leading()` function returns values from the leading map provided an existing variant is passed in as a parameter. When pluralized, the `leadings()` function returns the entire map.
+The `leading()` function returns values from the `leadings` map. When pluralized, the `leadings()` function returns the entire map.
 
 ```scss
 .element {
-  line-height: leading(loose);
+  line-height: leading(200);
 }
 ```
 
@@ -227,7 +237,7 @@ The `leading()` function returns values from the leading map provided an existin
 
 #### Letter Spacing
 
-The `tracking()` function returns values from the tracking map provided an existing variant is passed in as a parameter. When pluralized, the `trackings()` function returns the entire map.
+The `tracking()` function returns values from the `trackings` map. When pluralized, the `trackings()` function returns the entire map.
 
 ```scss
 .element {
@@ -245,13 +255,11 @@ The `tracking()` function returns values from the tracking map provided an exist
 
 ## Radius Functions
 
-The `radius()` function returns values from the radius map provided an existing variant is passed in as a parameter. The `radiuses()` function returns the entire map.
-
-For more information on which variants are available, visit <a class="hover.underline" href="/get-started/radius">radius</a>.
+The `radius()` function returns values from the `radiuses` map. When pluralized the `radiuses()` function returns the entire map.
 
 ```scss
 .element {
-  letter-spacing: radius(loose);
+  letter-spacing: radius(xl);
 }
 ```
 
@@ -277,10 +285,3 @@ The `rem()` function allows you easily convert a pixel value into a rem value.
 }
 ```
 
-#### Merge Function
-
-The `merge()` function allows you merge any number of maps as you like. This differs from the native Sass module feature `map.merge()` where you can only merge up to two maps.
-
-```scss
-$map: merge($map1, $map2, $map3, $map4);
-```

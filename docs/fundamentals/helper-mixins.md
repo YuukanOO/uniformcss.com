@@ -14,9 +14,7 @@ Helper mixins allow you to conveniently add useful blocks of CSS with a simple s
 
 ## Screen Mixin
 
-The `screen()` function returns values from the breakpoint map provided an existing variant is passed in as a parameter. `screens()` function returns the entire map, useful for looping.
-
-For more information on breakpoints, visit <a class="hover.underline" href="/get-started/breakpoints">breakpoints</a>.
+The `screen()` mixin wraps the content around a `@media` rule.
 
 ```scss
 .element {
@@ -36,7 +34,7 @@ For more information on breakpoints, visit <a class="hover.underline" href="/get
 
 ---
 
-## Apply Mixin <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm leading-0 bold radius-round bg-blue bg-brighten-500 color-white align-middle">Beta</span>
+## Apply Mixin <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm bold radius-full bg-blue bg-brighten-500 color-white align-middle">Beta</span>
 
 The `apply()` mixin allows you to apply properties directly using shorthand utility class names. Behind the scene, it parses through the list of arguments and extends placeholder selectors that match the name.
 
@@ -51,7 +49,7 @@ The `apply()` mixin allows you to apply properties directly using shorthand util
 }
 ```
 
-This is currently an experimental feature and should not be used for production. To enable this feature, placeholders must be set to `true` in your configuration.
+To enable this feature, placeholders must be set to `true` in your configuration. This will generate Sass placeholder selectors for each property on compilation.
 
 ```scss
 @use "uniform" as * with (

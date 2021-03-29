@@ -50,8 +50,8 @@
 );
 
 @use "_roots" as *;
-@use "plugins/wrapper";
-@use "plugins/markdown";
+// @use "plugins/wrapper";
+@use "markdown";
 @use "_comparison-slider" as *;
 @use "vendors/prism" as *;
 

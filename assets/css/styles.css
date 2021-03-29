@@ -129,8 +129,8 @@ ROOT VARIABLES
   --radius-sm: 0.375rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
-  --radius-2xl: 1.25rem;
+  --radius-xl: 1.125rem;
+  --radius-2xl: 1.5rem;
   --radius-full: 9999px;
   --SHADOWS-----------------------:#08;
   --shadow-2xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -234,10 +234,10 @@ ROOT VARIABLES
   --warm-gray-sat: 12%;
   --primary-hue: 220;
   --primary-sat: 75%;
-  --secondary-hue: 240;
-  --secondary-sat: 75%;
-  --tertiary-hue: 40;
-  --tertiary-sat: 75%;
+  --secondary-hue: 220;
+  --secondary-sat: 50%;
+  --tertiary-hue: 220;
+  --tertiary-sat: 25%;
   --transparent: transparent;
   --current: currentColor;
   --GRADIENTS---------------------:#13;
@@ -297,6 +297,10 @@ ROOT VARIABLES
   --size-n1152: -72rem;
   --size-n1280: -80rem;
   --size-n1536: -96rem;
+  --size-n1792: -112rem;
+  --size-n2048: -128rem;
+  --size-n2304: -144rem;
+  --size-n2560: -160rem;
   --size-1: 1px;
   --size-2: 2px;
   --size-3: 3px;
@@ -343,6 +347,10 @@ ROOT VARIABLES
   --size-1152: 72rem;
   --size-1280: 80rem;
   --size-1536: 96rem;
+  --size-1792: 112rem;
+  --size-2048: 128rem;
+  --size-2304: 144rem;
+  --size-2560: 160rem;
 }
 
 *, *::before, *::after {
@@ -555,275 +563,30 @@ select {
   background-size: 16px 12px;
 }
 
-/* 
-========================================================================
-CUSTOM PROPERTIES
-
---wrapper-padding
-
---wrapper-max-width
---wrapper-sm-max-width
---wrapper-md-max-width
---wrapper-lg-max-width
---wrapper-xl-max-width
-======================================================================== 
-*/
 .wrapper {
   width: 100%;
   margin: auto;
   max-width: var(--wrapper-max-width, 640px);
-  padding-left: var(--wrapper-padding, var(--size-20));
-  padding-right: var(--wrapper-padding, var(--size-20));
 }
 @media (min-width: 768px) {
   .wrapper {
-    max-width: var(--wrapper-sm-max-width, 758px);
-    padding-left: var(--wrapper-sm-padding, 0);
-    padding-right: var(--wrapper-sm-padding, 0);
+    max-width: var(--wrapper-sm-max-width, 768px);
   }
 }
 @media (min-width: 1024px) {
   .wrapper {
     max-width: var(--wrapper-md-max-width, 1024px);
-    padding-left: var(--wrapper-md-padding, 0);
-    padding-right: var(--wrapper-md-padding, 0);
   }
 }
 @media (min-width: 1280px) {
   .wrapper {
-    max-width: var(--wrapper-lg-max-width, 1152px);
-    padding-left: var(--wrapper-lg-padding, 0);
-    padding-right: var(--wrapper-lg-padding, 0);
+    max-width: var(--wrapper-lg-max-width, 1280px);
   }
 }
 @media (min-width: 1536px) {
   .wrapper {
-    max-width: var(--wrapper-xl-max-width, 1280px);
-    padding-left: var(--wrapper-xl-padding, 0);
-    padding-right: var(--wrapper-xl-padding, 0);
+    max-width: var(--wrapper-xl-max-width, 1536px);
   }
-}
-
-.markdown {
-  font-size: var(--markdown-font-size, var(--font-md));
-  line-height: var(--markdown-leading, var(--leading-180));
-  /* 
-  ========================================================================
-  HEADING
-
-  --markdown-h1-margin-top
-  --markdown-h1-margin-bottom
-  --markdown-h1-size
-  --markdown-h1-weight
-  --markdown-h1-tracking
-
-  --markdown-h2-margin-top
-  --markdown-h2-margin-bottom
-  --markdown-h2-size
-  --markdown-h2-weight
-  --markdown-h2-tracking
-
-  --markdown-h3-margin-top
-  --markdown-h3-margin-bottom
-  --markdown-h3-size
-  --markdown-h3-weight
-  --markdown-h3-tracking
-
-  --markdown-h4-margin-top
-  --markdown-h4-margin-bottom
-  --markdown-h4-size
-  --markdown-h4-weight
-  --markdown-h4-tracking
-  ======================================================================== 
-  */
-  /* 
-  ========================================================================
-  PARAGRAPH
-
-  --paragraph-margin
-  --paragraph-weight
-  --paragraph-size
-  --paragraph-color
-  ======================================================================== 
-  */
-  /* 
-  ========================================================================
-  HORIZONTAL RULE
-
-  --markdown-hr-width
-  --markdown-hr-margin
-  --markdown-hr-color
-  ======================================================================== 
-  */
-  /* 
-  ========================================================================
-  CODE
-
-  --markdown-code-padding
-  --markdown-code-font-size
-  --markdown-code-radius
-  --markdown-code-bg
-  --markdown-code-border
-  --markdown-code-color
-  ======================================================================== 
-  */
-  /* 
-  ========================================================================
-  BLOCKQUOTE
-
-  --markdown-blockquote-margin
-  --markdown-blockquote-padding
-  --markdown-blockquote-bg
-  --markdown-blockquote-radius
-  --markdown-blockquote-shadow
-  ======================================================================== 
-  */
-  /* 
-  ========================================================================
-  TABLE
-
-  --markdown-table-margin
-  --markdown-table-font-size
-  --markdown-table-leading
-  ======================================================================== 
-  */
-  /* 
-  ========================================================================
-  LISTS
-
-  --markdown-list-margin
-  --markdown-list-leading
-  --markdown-list-padding
-  ======================================================================== 
-  */
-  /* 
-  ========================================================================
-  LINK & EMPHASIS
-
-  --markdown-link-color
-  --markdown-link-hover-color
-  ======================================================================== 
-  */
-}
-.markdown > h1, .markdown > h2, .markdown > h3, .markdown > h4, .markdown > h5, .markdown > h6 {
-  color: var(--markdown-heading-color, black);
-}
-.markdown > h1:first-child, .markdown > h2:first-child, .markdown > h3:first-child, .markdown > h4:first-child, .markdown > h5:first-child, .markdown > h6:first-child, .markdown > p:first-child {
-  margin-top: 0;
-}
-.markdown > h1:last-child, .markdown > h2:last-child, .markdown > h3:last-child, .markdown > h4:last-child, .markdown > h5:last-child, .markdown > h6:last-child, .markdown > p:last-child {
-  margin-bottom: 0;
-}
-.markdown > h1 {
-  margin-top: var(--markdown-h1-margin-top, var(--size-48));
-  margin-bottom: var(--markdown-h1-margin-bottom, var(--size-20));
-  font-size: var(--markdown-h1-size, var(--font-6xl));
-  font-weight: var(--markdown-h1-weight, var(--bold));
-  line-height: var(--markdown-h1-leading, var(--leading-140));
-  letter-spacing: var(--markdown-h1-tracking, 0);
-}
-.markdown > h2 {
-  margin-top: var(--markdown-h2-margin-top, var(--size-48));
-  margin-bottom: var(--markdown-h2-margin-bottom, var(--size-20));
-  font-size: var(--markdown-h2-size, var(--font-2xl));
-  font-weight: var(--markdown-h2-weight, var(--bold));
-  line-height: var(--markdown-h2-leading, var(--leading-140));
-  letter-spacing: var(--markdown-h2-tracking, 0);
-}
-.markdown > h3 {
-  margin-top: var(--markdown-h3-margin-top, var(--size-48));
-  margin-bottom: var(--markdown-h3-margin-bottom, var(--size-20));
-  font-size: var(--markdown-h3-size, var(--font-xl));
-  font-weight: var(--markdown-h3-weight, var(--bold));
-  line-height: var(--markdown-h3-leading, var(--leading-140));
-  letter-spacing: var(--markdown-h3-tracking, 0);
-}
-.markdown > h4 {
-  margin-top: var(--markdown-h4-margin-top, var(--size-40));
-  margin-bottom: var(--markdown-h4-margin-bottom, var(--size-20));
-  font-size: var(--markdown-h4-size, var(--font-lg));
-  font-weight: var(--markdown-h4-weight, var(--bold));
-  line-height: var(--markdown-h4-leading, var(--leading-140));
-  letter-spacing: var(--markdown-h4-tracking, 0);
-}
-.markdown > p {
-  margin-top: var(--markdown-paragraph-margin-top, var(--size-24));
-  margin-bottom: var(--markdown-paragraph-margin-bottom, var(--size-24));
-  font-size: var(--markdown-paragraph-size, var(--font-md));
-  font-weight: var(--markdown-paragraph-weight, var(--regular));
-  line-height: var(--markdown-paragraph-leading, var(--leading-normal));
-  color: var(--markdown-paragraph-color, black);
-}
-.markdown > hr {
-  height: var(--markdown-hr-width, 1px);
-  margin-top: var(--markdown-hr-margin, var(--size-64));
-  margin-bottom: var(--markdown-hr-margin, var(--size-64));
-  border: 0;
-  background: var(--markdown-hr-color, #e3e5e8);
-}
-.markdown p code, .markdown blockquote code, .markdown ol code, .markdown ul code, .markdown table code {
-  padding: var(--markdown-code-padding, 5px 6px);
-  font-size: var(--markdown-code-font-size, var(--font-sm));
-  border-radius: var(--markdown-code-radius, var(--radius-sm));
-  background: var(--markdown-code-bg, hsla(var(--sky-hue), var(--sky-sat), 50%, var(--opacity-20)));
-  border: var(--markdown-code-border, 0);
-  color: var(--markdown-code-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
-  white-space: nowrap;
-}
-.markdown > blockquote {
-  margin-bottom: var(--markdown-blockquote-margin, 1.5em);
-  padding: var(--markdown-blockquote-padding, var(--size-16) var(--size-24));
-  background: var(--markdown-blockquote-bg, hsl(var(--gray-hue), var(--gray-sat), 50%, var(--opacity-10)));
-  border-radius: var(--markdown-blockquote-radius, 0);
-  box-shadow: var(--markdown-blockquote-shadow, inset 4px 0px 0px 0px hsl(var(--gray-hue), var(--gray-sat), var(--tint-600)));
-}
-.markdown > blockquote:last-child {
-  margin-bottom: 0;
-}
-.markdown > table {
-  width: 100%;
-  margin-bottom: var(--markdown-table-margin, var(--size-20));
-  font-size: var(--markdown-table-font-size, var(--font-sm));
-  line-height: var(--markdown-table-leading, var(--leading-tight));
-}
-.markdown > table th, .markdown > table td {
-  border: var(--markdown-table-border, 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--tint-700)));
-  padding: 0.5em 0.75em;
-}
-.markdown > ol, .markdown ul {
-  margin-bottom: var(--markdown-list-margin, 1.5em);
-  line-height: var(--markdown-list-leading, var(--leading-normal));
-}
-.markdown > ul {
-  padding-left: var(--markdown-list-padding, var(--size-24));
-  list-style-type: disc;
-  list-style-position: inside;
-}
-.markdown > ul ul {
-  padding-left: var(--markdown-list-padding, var(--size-24));
-  list-style-type: circle;
-  list-style-position: inside;
-}
-.markdown > ol {
-  list-style-type: decimal;
-  list-style-position: inside;
-}
-.markdown > ol ol {
-  list-style-type: decimal;
-  list-style-position: inside;
-}
-.markdown p a, .markdown blockquote a, .markdown ol a, .markdown ul a, .markdown table a {
-  color: var(--markdown-link-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
-}
-.markdown p a:hover, .markdown blockquote a:hover, .markdown ol a:hover, .markdown ul a:hover, .markdown table a:hover {
-  color: var(--markdown-link-hover-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
-  text-decoration: underline;
-}
-.markdown p strong, .markdown blockquote strong, .markdown ol strong, .markdown ul strong, .markdown table strong {
-  font-weight: var(--markdown-strong-weight, var(--bold));
-}
-.markdown p em, .markdown blockquote em, .markdown ol em, .markdown ul em, .markdown table em {
-  font-style: italic;
 }
 
 .bg-current, .dark .dark\.empty\.bg-current:empty, .dark .dark\.active\.bg-current:active, .dark .dark\.bg-current, .dark .dark\.focus\.bg-current:focus, .dark .group:hover .dark\.group-hover\.bg-current, .dark .dark\.hover\.bg-current:hover, .empty\.bg-current:empty, .active\.bg-current:active, .focus\.bg-current:focus, .group:hover .group-hover\.bg-current, .hover\.bg-current:hover {
@@ -45737,6 +45500,256 @@ CUSTOM PROPERTIES
   --extrabold: 800;
 }
 
+/* 
+========================================================================
+WRAPPER MODULE
+======================================================================== 
+*/
+.markdown {
+  font-size: var(--markdown-font-size, var(--font-md));
+  line-height: var(--markdown-leading, var(--leading-180));
+  /* 
+   ========================================================================
+   HEADING
+
+   --markdown-h1-margin-top
+   --markdown-h1-margin-bottom
+   --markdown-h1-size
+   --markdown-h1-weight
+   --markdown-h1-tracking
+
+   --markdown-h2-margin-top
+   --markdown-h2-margin-bottom
+   --markdown-h2-size
+   --markdown-h2-weight
+   --markdown-h2-tracking
+
+   --markdown-h3-margin-top
+   --markdown-h3-margin-bottom
+   --markdown-h3-size
+   --markdown-h3-weight
+   --markdown-h3-tracking
+
+   --markdown-h4-margin-top
+   --markdown-h4-margin-bottom
+   --markdown-h4-size
+   --markdown-h4-weight
+   --markdown-h4-tracking
+   ======================================================================== 
+   */
+  /* 
+   ========================================================================
+   PARAGRAPH
+
+   --markdown-p-margin
+   --markdown-p-weight
+   --markdown-p-size
+   --markdown-p-color
+   ======================================================================== 
+   */
+  /* 
+   ========================================================================
+   HORIZONTAL RULE
+
+   --markdown-hr-width
+   --markdown-hr-margin
+   --markdown-hr-color
+   ======================================================================== 
+   */
+  /* 
+   ========================================================================
+   CODE
+
+   --markdown-code-padding
+   --markdown-code-font-size
+   --markdown-code-radius
+   --markdown-code-bg
+   --markdown-code-border
+   --markdown-code-color
+   ======================================================================== 
+   */
+  /* 
+   ========================================================================
+   BLOCKQUOTE
+
+   --markdown-blockquote-margin
+   --markdown-blockquote-padding
+   --markdown-blockquote-bg
+   --markdown-blockquote-radius
+   --markdown-blockquote-shadow
+   ======================================================================== 
+   */
+  /* 
+   ========================================================================
+   TABLE
+
+   --markdown-table-margin
+   --markdown-table-font-size
+   --markdown-table-leading
+   ======================================================================== 
+   */
+  /* 
+   ========================================================================
+   LISTS
+
+   --markdown-list-margin
+   --markdown-list-leading
+   --markdown-list-padding
+   ======================================================================== 
+   */
+  /* 
+   ========================================================================
+   LINK & EMPHASIS
+
+   --markdown-link-color
+   --markdown-link-hover-color
+   ======================================================================== 
+   */
+}
+.markdown > h1, .markdown > h2, .markdown > h3, .markdown > h4, .markdown > h5, .markdown > h6 {
+  color: var(--markdown-heading-color, black);
+}
+.markdown > h1:first-child, .markdown > h2:first-child, .markdown > h3:first-child, .markdown > h4:first-child, .markdown > h5:first-child, .markdown > h6:first-child, .markdown > p:first-child {
+  margin-top: 0;
+}
+.markdown > h1:last-child, .markdown > h2:last-child, .markdown > h3:last-child, .markdown > h4:last-child, .markdown > h5:last-child, .markdown > h6:last-child, .markdown > p:last-child {
+  margin-bottom: 0;
+}
+.markdown > h1 {
+  margin-top: var(--markdown-h1-margin-top, var(--size-48));
+  margin-bottom: var(--markdown-h1-margin-bottom, var(--size-20));
+  font-size: var(--markdown-h1-size, var(--font-6xl));
+  font-weight: var(--markdown-h1-weight, var(--bold));
+  line-height: var(--markdown-h1-leading, var(--leading-140));
+  letter-spacing: var(--markdown-h1-tracking, 0);
+}
+.markdown > h2 {
+  margin-top: var(--markdown-h2-margin-top, var(--size-48));
+  margin-bottom: var(--markdown-h2-margin-bottom, var(--size-20));
+  font-size: var(--markdown-h2-size, var(--font-2xl));
+  font-weight: var(--markdown-h2-weight, var(--bold));
+  line-height: var(--markdown-h2-leading, var(--leading-140));
+  letter-spacing: var(--markdown-h2-tracking, 0);
+}
+.markdown > h3 {
+  margin-top: var(--markdown-h3-margin-top, var(--size-48));
+  margin-bottom: var(--markdown-h3-margin-bottom, var(--size-20));
+  font-size: var(--markdown-h3-size, var(--font-xl));
+  font-weight: var(--markdown-h3-weight, var(--bold));
+  line-height: var(--markdown-h3-leading, var(--leading-140));
+  letter-spacing: var(--markdown-h3-tracking, 0);
+}
+.markdown > h4 {
+  margin-top: var(--markdown-h4-margin-top, var(--size-40));
+  margin-bottom: var(--markdown-h4-margin-bottom, var(--size-20));
+  font-size: var(--markdown-h4-size, var(--font-lg));
+  font-weight: var(--markdown-h4-weight, var(--bold));
+  line-height: var(--markdown-h4-leading, var(--leading-140));
+  letter-spacing: var(--markdown-h4-tracking, 0);
+}
+.markdown > p, .markdown > ol, .markdown > ul {
+  margin-top: var(--markdown-p-margin-top, var(--size-24));
+  margin-bottom: var(--markdown-p-margin-bottom, var(--size-24));
+  font-size: var(--markdown-p-size, var(--font-md));
+  font-weight: var(--markdown-p-weight, var(--regular));
+  line-height: var(--markdown-p-leading, var(--leading-normal));
+  color: var(--markdown-p-color, black);
+}
+.markdown > hr {
+  height: var(--markdown-hr-width, 1px);
+  margin-top: var(--markdown-hr-margin, var(--size-64));
+  margin-bottom: var(--markdown-hr-margin, var(--size-64));
+  border: 0;
+  background: var(--markdown-hr-color, #e3e5e8);
+}
+.markdown p code,
+.markdown blockquote code,
+.markdown ol code,
+.markdown ul code,
+.markdown table code {
+  padding: var(--markdown-code-padding, 5px 6px);
+  font-size: var(--markdown-code-font-size, var(--font-sm));
+  border-radius: var(--markdown-code-radius, var(--radius-sm));
+  background: var(--markdown-code-bg, hsla(var(--sky-hue), var(--sky-sat), 50%, var(--opacity-20)));
+  border: var(--markdown-code-border, 0);
+  color: var(--markdown-code-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
+  white-space: nowrap;
+  user-select: all;
+}
+.markdown > blockquote {
+  margin-bottom: var(--markdown-blockquote-margin, 1.5em);
+  padding: var(--markdown-blockquote-padding, var(--size-16) var(--size-24));
+  background: var(--markdown-blockquote-bg, hsl(var(--gray-hue), var(--gray-sat), 50%, var(--opacity-10)));
+  border-radius: var(--markdown-blockquote-radius, 0);
+  box-shadow: var(--markdown-blockquote-shadow, inset 4px 0px 0px 0px hsl(var(--gray-hue), var(--gray-sat), var(--tint-600)));
+}
+.markdown > blockquote:last-child {
+  margin-bottom: 0;
+}
+.markdown > table {
+  width: 100%;
+  margin-bottom: var(--markdown-table-margin, var(--size-20));
+  font-size: var(--markdown-table-font-size, var(--font-sm));
+  line-height: var(--markdown-table-leading, var(--leading-tight));
+}
+.markdown > table th,
+.markdown > table td {
+  border: var(--markdown-table-border, 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--tint-700)));
+  padding: 0.5em 0.75em;
+}
+.markdown > ol,
+.markdown ul {
+  margin-bottom: var(--markdown-list-margin, 1.5em);
+  line-height: var(--markdown-list-leading, var(--leading-normal));
+}
+.markdown > ul {
+  padding-left: var(--markdown-list-padding, var(--size-24));
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.markdown > ul ul {
+  padding-left: var(--markdown-list-padding, var(--size-24));
+  list-style-type: circle;
+  list-style-position: inside;
+}
+.markdown > ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.markdown > ol ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.markdown p a,
+.markdown blockquote a,
+.markdown ol a,
+.markdown ul a,
+.markdown table a {
+  color: var(--markdown-link-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
+}
+.markdown p a:hover,
+.markdown blockquote a:hover,
+.markdown ol a:hover,
+.markdown ul a:hover,
+.markdown table a:hover {
+  color: var(--markdown-link-hover-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
+  text-decoration: underline;
+}
+.markdown p strong,
+.markdown blockquote strong,
+.markdown ol strong,
+.markdown ul strong,
+.markdown table strong {
+  font-weight: var(--markdown-strong-weight, var(--bold));
+}
+.markdown p em,
+.markdown blockquote em,
+.markdown ol em,
+.markdown ul em,
+.markdown table em {
+  font-style: italic;
+}
+
 .cd-image-container {
   position: relative;
   width: 100%;
@@ -46110,7 +46123,8 @@ pre[class*=language-] {
   touch-action: pan-y;
 }
 
-.swiper-container-android .swiper-slide, .swiper-wrapper {
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
   transform: translate3d(0px, 0, 0);
 }
 
@@ -46142,17 +46156,20 @@ pre[class*=language-] {
   transition-property: transform;
 }
 
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
   left: var(--size-24);
   right: auto;
 }
 
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
   right: var(--size-24);
   left: auto;
 }
 
-.swiper-button-next, .swiper-button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -5,7 +5,7 @@ layout: layouts/base.njk
 {% include "partials/nav.njk" %}
 
 <section>
-  <div class="wrapper">
+  <div class="wrapper max-w-screen-lg">
   
     <div class="flex">
       <aside class="hidden sm.block w-224 flex-none">
@@ -76,7 +76,7 @@ layout: layouts/base.njk
         <p class="text-xl semibold color-white pb-64 color-white border-b-2 border-white">
           {{ description | safe }}
         </p>
-        <div class="markdown color-white" style="--markdown-heading-color: white; --markdown-paragraph-color: rgb(255 255 255 / 80%);">
+        <div class="markdown color-white" style="--markdown-heading-color: white; --markdown-p-color: rgb(255 255 255 / 80%);">
           {{ content | safe }}
         </div>
       </div>
