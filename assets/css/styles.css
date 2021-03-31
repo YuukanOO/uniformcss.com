@@ -45498,6 +45498,8 @@ select {
   --semibold: 500;
   --bold: 600;
   --extrabold: 800;
+  --markdown-heading-color: white;
+  --markdown-color: rgb(255 255 255 / 80%);
 }
 
 /* 
@@ -45508,6 +45510,7 @@ WRAPPER MODULE
 .markdown {
   font-size: var(--markdown-font-size, var(--font-md));
   line-height: var(--markdown-leading, var(--leading-180));
+  color: var(--markdown-color, black);
   /* 
    ========================================================================
    HEADING
@@ -45650,10 +45653,7 @@ WRAPPER MODULE
 .markdown > p, .markdown > ol, .markdown > ul {
   margin-top: var(--markdown-p-margin-top, var(--size-24));
   margin-bottom: var(--markdown-p-margin-bottom, var(--size-24));
-  font-size: var(--markdown-p-size, var(--font-md));
   font-weight: var(--markdown-p-weight, var(--regular));
-  line-height: var(--markdown-p-leading, var(--leading-normal));
-  color: var(--markdown-p-color, black);
 }
 .markdown > hr {
   height: var(--markdown-hr-width, 1px);
@@ -45662,11 +45662,7 @@ WRAPPER MODULE
   border: 0;
   background: var(--markdown-hr-color, #e3e5e8);
 }
-.markdown p code,
-.markdown blockquote code,
-.markdown ol code,
-.markdown ul code,
-.markdown table code {
+.markdown > p > code, .markdown > blockquote > code, .markdown > ol li > code, .markdown > ul li > code, .markdown > table td > code {
   padding: var(--markdown-code-padding, 5px 6px);
   font-size: var(--markdown-code-font-size, var(--font-sm));
   border-radius: var(--markdown-code-radius, var(--radius-sm));
@@ -45689,7 +45685,6 @@ WRAPPER MODULE
 .markdown > table {
   width: 100%;
   margin-bottom: var(--markdown-table-margin, var(--size-20));
-  font-size: var(--markdown-table-font-size, var(--font-sm));
   line-height: var(--markdown-table-leading, var(--leading-tight));
 }
 .markdown > table th,
@@ -45720,33 +45715,17 @@ WRAPPER MODULE
   list-style-type: decimal;
   list-style-position: inside;
 }
-.markdown p a,
-.markdown blockquote a,
-.markdown ol a,
-.markdown ul a,
-.markdown table a {
+.markdown > p > a, .markdown > blockquote > a, .markdown > ol li > a, .markdown > ul li > a, .markdown > table td > a {
   color: var(--markdown-link-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
 }
-.markdown p a:hover,
-.markdown blockquote a:hover,
-.markdown ol a:hover,
-.markdown ul a:hover,
-.markdown table a:hover {
+.markdown > p > a:hover, .markdown > blockquote > a:hover, .markdown > ol li > a:hover, .markdown > ul li > a:hover, .markdown > table td > a:hover {
   color: var(--markdown-link-hover-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
   text-decoration: underline;
 }
-.markdown p strong,
-.markdown blockquote strong,
-.markdown ol strong,
-.markdown ul strong,
-.markdown table strong {
+.markdown > p > strong, .markdown > blockquote > strong, .markdown > ol li > strong, .markdown > ul li > strong, .markdown > table td > strong {
   font-weight: var(--markdown-strong-weight, var(--bold));
 }
-.markdown p em,
-.markdown blockquote em,
-.markdown ol em,
-.markdown ul em,
-.markdown table em {
+.markdown > p > em, .markdown > blockquote > em, .markdown > ol li > em, .markdown > ul li > em, .markdown > table td > em {
   font-style: italic;
 }
 

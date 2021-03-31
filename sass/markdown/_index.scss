@@ -7,6 +7,7 @@ WRAPPER MODULE
 .markdown {
 	font-size: var(--markdown-font-size, var(--font-md));
 	line-height: var(--markdown-leading, var(--leading-180));
+	color: var(--markdown-color, black);
 
 	/* 
   ========================================================================
@@ -112,10 +113,7 @@ WRAPPER MODULE
 	& > p, & > ol, & > ul {
 		margin-top: var(--markdown-p-margin-top, var(--size-24));
 		margin-bottom: var(--markdown-p-margin-bottom, var(--size-24));
-		font-size: var(--markdown-p-size, var(--font-md));
 		font-weight: var(--markdown-p-weight, var(--regular));
-		line-height: var(--markdown-p-leading, var(--leading-normal));
-		color: var(--markdown-p-color, black);
 	}
 
 	/* 
@@ -149,12 +147,12 @@ WRAPPER MODULE
   ======================================================================== 
   */
 
-	p,
-	blockquote,
-	ol,
-	ul,
-	table {
-		code {
+	& > p,
+	& > blockquote,
+	& > ol li,
+	& > ul li,
+	& > table td {
+		& > code {
 			padding: var(--markdown-code-padding, 5px 6px);
 			font-size: var(--markdown-code-font-size, var(--font-sm));
 			border-radius: var(--markdown-code-radius, var(--radius-sm));
@@ -212,7 +210,6 @@ WRAPPER MODULE
 	& > table {
 		width: 100%;
 		margin-bottom: var(--markdown-table-margin, var(--size-20));
-		font-size: var(--markdown-table-font-size, var(--font-sm));
 		line-height: var(--markdown-table-leading, var(--leading-tight));
 		th,
 		td {
@@ -268,22 +265,22 @@ WRAPPER MODULE
   ======================================================================== 
   */
 
-	p,
-	blockquote,
-	ol,
-	ul,
-	table {
-		a {
+	& > p,
+	& > blockquote,
+	& > ol li,
+	& > ul li,
+	& > table td {
+		& > a {
 			color: var(--markdown-link-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
 			&:hover {
 				color: var(--markdown-link-hover-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
 				text-decoration: underline;
 			}
 		}
-		strong {
+		& > strong {
 			font-weight: var(--markdown-strong-weight, var(--bold));
 		}
-		em {
+		& > em {
 			font-style: italic;
 		}
 	}
