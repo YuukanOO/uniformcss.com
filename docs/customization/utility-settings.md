@@ -1,13 +1,13 @@
 ---
 title: Utility Settings
-description: Control how individual properties are generated.
+description: Control individual properties settings.
 date: 1000-01-03
 ---
 
 
 ## Utility Settings
 
-The `utility` setting is a map where you can pass in settings to configure each property. You can also replace and extend variants for any given property.
+The `utility` setting allows you to configure how each properties are generated. For example, you can replace and extend variants for any given property.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -15,7 +15,7 @@ The `utility` setting is a map where you can pass in settings to configure each 
 
 ## How it works
 
-Each property in Uniform CSS is constructed using the same data structure. By passing in your settings to the `utilities` map, you can override these settings. Each property has a set number of settings available, if a certain setting is not specified in your configuration, it will use the default value instead.
+Each property in Uniform CSS is constructed using the same data structure. By passing in your settings to the `utility` map, you can override the default data set for esch property. Each property has a set number of settings available and if a certain setting is not specified in your configuration, it will Uniform will fall back to the default setting value instead.
 
 ```scss
 // styles.scss
@@ -23,7 +23,7 @@ Each property in Uniform CSS is constructed using the same data structure. By pa
   $config: (
     utility: (
       text-align: (
-        shorthand: align,
+        shorthand: text,
         responsive: false,
       ),
       margin-top: (
@@ -36,11 +36,11 @@ Each property in Uniform CSS is constructed using the same data structure. By pa
 
 ```css
 /* styles.css */
-.align-left {text-align: left;}
-.align-right {text-align: right;}
+.align-left { text-align: left; }
+.align-right { text-align: right; }
 
-.customMarginTop-1: {margin-top: 1px;}
-.customMarginTop-2: {margin-top: 2px;}
+.customMarginTop-1: { margin-top: 1px; }
+.customMarginTop-2: { margin-top: 2px; }
 ...
 ```
 
@@ -53,16 +53,14 @@ The following utility setting definitions apply.
 | Setting | Type | Description |
 | - | - | - |
 | `shorthand` | `string` | Shorthand word to represent property. |
-| `responsive` | `boolean` | Responsive Setting. |
-| `responsive-pseudos` | `boolean` | Responsive setting across pseudo variants. |
-| `properties` | `list` | Target CSS property. |
+| `responsive` | `boolean` | Set responsiveness. |
+| `responsive-pseudos` | `boolean` | Responsiveness across pseudo variants. |
+| `properties` | `list` | Raw CSS property. |
 | `custom-properties` | `map` | Custom properties inclusion. |
-| `default-variants` | `map` | Key value map of the variants. |
-| `default-pseudos` | `list` | List of supported pseudos. |
 | `variants` | `map` | Key value map of the variants. |
-| `pseudos` | `list` | List of supported pseudos. |
+| `pseudos` | `list` | Supported pseudos. |
 
-{.table}
+{.text-left style="--markdown-table-border: 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--shade-700))"}
 
 ---
 
@@ -88,12 +86,12 @@ The `shorthand` setting overrides the default keyword used to identify the prope
 
 ```css
 /* styles.css */
-.customMarginTop-1: {margin-top: 0.062rem;}
-.customMarginTop-2: {margin-top: 0.125rem;}
+.customMarginTop-1: { margin-top: 1px; }
+.customMarginTop-2: { margin-top: 2px; }
 ...
 
-.mr-1: {margin-right: 0.062rem;}
-.mr-2: {margin-right: 0.125rem;}
+.mr-1: { margin-right: 1px; }
+.mr-2: { margin-right: 2px; }
 ...
 ```
 
@@ -107,7 +105,11 @@ If `null` is passed in as a value for `shorthand` the property will omit the sho
   $config: (
     utility: (
       display: (
-        shorthand: null
+        shorthand: null,
+        variants: (
+          block: block,
+          flexTest: flex
+        )
       )
     )
   )
@@ -116,9 +118,8 @@ If `null` is passed in as a value for `shorthand` the property will omit the sho
 
 ```css
 /* styles.css */
-.block: {display: block;}
-.inline-block: {display: inline-block;}
-.flex: {display: flex;}
+.block: { display: block; }
+.flexText: { display: flex; }
 ...
 ```
 
@@ -143,21 +144,21 @@ The `responsive` setting enables or disables the responsiveness of a given prope
 
 ```css
 /* styles.css */
-@media (min-width: 768px) {
-  .sm\.align-left {text-align: left;}
-  .sm\.align-right {text-align: right;}
+@media (min-width: 768px) { 
+  .sm\.text-left { text-align: left; }
+  .sm\.text-right { text-align: right; }
 }
-@media (min-width: 1024px) {
-  .md\.align-left {text-align: left;}
-  .md\.align-right {text-align: right;}
+@media (min-width: 1024px) { 
+  .md\.text-left { text-align: left; }
+  .md\.text-right { text-align: right; }
 }
-@media (min-width: 1280px) {
-  .lg\.align-left {text-align: left;}
-  .lg\.align-right {text-align: right;}
+@media (min-width: 1280px) { 
+  .lg\.text-left { text-align: left; }
+  .lg\.text-right { text-align: right; }
 }
-@media (min-width: 1536px) {
-  .xl\.align-left {text-align: left;}
-  .xl\.align-right {text-align: right;}
+@media (min-width: 1536px) { 
+  .xl\.text-left { text-align: left; }
+  .xl\.text-right { text-align: right; }
 }
 ```
 
@@ -165,7 +166,7 @@ The `responsive` setting enables or disables the responsiveness of a given prope
 
 ## Responsive Pseudos
 
-The `responsive-pseudos` setting when enabled, will enable pseudo variants across breakpoints. By default all Uniform CSS property pseudos are not individually specifiable based on breakpoints e.g. `sm.hover.align-left`. This setting enables that feature.
+The `responsive-pseudos` setting when enabled, will enable responsiveness across pseudos. By default, `responsive-pseudos` is disabled for all Uniform CSS properties.
 
 ```scss
 // styles.scss
@@ -184,11 +185,12 @@ The `responsive-pseudos` setting when enabled, will enable pseudo variants acros
 
 ```css
 /* styles.css */
-@media (min-width: 768px) {
-  .sm\.float-left {float: left;}
-  .sm\.float-right {float: right;}
-  .sm\.hover\.float-left:hover {float: left;}
-  .sm\.hover\.float-right:hover {float: right;}
+@media (min-width: 768px) { 
+  .sm\.float-left { float: left; }
+  .sm\.float-right { float: right; }
+
+  .sm\.hover\.float-left:hover { float: left; }
+  .sm\.hover\.float-right:hover { float: right; }
 }
 ...
 ```
@@ -219,7 +221,7 @@ The `extra-selector` setting when enabled, will apply CSS combinators to the end
 
 ```css
 /* styles.css */
-.gutter-y-10 > * + * {
+.gutter-y-10 > * + * { 
   margin-top: 10px;
 }
 ...
@@ -230,37 +232,7 @@ The `extra-selector` setting when enabled, will apply CSS combinators to the end
 
 ## Properties
 
-The `properties` setting specifies the CSS property to include. All properties have their default properties already set however this can be useful for building custom ones.
-
-```scss
-// styles.scss
-@use "uniform" as * with (
-  $config: (
-    utility: (
-      line-height: (
-        shorthand: leading,
-        properties: (line-height)
-      ),
-    )
-  )
-);
-```
-
-```css
-/* styles.css */
-.leading-0 {
-  line-height: 1;
-}
-.leading-1 {
-  line-height: 1.1;
-}
-.leading-2 {
-  line-height: 1.2;
-}
-...
-```
-
-It is important to note, the `properties` setting must be passed in as a map and can contain mutiple properties. This can be particularly useful for custom classes that contain multiple properties.
+The `properties` setting specifies the CSS property to include. You can include multiple properties to be applied.
 
 ```scss
 // styles.scss
@@ -281,15 +253,15 @@ It is important to note, the `properties` setting must be passed in as a map and
 
 ```css
 /* styles.css */
-.px-0 {
+.px-0 { 
   padding-left: 0;
   padding-right: 0;
 }
-.px-1 {
+.px-1 { 
   padding-left: 1px;
   padding-right: 1px;
 }
-.px-2 {
+.px-2 { 
   padding-left: 2px;
   padding-right: 2px;
 }
@@ -300,7 +272,7 @@ It is important to note, the `properties` setting must be passed in as a map and
 
 ## Custom Properties
 
-The `custom-properties` setting specifies custom properties that the CSS property to include. This can be useful for properties that need to include resetting custom properties such as `background-color`. The `custom-properties` setting must be passed in as a map with key value pairs.
+The `custom-properties` setting specifies custom properties to include with each property. This can be useful for properties that need to include resetting custom properties such as `background-color`. The `custom-properties` setting must be passed in as a map with key value pairs.
 
 ```scss
 // styles.scss
@@ -321,13 +293,13 @@ The `custom-properties` setting specifies custom properties that the CSS propert
 
 ```css
 /* styles.css */
-.bg-red {
+.bg-red { 
   --bg-sat: 0%,
   --bg-ltn: 0%,
   --bg-opacity: 1,
   background-color: ...;
 }
-.bg-blue {
+.bg-blue { 
   --bg-sat: 0%,
   --bg-ltn: 0%,
   --bg-opacity: 1,
@@ -335,7 +307,6 @@ The `custom-properties` setting specifies custom properties that the CSS propert
 }
 ...
 ```
-
 
 ---
 
@@ -364,13 +335,13 @@ The `variants` setting specifies which variants should be generated for a given 
 
 ```css
 /* styles.css */
-.m-1 {
+.m-1 { 
   margin: 1px,
 }
-.m-2 {
+.m-2 { 
   margin: 2px,
 }
-.m-custom {
+.m-custom { 
   margin: 180px,
 }
 ...
@@ -386,7 +357,7 @@ If `null` is passed in as a value for a variant key the property will omit the v
   $config: (
     utility: (
       transition-property: (
-        shorthand: transition-property,
+        shorthand: transition,
         properties: (transition-property),
         variants: (
           null: (
@@ -408,7 +379,7 @@ If `null` is passed in as a value for a variant key the property will omit the v
 
 ```css
 /* styles.css */
-.transition-property {
+.transition { 
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
 }
 ...
@@ -416,20 +387,18 @@ If `null` is passed in as a value for a variant key the property will omit the v
 
 ---
 
-## Overwriting Defaults
+## Pseudos
 
-Default Variants and Pseudos can be both removed, overwritten, or extended. Similar to how `variants` and `pseudos` settings are set, you can target default settings directly by appending the word `default` at the beginning of each setting name. 
+The `pseudos` setting specifies which pseudos set should be generated for a given CSS property. Settings must be passed in as a list.
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
   $config: (
     utility: (
-      text-align: (
-        variants: null,
-        default-pseudos: null,
-        variants: (
-          customVariant: left
+      background-color: (
+        pseudos: (
+          hover, focus, group-hover
         )
       ),
     )
@@ -437,9 +406,35 @@ Default Variants and Pseudos can be both removed, overwritten, or extended. Simi
 );
 ```
 
-```css
-.text-align-customVariant {
-  text-align: left;
-}
+---
 
+## Disabling Defaults
+
+Passing in `null` will disable all default settings. If you wish to disable defaults and apply your own, you can do so by applying your own settings to the `extend` map.
+
+```scss
+// styles.scss
+@use "uniform" as * with (
+  $config: (
+    utility : (
+      background-color: (
+        variants: null,
+        pseudos: null,
+        extend: (
+          variants: (
+            mainRed: red,
+            mainBlue: blue
+          ),
+          pseudos: (hover, focus)
+        )
+      )
+    )
+  )
+);
+```
+
+```css
+/* styles.css */
+.bg-mainRed { background-color: red; }
+.bg-mainBlue { background-color: blue; }
 ```

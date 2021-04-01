@@ -7,7 +7,7 @@ date: 1000-01-03
 
 ## Exclude Settings
 
-The `exclude` and `include` settings are a Sass list that tell Uniform which CSS properties should be included or excluded. By default all Uniform supported CSS properties and modules are included. In this guide, you can learn how you can override these settings.
+The `exclude` and `include` settings are a Sass list that tell Uniform which CSS properties should be included or excluded. By default all Uniform supported CSS properties are included.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -15,7 +15,7 @@ The `exclude` and `include` settings are a Sass list that tell Uniform which CSS
 
 ## Excluding Properties
 
-There may be a time where you wish to exclude certain unused properties. You can achieve this by including the native CSS property name in the `excludes` map of your configuration.
+There may be a time where you wish to exclude certain unused properties. You can achieve this by including the native CSS property name in the `exclude` map of your configuration.
 
 ```scss
 // default values
@@ -34,7 +34,7 @@ There may be a time where you wish to exclude certain unused properties. You can
 
 ## Excluding All Properties
 
-If you wish to exclude all properties, simply pass in `all` in your excludes map.
+If you wish to exclude all properties, simply pass in `all` in your exclude map.
 
 ```scss
 // default values
@@ -51,7 +51,7 @@ If you wish to exclude all properties, simply pass in `all` in your excludes map
 
 ## Including Properties
 
-To include only a select set of CSS properties, pass in the native CSS properties you wish to include to the `includes` map.
+To include only a select set of CSS properties, pass in the native CSS property name you wish to include to the `include` map.
 
 ```scss
 // default values

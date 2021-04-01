@@ -6,7 +6,7 @@ date: 1000-01-01
 
 ## How Configuration Works
 
-Customizations in Uniform CSS are all handled through a single point of entry from the root of your Sass project. Unlike the CDN option, the Sass implementation of Uniform CSS provides the most customization freedom. 
+Customizations in Uniform CSS are all handled from the root of your Sass project. The Sass implementation of Uniform CSS provides the most customization freedom. 
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -20,9 +20,7 @@ Uniform CSS is loaded in as a module and can be configured with by passing in se
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    build: (
-      important: true,
-    )
+    important: true,
     // override settings here
   )
 );
@@ -30,8 +28,8 @@ Uniform CSS is loaded in as a module and can be configured with by passing in se
 
 ```css
 /* styles.css */
-.align-left {text-align: left !important;}
-.align-right {text-align: right !important;}
+.align-left { text-align: left !important; }
+.align-right { text-align: right !important; }
 ```
 
 ---
@@ -42,35 +40,31 @@ It is helpful to note, there are four types of settings you can pass into your c
 
 ### Build Settings
 
-Build settings specifies globally how your properties are constructed.
+Build settings control globally how your properties are constructed.
 
 ```scss
 @use "uniform" as * with (
   $config: (
-    build: (
-      important: true,
-      // other build settings here
-    )
+    important: true,
+    // other build settings here
   )
 );
 ```
 
 ### Theme Settings
 
-Theme settings specifies universally shared theme related settings such as breakpoints, sizes, and colors etc.
+Theme settings are universally shared settings such as breakpoints, sizes, and colors that affect multiple or project specific properties.
 
 ```scss
 @use "uniform" as * with (
   $config: (\
-    theme: (
-      screens: (
-        ...
-      )
-      colors: (
-        ...
-      ),
-      // other theme settings here
+    screens: (
+      ...
     )
+    colors: (
+      ...
+    ),
+    // other theme settings here
   )
 );
 ```
@@ -94,7 +88,7 @@ Utility settings specifies the individual setting of each property.
 
 ### Exclude Settings
 
-Exclude and include settings specifies which properties or modules should be excluded or included during the build.
+Exclude and include settings specifies which properties should be excluded and included.
 
 ```scss
 @use "uniform" as * with (

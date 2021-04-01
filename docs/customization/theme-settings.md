@@ -7,7 +7,7 @@ date: 1000-01-03
 
 ## Theme Settings
 
-The `theme` setting specifies global theme related settings such as sizing units, fonts, and colors. Theme settings are a powerful and easy way to customize Uniform CSS to match your product and design. Many of the theme settings are shared across multiple related CSS properties such as `background-color` and `color`.
+The `theme` setting are a set of values that are shared across multiple properties or specific to your project such as, sizing units, fonts, and colors. Theme settings are a powerful and easy way to customize Uniform CSS to match your brand and design.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -15,7 +15,7 @@ The `theme` setting specifies global theme related settings such as sizing units
 
 ## Theme Setting Usage
 
-Theme settings are shared across multiple related CSS properties.
+Theme settings are shared across multiple CSS properties.
 
 ```scss
 // styles.scss
@@ -30,9 +30,9 @@ Theme settings are shared across multiple related CSS properties.
 
 ```css
 /* styles.css */
-.bg-custom-color {background-color: #B20000;}
-.color-custom-color {color: #B20000;}
-.border-custom-color {color: #B20000;}
+.bg-custom-color { background-color: #B20000; }
+.color-custom-color { color: #B20000; }
+.border-custom-color { border-color: #B20000; }
 ...
 ```
 
@@ -40,14 +40,14 @@ Theme settings are shared across multiple related CSS properties.
 
 ## Default Theme Settings
 
-Uniform CSS comes pre-set with default theme settings which are applied across its related properties. Theme settings are unique in that its values can be accessed through various theme helper functions.
+Uniform CSS comes pre-set with default theme settings which are applied across its relevant properties. Theme settings are unique in that its values can be accessed using [helper functions](/docs/helper-functions).
 
 ```scss
 // styles.scss
 @use "uniform" as * with (
   $config: (
-    colors: (...),
-    ...
+    colors: ( ... ),
+    screens: ( ... ),
   )
 );
 ```
@@ -60,25 +60,25 @@ The following theme setting definitions apply.
 
 | Setting | Description |
 | - | - |
-| `colors` | Specifies the base colors |
-| `tint-levels` | Specifies the tint levels |
-| `shade-levels` | Specifies the shade levels |
-| `opacity-levels` | Specifies the opacity-levels |
-| `gradients` | Specifies the base gradients |
-| `breakpoints` | Specifies the base breakpoints |
-| `positive-sizes` | Specifies the positive base sizes |
-| `negative-sizes` | Specifies the negative base sizes |
-| `range-limits` | Specify the size limits for size properties |
-| `shadows` | Specifies the base shadows |
-| `radiuses` | Specifies the base radiuses |
-| `font-families` | Specifies the base font-families |
-| `font-sizes` | Specifies the base font-sizes |
-| `font-weights` | Specifies the base font-weights |
-| `leadings` | Specifies the base line-heights |
-| `trackings` | Specifies the base letter-spacings |
+| `colors` | Set of base colors |
+| `tint-levels` | Set of the tint levels |
+| `shade-levels` | Set of the shade levels |
+| `opacity-levels` | Set of the opacity-levels |
+| `gradients` | Set of gradients |
+| `screens` | Set of the breakpoints |
+| `positive-sizes` | Set of the positive sizes |
+| `negative-sizes` | Set of the negative sizes |
+| `range-limits` | Specify the range limits for size properties |
+| `shadows` | Set of the shadows |
+| `radiuses` | Set of the radiuses |
+| `font-families` | Set of the font-families |
+| `font-sizes` | Set of the font-sizes |
+| `font-weights` | Set of the font-weights |
+| `leadings` | Set of the line-heights |
+| `trackings` | Set of the letter-spacings |
+| `keyframes` | Set of keyframes |
 
-
-{.table}
+{.text-left style="--markdown-table-border: 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--shade-700))"}
 
 ---
 
@@ -87,7 +87,7 @@ The following theme setting definitions apply.
 To override base theme settings, pass key value pairs to each setting in your configuration. Passing in a key that already exists will override the existing value.
 
 ```scss
-// default values
+// styles.scss
 @use "uniform" as * with (
   $config: (
     colors: (
@@ -104,33 +104,43 @@ To override base theme settings, pass key value pairs to each setting in your co
 
 ```css
 /* styles.css */
-.bg-red {background-color: #B20000;}
-.color-red {color: #B20000;}
-.border-red {color: #B20000;}
-.leading-loose {line-height: 1.6}
+.bg-red { background-color: #B20000; }
+.color-red { color: #B20000; }
+.border-red { color: #B20000; }
+.leading-loose { line-height: 1.6 }
 ...
 ```
 
 ---
 
-
 ## Disabling Theme Settings
 
-Theme settings can be disabled by passing the value `null` to each setting.
+Passing in `null` will disable all default Uniform settings. If you wish to disable defaults and apply your own, you can do so by applying your own theme settings to the `extend` map.
 
 ```scss
-// default values
+// styles.scss
 @use "uniform" as * with (
   $config: (
     colors: null,
-    leadings: null,
-    ...
+    extend: (
+      colors: (
+        mainRed: red,
+        mainBlue: blue
+      )
+    )
   )
 );
 ```
+
+```css
+/* styles.css */
+.bg-mainRed { background-color: red; }
+.bg-mainBlue { background-color: blue; }
+```
+
 
 ---
 
 ## For more information
 
-For more information on customizing your theme, please refer to the dedicated section on theme in the docs.
+For more information on theming, please refer to the dedicated section on theme.
