@@ -4,29 +4,11 @@ description: Learn how to customize typography related settings.
 date: 1000-01-04
 ---
 
-## Typography
+## Typography Properties
 
-You can customize full range of typography properties such as line-heights and font sizes in Uniform CSS. In this guide, you will learn which variants are available for each typography property and how you can customize them.
+You can customize full range of typography based properties such as `line-height` and `font-size`. In this guide, you will learn which variants are available for each typography group and how you can customize them. For a visual reference of all typography properties and its variants, view the [Cheatsheet](/docs/cheatsheet).
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
-
----
-
-## Font Families
-
-Font family properties can be applied using the `font-<family>` utility. By default, there are three font families available.
-
-<div class="grid grid-cols-1 gap-36 align-center bg-black radius-md py-48">
-  <div class="font-sans font-3xl color-white">Sans Family</div>
-  <div class="font-serif font-3xl color-white">Serif Family</div>
-  <div class="font-mono font-3xl color-white">Mono Family</div>
-</div>
-
-```html
-<div class="font-sans ...">Sans Family</div>
-<div class="font-serif ...">Serif Family</div>
-<div class="font-mono ...">Mono Family</div>
-```
 
 ---
 
