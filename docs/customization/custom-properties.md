@@ -6,7 +6,7 @@ date: 1000-01-07
 
 ## Custom Properties
 
-The `utilities` map can be used to generate your own custom properties by passing in the same data structure of a standard CSS property.
+The `utility` map can also be used to generate your own custom properties.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -44,7 +44,7 @@ You can use the same data structure of a utility setting to generate your own pr
 ```css
 /* styles.css */
 .leading-trimmer { leading-trim: both; }
-.text-edge { text-edge: cap alphabetic; }
+.text-cap { text-edge: cap alphabetic; }
 ...
 ```
 
@@ -52,7 +52,7 @@ You can use the same data structure of a utility setting to generate your own pr
 
 ## Excluding Custom Properties
 
-Any new utilities generated through the `utilities` settings map will behave like any other utility and can be included or excluded using the `include` and `exclude` settings.
+Any new utilities generated through the `utility` settings map will behave like any other utility and can be included or excluded using the `include` and `exclude` setting.
 
 ```scss
 // default values
@@ -80,11 +80,11 @@ Any new utilities generated through the `utilities` settings map will behave lik
 
 ---
 
-## Add to Core Library <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm leading-0 bold radius-round bg-blue bg-brighten-500 color-white align-middle">Advanced</span>
+## Add to Core Library <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm bold radius-full bg-blue bg-brighten-500 color-white align-middle">Advanced</span>
 
-Adding utilities through the utilities map can be a useful to quickly add properties however when adding many, your Uniform configuration may become long. To avoid this problem custom properties can also be added natively to the core library.
+Adding utilities through the `utility` map in your configuration is a quick way to add new properties however when adding many, your Uniform configuration may become long. To avoid this problem custom properties can also be added natively to the core library.
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-gray bg-tint-800 leading-0 color-black radius-round">1</span> Build out your data structure</h4>
+### 1. Build out your data structure
 
 Create a new `sass` document and use the following template to configure your own custom property.
 
@@ -128,9 +128,9 @@ $config: (
 core.$all-config: map.deep-merge(core.$all-config, $config);
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-gray bg-tint-800 leading-0 color-black radius-round">2</span> Include custom property to the import list</h4>
+### 2. Include custom property to the import list
 
-Open `_index.scss` located inside the uniform directly and include the newly created custom property using the `@use` after the last imported property.
+Open `uniform/_index.scss` and include the newly created custom property using the `@use` after the last imported property.
 
 ```scss
 // uniform/_index.scss
@@ -142,9 +142,9 @@ Open `_index.scss` located inside the uniform directly and include the newly cre
 @use "utilities/leading-trim"; // include your custom property here
 ```
 
-<h4><span class="w-24 h-24 mr-8 inline-flex align-items-center justify-content-center font-sm font-700 leading-0 bg-gray bg-tint-800 leading-0 color-black radius-round">3</span> Override or customize custom property</h4>
+### 3. Override or customize custom property (optional)
 
-Once your custom property has been added into the core library, it will behave like any other utility property. This means it can be configured, overwritten or extended like any other property inside the `utilities` map.
+Once your custom property has been added into the core library, it will behave like any other utility property. This means it can be configured, overwritten or extended like any other property inside the `utility` setting in your configuration.
 
 ```scss
 // styles.scss

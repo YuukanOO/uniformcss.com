@@ -14,16 +14,20 @@ By default, responsive properties will be generated for each breakpoint. Breakpo
 
 ## Breakpoint Variant Chart
 
-By default, there are **4 breakpoints** for any given responsive behavior. Use the following chart as the reference for any breakpoint related property.
+By default, there are **4 breakpoints**. The following default breakpoint configurations are applied.
 
-| Variant | Value |
-| - | - |
-| `sm` | `768px` |
-| `md` | `1024px` |
-| `lg` | `1280px` |
-| `xl` | `1536px` |
-
-{.table}
+```scss
+@use "uniform" as * with (
+  $config: (
+    screens: (
+      sm: 768px,
+      md: 1024px,
+      lg: 1280px,
+      xl: 1536px,
+    ),
+  )
+)
+```
 
 ---
 
@@ -41,20 +45,106 @@ The following example showcases how the variants can be applied.
 </div>
 ```
 
+---
+
+## Breakpoint Delimiter
+
+By default, Uniform uses the `.` character to separate the breakpoints and pseudos from the property. You can override the default breakpoint delimiter by defining `screen-delimiter` in your configuration.
+
+```scss
+// styles.scss
+@use "uniform" as * with (
+  $config: (
+    screen-delimiter: '__',
+  )
+);
+```
+
+```css
+/* styles.css */
+@media (min-width: 1024px) {
+  .sm__block {
+    display: block;
+  }
+  .sm__flex {
+    display: flex;
+  }
+  ...;
+}
+```
 
 ---
 
-## Supporting Other Breakpoints
+## Enabling Responsiveness
 
-You can add support for more breakpoints by appending your own key value pair to the screens setting in your configuration. Optionally, if a key already exists the newly defined value will take precedence.
+By design, Uniform only enables responsiveness to a subset of CSS properties. You can enable responsiveness by passing `responsive: true` to each property setting in your configuration. To see which properties are responsive, please refer to the [glossary](/glossary).
 
 ```scss
 @use "uniform" as * with (
   $config: (
-    screens: (
-      xs: 640px // includes 640px as a supported breakpoint
+    utility: (
+      letter-spacing: ( responsive: true ),
+      list-style-type: ( responsive: true ),
+      color-transform: ( responsive: true )
     )
   )
 );
 ```
 
+---
+
+## Extending Breakpoints
+
+You can change the number of breakpoints and even change their `min-width` values by passing in your own custom map to the `screens` key in your configuration.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    screens: (
+      custom-breakpoint: 1920px
+    )
+  )
+);
+```
+
+```css
+/* styles.css */
+@media (min-width: 1920px) {
+  .custom-breakpoint\.block {
+    display: block;
+  }
+  .custom-breakpoint\.flex {
+    display: flex;
+  }
+  ...;
+}
+```
+
+---
+
+## Overriding Existing Breakpoints
+
+You can replace existing breakpoints by overriding existing keys to the `screens` map in your configuration.
+
+```scss
+@use "uniform" as * with (
+  $config: (
+    screens: (
+      md: 1920px
+    )
+  )
+);
+```
+
+```css
+/* styles.css */
+@media (min-width: 1920px) {
+  .md\.block {
+    display: block;
+  }
+  .md\.flex {
+    display: flex;
+  }
+  ...
+}
+```

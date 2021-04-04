@@ -61,7 +61,7 @@ The following advanced build setting definitions apply.
 | `placeholders` | `false` | Builds with placeholder selectors enabled. |
 | `dark-mode-support` | `false` | Enable dark pseudo across all properties. |
 
-{.table}
+{.text-left style="--markdown-table-border: 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--shade-700))"}
 
 ### Headless Mode
 

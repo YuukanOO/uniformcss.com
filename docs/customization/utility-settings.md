@@ -15,7 +15,7 @@ The `utility` setting allows you to configure how each properties are generated.
 
 ## How it works
 
-Each property in Uniform CSS is constructed using the same data structure. By passing in your settings to the `utility` map, you can override the default data set for esch property. Each property has a set number of settings available and if a certain setting is not specified in your configuration, it will Uniform will fall back to the default setting value instead.
+Properties in Uniform CSS are constructed using a template data structure. By passing in your settings to the `utility` map, you can override the default data set for esch property. Each property has a set number of settings available and if a certain setting is not specified in your configuration, Uniform will fall back to the default setting value instead.
 
 ```scss
 // styles.scss

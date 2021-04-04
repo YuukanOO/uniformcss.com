@@ -6,7 +6,7 @@ date: 1000-01-08
 
 ## Extracting Components
 
-Even though Uniform is a Utility-first CSS framework, it encourages the extraction of components as common design patterns emerge. The following guide will cover the various ways you can extract components.
+Uniform encourages the extraction of components when clear and repeating design patterns emerge. The following guide will cover the various ways you can extract components.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
@@ -14,7 +14,7 @@ Even though Uniform is a Utility-first CSS framework, it encourages the extracti
 
 ## Using Theme Helper Functions
 
-Uniform CSS encourages the extraction of components without breaking your existing Sass workflow. You can build custom components and still get access to theme settings using helper functions. To learn more about helper functions, refer to the page on helper functions.
+You can build custom components and still get access to theme variables using helper functions. To learn more about helper functions, refer to the page on [Helper Functions](/docs/helper-functions).
 
 ```scss
 // styles.scss
@@ -33,7 +33,7 @@ Uniform CSS encourages the extraction of components without breaking your existi
 
 ---
 
-## Using @apply mixin <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm leading-0 bold radius-round bg-blue bg-brighten-500 color-white align-middle">Beta</span>
+## Using @apply mixin <span class="ml-6 inline-flex align-items-center px-8 h-20 font-sm bold radius-full bg-blue bg-brighten-500 color-white align-middle">beta</span>
 
 The `apply()` mixin allows you to apply properties directly using shorthand utility class names. Behind the scene, it parses through the list of arguments and extends placeholder selectors that match the name.
 
@@ -48,7 +48,7 @@ The `apply()` mixin allows you to apply properties directly using shorthand util
 }
 ```
 
-This is currently an experimental feature and should not be used for production. To enable this feature, placeholders must be set to `true` in your configuration.
+To enable this feature, placeholders must be set to `true` in your configuration.
 
 ```scss
 @use "uniform" as * with (

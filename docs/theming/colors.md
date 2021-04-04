@@ -14,7 +14,7 @@ All colors in Uniform are applied using the HSL model. This opens up opportuniti
 
 ## Default Colors
 
-The following default color configurations are applied.
+The following default color configurations are applied. To see a more visual reference of all the colors, tints, and shades, visit [Color System](/docs/color-system).
 
 ```scss
 @use "uniform" as * with (
@@ -38,12 +38,20 @@ The following default color configurations are applied.
       magenta: ( hue: 300, sat: 75% ),
       pink: ( hue: 320, sat: 75% ),
       crimson: ( hue: 340, sat: 75% ),
+      
       white: ( hue: 0, sat: 0% ),
       black: ( hue: 0, sat: 0% ),
-      cool-gray: ( hue: 220, sat: 10% ),
-      gray: ( hue: 220, sat: 5% ),
-      warm-gray: ( hue: 24, sat: 10% ),
+
+      cool-gray: ( hue: 220, sat: 12% ),
+      gray: ( hue: 220, sat: 0% ),
+      warm-gray: ( hue: 24, sat: 12% ),
+
+      primary: ( hue: 220, sat: 75% ),
+      secondary: ( hue: 220, sat: 50% ),
+      tertiary: ( hue: 220, sat: 25% ),
+      
       transparent: transparent,
+      current: currentColor
     ),
   )
 )
@@ -53,7 +61,7 @@ The following default color configurations are applied.
 
 ## Customizing via Sass
 
-To custom existing colors or add new ones, pass in key value pairs to the `colors` setting in your configuration. Values can be passed in as a map or static values. Colors that are passed in as `hue` and `sat` maps will automatically be assigned `50%` lightness and is able to take advantage of color manipulation properties such as `tints`, `shade`, and `opacity`.
+To custom existing colors or add new ones, pass in key value pairs to the `colors` setting in your configuration. Values can be passed in as a map or static values. Colors that are passed in as `hue` and `sat` maps will automatically be assigned `50%` lightness and is able to take advantage of composable color manipulation properties such as `tints`, `shade`, and `opacity`. To learn more about how these colors work see [Color System](/docs/color-system).
 
 ```scss
 // styles.scss
@@ -65,7 +73,7 @@ To custom existing colors or add new ones, pass in key value pairs to the `color
         hue: 10,
         sat: 63% 
       ),
-      custom: pink
+      customPink: pink
     ),
   )
 )
@@ -79,16 +87,16 @@ To custom existing colors or add new ones, pass in key value pairs to the `color
   --red-sat: 63%;
 }
 
-.color-red {
-  --color-ltn: 50%;
-  --color-opacity: 1;
-  color: hsla(var(--red-hue), var(--red-sat), var(--color-ltn), var(--color-opacity));
+.bg-red {
+  --bg-ltn: 50%;
+  --bg-opacity: 1;
+  background-color: hsla(var(--red-hue), var(--red-sat), var(--bg-ltn), var(--bg-opacity));
 }
 
-.color-custom {
-  --color-ltn: 50%;
-  --color-opacity: 1;
-  color: pink;
+.bg-customPink {
+  --bg-ltn: 50%;
+  --bg-opacity: 1;
+  background-color: pink;
 }
 ```
 
@@ -96,7 +104,7 @@ To custom existing colors or add new ones, pass in key value pairs to the `color
 
 ## Customizing Tints
 
-Tints control the lightness value of a given color. By default, there are `10` levels of tints available and each level follows the `100 ... 900` naming convention. You can override or add new levels by passing in key value pairs to the `tints` setting in your configuration.
+Tints control the lightness value of a given color. By default, there are `11` levels of tints available. You can override or add new levels by passing in key value pairs to the `tints` setting in your configuration.
 
 ```scss
 // styles.scss
@@ -104,16 +112,17 @@ Tints control the lightness value of a given color. By default, there are `10` l
 @use "uniform" as * with (
   $config: (
     tints: (
-      0: 50%,
-      100: 55.24%,
-      200: 60.46%,
-      300: 65.68%,
-      400: 70.9%,
-      500: 76.12%,
-      600: 81.34%,
-      700: 86.56%,
-      800: 91.78%,
-      900: 97%,
+      base: 50%,
+      100: 55.12%,
+      200: 60.23%,
+      300: 65.34%,
+      400: 70.45%,
+      500: 75.56%,
+      600: 80.67%,
+      700: 85.78%,
+      800: 90.89%,
+      900: 96%,
+      full: 100%,
     )
   )
 )
@@ -123,7 +132,7 @@ Tints control the lightness value of a given color. By default, there are `10` l
 
 ## Customizing Shades
 
-Shades control the darkness value of a given color. By default, there are `10` levels of shades available and each level follows the `100 ... 900` naming convention. You can override or add new levels by passing in key value pairs to the `shades` setting in your configuration.
+Shades control the darkness value of a given color. By default, there are `11` levels of shades available. You can override or add new levels by passing in key value pairs to the `shades` setting in your configuration.
 
 ```scss
 // styles.scss
@@ -131,16 +140,17 @@ Shades control the darkness value of a given color. By default, there are `10` l
 @use "uniform" as * with (
   $config: (
     shades: (
-      0: 50%,
-      100: 44.76%,
-      200: 39.54%,
-      300: 34.32%,
-      400: 29.1%,
-      500: 23.88%,
-      600: 18.66%,
-      700: 13.44%,
-      800: 8.22%,
-      900: 3%,
+      base: 50%,
+      100: 44.9%,
+      200: 39.79%,
+      300: 34.68%,
+      400: 29.57%,
+      500: 24.46%,
+      600: 19.35%,
+      700: 14.24%,
+      800: 9.13%,
+      900: 4%,
+      full: 0%,
     )
   )
 )
@@ -150,7 +160,7 @@ Shades control the darkness value of a given color. By default, there are `10` l
 
 ## Customizing Opacities
 
-Opacities control the alpha value of a given color. You can override or add new levels by passing in key value pairs to the `shades` setting in your configuration. The following opacity levels are available by default.
+Opacities control the alpha value of a given color. You can override or add new levels by passing in key value pairs to the `opacities` setting in your configuration. The following opacity levels are supported by default.
 
 ```scss
 // styles.scss
@@ -183,7 +193,7 @@ Opacities control the alpha value of a given color. You can override or add new 
 
 ## Customizing via CDN
 
-If you are using the CDN implementation, you can still customize all existing theme properties by overriding `--<property>-<variant>` CSS custom properties. This method can be particularly useful for when you just want to get started quickly without worrying about a Sass build process. 
+If you are using the CDN implementation, you can still customize all existing theme properties by overriding CSS custom properties. This method can be particularly useful for when you just want to get started quickly without worrying about a Sass build process. To see the full list of CSS variables inspect element this page.
 
 ```scss
 // styles.css
@@ -198,9 +208,6 @@ If you are using the CDN implementation, you can still customize all existing th
   --shade-800: 86%;
 }
 ```
-
-> To see the full list of CSS variables inspect element this page.
-
 ---
 
 ## Disabling Defaults
@@ -208,6 +215,8 @@ If you are using the CDN implementation, you can still customize all existing th
 If you prefer to remove the default settings and add your own, simply pass `null` to any theme property. Additionally, you can add your own by assigning theme settings to the `extend` map.
 
 ```scss
+// styles.scss
+
 @use "uniform" as * with (
   $config: (
     colors: null, // disable default colors

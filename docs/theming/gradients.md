@@ -14,7 +14,7 @@ Uniform provides inline gradient support using the `bg-gradient` utility. You ca
 
 ## Applying Inline Gradient
 
-To apply inline gradients, add a the class `bg-gradient` to any element and override the `--gradient` CSS variable with your gradient value.
+To apply inline gradients, add the class `bg-gradient` to any element and override the `--gradient` CSS variable with your gradient.
 
 ```html
 <div class="bg-gradient" style="--gradient: to right, #ffbebe, #4eff9d;">
@@ -24,9 +24,9 @@ To apply inline gradients, add a the class `bg-gradient` to any element and over
 
 ---
 
-## Adding Gradients
+## Default Gradients
 
-You can add your own gradient by adding key value pairs to the the `gradients` setting in your theme configuration. The following gradients are built-in.
+The following default gradient configurations are applied. To see a more visual reference of all the gradients, visit [Cheatsheet](/cheatsheet).
 
 ```scss
 @use "uniform" as * with (
@@ -45,17 +45,37 @@ You can add your own gradient by adding key value pairs to the the `gradients` s
 )
 ```
 
+---
+
+## Customizing via Sass
+
+You can add your own gradients by passing in key value pairs to the `gradients` map in your configuration.
+
+```scss
+// styles.scss
+
+@use "uniform" as * with (
+  $config: (
+    gradients: (
+      custom-gradient: linear-gradient(to right, red 0%, blue 100%)
+    )
+  )
+)
+```
+
 ```css
-.bg-gradient-x-from-white {
-  background-color: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
+/* styles.css */
+
+.bg-custom-gradient {
+  background: linear-gradient(to right, red 0%, blue 100%);
 }
 ```
 
 ---
 
-## Disabling Gradients
+## Disabling Defaults
 
-You can remove all gradients by passing `null` in your gradient setting.
+You can remove all default gradients by passing `null` to the `gradients` setting.
 
 ```scss
 @use "uniform" as * with (

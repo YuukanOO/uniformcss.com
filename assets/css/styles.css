@@ -141,10 +141,10 @@ ROOT VARIABLES
   --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.3), 0 15px 10px rgba(0, 0, 0, 0.2);
   --shadow-2xl: 0 25px 45px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.3);
   --shadow-focus: 0 0 0 4px rgba(82, 129, 224, 0.2);
-  --shadow-input-focus: 0 0 0 3px #5281e0;
-  --shadow-input-success: 0 0 0 3px #c9e052;
-  --shadow-input-warning: 0 0 0 3px #e09952;
-  --shadow-input-danger: 0 0 0 3px #e05252;
+  --shadow-input-focus: 0 0 0 3px rgba(82, 129, 224, 0.2);
+  --shadow-input-success: 0 0 0 3px rgba(201, 224, 82, 0.2);
+  --shadow-input-warning: 0 0 0 3px rgba(224, 153, 82, 0.2);
+  --shadow-input-danger: 0 0 0 3px rgba(224, 82, 82, 0.2);
   --TINTS-------------------------:#09;
   --tint-base: 50%;
   --tint-100: 55.12%;
