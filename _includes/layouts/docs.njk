@@ -69,17 +69,15 @@ layout: layouts/base.njk
         </div>
       </aside>
 
-      <div class="docsearch-content">
-        <div class="overflow-auto sm.px-56 xl.px-72 py-64">
-          <h1 class="flex align-items-start relative text-6xl lg.text-7xl xl.text-8xl extrabold color-white tracking-tight mb-16">
-            {{ title | safe }}
-          </h1>
-          <p class="text-xl semibold color-white pb-64 color-white border-b-2 border-white">
-            {{ description | safe }}
-          </p>
-          <div class="markdown color-white">
-            {{ content | safe }}
-          </div>
+      <div class="docsearch-content overflow-auto sm.px-56 xl.px-72 py-64">
+        <h1 class="flex align-items-start relative text-6xl lg.text-7xl xl.text-8xl extrabold color-white tracking-tight mb-16">
+          {{ title | safe }}
+        </h1>
+        <p class="text-xl semibold color-white pb-64 color-white border-b-2 border-white">
+          {{ description | safe }}
+        </p>
+        <div class="markdown color-white">
+          {{ content | safe }}
         </div>
       </div>
       <div class="relative hidden lg.block w-224 flex-none">
