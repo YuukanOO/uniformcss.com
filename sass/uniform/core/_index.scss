@@ -374,9 +374,9 @@ $default-config: (
   ),
 
   font-families: (
-    sans: (-apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif),
-    serif: (Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol),
-    mono: (Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace),
+    sans: (sans-serif),
+    serif: (serif),
+    mono: (monospace),
   ),
 
   font-sizes: (
@@ -536,19 +536,19 @@ $default-config: (
       0 20px 20px rgba(0, 0, 0, 0.3)
     ),
     focus: (
-      0 0 0 4px hsla(220, 70%, 60%, 20%)
+      0 0 0 3px hsla(220, 75%, 60%, 20%)
     ),
     input-focus: (
-      0 0 0 3px hsla(220, 70%, 60%, 20%)
+      0 0 0 3px hsla(220, 75%, 60%, 20%)
     ),
     input-success: (
-      0 0 0 3px hsla(70, 70%, 60%, 20%)
+      0 0 0 3px hsla(70, 75%, 60%, 20%)
     ),
     input-warning: (
-      0 0 0 3px hsla(30, 70%, 60%, 20%)
+      0 0 0 3px hsla(30, 75%, 60%, 20%)
     ),
     input-danger: (
-      0 0 0 3px hsla(0, 70%, 60%, 20%)
+      0 0 0 3px hsla(0, 75%, 60%, 20%)
     )
   ),
 

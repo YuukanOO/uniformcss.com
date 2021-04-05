@@ -46,9 +46,9 @@ ROOT VARIABLES
 */
 :root {
   --FONT-FAMILIES-----------------:#01;
-  --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
-  --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  --font-sans: sans-serif;
+  --font-serif: serif;
+  --font-mono: monospace;
   --FONT-SIZES--------------------:#02;
   --font-13xl: 7.5rem;
   --font-12xl: 6.5rem;
@@ -140,11 +140,11 @@ ROOT VARIABLES
   --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
   --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.3), 0 15px 10px rgba(0, 0, 0, 0.2);
   --shadow-2xl: 0 25px 45px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.3);
-  --shadow-focus: 0 0 0 4px rgba(82, 129, 224, 0.2);
-  --shadow-input-focus: 0 0 0 3px rgba(82, 129, 224, 0.2);
-  --shadow-input-success: 0 0 0 3px rgba(201, 224, 82, 0.2);
-  --shadow-input-warning: 0 0 0 3px rgba(224, 153, 82, 0.2);
-  --shadow-input-danger: 0 0 0 3px rgba(224, 82, 82, 0.2);
+  --shadow-focus: 0 0 0 3px rgba(77, 128, 230, 0.2);
+  --shadow-input-focus: 0 0 0 3px rgba(77, 128, 230, 0.2);
+  --shadow-input-success: 0 0 0 3px rgba(204, 230, 77, 0.2);
+  --shadow-input-warning: 0 0 0 3px rgba(230, 153, 77, 0.2);
+  --shadow-input-danger: 0 0 0 3px rgba(230, 77, 77, 0.2);
   --TINTS-------------------------:#09;
   --tint-base: 50%;
   --tint-100: 55.12%;
@@ -45493,6 +45493,8 @@ select {
   }
 }
 :root {
+  --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+  --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
   --light: 300;
   --regular: 400;
   --semibold: 500;
