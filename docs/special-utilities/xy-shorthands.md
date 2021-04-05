@@ -1,7 +1,7 @@
 ---
-title: Wrapper
-description: Everything to know about the Wrapper module
-date: 1000-01-04
+title: XY Shorthands
+description: Learn about Uniform's extended properties
+date: 1000-01-08
 ---
 
 ## About Wrapper Module

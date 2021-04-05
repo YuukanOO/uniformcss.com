@@ -5,9 +5,9 @@
 @use "sass:meta";
 
 // DEFAULTS (2)
-@use "defaults/reset";
-@use "defaults/starter";
-@use "defaults/wrapper";
+@use "core/reset";
+@use "core/starter";
+@use "core/wrapper";
 
 // UTILITIES - TRANSITION (5)
 @use "utilities/transition/core-transition-duration";

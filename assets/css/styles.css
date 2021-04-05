@@ -7718,42 +7718,6 @@ select {
   z-index: auto;
 }
 
-.z-n9, .focus\.z-n9:focus {
-  z-index: -9;
-}
-
-.z-n8, .focus\.z-n8:focus {
-  z-index: -8;
-}
-
-.z-n7, .focus\.z-n7:focus {
-  z-index: -7;
-}
-
-.z-n6, .focus\.z-n6:focus {
-  z-index: -6;
-}
-
-.z-n5, .focus\.z-n5:focus {
-  z-index: -5;
-}
-
-.z-n4, .focus\.z-n4:focus {
-  z-index: -4;
-}
-
-.z-n3, .focus\.z-n3:focus {
-  z-index: -3;
-}
-
-.z-n2, .focus\.z-n2:focus {
-  z-index: -2;
-}
-
-.z-n1, .focus\.z-n1:focus {
-  z-index: -1;
-}
-
 .z-0, .focus\.z-0:focus {
   z-index: 0;
 }

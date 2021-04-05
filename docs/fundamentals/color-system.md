@@ -14,7 +14,7 @@ The ability to customize colors to match design is an important aspect of Unifor
 
 ## Colors
 
-Uniform provides a total of `23` default colors. Color hues are distributed across the color spectrum in increments of 20. The following colors can be applied for `border`, `text`, `placeholder`, and `background-color` properties.
+Uniform provides flexible range of colors with each color's hue distributed across the spectrum in increments of 20. The following colors can be applied for `border`, `text`, `placeholder`, and `background-color` properties. By default, each color has a lightness value set to `50%`. This is to ensure the `tint` and `shade` utilities work correctly and universally across all colors.
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
   <div class="radius-sm p-12 flex bg-primary">
@@ -123,7 +123,7 @@ To apply colors, use the property shorthand followed by the color key.
 
 ## Shades
 
-Shades make your colors darker by changing the lightness value. There are `9` levels of shades available. Similar to Google Material's Design System, Uniform follows the `100 ... 900` syntax for defining shades.
+Shades make your colors darker by changing the lightness value. There are `11` levels of shades available. Similar to Google Material's Design System, Uniform follows the `100 ... 900` syntax for defining shades.
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
   <div class="radius-sm p-12 flex bg-blue bg-shade-base">
@@ -180,7 +180,7 @@ Shades make your colors darker by changing the lightness value. There are `9` le
 
 ## Tints
 
-Tints make your base color lighter by changing the lightness value. There are `9` levels of tints available. Similar to Google Material's Design System, Uniform follows the `100 ... 900` syntax for defining shades.
+Tints make your base color lighter by changing the lightness value. There are `11` levels of tints available. Similar to Google Material's Design System, Uniform follows the `100 ... 900` syntax for defining shades.
 
 <div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
   <div class="radius-sm p-12 flex bg-blue bg-tint-base">

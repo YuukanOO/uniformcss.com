@@ -166,12 +166,12 @@ textarea {
 
 ## Disabling Reset Styles
 
-If you prefer to exclude default reset styles from your build, simply pass the following `exclude` setting in your configuration.
+If you prefer to exclude reset styles from your build, simply pass the following `exclude` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
   $config: (
-    exclude: (default-reset)
+    exclude: (reset)
   )
 );
 ```
@@ -260,12 +260,12 @@ select {
 
 ## Disabling Starter Styles
 
-If you prefer to exclude default starter styles from your build, simply pass the following `exclude` setting in your configuration.
+If you prefer to exclude starter styles from your build, simply pass the following `exclude` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
   $config: (
-    exclude: (default-starter)
+    exclude: (starter)
   )
 );
 ```
