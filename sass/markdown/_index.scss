@@ -279,6 +279,7 @@ WRAPPER MODULE
 		}
 		& > strong {
 			font-weight: var(--markdown-strong-weight, var(--bold));
+			color: white;
 		}
 		& > em {
 			font-style: italic;

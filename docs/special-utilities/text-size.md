@@ -1,7 +1,7 @@
 ---
 title: Text Size
 description: Learn about the text size special utility
-date: 1000-01-01
+date: 1000-01-02
 ---
 
 ## About Text Size
