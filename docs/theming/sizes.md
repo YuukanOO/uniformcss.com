@@ -69,10 +69,6 @@ If you are using the CDN version of Uniform CSS, you can still customizing defau
 
 ---
 
-## Defining Range Limits
-
----
-
 ## Disabling Defaults
 
 You can remove all default radiuses by passing `null` to the `positive-sizes` or `negative-sizes` settings.
