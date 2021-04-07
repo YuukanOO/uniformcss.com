@@ -23,7 +23,7 @@ $headless: map.get($all-config, headless);
 			max-width: var(--wrapper-lg-max-width, 1280px);
 		}
 		@include screen(xl) {
-			max-width: var(--wrapper-xl-max-width, 1536px);
+			max-width: var(--wrapper-xl-max-width, 1366px);
 		}
 	}
 }

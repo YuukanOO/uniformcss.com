@@ -583,9 +583,9 @@ select {
     max-width: var(--wrapper-lg-max-width, 1280px);
   }
 }
-@media (min-width: 1536px) {
+@media (min-width: 1366px) {
   .wrapper {
-    max-width: var(--wrapper-xl-max-width, 1536px);
+    max-width: var(--wrapper-xl-max-width, 1366px);
   }
 }
 
@@ -2220,7 +2220,7 @@ select {
 }
 
 .max-w-screen-xl {
-  max-width: 1536px;
+  max-width: 1366px;
 }
 
 .max-w-none {
@@ -11969,7 +11969,7 @@ select {
   }
 
   .sm\.max-w-screen-xl {
-    max-width: 1536px;
+    max-width: 1366px;
   }
 
   .sm\.max-w-none {
@@ -20438,7 +20438,7 @@ select {
   }
 
   .md\.max-w-screen-xl {
-    max-width: 1536px;
+    max-width: 1366px;
   }
 
   .md\.max-w-none {
@@ -28907,7 +28907,7 @@ select {
   }
 
   .lg\.max-w-screen-xl {
-    max-width: 1536px;
+    max-width: 1366px;
   }
 
   .lg\.max-w-none {
@@ -36940,7 +36940,7 @@ select {
     resize: vertical;
   }
 }
-@media (min-width: 1536px) {
+@media (min-width: 1366px) {
   .xl\.opacity-0 {
     opacity: var(--opacity-0);
   }
@@ -37376,7 +37376,7 @@ select {
   }
 
   .xl\.max-w-screen-xl {
-    max-width: 1536px;
+    max-width: 1366px;
   }
 
   .xl\.max-w-none {
