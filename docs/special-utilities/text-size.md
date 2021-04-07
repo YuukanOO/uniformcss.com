@@ -14,7 +14,7 @@ The `text-<size>` utility applies both `font-size` and `line-height` properties 
 
 ## Basic Usage
 
-To apply this utility, apply the `wrapper` class to any parent container.
+You can apply utility using the `text-<size>` utility. This utility is responsive and can also be applied conditionally based on breakpoint.
 
 ```html
 <h1 class="text-8xl">
@@ -31,25 +31,9 @@ To apply this utility, apply the `wrapper` class to any parent container.
 
 ---
 
-## Customizing Wrapper
+## Disabling Text Size
 
-You can override the default `max-width` value by defining the following CSS variables.
-
-```css
-:root {
-  --wrapper-max-width: 640px;
-  --wrapper-sm-max-width: 768px;
-  --wrapper-md-max-width: 1024px;
-  --wrapper-lg-max-width: 1280px;
-  --wrapper-xl-max-width: 1536px;
-}
-```
-
----
-
-## Disabling Wrapper
-
-To disable this utility, pass `wrapper` to the `excludes` setting in your configuration.
+To disable this utility, pass `text-size` to the `exclude` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (

@@ -622,7 +622,7 @@ All form field elements can be disabled with assigning the `disabled` attribute.
 
 ## How to Disable this Module
 
-By default, all modules are enabled. To disable this form module, pass `module-form` to the `excludes` setting in your configuration.
+By default, all modules are enabled. To disable this form module, pass `module-form` to the `exclude` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (

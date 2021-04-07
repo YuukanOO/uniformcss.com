@@ -381,7 +381,7 @@ Buttons can have loading animation by appending `is-loading`.
 
 ## How to Disable this Module
 
-By default, all modules are enabled. To disable this button module, pass `module-button` to the `excludes` setting in your configuration.
+By default, all modules are enabled. To disable this button module, pass `module-button` to the `exclude` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (

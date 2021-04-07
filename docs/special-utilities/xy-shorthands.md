@@ -43,7 +43,7 @@ The following CSS variable hooks are available to customize. There are three def
 
 ## How to Disable this Module
 
-By default, all modules are enabled. To disable this wrapper module, pass `module-wrapper` to the `excludes` setting in your configuration.
+By default, all modules are enabled. To disable this wrapper module, pass `module-wrapper` to the `exclude` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (

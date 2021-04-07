@@ -74,7 +74,7 @@ You can override the default `max-width` value by defining the following CSS var
 
 ## Disabling Wrapper
 
-To disable this utility, pass `wrapper` to the `excludes` setting in your configuration.
+To disable this utility, pass `wrapper` to the `exclude` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
