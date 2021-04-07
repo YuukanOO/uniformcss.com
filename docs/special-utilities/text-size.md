@@ -6,7 +6,7 @@ date: 1000-01-02
 
 ## About Text Size
 
-The `text-<size>` utility applies both `font-size` and `line-height` properties to any text element. This utility is the recommended method for styling any text on page.
+The `text-<size>` utility applies both `font-size` and `line-height` properties to any text element. This utility is the recommended way styling text since it provides two commonly used text styling properties in one.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
