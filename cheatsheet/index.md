@@ -719,48 +719,105 @@ lastUpdated: 2020-10-20
   </div>
 </h2>
 
-<div class="grid grid-cols-2 leading-6 gap-18">
-  <div class="bg-gray radius-sm overflow-hidden">
-    <div class="p-18 h-96 color-white text-sm bold bg-gradient-x-to-white">
-      gradient-x-to-white
+<div class="mb-40 last.mb-0">
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md overflow-hidden w-64 h-64 bg-gray border-4 border-white shadow-sm mr-24">
+        <div class="w-64 h-64 bg-gradient-x-to-white">
+        </div>
+      </div>
+      Gradient X to White
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="text-right select-all semibold">gradient-x-to-white</div>
     </div>
   </div>
-  <div class="bg-gray radius-sm overflow-hidden">
-    <div class="p-18 h-96 color-black text-sm bold bg-gradient-x-from-white align-right">
-      gradient-x-from-white
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md overflow-hidden w-64 h-64 bg-gray border-4 border-white shadow-sm mr-24">
+        <div class="w-64 h-64 bg-gradient-x-from-white">
+        </div>
+      </div>
+      Gradient X from White
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="text-right select-all semibold">gradient-x-from-white</div>
     </div>
   </div>
-  <div class="bg-gray radius-sm overflow-hidden">
-    <div class="p-18 h-96 color-white text-sm bold bg-gradient-y-to-white">
-      gradient-y-to-white
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md overflow-hidden w-64 h-64 bg-gray border-4 border-white shadow-sm mr-24">
+        <div class="w-64 h-64 bg-gradient-y-to-white">
+        </div>
+      </div>
+      Gradient Y to White
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="text-right select-all semibold">gradient-y-to-white</div>
     </div>
   </div>
-  <div class="bg-gray radius-sm overflow-hidden">
-    <div class="p-18 h-96 color-black text-sm bold bg-gradient-y-from-white align-right">
-      gradient-y-from-white
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md overflow-hidden w-64 h-64 bg-gray border-4 border-white shadow-sm mr-24">
+        <div class="w-64 h-64 bg-gradient-y-from-white">
+        </div>
+      </div>
+      Gradient Y from White
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="text-right select-all semibold">gradient-y-from-white</div>
     </div>
   </div>
-    <div class="bg-gray radius-sm overflow-hidden">
-    <div class="p-18 h-96 color-white text-sm bold bg-gradient-x-to-black">
-      gradient-x-to-black
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md overflow-hidden w-64 h-64 bg-gray border-4 border-white shadow-sm mr-24">
+        <div class="w-64 h-64 bg-gradient-x-to-black">
+        </div>
+      </div>
+      Gradient X to Black
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="text-right select-all semibold">gradient-x-to-black</div>
     </div>
   </div>
-  <div class="bg-gray radius-sm overflow-hidden">
-    <div class="p-18 h-96 color-white text-sm bold bg-gradient-x-from-black align-right">
-      gradient-x-from-black
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md overflow-hidden w-64 h-64 bg-gray border-4 border-white shadow-sm mr-24">
+        <div class="w-64 h-64 bg-gradient-x-from-black">
+        </div>
+      </div>
+      Gradient X from Black
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="text-right select-all semibold">gradient-x-from-black</div>
     </div>
   </div>
-  <div class="bg-gray radius-sm overflow-hidden">
-    <div class="p-18 h-96 color-white text-sm bold bg-gradient-y-to-black">
-      gradient-y-to-black
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md overflow-hidden w-64 h-64 bg-gray border-4 border-white shadow-sm mr-24">
+        <div class="w-64 h-64 bg-gradient-y-to-black">
+        </div>
+      </div>
+      Gradient Y to Black
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="text-right select-all semibold">gradient-y-to-black</div>
     </div>
   </div>
-  <div class="bg-gray radius-sm overflow-hidden">
-    <div class="p-18 h-96 color-white text-sm bold bg-gradient-y-from-black align-right">
-      gradient-y-from-black
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md overflow-hidden w-64 h-64 bg-gray border-4 border-white shadow-sm mr-24">
+        <div class="w-64 h-64 bg-gradient-y-from-black">
+        </div>
+      </div>
+      Gradient Y from Black
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="text-right select-all semibold">gradient-y-from-black</div>
     </div>
   </div>
 </div>
+
 
 <h2 class="flex align-items-start relative text-5xl lg.text-7xl xl.text-7xl extrabold color-black tracking-tight pt-64 mt-32 first.mt-0 mb-24">
   <div class="relative">
