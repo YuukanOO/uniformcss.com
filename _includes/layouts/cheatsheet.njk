@@ -2,44 +2,60 @@
 layout: layouts/base.njk
 ---
 
-{% include "partials/nav.njk" %}
+{% include "partials/nav-docs.njk" %}
 
-<section>
-  <div class="wrapper">
-    <div class="grid grid-cols-1 sm.grid-cols-12 gap-72" data-barba="container" data-barba-namespace="get-started">
-      <div class="sm.col-12 lg.col-9 py-64 pt-48 sm.pt-72">
-        <div class="color-white" style="--markdown-heading-color: white; --markdown-paragraph-color: white;">
+<main>
+  <div class="wrapper pl-20">
+    <div class="flex">
+      <div class="flex-1 md.pr-56">
+        <div class="color-black">
           {{ content | safe }}
         </div>
       </div>
-      <div class="relative hidden lg.block lg.col-3">
-        <div class="sticky flex justify-content-end py-64 pt-72 top-56 h-100vh overflow-auto">
+      <div class="hidden md.block w-256 flex-none">
+        <div class="sticky flex justify-content-end py-64 top-48 h-100vh overflow-auto">
           <div class="w-100p">
             
             <div class="pb-64">
-              <h6 class="font-sm bold mb-18 color-white">
+              <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
                 On this page
               </h6>
-              {{ content | toc | safe }}
+              <nav class="toc">
+                <ol>
+                  <li>
+                    <a href="#font-sizes">Font Sizes</a>
+                  </li>
+                  <li>
+                    <a href="#font-weights">Font Weights</a>
+                  </li>
+                  <li>
+                    <a href="#colors">Colors</a>
+                  </li>
+                  <li>
+                    <a href="#shades">Shades</a>
+                  </li>
+                  <li>
+                    <a href="#tints">Tints</a>
+                  </li>
+                  <li>
+                    <a href="#gradients">Gradients</a>
+                  </li>
+                  <li>
+                    <a href="#box-shadows">Box Shadows</a>
+                  </li>
+                  <li>
+                    <a href="#border-radiuses">Border Radiuses</a>
+                  </li>
+                  <li>
+                    <a href="#sizes">Sizes</a>
+                  </li>
+                </ol>
+              </nav>
             </div>
             
           </div>
         </div>
       </div>
-      {# <div class="relative hidden lg.block lg.col-2">
-        <div class="sticky flex justify-content-end py-64 pt-72 top-56 h-100vh overflow-auto">
-          <div class="w-100p">
-            
-            <div class="pb-64">
-              <h6 class="font-sm bold mb-18 color-white">
-                On this page
-              </h6>
-              {{ content | toc | safe }}
-            </div>
-            
-          </div>
-        </div>
-      </div> #}
     </div>
   </div>
-</section>
+</main>

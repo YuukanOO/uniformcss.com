@@ -140,11 +140,10 @@ ROOT VARIABLES
   --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
   --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.3), 0 15px 10px rgba(0, 0, 0, 0.2);
   --shadow-2xl: 0 25px 45px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.3);
-  --shadow-focus: 0 0 0 3px rgba(77, 128, 230, 0.2);
-  --shadow-input-focus: 0 0 0 3px rgba(77, 128, 230, 0.2);
-  --shadow-input-success: 0 0 0 3px rgba(204, 230, 77, 0.2);
-  --shadow-input-warning: 0 0 0 3px rgba(230, 153, 77, 0.2);
-  --shadow-input-danger: 0 0 0 3px rgba(230, 77, 77, 0.2);
+  --shadow-focus: 0 0 0 4px rgba(32, 96, 223, 0.2);
+  --shadow-success: 0 0 0 4px rgba(159, 223, 32, 0.2);
+  --shadow-warning: 0 0 0 4px rgba(223, 159, 32, 0.2);
+  --shadow-danger: 0 0 0 4px rgba(223, 32, 32, 0.2);
   --TINTS-------------------------:#09;
   --tint-base: 50%;
   --tint-100: 55.12%;
@@ -7468,20 +7467,16 @@ select {
   box-shadow: var(--shadow-focus);
 }
 
-.shadow-input-focus, .focus\.shadow-input-focus:focus, .active\.shadow-input-focus:active, .hover\.shadow-input-focus:hover {
-  box-shadow: var(--shadow-input-focus);
+.shadow-success, .focus\.shadow-success:focus, .active\.shadow-success:active, .hover\.shadow-success:hover {
+  box-shadow: var(--shadow-success);
 }
 
-.shadow-input-success, .focus\.shadow-input-success:focus, .active\.shadow-input-success:active, .hover\.shadow-input-success:hover {
-  box-shadow: var(--shadow-input-success);
+.shadow-warning, .focus\.shadow-warning:focus, .active\.shadow-warning:active, .hover\.shadow-warning:hover {
+  box-shadow: var(--shadow-warning);
 }
 
-.shadow-input-warning, .focus\.shadow-input-warning:focus, .active\.shadow-input-warning:active, .hover\.shadow-input-warning:hover {
-  box-shadow: var(--shadow-input-warning);
-}
-
-.shadow-input-danger, .focus\.shadow-input-danger:focus, .active\.shadow-input-danger:active, .hover\.shadow-input-danger:hover {
-  box-shadow: var(--shadow-input-danger);
+.shadow-danger, .focus\.shadow-danger:focus, .active\.shadow-danger:active, .hover\.shadow-danger:hover {
+  box-shadow: var(--shadow-danger);
 }
 
 .shadow-none, .focus\.shadow-none:focus, .active\.shadow-none:active, .hover\.shadow-none:hover {
@@ -16542,20 +16537,16 @@ select {
     box-shadow: var(--shadow-focus);
   }
 
-  .sm\.shadow-input-focus {
-    box-shadow: var(--shadow-input-focus);
+  .sm\.shadow-success {
+    box-shadow: var(--shadow-success);
   }
 
-  .sm\.shadow-input-success {
-    box-shadow: var(--shadow-input-success);
+  .sm\.shadow-warning {
+    box-shadow: var(--shadow-warning);
   }
 
-  .sm\.shadow-input-warning {
-    box-shadow: var(--shadow-input-warning);
-  }
-
-  .sm\.shadow-input-danger {
-    box-shadow: var(--shadow-input-danger);
+  .sm\.shadow-danger {
+    box-shadow: var(--shadow-danger);
   }
 
   .sm\.shadow-none {
@@ -25011,20 +25002,16 @@ select {
     box-shadow: var(--shadow-focus);
   }
 
-  .md\.shadow-input-focus {
-    box-shadow: var(--shadow-input-focus);
+  .md\.shadow-success {
+    box-shadow: var(--shadow-success);
   }
 
-  .md\.shadow-input-success {
-    box-shadow: var(--shadow-input-success);
+  .md\.shadow-warning {
+    box-shadow: var(--shadow-warning);
   }
 
-  .md\.shadow-input-warning {
-    box-shadow: var(--shadow-input-warning);
-  }
-
-  .md\.shadow-input-danger {
-    box-shadow: var(--shadow-input-danger);
+  .md\.shadow-danger {
+    box-shadow: var(--shadow-danger);
   }
 
   .md\.shadow-none {
@@ -33480,20 +33467,16 @@ select {
     box-shadow: var(--shadow-focus);
   }
 
-  .lg\.shadow-input-focus {
-    box-shadow: var(--shadow-input-focus);
+  .lg\.shadow-success {
+    box-shadow: var(--shadow-success);
   }
 
-  .lg\.shadow-input-success {
-    box-shadow: var(--shadow-input-success);
+  .lg\.shadow-warning {
+    box-shadow: var(--shadow-warning);
   }
 
-  .lg\.shadow-input-warning {
-    box-shadow: var(--shadow-input-warning);
-  }
-
-  .lg\.shadow-input-danger {
-    box-shadow: var(--shadow-input-danger);
+  .lg\.shadow-danger {
+    box-shadow: var(--shadow-danger);
   }
 
   .lg\.shadow-none {
@@ -41949,20 +41932,16 @@ select {
     box-shadow: var(--shadow-focus);
   }
 
-  .xl\.shadow-input-focus {
-    box-shadow: var(--shadow-input-focus);
+  .xl\.shadow-success {
+    box-shadow: var(--shadow-success);
   }
 
-  .xl\.shadow-input-success {
-    box-shadow: var(--shadow-input-success);
+  .xl\.shadow-warning {
+    box-shadow: var(--shadow-warning);
   }
 
-  .xl\.shadow-input-warning {
-    box-shadow: var(--shadow-input-warning);
-  }
-
-  .xl\.shadow-input-danger {
-    box-shadow: var(--shadow-input-danger);
+  .xl\.shadow-danger {
+    box-shadow: var(--shadow-danger);
   }
 
   .xl\.shadow-none {

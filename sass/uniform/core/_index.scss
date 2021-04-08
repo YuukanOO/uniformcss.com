@@ -536,19 +536,16 @@ $default-config: (
       0 20px 20px rgba(0, 0, 0, 0.3)
     ),
     focus: (
-      0 0 0 3px hsla(220, 75%, 60%, 20%)
+      0 0 0 4px hsla(220, 75%, 50%, 20%)
     ),
-    input-focus: (
-      0 0 0 3px hsla(220, 75%, 60%, 20%)
+    success: (
+      0 0 0 4px hsla(80, 75%, 50%, 20%)
     ),
-    input-success: (
-      0 0 0 3px hsla(70, 75%, 60%, 20%)
+    warning: (
+      0 0 0 4px hsla(40, 75%, 50%, 20%)
     ),
-    input-warning: (
-      0 0 0 3px hsla(30, 75%, 60%, 20%)
-    ),
-    input-danger: (
-      0 0 0 3px hsla(0, 75%, 60%, 20%)
+    danger: (
+      0 0 0 4px hsla(0, 75%, 50%, 20%)
     )
   ),
 

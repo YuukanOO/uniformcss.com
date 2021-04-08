@@ -48,19 +48,16 @@ The following default shadow configurations are applied. To see a more visual re
         0 20px 20px rgba(0, 0, 0, 0.3)
       ),
       focus: (
-        0 0 0 3px hsla(220, 75%, 60%, 20%)
+        0 0 0 4px hsla(220, 75%, 50%, 20%)
       ),
-      input-focus: (
-        0 0 0 3px hsla(220, 75%, 60%, 20%)
+      success: (
+        0 0 0 4px hsla(80, 75%, 50%, 20%)
       ),
-      input-success: (
-        0 0 0 3px hsla(70, 75%, 60%, 20%)
+      warning: (
+        0 0 0 4px hsla(40, 75%, 50%, 20%)
       ),
-      input-warning: (
-        0 0 0 3px hsla(30, 75%, 60%, 20%)
-      ),
-      input-danger: (
-        0 0 0 3px hsla(0, 75%, 60%, 20%)
+      danger: (
+        0 0 0 4px hsla(0, 75%, 50%, 20%)
       )
     )
   )
@@ -113,11 +110,10 @@ If you are using the CDN version of Uniform CSS, you can still customizing defau
   --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
   --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.3), 0 15px 10px rgba(0, 0, 0, 0.2);
   --shadow-2xl: 0 25px 45px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.3);
-  --shadow-focus: 0 0 0 3px rgba(77, 128, 230, 0.2);
-  --shadow-input-focus: 0 0 0 3px rgba(77, 128, 230, 0.2);
-  --shadow-input-success: 0 0 0 3px rgba(204, 230, 77, 0.2);
-  --shadow-input-warning: 0 0 0 3px rgba(230, 153, 77, 0.2);
-  --shadow-input-danger: 0 0 0 3px rgba(230, 77, 77, 0.2);
+  --shadow-focus: 0 0 0 4px hsla(220, 75%, 50%, 0.2);
+  --shadow-success: 0 0 0 4px hsla(80, 75%, 50%, 0.2);
+  --shadow-warning: 0 0 0 4px hsla(40, 75%, 50%, 0.2);
+  --shadow-danger: 0 0 0 4px hsla(0, 75%, 50%, 0.2);
 }
 ```
 
