@@ -45464,8 +45464,11 @@ select {
   --semibold: 500;
   --bold: 600;
   --extrabold: 800;
-  --markdown-heading-color: white;
-  --markdown-color: rgb(255 255 255 / 80%);
+  --markdown-h2-weight: var(--extrabold);
+  --markdown-h2-tracking: var(--tracking-tight);
+  --markdown-h3-weight: var(--extrabold);
+  --markdown-h3-tracking: var(--tracking-tight);
+  --markdown-color: rgb(0 0 0 / 70%);
 }
 
 /* 
@@ -45629,12 +45632,12 @@ WRAPPER MODULE
   background: var(--markdown-hr-color, #e3e5e8);
 }
 .markdown > p > code, .markdown > blockquote > code, .markdown > ol li > code, .markdown > ul li > code, .markdown > table td > code {
-  padding: var(--markdown-code-padding, 5px 6px);
+  padding: var(--markdown-code-padding, 5px 7px);
   font-size: var(--markdown-code-font-size, var(--font-sm));
   border-radius: var(--markdown-code-radius, var(--radius-sm));
-  background: var(--markdown-code-bg, hsla(var(--sky-hue), var(--sky-sat), 50%, var(--opacity-20)));
+  background: var(--markdown-code-bg, hsla(var(--sky-hue), var(--sky-sat), 50%, var(--opacity-10)));
   border: var(--markdown-code-border, 0);
-  color: var(--markdown-code-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
+  color: var(--markdown-code-color, hsl(var(--sky-hue), var(--sky-sat), 40%));
   white-space: nowrap;
   user-select: all;
 }
@@ -45690,7 +45693,7 @@ WRAPPER MODULE
 }
 .markdown > p > strong, .markdown > blockquote > strong, .markdown > ol li > strong, .markdown > ul li > strong, .markdown > table td > strong {
   font-weight: var(--markdown-strong-weight, var(--bold));
-  color: white;
+  color: var(--markdown-strong-color, black);
 }
 .markdown > p > em, .markdown > blockquote > em, .markdown > ol li > em, .markdown > ul li > em, .markdown > table td > em {
   font-style: italic;

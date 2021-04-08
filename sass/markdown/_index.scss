@@ -153,15 +153,15 @@ WRAPPER MODULE
 	& > ul li,
 	& > table td {
 		& > code {
-			padding: var(--markdown-code-padding, 5px 6px);
+			padding: var(--markdown-code-padding, 5px 7px);
 			font-size: var(--markdown-code-font-size, var(--font-sm));
 			border-radius: var(--markdown-code-radius, var(--radius-sm));
 			background: var(
 				--markdown-code-bg,
-				hsla(var(--sky-hue), var(--sky-sat), 50%, var(--opacity-20))
+				hsla(var(--sky-hue), var(--sky-sat), 50%, var(--opacity-10))
 			);
 			border: var(--markdown-code-border, 0);
-			color: var(--markdown-code-color, hsl(var(--sky-hue), var(--sky-sat), 50%));
+			color: var(--markdown-code-color, hsl(var(--sky-hue), var(--sky-sat), 40%));
 			white-space: nowrap;
 			user-select: all;
 		}
@@ -279,7 +279,7 @@ WRAPPER MODULE
 		}
 		& > strong {
 			font-weight: var(--markdown-strong-weight, var(--bold));
-			color: white;
+			color: var(--markdown-strong-color, black);
 		}
 		& > em {
 			font-style: italic;
