@@ -21,130 +21,130 @@ lastUpdated: 2020-10-20
 
 <div class="mb-40 last.mb-0">
   <div class="color-black">
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-tint-700 hover.bg-cool-gray hover.bg-tint-900 transition-100 last.mb-0 semibold text-2xs">
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-2xs">
       2xs text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">10px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">0.625rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">0.625rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-tint-700 hover.bg-cool-gray hover.bg-tint-900 transition-100 last.mb-0 semibold text-sm">
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-sm">
       xs text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">12px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">0.75rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">0.75rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-tint-700 hover.bg-cool-gray hover.bg-tint-900 transition-100 last.mb-0 semibold text-sm">
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-sm">
       sm text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">14px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">0.875rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">0.875rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-tint-700 hover.bg-cool-gray hover.bg-tint-900 transition-100 last.mb-0 semibold text-md">
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-md">
       md text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">16px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">8.533rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">8.533rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-tint-700 hover.bg-cool-gray hover.bg-tint-900 transition-100 last.mb-0 semibold text-lg">
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-lg">
       lg text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">18px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">1.125rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">1.125rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-tint-700 hover.bg-cool-gray hover.bg-tint-900 transition-100 last.mb-0 semibold text-xl">
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-xl">
       xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">20px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">1.25rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">1.25rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-tint-700 hover.bg-cool-gray hover.bg-tint-900 transition-100 last.mb-0 semibold text-2xl">
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-2xl">
       2xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">24px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">1.5rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">1.5rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-tint-700 hover.bg-cool-gray hover.bg-tint-900 transition-100 last.mb-0 semibold text-3xl">
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-3xl">
       3xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">28px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">1.75rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">1.75rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-tint-700 hover.bg-cool-gray hover.bg-tint-900 transition-100 last.mb-0 semibold text-4xl">
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-4xl">
       4xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">32px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">2rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">2rem</div>
       </div>
     </div>
-    <div class="flex align-items-center justify-content-between px-20 py-24 border-b-1 border-gray border-tint-700 hover.bg-cool-gray hover.bg-tint-900 transition-100 last.mb-0 semibold text-5xl">
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-5xl">
       5xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">36px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">2.25rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">2.25rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-6xl">
       6xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">40px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">2.5rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">2.5rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-7xl">
       7xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">48px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">3rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">3rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-8xl">
       8xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">56px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">3.5rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">3.5rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-9xl">
       9xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">64px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">4rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">4rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-10xl">
       10xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">72px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">4.5rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">4.5rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-11xl">
       11xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">88px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">5.5rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">5.5rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-12xl">
       12xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">104px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">6.5rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">6.5rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-13xl">
       13xl text
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">120px</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">7.5rem</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">7.5rem</div>
       </div>
     </div>
   </div>
@@ -169,63 +169,63 @@ lastUpdated: 2020-10-20
       Ultralight
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">ultralight</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">100</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">100</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 extralight text-2xl">
       Extralight
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">extralight</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">200</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">200</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 light text-2xl">
       Light
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">light</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">300</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">300</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 regular text-2xl">
       Regular
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">regular</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">400</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">400</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 medium text-2xl">
       Medium
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">medium</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">500</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">500</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-2xl">
-      semibold
+      Semibold
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">semibold</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">600</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">600</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 bold text-2xl">
       Bold
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">bold</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">700</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">700</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 extrabold text-2xl">
       Extrabold
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">extrabold</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">800</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">800</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 ultrabold text-2xl">
       Ultrabold
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">ultrabold</div>
-        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">900</div>
+        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">900</div>
       </div>
     </div>
   </div>
@@ -249,7 +249,7 @@ lastUpdated: 2020-10-20
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
         <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        red
+        Red
       </div>
       <div class="flex align-items-center text-sm">
         <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
@@ -257,225 +257,345 @@ lastUpdated: 2020-10-20
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
-        <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        orange
+        <div class="radius-md w-64 h-64 bg-orange border-4 border-white shadow-sm mr-24"></div>
+        Orange
       </div>
       <div class="flex align-items-center text-sm">
-        <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
+        <div class="w-96 text-right select-all semibold">h20 s75 l50</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
-        <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        red
+        <div class="radius-md w-64 h-64 bg-yellow border-4 border-white shadow-sm mr-24"></div>
+        Yellow
       </div>
       <div class="flex align-items-center text-sm">
-        <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
+        <div class="w-96 text-right select-all semibold">h40 s75 l50</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
-        <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        red
+        <div class="radius-md w-64 h-64 bg-lemon border-4 border-white shadow-sm mr-24"></div>
+        Lemon
       </div>
       <div class="flex align-items-center text-sm">
-        <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
+        <div class="w-96 text-right select-all semibold">h60 s75 l50</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
-        <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        red
+        <div class="radius-md w-64 h-64 bg-olive border-4 border-white shadow-sm mr-24"></div>
+        Olive
       </div>
       <div class="flex align-items-center text-sm">
-        <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
+        <div class="w-96 text-right select-all semibold">h80 s75 l50</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
-        <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        red
+        <div class="radius-md w-64 h-64 bg-lime border-4 border-white shadow-sm mr-24"></div>
+        Lime
       </div>
       <div class="flex align-items-center text-sm">
-        <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
+        <div class="w-96 text-right select-all semibold">h100 s75 l50</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
-        <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        red
+        <div class="radius-md w-64 h-64 bg-green border-4 border-white shadow-sm mr-24"></div>
+        Green
       </div>
       <div class="flex align-items-center text-sm">
-        <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
+        <div class="w-96 text-right select-all semibold">h120 s75 l50</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
-        <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        red
+        <div class="radius-md w-64 h-64 bg-mint border-4 border-white shadow-sm mr-24"></div>
+        Mint
       </div>
       <div class="flex align-items-center text-sm">
-        <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
+        <div class="w-96 text-right select-all semibold">h140 s75 l50</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
-        <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        red
+        <div class="radius-md w-64 h-64 bg-teal border-4 border-white shadow-sm mr-24"></div>
+        Teal
       </div>
       <div class="flex align-items-center text-sm">
-        <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
+        <div class="w-96 text-right select-all semibold">h160 s75 l50</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
-        <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        red
+        <div class="radius-md w-64 h-64 bg-cyan border-4 border-white shadow-sm mr-24"></div>
+        Cyan
       </div>
       <div class="flex align-items-center text-sm">
-        <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
+        <div class="w-96 text-right select-all semibold">h180 s75 l50</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
-        <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        red
+        <div class="radius-md w-64 h-64 bg-sky border-4 border-white shadow-sm mr-24"></div>
+        Sky
       </div>
       <div class="flex align-items-center text-sm">
-        <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
+        <div class="w-96 text-right select-all semibold">h200 s75 l50</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
       <div class="flex align-items-center font-md extrabold">
-        <div class="radius-md w-64 h-64 bg-red border-4 border-white shadow-sm mr-24"></div>
-        red
+        <div class="radius-md w-64 h-64 bg-blue border-4 border-white shadow-sm mr-24"></div>
+        Blue
       </div>
       <div class="flex align-items-center text-sm">
-        <div class="w-96 text-right select-all semibold">h0 s75 l50</div>
+        <div class="w-96 text-right select-all semibold">h220 s75 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-indigo border-4 border-white shadow-sm mr-24"></div>
+        Indigo
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h240 s75 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-purple border-4 border-white shadow-sm mr-24"></div>
+        Purple
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h260 s75 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-orchid border-4 border-white shadow-sm mr-24"></div>
+        Orchid
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h280 s75 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-magenta border-4 border-white shadow-sm mr-24"></div>
+        Magenta
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h300 s75 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-pink border-4 border-white shadow-sm mr-24"></div>
+        Pink
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h320 s75 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-crimson border-4 border-white shadow-sm mr-24"></div>
+        Crimson
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h340 s75 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-white border-4 border-white shadow-sm mr-24"></div>
+        White
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h0 s0 l100</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-black border-4 border-white shadow-sm mr-24"></div>
+        Black
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h0 s0 l0</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-cool-gray border-4 border-white shadow-sm mr-24"></div>
+        Cool Gray
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h220 s12 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-gray border-4 border-white shadow-sm mr-24"></div>
+        Gray
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h0 s0 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-warm-gray border-4 border-white shadow-sm mr-24"></div>
+        Warm Gray
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h24 s12 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-primary border-4 border-white shadow-sm mr-24"></div>
+        Primary
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h220 s75 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-secondary border-4 border-white shadow-sm mr-24"></div>
+        Secondary
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h220 s50 l50</div>
+      </div>
+    </div>
+    <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+      <div class="flex align-items-center font-md extrabold">
+        <div class="radius-md w-64 h-64 bg-tertiary border-4 border-white shadow-sm mr-24"></div>
+        Tertiary
+      </div>
+      <div class="flex align-items-center text-sm">
+        <div class="w-96 text-right select-all semibold">h220 s25 l50</div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 bg-red color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">red - h0 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-orange color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orange - h20 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-yellow color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">yellow - h40 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-lemon color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lemon - h60 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-olive color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">olive - h80 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-lime color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">lime - h100 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-green color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">green - h120 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-mint color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">mint - h140 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-teal color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">teal - h160 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-cyan color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cyan - h180 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-sky color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">sky - h200 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-blue color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">blue - h220 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-indigo color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">indigo - h240 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-purple color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">purple - h260 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-orchid color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">orchid - h280 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-magenta color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">magenta - h300 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-pink color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">pink - h320 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-crimson color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">crimson - h340 s75</span>
-  </div>
-  <div class="radius-sm p-12 bg-cool-gray color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">cool-gray - h220 s10</span>
-  </div>
-  <div class="radius-sm p-12 bg-gray color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">gray - h220 s5</span>
-  </div>
-  <div class="radius-sm p-12 bg-warm-gray color-white text-sm bold">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">warm-gray - h24 s10</span>
-  </div>
-  <div class="radius-sm p-12 bg-black color-white text-sm bold border-1 border-black border-opacity-20">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-60 color-white">white</span>
-  </div>
-  <div class="radius-sm p-12 bg-black color-white text-sm bold border-1 border-black border-opacity-20">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">black</span>
-  </div>
-  <div class="radius-sm p-12 bg-transparent color-white text-sm bold border-1 border-black border-opacity-20">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">transparent</span>
-  </div>
-</div>
+
 
 <h2 class="flex align-items-start relative text-5xl lg.text-7xl xl.text-7xl extrabold color-black tracking-tight pt-64 mt-32 first.mt-0 mb-24">
   <div class="relative">
-    <span class="absolute top-0 left-0 filter filter-blur-10 opacity-60 bg-text bg-linear color-transparent" style="--gradient: to right, #121b2f, #121b2f;">Shades</span>
-    <span class="absolute top-0 left-0 filter filter-blur-30 opacity-70 bg-text bg-linear color-transparent" style="--gradient: to right, #121b2f, #121b2f;">Shades</span>
+    <span class="absolute top-0 left-0 filter filter-blur-10 opacity-60 bg-text bg-linear color-transparent" style="--gradient: to right, #2ec169, #a6e85c;">Shades</span>
+    <span class="absolute top-0 left-0 filter filter-blur-30 opacity-70 bg-text bg-linear color-transparent" style="--gradient: to right, #2ec169, #a6e85c;">Shades</span>
     <span class="absolute top-0 left-0 color-white" style="text-shadow: 0px 2px #ffffff;">Shades</span>
-    <span class="relative z-2 bg-text bg-linear color-transparent" style="--gradient: to right, #121b2f, #121b2f;">Shades</span>
+    <span class="relative z-2 bg-text bg-linear color-transparent" style="--gradient: to right, #2ec169, #a6e85c;">Shades</span>
   </div>
 </h2>
 
-<div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 flex bg-blue bg-shade-base">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-base</span>
+<div class="mb-40 last.mb-0">
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-shade-base border-4 border-white shadow-sm mr-24"></div>
+      Shade Base
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">base</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-100">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-100</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-shade-100 border-4 border-white shadow-sm mr-24"></div>
+      Shade 100
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">100</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-200">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-200</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-shade-200 border-4 border-white shadow-sm mr-24"></div>
+      Shade 200
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">200</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-300">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-300</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-shade-300 border-4 border-white shadow-sm mr-24"></div>
+      Shade 300
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">300</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-400">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-400</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-shade-400 border-4 border-white shadow-sm mr-24"></div>
+      Shade 400
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">400</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-500">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-500</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-shade-500 border-4 border-white shadow-sm mr-24"></div>
+      Shade 500
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">500</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-600">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-600</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-shade-600 border-4 border-white shadow-sm mr-24"></div>
+      Shade 600
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">600</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-700">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-700</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-shade-700 border-4 border-white shadow-sm mr-24"></div>
+      Shade 700
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">700</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-800">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-800</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-shade-800 border-4 border-white shadow-sm mr-24"></div>
+      Shade 800
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">800</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-900 border-1 border-black border-opacity-20">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-900</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-shade-900 border-4 border-white shadow-sm mr-24"></div>
+      Shade 900
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">900</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-shade-full border-1 border-black border-opacity-20">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">shade-full</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-shade-full border-4 border-white shadow-sm mr-24"></div>
+      Shade Full
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">full</div>
+    </div>
   </div>
 </div>
+
 
 <h2 class="flex align-items-start relative text-5xl lg.text-7xl xl.text-7xl extrabold color-black tracking-tight pt-64 mt-32 first.mt-0 mb-24">
   <div class="relative">
@@ -486,41 +606,109 @@ lastUpdated: 2020-10-20
   </div>
 </h2>
 
-<div class="grid grid-cols-2 sm.grid-cols-3 gap-10 overflow-hidden">
-  <div class="radius-sm p-12 flex bg-blue bg-tint-base">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-base</span>
+<div class="mb-40 last.mb-0">
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-tint-base border-4 border-white shadow-sm mr-24"></div>
+      Tint Base
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">base</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-100">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-100</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-tint-100 border-4 border-white shadow-sm mr-24"></div>
+      Tint 100
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">100</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-200">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-200</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-tint-200 border-4 border-white shadow-sm mr-24"></div>
+      Tint 200
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">200</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-300">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-300</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-tint-300 border-4 border-white shadow-sm mr-24"></div>
+      Tint 300
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">300</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-400">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-400</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-tint-400 border-4 border-white shadow-sm mr-24"></div>
+      Tint 400
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">400</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-500">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-500</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-tint-500 border-4 border-white shadow-sm mr-24"></div>
+      Tint 500
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">500</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-600">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-600</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-tint-600 border-4 border-white shadow-sm mr-24"></div>
+      Tint 600
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">600</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-700">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-700</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-tint-700 border-4 border-white shadow-sm mr-24"></div>
+      Tint 700
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">700</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-800">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-800</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-tint-800 border-4 border-white shadow-sm mr-24"></div>
+      Tint 800
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">800</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-900">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-900</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-tint-900 border-4 border-white shadow-sm mr-24"></div>
+      Tint 900
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">900</div>
+    </div>
   </div>
-  <div class="radius-sm p-12 flex bg-blue bg-tint-full border-1 border-black border-opacity-20">
-    <span class="text-sm leading-none bold inline-flex px-6 py-5 radius-xs bg-black bg-opacity-20 color-white">tint-full</span>
+  <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0">
+    <div class="flex align-items-center font-md extrabold">
+      <div class="radius-md w-64 h-64 bg-primary bg-tint-full border-4 border-white shadow-sm mr-24"></div>
+      Tint Full
+    </div>
+    <div class="flex align-items-center text-sm">
+      <div class="w-96 text-right select-all semibold">full</div>
+    </div>
   </div>
 </div>
+
+
 
 <h2 class="flex align-items-start relative text-5xl lg.text-7xl xl.text-7xl extrabold color-black tracking-tight pt-64 mt-32 first.mt-0 mb-24">
   <div class="relative">
