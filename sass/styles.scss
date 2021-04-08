@@ -86,10 +86,9 @@
 		font-size: font-size(sm);
 		font-weight: font-weight(semibold);
 		line-height: leading(200);
-		//color-cool-gray color-shade-400 color-opacity-60 hover.color-opacity-80 hover.translate-x-6
-		color: fill(cool-gray, tint-500, opacity-60);
+		color: fill(cool-gray, shade-500, opacity-60);
 		&:hover {
-			color: fill(cool-gray, tint-500, opacity-90);
+			color: fill(cool-gray, shade-500, opacity-90);
 		}
 	}
 	& > ol {

@@ -45970,10 +45970,10 @@ pre[class*=language-] {
   font-size: var(--font-sm);
   font-weight: var(--semibold);
   line-height: var(--leading-200);
-  color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--tint-500), var(--opacity-60));
+  color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-500), var(--opacity-60));
 }
 .toc a:hover {
-  color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--tint-500), var(--opacity-90));
+  color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-500), var(--opacity-90));
 }
 .toc > ol ol {
   display: none;
