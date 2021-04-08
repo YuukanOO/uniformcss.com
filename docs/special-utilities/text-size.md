@@ -39,7 +39,7 @@ To disable this utility, pass `text-size` to the `exclude` setting in your confi
 @use "uniform" as * with (
   $config: (
     exclude: (
-      wrapper
+      text-size
     )
   )
 );

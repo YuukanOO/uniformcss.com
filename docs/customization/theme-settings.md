@@ -78,7 +78,7 @@ The following theme setting definitions apply.
 | `trackings` | Set of the letter-spacings |
 | `keyframes` | Set of keyframes |
 
-{.text-left style="--markdown-table-border: 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--shade-700))"}
+{.text-left style=""}
 
 ---
 

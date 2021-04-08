@@ -83,9 +83,10 @@
 .toc {
 	transition: 200ms;
 	a {
+		display: inline-flex;
 		font-size: font-size(sm);
 		font-weight: font-weight(semibold);
-		line-height: leading(200);
+		line-height: leading(250);
 		color: fill(cool-gray, shade-500, opacity-60);
 		&:hover {
 			color: fill(cool-gray, shade-500, opacity-90);

@@ -1,55 +1,47 @@
 ---
 title: XY Shorthands
-description: Learn about Uniform's extended properties
+description: Learn about XY Shorthands
 date: 1000-01-08
 ---
 
-## About Wrapper Module
+## About XY Shorthands
 
-The Wrapper module is an optional pre-built component that provides `max-width` set containerization to your page layout.
+Directional utilities such as `padding`, `margin`, and `border` can be applied both horizontally and vertically, saving you from having to apply the utility twice in order to achieve a `left` and `right` or `top` and `bottom` effect.
 
 {% include shortcodes/video, id: 'GUQqC8abh6Y' %}
 
 ---
 
-## Wrapper Module
+## Basic Usage
 
-To apply this module assign the class `wrapper` to your element.
+To apply directional utilities horizontally or vertically, append `x` or `y` as direction.
 
 ```html
-<div class="wrapper">
-  ...
+<div class="px-20 my-36 border-x-1 ...">
+  <!--
+  - 20px padding, left and right
+  - 36px margin, top and bottom
+  - 1px border-width, left and right
+  -->
 </div>
 ```
 
 ---
 
-## Customizing Basic Button
+## Disabling Wrapper
 
-The following CSS variable hooks are available to customize. There are three default max-widths you can assign, each with `20px` padding on the left and right border of your container element.
-
-```css
-/* styles.css */
-:root {
-  --wrapper-padding: 1.25rem; /* 20px */
-  --wrapper-max-width: 808px;
-  --wrapper-sm-max-width: 1064px;
-  --wrapper-md-max-width: 1180px;
-  --wrapper-lg-max-width: 1320px;
-}
-```
-
----
-
-## How to Disable this Module
-
-By default, all modules are enabled. To disable this wrapper module, pass `module-wrapper` to the `exclude` setting in your configuration.
+To disable, pass in the utility name to the `exclude` setting in your configuration.
 
 ```scss
 @use "uniform" as * with (
   $config: (
     exclude: (
-      module-wrapper
+      padding-x,
+      padding-y,
+      margin-x,
+      margin-y,
+      border-x,
+      border-y
     )
   )
 );

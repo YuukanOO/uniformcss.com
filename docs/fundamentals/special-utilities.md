@@ -97,7 +97,7 @@ The `split` utility applies horizontal or vertical dividing borders to child ele
 
 ## Gutter
 
-The `gutter` utility applies horizontal or vertical spacing of child elements by utilizing the [Lobotomized Owl](https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/) technique. For more information, visit [Gutter](/docs/gutter).
+The `gutter` utility applies margin-based horizontal or vertical spacing of child elements using the [Lobotomized Owl](https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/) selector. For more information, visit [Gutter](/docs/gutter).
 
 ```html
 <div class="gutter-x-20">

@@ -70,7 +70,7 @@ Uniform supports the following sizes out of the box. These sizes are applied in 
 | 50 | `size-2304` | 2304px | 144rem |
 | 51 | `size-2560` | 2560px | 160rem |
 
-{.text-left style="--markdown-table-border: 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--shade-700))"}
+{.text-left style=""}
 
 ---
 

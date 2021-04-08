@@ -47,7 +47,7 @@ The following basic build setting definitions apply.
 | `pseudo-delimiter` | `'.'` | Specifies the delimiter of pseudo variants. |
 | `screen-delimiter` | `'.'` | Specifies the delimiter of breakpoint variants. |
 
-{.text-left style="--markdown-table-border: 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--shade-700))"}
+{.text-left style=""}
 
 ---
 
@@ -61,7 +61,7 @@ The following advanced build setting definitions apply.
 | `placeholders` | `false` | Builds with placeholder selectors enabled. |
 | `dark-mode-support` | `false` | Enable dark pseudo across all properties. |
 
-{.text-left style="--markdown-table-border: 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--shade-700))"}
+{.text-left style=""}
 
 ### Headless Mode
 

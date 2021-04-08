@@ -13,56 +13,56 @@ background: 'white'
         <div class="top-48 sticky h-100vh overflow-auto px-20 py-64">
           
           <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
-            <h6 class="text-md extrabold mb-18 color-black color-opacity-20">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-700">
               Introduction
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.introduction -%}
-                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 my-8 radius-sm{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 my-8 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
           <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
-            <h6 class="text-md extrabold mb-18 color-black color-opacity-20">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-700">
              Fundamentals
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.fundamentals -%}
-                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 my-8 radius-sm{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 my-8 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
           <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
-            <h6 class="text-md extrabold mb-18 color-black color-opacity-20">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-700">
               Customization
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.customization -%}
-                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 my-8 radius-sm{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 my-8 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
           <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
-            <h6 class="text-md extrabold mb-18 color-black color-opacity-20">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-700">
               Theming
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.theming -%}
-                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 my-8 radius-sm{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 my-8 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
 
           <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
-            <h6 class="text-md extrabold mb-18 color-black color-opacity-20">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-700">
               Special Utilities
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.specialUtilities -%}
-                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 my-8 radius-sm{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 my-8 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -70,7 +70,7 @@ background: 'white'
         </div>
       </aside>
 
-      <div class="docsearch-content overflow-auto sm.px-56 py-64">
+      <div class="docsearch-content overflow-auto sm.px-56 py-64 flex-1">
         <h1 class="flex align-items-start relative text-5xl lg.text-7xl xl.text-7xl extrabold color-black tracking-tight mb-16">
           <div class="relative">
             <span class="absolute top-0 left-0 filter filter-blur-10 opacity-60 bg-text bg-linear color-transparent" style="--gradient: to right, #ff68b5, #ffbe76;">{{ title | safe }}</span>
@@ -91,7 +91,7 @@ background: 'white'
           <div class="w-100p">
             
             <div class="pb-64">
-              <h6 class="text-md extrabold mb-18 color-black color-opacity-20">
+              <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-700">
                 On this page
               </h6>
               {{ content | toc | safe }}

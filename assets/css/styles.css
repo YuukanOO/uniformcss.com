@@ -9363,8 +9363,8 @@ select {
 .split-reverse > * + * {
   --split-right: 1;
   --split-left: 0;
-  --split-top: 1;
-  --split-bottom: 0;
+  --split-top: 0;
+  --split-bottom: 1;
 }
 
 .split-current > * + *, .dark .dark\.split-current > * + * {
@@ -18299,8 +18299,8 @@ select {
   .sm\.split-reverse > * + * {
     --split-right: 1;
     --split-left: 0;
-    --split-top: 1;
-    --split-bottom: 0;
+    --split-top: 0;
+    --split-bottom: 1;
   }
 
   .sm\.split-current > * + * {
@@ -26768,8 +26768,8 @@ select {
   .md\.split-reverse > * + * {
     --split-right: 1;
     --split-left: 0;
-    --split-top: 1;
-    --split-bottom: 0;
+    --split-top: 0;
+    --split-bottom: 1;
   }
 
   .md\.split-current > * + * {
@@ -35237,8 +35237,8 @@ select {
   .lg\.split-reverse > * + * {
     --split-right: 1;
     --split-left: 0;
-    --split-top: 1;
-    --split-bottom: 0;
+    --split-top: 0;
+    --split-bottom: 1;
   }
 
   .lg\.split-current > * + * {
@@ -43706,8 +43706,8 @@ select {
   .xl\.split-reverse > * + * {
     --split-right: 1;
     --split-left: 0;
-    --split-top: 1;
-    --split-bottom: 0;
+    --split-top: 0;
+    --split-bottom: 1;
   }
 
   .xl\.split-current > * + * {
@@ -45967,9 +45967,10 @@ pre[class*=language-] {
   transition: 200ms;
 }
 .toc a {
+  display: inline-flex;
   font-size: var(--font-sm);
   font-weight: var(--semibold);
-  line-height: var(--leading-200);
+  line-height: var(--leading-250);
   color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-500), var(--opacity-60));
 }
 .toc a:hover {

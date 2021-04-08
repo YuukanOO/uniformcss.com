@@ -25,7 +25,7 @@ Uniform comes in at **48kb brotli** and **675kb minified**. Below is a compariso
 | Bootstrap   | 152.1kb       | 152.1kb     | 22.7kb     |
 | Foundation  | 119.2kb       | 119.2kb     | 15.9kb     |
 
-{.text-left style="--markdown-table-border: 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--shade-700))"}
+{.text-left style=""}
 
 ---
 

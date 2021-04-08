@@ -51,7 +51,7 @@ The following pseudo interactions are available to be activated for each propert
 | `group-hover` | `.group:hover` |
 | `group-focus` | `.group:focus` |
 
-{.text-left style="--markdown-table-border: 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--shade-700))"}
+{.text-left style=""}
 
 ---
 

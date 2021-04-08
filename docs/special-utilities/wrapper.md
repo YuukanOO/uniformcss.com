@@ -14,7 +14,7 @@ The `wrapper` class is commonly seen in standard web layouts as a container for 
 
 ## Basic Usage
 
-To apply this utility, apply the `wrapper` class to any parent container.
+To apply this utility, assign the `wrapper` class to any parent container.
 
 ```html
 <!-- index.html  -->
@@ -66,7 +66,7 @@ You can override the default `max-width` value by defining the following CSS var
   --wrapper-sm-max-width: 768px;
   --wrapper-md-max-width: 1024px;
   --wrapper-lg-max-width: 1280px;
-  --wrapper-xl-max-width: 1536px;
+  --wrapper-xl-max-width: 1366px;
 }
 ```
 
