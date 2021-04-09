@@ -77,7 +77,7 @@ By default, Uniform uses the `.` character to separate the breakpoints and pseud
 
 ## Enabling Responsiveness
 
-By design, Uniform only enables responsiveness to a subset of CSS properties. You can enable responsiveness by passing `responsive: true` to each property setting in your configuration. To see which properties are responsive, please refer to the [glossary](/glossary).
+By design, Uniform only enables responsiveness to a subset of CSS properties. You can enable responsiveness by passing `responsive: true` to each property setting in your configuration. To see which properties are responsive, please refer to the [API Reference](/api-reference).
 
 ```scss
 @use "uniform" as * with (

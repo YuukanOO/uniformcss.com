@@ -22,129 +22,129 @@ lastUpdated: 2020-10-20
 <div class="mb-40 last.mb-0">
   <div class="color-black">
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-2xs">
-      2xs text
+      2xs
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">10px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">0.625rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">0.625rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-sm">
-      xs text
+      xs
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">12px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">0.75rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">0.75rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-sm">
-      sm text
+      sm
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">14px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">0.875rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">0.875rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-md">
-      md text
+      md
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">16px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">8.533rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">8.533rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-lg">
-      lg text
+      lg
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">18px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">1.125rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">1.125rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-xl">
-      xl text
+      xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">20px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">1.25rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">1.25rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-2xl">
-      2xl text
+      2xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">24px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">1.5rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">1.5rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-3xl">
-      3xl text
+      3xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">28px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">1.75rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">1.75rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-4xl">
-      4xl text
+      4xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">32px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">2rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">2rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-5xl">
-      5xl text
+      5xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">36px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">2.25rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">2.25rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-6xl">
-      6xl text
+      6xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">40px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">2.5rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">2.5rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-7xl">
-      7xl text
+      7xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">48px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">3rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">3rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-8xl">
-      8xl text
+      8xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">56px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">3.5rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">3.5rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-9xl">
-      9xl text
+      9xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">64px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">4rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">4rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-10xl">
-      10xl text
+      10xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">72px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">4.5rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">4.5rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-11xl">
-      11xl text
+      11xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">88px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">5.5rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">5.5rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-12xl">
-      12xl text
+      12xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">104px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">6.5rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">6.5rem</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-13xl">
-      13xl text
+      13xl
       <div class="flex align-items-center text-sm">
         <div class="w-48 text-right select-all">120px</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">7.5rem</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">7.5rem</div>
       </div>
     </div>
   </div>
@@ -169,63 +169,63 @@ lastUpdated: 2020-10-20
       Ultralight
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">ultralight</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">100</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">100</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 extralight text-2xl">
       Extralight
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">extralight</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">200</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">200</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 light text-2xl">
       Light
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">light</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">300</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">300</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 regular text-2xl">
       Regular
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">regular</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">400</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">400</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 medium text-2xl">
       Medium
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">medium</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">500</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">500</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 semibold text-2xl">
       Semibold
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">semibold</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">600</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">600</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 bold text-2xl">
       Bold
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">bold</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">700</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">700</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 extrabold text-2xl">
       Extrabold
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">extrabold</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">800</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">800</div>
       </div>
     </div>
     <div class="flex align-items-center justify-content-between py-24 border-b-1 border-gray border-tint-700 last.mb-0 ultrabold text-2xl">
       Ultrabold
       <div class="flex align-items-center text-sm">
         <div class="w-64 text-right select-all semibold">ultrabold</div>
-        <div class="w-72 text-right opacity-30 ml-18 select-all semibold">900</div>
+        <div class="w-56 text-right opacity-30 ml-18 select-all semibold">900</div>
       </div>
     </div>
   </div>

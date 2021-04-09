@@ -4,15 +4,88 @@ layout: layouts/base.njk
 
 {% include "partials/nav-docs.njk" %}
 
-<main>
+<main class="bg-white color-black">
   <div class="wrapper">
+  
     <div class="flex">
-      <div class="flex-1 px-20 md.pr-56">
-        <div class="color-black">
+      <aside class="hidden md.block w-256 flex-none">
+        <div class="top-48 sticky h-100vh overflow-auto px-20 py-64">
+          
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Typography
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.typography -%}
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+             Colors
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.colors -%}
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Radius
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.radius -%}
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Sizing
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.theming -%}
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Special Utilities
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for post in collections.specialUtilities -%}
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+        </div>
+      </aside>
+
+      <div class="docsearch-content overflow-auto px-20 md.px-56 py-64 flex-1">
+        <h1 class="flex align-items-start relative text-5xl lg.text-7xl xl.text-7xl extrabold color-black tracking-tight mb-16">
+          <div class="relative">
+            <span class="absolute top-0 left-0 filter filter-blur-10 opacity-60 bg-text bg-linear color-transparent" style="--gradient: to right, #ff68b5, #ffbe76;">{{ title | safe }}</span>
+            <span class="absolute top-0 left-0 filter filter-blur-30 opacity-70 bg-text bg-linear color-transparent" style="--gradient: to right, #ff68b5, #ffbe76;">{{ title | safe }}</span>
+            <span class="absolute top-0 left-0 color-white" style="text-shadow: 0px 2px #ffffff;">{{ title | safe }}</span>
+            <span class="relative z-2 bg-text bg-linear color-transparent" style="--gradient: to right, #ff68b5, #ffbe76;">{{ title | safe }}</span>
+          </div>
+        </h1>
+        <p class="text-lg sm.text-xl regular color-cool-gray color-shade-200">
+          {{ description | safe }}
+        </p>
+        <div class="markdown color-black">
           {{ content | safe }}
         </div>
       </div>
-      <div class="hidden md.block w-256 flex-none">
+      <div class="relative hidden lg.block w-256 flex-none">
         <div class="sticky flex justify-content-end py-64 top-48 h-100vh overflow-auto">
           <div class="w-100p">
             
@@ -20,37 +93,7 @@ layout: layouts/base.njk
               <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
                 On this page
               </h6>
-              <nav class="toc">
-                <ol>
-                  <li>
-                    <a href="#font-sizes">Font Sizes</a>
-                  </li>
-                  <li>
-                    <a href="#font-weights">Font Weights</a>
-                  </li>
-                  <li>
-                    <a href="#colors">Colors</a>
-                  </li>
-                  <li>
-                    <a href="#shades">Shades</a>
-                  </li>
-                  <li>
-                    <a href="#tints">Tints</a>
-                  </li>
-                  <li>
-                    <a href="#gradients">Gradients</a>
-                  </li>
-                  <li>
-                    <a href="#box-shadows">Box Shadows</a>
-                  </li>
-                  <li>
-                    <a href="#border-radiuses">Border Radiuses</a>
-                  </li>
-                  <li>
-                    <a href="#sizes">Sizes</a>
-                  </li>
-                </ol>
-              </nav>
+              {{ content | toc | safe }}
             </div>
             
           </div>

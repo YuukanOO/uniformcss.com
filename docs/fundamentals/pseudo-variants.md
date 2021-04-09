@@ -57,7 +57,7 @@ The following pseudo interactions are available to be activated for each propert
 
 ## Enabling Pseudos
 
-By default, only a subset of properties have pseudo variants enabled. To see which pseudos are enabled for each property, please refer to the [glossary](/glossary). You can enable pseudo variants by passing the variant names to the `pseudos` setting of each property.
+By default, only a subset of properties have pseudo variants enabled. To see which pseudos are enabled for each property, please refer to the [API Reference](/api-reference). You can enable pseudo variants by passing the variant names to the `pseudos` setting of each property.
 
 ```scss
 @use "uniform" as * with (
