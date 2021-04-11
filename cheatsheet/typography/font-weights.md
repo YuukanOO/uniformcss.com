@@ -10,15 +10,15 @@ The following table visually represents all the font-sizes that are available.
 
 | Reference | Class | Weight |
 | - | - | - |
-| <span class="ultralight color-black text-3xl">Brown Fox</span> | `ultralight` | 100 |
-| <span class="extralight color-black text-3xl">Brown Fox</span> | `extralight` | 200 |
-| <span class="light color-black text-3xl">Brown Fox</span> | `light` | 300 |
-| <span class="regular color-black text-3xl">Brown Fox</span> | `regular` | 400 |
-| <span class="medium color-black text-3xl">Brown Fox</span> | `medium` | 500 |
-| <span class="semibold color-black text-3xl">Brown Fox</span> | `semibold` | 600 |
-| <span class="bold color-black text-3xl">Brown Fox</span> | `bold` | 700 |
-| <span class="extrabold color-black text-3xl">Brown Fox</span> | `extrabold` | 800 |
-| <span class="ultrabold color-black text-3xl">Brown Fox</span> | `ultrabold` | 900 |
+| <span class="ultralight color-black text-3xl">Uniform</span> | `ultralight` | 100 |
+| <span class="extralight color-black text-3xl">Uniform</span> | `extralight` | 200 |
+| <span class="light color-black text-3xl">Uniform</span> | `light` | 300 |
+| <span class="regular color-black text-3xl">Uniform</span> | `regular` | 400 |
+| <span class="medium color-black text-3xl">Uniform</span> | `medium` | 500 |
+| <span class="semibold color-black text-3xl">Uniform</span> | `semibold` | 600 |
+| <span class="bold color-black text-3xl">Uniform</span> | `bold` | 700 |
+| <span class="extrabold color-black text-3xl">Uniform</span> | `extrabold` | 800 |
+| <span class="ultrabold color-black text-3xl">Uniform</span> | `ultrabold` | 900 |
 
 { .text-left }
 

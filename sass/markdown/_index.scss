@@ -114,6 +114,9 @@ WRAPPER MODULE
 		margin-top: var(--markdown-p-margin-top, var(--size-24));
 		margin-bottom: var(--markdown-p-margin-bottom, var(--size-24));
 		font-weight: var(--markdown-p-weight, var(--regular));
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	/* 
@@ -132,6 +135,9 @@ WRAPPER MODULE
 		margin-bottom: var(--markdown-hr-margin, var(--size-64));
 		border: 0;
 		background: var(--markdown-hr-color, #e3e5e8);
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	/* 
@@ -217,7 +223,17 @@ WRAPPER MODULE
 				--markdown-table-border,
 				1px solid hsl(var(--gray-hue), var(--gray-sat), var(--tint-700))
 			);
-			padding: 0.5em 0.75em;
+		}
+		th {
+			padding: var(--markdown-table-head-padding, 0.5em 0.75em);
+			font-weight: var(--markdown-table-head-weight, var(--bold));
+			color: var(--markdown-table-head-color, black);
+		}
+		td {
+			padding: var(--markdown-table-cell-padding, 0.5em 0.75em);
+		}
+		&:last-child {
+			margin-bottom: 0;
 		}
 	}
 
@@ -235,6 +251,9 @@ WRAPPER MODULE
 	ul {
 		margin-bottom: var(--markdown-list-margin, 1.5em);
 		line-height: var(--markdown-list-leading, var(--leading-normal));
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	& > ul {

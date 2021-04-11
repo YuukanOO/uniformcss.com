@@ -125,7 +125,7 @@
 @use "utilities/effect/extension-filter-blur";
 @use "utilities/effect/core-filter";
 
-// UTILITIES - BORDER (20)
+// UTILITIES - BORDER (22)
 @use "utilities/border/extension-border-tint";
 @use "utilities/border/extension-border-shade";
 @use "utilities/border/extension-border-opacity";
@@ -142,6 +142,8 @@
 @use "utilities/border/core-border-left-width";
 @use "utilities/border/core-border-right-width";
 @use "utilities/border/core-border-top-width";
+@use "utilities/border/extension-border-x-width";
+@use "utilities/border/extension-border-y-width";
 @use "utilities/border/core-border-width";
 @use "utilities/border/core-border-collapse";
 @use "utilities/border/core-border-color";

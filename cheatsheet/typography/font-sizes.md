@@ -8,7 +8,8 @@ date: 1000-01-03
 
 The following table visually represents all the font-sizes that are available.
 
-| Size | Class | Pixel | Rem
+:::markdown overflow-auto
+| Size | Class | Pixel | Rem |
 | - | - | - | - |
 | <span class="semibold color-black text-2xs">2xs</span> | `text-2xs` | 10px | 0.625rem |
 | <span class="semibold color-black text-xs">xs</span> | `text-xs` | 12px | 0.75rem |
@@ -29,7 +30,8 @@ The following table visually represents all the font-sizes that are available.
 | <span class="semibold color-black text-12xl">12xl</span> | `text-12xl` | 104px | 6.5rem |
 | <span class="semibold color-black text-13xl">13xl</span> | `text-13xl` | 120px | 7.5rem |
 
-{ .text-left }
+{ .text-left .w-100p }
+:::
 
 ---
 
@@ -69,6 +71,25 @@ You can customize each `font-size` by overriding the following CSS custom proper
   --font-sm: 0.875rem;
   --font-xs: 0.75rem;
   --font-2xs: 0.625rem;
+
+  --font-13xl-leading: 1;
+  --font-12xl-leading: 1;
+  --font-11xl-leading: 1;
+  --font-10xl-leading: var(--leading-120);
+  --font-9xl-leading: var(--leading-120);
+  --font-8xl-leading: var(--leading-120);
+  --font-7xl-leading: var(--leading-120);
+  --font-6xl-leading: var(--leading-120);
+  --font-5xl-leading: var(--leading-140);
+  --font-4xl-leading: var(--leading-140);
+  --font-3xl-leading: var(--leading-140);
+  --font-2xl-leading: var(--leading-140);
+  --font-xl-leading: var(--leading-140);
+  --font-lg-leading: var(--leading-180);
+  --font-md-leading: var(--leading-180);
+  --font-sm-leading: var(--leading-180);
+  --font-xs-leading: var(--leading-180);
+  --font-2xs-leading: var(--leading-100);
 }
 ```
 
