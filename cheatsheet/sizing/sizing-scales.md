@@ -1,5 +1,5 @@
 ---
-title: Font Sizes
+title: Sizing Scales
 description: Explore global build settings for Uniform.
 date: 1000-01-03
 ---

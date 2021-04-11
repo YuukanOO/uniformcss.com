@@ -2,23 +2,19 @@
 @use "sass:list";
 @use "sass:string";
 @use "sass:meta";
-/*! UniformCSS v1.0.0 | MIT License | github.com/ThinkUniform/UniformCSS */
+/*! UniformCSS v0.9.0 | MIT License | github.com/UniformCSS/UniformCSS */
 
-/*
-========================================================================
-USER CONFIG
-========================================================================
-*/
+// ==================================================
+// USER CONFIG
+// ==================================================
 
 $config: (
   
 ) !default;
 
-/*
-========================================================================
-DEFAULT CONFIG
-========================================================================
-*/
+// ==================================================
+// DEFAULT CONFIG
+// ==================================================
 
 @function rem($size-in-pixel) {
   $remSize: $size-in-pixel / 16;
@@ -380,77 +376,77 @@ $default-config: (
   ),
 
   font-sizes: (
-    13xl: (
-      font-size: rem(120),
-      line-height: 1,
+    2xs: (
+      font-size: rem(10),
+      line-height: var(--leading-100),
     ),
-    12xl: (
-      font-size: rem(104),
-      line-height: 1,
-    ),
-    11xl: (
-      font-size: rem(88),
-      line-height: 1,
-    ),
-    10xl: (
-      font-size: rem(72),
-      line-height: var(--leading-120),
-    ),
-    9xl: (
-      font-size: rem(64),
-      line-height: var(--leading-120),
-    ),
-    8xl: (
-      font-size: rem(56),
-      line-height: var(--leading-120),
-    ),
-    7xl: (
-      font-size: rem(48),
-      line-height: var(--leading-120),
-    ),
-    6xl: (
-      font-size: rem(40),
-      line-height: var(--leading-120),
-    ),
-    5xl: (
-      font-size: rem(36),
-      line-height: var(--leading-140),
-    ),
-    4xl: (
-      font-size: rem(32),
-      line-height: var(--leading-140),
-    ),
-    3xl: (
-      font-size: rem(28),
-      line-height: var(--leading-140),
-    ),
-    2xl: (
-      font-size: rem(24),
-      line-height: var(--leading-140),
-    ),
-    xl: (
-      font-size: rem(20),
-      line-height: var(--leading-140),
-    ),
-    lg: (
-      font-size: rem(18),
-      line-height: var(--leading-180),
-    ),
-    md: (
-      font-size: rem(16),
+    xs: (
+      font-size: rem(12),
       line-height: var(--leading-180),
     ),
     sm: (
       font-size: rem(14),
       line-height: var(--leading-180),
     ),
-    xs: (
-      font-size: rem(12),
+    md: (
+      font-size: rem(16),
       line-height: var(--leading-180),
     ),
-    2xs: (
-      font-size: rem(10),
-      line-height: var(--leading-100),
+    lg: (
+      font-size: rem(18),
+      line-height: var(--leading-180),
+    ),
+    xl: (
+      font-size: rem(20),
+      line-height: var(--leading-140),
+    ),
+    2xl: (
+      font-size: rem(24),
+      line-height: var(--leading-140),
+    ),
+    3xl: (
+      font-size: rem(28),
+      line-height: var(--leading-140),
+    ),
+    4xl: (
+      font-size: rem(32),
+      line-height: var(--leading-140),
+    ),
+    5xl: (
+      font-size: rem(36),
+      line-height: var(--leading-140),
+    ),
+    6xl: (
+      font-size: rem(40),
+      line-height: var(--leading-120),
+    ),
+    7xl: (
+      font-size: rem(48),
+      line-height: var(--leading-120),
+    ),
+    8xl: (
+      font-size: rem(56),
+      line-height: var(--leading-120),
+    ),
+    9xl: (
+      font-size: rem(64),
+      line-height: var(--leading-120),
+    ),
+    10xl: (
+      font-size: rem(72),
+      line-height: var(--leading-120),
+    ),
+    11xl: (
+      font-size: rem(88),
+      line-height: 1,
+    ),
+    12xl: (
+      font-size: rem(104),
+      line-height: 1,
+    ),
+    13xl: (
+      font-size: rem(120),
+      line-height: 1,
     ),
   ),
 
@@ -601,19 +597,15 @@ $default-config: (
   )
 ) !default;
 
-/*
-========================================================================
-CONFIG COMPILER
-========================================================================
-*/
+// ==================================================
+// CONFIG COMPILER
+// ==================================================
 
 $all-config: map.deep-merge($default-config, $config);
 
-/*
-========================================================================
-FETCHED VARIABLES
-========================================================================
-*/
+// ==================================================
+// FETCHED VARIABLES
+// ==================================================
 
 $important: map.get($all-config, important);
 $prefix: map.get($all-config, prefix);
@@ -667,11 +659,9 @@ $extend-opacities: map.get($all-config, extend, opacities);
 $extend-colors: map.get($all-config, extend, colors);
 $extend-gradients: map.get($all-config, extend, gradients);
 
-/*
-========================================================================
-PRIVATE FUNCTIONS
-========================================================================
-*/
+// ==================================================
+// PRIVATE FUNCTIONS
+// ==================================================
 
 // MULTIPLE MAP MERGE FUNCTION
 @function merge($maps...) {
@@ -694,11 +684,9 @@ PRIVATE FUNCTIONS
   @return $named-screens;
 }
 
-/*
-========================================================================
-MERGED VARIABLES
-========================================================================
-*/
+// ==================================================
+// MERGED VARIABLES
+// ==================================================
 
 // MERGED SCREENS
 $merged-screens: ();
@@ -815,11 +803,9 @@ $merged-gradients: ();
 $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
 
 
-/*
-========================================================================
-HELPER FUNCTIONS
-========================================================================
-*/
+// ==================================================
+// HELPER FUNCTIONS
+// ==================================================
 
 // GET SCREEN FUNCTIONS
 @function screen($screen) {
@@ -1309,11 +1295,9 @@ HELPER FUNCTIONS
   @return $result;
 }
 
-/*
-========================================================================
-HELPER MIXINS
-========================================================================
-*/
+// ==================================================
+// HELPER MIXINS
+// ==================================================
 
 @mixin screen($screen) {
   @media (min-width: screen($screen)) {
@@ -1328,11 +1312,9 @@ HELPER MIXINS
   }
 }
 
-/*
-========================================================================
-ROOT VARIABLES
-========================================================================
-*/
+// ==================================================
+// ROOT VARIABLES
+// ==================================================
 
 @if ($headless == false) {
   :root {
@@ -1356,17 +1338,17 @@ ROOT VARIABLES
     @each $key, $value in $merged-leadings {
       --leading-#{'' + $key}: #{$value};
     }
-    --TEXT-LEADING------------------:#05;
+    --TRACKING----------------------:#05;
+    @each $key, $value in $merged-trackings {
+      --tracking-#{'' + $key}: #{$value};
+    }
+    --TEXT-LEADING------------------:#06;
     @each $key, $value in $merged-font-sizes {
       @if (meta.type-of($value) == map) {
         --font-#{'' + $key}-leading: #{map.get($value, line-height)};
       } @else {
         --font-#{'' + $key}-leading: 1;
       }
-    }
-    --TRACKING----------------------:#06;
-    @each $key, $value in $merged-trackings {
-      --tracking-#{'' + $key}: #{$value};
     }
     --RADIUS------------------------:#07;
     @each $key, $value in $merged-radiuses {

@@ -1,73 +1,28 @@
-/*! UniformCSS v1.0.0 | MIT License | github.com/ThinkUniform/UniformCSS */
-/*
-========================================================================
-USER CONFIG
-========================================================================
-*/
-/*
-========================================================================
-DEFAULT CONFIG
-========================================================================
-*/
-/*
-========================================================================
-CONFIG COMPILER
-========================================================================
-*/
-/*
-========================================================================
-FETCHED VARIABLES
-========================================================================
-*/
-/*
-========================================================================
-PRIVATE FUNCTIONS
-========================================================================
-*/
-/*
-========================================================================
-MERGED VARIABLES
-========================================================================
-*/
-/*
-========================================================================
-HELPER FUNCTIONS
-========================================================================
-*/
-/*
-========================================================================
-HELPER MIXINS
-========================================================================
-*/
-/*
-========================================================================
-ROOT VARIABLES
-========================================================================
-*/
+/*! UniformCSS v0.9.0 | MIT License | github.com/UniformCSS/UniformCSS */
 :root {
   --FONT-FAMILIES-----------------:#01;
   --font-sans: sans-serif;
   --font-serif: serif;
   --font-mono: monospace;
   --FONT-SIZES--------------------:#02;
-  --font-13xl: 7.5rem;
-  --font-12xl: 6.5rem;
-  --font-11xl: 5.5rem;
-  --font-10xl: 4.5rem;
-  --font-9xl: 4rem;
-  --font-8xl: 3.5rem;
-  --font-7xl: 3rem;
-  --font-6xl: 2.5rem;
-  --font-5xl: 2.25rem;
-  --font-4xl: 2rem;
-  --font-3xl: 1.75rem;
-  --font-2xl: 1.5rem;
-  --font-xl: 1.25rem;
-  --font-lg: 1.125rem;
-  --font-md: 1rem;
-  --font-sm: 0.875rem;
-  --font-xs: 0.75rem;
   --font-2xs: 0.625rem;
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-md: 1rem;
+  --font-lg: 1.125rem;
+  --font-xl: 1.25rem;
+  --font-2xl: 1.5rem;
+  --font-3xl: 1.75rem;
+  --font-4xl: 2rem;
+  --font-5xl: 2.25rem;
+  --font-6xl: 2.5rem;
+  --font-7xl: 3rem;
+  --font-8xl: 3.5rem;
+  --font-9xl: 4rem;
+  --font-10xl: 4.5rem;
+  --font-11xl: 5.5rem;
+  --font-12xl: 6.5rem;
+  --font-13xl: 7.5rem;
   --FONT-WEIGHTS------------------:#03;
   --ultralight: 100;
   --extralight: 200;
@@ -95,26 +50,7 @@ ROOT VARIABLES
   --leading-230: 2.3;
   --leading-240: 2.4;
   --leading-250: 2.5;
-  --TEXT-LEADING------------------:#05;
-  --font-13xl-leading: 1;
-  --font-12xl-leading: 1;
-  --font-11xl-leading: 1;
-  --font-10xl-leading: var(--leading-120);
-  --font-9xl-leading: var(--leading-120);
-  --font-8xl-leading: var(--leading-120);
-  --font-7xl-leading: var(--leading-120);
-  --font-6xl-leading: var(--leading-120);
-  --font-5xl-leading: var(--leading-140);
-  --font-4xl-leading: var(--leading-140);
-  --font-3xl-leading: var(--leading-140);
-  --font-2xl-leading: var(--leading-140);
-  --font-xl-leading: var(--leading-140);
-  --font-lg-leading: var(--leading-180);
-  --font-md-leading: var(--leading-180);
-  --font-sm-leading: var(--leading-180);
-  --font-xs-leading: var(--leading-180);
-  --font-2xs-leading: var(--leading-100);
-  --TRACKING----------------------:#06;
+  --TRACKING----------------------:#05;
   --tracking-tightest: -0.08em;
   --tracking-tighter: -0.04em;
   --tracking-tight: -0.02em;
@@ -122,6 +58,25 @@ ROOT VARIABLES
   --tracking-loose: 0.02em;
   --tracking-looser: 0.04em;
   --tracking-loosest: 0.08em;
+  --TEXT-LEADING------------------:#06;
+  --font-2xs-leading: var(--leading-100);
+  --font-xs-leading: var(--leading-180);
+  --font-sm-leading: var(--leading-180);
+  --font-md-leading: var(--leading-180);
+  --font-lg-leading: var(--leading-180);
+  --font-xl-leading: var(--leading-140);
+  --font-2xl-leading: var(--leading-140);
+  --font-3xl-leading: var(--leading-140);
+  --font-4xl-leading: var(--leading-140);
+  --font-5xl-leading: var(--leading-140);
+  --font-6xl-leading: var(--leading-120);
+  --font-7xl-leading: var(--leading-120);
+  --font-8xl-leading: var(--leading-120);
+  --font-9xl-leading: var(--leading-120);
+  --font-10xl-leading: var(--leading-120);
+  --font-11xl-leading: 1;
+  --font-12xl-leading: 1;
+  --font-13xl-leading: 1;
   --RADIUS------------------------:#07;
   --radius-none: 0;
   --radius-2xs: 0.1875rem;
@@ -1617,84 +1572,9 @@ select {
   --placeholder-ltn: var(--tint-full);
 }
 
-.text-13xl {
-  font-size: var(--font-13xl);
-  line-height: var(--font-13xl-leading);
-}
-
-.text-12xl {
-  font-size: var(--font-12xl);
-  line-height: var(--font-12xl-leading);
-}
-
-.text-11xl {
-  font-size: var(--font-11xl);
-  line-height: var(--font-11xl-leading);
-}
-
-.text-10xl {
-  font-size: var(--font-10xl);
-  line-height: var(--font-10xl-leading);
-}
-
-.text-9xl {
-  font-size: var(--font-9xl);
-  line-height: var(--font-9xl-leading);
-}
-
-.text-8xl {
-  font-size: var(--font-8xl);
-  line-height: var(--font-8xl-leading);
-}
-
-.text-7xl {
-  font-size: var(--font-7xl);
-  line-height: var(--font-7xl-leading);
-}
-
-.text-6xl {
-  font-size: var(--font-6xl);
-  line-height: var(--font-6xl-leading);
-}
-
-.text-5xl {
-  font-size: var(--font-5xl);
-  line-height: var(--font-5xl-leading);
-}
-
-.text-4xl {
-  font-size: var(--font-4xl);
-  line-height: var(--font-4xl-leading);
-}
-
-.text-3xl {
-  font-size: var(--font-3xl);
-  line-height: var(--font-3xl-leading);
-}
-
-.text-2xl {
-  font-size: var(--font-2xl);
-  line-height: var(--font-2xl-leading);
-}
-
-.text-xl {
-  font-size: var(--font-xl);
-  line-height: var(--font-xl-leading);
-}
-
-.text-lg {
-  font-size: var(--font-lg);
-  line-height: var(--font-lg-leading);
-}
-
-.text-md {
-  font-size: var(--font-md);
-  line-height: var(--font-md-leading);
-}
-
-.text-sm {
-  font-size: var(--font-sm);
-  line-height: var(--font-sm-leading);
+.text-2xs {
+  font-size: var(--font-2xs);
+  line-height: var(--font-2xs-leading);
 }
 
 .text-xs {
@@ -1702,81 +1582,156 @@ select {
   line-height: var(--font-xs-leading);
 }
 
-.text-2xs {
-  font-size: var(--font-2xs);
-  line-height: var(--font-2xs-leading);
-}
-
-.font-13xl {
-  font-size: var(--font-13xl);
-}
-
-.font-12xl {
-  font-size: var(--font-12xl);
-}
-
-.font-11xl {
-  font-size: var(--font-11xl);
-}
-
-.font-10xl {
-  font-size: var(--font-10xl);
-}
-
-.font-9xl {
-  font-size: var(--font-9xl);
-}
-
-.font-8xl {
-  font-size: var(--font-8xl);
-}
-
-.font-7xl {
-  font-size: var(--font-7xl);
-}
-
-.font-6xl {
-  font-size: var(--font-6xl);
-}
-
-.font-5xl {
-  font-size: var(--font-5xl);
-}
-
-.font-4xl {
-  font-size: var(--font-4xl);
-}
-
-.font-3xl {
-  font-size: var(--font-3xl);
-}
-
-.font-2xl {
-  font-size: var(--font-2xl);
-}
-
-.font-xl {
-  font-size: var(--font-xl);
-}
-
-.font-lg {
-  font-size: var(--font-lg);
-}
-
-.font-md {
-  font-size: var(--font-md);
-}
-
-.font-sm {
+.text-sm {
   font-size: var(--font-sm);
+  line-height: var(--font-sm-leading);
+}
+
+.text-md {
+  font-size: var(--font-md);
+  line-height: var(--font-md-leading);
+}
+
+.text-lg {
+  font-size: var(--font-lg);
+  line-height: var(--font-lg-leading);
+}
+
+.text-xl {
+  font-size: var(--font-xl);
+  line-height: var(--font-xl-leading);
+}
+
+.text-2xl {
+  font-size: var(--font-2xl);
+  line-height: var(--font-2xl-leading);
+}
+
+.text-3xl {
+  font-size: var(--font-3xl);
+  line-height: var(--font-3xl-leading);
+}
+
+.text-4xl {
+  font-size: var(--font-4xl);
+  line-height: var(--font-4xl-leading);
+}
+
+.text-5xl {
+  font-size: var(--font-5xl);
+  line-height: var(--font-5xl-leading);
+}
+
+.text-6xl {
+  font-size: var(--font-6xl);
+  line-height: var(--font-6xl-leading);
+}
+
+.text-7xl {
+  font-size: var(--font-7xl);
+  line-height: var(--font-7xl-leading);
+}
+
+.text-8xl {
+  font-size: var(--font-8xl);
+  line-height: var(--font-8xl-leading);
+}
+
+.text-9xl {
+  font-size: var(--font-9xl);
+  line-height: var(--font-9xl-leading);
+}
+
+.text-10xl {
+  font-size: var(--font-10xl);
+  line-height: var(--font-10xl-leading);
+}
+
+.text-11xl {
+  font-size: var(--font-11xl);
+  line-height: var(--font-11xl-leading);
+}
+
+.text-12xl {
+  font-size: var(--font-12xl);
+  line-height: var(--font-12xl-leading);
+}
+
+.text-13xl {
+  font-size: var(--font-13xl);
+  line-height: var(--font-13xl-leading);
+}
+
+.font-2xs {
+  font-size: var(--font-2xs);
 }
 
 .font-xs {
   font-size: var(--font-xs);
 }
 
-.font-2xs {
-  font-size: var(--font-2xs);
+.font-sm {
+  font-size: var(--font-sm);
+}
+
+.font-md {
+  font-size: var(--font-md);
+}
+
+.font-lg {
+  font-size: var(--font-lg);
+}
+
+.font-xl {
+  font-size: var(--font-xl);
+}
+
+.font-2xl {
+  font-size: var(--font-2xl);
+}
+
+.font-3xl {
+  font-size: var(--font-3xl);
+}
+
+.font-4xl {
+  font-size: var(--font-4xl);
+}
+
+.font-5xl {
+  font-size: var(--font-5xl);
+}
+
+.font-6xl {
+  font-size: var(--font-6xl);
+}
+
+.font-7xl {
+  font-size: var(--font-7xl);
+}
+
+.font-8xl {
+  font-size: var(--font-8xl);
+}
+
+.font-9xl {
+  font-size: var(--font-9xl);
+}
+
+.font-10xl {
+  font-size: var(--font-10xl);
+}
+
+.font-11xl {
+  font-size: var(--font-11xl);
+}
+
+.font-12xl {
+  font-size: var(--font-12xl);
+}
+
+.font-13xl {
+  font-size: var(--font-13xl);
 }
 
 .ultralight, .hover\.ultralight:hover {
@@ -11764,84 +11719,9 @@ select {
     display: flow-root;
   }
 
-  .sm\.text-13xl {
-    font-size: var(--font-13xl);
-    line-height: var(--font-13xl-leading);
-  }
-
-  .sm\.text-12xl {
-    font-size: var(--font-12xl);
-    line-height: var(--font-12xl-leading);
-  }
-
-  .sm\.text-11xl {
-    font-size: var(--font-11xl);
-    line-height: var(--font-11xl-leading);
-  }
-
-  .sm\.text-10xl {
-    font-size: var(--font-10xl);
-    line-height: var(--font-10xl-leading);
-  }
-
-  .sm\.text-9xl {
-    font-size: var(--font-9xl);
-    line-height: var(--font-9xl-leading);
-  }
-
-  .sm\.text-8xl {
-    font-size: var(--font-8xl);
-    line-height: var(--font-8xl-leading);
-  }
-
-  .sm\.text-7xl {
-    font-size: var(--font-7xl);
-    line-height: var(--font-7xl-leading);
-  }
-
-  .sm\.text-6xl {
-    font-size: var(--font-6xl);
-    line-height: var(--font-6xl-leading);
-  }
-
-  .sm\.text-5xl {
-    font-size: var(--font-5xl);
-    line-height: var(--font-5xl-leading);
-  }
-
-  .sm\.text-4xl {
-    font-size: var(--font-4xl);
-    line-height: var(--font-4xl-leading);
-  }
-
-  .sm\.text-3xl {
-    font-size: var(--font-3xl);
-    line-height: var(--font-3xl-leading);
-  }
-
-  .sm\.text-2xl {
-    font-size: var(--font-2xl);
-    line-height: var(--font-2xl-leading);
-  }
-
-  .sm\.text-xl {
-    font-size: var(--font-xl);
-    line-height: var(--font-xl-leading);
-  }
-
-  .sm\.text-lg {
-    font-size: var(--font-lg);
-    line-height: var(--font-lg-leading);
-  }
-
-  .sm\.text-md {
-    font-size: var(--font-md);
-    line-height: var(--font-md-leading);
-  }
-
-  .sm\.text-sm {
-    font-size: var(--font-sm);
-    line-height: var(--font-sm-leading);
+  .sm\.text-2xs {
+    font-size: var(--font-2xs);
+    line-height: var(--font-2xs-leading);
   }
 
   .sm\.text-xs {
@@ -11849,81 +11729,156 @@ select {
     line-height: var(--font-xs-leading);
   }
 
-  .sm\.text-2xs {
-    font-size: var(--font-2xs);
-    line-height: var(--font-2xs-leading);
-  }
-
-  .sm\.font-13xl {
-    font-size: var(--font-13xl);
-  }
-
-  .sm\.font-12xl {
-    font-size: var(--font-12xl);
-  }
-
-  .sm\.font-11xl {
-    font-size: var(--font-11xl);
-  }
-
-  .sm\.font-10xl {
-    font-size: var(--font-10xl);
-  }
-
-  .sm\.font-9xl {
-    font-size: var(--font-9xl);
-  }
-
-  .sm\.font-8xl {
-    font-size: var(--font-8xl);
-  }
-
-  .sm\.font-7xl {
-    font-size: var(--font-7xl);
-  }
-
-  .sm\.font-6xl {
-    font-size: var(--font-6xl);
-  }
-
-  .sm\.font-5xl {
-    font-size: var(--font-5xl);
-  }
-
-  .sm\.font-4xl {
-    font-size: var(--font-4xl);
-  }
-
-  .sm\.font-3xl {
-    font-size: var(--font-3xl);
-  }
-
-  .sm\.font-2xl {
-    font-size: var(--font-2xl);
-  }
-
-  .sm\.font-xl {
-    font-size: var(--font-xl);
-  }
-
-  .sm\.font-lg {
-    font-size: var(--font-lg);
-  }
-
-  .sm\.font-md {
-    font-size: var(--font-md);
-  }
-
-  .sm\.font-sm {
+  .sm\.text-sm {
     font-size: var(--font-sm);
+    line-height: var(--font-sm-leading);
+  }
+
+  .sm\.text-md {
+    font-size: var(--font-md);
+    line-height: var(--font-md-leading);
+  }
+
+  .sm\.text-lg {
+    font-size: var(--font-lg);
+    line-height: var(--font-lg-leading);
+  }
+
+  .sm\.text-xl {
+    font-size: var(--font-xl);
+    line-height: var(--font-xl-leading);
+  }
+
+  .sm\.text-2xl {
+    font-size: var(--font-2xl);
+    line-height: var(--font-2xl-leading);
+  }
+
+  .sm\.text-3xl {
+    font-size: var(--font-3xl);
+    line-height: var(--font-3xl-leading);
+  }
+
+  .sm\.text-4xl {
+    font-size: var(--font-4xl);
+    line-height: var(--font-4xl-leading);
+  }
+
+  .sm\.text-5xl {
+    font-size: var(--font-5xl);
+    line-height: var(--font-5xl-leading);
+  }
+
+  .sm\.text-6xl {
+    font-size: var(--font-6xl);
+    line-height: var(--font-6xl-leading);
+  }
+
+  .sm\.text-7xl {
+    font-size: var(--font-7xl);
+    line-height: var(--font-7xl-leading);
+  }
+
+  .sm\.text-8xl {
+    font-size: var(--font-8xl);
+    line-height: var(--font-8xl-leading);
+  }
+
+  .sm\.text-9xl {
+    font-size: var(--font-9xl);
+    line-height: var(--font-9xl-leading);
+  }
+
+  .sm\.text-10xl {
+    font-size: var(--font-10xl);
+    line-height: var(--font-10xl-leading);
+  }
+
+  .sm\.text-11xl {
+    font-size: var(--font-11xl);
+    line-height: var(--font-11xl-leading);
+  }
+
+  .sm\.text-12xl {
+    font-size: var(--font-12xl);
+    line-height: var(--font-12xl-leading);
+  }
+
+  .sm\.text-13xl {
+    font-size: var(--font-13xl);
+    line-height: var(--font-13xl-leading);
+  }
+
+  .sm\.font-2xs {
+    font-size: var(--font-2xs);
   }
 
   .sm\.font-xs {
     font-size: var(--font-xs);
   }
 
-  .sm\.font-2xs {
-    font-size: var(--font-2xs);
+  .sm\.font-sm {
+    font-size: var(--font-sm);
+  }
+
+  .sm\.font-md {
+    font-size: var(--font-md);
+  }
+
+  .sm\.font-lg {
+    font-size: var(--font-lg);
+  }
+
+  .sm\.font-xl {
+    font-size: var(--font-xl);
+  }
+
+  .sm\.font-2xl {
+    font-size: var(--font-2xl);
+  }
+
+  .sm\.font-3xl {
+    font-size: var(--font-3xl);
+  }
+
+  .sm\.font-4xl {
+    font-size: var(--font-4xl);
+  }
+
+  .sm\.font-5xl {
+    font-size: var(--font-5xl);
+  }
+
+  .sm\.font-6xl {
+    font-size: var(--font-6xl);
+  }
+
+  .sm\.font-7xl {
+    font-size: var(--font-7xl);
+  }
+
+  .sm\.font-8xl {
+    font-size: var(--font-8xl);
+  }
+
+  .sm\.font-9xl {
+    font-size: var(--font-9xl);
+  }
+
+  .sm\.font-10xl {
+    font-size: var(--font-10xl);
+  }
+
+  .sm\.font-11xl {
+    font-size: var(--font-11xl);
+  }
+
+  .sm\.font-12xl {
+    font-size: var(--font-12xl);
+  }
+
+  .sm\.font-13xl {
+    font-size: var(--font-13xl);
   }
 
   .sm\.text-left {
@@ -20319,84 +20274,9 @@ select {
     display: flow-root;
   }
 
-  .md\.text-13xl {
-    font-size: var(--font-13xl);
-    line-height: var(--font-13xl-leading);
-  }
-
-  .md\.text-12xl {
-    font-size: var(--font-12xl);
-    line-height: var(--font-12xl-leading);
-  }
-
-  .md\.text-11xl {
-    font-size: var(--font-11xl);
-    line-height: var(--font-11xl-leading);
-  }
-
-  .md\.text-10xl {
-    font-size: var(--font-10xl);
-    line-height: var(--font-10xl-leading);
-  }
-
-  .md\.text-9xl {
-    font-size: var(--font-9xl);
-    line-height: var(--font-9xl-leading);
-  }
-
-  .md\.text-8xl {
-    font-size: var(--font-8xl);
-    line-height: var(--font-8xl-leading);
-  }
-
-  .md\.text-7xl {
-    font-size: var(--font-7xl);
-    line-height: var(--font-7xl-leading);
-  }
-
-  .md\.text-6xl {
-    font-size: var(--font-6xl);
-    line-height: var(--font-6xl-leading);
-  }
-
-  .md\.text-5xl {
-    font-size: var(--font-5xl);
-    line-height: var(--font-5xl-leading);
-  }
-
-  .md\.text-4xl {
-    font-size: var(--font-4xl);
-    line-height: var(--font-4xl-leading);
-  }
-
-  .md\.text-3xl {
-    font-size: var(--font-3xl);
-    line-height: var(--font-3xl-leading);
-  }
-
-  .md\.text-2xl {
-    font-size: var(--font-2xl);
-    line-height: var(--font-2xl-leading);
-  }
-
-  .md\.text-xl {
-    font-size: var(--font-xl);
-    line-height: var(--font-xl-leading);
-  }
-
-  .md\.text-lg {
-    font-size: var(--font-lg);
-    line-height: var(--font-lg-leading);
-  }
-
-  .md\.text-md {
-    font-size: var(--font-md);
-    line-height: var(--font-md-leading);
-  }
-
-  .md\.text-sm {
-    font-size: var(--font-sm);
-    line-height: var(--font-sm-leading);
+  .md\.text-2xs {
+    font-size: var(--font-2xs);
+    line-height: var(--font-2xs-leading);
   }
 
   .md\.text-xs {
@@ -20404,81 +20284,156 @@ select {
     line-height: var(--font-xs-leading);
   }
 
-  .md\.text-2xs {
-    font-size: var(--font-2xs);
-    line-height: var(--font-2xs-leading);
-  }
-
-  .md\.font-13xl {
-    font-size: var(--font-13xl);
-  }
-
-  .md\.font-12xl {
-    font-size: var(--font-12xl);
-  }
-
-  .md\.font-11xl {
-    font-size: var(--font-11xl);
-  }
-
-  .md\.font-10xl {
-    font-size: var(--font-10xl);
-  }
-
-  .md\.font-9xl {
-    font-size: var(--font-9xl);
-  }
-
-  .md\.font-8xl {
-    font-size: var(--font-8xl);
-  }
-
-  .md\.font-7xl {
-    font-size: var(--font-7xl);
-  }
-
-  .md\.font-6xl {
-    font-size: var(--font-6xl);
-  }
-
-  .md\.font-5xl {
-    font-size: var(--font-5xl);
-  }
-
-  .md\.font-4xl {
-    font-size: var(--font-4xl);
-  }
-
-  .md\.font-3xl {
-    font-size: var(--font-3xl);
-  }
-
-  .md\.font-2xl {
-    font-size: var(--font-2xl);
-  }
-
-  .md\.font-xl {
-    font-size: var(--font-xl);
-  }
-
-  .md\.font-lg {
-    font-size: var(--font-lg);
-  }
-
-  .md\.font-md {
-    font-size: var(--font-md);
-  }
-
-  .md\.font-sm {
+  .md\.text-sm {
     font-size: var(--font-sm);
+    line-height: var(--font-sm-leading);
+  }
+
+  .md\.text-md {
+    font-size: var(--font-md);
+    line-height: var(--font-md-leading);
+  }
+
+  .md\.text-lg {
+    font-size: var(--font-lg);
+    line-height: var(--font-lg-leading);
+  }
+
+  .md\.text-xl {
+    font-size: var(--font-xl);
+    line-height: var(--font-xl-leading);
+  }
+
+  .md\.text-2xl {
+    font-size: var(--font-2xl);
+    line-height: var(--font-2xl-leading);
+  }
+
+  .md\.text-3xl {
+    font-size: var(--font-3xl);
+    line-height: var(--font-3xl-leading);
+  }
+
+  .md\.text-4xl {
+    font-size: var(--font-4xl);
+    line-height: var(--font-4xl-leading);
+  }
+
+  .md\.text-5xl {
+    font-size: var(--font-5xl);
+    line-height: var(--font-5xl-leading);
+  }
+
+  .md\.text-6xl {
+    font-size: var(--font-6xl);
+    line-height: var(--font-6xl-leading);
+  }
+
+  .md\.text-7xl {
+    font-size: var(--font-7xl);
+    line-height: var(--font-7xl-leading);
+  }
+
+  .md\.text-8xl {
+    font-size: var(--font-8xl);
+    line-height: var(--font-8xl-leading);
+  }
+
+  .md\.text-9xl {
+    font-size: var(--font-9xl);
+    line-height: var(--font-9xl-leading);
+  }
+
+  .md\.text-10xl {
+    font-size: var(--font-10xl);
+    line-height: var(--font-10xl-leading);
+  }
+
+  .md\.text-11xl {
+    font-size: var(--font-11xl);
+    line-height: var(--font-11xl-leading);
+  }
+
+  .md\.text-12xl {
+    font-size: var(--font-12xl);
+    line-height: var(--font-12xl-leading);
+  }
+
+  .md\.text-13xl {
+    font-size: var(--font-13xl);
+    line-height: var(--font-13xl-leading);
+  }
+
+  .md\.font-2xs {
+    font-size: var(--font-2xs);
   }
 
   .md\.font-xs {
     font-size: var(--font-xs);
   }
 
-  .md\.font-2xs {
-    font-size: var(--font-2xs);
+  .md\.font-sm {
+    font-size: var(--font-sm);
+  }
+
+  .md\.font-md {
+    font-size: var(--font-md);
+  }
+
+  .md\.font-lg {
+    font-size: var(--font-lg);
+  }
+
+  .md\.font-xl {
+    font-size: var(--font-xl);
+  }
+
+  .md\.font-2xl {
+    font-size: var(--font-2xl);
+  }
+
+  .md\.font-3xl {
+    font-size: var(--font-3xl);
+  }
+
+  .md\.font-4xl {
+    font-size: var(--font-4xl);
+  }
+
+  .md\.font-5xl {
+    font-size: var(--font-5xl);
+  }
+
+  .md\.font-6xl {
+    font-size: var(--font-6xl);
+  }
+
+  .md\.font-7xl {
+    font-size: var(--font-7xl);
+  }
+
+  .md\.font-8xl {
+    font-size: var(--font-8xl);
+  }
+
+  .md\.font-9xl {
+    font-size: var(--font-9xl);
+  }
+
+  .md\.font-10xl {
+    font-size: var(--font-10xl);
+  }
+
+  .md\.font-11xl {
+    font-size: var(--font-11xl);
+  }
+
+  .md\.font-12xl {
+    font-size: var(--font-12xl);
+  }
+
+  .md\.font-13xl {
+    font-size: var(--font-13xl);
   }
 
   .md\.text-left {
@@ -28874,84 +28829,9 @@ select {
     display: flow-root;
   }
 
-  .lg\.text-13xl {
-    font-size: var(--font-13xl);
-    line-height: var(--font-13xl-leading);
-  }
-
-  .lg\.text-12xl {
-    font-size: var(--font-12xl);
-    line-height: var(--font-12xl-leading);
-  }
-
-  .lg\.text-11xl {
-    font-size: var(--font-11xl);
-    line-height: var(--font-11xl-leading);
-  }
-
-  .lg\.text-10xl {
-    font-size: var(--font-10xl);
-    line-height: var(--font-10xl-leading);
-  }
-
-  .lg\.text-9xl {
-    font-size: var(--font-9xl);
-    line-height: var(--font-9xl-leading);
-  }
-
-  .lg\.text-8xl {
-    font-size: var(--font-8xl);
-    line-height: var(--font-8xl-leading);
-  }
-
-  .lg\.text-7xl {
-    font-size: var(--font-7xl);
-    line-height: var(--font-7xl-leading);
-  }
-
-  .lg\.text-6xl {
-    font-size: var(--font-6xl);
-    line-height: var(--font-6xl-leading);
-  }
-
-  .lg\.text-5xl {
-    font-size: var(--font-5xl);
-    line-height: var(--font-5xl-leading);
-  }
-
-  .lg\.text-4xl {
-    font-size: var(--font-4xl);
-    line-height: var(--font-4xl-leading);
-  }
-
-  .lg\.text-3xl {
-    font-size: var(--font-3xl);
-    line-height: var(--font-3xl-leading);
-  }
-
-  .lg\.text-2xl {
-    font-size: var(--font-2xl);
-    line-height: var(--font-2xl-leading);
-  }
-
-  .lg\.text-xl {
-    font-size: var(--font-xl);
-    line-height: var(--font-xl-leading);
-  }
-
-  .lg\.text-lg {
-    font-size: var(--font-lg);
-    line-height: var(--font-lg-leading);
-  }
-
-  .lg\.text-md {
-    font-size: var(--font-md);
-    line-height: var(--font-md-leading);
-  }
-
-  .lg\.text-sm {
-    font-size: var(--font-sm);
-    line-height: var(--font-sm-leading);
+  .lg\.text-2xs {
+    font-size: var(--font-2xs);
+    line-height: var(--font-2xs-leading);
   }
 
   .lg\.text-xs {
@@ -28959,81 +28839,156 @@ select {
     line-height: var(--font-xs-leading);
   }
 
-  .lg\.text-2xs {
-    font-size: var(--font-2xs);
-    line-height: var(--font-2xs-leading);
-  }
-
-  .lg\.font-13xl {
-    font-size: var(--font-13xl);
-  }
-
-  .lg\.font-12xl {
-    font-size: var(--font-12xl);
-  }
-
-  .lg\.font-11xl {
-    font-size: var(--font-11xl);
-  }
-
-  .lg\.font-10xl {
-    font-size: var(--font-10xl);
-  }
-
-  .lg\.font-9xl {
-    font-size: var(--font-9xl);
-  }
-
-  .lg\.font-8xl {
-    font-size: var(--font-8xl);
-  }
-
-  .lg\.font-7xl {
-    font-size: var(--font-7xl);
-  }
-
-  .lg\.font-6xl {
-    font-size: var(--font-6xl);
-  }
-
-  .lg\.font-5xl {
-    font-size: var(--font-5xl);
-  }
-
-  .lg\.font-4xl {
-    font-size: var(--font-4xl);
-  }
-
-  .lg\.font-3xl {
-    font-size: var(--font-3xl);
-  }
-
-  .lg\.font-2xl {
-    font-size: var(--font-2xl);
-  }
-
-  .lg\.font-xl {
-    font-size: var(--font-xl);
-  }
-
-  .lg\.font-lg {
-    font-size: var(--font-lg);
-  }
-
-  .lg\.font-md {
-    font-size: var(--font-md);
-  }
-
-  .lg\.font-sm {
+  .lg\.text-sm {
     font-size: var(--font-sm);
+    line-height: var(--font-sm-leading);
+  }
+
+  .lg\.text-md {
+    font-size: var(--font-md);
+    line-height: var(--font-md-leading);
+  }
+
+  .lg\.text-lg {
+    font-size: var(--font-lg);
+    line-height: var(--font-lg-leading);
+  }
+
+  .lg\.text-xl {
+    font-size: var(--font-xl);
+    line-height: var(--font-xl-leading);
+  }
+
+  .lg\.text-2xl {
+    font-size: var(--font-2xl);
+    line-height: var(--font-2xl-leading);
+  }
+
+  .lg\.text-3xl {
+    font-size: var(--font-3xl);
+    line-height: var(--font-3xl-leading);
+  }
+
+  .lg\.text-4xl {
+    font-size: var(--font-4xl);
+    line-height: var(--font-4xl-leading);
+  }
+
+  .lg\.text-5xl {
+    font-size: var(--font-5xl);
+    line-height: var(--font-5xl-leading);
+  }
+
+  .lg\.text-6xl {
+    font-size: var(--font-6xl);
+    line-height: var(--font-6xl-leading);
+  }
+
+  .lg\.text-7xl {
+    font-size: var(--font-7xl);
+    line-height: var(--font-7xl-leading);
+  }
+
+  .lg\.text-8xl {
+    font-size: var(--font-8xl);
+    line-height: var(--font-8xl-leading);
+  }
+
+  .lg\.text-9xl {
+    font-size: var(--font-9xl);
+    line-height: var(--font-9xl-leading);
+  }
+
+  .lg\.text-10xl {
+    font-size: var(--font-10xl);
+    line-height: var(--font-10xl-leading);
+  }
+
+  .lg\.text-11xl {
+    font-size: var(--font-11xl);
+    line-height: var(--font-11xl-leading);
+  }
+
+  .lg\.text-12xl {
+    font-size: var(--font-12xl);
+    line-height: var(--font-12xl-leading);
+  }
+
+  .lg\.text-13xl {
+    font-size: var(--font-13xl);
+    line-height: var(--font-13xl-leading);
+  }
+
+  .lg\.font-2xs {
+    font-size: var(--font-2xs);
   }
 
   .lg\.font-xs {
     font-size: var(--font-xs);
   }
 
-  .lg\.font-2xs {
-    font-size: var(--font-2xs);
+  .lg\.font-sm {
+    font-size: var(--font-sm);
+  }
+
+  .lg\.font-md {
+    font-size: var(--font-md);
+  }
+
+  .lg\.font-lg {
+    font-size: var(--font-lg);
+  }
+
+  .lg\.font-xl {
+    font-size: var(--font-xl);
+  }
+
+  .lg\.font-2xl {
+    font-size: var(--font-2xl);
+  }
+
+  .lg\.font-3xl {
+    font-size: var(--font-3xl);
+  }
+
+  .lg\.font-4xl {
+    font-size: var(--font-4xl);
+  }
+
+  .lg\.font-5xl {
+    font-size: var(--font-5xl);
+  }
+
+  .lg\.font-6xl {
+    font-size: var(--font-6xl);
+  }
+
+  .lg\.font-7xl {
+    font-size: var(--font-7xl);
+  }
+
+  .lg\.font-8xl {
+    font-size: var(--font-8xl);
+  }
+
+  .lg\.font-9xl {
+    font-size: var(--font-9xl);
+  }
+
+  .lg\.font-10xl {
+    font-size: var(--font-10xl);
+  }
+
+  .lg\.font-11xl {
+    font-size: var(--font-11xl);
+  }
+
+  .lg\.font-12xl {
+    font-size: var(--font-12xl);
+  }
+
+  .lg\.font-13xl {
+    font-size: var(--font-13xl);
   }
 
   .lg\.text-left {
@@ -37429,84 +37384,9 @@ select {
     display: flow-root;
   }
 
-  .xl\.text-13xl {
-    font-size: var(--font-13xl);
-    line-height: var(--font-13xl-leading);
-  }
-
-  .xl\.text-12xl {
-    font-size: var(--font-12xl);
-    line-height: var(--font-12xl-leading);
-  }
-
-  .xl\.text-11xl {
-    font-size: var(--font-11xl);
-    line-height: var(--font-11xl-leading);
-  }
-
-  .xl\.text-10xl {
-    font-size: var(--font-10xl);
-    line-height: var(--font-10xl-leading);
-  }
-
-  .xl\.text-9xl {
-    font-size: var(--font-9xl);
-    line-height: var(--font-9xl-leading);
-  }
-
-  .xl\.text-8xl {
-    font-size: var(--font-8xl);
-    line-height: var(--font-8xl-leading);
-  }
-
-  .xl\.text-7xl {
-    font-size: var(--font-7xl);
-    line-height: var(--font-7xl-leading);
-  }
-
-  .xl\.text-6xl {
-    font-size: var(--font-6xl);
-    line-height: var(--font-6xl-leading);
-  }
-
-  .xl\.text-5xl {
-    font-size: var(--font-5xl);
-    line-height: var(--font-5xl-leading);
-  }
-
-  .xl\.text-4xl {
-    font-size: var(--font-4xl);
-    line-height: var(--font-4xl-leading);
-  }
-
-  .xl\.text-3xl {
-    font-size: var(--font-3xl);
-    line-height: var(--font-3xl-leading);
-  }
-
-  .xl\.text-2xl {
-    font-size: var(--font-2xl);
-    line-height: var(--font-2xl-leading);
-  }
-
-  .xl\.text-xl {
-    font-size: var(--font-xl);
-    line-height: var(--font-xl-leading);
-  }
-
-  .xl\.text-lg {
-    font-size: var(--font-lg);
-    line-height: var(--font-lg-leading);
-  }
-
-  .xl\.text-md {
-    font-size: var(--font-md);
-    line-height: var(--font-md-leading);
-  }
-
-  .xl\.text-sm {
-    font-size: var(--font-sm);
-    line-height: var(--font-sm-leading);
+  .xl\.text-2xs {
+    font-size: var(--font-2xs);
+    line-height: var(--font-2xs-leading);
   }
 
   .xl\.text-xs {
@@ -37514,81 +37394,156 @@ select {
     line-height: var(--font-xs-leading);
   }
 
-  .xl\.text-2xs {
-    font-size: var(--font-2xs);
-    line-height: var(--font-2xs-leading);
-  }
-
-  .xl\.font-13xl {
-    font-size: var(--font-13xl);
-  }
-
-  .xl\.font-12xl {
-    font-size: var(--font-12xl);
-  }
-
-  .xl\.font-11xl {
-    font-size: var(--font-11xl);
-  }
-
-  .xl\.font-10xl {
-    font-size: var(--font-10xl);
-  }
-
-  .xl\.font-9xl {
-    font-size: var(--font-9xl);
-  }
-
-  .xl\.font-8xl {
-    font-size: var(--font-8xl);
-  }
-
-  .xl\.font-7xl {
-    font-size: var(--font-7xl);
-  }
-
-  .xl\.font-6xl {
-    font-size: var(--font-6xl);
-  }
-
-  .xl\.font-5xl {
-    font-size: var(--font-5xl);
-  }
-
-  .xl\.font-4xl {
-    font-size: var(--font-4xl);
-  }
-
-  .xl\.font-3xl {
-    font-size: var(--font-3xl);
-  }
-
-  .xl\.font-2xl {
-    font-size: var(--font-2xl);
-  }
-
-  .xl\.font-xl {
-    font-size: var(--font-xl);
-  }
-
-  .xl\.font-lg {
-    font-size: var(--font-lg);
-  }
-
-  .xl\.font-md {
-    font-size: var(--font-md);
-  }
-
-  .xl\.font-sm {
+  .xl\.text-sm {
     font-size: var(--font-sm);
+    line-height: var(--font-sm-leading);
+  }
+
+  .xl\.text-md {
+    font-size: var(--font-md);
+    line-height: var(--font-md-leading);
+  }
+
+  .xl\.text-lg {
+    font-size: var(--font-lg);
+    line-height: var(--font-lg-leading);
+  }
+
+  .xl\.text-xl {
+    font-size: var(--font-xl);
+    line-height: var(--font-xl-leading);
+  }
+
+  .xl\.text-2xl {
+    font-size: var(--font-2xl);
+    line-height: var(--font-2xl-leading);
+  }
+
+  .xl\.text-3xl {
+    font-size: var(--font-3xl);
+    line-height: var(--font-3xl-leading);
+  }
+
+  .xl\.text-4xl {
+    font-size: var(--font-4xl);
+    line-height: var(--font-4xl-leading);
+  }
+
+  .xl\.text-5xl {
+    font-size: var(--font-5xl);
+    line-height: var(--font-5xl-leading);
+  }
+
+  .xl\.text-6xl {
+    font-size: var(--font-6xl);
+    line-height: var(--font-6xl-leading);
+  }
+
+  .xl\.text-7xl {
+    font-size: var(--font-7xl);
+    line-height: var(--font-7xl-leading);
+  }
+
+  .xl\.text-8xl {
+    font-size: var(--font-8xl);
+    line-height: var(--font-8xl-leading);
+  }
+
+  .xl\.text-9xl {
+    font-size: var(--font-9xl);
+    line-height: var(--font-9xl-leading);
+  }
+
+  .xl\.text-10xl {
+    font-size: var(--font-10xl);
+    line-height: var(--font-10xl-leading);
+  }
+
+  .xl\.text-11xl {
+    font-size: var(--font-11xl);
+    line-height: var(--font-11xl-leading);
+  }
+
+  .xl\.text-12xl {
+    font-size: var(--font-12xl);
+    line-height: var(--font-12xl-leading);
+  }
+
+  .xl\.text-13xl {
+    font-size: var(--font-13xl);
+    line-height: var(--font-13xl-leading);
+  }
+
+  .xl\.font-2xs {
+    font-size: var(--font-2xs);
   }
 
   .xl\.font-xs {
     font-size: var(--font-xs);
   }
 
-  .xl\.font-2xs {
-    font-size: var(--font-2xs);
+  .xl\.font-sm {
+    font-size: var(--font-sm);
+  }
+
+  .xl\.font-md {
+    font-size: var(--font-md);
+  }
+
+  .xl\.font-lg {
+    font-size: var(--font-lg);
+  }
+
+  .xl\.font-xl {
+    font-size: var(--font-xl);
+  }
+
+  .xl\.font-2xl {
+    font-size: var(--font-2xl);
+  }
+
+  .xl\.font-3xl {
+    font-size: var(--font-3xl);
+  }
+
+  .xl\.font-4xl {
+    font-size: var(--font-4xl);
+  }
+
+  .xl\.font-5xl {
+    font-size: var(--font-5xl);
+  }
+
+  .xl\.font-6xl {
+    font-size: var(--font-6xl);
+  }
+
+  .xl\.font-7xl {
+    font-size: var(--font-7xl);
+  }
+
+  .xl\.font-8xl {
+    font-size: var(--font-8xl);
+  }
+
+  .xl\.font-9xl {
+    font-size: var(--font-9xl);
+  }
+
+  .xl\.font-10xl {
+    font-size: var(--font-10xl);
+  }
+
+  .xl\.font-11xl {
+    font-size: var(--font-11xl);
+  }
+
+  .xl\.font-12xl {
+    font-size: var(--font-12xl);
+  }
+
+  .xl\.font-13xl {
+    font-size: var(--font-13xl);
   }
 
   .xl\.text-left {
@@ -45902,16 +45857,16 @@ select {
 }
 
 /* 
-========================================================================
+==================================================
 WRAPPER MODULE
-======================================================================== 
+================================================== 
 */
 .markdown {
   font-size: var(--markdown-font-size, var(--font-md));
   line-height: var(--markdown-leading, var(--leading-180));
   color: var(--markdown-color, black);
   /* 
-   ========================================================================
+   ==================================================
    HEADING
 
    --markdown-h1-margin-top
@@ -45937,29 +45892,29 @@ WRAPPER MODULE
    --markdown-h4-size
    --markdown-h4-weight
    --markdown-h4-tracking
-   ======================================================================== 
+   ================================================== 
    */
   /* 
-   ========================================================================
+   ==================================================
    PARAGRAPH
 
    --markdown-p-margin
    --markdown-p-weight
    --markdown-p-size
    --markdown-p-color
-   ======================================================================== 
+   ================================================== 
    */
   /* 
-   ========================================================================
+   ==================================================
    HORIZONTAL RULE
 
    --markdown-hr-width
    --markdown-hr-margin
    --markdown-hr-color
-   ======================================================================== 
+   ================================================== 
    */
   /* 
-   ========================================================================
+   ==================================================
    CODE
 
    --markdown-code-padding
@@ -45968,10 +45923,10 @@ WRAPPER MODULE
    --markdown-code-bg
    --markdown-code-border
    --markdown-code-color
-   ======================================================================== 
+   ================================================== 
    */
   /* 
-   ========================================================================
+   ==================================================
    BLOCKQUOTE
 
    --markdown-blockquote-margin
@@ -45979,33 +45934,33 @@ WRAPPER MODULE
    --markdown-blockquote-bg
    --markdown-blockquote-radius
    --markdown-blockquote-shadow
-   ======================================================================== 
+   ================================================== 
    */
   /* 
-   ========================================================================
+   ==================================================
    TABLE
 
    --markdown-table-margin
    --markdown-table-font-size
    --markdown-table-leading
-   ======================================================================== 
+   ================================================== 
    */
   /* 
-   ========================================================================
+   ==================================================
    LISTS
 
    --markdown-list-margin
    --markdown-list-leading
    --markdown-list-padding
-   ======================================================================== 
+   ================================================== 
    */
   /* 
-   ========================================================================
+   ==================================================
    LINK & EMPHASIS
 
    --markdown-link-color
    --markdown-link-hover-color
-   ======================================================================== 
+   ================================================== 
    */
 }
 .markdown > h1, .markdown > h2, .markdown > h3, .markdown > h4, .markdown > h5, .markdown > h6 {
