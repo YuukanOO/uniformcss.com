@@ -7,7 +7,7 @@ WRAPPER MODULE
 .markdown {
 	font-size: var(--markdown-font-size, var(--font-md));
 	line-height: var(--markdown-leading, var(--leading-180));
-	color: var(--markdown-color, black);
+	color: var(--markdown-color, #686f77);
 
 	/* 
   ==================================================
@@ -162,10 +162,7 @@ WRAPPER MODULE
 			padding: var(--markdown-code-padding, 5px 7px);
 			font-size: var(--markdown-code-font-size, var(--font-sm));
 			border-radius: var(--markdown-code-radius, var(--radius-sm));
-			background: var(
-				--markdown-code-bg,
-				hsla(var(--sky-hue), var(--sky-sat), 50%, var(--opacity-10))
-			);
+			background: var(--markdown-code-bg, hsla(var(--sky-hue), var(--sky-sat), 50%, var(--opacity-10)));
 			border: var(--markdown-code-border, 0);
 			color: var(--markdown-code-color, hsl(var(--sky-hue), var(--sky-sat), 40%));
 			white-space: nowrap;
@@ -188,15 +185,9 @@ WRAPPER MODULE
 	& > blockquote {
 		margin-bottom: var(--markdown-blockquote-margin, 1.5em);
 		padding: var(--markdown-blockquote-padding, var(--size-16) var(--size-24));
-		background: var(
-			--markdown-blockquote-bg,
-			hsl(var(--gray-hue), var(--gray-sat), 50%, var(--opacity-10))
-		);
+		background: var(--markdown-blockquote-bg, hsl(var(--gray-hue), var(--gray-sat), 50%, var(--opacity-10)));
 		border-radius: var(--markdown-blockquote-radius, 0);
-		box-shadow: var(
-			--markdown-blockquote-shadow,
-			inset 4px 0px 0px 0px hsl(var(--gray-hue), var(--gray-sat), var(--tint-600))
-		);
+		box-shadow: var(--markdown-blockquote-shadow, inset 4px 0px 0px 0px hsl(var(--gray-hue), var(--gray-sat), var(--tint-600)));
 
 		&:last-child {
 			margin-bottom: 0;
@@ -219,10 +210,7 @@ WRAPPER MODULE
 		line-height: var(--markdown-table-leading, var(--leading-tight));
 		th,
 		td {
-			border: var(
-				--markdown-table-border,
-				1px solid hsl(var(--gray-hue), var(--gray-sat), var(--tint-700))
-			);
+			border: var(--markdown-table-border, 1px solid hsl(var(--gray-hue), var(--gray-sat), var(--tint-700)));
 		}
 		th {
 			padding: var(--markdown-table-head-padding, 0.5em 0.75em);

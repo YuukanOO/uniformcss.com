@@ -182,11 +182,11 @@
   --black-hue: 0;
   --black-sat: 0%;
   --cool-gray-hue: 220;
-  --cool-gray-sat: 12%;
+  --cool-gray-sat: 10%;
   --gray-hue: 0;
   --gray-sat: 0%;
   --warm-gray-hue: 24;
-  --warm-gray-sat: 12%;
+  --warm-gray-sat: 10%;
   --primary-hue: 220;
   --primary-sat: 75%;
   --secondary-hue: 220;
@@ -206,9 +206,9 @@
   --gradient-y-to-black: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
   --SIZES-------------------------:#14;
   --size-0: 0;
-  --size-n1: -1px;
-  --size-n2: -2px;
-  --size-n3: -3px;
+  --size-n1: -0.0625rem;
+  --size-n2: -0.125rem;
+  --size-n3: -0.1875rem;
   --size-n4: -0.25rem;
   --size-n5: -0.3125rem;
   --size-n6: -0.375rem;
@@ -256,9 +256,9 @@
   --size-n2048: -128rem;
   --size-n2304: -144rem;
   --size-n2560: -160rem;
-  --size-1: 1px;
-  --size-2: 2px;
-  --size-3: 3px;
+  --size-1: 0.0625rem;
+  --size-2: 0.125rem;
+  --size-3: 0.1875rem;
   --size-4: 0.25rem;
   --size-5: 0.3125rem;
   --size-6: 0.375rem;
@@ -45864,7 +45864,7 @@ WRAPPER MODULE
 .markdown {
   font-size: var(--markdown-font-size, var(--font-md));
   line-height: var(--markdown-leading, var(--leading-180));
-  color: var(--markdown-color, black);
+  color: var(--markdown-color, #686f77);
   /* 
    ==================================================
    HEADING
@@ -46376,10 +46376,10 @@ pre[class*=language-] {
   font-size: var(--font-sm);
   font-weight: var(--semibold);
   line-height: var(--leading-250);
-  color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-500), var(--opacity-60));
+  color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), 50%, var(--opacity-100));
 }
 .toc a:hover {
-  color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-500), var(--opacity-90));
+  color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-400), var(--opacity-100));
 }
 .toc > ol ol {
   display: none;
@@ -46431,25 +46431,6 @@ pre[class*=language-] {
   background: var(--slider-hover-color, #000);
 }
 
-.carousel {
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  will-change: transform;
-}
-.carousel__group {
-  display: flex;
-  flex: none;
-}
-
-@keyframes slideshow {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 .markdown h2 {
   margin-top: 0;
   padding-top: 4rem;
@@ -46467,7 +46448,6 @@ pre[class*=language-] {
 }
 .markdown pre {
   border-radius: var(--radius-md);
-  margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
 .markdown pre:last-child {

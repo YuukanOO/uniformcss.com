@@ -30,9 +30,9 @@ The following table visually represents all the colors that are available.
 | { .bg-crimson } | `crimson` | h340 s75 l50 |
 | { .bg-white } | `white` | h0 s0 l100 |
 | { .bg-black } | `black` | h0 s0 l0 |
-| { .bg-cool-gray } | `cool-gray` | h220 s12 l50 |
+| { .bg-cool-gray } | `cool-gray` | h220 s10 l50 |
 | { .bg-gray } | `gray` | h0 s0 l50 |
-| { .bg-warm-gray } | `warm-gray` | h24 s12 l50 |
+| { .bg-warm-gray } | `warm-gray` | h24 s10 l50 |
 | { .bg-primary } | `primary` | h220 s75 l50 |
 | { .bg-secondary } | `secondary` | h220 s50 l50 |
 | { .bg-tertiary } | `tertiary` | h220 s25 l50 |
@@ -112,11 +112,11 @@ Customize hue and saturation of colors by overriding the following CSS custom pr
   --black-sat: 0%;
 
   --cool-gray-hue: 220;
-  --cool-gray-sat: 12%;
+  --cool-gray-sat: 10%;
   --gray-hue: 0;
   --gray-sat: 0%;
   --warm-gray-hue: 24;
-  --warm-gray-sat: 12%;
+  --warm-gray-sat: 10%;
   
   --primary-hue: 220;
   --primary-sat: 75%;

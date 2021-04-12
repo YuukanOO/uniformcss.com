@@ -17,7 +17,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.typography -%}
-                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray hover.color-shade-400 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -28,7 +28,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.color -%}
-                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray hover.color-shade-400 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -39,7 +39,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.radius -%}
-                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray hover.color-shade-400 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -50,7 +50,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.effect -%}
-                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray hover.color-shade-400 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -61,7 +61,7 @@ layout: layouts/base.njk
             </h6>
             <nav class="flex flex-col align-items-start">
               {%- for post in collections.sizing -%}
-                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray color-shade-700 color-opacity-60 hover.color-opacity-90 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
+                <a href="{{ post.url }}" class="text-sm semibold transition-200 transform translate-x-0 {% if post.url == page.url %}flex align-items-center w-100p px-10 bg-cool-gray color-white color-tint-400 ml-n10 radius-sm shadow-xs{% else %} color-cool-gray hover.color-shade-400 hover.translate-x-10{% endif %} leading-250">{{ post.data.title }}</a>
               {%- endfor -%}
             </nav>
           </div>
@@ -72,9 +72,6 @@ layout: layouts/base.njk
       <div class="docsearch-content overflow-auto px-20 md.pr-20 md.px-56 lg.pr-56 py-64 flex-1">
         <h1 class="flex align-items-start relative text-5xl lg.text-7xl xl.text-7xl extrabold color-black tracking-tight mb-16">
           <div class="relative">
-            <span class="absolute top-0 left-0 filter filter-blur-10 opacity-60 bg-text bg-linear color-transparent" style="--gradient: to right, #ff68b5, #ffbe76;">{{ title | safe }}</span>
-            <span class="absolute top-0 left-0 filter filter-blur-30 opacity-70 bg-text bg-linear color-transparent" style="--gradient: to right, #ff68b5, #ffbe76;">{{ title | safe }}</span>
-            <span class="absolute top-0 left-0 color-white" style="text-shadow: 0px 2px #ffffff;">{{ title | safe }}</span>
             <span class="relative z-2 bg-text bg-linear color-transparent" style="--gradient: to right, #ff68b5, #ffbe76;">{{ title | safe }}</span>
           </div>
         </h1>

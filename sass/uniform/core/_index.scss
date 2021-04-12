@@ -217,9 +217,9 @@ $default-config: (
     white: ( hue: 0, sat: 0% ),
     black: ( hue: 0, sat: 0% ),
 
-    cool-gray: ( hue: 220, sat: 12% ),
+    cool-gray: ( hue: 220, sat: 10% ),
     gray: ( hue: 0, sat: 0% ),
-    warm-gray: ( hue: 24, sat: 12% ),
+    warm-gray: ( hue: 24, sat: 10% ),
 
     primary: ( hue: 220, sat: 75% ),
     secondary: ( hue: 220, sat: 50% ),
@@ -263,9 +263,9 @@ $default-config: (
 
   positive-sizes: (
     0: 0,
-    1: 1px,
-    2: 2px,
-    3: 3px,
+    1: rem(1),
+    2: rem(2),
+    3: rem(3),
     4: rem(4),
     5: rem(5),
     6: rem(6),
@@ -317,9 +317,9 @@ $default-config: (
 
   negative-sizes: (
     0: 0,
-    n1: -1px,
-    n2: -2px,
-    n3: -3px,
+    n1: rem(-1),
+    n2: rem(-2),
+    n3: rem(-3),
     n4: rem(-4),
     n5: rem(-5),
     n6: rem(-6),
@@ -1036,7 +1036,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   $result: ();
 
   @if (map.has-key($merged-colors, $key)) {
-    $result: hsla( var(--#{$key}-hue), var(--#{$key}-sat), var(--#{$lightness}), var(--#{$opacity}) );
+    $result: hsla( var(--#{$key}-hue), var(--#{$key}-sat), if($lightness == 50%, 50%, var(--#{$lightness})), var(--#{$opacity}) );
   } @else {
     @error "[#{$key}] does not exist.";
   }
