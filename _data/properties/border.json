@@ -4,7 +4,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {
@@ -50,7 +50,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -96,7 +96,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -142,8 +142,8 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "border-separate",
@@ -273,7 +273,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {
@@ -287,8 +287,8 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "",
@@ -301,7 +301,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -315,8 +315,8 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "border-solid",
@@ -345,7 +345,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {
@@ -359,7 +359,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -373,7 +373,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {
@@ -387,8 +387,8 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "",
@@ -401,7 +401,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -415,7 +415,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {
@@ -429,7 +429,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["last"],
     "utilities": [
       {
@@ -443,7 +443,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
@@ -457,7 +457,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
@@ -471,7 +471,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["first"],
     "utilities": [
       {

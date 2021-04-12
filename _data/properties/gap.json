@@ -4,8 +4,8 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "",
@@ -18,8 +18,8 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "",
@@ -32,8 +32,8 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "",

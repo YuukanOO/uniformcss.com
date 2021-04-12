@@ -4,8 +4,8 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "bg-scroll",
@@ -26,8 +26,8 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "bg-border",
@@ -208,8 +208,8 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "bg-position-lt",
@@ -250,8 +250,8 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "bg-repeat",
@@ -284,8 +284,8 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "bg-auto",
@@ -307,7 +307,7 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": ["--gradient: initial"],
-    "pseudos": [""],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "bg-gradient-x-from-white",
@@ -438,7 +438,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
@@ -492,7 +492,7 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {

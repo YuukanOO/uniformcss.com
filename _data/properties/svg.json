@@ -4,8 +4,8 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "fill-current",
@@ -18,8 +18,8 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "stroke-0",
@@ -72,8 +72,8 @@
     "responsive": false,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "stroke-currentC",

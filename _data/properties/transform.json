@@ -4,8 +4,8 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
-    "pseudos": [""],
+    "customProperties": [],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "transform-center",
@@ -84,7 +84,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -122,7 +122,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -180,7 +180,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -238,7 +238,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -296,7 +296,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -358,7 +358,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -420,7 +420,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
@@ -434,7 +434,7 @@
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
-    "customProperties": [""],
+    "customProperties": [],
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {

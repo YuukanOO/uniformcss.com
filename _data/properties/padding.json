@@ -47,7 +47,7 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
-    "pseudos": [""],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "",
@@ -61,7 +61,7 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
-    "pseudos": [""],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "",
@@ -75,7 +75,7 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
-    "pseudos": [""],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "",

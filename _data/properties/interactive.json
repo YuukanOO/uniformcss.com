@@ -43,7 +43,7 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
-    "pseudos": [""],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "pointer-events-none",
@@ -61,7 +61,7 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
-    "pseudos": [""],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "resize-none",
@@ -87,7 +87,7 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
-    "pseudos": [""],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "scrolling-auto",
@@ -105,7 +105,7 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
-    "pseudos": [""],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "select-none",

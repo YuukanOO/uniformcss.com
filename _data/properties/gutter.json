@@ -10,7 +10,7 @@
       "--gutter-top: 0",
       "--gutter-bottom: 1"
     ],
-    "pseudos": [""],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "gutter-reverse",
@@ -27,7 +27,7 @@
       "--gutter-right: 0",
       "--gutter-left: 1"
     ],
-    "pseudos": [""],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "",
@@ -44,7 +44,7 @@
       "--gutter-top: 1",
       "--gutter-bottom: 0"
     ],
-    "pseudos": [""],
+    "pseudos": ["none"],
     "utilities": [
       {
         "class": "",

@@ -2,51 +2,363 @@
 layout: layouts/base.njk
 ---
 
-{% include "partials/nav.njk" %}
+{% include "partials/nav-docs.njk" %}
 
 <main class="bg-white color-black">
   <div class="wrapper">
-    <div class="grid grid-cols-1 sm.grid-cols-12 gap-72" data-barba="container" data-barba-namespace="get-started">
-      <div class="sm.col-12 lg.col-9 py-64 pt-48 sm.pt-72">
-        {%- for property in properties.alignment -%}
-          <article class="mb-72">
-            <h2 id="{{ property.name | slug }}" class="font-3xl sm.font-7xl extrabold color-white tracking-tight mt-96 first.mt-0 mb-14">
-              {{ property.name }}
-            </h2>
-            {# <div class="markdown font-sm mb-20" style="--markdown-paragraph-color: white;">
-              {{ property.description | markdownify | safe }}
-            </div> #}
-            <div class="relative flex flex-wrap align-items-center gutter-x-10 mb-20">
-              {%- if property.responsive -%}
-                <span class="radius-round my-10 px-12 py-3 bg-green bg-opacity-20 font-xs semibold color-green">
-                  responsive
-                </span>
-                <div>
-                  <div class="w-1 h-32 mx-6 bg-cool-gray bg-shade-600"></div>
-                </div>
-              {%- endif -%}
-              {%- for pseudo in property.pseudos -%}      
-                <span class="radius-round my-10 px-12 py-3 bg-cool-gray bg-opacity-30 font-xs semibold color-cool-gray color-tint-400">
-                  {{ pseudo }}
-                </span>
+  
+    <div class="flex">
+      <aside class="hidden md.block w-256 flex-none">
+        <div class="top-48 sticky h-100vh overflow-auto px-20 py-64">
+          
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Alignment
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.alignment -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
               {%- endfor -%}
-            </div>
-            <div class="markdown" style="--markdown-table-border: 1px solid hsl(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-700));">
-              <table class="table-auto w-100p text-left mb-56 font-xs color-white">
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Animation
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.animation -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Appearance
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.appearance -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Background
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.background -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Border
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.border -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Composition
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.composition -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Effect
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.effect -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Flexbox
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.flexbox -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Gap
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.gap -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Grid
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.grid -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Gutter
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.gutter -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Interactive
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.interactive -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Margin
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.margin -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Padding
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.padding -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Placeholder
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.placeholder -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Position
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.position -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Scroll
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.scroll -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Sizing
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.sizing -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Split
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.split -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              SVG
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.svg -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Transform
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.transform -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Transition
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.transition -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+          <div class="mb-40 last.mb-0 pb-40 border-b-1 last.border-b-0 border-gray border-opacity-40">
+            <h6 class="text-md extrabold mb-18 color-cool-gray color-tint-600">
+              Typography
+            </h6>
+            <nav class="flex flex-col align-items-start">
+              {%- for property in properties.typography -%}
+                <a href="#{{ property.name | slug }}" class="text-sm semibold transition-200 transform translate-x-0 color-cool-gray hover.color-shade-400 hover.translate-x-10 leading-250">
+                  {{ property.name }}
+                </a>
+              {%- endfor -%}
+            </nav>
+          </div>
+
+        </div>
+      </aside>
+
+      <div class="docsearch-content overflow-auto px-20 md.pl-56 py-64 flex-1">
+        <h1 class="flex align-items-start relative text-5xl lg.text-7xl xl.text-7xl extrabold color-black tracking-tight mb-16">
+          <div class="relative">
+            <span class="relative z-2 bg-text bg-linear color-transparent" style="--gradient: to right, #ff68b5, #ffbe76;">{{ title | safe }}</span>
+          </div>
+        </h1>
+        <p class="text-lg sm.text-xl regular color-cool-gray color-shade-200">
+          {{ description | safe }}
+        </p>
+
+        {%- for propertyKey, propertyValue in properties -%}
+          {%- for key in propertyValue -%}
+            <article class="markdown">
+              <h2 id="{{ key.name | slug }}" class="flex align-items-center">
+                {{ key.name }}
+                {%- if key.responsive -%}
+                  <span class="flex align-items-center h-28 radius-sm ml-10 px-10 bg-teal bg-tint-600 color-teal color-shade-400 text-sm bold">
+                    Responsive
+                  </span>
+                {%- endif -%}
+              </h2>
+              <div class="relative flex flex-wrap align-items-center gutter-x-10 mb-20">
+                <span class="text-sm bold">
+                  Pseudos
+                </span>
+                {%- for pseudo in key.pseudos -%}      
+                  <span class="flex align-items-center h-28 radius-sm px-10 bg-cool-gray bg-tint-800 color-cool-gray text-xs bold">
+                    {{ pseudo }}
+                  </span>
+                {%- endfor -%}
+              </div>
+              <table class="text-left">
                 <thead>
                   <tr>
-                    <th class="px-12 py-12 bold">Class Name</th>
-                    <th class="px-12 py-12 bold">Property</th>
+                    <th>Class Name</th>
+                    <th>Property</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {%- for utility in property.utilities -%}
+                  {%- for utility in key.utilities -%}
                     <tr>
                       <td class="border-b-1 border-cool-gray border-shade-800 py-8 color-teal align-top">
-                        <code class="whitespace-nowrap"><span class="select-all">{{utility.class}}</span> <span class="opacity-30">{{ property.extraSelector }}</span></code>
+                        <code class="whitespace-nowrap"><span class="select-all">{{utility.class}}</span> <span class="opacity-30">{{ key.extraSelector }}</span></code>
                       </td>
-                      <td class="border-b-1 border-cool-gray border-shade-800 py-8 color-cool-gray color-tint-300">
-                        {%- for item in property.customProperties -%}
+                      <td class="border-b-1 border-cool-gray border-shade-800 py-8 color-cool-gray color-tint-300" style="    --markdown-code-padding: 0; --markdown-code-bg: #ffffff; --markdown-code-color: #6f6f6f;">
+                        {%- for item in key.customProperties -%}
                           <code class="opacity-70">{{ item }}</code><br>
                         {%- endfor -%}
                         {%- for item in utility.properties -%}
@@ -57,30 +369,10 @@ layout: layouts/base.njk
                   {%- endfor -%}
                 </tbody>
               </table>
-            </div>
-
-          </article>
+              
+            </article>
+          {%- endfor -%}
         {%- endfor -%}
-
-        
-
-        <div class="color-white" style="--markdown-heading-color: white; --markdown-paragraph-color: white;">
-          {{ content | safe }}
-        </div>
-      </div>
-      <div class="relative hidden lg.block lg.col-3">
-        <div class="sticky flex justify-content-end py-64 pt-72 top-56 h-100vh overflow-auto">
-          <div class="w-100p">
-            
-            <div class="pb-64">
-              <h6 class="font-sm bold mb-18 color-white">
-                On this page
-              </h6>
-              {{ content | toc | safe }}
-            </div>
-            
-          </div>
-        </div>
       </div>
     </div>
   </div>

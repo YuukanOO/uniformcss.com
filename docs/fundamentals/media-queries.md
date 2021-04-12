@@ -18,9 +18,11 @@ Uniform uses a mobile-first CSS approach to allow for styles to be applied on mo
 
 ```html
 <div class="h-10 sm.h-14 md.h-20 lg.h-24 xl.h-64">
-  10px height on mobile 14px height on small screen sizes 20px height on medium
-  screen sizes 24px height on large screen sizes 64px height on extra large
-  screen sizes
+  10px height on mobile 
+  14px height on small screen sizes 
+  20px height on medium screen sizes 
+  24px height on large screen sizes 
+  64px height on extra large screen sizes
 </div>
 ```
 
