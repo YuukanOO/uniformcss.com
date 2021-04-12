@@ -344,31 +344,33 @@ layout: layouts/base.njk
                   </span>
                 {%- endfor -%}
               </div>
-              <table class="text-left">
-                <thead>
-                  <tr>
-                    <th>Class Name</th>
-                    <th>Property</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {%- for utility in key.utilities -%}
+              <div class="markdown overflow-x-auto overflow-y-hidden">
+                <table class="text-left">
+                  <thead>
                     <tr>
-                      <td class="border-b-1 border-cool-gray border-shade-800 py-8 color-teal align-top">
-                        <code class="whitespace-nowrap"><span class="select-all">{{utility.class}}</span> <span class="opacity-30">{{ key.extraSelector }}</span></code>
-                      </td>
-                      <td class="border-b-1 border-cool-gray border-shade-800 py-8 color-cool-gray color-tint-300" style="    --markdown-code-padding: 0; --markdown-code-bg: #ffffff; --markdown-code-color: #6f6f6f;">
-                        {%- for item in key.customProperties -%}
-                          <code class="opacity-70">{{ item }}</code><br>
-                        {%- endfor -%}
-                        {%- for item in utility.properties -%}
-                          <code>{{ item }}</code>
-                        {%- endfor -%}
-                      </td>
+                      <th>Class Name</th>
+                      <th>Property</th>
                     </tr>
-                  {%- endfor -%}
-                </tbody>
-              </table>
+                  </thead>
+                  <tbody>
+                    {%- for utility in key.utilities -%}
+                      <tr>
+                        <td class="border-b-1 border-cool-gray border-shade-800 py-8 color-teal align-top">
+                          <code class="whitespace-nowrap"><span class="select-all">{{utility.class}}</span> <span class="opacity-30">{{ key.extraSelector }}</span></code>
+                        </td>
+                        <td class="border-b-1 border-cool-gray border-shade-800 py-8 color-cool-gray color-tint-300" style="    --markdown-code-padding: 0; --markdown-code-bg: #ffffff; --markdown-code-color: #6f6f6f;">
+                          {%- for item in key.customProperties -%}
+                            <code class="opacity-70">{{ item }}</code><br>
+                          {%- endfor -%}
+                          {%- for item in utility.properties -%}
+                            <code>{{ item }}</code>
+                          {%- endfor -%}
+                        </td>
+                      </tr>
+                    {%- endfor -%}
+                  </tbody>
+                </table>
+              </div>
               
             </article>
           {%- endfor -%}
