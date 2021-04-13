@@ -12,14 +12,11 @@ $custom-properties: ();
 
 $variants: (
 	core.merge(
-    core.shadows(),
-    (
-      none: none,
-    )
+    core.shadows()
 	)
 );
 
-$pseudos: (hover, active, focus);
+$pseudos: (hover, focus);
 
 $config: (
   utility: (

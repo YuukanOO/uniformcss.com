@@ -133,7 +133,7 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
-    "pseudos": ["hover", "active", "dark"],
+    "pseudos": ["hover", "dark"],
     "utilities": [
       {
         "class": "opacity-0",

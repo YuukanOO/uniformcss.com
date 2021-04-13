@@ -13,8 +13,8 @@
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
-        "class": "backdrop-",
-        "properties": ["display"]
+        "class": "backdrop",
+        "properties": ["blur(var(--backdrop-blur)) grayscale(var(--backdrop-grayscale)) saturate(var(--backdrop-saturate)) invert(var(--backdrop-invert))"]
       }
     ]
   },
@@ -24,11 +24,55 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
-    "pseudos": ["hover", "active", "focus"],
+    "pseudos": ["hover", "focus"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "shadow-none",
+        "properties": ["box-shadow: 0;"]
+      },
+      {
+        "class": "shadow-2xs",
+        "properties": ["box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);"]
+      },
+      {
+        "class": "shadow-xs",
+        "properties": ["box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.2);"]
+      },
+      {
+        "class": "shadow-sm",
+        "properties": ["box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);"]
+      },
+      {
+        "class": "shadow-md",
+        "properties": ["box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);"]
+      },
+      {
+        "class": "shadow-lg",
+        "properties": ["box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);"]
+      },
+      {
+        "class": "shadow-xl",
+        "properties": ["box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 15px 10px rgba(0, 0, 0, 0.2);"]
+      },
+      {
+        "class": "shadow-2xl",
+        "properties": ["box-shadow: 0 25px 45px rgba(0, 0, 0, 0.3), 0 20px 20px rgba(0, 0, 0, 0.3);"]
+      },
+      {
+        "class": "shadow-focus",
+        "properties": ["box-shadow: 0 0 0 4px hsla(220, 75%, 50%, 20%);"]
+      },
+      {
+        "class": "shadow-success",
+        "properties": ["box-shadow: 0 0 0 4px hsla(80, 75%, 50%, 20%);"]
+      },
+      {
+        "class": "shadow-warning",
+        "properties": ["box-shadow: 0 0 0 4px hsla(40, 75%, 50%, 20%);"]
+      },
+      {
+        "class": "shadow-danger",
+        "properties": ["box-shadow: 0 0 0 4px hsla(0, 75%, 50%, 20%);"]
       }
     ]
   },
@@ -38,7 +82,7 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [
-      "  --filter-blur: 0",
+      "--filter-blur: 0",
       "--filter-grayscale: 0",
       "--filter-saturate: 1",
       "--filter-invert: 0,"
@@ -46,8 +90,8 @@
     "pseudos": ["hover", "group-hover"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "filter",
+        "properties": ["filter: blur(var(--filter-blur)) grayscale(var(--filter-grayscale)) saturate(var(--filter-saturate)) invert(var(--filter-invert));"]
       }
     ]
   },

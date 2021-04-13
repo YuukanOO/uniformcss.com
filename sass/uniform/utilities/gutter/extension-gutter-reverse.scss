@@ -9,10 +9,10 @@ $extra-selector: '> * + *';
 
 $properties: (margin);
 $custom-properties: (
-  --gutter-right: 1,
-  --gutter-left: 0,
   --gutter-top: 0,
+  --gutter-right: 1,
   --gutter-bottom: 1,
+  --gutter-left: 0,
 );
 
 $variants: (

@@ -5,10 +5,10 @@
     "responsive-pseudos": false,
     "extraSelector": "> * + *",
     "customProperties": [
-      "--gutter-right: 1",
-      "--gutter-left: 0",
       "--gutter-top: 0",
-      "--gutter-bottom: 1"
+      "--gutter-right: 1",
+      "--gutter-bottom: 1",
+      "--gutter-left: 0"      
     ],
     "pseudos": ["none"],
     "utilities": [
@@ -30,8 +30,120 @@
     "pseudos": ["none"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "gutter-x-0",
+        "properties": ["margin: 0 calc(var(--size-0) * var(--gutter-right)) 0 calc(var(--size-0) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-1",
+        "properties": ["margin: 0 calc(var(--size-1) * var(--gutter-right)) 0 calc(var(--size-1) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-2",
+        "properties": ["margin: 0 calc(var(--size-2) * var(--gutter-right)) 0 calc(var(--size-2) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-3",
+        "properties": ["margin: 0 calc(var(--size-3) * var(--gutter-right)) 0 calc(var(--size-3) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-4",
+        "properties": ["margin: 0 calc(var(--size-4) * var(--gutter-right)) 0 calc(var(--size-4) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-5",
+        "properties": ["margin: 0 calc(var(--size-5) * var(--gutter-right)) 0 calc(var(--size-5) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-6",
+        "properties": ["margin: 0 calc(var(--size-6) * var(--gutter-right)) 0 calc(var(--size-6) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-7",
+        "properties": ["margin: 0 calc(var(--size-7) * var(--gutter-right)) 0 calc(var(--size-7) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-8",
+        "properties": ["margin: 0 calc(var(--size-8) * var(--gutter-right)) 0 calc(var(--size-8) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-9",
+        "properties": ["margin: 0 calc(var(--size-9) * var(--gutter-right)) 0 calc(var(--size-9) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-10",
+        "properties": ["margin: 0 calc(var(--size-10) * var(--gutter-right)) 0 calc(var(--size-10) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-12",
+        "properties": ["margin: 0 calc(var(--size-12) * var(--gutter-right)) 0 calc(var(--size-12) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-14",
+        "properties": ["margin: 0 calc(var(--size-14) * var(--gutter-right)) 0 calc(var(--size-14) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-16",
+        "properties": ["margin: 0 calc(var(--size-16) * var(--gutter-right)) 0 calc(var(--size-16) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-18",
+        "properties": ["margin: 0 calc(var(--size-18) * var(--gutter-right)) 0 calc(var(--size-18) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-20",
+        "properties": ["margin: 0 calc(var(--size-20) * var(--gutter-right)) 0 calc(var(--size-20) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-24",
+        "properties": ["margin: 0 calc(var(--size-24) * var(--gutter-right)) 0 calc(var(--size-24) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-28",
+        "properties": ["margin: 0 calc(var(--size-28) * var(--gutter-right)) 0 calc(var(--size-28) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-32",
+        "properties": ["margin: 0 calc(var(--size-32) * var(--gutter-right)) 0 calc(var(--size-32) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-36",
+        "properties": ["margin: 0 calc(var(--size-36) * var(--gutter-right)) 0 calc(var(--size-36) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-40",
+        "properties": ["margin: 0 calc(var(--size-40) * var(--gutter-right)) 0 calc(var(--size-40) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-48",
+        "properties": ["margin: 0 calc(var(--size-48) * var(--gutter-right)) 0 calc(var(--size-48) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-56",
+        "properties": ["margin: 0 calc(var(--size-56) * var(--gutter-right)) 0 calc(var(--size-56) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-64",
+        "properties": ["margin: 0 calc(var(--size-64) * var(--gutter-right)) 0 calc(var(--size-64) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-72",
+        "properties": ["margin: 0 calc(var(--size-72) * var(--gutter-right)) 0 calc(var(--size-72) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-80",
+        "properties": ["margin: 0 calc(var(--size-80) * var(--gutter-right)) 0 calc(var(--size-80) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-96",
+        "properties": ["margin: 0 calc(var(--size-96) * var(--gutter-right)) 0 calc(var(--size-96) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-112",
+        "properties": ["margin: 0 calc(var(--size-112) * var(--gutter-right)) 0 calc(var(--size-112) * var(--gutter-left));"]
+      },
+      {
+        "class": "gutter-x-128",
+        "properties": ["margin: 0 calc(var(--size-128) * var(--gutter-right)) 0 calc(var(--size-128) * var(--gutter-left));"]
       }
     ]
   },
@@ -47,8 +159,120 @@
     "pseudos": ["none"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "gutter-y-0",
+        "properties": ["margin: calc(var(--size-0) * var(--gutter-right)) 0 calc(var(--size-0) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-1",
+        "properties": ["margin: calc(var(--size-1) * var(--gutter-right)) 0 calc(var(--size-1) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-2",
+        "properties": ["margin: calc(var(--size-2) * var(--gutter-right)) 0 calc(var(--size-2) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-3",
+        "properties": ["margin: calc(var(--size-3) * var(--gutter-right)) 0 calc(var(--size-3) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-4",
+        "properties": ["margin: calc(var(--size-4) * var(--gutter-right)) 0 calc(var(--size-4) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-5",
+        "properties": ["margin: calc(var(--size-5) * var(--gutter-right)) 0 calc(var(--size-5) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-6",
+        "properties": ["margin: calc(var(--size-6) * var(--gutter-right)) 0 calc(var(--size-6) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-7",
+        "properties": ["margin: calc(var(--size-7) * var(--gutter-right)) 0 calc(var(--size-7) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-8",
+        "properties": ["margin: calc(var(--size-8) * var(--gutter-right)) 0 calc(var(--size-8) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-9",
+        "properties": ["margin: calc(var(--size-9) * var(--gutter-right)) 0 calc(var(--size-9) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-10",
+        "properties": ["margin: calc(var(--size-10) * var(--gutter-right)) 0 calc(var(--size-10) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-12",
+        "properties": ["margin: calc(var(--size-12) * var(--gutter-right)) 0 calc(var(--size-12) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-14",
+        "properties": ["margin: calc(var(--size-14) * var(--gutter-right)) 0 calc(var(--size-14) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-16",
+        "properties": ["margin: calc(var(--size-16) * var(--gutter-right)) 0 calc(var(--size-16) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-18",
+        "properties": ["margin: calc(var(--size-18) * var(--gutter-right)) 0 calc(var(--size-18) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-20",
+        "properties": ["margin: calc(var(--size-20) * var(--gutter-right)) 0 calc(var(--size-20) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-24",
+        "properties": ["margin: calc(var(--size-24) * var(--gutter-right)) 0 calc(var(--size-24) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-28",
+        "properties": ["margin: calc(var(--size-28) * var(--gutter-right)) 0 calc(var(--size-28) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-32",
+        "properties": ["margin: calc(var(--size-32) * var(--gutter-right)) 0 calc(var(--size-32) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-36",
+        "properties": ["margin: calc(var(--size-36) * var(--gutter-right)) 0 calc(var(--size-36) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-40",
+        "properties": ["margin: calc(var(--size-40) * var(--gutter-right)) 0 calc(var(--size-40) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-48",
+        "properties": ["margin: calc(var(--size-48) * var(--gutter-right)) 0 calc(var(--size-48) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-56",
+        "properties": ["margin: calc(var(--size-56) * var(--gutter-right)) 0 calc(var(--size-56) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-64",
+        "properties": ["margin: calc(var(--size-64) * var(--gutter-right)) 0 calc(var(--size-64) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-72",
+        "properties": ["margin: calc(var(--size-72) * var(--gutter-right)) 0 calc(var(--size-72) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-80",
+        "properties": ["margin: calc(var(--size-80) * var(--gutter-right)) 0 calc(var(--size-80) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-96",
+        "properties": ["margin: calc(var(--size-96) * var(--gutter-right)) 0 calc(var(--size-96) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-112",
+        "properties": ["margin: calc(var(--size-112) * var(--gutter-right)) 0 calc(var(--size-112) * var(--gutter-left)) 0"]
+      },
+      {
+        "class": "gutter-y-128",
+        "properties": ["margin: calc(var(--size-128) * var(--gutter-right)) 0 calc(var(--size-128) * var(--gutter-left)) 0"]
       }
     ]
   }
