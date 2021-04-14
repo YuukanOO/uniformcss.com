@@ -196,11 +196,24 @@
 @use "utilities/sizing/core-max-height";
 @use "utilities/sizing/core-max-width";
 
+// UTILITIES - PLACEHOLDER (4)
+@use "utilities/placeholder/extension-placeholder-tint";
+@use "utilities/placeholder/extension-placeholder-shade";
+@use "utilities/placeholder/extension-placeholder-opacity";
+@use "utilities/placeholder/core-placeholder-color";
+
+// UTILITIES - APPEARANCE (6)
+@use "utilities/appearance/core-display";
+@use "utilities/appearance/core-opacity";
+@use "utilities/appearance/core-outline";
+@use "utilities/appearance/core-visibility";
+@use "utilities/appearance/core-appearance";
+@use "utilities/appearance/core-font-smooth";
+
 // UTILITIES - TYPOGRAPHY (19)
 @use "utilities/typography/extension-color-tint";
 @use "utilities/typography/extension-color-shade";
 @use "utilities/typography/extension-color-opacity";
-@use "utilities/typography/core-color";
 @use "utilities/typography/core-letter-spacing";
 @use "utilities/typography/core-line-height";
 @use "utilities/typography/core-list-style-position";
@@ -216,20 +229,7 @@
 @use "utilities/typography/core-font-weight";
 @use "utilities/typography/core-font-size";
 @use "utilities/typography/extension-text-size";
-
-// UTILITIES - PLACEHOLDER (4)
-@use "utilities/placeholder/extension-placeholder-tint";
-@use "utilities/placeholder/extension-placeholder-shade";
-@use "utilities/placeholder/extension-placeholder-opacity";
-@use "utilities/placeholder/core-placeholder-color";
-
-// UTILITIES - APPEARANCE (6)
-@use "utilities/appearance/core-display";
-@use "utilities/appearance/core-opacity";
-@use "utilities/appearance/core-outline";
-@use "utilities/appearance/core-visibility";
-@use "utilities/appearance/core-appearance";
-@use "utilities/appearance/core-font-smooth";
+@use "utilities/typography/core-color";
 
 // CONSTRUCTOR
 $config: map.deep-merge(core.$all-config, core.$config);
