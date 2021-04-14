@@ -137,59 +137,63 @@
     "utilities": [
       {
         "class": "opacity-0",
-        "properties": ["opacity: 0;"]
+        "properties": ["opacity: var(--opacity-0);"]
       },
       {
         "class": "opacity-2",
-        "properties": ["opacity: 0.02;"]
+        "properties": ["opacity: var(--opacity-2);"]
       },
       {
         "class": "opacity-4",
-        "properties": ["opacity: 0.04;"]
+        "properties": ["opacity: var(--opacity-4);"]
       },
       {
         "class": "opacity-6",
-        "properties": ["opacity: 0.06;"]
+        "properties": ["opacity: var(--opacity-6);"]
       },
       {
         "class": "opacity-8",
-        "properties": ["opacity: 0.08;"]
+        "properties": ["opacity: var(--opacity-8);"]
       },
       {
         "class": "opacity-10",
-        "properties": ["opacity: 0.1;"]
+        "properties": ["opacity: var(--opacity-10);"]
       },
       {
         "class": "opacity-20",
-        "properties": ["opacity: 0.2;"]
+        "properties": ["opacity: var(--opacity-20);"]
       },
       {
         "class": "opacity-30",
-        "properties": ["opacity: 0.3;"]
+        "properties": ["opacity: var(--opacity-30);"]
       },
       {
         "class": "opacity-40",
-        "properties": ["opacity: 0.4;"]
+        "properties": ["opacity: var(--opacity-40);"]
       },
       {
         "class": "opacity-50",
-        "properties": ["opacity: 0.5;"]
+        "properties": ["opacity: var(--opacity-50);"]
       },
       {
         "class": "opacity-60",
-        "properties": ["opacity: 0.6;"]
+        "properties": ["opacity: var(--opacity-60);"]
+      },
+      {
+        "class": "opacity-70",
+        "properties": ["opacity: var(--opacity-70);"]
       },
       {
         "class": "opacity-80",
-        "properties": ["opacity: 0.8;"]
+        "properties": ["opacity: var(--opacity-80);"]
       },
       {
         "class": "opacity-90",
-        "properties": ["opacity: 0.9;"]
+        "properties": ["opacity: var(--opacity-90);"]
       },
       {
         "class": "opacity-100",
-        "properties": ["opacity: 1;"]
+        "properties": ["opacity: var(--opacity-100);"]
       }
     ]
   },

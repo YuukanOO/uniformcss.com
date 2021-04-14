@@ -74,9 +74,9 @@
   --font-8xl-leading: var(--leading-120);
   --font-9xl-leading: var(--leading-120);
   --font-10xl-leading: var(--leading-120);
-  --font-11xl-leading: 1;
-  --font-12xl-leading: 1;
-  --font-13xl-leading: 1;
+  --font-11xl-leading: var(--leading-100);
+  --font-12xl-leading: var(--leading-100);
+  --font-13xl-leading: var(--leading-100);
   --RADIUS------------------------:#07;
   --radius-none: 0;
   --radius-2xs: 0.1875rem;

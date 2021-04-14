@@ -22,8 +22,64 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "split-opacity-0",
+        "properties": ["--split-opacity: var(--opacity-0);"]
+      },
+      {
+        "class": "split-opacity-2",
+        "properties": ["--split-opacity: var(--opacity-2);"]
+      },
+      {
+        "class": "split-opacity-4",
+        "properties": ["--split-opacity: var(--opacity-4);"]
+      },
+      {
+        "class": "split-opacity-6",
+        "properties": ["--split-opacity: var(--opacity-6);"]
+      },
+      {
+        "class": "split-opacity-8",
+        "properties": ["--split-opacity: var(--opacity-8);"]
+      },
+      {
+        "class": "split-opacity-10",
+        "properties": ["--split-opacity: var(--opacity-10);"]
+      },
+      {
+        "class": "split-opacity-20",
+        "properties": ["--split-opacity: var(--opacity-20);"]
+      },
+      {
+        "class": "split-opacity-30",
+        "properties": ["--split-opacity: var(--opacity-30);"]
+      },
+      {
+        "class": "split-opacity-40",
+        "properties": ["--split-opacity: var(--opacity-40);"]
+      },
+      {
+        "class": "split-opacity-50",
+        "properties": ["--split-opacity: var(--opacity-50);"]
+      },
+      {
+        "class": "split-opacity-60",
+        "properties": ["--split-opacity: var(--opacity-60);"]
+      },
+      {
+        "class": "split-opacity-70",
+        "properties": ["--split-opacity: var(--opacity-70);"]
+      },
+      {
+        "class": "split-opacity-80",
+        "properties": ["--split-opacity: var(--opacity-80);"]
+      },
+      {
+        "class": "split-opacity-90",
+        "properties": ["--split-opacity: var(--opacity-90);"]
+      },
+      {
+        "class": "split-opacity-100",
+        "properties": ["--split-opacity: var(--opacity-100);"]
       }
     ]
   },
@@ -55,8 +111,48 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "split-shade-base",
+        "properties": ["--split-ltn: var(--shade-base);"]
+      },
+      {
+        "class": "split-shade-100",
+        "properties": ["--split-ltn: var(--shade-100);"]
+      },
+      {
+        "class": "split-shade-200",
+        "properties": ["--split-ltn: var(--shade-200);"]
+      },
+      {
+        "class": "split-shade-300",
+        "properties": ["--split-ltn: var(--shade-300);"]
+      },
+      {
+        "class": "split-shade-400",
+        "properties": ["--split-ltn: var(--shade-400);"]
+      },
+      {
+        "class": "split-shade-500",
+        "properties": ["--split-ltn: var(--shade-500);"]
+      },
+      {
+        "class": "split-shade-600",
+        "properties": ["--split-ltn: var(--shade-600);"]
+      },
+      {
+        "class": "split-shade-700",
+        "properties": ["--split-ltn: var(--shade-700);"]
+      },
+      {
+        "class": "split-shade-800",
+        "properties": ["--split-ltn: var(--shade-800);"]
+      },
+      {
+        "class": "split-shade-900",
+        "properties": ["--split-ltn: var(--shade-900);"]
+      },
+      {
+        "class": "split-shade-full",
+        "properties": ["--split-ltn: var(--shade-full);"]
       }
     ]
   },
@@ -99,8 +195,48 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "split-tint-base",
+        "properties": ["--split-ltn: var(--tint-base);"]
+      },
+      {
+        "class": "split-tint-100",
+        "properties": ["--split-ltn: var(--tint-100);"]
+      },
+      {
+        "class": "split-tint-200",
+        "properties": ["--split-ltn: var(--tint-200);"]
+      },
+      {
+        "class": "split-tint-300",
+        "properties": ["--split-ltn: var(--tint-300);"]
+      },
+      {
+        "class": "split-tint-400",
+        "properties": ["--split-ltn: var(--tint-400);"]
+      },
+      {
+        "class": "split-tint-500",
+        "properties": ["--split-ltn: var(--tint-500);"]
+      },
+      {
+        "class": "split-tint-600",
+        "properties": ["--split-ltn: var(--tint-600);"]
+      },
+      {
+        "class": "split-tint-700",
+        "properties": ["--split-ltn: var(--tint-700);"]
+      },
+      {
+        "class": "split-tint-800",
+        "properties": ["--split-ltn: var(--tint-800);"]
+      },
+      {
+        "class": "split-tint-900",
+        "properties": ["--split-ltn: var(--tint-900);"]
+      },
+      {
+        "class": "split-tint-full",
+        "properties": ["--split-ltn: var(--tint-full);"]
       }
     ]
   },

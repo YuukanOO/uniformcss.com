@@ -8,8 +8,150 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "color-red",
+        "properties": [
+          "color: hsla(var(--red-hue), var(--red-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-orange",
+        "properties": [
+          "color: hsla(var(--orange-hue), var(--orange-sat), 100%, var(--color-opacity;))"
+        ]
+      },
+      {
+        "class": "color-yellow",
+        "properties": [
+          "color: hsla(var(--yellow-hue), var(--yellow-sat), 100%, var(--color-opacity;))"
+        ]
+      },
+      {
+        "class": "color-lemon",
+        "properties": [
+          "color: hsla(var(--lemon-hue), var(--lemon-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-olive",
+        "properties": [
+          "color: hsla(var(--olive-hue), var(--olive-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-lime",
+        "properties": [
+          "color: hsla(var(--lime-hue), var(--lime-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-green",
+        "properties": [
+          "color: hsla(var(--green-hue), var(--green-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-mint",
+        "properties": [
+          "color: hsla(var(--mint-hue), var(--mint-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-teal",
+        "properties": [
+          "color: hsla(var(--teal-hue), var(--teal-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-cyan",
+        "properties": [
+          "color: hsla(var(--cyan-hue), var(--cyan-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-sky",
+        "properties": [
+          "color: hsla(var(--sky-hue), var(--sky-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-blue",
+        "properties": [
+          "color: hsla(var(--blue-hue), var(--blue-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-indigo",
+        "properties": [
+          "color: hsla(var(--indigo-hue), var(--indigo-sat), 100%, var(--color-opacity);"
+        ]
+      },
+      {
+        "class": "color-purple",
+        "properties": [
+          "color: hsla(var(--purple-hue), var(--purple-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-orchid",
+        "properties": [
+          "color: hsla(var(--orchid-hue), var(--orchid-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-magenta",
+        "properties": [
+          "color: hsla(var(--magenta-hue), var(--magenta-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-pink",
+        "properties": [
+          "color: hsla(var(--pink-hue), var(--pink-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-crimson",
+        "properties": [
+          "color: hsla(var(--crimson-hue), var(--crimson-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-white",
+        "properties": [
+          "color: hsla(var(--white-hue), var(--white-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-black",
+        "properties": [
+          "color: hsla(var(--black-hue), var(--black-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-cool-gray",
+        "properties": [
+          "color: hsla(var(--cool-gray-hue), var(--cool-gray-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-gray",
+        "properties": [
+          "color: hsla(var(--gray-hue), var(--gray-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-warm-gray",
+        "properties": [
+          "color: hsla(var(--warm-gray-hue), var(--warm-gray-sat), 100%, var(--color-opacity));"
+        ]
+      },
+      {
+        "class": "color-transparent",
+        "properties": ["color: transparent;"]
+      },
+      {
+        "class": "color-current",
+        "properties": ["color: current;"]
       }
     ]
   },
@@ -22,8 +164,152 @@
     "pseudos": ["none"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "font-sans",
+        "properties": ["font-family: sans-serif;"]
+      },
+      {
+        "class": "font-serif",
+        "properties": ["font-family: serif;"]
+      },
+      {
+        "class": "font-mono",
+        "properties": ["font-family: monospace;"]
+      }
+    ]
+  },
+  {
+    "name": "text-size",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": ["none"],
+    "utilities": [
+      {
+        "class": "text-2xs",
+        "properties": [
+          "font-size: var(--font-2xs);",
+          "line-height: var(--leading-100);"
+        ]
+      },
+      {
+        "class": "text-xs",
+        "properties": [
+          "font-size: var(--font-xs);",
+          "line-height: var(--leading-180);"
+        ]
+      },
+      {
+        "class": "text-sm",
+        "properties": [
+          "font-size: var(--font-sm);",
+          "line-height: var(--leading-180);"
+        ]
+      },
+      {
+        "class": "text-md",
+        "properties": [
+          "font-size: var(--font-md);",
+          "line-height: var(--leading-180);"
+        ]
+      },
+      {
+        "class": "text-lg",
+        "properties": [
+          "font-size: var(--font-lg);",
+          "line-height: var(--leading-180);"
+        ]
+      },
+      {
+        "class": "text-xl",
+        "properties": [
+          "font-size: var(--font-xl);",
+          "line-height: var(--leading-140);"
+        ]
+      },
+      {
+        "class": "text-2xl",
+        "properties": [
+          "font-size: var(--font-2xl);",
+          "line-height: var(--leading-140);"
+        ]
+      },
+      {
+        "class": "text-3xl",
+        "properties": [
+          "font-size: var(--font-3xl);",
+          "line-height: var(--leading-140);"
+        ]
+      },
+      {
+        "class": "text-4xl",
+        "properties": [
+          "font-size: var(--font-4xl);",
+          "line-height: var(--leading-140);"
+        ]
+      },
+      {
+        "class": "text-5xl",
+        "properties": [
+          "font-size: var(--font-5xl);",
+          "line-height: var(--leading-140);"
+        ]
+      },
+      {
+        "class": "text-6xl",
+        "properties": [
+          "font-size: var(--font-6xl);",
+          "line-height: var(--leading-120);"
+        ]
+      },
+      {
+        "class": "text-7xl",
+        "properties": [
+          "font-size: var(--font-7xl);",
+          "line-height: var(--leading-120);"
+        ]
+      },
+      {
+        "class": "text-8xl",
+        "properties": [
+          "font-size: var(--font-8xl);",
+          "line-height: var(--leading-120);"
+        ]
+      },
+      {
+        "class": "text-9xl",
+        "properties": [
+          "font-size: var(--font-9xl);",
+          "line-height: var(--leading-120);"
+        ]
+      },
+      {
+        "class": "text-10xl",
+        "properties": [
+          "font-size: var(--font-10xl);",
+          "line-height: var(--leading-120);"
+        ]
+      },
+      {
+        "class": "text-11xl",
+        "properties": [
+          "font-size: var(--font-11xl);",
+          "line-height: var(--leading-100);"
+        ]
+      },
+      {
+        "class": "text-12xl",
+        "properties": [
+          "font-size: var(--font-12xl);",
+          "line-height: var(--leading-100);"
+        ]
+      },
+      {
+        "class": "text-13xl",
+        "properties": [
+          "font-size: var(--font-13xl);",
+          "line-height: var(--leading-100);"
+        ]
       }
     ]
   },
@@ -36,8 +322,76 @@
     "pseudos": ["none"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "font-2xs",
+        "properties": ["font-size: var(--font-2xs);"]
+      },
+      {
+        "class": "font-xs",
+        "properties": ["font-size: var(--font-xs);"]
+      },
+      {
+        "class": "font-sm",
+        "properties": ["font-size: var(--font-sm);"]
+      },
+      {
+        "class": "font-md",
+        "properties": ["font-size: var(--font-md);"]
+      },
+      {
+        "class": "font-lg",
+        "properties": ["font-size: var(--font-lg);"]
+      },
+      {
+        "class": "font-xl",
+        "properties": ["font-size: var(--font-xl);"]
+      },
+      {
+        "class": "font-2xl",
+        "properties": ["font-size: var(--font-2xl);"]
+      },
+      {
+        "class": "font-3xl",
+        "properties": ["font-size: var(--font-3xl);"]
+      },
+      {
+        "class": "font-4xl",
+        "properties": ["font-size: var(--font-4xl);"]
+      },
+      {
+        "class": "font-5xl",
+        "properties": ["font-size: var(--font-5xl);"]
+      },
+      {
+        "class": "font-6xl",
+        "properties": ["font-size: var(--font-6xl);"]
+      },
+      {
+        "class": "font-7xl",
+        "properties": ["font-size: var(--font-7xl);"]
+      },
+      {
+        "class": "font-8xl",
+        "properties": ["font-size: var(--font-8xl);"]
+      },
+      {
+        "class": "font-9xl",
+        "properties": ["font-size: var(--font-9xl);"]
+      },
+      {
+        "class": "font-10xl",
+        "properties": ["font-size: var(--font-10xl);"]
+      },
+      {
+        "class": "font-11xl",
+        "properties": ["font-size: var(--font-11xl);"]
+      },
+      {
+        "class": "font-12xl",
+        "properties": ["font-size: var(--font-12xl);"]
+      },
+      {
+        "class": "font-13xl",
+        "properties": ["font-size: var(--font-13xl);"]
       }
     ]
   },
@@ -68,8 +422,40 @@
     "pseudos": ["hover"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "ultralight",
+        "properties": ["font-weight: 100;"]
+      },
+      {
+        "class": "extralight",
+        "properties": ["font-weight: 200;"]
+      },
+      {
+        "class": "light",
+        "properties": ["font-weight: 300;"]
+      },
+      {
+        "class": "regular",
+        "properties": ["font-weight: 400;"]
+      },
+      {
+        "class": "medium",
+        "properties": ["font-weight: 500;"]
+      },
+      {
+        "class": "semibold",
+        "properties": ["font-weight: 600;"]
+      },
+      {
+        "class": "bold",
+        "properties": ["font-weight: 700;"]
+      },
+      {
+        "class": "extrabold",
+        "properties": ["font-weight: 800;"]
+      },
+      {
+        "class": "ultrabold",
+        "properties": ["font-weight: 900;"]
       }
     ]
   },
@@ -82,8 +468,32 @@
     "pseudos": ["none"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "tracking-tightest",
+        "properties": ["letter-spacing: -0.08em;"]
+      },
+      {
+        "class": "tracking-tighter",
+        "properties": ["letter-spacing: -0.04em;"]
+      },
+      {
+        "class": "tracking-tight",
+        "properties": ["letter-spacing: -0.02em;"]
+      },
+      {
+        "class": "tracking-normal",
+        "properties": ["letter-spacing: 0em;"]
+      },
+      {
+        "class": "tracking-loose",
+        "properties": ["letter-spacing: 0.02em;"]
+      },
+      {
+        "class": "tracking-looser",
+        "properties": ["letter-spacing: 0.04em;"]
+      },
+      {
+        "class": "tracking-loosest",
+        "properties": ["letter-spacing: 0.08em;"]
       }
     ]
   },
@@ -96,8 +506,68 @@
     "pseudos": ["none"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "leading-100",
+        "properties": ["line-height: var(--leading-100);"]
+      },
+      {
+        "class": "leading-110",
+        "properties": ["line-height: var(--leading-110);"]
+      },
+      {
+        "class": "leading-120",
+        "properties": ["line-height: var(--leading-120);"]
+      },
+      {
+        "class": "leading-130",
+        "properties": ["line-height: var(--leading-130);"]
+      },
+      {
+        "class": "leading-140",
+        "properties": ["line-height: var(--leading-140);"]
+      },
+      {
+        "class": "leading-150",
+        "properties": ["line-height: var(--leading-150);"]
+      },
+      {
+        "class": "leading-160",
+        "properties": ["line-height: var(--leading-160);"]
+      },
+      {
+        "class": "leading-170",
+        "properties": ["line-height: var(--leading-170);"]
+      },
+      {
+        "class": "leading-180",
+        "properties": ["line-height: var(--leading-180);"]
+      },
+      {
+        "class": "leading-190",
+        "properties": ["line-height: var(--leading-190);"]
+      },
+      {
+        "class": "leading-200",
+        "properties": ["line-height: var(--leading-200);"]
+      },
+      {
+        "class": "leading-210",
+        "properties": ["line-height: var(--leading-210);"]
+      },
+      {
+        "class": "leading-220",
+        "properties": ["line-height: var(--leading-220);"]
+      },
+      {
+        "class": "leading-230",
+        "properties": ["line-height: var(--leading-230);"]
+      },
+      {
+        "class": "leading-240",
+        "properties": ["line-height: var(--leading-240);"]
+      },
+      {
+        "class": "leading-250",
+        "properties": ["line-height: var(--leading-250);"]
       }
     ]
   },
@@ -282,8 +752,64 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "color-opacity-0",
+        "properties": ["--color-opacity: var(--opacity-0);"]
+      },
+      {
+        "class": "color-opacity-2",
+        "properties": ["--color-opacity: var(--opacity-2);"]
+      },
+      {
+        "class": "color-opacity-4",
+        "properties": ["--color-opacity: var(--opacity-4);"]
+      },
+      {
+        "class": "color-opacity-6",
+        "properties": ["--color-opacity: var(--opacity-6);"]
+      },
+      {
+        "class": "color-opacity-8",
+        "properties": ["--color-opacity: var(--opacity-8);"]
+      },
+      {
+        "class": "color-opacity-10",
+        "properties": ["--color-opacity: var(--opacity-10);"]
+      },
+      {
+        "class": "color-opacity-20",
+        "properties": ["--color-opacity: var(--opacity-20);"]
+      },
+      {
+        "class": "color-opacity-30",
+        "properties": ["--color-opacity: var(--opacity-30);"]
+      },
+      {
+        "class": "color-opacity-40",
+        "properties": ["--color-opacity: var(--opacity-40);"]
+      },
+      {
+        "class": "color-opacity-50",
+        "properties": ["--color-opacity: var(--opacity-50);"]
+      },
+      {
+        "class": "color-opacity-60",
+        "properties": ["--color-opacity: var(--opacity-60);"]
+      },
+      {
+        "class": "color-opacity-70",
+        "properties": ["--color-opacity: var(--opacity-70);"]
+      },
+      {
+        "class": "color-opacity-80",
+        "properties": ["--color-opacity: var(--opacity-80);"]
+      },
+      {
+        "class": "color-opacity-90",
+        "properties": ["--color-opacity: var(--opacity-90);"]
+      },
+      {
+        "class": "color-opacity-100",
+        "properties": ["--color-opacity: var(--opacity-100);"]
       }
     ]
   },
@@ -296,8 +822,48 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "color-shade-base",
+        "properties": ["--color-ltn: var(--shade-base);"]
+      },
+      {
+        "class": "color-shade-100",
+        "properties": ["--color-ltn: var(--shade-100);"]
+      },
+      {
+        "class": "color-shade-200",
+        "properties": ["--color-ltn: var(--shade-200);"]
+      },
+      {
+        "class": "color-shade-300",
+        "properties": ["--color-ltn: var(--shade-300);"]
+      },
+      {
+        "class": "color-shade-400",
+        "properties": ["--color-ltn: var(--shade-400);"]
+      },
+      {
+        "class": "color-shade-500",
+        "properties": ["--color-ltn: var(--shade-500);"]
+      },
+      {
+        "class": "color-shade-600",
+        "properties": ["--color-ltn: var(--shade-600);"]
+      },
+      {
+        "class": "color-shade-700",
+        "properties": ["--color-ltn: var(--shade-700);"]
+      },
+      {
+        "class": "color-shade-800",
+        "properties": ["--color-ltn: var(--shade-800);"]
+      },
+      {
+        "class": "color-shade-900",
+        "properties": ["--color-ltn: var(--shade-900);"]
+      },
+      {
+        "class": "color-shade-full",
+        "properties": ["--color-ltn: var(--shade-full);"]
       }
     ]
   },
@@ -310,22 +876,48 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
-      }
-    ]
-  },
-  {
-    "name": "font-size",
-    "responsive": true,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [],
-    "pseudos": ["none"],
-    "utilities": [
+        "class": "color-tint-base",
+        "properties": ["--color-ltn: var(--tint-base);"]
+      },
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "color-tint-100",
+        "properties": ["--color-ltn: var(--tint-100);"]
+      },
+      {
+        "class": "color-tint-200",
+        "properties": ["--color-ltn: var(--tint-200);"]
+      },
+      {
+        "class": "color-tint-300",
+        "properties": ["--color-ltn: var(--tint-300);"]
+      },
+      {
+        "class": "color-tint-400",
+        "properties": ["--color-ltn: var(--tint-400);"]
+      },
+      {
+        "class": "color-tint-500",
+        "properties": ["--color-ltn: var(--tint-500);"]
+      },
+      {
+        "class": "color-tint-600",
+        "properties": ["--color-ltn: var(--tint-600);"]
+      },
+      {
+        "class": "color-tint-700",
+        "properties": ["--color-ltn: var(--tint-700);"]
+      },
+      {
+        "class": "color-tint-800",
+        "properties": ["--color-ltn: var(--tint-800);"]
+      },
+      {
+        "class": "color-tint-900",
+        "properties": ["--color-ltn: var(--tint-900);"]
+      },
+      {
+        "class": "color-tint-full",
+        "properties": ["--color-ltn: var(--tint-full);"]
       }
     ]
   }

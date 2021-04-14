@@ -172,11 +172,11 @@
       },
       {
         "class": "border-orange",
-        "properties": ["border-color: hsla(var(--orange-hue), var(--orange-sat), 100%, var(--border-opacity;))"]
+        "properties": ["border-color: hsla(var(--orange-hue), var(--orange-sat), 100%, var(--border-opacity;));"]
       },
       {
         "class": "border-yellow",
-        "properties": ["border-color: hsla(var(--yellow-hue), var(--yellow-sat), 100%, var(--border-opacity;))"]
+        "properties": ["border-color: hsla(var(--yellow-hue), var(--yellow-sat), 100%, var(--border-opacity;));"]
       },
       {
         "class": "border-lemon",
@@ -621,6 +621,152 @@
     ]
   },
   {
+    "name": "border-x-width",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": ["none"],
+    "utilities": [
+      {
+        "class": "border-x-0",
+        "properties": [
+          "border-left-width: var(--size-0);",
+          "border-right-width: var(--size-0);"
+        ]
+      },
+      {
+        "class": "border-x-1",
+        "properties": [
+          "border-left-width: var(--size-1);",
+          "border-right-width: var(--size-1);"
+        ]
+      },
+      {
+        "class": "border-x-2",
+        "properties": [
+          "border-left-width: var(--size-2);",
+          "border-right-width: var(--size-2);"
+        ]
+      },
+      {
+        "class": "border-x-3",
+        "properties": [
+          "border-left-width: var(--size-3);",
+          "border-right-width: var(--size-3);"
+        ]
+      },
+      {
+        "class": "border-x-4",
+        "properties": [
+          "border-left-width: var(--size-4);",
+          "border-right-width: var(--size-4);"
+        ]
+      },
+      {
+        "class": "border-x-5",
+        "properties": [
+          "border-left-width: var(--size-5);",
+          "border-right-width: var(--size-5);"
+        ]
+      },
+      {
+        "class": "border-x-6",
+        "properties": [
+          "border-left-width: var(--size-6);",
+          "border-right-width: var(--size-6);"
+        ]
+      },
+      {
+        "class": "border-x-7",
+        "properties": [
+          "border-left-width: var(--size-7);",
+          "border-right-width: var(--size-7);"
+        ]
+      },
+      {
+        "class": "border-x-8",
+        "properties": [
+          "border-left-width: var(--size-8);",
+          "border-right-width: var(--size-8);"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "border-y-width",
+    "responsive": true,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": [],
+    "pseudos": ["none"],
+    "utilities": [
+      {
+        "class": "border-y-0",
+        "properties": [
+          "border-top-width: var(--size-0);",
+          "border-bottom-width: var(--size-0);"
+        ]
+      },
+      {
+        "class": "border-y-1",
+        "properties": [
+          "border-top-width: var(--size-1);",
+          "border-bottom-width: var(--size-1);"
+        ]
+      },
+      {
+        "class": "border-y-2",
+        "properties": [
+          "border-top-width: var(--size-2);",
+          "border-bottom-width: var(--size-2);"
+        ]
+      },
+      {
+        "class": "border-y-3",
+        "properties": [
+          "border-top-width: var(--size-3);",
+          "border-bottom-width: var(--size-3);"
+        ]
+      },
+      {
+        "class": "border-y-4",
+        "properties": [
+          "border-top-width: var(--size-4);",
+          "border-bottom-width: var(--size-4);"
+        ]
+      },
+      {
+        "class": "border-y-5",
+        "properties": [
+          "border-top-width: var(--size-5);",
+          "border-bottom-width: var(--size-5);"
+        ]
+      },
+      {
+        "class": "border-y-6",
+        "properties": [
+          "border-top-width: var(--size-6);",
+          "border-bottom-width: var(--size-6);"
+        ]
+      },
+      {
+        "class": "border-y-7",
+        "properties": [
+          "border-top-width: var(--size-7);",
+          "border-bottom-width: var(--size-7);"
+        ]
+      },
+      {
+        "class": "border-y-8",
+        "properties": [
+          "border-top-width: var(--size-8);",
+          "border-bottom-width: var(--size-8);"
+        ]
+      }
+    ]
+  },
+  {
     "name": "border-bottom-radius",
     "responsive": true,
     "responsive-pseudos": false,
@@ -840,6 +986,76 @@
     ]
   },
   {
+    "name": "border-opacity",
+    "responsive": false,
+    "responsive-pseudos": false,
+    "extraSelector": "",
+    "customProperties": ["--border-opacity"],
+    "pseudos": ["hover", "group-hover", "focus", "dark"],
+    "utilities": [
+      {
+        "class": "border-opacity-0",
+        "properties": ["--border-opacity: var(--opacity-0);"]
+      },
+      {
+        "class": "border-opacity-2",
+        "properties": ["--border-opacity: var(--opacity-2);"]
+      },
+      {
+        "class": "border-opacity-4",
+        "properties": ["--border-opacity: var(--opacity-4);"]
+      },
+      {
+        "class": "border-opacity-6",
+        "properties": ["--border-opacity: var(--opacity-6);"]
+      },
+      {
+        "class": "border-opacity-8",
+        "properties": ["--border-opacity: var(--opacity-8);"]
+      },
+      {
+        "class": "border-opacity-10",
+        "properties": ["--border-opacity: var(--opacity-10);"]
+      },
+      {
+        "class": "border-opacity-20",
+        "properties": ["--border-opacity: var(--opacity-20);"]
+      },
+      {
+        "class": "border-opacity-30",
+        "properties": ["--border-opacity: var(--opacity-30);"]
+      },
+      {
+        "class": "border-opacity-40",
+        "properties": ["--border-opacity: var(--opacity-40);"]
+      },
+      {
+        "class": "border-opacity-50",
+        "properties": ["--border-opacity: var(--opacity-50);"]
+      },
+      {
+        "class": "border-opacity-60",
+        "properties": ["--border-opacity: var(--opacity-60);"]
+      },
+      {
+        "class": "border-opacity-70",
+        "properties": ["--border-opacity: var(--opacity-70);"]
+      },
+      {
+        "class": "border-opacity-80",
+        "properties": ["--border-opacity: var(--opacity-80);"]
+      },
+      {
+        "class": "border-opacity-90",
+        "properties": ["--border-opacity: var(--opacity-90);"]
+      },
+      {
+        "class": "border-opacity-100",
+        "properties": ["--border-opacity: var(--opacity-100);"]
+      }
+    ]
+  },
+  {
     "name": "border-shade",
     "responsive": false,
     "responsive-pseudos": false,
@@ -848,8 +1064,48 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
-        "class": "",
-        "properties": [""]
+        "class": "border-shade-base",
+        "properties": ["--border-ltn: var(--shade-base);"]
+      },
+      {
+        "class": "border-shade-100",
+        "properties": ["--border-ltn: var(--shade-100);"]
+      },
+      {
+        "class": "border-shade-200",
+        "properties": ["--border-ltn: var(--shade-200);"]
+      },
+      {
+        "class": "border-shade-300",
+        "properties": ["--border-ltn: var(--shade-300);"]
+      },
+      {
+        "class": "border-shade-400",
+        "properties": ["--border-ltn: var(--shade-400);"]
+      },
+      {
+        "class": "border-shade-500",
+        "properties": ["--border-ltn: var(--shade-500);"]
+      },
+      {
+        "class": "border-shade-600",
+        "properties": ["--border-ltn: var(--shade-600);"]
+      },
+      {
+        "class": "border-shade-700",
+        "properties": ["--border-ltn: var(--shade-700);"]
+      },
+      {
+        "class": "border-shade-800",
+        "properties": ["--border-ltn: var(--shade-800);"]
+      },
+      {
+        "class": "border-shade-900",
+        "properties": ["--border-ltn: var(--shade-900);"]
+      },
+      {
+        "class": "border-shade-full",
+        "properties": ["--border-ltn: var(--shade-full);"]
       }
     ]
   },
@@ -862,8 +1118,48 @@
     "pseudos": ["hover", "group-hover", "focus", "dark"],
     "utilities": [
       {
-        "class": "",
-        "properties": [""]
+        "class": "border-tint-base",
+        "properties": ["--border-ltn: var(--tint-base);"]
+      },
+      {
+        "class": "border-tint-100",
+        "properties": ["--border-ltn: var(--tint-100);"]
+      },
+      {
+        "class": "border-tint-200",
+        "properties": ["--border-ltn: var(--tint-200);"]
+      },
+      {
+        "class": "border-tint-300",
+        "properties": ["--border-ltn: var(--tint-300);"]
+      },
+      {
+        "class": "border-tint-400",
+        "properties": ["--border-ltn: var(--tint-400);"]
+      },
+      {
+        "class": "border-tint-500",
+        "properties": ["--border-ltn: var(--tint-500);"]
+      },
+      {
+        "class": "border-tint-600",
+        "properties": ["--border-ltn: var(--tint-600);"]
+      },
+      {
+        "class": "border-tint-700",
+        "properties": ["--border-ltn: var(--tint-700);"]
+      },
+      {
+        "class": "border-tint-800",
+        "properties": ["--border-ltn: var(--tint-800);"]
+      },
+      {
+        "class": "border-tint-900",
+        "properties": ["--border-ltn: var(--tint-900);"]
+      },
+      {
+        "class": "border-tint-full",
+        "properties": ["--border-ltn: var(--tint-full);"]
       }
     ]
   },

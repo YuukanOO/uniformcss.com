@@ -14,7 +14,7 @@
     "utilities": [
       {
         "class": "backdrop",
-        "properties": ["blur(var(--backdrop-blur)) grayscale(var(--backdrop-grayscale)) saturate(var(--backdrop-saturate)) invert(var(--backdrop-invert))"]
+        "properties": ["blur(var(--backdrop-blur)) grayscale(var(--backdrop-grayscale)) saturate(var(--backdrop-saturate)) invert(var(--backdrop-invert));"]
       }
     ]
   },

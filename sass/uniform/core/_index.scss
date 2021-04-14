@@ -438,15 +438,15 @@ $default-config: (
     ),
     11xl: (
       font-size: rem(88),
-      line-height: 1,
+      line-height: var(--leading-100),
     ),
     12xl: (
       font-size: rem(104),
-      line-height: 1,
+      line-height: var(--leading-100),
     ),
     13xl: (
       font-size: rem(120),
-      line-height: 1,
+      line-height: var(--leading-100),
     ),
   ),
 

@@ -377,59 +377,63 @@
     "utilities": [
       {
         "class": "bg-opacity-0",
-        "properties": ["--bg-opacity: 0;"]
+        "properties": ["--bg-opacity: var(--opacity-0);"]
       },
       {
         "class": "bg-opacity-2",
-        "properties": ["--bg-opacity: 0.02;"]
+        "properties": ["--bg-opacity: var(--opacity-2);"]
       },
       {
         "class": "bg-opacity-4",
-        "properties": ["--bg-opacity: 0.04;"]
+        "properties": ["--bg-opacity: var(--opacity-4);"]
       },
       {
         "class": "bg-opacity-6",
-        "properties": ["--bg-opacity: 0.06;"]
+        "properties": ["--bg-opacity: var(--opacity-6);"]
       },
       {
         "class": "bg-opacity-8",
-        "properties": ["--bg-opacity: 0.08;"]
+        "properties": ["--bg-opacity: var(--opacity-8);"]
       },
       {
         "class": "bg-opacity-10",
-        "properties": ["--bg-opacity: 0.1;"]
+        "properties": ["--bg-opacity: var(--opacity-10);"]
       },
       {
         "class": "bg-opacity-20",
-        "properties": ["--bg-opacity: 0.2;"]
+        "properties": ["--bg-opacity: var(--opacity-20);"]
       },
       {
         "class": "bg-opacity-30",
-        "properties": ["--bg-opacity: 0.3;"]
+        "properties": ["--bg-opacity: var(--opacity-30);"]
       },
       {
         "class": "bg-opacity-40",
-        "properties": ["--bg-opacity: 0.4;"]
+        "properties": ["--bg-opacity: var(--opacity-40);"]
       },
       {
         "class": "bg-opacity-50",
-        "properties": ["--bg-opacity: 0.5;"]
+        "properties": ["--bg-opacity: var(--opacity-50);"]
       },
       {
         "class": "bg-opacity-60",
-        "properties": ["--bg-opacity: 0.6;"]
+        "properties": ["--bg-opacity: var(--opacity-60);"]
+      },
+      {
+        "class": "bg-opacity-70",
+        "properties": ["--bg-opacity: var(--opacity-70);"]
       },
       {
         "class": "bg-opacity-80",
-        "properties": ["--bg-opacity: 0.8;"]
+        "properties": ["--bg-opacity: var(--opacity-80);"]
       },
       {
         "class": "bg-opacity-90",
-        "properties": ["--bg-opacity: 0.9;"]
+        "properties": ["--bg-opacity: var(--opacity-90);"]
       },
       {
         "class": "bg-opacity-100",
-        "properties": ["--bg-opacity: 1;"]
+        "properties": ["--bg-opacity: var(--opacity-100);"]
       }
     ]
   },
@@ -443,47 +447,47 @@
     "utilities": [
       {
         "class": "bg-shade-base",
-        "properties": ["--bg-ltn: 50%;"]
+        "properties": ["--bg-ltn: var(--shade-base);"]
       },
       {
         "class": "bg-shade-100",
-        "properties": ["--bg-ltn: 44.9%;"]
+        "properties": ["--bg-ltn: var(--shade-100);"]
       },
       {
         "class": "bg-shade-200",
-        "properties": ["--bg-ltn: 39.79%;"]
+        "properties": ["--bg-ltn: var(--shade-200);"]
       },
       {
         "class": "bg-shade-300",
-        "properties": ["--bg-ltn: 34.68%;"]
+        "properties": ["--bg-ltn: var(--shade-300);"]
       },
       {
         "class": "bg-shade-400",
-        "properties": ["--bg-ltn: 29.57%;"]
+        "properties": ["--bg-ltn: var(--shade-400);"]
       },
       {
         "class": "bg-shade-500",
-        "properties": ["--bg-ltn: 24.46%;"]
+        "properties": ["--bg-ltn: var(--shade-500);"]
       },
       {
         "class": "bg-shade-600",
-        "properties": ["--bg-ltn: 19.35%;"]
+        "properties": ["--bg-ltn: var(--shade-600);"]
       },
       {
         "class": "bg-shade-700",
-        "properties": ["--bg-ltn: 14.24%;"]
+        "properties": ["--bg-ltn: var(--shade-700);"]
       },
       {
         "class": "bg-shade-800",
-        "properties": ["--bg-ltn: 9.13%;"]
+        "properties": ["--bg-ltn: var(--shade-800);"]
       },
       {
         "class": "bg-shade-900",
-        "properties": ["--bg-ltn: 4%;"]
+        "properties": ["--bg-ltn: var(--shade-900);"]
       },
       {
         "class": "bg-shade-full",
-        "properties": ["--bg-ltn: 0%;"]
+        "properties": ["--bg-ltn: var(--shade-full);"]
       }
     ]
   },
@@ -497,47 +501,47 @@
     "utilities": [
       {
         "class": "bg-tint-base",
-        "properties": ["--bg-ltn: 50%;"]
+        "properties": ["--bg-ltn: var(--tint-base);"]
       },
       {
         "class": "bg-tint-100",
-        "properties": ["--bg-ltn: 55.12%;"]
+        "properties": ["--bg-ltn: var(--tint-100);"]
       },
       {
         "class": "bg-tint-200",
-        "properties": ["--bg-ltn: 60.23%;"]
+        "properties": ["--bg-ltn: var(--tint-200);"]
       },
       {
         "class": "bg-tint-300",
-        "properties": ["--bg-ltn: 65.34%;"]
+        "properties": ["--bg-ltn: var(--tint-300);"]
       },
       {
         "class": "bg-tint-400",
-        "properties": ["--bg-ltn: 70.45%;"]
+        "properties": ["--bg-ltn: var(--tint-400);"]
       },
       {
         "class": "bg-tint-500",
-        "properties": ["--bg-ltn: 75.56%;"]
+        "properties": ["--bg-ltn: var(--tint-500);"]
       },
       {
         "class": "bg-tint-600",
-        "properties": ["--bg-ltn: 80.67%;"]
+        "properties": ["--bg-ltn: var(--tint-600);"]
       },
       {
         "class": "bg-tint-700",
-        "properties": ["--bg-ltn: 85.78%;"]
+        "properties": ["--bg-ltn: var(--tint-700);"]
       },
       {
         "class": "bg-tint-800",
-        "properties": ["--bg-ltn: 90.89%;"]
+        "properties": ["--bg-ltn: var(--tint-800);"]
       },
       {
         "class": "bg-tint-900",
-        "properties": ["--bg-ltn: 96%;"]
+        "properties": ["--bg-ltn: var(--tint-900);"]
       },
       {
         "class": "bg-tint-full",
-        "properties": ["--bg-ltn: 100%;"]
+        "properties": ["--bg-ltn: var(--tint-full);"]
       }
     ]
   }
