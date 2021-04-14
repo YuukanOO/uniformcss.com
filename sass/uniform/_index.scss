@@ -9,13 +9,6 @@
 @use "core/starter";
 @use "core/wrapper";
 
-// UTILITIES - TRANSITION (5)
-@use "utilities/transition/core-transition-duration";
-@use "utilities/transition/core-transition-delay";
-@use "utilities/transition/core-transition-property";
-@use "utilities/transition/core-transition-timing-function";
-@use "utilities/transition/core-transition";
-
 // UTILITIES - ANIMATION
 @use "utilities/animation/core-animation";
 
@@ -149,18 +142,6 @@
 @use "utilities/border/core-border-color";
 @use "utilities/border/core-border-style";
 
-// UTILITIES - BACKGROUND (10)
-@use "utilities/background/extension-background-tint";
-@use "utilities/background/extension-background-shade";
-@use "utilities/background/extension-background-opacity";
-@use "utilities/background/core-background-attachment";
-@use "utilities/background/core-background-clip";
-@use "utilities/background/core-background-color";
-@use "utilities/background/core-background-position";
-@use "utilities/background/core-background-repeat";
-@use "utilities/background/core-background-size";
-@use "utilities/background/core-background";
-
 // UTILITIES - PADDING (7)
 @use "utilities/padding/core-padding-bottom";
 @use "utilities/padding/core-padding-left";
@@ -210,6 +191,25 @@
 @use "utilities/appearance/core-appearance";
 @use "utilities/appearance/core-font-smooth";
 
+// UTILITIES - BACKGROUND (10)
+@use "utilities/background/extension-background-tint";
+@use "utilities/background/extension-background-shade";
+@use "utilities/background/extension-background-opacity";
+@use "utilities/background/core-background-attachment";
+@use "utilities/background/core-background-clip";
+@use "utilities/background/core-background-color";
+@use "utilities/background/core-background-position";
+@use "utilities/background/core-background-repeat";
+@use "utilities/background/core-background-size";
+@use "utilities/background/core-background";
+
+// UTILITIES - TRANSITION (5)
+@use "utilities/transition/core-transition-duration";
+@use "utilities/transition/core-transition-delay";
+@use "utilities/transition/core-transition-property";
+@use "utilities/transition/core-transition-timing-function";
+@use "utilities/transition/core-transition";
+
 // UTILITIES - TYPOGRAPHY (19)
 @use "utilities/typography/extension-color-tint";
 @use "utilities/typography/extension-color-shade";
@@ -232,7 +232,7 @@
 @use "utilities/typography/core-color";
 
 // CONSTRUCTOR
-$config: map.deep-merge(core.$all-config, core.$config);
+$config: map.deep-merge(core.$config, core.$all-config);
 
 @mixin constructor($config) {
 	$important: map.get($config, important);
