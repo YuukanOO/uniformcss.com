@@ -7,19 +7,17 @@ $include: map.get($all-config, include);
 $headless: map.get($all-config, headless);
 
 @if ( $headless == false or list.index($include, reset) != null or list.index($exclude, all) != null or list.index($exclude, reset) != null ) {
+  // inspired from https://piccalil.li/blog/a-modern-css-reset
 
   // reset everything
-  *,*::before,*::after {
+  *, *::before,*::after {
     box-sizing: border-box;
   }
-
+  
   * {
     margin: 0;
     padding: 0;
     border: 0 solid transparent;
-    line-height: inherit;
-    color: inherit;
-    font: inherit;
   }
 
   // prevent iOS font size change
@@ -30,7 +28,9 @@ $headless: map.get($all-config, headless);
   // reset body line-height
   body {
     min-height: 100vh;
+    font-family: inherit;
     line-height: 1;
+    text-rendering: optimizeSpeed;
   }
 
   // all media elements set to block and full width
@@ -68,8 +68,8 @@ $headless: map.get($all-config, headless);
   
   // reset anchor style
   a {
-    text-decoration: none;
-    cursor: pointer;
+    color: inherit;
+    text-decoration: inherit;
   }
 
   // reset heading style

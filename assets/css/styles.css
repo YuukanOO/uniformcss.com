@@ -316,9 +316,6 @@
   margin: 0;
   padding: 0;
   border: 0 solid transparent;
-  line-height: inherit;
-  color: inherit;
-  font: inherit;
 }
 
 html {
@@ -327,7 +324,9 @@ html {
 
 body {
   min-height: 100vh;
+  font-family: inherit;
   line-height: 1;
+  text-rendering: optimizeSpeed;
 }
 
 img,
@@ -361,8 +360,8 @@ button {
 }
 
 a {
-  text-decoration: none;
-  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 h1,

@@ -21,8 +21,10 @@ By default, Uniform applies reset of styles to flatten browser inconsistencies a
 5. All typography styles are reset
 
 ```scss
+// inspired from https://piccalil.li/blog/a-modern-css-reset
+
 // reset everything
-*,*::before,*::after {
+*, *::before,*::after {
   box-sizing: border-box;
 }
 
@@ -30,9 +32,6 @@ By default, Uniform applies reset of styles to flatten browser inconsistencies a
   margin: 0;
   padding: 0;
   border: 0 solid transparent;
-  line-height: inherit;
-  color: inherit;
-  font: inherit;
 }
 
 // prevent iOS font size change
@@ -43,7 +42,9 @@ html {
 // reset body line-height
 body {
   min-height: 100vh;
+  font-family: inherit;
   line-height: 1;
+  text-rendering: optimizeSpeed;
 }
 
 // all media elements set to block and full width
@@ -81,8 +82,8 @@ button {
 
 // reset anchor style
 a {
-  text-decoration: none;
-  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 // reset heading style

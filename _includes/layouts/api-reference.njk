@@ -326,24 +326,37 @@ layout: layouts/base.njk
         {%- for propertyKey, propertyValue in properties -%}
           {%- for key in propertyValue -%}
             <article class="markdown">
-              <h2 id="{{ key.name | slug }}" class="flex align-items-center">
-                {{ key.name }}
-                {%- if key.responsive -%}
-                  <span class="flex align-items-center h-28 radius-sm ml-10 px-10 bg-teal bg-tint-600 color-teal color-shade-400 text-sm bold">
-                    Responsive
-                  </span>
-                {%- endif -%}
+              <h2 id="{{ key.name | slug }}" class="flex flex-wrap align-items-center justify-content-between">
+                <div class="flex align-items-center">
+                  {{ key.name }}
+                  {%- if key.responsive -%}
+                    <span class="flex align-items-center justify-content-center w-24 h-24 radius-full ml-10 bg-green color-white font-xs bold cursor-default" title="Responsive">
+                      R
+                    </span>
+                  {%- endif -%}
+                </div>
+                <div class="w-100p sm.w-auto mt-20 sm.mt-0">
+                  <div class="flex gutter-x-10">
+                    <div class="sm.pl-10 radius-xs overflow-hidden color-black flex flex-wrap align-items-center">
+                      <span class="font-sm bold mr-10">
+                        pseudos
+                      </span>
+                      {%- for pseudo in key.pseudos -%}   
+                        {%- if pseudo == "none" -%}
+                          <span class="flex align-items-center h-24 radius-xs mr-6 last.mr-0 px-8 bg-cool-gray bg-tint-800 color-cool-gray font-xs bold">
+                            {{ pseudo }}
+                          </span>
+                        {%- else -%} 
+                          <span class="flex align-items-center h-24 radius-xs mr-6 last.mr-0 px-8 bg-black color-white font-xs bold">
+                            {{ pseudo }}
+                          </span>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                </div>
               </h2>
-              <div class="relative flex flex-wrap align-items-center gutter-x-10 mb-20">
-                <span class="text-sm bold">
-                  Pseudos
-                </span>
-                {%- for pseudo in key.pseudos -%}      
-                  <span class="flex align-items-center h-28 radius-sm px-10 bg-cool-gray bg-tint-800 color-cool-gray text-xs bold">
-                    {{ pseudo }}
-                  </span>
-                {%- endfor -%}
-              </div>
+              
               <div class="markdown overflow-x-auto overflow-y-hidden">
                 <table class="text-left">
                   <thead>
@@ -371,6 +384,8 @@ layout: layouts/base.njk
                   </tbody>
                 </table>
               </div>
+
+              
               
             </article>
           {%- endfor -%}
