@@ -21,8 +21,6 @@ By default, Uniform applies reset of styles to flatten browser inconsistencies a
 5. All typography styles are reset
 
 ```scss
-// inspired from https://piccalil.li/blog/a-modern-css-reset
-
 // reset everything
 *, *::before,*::after {
   box-sizing: border-box;
@@ -42,7 +40,6 @@ html {
 // reset body line-height
 body {
   min-height: 100vh;
-  font-family: inherit;
   line-height: 1;
   text-rendering: optimizeSpeed;
 }
@@ -57,8 +54,17 @@ iframe,
 embed,
 object {
   display: block;
-  vertical-align: middle;
-  width: 100%;
+  max-width: 100%;
+}
+
+// Inherit fonts for inputs and buttons
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
 }
 
 // collapse table
@@ -73,11 +79,6 @@ button, [role="button"] {
   &:focus {
     outline: 0;
   }
-}
-
-button {
-  background-color: transparent;
-  background-image: none;
 }
 
 // reset anchor style
@@ -98,7 +99,7 @@ h6 {
 }
 
 // reset list style
-ol,ul {
+ol, ul {
   list-style: none;
 }
 
