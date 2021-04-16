@@ -64,6 +64,7 @@ $headless: map.get($all-config, headless);
   // assign button hover state
   button, [role="button"] {
     cursor: pointer;
+    background-color: transparent;
     &:focus {
       outline: 0;
     }

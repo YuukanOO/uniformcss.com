@@ -76,6 +76,7 @@ table {
 // assign button hover state
 button, [role="button"] {
   cursor: pointer;
+  background-color: transparent;
   &:focus {
     outline: 0;
   }
