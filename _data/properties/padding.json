@@ -1,6 +1,6 @@
 [
   {
-    "name": "padding-bottom",
+    "name": "padding-left",
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
@@ -8,8 +8,168 @@
     "pseudos": ["first", "last"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "pl-0",
+        "properties": ["padding-left: var(--size-0);"]
+      },
+      {
+        "class": "pl-1",
+        "properties": ["padding-left: var(--size-1);"]
+      },
+      {
+        "class": "pl-2",
+        "properties": ["padding-left: var(--size-2);"]
+      },
+      {
+        "class": "pl-3",
+        "properties": ["padding-left: var(--size-3);"]
+      },
+      {
+        "class": "pl-4",
+        "properties": ["padding-left: var(--size-4);"]
+      },
+      {
+        "class": "pl-5",
+        "properties": ["padding-left: var(--size-5);"]
+      },
+      {
+        "class": "pl-6",
+        "properties": ["padding-left: var(--size-6);"]
+      },
+      {
+        "class": "pl-7",
+        "properties": ["padding-left: var(--size-7);"]
+      },
+      {
+        "class": "pl-8",
+        "properties": ["padding-left: var(--size-8);"]
+      },
+      {
+        "class": "pl-9",
+        "properties": ["padding-left: var(--size-9);"]
+      },
+      {
+        "class": "pl-10",
+        "properties": ["padding-left: var(--size-10);"]
+      },
+      {
+        "class": "pl-12",
+        "properties": ["padding-left: var(--size-12);"]
+      },
+      {
+        "class": "pl-14",
+        "properties": ["padding-left: var(--size-14);"]
+      },
+      {
+        "class": "pl-16",
+        "properties": ["padding-left: var(--size-16);"]
+      },
+      {
+        "class": "pl-18",
+        "properties": ["padding-left: var(--size-18);"]
+      },
+      {
+        "class": "pl-20",
+        "properties": ["padding-left: var(--size-20);"]
+      },
+      {
+        "class": "pl-24",
+        "properties": ["padding-left: var(--size-24);"]
+      },
+      {
+        "class": "pl-28",
+        "properties": ["padding-left: var(--size-28);"]
+      },
+      {
+        "class": "pl-32",
+        "properties": ["padding-left: var(--size-32);"]
+      },
+      {
+        "class": "pl-36",
+        "properties": ["padding-left: var(--size-36);"]
+      },
+      {
+        "class": "pl-40",
+        "properties": ["padding-left: var(--size-40);"]
+      },
+      {
+        "class": "pl-48",
+        "properties": ["padding-left: var(--size-48);"]
+      },
+      {
+        "class": "pl-56",
+        "properties": ["padding-left: var(--size-56);"]
+      },
+      {
+        "class": "pl-64",
+        "properties": ["padding-left: var(--size-64);"]
+      },
+      {
+        "class": "pl-72",
+        "properties": ["padding-left: var(--size-72);"]
+      },
+      {
+        "class": "pl-80",
+        "properties": ["padding-left: var(--size-80);"]
+      },
+      {
+        "class": "pl-96",
+        "properties": ["padding-left: var(--size-96);"]
+      },
+      {
+        "class": "pl-112",
+        "properties": ["padding-left: var(--size-112);"]
+      },
+      {
+        "class": "pl-128",
+        "properties": ["padding-left: var(--size-128);"]
+      },
+      {
+        "class": "pl-144",
+        "properties": ["padding-left: var(--size-144);"]
+      },
+      {
+        "class": "pl-160",
+        "properties": ["padding-left: var(--size-160);"]
+      },
+      {
+        "class": "pl-192",
+        "properties": ["padding-left: var(--size-192);"]
+      },
+      {
+        "class": "pl-224",
+        "properties": ["padding-left: var(--size-224);"]
+      },
+      {
+        "class": "pl-256",
+        "properties": ["padding-left: var(--size-256);"]
+      },
+      {
+        "class": "pl-288",
+        "properties": ["padding-left: var(--size-288);"]
+      },
+      {
+        "class": "pl-320",
+        "properties": ["padding-left: var(--size-320);"]
+      },
+      {
+        "class": "pl-384",
+        "properties": ["padding-left: var(--size-384);"]
+      },
+      {
+        "class": "pl-448",
+        "properties": ["padding-left: var(--size-448);"]
+      },
+      {
+        "class": "pl-512",
+        "properties": ["padding-left: var(--size-512);"]
+      },
+      {
+        "class": "pl-576",
+        "properties": ["padding-left: var(--size-576);"]
+      },
+      {
+        "class": "pl-640",
+        "properties": ["padding-left: var(--size-640);"]
       }
     ]
   },
@@ -22,8 +182,168 @@
     "pseudos": ["first", "last"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "pr-0",
+        "properties": ["padding-right: var(--size-0);"]
+      },
+      {
+        "class": "pr-1",
+        "properties": ["padding-right: var(--size-1);"]
+      },
+      {
+        "class": "pr-2",
+        "properties": ["padding-right: var(--size-2);"]
+      },
+      {
+        "class": "pr-3",
+        "properties": ["padding-right: var(--size-3);"]
+      },
+      {
+        "class": "pr-4",
+        "properties": ["padding-right: var(--size-4);"]
+      },
+      {
+        "class": "pr-5",
+        "properties": ["padding-right: var(--size-5);"]
+      },
+      {
+        "class": "pr-6",
+        "properties": ["padding-right: var(--size-6);"]
+      },
+      {
+        "class": "pr-7",
+        "properties": ["padding-right: var(--size-7);"]
+      },
+      {
+        "class": "pr-8",
+        "properties": ["padding-right: var(--size-8);"]
+      },
+      {
+        "class": "pr-9",
+        "properties": ["padding-right: var(--size-9);"]
+      },
+      {
+        "class": "pr-10",
+        "properties": ["padding-right: var(--size-10);"]
+      },
+      {
+        "class": "pr-12",
+        "properties": ["padding-right: var(--size-12);"]
+      },
+      {
+        "class": "pr-14",
+        "properties": ["padding-right: var(--size-14);"]
+      },
+      {
+        "class": "pr-16",
+        "properties": ["padding-right: var(--size-16);"]
+      },
+      {
+        "class": "pr-18",
+        "properties": ["padding-right: var(--size-18);"]
+      },
+      {
+        "class": "pr-20",
+        "properties": ["padding-right: var(--size-20);"]
+      },
+      {
+        "class": "pr-24",
+        "properties": ["padding-right: var(--size-24);"]
+      },
+      {
+        "class": "pr-28",
+        "properties": ["padding-right: var(--size-28);"]
+      },
+      {
+        "class": "pr-32",
+        "properties": ["padding-right: var(--size-32);"]
+      },
+      {
+        "class": "pr-36",
+        "properties": ["padding-right: var(--size-36);"]
+      },
+      {
+        "class": "pr-40",
+        "properties": ["padding-right: var(--size-40);"]
+      },
+      {
+        "class": "pr-48",
+        "properties": ["padding-right: var(--size-48);"]
+      },
+      {
+        "class": "pr-56",
+        "properties": ["padding-right: var(--size-56);"]
+      },
+      {
+        "class": "pr-64",
+        "properties": ["padding-right: var(--size-64);"]
+      },
+      {
+        "class": "pr-72",
+        "properties": ["padding-right: var(--size-72);"]
+      },
+      {
+        "class": "pr-80",
+        "properties": ["padding-right: var(--size-80);"]
+      },
+      {
+        "class": "pr-96",
+        "properties": ["padding-right: var(--size-96);"]
+      },
+      {
+        "class": "pr-112",
+        "properties": ["padding-right: var(--size-112);"]
+      },
+      {
+        "class": "pr-128",
+        "properties": ["padding-right: var(--size-128);"]
+      },
+      {
+        "class": "pr-144",
+        "properties": ["padding-right: var(--size-144);"]
+      },
+      {
+        "class": "pr-160",
+        "properties": ["padding-right: var(--size-160);"]
+      },
+      {
+        "class": "pr-192",
+        "properties": ["padding-right: var(--size-192);"]
+      },
+      {
+        "class": "pr-224",
+        "properties": ["padding-right: var(--size-224);"]
+      },
+      {
+        "class": "pr-256",
+        "properties": ["padding-right: var(--size-256);"]
+      },
+      {
+        "class": "pr-288",
+        "properties": ["padding-right: var(--size-288);"]
+      },
+      {
+        "class": "pr-320",
+        "properties": ["padding-right: var(--size-320);"]
+      },
+      {
+        "class": "pr-384",
+        "properties": ["padding-right: var(--size-384);"]
+      },
+      {
+        "class": "pr-448",
+        "properties": ["padding-right: var(--size-448);"]
+      },
+      {
+        "class": "pr-512",
+        "properties": ["padding-right: var(--size-512);"]
+      },
+      {
+        "class": "pr-576",
+        "properties": ["padding-right: var(--size-576);"]
+      },
+      {
+        "class": "pr-640",
+        "properties": ["padding-right: var(--size-640);"]
       }
     ]
   },
@@ -36,22 +356,342 @@
     "pseudos": ["first", "last"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "pt-0",
+        "properties": ["padding-top: var(--size-0);"]
+      },
+      {
+        "class": "pt-1",
+        "properties": ["padding-top: var(--size-1);"]
+      },
+      {
+        "class": "pt-2",
+        "properties": ["padding-top: var(--size-2);"]
+      },
+      {
+        "class": "pt-3",
+        "properties": ["padding-top: var(--size-3);"]
+      },
+      {
+        "class": "pt-4",
+        "properties": ["padding-top: var(--size-4);"]
+      },
+      {
+        "class": "pt-5",
+        "properties": ["padding-top: var(--size-5);"]
+      },
+      {
+        "class": "pt-6",
+        "properties": ["padding-top: var(--size-6);"]
+      },
+      {
+        "class": "pt-7",
+        "properties": ["padding-top: var(--size-7);"]
+      },
+      {
+        "class": "pt-8",
+        "properties": ["padding-top: var(--size-8);"]
+      },
+      {
+        "class": "pt-9",
+        "properties": ["padding-top: var(--size-9);"]
+      },
+      {
+        "class": "pt-10",
+        "properties": ["padding-top: var(--size-10);"]
+      },
+      {
+        "class": "pt-12",
+        "properties": ["padding-top: var(--size-12);"]
+      },
+      {
+        "class": "pt-14",
+        "properties": ["padding-top: var(--size-14);"]
+      },
+      {
+        "class": "pt-16",
+        "properties": ["padding-top: var(--size-16);"]
+      },
+      {
+        "class": "pt-18",
+        "properties": ["padding-top: var(--size-18);"]
+      },
+      {
+        "class": "pt-20",
+        "properties": ["padding-top: var(--size-20);"]
+      },
+      {
+        "class": "pt-24",
+        "properties": ["padding-top: var(--size-24);"]
+      },
+      {
+        "class": "pt-28",
+        "properties": ["padding-top: var(--size-28);"]
+      },
+      {
+        "class": "pt-32",
+        "properties": ["padding-top: var(--size-32);"]
+      },
+      {
+        "class": "pt-36",
+        "properties": ["padding-top: var(--size-36);"]
+      },
+      {
+        "class": "pt-40",
+        "properties": ["padding-top: var(--size-40);"]
+      },
+      {
+        "class": "pt-48",
+        "properties": ["padding-top: var(--size-48);"]
+      },
+      {
+        "class": "pt-56",
+        "properties": ["padding-top: var(--size-56);"]
+      },
+      {
+        "class": "pt-64",
+        "properties": ["padding-top: var(--size-64);"]
+      },
+      {
+        "class": "pt-72",
+        "properties": ["padding-top: var(--size-72);"]
+      },
+      {
+        "class": "pt-80",
+        "properties": ["padding-top: var(--size-80);"]
+      },
+      {
+        "class": "pt-96",
+        "properties": ["padding-top: var(--size-96);"]
+      },
+      {
+        "class": "pt-112",
+        "properties": ["padding-top: var(--size-112);"]
+      },
+      {
+        "class": "pt-128",
+        "properties": ["padding-top: var(--size-128);"]
+      },
+      {
+        "class": "pt-144",
+        "properties": ["padding-top: var(--size-144);"]
+      },
+      {
+        "class": "pt-160",
+        "properties": ["padding-top: var(--size-160);"]
+      },
+      {
+        "class": "pt-192",
+        "properties": ["padding-top: var(--size-192);"]
+      },
+      {
+        "class": "pt-224",
+        "properties": ["padding-top: var(--size-224);"]
+      },
+      {
+        "class": "pt-256",
+        "properties": ["padding-top: var(--size-256);"]
+      },
+      {
+        "class": "pt-288",
+        "properties": ["padding-top: var(--size-288);"]
+      },
+      {
+        "class": "pt-320",
+        "properties": ["padding-top: var(--size-320);"]
+      },
+      {
+        "class": "pt-384",
+        "properties": ["padding-top: var(--size-384);"]
+      },
+      {
+        "class": "pt-448",
+        "properties": ["padding-top: var(--size-448);"]
+      },
+      {
+        "class": "pt-512",
+        "properties": ["padding-top: var(--size-512);"]
+      },
+      {
+        "class": "pt-576",
+        "properties": ["padding-top: var(--size-576);"]
+      },
+      {
+        "class": "pt-640",
+        "properties": ["padding-top: var(--size-640);"]
       }
     ]
   },
   {
-    "name": "padding",
+    "name": "padding-bottom",
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
-    "pseudos": ["none"],
+    "pseudos": ["first", "last"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "pb-0",
+        "properties": ["padding-bottom: var(--size-0);"]
+      },
+      {
+        "class": "pb-1",
+        "properties": ["padding-bottom: var(--size-1);"]
+      },
+      {
+        "class": "pb-2",
+        "properties": ["padding-bottom: var(--size-2);"]
+      },
+      {
+        "class": "pb-3",
+        "properties": ["padding-bottom: var(--size-3);"]
+      },
+      {
+        "class": "pb-4",
+        "properties": ["padding-bottom: var(--size-4);"]
+      },
+      {
+        "class": "pb-5",
+        "properties": ["padding-bottom: var(--size-5);"]
+      },
+      {
+        "class": "pb-6",
+        "properties": ["padding-bottom: var(--size-6);"]
+      },
+      {
+        "class": "pb-7",
+        "properties": ["padding-bottom: var(--size-7);"]
+      },
+      {
+        "class": "pb-8",
+        "properties": ["padding-bottom: var(--size-8);"]
+      },
+      {
+        "class": "pb-9",
+        "properties": ["padding-bottom: var(--size-9);"]
+      },
+      {
+        "class": "pb-10",
+        "properties": ["padding-bottom: var(--size-10);"]
+      },
+      {
+        "class": "pb-12",
+        "properties": ["padding-bottom: var(--size-12);"]
+      },
+      {
+        "class": "pb-14",
+        "properties": ["padding-bottom: var(--size-14);"]
+      },
+      {
+        "class": "pb-16",
+        "properties": ["padding-bottom: var(--size-16);"]
+      },
+      {
+        "class": "pb-18",
+        "properties": ["padding-bottom: var(--size-18);"]
+      },
+      {
+        "class": "pb-20",
+        "properties": ["padding-bottom: var(--size-20);"]
+      },
+      {
+        "class": "pb-24",
+        "properties": ["padding-bottom: var(--size-24);"]
+      },
+      {
+        "class": "pb-28",
+        "properties": ["padding-bottom: var(--size-28);"]
+      },
+      {
+        "class": "pb-32",
+        "properties": ["padding-bottom: var(--size-32);"]
+      },
+      {
+        "class": "pb-36",
+        "properties": ["padding-bottom: var(--size-36);"]
+      },
+      {
+        "class": "pb-40",
+        "properties": ["padding-bottom: var(--size-40);"]
+      },
+      {
+        "class": "pb-48",
+        "properties": ["padding-bottom: var(--size-48);"]
+      },
+      {
+        "class": "pb-56",
+        "properties": ["padding-bottom: var(--size-56);"]
+      },
+      {
+        "class": "pb-64",
+        "properties": ["padding-bottom: var(--size-64);"]
+      },
+      {
+        "class": "pb-72",
+        "properties": ["padding-bottom: var(--size-72);"]
+      },
+      {
+        "class": "pb-80",
+        "properties": ["padding-bottom: var(--size-80);"]
+      },
+      {
+        "class": "pb-96",
+        "properties": ["padding-bottom: var(--size-96);"]
+      },
+      {
+        "class": "pb-112",
+        "properties": ["padding-bottom: var(--size-112);"]
+      },
+      {
+        "class": "pb-128",
+        "properties": ["padding-bottom: var(--size-128);"]
+      },
+      {
+        "class": "pb-144",
+        "properties": ["padding-bottom: var(--size-144);"]
+      },
+      {
+        "class": "pb-160",
+        "properties": ["padding-bottom: var(--size-160);"]
+      },
+      {
+        "class": "pb-192",
+        "properties": ["padding-bottom: var(--size-192);"]
+      },
+      {
+        "class": "pb-224",
+        "properties": ["padding-bottom: var(--size-224);"]
+      },
+      {
+        "class": "pb-256",
+        "properties": ["padding-bottom: var(--size-256);"]
+      },
+      {
+        "class": "pb-288",
+        "properties": ["padding-bottom: var(--size-288);"]
+      },
+      {
+        "class": "pb-320",
+        "properties": ["padding-bottom: var(--size-320);"]
+      },
+      {
+        "class": "pb-384",
+        "properties": ["padding-bottom: var(--size-384);"]
+      },
+      {
+        "class": "pb-448",
+        "properties": ["padding-bottom: var(--size-448);"]
+      },
+      {
+        "class": "pb-512",
+        "properties": ["padding-bottom: var(--size-512);"]
+      },
+      {
+        "class": "pb-576",
+        "properties": ["padding-bottom: var(--size-576);"]
+      },
+      {
+        "class": "pb-640",
+        "properties": ["padding-bottom: var(--size-640);"]
       }
     ]
   },
@@ -64,8 +704,291 @@
     "pseudos": ["none"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "px-0",
+        "properties": [
+          "padding-left: var(--size-0);",
+          "padding-right: var(--size-0);"
+        ]
+      },
+      {
+        "class": "px-1",
+        "properties": [
+          "padding-left: var(--size-1);",
+          "padding-right: var(--size-1);"
+        ]
+      },
+      {
+        "class": "px-2",
+        "properties": [
+          "padding-left: var(--size-2);",
+          "padding-right: var(--size-2);"
+        ]
+      },
+      {
+        "class": "px-3",
+        "properties": [
+          "padding-left: var(--size-3);",
+          "padding-right: var(--size-3);"
+        ]
+      },
+      {
+        "class": "px-4",
+        "properties": [
+          "padding-left: var(--size-4);",
+          "padding-right: var(--size-4);"
+        ]
+      },
+      {
+        "class": "px-5",
+        "properties": [
+          "padding-left: var(--size-5);",
+          "padding-right: var(--size-5);"
+        ]
+      },
+      {
+        "class": "px-6",
+        "properties": [
+          "padding-left: var(--size-6);",
+          "padding-right: var(--size-6);"
+        ]
+      },
+      {
+        "class": "px-7",
+        "properties": [
+          "padding-left: var(--size-7);",
+          "padding-right: var(--size-7);"
+        ]
+      },
+      {
+        "class": "px-8",
+        "properties": [
+          "padding-left: var(--size-8);",
+          "padding-right: var(--size-8);"
+        ]
+      },
+      {
+        "class": "px-9",
+        "properties": [
+          "padding-left: var(--size-9);",
+          "padding-right: var(--size-9);"
+        ]
+      },
+      {
+        "class": "px-10",
+        "properties": [
+          "padding-left: var(--size-10);",
+          "padding-right: var(--size-10);"
+        ]
+      },
+      {
+        "class": "px-12",
+        "properties": [
+          "padding-left: var(--size-12);",
+          "padding-right: var(--size-12);"
+        ]
+      },
+      {
+        "class": "px-14",
+        "properties": [
+          "padding-left: var(--size-14);",
+          "padding-right: var(--size-14);"
+        ]
+      },
+      {
+        "class": "px-16",
+        "properties": [
+          "padding-left: var(--size-16);",
+          "padding-right: var(--size-16);"
+        ]
+      },
+      {
+        "class": "px-18",
+        "properties": [
+          "padding-left: var(--size-18);",
+          "padding-right: var(--size-18);"
+        ]
+      },
+      {
+        "class": "px-20",
+        "properties": [
+          "padding-left: var(--size-20);",
+          "padding-right: var(--size-20);"
+        ]
+      },
+      {
+        "class": "px-24",
+        "properties": [
+          "padding-left: var(--size-24);",
+          "padding-right: var(--size-24);"
+        ]
+      },
+      {
+        "class": "px-28",
+        "properties": [
+          "padding-left: var(--size-28);",
+          "padding-right: var(--size-28);"
+        ]
+      },
+      {
+        "class": "px-32",
+        "properties": [
+          "padding-left: var(--size-32);",
+          "padding-right: var(--size-32);"
+        ]
+      },
+      {
+        "class": "px-36",
+        "properties": [
+          "padding-left: var(--size-36);",
+          "padding-right: var(--size-36);"
+        ]
+      },
+      {
+        "class": "px-40",
+        "properties": [
+          "padding-left: var(--size-40);",
+          "padding-right: var(--size-40);"
+        ]
+      },
+      {
+        "class": "px-48",
+        "properties": [
+          "padding-left: var(--size-48);",
+          "padding-right: var(--size-48);"
+        ]
+      },
+      {
+        "class": "px-56",
+        "properties": [
+          "padding-left: var(--size-56);",
+          "padding-right: var(--size-56);"
+        ]
+      },
+      {
+        "class": "px-64",
+        "properties": [
+          "padding-left: var(--size-64);",
+          "padding-right: var(--size-64);"
+        ]
+      },
+      {
+        "class": "px-72",
+        "properties": [
+          "padding-left: var(--size-72);",
+          "padding-right: var(--size-72);"
+        ]
+      },
+      {
+        "class": "px-80",
+        "properties": [
+          "padding-left: var(--size-80);",
+          "padding-right: var(--size-80);"
+        ]
+      },
+      {
+        "class": "px-96",
+        "properties": [
+          "padding-left: var(--size-96);",
+          "padding-right: var(--size-96);"
+        ]
+      },
+      {
+        "class": "px-112",
+        "properties": [
+          "padding-left: var(--size-112);",
+          "padding-right: var(--size-112);"
+        ]
+      },
+      {
+        "class": "px-128",
+        "properties": [
+          "padding-left: var(--size-128);",
+          "padding-right: var(--size-128);"
+        ]
+      },
+      {
+        "class": "px-144",
+        "properties": [
+          "padding-left: var(--size-144);",
+          "padding-right: var(--size-144);"
+        ]
+      },
+      {
+        "class": "px-160",
+        "properties": [
+          "padding-left: var(--size-160);",
+          "padding-right: var(--size-160);"
+        ]
+      },
+      {
+        "class": "px-192",
+        "properties": [
+          "padding-left: var(--size-192);",
+          "padding-right: var(--size-192);"
+        ]
+      },
+      {
+        "class": "px-224",
+        "properties": [
+          "padding-left: var(--size-224);",
+          "padding-right: var(--size-224);"
+        ]
+      },
+      {
+        "class": "px-256",
+        "properties": [
+          "padding-left: var(--size-256);",
+          "padding-right: var(--size-256);"
+        ]
+      },
+      {
+        "class": "px-288",
+        "properties": [
+          "padding-left: var(--size-288);",
+          "padding-right: var(--size-288);"
+        ]
+      },
+      {
+        "class": "px-320",
+        "properties": [
+          "padding-left: var(--size-320);",
+          "padding-right: var(--size-320);"
+        ]
+      },
+      {
+        "class": "px-384",
+        "properties": [
+          "padding-left: var(--size-384);",
+          "padding-right: var(--size-384);"
+        ]
+      },
+      {
+        "class": "px-448",
+        "properties": [
+          "padding-left: var(--size-448);",
+          "padding-right: var(--size-448);"
+        ]
+      },
+      {
+        "class": "px-512",
+        "properties": [
+          "padding-left: var(--size-512);",
+          "padding-right: var(--size-512);"
+        ]
+      },
+      {
+        "class": "px-576",
+        "properties": [
+          "padding-left: var(--size-576);",
+          "padding-right: var(--size-576);"
+        ]
+      },
+      {
+        "class": "px-640",
+        "properties": [
+          "padding-left: var(--size-640);",
+          "padding-right: var(--size-640);"
+        ]
       }
     ]
   },
@@ -78,8 +1001,291 @@
     "pseudos": ["none"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "py-0",
+        "properties": [
+          "padding-top: var(--size-0);",
+          "padding-bottom: var(--size-0);"
+        ]
+      },
+      {
+        "class": "py-1",
+        "properties": [
+          "padding-top: var(--size-1);",
+          "padding-bottom: var(--size-1);"
+        ]
+      },
+      {
+        "class": "py-2",
+        "properties": [
+          "padding-top: var(--size-2);",
+          "padding-bottom: var(--size-2);"
+        ]
+      },
+      {
+        "class": "py-3",
+        "properties": [
+          "padding-top: var(--size-3);",
+          "padding-bottom: var(--size-3);"
+        ]
+      },
+      {
+        "class": "py-4",
+        "properties": [
+          "padding-top: var(--size-4);",
+          "padding-bottom: var(--size-4);"
+        ]
+      },
+      {
+        "class": "py-5",
+        "properties": [
+          "padding-top: var(--size-5);",
+          "padding-bottom: var(--size-5);"
+        ]
+      },
+      {
+        "class": "py-6",
+        "properties": [
+          "padding-top: var(--size-6);",
+          "padding-bottom: var(--size-6);"
+        ]
+      },
+      {
+        "class": "py-7",
+        "properties": [
+          "padding-top: var(--size-7);",
+          "padding-bottom: var(--size-7);"
+        ]
+      },
+      {
+        "class": "py-8",
+        "properties": [
+          "padding-top: var(--size-8);",
+          "padding-bottom: var(--size-8);"
+        ]
+      },
+      {
+        "class": "py-9",
+        "properties": [
+          "padding-top: var(--size-9);",
+          "padding-bottom: var(--size-9);"
+        ]
+      },
+      {
+        "class": "py-10",
+        "properties": [
+          "padding-top: var(--size-10);",
+          "padding-bottom: var(--size-10);"
+        ]
+      },
+      {
+        "class": "py-12",
+        "properties": [
+          "padding-top: var(--size-12);",
+          "padding-bottom: var(--size-12);"
+        ]
+      },
+      {
+        "class": "py-14",
+        "properties": [
+          "padding-top: var(--size-14);",
+          "padding-bottom: var(--size-14);"
+        ]
+      },
+      {
+        "class": "py-16",
+        "properties": [
+          "padding-top: var(--size-16);",
+          "padding-bottom: var(--size-16);"
+        ]
+      },
+      {
+        "class": "py-18",
+        "properties": [
+          "padding-top: var(--size-18);",
+          "padding-bottom: var(--size-18);"
+        ]
+      },
+      {
+        "class": "py-20",
+        "properties": [
+          "padding-top: var(--size-20);",
+          "padding-bottom: var(--size-20);"
+        ]
+      },
+      {
+        "class": "py-24",
+        "properties": [
+          "padding-top: var(--size-24);",
+          "padding-bottom: var(--size-24);"
+        ]
+      },
+      {
+        "class": "py-28",
+        "properties": [
+          "padding-top: var(--size-28);",
+          "padding-bottom: var(--size-28);"
+        ]
+      },
+      {
+        "class": "py-32",
+        "properties": [
+          "padding-top: var(--size-32);",
+          "padding-bottom: var(--size-32);"
+        ]
+      },
+      {
+        "class": "py-36",
+        "properties": [
+          "padding-top: var(--size-36);",
+          "padding-bottom: var(--size-36);"
+        ]
+      },
+      {
+        "class": "py-40",
+        "properties": [
+          "padding-top: var(--size-40);",
+          "padding-bottom: var(--size-40);"
+        ]
+      },
+      {
+        "class": "py-48",
+        "properties": [
+          "padding-top: var(--size-48);",
+          "padding-bottom: var(--size-48);"
+        ]
+      },
+      {
+        "class": "py-56",
+        "properties": [
+          "padding-top: var(--size-56);",
+          "padding-bottom: var(--size-56);"
+        ]
+      },
+      {
+        "class": "py-64",
+        "properties": [
+          "padding-top: var(--size-64);",
+          "padding-bottom: var(--size-64);"
+        ]
+      },
+      {
+        "class": "py-72",
+        "properties": [
+          "padding-top: var(--size-72);",
+          "padding-bottom: var(--size-72);"
+        ]
+      },
+      {
+        "class": "py-80",
+        "properties": [
+          "padding-top: var(--size-80);",
+          "padding-bottom: var(--size-80);"
+        ]
+      },
+      {
+        "class": "py-96",
+        "properties": [
+          "padding-top: var(--size-96);",
+          "padding-bottom: var(--size-96);"
+        ]
+      },
+      {
+        "class": "py-112",
+        "properties": [
+          "padding-top: var(--size-112);",
+          "padding-bottom: var(--size-112);"
+        ]
+      },
+      {
+        "class": "py-128",
+        "properties": [
+          "padding-top: var(--size-128);",
+          "padding-bottom: var(--size-128);"
+        ]
+      },
+      {
+        "class": "py-144",
+        "properties": [
+          "padding-top: var(--size-144);",
+          "padding-bottom: var(--size-144);"
+        ]
+      },
+      {
+        "class": "py-160",
+        "properties": [
+          "padding-top: var(--size-160);",
+          "padding-bottom: var(--size-160);"
+        ]
+      },
+      {
+        "class": "py-192",
+        "properties": [
+          "padding-top: var(--size-192);",
+          "padding-bottom: var(--size-192);"
+        ]
+      },
+      {
+        "class": "py-224",
+        "properties": [
+          "padding-top: var(--size-224);",
+          "padding-bottom: var(--size-224);"
+        ]
+      },
+      {
+        "class": "py-256",
+        "properties": [
+          "padding-top: var(--size-256);",
+          "padding-bottom: var(--size-256);"
+        ]
+      },
+      {
+        "class": "py-288",
+        "properties": [
+          "padding-top: var(--size-288);",
+          "padding-bottom: var(--size-288);"
+        ]
+      },
+      {
+        "class": "py-320",
+        "properties": [
+          "padding-top: var(--size-320);",
+          "padding-bottom: var(--size-320);"
+        ]
+      },
+      {
+        "class": "py-384",
+        "properties": [
+          "padding-top: var(--size-384);",
+          "padding-bottom: var(--size-384);"
+        ]
+      },
+      {
+        "class": "py-448",
+        "properties": [
+          "padding-top: var(--size-448);",
+          "padding-bottom: var(--size-448);"
+        ]
+      },
+      {
+        "class": "py-512",
+        "properties": [
+          "padding-top: var(--size-512);",
+          "padding-bottom: var(--size-512);"
+        ]
+      },
+      {
+        "class": "py-576",
+        "properties": [
+          "padding-top: var(--size-576);",
+          "padding-bottom: var(--size-576);"
+        ]
+      },
+      {
+        "class": "py-640",
+        "properties": [
+          "padding-top: var(--size-640);",
+          "padding-bottom: var(--size-640);"
+        ]
       }
     ]
   }

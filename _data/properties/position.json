@@ -106,6 +106,10 @@
       {
         "class": "z-9",
         "properties": ["z-index: 9;"]
+      },
+      {
+        "class": "z-10",
+        "properties": ["z-index: 10;"]
       }
     ]
   },

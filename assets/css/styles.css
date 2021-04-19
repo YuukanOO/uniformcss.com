@@ -7973,6 +7973,10 @@ select {
   z-index: 9;
 }
 
+.z-10, .focus\.z-10:focus {
+  z-index: 10;
+}
+
 .xy-0 {
   top: 0;
   right: 0;

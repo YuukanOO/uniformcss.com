@@ -1,19 +1,5 @@
 [
   {
-    "name": "margin-bottom",
-    "responsive": true,
-    "responsive-pseudos": false,
-    "extraSelector": "",
-    "customProperties": [],
-    "pseudos": ["first", "last"],
-    "utilities": [
-      {
-        "class": "mb",
-        "properties": ["display"]
-      }
-    ]
-  },
-  {
     "name": "margin-left",
     "responsive": true,
     "responsive-pseudos": false,
@@ -22,13 +8,333 @@
     "pseudos": ["first", "last"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "ml-0",
+        "properties": ["margin-left: var(--size-0);"]
+      },
+      {
+        "class": "ml-1",
+        "properties": ["margin-left: var(--size-1);"]
+      },
+      {
+        "class": "ml-2",
+        "properties": ["margin-left: var(--size-2);"]
+      },
+      {
+        "class": "ml-3",
+        "properties": ["margin-left: var(--size-3);"]
+      },
+      {
+        "class": "ml-4",
+        "properties": ["margin-left: var(--size-4);"]
+      },
+      {
+        "class": "ml-5",
+        "properties": ["margin-left: var(--size-5);"]
+      },
+      {
+        "class": "ml-6",
+        "properties": ["margin-left: var(--size-6);"]
+      },
+      {
+        "class": "ml-7",
+        "properties": ["margin-left: var(--size-7);"]
+      },
+      {
+        "class": "ml-8",
+        "properties": ["margin-left: var(--size-8);"]
+      },
+      {
+        "class": "ml-9",
+        "properties": ["margin-left: var(--size-9);"]
+      },
+      {
+        "class": "ml-10",
+        "properties": ["margin-left: var(--size-10);"]
+      },
+      {
+        "class": "ml-12",
+        "properties": ["margin-left: var(--size-12);"]
+      },
+      {
+        "class": "ml-14",
+        "properties": ["margin-left: var(--size-14);"]
+      },
+      {
+        "class": "ml-16",
+        "properties": ["margin-left: var(--size-16);"]
+      },
+      {
+        "class": "ml-18",
+        "properties": ["margin-left: var(--size-18);"]
+      },
+      {
+        "class": "ml-20",
+        "properties": ["margin-left: var(--size-20);"]
+      },
+      {
+        "class": "ml-24",
+        "properties": ["margin-left: var(--size-24);"]
+      },
+      {
+        "class": "ml-28",
+        "properties": ["margin-left: var(--size-28);"]
+      },
+      {
+        "class": "ml-32",
+        "properties": ["margin-left: var(--size-32);"]
+      },
+      {
+        "class": "ml-36",
+        "properties": ["margin-left: var(--size-36);"]
+      },
+      {
+        "class": "ml-40",
+        "properties": ["margin-left: var(--size-40);"]
+      },
+      {
+        "class": "ml-48",
+        "properties": ["margin-left: var(--size-48);"]
+      },
+      {
+        "class": "ml-56",
+        "properties": ["margin-left: var(--size-56);"]
+      },
+      {
+        "class": "ml-64",
+        "properties": ["margin-left: var(--size-64);"]
+      },
+      {
+        "class": "ml-72",
+        "properties": ["margin-left: var(--size-72);"]
+      },
+      {
+        "class": "ml-80",
+        "properties": ["margin-left: var(--size-80);"]
+      },
+      {
+        "class": "ml-96",
+        "properties": ["margin-left: var(--size-96);"]
+      },
+      {
+        "class": "ml-112",
+        "properties": ["margin-left: var(--size-112);"]
+      },
+      {
+        "class": "ml-128",
+        "properties": ["margin-left: var(--size-128);"]
+      },
+      {
+        "class": "ml-144",
+        "properties": ["margin-left: var(--size-144);"]
+      },
+      {
+        "class": "ml-160",
+        "properties": ["margin-left: var(--size-160);"]
+      },
+      {
+        "class": "ml-192",
+        "properties": ["margin-left: var(--size-192);"]
+      },
+      {
+        "class": "ml-224",
+        "properties": ["margin-left: var(--size-224);"]
+      },
+      {
+        "class": "ml-256",
+        "properties": ["margin-left: var(--size-256);"]
+      },
+      {
+        "class": "ml-288",
+        "properties": ["margin-left: var(--size-288);"]
+      },
+      {
+        "class": "ml-320",
+        "properties": ["margin-left: var(--size-320);"]
+      },
+      {
+        "class": "ml-384",
+        "properties": ["margin-left: var(--size-384);"]
+      },
+      {
+        "class": "ml-448",
+        "properties": ["margin-left: var(--size-448);"]
+      },
+      {
+        "class": "ml-512",
+        "properties": ["margin-left: var(--size-512);"]
+      },
+      {
+        "class": "ml-576",
+        "properties": ["margin-left: var(--size-576);"]
+      },
+      {
+        "class": "ml-640",
+        "properties": ["margin-left: var(--size-640);"]
+      },
+      {
+        "class": "ml-n1",
+        "properties": ["margin-left: var(--size-n1);"]
+      },
+      {
+        "class": "ml-n2",
+        "properties": ["margin-left: var(--size-n2);"]
+      },
+      {
+        "class": "ml-n3",
+        "properties": ["margin-left: var(--size-n3);"]
+      },
+      {
+        "class": "ml-n4",
+        "properties": ["margin-left: var(--size-n4);"]
+      },
+      {
+        "class": "ml-n5",
+        "properties": ["margin-left: var(--size-n5);"]
+      },
+      {
+        "class": "ml-n6",
+        "properties": ["margin-left: var(--size-n6);"]
+      },
+      {
+        "class": "ml-n7",
+        "properties": ["margin-left: var(--size-n7);"]
+      },
+      {
+        "class": "ml-n8",
+        "properties": ["margin-left: var(--size-n8);"]
+      },
+      {
+        "class": "ml-n9",
+        "properties": ["margin-left: var(--size-n9);"]
+      },
+      {
+        "class": "ml-n10",
+        "properties": ["margin-left: var(--size-n10);"]
+      },
+      {
+        "class": "ml-n12",
+        "properties": ["margin-left: var(--size-n12);"]
+      },
+      {
+        "class": "ml-n14",
+        "properties": ["margin-left: var(--size-n14);"]
+      },
+      {
+        "class": "ml-n16",
+        "properties": ["margin-left: var(--size-n16);"]
+      },
+      {
+        "class": "ml-n18",
+        "properties": ["margin-left: var(--size-n18);"]
+      },
+      {
+        "class": "ml-n20",
+        "properties": ["margin-left: var(--size-n20);"]
+      },
+      {
+        "class": "ml-n24",
+        "properties": ["margin-left: var(--size-n24);"]
+      },
+      {
+        "class": "ml-n28",
+        "properties": ["margin-left: var(--size-n28);"]
+      },
+      {
+        "class": "ml-n32",
+        "properties": ["margin-left: var(--size-n32);"]
+      },
+      {
+        "class": "ml-n36",
+        "properties": ["margin-left: var(--size-n36);"]
+      },
+      {
+        "class": "ml-n40",
+        "properties": ["margin-left: var(--size-n40);"]
+      },
+      {
+        "class": "ml-n48",
+        "properties": ["margin-left: var(--size-n48);"]
+      },
+      {
+        "class": "ml-n56",
+        "properties": ["margin-left: var(--size-n56);"]
+      },
+      {
+        "class": "ml-n64",
+        "properties": ["margin-left: var(--size-n64);"]
+      },
+      {
+        "class": "ml-n72",
+        "properties": ["margin-left: var(--size-n72);"]
+      },
+      {
+        "class": "ml-n80",
+        "properties": ["margin-left: var(--size-n80);"]
+      },
+      {
+        "class": "ml-n96",
+        "properties": ["margin-left: var(--size-n96);"]
+      },
+      {
+        "class": "ml-n112",
+        "properties": ["margin-left: var(--size-n112);"]
+      },
+      {
+        "class": "ml-n128",
+        "properties": ["margin-left: var(--size-n128);"]
+      },
+      {
+        "class": "ml-n144",
+        "properties": ["margin-left: var(--size-n144);"]
+      },
+      {
+        "class": "ml-n160",
+        "properties": ["margin-left: var(--size-n160);"]
+      },
+      {
+        "class": "ml-n192",
+        "properties": ["margin-left: var(--size-n192);"]
+      },
+      {
+        "class": "ml-n224",
+        "properties": ["margin-left: var(--size-n224);"]
+      },
+      {
+        "class": "ml-n256",
+        "properties": ["margin-left: var(--size-n256);"]
+      },
+      {
+        "class": "ml-n288",
+        "properties": ["margin-left: var(--size-n288);"]
+      },
+      {
+        "class": "ml-n320",
+        "properties": ["margin-left: var(--size-n320);"]
+      },
+      {
+        "class": "ml-n384",
+        "properties": ["margin-left: var(--size-n384);"]
+      },
+      {
+        "class": "ml-n448",
+        "properties": ["margin-left: var(--size-n448);"]
+      },
+      {
+        "class": "ml-n512",
+        "properties": ["margin-left: var(--size-n512);"]
+      },
+      {
+        "class": "ml-n576",
+        "properties": ["margin-left: var(--size-n576);"]
+      },
+      {
+        "class": "ml-n640",
+        "properties": ["margin-left: var(--size-n640);"]
       }
     ]
   },
   {
-    "name": "margin-bright",
+    "name": "margin-right",
     "responsive": true,
     "responsive-pseudos": false,
     "extraSelector": "",
@@ -36,8 +342,328 @@
     "pseudos": ["first", "last"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "mr-0",
+        "properties": ["margin-right: var(--size-0);"]
+      },
+      {
+        "class": "mr-1",
+        "properties": ["margin-right: var(--size-1);"]
+      },
+      {
+        "class": "mr-2",
+        "properties": ["margin-right: var(--size-2);"]
+      },
+      {
+        "class": "mr-3",
+        "properties": ["margin-right: var(--size-3);"]
+      },
+      {
+        "class": "mr-4",
+        "properties": ["margin-right: var(--size-4);"]
+      },
+      {
+        "class": "mr-5",
+        "properties": ["margin-right: var(--size-5);"]
+      },
+      {
+        "class": "mr-6",
+        "properties": ["margin-right: var(--size-6);"]
+      },
+      {
+        "class": "mr-7",
+        "properties": ["margin-right: var(--size-7);"]
+      },
+      {
+        "class": "mr-8",
+        "properties": ["margin-right: var(--size-8);"]
+      },
+      {
+        "class": "mr-9",
+        "properties": ["margin-right: var(--size-9);"]
+      },
+      {
+        "class": "mr-10",
+        "properties": ["margin-right: var(--size-10);"]
+      },
+      {
+        "class": "mr-12",
+        "properties": ["margin-right: var(--size-12);"]
+      },
+      {
+        "class": "mr-14",
+        "properties": ["margin-right: var(--size-14);"]
+      },
+      {
+        "class": "mr-16",
+        "properties": ["margin-right: var(--size-16);"]
+      },
+      {
+        "class": "mr-18",
+        "properties": ["margin-right: var(--size-18);"]
+      },
+      {
+        "class": "mr-20",
+        "properties": ["margin-right: var(--size-20);"]
+      },
+      {
+        "class": "mr-24",
+        "properties": ["margin-right: var(--size-24);"]
+      },
+      {
+        "class": "mr-28",
+        "properties": ["margin-right: var(--size-28);"]
+      },
+      {
+        "class": "mr-32",
+        "properties": ["margin-right: var(--size-32);"]
+      },
+      {
+        "class": "mr-36",
+        "properties": ["margin-right: var(--size-36);"]
+      },
+      {
+        "class": "mr-40",
+        "properties": ["margin-right: var(--size-40);"]
+      },
+      {
+        "class": "mr-48",
+        "properties": ["margin-right: var(--size-48);"]
+      },
+      {
+        "class": "mr-56",
+        "properties": ["margin-right: var(--size-56);"]
+      },
+      {
+        "class": "mr-64",
+        "properties": ["margin-right: var(--size-64);"]
+      },
+      {
+        "class": "mr-72",
+        "properties": ["margin-right: var(--size-72);"]
+      },
+      {
+        "class": "mr-80",
+        "properties": ["margin-right: var(--size-80);"]
+      },
+      {
+        "class": "mr-96",
+        "properties": ["margin-right: var(--size-96);"]
+      },
+      {
+        "class": "mr-112",
+        "properties": ["margin-right: var(--size-112);"]
+      },
+      {
+        "class": "mr-128",
+        "properties": ["margin-right: var(--size-128);"]
+      },
+      {
+        "class": "mr-144",
+        "properties": ["margin-right: var(--size-144);"]
+      },
+      {
+        "class": "mr-160",
+        "properties": ["margin-right: var(--size-160);"]
+      },
+      {
+        "class": "mr-192",
+        "properties": ["margin-right: var(--size-192);"]
+      },
+      {
+        "class": "mr-224",
+        "properties": ["margin-right: var(--size-224);"]
+      },
+      {
+        "class": "mr-256",
+        "properties": ["margin-right: var(--size-256);"]
+      },
+      {
+        "class": "mr-288",
+        "properties": ["margin-right: var(--size-288);"]
+      },
+      {
+        "class": "mr-320",
+        "properties": ["margin-right: var(--size-320);"]
+      },
+      {
+        "class": "mr-384",
+        "properties": ["margin-right: var(--size-384);"]
+      },
+      {
+        "class": "mr-448",
+        "properties": ["margin-right: var(--size-448);"]
+      },
+      {
+        "class": "mr-512",
+        "properties": ["margin-right: var(--size-512);"]
+      },
+      {
+        "class": "mr-576",
+        "properties": ["margin-right: var(--size-576);"]
+      },
+      {
+        "class": "mr-640",
+        "properties": ["margin-right: var(--size-640);"]
+      },
+      {
+        "class": "mr-n1",
+        "properties": ["margin-right: var(--size-n1);"]
+      },
+      {
+        "class": "mr-n2",
+        "properties": ["margin-right: var(--size-n2);"]
+      },
+      {
+        "class": "mr-n3",
+        "properties": ["margin-right: var(--size-n3);"]
+      },
+      {
+        "class": "mr-n4",
+        "properties": ["margin-right: var(--size-n4);"]
+      },
+      {
+        "class": "mr-n5",
+        "properties": ["margin-right: var(--size-n5);"]
+      },
+      {
+        "class": "mr-n6",
+        "properties": ["margin-right: var(--size-n6);"]
+      },
+      {
+        "class": "mr-n7",
+        "properties": ["margin-right: var(--size-n7);"]
+      },
+      {
+        "class": "mr-n8",
+        "properties": ["margin-right: var(--size-n8);"]
+      },
+      {
+        "class": "mr-n9",
+        "properties": ["margin-right: var(--size-n9);"]
+      },
+      {
+        "class": "mr-n10",
+        "properties": ["margin-right: var(--size-n10);"]
+      },
+      {
+        "class": "mr-n12",
+        "properties": ["margin-right: var(--size-n12);"]
+      },
+      {
+        "class": "mr-n14",
+        "properties": ["margin-right: var(--size-n14);"]
+      },
+      {
+        "class": "mr-n16",
+        "properties": ["margin-right: var(--size-n16);"]
+      },
+      {
+        "class": "mr-n18",
+        "properties": ["margin-right: var(--size-n18);"]
+      },
+      {
+        "class": "mr-n20",
+        "properties": ["margin-right: var(--size-n20);"]
+      },
+      {
+        "class": "mr-n24",
+        "properties": ["margin-right: var(--size-n24);"]
+      },
+      {
+        "class": "mr-n28",
+        "properties": ["margin-right: var(--size-n28);"]
+      },
+      {
+        "class": "mr-n32",
+        "properties": ["margin-right: var(--size-n32);"]
+      },
+      {
+        "class": "mr-n36",
+        "properties": ["margin-right: var(--size-n36);"]
+      },
+      {
+        "class": "mr-n40",
+        "properties": ["margin-right: var(--size-n40);"]
+      },
+      {
+        "class": "mr-n48",
+        "properties": ["margin-right: var(--size-n48);"]
+      },
+      {
+        "class": "mr-n56",
+        "properties": ["margin-right: var(--size-n56);"]
+      },
+      {
+        "class": "mr-n64",
+        "properties": ["margin-right: var(--size-n64);"]
+      },
+      {
+        "class": "mr-n72",
+        "properties": ["margin-right: var(--size-n72);"]
+      },
+      {
+        "class": "mr-n80",
+        "properties": ["margin-right: var(--size-n80);"]
+      },
+      {
+        "class": "mr-n96",
+        "properties": ["margin-right: var(--size-n96);"]
+      },
+      {
+        "class": "mr-n112",
+        "properties": ["margin-right: var(--size-n112);"]
+      },
+      {
+        "class": "mr-n128",
+        "properties": ["margin-right: var(--size-n128);"]
+      },
+      {
+        "class": "mr-n144",
+        "properties": ["margin-right: var(--size-n144);"]
+      },
+      {
+        "class": "mr-n160",
+        "properties": ["margin-right: var(--size-n160);"]
+      },
+      {
+        "class": "mr-n192",
+        "properties": ["margin-right: var(--size-n192);"]
+      },
+      {
+        "class": "mr-n224",
+        "properties": ["margin-right: var(--size-n224);"]
+      },
+      {
+        "class": "mr-n256",
+        "properties": ["margin-right: var(--size-n256);"]
+      },
+      {
+        "class": "mr-n288",
+        "properties": ["margin-right: var(--size-n288);"]
+      },
+      {
+        "class": "mr-n320",
+        "properties": ["margin-right: var(--size-n320);"]
+      },
+      {
+        "class": "mr-n384",
+        "properties": ["margin-right: var(--size-n384);"]
+      },
+      {
+        "class": "mr-n448",
+        "properties": ["margin-right: var(--size-n448);"]
+      },
+      {
+        "class": "mr-n512",
+        "properties": ["margin-right: var(--size-n512);"]
+      },
+      {
+        "class": "mr-n576",
+        "properties": ["margin-right: var(--size-n576);"]
+      },
+      {
+        "class": "mr-n640",
+        "properties": ["margin-right: var(--size-n640);"]
       }
     ]
   },
@@ -50,8 +676,328 @@
     "pseudos": ["first", "last"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "mt-0",
+        "properties": ["margin-top: var(--size-0);"]
+      },
+      {
+        "class": "mt-1",
+        "properties": ["margin-top: var(--size-1);"]
+      },
+      {
+        "class": "mt-2",
+        "properties": ["margin-top: var(--size-2);"]
+      },
+      {
+        "class": "mt-3",
+        "properties": ["margin-top: var(--size-3);"]
+      },
+      {
+        "class": "mt-4",
+        "properties": ["margin-top: var(--size-4);"]
+      },
+      {
+        "class": "mt-5",
+        "properties": ["margin-top: var(--size-5);"]
+      },
+      {
+        "class": "mt-6",
+        "properties": ["margin-top: var(--size-6);"]
+      },
+      {
+        "class": "mt-7",
+        "properties": ["margin-top: var(--size-7);"]
+      },
+      {
+        "class": "mt-8",
+        "properties": ["margin-top: var(--size-8);"]
+      },
+      {
+        "class": "mt-9",
+        "properties": ["margin-top: var(--size-9);"]
+      },
+      {
+        "class": "mt-10",
+        "properties": ["margin-top: var(--size-10);"]
+      },
+      {
+        "class": "mt-12",
+        "properties": ["margin-top: var(--size-12);"]
+      },
+      {
+        "class": "mt-14",
+        "properties": ["margin-top: var(--size-14);"]
+      },
+      {
+        "class": "mt-16",
+        "properties": ["margin-top: var(--size-16);"]
+      },
+      {
+        "class": "mt-18",
+        "properties": ["margin-top: var(--size-18);"]
+      },
+      {
+        "class": "mt-20",
+        "properties": ["margin-top: var(--size-20);"]
+      },
+      {
+        "class": "mt-24",
+        "properties": ["margin-top: var(--size-24);"]
+      },
+      {
+        "class": "mt-28",
+        "properties": ["margin-top: var(--size-28);"]
+      },
+      {
+        "class": "mt-32",
+        "properties": ["margin-top: var(--size-32);"]
+      },
+      {
+        "class": "mt-36",
+        "properties": ["margin-top: var(--size-36);"]
+      },
+      {
+        "class": "mt-40",
+        "properties": ["margin-top: var(--size-40);"]
+      },
+      {
+        "class": "mt-48",
+        "properties": ["margin-top: var(--size-48);"]
+      },
+      {
+        "class": "mt-56",
+        "properties": ["margin-top: var(--size-56);"]
+      },
+      {
+        "class": "mt-64",
+        "properties": ["margin-top: var(--size-64);"]
+      },
+      {
+        "class": "mt-72",
+        "properties": ["margin-top: var(--size-72);"]
+      },
+      {
+        "class": "mt-80",
+        "properties": ["margin-top: var(--size-80);"]
+      },
+      {
+        "class": "mt-96",
+        "properties": ["margin-top: var(--size-96);"]
+      },
+      {
+        "class": "mt-112",
+        "properties": ["margin-top: var(--size-112);"]
+      },
+      {
+        "class": "mt-128",
+        "properties": ["margin-top: var(--size-128);"]
+      },
+      {
+        "class": "mt-144",
+        "properties": ["margin-top: var(--size-144);"]
+      },
+      {
+        "class": "mt-160",
+        "properties": ["margin-top: var(--size-160);"]
+      },
+      {
+        "class": "mt-192",
+        "properties": ["margin-top: var(--size-192);"]
+      },
+      {
+        "class": "mt-224",
+        "properties": ["margin-top: var(--size-224);"]
+      },
+      {
+        "class": "mt-256",
+        "properties": ["margin-top: var(--size-256);"]
+      },
+      {
+        "class": "mt-288",
+        "properties": ["margin-top: var(--size-288);"]
+      },
+      {
+        "class": "mt-320",
+        "properties": ["margin-top: var(--size-320);"]
+      },
+      {
+        "class": "mt-384",
+        "properties": ["margin-top: var(--size-384);"]
+      },
+      {
+        "class": "mt-448",
+        "properties": ["margin-top: var(--size-448);"]
+      },
+      {
+        "class": "mt-512",
+        "properties": ["margin-top: var(--size-512);"]
+      },
+      {
+        "class": "mt-576",
+        "properties": ["margin-top: var(--size-576);"]
+      },
+      {
+        "class": "mt-640",
+        "properties": ["margin-top: var(--size-640);"]
+      },
+      {
+        "class": "mt-n1",
+        "properties": ["margin-top: var(--size-n1);"]
+      },
+      {
+        "class": "mt-n2",
+        "properties": ["margin-top: var(--size-n2);"]
+      },
+      {
+        "class": "mt-n3",
+        "properties": ["margin-top: var(--size-n3);"]
+      },
+      {
+        "class": "mt-n4",
+        "properties": ["margin-top: var(--size-n4);"]
+      },
+      {
+        "class": "mt-n5",
+        "properties": ["margin-top: var(--size-n5);"]
+      },
+      {
+        "class": "mt-n6",
+        "properties": ["margin-top: var(--size-n6);"]
+      },
+      {
+        "class": "mt-n7",
+        "properties": ["margin-top: var(--size-n7);"]
+      },
+      {
+        "class": "mt-n8",
+        "properties": ["margin-top: var(--size-n8);"]
+      },
+      {
+        "class": "mt-n9",
+        "properties": ["margin-top: var(--size-n9);"]
+      },
+      {
+        "class": "mt-n10",
+        "properties": ["margin-top: var(--size-n10);"]
+      },
+      {
+        "class": "mt-n12",
+        "properties": ["margin-top: var(--size-n12);"]
+      },
+      {
+        "class": "mt-n14",
+        "properties": ["margin-top: var(--size-n14);"]
+      },
+      {
+        "class": "mt-n16",
+        "properties": ["margin-top: var(--size-n16);"]
+      },
+      {
+        "class": "mt-n18",
+        "properties": ["margin-top: var(--size-n18);"]
+      },
+      {
+        "class": "mt-n20",
+        "properties": ["margin-top: var(--size-n20);"]
+      },
+      {
+        "class": "mt-n24",
+        "properties": ["margin-top: var(--size-n24);"]
+      },
+      {
+        "class": "mt-n28",
+        "properties": ["margin-top: var(--size-n28);"]
+      },
+      {
+        "class": "mt-n32",
+        "properties": ["margin-top: var(--size-n32);"]
+      },
+      {
+        "class": "mt-n36",
+        "properties": ["margin-top: var(--size-n36);"]
+      },
+      {
+        "class": "mt-n40",
+        "properties": ["margin-top: var(--size-n40);"]
+      },
+      {
+        "class": "mt-n48",
+        "properties": ["margin-top: var(--size-n48);"]
+      },
+      {
+        "class": "mt-n56",
+        "properties": ["margin-top: var(--size-n56);"]
+      },
+      {
+        "class": "mt-n64",
+        "properties": ["margin-top: var(--size-n64);"]
+      },
+      {
+        "class": "mt-n72",
+        "properties": ["margin-top: var(--size-n72);"]
+      },
+      {
+        "class": "mt-n80",
+        "properties": ["margin-top: var(--size-n80);"]
+      },
+      {
+        "class": "mt-n96",
+        "properties": ["margin-top: var(--size-n96);"]
+      },
+      {
+        "class": "mt-n112",
+        "properties": ["margin-top: var(--size-n112);"]
+      },
+      {
+        "class": "mt-n128",
+        "properties": ["margin-top: var(--size-n128);"]
+      },
+      {
+        "class": "mt-n144",
+        "properties": ["margin-top: var(--size-n144);"]
+      },
+      {
+        "class": "mt-n160",
+        "properties": ["margin-top: var(--size-n160);"]
+      },
+      {
+        "class": "mt-n192",
+        "properties": ["margin-top: var(--size-n192);"]
+      },
+      {
+        "class": "mt-n224",
+        "properties": ["margin-top: var(--size-n224);"]
+      },
+      {
+        "class": "mt-n256",
+        "properties": ["margin-top: var(--size-n256);"]
+      },
+      {
+        "class": "mt-n288",
+        "properties": ["margin-top: var(--size-n288);"]
+      },
+      {
+        "class": "mt-n320",
+        "properties": ["margin-top: var(--size-n320);"]
+      },
+      {
+        "class": "mt-n384",
+        "properties": ["margin-top: var(--size-n384);"]
+      },
+      {
+        "class": "mt-n448",
+        "properties": ["margin-top: var(--size-n448);"]
+      },
+      {
+        "class": "mt-n512",
+        "properties": ["margin-top: var(--size-n512);"]
+      },
+      {
+        "class": "mt-n576",
+        "properties": ["margin-top: var(--size-n576);"]
+      },
+      {
+        "class": "mt-n640",
+        "properties": ["margin-top: var(--size-n640);"]
       }
     ]
   },
@@ -61,11 +1007,331 @@
     "responsive-pseudos": false,
     "extraSelector": "",
     "customProperties": [],
-    "pseudos": ["none"],
+    "pseudos": ["first", "last"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "mb-0",
+        "properties": ["margin-bottom: var(--size-0);"]
+      },
+      {
+        "class": "mb-1",
+        "properties": ["margin-bottom: var(--size-1);"]
+      },
+      {
+        "class": "mb-2",
+        "properties": ["margin-bottom: var(--size-2);"]
+      },
+      {
+        "class": "mb-3",
+        "properties": ["margin-bottom: var(--size-3);"]
+      },
+      {
+        "class": "mb-4",
+        "properties": ["margin-bottom: var(--size-4);"]
+      },
+      {
+        "class": "mb-5",
+        "properties": ["margin-bottom: var(--size-5);"]
+      },
+      {
+        "class": "mb-6",
+        "properties": ["margin-bottom: var(--size-6);"]
+      },
+      {
+        "class": "mb-7",
+        "properties": ["margin-bottom: var(--size-7);"]
+      },
+      {
+        "class": "mb-8",
+        "properties": ["margin-bottom: var(--size-8);"]
+      },
+      {
+        "class": "mb-9",
+        "properties": ["margin-bottom: var(--size-9);"]
+      },
+      {
+        "class": "mb-10",
+        "properties": ["margin-bottom: var(--size-10);"]
+      },
+      {
+        "class": "mb-12",
+        "properties": ["margin-bottom: var(--size-12);"]
+      },
+      {
+        "class": "mb-14",
+        "properties": ["margin-bottom: var(--size-14);"]
+      },
+      {
+        "class": "mb-16",
+        "properties": ["margin-bottom: var(--size-16);"]
+      },
+      {
+        "class": "mb-18",
+        "properties": ["margin-bottom: var(--size-18);"]
+      },
+      {
+        "class": "mb-20",
+        "properties": ["margin-bottom: var(--size-20);"]
+      },
+      {
+        "class": "mb-24",
+        "properties": ["margin-bottom: var(--size-24);"]
+      },
+      {
+        "class": "mb-28",
+        "properties": ["margin-bottom: var(--size-28);"]
+      },
+      {
+        "class": "mb-32",
+        "properties": ["margin-bottom: var(--size-32);"]
+      },
+      {
+        "class": "mb-36",
+        "properties": ["margin-bottom: var(--size-36);"]
+      },
+      {
+        "class": "mb-40",
+        "properties": ["margin-bottom: var(--size-40);"]
+      },
+      {
+        "class": "mb-48",
+        "properties": ["margin-bottom: var(--size-48);"]
+      },
+      {
+        "class": "mb-56",
+        "properties": ["margin-bottom: var(--size-56);"]
+      },
+      {
+        "class": "mb-64",
+        "properties": ["margin-bottom: var(--size-64);"]
+      },
+      {
+        "class": "mb-72",
+        "properties": ["margin-bottom: var(--size-72);"]
+      },
+      {
+        "class": "mb-80",
+        "properties": ["margin-bottom: var(--size-80);"]
+      },
+      {
+        "class": "mb-96",
+        "properties": ["margin-bottom: var(--size-96);"]
+      },
+      {
+        "class": "mb-112",
+        "properties": ["margin-bottom: var(--size-112);"]
+      },
+      {
+        "class": "mb-128",
+        "properties": ["margin-bottom: var(--size-128);"]
+      },
+      {
+        "class": "mb-144",
+        "properties": ["margin-bottom: var(--size-144);"]
+      },
+      {
+        "class": "mb-160",
+        "properties": ["margin-bottom: var(--size-160);"]
+      },
+      {
+        "class": "mb-192",
+        "properties": ["margin-bottom: var(--size-192);"]
+      },
+      {
+        "class": "mb-224",
+        "properties": ["margin-bottom: var(--size-224);"]
+      },
+      {
+        "class": "mb-256",
+        "properties": ["margin-bottom: var(--size-256);"]
+      },
+      {
+        "class": "mb-288",
+        "properties": ["margin-bottom: var(--size-288);"]
+      },
+      {
+        "class": "mb-320",
+        "properties": ["margin-bottom: var(--size-320);"]
+      },
+      {
+        "class": "mb-384",
+        "properties": ["margin-bottom: var(--size-384);"]
+      },
+      {
+        "class": "mb-448",
+        "properties": ["margin-bottom: var(--size-448);"]
+      },
+      {
+        "class": "mb-512",
+        "properties": ["margin-bottom: var(--size-512);"]
+      },
+      {
+        "class": "mb-576",
+        "properties": ["margin-bottom: var(--size-576);"]
+      },
+      {
+        "class": "mb-640",
+        "properties": ["margin-bottom: var(--size-640);"]
+      },
+      {
+        "class": "mb-n1",
+        "properties": ["margin-bottom: var(--size-n1);"]
+      },
+      {
+        "class": "mb-n2",
+        "properties": ["margin-bottom: var(--size-n2);"]
+      },
+      {
+        "class": "mb-n3",
+        "properties": ["margin-bottom: var(--size-n3);"]
+      },
+      {
+        "class": "mb-n4",
+        "properties": ["margin-bottom: var(--size-n4);"]
+      },
+      {
+        "class": "mb-n5",
+        "properties": ["margin-bottom: var(--size-n5);"]
+      },
+      {
+        "class": "mb-n6",
+        "properties": ["margin-bottom: var(--size-n6);"]
+      },
+      {
+        "class": "mb-n7",
+        "properties": ["margin-bottom: var(--size-n7);"]
+      },
+      {
+        "class": "mb-n8",
+        "properties": ["margin-bottom: var(--size-n8);"]
+      },
+      {
+        "class": "mb-n9",
+        "properties": ["margin-bottom: var(--size-n9);"]
+      },
+      {
+        "class": "mb-n10",
+        "properties": ["margin-bottom: var(--size-n10);"]
+      },
+      {
+        "class": "mb-n12",
+        "properties": ["margin-bottom: var(--size-n12);"]
+      },
+      {
+        "class": "mb-n14",
+        "properties": ["margin-bottom: var(--size-n14);"]
+      },
+      {
+        "class": "mb-n16",
+        "properties": ["margin-bottom: var(--size-n16);"]
+      },
+      {
+        "class": "mb-n18",
+        "properties": ["margin-bottom: var(--size-n18);"]
+      },
+      {
+        "class": "mb-n20",
+        "properties": ["margin-bottom: var(--size-n20);"]
+      },
+      {
+        "class": "mb-n24",
+        "properties": ["margin-bottom: var(--size-n24);"]
+      },
+      {
+        "class": "mb-n28",
+        "properties": ["margin-bottom: var(--size-n28);"]
+      },
+      {
+        "class": "mb-n32",
+        "properties": ["margin-bottom: var(--size-n32);"]
+      },
+      {
+        "class": "mb-n36",
+        "properties": ["margin-bottom: var(--size-n36);"]
+      },
+      {
+        "class": "mb-n40",
+        "properties": ["margin-bottom: var(--size-n40);"]
+      },
+      {
+        "class": "mb-n48",
+        "properties": ["margin-bottom: var(--size-n48);"]
+      },
+      {
+        "class": "mb-n56",
+        "properties": ["margin-bottom: var(--size-n56);"]
+      },
+      {
+        "class": "mb-n64",
+        "properties": ["margin-bottom: var(--size-n64);"]
+      },
+      {
+        "class": "mb-n72",
+        "properties": ["margin-bottom: var(--size-n72);"]
+      },
+      {
+        "class": "mb-n80",
+        "properties": ["margin-bottom: var(--size-n80);"]
+      },
+      {
+        "class": "mb-n96",
+        "properties": ["margin-bottom: var(--size-n96);"]
+      },
+      {
+        "class": "mb-n112",
+        "properties": ["margin-bottom: var(--size-n112);"]
+      },
+      {
+        "class": "mb-n128",
+        "properties": ["margin-bottom: var(--size-n128);"]
+      },
+      {
+        "class": "mb-n144",
+        "properties": ["margin-bottom: var(--size-n144);"]
+      },
+      {
+        "class": "mb-n160",
+        "properties": ["margin-bottom: var(--size-n160);"]
+      },
+      {
+        "class": "mb-n192",
+        "properties": ["margin-bottom: var(--size-n192);"]
+      },
+      {
+        "class": "mb-n224",
+        "properties": ["margin-bottom: var(--size-n224);"]
+      },
+      {
+        "class": "mb-n256",
+        "properties": ["margin-bottom: var(--size-n256);"]
+      },
+      {
+        "class": "mb-n288",
+        "properties": ["margin-bottom: var(--size-n288);"]
+      },
+      {
+        "class": "mb-n320",
+        "properties": ["margin-bottom: var(--size-n320);"]
+      },
+      {
+        "class": "mb-n384",
+        "properties": ["margin-bottom: var(--size-n384);"]
+      },
+      {
+        "class": "mb-n448",
+        "properties": ["margin-bottom: var(--size-n448);"]
+      },
+      {
+        "class": "mb-n512",
+        "properties": ["margin-bottom: var(--size-n512);"]
+      },
+      {
+        "class": "mb-n576",
+        "properties": ["margin-bottom: var(--size-n576);"]
+      },
+      {
+        "class": "mb-n640",
+        "properties": ["margin-bottom: var(--size-n640);"]
       }
     ]
   },
@@ -78,8 +1344,291 @@
     "pseudos": ["none"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "mx-0",
+        "properties": [
+          "margin-left: var(--size-0);",
+          "margin-right: var(--size-0);"
+        ]
+      },
+      {
+        "class": "mx-1",
+        "properties": [
+          "margin-left: var(--size-1);",
+          "margin-right: var(--size-1);"
+        ]
+      },
+      {
+        "class": "mx-2",
+        "properties": [
+          "margin-left: var(--size-2);",
+          "margin-right: var(--size-2);"
+        ]
+      },
+      {
+        "class": "mx-3",
+        "properties": [
+          "margin-left: var(--size-3);",
+          "margin-right: var(--size-3);"
+        ]
+      },
+      {
+        "class": "mx-4",
+        "properties": [
+          "margin-left: var(--size-4);",
+          "margin-right: var(--size-4);"
+        ]
+      },
+      {
+        "class": "mx-5",
+        "properties": [
+          "margin-left: var(--size-5);",
+          "margin-right: var(--size-5);"
+        ]
+      },
+      {
+        "class": "mx-6",
+        "properties": [
+          "margin-left: var(--size-6);",
+          "margin-right: var(--size-6);"
+        ]
+      },
+      {
+        "class": "mx-7",
+        "properties": [
+          "margin-left: var(--size-7);",
+          "margin-right: var(--size-7);"
+        ]
+      },
+      {
+        "class": "mx-8",
+        "properties": [
+          "margin-left: var(--size-8);",
+          "margin-right: var(--size-8);"
+        ]
+      },
+      {
+        "class": "mx-9",
+        "properties": [
+          "margin-left: var(--size-9);",
+          "margin-right: var(--size-9);"
+        ]
+      },
+      {
+        "class": "mx-10",
+        "properties": [
+          "margin-left: var(--size-10);",
+          "margin-right: var(--size-10);"
+        ]
+      },
+      {
+        "class": "mx-12",
+        "properties": [
+          "margin-left: var(--size-12);",
+          "margin-right: var(--size-12);"
+        ]
+      },
+      {
+        "class": "mx-14",
+        "properties": [
+          "margin-left: var(--size-14);",
+          "margin-right: var(--size-14);"
+        ]
+      },
+      {
+        "class": "mx-16",
+        "properties": [
+          "margin-left: var(--size-16);",
+          "margin-right: var(--size-16);"
+        ]
+      },
+      {
+        "class": "mx-18",
+        "properties": [
+          "margin-left: var(--size-18);",
+          "margin-right: var(--size-18);"
+        ]
+      },
+      {
+        "class": "mx-20",
+        "properties": [
+          "margin-left: var(--size-20);",
+          "margin-right: var(--size-20);"
+        ]
+      },
+      {
+        "class": "mx-24",
+        "properties": [
+          "margin-left: var(--size-24);",
+          "margin-right: var(--size-24);"
+        ]
+      },
+      {
+        "class": "mx-28",
+        "properties": [
+          "margin-left: var(--size-28);",
+          "margin-right: var(--size-28);"
+        ]
+      },
+      {
+        "class": "mx-32",
+        "properties": [
+          "margin-left: var(--size-32);",
+          "margin-right: var(--size-32);"
+        ]
+      },
+      {
+        "class": "mx-36",
+        "properties": [
+          "margin-left: var(--size-36);",
+          "margin-right: var(--size-36);"
+        ]
+      },
+      {
+        "class": "mx-40",
+        "properties": [
+          "margin-left: var(--size-40);",
+          "margin-right: var(--size-40);"
+        ]
+      },
+      {
+        "class": "mx-48",
+        "properties": [
+          "margin-left: var(--size-48);",
+          "margin-right: var(--size-48);"
+        ]
+      },
+      {
+        "class": "mx-56",
+        "properties": [
+          "margin-left: var(--size-56);",
+          "margin-right: var(--size-56);"
+        ]
+      },
+      {
+        "class": "mx-64",
+        "properties": [
+          "margin-left: var(--size-64);",
+          "margin-right: var(--size-64);"
+        ]
+      },
+      {
+        "class": "mx-72",
+        "properties": [
+          "margin-left: var(--size-72);",
+          "margin-right: var(--size-72);"
+        ]
+      },
+      {
+        "class": "mx-80",
+        "properties": [
+          "margin-left: var(--size-80);",
+          "margin-right: var(--size-80);"
+        ]
+      },
+      {
+        "class": "mx-96",
+        "properties": [
+          "margin-left: var(--size-96);",
+          "margin-right: var(--size-96);"
+        ]
+      },
+      {
+        "class": "mx-112",
+        "properties": [
+          "margin-left: var(--size-112);",
+          "margin-right: var(--size-112);"
+        ]
+      },
+      {
+        "class": "mx-128",
+        "properties": [
+          "margin-left: var(--size-128);",
+          "margin-right: var(--size-128);"
+        ]
+      },
+      {
+        "class": "mx-144",
+        "properties": [
+          "margin-left: var(--size-144);",
+          "margin-right: var(--size-144);"
+        ]
+      },
+      {
+        "class": "mx-160",
+        "properties": [
+          "margin-left: var(--size-160);",
+          "margin-right: var(--size-160);"
+        ]
+      },
+      {
+        "class": "mx-192",
+        "properties": [
+          "margin-left: var(--size-192);",
+          "margin-right: var(--size-192);"
+        ]
+      },
+      {
+        "class": "mx-224",
+        "properties": [
+          "margin-left: var(--size-224);",
+          "margin-right: var(--size-224);"
+        ]
+      },
+      {
+        "class": "mx-256",
+        "properties": [
+          "margin-left: var(--size-256);",
+          "margin-right: var(--size-256);"
+        ]
+      },
+      {
+        "class": "mx-288",
+        "properties": [
+          "margin-left: var(--size-288);",
+          "margin-right: var(--size-288);"
+        ]
+      },
+      {
+        "class": "mx-320",
+        "properties": [
+          "margin-left: var(--size-320);",
+          "margin-right: var(--size-320);"
+        ]
+      },
+      {
+        "class": "mx-384",
+        "properties": [
+          "margin-left: var(--size-384);",
+          "margin-right: var(--size-384);"
+        ]
+      },
+      {
+        "class": "mx-448",
+        "properties": [
+          "margin-left: var(--size-448);",
+          "margin-right: var(--size-448);"
+        ]
+      },
+      {
+        "class": "mx-512",
+        "properties": [
+          "margin-left: var(--size-512);",
+          "margin-right: var(--size-512);"
+        ]
+      },
+      {
+        "class": "mx-576",
+        "properties": [
+          "margin-left: var(--size-576);",
+          "margin-right: var(--size-576);"
+        ]
+      },
+      {
+        "class": "mx-640",
+        "properties": [
+          "margin-left: var(--size-640);",
+          "margin-right: var(--size-640);"
+        ]
       }
     ]
   },
@@ -92,8 +1641,291 @@
     "pseudos": ["none"],
     "utilities": [
       {
-        "class": "",
-        "properties": ["display"]
+        "class": "my-0",
+        "properties": [
+          "margin-top: var(--size-0);",
+          "margin-bottom: var(--size-0);"
+        ]
+      },
+      {
+        "class": "my-1",
+        "properties": [
+          "margin-top: var(--size-1);",
+          "margin-bottom: var(--size-1);"
+        ]
+      },
+      {
+        "class": "my-2",
+        "properties": [
+          "margin-top: var(--size-2);",
+          "margin-bottom: var(--size-2);"
+        ]
+      },
+      {
+        "class": "my-3",
+        "properties": [
+          "margin-top: var(--size-3);",
+          "margin-bottom: var(--size-3);"
+        ]
+      },
+      {
+        "class": "my-4",
+        "properties": [
+          "margin-top: var(--size-4);",
+          "margin-bottom: var(--size-4);"
+        ]
+      },
+      {
+        "class": "my-5",
+        "properties": [
+          "margin-top: var(--size-5);",
+          "margin-bottom: var(--size-5);"
+        ]
+      },
+      {
+        "class": "my-6",
+        "properties": [
+          "margin-top: var(--size-6);",
+          "margin-bottom: var(--size-6);"
+        ]
+      },
+      {
+        "class": "my-7",
+        "properties": [
+          "margin-top: var(--size-7);",
+          "margin-bottom: var(--size-7);"
+        ]
+      },
+      {
+        "class": "my-8",
+        "properties": [
+          "margin-top: var(--size-8);",
+          "margin-bottom: var(--size-8);"
+        ]
+      },
+      {
+        "class": "my-9",
+        "properties": [
+          "margin-top: var(--size-9);",
+          "margin-bottom: var(--size-9);"
+        ]
+      },
+      {
+        "class": "my-10",
+        "properties": [
+          "margin-top: var(--size-10);",
+          "margin-bottom: var(--size-10);"
+        ]
+      },
+      {
+        "class": "my-12",
+        "properties": [
+          "margin-top: var(--size-12);",
+          "margin-bottom: var(--size-12);"
+        ]
+      },
+      {
+        "class": "my-14",
+        "properties": [
+          "margin-top: var(--size-14);",
+          "margin-bottom: var(--size-14);"
+        ]
+      },
+      {
+        "class": "my-16",
+        "properties": [
+          "margin-top: var(--size-16);",
+          "margin-bottom: var(--size-16);"
+        ]
+      },
+      {
+        "class": "my-18",
+        "properties": [
+          "margin-top: var(--size-18);",
+          "margin-bottom: var(--size-18);"
+        ]
+      },
+      {
+        "class": "my-20",
+        "properties": [
+          "margin-top: var(--size-20);",
+          "margin-bottom: var(--size-20);"
+        ]
+      },
+      {
+        "class": "my-24",
+        "properties": [
+          "margin-top: var(--size-24);",
+          "margin-bottom: var(--size-24);"
+        ]
+      },
+      {
+        "class": "my-28",
+        "properties": [
+          "margin-top: var(--size-28);",
+          "margin-bottom: var(--size-28);"
+        ]
+      },
+      {
+        "class": "my-32",
+        "properties": [
+          "margin-top: var(--size-32);",
+          "margin-bottom: var(--size-32);"
+        ]
+      },
+      {
+        "class": "my-36",
+        "properties": [
+          "margin-top: var(--size-36);",
+          "margin-bottom: var(--size-36);"
+        ]
+      },
+      {
+        "class": "my-40",
+        "properties": [
+          "margin-top: var(--size-40);",
+          "margin-bottom: var(--size-40);"
+        ]
+      },
+      {
+        "class": "my-48",
+        "properties": [
+          "margin-top: var(--size-48);",
+          "margin-bottom: var(--size-48);"
+        ]
+      },
+      {
+        "class": "my-56",
+        "properties": [
+          "margin-top: var(--size-56);",
+          "margin-bottom: var(--size-56);"
+        ]
+      },
+      {
+        "class": "my-64",
+        "properties": [
+          "margin-top: var(--size-64);",
+          "margin-bottom: var(--size-64);"
+        ]
+      },
+      {
+        "class": "my-72",
+        "properties": [
+          "margin-top: var(--size-72);",
+          "margin-bottom: var(--size-72);"
+        ]
+      },
+      {
+        "class": "my-80",
+        "properties": [
+          "margin-top: var(--size-80);",
+          "margin-bottom: var(--size-80);"
+        ]
+      },
+      {
+        "class": "my-96",
+        "properties": [
+          "margin-top: var(--size-96);",
+          "margin-bottom: var(--size-96);"
+        ]
+      },
+      {
+        "class": "my-112",
+        "properties": [
+          "margin-top: var(--size-112);",
+          "margin-bottom: var(--size-112);"
+        ]
+      },
+      {
+        "class": "my-128",
+        "properties": [
+          "margin-top: var(--size-128);",
+          "margin-bottom: var(--size-128);"
+        ]
+      },
+      {
+        "class": "my-144",
+        "properties": [
+          "margin-top: var(--size-144);",
+          "margin-bottom: var(--size-144);"
+        ]
+      },
+      {
+        "class": "my-160",
+        "properties": [
+          "margin-top: var(--size-160);",
+          "margin-bottom: var(--size-160);"
+        ]
+      },
+      {
+        "class": "my-192",
+        "properties": [
+          "margin-top: var(--size-192);",
+          "margin-bottom: var(--size-192);"
+        ]
+      },
+      {
+        "class": "my-224",
+        "properties": [
+          "margin-top: var(--size-224);",
+          "margin-bottom: var(--size-224);"
+        ]
+      },
+      {
+        "class": "my-256",
+        "properties": [
+          "margin-top: var(--size-256);",
+          "margin-bottom: var(--size-256);"
+        ]
+      },
+      {
+        "class": "my-288",
+        "properties": [
+          "margin-top: var(--size-288);",
+          "margin-bottom: var(--size-288);"
+        ]
+      },
+      {
+        "class": "my-320",
+        "properties": [
+          "margin-top: var(--size-320);",
+          "margin-bottom: var(--size-320);"
+        ]
+      },
+      {
+        "class": "my-384",
+        "properties": [
+          "margin-top: var(--size-384);",
+          "margin-bottom: var(--size-384);"
+        ]
+      },
+      {
+        "class": "my-448",
+        "properties": [
+          "margin-top: var(--size-448);",
+          "margin-bottom: var(--size-448);"
+        ]
+      },
+      {
+        "class": "my-512",
+        "properties": [
+          "margin-top: var(--size-512);",
+          "margin-bottom: var(--size-512);"
+        ]
+      },
+      {
+        "class": "my-576",
+        "properties": [
+          "margin-top: var(--size-576);",
+          "margin-bottom: var(--size-576);"
+        ]
+      },
+      {
+        "class": "my-640",
+        "properties": [
+          "margin-top: var(--size-640);",
+          "margin-bottom: var(--size-640);"
+        ]
       }
     ]
   }
