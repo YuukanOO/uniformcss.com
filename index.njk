@@ -12,19 +12,20 @@ scssCodeExample: |
     )
   );
 cssCodeExample: |
-  .align-left { 
+  .text-left { 
     text-align: left !important; 
   }
 
-  .align-center { 
+  .text-center { 
     text-align: center !important; 
   }
 
-  .align-right { 
+  .text-right { 
     text-align: right !important; 
   }
 
-  ...
+  .align-top {
+    ...
 ---
 
 <div class="flex align-items-center justify-content-center h-40 bg-gradient">
@@ -91,7 +92,7 @@ cssCodeExample: |
       <div class="text-sm tracking-loose bold uppercase color-blue mb-16">
         Get Started
       </div>
-      <h2 class="font-7xl leading-110 extrabold tracking-tight mb-32">Setup in minutes</h2>
+      <h2 class="text-7xl extrabold tracking-tight mb-32">Setup in minutes</h2>
       <div class="flex align-items-center justify-content-center">
         <div class="flex p-6 shadow-card radius-sm">
           <button class="text-md bold color-black px-24 h-48 radius-sm" 
@@ -117,17 +118,37 @@ cssCodeExample: |
             <div
               x-show="tab === 'tab1'"
             >
-              <h3 class="font-4xl leading-110 extrabold tracking-tight mb-28">Load and configure directly in Sass</h3>
-              <p class="text-lg color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, and hundreds of other signals.</p>
-              <a class="text-lg color-primary bold">More about Filter API</a>
+              <h3 class="text-4xl extrabold tracking-tight mb-28">Load and configure <span class="bg-text color-transparent bg-gradient">directly</span> in Sass</h3>
+              <p class="text-xl color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, and hundreds of other signals.</p>
+              <a href="#" class="text-lg color-primary bold">More about Filter API</a>
+              <div class="grid grid-cols-2 pt-40">
+                <div class="text-md">
+                  <div class="text-2xl bold tracking-tight">48KB</div>
+                  with brotli
+                </div>
+                <div class="text-md">
+                  <div class="text-2xl bold tracking-tight">Under 1s</div>
+                  to compile
+                </div>
+              </div>
             </div>
             
             <div
               x-show="tab === 'tab2'"
             >
-              <h3 class="font-4xl leading-110 extrabold tracking-tight mb-28">Add Uniform with just one line of code</h3>
-              <p class="text-lg color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes,.</p>
-              <a class="text-lg color-primary bold">More about Filter API</a>
+              <h3 class="text-4xl extrabold tracking-tight mb-28">Literally just <br><span class="bg-text color-transparent bg-gradient">one line</span> of code</h3>
+              <p class="text-xl color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, and hundreds of other signals.</p>
+              <a href="#" class="text-lg color-primary bold">More about Filter API</a>
+              <div class="grid grid-cols-2 pt-40">
+                <div class="text-md">
+                  <div class="text-2xl bold tracking-tight">48KB</div>
+                  with brotli
+                </div>
+                <div class="text-md">
+                  <div class="text-2xl bold tracking-tight">Under 1s</div>
+                  to compile
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-12 sm.col-7 relative ">
@@ -176,7 +197,7 @@ cssCodeExample: |
               <article class="radius-lg overflow-hidden bg-tertiary bg-shade-600 shadow-card">
 
                 <header class="h-64 px-20 flex align-items-center border-b-1 border-white border-opacity-10">
-                  <span class="inline-flex align-items-center mr-16 px-6 bg-mint color-tertiary color-shade-600 uppercase text-2xs extrabold tracking-loose radius-sm">css</span>
+                  <span class="inline-flex align-items-center mr-16 px-6 bg-white color-tertiary color-shade-600 uppercase text-2xs extrabold radius-sm">css</span>
                   <div class="flex flex-col sm.flex-row justify-content-between w-100p">
                     <div class="color-white text-sm medium">
                       Generate<span class="hidden sm.inline"> suite of</span> utilities properties
@@ -278,7 +299,7 @@ cssCodeExample: |
       <div class="text-sm tracking-loose bold uppercase color-blue mb-16">
         Simple to setup
       </div>
-      <h2 class="font-7xl leading-110 extrabold tracking-tight mb-32">APIs for both bot abuse<br> and account fraud</h2>
+      <h2 class="text-7xl extrabold tracking-tight mb-32">APIs for both bot abuse<br> and account fraud</h2>
       <div class="flex align-items-center justify-content-center">
         <div class="flex p-6 shadow-card radius-sm">
           <button class="text-md bold color-black px-24 h-48 radius-sm" 
@@ -304,9 +325,9 @@ cssCodeExample: |
             <div
               x-show="tab === 'tab1'"
             >
-              <h3 class="font-4xl leading-110 extrabold tracking-tight mb-28">Load and configure directly in Sass</h3>
+              <h3 class="text-4xl extrabold tracking-tight mb-28">Load and configure directly in Sass</h3>
               <p class="text-lg color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, and hundreds of other signals.</p>
-              <a class="text-lg color-primary bold">More about Filter API</a>
+              <a href="#" class="text-lg color-primary bold">More about Filter API</a>
 
               <div class="flex gutter-x-10 pt-32">
                 <button class="px-16 py-3 text-sm bold border-1 border-black radius-full">Preview</button>
@@ -317,9 +338,9 @@ cssCodeExample: |
             <div
               x-show="tab === 'tab2'"
             >
-              <h3 class="font-4xl leading-110 extrabold tracking-tight mb-28">Add Uniform with just one line of code</h3>
+              <h3 class="text-4xl extrabold tracking-tight mb-28">Add Uniform with just one line of code</h3>
               <p class="text-lg color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes,.</p>
-              <a class="text-lg color-primary bold">More about Filter API</a>
+              <a href="#" class="text-lg color-primary bold">More about Filter API</a>
               
             </div>
           </div>
@@ -378,7 +399,7 @@ cssCodeExample: |
       <div class="text-sm tracking-loose bold uppercase color-blue mb-16">
         Simple to setup
       </div>
-      <h2 class="font-7xl leading-110 extrabold tracking-tight mb-32">APIs for both bot abuse<br> and account fraud</h2>
+      <h2 class="text-7xl extrabold tracking-tight mb-32">APIs for both bot abuse<br> and account fraud</h2>
       <div class="flex align-items-center justify-content-center">
         <div class="flex p-6 shadow-card radius-sm">
           <button class="text-md bold color-black px-24 h-48 radius-sm" 
@@ -404,9 +425,9 @@ cssCodeExample: |
             <div
               x-show="tab === 'tab1'"
             >
-              <h3 class="font-4xl leading-110 extrabold tracking-tight mb-28">Load and configure directly in Sass</h3>
+              <h3 class="text-4xl extrabold tracking-tight mb-28">Load and configure directly in Sass</h3>
               <p class="text-lg color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, and hundreds of other signals.</p>
-              <a class="text-lg color-primary bold">More about Filter API</a>
+              <a href="#" class="text-lg color-primary bold">More about Filter API</a>
 
               <div class="flex gutter-x-10 pt-32">
                 <button class="px-16 py-3 text-sm bold border-1 border-black radius-full">Preview</button>
@@ -417,9 +438,9 @@ cssCodeExample: |
             <div
               x-show="tab === 'tab2'"
             >
-              <h3 class="font-4xl leading-110 extrabold tracking-tight mb-28">Add Uniform with just one line of code</h3>
+              <h3 class="text-4xl extrabold tracking-tight mb-28">Add Uniform with just one line of code</h3>
               <p class="text-lg color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes,.</p>
-              <a class="text-lg color-primary bold">More about Filter API</a>
+              <a href="#" class="text-lg color-primary bold">More about Filter API</a>
               
             </div>
           </div>
