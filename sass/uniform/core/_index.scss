@@ -378,7 +378,7 @@ $default-config: (
   font-sizes: (
     2xs: (
       font-size: rem(10),
-      line-height: var(--leading-100),
+      line-height: var(--leading-200),
     ),
     xs: (
       font-size: rem(12),
@@ -394,15 +394,15 @@ $default-config: (
     ),
     lg: (
       font-size: rem(18),
-      line-height: var(--leading-180),
+      line-height: var(--leading-160),
     ),
     xl: (
       font-size: rem(20),
-      line-height: var(--leading-140),
+      line-height: var(--leading-160),
     ),
     2xl: (
       font-size: rem(24),
-      line-height: var(--leading-140),
+      line-height: var(--leading-160),
     ),
     3xl: (
       font-size: rem(28),
@@ -430,24 +430,20 @@ $default-config: (
     ),
     9xl: (
       font-size: rem(64),
-      line-height: var(--leading-120),
+      line-height: var(--leading-110),
     ),
     10xl: (
       font-size: rem(72),
-      line-height: var(--leading-120),
+      line-height: var(--leading-110),
     ),
     11xl: (
       font-size: rem(88),
-      line-height: var(--leading-100),
+      line-height: var(--leading-110),
     ),
     12xl: (
       font-size: rem(104),
       line-height: var(--leading-100),
-    ),
-    13xl: (
-      font-size: rem(120),
-      line-height: var(--leading-100),
-    ),
+    )
   ),
 
   font-weights: (

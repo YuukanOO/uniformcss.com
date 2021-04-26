@@ -22,7 +22,6 @@
   --font-10xl: 4.5rem;
   --font-11xl: 5.5rem;
   --font-12xl: 6.5rem;
-  --font-13xl: 7.5rem;
   --FONT-WEIGHTS------------------:#03;
   --ultralight: 100;
   --extralight: 200;
@@ -59,24 +58,23 @@
   --tracking-looser: 0.04em;
   --tracking-loosest: 0.08em;
   --TEXT-LEADING------------------:#06;
-  --font-2xs-leading: var(--leading-100);
+  --font-2xs-leading: var(--leading-200);
   --font-xs-leading: var(--leading-180);
   --font-sm-leading: var(--leading-180);
   --font-md-leading: var(--leading-180);
-  --font-lg-leading: var(--leading-180);
-  --font-xl-leading: var(--leading-140);
-  --font-2xl-leading: var(--leading-140);
+  --font-lg-leading: var(--leading-160);
+  --font-xl-leading: var(--leading-160);
+  --font-2xl-leading: var(--leading-160);
   --font-3xl-leading: var(--leading-140);
   --font-4xl-leading: var(--leading-140);
   --font-5xl-leading: var(--leading-140);
   --font-6xl-leading: var(--leading-120);
   --font-7xl-leading: var(--leading-120);
   --font-8xl-leading: var(--leading-120);
-  --font-9xl-leading: var(--leading-120);
-  --font-10xl-leading: var(--leading-120);
-  --font-11xl-leading: var(--leading-100);
+  --font-9xl-leading: var(--leading-110);
+  --font-10xl-leading: var(--leading-110);
+  --font-11xl-leading: var(--leading-110);
   --font-12xl-leading: var(--leading-100);
-  --font-13xl-leading: var(--leading-100);
   --RADIUS------------------------:#07;
   --radius-none: 0;
   --radius-2xs: 0.1875rem;
@@ -88,6 +86,7 @@
   --radius-2xl: 1.5rem;
   --radius-full: 9999px;
   --SHADOWS-----------------------:#08;
+  --shadow-card: 0 4px 60px 0 rgba(90, 134, 234, 0.2);
   --shadow-none: 0;
   --shadow-2xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --shadow-xs: 0 1px 3px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -799,11 +798,6 @@ select {
   line-height: var(--font-12xl-leading);
 }
 
-.text-13xl {
-  font-size: var(--font-13xl);
-  line-height: var(--font-13xl-leading);
-}
-
 .font-2xs {
   font-size: var(--font-2xs);
 }
@@ -870,10 +864,6 @@ select {
 
 .font-12xl {
   font-size: var(--font-12xl);
-}
-
-.font-13xl {
-  font-size: var(--font-13xl);
 }
 
 .ultralight, .hover\.ultralight:hover {
@@ -1492,6 +1482,11 @@ select {
 .bg-conic {
   --gradient: initial;
   background: conic-gradient(var(--gradient));
+}
+
+.bg-gradient {
+  --gradient: initial;
+  background: linear-gradient(to right, #57B4F8 0%, #4C72F8 100%);
 }
 
 .bg-auto {
@@ -7655,6 +7650,10 @@ select {
   mix-blend-mode: luminosity;
 }
 
+.shadow-card, .focus\.shadow-card:focus, .hover\.shadow-card:hover {
+  box-shadow: var(--shadow-card);
+}
+
 .shadow-none, .focus\.shadow-none:focus, .hover\.shadow-none:hover {
   box-shadow: var(--shadow-none);
 }
@@ -11666,11 +11665,6 @@ select {
     line-height: var(--font-12xl-leading);
   }
 
-  .sm\.text-13xl {
-    font-size: var(--font-13xl);
-    line-height: var(--font-13xl-leading);
-  }
-
   .sm\.font-2xs {
     font-size: var(--font-2xs);
   }
@@ -11737,10 +11731,6 @@ select {
 
   .sm\.font-12xl {
     font-size: var(--font-12xl);
-  }
-
-  .sm\.font-13xl {
-    font-size: var(--font-13xl);
   }
 
   .sm\.text-left {
@@ -16647,6 +16637,10 @@ select {
     border-bottom-right-radius: var(--radius-full);
   }
 
+  .sm\.shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
   .sm\.shadow-none {
     box-shadow: var(--shadow-none);
   }
@@ -20221,11 +20215,6 @@ select {
     line-height: var(--font-12xl-leading);
   }
 
-  .md\.text-13xl {
-    font-size: var(--font-13xl);
-    line-height: var(--font-13xl-leading);
-  }
-
   .md\.font-2xs {
     font-size: var(--font-2xs);
   }
@@ -20292,10 +20281,6 @@ select {
 
   .md\.font-12xl {
     font-size: var(--font-12xl);
-  }
-
-  .md\.font-13xl {
-    font-size: var(--font-13xl);
   }
 
   .md\.text-left {
@@ -25202,6 +25187,10 @@ select {
     border-bottom-right-radius: var(--radius-full);
   }
 
+  .md\.shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
   .md\.shadow-none {
     box-shadow: var(--shadow-none);
   }
@@ -28776,11 +28765,6 @@ select {
     line-height: var(--font-12xl-leading);
   }
 
-  .lg\.text-13xl {
-    font-size: var(--font-13xl);
-    line-height: var(--font-13xl-leading);
-  }
-
   .lg\.font-2xs {
     font-size: var(--font-2xs);
   }
@@ -28847,10 +28831,6 @@ select {
 
   .lg\.font-12xl {
     font-size: var(--font-12xl);
-  }
-
-  .lg\.font-13xl {
-    font-size: var(--font-13xl);
   }
 
   .lg\.text-left {
@@ -33757,6 +33737,10 @@ select {
     border-bottom-right-radius: var(--radius-full);
   }
 
+  .lg\.shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
   .lg\.shadow-none {
     box-shadow: var(--shadow-none);
   }
@@ -37331,11 +37315,6 @@ select {
     line-height: var(--font-12xl-leading);
   }
 
-  .xl\.text-13xl {
-    font-size: var(--font-13xl);
-    line-height: var(--font-13xl-leading);
-  }
-
   .xl\.font-2xs {
     font-size: var(--font-2xs);
   }
@@ -37402,10 +37381,6 @@ select {
 
   .xl\.font-12xl {
     font-size: var(--font-12xl);
-  }
-
-  .xl\.font-13xl {
-    font-size: var(--font-13xl);
   }
 
   .xl\.text-left {
@@ -42312,6 +42287,10 @@ select {
     border-bottom-right-radius: var(--radius-full);
   }
 
+  .xl\.shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
   .xl\.shadow-none {
     box-shadow: var(--shadow-none);
   }
@@ -46296,8 +46275,7 @@ pre[class*=language-] {
 
 :not(pre) > code[class*=language-],
 pre[class*=language-] {
-  background: hsl(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-800));
-  border: 1px solid hsl(var(--cool-gray-hue), var(--cool-gray-sat), var(--shade-600));
+  background: hsl(var(--tertiary-hue), var(--tertiary-sat), var(--shade-600));
 }
 
 /* Inline code */
@@ -46359,11 +46337,26 @@ pre[class*=language-] {
   display: none !important;
 }
 
-.transparent-highlight pre[class*=language-] {
-  background: transparent;
-  border: 0;
+.falling-ball {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -3px;
+  width: 10px;
+  height: 10px;
+  background: #FF62B1;
+  border-radius: 9999px;
+  animation: falling-ball 1.5s linear infinite;
 }
 
+@keyframes falling-ball {
+  from {
+    top: -10px;
+  }
+  to {
+    top: 60px;
+  }
+}
 .docs-sidebar:before {
   position: absolute;
   right: 0;
