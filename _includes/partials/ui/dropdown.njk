@@ -1,0 +1,37 @@
+<div class="flex radius-sm p-12 w-640 bg-white ml-320">
+  <button class="relative inline-flex align-items-center justify-content-center h-40 px-20 mr-8 radius-xs text-md color-white bg-primary hover.bg-shade-100 focus.shadow-focus transition-100" x-data="{ open: !open }" @click="open = !open">
+    Options <i class="fas fa-angle-down ml-12 opacity-60"></i>
+
+    <div class="absolute top-100p left-0 mt-8 transform transform-top-left w-144 py-4 radius-sm overflow-hidden bg-white shadow-md" 
+      x-show="open" 
+      @click.away="open = false" 
+      x-transition:enter="transition ease-out transition-100" 
+      x-transition:enter-start="transform opacity-0 scale-90" 
+      x-transition:enter-end="transform opacity-100 scale-100" 
+      x-transition:leave="transition ease-in transition-100" 
+      x-transition:leave-start="transform opacity-100 scale-100" 
+      x-transition:leave-end="transform opacity-0 scale-90"
+      x-cloak
+    > 
+      <a href="" class="flex align-items-center px-14 py-6 transition-200 hover.bg-cool-gray hover.bg-tint-900 color-black">
+        Tutorials
+      </a>
+      <a href="" class="flex align-items-center px-14 py-6 transition-200 hover.bg-cool-gray hover.bg-tint-900 color-black">
+        Twitter
+      </a>
+      <a href="" class="flex align-items-center px-14 py-6 transition-200 hover.bg-cool-gray hover.bg-tint-900 color-black">
+        Github
+      </a>
+      <div class="h-1 my-4 bg-cool-gray bg-tint-800"></div>
+      <a href="" class="flex align-items-center px-14 py-6 transition-200 hover.bg-cool-gray hover.bg-tint-900 color-black">
+        Releases
+      </a>               
+    </div>
+  </button>
+
+  <button class="relative inline-flex align-items-center justify-content-center h-40 w-40 radius-xs text-md color-white bg-cool-gray bg-tint-800 hover.bg-tint-700 focus.shadow-focus transition-100" x-data="{ open: !open }" @click="open = !open">
+    <i class="fas fa-heart color-cool-gray"></i>
+  </button>
+
+
+</div>

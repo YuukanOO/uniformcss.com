@@ -1,0 +1,137 @@
+<section class="px-20 sm.mb-256" x-data="{ activeTab: 0, activePill: 0 }">
+
+  <div class="max-w-screen-md mx-auto">
+    <div class="text-center mb-128">
+      <div class="text-sm tracking-loose bold uppercase color-blue mb-16">
+        Start building
+      </div>
+      <h2 class="text-7xl extrabold tracking-tight mb-32">Build prototypes like <br>never before</h2>
+      <div class="flex align-items-center justify-content-center">
+        <div class="flex p-6 shadow-card radius-sm">
+          <button class="text-md semibold color-black px-24 h-48 radius-sm" 
+            @click.prevent="activeTab = 0"
+            :class="{ 'bg-gradient color-white': activeTab === 0 }"
+          >
+            Rapid workflow
+          </button>
+          <button class="text-md semibold color-black px-24 h-48 radius-sm" 
+            @click.prevent="activeTab = 1"
+            :class="{ 'bg-gradient color-white': activeTab === 1 }"
+          >
+            Intuitive class API
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-white shadow-card radius-2xl">
+      <div class="grid grid-cols-12">
+        <div class="relative col-12 sm.col-5 p-48 sm.pl-48 pt-56 pb-56">
+          <div class="text-center sm.text-left"
+            x-show.transition.in.opacity.duration.600="activeTab === 0"
+          >
+            <h3 class="font-4xl leading-130 extrabold tracking-tight mb-32"><span class="bg-text color-transparent bg-gradient">Blazingly fast</span> <br>front-end workflow</h3>
+            <p class="text-xl color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, hundreds.</p>
+            <a href="#" class="text-lg color-primary bold">Live edit on Codepen <i class="fas fa-angle-right ml-4 opacity-30"></i></a>
+            <div class="flex flex-wrap pt-48">
+              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm bold border-1 border-black radius-full"
+                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 0 }"
+                @click="activePill = 0"
+              >
+                eCommerce
+              </button>
+              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm bold border-1 border-black radius-full"
+                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 1 }"
+                @click="activePill = 1"
+              >
+                Pop up
+              </button>
+              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm bold border-1 border-black radius-full"
+                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 2 }"
+                @click="activePill = 2"
+              >
+                Sign up
+              </button>
+              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm bold border-1 border-black radius-full"
+                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 3 }"
+                @click="activePill = 3"
+              >
+                Podcast
+              </button>
+              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm bold border-1 border-black radius-full"
+                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 4 }"
+                @click="activePill = 4"
+              >
+                Dropdown
+              </button>
+            </div>
+          </div>
+          
+          <div class="text-center sm.text-left"
+            x-show.transition.in.opacity.duration.600="activeTab === 1"
+          >
+            <h3 class="font-4xl leading-130 extrabold tracking-tight mb-32">Add Uniform with just one line of code</h3>
+            <p class="text-lg color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes,.</p>
+            <a href="#" class="text-lg color-primary bold">Live edit on Codepen <i class="fas fa-angle-right ml-4 opacity-30"></i></a>
+            
+          </div>
+        </div>
+        <div class="col-12 sm.col-7 relative ">
+          <div class="relative sm.absolute w-100p top-0 bottom-0 sm.mt-n56 sm.mb-n64 px-40 pb-40 sm.pb-0 sm.pl-0 sm.pr-0" 
+            x-show="activeTab === 0"
+            x-transition:enter="transition-800"
+            x-transition:enter-start="opacity-0 transform translate-x-n64 scale-90"
+            x-transition:enter-end="opacity-100 transform scale-100"
+            x-transition:leave="transition-400"
+            x-transition:leave-start="opacity-100 transform translate-x-0 scale-100"
+            x-transition:leave-end="opacity-0 transform translate-x-n64 scale-90"
+          >  
+
+            <article class="h-100p flex align-items-center justify-content-center radius-2xl overflow-hidden shadow-card bg-crimson bg-shade-600" style="--crimson-sat: 25%;">
+              <div x-show.transition.in.duration.600="activePill === 0">
+                {% include "partials/ui/ecommerce.njk" %}
+              </div>
+
+              <div x-show.transition.in.duration.600="activePill === 1">
+                {% include "partials/ui/pop-up.njk" %}
+              </div>
+
+              <div x-show.transition.in.duration.600="activePill === 2">
+                {% include "partials/ui/pop-up.njk" %}
+              </div>
+
+              <div x-show.transition.in.duration.600="activePill === 3">
+                {% include "partials/ui/pop-up.njk" %}
+              </div>
+
+              <div x-show.transition.in.duration.600="activePill === 4">
+                {% include "partials/ui/dropdown.njk" %}
+              </div>
+
+            </article>
+
+          </div>
+
+          <div class="sm.absolute w-100p top-0 bottom-0 sm.mt-n56 sm.mb-n64 px-40 pb-40 sm.pb-0 sm.pl-0 sm.pr-40" 
+            x-show="activeTab === 1"
+            x-transition:enter="transition-800"
+            x-transition:enter-start="opacity-0 transform translate-x-64 scale-90"
+            x-transition:enter-end="opacity-100 transform scale-100"
+            x-transition:leave="transition-400"
+            x-transition:leave-start="opacity-100 transform translate-x-0 scale-100"
+            x-transition:leave-end="opacity-0 transform translate-x-64 scale-90"
+          >  
+
+            <article class="h-100p flex align-items-center justify-content-center radius-2xl overflow-hidden bg-tertiary bg-shade-600 shadow-card">
+
+              
+
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

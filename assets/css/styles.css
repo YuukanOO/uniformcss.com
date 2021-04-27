@@ -45829,11 +45829,6 @@ select {
 :root {
   --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   --font-mono: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
-  --light: 300;
-  --regular: 400;
-  --semibold: 500;
-  --bold: 600;
-  --extrabold: 800;
   --markdown-h2-weight: var(--extrabold);
   --markdown-h2-tracking: var(--tracking-tight);
   --markdown-h3-weight: var(--extrabold);
