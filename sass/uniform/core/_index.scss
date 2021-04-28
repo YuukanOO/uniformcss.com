@@ -457,12 +457,12 @@ $default-config: (
   ),
 
   leadings: (
-    tightest: 1,
+    tightest: 1.1,
     tighter: 1.25,
     tight: 1.375,
-    normal: 1.5,
+    normal: 1.625,
     loose: 1.625,
-    looser: 2,
+    looser: 1.8,
     loosest: 2.5,
   ),
 
@@ -1013,12 +1013,12 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   @return $result;
 }
 
-@function fill($key, $lightness: 50%, $opacity: opacity-100) {
+@function fill($key, $lightness: 50%, $opacity: 1) {
 
   $result: ();
 
   @if (map.has-key($merged-colors, $key)) {
-    $result: hsla( var(--#{$key}-hue), var(--#{$key}-sat), if($lightness == 50%, 50%, var(--#{$lightness})), var(--#{$opacity}) );
+    $result: hsla( var(--#{$key}-hue), var(--#{$key}-sat), if($lightness == 50%, 50%, var(--#{$lightness})), #{$opacity} );
   } @else {
     @error "[#{$key}] does not exist.";
   }
@@ -1348,7 +1348,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
     @each $key, $value in $merged-shades {
       --shade-#{'' + $key}: #{$value};
     }
-    --COLORS------------------------:#12;
+    --COLORS------------------------:#11;
     @each $color, $color-value in $merged-colors {
       @if (meta.type-of($color-value) == map) {
         @each $key, $value in $color-value {

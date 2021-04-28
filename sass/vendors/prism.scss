@@ -34,14 +34,14 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  
  /* Code blocks */
  pre[class*="language-"] {
-	 padding: var(--size-16) var(--size-20);
+	 padding: size(16, 20);
 	//  margin: .5em 0;
 	 overflow: auto;
  }
  
  :not(pre) > code[class*="language-"],
  pre[class*="language-"] {
-	 background: hsl(var(--tertiary-hue), var(--tertiary-sat), var(--shade-600));
+	 background: fill(tertiary, shade-500);
  }
  
  /* Inline code */
@@ -132,15 +132,15 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  // OVERRIDES
 
 .token.comment {
-	color: #ccc;
+	color: #6f7e96;
 }
 
 .token.selector {
-	color: #00ffff;
+	color: #9ed6ff;
 }
 
 .token.important {
-	color: #ff5e5e;
+	color: #ff7979;
 }
 
 .token.tag {
@@ -160,7 +160,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 }
 
 .token.string {
-	color: #31ff88;
+	color: #ff8acf;
 }
 
 .token.variable {
@@ -168,7 +168,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 }
 
 .token.property {
-	color: #ffaf16;
+	color: #ffbe59;
 }
 
 .token.function {
