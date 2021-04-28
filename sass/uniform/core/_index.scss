@@ -850,7 +850,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   $result: ();
   @each $key, $value in $merged-opacities {
     $map: (
-      $key: var(--opacity-#{$key})
+      $key: $value
     );
     $result: map.merge($result, $map);
   }
@@ -1347,10 +1347,6 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
     --SHADES------------------------:#10;
     @each $key, $value in $merged-shades {
       --shade-#{'' + $key}: #{$value};
-    }
-    --OPACITIES---------------------:#11;
-    @each $key, $value in $merged-opacities {
-      --opacity-#{'' + $key}: #{$value};
     }
     --COLORS------------------------:#12;
     @each $color, $color-value in $merged-colors {
