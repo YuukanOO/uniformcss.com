@@ -12,7 +12,10 @@ $custom-properties: ();
 
 $variants: (
 	core.merge(
-    core.shadows()
+    core.shadows(),
+    (
+      none: 0,
+    )
 	)
 );
 

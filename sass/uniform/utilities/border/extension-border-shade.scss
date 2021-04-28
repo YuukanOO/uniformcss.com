@@ -13,6 +13,10 @@ $custom-properties: ();
 $variants: (
 	core.merge(
     core.shades(),
+    (
+      base: 50%,
+      full: 0%,
+    )
 	)
 );
 

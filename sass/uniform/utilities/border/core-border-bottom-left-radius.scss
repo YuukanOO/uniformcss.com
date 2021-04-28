@@ -12,7 +12,11 @@ $custom-properties: ();
 
 $variants: (
 	core.merge(
-    core.radiuses()
+    core.radiuses(),
+    (
+      none: 0,
+      full: 9999px
+    )
   )
 );
 

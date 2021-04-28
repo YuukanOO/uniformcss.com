@@ -149,7 +149,6 @@ $default-config: (
   ),
 
   tints: (
-    base: 50%,
     100: 55.12%,
     200: 60.23%,
     300: 65.34%,
@@ -159,11 +158,9 @@ $default-config: (
     700: 85.78%,
     800: 90.89%,
     900: 96%,
-    full: 100%,
   ),
 
   shades: (
-    base: 50%,
     100: 44.9%,
     200: 39.79%,
     300: 34.68%,
@@ -173,7 +170,6 @@ $default-config: (
     700: 14.24%,
     800: 9.13%,
     900: 4%,
-    full: 0%,
   ),
 
   opacities: (
@@ -183,14 +179,23 @@ $default-config: (
     6: 0.06,
     8: 0.08,
     10: 0.1,
+    15: 0.15,
     20: 0.2,
+    25: 0.25,
     30: 0.3,
+    35: 0.35,
     40: 0.4,
+    45: 0.45,
     50: 0.5,
+    55: 0.55,
     60: 0.6,
+    65: 0.65,
     70: 0.7,
+    75: 0.75,
     80: 0.8,
+    85: 0.85,
     90: 0.9,
+    95: 0.95,
     100: 1,
   ),
 
@@ -230,14 +235,7 @@ $default-config: (
   ),
 
   gradients: (
-    gradient-x-from-white: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%),
-    gradient-x-to-white: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%),
-    gradient-y-from-white: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%),
-    gradient-y-to-white: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%),
-    gradient-x-from-black: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%),
-    gradient-x-to-black: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%),
-    gradient-y-from-black: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%),
-    gradient-y-to-black: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%),
+    
   ),
 
   range-limits: (
@@ -378,71 +376,71 @@ $default-config: (
   font-sizes: (
     2xs: (
       font-size: rem(10),
-      line-height: var(--leading-200),
+      line-height: var(--leading-normal),
     ),
     xs: (
       font-size: rem(12),
-      line-height: var(--leading-180),
+      line-height: var(--leading-normal),
     ),
     sm: (
       font-size: rem(14),
-      line-height: var(--leading-180),
+      line-height: var(--leading-normal),
     ),
     md: (
       font-size: rem(16),
-      line-height: var(--leading-180),
+      line-height: var(--leading-loose),
     ),
     lg: (
       font-size: rem(18),
-      line-height: var(--leading-160),
+      line-height: var(--leading-loose),
     ),
     xl: (
       font-size: rem(20),
-      line-height: var(--leading-160),
+      line-height: var(--leading-loose),
     ),
     2xl: (
       font-size: rem(24),
-      line-height: var(--leading-160),
+      line-height: var(--leading-tighter),
     ),
     3xl: (
       font-size: rem(28),
-      line-height: var(--leading-140),
+      line-height: var(--leading-tighter),
     ),
     4xl: (
       font-size: rem(32),
-      line-height: var(--leading-140),
+      line-height: var(--leading-tighter),
     ),
     5xl: (
       font-size: rem(36),
-      line-height: var(--leading-140),
+      line-height: var(--leading-tighter),
     ),
     6xl: (
       font-size: rem(40),
-      line-height: var(--leading-120),
+      line-height: var(--leading-tighter),
     ),
     7xl: (
       font-size: rem(48),
-      line-height: var(--leading-120),
+      line-height: var(--leading-tightest),
     ),
     8xl: (
       font-size: rem(56),
-      line-height: var(--leading-120),
+      line-height: var(--leading-tightest),
     ),
     9xl: (
       font-size: rem(64),
-      line-height: var(--leading-110),
+      line-height: var(--leading-tightest),
     ),
     10xl: (
       font-size: rem(72),
-      line-height: var(--leading-110),
+      line-height: var(--leading-tightest),
     ),
     11xl: (
       font-size: rem(88),
-      line-height: var(--leading-110),
+      line-height: var(--leading-tightest),
     ),
     12xl: (
       font-size: rem(104),
-      line-height: var(--leading-100),
+      line-height: var(--leading-tightest),
     )
   ),
 
@@ -459,22 +457,13 @@ $default-config: (
   ),
 
   leadings: (
-    100: 1,
-    110: 1.1,
-    120: 1.2,
-    130: 1.3,
-    140: 1.4,
-    150: 1.5,
-    160: 1.6,
-    170: 1.7,
-    180: 1.8,
-    190: 1.9,
-    200: 2,
-    210: 2.1,
-    220: 2.2,
-    230: 2.3,
-    240: 2.4,
-    250: 2.5
+    tightest: 1,
+    tighter: 1.25,
+    tight: 1.375,
+    normal: 1.5,
+    loose: 1.625,
+    looser: 2,
+    loosest: 2.5,
   ),
 
   trackings: (
@@ -488,7 +477,6 @@ $default-config: (
   ),
 
   radiuses: (
-    none: 0,
     2xs: rem(3),
     xs: rem(4),
     sm: rem(6),
@@ -496,11 +484,9 @@ $default-config: (
     lg: rem(12),
     xl: rem(18),
     2xl: rem(24),
-    full: 9999px,
   ),
 
   shadows: (
-    none: 0,
     2xs: (
       0 1px 2px 0 rgba(0, 0, 0, 0.05)
     ),
@@ -831,7 +817,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   $result: ();
   @each $key, $value in $merged-gradients {
     $map: (
-      $key: var(--#{$key})
+      $key: $value
     );
     $result: map.merge($result, $map);
   }
@@ -1093,7 +1079,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
       $map: list.nth($merged-positive-sizes, $i);
       $key: list.nth($map, 1);
       $limit-map: (
-        $key: var(--size-#{$key})
+        $key: list.nth($map, 2)
       );
       $size-map: map.merge($size-map, $limit-map);
     }
@@ -1114,7 +1100,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
       $map: list.nth($merged-negative-sizes, $i);
       $key: list.nth($map, 1);
       $limit-map: (
-        $key: var(--size-#{$key})
+        $key: list.nth($map, 2)
       );
       $size-map: map.merge($size-map, $limit-map);
     }
@@ -1375,20 +1361,6 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
       } @else {
         --#{'' + $color}: #{$color-value};
       }
-    }
-    --GRADIENTS---------------------:#13;
-    @each $gradient, $gradient-value in $merged-gradients {
-      @if (meta.type-of($gradient-value) == map) {
-        @each $key, $value in $gradient-value {
-          --#{'' + $gradient}-#{'' + $key}: #{$value};
-        }
-      } @else {
-        --#{'' + $gradient}: #{$gradient-value};
-      }
-    }
-    --SIZES-------------------------:#14;
-    @each $key, $value in $merged-sizes {
-      --size-#{'' + $key}: #{$value};
     }
   }
 }

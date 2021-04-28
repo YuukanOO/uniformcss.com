@@ -1,11 +1,11 @@
-<section class="px-20 sm.mb-256" x-data="{ activeTab: 0, activePill: 0 }">
+<section class="px-20 sm.mb-256" x-data="{ activeTab: 0, activePill: 2 }">
 
   <div class="max-w-screen-md mx-auto">
-    <div class="text-center mb-128">
-      <div class="text-sm tracking-loose bold uppercase color-blue mb-16">
+    <div class="text-center mb-112">
+      <div class="text-sm tracking-loose bold uppercase color-blue mb-10">
         Start building
       </div>
-      <h2 class="text-7xl extrabold tracking-tight mb-32">Build prototypes like <br>never before</h2>
+      <h2 class="text-7xl extrabold tracking-tight mb-24">Build prototypes like <br>never before</h2>
       <div class="flex align-items-center justify-content-center">
         <div class="flex p-6 shadow-card radius-sm">
           <button class="text-md semibold color-black px-24 h-48 radius-sm" 
@@ -77,7 +77,7 @@
           </div>
         </div>
         <div class="col-12 sm.col-7 relative ">
-          <div class="relative sm.absolute w-100p top-0 bottom-0 sm.mt-n56 sm.mb-n64 px-40 pb-40 sm.pb-0 sm.pl-0 sm.pr-0" 
+          <div class="relative sm.absolute w-100p top-0 bottom-0 sm.mt-n48 sm.mb-n48 px-40 pb-40 sm.pb-0 sm.pl-0 sm.pr-0" 
             x-show="activeTab === 0"
             x-transition:enter="transition-800"
             x-transition:enter-start="opacity-0 transform translate-x-n64 scale-90"
@@ -87,7 +87,7 @@
             x-transition:leave-end="opacity-0 transform translate-x-n64 scale-90"
           >  
 
-            <article class="h-100p flex align-items-center justify-content-center radius-2xl overflow-hidden shadow-card bg-crimson bg-shade-600" style="--crimson-sat: 25%;">
+            <article class="h-100p flex align-items-center justify-content-center radius-2xl overflow-hidden shadow-card bg-linear" style="--gradient: 45deg, #b1b9cc, #b6caef;">
               <div x-show.transition.in.duration.600="activePill === 0">
                 {% include "partials/ui/ecommerce.njk" %}
               </div>
@@ -97,11 +97,11 @@
               </div>
 
               <div x-show.transition.in.duration.600="activePill === 2">
-                {% include "partials/ui/pop-up.njk" %}
+                {% include "partials/ui/sign-in.njk" %}
               </div>
 
               <div x-show.transition.in.duration.600="activePill === 3">
-                {% include "partials/ui/pop-up.njk" %}
+                {% include "partials/ui/podcast.njk" %}
               </div>
 
               <div x-show.transition.in.duration.600="activePill === 4">
@@ -122,7 +122,7 @@
             x-transition:leave-end="opacity-0 transform translate-x-64 scale-90"
           >  
 
-            <article class="h-100p flex align-items-center justify-content-center radius-2xl overflow-hidden bg-tertiary bg-shade-600 shadow-card">
+            <article class="h-100p flex align-items-center justify-content-center radius-2xl overflow-hidden bg-linear" style="--gradient: 45deg, #b1b9cc, #b6caef;">
 
               
 

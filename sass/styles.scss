@@ -105,7 +105,7 @@
 		display: inline-flex;
 		font-size: font-size(sm);
 		font-weight: font-weight(semibold);
-		line-height: leading(250);
+		line-height: leading(loosest);
 		color: fill(cool-gray);
 		&:hover {
 			color: fill(cool-gray, shade-400);
