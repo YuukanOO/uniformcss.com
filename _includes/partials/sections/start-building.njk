@@ -1,4 +1,4 @@
-<section class="px-20 sm.mb-256" x-data="{ activeTab: 0, activePill: 2 }">
+<section class="px-20 sm.mb-256" x-data="{ activeTab: 0, activePill: 3 }">
 
   <div class="max-w-screen-md mx-auto">
     <div class="text-center mb-112">
@@ -30,35 +30,35 @@
           <div class="text-center sm.text-left"
             x-show.transition.in.opacity.duration.600="activeTab === 0"
           >
-            <h3 class="font-4xl leading-130 extrabold tracking-tight mb-32"><span class="bg-text color-transparent bg-gradient">Blazingly fast</span> <br>front-end workflow</h3>
+            <h3 class="text-4xl extrabold tracking-tight mb-32"><span class="bg-text color-transparent bg-gradient">Blazingly fast</span> <br>front-end workflow</h3>
             <p class="text-xl color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, hundreds.</p>
-            <a href="#" class="text-lg color-primary bold">Live edit on Codepen <i class="fas fa-angle-right ml-4 opacity-30"></i></a>
+            <a href="#" class="text-lg color-primary bold">Live edit on Codepen <ion-icon name="chevron-forward-outline" class="ml-4"></ion-icon></a>
             <div class="flex flex-wrap pt-48">
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm bold border-1 border-black radius-full"
+              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
                 :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 0 }"
                 @click="activePill = 0"
               >
                 eCommerce
               </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm bold border-1 border-black radius-full"
+              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
                 :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 1 }"
                 @click="activePill = 1"
               >
                 Pop up
               </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm bold border-1 border-black radius-full"
+              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
                 :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 2 }"
                 @click="activePill = 2"
               >
                 Sign in
               </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm bold border-1 border-black radius-full"
+              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
                 :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 3 }"
                 @click="activePill = 3"
               >
-                Podcast
+                Player
               </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm bold border-1 border-black radius-full"
+              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
                 :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 4 }"
                 @click="activePill = 4"
               >
@@ -70,9 +70,9 @@
           <div class="text-center sm.text-left"
             x-show.transition.in.opacity.duration.600="activeTab === 1"
           >
-            <h3 class="font-4xl leading-130 extrabold tracking-tight mb-32">Add Uniform with just one line of code</h3>
+            <h3 class="text-4xl extrabold tracking-tight mb-32">Add Uniform with just one line of code</h3>
             <p class="text-lg color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes,.</p>
-            <a href="#" class="text-lg color-primary bold">Live edit on Codepen <i class="fas fa-angle-right ml-4 opacity-30"></i></a>
+            <a href="#" class="text-lg color-primary bold">Live edit on Codepen <ion-icon name="chevron-forward-outline" class="ml-4"></ion-icon></a>
             
           </div>
         </div>
@@ -101,7 +101,7 @@
               </div>
 
               <div x-show.transition.in.duration.600="activePill === 3">
-                {% include "partials/ui/podcast.njk" %}
+                {% include "partials/ui/player.njk" %}
               </div>
 
               <div x-show.transition.in.duration.600="activePill === 4">
