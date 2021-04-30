@@ -416,7 +416,7 @@ $default-config: (
     ),
     6xl: (
       font-size: rem(40),
-      line-height: var(--leading-tight),
+      line-height: var(--leading-tighter),
     ),
     7xl: (
       font-size: rem(48),
@@ -428,7 +428,7 @@ $default-config: (
     ),
     9xl: (
       font-size: rem(64),
-      line-height: var(--leading-tighter),
+      line-height: var(--leading-tightest),
     ),
     10xl: (
       font-size: rem(72),
@@ -806,7 +806,7 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
 // GET COLOR FUNCTIONS
 @function gradient($gradient) {
   @if (map.get($merged-gradients, $gradient)) {
-    $result: var(--#{$gradient});
+    $result: map.get($merged-gradients, $gradient);
     @return $result;
   } @else {
     @error "[#{$gradient}] does not exist";
@@ -1013,12 +1013,20 @@ $merged-gradients: map.deep-merge($merged-gradients, $extend-gradients);
   @return $result;
 }
 
-@function fill($key, $lightness: 50%, $opacity: 1) {
+@function fill($key, $lightness: base, $opacity: 1) {
 
   $result: ();
 
+  @if ($lightness == base) {
+    $lightness: 50%;
+  } @else if ($lightness == full) {
+    $lightness: 100%;
+  } @else {
+    $lightness: var(--#{$lightness})
+  }
+
   @if (map.has-key($merged-colors, $key)) {
-    $result: hsla( var(--#{$key}-hue), var(--#{$key}-sat), if($lightness == 50%, 50%, var(--#{$lightness})), #{$opacity} );
+    $result: hsla( var(--#{$key}-hue), var(--#{$key}-sat), #{$lightness}, #{$opacity} );
   } @else {
     @error "[#{$key}] does not exist.";
   }

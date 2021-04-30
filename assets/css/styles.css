@@ -59,10 +59,10 @@
   --font-3xl-leading: var(--leading-normal);
   --font-4xl-leading: var(--leading-tight);
   --font-5xl-leading: var(--leading-tight);
-  --font-6xl-leading: var(--leading-tight);
+  --font-6xl-leading: var(--leading-tighter);
   --font-7xl-leading: var(--leading-tighter);
   --font-8xl-leading: var(--leading-tighter);
-  --font-9xl-leading: var(--leading-tighter);
+  --font-9xl-leading: var(--leading-tightest);
   --font-10xl-leading: var(--leading-tightest);
   --font-11xl-leading: var(--leading-tightest);
   --font-12xl-leading: var(--leading-tightest);
