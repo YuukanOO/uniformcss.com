@@ -22,6 +22,7 @@
   --font-10xl: 4.5rem;
   --font-11xl: 5.5rem;
   --font-12xl: 6.5rem;
+  --font-13xl: 7.5rem;
   --FONT-WEIGHTS------------------:#03;
   --ultralight: 100;
   --extralight: 200;
@@ -56,9 +57,9 @@
   --font-lg-leading: var(--leading-loose);
   --font-xl-leading: var(--leading-loose);
   --font-2xl-leading: var(--leading-normal);
-  --font-3xl-leading: var(--leading-normal);
-  --font-4xl-leading: var(--leading-tight);
-  --font-5xl-leading: var(--leading-tight);
+  --font-3xl-leading: var(--leading-tight);
+  --font-4xl-leading: var(--leading-tighter);
+  --font-5xl-leading: var(--leading-tighter);
   --font-6xl-leading: var(--leading-tighter);
   --font-7xl-leading: var(--leading-tighter);
   --font-8xl-leading: var(--leading-tighter);
@@ -66,6 +67,7 @@
   --font-10xl-leading: var(--leading-tightest);
   --font-11xl-leading: var(--leading-tightest);
   --font-12xl-leading: var(--leading-tightest);
+  --font-13xl-leading: var(--leading-tightest);
   --RADIUS------------------------:#07;
   --radius-2xs: 0.1875rem;
   --radius-xs: 0.25rem;
@@ -655,6 +657,11 @@ select {
   line-height: var(--font-12xl-leading);
 }
 
+.text-13xl {
+  font-size: var(--font-13xl);
+  line-height: var(--font-13xl-leading);
+}
+
 .font-2xs {
   font-size: var(--font-2xs);
 }
@@ -721,6 +728,10 @@ select {
 
 .font-12xl {
   font-size: var(--font-12xl);
+}
+
+.font-13xl {
+  font-size: var(--font-13xl);
 }
 
 .ultralight, .hover\.ultralight:hover {
@@ -11746,6 +11757,11 @@ select {
     line-height: var(--font-12xl-leading);
   }
 
+  .sm\.text-13xl {
+    font-size: var(--font-13xl);
+    line-height: var(--font-13xl-leading);
+  }
+
   .sm\.font-2xs {
     font-size: var(--font-2xs);
   }
@@ -11812,6 +11828,10 @@ select {
 
   .sm\.font-12xl {
     font-size: var(--font-12xl);
+  }
+
+  .sm\.font-13xl {
+    font-size: var(--font-13xl);
   }
 
   .sm\.text-left {
@@ -20356,6 +20376,11 @@ select {
     line-height: var(--font-12xl-leading);
   }
 
+  .md\.text-13xl {
+    font-size: var(--font-13xl);
+    line-height: var(--font-13xl-leading);
+  }
+
   .md\.font-2xs {
     font-size: var(--font-2xs);
   }
@@ -20422,6 +20447,10 @@ select {
 
   .md\.font-12xl {
     font-size: var(--font-12xl);
+  }
+
+  .md\.font-13xl {
+    font-size: var(--font-13xl);
   }
 
   .md\.text-left {
@@ -28966,6 +28995,11 @@ select {
     line-height: var(--font-12xl-leading);
   }
 
+  .lg\.text-13xl {
+    font-size: var(--font-13xl);
+    line-height: var(--font-13xl-leading);
+  }
+
   .lg\.font-2xs {
     font-size: var(--font-2xs);
   }
@@ -29032,6 +29066,10 @@ select {
 
   .lg\.font-12xl {
     font-size: var(--font-12xl);
+  }
+
+  .lg\.font-13xl {
+    font-size: var(--font-13xl);
   }
 
   .lg\.text-left {
@@ -37576,6 +37614,11 @@ select {
     line-height: var(--font-12xl-leading);
   }
 
+  .xl\.text-13xl {
+    font-size: var(--font-13xl);
+    line-height: var(--font-13xl-leading);
+  }
+
   .xl\.font-2xs {
     font-size: var(--font-2xs);
   }
@@ -37642,6 +37685,10 @@ select {
 
   .xl\.font-12xl {
     font-size: var(--font-12xl);
+  }
+
+  .xl\.font-13xl {
+    font-size: var(--font-13xl);
   }
 
   .xl\.text-left {

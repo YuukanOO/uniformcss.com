@@ -1,11 +1,11 @@
-<section class="px-20 sm.mb-256" x-data="{ activeTab: 1, activeUI: 0, activeAPI: 1 }">
+<section class="px-20 sm.mb-256" x-data="{ activeTab: 1, activeUI: 0, activeAPI: 0 }">
 
   <div class="max-w-screen-md mx-auto">
     <div class="text-center mb-112">
-      <div class="text-sm tracking-looser bold uppercase color-orange color-tint-200 mb-10">
+      <div class="text-sm tracking-looser extrabold uppercase color-primary color-tint-200 mb-10">
         Start Building
       </div>
-      <h2 class="text-9xl extrabold tracking-tight mb-32">Build prototypes like <br>never before</h2>
+      <h2 class="text-9xl extrabold tracking-tight color-cool-gray color-shade-600 mb-32">Build prototypes like <br>never before</h2>
       <div class="flex align-items-center justify-content-center">
         <div class="flex p-6 shadow-card radius-sm">
           <button class="text-md semibold color-black px-24 h-48 radius-sm" 
@@ -153,17 +153,17 @@
             x-transition:leave-start="opacity-100 transform translate-x-0 scale-100"
             x-transition:leave-end="opacity-0 transform translate-x-64 scale-90">  
 
-            <article class="h-100p flex align-items-center justify-content-center radius-2xl overflow-hidden shadow-card bg-linear" style="--gradient: 45deg, #b1b9cc, #b6caef;">
+            <article class="h-100p radius-2xl overflow-hidden shadow-card bg-white">
 
-              <div class="w-100p p-64" x-show.transition.in.duration.600="activeAPI === 0">
+              <div class="w-100p" x-show.transition.in.duration.600="activeAPI === 0">
                 {% include "partials/api/sizing.njk" %}
               </div>
 
-              <div class="w-100p p-64" x-show.transition.in.duration.600="activeAPI === 1">
+              <div class="w-100p" x-show.transition.in.duration.600="activeAPI === 1">
                 {% include "partials/api/typography.njk" %}
               </div>
 
-              <div class="w-100p p-64" x-show.transition.in.duration.600="activeAPI === 2">
+              <div class="w-100p" x-show.transition.in.duration.600="activeAPI === 2">
                 {% include "partials/api/colors.njk" %}
               </div>
 

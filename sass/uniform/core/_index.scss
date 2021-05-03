@@ -404,15 +404,15 @@ $default-config: (
     ),
     3xl: (
       font-size: rem(28),
-      line-height: var(--leading-normal),
+      line-height: var(--leading-tight),
     ),
     4xl: (
       font-size: rem(32),
-      line-height: var(--leading-tight),
+      line-height: var(--leading-tighter),
     ),
     5xl: (
       font-size: rem(36),
-      line-height: var(--leading-tight),
+      line-height: var(--leading-tighter),
     ),
     6xl: (
       font-size: rem(40),
@@ -440,6 +440,10 @@ $default-config: (
     ),
     12xl: (
       font-size: rem(104),
+      line-height: var(--leading-tightest),
+    ),
+    13xl: (
+      font-size: rem(120),
       line-height: var(--leading-tightest),
     )
   ),
