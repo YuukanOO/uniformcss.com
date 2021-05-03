@@ -1,4 +1,4 @@
-<section class="px-20 sm.mb-256" x-data="{ activeTab: 0, activePill: 5 }">
+<section class="px-20 sm.mb-256" x-data="{ activeTab: 0, activePill: 0 }">
 
   <div class="max-w-screen-md mx-auto">
     <div class="text-center mb-112">
@@ -36,33 +36,34 @@
               <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
                 :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 0 }"
                 @click="activePill = 0">
-                eCommerce
+                Calendar
               </button>
               <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
                 :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 1 }"
                 @click="activePill = 1">
-                Pop up
+                eCommerce
               </button>
               <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
                 :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 2 }"
                 @click="activePill = 2">
-                Sign in
+                Pop up
               </button>
               <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
                 :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 3 }"
                 @click="activePill = 3">
-                Player
+                Sign in
               </button>
               <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
                 :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 4 }"
                 @click="activePill = 4">
-                Activity
+                Player
               </button>
               <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
                 :class="{ 'opacity-20 hover.opacity-100 transition-200' : activePill !== 5 }"
                 @click="activePill = 5">
-                Calendar
+                Activity
               </button>
+              
             </div>
           </div>
           
@@ -87,29 +88,32 @@
           >  
 
             <article class="h-100p flex align-items-center justify-content-center radius-2xl overflow-hidden shadow-card bg-linear" style="--gradient: 45deg, #b1b9cc, #b6caef;">
+
               <div x-show.transition.in.duration.600="activePill === 0">
-                {% include "partials/ui/ecommerce.njk" %}
+                {% include "partials/ui/calendar.njk" %}
               </div>
 
               <div x-show.transition.in.duration.600="activePill === 1">
-                {% include "partials/ui/pop-up.njk" %}
+                {% include "partials/ui/ecommerce.njk" %}
               </div>
 
               <div x-show.transition.in.duration.600="activePill === 2">
-                {% include "partials/ui/sign-in.njk" %}
+                {% include "partials/ui/pop-up.njk" %}
               </div>
 
               <div x-show.transition.in.duration.600="activePill === 3">
-                {% include "partials/ui/player.njk" %}
+                {% include "partials/ui/sign-in.njk" %}
               </div>
 
               <div x-show.transition.in.duration.600="activePill === 4">
-                {% include "partials/ui/activity.njk" %}
+                {% include "partials/ui/player.njk" %}
               </div>
 
               <div x-show.transition.in.duration.600="activePill === 5">
-                {% include "partials/ui/calendar.njk" %}
+                {% include "partials/ui/activity.njk" %}
               </div>
+
+              
 
             </article>
 
