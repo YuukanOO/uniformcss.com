@@ -2,6 +2,10 @@
   "sitename": "Uniform CSS - ",
   "title": "Uniform CSS",
   "url": "https://uniformcss.com/",
+  "social": {
+    "github": "https://github.com/UniformCSS/UniformCSS",
+    "twitter": "https://twitter.com/UniformCSS"
+  },
   "description": "Fully customizable utility-first CSS framework built in Sass. Say good-bye to CSS bloat and start building future-proof sites today.",
   "author": {
     "name": "Jin Su Park",
