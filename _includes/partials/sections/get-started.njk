@@ -1,21 +1,23 @@
 
-<section class="px-20 mb-128 sm.mb-256" x-data="{ activeTab: 0 }">
+<section class="px-20 mb-128 sm.mb-192" x-data="{ activeTab:00 }">
 
   <div class="max-w-screen-md mx-auto">
     <div class="text-center mb-48 sm.mb-112">
-      <div class="text-sm tracking-looser extrabold uppercase color-primary color-tint-200 mb-10">
+      <div class="text-sm tracking-looser bold uppercase color-primary color-tint-200 mb-6">
         Get Started
       </div>
-      <h2 class="text-9xl extrabold tracking-tight color-cool-gray color-shade-600 mb-32">Setup in minutes</h2>
+      <h2 class="font-7xl leading-120 extrabold tracking-tight color-primary color-shade-600 mb-32">
+        Setup in minutes
+      </h2>
       <div class="flex align-items-center justify-content-center">
         <div class="flex p-6 shadow-card radius-sm">
-          <button class="text-md semibold color-black px-24 h-48 radius-sm" 
+          <button class="text-md semibold color-primary color-shade-600 px-18 h-40 radius-sm" 
             @click.prevent="activeTab = 0"
             :class="{ 'bg-gradient color-white': activeTab === 0 }"
           >
             Overview
           </button>
-          <button class="text-md semibold color-black px-24 h-48 radius-sm" 
+          <button class="text-md semibold color-primary color-shade-600 px-18 h-40 radius-sm" 
             @click.prevent="activeTab = 1"
             :class="{ 'bg-gradient color-white': activeTab === 1 }"
           >
@@ -27,13 +29,12 @@
 
     <div class="bg-white shadow-card radius-2xl">
       <div class="grid grid-cols-12">
-        <div class="relative col-12 sm.col-5 p-24 sm.p-48 sm.pl-48 py-56">
+        <div class="relative col-12 sm.col-5 p-24 sm.px-48 py-56">
           <div
             class="text-center sm.text-left"
-            x-show.transition.in.opacity.duration.600="activeTab === 0"
-          >
-            <h3 class="text-4xl extrabold tracking-tight mb-32">Load and configure <br><span class="bg-text color-transparent bg-gradient">directly</span> in Sass</h3>
-            <p class="text-xl color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, and hundreds of other signals.</p>
+            x-show.transition.in.opacity.duration.600="activeTab === 0">
+            <h3 class="text-4xl extrabold tracking-tight mb-24 color-primary color-shade-600">Load and configure <br><span class="bg-text color-transparent bg-gradient">directly</span> in Sass</h3>
+            <p class="text-lg color-cool-gray sm.pr-40 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, and hundreds of other signals.</p>
             <a href="#" class="text-lg color-primary bold">Learn how to get started <ion-icon name="chevron-forward-outline" class="ml-4"></ion-icon></a>
             <div class="grid grid-cols-2 pt-48">
               <div class="font-md leading-140">
@@ -49,10 +50,9 @@
           
           <div
             class="text-center sm.text-left"
-            x-show.transition.in.opacity.duration.600="activeTab === 1"
-          >
-            <h3 class="text-4xl extrabold tracking-tight mb-32">Literally just <br><span class="bg-text color-transparent bg-gradient">one line</span> of code</h3>
-            <p class="text-xl color-cool-gray color-shade-200 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, and hundreds of other signals.</p>
+            x-show.transition.in.opacity.duration.600="activeTab === 1">
+            <h3 class="text-4xl extrabold tracking-tight mb-24 color-primary color-shade-600">Literally just <br><span class="bg-text color-transparent bg-gradient">one line</span> of code</h3>
+            <p class="text-lg color-cool-gray color-shade-200 sm.pr-40 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, and hundreds of other signals.</p>
             <a href="#" class="text-lg color-primary bold">More about Filter API <ion-icon name="chevron-forward-outline" class="ml-4"></ion-icon></a>
             <div class="flex align-items-center gutter-x-32 pt-48">
               <a href="#">
@@ -75,8 +75,7 @@
             x-transition:enter-end="opacity-100 transform scale-100"
             x-transition:leave="transition-400"
             x-transition:leave-start="opacity-100 transform translate-x-0 scale-100"
-            x-transition:leave-end="opacity-0 transform translate-x-n64 scale-90"
-          >  
+            x-transition:leave-end="opacity-0 transform translate-x-n64 scale-90">  
 
             <article class="radius-lg overflow-hidden bg-tertiary bg-shade-600 shadow-card">
 
@@ -140,8 +139,7 @@
             x-transition:enter-end="opacity-100 transform scale-100"
             x-transition:leave="transition-400"
             x-transition:leave-start="opacity-100 transform translate-x-0 scale-100"
-            x-transition:leave-end="opacity-0 transform translate-x-64 scale-90"
-          >  
+            x-transition:leave-end="opacity-0 transform translate-x-64 scale-90">  
 
             <article class="radius-lg overflow-hidden bg-tertiary bg-shade-600 shadow-card mb-20">
               <header class="h-56 px-20 flex align-items-center bg-tertiary bg-shade-400">

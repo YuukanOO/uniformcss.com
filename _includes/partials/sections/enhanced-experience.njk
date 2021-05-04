@@ -3,22 +3,22 @@
   <div class="max-w-screen-md mx-auto">
     <div class="text-center mb-48 sm.mb-112">
       <div class="text-sm tracking-looser bold uppercase color-primary color-tint-200 mb-6">
-        Start Building
+        Enhanced Experience
       </div>
       <h2 class="font-7xl leading-120 extrabold tracking-tight color-primary color-shade-600 mb-32">
-        Build prototypes like <br>never before
+        Designed to support <br>any experience
       </h2>
       <div class="flex align-items-center justify-content-center">
         <div class="flex p-6 shadow-card radius-sm">
           <button class="text-md semibold color-primary color-shade-600 px-18 h-40 radius-sm" 
             @click.prevent="activeTab = 0"
             :class="{ 'bg-gradient color-white': activeTab === 0 }">
-            Rapid Workflow
+            Brand agnostic
           </button>
           <button class="text-md semibold color-primary color-shade-600 px-18 h-40 radius-sm" 
             @click.prevent="activeTab = 1"
             :class="{ 'bg-gradient color-white': activeTab === 1 }">
-            Intuitive API
+            Rich animations
           </button>
         </div>
       </div>
@@ -32,38 +32,25 @@
             <h3 class="text-4xl extrabold tracking-tight mb-24 color-primary color-shade-600"><span class="bg-text color-transparent bg-gradient">Blazingly fast</span> <br>front-end workflow</h3>
             <p class="text-lg color-cool-gray sm.pr-40 mb-32">Castle tracks fraudsters based on device fingerprint, keystrokes, site browsing history, hundreds.</p>
             <a href="#" class="text-lg color-primary bold">Live edit on Codepen <ion-icon name="chevron-forward-outline" class="ml-4"></ion-icon></a>
-            <div class="flex flex-wrap pt-48">
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
-                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activeUI !== 0 }"
-                @click="activeUI = 0">
-                Calendar
-              </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
-                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activeUI !== 1 }"
-                @click="activeUI = 1">
-                eCommerce
-              </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
-                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activeUI !== 2 }"
-                @click="activeUI = 2">
-                Pop up
-              </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
-                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activeUI !== 3 }"
-                @click="activeUI = 3">
-                Sign in
-              </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
-                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activeUI !== 4 }"
-                @click="activeUI = 4">
-                Player
-              </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
-                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activeUI !== 5 }"
-                @click="activeUI = 5">
-                Activity
-              </button>
-              
+            <div class="pt-48">
+              <div class="grid grid-cols-1 gap-20 p-16 radius-lg bg-black color-white bold text-xs max-w-512" style="--slider-track-color: #fff; --slider-color: #fff; --slider-hover-color: #fff;">
+                <div class="flex align-items-center">
+                  <div class="flex flex-none align-items-center semibold w-112">
+                    <div class="w-20 h-20 mr-12 radius-full bg-linear" style="--gradient: to right, #529fff, #aeff7c;">
+                    </div>
+                    Hue
+                  </div>
+                  <input type="range" min="0" max="360" value="220" class="slider js-hue-slider">
+                </div>
+                <div class="flex align-items-center">
+                  <div class="flex flex-none align-items-center semibold w-112">
+                    <div class="w-20 h-20 mr-12 radius-full bg-linear" style="--gradient: to right, #555, white;">
+                    </div>
+                    Saturation
+                  </div>
+                  <input type="range" min="0" max="100" value="43" class="slider js-sat-slider">
+                </div>
+              </div>              
             </div>
           </div>
           
@@ -83,21 +70,6 @@
                 @click="activeAPI = 1">
                 Typography
               </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
-                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activeAPI !== 2 }"
-                @click="activeAPI = 2">
-                Color
-              </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
-                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activeAPI !== 3 }"
-                @click="activeAPI = 3">
-                Radius
-              </button>
-              <button class="flex-none mr-12 mb-12 px-12 py-3 text-sm semibold border-1 border-black radius-full"
-                :class="{ 'opacity-20 hover.opacity-100 transition-200' : activeAPI !== 4 }"
-                @click="activeAPI = 4">
-                Shadow
-              </button>
               
             </div>
           </div>
@@ -114,31 +86,7 @@
 
             <article class="h-100p flex align-items-center justify-content-center radius-xl overflow-hidden shadow-card bg-linear" style="--gradient: 45deg, #b1b9cc, #b6caef;">
 
-              <div x-show.transition.in.duration.600="activeUI === 0">
-                {% include "partials/ui/calendar.njk" %}
-              </div>
-
-              <div x-show.transition.in.duration.600="activeUI === 1">
-                {% include "partials/ui/ecommerce.njk" %}
-              </div>
-
-              <div x-show.transition.in.duration.600="activeUI === 2">
-                {% include "partials/ui/pop-up.njk" %}
-              </div>
-
-              <div x-show.transition.in.duration.600="activeUI === 3">
-                {% include "partials/ui/sign-in.njk" %}
-              </div>
-
-              <div x-show.transition.in.duration.600="activeUI === 4">
-                {% include "partials/ui/player.njk" %}
-              </div>
-
-              <div x-show.transition.in.duration.600="activeUI === 5">
-                {% include "partials/ui/activity.njk" %}
-              </div>
-
-              
+              {% include "partials/ui/issue-tracker.njk" %}
 
             </article>
 
